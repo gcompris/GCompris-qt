@@ -9,7 +9,7 @@
 ><!-- replace kmyapplication here
                                             do *not* replace kappname-->
   <!ENTITY % addindex "IGNORE">
-  <!ENTITY % hr "INCLUDE"
+  <!ENTITY % English "INCLUDE"
 > <!-- ONLY If you are writing non-English
                                      original documentation, change
                                      the language here -->
@@ -74,13 +74,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->2024-02-21</date>
+>2026-02-04</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->4.0</releaseinfo>
+>26.0</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -122,7 +122,7 @@ for example 'xx.yy.zz'
 >GPLv3 licencom</ulink
 >.</para>
 <para
->&gcompris; dostupan je na sljedećim operacijskim sustavima: &GNU;/&Linux;, &BSD;, MacOSX, &Windows; i Android. Potrebna je 3D kartica s podrškom za <emphasis
+>&gcompris; dostupan je na sljedećim operacijskim sustavima: &GNU;/&Linux;, &BSD;, &macOS;, &Windows; i Android. Potrebna je 3D kartica s podrškom za <emphasis
 >OpenGL 2.1</emphasis
 > ili noviji. Obavezna dubina boje je najmanje 32-bita.</para>
 </sect1>
@@ -131,11 +131,11 @@ for example 'xx.yy.zz'
 <title
 >Instalacija</title>
 <para
->Softver se isporučuje u nekoliko varijanti. Za svaku varijantu opisan je postupak. </para>
+>Softver se isporučuje u nekoliko varijanti. Za svaku varijantu opisan je postupak.</para>
 <itemizedlist>
 <listitem
 ><para
->&GNU;/&Linux;: koristi pakete koje su isporučene uz tvoju &GNU;/&Linux; distribuciju. Ako &gcompris; nije sadržan u &Linux; distribuciji, javite se distributeru kako bi zatražili uključivanje &gcompris; u &Linux; distribuciju.</para
+>&GNU;/&Linux;: koristi pakete koje su isporučene uz tvoju &GNU;/&Linux; distribuciju. Ako &gcompris; nije sadržan u &Linux; distribuciji, javite se distributeru kako bi zatražili uključivanje &gcompris;.</para
 ></listitem>
 <listitem
 ><para
@@ -143,11 +143,11 @@ for example 'xx.yy.zz'
 ></listitem>
 <listitem
 ><para
->MacOSX: isporučuje se kao klasični instalacijski program.</para
+>&macOS;: isporučuje se kao klasični instalacijski program.</para
 ></listitem>
 <listitem
 ><para
->Android: distribuira ga F-Droid trgovina ili Google Play trgovina. Dostupna je i Apk datoteka.</para
+>Android: distribuira ga F-Droid trgovina ili Google Play trgovina. Dostupna je i APK datoteka.</para
 ></listitem>
 </itemizedlist>
 </sect1>
@@ -178,7 +178,7 @@ for example 'xx.yy.zz'
 </screenshot>
 
 <para
->Svaka ikona predstavlja aktivnost. U gornjem lijevom kutu nalaze se sličice s dodatnom informacijom o aktivnosti. Dovoljan je klik na ikonu da bi pokrenuo aktivnost ili se prikazao popis drugih aktivnosti. Aktivnosti su grupirane u 8 kategorija i nalaze se na vrhu ili s lijeve strane (ako je uređaj u orijentaciji portret). Na primjer, postoji odjeljak "Strategija", koji uključuje društvene igre, poput šaha, križić-kružić ili 4 u nizu.</para>
+>Svaka ikona predstavlja aktivnost. U gornjem lijevom kutu nalaze se zvjezdice s dodatnom informacijom o težini aktivnosti. Klik na ikonu dovesti će vas do aktivnosti ili izbornika aktivnosti. Postoji 8 sekcija (kategorija) aktivnosti, koje su smještene na vrhu ili lijevo (samo ako vam je orijentacija portret). Na primjer, postoji sekcija "Strategija", koji uključuje društvene igre poput šaha, križić-kružića ili 4 u nizu.</para>
 <para
 >Neke kategorije imaju potkategorije radi boljeg grupiranja aktivnosti. Za matematičke aktivnosti imamo tri potkategorije: računanje, aritmetiku i mjere.</para>
 <para
@@ -189,18 +189,18 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="difficulty1.svg" format="SVG"/></imageobject
+><imagedata fileref="difficulty1.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
 ></inlinemediaobject
->1, 2 ili 3 žute zvjezdice - od 2 do 6 godina.</para
+>1, 2 ili 3 žute zvjezdice — od 2 do 6 godina.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="difficulty4.svg" format="SVG"/></imageobject
+><imagedata fileref="difficulty4.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
 ></inlinemediaobject
->1, 2 ili 3 crvene zvijezde - starije od 6 godina.</para
+>1, 2 ili 3 crvene zvijezdice — starije od 6 godina.</para
 ></listitem
 > 
 </itemizedlist>
@@ -212,98 +212,98 @@ for example 'xx.yy.zz'
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_home.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_home.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> Polazno - napušta trenutnu aktivnost, vraća se na prethodni izbornik.</para
+> Kućica - napušta trenutnu aktivnost, vraća se na prethodni izbornik.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_ok.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_ok.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> "OK" - potvrdi, potvrdi tvoj odgovor. Koriste se kod aktivnosti koje automatski ne prepoznaju da je dijete dovršilo zadatak. U tom slučaju dijete mora kliknuti na ovu ikonu. Na tipkovnici možeš koristiti i tipku &Enter;.</para
+> "OK" — validiraj, potvrdi tvoj odgovor. Koriste se za aktivnosti koje ne prepoznaju da je dijete dovršilo zadatak. U tom slučaju dijete mora kliknuti na ovu ikonu. Na tipkovnici možeš koristiti i tipku &Enter;.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_hint.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> Svjetlo - prikaži savjet za aktivnost. Savjeti mogu pomoći djeci u nekim aktivnostima kako bismo ih usmjeravali ka odgovoru.</para
+> Žarulja — prikaži savjet za aktivnost. Savjeti mogu pomoći djeci u nekim aktivnostima kao vid usmjeravanja prema rješenju.</para
 ></listitem>
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_previous.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_previous.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject>
 <inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_next.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_next.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> Strelice - između strelica prikazuje se broj s trenutna razina aktivnosti. Klikom na jednu od strelica mijenja se razina. Aktivnosti nude izbor nekoliko razina. &gcompris; omogućuje prijelaz na višu razinu i bez završetka trenutne razine.</para
+> Strelice — prikazuje se trenutna razina aktivnosti. Klikom na jednu od strelica mijenja se razina. Aktivnosti nude izbor nekoliko razina. &gcompris; omogućuje prijelaz na višu razinu i bez završetka trenutne razine.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_repeat.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_repeat.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> Usne - &gcompris; će ponoviti pitanje.</para
+> Usne — &gcompris; će ponoviti pitanje.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_help.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_help.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> Upitnik – prikaz dijaloškog okvira pomoći. Ponekad aktivnost može biti previše složena da bi se ukratko opisala. U tom slučaju ova funkcija daje pristup dodatnim informacijama.</para
+> Upitnik — prikaz dijaloškog okvira pomoći. Ponekad aktivnost može biti previše složena da bi se ukratko opisala. U tom slučaju ova funkcija daje pristup dodatnim informacijama.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_config.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> Ključ – konfiguracijski izbornik. Konfiguracija se sprema u korisničku mapu pod nazivom .config/gcompris <filename
->/gcompris-qt.conf.</filename
-> Ovo je tekstualna datoteka i može se ručno uređivati.</para
+> Alatka — konfiguracijski izbornik. Konfiguracija se sprema u korisničku mapu pod nazivom <filename
+>.config/gcompris/gcompris-qt.conf</filename
+>. Ovo je tekstualna datoteka i može se ručno uređivati.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_activity_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> Stavke popisa - prikaz izbornika postavki aktivnosti. Ovdje postoje dvije moguće kartice. Prvi, "Skup podataka", omogućuje odabir razina aktivnosti ovisno o nekoliko ciljeva, a drugi, "Opcije", omogućuje ažuriranje konfiguracije aktivnosti ako je dostupna. </para
+> Stavke popisa — prikaz izbornika postavki aktivnosti. Ovdje postoje dvije moguće kartice: "Skup podataka" omogućuje odabir razina aktivnosti ovisno o nekoliko ciljeva dok "Opcije" omogućuju ažuriranje konfiguracije aktivnosti ako je dostupna.</para
 ></listitem>
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_about.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_about.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> Veliko slovo G - informacije o &gcompris;, aplikaciji s popisom glavnih suradnika i verzijom.</para
+> Veliko slovo G — informacije o &gcompris;, aplikaciji s popisom ključnih suradnika i verzijom.</para
 ></listitem
 > 
 <listitem
 ><para
 ><inlinemediaobject
 ><imageobject
-><imagedata fileref="bar_exit.svg" format="SVG"/></imageobject
+><imagedata fileref="bar_exit.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
 ></inlinemediaobject
-> Napajanje – zatvori &gcompris;. Možeše koristiti i prečac na tipkovnici <keycombo action="simul"
+> Napajanje — isključuje &gcompris;. Možeš koristiti i prečac na tipkovnici <keycombo action="simul"
 >&Ctrl;<keycap
 >Q</keycap
 ></keycombo
-></para
+>.</para
 ></listitem
 > 
 </itemizedlist>
@@ -321,7 +321,7 @@ for example 'xx.yy.zz'
 ><command
 >gcompris --enable-kioskmode</command
 ></userinput
-> : onemogućuje gumbe za <guiicon
+>: onemogućuje gumbe za <guiicon
 >izlaz</guiicon
 > i <guiicon
 >konfiguraciju</guiicon
@@ -332,9 +332,9 @@ for example 'xx.yy.zz'
 ><para
 ><userinput
 ><command
->gcompris --enable-kioskmode</command
+>gcompris --disable-kioskmode</command
 ></userinput
-> : omogućuje gumbe za <guiicon
+>: onemogućuje gumbe za <guiicon
 >izlaz</guiicon
 > i <guiicon
 >konfiguraciju</guiicon
@@ -346,7 +346,7 @@ for example 'xx.yy.zz'
 ><command
 >gcompris -f</command
 ></userinput
-> : pokreni &gcompris; u prikazu preko cijelog zaslona</para
+>: pokreće &gcompris; u prikazu preko cijelog zaslona</para
 ></listitem
 > 
 <listitem
@@ -355,7 +355,7 @@ for example 'xx.yy.zz'
 ><command
 >gcompris -C</command
 ></userinput
-> : onemogući pokazivač (način zaslona osjetljivog na dodir)</para
+>: onemogućuje pokazivač (u slučaju kada se koristi zaslon osjetljiv na dodir)</para
 ></listitem
 > 
 </itemizedlist>
@@ -423,7 +423,7 @@ for example 'xx.yy.zz'
 ></keycombo
 ></entry>
 <entry
->Prikažite ili sakrijte kontrolnu traku.</entry>
+>Prikaži ili sakrij kontrolnu traku.</entry>
 </row>
 </tbody>
 </tgroup>
@@ -438,12 +438,12 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; je lokaliziran i dostupan je na više od 35 jezika. Ako želiš provjeriti je li i tvoj jezik dostupan, pokreni &gcompris; i odaberi jezik u konfiguraciji.</para>
 <para
->No pazi, neki jezici trebaju određene fontove kako bi se ispravno prikazali. </para
+>No pazi, neki jezici trebaju određene fontove kako bi se ispravno prikazali.</para
 > 
 <para
 >Ako tvoj jezik nije podržan, možeš ga prevesti. Ako si zainteresiran, možeš se obratiti <ulink url="https://l10n.kde.org/teams"
 >prevoditeljskom timu</ulink
-> projekta &kde; tvog jezika. Aktualni status prijevoda možeš provjeriti na web mjestu<ulink url="https://l10n.kde.org/"
+> projekta &kde; tvog jezika. Aktualni status prijevoda možeš provjeriti na web mjestu <ulink url="https://l10n.kde.org/"
 >&kde; lokalizacija</ulink
 >.</para>
 </sect1>
@@ -452,17 +452,17 @@ for example 'xx.yy.zz'
 <title
 >Učenje jezika</title>
 <para
->Možeš koristiti &gcompris; na stranom jeziku kojeg učiš. Dovoljno je u konfiguraciji odabrati željeni strani jezik. Ne zaboravi preuzeti i dodatne zvučne zapise za izabrani jezik.</para>
+>Možeš koristiti &gcompris; i na stranom jeziku kojeg želiš naučiti. Dovoljno je u konfiguraciji odabrati željeni strani jezik. Ne zaboravi preuzeti i dodatne zvučne zapise za izabrani jezik.</para>
 </sect1>
 
 <sect1 id="customizing-activities">
 <title
 >Prilagodba aktivnosti</title>
 <para
->Neke aktivnosti možeš prilagoditi pomoću gumba za konfiguraciju aktivnosti koje se nalaze unutar aktivnosti. Na primjer, možeš postaviti regionalnu shemu u nekim tekstualnim aktivnostima (kao što je primjerice igra riječi) ili učiniti da prikazuje stvarne fotografije automobila umjesto ispunjenih pravokutnika.</para>
+>Neke aktivnosti možeš prilagoditi pomoću gumba za konfiguraciju koje se nalaze unutar aktivnosti. Na primjer, možeš postaviti regionalnu shemu u nekim tekstualnim aktivnostima (kao što je primjerice Igra riječi) ili učiniti da se prikazuju stvarne fotografije automobila umjesto ispunjenih pravokutnika (promet).</para>
 
 <para
->Za više aktivnosti možeš odabrati nekoliko skupova podataka u konfiguraciji. Svaki od njih ima poseban cilj koji je jasno opisan.</para>
+>Kod nekih aktivnosti možeš u konfiguraciji odabrati različite skupove podataka. Svaki od njih ima određeni cilj koji je jasno naveden.</para>
 <screenshot>
 <screeninfo
 >Skup podataka aktivnosti "Prebroji predmete"</screeninfo>
@@ -478,7 +478,7 @@ for example 'xx.yy.zz'
 </screenshot>
 
 <para
->U ovoj aktivnosti možeš odabrati različite mogućnosti.</para>
+>U ovoj aktivnosti možeš odabrati jednu od dvije ponuđene mogućnosti.</para>
 <screenshot>
 <screeninfo
 >Odabir načina aktivnosti "Prebroji predmete"</screeninfo>
@@ -496,9 +496,9 @@ for example 'xx.yy.zz'
 
 <sect1 id="console-switches">
 <title
->Opcije naredbene konzole</title>
+>Parametri naredbene konzole</title>
 <para
->Ako pokreneš &gcompris; s naredbene konzole s opcijom --help prikazat će sve parametre koje prihvaća:</para>
+>Ako pokreneš &gcompris; s naredbene konzole pomoću opcije --help prikazati će se svi parametre koje prihvaća:</para>
 <informaltable>
 <tgroup cols="2">
 <tbody>
@@ -554,19 +554,19 @@ for example 'xx.yy.zz'
 <entry
 >--launch activity</entry>
 <entry
->Odaberi polaznu aktivnost prilikom pokretanja GCompris.</entry>
+>Odaberi polaznu aktivnost kada se pokreće &gcompris;.</entry>
 </row>
 <row>
 <entry
 >--start-level razina</entry>
 <entry
->Prilikom pokretanja GComprisa odredi razinu na kojoj želiš započeti aktivnost zadanu pomoću --launch. Postavka će biti zanemarena ukoliko se ne koristi --launch ili ako navedena razina nije valjana.</entry>
+>Prilikom pokretanja GComprisa odredi razinu na kojoj želiš započeti aktivnost zadanu pomoću "--launch". Postavka će biti zanemarena ukoliko se ne koristi "--launch" ili ako navedena razina ne postoji.</entry>
 </row>
 <row>
 <entry
 >--difficulty {value|min-max}</entry>
 <entry
->Za pokrenutu sesiju forsiraj da razina aktivnosti u GComprisu budu na određenoj vrijednosti ili između zadane minimalne i maksimalne vrijednosti. Vrijednosti moraju biti između 1 i 6, a ako je oblik min-max, vrijednost min mora biti niža od maksimalne vrijednosti. Ako je drugačije zadano, GCompris se neće pokrenuti.</entry>
+>Za pokrenutu sesiju forsiraj da razina &gcompris; aktivnosti bude na određenoj vrijednosti ili između minimalne i maksimalne vrijednosti. Vrijednosti moraju biti između 1 i 6, a ako je oblik min-max, vrijednost min mora biti niža od maksimalne vrijednosti. Ako je drugačije zadano, &gcompris; se neće pokrenuti.</entry>
 </row>
 <row>
 <entry
@@ -588,15 +588,39 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>--show-home-button</entry>
+<entry
+>Prikaži Home gumb u traci (zadano).</entry>
+</row>
+<row>
+<entry
+>--hide-home-button</entry>
+<entry
+>Sakrij Home gumb u traci.</entry>
+</row>
+<row>
+<entry
+>--renderer={renderer}</entry>
+<entry
+>Navedi koji grafički renderer želiš koristiti. Na svim platformama dostupni su "opengl" i softver. Na Windowsima možeš koristiti "direct3d11" ili "direct3d12" (ako je kompajliran s Qt ≥ 6.6). Na &macOS;, možeš koristiti "metal".</entry>
+</row>
+<row>
+<entry
 >--software-renderer</entry>
 <entry
->Koristite softverski renderer umjesto openGL (trebao bi raditi s bilo kojom grafičkom karticom).</entry>
+>Koristi softverski renderer umjesto OpenGL-a (trebao bi raditi s bilo kojom grafičkom karticom). Zastarjelo, koristi "--renderer=software" umjesto toga.</entry>
 </row>
 <row>
 <entry
 >--opengl-renderer</entry>
 <entry
->Umjesto softverskog renderera koristi openGL renderer (brži uz više grafičkih efekta, ali se može srušiti na nekim grafičkim karticama).</entry>
+>Koristi OpenGL renderer umjesto softvera (brži i bolji grafički efekti, ali može se srušiti s nekim grafičkim karticama). Zastarjelo, koristi "--renderer=opengl" umjesto toga.</entry>
+</row>
+<row>
+<entry
+>--locale=locale</entry>
+<entry
+>Pokreni &gcompris; s specificiranom lokalizacijom.</entry>
 </row>
 </tbody>
 </tgroup>
@@ -619,7 +643,7 @@ for example 'xx.yy.zz'
 <title
 >&GNU;/&Linux; Primjer</title>
 <para
->Stvorite prečac aplikacije i konfigurirajte parametre naredbenog retka. Evo primjera koji pokreće &gcompris; u Kiosk načinu rada na cijelom zaslonu, bez prikaza gumba za konfiguraciju i pokazivača:</para
+>Stvara prečac aplikacije i konfigurira parametre naredbenog retka. Evo primjera koji pokreće &gcompris; u Kiosk načinu rada na cijelom zaslonu, bez prikaza gumba za konfiguraciju i pokazivača:</para
 > 
 <para
 ><userinput
@@ -640,7 +664,7 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; </para>
 <para
->Programska autorska prava 2000-2024 Timothée Giet i drugi </para>
+>Programska autorska prava 2000-2025 Timothée Giet i drugi </para>
 
 <para
 >Prijevod GCompris aplikacije i dokumentacije: Igor Dobrača<email
