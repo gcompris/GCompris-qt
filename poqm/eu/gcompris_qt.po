@@ -1,16 +1,16 @@
 # Translation for gcompris_qt.po to Euskara/Basque (eu).
-# Copyright (C) 2018-2025 This file is copyright:
+# Copyright (C) 2018-2026 This file is copyright:
 # This file is distributed under the same license as the GCompris package.
 # SPDX-FileCopyrightText: 2023, 2024, 2025, 2026 KDE euskaratzeko proiektuaren arduraduna <xalba@ni.eus>
 #
 # Translators:
 # Alexander Gabilondo <alexgabe@irakasle.net>, 2018, 2019, 2022.
-# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2019, 2020, 2021, 2022, 2023, 2024, 2025.
+# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2018-11-30 13:03+0000\n"
-"PO-Revision-Date: 2026-01-31 23:20+0100\n"
+"PO-Revision-Date: 2026-02-01 14:53+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -27753,7 +27753,7 @@ msgstr ""
 #: activities/wordsgame/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Falling words"
-msgstr "Erortzen diren hitzak"
+msgstr "Hitzak erortzea"
 
 #. Help title
 #: activities/wordsgame/ActivityInfo.qml:17

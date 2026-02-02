@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-01-31 22:18+0100\n"
+"PO-Revision-Date: 2026-02-01 15:12+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -1414,7 +1414,7 @@ msgstr "Datu-base berri sorrera"
 #: server/dialogs/CreateDbDialog.qml:92
 msgctxt "CreateDbDialog|"
 msgid "Teacher login"
-msgstr "Irakasleen saio hasiera"
+msgstr "Irakasleen saio-hasiera"
 
 #: server/dialogs/CreateDbDialog.qml:108
 msgctxt "CreateDbDialog|"
@@ -1638,7 +1638,7 @@ msgstr "GCompris Irakasleentzako tresna"
 #: server/panels/NavigationPanel.qml:70
 msgctxt "NavigationPanel|"
 msgid "Login"
-msgstr "Saio hasiera"
+msgstr "Saio-hasiera"
 
 #: server/panels/NavigationPanel.qml:78
 msgctxt "NavigationPanel|"
@@ -1648,7 +1648,7 @@ msgstr "Ikasleak eta taldeak"
 #: server/panels/NavigationPanel.qml:86
 msgctxt "NavigationPanel|"
 msgid "Connect devices"
-msgstr "Konektatu gailuak"
+msgstr "Gailuak konektatu"
 
 #: server/panels/NavigationPanel.qml:94
 msgctxt "NavigationPanel|"
@@ -1916,12 +1916,12 @@ msgstr "Eguneratu datu-multzoa"
 #: server/views/DatasetsView.qml:131
 msgctxt "DatasetsView|"
 msgid "Send dataset to clients"
-msgstr "Bidali datu-multzoa bezeroetara"
+msgstr "Datu-multzoa bezeroetara bidali"
 
 #: server/views/DatasetsView.qml:150
 msgctxt "DatasetsView|"
 msgid "Remove dataset from clients"
-msgstr "Kendu bezeroetako datu-multzoa"
+msgstr "Bezeroetako datu-multzoa kendu"
 
 #: server/views/DatasetsView.qml:175
 msgctxt "DatasetsView|"
@@ -1991,12 +1991,12 @@ msgstr "Sarea"
 #: server/views/DevicesView.qml:158
 msgctxt "DevicesView|"
 msgid "Connect devices"
-msgstr "Konektatu gailuak"
+msgstr "Gailuak konektatu"
 
 #: server/views/DevicesView.qml:171
 msgctxt "DevicesView|"
 msgid "Send login list"
-msgstr "Bidali saio-haste zerrenda"
+msgstr "Saio-hasiera zerrenda bidali"
 
 #: server/views/DevicesView.qml:195
 msgctxt "DevicesView|"
@@ -2011,7 +2011,7 @@ msgstr "Guztiak deskonektatu"
 #: server/views/DevicesView.qml:229
 msgctxt "DevicesView|"
 msgid "Server ID:"
-msgstr "Zerbitzari IDa:"
+msgstr "Zerbitzariaren ID:"
 
 #: server/views/DevicesView.qml:236
 msgctxt "DevicesView|"
@@ -2067,7 +2067,7 @@ msgstr "Datuak arakatzea bakarrik baimentzen da"
 #: server/views/LoginView.qml:89
 msgctxt "LoginView|"
 msgid "Teacher login"
-msgstr "Irakasleen saio hasiera"
+msgstr "Irakasleen saio-hasiera"
 
 #: server/views/LoginView.qml:110
 msgctxt "LoginView|"
@@ -2077,7 +2077,7 @@ msgstr "Pasahitza"
 #: server/views/LoginView.qml:128
 msgctxt "LoginView|"
 msgid "Login"
-msgstr "Saio hasiera"
+msgstr "Saio-hasiera"
 
 #: server/views/LoginView.qml:137
 msgctxt "LoginView|"
@@ -2092,7 +2092,7 @@ msgstr "Datu-base fitxategia:"
 #: server/views/ManagePupilsView.qml:34 server/views/ManagePupilsView.qml:149
 msgctxt "ManagePupilsView|"
 msgid "Add a group"
-msgstr "Gehitu talde bat"
+msgstr "Talde bat gehitu"
 
 #: server/views/ManagePupilsView.qml:44
 msgctxt "ManagePupilsView|"
@@ -2112,7 +2112,7 @@ msgstr "Editatu taldea"
 #: server/views/ManagePupilsView.qml:68 server/views/ManagePupilsView.qml:207
 msgctxt "ManagePupilsView|"
 msgid "Add a pupil"
-msgstr "Gehitu ikasle bat"
+msgstr "Ikasle bat gehitu"
 
 #: server/views/ManagePupilsView.qml:74
 msgctxt "ManagePupilsView|"
@@ -2202,7 +2202,7 @@ msgstr "Hizkuntza hautatzailea"
 #: server/views/SettingsView.qml:149
 msgctxt "SettingsView|"
 msgid "Server ID"
-msgstr "Zerbitzari IDa"
+msgstr "Zerbitzariaren ID"
 
 #: server/views/SettingsView.qml:171
 msgctxt "SettingsView|"
@@ -2263,7 +2263,7 @@ msgstr "Qt bertsioa"
 #: server/views/SettingsView.qml:250
 msgctxt "SettingsView|"
 msgid "Teacher login"
-msgstr "Irakasleen saio hasiera"
+msgstr "Irakasleen saio-hasiera"
 
 #: server/views/SettingsView.qml:258
 msgctxt "SettingsView|"
