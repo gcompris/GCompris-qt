@@ -1,10 +1,11 @@
 # SPDX-FileCopyrightText: 2025 Jazeix Johnny <jazeix@gmail.com>
+# SPDX-FileCopyrightText: 2026 Xavier Besnard <xavier.besnard@kde.org>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-12-20 21:00+0100\n"
-"Last-Translator: Jazeix Johnny <jazeix@gmail.com>\n"
-"Language-Team: French <kde-francophone@kde.org>\n"
+"PO-Revision-Date: 2026-02-01 20:51+0100\n"
+"Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
+"Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,6 +14,7 @@ msgstr ""
 "X-Language: fr\n"
 "X-Qt-Contexts: true\n"
 "X-Text-Markup: qtrich\n"
+"X-Generator: Lokalize 25.12.1\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
 #: server/activities/binary_bulb/ActivityEditor.qml:12
@@ -1243,7 +1245,7 @@ msgstr "Filtrer la liste"
 #: server/components/OkCancelButtons.qml:21
 msgctxt "OkCancelButtons|"
 msgid "OK"
-msgstr "OK"
+msgstr "Ok"
 
 #: server/components/OkCancelButtons.qml:22
 msgctxt "OkCancelButtons|"
@@ -1537,7 +1539,7 @@ msgid ""
 "Patrick Dummy;group 1;1234\n"
 "Patricia Brown;group 1,group 2;4321\n"
 msgstr ""
-"Format: name;groups;password\n"
+"Format : name;groups;password\n"
 "Example:\n"
 "Patrick Dummy;groupe 1;1234\n"
 "Patricia Brown;groupe 1,groupe 2;4321\n"
@@ -1959,15 +1961,12 @@ msgstr "Non connecté"
 #: server/views/DevicesView.qml:54
 msgctxt "DevicesView|"
 msgid "Incorrect password"
-msgstr "Mot de passe invalide"
+msgstr "Mot de passe non valable"
 
 #: server/views/DevicesView.qml:56
-#, fuzzy
-#| msgctxt "DevicesView|"
-#| msgid "Logged"
 msgctxt "DevicesView|"
 msgid "Logged in"
-msgstr "Identifié"
+msgstr "Connecté"
 
 #: server/views/DevicesView.qml:58
 msgctxt "DevicesView|"
@@ -2035,12 +2034,9 @@ msgid "Connected:"
 msgstr "Connecté :"
 
 #: server/views/DevicesView.qml:250
-#, fuzzy
-#| msgctxt "DevicesView|"
-#| msgid "Logged:"
 msgctxt "DevicesView|"
 msgid "Logged in:"
-msgstr "Identifié :"
+msgstr "Connecté :"
 
 #: server/views/DevicesView.qml:257
 msgctxt "DevicesView|"
@@ -2050,12 +2046,12 @@ msgstr "Données reçues :"
 #: server/views/DevicesView.qml:285
 msgctxt "DevicesView|"
 msgid "Network logs"
-msgstr "Journal d'événements réseau"
+msgstr "Journal d'évènements réseau"
 
 #: server/views/DevicesView.qml:297
 msgctxt "DevicesView|"
 msgid "Clear logs"
-msgstr "Effacer le journal d'événements"
+msgstr "Effacer le journal d'évènements"
 
 #: server/views/DevicesView.qml:317
 #, qt-format
@@ -2066,7 +2062,7 @@ msgstr "Le serveur est déjà démarré sur le port %1"
 #: server/views/LoginView.qml:43
 msgctxt "LoginView|"
 msgid "Incorrect password"
-msgstr "Mot de passe invalide"
+msgstr "Mot de passe non valable"
 
 #: server/views/LoginView.qml:47
 msgctxt "LoginView|"
@@ -2315,12 +2311,9 @@ msgid "Pupils connected"
 msgstr "Élèves connectés"
 
 #: server/views/SettingsView.qml:297
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Pupils logged"
 msgctxt "SettingsView|"
 msgid "Pupils logged in"
-msgstr "Élèves identifiés"
+msgstr "Élèves connectés"
 
 #: server/views/SettingsView.qml:304
 msgctxt "SettingsView|"
