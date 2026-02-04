@@ -190,7 +190,8 @@ Item {
                                  "groups_id": groupsIndex.join(","),
                                  "groups_name": groupsName.join(","),
                                  "user_checked": false,
-                                 "user_status": NetConst.NOT_CONNECTED
+                                 "user_status": NetConst.NOT_CONNECTED,
+                                 "user_received": 0
                              })
             reorderElement(userModel, userModel.count - 1, "user_name") // Reorder with new name
             filterUsers(filteredUserModel, true)
