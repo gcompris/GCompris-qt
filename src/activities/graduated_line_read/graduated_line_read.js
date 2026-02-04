@@ -21,8 +21,17 @@ function randInt(max) { return Math.floor(Math.random() * max) }
 function longInt(val) {
     // we allow to have up to 5 numbers after the separator
     var str = Core.convertNumberToLocaleString(val, GCompris.ApplicationInfo.localeShort, 'f', 5)
-    // Remove extra 0
-    str = str.replace(/0+$/,'');
+    // Remove extra 0 only for decimal numbers
+    var isDecimalNumber = false;
+    for(var i = 0; i < str.length; ++i) {
+        if(isNaN(str[i])) {
+            isDecimalNumber = true;
+            break;
+        }
+    }
+    if(isDecimalNumber) {
+        str = str.replace(/0+$/,'');
+    }
     // handle if last character is a separator, remove it
     if(isNaN(str[str.length-1])) {
         str = str.substr(0, str.length-1)
