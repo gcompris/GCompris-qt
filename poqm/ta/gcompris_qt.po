@@ -15355,7 +15355,7 @@ msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
 msgstr "ஸ்பேஸ் அல்லது என்டர்: உங்கள் பதிலை உறுதிப்படுத்துவதற்கு"
 
-#: activities/graduated_line_read/graduated_line_read.js:125
+#: activities/graduated_line_read/graduated_line_read.js:134
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
 msgstr ""

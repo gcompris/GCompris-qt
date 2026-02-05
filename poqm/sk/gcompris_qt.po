@@ -15267,7 +15267,7 @@ msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
 msgstr "Medzerník alebo Enter: overiť odpoveď"
 
-#: activities/graduated_line_read/graduated_line_read.js:125
+#: activities/graduated_line_read/graduated_line_read.js:134
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
 msgstr ""

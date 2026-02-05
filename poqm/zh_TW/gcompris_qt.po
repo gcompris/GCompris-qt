@@ -14844,7 +14844,7 @@ msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
 msgstr "空白鍵或 Enter：送出您的答案"
 
-#: activities/graduated_line_read/graduated_line_read.js:125
+#: activities/graduated_line_read/graduated_line_read.js:134
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
 msgstr ""
