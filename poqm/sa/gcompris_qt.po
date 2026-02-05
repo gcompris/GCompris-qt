@@ -14766,7 +14766,7 @@ msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
 msgstr "Space, Return or Enter: स्वस्य उत्तरस्य प्रमाणीकरणं कुर्वन्तु"
 
-#: activities/graduated_line_read/graduated_line_read.js:125
+#: activities/graduated_line_read/graduated_line_read.js:134
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
 msgstr "(चर सीमाः)"

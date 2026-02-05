@@ -14904,7 +14904,7 @@ msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
 msgstr "സ്പെയ്സോ എന്ററോ: ഉത്തരം സ്ഥിരീകരിക്കാൻ"
 
-#: activities/graduated_line_read/graduated_line_read.js:125
+#: activities/graduated_line_read/graduated_line_read.js:134
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
 msgstr "(മാറ്റം വരാവുന്ന അതിരുകൾ)"
