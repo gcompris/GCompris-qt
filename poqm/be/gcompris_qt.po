@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-01-09 18:05+0300\n"
+"PO-Revision-Date: 2026-02-06 22:13+0300\n"
 "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -22783,23 +22783,15 @@ msgstr ""
 "<b>Галоўную функцыю</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:553
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-The instructions will execute in order until there's none left, or until "
-#| "a dead-end, or when Tux reaches the fish."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-The instructions will execute in order until there's none left, or until a "
 "dead-end, or when Tux reaches the fish."
 msgstr ""
-"-Інструкцыі будуць выконвацца пакуль не дасягнецца канец праграмы, ці пакуль "
-"не трапіцца тупік, ці пакуль Тукс не дасягне рыбкі."
+"-Інструкцыі будуць выконвацца пакуль не скончацца, ці пакуль не зайдуць у "
+"тупік, ці пакуль Тукс не дастане рыбку."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:563
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Procedure:"
 msgctxt "ProgrammingMaze|"
 msgid "Procedure:"
 msgstr "Працэдура:"
@@ -24713,9 +24705,6 @@ msgid "Gradient Tools"
 msgstr ""
 
 #: activities/sketch/PaletteSelector.qml:148
-#, fuzzy
-#| msgctxt "ColorsPanel|"
-#| msgid "Palettes"
 msgctxt "PaletteSelector|"
 msgid "Palettes"
 msgstr "Палітры"
@@ -26981,30 +26970,21 @@ msgstr "Складанне ў слупок"
 
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Solve the given addition."
-msgstr "Утварыць дадзеную вежу."
+msgstr "Падлічыце дадзеную суму."
 
 #. Help goal
 #: activities/vertical_addition/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to share, practice division."
 msgctxt "ActivityInfo|"
 msgid "Learn to solve vertical additions."
-msgstr "Вучыцеся дзяліцца, практыка дзялення."
+msgstr "Вучыцеся складаць у слупок."
 
 #. Help prerequisite
 #: activities/vertical_addition/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Addition table of 1."
 msgctxt "ActivityInfo|"
 msgid "Addition tables."
-msgstr "Табліца складання ліку 1."
+msgstr "Табліцы складання."
 
 #. Help manual
 #: activities/vertical_addition/ActivityInfo.qml:24
@@ -27109,12 +27089,9 @@ msgstr ""
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:22
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtraction table of 1."
 msgctxt "ActivityInfo|"
 msgid "Subtraction tables."
-msgstr "Табліца адымання ліку 1."
+msgstr "Табліцы адымання."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:24
