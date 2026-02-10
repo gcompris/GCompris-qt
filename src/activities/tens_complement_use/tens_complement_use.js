@@ -14,6 +14,10 @@ var questionArrayValue = [null, "+", null, "=", null];
 var answerArrayValue = ["(", null, "+", null, ")", "+", null, "=", null];
 var indexOfNumberInAnswerArray = [1, 3, 6];
 
+// stored values for Client data
+var proposedNumbers = [];
+var questionList = [];
+
 function start(items_) {
     items = items_
     numberOfLevel = items.levels.length;
@@ -183,8 +187,29 @@ function initLevel() {
             items.holderListModel.append(questionsModel);
         }
     }
+    // store fixed Client data
+    for(var numberIndex = 0; numberIndex < items.cardListModel.count; numberIndex++) {
+        proposedNumbers.push(items.cardListModel.get(numberIndex).value)
+    }
+    console.log("proposed numbers: " + proposedNumbers)
+
+    for(var questionIndex = 0; questionIndex < items.holderListModel.count; questionIndex++) {
+        var additionString = "";
+        var equation = items.holderListModel.get(questionIndex);
+        var addition = equation.addition
+        for(var i = 0; i < addition.count; i++) {
+            additionString += addition.get(i).value;
+        }
+        questionList[questionIndex] = {
+            "addition": additionString,
+            "answer": "",
+            "isCorrect": false
+        }
+    }
+
     items.score.numberOfSubLevels = numberOfSubLevel;
     items.buttonsBlocked = false;
+    items.client.startTiming();
 }
 
 function nextLevel() {
@@ -232,6 +257,8 @@ function reappearNumberCard(value) {
 function clearAllListModels() {
     items.cardListModel.clear();
     items.holderListModel.clear();
+    proposedNumbers = [];
+    questionList = [];
 }
 
 function showOkButton() {
@@ -268,7 +295,18 @@ function checkAnswer() {
         }
         equation.tickVisibility = true;
         equation.isGood = check;
+
+        // store answer string for Client data
+        var answerString = "";
+        for(var j = 0; j < solution.count; j++) {
+            answerString += solution.get(j).value;
+        }
+        questionList[i].answer = answerString;
+        questionList[i].isCorrect = check;
     }
+
+    console.log(JSON.stringify(questionList));
+    items.client.sendToServer(allOk);
     if(allOk) {
         items.buttonsBlocked = true;
         items.score.currentSubLevel++
