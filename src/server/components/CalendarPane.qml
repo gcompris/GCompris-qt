@@ -46,15 +46,15 @@ Column {
 
     function lastDayOfMonth(Year, Month) {
         var date = new Date((new Date(Year, Month, 1)) - 1);
-        return date.toLocaleDateString(locale, Locale.ShortFormat).slice(0, 2);
+        return date.toLocaleDateString(calendarPane.locale, Locale.ShortFormat).slice(0, 2);
     }
 
     function strDateToLocale(strDate) {
-        return (new Date(strDate.slice(0,4), Number(strDate.slice(4, 6) - 1), strDate.slice(6, 8)).toLocaleDateString(locale, Locale.ShortFormat));
+        return (new Date(strDate.slice(0,4), Number(strDate.slice(4, 6) - 1), strDate.slice(6, 8)).toLocaleDateString(calendarPane.locale, Locale.ShortFormat));
     }
 
     function strDateToSql(strDate) {
-        return (new Date(strDate.slice(0,4), Number(strDate.slice(4, 6) - 1), strDate.slice(6, 8)).toLocaleDateString(locale, 'yyyy-MM-dd 00:00:00'));
+        return (new Date(strDate.slice(0,4), Number(strDate.slice(4, 6) - 1), strDate.slice(6, 8)).toLocaleDateString(Qt.locale("en-US"), 'yyyy-MM-dd 00:00:00'));
     }
 
     Rectangle {
