@@ -44,10 +44,12 @@ Item {
                 text: lineItem.jsonData.expected
             }
 
-            // Arrow character
-            DefaultLabel {
+            // Arrow icon
+            IconHolder {
+                width: Style.lineHeight
+                height: Style.lineHeight
                 anchors.verticalCenter: parent.verticalCenter
-                text: "\uf061"
+                icon.source: "qrc:/gcompris/src/server/resource/icons/arrow.svg"
             }
 
             DefaultLabel {
@@ -72,10 +74,12 @@ Item {
                 }
             }
 
-            // Keyboard character
-            DefaultLabel {
+            // Keyboard icon
+            IconHolder {
+                width: Style.lineHeight
+                height: Style.lineHeight
                 anchors.verticalCenter: parent.verticalCenter
-                text: "\uf11c"
+                icon.source: "qrc:/gcompris/src/server/resource/icons/keyboard.svg"
                 visible: lineItem.jsonData.input !== ""
             }
 
