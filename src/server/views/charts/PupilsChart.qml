@@ -27,7 +27,6 @@ Item {
         mySeries.clear();
         mySeries.axisY.min = 0;
         mySeries.axisY.max = 1;
-        mySeries.visible = false;
 
         if (!databaseController.isDatabaseLoaded() || userList.length === 0) {
             return;
