@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-License-Identifier: CC0-1.0
+  SPDX-FileCopyrightText: 2026 Johnny Jazeix <jazeix@gmail.com>
+-->
+<component type="desktop">
+  <id>org.kde.gcompris-teachers</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>AGPL-3.0</project_license>
+  <developer id="org.kde">
+    <name translate="no">KDE</name>
+    <url>https://kde.org</url>
+  </developer>
+  <launchable type="desktop-id">org.kde.gcompris-teachers.desktop</launchable>
+  <name>GCompris-teachers</name>
+  <summary>GCompris teachers companion</summary>
+  <description>
+    <p>GCompris-teachers is a companion application for teachers to enhance their use of GCompris in their classroom.</p>
+    <p>It allows teachers to create customized datasets and receive pupils
+    results for some activities.</p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Pupils and groups management</caption>
+      <image width="1920" height="1080">https://gcompris.net/screenshots_qt/gcompris-teachers/gcompris-teachers-pupils.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Results display for one pupil</caption>
+      <image width="1920" height="1080">https://gcompris.net/screenshots_qt/gcompris-teachers/gcompris-teachers-results.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Results display for vertical subtraction activity</caption>
+      <image width="1920" height="1080">https://gcompris.net/screenshots_qt/gcompris-teachers/gcompris-teachers-vertical-subtraction.png</image>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://gcompris.net/</url>
+  <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
+  <url type="help">https://docs.kde.org/?application=gcompris-teachers-handbook</url>
+  <url type="donation">https://gcompris.net/donate-en.html</url>
+  <url type="translate">https://invent.kde.org/education/gcompris/-/wikis/Developers-corner/How-to-translate</url>
+  <url type="vcs-browser">https://invent.kde.org/education/gcompris</url>
+  <update_contact>gcompris-devel@kde.org</update_contact>
+  <project_group>KDE</project_group>
+  <provides>
+    <binary>gcompris-teachers</binary>
+  </provides>
+  <content_rating type="oars-1.1">
+    <content_attribute id="violence-cartoon">none</content_attribute>
+    <content_attribute id="violence-fantasy">none</content_attribute>
+    <content_attribute id="violence-realistic">none</content_attribute>
+    <content_attribute id="violence-bloodshed">none</content_attribute>
+    <content_attribute id="violence-sexual">none</content_attribute>
+    <content_attribute id="violence-desecration">none</content_attribute>
+    <content_attribute id="violence-slavery">none</content_attribute>
+    <content_attribute id="violence-worship">none</content_attribute>
+    <content_attribute id="drugs-alcohol">none</content_attribute>
+    <content_attribute id="drugs-narcotics">none</content_attribute>
+    <content_attribute id="drugs-tobacco">none</content_attribute>
+    <content_attribute id="sex-nudity">none</content_attribute>
+    <content_attribute id="sex-themes">none</content_attribute>
+    <content_attribute id="sex-homosexuality">none</content_attribute>
+    <content_attribute id="sex-prostitution">none</content_attribute>
+    <content_attribute id="sex-adultery">none</content_attribute>
+    <content_attribute id="sex-appearance">none</content_attribute>
+    <content_attribute id="language-profanity">none</content_attribute>
+    <content_attribute id="language-humor">none</content_attribute>
+    <content_attribute id="language-discrimination">none</content_attribute>
+    <content_attribute id="social-chat">none</content_attribute>
+    <content_attribute id="social-info">none</content_attribute>
+    <content_attribute id="social-audio">none</content_attribute>
+    <content_attribute id="social-location">none</content_attribute>
+    <content_attribute id="social-contacts">none</content_attribute>
+    <content_attribute id="money-purchasing">none</content_attribute>
+    <content_attribute id="money-gambling">none</content_attribute>
+  </content_rating>
+  <branding>
+    <color type="primary" scheme_preference="light">#85d8f6</color>
+    <color type="primary" scheme_preference="dark">#16b8ea</color>
+  </branding>
+  <releases>
+    <release version="26.0" date="2026-02-04"/>
+  </releases>
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+</component>

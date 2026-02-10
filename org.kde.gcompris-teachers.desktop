@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: 2026 Johnny Jazeix <jazeix@gmail.com>
+[Desktop Entry]
+Name=GCompris-teachers
+GenericName=GCompris teachers companion
+Comment=GCompris-teachers is a companion application for teachers to enhance their use of GCompris in their classroom.
+Exec=gcompris-teachers
+Icon=gcompris-teachers
+Terminal=false
+Type=Application
+Categories=Education;
+StartupNotify=true
+X-DocPath=gcompris-teachers-handbook/index.html
