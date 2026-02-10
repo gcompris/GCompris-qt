@@ -38,7 +38,7 @@ Item {
         clauses.push(`user_.user_id in (` + userList.join(",") + `)`)
 
         var start = calendar.strDateToSql('20240101')       // Beginning of time for GCompris-Teachers. Nothing older.
-        var end = calendar.strDateToSql(new Date().toLocaleString(calendar.locale, 'yyyyMMdd'))
+        var end = calendar.strDateToSql(new Date().toLocaleString(Qt.locale("en-US"), 'yyyyMMdd'))
         if (calendar.startDate !== "") {
             start = calendar.strDateToSql(calendar.startDate)
             end = calendar.strDateToSql(calendar.endDate)
