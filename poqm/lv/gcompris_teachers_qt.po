@@ -1770,7 +1770,7 @@ msgctxt "ActivitiesChart|"
 msgid "Daily activities chart"
 msgstr "Ikdienas aktivitātes"
 
-#: server/views/charts/PupilsChart.qml:102
+#: server/views/charts/PupilsChart.qml:101
 #, fuzzy
 #| msgctxt "AllData|"
 #| msgid "All users activities"

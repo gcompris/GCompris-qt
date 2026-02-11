@@ -1773,7 +1773,7 @@ msgctxt "ActivitiesChart|"
 msgid "Daily activities chart"
 msgstr "ყოველდღიური აქტივობების დიაგრამა"
 
-#: server/views/charts/PupilsChart.qml:102
+#: server/views/charts/PupilsChart.qml:101
 msgctxt "PupilsChart|"
 msgid "User activities chart"
 msgstr "მომხმარებლის აქტივობების დიაგრამა"

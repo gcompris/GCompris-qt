@@ -1786,7 +1786,7 @@ msgctxt "ActivitiesChart|"
 msgid "Daily activities chart"
 msgstr "Gráfico de actividades diarias"
 
-#: server/views/charts/PupilsChart.qml:102
+#: server/views/charts/PupilsChart.qml:101
 msgctxt "PupilsChart|"
 msgid "User activities chart"
 msgstr "Gráfico de actividades del usuario"
