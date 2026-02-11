@@ -14,6 +14,9 @@ var questionArrayValue = [null, "+", null, "=", null];
 var answerArrayValue = ["(", null, "+", null, ")", "+", null, "=", null];
 var indexOfNumberInAnswerArray = [1, 3, 6];
 
+// store dataset values in case of fixed levels to allow shuffling them.
+var datasetValues = [];
+
 // stored values for Client data
 var proposedNumbers = [];
 var questionList = [];
@@ -34,11 +37,17 @@ function initLevel() {
     clearAllListModels();
     var currentDataset = items.levels[items.currentLevel];
     if(currentDataset.randomValues) {
-        numberOfSubLevel = currentDataset.numberOfSublevels;
+        numberOfSubLevel = currentDataset.numberOfSubLevels;
 
         var cards = [];
+        var numberOfAdditions = currentDataset.numberOfAdditions;
+        // Safety check to limit to 2 additions as the layout can not fit more.
+        if(numberOfAdditions > 2) {
+            console.log("Warning: dataset numberOfAdditions must not be greater than 2.");
+            numberOfAdditions = 2;
+        }
         // Fill the right panel
-        for(var equationIndex = 0; equationIndex < currentDataset.numberOfEquations; equationIndex ++) {
+        for(var additionIndex = 0; additionIndex < numberOfAdditions; additionIndex ++) {
             var questionsModel = {
                 "addition": [],
                 "secondRow": [],
@@ -106,8 +115,15 @@ function initLevel() {
             items.holderListModel.append(questionsModel);
         }
 
+        var numberOfCards = cards.length + currentDataset.numberOfExtraCards;
+        // Safety check to limit to 6 cards as the layout can not fit more.
+        if(numberOfCards > 6) {
+            console.log("Warning: dataset numberOfExtraCards is too large, the total number of cards must not be greater than 6.");
+            numberOfCards = 6;
+        }
         // Fill left container
-        for(var i = 0; i < currentDataset.numberOfNumbersInLeftContainer-cards.length+1; i++) {
+        var numberOfCardsToFill = numberOfCards - cards.length;
+        for(var i = 0; i < numberOfCardsToFill; i++) {
             var randomNumber = Math.floor(Math.random() * 9) + 1;
             var card = {
                 "value": randomNumber.toString(),
@@ -123,15 +139,68 @@ function initLevel() {
             items.cardListModel.append(cards[i]);
         }
     }
+    // Fixed dataset with !currentDataset.randomValues
     else {
-        var sublevel = currentDataset.values[currentSubLevel];
-        numberOfSubLevel = currentDataset.values.length;
-        var numberValue = sublevel.numberValue;
+        // init datasetValues on first subLevel
+        if(items.score.currentSubLevel === 0 || datasetValues === []) {
+            datasetValues = currentDataset.values;
+            if(currentDataset.shuffle) {
+                Core.shuffle(datasetValues);
+            }
+        }
 
+        var sublevel = datasetValues[items.score.currentSubLevel];
+        numberOfSubLevel = datasetValues.length;
+        var cardNumbers = []
+        var questionStrings = sublevel.additions;
+        // Safety check to limit to 2 additions as the layout can not fit more.
+        if(questionStrings.length > 2) {
+            console.log("Warning: dataset additions must not contain more than 2 questions.")
+            questionStrings.splice(2, questionStrings.length - 2);
+        }
+
+        // Convert question strings to number arrays
+        var questions = [];
+        for(var i = 0; i < questionStrings.length; i++) {
+            var currenString = questionStrings[i];
+            // Extract number sequences from the string, and convert them to Number type
+            var questionOperands = questionStrings[i].match(/\d+/g).map(Number);
+            // If there's not exactly 2 numbers, or first number is not between 1 and 9, stop here.
+            if(questionOperands.length != 2 || questionOperands[0] < 1 || questionOperands[0] > 9) {
+                console.log("Warning: invalid addition, failed to load level.");
+                return;
+            }
+            questions.push(questionOperands);
+        }
+
+        // Generate needed card numbers for given questions
+        for(var i = 0; i < questions.length; i++) {
+            var firstNumberToAdd = 10 - questions[i][0];
+            var secondNumberToAdd = questions[i][1] - firstNumberToAdd;
+            cardNumbers.push(firstNumberToAdd);
+            cardNumbers.push(secondNumberToAdd);
+        }
+
+        var extraCards = sublevel.extraCards;
+        var numberOfCards = cardNumbers.length + extraCards.length;
+        // Safety check to make sure we don't have more than 6 cards
+        if(numberOfCards > 6) {
+            console.log("Warning: dataset extraCards is too large, the total number of cards must not be greater than 6.")
+            var maxExtraAllowed = 6 - cardNumbers.length;
+            var numbersToRemove = extraCards.length - maxExtraAllowed;
+            extraCards.splice(maxExtraAllowed, numbersToRemove);
+        }
+
+        for(var i = 0; i < extraCards.length; i++) {
+            cardNumbers.push(extraCards[i]);
+        }
+
+        // Shuffle cards
+        Core.shuffle(cardNumbers);
         // Fill left container
-        for(var i = 0; i < numberValue.length; i++) {
+        for(var i = 0; i < cardNumbers.length; i++) {
             var card = {
-                "value": numberValue[i].toString(),
+                "value": cardNumbers[i].toString(),
                 "visibility": true,
                 "isSignSymbol": false,
                 "clickable": true
@@ -139,7 +208,7 @@ function initLevel() {
             items.cardListModel.append(card);
         }
 
-        for(var equationIndex = 0; equationIndex < sublevel.questions.length; equationIndex ++) {
+        for(var additionIndex = 0; additionIndex < questions.length; additionIndex ++) {
             var questionsModel = {
                 "addition": [],
                 "secondRow": [],
@@ -147,37 +216,38 @@ function initLevel() {
                 "isGood": false
             };
 
-            var question = sublevel.questions[equationIndex];
-            var indexCounter = 0;
+            var question = questions[additionIndex];
+            // Calculate result from given addition
+            var result = question[0] + question[1];
+
+            questionArrayValue[0] = question[0].toString();
+            questionArrayValue[2] = question[1].toString();
+            questionArrayValue[4] = result.toString();
             for(var i = 0; i < questionArrayValue.length; i++) {
                 var isNumber = true;
-                if(questionArrayValue[i] == "+" || questionArrayValue[i] == "(" || questionArrayValue[i] == ")" || questionArrayValue[i] == "=") {
+                if(questionArrayValue[i] == "+" || questionArrayValue[i] == "=") {
                     isNumber = false;
                 }
-                else {
-                    questionArrayValue[i] = question.questionValue[indexCounter].toString();
-                    indexCounter++;
-                }
                 var card = {
-                    "value": questionArrayValue[i].toString(),
+                    "value": questionArrayValue[i],
                     "visibility": true,
                     "isSignSymbol": !isNumber,
                     "clickable": false
                 }
                 questionsModel.addition.push(card);
             }
-            indexCounter = 0;
+
+            answerArrayValue[1] = question[0].toString();
+            answerArrayValue[3] = "?";
+            answerArrayValue[6] = "?";
+            answerArrayValue[8] = result.toString();
             for(var i = 0; i < answerArrayValue.length; i++) {
                 var isNumber = true;
                 if(answerArrayValue[i] == "+" || answerArrayValue[i] == "(" || answerArrayValue[i] == ")" || answerArrayValue[i] == "=") {
                     isNumber = false;
                 }
-                else {
-                    answerArrayValue[i] = question.splitValue[indexCounter].toString();
-                    indexCounter++;
-                }
                 var card = {
-                    "value": answerArrayValue[i].toString(),
+                    "value": answerArrayValue[i],
                     "visibility": true,
                     "clickable": (answerArrayValue[i] === "?"),
                     "isSignSymbol": !isNumber
@@ -191,12 +261,11 @@ function initLevel() {
     for(var numberIndex = 0; numberIndex < items.cardListModel.count; numberIndex++) {
         proposedNumbers.push(items.cardListModel.get(numberIndex).value)
     }
-    console.log("proposed numbers: " + proposedNumbers)
 
     for(var questionIndex = 0; questionIndex < items.holderListModel.count; questionIndex++) {
         var additionString = "";
-        var equation = items.holderListModel.get(questionIndex);
-        var addition = equation.addition
+        var question = items.holderListModel.get(questionIndex);
+        var addition = question.addition
         for(var i = 0; i < addition.count; i++) {
             additionString += addition.get(i).value;
         }
@@ -264,9 +333,9 @@ function clearAllListModels() {
 function showOkButton() {
     var checkQuestionMark = true;
     for(var i = 0; i < items.holderListModel.count; i++) {
-        var equation = items.holderListModel.get(i).secondRow;
-        for(var j = 0; j < equation.count; j++) {
-            var answer = equation.get(j);
+        var addition = items.holderListModel.get(i).secondRow;
+        for(var j = 0; j < addition.count; j++) {
+            var answer = addition.get(j);
             if(answer.value == "?") {
                 checkQuestionMark = false;
                 break;
@@ -281,8 +350,8 @@ function checkAnswer() {
     var allOk = true;
     for(var i = 0; i < items.holderListModel.count; i++) {
         var check = true;
-        var equation = items.holderListModel.get(i);
-        var solution = equation.secondRow;
+        var addition = items.holderListModel.get(i);
+        var solution = addition.secondRow;
         if(parseInt(solution.get(indexOfNumberInAnswerArray[0]).value) + parseInt(solution.get(indexOfNumberInAnswerArray[1]).value) != 10) {
             check = false;
         }
@@ -293,8 +362,8 @@ function checkAnswer() {
         if(!check) {
             allOk = false;
         }
-        equation.tickVisibility = true;
-        equation.isGood = check;
+        addition.tickVisibility = true;
+        addition.isGood = check;
 
         // store answer string for Client data
         var answerString = "";
@@ -305,7 +374,6 @@ function checkAnswer() {
         questionList[i].isCorrect = check;
     }
 
-    console.log(JSON.stringify(questionList));
     items.client.sendToServer(allOk);
     if(allOk) {
         items.buttonsBlocked = true;

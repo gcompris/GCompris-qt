@@ -11,17 +11,17 @@ Data {
     data: [
         {
             randomValues: true,
-            numberOfSublevels: 5,
-            numberOfEquations: 2,
-            numberOfNumbersInLeftContainer: 6,
+            numberOfSubLevels: 5,
+            numberOfAdditions: 2,
+            numberOfExtraCards: 2,
             minResult: 20,
             maxResult: 29
         },
         {
             randomValues: true,
-            numberOfSublevels: 5,
-            numberOfEquations: 2,
-            numberOfNumbersInLeftContainer: 6,
+            numberOfSubLevels: 5,
+            numberOfAdditions: 2,
+            numberOfExtraCards: 2,
             minResult: 20,
             maxResult: 29
         }
