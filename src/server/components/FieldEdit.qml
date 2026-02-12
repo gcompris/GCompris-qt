@@ -44,6 +44,9 @@ Item  {
     width: childrenRect.width
     height: childrenRect.height
 
+    // visual separator used to display the content of number_array and string_array
+    property string visualListSeparator: ", "
+
     ListModel { id: arrayModel }        // Internal model for choiceInput
     ListModel { id: stringModel }        // Internal model for stringsInput's popup and comboInput popup
 
@@ -211,7 +214,7 @@ Item  {
                 id: inputField
                 width: fieldEdit.componentMaxWidth - popupButton.width
                 activeFocusOnTab: true
-                defaultText: (typeof value === "undefined") ? "?" : jsonValue.toString()
+                defaultText: (typeof value === "undefined") ? "?" : jsonValue.join(fieldEdit.visualListSeparator)
                 clip: true
                 readOnlyText: true
                 onTextChanged: textInput.select(0,0)    // Scroll text left for long lines
