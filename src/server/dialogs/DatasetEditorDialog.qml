@@ -25,7 +25,8 @@ Popup {
     id: datasetEditor
     property string label: "To be set by calling component."
     property bool textInputReadOnly: false
-    property int activityIndex
+    property int selectedActivityIndex: -1 // the id of selected activity in DatasetsView Activities column, -1 is none
+    property int activityIndex: -1 // the id of the activity for which we create or edit dataset
     property bool addMode: true     // modify mode when false
     // Database columns
     property int modelIndex: 0      // index in Master.userModel
@@ -45,8 +46,9 @@ Popup {
     modal: true
     closePolicy: Popup.NoAutoClose
 
-    function openDataEditor(activity, selectedDataset) {
-        activityIndex = activity
+    function openDataEditor(selectedActivity, datasetActivity, selectedDataset) {
+        selectedActivityIndex = selectedActivity;
+        activityIndex = datasetActivity;
         currentActivity = Master.findObjectInModel(Master.allActivitiesModel, function(item) { return item.activity_id === activityIndex })
         currentActivityTitle = Master.allActivities[currentActivity["activity_name"]].title
 
@@ -202,8 +204,9 @@ Popup {
     onClosed: {
         editorLoader.sourceUrl = ""     // force next time to reload editor with new textActivityData
         dataset_Content = ""
-        if (!addMode)
-            Master.filterDatasets(activityIndex, true)
+        if(!addMode) {
+            Master.filterDatasets(selectedActivityIndex, true);
+        }
     }
 
     onAboutToShow: {
