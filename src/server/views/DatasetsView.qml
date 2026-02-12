@@ -121,7 +121,7 @@ Item {
                     icon.source: "qrc:/gcompris/src/server/resource/icons/edit.svg"
                     text: qsTr("Update dataset")
                     enabled: datasetsView.selectedDataset != -1
-                    onClicked: datasetEditor.openDataEditor(datasetsView.selectedActivity, Master.getDataset(datasetsView.selectedDataset))
+                    onClicked: datasetEditor.openDataEditor(Master.getDataset(datasetsView.selectedDataset).activity_id, Master.getDataset(datasetsView.selectedDataset))
                 }
 
                 ViewButton {
