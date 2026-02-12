@@ -112,7 +112,9 @@ Item {
                     icon.source: "qrc:/gcompris/src/server/resource/icons/plus.svg"
                     text: qsTr("Create dataset")
                     enabled: datasetsView.selectedActivity != -1
-                    onClicked: datasetEditor.openDataEditor(datasetsView.selectedActivity, undefined)
+                    onClicked: datasetEditor.openDataEditor(datasetsView.selectedActivity,
+                                                            datasetsView.selectedActivity,
+                                                            undefined)
                 }
 
                 ViewButton {
@@ -121,7 +123,9 @@ Item {
                     icon.source: "qrc:/gcompris/src/server/resource/icons/edit.svg"
                     text: qsTr("Update dataset")
                     enabled: datasetsView.selectedDataset != -1
-                    onClicked: datasetEditor.openDataEditor(Master.getDataset(datasetsView.selectedDataset).activity_id, Master.getDataset(datasetsView.selectedDataset))
+                    onClicked: datasetEditor.openDataEditor(datasetsView.selectedActivity,
+                                                            Master.getDataset(datasetsView.selectedDataset).activity_id,
+                                                            Master.getDataset(datasetsView.selectedDataset))
                 }
 
                 ViewButton {
