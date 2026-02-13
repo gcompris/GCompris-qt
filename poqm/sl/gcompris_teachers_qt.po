@@ -1410,67 +1410,67 @@ msgctxt "CreateDbDialog|"
 msgid "Encrypted database (enabled by default)"
 msgstr "Šifrirana zbirka podatkov (privzeto omogočeno)"
 
-#: server/dialogs/DatasetEditorDialog.qml:54
+#: server/dialogs/DatasetEditorDialog.qml:56
 msgctxt "DatasetEditorDialog|"
 msgid "Create dataset"
 msgstr "Ustvari nabor podatkov"
 
-#: server/dialogs/DatasetEditorDialog.qml:64
+#: server/dialogs/DatasetEditorDialog.qml:66
 msgctxt "DatasetEditorDialog|"
 msgid "Update dataset"
 msgstr "Posodobi nabor podatkov"
 
-#: server/dialogs/DatasetEditorDialog.qml:79
+#: server/dialogs/DatasetEditorDialog.qml:81
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name is empty"
 msgstr "Ime nabora podatkov je prazno"
 
-#: server/dialogs/DatasetEditorDialog.qml:86
+#: server/dialogs/DatasetEditorDialog.qml:88
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty should be between 1 and 6"
 msgstr "Težavnost mora biti med 1 in 6"
 
-#: server/dialogs/DatasetEditorDialog.qml:239
+#: server/dialogs/DatasetEditorDialog.qml:242
 msgctxt "DatasetEditorDialog|"
 msgid "INVALID DATASET"
 msgstr "NEVELJAVEN NABOR PODATKOV"
 
-#: server/dialogs/DatasetEditorDialog.qml:342
+#: server/dialogs/DatasetEditorDialog.qml:345
 msgctxt "DatasetEditorDialog|"
 msgid "Editor"
 msgstr "Urejevalnik"
 
-#: server/dialogs/DatasetEditorDialog.qml:345
+#: server/dialogs/DatasetEditorDialog.qml:348
 msgctxt "DatasetEditorDialog|"
 msgid "Raw JSON"
 msgstr "Surovi JSON"
 
-#: server/dialogs/DatasetEditorDialog.qml:375
+#: server/dialogs/DatasetEditorDialog.qml:378
 msgctxt "DatasetEditorDialog|"
 msgid "Activity name"
 msgstr "Ime dejavnosti"
 
-#: server/dialogs/DatasetEditorDialog.qml:389
+#: server/dialogs/DatasetEditorDialog.qml:392
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name"
 msgstr "Ime nabora podatkov"
 
-#: server/dialogs/DatasetEditorDialog.qml:403
+#: server/dialogs/DatasetEditorDialog.qml:406
 msgctxt "DatasetEditorDialog|"
 msgid "Goal"
 msgstr "Cilj"
 
-#: server/dialogs/DatasetEditorDialog.qml:417
+#: server/dialogs/DatasetEditorDialog.qml:420
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty"
 msgstr "Težavnost"
 
-#: server/dialogs/DatasetEditorDialog.qml:515
+#: server/dialogs/DatasetEditorDialog.qml:518
 msgctxt "DatasetEditorDialog|"
 msgid "Instructions"
 msgstr "Navodila"
 
-#: server/dialogs/DatasetEditorDialog.qml:521
+#: server/dialogs/DatasetEditorDialog.qml:524
 msgctxt "DatasetEditorDialog|"
 msgid "No specific instructions for this editor."
 msgstr "Za ta urejevalnik ni posebnih navodil."
@@ -1896,27 +1896,27 @@ msgctxt "DatasetsView|"
 msgid "Create dataset"
 msgstr "Ustvari nabor podatkov"
 
-#: server/views/DatasetsView.qml:122
+#: server/views/DatasetsView.qml:124
 msgctxt "DatasetsView|"
 msgid "Update dataset"
 msgstr "Posodobi nabor podatkov"
 
-#: server/views/DatasetsView.qml:131
+#: server/views/DatasetsView.qml:135
 msgctxt "DatasetsView|"
 msgid "Send dataset to clients"
 msgstr "Pošlji nabor podatkov strankam"
 
-#: server/views/DatasetsView.qml:150
+#: server/views/DatasetsView.qml:154
 msgctxt "DatasetsView|"
 msgid "Remove dataset from clients"
 msgstr "Odstrani nabor podatkov od strank"
 
-#: server/views/DatasetsView.qml:175
+#: server/views/DatasetsView.qml:179
 msgctxt "DatasetsView|"
 msgid "Remove all datasets from clients"
 msgstr "Odstrani vse nabore podatkov od strank"
 
-#: server/views/DatasetsView.qml:185
+#: server/views/DatasetsView.qml:189
 msgctxt "DatasetsView|"
 msgid "Delete dataset"
 msgstr "Izbriši nabor podatkov"

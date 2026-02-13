@@ -1427,67 +1427,67 @@ msgctxt "CreateDbDialog|"
 msgid "Encrypted database (enabled by default)"
 msgstr "Base de datos cifrada (activado de forma predeterminada)"
 
-#: server/dialogs/DatasetEditorDialog.qml:54
+#: server/dialogs/DatasetEditorDialog.qml:56
 msgctxt "DatasetEditorDialog|"
 msgid "Create dataset"
 msgstr "Crear conjunto de datos"
 
-#: server/dialogs/DatasetEditorDialog.qml:64
+#: server/dialogs/DatasetEditorDialog.qml:66
 msgctxt "DatasetEditorDialog|"
 msgid "Update dataset"
 msgstr "Actualizar conjunto de datos"
 
-#: server/dialogs/DatasetEditorDialog.qml:79
+#: server/dialogs/DatasetEditorDialog.qml:81
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name is empty"
 msgstr "El nombre del conjunto de datos está vacío"
 
-#: server/dialogs/DatasetEditorDialog.qml:86
+#: server/dialogs/DatasetEditorDialog.qml:88
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty should be between 1 and 6"
 msgstr "La dificultad debe estar entre 1 y 6"
 
-#: server/dialogs/DatasetEditorDialog.qml:239
+#: server/dialogs/DatasetEditorDialog.qml:242
 msgctxt "DatasetEditorDialog|"
 msgid "INVALID DATASET"
 msgstr "Conjunto de datos no válido"
 
-#: server/dialogs/DatasetEditorDialog.qml:342
+#: server/dialogs/DatasetEditorDialog.qml:345
 msgctxt "DatasetEditorDialog|"
 msgid "Editor"
 msgstr "Editor"
 
-#: server/dialogs/DatasetEditorDialog.qml:345
+#: server/dialogs/DatasetEditorDialog.qml:348
 msgctxt "DatasetEditorDialog|"
 msgid "Raw JSON"
 msgstr "JSON en bruto"
 
-#: server/dialogs/DatasetEditorDialog.qml:375
+#: server/dialogs/DatasetEditorDialog.qml:378
 msgctxt "DatasetEditorDialog|"
 msgid "Activity name"
 msgstr "Nombre de la actividad"
 
-#: server/dialogs/DatasetEditorDialog.qml:389
+#: server/dialogs/DatasetEditorDialog.qml:392
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name"
 msgstr "Nombre del conjunto de datos"
 
-#: server/dialogs/DatasetEditorDialog.qml:403
+#: server/dialogs/DatasetEditorDialog.qml:406
 msgctxt "DatasetEditorDialog|"
 msgid "Goal"
 msgstr "Objetivo"
 
-#: server/dialogs/DatasetEditorDialog.qml:417
+#: server/dialogs/DatasetEditorDialog.qml:420
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty"
 msgstr "Dificultad"
 
-#: server/dialogs/DatasetEditorDialog.qml:515
+#: server/dialogs/DatasetEditorDialog.qml:518
 msgctxt "DatasetEditorDialog|"
 msgid "Instructions"
 msgstr "Instrucciones"
 
-#: server/dialogs/DatasetEditorDialog.qml:521
+#: server/dialogs/DatasetEditorDialog.qml:524
 msgctxt "DatasetEditorDialog|"
 msgid "No specific instructions for this editor."
 msgstr "No hay instrucciones específicas para este editor."
@@ -1914,27 +1914,27 @@ msgctxt "DatasetsView|"
 msgid "Create dataset"
 msgstr "Crear conjunto de datos"
 
-#: server/views/DatasetsView.qml:122
+#: server/views/DatasetsView.qml:124
 msgctxt "DatasetsView|"
 msgid "Update dataset"
 msgstr "Actualizar conjunto de datos"
 
-#: server/views/DatasetsView.qml:131
+#: server/views/DatasetsView.qml:135
 msgctxt "DatasetsView|"
 msgid "Send dataset to clients"
 msgstr "Enviar conjunto de datos a los clientes"
 
-#: server/views/DatasetsView.qml:150
+#: server/views/DatasetsView.qml:154
 msgctxt "DatasetsView|"
 msgid "Remove dataset from clients"
 msgstr "Eliminar conjunto de datos de los clientes"
 
-#: server/views/DatasetsView.qml:175
+#: server/views/DatasetsView.qml:179
 msgctxt "DatasetsView|"
 msgid "Remove all datasets from clients"
 msgstr "Eliminar todos los conjuntos de datos de los clientes"
 
-#: server/views/DatasetsView.qml:185
+#: server/views/DatasetsView.qml:189
 msgctxt "DatasetsView|"
 msgid "Delete dataset"
 msgstr "Borrar conjunto de datos"

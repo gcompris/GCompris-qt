@@ -1391,67 +1391,67 @@ msgctxt "CreateDbDialog|"
 msgid "Encrypted database (enabled by default)"
 msgstr "מסד נתונים מוצפן (פעיל כברירת מחדל)"
 
-#: server/dialogs/DatasetEditorDialog.qml:54
+#: server/dialogs/DatasetEditorDialog.qml:56
 msgctxt "DatasetEditorDialog|"
 msgid "Create dataset"
 msgstr "יצירת סדרת נתונים"
 
-#: server/dialogs/DatasetEditorDialog.qml:64
+#: server/dialogs/DatasetEditorDialog.qml:66
 msgctxt "DatasetEditorDialog|"
 msgid "Update dataset"
 msgstr "עדכון סדרת נתונים"
 
-#: server/dialogs/DatasetEditorDialog.qml:79
+#: server/dialogs/DatasetEditorDialog.qml:81
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name is empty"
 msgstr "שם סדרת הנתונים ריק"
 
-#: server/dialogs/DatasetEditorDialog.qml:86
+#: server/dialogs/DatasetEditorDialog.qml:88
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty should be between 1 and 6"
 msgstr "דרגת הקושי צריכה להיות בין 1 ל־6"
 
-#: server/dialogs/DatasetEditorDialog.qml:239
+#: server/dialogs/DatasetEditorDialog.qml:242
 msgctxt "DatasetEditorDialog|"
 msgid "INVALID DATASET"
 msgstr "סדרת נתונים שגויה"
 
-#: server/dialogs/DatasetEditorDialog.qml:342
+#: server/dialogs/DatasetEditorDialog.qml:345
 msgctxt "DatasetEditorDialog|"
 msgid "Editor"
 msgstr "עורך"
 
-#: server/dialogs/DatasetEditorDialog.qml:345
+#: server/dialogs/DatasetEditorDialog.qml:348
 msgctxt "DatasetEditorDialog|"
 msgid "Raw JSON"
 msgstr "JSON גולמי"
 
-#: server/dialogs/DatasetEditorDialog.qml:375
+#: server/dialogs/DatasetEditorDialog.qml:378
 msgctxt "DatasetEditorDialog|"
 msgid "Activity name"
 msgstr "שם הפעילות"
 
-#: server/dialogs/DatasetEditorDialog.qml:389
+#: server/dialogs/DatasetEditorDialog.qml:392
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name"
 msgstr "שם סדרת נתונים"
 
-#: server/dialogs/DatasetEditorDialog.qml:403
+#: server/dialogs/DatasetEditorDialog.qml:406
 msgctxt "DatasetEditorDialog|"
 msgid "Goal"
 msgstr "יעד"
 
-#: server/dialogs/DatasetEditorDialog.qml:417
+#: server/dialogs/DatasetEditorDialog.qml:420
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty"
 msgstr "קושי"
 
-#: server/dialogs/DatasetEditorDialog.qml:515
+#: server/dialogs/DatasetEditorDialog.qml:518
 msgctxt "DatasetEditorDialog|"
 msgid "Instructions"
 msgstr "הנחיות"
 
-#: server/dialogs/DatasetEditorDialog.qml:521
+#: server/dialogs/DatasetEditorDialog.qml:524
 msgctxt "DatasetEditorDialog|"
 msgid "No specific instructions for this editor."
 msgstr "אין הנחיות נקודתיות לעורך הזה."
@@ -1871,27 +1871,27 @@ msgctxt "DatasetsView|"
 msgid "Create dataset"
 msgstr "יצירת סדרת נתונים"
 
-#: server/views/DatasetsView.qml:122
+#: server/views/DatasetsView.qml:124
 msgctxt "DatasetsView|"
 msgid "Update dataset"
 msgstr "עדכון סדרת נתונים"
 
-#: server/views/DatasetsView.qml:131
+#: server/views/DatasetsView.qml:135
 msgctxt "DatasetsView|"
 msgid "Send dataset to clients"
 msgstr "שליחת סדרת נתונים ללקוחות"
 
-#: server/views/DatasetsView.qml:150
+#: server/views/DatasetsView.qml:154
 msgctxt "DatasetsView|"
 msgid "Remove dataset from clients"
 msgstr "הסרת סדרת נתונים מלקוחות"
 
-#: server/views/DatasetsView.qml:175
+#: server/views/DatasetsView.qml:179
 msgctxt "DatasetsView|"
 msgid "Remove all datasets from clients"
 msgstr "הסרת סדרות הנתונים מלקוחות"
 
-#: server/views/DatasetsView.qml:185
+#: server/views/DatasetsView.qml:189
 msgctxt "DatasetsView|"
 msgid "Delete dataset"
 msgstr "מחיקת סדרת נתונים"

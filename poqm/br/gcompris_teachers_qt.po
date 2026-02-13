@@ -1424,67 +1424,67 @@ msgctxt "CreateDbDialog|"
 msgid "Encrypted database (enabled by default)"
 msgstr "Diaz roadennoù sifret (aotreet dre ziouer)"
 
-#: server/dialogs/DatasetEditorDialog.qml:54
+#: server/dialogs/DatasetEditorDialog.qml:56
 msgctxt "DatasetEditorDialog|"
 msgid "Create dataset"
 msgstr "Krouiñ un teskad roadennoù"
 
-#: server/dialogs/DatasetEditorDialog.qml:64
+#: server/dialogs/DatasetEditorDialog.qml:66
 msgctxt "DatasetEditorDialog|"
 msgid "Update dataset"
 msgstr "Hizivaat an teskad roadennoù"
 
-#: server/dialogs/DatasetEditorDialog.qml:79
+#: server/dialogs/DatasetEditorDialog.qml:81
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name is empty"
 msgstr "Goullo eo anv an teskad roadennoù"
 
-#: server/dialogs/DatasetEditorDialog.qml:86
+#: server/dialogs/DatasetEditorDialog.qml:88
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty should be between 1 and 6"
 msgstr "Etre 1 ha 6 e rankje bezañ an diaester"
 
-#: server/dialogs/DatasetEditorDialog.qml:239
+#: server/dialogs/DatasetEditorDialog.qml:242
 msgctxt "DatasetEditorDialog|"
 msgid "INVALID DATASET"
 msgstr "TESKAD ROADENNOÙ DIREIZH"
 
-#: server/dialogs/DatasetEditorDialog.qml:342
+#: server/dialogs/DatasetEditorDialog.qml:345
 msgctxt "DatasetEditorDialog|"
 msgid "Editor"
 msgstr "Embanner"
 
-#: server/dialogs/DatasetEditorDialog.qml:345
+#: server/dialogs/DatasetEditorDialog.qml:348
 msgctxt "DatasetEditorDialog|"
 msgid "Raw JSON"
 msgstr "JSON kriz"
 
-#: server/dialogs/DatasetEditorDialog.qml:375
+#: server/dialogs/DatasetEditorDialog.qml:378
 msgctxt "DatasetEditorDialog|"
 msgid "Activity name"
 msgstr "Anv an obererezh"
 
-#: server/dialogs/DatasetEditorDialog.qml:389
+#: server/dialogs/DatasetEditorDialog.qml:392
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name"
 msgstr "Anv an teskad roadennoù"
 
-#: server/dialogs/DatasetEditorDialog.qml:403
+#: server/dialogs/DatasetEditorDialog.qml:406
 msgctxt "DatasetEditorDialog|"
 msgid "Goal"
 msgstr "Pal"
 
-#: server/dialogs/DatasetEditorDialog.qml:417
+#: server/dialogs/DatasetEditorDialog.qml:420
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty"
 msgstr "Diaester"
 
-#: server/dialogs/DatasetEditorDialog.qml:515
+#: server/dialogs/DatasetEditorDialog.qml:518
 msgctxt "DatasetEditorDialog|"
 msgid "Instructions"
 msgstr "Titouroù"
 
-#: server/dialogs/DatasetEditorDialog.qml:521
+#: server/dialogs/DatasetEditorDialog.qml:524
 msgctxt "DatasetEditorDialog|"
 msgid "No specific instructions for this editor."
 msgstr "Titour resis ebet evit an embanner-mañ"
@@ -1913,27 +1913,27 @@ msgctxt "DatasetsView|"
 msgid "Create dataset"
 msgstr "Krouiñ un teskad roadennoù"
 
-#: server/views/DatasetsView.qml:122
+#: server/views/DatasetsView.qml:124
 msgctxt "DatasetsView|"
 msgid "Update dataset"
 msgstr "Hizivaat an teskad roadennoù"
 
-#: server/views/DatasetsView.qml:131
+#: server/views/DatasetsView.qml:135
 msgctxt "DatasetsView|"
 msgid "Send dataset to clients"
 msgstr "Kas an teskad roadennoù d'ar pratikoù"
 
-#: server/views/DatasetsView.qml:150
+#: server/views/DatasetsView.qml:154
 msgctxt "DatasetsView|"
 msgid "Remove dataset from clients"
 msgstr "Lemel an teskad roadennoù d'ar pratikoù"
 
-#: server/views/DatasetsView.qml:175
+#: server/views/DatasetsView.qml:179
 msgctxt "DatasetsView|"
 msgid "Remove all datasets from clients"
 msgstr "Lemel an holl deskadoù data d'ar pratikoù"
 
-#: server/views/DatasetsView.qml:185
+#: server/views/DatasetsView.qml:189
 msgctxt "DatasetsView|"
 msgid "Delete dataset"
 msgstr "Lemel un teskad roadennoù"
