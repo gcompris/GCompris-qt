@@ -267,6 +267,7 @@
       <li xml:lang="nl">ontdekken van de computer: toetsenbord, muis, verschillende muisbewegingen, etc.</li>
       <li xml:lang="pl">odkrywanie komputera: klawiatura, mysz, różne ruchy myszą, itp.</li>
       <li xml:lang="pt-BR">conhecendo o computador: teclado, mouse, diferentes movimentações com o mouse, etc.</li>
+      <li xml:lang="ru">знакомство с компьютером: клавиатура, мышь, различные жесты мышью и так далее</li>
       <li xml:lang="sl">odkrivanje računalnika: tipkovnica, miška, različne kretnje miške itd.</li>
       <li xml:lang="sq">njohje me kompjuterin: tastierë, mi, gjeste të ndryshme të miut, etj.</li>
       <li xml:lang="sv">upptäcka datorn: tangentbord, mus, olika musgester, etc.</li>
@@ -294,6 +295,7 @@
       <li xml:lang="nl">rekenen: tafels oefenen, reeksen, afbeelding spiegelen, de schaal in evenwicht brengen, wisselgeld geven, etc.</li>
       <li xml:lang="pl">arytmetyka: tablice pamięciowe, wyliczanie, obraz lustrzany, wyrównoważanie wagi, wydawanie reszty, itp.</li>
       <li xml:lang="pt-BR">matemática: memória matemática, enumeração, imagens espelhadas, balanceamento de escalas, moedas e troco, etc.</li>
+      <li xml:lang="ru">арифметика: игра «память» с подсчётом, счёт, отражение рисунка, уравновешивание весов, подсчёт сдачи и так далее</li>
       <li xml:lang="sl">aritmetika: tabelarni spomin, štetje, zrcalna slika, uravnoteženje tehtnice, vračanje drobiža itd.</li>
       <li xml:lang="sq">aritmetikë: kujtesë tabelash, numërim, pasqyrim figurash, baraspeshim peshoreje, dhënie kusuri, etj.</li>
       <li xml:lang="sv">aritmetik: tabellminne, uppräkning, spegelbild, balansera vågen, ge växel, etc.</li>
@@ -320,6 +322,7 @@
       <li xml:lang="nl">natuurkunde: de sluizen bedienen, mengen van kleuren, concept van zwaartekracht, etc.</li>
       <li xml:lang="pl">nauka: śluza na kanale, mieszanie barw, poczucie grawitacji, itp.</li>
       <li xml:lang="pt-BR">ciência: comporta de canal, mistura de cores, conceito de gravidade, etc.</li>
+      <li xml:lang="ru">наука: работа судоходного шлюза, смешивание цветов, представление о гравитации и так далее</li>
       <li xml:lang="sl">znanost: zapornica kanala, mešanje barv, koncept težnosti, itd.</li>
       <li xml:lang="sq">shkencë: mbyllje kanali, përzierje ngjyrash, koncepti i rëndesës, etj.</li>
       <li xml:lang="sv">vetenskap: kanalslussen, färgblandning, gravitationskonceptet, etc.</li>
@@ -346,6 +349,7 @@
       <li xml:lang="nl">spellen: geheugenspel, vier op een rij, boter kaas en eieren, sudoku, torens van hanoi, etc.</li>
       <li xml:lang="pl">gry: na pamięć, łączenie czwórek, tic tac toe, sudoku, wieża hanoi, itp.</li>
       <li xml:lang="pt-BR">jogos: memória, ligue 4, jogo da velha, sudoku, torre de Hanói, etc.</li>
+      <li xml:lang="ru">игры: память, соедини 4, крестики-нолики, судоку, Ханойская башня и так далее</li>
       <li xml:lang="sl">igre: spomin, štiri v vrsto, križci in krožci, sudoku, Hanojski stolpi, itd.</li>
       <li xml:lang="sq">lojëra: kujtesë, lidhni 4, tik tak to, sudoku, kullë Hanoi, etj.</li>
       <li xml:lang="sv">spel: memory, koppla 4, tre-i-rad, sudoku, tornen i Hanoi, etc.</li>
@@ -372,6 +376,7 @@
       <li xml:lang="nl">lezen: lees oefening, etc.</li>
       <li xml:lang="pl">czytanie: nauka czytania, itp.</li>
       <li xml:lang="pt-BR">leitura: prática de leitura, etc.</li>
+      <li xml:lang="ru">чтение: упражнение в чтении и так далее</li>
       <li xml:lang="sl">branje: bralna vaja, itd.</li>
       <li xml:lang="sq">lexim: ushtrim të lexuari, etj.</li>
       <li xml:lang="sv">läsning: läsningsövning, etc.</li>
@@ -399,6 +404,7 @@
       <li xml:lang="nl">overig: leren klokkijken, het braille-systeem, doolhof, muziekinstrumenten, etc.</li>
       <li xml:lang="pl">inne: naucz się godzin na zegarze, systemu brajla, labiryntów, instrumentów muzycznych, itp.</li>
       <li xml:lang="pt-BR">outros: aprendendo a ver as horas, o sistema Braille, labirintos, instrumentos musicais, etc.</li>
+      <li xml:lang="ru">другое: определение времени по часам, шрифт Брайля, лабиринт, музыкальные инструменты и так далее</li>
       <li xml:lang="sl">ostalo: prepoznavanje časa, brajica, blodnjak, glasbila, itd.</li>
       <li xml:lang="sq">të tjera: mësoni si të tregoni kohën, sistemi Braj, labirint, vegla muzikore, etj.</li>
       <li xml:lang="sv">annat: lära sig klockan, punktskrift, labyrint, musikinstrument, etc.</li>
