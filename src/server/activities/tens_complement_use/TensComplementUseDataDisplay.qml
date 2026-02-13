@@ -15,6 +15,7 @@ import "../../singletons"
 Item {
     id: lineItem
     required property var jsonData
+    property bool useProposedNumbers: true
     height: details.height
 
     Column {
@@ -42,7 +43,8 @@ Item {
 
                 DefaultLabel {
                     anchors.verticalCenter: parent.verticalCenter
-                    text: lineItem.jsonData.proposedNumbers.toString()
+                    text: lineItem.useProposedNumbers ?
+                        lineItem.jsonData.proposedNumbers.toString() : ""
                 }
             }
         }
