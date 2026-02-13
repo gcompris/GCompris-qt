@@ -215,6 +215,11 @@ public:
     void resetLevels();
 
     /*
+     * Restore the initial state of levels.
+     */
+    void restoreInitialLevels();
+
+    /*
      * Remove the dataset from the activity
      */
     void removeDataset(const QString &datasetName);

@@ -37,6 +37,8 @@ import "qrc:/gcompris/src/core/core.js" as Core
  */
 Item {
     id: bar
+
+    visible: !ActivityInfoTree.isInSequence
     /**
       * type: real
       * Keeps track of the number of buttons that are displayed

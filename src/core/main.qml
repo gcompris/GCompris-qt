@@ -443,6 +443,9 @@ Window {
                 welcomePlayed = true;
                 startApplicationTimer.start();
             }
+            else if(ActivityInfoTree.isInSequence) {
+                pageView.currentItem.startNextActivityInSequence();
+            }
             else if (DownloadManager.areVoicesRegistered(ApplicationSettings.locale)) {
                 delayedWelcomeTimer.playWelcome();
             }

@@ -290,6 +290,8 @@ int main(int argc, char *argv[])
         // internally, levels start at 0
         ActivityInfoTree::getInstance()->setStartingActivity(startingActivity, startingLevel - 1);
     }
+    // TODO pass the file first if there is one and create the sequence
+    ActivityInfoTree::getInstance()->initializeSequence();
 
     // Load translations
     QString locale = config.value("General/locale", GC_DEFAULT_LOCALE).toString();
