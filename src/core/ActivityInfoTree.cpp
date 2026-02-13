@@ -439,23 +439,24 @@ void ActivityInfoTree::initializeSequence() {
 }
 
 QString ActivityInfoTree::nextActivityInSequence() {
-    static int counter = 0;
-    if (counter < m_sessionSequence.size()) {
-        const auto &[activityName, datasets] = m_sessionSequence[counter];
-        counter ++;
+    QString nextActivity = "";
+    if (m_currentActivityInSequence < m_sessionSequence.size()) {
+        const auto &[activityName, datasets] = m_sessionSequence[m_currentActivityInSequence];
         // Initialize the datasets to only have the needed ones!
         for (auto *activity: m_menuTreeFull) {
             if (activity->name() == activityName) {
                 activity->setCurrentLevels(datasets);
+                nextActivity = activityName;
                 break;
             }
         }
-        return activityName;
     }
-    return "";
+    m_currentActivityInSequence ++;
+    return nextActivity;
 }
 
 void ActivityInfoTree::resetAfterSequence() {
+    m_currentActivityInSequence ++;
     for(const auto &[activityName, datasets] : m_sessionSequence) {
         for (auto *activity: m_menuTreeFull) {
             if (activity->name() == activityName) {
@@ -464,6 +465,8 @@ void ActivityInfoTree::resetAfterSequence() {
             }
         }
     }
+    m_sessionSequence.clear();
+    Q_EMIT isInSequenceChanged();
 }
 
 void ActivityInfoTree::createDataset(const QJsonObject &dataset)

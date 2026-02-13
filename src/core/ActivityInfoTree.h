@@ -71,7 +71,7 @@ public:
 
     void initializeSequence();
     bool isInSequence() {
-        return !m_sessionSequence.empty();
+        return !m_sessionSequence.empty() && m_currentActivityInSequence <= m_sessionSequence.size();
     }
 
 protected:
@@ -121,6 +121,7 @@ private:
 
     QStringList getActivityList();
 
+    int m_currentActivityInSequence = 0;
     Sequence m_sessionSequence;
 
 public:
