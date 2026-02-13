@@ -51,6 +51,7 @@ ActivityBase {
             property alias numPad: numPad
             property var previousSelectedCard: undefined
             readonly property string mode: activity.mode
+            property alias client: client
         }
 
         onStart: { Activity.start(items) }
@@ -69,6 +70,18 @@ ActivityBase {
             if(activity.mode === "input" && !bonus.isPlaying)
                 numPad.updateAnswer(event.key, false);
         }
+
+        Client {    // Client for gcompris-teachers. Prepare data from activity to server
+            id: client
+            getDataCallback: function() {
+                var data = {
+                    "questionList": Activity.questionList
+                }
+
+                return data;
+            }
+        }
+
 
         GCSoundEffect {
             id: goodAnswerSound

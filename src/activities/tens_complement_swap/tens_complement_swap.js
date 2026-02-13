@@ -14,6 +14,9 @@ var datasets = [];
 var currentDatasetLevel = 0;
 var numberOfDatasetLevel;
 
+// stored values for Client data
+var questionList = [];
+
 function start(items_) {
     items = items_
     datasets.length = 0;
@@ -80,10 +83,27 @@ function initLevel() {
             "isValidationImageVisible": false
         });
     }
+
+    // store fixed Client data
+    for(var questionIndex = 0; questionIndex < items.equations.count; questionIndex++) {
+        var additionString = "";
+        var equation = items.equations.get(questionIndex);
+        var addition = equation.listmodel;
+        for(var i = 0; i < addition.count; i++) {
+            additionString += addition.get(i).value;
+        }
+        questionList[questionIndex] = {
+            "addition": additionString,
+            "answer": "",
+            "isCorrect": false
+        }
+    }
+    items.client.startTiming();
 }
 
 function clearListModels() {
     items.equations.clear();
+    questionList =  [];
 }
 
 /*
@@ -232,7 +252,18 @@ function checkAnswer() {
         currentRow.isGood = isRowCorrect;
         currentRow.isValidationImageVisible = true;
         isAllCorrect = isAllCorrect & isRowCorrect;
+
+        // store answer strings for Client data
+        var answerString = "";
+        for(var j = 0; j < currentEquation.count; j++) {
+            answerString += currentEquation.get(j).value;
+        }
+        questionList[indexOfRows].answer = answerString;
+        questionList[indexOfRows].isCorrect = isRowCorrect;
     }
+
+    items.client.sendToServer(isAllCorrect);
+
     if(isAllCorrect) {
         items.goodAnswerSound.play();
         items.bonus.good("flower");

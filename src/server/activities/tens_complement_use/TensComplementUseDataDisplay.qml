@@ -23,6 +23,7 @@ Item {
         Row {
             spacing: Style.margins
             height: Style.lineHeight
+            visible: lineItem.useProposedNumbers
 
             Item {
                 height: Style.lineHeight
