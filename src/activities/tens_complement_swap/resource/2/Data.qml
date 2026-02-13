@@ -10,75 +10,79 @@ Data {
     difficulty: 4
     data: [
         {
-            "value": [
-                [
-                    {
-                        "randomValues": true,
-                        "numberOfElements": 5
-                    },
-                    {
-                        "randomValues": true,
-                        "numberOfElements": 5
-                    },
-                    {
-                        "randomValues": true,
-                        "numberOfElements": 5
-                    }
-                ],
-                [
-                    {
-                        "randomValues": true,
-                        "numberOfElements": 5
-                    },
-                    {
-                        "randomValues": true,
-                        "numberOfElements": 5
-                    },
-                    {
-                        "randomValues": true,
-                        "numberOfElements": 5
-                    },
-                    {
-                        "randomValues": true,
-                        "numberOfElements": 5
-                    }
-                ],
-                [
-                    {
-                        "randomValues": true,
-                        "numberOfElements": 5
-                    },
-                    {
-                        "randomValues": true,
-                        "numberOfElements": 5
-                    },
-                    {
-                        "randomValues": true,
-                        "numberOfElements": 5
-                    },
-                    {
-                        "randomValues": true,
-                        "numberOfElements": 5
-                    }
-                ],
-                [
-                    {
-                        "randomValues": true,
-                        "numberOfElements": 5
-                    },
-                    {
-                        "randomValues": true,
-                        "numberOfElements": 5
-                    },
-                    {
-                        "randomValues": true,
-                        "numberOfElements": 5
-                    },
-                    {
-                        "randomValues": true,
-                        "numberOfElements": 5
-                    }
-                ]
+            "values": [
+                {
+                    "randomValues": true,
+                    "numberOfElements": 5
+                },
+                {
+                    "randomValues": true,
+                    "numberOfElements": 5
+                },
+                {
+                    "randomValues": true,
+                    "numberOfElements": 5
+                }
+            ]
+        },
+        {
+            "values": [
+                {
+                    "randomValues": true,
+                    "numberOfElements": 5
+                },
+                {
+                    "randomValues": true,
+                    "numberOfElements": 5
+                },
+                {
+                    "randomValues": true,
+                    "numberOfElements": 5
+                },
+                {
+                    "randomValues": true,
+                    "numberOfElements": 5
+                }
+            ]
+        },
+        {
+            "values": [
+                {
+                    "randomValues": true,
+                    "numberOfElements": 5
+                },
+                {
+                    "randomValues": true,
+                    "numberOfElements": 5
+                },
+                {
+                    "randomValues": true,
+                    "numberOfElements": 5
+                },
+                {
+                    "randomValues": true,
+                    "numberOfElements": 5
+                }
+            ]
+        },
+        {
+            "values": [
+                {
+                    "randomValues": true,
+                    "numberOfElements": 5
+                },
+                {
+                    "randomValues": true,
+                    "numberOfElements": 5
+                },
+                {
+                    "randomValues": true,
+                    "numberOfElements": 5
+                },
+                {
+                    "randomValues": true,
+                    "numberOfElements": 5
+                }
             ]
         }
     ]

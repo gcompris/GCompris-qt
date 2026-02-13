@@ -10,7 +10,6 @@
 
 var numberOfLevel;
 var items;
-var datasets = [];
 var currentDatasetLevel = 0;
 var numberOfDatasetLevel;
 
@@ -19,14 +18,7 @@ var questionList = [];
 
 function start(items_) {
     items = items_
-    datasets.length = 0;
-    for(var indexForDataset = 0; indexForDataset < items.levels.length; indexForDataset++) {
-        for(var indexForLevel = 0; indexForLevel < items.levels[indexForDataset].value.length; indexForLevel++) {
-            datasets.push(items.levels[indexForDataset].value[indexForLevel]);
-        }
-    }
-    numberOfDatasetLevel = items.levels.length;
-    numberOfLevel = datasets.length;
+    numberOfLevel = items.levels.length
     items.currentLevel = Core.getInitialLevel(numberOfLevel);
     initLevel();
 }
@@ -38,17 +30,21 @@ function stop() {
 function initLevel() {
     clearListModels();
     items.previousSelectedCard = undefined;
-
-    for(var indexOfListModel = 0; indexOfListModel < datasets[items.currentLevel].length; indexOfListModel++) {
+    var currentDataset = items.levels[items.currentLevel];
+    var currentLevelValues = currentDataset.values.slice(0);
+    if(currentDataset.shuffle) {
+        Core.shuffle(currentLevelValues);
+    }
+    for(var indexOfQuestion = 0; indexOfQuestion < currentLevelValues.length; indexOfQuestion++) {
         var model = [];
-        var valueArray = getValueArray(datasets[items.currentLevel][indexOfListModel]);
+        var valueArray = getValueArray(currentLevelValues[indexOfQuestion]);
         for(var indexOfDisplayArray = 0; indexOfDisplayArray < valueArray.length - 1; indexOfDisplayArray++) {
             var card = {};
             if(!Number.isNaN(parseInt(valueArray[indexOfDisplayArray]))) {
                 card = {
                     "type": "numberCard",
                     "value": valueArray[indexOfDisplayArray].toString(),
-                    "rowNumber": indexOfListModel,
+                    "rowNumber": indexOfQuestion,
                     "selected": false,
                     "selectable": true
                 }
@@ -70,7 +66,7 @@ function initLevel() {
             resultCard = {
                 "type": "inputCard",
                 "value": "",
-                "rowNumber": indexOfListModel,
+                "rowNumber": indexOfQuestion,
                 "selected": false,
                 "selectable": true
             }
@@ -114,10 +110,26 @@ function getValueArray(numberArray) {
     var valueArray = [];
     var totalSum = 0;
     var indexOfNumberValue = 0;
-    var countOfNumbers = numberArray.randomValues ? numberArray.numberOfElements : numberArray.numberValue.length;
-    var numberOfPairs = Math.floor(countOfNumbers / 2);
     var values = [];
-    if(numberArray.randomValues) {
+    var numberOfPairs = 0
+    var countOfNumbers = 0
+    // Generate full array for fixed dataset
+    if(!numberArray.randomValues) {
+        values = numberArray.numberValues;
+        numberOfPairs = values.length;
+        // Add needed 10s complements
+        for(var i = 0; i < numberOfPairs; i++) {
+            values.push(10 - values[i]);
+        }
+        // Add extraValue if there's one and less than 5 numbers already
+        if(numberArray.extraValue.length > 0 && values.length < 5) {
+            values.push(numberArray.extraValue[0]);
+        }
+        countOfNumbers = values.length;
+
+    } else {
+        countOfNumbers = numberArray.numberOfElements;
+        numberOfPairs = Math.floor(countOfNumbers / 2);
         var numberOfPairsFilled = 0;
         while(numberOfPairsFilled != numberOfPairs) {
             // Get a number between 1 and 9
@@ -138,18 +150,14 @@ function getValueArray(numberArray) {
             values.push(Math.floor(Math.random() * 9) + 1);
         }
     }
-    else {
-        values = numberArray.numberValue;
-    }
-    if(numberArray.randomizeOrder == undefined || numberArray.randomizeOrder == true) {
-        var maxNumberOfShuffles = 10;
-        do {
-            // Shuffle the numbers before creating the model.
-            // Make sure at least the first computation is not correct to avoid having the possibility to have all good answers at start
-            Core.shuffle(values);
-            maxNumberOfShuffles--;
-        } while(values[0] + values[1] == 10 && maxNumberOfShuffles > 0);
-    }
+    // Shuffle order
+    var maxNumberOfShuffles = 10;
+    do {
+        // Shuffle the numbers before creating the model.
+        // Make sure at least the first computation is not correct to avoid having the possibility to have all good answers at start
+        Core.shuffle(values);
+        maxNumberOfShuffles--;
+    } while(values[0] + values[1] == 10 && maxNumberOfShuffles > 0);
 
     for(var i = 0; i < numberOfPairs; i++) {
         valueArray.push("(");
