@@ -419,4 +419,8 @@ void ActivityInfo::resetLevels()
     enableDatasetsBetweenDifficulties(1, 6);
 }
 
+void ActivityInfo::restoreInitialLevels() {
+    setCurrentLevels();
+}
+
 #include "moc_ActivityInfo.cpp"

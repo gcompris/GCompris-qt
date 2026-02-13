@@ -121,6 +121,7 @@ Item {
      * The current level for this activity.
      */
     property int currentLevel: 0
+    property int numberOfLevel: 0
 
     property var datasets: []
     property var levelFolder
@@ -211,6 +212,28 @@ Item {
     onHome: menu ? menu.home() : ""
     onDisplayDialog: (dialog) => menu ? menu.displayDialog(dialog) : ""
     onDisplayDialogs: (dialogs) => menu ? menu.displayDialogs(dialogs) : ""
+
+    signal activityNextLevel
+    signal nextLevel
+    onNextLevel: {
+        if(ActivityInfoTree.isInSequence) {
+            print(activityInfo.name, "in sequence");
+            print("currentLevel", currentLevel, numberOfLevel);
+            if(currentLevel+1 >= numberOfLevel) {
+                menu.home();
+                menu.startNextActivityInSequence();
+            }
+            else {
+                activityNextLevel();
+            }
+            // check if last level of sequence
+            // if yes, menu.loadNext()
+            // if no, go to next level. Maybe only load the datasets in the sequence, and ignore the other. To know if we are the last one, check the next level number and if 0, then change activity. We may need to move the number of levels in the ActivityBase instead of js
+        }
+        else {
+            activityNextLevel();
+        }
+    }
 
     Keys.forwardTo: activity.children
     Keys.onEscapePressed: home();

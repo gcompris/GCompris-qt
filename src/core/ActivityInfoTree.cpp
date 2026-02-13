@@ -435,6 +435,37 @@ QVariantList ActivityInfoTree::allCharacters()
     return keyboardCharacters;
 }
 
+void ActivityInfoTree::initializeSequence() {
+}
+
+QString ActivityInfoTree::nextActivityInSequence() {
+    static int counter = 0;
+    if (counter < m_sessionSequence.size()) {
+        const auto &[activityName, datasets] = m_sessionSequence[counter];
+        counter ++;
+        // Initialize the datasets to only have the needed ones!
+        for (auto *activity: m_menuTreeFull) {
+            if (activity->name() == activityName) {
+                activity->setCurrentLevels(datasets);
+                break;
+            }
+        }
+        return activityName;
+    }
+    return "";
+}
+
+void ActivityInfoTree::resetAfterSequence() {
+    for(const auto &[activityName, datasets] : m_sessionSequence) {
+        for (auto *activity: m_menuTreeFull) {
+            if (activity->name() == activityName) {
+                activity->restoreInitialLevels();
+                break;
+            }
+        }
+    }
+}
+
 void ActivityInfoTree::createDataset(const QJsonObject &dataset)
 {
     const QString datasetName(dataset["internal_name"].toString());

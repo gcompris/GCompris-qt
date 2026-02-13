@@ -11,6 +11,7 @@
 #define ACTIVITYINFOTREE_H
 
 #include "ActivityInfo.h"
+#include "Sequence.h"
 #include <QQmlEngine>
 #include <QList>
 #include <QDir>
@@ -35,6 +36,8 @@ class ActivityInfoTree : public QObject
      */
     Q_PROPERTY(QString startingActivity MEMBER m_startingActivity NOTIFY startingActivityChanged)
     Q_PROPERTY(int startingLevel MEMBER m_startingLevel NOTIFY startingLevelChanged)
+    Q_PROPERTY(bool isInSequence READ isInSequence NOTIFY isInSequenceChanged)
+
 public:
     static ActivityInfoTree *getInstance()
     {
@@ -66,6 +69,11 @@ public:
     void removeDataset(const QJsonObject &dataset);
     void removeAllLocalDatasets();
 
+    void initializeSequence();
+    bool isInSequence() {
+        return !m_sessionSequence.empty();
+    }
+
 protected:
     static ActivityInfoTree *m_instance;
 
@@ -82,6 +90,8 @@ protected Q_SLOTS:
     Q_INVOKABLE void filterBySearch(const QString &text);
     Q_INVOKABLE void filterByDifficulty(quint32 levelMin, quint32 levelMax);
     Q_INVOKABLE void setCurrentActivityFromName(const QString &name);
+    Q_INVOKABLE void resetAfterSequence();
+    Q_INVOKABLE QString nextActivityInSequence();
 
 Q_SIGNALS:
     void menuTreeChanged();
@@ -89,6 +99,7 @@ Q_SIGNALS:
     void allCharactersChanged();
     void startingActivityChanged();
     void startingLevelChanged();
+    void isInSequenceChanged();
 
 private:
     explicit ActivityInfoTree(QObject *parent = nullptr);
@@ -109,6 +120,8 @@ private:
     static ActivityInfo *menuTreeFullAt(QQmlListProperty<ActivityInfo> *property, QList<ActivityInfo>::size_type index);
 
     QStringList getActivityList();
+
+    Sequence m_sessionSequence;
 
 public:
     static void registerResources();

@@ -168,6 +168,8 @@ ActivityBase {
 
     signal startActivity(string activityName, int level)
 
+    signal startNextActivityInSequence
+
     pageComponent: Image {
         id: activityBackground
         source: activity.url + "background.svg"
@@ -744,6 +746,7 @@ ActivityBase {
 
                 function onStartActivity(activityName: string, level: int) {
                     ActivityInfoTree.setCurrentActivityFromName(activityName)
+                    print(activityName,  ActivityInfoTree.currentActivity.name)
                     var currentLevels = ActivityInfoTree.currentActivity.currentLevels
                     activityLoader.setSource("qrc:/gcompris/src/activities/" + ActivityInfoTree.currentActivity.name,
                     {
@@ -754,6 +757,22 @@ ActivityBase {
                         'levelFolder': currentLevels
                     })
                     if (activityLoader.status == Loader.Ready) loadActivity()
+                }
+
+                function onStartNextActivityInSequence() {
+                    print("next activity in sequence!")
+                    // always start at level 0, we should load dataset in the order of the sequence!
+                    // todo get the activity from ActivityInfoTree.sequence
+                    var nextActivity = ActivityInfoTree.nextActivityInSequence();
+                    if(nextActivity) {
+                        activity.startActivity(nextActivity, 0);
+                    }
+                    else {
+                        // what to do when sequence is finished?
+                        // go back to menu and reload initial state of datasets?
+                        print("end of sequence!")
+                        ActivityInfoTree.resetAfterSequence();
+                    }
                 }
             }
 
