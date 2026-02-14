@@ -435,13 +435,14 @@ QVariantList ActivityInfoTree::allCharacters()
     return keyboardCharacters;
 }
 
-void ActivityInfoTree::initializeSequence() {
+void ActivityInfoTree::initializeSequence(const QByteArray &jsonContent) {
+    m_sessionSequence.loadFromJson(jsonContent);
 }
 
 QString ActivityInfoTree::nextActivityInSequence() {
     QString nextActivity = "";
     if (m_currentActivityInSequence < m_sessionSequence.size()) {
-        const auto &[activityName, datasets] = m_sessionSequence[m_currentActivityInSequence];
+        const auto &[activityName, datasets] = m_sessionSequence.getNextActivity();
         // Initialize the datasets to only have the needed ones!
         for (auto *activity: m_menuTreeFull) {
             if (activity->name() == activityName) {
@@ -451,12 +452,10 @@ QString ActivityInfoTree::nextActivityInSequence() {
             }
         }
     }
-    m_currentActivityInSequence ++;
     return nextActivity;
 }
 
 void ActivityInfoTree::resetAfterSequence() {
-    m_currentActivityInSequence ++;
     for(const auto &[activityName, datasets] : m_sessionSequence) {
         for (auto *activity: m_menuTreeFull) {
             if (activity->name() == activityName) {

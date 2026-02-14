@@ -26,6 +26,10 @@ QtObject {
      *
      */
     property var changelog: [
+            { "versionCode": 270000, "content": [
+                qsTr("New command-line option to run a list of activities with specific datasets in sequence (--with-sequence sequence.json)"),
+                ],
+            },
             { "versionCode": 260000, "content": [
                 qsTr("Translation added for Kannada and Tamil"),
                 qsTr("New command-line option to set the locale (--locale locale)"),

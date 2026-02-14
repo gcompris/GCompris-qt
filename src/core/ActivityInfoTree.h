@@ -69,7 +69,7 @@ public:
     void removeDataset(const QJsonObject &dataset);
     void removeAllLocalDatasets();
 
-    void initializeSequence();
+    void initializeSequence(const QByteArray &jsonContent);
     bool isInSequence() {
         return !m_sessionSequence.empty() && m_currentActivityInSequence <= m_sessionSequence.size();
     }
