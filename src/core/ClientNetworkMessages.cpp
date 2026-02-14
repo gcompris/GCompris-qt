@@ -272,7 +272,7 @@ void ClientNetworkMessages::readFromSocket()
             if (obj.contains("aType")) {
                 switch (obj["aType"].toInt()) {
                 case netconst::LOGIN_LIST:
-                     if (const QJsonValue v = obj["content"]; v.isArray()) {
+                    if (const QJsonValue v = obj["content"]; v.isArray()) {
                         const QJsonArray content = v.toArray();
                         QStringList logins;
                         for (int i = 0; i < content.size(); i++) {
@@ -315,6 +315,12 @@ void ClientNetworkMessages::readFromSocket()
                 case netconst::PONG:
                     _missedPongs = 0;
                     break;
+                case netconst::SEQUENCE_START: {
+                    QJsonDocument doc(obj["content"].toObject());
+                    ActivityInfoTree::getInstance()->initializeSequence(doc.toJson());
+                    Q_EMIT ActivityInfoTree::getInstance()->startSequence();
+                    break;
+                }
                 default:
                     qDebug() << "Received unknown message" << obj["aType"].toInt();
                 }

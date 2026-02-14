@@ -100,6 +100,7 @@ Q_SIGNALS:
     void startingActivityChanged();
     void startingLevelChanged();
     void isInSequenceChanged();
+    void startSequence();
 
 private:
     explicit ActivityInfoTree(QObject *parent = nullptr);

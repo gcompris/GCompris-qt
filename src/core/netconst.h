@@ -29,7 +29,8 @@ namespace netconst {
         DATASET_REMOVE,
         DATASET_REMOVE_ALL,
         PING,
-        PONG
+        PONG,
+        SEQUENCE_START
     };
     Q_ENUM_NS(MessageType)
 
