@@ -26,7 +26,8 @@ QtObject {
      *
      */
     property var changelog: [
-            { "versionCode": 270000, "content": [ // versionCode TBD...
+            { "versionCode": 270000, "content": [
+                qsTr("New command-line option to run a list of activities with specific datasets in sequence (--with-sequence sequence.json)"),
                 qsTr("Many usability improvements"),
                 qsTr("Many bug fixes")
                 ],

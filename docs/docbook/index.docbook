@@ -340,6 +340,9 @@ or make it show real car images instead of filled rectangles (traffic).</para>
 <entry>--locale=locale</entry>
 <entry>Run &gcompris; with the specified locale.</entry>
 </row>
+<row>
+<entry>--with-sequence=sequence.json</entry>
+<entry>Run &gcompris; with the specific sequence. A sequence is a list of activities with specific datasets, forcing GCompris to run them in the specified order.</entry>
 </tbody>
 </tgroup>
 </informaltable>
