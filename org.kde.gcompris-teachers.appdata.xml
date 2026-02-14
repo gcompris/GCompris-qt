@@ -13,23 +13,65 @@
   </developer>
   <launchable type="desktop-id">org.kde.gcompris-teachers.desktop</launchable>
   <name>GCompris-teachers</name>
+  <name xml:lang="bg">GCompris за учители</name>
+  <name xml:lang="ca">GCompris-teachers</name>
+  <name xml:lang="ca-valencia">GCompris-teachers</name>
+  <name xml:lang="es">GCompris-teachers</name>
+  <name xml:lang="pt-BR">GCompris-teachers</name>
+  <name xml:lang="uk">GCompris-teachers</name>
   <summary>GCompris teachers companion</summary>
+  <summary xml:lang="bg">Съпътстваща програма за учители на GCompris</summary>
+  <summary xml:lang="ca">Acompanyament del professorat del GCompris</summary>
+  <summary xml:lang="ca-valencia">Acompanyament del professorat de GCompris</summary>
+  <summary xml:lang="es">Complemento de GCompris para profesores</summary>
+  <summary xml:lang="pt-BR">Aplicativo complementar do GCompris para professores</summary>
+  <summary xml:lang="uk">Компаньйон GCompris для вчителів</summary>
   <description>
     <p>GCompris-teachers is a companion application for teachers to enhance their use of GCompris in their classroom.</p>
+    <p xml:lang="bg">GCompris-за учители е съпътстващо приложение за учители, което им помага да подобрят използването на GCompris в класните занимания.</p>
+    <p xml:lang="ca">El GCompris-teachers és una aplicació d'acompanyament del professorat per a millorar l'ús del GCompris a les seves classes.</p>
+    <p xml:lang="ca-valencia">GCompris-teachers és una aplicació d'acompanyament del professorat per a millorar l'ús de GCompris en les seues classes.</p>
+    <p xml:lang="es">GCompris-teachers es una aplicación complementaria para profesores que permite potenciar el uso de GCompris en clase.</p>
+    <p xml:lang="pt-BR">GCompris-teachers é um aplicativo complementar para professores que visa aprimorar o uso do GCompris em sala de aula.</p>
+    <p xml:lang="uk">GCompris-teachers – це супутня програма для вчителів, яка полегшує використання GCompris у класі.</p>
     <p>It allows teachers to create customized datasets and receive pupils
     results for some activities.</p>
+    <p xml:lang="bg">Тя позволява на учителите да създават персонализирани набори от данни и да получават резултатите на учениците за някои дейности.</p>
+    <p xml:lang="ca">Permet als professors crear conjunts de dades personalitzats i rebre els resultats dels alumnes per a algunes activitats.</p>
+    <p xml:lang="ca-valencia">Permet als professors crear conjunts de dades personalitzats i rebre els resultats dels alumnes per a algunes activitats.</p>
+    <p xml:lang="es">Permite a los profesores crear conjuntos de datos personalizados y recibir de los alumnos el resultado de algunas actividades.</p>
+    <p xml:lang="pt-BR">Permite que os professores criem conjuntos de dados personalizados e recebam os resultados dos alunos em determinadas atividades.</p>
+    <p xml:lang="uk">Надає змогу вчителям створювати нетипові набори даних та отримати результати учнів для деяких вправ.</p>
   </description>
   <screenshots>
     <screenshot type="default">
       <caption>Pupils and groups management</caption>
+      <caption xml:lang="bg">Управление на учениците и групите</caption>
+      <caption xml:lang="ca">Gestió d'alumnes i grups</caption>
+      <caption xml:lang="ca-valencia">Gestioneu alumnes i grups</caption>
+      <caption xml:lang="es">Gestión de alumnos y grupos</caption>
+      <caption xml:lang="pt-BR">Gerenciamento de alunos e grupos</caption>
+      <caption xml:lang="uk">Керування записами учнів та груп</caption>
       <image width="1920" height="1080">https://gcompris.net/screenshots_qt/gcompris-teachers/gcompris-teachers-pupils.png</image>
     </screenshot>
     <screenshot>
       <caption>Results display for one pupil</caption>
+      <caption xml:lang="bg">Резултати за определен ученик</caption>
+      <caption xml:lang="ca">Visualització de resultats d'un alumne</caption>
+      <caption xml:lang="ca-valencia">Visualització de resultats d'un alumne</caption>
+      <caption xml:lang="es">Visualización de los resultados de un alumno</caption>
+      <caption xml:lang="pt-BR">Exibição dos resultados para um aluno</caption>
+      <caption xml:lang="uk">Показ результатів для одного учня</caption>
       <image width="1920" height="1080">https://gcompris.net/screenshots_qt/gcompris-teachers/gcompris-teachers-results.png</image>
     </screenshot>
     <screenshot>
       <caption>Results display for vertical subtraction activity</caption>
+      <caption xml:lang="bg">Показване на резултати за упражнението за вертикално изваждане</caption>
+      <caption xml:lang="ca">Visualització de resultats de l'activitat de sostracció vertical</caption>
+      <caption xml:lang="ca-valencia">Visualització de resultats de l'activitat de sostracció vertical</caption>
+      <caption xml:lang="es">Visualización de los resultados de la actividad de resta vertical</caption>
+      <caption xml:lang="pt-BR">Exibição dos resultados da atividade de subtração vertical</caption>
+      <caption xml:lang="uk">Показ результатів для вправи з вертикального віднімання</caption>
       <image width="1920" height="1080">https://gcompris.net/screenshots_qt/gcompris-teachers/gcompris-teachers-vertical-subtraction.png</image>
     </screenshot>
   </screenshots>
