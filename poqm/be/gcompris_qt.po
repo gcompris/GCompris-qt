@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-02-06 22:13+0300\n"
+"PO-Revision-Date: 2026-02-14 21:50+0300\n"
 "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -22797,26 +22797,15 @@ msgid "Procedure:"
 msgstr "Працэдура:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:564
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>Procedure</b> is a reusable set of instructions which can be <b>used "
-#| "in the code by calling it where needed</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
 "the code by calling it where needed</b>."
 msgstr ""
-"<b>Працэдурай</b> называецца ўніверсальны набор інструкцый, які можа быць "
-"<b>ужыты ў кодзе выкліканнем яе ў патрэбным месцы</b>."
+"<b>Працэдурай</b> называецца набор інструкцый, які можа быць <b>ужыты ў "
+"кодзе выкліканнем яе ў патрэбным месцы</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:565
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main "
-#| "Function area</b> to add your code, click on the <b>Procedure</b> or "
-#| "<b>Main Function</b> label."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
@@ -22824,7 +22813,7 @@ msgid ""
 "Function</b> label."
 msgstr ""
 "-Для <b>пераключэння</b> між <b>зонай працэдуры</b> і <b>зонай галоўнай "
-"функцыі</b> для дадавання коду, пстрыкніце па загалоўку <b>Працэдура</b> ці "
+"функцыі</b> каб дадаць ваш код, пстрыкніце па загалоўку <b>Працэдура</b> ці "
 "<b>Галоўная функцыя</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:575
@@ -22840,20 +22829,15 @@ msgid ""
 msgstr ""
 
 #: activities/programmingMaze/ProgrammingMaze.qml:577
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
-#| "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</"
-#| "b> label."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
 "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> "
 "label."
 msgstr ""
-"-Для <b>пераключэння</b> між <b>зонай цыклу</b> і <b>зонай праграмы</b> каб "
-"дадаць код, пстрыкніце па загалоўку <b>Цыкл</b> ці <b>Праграма</b>."
+"-Для <b>пераключэння</b> між <b>зонай цыклу</b> і <b>зонай галоўнай функцыі</"
+"b> каб дадаць код, пстрыкніце па загалоўку <b>Цыкл</b> ці <b>Галоўная "
+"функцыя</b>."
 
 #: activities/programmingMaze/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -26282,36 +26266,24 @@ msgid "Right Ballast Tank"
 msgstr "Правая баластная цыстэрна"
 
 #: activities/submarine/Submarine.qml:133
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Move the submarine to the other side of the screen."
 msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "Кіруйце падводную лодку да супрацьлеглага краю экрана."
 
 #: activities/submarine/Submarine.qml:136
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The leftmost item in the control panel is the engine of the submarine, "
-#| "indicating the current speed of the submarine."
 msgctxt "Submarine|"
 msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
 "indicating the current speed of the submarine."
 msgstr ""
-"Леваруч на кантрольнай панэлі знаходзіцца кіраванне рухавіком з індыкатарам "
-"бягучай велічыні хуткасці падводнай лодкі."
+"З левага краю на кантрольнай панэлі знаходзіцца індыкатар рухавіка, які "
+"паказвае бягучую велічыню хуткасці падводнай лодкі."
 
 #: activities/submarine/Submarine.qml:139
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "Increase or decrease the velocity of the submarine using the engine."
 msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr ""
-"Павялічвайце ці памяншайце хуткасць падводнай лодкі пры дапамозе кіравання "
-"рухавіком."
+"Кіруючы рухавіком, павялічвайце ці памяншайце хуткасць падводнай лодкі."
 
 #: activities/submarine/Submarine.qml:142
 #, fuzzy

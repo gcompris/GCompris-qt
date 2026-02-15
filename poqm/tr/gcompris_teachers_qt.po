@@ -1202,12 +1202,12 @@ msgctxt "EditorBox|"
 msgid "Move down"
 msgstr "Aşağı taşı"
 
-#: server/components/FieldEdit.qml:318
+#: server/components/FieldEdit.qml:321
 msgctxt "FieldEdit|"
 msgid "Add an entry"
 msgstr "Girdi ekle"
 
-#: server/components/FieldEdit.qml:330
+#: server/components/FieldEdit.qml:333
 msgctxt "FieldEdit|"
 msgid "Remove last entry"
 msgstr "Son girdiyi kaldır"

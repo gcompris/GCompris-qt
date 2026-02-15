@@ -1212,12 +1212,12 @@ msgctxt "EditorBox|"
 msgid "Move down"
 msgstr "Przenieś w dół"
 
-#: server/components/FieldEdit.qml:318
+#: server/components/FieldEdit.qml:321
 msgctxt "FieldEdit|"
 msgid "Add an entry"
 msgstr "Dodaj wpis"
 
-#: server/components/FieldEdit.qml:330
+#: server/components/FieldEdit.qml:333
 msgctxt "FieldEdit|"
 msgid "Remove last entry"
 msgstr "Usuń ostatni wpis"
