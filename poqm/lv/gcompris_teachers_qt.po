@@ -1206,12 +1206,12 @@ msgctxt "EditorBox|"
 msgid "Move down"
 msgstr "Pārvietot lejup"
 
-#: server/components/FieldEdit.qml:318
+#: server/components/FieldEdit.qml:321
 msgctxt "FieldEdit|"
 msgid "Add an entry"
 msgstr "Pievienot ierakstu"
 
-#: server/components/FieldEdit.qml:330
+#: server/components/FieldEdit.qml:333
 msgctxt "FieldEdit|"
 msgid "Remove last entry"
 msgstr "Noņemt pēdējo ierakstu"
