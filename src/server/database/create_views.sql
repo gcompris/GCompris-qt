@@ -88,3 +88,15 @@ CREATE VIEW _dataset_activity AS
       FROM dataset_, activity_
      WHERE dataset_.activity_id=activity_.activity_id;
 
+
+CREATE VIEW sequence_activity_ AS
+SELECT sequence_.sequence_id, sequence_.sequence_name, sequence_.sequence_objective,
+       activity_with_datasets_.activity_id, sequence_with_activity_.activity_rank,
+       activity_.activity_name, dataset_.dataset_id, dataset_.dataset_name
+  FROM sequence_, sequence_with_activity_, activity_with_datasets_, dataset_, activity_
+WHERE sequence_.sequence_id=sequence_with_activity_.sequence_id
+  AND sequence_with_activity_.activity_with_data_id=activity_with_datasets_.act_dat_id
+  AND activity_.activity_id=activity_with_datasets_.activity_id
+  AND dataset_.dataset_id=activity_with_datasets_.dataset_id
+ORDER BY sequence_.sequence_id, sequence_with_activity_.activity_rank ASC;
+

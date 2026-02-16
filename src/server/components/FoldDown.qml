@@ -226,6 +226,8 @@ Item {
                                 return "RadioSimpleDelegate.qml"
                             case "radioActivity":
                                 return "RadioActivityDelegate.qml"
+                            case "radioSequence":
+                                return "RadioSequenceDelegate.qml"
                             case "radioGroupEdit":
                                 return "RadioGroupEditDelegate.qml"
                             default:

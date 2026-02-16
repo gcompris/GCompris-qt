@@ -66,6 +66,10 @@ namespace controllers {
         Q_INVOKABLE int updateDataset(const int datasetId, const QString &datasetName, const QString &objective = QString(), const int difficulty = 1, const QString &content = QString());
         Q_INVOKABLE bool deleteDataset(const int datasetId);
 
+        Q_INVOKABLE int addSequence(const QString &sequenceName, const QString &objective, const QVariantList &sequenceList);
+        //Q_INVOKABLE int updateSequence(const int sequenceId, const QString &sequenceName, const QString &objective = QString()); //, Sequence of act/datasets!
+        Q_INVOKABLE bool deleteSequence(const int sequenceId);
+
         /* ---------------------- */
         bool createRow(const QString &tableName, const QString &id, const QJsonObject &jsonObject) const;
         bool deleteRow(const QString &tableName, const QString &id) const;

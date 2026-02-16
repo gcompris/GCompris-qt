@@ -29,7 +29,7 @@
 
 #include "File.h"
 
-#define DB_VERSION 12
+#define DB_VERSION 13
 #define SCHEMA_SQL ":/gcompris/src/server/database/create_tables.sql"
 #define VIEWS_SQL ":/gcompris/src/server/database/create_views.sql"
 #define PATCH_SQL ":/gcompris/src/server/database/patch_%1.sql"
@@ -694,6 +694,75 @@ namespace controllers {
             triggerDBError(query.lastError(), tr("Dataset <b>%1</b> couldn't be deleted.").arg(datasetId));
         }
         return datasetRemoved;
+    }
+
+    int DatabaseController::addSequence(const QString &sequenceName, const QString &objective, const QVariantList &sequenceList)
+    {
+        int sequenceId = -1;
+        QSqlQuery query(database);
+        query.prepare("INSERT INTO sequence_ (sequence_name, sequence_objective) VALUES (:sequenceName, :objective)");
+        query.bindValue(":sequenceName", sequenceName);
+        query.bindValue(":objective", objective);
+        if (query.exec()) {
+            sequenceId = query.lastInsertId().toInt();
+        }
+        else {
+            triggerDBError(query.lastError(), tr("Error inserting sequence in table sequence_: <b>%1</b>.").arg(sequenceName));
+            return sequenceId;
+        }
+        int rank = 0;
+        for (const QVariant &elt: sequenceList) {
+            QVariantMap sequence = elt.toMap();
+            query.prepare("INSERT INTO activity_with_datasets_ (activity_id, dataset_id) VALUES (:activityId, :datasetId)");
+            query.bindValue(":activityId", sequence["activityId"].toInt());
+            query.bindValue(":datasetId", sequence["datasetId"].toInt());
+            if (query.exec()) {
+                int act_dat_id = query.lastInsertId().toInt();
+                query.prepare("INSERT INTO sequence_with_activity_ (sequence_id, activity_with_data_id, activity_rank) VALUES (:sequenceId, :activityWithDatasetId, :activityRank)");
+                query.bindValue(":sequenceId", sequenceId);
+                query.bindValue(":activityWithDatasetId", act_dat_id);
+                query.bindValue(":activityRank", rank);
+                if (query.exec()) {
+                    int seq_act_id = query.lastInsertId().toInt();
+                }
+            }
+            rank ++;
+        }
+        return sequenceId;
+    }
+
+    /*int DatabaseController::updateSequence(const int sequenceId, const QString &sequenceName, const QString &objective)
+    {
+        QSqlQuery query(database);
+        return sequenceId;
+    }*/
+
+    bool DatabaseController::deleteSequence(const int sequenceId)
+    {
+        bool sequenceRemoved = false;
+        QSqlQuery query(database);
+        query.prepare("DELETE FROM activity_with_datasets_ WHERE act_dat_id IN ( SELECT act_dat_id FROM activity_with_datasets_ a INNER JOIN sequence_with_activity_ b ON a.act_dat_id=b.activity_with_data_id WHERE b.sequence_id=:id );");
+        query.bindValue(":id", sequenceId);
+        if (query.exec()) {
+            query.prepare("DELETE FROM sequence_with_activity_ WHERE sequence_id=:id");
+            query.bindValue(":id", sequenceId);
+            if(query.exec()) {
+                query.prepare("DELETE FROM sequence_ WHERE sequence_id=:id");
+                query.bindValue(":id", sequenceId);
+                if (query.exec())
+                    sequenceRemoved = true;
+                else
+                    triggerDBError(query.lastError(), tr("Sequence <b>%1</b> could not be deleted from table sequence_.").arg(sequenceId));
+                sequenceRemoved = query.exec();
+            }
+            else {
+                triggerDBError(query.lastError(), tr("Sequence <b>%1</b> couldn't be deleted from table sequence_with_activity_.").arg(sequenceId));
+            }
+        }
+        else {
+            triggerDBError(query.lastError(), tr("Sequence <b>%1</b> couldn't be deleted from table activity_with_datasets_.").arg(sequenceId));
+        }
+        return sequenceRemoved;
     }
 
     /*----------------------------------------------*/

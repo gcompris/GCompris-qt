@@ -26,6 +26,7 @@ Item {
     property alias userCreatedDatasetModel: userCreatedDatasetModel
     property alias allDatasetModel: allDatasetModel
     property alias filteredDatasetModel: filteredDatasetModel
+    property alias sequenceModel: sequenceModel
     property bool trace: false
     property int groupFilterId: -1     // contains selected group id
 
@@ -109,6 +110,7 @@ Item {
     ListModel { id: allDatasetModel }
     ListModel { id: filteredDatasetModel }  // For checkBoxes lists (multiselection -> works on userCreatedDatasetModel only)
     ListModel { id: tmpModel }              // Used for temporary requests inside functions
+    ListModel { id: sequenceModel }
 
 //// Groups functions
 
@@ -744,6 +746,88 @@ Item {
         }
     }
 
+//// Sequences functions
+    function loadSequences() {
+        modelFromRequest(tmpModel, "SELECT * FROM sequence_activity_")
+        var allSequenceData = {};
+        for (var id = 0 ; id < tmpModel.count; ++ id) {
+            var currentData = tmpModel.get(id);
+            if (currentData.sequence_id in allSequenceData) {
+                allSequenceData[currentData.sequence_id]["sequenceList"].push({
+                    "activityId": currentData.activity_id,
+                    "activity_name": currentData.activity_name,
+                    "datasetId": currentData.dataset_id,
+                    "dataset_name": currentData.dataset_name
+                })
+            }
+            else {
+                allSequenceData[currentData.sequence_id] = {
+                    "sequence_id": currentData.sequence_id,
+                    "sequence_name": currentData.sequence_name,
+                    "sequence_objective": currentData.sequence_objective,
+                    "sequenceList": [{
+                        "activityId": currentData.activity_id,
+                        "activity_name": currentData.activity_name,
+                        "datasetId": currentData.dataset_id,
+                        "dataset_name": currentData.dataset_name
+                    }],
+                    "sequence_checked":false
+                }
+            }
+        }
+        for (var id in allSequenceData) {
+            sequenceModel.append(allSequenceData[id]);
+        }
+        listModelSort(sequenceModel, (a, b) => (a.sequence_name.localeCompare(b.sequence_name)));
+        if (trace) console.warn(groupModel.count, "Sequences loaded")
+    }
+
+    function createSequence(name, objective, sequence) {
+        var sequenceId = databaseController.addSequence(name, objective, sequence)
+        if (sequenceId !== -1) {
+            print("aaa", JSON.stringify(sequence))
+            sequenceModel.append({ "sequence_id": sequenceId,
+                "sequence_name": name,
+                "sequence_objective": objective,
+                "sequenceList": sequence.slice(0),
+                "sequence_checked": true
+            })
+            if (trace) console.warn("Sequence created:", name, objective)
+        }
+        return sequenceId
+    }
+
+    function deleteSequence(sequenceId) {       // int
+        var sequence
+        var index = -1;
+        // find the index in the model
+        for (var j = 0; j < sequenceModel.count; j++) {
+            var dataSel = sequenceModel.get(j)
+            if (dataSel.sequence_id == sequenceId) {
+                sequence = dataSel
+                index = j
+                break;
+            }
+        }
+
+        if (databaseController.deleteSequence(sequence.sequence_id)) {
+            sequenceModel.remove(index)
+            if (trace) console.warn("Sequence deleted:", sequence.sequence_id ," - ", sequence.sequence_name)
+            return true
+        }
+        return false
+    }
+
+    function getSequence(sequenceId) {       // int
+        // find the index in the model
+        for (var j = 0; j < sequenceModel.count; j++) {
+            var sequenceSelected = sequenceModel.get(j)
+            if (sequenceSelected.sequence_id == sequenceId) {
+                return sequenceSelected
+            }
+        }
+    }
+
     function initialize() {
         if (trace) console.warn("Initialize Master component")
         loadGroups()
@@ -756,6 +840,7 @@ Item {
         loadActivitiesWithData(activityWithDataModel)
         loadDatasets()
         filterDatasets(-1, false)
+        loadSequences()
     }
 
     Component.onCompleted: {

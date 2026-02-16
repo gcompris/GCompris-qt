@@ -341,6 +341,23 @@ namespace controllers {
         sendNetLog(QString("All datasets removed for %1 users").arg(count));
     }
 
+    void NetworkController::sendSequenceToUsers(const QJsonValue &sequence_content, const QList<int> &selectedUsersId) {
+        qDebug() << "NetworkController::sendSequenceToUsers" << sequence_content << selectedUsersId;
+        QJsonObject obj { { "aType", netconst::SEQUENCE_START } };
+        obj.insert("content", sequence_content);
+        int count = 0;
+
+        qDebug() << obj;
+        for (const auto &[socket, user] : std::as_const(usersMap).asKeyValueRange()) {
+            int socketUserId = user->getUserId();
+            if (selectedUsersId.contains(socketUserId)) { // Send to connected users
+                sendJson(socket, obj);
+                count++;
+            }
+        }
+        sendNetLog(QString("Sequence sent to %1 users").arg(count));
+    }
+
     void NetworkController::acceptPassword(const int userId, const QString &userName)
     {
 

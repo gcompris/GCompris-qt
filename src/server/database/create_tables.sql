@@ -59,6 +59,30 @@ CREATE TABLE dataset_ (
 	CONSTRAINT unq_dataset_name UNIQUE ( dataset_name, activity_id )
  );
 
+CREATE TABLE sequence_ (
+       	sequence_id          INTEGER NOT NULL  PRIMARY KEY AUTOINCREMENT ,
+	sequence_objective   TEXT NOT NULL    ,
+	sequence_name        TEXT NOT NULL    ,
+	CONSTRAINT unq_sequence_name UNIQUE ( sequence_name )
+ );
+
+CREATE TABLE activity_with_datasets_ ( 
+	act_dat_id           INTEGER NOT NULL  PRIMARY KEY AUTOINCREMENT ,
+	activity_id          INTEGER NOT NULL    ,
+	dataset_id           INTEGER NOT NULL    ,
+	FOREIGN KEY ( activity_id ) REFERENCES activity_( activity_id )  ,
+	FOREIGN KEY ( dataset_id ) REFERENCES dataset_( dataset_id )  
+ );
+ 
+CREATE TABLE sequence_with_activity_ ( 
+	seq_act_id            INTEGER NOT NULL  PRIMARY KEY AUTOINCREMENT ,
+	sequence_id           INTEGER NOT NULL    ,
+	activity_with_data_id INTEGER NOT NULL    ,
+	activity_rank         INTEGER NOT NULL    ,
+	FOREIGN KEY ( sequence_id ) REFERENCES sequence_( sequence_id )  ,
+	FOREIGN KEY ( activity_with_data_id ) REFERENCES activity_with_datasets_( id )  
+ );
+
 CREATE INDEX idx_activity_user_id ON result_ ( user_id );
 
 CREATE INDEX idx_activity_user_name ON result_ ( activity_id );
