@@ -55,6 +55,11 @@ class Dataset : public QObject
      */
     Q_PROPERTY(bool enabled READ enabled WRITE setEnabled NOTIFY enabledChanged)
 
+    /**
+     * If the dataset is an internal GCompris one or a user created one.
+     */
+    Q_PROPERTY(bool userCreated READ userCreated WRITE setUserCreated NOTIFY userCreatedChanged)
+
 public:
     /// @cond INTERNAL_DOCS
     explicit Dataset(QObject *parent = nullptr);
@@ -67,18 +72,22 @@ public:
     void setData(const QVariant &);
     bool enabled() const;
     void setEnabled(const bool &);
+    bool userCreated() const;
+    void setUserCreated(const bool &);
     /// @endcond
 Q_SIGNALS:
     void objectiveChanged();
     void difficultyChanged();
     void dataChanged();
     void enabledChanged();
+    void userCreatedChanged();
 
 private:
     QString m_objective;
     quint32 m_difficulty;
     QVariant m_data;
     bool m_enabled;
+    bool m_userCreated;
 };
 
 #endif // DATASET_H

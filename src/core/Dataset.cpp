@@ -13,7 +13,8 @@ Dataset::Dataset(QObject *parent) :
     QObject(parent),
     m_objective(""),
     m_difficulty(0),
-    m_enabled(true)
+    m_enabled(true),
+    m_userCreated(false)
 {
 }
 
@@ -56,6 +57,16 @@ void Dataset::setEnabled(const bool &enabled)
 {
     m_enabled = enabled;
     Q_EMIT enabledChanged();
+}
+
+bool Dataset::userCreated() const
+{
+    return m_userCreated;
+}
+void Dataset::setUserCreated(const bool &userCreated)
+{
+    m_userCreated = userCreated;
+    Q_EMIT userCreatedChanged();
 }
 
 #include "moc_Dataset.cpp"
