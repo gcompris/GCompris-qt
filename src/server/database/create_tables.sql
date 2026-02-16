@@ -54,6 +54,7 @@ CREATE TABLE dataset_ (
 	dataset_name         TEXT NOT NULL    ,
 	dataset_difficulty   INTEGER NOT NULL   ,
 	dataset_content      TEXT NOT NULL    ,
+        is_created_dataset   BOOLEAN  NOT NULL  ,
 	FOREIGN KEY ( activity_id ) REFERENCES activity_( activity_id ),
 	CONSTRAINT unq_dataset_name UNIQUE ( dataset_name, activity_id )
  );

@@ -139,7 +139,7 @@ Item {
                         var datasetJson = {"dataset_id": dataset.dataset_id,
                             "activity_id": dataset.activity_id,
                             "activity_name": dataset.activity_name,
-                            "dataset_name": dataset.dataset_name,
+                            "internal_name": dataset.internal_name,
                             "dataset_objective": dataset.dataset_objective,
                             "dataset_difficulty": dataset.dataset_difficulty,
                             "dataset_content": dataset.dataset_content};
@@ -157,7 +157,7 @@ Item {
                         var dataset = Master.getDataset(datasetsView.selectedDataset)
                         var datasetJson = {"dataset_id": dataset.dataset_id,
                             "activity_name": dataset.activity_name,
-                            "dataset_name": dataset.dataset_name,
+                            "internal_name": dataset.internal_name,
                         };
                         sendDatasetDialog.openDatasetDialog(datasetJson, SendDatasetDialog.MessageType.Remove)
                     }
