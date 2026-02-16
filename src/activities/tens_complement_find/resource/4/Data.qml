@@ -11,20 +11,20 @@ Data {
     data: [
         {
             randomValues: true,
-            randomQuestionPosition: true,
+            shuffleOperands: true,
             numberOfSublevels: 5,
-            numberOfEquations: 3,
-            numberOfNumbersInLeftContainer: 6,
+            numberOfAdditions: 3,
+            numberOfExtraCards: 0,
             findBothNumbers: true,
             minimumFirstValue: 1,
             maximumFirstValue: 9
         },
         {
             randomValues: true,
-            randomQuestionPosition: true,
+            shuffleOperands: true,
             numberOfSublevels: 5,
-            numberOfEquations: 3,
-            numberOfNumbersInLeftContainer: 6,
+            numberOfAdditions: 3,
+            numberOfExtraCards: 0,
             findBothNumbers: true,
             minimumFirstValue: 1,
             maximumFirstValue: 9

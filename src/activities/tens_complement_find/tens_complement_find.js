@@ -38,31 +38,39 @@ function initLevel() {
     var currentDataset = items.levels[items.currentLevel];
     var equations = [];
     var cards = [];
+    var firstOperands = [];
     if(currentDataset.randomValues) {
         numberOfSubLevel = currentDataset.numberOfSublevels;
+        var numberOfAdditions = currentDataset.numberOfAdditions;
+        // Safety check to limit to 2 additions as the layout can not fit more.
+        if(numberOfAdditions > 3) {
+            console.log("Warning: dataset numberOfAdditions must not be greater than 3.");
+            numberOfAdditions = 3;
+        }
+
         var cardToDisplayIndex = 0;
-        for(var equationIndex = 0 ; equationIndex < currentDataset.numberOfEquations ; ++ equationIndex) {
-            // First fill the left hand containers with all the numbers
+        for(var equationIndex = 0 ; equationIndex < numberOfAdditions ; ++ equationIndex) {
+            // First fill the first operands
             var minValue = currentDataset.minimumFirstValue;
             var maxValue = currentDataset.maximumFirstValue;
-            var leftHandSide;
+            var generatedNumber = 0;
             var numberAlreadyExists = true;
             var tryCount = 10; // Avoid too many attempts. There should not be too much duplicates.
             while(numberAlreadyExists && tryCount > 0) {
-                leftHandSide = Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;
+                generatedNumber = Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;
                 numberAlreadyExists = false;
-                // We check if the tens complement of the number is already used.
+                // We check if the number is already in the list.
                 // This way, for levels where all numbers have to be found, we are sure to not have duplicates
-                for(var i = 0 ; i < cards.length ; ++ i) {
-                    var counterpart = (10 - leftHandSide).toString();
-                    if(counterpart == cards[i].value) {
+                for(var i = 0 ; i < firstOperands.length ; ++ i) {
+                    if(generatedNumber == firstOperands[i].value) {
                         numberAlreadyExists = true;
                     }
                 }
                 tryCount --;
             }
+            firstOperands.push(generatedNumber);
 
-            var rightHandSide = 10 - leftHandSide;
+            var rightHandSide = 10 - generatedNumber;
             var card = {
                 "value": rightHandSide.toString(),
                 "visibility": true,
@@ -73,7 +81,7 @@ function initLevel() {
 
             if(currentDataset.findBothNumbers) {
                 var card = {
-                    "value": leftHandSide.toString(),
+                    "value": generatedNumber.toString(),
                     "visibility": true,
                     "isSignSymbol": false,
                     "clickable": true
@@ -83,36 +91,74 @@ function initLevel() {
 
             var toShuffleQuestionValue;
             if(!currentDataset.findBothNumbers) {
-                toShuffleQuestionValue = [leftHandSide.toString(), "?"];
+                toShuffleQuestionValue = [generatedNumber.toString(), "?"];
+                if(currentDataset.shuffleOperand) {
+                    Core.shuffle(toShuffleQuestionValue);
+                }
             }
             else {
                 toShuffleQuestionValue = ["?", "?"];
             }
-            if(currentDataset.randomQuestionPosition) {
-                Core.shuffle(toShuffleQuestionValue);
-            }
             equations.push(createEquation(toShuffleQuestionValue));
         }
-        // Append more random cards if needed between 1 and 9
-        for(var i = cards.length ; i < currentDataset.numberOfNumbersInLeftContainer ; ++ i) {
+
+        var numberOfCards = cards.length + currentDataset.numberOfExtraCards;
+        // Safety check to limit to 6 cards as the layout can not fit more.
+        if(numberOfCards > 6) {
+            console.log("Warning: dataset numberOfExtraCards is too large, the total number of cards must not be greater than 6.");
+            numberOfCards = 6;
+        }
+        // Fill left container
+        var numberOfCardsToFill = numberOfCards - cards.length;
+        for(var i = 0; i < numberOfCardsToFill; i++) {
             var randomNumber = Math.floor(Math.random() * 9) + 1;
             var card = {
                 "value": randomNumber.toString(),
                 "visibility": true,
                 "isSignSymbol": false,
                 "clickable": true
-            } 
+            }
             cards.push(card);
         }
     }
+    // Fixed dataset with !currentDataset.randomValues
     else {
-        var sublevel = currentDataset.values[currentSubLevel];
+        var subLevel = currentDataset.values[items.score.currentSubLevel];
         numberOfSubLevel = currentDataset.values.length;
 
-        var cardsToDisplay = sublevel.numberValue.length;
-        for(var cardToDisplayIndex = 0 ; cardToDisplayIndex < cardsToDisplay ; cardToDisplayIndex++) {
+        firstOperands = subLevel.firstOperands.slice(0);
+        var cardNumbers = [];
+        var numberOfAdditions = firstOperands.length;
+        // Safety check to limit to 3 additions as the layout can not fit more.
+        if(numberOfAdditions > 3) {
+            console.log("Warning: dataset firstOperands must not contain more than 3 numbers.")
+            numberOfAdditions = 3;
+        }
+        for(var equationIndex = 0 ; equationIndex < numberOfAdditions ; ++ equationIndex ) {
+            cardNumbers.push(10 - firstOperands[equationIndex]);
+            if(currentDataset.findBothNumbers) {
+                cardNumbers.push(firstOperands[equationIndex]);
+            }
+        }
+
+        var extraCards = subLevel.extraCards.slice(0);
+        var numberOfCards = cardNumbers.length + extraCards.length;
+        if(numberOfCards > 6) {
+            console.log("Warning: dataset extraCards is too large, the total number of cards must not be greater than 6.");
+            var maxEtraAllowed = 6 - cardNumbers.length;
+            var numbersToRemove = extraCards.length - maxEtraAllowed;
+            extraCards.splice(maxEtraAllowed, numbersToRemove);
+            numberOfCards = 6;
+        }
+
+        for(var i = 0; i < extraCards.length; i++) {
+            cardNumbers.push(extraCards[i]);
+        }
+
+        // populate cards
+        for(var cardToDisplayIndex = 0 ; cardToDisplayIndex < numberOfCards ; cardToDisplayIndex++) {
             var card = {
-                "value": sublevel.numberValue[cardToDisplayIndex].toString(),
+                "value": cardNumbers[cardToDisplayIndex].toString(),
                 "visibility": true,
                 "isSignSymbol": false,
                 "clickable": true
@@ -120,15 +166,20 @@ function initLevel() {
             cards.push(card);
         }
 
-        var equationsToDisplay = sublevel.questionValue;
-        for(var equationIndex = 0 ; equationIndex < equationsToDisplay.length ; equationIndex++) {
-            var toShuffleQuestionValue = [equationsToDisplay[equationIndex].toString(), "?"];
-            if(currentDataset.randomQuestionPosition) {
-                Core.shuffle(toShuffleQuestionValue);
+        for(var equationIndex = 0 ; equationIndex < numberOfAdditions ; equationIndex++) {
+            var toShuffleQuestionValue;
+            if(currentDataset.findBothNumbers) {
+                toShuffleQuestionValue = ["?", "?"];
+            } else {
+                toShuffleQuestionValue = [firstOperands[equationIndex].toString(), "?"];
+                if(currentDataset.shuffleOperands) {
+                    Core.shuffle(toShuffleQuestionValue);
+                }
             }
             equations.push(createEquation(toShuffleQuestionValue));
         }
     }
+
     Core.shuffle(cards);
     for(var i = 0 ; i < cards.length ; ++ i) {
         cards[i].index = i;
