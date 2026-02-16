@@ -87,7 +87,7 @@ Window {
         sequence: "Ctrl+p"
         onActivated: {
             if(pageView.get(pageView.depth-1).activityInfo) {
-                ApplicationInfo.screenshot("/tmp/" + pageView.get(pageView.depth-1).activityInfo.name.split('/')[0] + ".png");
+                ApplicationInfo.screenshot("/tmp/" + pageView.get(pageView.depth-1).activityInfo.shortName() + ".png");
             } else {
                 ApplicationInfo.screenshot("/tmp/gcompris.png");
             }

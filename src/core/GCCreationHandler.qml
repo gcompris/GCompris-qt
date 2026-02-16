@@ -64,7 +64,7 @@ Rectangle {
     property var dataToSave
     property bool isSaveMode: false
     property bool dialogOpened: false
-    readonly property string activityName: ActivityInfoTree.currentActivity.name.split('/')[0]
+    readonly property string activityName: ActivityInfoTree.currentActivity.shortName()
     readonly property string sharedDirectoryPath: ApplicationSettings.userDataPath + "/" + activityName + "/"
     readonly property string fileName: fileNameInput.text + (imageMode ?  svgMode ?  ".svg" : ".png" : ".json")
     readonly property string filePrefix: sharedDirectoryPath.startsWith("/") ? "file://" : "file:///"

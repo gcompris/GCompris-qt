@@ -104,7 +104,7 @@ Item {
      * "qrc:/gcompris/src/activities/" + activity name + "/resource/"
      *
      */
-    property string resourceUrl: (activityInfo && activityInfo.name) ? "qrc:/gcompris/src/activities/" + activityInfo.name.split('/')[0] + "/resource/": ""
+    property string resourceUrl: (activityInfo && activityInfo.name) ? "qrc:/gcompris/src/activities/" + activityInfo.shortName() + "/resource/": ""
 
     /**
      * type: bool
