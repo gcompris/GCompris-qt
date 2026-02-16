@@ -22,6 +22,7 @@ Item {
     property alias deviceView: deviceView
     property alias activitiesView: activitiesView
     property alias datasetsView: datasetsView
+    property alias sequencesView: sequencesView
     property alias chartsView: chartsView
     property alias settingsView: settingsView
     //property alias devView: devView
@@ -105,12 +106,20 @@ Item {
                 onClicked: navigationPanel.changeTo(4)
             }
             NavigationButton {
+                id: sequencesView
+                icon.source: "qrc:/gcompris/src/server/resource/icons/sequence.svg"
+                text: qsTr("Sequences")
+                isCollapsed: navigationPanel.isCollapsed
+                panelWidth: buttons.width
+                onClicked: navigationPanel.changeTo(5)
+            }
+            NavigationButton {
                 id: chartsView
                 icon.source: "qrc:/gcompris/src/server/resource/icons/graph.svg"
                 text: qsTr("Charts")
                 isCollapsed: navigationPanel.isCollapsed
                 panelWidth: buttons.width
-                onClicked: navigationPanel.changeTo(5)
+                onClicked: navigationPanel.changeTo(6)
             }
             NavigationButton {
                 id: settingsView
@@ -118,7 +127,7 @@ Item {
                 text: qsTr("Settings")
                 isCollapsed: navigationPanel.isCollapsed
                 panelWidth: buttons.width
-                onClicked: navigationPanel.changeTo(6)
+                onClicked: navigationPanel.changeTo(7)
             }
             /*NavigationButton {
                 id: devView

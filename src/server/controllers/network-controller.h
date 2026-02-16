@@ -96,6 +96,8 @@ namespace controllers {
         Q_INVOKABLE void removeDatasetToUsers(const QJsonValue &dataset_content, const QList<int> &selectedUsersId);
         Q_INVOKABLE void removeAllDatasetsToUsers(const QList<int> &selectedUsersId);
 
+        Q_INVOKABLE void sendSequenceToUsers(const QJsonValue &sequence_content, const QList<int> &selectedUsersId);
+
         Q_INVOKABLE void disconnectPendingSockets();
 
         Q_INVOKABLE QJsonObject getHostInformations();

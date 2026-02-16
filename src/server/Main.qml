@@ -114,6 +114,9 @@ Window {
                 DatasetsView {
                     visible: false
                 }
+                SequencesView {
+                    visible: false
+                }
                 ChartsView {
                     visible: false
                 }
