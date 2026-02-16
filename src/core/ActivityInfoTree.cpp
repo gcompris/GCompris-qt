@@ -445,9 +445,9 @@ QString ActivityInfoTree::nextActivityInSequence() {
         const auto &[activityName, datasets] = m_sessionSequence.getNextActivity();
         // Initialize the datasets to only have the needed ones!
         for (auto *activity: m_menuTreeFull) {
-            if (activity->name() == activityName) {
+            if (activity->shortName() == activityName) {
                 activity->setCurrentLevels(datasets);
-                nextActivity = activityName;
+                nextActivity = activity->name();
                 break;
             }
         }
@@ -458,7 +458,7 @@ QString ActivityInfoTree::nextActivityInSequence() {
 void ActivityInfoTree::resetAfterSequence() {
     for(const auto &[activityName, datasets] : m_sessionSequence) {
         for (auto *activity: m_menuTreeFull) {
-            if (activity->name() == activityName) {
+            if (activity->shortName() == activityName) {
                 activity->restoreInitialLevels();
                 break;
             }
