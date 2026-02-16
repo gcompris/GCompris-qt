@@ -205,6 +205,11 @@ public:
     Q_INVOKABLE Dataset *getDataset(const QString &name) const;
 
     /*
+     * Returns only the folder name of the activity
+     */
+    QString shortName() const;
+
+    /*
      * Reset all the current levels to be enabled.
      */
     void resetLevels();

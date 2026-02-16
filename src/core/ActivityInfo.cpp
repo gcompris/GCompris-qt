@@ -30,6 +30,11 @@ ActivityInfo::ActivityInfo(QObject *parent) :
 {
 }
 
+QString ActivityInfo::shortName() const
+{
+    return m_name.split('/')[0];
+}
+
 QString ActivityInfo::name() const
 {
     return m_name;
