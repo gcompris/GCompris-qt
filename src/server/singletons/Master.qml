@@ -23,7 +23,8 @@ Item {
     property alias activityModel: activityModel
     property alias allActivitiesModel: allActivitiesModel
     property alias activityWithDataModel: activityWithDataModel
-    property alias datasetModel: datasetModel
+    property alias userCreatedDatasetModel: userCreatedDatasetModel
+    property alias allDatasetModel: allDatasetModel
     property alias filteredDatasetModel: filteredDatasetModel
     property bool trace: false
     property int groupFilterId: -1     // contains selected group id
@@ -104,8 +105,9 @@ Item {
     ListModel { id: activityModel }         // Contains current user or group activities
     ListModel { id: allActivitiesModel }
     ListModel { id: activityWithDataModel }
-    ListModel { id: datasetModel }
-    ListModel { id: filteredDatasetModel }  // For checkBoxes lists (multiselection)
+    ListModel { id: userCreatedDatasetModel } // TODO Use SortFilterProxyModel when Qt6.10?
+    ListModel { id: allDatasetModel }
+    ListModel { id: filteredDatasetModel }  // For checkBoxes lists (multiselection -> works on userCreatedDatasetModel only)
     ListModel { id: tmpModel }              // Used for temporary requests inside functions
 
 //// Groups functions
@@ -567,7 +569,10 @@ Item {
 
 //// Datasets functions
     function loadDatasets() {
-        modelFromRequest(datasetModel, "SELECT * FROM _dataset_activity"
+        modelFromRequest(allDatasetModel, "SELECT * FROM _dataset_activity"
+                         , { dataset_checked: false }
+                         )
+        modelFromRequest(userCreatedDatasetModel, "SELECT * FROM _dataset_activity WHERE is_created_dataset=true"
                          , { dataset_checked: false }
                          )
         if (trace) console.warn(groupModel.count, "Datasets loaded")
@@ -577,16 +582,16 @@ Item {
         if (trace) console.warn("Datasets filtered")
         var selectedIds = []                // array of checked ids to be restored
         if (keepSelection) {
-            for (var j = 0; j < datasetModel.count; j++) {
-                var userSel = datasetModel.get(j)
+            for (var j = 0; j < userCreatedDatasetModel.count; j++) {
+                var userSel = userCreatedDatasetModel.get(j)
                 if (userSel.user_checked)
                     selectedIds.push(userSel.user_id)
             }
         }
         filteredDatasetModel.clear()
         var empty = (activityId === -1)
-        for (var i = 0; i < datasetModel.count; i++) {
-            var dataset = JSON.parse(JSON.stringify(datasetModel.get(i)))     // Make a deep copy
+        for (var i = 0; i < userCreatedDatasetModel.count; i++) {
+            var dataset = JSON.parse(JSON.stringify(userCreatedDatasetModel.get(i)))     // Make a deep copy
             if (keepSelection)
                 if (selectedIds.includes(dataset.dataset_id))                 // Check if it was already checked
                     dataset.dataset_checked = true
@@ -603,19 +608,23 @@ Item {
     }
 
     function createDataset(datasetName, activityId, objective, difficulty, content) {     // string, string, int, string
-        var datasetId = databaseController.addDataset(datasetName, activityId, objective, difficulty, content)
+        var datasetId = databaseController.addDataset(datasetName, activityId, objective, difficulty, content, true)
         if (datasetId !== -1) {
-            datasetModel.append({ "dataset_id": datasetId,
-                                "activity_id": activityId,
-                                "activity_name": getActivityName(activityId),
-                                "dataset_name": datasetName,
-                                "dataset_objective": objective,
-                                "dataset_difficulty": difficulty,
-                                "dataset_content": content,
-                                // The dataset is checked by default as we
-                                // just created it so we want it to be selected
-                                "dataset_checked": true
-                              })
+            var dataset = { "dataset_id": datasetId,
+                "activity_id": activityId,
+                "activity_name": getActivityName(activityId),
+                "dataset_name": datasetName,
+                "dataset_objective": objective,
+                "dataset_difficulty": difficulty,
+                "dataset_content": content,
+                "is_created_dataset": true,
+                "internal_name": "c-"+datasetName,
+                // The dataset is checked by default as we
+                // just created it so we want it to be selected
+                "dataset_checked": true
+            };
+            userCreatedDatasetModel.append(dataset)
+            allDatasetModel.append(dataset)
             if (trace) console.warn("Dataset created:", datasetName, objective)
         }
         // If we are in the "create datasets" view, we want the view to be refreshed
@@ -625,29 +634,39 @@ Item {
 
     function deleteDataset(datasetId) {       // int
         var dataset
-        var index = -1;
-        // find the index in the model
-        for (var j = 0; j < datasetModel.count; j++) {
-            var dataSel = datasetModel.get(j)
+        var userCreatedDatasetModelIndex = -1;
+        // find the index in the userCreatedDatasetModel model
+        for (var j = 0; j < userCreatedDatasetModel.count; j++) {
+            var dataSel = userCreatedDatasetModel.get(j)
             if (dataSel.dataset_id == datasetId) {
                 dataset = dataSel
-                index = j
+                userCreatedDatasetModelIndex = j
+                break;
+            }
+        }
+        var allDatasetModelIndex = -1;
+        // find the index in the allDatasetModel model
+        for (var j = 0; j < allDatasetModel.count; j++) {
+            var dataSel = allDatasetModel.get(j)
+            if (dataSel.dataset_id == datasetId) {
+                allDatasetModelIndex = j
                 break;
             }
         }
 
         if (databaseController.deleteDataset(dataset.dataset_id)) {
-            datasetModel.remove(index)
+            userCreatedDatasetModel.remove(userCreatedDatasetModelIndex)
+            allDatasetModel.remove(allDatasetModelIndex)
             if (trace) console.warn("Dataset deleted:", dataset.dataset_id ," - ", dataset.dataset_name)
             return true
         }
         return false
     }
 
-    function getDatasetModelId(datasetId) {       // int
+    function getDatasetModelId(model, datasetId) {       // int
         // find the index in the model
-        for (var j = 0; j < datasetModel.count; j++) {
-            var dataSel = datasetModel.get(j)
+        for (var j = 0; j < model.count; j++) {
+            var dataSel = model.get(j)
             if (dataSel.dataset_id == datasetId) {
                 return j
             }
@@ -655,21 +674,40 @@ Item {
     }
     function getDataset(datasetId) {       // int
         // find the index in the model
-        for (var j = 0; j < datasetModel.count; j++) {
-            var dataSel = datasetModel.get(j)
+        for (var j = 0; j < userCreatedDatasetModel.count; j++) {
+            var dataSel = userCreatedDatasetModel.get(j)
             if (dataSel.dataset_id == datasetId) {
                 return dataSel
             }
         }
     }
 
+    function getDatasetId(datasetName, activityId) {
+        var json = JSON.parse(databaseController.selectToJson(`SELECT dataset_id FROM dataset_ WHERE activity_id='${activityId}' AND dataset_name='${datasetName}'`))
+        if(!json || !json[0]) {
+            return -1;
+        }
+        return json[0]["dataset_id"]
+    }
+
     function updateDataset(datasetId, datasetName, objective, difficulty, content) {   // int, string, string, int, string
-        var datasetModelId = getDatasetModelId(datasetId)
+        var datasetModelId = getDatasetModelId(allDatasetModel, datasetId)
         if (databaseController.updateDataset(datasetId, datasetName, objective, difficulty, content) !== -1) {
-            datasetModel.setProperty(datasetModelId, "dataset_name", datasetName)
-            datasetModel.setProperty(datasetModelId, "dataset_objective", objective)
-            datasetModel.setProperty(datasetModelId, "dataset_difficulty", difficulty)
-            datasetModel.setProperty(datasetModelId, "dataset_content", content)
+            // Update allDatasetModel
+            allDatasetModel.setProperty(datasetModelId, "dataset_name", datasetName)
+            allDatasetModel.setProperty(datasetModelId, "dataset_objective", objective)
+            allDatasetModel.setProperty(datasetModelId, "dataset_difficulty", difficulty)
+            allDatasetModel.setProperty(datasetModelId, "dataset_content", content)
+            allDatasetModel.setProperty(datasetModelId, "internal_name", "c-"+datasetName)
+
+            // Update userCreatedDatasetModel
+            datasetModelId = getDatasetModelId(userCreatedDatasetModel, datasetId)
+            userCreatedDatasetModel.setProperty(datasetModelId, "dataset_name", datasetName)
+            userCreatedDatasetModel.setProperty(datasetModelId, "dataset_objective", objective)
+            userCreatedDatasetModel.setProperty(datasetModelId, "dataset_difficulty", difficulty)
+            userCreatedDatasetModel.setProperty(datasetModelId, "dataset_content", content)
+            userCreatedDatasetModel.setProperty(datasetModelId, "internal_name", "c-"+datasetName)
+
             if (trace) console.warn("Dataset updated:", datasetName)
             return true
         }
@@ -680,10 +718,27 @@ Item {
         var activities = ActivityInfoTree.menuTreeFull
         for (var key in Object.keys(activities)) {  // Convert numeric keys to short activity name keys
             if(activities[key]['acceptDataset']) {
-                var activityName = activities[key]['name'].slice(0,activities[key]['name'].lastIndexOf('/'))
+                var activityName = activities[key]['name'].slice(0, activities[key]['name'].lastIndexOf('/'))
                 var activityId = getActivityId(activityName)
                 if(activityId == -1) {
                     databaseController.addActivity(activityName)
+                }
+            }
+        }
+    }
+
+    function storeActivitiesDatasetsInDatabase() {
+        var activities = ActivityInfoTree.menuTreeFull
+        for (var key in Object.keys(activities)) {  // Convert numeric keys to short activity name keys
+            var activity = activities[key]
+            var activityName = activity['name'].slice(0, activity['name'].lastIndexOf('/'))
+            var activityId = getActivityId(activityName)
+            for (var i = 0; i < activity.levels.length; ++ i) {
+                var dataset = activity.getDataset(activity.levels[i])
+                var content = JSON.stringify(dataset.data)
+                var datasetId = getDatasetId(activity.levels[i], activityId);
+                if(datasetId == -1) {
+                    databaseController.addDataset(activity.levels[i], activityId, dataset["objective"], dataset["difficulty"], content, false)
                 }
             }
         }
@@ -695,6 +750,7 @@ Item {
         loadUsers()
         filterUsers(filteredUserModel, false)
         storeActivitiesWithDatasetInDatabase()
+        storeActivitiesDatasetsInDatabase()
         loadAllActivities(activityModel)
         loadAllActivities(allActivitiesModel)
         loadActivitiesWithData(activityWithDataModel)

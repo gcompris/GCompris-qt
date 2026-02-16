@@ -29,7 +29,7 @@
 
 #include "File.h"
 
-#define DB_VERSION 11
+#define DB_VERSION 12
 #define SCHEMA_SQL ":/gcompris/src/server/database/create_tables.sql"
 #define VIEWS_SQL ":/gcompris/src/server/database/create_views.sql"
 #define PATCH_SQL ":/gcompris/src/server/database/patch_%1.sql"
@@ -617,7 +617,6 @@ namespace controllers {
         }
     }
 
-#include <QJsonDocument>
     // QMap with key the date?
     QList<QVariant> DatabaseController::getActivityData(const int userId, const QString &activityName /*, range of date*/)
     {
@@ -642,17 +641,18 @@ namespace controllers {
         return fetchedData;
     }
 
-    int DatabaseController::addDataset(const QString &datasetName, const int activityId, const QString &objective, const int difficulty, const QString &content)
+    int DatabaseController::addDataset(const QString &datasetName, const int activityId, const QString &objective, const int difficulty, const QString &content, const bool isCreatedByUser)
     {
         int datasetId = -1;
         QSqlQuery query(database);
         // since the dataset does not exist, create the new dataset and add description and users to it
-        query.prepare("INSERT INTO dataset_ (dataset_name, activity_id, dataset_objective, dataset_difficulty, dataset_content) VALUES (:datasetName,:activityId,:objective,:difficulty,:content)");
+        query.prepare("INSERT INTO dataset_ (dataset_name, activity_id, dataset_objective, dataset_difficulty, dataset_content, is_created_dataset) VALUES (:datasetName,:activityId,:objective,:difficulty,:content,:isCreatedByUser)");
         query.bindValue(":datasetName", datasetName);
         query.bindValue(":activityId", activityId);
         query.bindValue(":objective", objective);
         query.bindValue(":difficulty", difficulty);
         query.bindValue(":content", content);
+        query.bindValue(":isCreatedByUser", isCreatedByUser);
 
         bool datasetAdded = query.exec();
         if (datasetAdded)
@@ -664,6 +664,7 @@ namespace controllers {
 
     int DatabaseController::updateDataset(const int datasetId, const QString &datasetName, const QString &objective, const int difficulty, const QString &content)
     {
+        // No need to update is_created_dataset because we can only update created datasets, not internal ones
         QSqlQuery query(database);
         QString sqlStatement = "UPDATE dataset_ SET dataset_name=:datasetName, dataset_objective=:objective, dataset_difficulty=:difficulty, dataset_content=:content WHERE dataset_id=:id";
         if (!query.prepare(sqlStatement))
