@@ -49,10 +49,23 @@ ActivityBase {
             property int cardSize
             property bool isHorizontal: activityBackground.width >= activityBackground.height
             property bool buttonsBlocked: false
+            property alias client: client
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
+
+        Client {    // Client for gcompris-teachers. Prepare data from activity to server
+            id: client
+            getDataCallback: function() {
+                var data = {
+                    "proposedNumbers": Activity.proposedNumbers,
+                    "questionList": Activity.questionList
+                }
+
+                return data;
+            }
+        }
 
         GCSoundEffect {
             id: goodAnswerSound

@@ -12,6 +12,10 @@ var numberOfLevel;
 var numberOfSubLevel;
 var items;
 
+// stored values for Client data
+var proposedNumbers = [];
+var questionList = [];
+
 function start(items_) {
     items = items_;
     numberOfLevel = items.levels.length;
@@ -24,6 +28,8 @@ function stop() {
 }
 
 function initLevel() {
+    proposedNumbers = [];
+    questionList = []
     items.okButton.visible = false;
     items.cardListModel.clear();
     items.holderListModel.clear();
@@ -133,8 +139,28 @@ function initLevel() {
         equations[i].rowIndex = i;
         items.holderListModel.append(equations[i]);
     }
+
+    // store fixed Client data
+    for(var numberIndex = 0; numberIndex < items.cardListModel.count; numberIndex++) {
+        proposedNumbers.push(items.cardListModel.get(numberIndex).value)
+    }
+    for(var questionIndex = 0; questionIndex < items.holderListModel.count; questionIndex++) {
+        var additionString = "";
+        var equation = items.holderListModel.get(questionIndex);
+        var addition = equation.addition
+        for(var i = 0; i < addition.count; i++) {
+            additionString += addition.get(i).value;
+        }
+        questionList[questionIndex] = {
+            "addition": additionString,
+            "answer": "",
+            "isCorrect": false
+        }
+    }
+
     items.score.numberOfSubLevels = numberOfSubLevel;
     items.buttonsBlocked = false;
+    items.client.startTiming();
 }
 
 function createEquation(values) {
@@ -260,7 +286,18 @@ function checkAnswer() {
         equation.isCorrect = isGood;
         equation.tickVisibility = true;
         isAllCorrect = isGood & isAllCorrect;
+
+        // store answer string for Client data
+        var answerString = "";
+        for(var j = 0; j < solution.count; j++) {
+            answerString += solution.get(j).value;
+        }
+        questionList[i].answer = answerString;
+        questionList[i].isCorrect = isGood;
     }
+
+    items.client.sendToServer(isAllCorrect);
+
     if(isAllCorrect) {
         items.buttonsBlocked = true;
         items.score.currentSubLevel++
