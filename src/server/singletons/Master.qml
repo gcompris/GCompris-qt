@@ -718,7 +718,7 @@ Item {
         var activities = ActivityInfoTree.menuTreeFull
         for (var key in Object.keys(activities)) {  // Convert numeric keys to short activity name keys
             if(activities[key]['acceptDataset']) {
-                var activityName = activities[key]['name'].slice(0, activities[key]['name'].lastIndexOf('/'))
+                var activityName = activities[key].shortName()
                 var activityId = getActivityId(activityName)
                 if(activityId == -1) {
                     databaseController.addActivity(activityName)
@@ -731,7 +731,7 @@ Item {
         var activities = ActivityInfoTree.menuTreeFull
         for (var key in Object.keys(activities)) {  // Convert numeric keys to short activity name keys
             var activity = activities[key]
-            var activityName = activity['name'].slice(0, activity['name'].lastIndexOf('/'))
+            var activityName = activity.shortName()
             var activityId = getActivityId(activityName)
             for (var i = 0; i < activity.levels.length; ++ i) {
                 var dataset = activity.getDataset(activity.levels[i])
