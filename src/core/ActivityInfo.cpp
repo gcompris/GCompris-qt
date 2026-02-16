@@ -248,6 +248,7 @@ void ActivityInfo::fillDatasets(QQmlEngine *engine)
         QObject *objectRoot = componentRoot.create();
         if (objectRoot != nullptr) {
             Dataset *dataset = qobject_cast<Dataset *>(objectRoot);
+            dataset->setUserCreated(false);
             if (levelMin > dataset->difficulty() || levelMax < dataset->difficulty()) {
                 dataset->setEnabled(false);
             }
@@ -272,6 +273,7 @@ void ActivityInfo::fillDatasets(QQmlEngine *engine)
         QObject *objectRoot = componentRoot.create();
         if (objectRoot != nullptr) {
             Dataset *dataset = qobject_cast<Dataset *>(objectRoot);
+            dataset->setUserCreated(true);
             QString datasetName(datasetFileInfo.fileName());
 
             if (levelMin > dataset->difficulty() || levelMax < dataset->difficulty()) {

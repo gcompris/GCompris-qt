@@ -58,4 +58,14 @@ void Dataset::setEnabled(const bool &enabled)
     Q_EMIT enabledChanged();
 }
 
+bool Dataset::userCreated() const
+{
+    return m_userCreated;
+}
+void Dataset::setUserCreated(const bool &userCreated)
+{
+    m_userCreated = userCreated;
+    Q_EMIT userCreatedChanged();
+}
+
 #include "moc_Dataset.cpp"
