@@ -322,6 +322,7 @@ void ClientNetworkMessages::readFromSocket()
                 case netconst::SEQUENCE_START: {
                     QJsonDocument doc(obj["content"].toObject());
                     ActivityInfoTree::getInstance()->initializeSequence(doc.toJson());
+                    Q_EMIT ActivityInfoTree::getInstance()->startSequence();
                     break;
                 }
                 default:
