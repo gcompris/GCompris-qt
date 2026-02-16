@@ -233,15 +233,15 @@ void ActivityInfo::fillDatasets(QQmlEngine *engine)
             }
         }
         if (!m_ignoredLevels.empty()) {
-            ApplicationSettings::getInstance()->setIgnoredLevels(m_name.split('/')[0], m_ignoredLevels);
+            ApplicationSettings::getInstance()->setIgnoredLevels(shortName(), m_ignoredLevels);
         }
     }
 
-    m_ignoredLevels = ApplicationSettings::getInstance()->ignoredLevels(m_name.split('/')[0]);
+    m_ignoredLevels = ApplicationSettings::getInstance()->ignoredLevels(shortName());
     quint32 levelMin = ApplicationSettings::getInstance()->filterLevelMin();
     quint32 levelMax = ApplicationSettings::getInstance()->filterLevelMax();
     for (const QString &level: std::as_const(m_levels)) {
-        QString url = QString("qrc:/gcompris/src/activities/%1/resource/%2/Data.qml").arg(m_name.split('/')[0], level);
+        QString url = QString("qrc:/gcompris/src/activities/%1/resource/%2/Data.qml").arg(shortName(), level);
 
         if (!QFileInfo::exists(url.sliced(3))) {
             qDebug() << "INFO: did not find level" << url.sliced(3) << "internally";
@@ -268,7 +268,7 @@ void ActivityInfo::fillDatasets(QQmlEngine *engine)
     // Load user created levels
     bool atLeastOneLevelAdded = false;
     QStringList externalLevels;
-    const QString userDatasetPath(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + "/" + m_name.split('/')[0]);
+    const QString userDatasetPath(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + "/" + shortName());
     QDir userDatasetFolder(userDatasetPath);
     userDatasetFolder.setFilter(QDir::Dirs | QDir::NoSymLinks | QDir::NoDotAndDotDot);
     QFileInfoList datasetList = userDatasetFolder.entryInfoList();
@@ -354,7 +354,7 @@ void ActivityInfo::setCurrentLevels(const QStringList &currentLevels)
 void ActivityInfo::setCurrentLevels()
 {
     if (!m_name.isEmpty()) {
-        m_ignoredLevels = ApplicationSettings::getInstance()->ignoredLevels(m_name.split('/')[0]);
+        m_ignoredLevels = ApplicationSettings::getInstance()->ignoredLevels(shortName());
         // Clear m_currentLevels before filling it to avoid duplicates when reloading it after sending new level from the server
         m_currentLevels.clear();
         // Fill m_currentLevels with all levels except the ignored ones
@@ -400,7 +400,7 @@ Dataset *ActivityInfo::getDataset(const QString &name) const
 
 bool ActivityInfo::hasConfig() const
 {
-    return QFile::exists(":/gcompris/src/activities/" + m_name.split('/')[0] + "/ActivityConfig.qml");
+    return QFile::exists(":/gcompris/src/activities/" + shortName() + "/ActivityConfig.qml");
 }
 
 bool ActivityInfo::hasDataset() const

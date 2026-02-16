@@ -464,7 +464,7 @@ void ActivityInfoTree::createDataset(const QJsonObject &dataset)
     QQmlEngine *engine = qmlEngine(this);
 
     for (const auto &activity: constMenuTreeFull) {
-        if (activity->name().split("/").at(0) == activityName) {
+        if (activity->shortName() == activityName) {
             activity->fillDatasets(engine);
             break;
         }
@@ -486,7 +486,7 @@ void ActivityInfoTree::removeDataset(const QJsonObject &dataset, bool clearCache
     QQmlEngine *engine = qmlEngine(this);
 
     for (const auto &activity: constMenuTreeFull) {
-        if (activity->name().split("/").at(0) == activityName) {
+        if (activity->shortName() == activityName) {
             activity->removeDataset(datasetName);
             activity->fillDatasets(engine);
 

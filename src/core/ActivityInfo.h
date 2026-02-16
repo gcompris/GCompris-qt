@@ -207,7 +207,7 @@ public:
     /*
      * Returns only the folder name of the activity
      */
-    QString shortName() const;
+    Q_INVOKABLE QString shortName() const;
 
     /*
      * Reset all the current levels to be enabled.
