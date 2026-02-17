@@ -1,9 +1,11 @@
 /* GCompris - Data.qml
  *
  * SPDX-FileCopyrightText: 2019 Akshay Kumar <email.akshay98@gmail.com>
+ * SPDX-FileCopyrightText: 2026 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Akshay Kumar <email.akshay98@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -15,29 +17,29 @@ Data {
     difficulty: 6
     data: [
         {
-            "maxValue": 10000,
-            "minStars" : [2, 0, 0],
-            "maxStars" : [1000, 0, 0]
+            "useCoefficients": true,
+            "multiplier": 100,
+            "rowCoefficients" : [1, 0, 0]
         },
         {
-            "maxValue": 10000,
-            "minStars" : [2, 2, 0],
-            "maxStars" : [1000, 1000, 0]
+            "useCoefficients": true,
+            "multiplier": 100,
+            "rowCoefficients" : [1, 1, 0]
         },
         {
-            "maxValue": 10000,
-            "minStars" : [2, 2, 2],
-            "maxStars" : [2000, 2000, 1000]
+            "useCoefficients": true,
+            "multiplier": 100,
+            "rowCoefficients" : [2, 2, 1]
         },
         {
-            "maxValue": 10000,
-            "minStars" : [2, 2, 2],
-            "maxStars" : [3000, 3000, 1000]
+            "useCoefficients": true,
+            "multiplier": 100,
+            "rowCoefficients" : [3, 3, 1]
         },
         {
-            "maxValue": 10000,
-            "minStars" : [2, 2, 2],
-            "maxStars" : [4000, 4000, 2000]
+            "useCoefficients": true,
+            "multiplier": 100,
+            "rowCoefficients" : [4, 4, 2]
         }
     ]
 }
