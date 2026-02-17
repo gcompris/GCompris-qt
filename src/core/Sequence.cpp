@@ -15,6 +15,7 @@
 
 void Sequence::loadFromJson(const QByteArray &jsonContent) {
     m_currentActivityIndex = 0;
+    m_sequences.clear();
     QJsonDocument jsonDocument = QJsonDocument::fromJson(jsonContent);
 
     if (const QJsonValue v = jsonDocument["sequence"]; v.isArray()) {
