@@ -113,21 +113,22 @@ Item {
         }
     ]
 
-    Behavior on x {
+    Behavior on y {
         PropertyAnimation {
             easing.type: Easing.OutQuad
             duration:  1000
             onRunningChanged: {
                 if(!running) {
-                    if(mainItem.state == "MoveUnderHat")
+                    if(mainItem.state == "MoveUnderHat") {
                         Activity.animation1Finished(mainItem.barGroupIndex)
-                    else if(mainItem.state == "MoveToTarget")
+                    } else if(mainItem.state == "MoveToTarget") {
                         Activity.animation2Finished()
+                    }
                 }
             }
         }
     }
-    Behavior on y {
+    Behavior on x {
         PropertyAnimation {easing.type: Easing.OutQuad; duration:  1000}
     }
 
