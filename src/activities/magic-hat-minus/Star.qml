@@ -55,8 +55,7 @@ Item {
 
     Image {
         id: starImg
-        source: mainItem.selected ?
-                    Activity.url + "star-" + wantedColor + ".svg" : Activity.url + "star-0.svg"
+        source: Activity.url + "star-" + wantedColor + (mainItem.selected ? ".svg" : "-off.svg")
         width: parent.width - GCStyle.halfMargins
         height: width
         sourceSize.width: width
