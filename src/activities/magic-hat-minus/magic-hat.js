@@ -27,6 +27,9 @@ var maxStarSlots = 30
 var answerCoefficients = []
 var coefficientsNeeded = false
 
+var minStars = []
+var maxStars = []
+
 function start(items_, mode_) {
     items = items_
     mode = mode_
@@ -46,7 +49,27 @@ function initLevel() {
     nbStarsToAddOrRemove = new Array(0, 0, 0)
     nbStarsToCount = new Array(0, 0, 0)
     animationCount = 0
+    minStars = items.levels[items.currentLevel].minStars.slice(0)
+    maxStars = items.levels[items.currentLevel].maxStars.slice(0)
+    items.useDifferentStars = items.levels[items.currentLevel].useDifferentStars ? items.levels[items.currentLevel].useDifferentStars : false
     var maxValue = items.levels[items.currentLevel].maxValue
+
+    if(items.useDifferentStars) {
+        // all values should not be more than 10, so clamp if higher values are given
+        for(var i = 0; i < minStars.length; i++) {
+            if(minStars[i] > 10) {
+                minStars[i] = 10;
+            }
+        }
+        for(var i = 0; i < maxStars.length; i++) {
+            if(maxStars[i] > 10) {
+                maxStars[i] = 10;
+            }
+        }
+        if(maxValue > 10) {
+            maxValue = 10;
+        }
+    }
 
     if(items.currentLevel > 0) {
         items.instructionPanel.visible = false
@@ -65,16 +88,16 @@ function initLevel() {
         setCoefficientVisibility(false)
     } else {
         for(var i = 0; i < 3; i++)
-            questionCoefficients[i] = Math.round(items.levels[items.currentLevel].maxStars[i] / 10);
+            questionCoefficients[i] = Math.round(maxStars[i] / 10);
         answerCoefficients[0] = maxValue / 100;
         answerCoefficients[1] = maxValue / 20;
         answerCoefficients[2] = maxValue / 10;
         setCoefficientVisibility(true)
     }
     var subtractor = (mode === "minus") ? 0 : 1
-    numberOfStars[0] = (items.levels[items.currentLevel].maxStars[0] > 0) ? getRandomInt(items.levels[items.currentLevel].minStars[0], (items.levels[items.currentLevel].maxStars[0] / questionCoefficients[0]) - subtractor) : 0
-    numberOfStars[1] = (items.levels[items.currentLevel].maxStars[1] > 0) ? getRandomInt(items.levels[items.currentLevel].minStars[1], (items.levels[items.currentLevel].maxStars[1] / questionCoefficients[1]) - subtractor) : 0
-    numberOfStars[2] = (items.levels[items.currentLevel].maxStars[2] > 0) ? getRandomInt(items.levels[items.currentLevel].minStars[2], (items.levels[items.currentLevel].maxStars[2] / questionCoefficients[2]) - subtractor) : 0
+    numberOfStars[0] = (maxStars[0] > 0) ? getRandomInt(minStars[0], (maxStars[0] / questionCoefficients[0]) - subtractor) : 0
+    numberOfStars[1] = (maxStars[1] > 0) ? getRandomInt(minStars[1], (maxStars[1] / questionCoefficients[1]) - subtractor) : 0
+    numberOfStars[2] = (maxStars[2] > 0) ? getRandomInt(minStars[2], (maxStars[2] / questionCoefficients[2]) - subtractor) : 0
 
     for(var i=0; i<3; i++) {
         items.repeatersList[0].itemAt(i).nbStarsOn = numberOfStars[i]
@@ -129,7 +152,7 @@ function userClickedAStar(barIndex,state) {
 }
 
 function verifyAnswer() {
-    if(items.levels[items.currentLevel].maxValue / maxStarSlots <= 1) {
+    if(items.useDifferentStars) {
         if(numberOfUserStars[0] === nbStarsToCount[0] &&
         numberOfUserStars[1] === nbStarsToCount[1] &&
         numberOfUserStars[2] === nbStarsToCount[2]) {
