@@ -58,8 +58,22 @@ Popup {
                 users.push(user.user_id);
             }
         }
+
         switch(messageType) {
             case SendSequenceDialog.MessageType.Send:
+            // We first send the corresponding datasets if created in the server
+            for(var i = 0; i < sequenceToSend.sequence.length; ++ i) {
+                var elt = sequenceToSend.sequence[i]
+                for(var d of elt["datasets"]) {
+                    var dataset = Master.getDatasetFromActivityDatasetName(elt["activity"], d);
+                    dataset["internal_name"] = d;
+                    dataset["activity_name"] = elt["activity"];
+                    if(dataset["is_created_dataset"]) {
+                        networkController.sendDatasetToUsers(dataset, users);
+                    }
+                }
+            }
+
             networkController.sendSequenceToUsers(sequenceToSend, users)
             break;
             case SendSequenceDialog.MessageType.Remove:

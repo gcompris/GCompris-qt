@@ -692,6 +692,14 @@ Item {
         return json[0]["dataset_id"]
     }
 
+    function getDatasetFromActivityDatasetName(activityName, datasetName) {
+        var json = JSON.parse(databaseController.selectToJson(`SELECT * FROM _dataset_activity WHERE activity_name='${activityName}' AND internal_name='${datasetName}'`))
+        if(!json || !json[0]) {
+            return -1;
+        }
+        return json[0]
+    }
+
     function updateDataset(datasetId, datasetName, objective, difficulty, content) {   // int, string, string, int, string
         var datasetModelId = getDatasetModelId(allDatasetModel, datasetId)
         if (databaseController.updateDataset(datasetId, datasetName, objective, difficulty, content) !== -1) {
