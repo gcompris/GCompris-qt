@@ -25,6 +25,7 @@ class ClientNetworkMessages : public QObject
     Q_PROPERTY(netconst::ConnectionStatus status MEMBER status NOTIFY statusChanged)
     Q_PROPERTY(QString host READ host WRITE setHost NOTIFY hostChanged)
     Q_PROPERTY(int port READ port WRITE setPort NOTIFY portChanged)
+    Q_PROPERTY(QString login READ login WRITE setLogin NOTIFY loginChanged)
 
 public:
     ClientNetworkMessages();
@@ -34,6 +35,7 @@ Q_SIGNALS:
     void statusChanged();
     void hostChanged();
     void portChanged();
+    void loginChanged();
     //    void connectionStatus();
     void loginListReceived(const QStringList &logins);
     void loginConfirmationReceived(const QString &login, bool logOk);
@@ -69,6 +71,17 @@ public:
         Q_EMIT portChanged();
     }
 
+    QString login() const
+    {
+        return m_login;
+    }
+
+    void setLogin(const QString &newLogin)
+    {
+        m_login = newLogin;
+        Q_EMIT loginChanged();
+    }
+
 private Q_SLOTS:
     void readFromSocket();
     void udpRead();
@@ -100,7 +113,7 @@ private:
     netconst::ConnectionStatus status;
     // polling and reconnection
     QTimer pingTimer;
-    QString login;
+    QString m_login;
     QString password;
     QString ipServer;
     QList<QByteArray> messageQueue;

@@ -85,7 +85,7 @@ void ClientNetworkMessages::forgetUser()
 {
     status = netconst::NOT_CONNECTED;
     Q_EMIT statusChanged();
-    login = "";
+    setLogin("");
     password = "";
     // ApplicationSettings::getInstance()->setCurrentServer("");
 }
@@ -101,8 +101,8 @@ void ClientNetworkMessages::disconnectFromServer()
 void ClientNetworkMessages::connected()
 {
     _connected = true;
-    if (login != "") {
-        sendLoginMessage(login, password);
+    if (m_login != "") {
+        sendLoginMessage(m_login, password);
     }
     pingTimer.setInterval(netconst::PING_DELAY);
     Q_EMIT hostChanged();
@@ -145,7 +145,7 @@ void ClientNetworkMessages::udpRead()
 
 void ClientNetworkMessages::sendLoginMessage(const QString &newLogin, const QString &newPassword)
 {
-    login = newLogin;
+    setLogin(newLogin);
     password = newPassword;
     QJsonObject obj { { "aType", netconst::LOGIN_REPLY } };
     QJsonObject content { { "login", newLogin }, { "password", newPassword } };
@@ -187,7 +187,7 @@ void ClientNetworkMessages::ping()
 {
     if (status == netconst::CONNECTION_LOST) {
         _missedPongs = 0;
-        if (login != "") {
+        if (m_login != "") {
             qDebug() << "Attempting to reconnect...";
             connectToServer(ipServer); // Try to reconnect
         }
@@ -272,21 +272,23 @@ void ClientNetworkMessages::readFromSocket()
             if (obj.contains("aType")) {
                 switch (obj["aType"].toInt()) {
                 case netconst::LOGIN_LIST:
-                    if (obj["content"].isArray()) {
+                     if (const QJsonValue v = obj["content"]; v.isArray()) {
+                        const QJsonArray content = v.toArray();
                         QStringList logins;
-                        for (int i = 0; i < obj["content"].toArray().size(); i++) {
-                            logins << obj["content"].toArray()[i].toString();
+                        for (int i = 0; i < content.size(); i++) {
+                            logins << content[i].toString();
                         }
                         Q_EMIT loginListReceived(logins);
                     }
                     break;
                 case netconst::LOGIN_ACCEPT:
-                    if (obj["content"].isObject()) {
-                        bool accepted = obj["content"].toObject()["accepted"].toBool();
-                        userId = obj["content"].toObject()["user_id"].toInt();
-                        qWarning() << "Login accepted:" << accepted << ", user ID:" << userId;
+                    if (const QJsonValue v = obj["content"]; v.isObject()) {
+                        const QJsonObject content = v.toObject();
+                        bool accepted = content["accepted"].toBool();
+                        userId = content["user_id"].toInt();
+                        qDebug() << "Login accepted:" << accepted << ", user ID:" << userId;
                         if (!accepted) {
-                            login = "";
+                            setLogin("");
                             password = "";
                             Q_EMIT passwordRejected();
                             status = netconst::BAD_PASSWORD_INPUT;

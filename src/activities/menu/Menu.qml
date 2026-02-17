@@ -210,11 +210,12 @@ ActivityBase {
         // messages for server status dialog
         property string serverNotConnected: qsTr("GCompris is not connected to teacher's server.")
         property string serverBadPassword: qsTr("GCompris is connected to teacher's server, but the password entered for selected user is wrong.")
-        property string serverLoggedIn: qsTr("GCompris is connected to teacher's server, and the user is authenticated.")
+        property string serverLoggedIn: qsTr("GCompris is connected to teacher's server, and the user is authenticated as %1.").arg(currentLogin)
         property string serverConnectionLost: qsTr("GCompris has lost the connection to teacher's server.")
         property string serverDisconnected: qsTr("GCompris has been disconnected from teacher's server.")
         property string serverConnected: qsTr("GCompris is connected to teacher's server, but the user is not yet authenticated.")
         // Used to hot-reload the message if it changes while the dialog is displayed.
+        property string currentLogin: ""
         property var dialogServerStatus: null
         property string serverStatusMessage: serverNotConnected
         onServerStatusMessageChanged: {
@@ -758,6 +759,9 @@ ActivityBase {
 
             Connections {
                 target: clientNetworkMessages
+                function onLoginChanged(newLogin) {
+                    activityBackground.currentLogin = clientNetworkMessages.login
+                }
                 function onStatusChanged() {
                     print("status changed to ", clientNetworkMessages.status);
                     switch(clientNetworkMessages.status) {
