@@ -68,7 +68,7 @@ Item {
             filterVisible: false
             collapsable: false
             onSelectionClicked: (modelId) => {
-                sequencesView.selectedSequence = modelId
+                //sequencesView.selectedSequence = modelId
             }
         }
 

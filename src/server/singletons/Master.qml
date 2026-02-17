@@ -755,6 +755,16 @@ Item {
     }
 
 //// Sequences functions
+
+    function getSequenceModelId(sequenceId) {       // int
+        // find the index in the model
+        for (var j = 0; j < sequenceModel.count; j++) {
+            var dataSel = sequenceModel.get(j)
+            if (dataSel.sequence_id == sequenceId) {
+                return j
+            }
+        }
+    }
     function loadSequences() {
         modelFromRequest(tmpModel, "SELECT * FROM sequence_activity_")
         var allSequenceData = {};
@@ -795,7 +805,6 @@ Item {
     function createSequence(name, objective, sequence) {
         var sequenceId = databaseController.addSequence(name, objective, sequence)
         if (sequenceId !== -1) {
-            print("aaa", JSON.stringify(sequence))
             sequenceModel.append({ "sequence_id": sequenceId,
                 "sequence_name": name,
                 "sequence_objective": objective,
@@ -803,6 +812,21 @@ Item {
                 "sequence_checked": true
             })
             if (trace) console.warn("Sequence created:", name, objective)
+        }
+        return sequenceId
+    }
+
+    function updateSequence(sequenceId, name, objective, sequence) {
+        var modelId = getSequenceModelId(sequenceId);
+        if (databaseController.updateSequence(sequenceId, name, objective, sequence) !== -1) {
+            sequenceModel.setProperty(modelId, "sequence_name", name)
+            sequenceModel.setProperty(modelId, "sequence_objective", objective)
+            var currentItem = sequenceModel.get(modelId)
+            currentItem.sequenceList.clear();
+            for (var f = 0 ; f < sequence.length ; ++ f) {
+                currentItem.sequenceList.append(sequence[f]);
+            }
+            if (trace) console.warn("Sequence updated:", name, objective)
         }
         return sequenceId
     }
