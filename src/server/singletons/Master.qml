@@ -619,7 +619,7 @@ Item {
                 "dataset_objective": objective,
                 "dataset_difficulty": difficulty,
                 "dataset_content": content,
-                "is_created_dataset": true,
+                "is_created_dataset": 1,
                 "internal_name": "c-"+datasetName,
                 // The dataset is checked by default as we
                 // just created it so we want it to be selected
