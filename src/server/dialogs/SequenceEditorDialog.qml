@@ -52,6 +52,19 @@ Popup {
             sequence_Id = currentSequence.sequence_id
             sequenceName.text = currentSequence.sequence_name
             sequence_Objective = currentSequence.sequence_objective
+            print(JSON.stringify(currentSequence));
+            for (var i = 0; i < currentSequence.sequenceList.count; ++ i) {
+                var s = currentSequence.sequenceList.get(i)
+                var act = Master.findObjectInModel(Master.activityModel, function(item) { return item.activity_id === s.activity_id })
+                sequenceModel.append({
+                    "activity_id": s.activity_id,
+                    "activity_name": s.activity_name,
+                    "activity_title": act.activity_title,
+                    "dataset_id": s.dataset_id,
+                    "dataset_name": s.dataset_name,
+                    "internal_name": s.internal_name
+                })
+            }
         }
 
         open()
@@ -82,7 +95,7 @@ Popup {
             if (sequence_Id !== -1)
                 sequenceEditor.close()
         } else {
-            if (Master.updateSequence(sequence_Id, sequenceName.text, sequenceObjective.text))
+            if (Master.updateSequence(sequence_Id, sequenceName.text, sequenceObjective.text, sequenceList))
                 sequenceEditor.close();
         }
     }
@@ -298,7 +311,7 @@ Popup {
                             "activity_id": splitDatasetView.selectedActivity,
                             "dataset_id": splitDatasetView.selectedDataset,
                             "activity_name": splitDatasetView.selectedActivityName,
-                            "activityTitle": splitDatasetView.selectedActivityTitle,
+                            "activity_title": splitDatasetView.selectedActivityTitle,
                             "dataset_name": splitDatasetView.selectedDatasetName,
                             "internal_name": splitDatasetView.selectedInternalDatasetName
                         };
@@ -403,7 +416,7 @@ Popup {
                             }
                             Text {
                                 anchors.fill: parent
-                                text: modelData.activityTitle
+                                text: modelData.activity_title
                             }
                             Rectangle {
                                 width: sequenceItem - 10
