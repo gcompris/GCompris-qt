@@ -754,10 +754,11 @@ Item {
             var currentData = tmpModel.get(id);
             if (currentData.sequence_id in allSequenceData) {
                 allSequenceData[currentData.sequence_id]["sequenceList"].push({
-                    "activityId": currentData.activity_id,
+                    "activity_id": currentData.activity_id,
                     "activity_name": currentData.activity_name,
-                    "datasetId": currentData.dataset_id,
-                    "dataset_name": currentData.dataset_name
+                    "dataset_id": currentData.dataset_id,
+                    "dataset_name": currentData.dataset_name,
+                    "internal_name": currentData.internal_name
                 })
             }
             else {
@@ -766,10 +767,11 @@ Item {
                     "sequence_name": currentData.sequence_name,
                     "sequence_objective": currentData.sequence_objective,
                     "sequenceList": [{
-                        "activityId": currentData.activity_id,
+                        "activity_id": currentData.activity_id,
                         "activity_name": currentData.activity_name,
-                        "datasetId": currentData.dataset_id,
-                        "dataset_name": currentData.dataset_name
+                        "dataset_id": currentData.dataset_id,
+                        "dataset_name": currentData.dataset_name,
+                        "internal_name": currentData.internal_name
                     }],
                     "sequence_checked":false
                 }
@@ -847,7 +849,7 @@ Item {
         var activities = ActivityInfoTree.menuTreeFull
         if (trace) console.warn("Starting Master component")
         for (var key in Object.keys(activities)) {  // Convert numeric keys to short activity name keys
-            var newKey = activities[key]['name'].slice(0,activities[key]['name'].lastIndexOf('/'))
+            var newKey = activities[key].shortName()
             allActivities[newKey] = activities[key]
         }
     }

@@ -25,7 +25,7 @@ CREATE TABLE sequence_with_activity_ (
 CREATE VIEW sequence_activity_ AS
 SELECT sequence_.sequence_id, sequence_.sequence_name, sequence_.sequence_objective,
        activity_with_datasets_.activity_id, sequence_with_activity_.activity_rank,
-       activity_.activity_name, dataset_.dataset_id, dataset_.dataset_name
+       activity_.activity_name, dataset_.dataset_id, dataset_.dataset_name, dataset_.internal_name
   FROM sequence_, sequence_with_activity_, activity_with_datasets_, dataset_, activity_
 WHERE sequence_.sequence_id=sequence_with_activity_.sequence_id
   AND sequence_with_activity_.activity_with_data_id=activity_with_datasets_.act_dat_id

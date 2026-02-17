@@ -71,6 +71,7 @@ Popup {
                 "activity_name": elt.activity_name,
                 "dataset_id": elt.dataset_id,
                 "dataset_name": elt.dataset_name,
+                "internal_name": elt.internal_name,
             })
         }
 
@@ -206,6 +207,7 @@ Popup {
         property string selectedActivityTitle: ""
         property string selectedActivityName: ""
         property string selectedDatasetName: ""
+        property string selectedInternalDatasetName: ""
 
         FoldDown { // Activities list
             id: activityPane
@@ -251,6 +253,7 @@ Popup {
                 if(act) {
                     splitDatasetView.selectedDataset = act.dataset_id
                     splitDatasetView.selectedDatasetName = act.dataset_name
+                    splitDatasetView.selectedInternalDatasetName = act.internal_name
                 }
                 else {
                     splitDatasetView.selectedDataset = -1
@@ -290,7 +293,8 @@ Popup {
                             "dataset_id": splitDatasetView.selectedDataset,
                             "activity_name": splitDatasetView.selectedActivityName,
                             "activityTitle": splitDatasetView.selectedActivityTitle,
-                            "dataset_name": splitDatasetView.selectedDatasetName
+                            "dataset_name": splitDatasetView.selectedDatasetName,
+                            "internal_name": splitDatasetView.selectedInternalDatasetName
                         };
                         sequenceModel.append(elt);
                         elements.current = sequenceModel.count - 1;

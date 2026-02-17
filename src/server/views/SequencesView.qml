@@ -140,12 +140,12 @@ Item {
                         for(var i = 0; i < sequence.sequenceList.count; ++ i) {
                             var elt = sequence.sequenceList.get(i)
                             if(lastActivity == elt.activity_name) {
-                                sequenceArray[sequenceArray.length-1]["datasets"].push(elt.dataset_name);
+                                sequenceArray[sequenceArray.length-1]["datasets"].push(elt.internal_name);
                             }
                             else {
                                 sequenceArray.push({
                                     "activity": elt.activity_name,
-                                    "datasets": [elt.dataset_name],
+                                    "datasets": [elt.internal_name],
                                 });
                             }
                             lastActivity = elt.activity_name

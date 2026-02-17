@@ -714,8 +714,8 @@ namespace controllers {
         for (const QVariant &elt: sequenceList) {
             QVariantMap sequence = elt.toMap();
             query.prepare("INSERT INTO activity_with_datasets_ (activity_id, dataset_id) VALUES (:activityId, :datasetId)");
-            query.bindValue(":activityId", sequence["activityId"].toInt());
-            query.bindValue(":datasetId", sequence["datasetId"].toInt());
+            query.bindValue(":activityId", sequence["activity_id"].toInt());
+            query.bindValue(":datasetId", sequence["dataset_id"].toInt());
             if (query.exec()) {
                 int act_dat_id = query.lastInsertId().toInt();
                 query.prepare("INSERT INTO sequence_with_activity_ (sequence_id, activity_with_data_id, activity_rank) VALUES (:sequenceId, :activityWithDatasetId, :activityRank)");
