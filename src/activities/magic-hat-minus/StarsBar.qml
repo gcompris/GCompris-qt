@@ -58,7 +58,7 @@ Item {
                     barGroupIndex: starsBar.barGroupIndex
                     barIndex: starsBar.barIndex
                     backgroundColor: starsBar.backgroundColor
-                    wantedColor: items.coefficientVisible ? "1" : starsColor
+                    wantedColor: items.useDifferentStars ? starsColor : "1"
                     selected: index < nbStarsOn ? true : false
                     displayBounds: true
                     isClickable: starsBar.authorizeClick
@@ -68,7 +68,7 @@ Item {
                     starSize: starsBar.starSize
                     barGroupIndex: starsBar.barGroupIndex
                     backgroundColor: starsBar.backgroundColor
-                    wantedColor: items.coefficientVisible ? "1" : starsColor
+                    wantedColor: items.useDifferentStars ? starsColor : "1"
                     selected: index < nbStarsOn ? true : false
                     displayBounds: false
                     isClickable: false

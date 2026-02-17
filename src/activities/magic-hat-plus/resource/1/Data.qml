@@ -4,10 +4,30 @@
  *
  * Authors:
  *   Mariam Fahmy <mariamfahmy66@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import core 1.0
+
+/* Dataset details:
+ *
+ *  data: [
+ *      {
+ *          // Maximum result value.
+ *          "maxValue": 3,
+ *          // minimum number of stars for each row.
+ *          "minStars": [2, 0, 0],
+ *          // maximum number of stars for each row.
+ *          "maxStars": [3, 0, 0],
+ *          // option to use different set of stars with different shape/color for each row.
+ *          // set to false by default.
+ *          // If true, maxValue and all minStars and maxStars values should not be more than 10.
+ *          "useDifferentStars": false
+ *      }
+ *
+ *  ]
+ */
 
 Data {
     objective: qsTr("Add stars up to 3.")

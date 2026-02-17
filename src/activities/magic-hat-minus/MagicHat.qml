@@ -64,6 +64,7 @@ ActivityBase {
             property alias instructionPanel: instructionPanel
             property bool inputBlocked: true
             property bool coefficientVisible: false
+            property bool useDifferentStars: false
             property var repeatersList:
                 [repeaterFirstRow, repeaterSecondRow, repeaterAnswerRow]
         }
