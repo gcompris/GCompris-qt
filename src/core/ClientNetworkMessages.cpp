@@ -286,11 +286,7 @@ void ClientNetworkMessages::readFromSocket()
                         const QJsonObject content = v.toObject();
                         bool accepted = content["accepted"].toBool();
                         userId = content["user_id"].toInt();
-<<<<<<< HEAD
                         qDebug() << "Login accepted:" << accepted << ", user ID:" << userId;
-=======
-                        qWarning() << "Login accepted:" << accepted << ", user ID:" << userId;
->>>>>>> b78928831 (core, add message to receive sequence from the server)
                         if (!accepted) {
                             setLogin("");
                             password = "";
