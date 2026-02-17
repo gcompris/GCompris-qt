@@ -110,8 +110,7 @@ Item {
                     height: splitSequenceView.bigButtonHeight
                     icon.source: "qrc:/gcompris/src/server/resource/icons/plus.svg"
                     text: qsTr("Create sequence")
-                    onClicked: sequenceEditor.openDataEditor(sequencesView.selectedSequence,
-                                                            undefined)
+                    onClicked: sequenceEditor.openDataEditor(-1)
                 }
 
                 ViewButton {

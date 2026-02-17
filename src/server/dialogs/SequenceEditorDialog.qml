@@ -21,7 +21,6 @@ Popup {
     id: sequenceEditor
     property string label
     property bool textInputReadOnly: false
-    property int sequenceIndex: -1 // the id of the sequence
     property bool addMode: true     // modify mode when false
     // Database columns
     property int modelIndex: 0      // index in Master.sequenceModel
@@ -39,6 +38,8 @@ Popup {
     function openDataEditor(selectedSequence) {
         currentSequence = Master.findObjectInModel(Master.sequenceModel, function(item) { return item.sequence_id === selectedSequence })
 
+        sequenceModel.clear()
+        splitDatasetView.resetState()
         if (!currentSequence) {
             label = qsTr("Create sequence")
             addMode = true
@@ -208,6 +209,11 @@ Popup {
         property string selectedActivityName: ""
         property string selectedDatasetName: ""
         property string selectedInternalDatasetName: ""
+
+        function resetState() {
+            activityPane.clearSelection()
+            datasetPane.clearSelection()
+        }
 
         FoldDown { // Activities list
             id: activityPane

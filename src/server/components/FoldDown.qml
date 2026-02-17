@@ -56,6 +56,9 @@ Item {
 
     function clearSelection() {
         if(visible || clickOnClear) {
+            for(var i = 0; i < childGroup.buttons.length; i++) {
+                foldDown.foldModel.setProperty(i, foldDown.checkKey, false);
+            }
             selectionClicked(-1, false);
         }
     }
@@ -77,9 +80,6 @@ Item {
             icon.source: "qrc:/gcompris/src/server/resource/icons/minus.svg"
             enabled: collapseButton.checked && childGroup.checkState != Qt.Unchecked
             onClicked: {    // Uncheck all buttons
-                for(var i = 0; i < childGroup.buttons.length; i++) {
-                    foldDown.foldModel.setProperty(i, foldDown.checkKey, false);
-                }
                 foldDown.clearSelection();
             }
         }
