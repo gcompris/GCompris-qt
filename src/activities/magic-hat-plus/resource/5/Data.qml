@@ -1,9 +1,11 @@
 /* GCompris - Data.qml
  *
  * SPDX-FileCopyrightText: 2019 Akshay Kumar <email.akshay98@gmail.com>
+ * SPDX-FileCopyrightText: 2026 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Akshay Kumar <email.akshay98@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -14,34 +16,34 @@ Data {
     difficulty: 3
     data: [
         {
-            "maxValue": 30,
-            "minStars" : [2, 0, 0],
-            "maxStars" : [5, 0, 0]
+            "maxResultPerRow": 10,
+            "minStars" : [2, 1, 0],
+            "maxStars" : [10, 5, 0]
         },
         {
-            "maxValue": 30,
-            "minStars" : [2, 2, 0],
-            "maxStars" : [7, 3, 0]
+            "maxResultPerRow": 10,
+            "minStars" : [2, 1, 0],
+            "maxStars" : [10, 10, 0]
         },
         {
-            "maxValue": 30,
-            "minStars" : [2, 2, 0],
-            "maxStars" : [8, 8, 0]
+            "maxResultPerRow": 10,
+            "minStars" : [2, 1, 1],
+            "maxStars" : [8, 8, 8]
         },
         {
-            "maxValue": 30,
-            "minStars" : [2, 2, 2],
-            "maxStars" : [8, 8, 4]
+            "maxResultPerRow": 10,
+            "minStars" : [2, 1, 1],
+            "maxStars" : [10, 10, 10]
         },
         {
-            "maxValue": 30,
-            "minStars" : [2, 2, 2],
-            "maxStars" : [9, 9, 7]
+            "maxResultPerRow": 10,
+            "minStars" : [3, 4, 5],
+            "maxStars" : [10, 10, 10]
         },
         {
-            "maxValue": 30,
-            "minStars" : [2, 2, 2],
-            "maxStars" : [9, 9, 9]
+            "maxResultPerRow": 10,
+            "minStars" : [6, 7, 8],
+            "maxStars" : [10, 10, 10]
         }
     ]
 }
