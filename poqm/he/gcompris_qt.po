@@ -19361,9 +19361,14 @@ msgid ""
 msgstr "ג׳יקומפרי מחובר לשרת מורה, אבל הסיסמה שהוקלדה למשתמש הנבחר שגויה."
 
 #: activities/menu/Menu.qml:213
+#, fuzzy, qt-format
+#| msgctxt "Menu|"
+#| msgid ""
+#| "GCompris is connected to teacher's server, and the user is authenticated."
 msgctxt "Menu|"
 msgid ""
-"GCompris is connected to teacher's server, and the user is authenticated."
+"GCompris is connected to teacher's server, and the user is authenticated as "
+"%1."
 msgstr "ג׳יקומפרי מחובר לשרת מורה והמשתמש מאומת."
 
 #: activities/menu/Menu.qml:214
@@ -19383,7 +19388,7 @@ msgid ""
 "authenticated."
 msgstr "ג׳יקומפרי מחובר לשרת מורה אבל המשתמש לא מאומת עדיין."
 
-#: activities/menu/Menu.qml:677
+#: activities/menu/Menu.qml:678
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19392,12 +19397,12 @@ msgstr ""
 "אפשר להציב את הפעילויות האהובות ביותר כאן על ידי לחיצה על השמש בצד הימני "
 "העליון של הפעילות הזו."
 
-#: activities/menu/Menu.qml:824
+#: activities/menu/Menu.qml:828
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "לחפש פעילות מסוימת"
 
-#: activities/menu/Menu.qml:853
+#: activities/menu/Menu.qml:857
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "הגדרות הפעילות"

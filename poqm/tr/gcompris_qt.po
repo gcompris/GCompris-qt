@@ -19791,9 +19791,14 @@ msgstr ""
 "parola yanlış."
 
 #: activities/menu/Menu.qml:213
+#, fuzzy, qt-format
+#| msgctxt "Menu|"
+#| msgid ""
+#| "GCompris is connected to teacher's server, and the user is authenticated."
 msgctxt "Menu|"
 msgid ""
-"GCompris is connected to teacher's server, and the user is authenticated."
+"GCompris is connected to teacher's server, and the user is authenticated as "
+"%1."
 msgstr ""
 "GCompris öğretmenin sunucusuna bağlı ve kullanıcının kimliği doğrulanmış."
 
@@ -19816,7 +19821,7 @@ msgstr ""
 "GCompris öğretmenin sunucusuna bağlı; ancak kullanıcı henüz kimliğini "
 "doğrulamamış."
 
-#: activities/menu/Menu.qml:677
+#: activities/menu/Menu.qml:678
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19825,12 +19830,12 @@ msgstr ""
 "En sevdiğin etkinlikleri buraya koymak için o etkinliğin sağ üst köşesindeki "
 "güneşe tıkla."
 
-#: activities/menu/Menu.qml:824
+#: activities/menu/Menu.qml:828
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Etkinlik ara"
 
-#: activities/menu/Menu.qml:853
+#: activities/menu/Menu.qml:857
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Etkinlik Ayarları"

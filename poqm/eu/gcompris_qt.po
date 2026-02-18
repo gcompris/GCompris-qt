@@ -19922,9 +19922,14 @@ msgstr ""
 "erabiltzailerako sartutako pasahitza okerra da."
 
 #: activities/menu/Menu.qml:213
+#, fuzzy, qt-format
+#| msgctxt "Menu|"
+#| msgid ""
+#| "GCompris is connected to teacher's server, and the user is authenticated."
 msgctxt "Menu|"
 msgid ""
-"GCompris is connected to teacher's server, and the user is authenticated."
+"GCompris is connected to teacher's server, and the user is authenticated as "
+"%1."
 msgstr ""
 "GCompris irakaslearen zerbitzarira konektatuta dago, eta erabiltzailea "
 "autentifikatuta dago."
@@ -19948,7 +19953,7 @@ msgstr ""
 "GCompris irakaslearen zerbitzarira konektatuta dago, baina erabiltzaile ez "
 "da oraindik autentifikatu."
 
-#: activities/menu/Menu.qml:677
+#: activities/menu/Menu.qml:678
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19957,12 +19962,12 @@ msgstr ""
 "Jarduera gogokoenak hemen jartzeko, egin klik jarduera horren goiko "
 "eskuineko eguzkian."
 
-#: activities/menu/Menu.qml:824
+#: activities/menu/Menu.qml:828
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Bilatu jarduera jakin batzuk"
 
-#: activities/menu/Menu.qml:853
+#: activities/menu/Menu.qml:857
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Jarduera-ezarpenak"

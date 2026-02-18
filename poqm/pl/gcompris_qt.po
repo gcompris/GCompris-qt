@@ -19915,9 +19915,14 @@ msgstr ""
 "danego użytkownika jest złe."
 
 #: activities/menu/Menu.qml:213
+#, fuzzy, qt-format
+#| msgctxt "Menu|"
+#| msgid ""
+#| "GCompris is connected to teacher's server, and the user is authenticated."
 msgctxt "Menu|"
 msgid ""
-"GCompris is connected to teacher's server, and the user is authenticated."
+"GCompris is connected to teacher's server, and the user is authenticated as "
+"%1."
 msgstr ""
 "GCompris jest podłączony do serwera nauczyciela, a użytkownik jest "
 "uwierzytelniony."
@@ -19941,7 +19946,7 @@ msgstr ""
 "GCompris jest podłączony do serwera nauczyciela, ale użytkownik nie jest "
 "uwierzytelniony."
 
-#: activities/menu/Menu.qml:677
+#: activities/menu/Menu.qml:678
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19950,12 +19955,12 @@ msgstr ""
 "Tutaj umieszczaj swoje ulubione aktywności, poprzez naciśnięcie na słońce w "
 "górnym prawym narożniku aktywności."
 
-#: activities/menu/Menu.qml:824
+#: activities/menu/Menu.qml:828
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Wyszukaj danej aktywności"
 
-#: activities/menu/Menu.qml:853
+#: activities/menu/Menu.qml:857
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Ustawienia aktywności"

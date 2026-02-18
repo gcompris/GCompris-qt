@@ -20496,9 +20496,11 @@ msgid ""
 msgstr ""
 
 #: activities/menu/Menu.qml:213
+#, qt-format
 msgctxt "Menu|"
 msgid ""
-"GCompris is connected to teacher's server, and the user is authenticated."
+"GCompris is connected to teacher's server, and the user is authenticated as "
+"%1."
 msgstr ""
 
 #: activities/menu/Menu.qml:214
@@ -20518,7 +20520,7 @@ msgid ""
 "authenticated."
 msgstr ""
 
-#: activities/menu/Menu.qml:677
+#: activities/menu/Menu.qml:678
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -20527,12 +20529,12 @@ msgstr ""
 "ನಿಮಗೆ ಇಷ್ಟವಾದ ಚಟುವಟಿಕೆಗಳನ್ನು ಇಲ್ಲಿ ಸೇರಿಸಲು ಆ ಚಟುವಟಿಕೆಯ ಬಲ ಭಾಗದಲ್ಲಿರುವ ಸೂರ್ಯನ "
 "ಚಿಹ್ನೆಯ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ."
 
-#: activities/menu/Menu.qml:824
+#: activities/menu/Menu.qml:828
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "ನಿರ್ದಿಷ್ಟ ಚಟುವಟಿಕೆಗಳನ್ನು ಹುಡುಕುವುದು "
 
-#: activities/menu/Menu.qml:853
+#: activities/menu/Menu.qml:857
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "ಚಟುವಟಿಕೆಗಳ ಸೆಟ್ಟಿಂಗ್"

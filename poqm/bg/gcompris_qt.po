@@ -19911,9 +19911,14 @@ msgstr ""
 "потребител е грешна."
 
 #: activities/menu/Menu.qml:213
+#, fuzzy, qt-format
+#| msgctxt "Menu|"
+#| msgid ""
+#| "GCompris is connected to teacher's server, and the user is authenticated."
 msgctxt "Menu|"
 msgid ""
-"GCompris is connected to teacher's server, and the user is authenticated."
+"GCompris is connected to teacher's server, and the user is authenticated as "
+"%1."
 msgstr ""
 "GCompris е свързан със сървъра на учителя и потребителят е удостоверен."
 
@@ -19936,7 +19941,7 @@ msgstr ""
 "GCompris е свързан със сървъра на учителя, но потребителят все още не е "
 "удостоверен."
 
-#: activities/menu/Menu.qml:677
+#: activities/menu/Menu.qml:678
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19945,12 +19950,12 @@ msgstr ""
 "Поставете любимите си занимания тук, като кликнете върху слънцето в горния "
 "десен ъгъл на картинката на заниманието."
 
-#: activities/menu/Menu.qml:824
+#: activities/menu/Menu.qml:828
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Търсене на специфични занимания"
 
-#: activities/menu/Menu.qml:853
+#: activities/menu/Menu.qml:857
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Настройки на заниманието"

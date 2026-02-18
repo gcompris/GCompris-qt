@@ -19634,9 +19634,14 @@ msgstr ""
 "ചെയ്ത പാസ്‍വേഡ് തെറ്റാണ്."
 
 #: activities/menu/Menu.qml:213
+#, fuzzy, qt-format
+#| msgctxt "Menu|"
+#| msgid ""
+#| "GCompris is connected to teacher's server, and the user is authenticated."
 msgctxt "Menu|"
 msgid ""
-"GCompris is connected to teacher's server, and the user is authenticated."
+"GCompris is connected to teacher's server, and the user is authenticated as "
+"%1."
 msgstr ""
 "ജികോംപ്രി, ടീച്ചറുടെ സെർവറുമായി കണക്ടുചെയ്തിരിക്കുകയും യൂസർ ഒതന്റിക്കേറ്റു ചെയ്യുകയും ചെയ്തു."
 
@@ -19659,7 +19664,7 @@ msgstr ""
 "ജികോംപ്രി, ടീച്ചറുടെ സെർവറുമായി കണക്ടുചെയ്തിരിക്കുന്നു. പക്ഷേ, യൂസർ ഇനിയും ഒതന്റിക്കേറ്റു "
 "ചെയ്തിട്ടില്ല."
 
-#: activities/menu/Menu.qml:677
+#: activities/menu/Menu.qml:678
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19668,12 +19673,12 @@ msgstr ""
 "നിങ്ങൾക്കു പ്രിയപ്പെട്ട പ്രവർത്തനങ്ങൾ ഇവിടെ ചേർക്കാൻ ആ പ്രവർത്തനത്തിന്റെ വലത്ത് മുകളിലായുള്ള "
 "സൂര്യനിൽ ക്ലിക്കു ചെയ്യൂ."
 
-#: activities/menu/Menu.qml:824
+#: activities/menu/Menu.qml:828
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "പ്രവർത്തനങ്ങൾ തിരയുക"
 
-#: activities/menu/Menu.qml:853
+#: activities/menu/Menu.qml:857
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "പ്രവർത്തന ക്രമീകരണം"

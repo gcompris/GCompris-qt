@@ -18772,9 +18772,14 @@ msgstr ""
 "შეყვანილი პაროლი არასწორია."
 
 #: activities/menu/Menu.qml:213
+#, fuzzy, qt-format
+#| msgctxt "Menu|"
+#| msgid ""
+#| "GCompris is connected to teacher's server, and the user is authenticated."
 msgctxt "Menu|"
 msgid ""
-"GCompris is connected to teacher's server, and the user is authenticated."
+"GCompris is connected to teacher's server, and the user is authenticated as "
+"%1."
 msgstr ""
 "GCompris დაკავშირებულია მასწავლებლის სერვერთან და მომხმარებელი ავტორიზებულია."
 
@@ -18797,7 +18802,7 @@ msgstr ""
 "GCompris დაკავშირებულია მასწავლებლის სერვერთან, მაგრამ მომხმარებელს "
 "ავთენტიკაცია ჯერ არ გაუვლია."
 
-#: activities/menu/Menu.qml:677
+#: activities/menu/Menu.qml:678
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -18806,12 +18811,12 @@ msgstr ""
 "განათავსეთ თქვენი რჩეული აქტივობები აქ შესაბამისი აქტივობის ზედა მარჯვენა "
 "კუთხეში მზეზე დაწკაპუნებით."
 
-#: activities/menu/Menu.qml:824
+#: activities/menu/Menu.qml:828
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "მითითებული აქტივობები ძებნა"
 
-#: activities/menu/Menu.qml:853
+#: activities/menu/Menu.qml:857
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "აქტივობის მორგება"
