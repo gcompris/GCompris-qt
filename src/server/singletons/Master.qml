@@ -436,10 +436,17 @@ Item {
 //// Activity functions
     function loadAllActivities(model) {
         modelFromRequest(model, `SELECT * FROM activity_`
-                         , { activity_checked: false, activity_title: "" }
+                         , { activity_checked: false, activity_title: "", has_editor: false }
                          )
-        for (var i = 0; i < model.count; i++)
+
+        for (var i = 0; i < model.count; i++) {
             model.setProperty(i, "activity_title", allActivities[model.get(i).activity_name].title)
+
+            var url = `${activityBaseUrl}/${model.get(i).activity_name}/ActivityEditor.qml`;
+            var hasEditor = file.exists(url)
+            model.setProperty(i, "has_editor", hasEditor)
+        }
+
         listModelSort(model, (a, b) => (a.activity_title.localeCompare(b.activity_title)))
     }
 
