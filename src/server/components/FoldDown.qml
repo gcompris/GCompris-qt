@@ -80,7 +80,7 @@ Item {
             icon.source: "qrc:/gcompris/src/server/resource/icons/minus.svg"
             enabled: collapseButton.checked && childGroup.checkState != Qt.Unchecked
             onClicked: {    // Uncheck all buttons
-                foldDown.clearSelection();
+                childGroup.checkState = Qt.Unchecked
             }
         }
 
