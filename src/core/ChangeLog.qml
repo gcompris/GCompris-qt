@@ -26,6 +26,12 @@ QtObject {
      *
      */
     property var changelog: [
+            { "versionCode": 270000, "content": [ // versionCode TBD...
+                qsTr("Many usability improvements"),
+                qsTr("Many bug fixes")
+                ],
+                "newDatasets": ["magic-hat-minus", "magic-hat-plus"]
+            },
             { "versionCode": 260000, "content": [
                 qsTr("Translation added for Kannada and Tamil"),
                 qsTr("New command-line option to set the locale (--locale locale)"),
