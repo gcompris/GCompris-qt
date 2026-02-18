@@ -1,9 +1,11 @@
-/* GCompris - Hat.qml
+/* GCompris - magic-hat.js
  *
  * SPDX-FileCopyrightText: 2014 Thibaut ROMAIN
+ * SPDX-FileCopyrightText: 2026 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Thibaut ROMAIN <thibrom@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
