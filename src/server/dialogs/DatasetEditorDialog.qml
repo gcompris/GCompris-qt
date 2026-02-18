@@ -343,6 +343,7 @@ Popup {
 
                 StyledTabButton {
                     text: qsTr("Editor")
+                    icon.source: "qrc:/gcompris/src/server/resource/icons/editor.svg"
                 }
                 StyledTabButton {
                     text: qsTr("Raw JSON")

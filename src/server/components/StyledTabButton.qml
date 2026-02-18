@@ -27,12 +27,14 @@ TabButton {
         spacing: control.spacing
         layoutDirection: Qt.LeftToRight
 
-        Image {
+        IconHolder {
             id: buttonIcon
-            height: Style.textSize
-            width: Style.textSize
-            source: control.icon.source
-            visible: source != ""
+            height: Style.iconSize
+            width: Style.iconSize
+            anchors.verticalCenter: parent.verticalCenter
+            icon.source: control.icon.source
+            icon.color: buttonText.color
+            visible: icon.source != ""
         }
 
         DefaultLabel {
