@@ -62,12 +62,28 @@ ActivityBase {
             property alias bonus: bonus
             property alias hat: theHat
             property alias instructionPanel: instructionPanel
+            property alias client: client
             property bool inputBlocked: true
             property bool coefficientVisible: false
             property bool useDifferentStars: false
             property var repeatersList:
                 [repeaterFirstRow, repeaterSecondRow, repeaterAnswerRow]
         }
+
+        Client {    // Client for gcompris-teachers. Prepare data from activity to server
+            id: client
+            getDataCallback: function() {
+                var data = {
+                    "mode": activity.mode,
+                    "useCoefficients": items.coefficientVisible,
+                    "useDifferentStars": items.useDifferentStars,
+                    "questionContent": Activity.questionContent
+                }
+
+                return data;
+            }
+        }
+
 
         GCSoundEffect {
             id: smudgeSound
