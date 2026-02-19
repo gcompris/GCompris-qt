@@ -17,37 +17,37 @@ Data {
             "useDifferentStars": true,
             "maxResultPerRow": 10,
             "minStars" : [2, 1, 0],
-            "maxStars" : [10, 5, 0]
+            "maxStars" : [9, 5, 0]
         },
         {
             "useDifferentStars": true,
             "maxResultPerRow": 10,
             "minStars" : [2, 1, 0],
-            "maxStars" : [10, 10, 0]
+            "maxStars" : [9, 9, 0]
         },
         {
             "useDifferentStars": true,
             "maxResultPerRow": 10,
             "minStars" : [5, 5, 0],
-            "maxStars" : [10, 10, 0]
+            "maxStars" : [9, 9, 0]
         },
         {
             "useDifferentStars": true,
             "maxResultPerRow": 10,
             "minStars" : [2, 1, 1],
-            "maxStars" : [10, 10, 5]
+            "maxStars" : [9, 9, 5]
         },
         {
             "useDifferentStars": true,
             "maxResultPerRow": 10,
             "minStars" : [2, 1, 1],
-            "maxStars" : [10, 10, 10]
+            "maxStars" : [9, 9, 9]
         },
         {
             "useDifferentStars": true,
             "maxResultPerRow": 10,
             "minStars" : [5, 5, 5],
-            "maxStars" : [10, 10, 10]
+            "maxStars" : [9, 9, 9]
         }
     ]
 }

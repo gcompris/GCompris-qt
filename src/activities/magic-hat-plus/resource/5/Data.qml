@@ -18,12 +18,12 @@ Data {
         {
             "maxResultPerRow": 10,
             "minStars" : [2, 1, 0],
-            "maxStars" : [10, 5, 0]
+            "maxStars" : [9, 5, 0]
         },
         {
             "maxResultPerRow": 10,
             "minStars" : [2, 1, 0],
-            "maxStars" : [10, 10, 0]
+            "maxStars" : [9, 9, 0]
         },
         {
             "maxResultPerRow": 10,
@@ -33,17 +33,17 @@ Data {
         {
             "maxResultPerRow": 10,
             "minStars" : [2, 1, 1],
-            "maxStars" : [10, 10, 10]
+            "maxStars" : [9, 9, 9]
         },
         {
             "maxResultPerRow": 10,
             "minStars" : [3, 4, 5],
-            "maxStars" : [10, 10, 10]
+            "maxStars" : [9, 9, 9]
         },
         {
             "maxResultPerRow": 10,
             "minStars" : [6, 7, 8],
-            "maxStars" : [10, 10, 10]
+            "maxStars" : [9, 9, 9]
         }
     ]
 }
