@@ -229,6 +229,7 @@ Column {
         contentHeight: lines.height
         flickableDirection: Flickable.VerticalFlick
         boundsBehavior: Flickable.StopAtBounds
+        pixelAligned: true
         clip: true
 
         ScrollBar.vertical: ScrollBar {

@@ -16,6 +16,7 @@ Flickable {
     id: styledFlickable
     width: parent.width
     height: parent.height
+    pixelAligned: true
     contentWidth: contentItem.childrenRect.width
     contentHeight: contentItem.childrenRect.height
     boundsBehavior: Flickable.StopAtBounds

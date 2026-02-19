@@ -106,6 +106,7 @@ Popup {
                 cellWidth: width * 0.25
                 cellHeight: Style.mediumLineHeight
                 boundsBehavior: Flickable.StopAtBounds
+                pixelAligned: true
                 clip: true
                 model: pupilModel
                 delegate: Item {
@@ -135,6 +136,7 @@ Popup {
                 cellWidth: width / 3
                 cellHeight: Style.mediumLineHeight
                 boundsBehavior: Flickable.StopAtBounds
+                pixelAligned: true
                 activeFocusOnTab: true
                 focus: true
                 clip: true

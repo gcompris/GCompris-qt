@@ -185,6 +185,7 @@ Popup {
                 anchors.horizontalCenter: parent.horizontalCenter
                 orientation: ListView.Horizontal
                 interactive: true
+                pixelAligned: true
                 clip: true
                 model: passModel
                 delegate: Image {
@@ -227,6 +228,7 @@ Popup {
                     spacing: Style.margins
                     orientation: ListView.Horizontal
                     interactive: true
+                    pixelAligned: true
                     clip: true
                     model: Core.shuffle(imagesModel)
                     delegate: Image {
@@ -270,6 +272,7 @@ Popup {
             anchors.centerIn: parent
             anchors.margins: Style.margins
             boundsBehavior: Flickable.StopAtBounds
+            pixelAligned: true
             clip: true
             model: tmpGroupModel
             delegate: StyledCheckBox {

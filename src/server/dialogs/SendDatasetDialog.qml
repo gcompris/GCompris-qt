@@ -149,6 +149,7 @@ Popup {
                 focus: true
                 clip: true
                 model: pupilModel
+                pixelAligned: true
 
                 ScrollBar.vertical: ScrollBar {
                     contentItem: Rectangle {
