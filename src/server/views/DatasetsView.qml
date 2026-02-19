@@ -52,7 +52,7 @@ Item {
             clickOnClear: true
             onSelectionClicked: (modelId) => {
                 datasetsView.selectedActivity = modelId
-                Master.filterDatasets(datasetsView.selectedActivity, false)
+                Master.filterDatasets(datasetsView.selectedActivity, Master.userCreatedDatasetModel, false, false)
             }
         }
 

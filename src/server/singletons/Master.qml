@@ -24,8 +24,9 @@ Item {
     property alias allActivitiesModel: allActivitiesModel
     property alias activityWithDataModel: activityWithDataModel
     property alias userCreatedDatasetModel: userCreatedDatasetModel
-    property alias allDatasetModel: allDatasetModel
     property alias filteredDatasetModel: filteredDatasetModel
+    property alias allDatasetModel: allDatasetModel
+    property alias filteredAllDatasetModel: filteredAllDatasetModel
     property alias sequenceModel: sequenceModel
     property bool trace: false
     property int groupFilterId: -1     // contains selected group id
@@ -109,6 +110,7 @@ Item {
     ListModel { id: userCreatedDatasetModel } // TODO Use SortFilterProxyModel when Qt6.10?
     ListModel { id: allDatasetModel }
     ListModel { id: filteredDatasetModel }  // For checkBoxes lists (multiselection -> works on userCreatedDatasetModel only)
+    ListModel { id: filteredAllDatasetModel }  // For checkBoxes lists (multiselection -> works on allDatasetModel only)
     ListModel { id: tmpModel }              // Used for temporary requests inside functions
     ListModel { id: sequenceModel }
 
@@ -587,33 +589,41 @@ Item {
         if (trace) console.warn(groupModel.count, "Datasets loaded")
     }
 
-    function filterDatasets(activityId, keepSelection) {   // bool - dataset filtering should keep selection now
+    function filterDatasets(activityId, inputModel, keepSelection, emptyFilterAll) {   // bool - dataset filtering should keep selection now
+        var outputModel = inputModel == allDatasetModel ? filteredAllDatasetModel : filteredDatasetModel
         if (trace) console.warn("Datasets filtered")
         var selectedIds = []                // array of checked ids to be restored
         if (keepSelection) {
-            for (var j = 0; j < userCreatedDatasetModel.count; j++) {
-                var userSel = userCreatedDatasetModel.get(j)
+            for (var j = 0; j < inputModel.count; j++) {
+                var userSel = inputModel.get(j)
                 if (userSel.user_checked)
                     selectedIds.push(userSel.user_id)
             }
         }
-        filteredDatasetModel.clear()
+        outputModel.clear()
         var empty = (activityId === -1)
-        for (var i = 0; i < userCreatedDatasetModel.count; i++) {
-            var dataset = JSON.parse(JSON.stringify(userCreatedDatasetModel.get(i)))     // Make a deep copy
+
+        if(empty && emptyFilterAll) {
+            return;
+        }
+
+        var newItems = []
+        for (var i = 0; i < inputModel.count; i++) {
+            var dataset = JSON.parse(JSON.stringify(inputModel.get(i)))     // Make a deep copy
             if (keepSelection)
                 if (selectedIds.includes(dataset.dataset_id))                 // Check if it was already checked
                     dataset.dataset_checked = true
             if (empty) {
-                filteredDatasetModel.append(dataset)
+                newItems.push(dataset)
                 continue
             }
             var datasetActivityId = dataset.activity_id
             var show = datasetActivityId == activityId             // check if user belongs to selected groups
             if (show) {
-                filteredDatasetModel.append(dataset)
+                newItems.push(dataset)
             }
         }
+        outputModel.append(newItems);
     }
 
     function createDataset(datasetName, activityId, objective, difficulty, content) {     // string, string, int, string
@@ -637,7 +647,7 @@ Item {
             if (trace) console.warn("Dataset created:", datasetName, objective)
         }
         // If we are in the "create datasets" view, we want the view to be refreshed
-        filterDatasets(activityId, true)
+        filterDatasets(activityId, Master.userCreatedDatasetModel, true, false)
         return datasetId
     }
 
@@ -880,7 +890,7 @@ Item {
         loadAllActivities(allActivitiesModel)
         loadActivitiesWithData(activityWithDataModel)
         loadDatasets()
-        filterDatasets(-1, false)
+        filterDatasets(-1, Master.userCreatedDatasetModel, false, false)
         loadSequences()
     }
 

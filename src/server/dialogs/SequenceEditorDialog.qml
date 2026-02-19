@@ -224,8 +224,8 @@ Popup {
         property string selectedInternalDatasetName: ""
 
         function resetState() {
-            activityPane.clearSelection()
-            datasetPane.clearSelection()
+            activityPane.uncheck()
+            datasetPane.uncheck()
         }
 
         FoldDown { // Activities list
@@ -251,7 +251,7 @@ Popup {
                 else {
                     splitDatasetView.selectedActivity = -1
                 }
-                Master.filterDatasets(splitDatasetView.selectedActivity, false)
+                Master.filterDatasets(splitDatasetView.selectedActivity, Master.allDatasetModel, false, true)
                 splitDatasetView.selectedDataset = -1
             }
         }
@@ -260,7 +260,7 @@ Popup {
             id: datasetPane
             SplitView.minimumWidth: splitDatasetView.minSplitWidth
             title: qsTr("Datasets")
-            foldModel: Master.filteredDatasetModel
+            foldModel: Master.filteredAllDatasetModel
             indexKey: "dataset_id"
             nameKey: "dataset_name"
             checkKey: "dataset_checked"
@@ -268,11 +268,11 @@ Popup {
             filterVisible: false
             collapsable: false
             onSelectionClicked: (modelId) => {
-                var act = Master.findObjectInModel(Master.filteredDatasetModel, function(item) { return item.dataset_id === modelId })
+                var act = Master.findObjectInModel(Master.filteredAllDatasetModel, function(item) { return item.dataset_id === modelId })
                 if(act) {
                     splitDatasetView.selectedDataset = act.dataset_id
                     splitDatasetView.selectedDatasetName = act.dataset_name
-                    splitDatasetView.selectedInternalDatasetName = act.internal_name
+                    splitDatasetView.selectedInternalDatasetName = act.is_created_dataset ? "c-"+act.dataset_name : act.dataset_name
                 }
                 else {
                     splitDatasetView.selectedDataset = -1

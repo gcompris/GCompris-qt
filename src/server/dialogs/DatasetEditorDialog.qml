@@ -205,7 +205,7 @@ Popup {
         editorLoader.sourceUrl = ""     // force next time to reload editor with new textActivityData
         dataset_Content = ""
         if(!addMode) {
-            Master.filterDatasets(selectedActivityIndex, true);
+            Master.filterDatasets(selectedActivityIndex, Master.userCreatedDatasetModel, true, false);
         }
     }
 

@@ -41,7 +41,7 @@ Popup {
 
     function validateDialog() {
         Master.deleteDataset(removeDatasetDialog.datasetId)
-        Master.filterDatasets(activityId, false)
+        Master.filterDatasets(activityId, Master.userCreatedDatasetModel, false, false)
         datasetRemoved()
     }
 

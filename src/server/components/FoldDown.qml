@@ -54,6 +54,11 @@ Item {
         }
     }
 
+    function uncheck() {
+        // This will call clearSelection if needed
+        childGroup.checkState = Qt.Unchecked
+    }
+
     function clearSelection() {
         if(visible || clickOnClear) {
             for(var i = 0; i < childGroup.buttons.length; i++) {

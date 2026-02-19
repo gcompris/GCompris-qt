@@ -29,12 +29,13 @@ Control {
         anchors.fill: parent
         anchors.leftMargin: 10
         anchors.rightMargin: has_editor ? editorIcon.width + Style.bigMargins : 0
-        text : (Master.allActivities[activity_name] !== undefined) ? Master.allActivities[activity_name].title : ""
+        text: (Master.allActivities[activity_name] !== undefined) ? Master.allActivities[activity_name].title : ""
         ButtonGroup.group: childGroup
         checked: activity_checked
         onCheckedChanged: {
+            var prev = activity_checked;
             foldDown.foldModel.setProperty(index, checkKey, checked);
-            if(checked) {
+            if(checked && !prev) {
                 selectionClicked(foldDown.foldModel.get(index)[indexKey], checked);
             }
         }
