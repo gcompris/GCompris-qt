@@ -48,6 +48,8 @@ Item  {
     property int maxNumberOfItems: 10
     // visual separator used to display the content of number_array and string_array
     property string visualListSeparator: ", "
+    // set to true if providing a specific set of values to comboInt
+    property bool specificComboInt: false
 
     ListModel { id: arrayModel }        // Internal model for choiceInput
     ListModel { id: stringModel }        // Internal model for stringsInput's popup and comboInput popup
@@ -79,7 +81,11 @@ Item  {
             value = proto.def                                   // value contains value range for comboInput
             choiceDefault = aModel.get(modelIndex)[proto.name]  // current value in model
             jsonValue = JSON.parse(value)
-            stringToRange()
+            if(specificComboInt) {
+                stringToArrayModel()
+            } else {
+                stringToRange()
+            }
             return comboInput
         case "boolean":
             value = aModel.get(modelIndex)[proto.name]          // value contains boolean
