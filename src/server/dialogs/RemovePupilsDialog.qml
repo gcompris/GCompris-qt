@@ -94,6 +94,7 @@ Popup {
                 cellWidth: width * 0.25
                 cellHeight: Style.mediumLineHeight
                 boundsBehavior: Flickable.StopAtBounds
+                pixelAligned: true
                 clip: true
                 model: removePupilsDialog.pupilsNamesText.split("\n")
                 delegate: Item {

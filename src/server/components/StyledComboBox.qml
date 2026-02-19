@@ -194,6 +194,7 @@ AbstractButton {
             clip: true
             keyNavigationEnabled: false
             boundsBehavior: Flickable.StopAtBounds
+            pixelAligned: true
 
             delegate: Rectangle {
                 id: menuItem
