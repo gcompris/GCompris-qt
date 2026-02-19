@@ -17,13 +17,14 @@ import core 1.0
  *
  *      { // Example without coefficients ("useCoefficients": false, or not defined).
  *
- *          // Maximum number of stars for each row of the result. Must be between 1 and 10.
- *          "maxResultPerRow": 3,
+ *          // Maximum number of stars for each row of the result.
+ *          // For additions, it must be between 1 and 10, and must be larger than any value in "maxStars".
+ *          "maxResultPerRow": 4,
  *          // If true, each row uses a different set of stars. (initialized to false by default if not defined)
  *          "useDifferentStars": false,
- *          // maximum number of stars for each row of first operand. First number should be at least 1 for additions, others between 0 and 10.
+ *          // maximum number of stars for each row of first operand. For additions, first number should be between 1 and 9, and others between 0 and 9.
  *          "maxStars": [3, 0, 0],
- *          // minimum number of stars for each row of first operand. First number should be at least 1 for additions, others between 0 and 10.
+ *          // minimum number of stars for each row of first operand. For additions, first number should be between 1 and 9, and others between 0 and 9.
  *          // All numbers should not be larger than the corresponding ones in maxStars.
  *          "minStars": [1, 0, 0]
  *      },

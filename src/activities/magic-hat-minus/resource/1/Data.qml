@@ -17,7 +17,8 @@ import core 1.0
  *
  *      { // Example without coefficients ("useCoefficients": false, or not defined).
  *
- *          // Maximum number of stars for each row of the result. Must be between 1 and 10.
+ *          // Maximum number of stars for each row of the result.
+ *          // For subtractions, it must be between 1 and 10.
  *          "maxResultPerRow": 3,
  *          // If true, each row uses a different set of stars. (initialized to false by default if not defined)
  *          "useDifferentStars": false,

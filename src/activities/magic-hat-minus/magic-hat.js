@@ -74,19 +74,20 @@ function initLevel() {
             minStars[0] = firstMinStars;
         }
 
-        // all values should not be more than 10, so clamp if higher values are given
+        // all values should not be more than 10 for subtractions, or 9 for additions, so clamp if higher values are given
+        var modeMaxStars = mode === "minus" ? 10 : 9;
         for(var i = 0; i < maxStars.length; i++) {
-            if(maxStars[i] > 10) {
-                maxStars[i] = 10;
+            if(maxStars[i] > modeMaxStars) {
+                maxStars[i] = modeMaxStars;
             }
-            if(mode === "plus" && maxResultPerRow < maxStars[i]) {
-                // in addition mode, if a maxStars value is bigger than maxResultPerRow, bump maxResultPerRow to this value
-                maxResultPerRow = maxStars[i];
+            if(mode === "plus" && maxResultPerRow <= maxStars[i]) {
+                // in addition mode, if a maxStars value is equal or bigger than maxResultPerRow, bump maxResultPerRow to this value + 1
+                maxResultPerRow = maxStars[i] + 1;
             }
         }
         for(var i = 0; i < minStars.length; i++) {
-            if(minStars[i] > 10) {
-                minStars[i] = 10;
+            if(minStars[i] > modeMaxStars) {
+                minStars[i] = modeMaxStars;
             } else if(minStars[i] > maxStars[i]) {
                 // all minStars values should not be higher than corresponding maxStars values
                 minStars[i] = maxStars[i];
@@ -107,7 +108,8 @@ function initLevel() {
             rowCoefficients[0] = 1;
         }
 
-        maxStars = [10, 10, 10];
+        var modeMaxStars = mode === "minus" ? 10 : 9;
+        maxStars = [modeMaxStars, modeMaxStars, modeMaxStars];
         minStars = [firstMinStars, 1, 1];
 
         for(var i = 1; i < 3; i++) {
@@ -148,17 +150,14 @@ function initLevel() {
         numberOfStars[1] = (maxStars[1] > 0) ? getRandomInt(minStars[1], maxStars[1]) : 0;
         numberOfStars[2] = (maxStars[2] > 0) ? getRandomInt(minStars[2], maxStars[2]) : 0;
     } else {
-        var maxFirstRow = Math.min(maxResultPerRow - 1, maxStars[0]);
-        numberOfStars[0] = getRandomInt(minStars[0], maxFirstRow);
+        numberOfStars[0] = getRandomInt(minStars[0], maxStars[0]);
         if(maxStars[1] > 0) {
-            var maxSecondRow = Math.min(maxResultPerRow - 1, maxStars[1]);
-            numberOfStars[1] = getRandomInt(minStars[1], maxSecondRow);
+            numberOfStars[1] = getRandomInt(minStars[1], maxStars[1]);
         } else {
             numberOfStars[1] = 0;
         }
         if(maxStars[2] > 0) {
-            var maxThirdRow = Math.min(maxResultPerRow - 1, maxStars[2]);
-            numberOfStars[2] = getRandomInt(minStars[2], maxThirdRow);
+            numberOfStars[2] = getRandomInt(minStars[2], maxStars[2]);
         } else {
             numberOfStars[2] = 0;
         }
