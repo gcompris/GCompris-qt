@@ -19192,12 +19192,12 @@ msgstr ""
 "do fhreagra a scríobh isteach agus cliceáil ar an chnaipe OK le do fhreagra "
 "a dheimhniú."
 
-#: activities/magic-hat-minus/MagicHat.qml:255
+#: activities/magic-hat-minus/MagicHat.qml:256
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Cliceáil ar an hata chun an cluiche a thoiseacht"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:13
+#: activities/magic-hat-minus/resource/1/Data.qml:49
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Calculate how many stars are under the magic hat."
@@ -19205,7 +19205,7 @@ msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "Déan cuntas ar líon na rudaí atá faoi hata an draoi"
 
-#: activities/magic-hat-minus/resource/2/Data.qml:13
+#: activities/magic-hat-minus/resource/2/Data.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Calculate how many stars are under the magic hat."
@@ -19213,35 +19213,35 @@ msgctxt "Data|"
 msgid "Calculate remaining stars up to 4."
 msgstr "Déan cuntas ar líon na rudaí atá faoi hata an draoi"
 
-#: activities/magic-hat-minus/resource/3/Data.qml:13
+#: activities/magic-hat-minus/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 5."
 msgstr ""
 
-#: activities/magic-hat-minus/resource/4/Data.qml:13
+#: activities/magic-hat-minus/resource/4/Data.qml:15
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 10."
 msgstr ""
 
-#: activities/magic-hat-minus/resource/5/Data.qml:13
+#: activities/magic-hat-minus/resource/5/Data.qml:15
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 30."
 msgstr ""
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-minus/resource/6/Data.qml:14
+#: activities/magic-hat-minus/resource/6/Data.qml:16
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 100 with coefficients."
 msgstr ""
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-minus/resource/7/Data.qml:14
+#: activities/magic-hat-minus/resource/7/Data.qml:16
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 1000 with coefficients."
 msgstr ""
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-minus/resource/8/Data.qml:14
+#: activities/magic-hat-minus/resource/8/Data.qml:16
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr ""
@@ -19301,7 +19301,7 @@ msgstr ""
 "scáileáin le do fhreagra a scríobh isteach agus cliceáil ar an chnaipe OK le "
 "do fhreagra a dheimhniú."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:13
+#: activities/magic-hat-plus/resource/1/Data.qml:49
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid "Numbers up to 3."
@@ -19309,7 +19309,7 @@ msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "Uimhir suas go 3."
 
-#: activities/magic-hat-plus/resource/2/Data.qml:13
+#: activities/magic-hat-plus/resource/2/Data.qml:15
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid "Numbers up to 4."
@@ -19317,35 +19317,35 @@ msgctxt "Data|"
 msgid "Add stars up to 4."
 msgstr "Uimhir suas go 4."
 
-#: activities/magic-hat-plus/resource/3/Data.qml:13
+#: activities/magic-hat-plus/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Add stars up to 5."
 msgstr ""
 
-#: activities/magic-hat-plus/resource/4/Data.qml:13
+#: activities/magic-hat-plus/resource/4/Data.qml:15
 msgctxt "Data|"
 msgid "Add stars up to 10."
 msgstr ""
 
-#: activities/magic-hat-plus/resource/5/Data.qml:13
+#: activities/magic-hat-plus/resource/5/Data.qml:15
 msgctxt "Data|"
 msgid "Add stars up to 30."
 msgstr ""
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-plus/resource/6/Data.qml:14
+#: activities/magic-hat-plus/resource/6/Data.qml:16
 msgctxt "Data|"
 msgid "Add stars up to 100 with coefficients."
 msgstr ""
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-plus/resource/7/Data.qml:14
+#: activities/magic-hat-plus/resource/7/Data.qml:16
 msgctxt "Data|"
 msgid "Add stars up to 1000 with coefficients."
 msgstr ""
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-plus/resource/8/Data.qml:14
+#: activities/magic-hat-plus/resource/8/Data.qml:16
 msgctxt "Data|"
 msgid "Add stars up to 10000 with coefficients."
 msgstr ""

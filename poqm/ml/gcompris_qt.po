@@ -17672,50 +17672,50 @@ msgstr ""
 "തൊപ്പിക്കടിയിൽ എത്ര നക്ഷത്രങ്ങൾ ബാക്കിയുണ്ടെന്ന് നിങ്ങൾ എണ്ണി നോക്കണം. താഴെയുള്ള ഭാഗത്ത് ക്ലിക്ക് "
 "ചെയ്ത് ഉത്തരം കൊടുക്കുകയും ഒകെ ബട്ടൺ അമർത്തി അതു സ്ഥിരീകരിക്കുകയും ചെയ്യാം."
 
-#: activities/magic-hat-minus/MagicHat.qml:255
+#: activities/magic-hat-minus/MagicHat.qml:256
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "തൊപ്പിയിൽ ക്ലിക്ക് ചെയ്ത് കളി തുടങ്ങൂ"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:13
+#: activities/magic-hat-minus/resource/1/Data.qml:49
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "3 നക്ഷത്രങ്ങൾ വരെ ബാക്കിവരുന്നവ."
 
-#: activities/magic-hat-minus/resource/2/Data.qml:13
+#: activities/magic-hat-minus/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 4."
 msgstr "4 നക്ഷത്രങ്ങൾ വരെ ബാക്കിവരുന്നവ."
 
-#: activities/magic-hat-minus/resource/3/Data.qml:13
+#: activities/magic-hat-minus/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 5."
 msgstr "5 നക്ഷത്രങ്ങൾ വരെ ബാക്കിവരുന്നവ."
 
-#: activities/magic-hat-minus/resource/4/Data.qml:13
+#: activities/magic-hat-minus/resource/4/Data.qml:15
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 10."
 msgstr "10 നക്ഷത്രങ്ങൾ വരെ ബാക്കിവരുന്നവ."
 
-#: activities/magic-hat-minus/resource/5/Data.qml:13
+#: activities/magic-hat-minus/resource/5/Data.qml:15
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 30."
 msgstr "30 നക്ഷത്രങ്ങൾ വരെ ബാക്കിവരുന്നവ."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-minus/resource/6/Data.qml:14
+#: activities/magic-hat-minus/resource/6/Data.qml:16
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 100 with coefficients."
 msgstr "100 നക്ഷത്രങ്ങൾ വരെ ബാക്കിവരുന്ന ഗുണാങ്കങ്ങളോടെയുള്ളവ."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-minus/resource/7/Data.qml:14
+#: activities/magic-hat-minus/resource/7/Data.qml:16
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 1000 with coefficients."
 msgstr "1000 നക്ഷത്രങ്ങൾ വരെ ബാക്കിവരുന്ന ഗുണാങ്കങ്ങളോടെയുള്ളവ."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-minus/resource/8/Data.qml:14
+#: activities/magic-hat-minus/resource/8/Data.qml:16
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr "10000 നക്ഷത്രങ്ങൾ വരെ ബാക്കിവരുന്ന ഗുണാങ്കങ്ങളോടെയുള്ളവ."
@@ -17765,45 +17765,45 @@ msgstr ""
 "എണ്ണിനോക്കൂ. താഴെയുള്ള ഭാഗത്ത് ക്ലിക്ക് ചെയ്ത് ഉത്തരം കൊടുക്കുകയും ഒകെ ബട്ടൺ അമർത്തി അതു "
 "സ്ഥിരീകരിക്കുകയും ചെയ്യാം."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:13
+#: activities/magic-hat-plus/resource/1/Data.qml:49
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "3 നക്ഷത്രങ്ങൾ വരെ കൂട്ടുക."
 
-#: activities/magic-hat-plus/resource/2/Data.qml:13
+#: activities/magic-hat-plus/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Add stars up to 4."
 msgstr "4 നക്ഷത്രങ്ങൾ വരെ കൂട്ടുക."
 
-#: activities/magic-hat-plus/resource/3/Data.qml:13
+#: activities/magic-hat-plus/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Add stars up to 5."
 msgstr "5 നക്ഷത്രങ്ങൾ വരെ കൂട്ടുക."
 
-#: activities/magic-hat-plus/resource/4/Data.qml:13
+#: activities/magic-hat-plus/resource/4/Data.qml:15
 msgctxt "Data|"
 msgid "Add stars up to 10."
 msgstr "10 നക്ഷത്രങ്ങൾ വരെ കൂട്ടുക."
 
-#: activities/magic-hat-plus/resource/5/Data.qml:13
+#: activities/magic-hat-plus/resource/5/Data.qml:15
 msgctxt "Data|"
 msgid "Add stars up to 30."
 msgstr "30 നക്ഷത്രങ്ങൾ വരെ കൂട്ടുക."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-plus/resource/6/Data.qml:14
+#: activities/magic-hat-plus/resource/6/Data.qml:16
 msgctxt "Data|"
 msgid "Add stars up to 100 with coefficients."
 msgstr "100 നക്ഷത്രങ്ങൾ വരെ ഗുണാങ്കങ്ങളോടെ കൂട്ടുക."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-plus/resource/7/Data.qml:14
+#: activities/magic-hat-plus/resource/7/Data.qml:16
 msgctxt "Data|"
 msgid "Add stars up to 1000 with coefficients."
 msgstr "1000 നക്ഷത്രങ്ങൾ വരെ ഗുണാങ്കങ്ങളോടെ കൂട്ടുക."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-plus/resource/8/Data.qml:14
+#: activities/magic-hat-plus/resource/8/Data.qml:16
 msgctxt "Data|"
 msgid "Add stars up to 10000 with coefficients."
 msgstr "10000 നക്ഷത്രങ്ങൾ വരെ ഗുണാങ്കങ്ങളോടെ കൂട്ടുക."

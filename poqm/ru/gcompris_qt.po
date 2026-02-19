@@ -17942,50 +17942,50 @@ msgstr ""
 "звёздочкам в нижнем ряду, чтобы указать нужное количество. Нажми кнопку «ОК» "
 "для проверки своего ответа."
 
-#: activities/magic-hat-minus/MagicHat.qml:255
+#: activities/magic-hat-minus/MagicHat.qml:256
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Щёлкни по шляпе, чтобы начать игру"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:13
+#: activities/magic-hat-minus/resource/1/Data.qml:49
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "Сосчитать оставшиеся звёздочки вплоть до 3."
 
-#: activities/magic-hat-minus/resource/2/Data.qml:13
+#: activities/magic-hat-minus/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 4."
 msgstr "Сосчитать оставшиеся звёздочки вплоть до 4."
 
-#: activities/magic-hat-minus/resource/3/Data.qml:13
+#: activities/magic-hat-minus/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 5."
 msgstr "Сосчитать оставшиеся звёздочки вплоть до 5."
 
-#: activities/magic-hat-minus/resource/4/Data.qml:13
+#: activities/magic-hat-minus/resource/4/Data.qml:15
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 10."
 msgstr "Сосчитать оставшиеся звёздочки вплоть до 10."
 
-#: activities/magic-hat-minus/resource/5/Data.qml:13
+#: activities/magic-hat-minus/resource/5/Data.qml:15
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 30."
 msgstr "Сосчитать оставшиеся звёздочки вплоть до 30."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-minus/resource/6/Data.qml:14
+#: activities/magic-hat-minus/resource/6/Data.qml:16
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 100 with coefficients."
 msgstr "Сосчитать оставшиеся звёздочки вплоть до 100 с коэффициентами."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-minus/resource/7/Data.qml:14
+#: activities/magic-hat-minus/resource/7/Data.qml:16
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 1000 with coefficients."
 msgstr "Сосчитать оставшиеся звёздочки вплоть до 1000 с коэффициентами."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-minus/resource/8/Data.qml:14
+#: activities/magic-hat-minus/resource/8/Data.qml:16
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr "Сосчитать оставшиеся звёздочки вплоть до 10000 с коэффициентами."
@@ -18035,45 +18035,45 @@ msgstr ""
 "внимательнее. Щёлкай по звёздочкам в нижнем ряду, чтобы указать нужное "
 "количество. Нажми кнопку «ОК» для проверки своего ответа."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:13
+#: activities/magic-hat-plus/resource/1/Data.qml:49
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "Добавить звёздочки вплоть до 3."
 
-#: activities/magic-hat-plus/resource/2/Data.qml:13
+#: activities/magic-hat-plus/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Add stars up to 4."
 msgstr "Добавить звёздочки вплоть до 4."
 
-#: activities/magic-hat-plus/resource/3/Data.qml:13
+#: activities/magic-hat-plus/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Add stars up to 5."
 msgstr "Добавить звёздочки вплоть до 5."
 
-#: activities/magic-hat-plus/resource/4/Data.qml:13
+#: activities/magic-hat-plus/resource/4/Data.qml:15
 msgctxt "Data|"
 msgid "Add stars up to 10."
 msgstr "Добавить звёздочки вплоть до 10."
 
-#: activities/magic-hat-plus/resource/5/Data.qml:13
+#: activities/magic-hat-plus/resource/5/Data.qml:15
 msgctxt "Data|"
 msgid "Add stars up to 30."
 msgstr "Добавить звёздочки вплоть до 30."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-plus/resource/6/Data.qml:14
+#: activities/magic-hat-plus/resource/6/Data.qml:16
 msgctxt "Data|"
 msgid "Add stars up to 100 with coefficients."
 msgstr "Добавить звёздочки вплоть до 100 с коэффициентами."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-plus/resource/7/Data.qml:14
+#: activities/magic-hat-plus/resource/7/Data.qml:16
 msgctxt "Data|"
 msgid "Add stars up to 1000 with coefficients."
 msgstr "Добавить звёздочки вплоть до 1000 с коэффициентами."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-plus/resource/8/Data.qml:14
+#: activities/magic-hat-plus/resource/8/Data.qml:16
 msgctxt "Data|"
 msgid "Add stars up to 10000 with coefficients."
 msgstr "Добавить звёздочки вплоть до 10000 с коэффициентами."
