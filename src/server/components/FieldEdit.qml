@@ -44,6 +44,8 @@ Item  {
     width: childrenRect.width
     height: childrenRect.height
 
+    // value used to limit the number of items added in stringsPopup
+    property int maxNumberOfItems: 10
     // visual separator used to display the content of number_array and string_array
     property string visualListSeparator: ", "
 
@@ -316,7 +318,7 @@ Item  {
 
                     SmallButton {
                         icon.source: "qrc:/gcompris/src/server/resource/icons/plus.svg"
-                        enabled: (stringModel.count < 11)
+                        enabled: (stringModel.count < fieldEdit.maxNumberOfItems)
                         toolTipOnHover: true
                         toolTipText: qsTr("Add an entry")
                         onClicked: {
