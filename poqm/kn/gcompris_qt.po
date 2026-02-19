@@ -18455,53 +18455,61 @@ msgstr ""
 "ಅಡಿಯಲ್ಲಿ ಎಷ್ಟು ನಕ್ಷತ್ರಗಳು ಬಾಕಿ ಉಳಿದಿವೆ ಎಂದು  ಎಣಿಸಿ ನೋಡಿರಿ. ಕೆಳಗಿನ ಭಾಗದಲ್ಲಿ ಕ್ಲಿಕ್ "
 "ಮಾಡಿ ಉತ್ತರವನ್ನು ನೀಡಿ ಓಕೆ ಬಟನ್ ಒತ್ತಿ ಅದನ್ನು ದೃಢಪಡಿಸಬೇಕು."
 
-#: activities/magic-hat-minus/MagicHat.qml:255
+#: activities/magic-hat-minus/MagicHat.qml:256
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "ಟೋಪಿಗೆ ಕ್ಲಿಕ್ ಮಾಡಿ ಆಟವನ್ನು ಆರಂಭಿಸಿ"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:13
+#: activities/magic-hat-minus/resource/1/Data.qml:49
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "3 ನಕ್ಷತ್ರಗಳವರೆಗೆ, ಬಾಕಿ ಉಳಿದ ನಕ್ಷತ್ರಗಳನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ."
 
-#: activities/magic-hat-minus/resource/2/Data.qml:13
+#: activities/magic-hat-minus/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 4."
 msgstr "4 ನಕ್ಷತ್ರಗಳವರೆಗೆ, ಬಾಕಿ ಉಳಿದ ನಕ್ಷತ್ರಗಳನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ."
 
-#: activities/magic-hat-minus/resource/3/Data.qml:13
+#: activities/magic-hat-minus/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 5."
 msgstr "5 ನಕ್ಷತ್ರಗಳವರೆಗೆ, ಬಾಕಿ ಉಳಿದ ನಕ್ಷತ್ರಗಳನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ."
 
-#: activities/magic-hat-minus/resource/4/Data.qml:13
+#: activities/magic-hat-minus/resource/4/Data.qml:15
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 10."
 msgstr "10 ನಕ್ಷತ್ರಗಳವರೆಗೆ, ಬಾಕಿ ಉಳಿದ ನಕ್ಷತ್ರಗಳನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ."
 
-#: activities/magic-hat-minus/resource/5/Data.qml:13
+#: activities/magic-hat-minus/resource/5/Data.qml:15
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 30."
 msgstr "30 ನಕ್ಷತ್ರಗಳವರೆಗೆ, ಬಾಕಿ ಉಳಿದ ನಕ್ಷತ್ರಗಳನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-minus/resource/6/Data.qml:14
+#: activities/magic-hat-minus/resource/6/Data.qml:16
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 100 with coefficients."
 msgstr "ಗುಣಾಂಕಗಳೊಂದಿಗೆ 100 ನಕ್ಷತ್ರಗಳವರೆಗೆ, ಬಾಕಿ ಉಳಿದ ನಕ್ಷತ್ರಗಳನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-minus/resource/7/Data.qml:14
+#: activities/magic-hat-minus/resource/7/Data.qml:16
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 1000 with coefficients."
 msgstr "ಗುಣಾಂಕಗಳೊಂದಿಗೆ 1000ನಕ್ಷತ್ರಗಳ ವರೆಗೆ, ಬಾಕಿ ಉಳಿದ ನಕ್ಷತ್ರಗಳನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-minus/resource/8/Data.qml:14
+#: activities/magic-hat-minus/resource/8/Data.qml:16
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr "ಗುಣಾಂಕಗಳೊಂದಿಗೆ 10000 ನಕ್ಷತ್ರಗಳ ವರೆಗೆ, ಬಾಕಿ ಉಳಿದ ನಕ್ಷತ್ರಗಳನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ."
+
+#: activities/magic-hat-minus/resource/9/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Calculate remaining stars up to 100 with coefficients."
+msgctxt "Data|"
+msgid "Calculate remaining stars up to 10, with 2 or 3 different star sets."
+msgstr "ಗುಣಾಂಕಗಳೊಂದಿಗೆ 100 ನಕ್ಷತ್ರಗಳವರೆಗೆ, ಬಾಕಿ ಉಳಿದ ನಕ್ಷತ್ರಗಳನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ."
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
 #: activities/magic-hat-minus/StarsBar.qml:36
@@ -18557,48 +18565,56 @@ msgstr ""
 "ಎಣಿಸಿರಿ. ಕೆಳಗಿರುವ ಭಾಗದಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ ಉತ್ತರವನ್ನು ನೀಡಿ ಓಕೆ ಬಟನ್ ಒತ್ತಿ ಅದನ್ನು "
 "ದೃಢಪಡಿಸಿರಿ."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:13
+#: activities/magic-hat-plus/resource/1/Data.qml:49
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "3 ನಕ್ಷತ್ರಗಳವರೆಗೆ ಕೂಡಿಸಿರಿ."
 
-#: activities/magic-hat-plus/resource/2/Data.qml:13
+#: activities/magic-hat-plus/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Add stars up to 4."
 msgstr "4 ನಕ್ಷತ್ರಗಳವರೆಗೆ ಕೂಡಿಸಿರಿ."
 
-#: activities/magic-hat-plus/resource/3/Data.qml:13
+#: activities/magic-hat-plus/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Add stars up to 5."
 msgstr "5 ನಕ್ಷತ್ರಗಳವರೆಗೆ ಕೂಡಿಸಿರಿ."
 
-#: activities/magic-hat-plus/resource/4/Data.qml:13
+#: activities/magic-hat-plus/resource/4/Data.qml:15
 msgctxt "Data|"
 msgid "Add stars up to 10."
 msgstr "10 ನಕ್ಷತ್ರಗಳವರೆಗೆ ಕೂಡಿಸಿರಿ."
 
-#: activities/magic-hat-plus/resource/5/Data.qml:13
+#: activities/magic-hat-plus/resource/5/Data.qml:15
 msgctxt "Data|"
 msgid "Add stars up to 30."
 msgstr "30 ನಕ್ಷತ್ರಗಳವರೆಗೆ ಕೂಡಿಸಿರಿ."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-plus/resource/6/Data.qml:14
+#: activities/magic-hat-plus/resource/6/Data.qml:16
 msgctxt "Data|"
 msgid "Add stars up to 100 with coefficients."
 msgstr "ಗುಣಾಂಕಗಳೊಂದಿಗೆ 100 ನಕ್ಷತ್ರಗಳವರೆಗೆ ಕೂಡಿಸಿರಿ."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-plus/resource/7/Data.qml:14
+#: activities/magic-hat-plus/resource/7/Data.qml:16
 msgctxt "Data|"
 msgid "Add stars up to 1000 with coefficients."
 msgstr "ಗುಣಾಂಕಗಳೊಂದಿಗೆ 1000 ನಕ್ಷತ್ರಗಳವರೆಗೆ ಕೂಡಿಸಿರಿ."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-plus/resource/8/Data.qml:14
+#: activities/magic-hat-plus/resource/8/Data.qml:16
 msgctxt "Data|"
 msgid "Add stars up to 10000 with coefficients."
 msgstr "ಗುಣಾಂಕಗಳೊಂದಿಗೆ 10000 ನಕ್ಷತ್ರಗಳವರೆಗೆ ಕೂಡಿಸಿರಿ."
+
+#: activities/magic-hat-plus/resource/9/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Add stars up to 100 with coefficients."
+msgctxt "Data|"
+msgid "Add stars up to 10, with 2 or 3 different star sets."
+msgstr "ಗುಣಾಂಕಗಳೊಂದಿಗೆ 100 ನಕ್ಷತ್ರಗಳವರೆಗೆ ಕೂಡಿಸಿರಿ."
 
 #. Activity title
 #: activities/maze/ActivityInfo.qml:15
@@ -28661,7 +28677,24 @@ msgctxt "ActivityInfo|"
 msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "ಬೀಳುವ ಪದವನ್ನು ಅದು ಕೆಳಕ್ಕೆ ತಲಪುವ ಮೊದಲು ಕೀಬೋರ್ಡಿನಲ್ಲಿ ಟೈಪ್ ಮಾಡಿರಿ."
 
-#: core/ChangeLog.qml:30
+#: core/ChangeLog.qml:30 core/ChangeLog.qml:39 core/ChangeLog.qml:45
+#: core/ChangeLog.qml:51 core/ChangeLog.qml:60 core/ChangeLog.qml:66
+#: core/ChangeLog.qml:71 core/ChangeLog.qml:77 core/ChangeLog.qml:106
+#: core/ChangeLog.qml:141 core/ChangeLog.qml:144 core/ChangeLog.qml:150
+msgctxt "ChangeLog|"
+msgid "Many usability improvements"
+msgstr "ಹಲವು ಉಪಯುಕ್ತವಾದ ಸುಧಾರಣೆಗಳು"
+
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:40 core/ChangeLog.qml:46
+#: core/ChangeLog.qml:53 core/ChangeLog.qml:61 core/ChangeLog.qml:67
+#: core/ChangeLog.qml:72 core/ChangeLog.qml:79 core/ChangeLog.qml:88
+#: core/ChangeLog.qml:95 core/ChangeLog.qml:108 core/ChangeLog.qml:146
+#: core/ChangeLog.qml:152
+msgctxt "ChangeLog|"
+msgid "Many bug fixes"
+msgstr "ಸಾಕಷ್ಟು ಬಗ್ ಫಿಕ್ಸ್ ಗಳು"
+
+#: core/ChangeLog.qml:36
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translation added for Azerbaijani"
@@ -28669,7 +28702,7 @@ msgctxt "ChangeLog|"
 msgid "Translation added for Kannada and Tamil"
 msgstr "ಅಜರ್ಬೈಜಾನಿ ಅನುವಾದ ಸೇರಿಸಲಾಗಿದೆ"
 
-#: core/ChangeLog.qml:31
+#: core/ChangeLog.qml:37
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid ""
@@ -28681,30 +28714,14 @@ msgstr ""
 "ಎಲ್ಲ ಚಟುವಟಿಕೆಗಳನ್ನು ಪಟ್ಟಿ ಮಾಡಲು ಮತ್ತು ನಿರ್ದಿಷ್ಟ ಚಟುವಟಿಕೆಯೊಂದಿಗೆ ಪ್ರಾರಂಭಿಸಲು ಹೊಸ "
 "ಕಮಾಂಡ್-ಲೈನ್ ಓಪ್ಷನ್"
 
-#: core/ChangeLog.qml:32
+#: core/ChangeLog.qml:38
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to show/hide the Home button (--hide-home-button/--"
 "show-home-button)"
 msgstr ""
 
-#: core/ChangeLog.qml:33 core/ChangeLog.qml:39 core/ChangeLog.qml:45
-#: core/ChangeLog.qml:54 core/ChangeLog.qml:60 core/ChangeLog.qml:65
-#: core/ChangeLog.qml:71 core/ChangeLog.qml:100 core/ChangeLog.qml:135
-#: core/ChangeLog.qml:138 core/ChangeLog.qml:144
-msgctxt "ChangeLog|"
-msgid "Many usability improvements"
-msgstr "ಹಲವು ಉಪಯುಕ್ತವಾದ ಸುಧಾರಣೆಗಳು"
-
-#: core/ChangeLog.qml:34 core/ChangeLog.qml:40 core/ChangeLog.qml:47
-#: core/ChangeLog.qml:55 core/ChangeLog.qml:61 core/ChangeLog.qml:66
-#: core/ChangeLog.qml:73 core/ChangeLog.qml:82 core/ChangeLog.qml:89
-#: core/ChangeLog.qml:102 core/ChangeLog.qml:140 core/ChangeLog.qml:146
-msgctxt "ChangeLog|"
-msgid "Many bug fixes"
-msgstr "ಸಾಕಷ್ಟು ಬಗ್ ಫಿಕ್ಸ್ ಗಳು"
-
-#: core/ChangeLog.qml:44
+#: core/ChangeLog.qml:50
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translation added for Azerbaijani"
@@ -28712,26 +28729,26 @@ msgctxt "ChangeLog|"
 msgid "Translation added for Sanskrit"
 msgstr "ಅಜರ್ಬೈಜಾನಿ ಅನುವಾದ ಸೇರಿಸಲಾಗಿದೆ"
 
-#: core/ChangeLog.qml:46 core/ChangeLog.qml:72 core/ChangeLog.qml:81
-#: core/ChangeLog.qml:88 core/ChangeLog.qml:101 core/ChangeLog.qml:119
-#: core/ChangeLog.qml:134 core/ChangeLog.qml:139 core/ChangeLog.qml:145
+#: core/ChangeLog.qml:52 core/ChangeLog.qml:78 core/ChangeLog.qml:87
+#: core/ChangeLog.qml:94 core/ChangeLog.qml:107 core/ChangeLog.qml:125
+#: core/ChangeLog.qml:140 core/ChangeLog.qml:145 core/ChangeLog.qml:151
 msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "ಸಾಕಷ್ಟು ಹೊಸ ಚಿತ್ರಗಳು"
 
-#: core/ChangeLog.qml:48
+#: core/ChangeLog.qml:54
 msgctxt "ChangeLog|"
 msgid ""
 "Automatic application of new language when changing it in the menu (no need "
 "to restart GCompris)"
 msgstr ""
 
-#: core/ChangeLog.qml:49
+#: core/ChangeLog.qml:55
 msgctxt "ChangeLog|"
 msgid "Add splash screen at startup"
 msgstr ""
 
-#: core/ChangeLog.qml:50
+#: core/ChangeLog.qml:56
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid ""
@@ -28743,7 +28760,7 @@ msgstr ""
 "ಎಲ್ಲ ಚಟುವಟಿಕೆಗಳನ್ನು ಪಟ್ಟಿ ಮಾಡಲು ಮತ್ತು ನಿರ್ದಿಷ್ಟ ಚಟುವಟಿಕೆಯೊಂದಿಗೆ ಪ್ರಾರಂಭಿಸಲು ಹೊಸ "
 "ಕಮಾಂಡ್-ಲೈನ್ ಓಪ್ಷನ್"
 
-#: core/ChangeLog.qml:59
+#: core/ChangeLog.qml:65
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translation added for Azerbaijani"
@@ -28751,7 +28768,7 @@ msgctxt "ChangeLog|"
 msgid "Translation added for Latvian"
 msgstr "ಅಜರ್ಬೈಜಾನಿ ಅನುವಾದ ಸೇರಿಸಲಾಗಿದೆ"
 
-#: core/ChangeLog.qml:70
+#: core/ChangeLog.qml:76
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translations added for: Slovenian, German, Galician."
@@ -28759,24 +28776,24 @@ msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
 msgstr "ಇವುಗಳ ಅನುವಾದಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ: ಸ್ಲೊವೇನಿಯನ್, ಜರ್ಮನ್, ಗ್ಯಾಲಿಶಿಯನ್."
 
-#: core/ChangeLog.qml:74
+#: core/ChangeLog.qml:80
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to directly start an activity at a specific level (--"
 "start-level level, to be used with --launch activity)"
 msgstr ""
 
-#: core/ChangeLog.qml:79
+#: core/ChangeLog.qml:85
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
 msgstr "ಅರೇಬಿಕ್ ಮತ್ತು ಎಸ್ಪೆರಾಂಟೊ ಅನುವಾದಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ"
 
-#: core/ChangeLog.qml:80 core/ChangeLog.qml:87
+#: core/ChangeLog.qml:86 core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
 msgstr "ಹಲವು ಅನುವಾದಗಳನ್ನು ಬದಲಾಯಿಸಲಾಗಿದೆ"
 
-#: core/ChangeLog.qml:86
+#: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
@@ -28785,22 +28802,22 @@ msgstr ""
 "ಒಂದು ನಿರ್ದಿಷ್ಟ ತೊಂದರೆ ಮಟ್ಟದಲ್ಲಿ ಜಿಕೊಂಪ್ರಿಸ್ ಪ್ರಾರಂಭಿಸಲು ಹೊಸ ಕಮಾಂಡ್-ಲೈನ್ ಓಪ್ಷನ್ (--"
 "difficulty {value|min-max})"
 
-#: core/ChangeLog.qml:93
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
 msgstr "ಹೋಲಿಕೆ ಮಾಡುವ ಚಟುವಟಿಕೆಯಲ್ಲಿ ಫಿಕ್ಸ್"
 
-#: core/ChangeLog.qml:97
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr "ಭೌಗೋಳಿಕ ಚಟುವಟಿಕೆಗೆ ಸ್ಪೇನ್ ನ ನಕ್ಷೆಯನ್ನು ಸೇರಿಸಲಾಗಿದೆ"
 
-#: core/ChangeLog.qml:98
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
 msgstr "ಉಕ್ರೇನಿಯನ್ ಧ್ವನಿಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ"
 
-#: core/ChangeLog.qml:99
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
@@ -28809,7 +28826,7 @@ msgstr ""
 "ಎಲ್ಲ ಚಟುವಟಿಕೆಗಳನ್ನು ಪಟ್ಟಿ ಮಾಡಲು ಮತ್ತು ನಿರ್ದಿಷ್ಟ ಚಟುವಟಿಕೆಯೊಂದಿಗೆ ಪ್ರಾರಂಭಿಸಲು ಹೊಸ "
 "ಕಮಾಂಡ್-ಲೈನ್ ಓಪ್ಷನ್"
 
-#: core/ChangeLog.qml:106
+#: core/ChangeLog.qml:112
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
@@ -28818,30 +28835,30 @@ msgstr ""
 "ಎಲ್ಲ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್‌ಗಳಿಗಿರುವ ಪ್ಯಾಕೇಜುಗಳ ಮತ್ತು ಎಕ್ಸಟರ್ನಲ್ ವರ್ಡ್ ಇಮೇಜುಗಳ ಗಾತ್ರವನ್ನು "
 "ಕಡಿಮೆಮಾಡಲಾಯಿತು"
 
-#: core/ChangeLog.qml:107
+#: core/ChangeLog.qml:113
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "ಹಲವಾರು ಚಟುವಟಿಕೆಗಳಲ್ಲಿ ಚಿತ್ರದ ಗುಣಮಟ್ಟವನ್ನು ಸುಧಾರಿಸಲಾಗಿದೆ"
 
-#: core/ChangeLog.qml:108
+#: core/ChangeLog.qml:114
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr "ನವೀಕರಿಸಬಹುದಾದ ಶಕ್ತಿ/ಜಲ ಚಕ್ರದಲ್ಲಿ ಕೆಲವು ಟ್ರಾನ್ಸಿಶನುಗಳನ್ನು ಫಿಕ್ಸ್ ಮಾಡಲಾಗಿದೆ."
 
-#: core/ChangeLog.qml:109
+#: core/ChangeLog.qml:115
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 "ಲಿನಕ್ಸ್ ನಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸದಿದ್ದ ಟೈಪಿಂಗ್ ಕ್ರಿಯೆಗಳಲ್ಲಿರಬೇಕಾದ ಕೀಗಳನ್ನು ಫಿಕ್ಸ್ ಮಾಡಲಾಗಿದೆ."
 
-#: core/ChangeLog.qml:110
+#: core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 "ಪಟ್ಟಿಯನ್ನು ಪೂರ್ತಿಗೊಳಿಸಿ ಎಂಬುದರಲ್ಲಿ ಹಂತಗಳನ್ನು ಬದಲಾಯಿಸುವಾಗ ಇದ್ದ ಲೆವೆಲ್ ರೀಸೆಟ್ ಫಿಕ್ಸ್ "
 "ಮಾಡಿರಿ."
 
-#: core/ChangeLog.qml:114
+#: core/ChangeLog.qml:120
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
@@ -28849,37 +28866,37 @@ msgstr ""
 "ಅಕ್ಷರಮಾಲಾ ಕ್ರಮ, ಸಮ ಸಂಖ್ಯೆಗಳು ಮತ್ತು ವಿಷಮ ಸಂಖ್ಯೆಗಳು, ಸಂಖ್ಯೆಗಳನ್ನು ಕ್ರಮೀಕರಿಸೋಣ ಎಂಬೀ "
 "ಚಟುವಟಿಕೆಗಳಲ್ಲಿಫಿಕ್ಸ್ ಮಾಡಿರಿ"
 
-#: core/ChangeLog.qml:118 core/ChangeLog.qml:126
+#: core/ChangeLog.qml:124 core/ChangeLog.qml:132
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "ಸಾಕಷ್ಟು ಬಗ್ ಫಿಕ್ಸ್ ಗಳು"
 
-#: core/ChangeLog.qml:120
+#: core/ChangeLog.qml:126
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "ರಷ್ಯನ್ ಅನುವಾದವನ್ನು ನವೀಕರಿಸಲಾಗಿದೆ"
 
-#: core/ChangeLog.qml:121
+#: core/ChangeLog.qml:127
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "ನಾರ್ವೇಜಿಯನ್ ನೈನಾರ್ಸ್ಕ್ ಗಾಗಿ ಹೊಸ ಧ್ವನಿ"
 
-#: core/ChangeLog.qml:125
+#: core/ChangeLog.qml:131
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "ಜೆಕ್, ಬ್ರಿಟಿಷ್ ಮತ್ತು ಮೆಸಿಡೋನಿಯನ್ ಭಾಷೆಗಳಿಗೆ ಅನುವಾದಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ"
 
-#: core/ChangeLog.qml:130
+#: core/ChangeLog.qml:136
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "ಅಜರ್ಬೈಜಾನಿ ಅನುವಾದ ಸೇರಿಸಲಾಗಿದೆ"
 
-#: core/ChangeLog.qml:131
+#: core/ChangeLog.qml:137
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "ಹೊಸ ಭೂಪಟ ಮತ್ತು ಭೂಮಿಗೆ ಸಂಬಂಧಿಸಿದ ಚಟುವಟಿಕೆಗಳನ್ನು ನವೀಕರಿಸಲಾಗಿದೆ"
 
-#: core/ChangeLog.qml:132
+#: core/ChangeLog.qml:138
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -28888,7 +28905,7 @@ msgstr ""
 "ಪ್ರೋಗ್ರಾಮಿಂಗ್ ಮೇಝ್ ಎಂಬುದರಲ್ಲಿ ಲೂಪ್ಸ್ ಕಾರ್ಯಾಚರಣೆಗಳೊಂದಿಗೆ ಹೊಸ ಡೇಟಾಸೆಟ್ ಮತ್ತು "
 "ಟ್ಯುಟೋರಿಯಲ್ಚಿತ್ರಗಳನ್ನು ಅನುವಾದಿಸಲು ಸಾಧ್ಯವಾಗುವಂತೆ ಸೇರಿಸಲಾಗಿದೆ."
 
-#: core/ChangeLog.qml:133
+#: core/ChangeLog.qml:139
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
@@ -28897,58 +28914,58 @@ msgstr ""
 "ವೋಲ್ಟೇಜ್ ಸೋರ್ಸ್ ಲೂಪ್ ಅನ್ನು ಕಲಿಸಲು ಅನಲಾಗ್ ವಿದ್ಯುತ್ ಚಟುವಟಿಕೆಯಲ್ಲಿ ಒಂದು ಹಂತವನ್ನು "
 "ಸೇರಿಸಲಾಗಿದೆ"
 
-#: core/ChangeLog.qml:143
+#: core/ChangeLog.qml:149
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "ಡೇಟಾಸೆಟ್‌ಗಳೊಂದಿಗೆ ಹೊಸ ಕ್ರಿಯೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳ ಮೆನು"
 
-#: core/ChangeLog.qml:149
+#: core/ChangeLog.qml:155
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "ಚಟುವಟಿಕೆಗಳನ್ನು ಸಂಘಟಿಸಲು ಹೊಸ ಉಪವಿಭಾಗಗಳು"
 
-#: core/ChangeLog.qml:150
+#: core/ChangeLog.qml:156
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "ಮೆಸಿಡೋನಿಯನ್ ಅನುವಾದ ಸೇರಿಸಲಾಗಿದೆ."
 
-#: core/ChangeLog.qml:151
+#: core/ChangeLog.qml:157
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "ಪ್ರೋಗ್ರಾಮಿಂಗ್ ಮೇಝ್, ಆಕಾರಗಳನ್ನು ಸೇರಿಸಿ ಎಂಬೀ ಹೊಸ ಚಟುವಟಿಕೆಗಳು"
 
-#: core/ChangeLog.qml:152
+#: core/ChangeLog.qml:158
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "ಹೊಸ ಹಿನ್ನೆಲೆ ಸಂಗೀತ ಮತ್ತು ಧ್ವನಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳು."
 
-#: core/ChangeLog.qml:153
+#: core/ChangeLog.qml:159
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "ಅನೇಕ ಚಟುವಟಿಕೆಗಳಲ್ಲಿ ಹೊಸದಾಗಿ ವೇಗದ ಸೆಟ್ಟಿಂಗ್‌ಗಳ ಕ್ರಮೀಕರಣವನ್ನು ಅಳವಡಿಸಲಾಗಿದೆ"
 
-#: core/ChangeLog.qml:154
+#: core/ChangeLog.qml:160
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "ವಶಪಡಿಸಿಕೊಂಡ ಕಾಯಿಗಳನ್ನು ಪ್ರದರ್ಶಿಸಲು ಚೆಸ್‌ನಲ್ಲಿ ಹೊಸ ಓಪ್ಷನ್"
 
-#: core/ChangeLog.qml:155
+#: core/ChangeLog.qml:161
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr ""
 "ಬಣ್ಣಗಳು, ಇನ್ನಷ್ಟು ಬಣ್ಣಗಳು, ಗುರಿ ಇರಿಸಿ ಕೂಡಿಸಿ ನೋಡೋಣ ಎಂಬಿವುಗಳಲ್ಲಿ ಹೊಸ ಚಿತ್ರಗಳು."
 
-#: core/ChangeLog.qml:156
+#: core/ChangeLog.qml:162
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "ಯುಎಸ್ ಇಂಗ್ಲಿಷ್ ಗಾಗಿ ಹೊಸ ಧ್ವನಿ."
 
-#: core/ChangeLog.qml:157 core/ChangeLog.qml:165
+#: core/ChangeLog.qml:163 core/ChangeLog.qml:171
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "ಸಣ್ಣ ತಿದ್ದುಪಡಿಗಳು ಮತ್ತು ಸುಧಾರಣೆಗಳು."
 
-#: core/ChangeLog.qml:158
+#: core/ChangeLog.qml:164
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -28957,17 +28974,17 @@ msgstr ""
 "ಹಲವಾರು ಭಾಷೆಗಳಿಗೆ ಅನುವಾದಗಳನ್ನು ಅಪ್ಡೇಟ್ ಮಾಡಲಾಗಿದೆ (ಬ್ರಿಟ್ಟೊ, ಬ್ರೆಜಿಲಿಯನ್, ಪೋರ್ಚುಗೀಸ್,"
 "ಫಿನ್ನಿಷ್...)."
 
-#: core/ChangeLog.qml:159
+#: core/ChangeLog.qml:165
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr "ಅಕ್ಷರದ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡುವ ಚಟುವಟಿಕೆಗೆ ರಷ್ಯನ್ ಡೇಟಾಸೆಟ್ ಅನ್ನು ಸೇರಿಸಲಾಗಿದೆ."
 
-#: core/ChangeLog.qml:160
+#: core/ChangeLog.qml:166
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "ಭಾಷೆಯ ಚಟುವಟಿಕೆಗಳು ಈಗ ಡಚ್ ನಲ್ಲಿ ಲಭ್ಯವಿದೆ."
 
-#: core/ChangeLog.qml:161
+#: core/ChangeLog.qml:167
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -28976,17 +28993,17 @@ msgstr ""
 "ಪ್ರದೇಶವನ್ನು ಹುಡುಕುವ ಚಟುವಟಿಕೆಯಲ್ಲಿ ನಾರ್ವೇಜಿಯನ್ ಕೌಂಟಿಗಳಾದ Nord-Trøndelag-ಮತ್ತು Sør-"
 "Trøndelag-ನ್ನು Trøndelag-ಗೆ ಸೇರಿಸಲಾಗಿದೆ."
 
-#: core/ChangeLog.qml:162
+#: core/ChangeLog.qml:168
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr "ಬ್ರೈಲ್ ಚಟುವಟಿಕೆಗಳಲ್ಲಿನ ತಿದ್ದುಪಡಿ. ಕೋಣೆ 1 ರಿಂದ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ, 0 ಯಿಂದ ಅಲ್ಲ."
 
-#: core/ChangeLog.qml:163
+#: core/ChangeLog.qml:169
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "ಬಾಸ್ಕ್, ಹಂಗೇರಿಯನ್ ಮತ್ತು ಮಲಯಾಳಂ ಅನುವಾದ ಸೇರಿಸಲಾಗಿದೆ."
 
-#: core/ChangeLog.qml:164
+#: core/ChangeLog.qml:170
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -28995,47 +29012,47 @@ msgstr ""
 "ರಚನೆಗಳ ಲೋಡ್ ಮಾಡುವಿಕೆ/ಸೇವಿಂಗ್ (ಕಂಪ್ಯೂಟರಿನಲ್ಲಿ ಬರೆಯೋಣ, ತಕ್ಕಡಿ ಪೆಟ್ಟಿಗೆ, ಪಿಯಾನೋ "
 "ಸಂಯೋಜನೆ ಎಂಬಿವುಗಳಲ್ಲಿ)"
 
-#: core/ChangeLog.qml:165
+#: core/ChangeLog.qml:171
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "ಸ್ಕಾಟಿಷ್ ಗೇಲಿಕ್ ಗೆ ಅನುವಾದವನ್ನು ಸೇರಿಸಲಾಗಿದೆ."
 
-#: core/ChangeLog.qml:166
+#: core/ChangeLog.qml:172
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "ಲೈಸೆನ್ಸ್  ಪುಟವನ್ನು ಕಾನ್ಫಿಗರೇಷನಿನಲ್ಲಿ ಸೇರಿಸಲಾಗಿದೆ."
 
-#: core/ChangeLog.qml:166
+#: core/ChangeLog.qml:172
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "ಕಾರ್ಯದಕ್ಷತೆಯನ್ನು ಹೆಚ್ಚಿಸಲು ಕೆಲವು ಬದಲಾವಣೆಗಳಿವೆ."
 
-#: core/ChangeLog.qml:167
+#: core/ChangeLog.qml:173
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr "ಭಾಷಾ ಚಟುವಟಿಕೆಯು ಈಗ ಪೋಲಿಷ್, ಸ್ವೀಡಿಷ್ ಮತ್ತು ಉಕ್ರೇನಿಯನ್ ಭಾಷೆಗಳಲ್ಲಿ ಲಭ್ಯವಿದೆ."
 
-#: core/ChangeLog.qml:168
+#: core/ChangeLog.qml:174
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "ಹುಡುಕಾಟ ಸೌಲಭ್ಯ."
 
-#: core/ChangeLog.qml:169
+#: core/ChangeLog.qml:175
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "ಒಂದು ಚೇಂಜ್ ಲಾಗ್."
 
-#: core/ChangeLog.qml:170
+#: core/ChangeLog.qml:176
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "ಅನೇಕ ಸಣ್ಣ ತಿದ್ದುಪಡಿಗಳು."
 
-#: core/ChangeLog.qml:170
+#: core/ChangeLog.qml:176
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "ಭಾಷಾ ಚಟುವಟಿಕೆಯು ಈಗ ಫ್ರೆಂಚ್ ನಲ್ಲಿ ಲಭ್ಯವಿದೆ."
 
-#: core/ChangeLog.qml:171
+#: core/ChangeLog.qml:177
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -29045,7 +29062,7 @@ msgstr ""
 "ಸೇರಿಸಲಾಗಿದೆ (ಉದಾಹರಣೆಗೆ ಚಟುವಟಿಕೆಯನ್ನು ಲೋಡ್ ಮಾಡುವುದು), ಮತ್ತು ಇದು ಕೆಲವು "
 "ಸೆಕೆಂಡುಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳಬಹುದು."
 
-#: core/ChangeLog.qml:171
+#: core/ChangeLog.qml:177
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -29054,12 +29071,12 @@ msgstr ""
 "ಅನುವಾದಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ: ಕೆಟಲಾನ್ (ವೇಲೆನ್ಸಿಯನ್), ಸಾಂಸ್ಕೃತಿಕ ಚೈನೀಸ್, ಫಿನ್ನಿಶ್ (92% "
 "ಅನುವಾದ), ರಷ್ಯನ್ (98% ಅನುವಾದ), ಸ್ಲೋವಾಕ್ (92% ಅನುವಾದ), ಟರ್ಕಿಶ್."
 
-#: core/ChangeLog.qml:172
+#: core/ChangeLog.qml:178
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "ಇವುಗಳ ಅನುವಾದಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ: ಸ್ಲೊವೇನಿಯನ್, ಜರ್ಮನ್, ಗ್ಯಾಲಿಶಿಯನ್."
 
-#: core/ChangeLog.qml:226
+#: core/ChangeLog.qml:232
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"

@@ -18279,53 +18279,61 @@ msgstr ""
 "Unapaswa kuhesabu nyota ngapi bado ziko chini ya kofia. Bofya kwenye eneo la "
 "chini ili kuingiza jibu lako na kwenye kitufe cha Sawa ili kulithibitisha."
 
-#: activities/magic-hat-minus/MagicHat.qml:255
+#: activities/magic-hat-minus/MagicHat.qml:256
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Bonyeza kofia ili kuanza mchezo"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:13
+#: activities/magic-hat-minus/resource/1/Data.qml:49
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "Hesabu nyota zilizosalia hadi 3."
 
-#: activities/magic-hat-minus/resource/2/Data.qml:13
+#: activities/magic-hat-minus/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 4."
 msgstr "Hesabu nyota zilizosalia hadi 4."
 
-#: activities/magic-hat-minus/resource/3/Data.qml:13
+#: activities/magic-hat-minus/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 5."
 msgstr "Hesabu nyota zilizosalia hadi 5."
 
-#: activities/magic-hat-minus/resource/4/Data.qml:13
+#: activities/magic-hat-minus/resource/4/Data.qml:15
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 10."
 msgstr "Hesabu nyota zilizosalia hadi 10."
 
-#: activities/magic-hat-minus/resource/5/Data.qml:13
+#: activities/magic-hat-minus/resource/5/Data.qml:15
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 30."
 msgstr "Hesabu nyota zilizosalia hadi 30."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-minus/resource/6/Data.qml:14
+#: activities/magic-hat-minus/resource/6/Data.qml:16
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 100 with coefficients."
 msgstr "Piga hesabu ya nyota zilizosalia hadi 100 kwa kutumia coefficients."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-minus/resource/7/Data.qml:14
+#: activities/magic-hat-minus/resource/7/Data.qml:16
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 1000 with coefficients."
 msgstr "Piga hesabu ya nyota zilizosalia hadi 1000 kwa kutumia coefficients."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-minus/resource/8/Data.qml:14
+#: activities/magic-hat-minus/resource/8/Data.qml:16
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr "Piga hesabu ya nyota zilizosalia hadi 10000 kwa kutumia coefficients."
+
+#: activities/magic-hat-minus/resource/9/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Calculate remaining stars up to 100 with coefficients."
+msgctxt "Data|"
+msgid "Calculate remaining stars up to 10, with 2 or 3 different star sets."
+msgstr "Piga hesabu ya nyota zilizosalia hadi 100 kwa kutumia coefficients."
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
 #: activities/magic-hat-minus/StarsBar.qml:36
@@ -18381,48 +18389,56 @@ msgstr ""
 "kwa uangalifu. Bofya kwenye eneo la chini ili kuingiza jibu lako na kwenye "
 "kitufe cha Sawa ili kulithibitisha."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:13
+#: activities/magic-hat-plus/resource/1/Data.qml:49
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "Ongeza nyota hadi 3."
 
-#: activities/magic-hat-plus/resource/2/Data.qml:13
+#: activities/magic-hat-plus/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Add stars up to 4."
 msgstr "Ongeza nyota hadi 4."
 
-#: activities/magic-hat-plus/resource/3/Data.qml:13
+#: activities/magic-hat-plus/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Add stars up to 5."
 msgstr "Ongeza nyota hadi 5."
 
-#: activities/magic-hat-plus/resource/4/Data.qml:13
+#: activities/magic-hat-plus/resource/4/Data.qml:15
 msgctxt "Data|"
 msgid "Add stars up to 10."
 msgstr "Ongeza nyota hadi 10."
 
-#: activities/magic-hat-plus/resource/5/Data.qml:13
+#: activities/magic-hat-plus/resource/5/Data.qml:15
 msgctxt "Data|"
 msgid "Add stars up to 30."
 msgstr "Ongeza nyota hadi 30."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-plus/resource/6/Data.qml:14
+#: activities/magic-hat-plus/resource/6/Data.qml:16
 msgctxt "Data|"
 msgid "Add stars up to 100 with coefficients."
 msgstr "Ongeza nyota hadi 100 na coefficients."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-plus/resource/7/Data.qml:14
+#: activities/magic-hat-plus/resource/7/Data.qml:16
 msgctxt "Data|"
 msgid "Add stars up to 1000 with coefficients."
 msgstr "Ongeza nyota hadi 1000 na coefficients."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
-#: activities/magic-hat-plus/resource/8/Data.qml:14
+#: activities/magic-hat-plus/resource/8/Data.qml:16
 msgctxt "Data|"
 msgid "Add stars up to 10000 with coefficients."
 msgstr "Ongeza nyota hadi 10000 na coefficients."
+
+#: activities/magic-hat-plus/resource/9/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Add stars up to 100 with coefficients."
+msgctxt "Data|"
+msgid "Add stars up to 10, with 2 or 3 different star sets."
+msgstr "Ongeza nyota hadi 100 na coefficients."
 
 #. Activity title
 #: activities/maze/ActivityInfo.qml:15
@@ -28580,7 +28596,24 @@ msgctxt "ActivityInfo|"
 msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Andika neno kamili linapoanguka, kabla halijafika chini."
 
-#: core/ChangeLog.qml:30
+#: core/ChangeLog.qml:30 core/ChangeLog.qml:39 core/ChangeLog.qml:45
+#: core/ChangeLog.qml:51 core/ChangeLog.qml:60 core/ChangeLog.qml:66
+#: core/ChangeLog.qml:71 core/ChangeLog.qml:77 core/ChangeLog.qml:106
+#: core/ChangeLog.qml:141 core/ChangeLog.qml:144 core/ChangeLog.qml:150
+msgctxt "ChangeLog|"
+msgid "Many usability improvements"
+msgstr "Maboresho mengi ya utumiaji"
+
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:40 core/ChangeLog.qml:46
+#: core/ChangeLog.qml:53 core/ChangeLog.qml:61 core/ChangeLog.qml:67
+#: core/ChangeLog.qml:72 core/ChangeLog.qml:79 core/ChangeLog.qml:88
+#: core/ChangeLog.qml:95 core/ChangeLog.qml:108 core/ChangeLog.qml:146
+#: core/ChangeLog.qml:152
+msgctxt "ChangeLog|"
+msgid "Many bug fixes"
+msgstr "Marekebisho mengi ya hitilafu"
+
+#: core/ChangeLog.qml:36
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translation added for Azerbaijani"
@@ -28588,7 +28621,7 @@ msgctxt "ChangeLog|"
 msgid "Translation added for Kannada and Tamil"
 msgstr "Tafsiri imeongezwa kwa Kiazabajani"
 
-#: core/ChangeLog.qml:31
+#: core/ChangeLog.qml:37
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid ""
@@ -28600,30 +28633,14 @@ msgstr ""
 "Chaguo jipya la mstari wa amri kuorodhesha shughuli zote na kuanza kwenye "
 "maalum"
 
-#: core/ChangeLog.qml:32
+#: core/ChangeLog.qml:38
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to show/hide the Home button (--hide-home-button/--"
 "show-home-button)"
 msgstr ""
 
-#: core/ChangeLog.qml:33 core/ChangeLog.qml:39 core/ChangeLog.qml:45
-#: core/ChangeLog.qml:54 core/ChangeLog.qml:60 core/ChangeLog.qml:65
-#: core/ChangeLog.qml:71 core/ChangeLog.qml:100 core/ChangeLog.qml:135
-#: core/ChangeLog.qml:138 core/ChangeLog.qml:144
-msgctxt "ChangeLog|"
-msgid "Many usability improvements"
-msgstr "Maboresho mengi ya utumiaji"
-
-#: core/ChangeLog.qml:34 core/ChangeLog.qml:40 core/ChangeLog.qml:47
-#: core/ChangeLog.qml:55 core/ChangeLog.qml:61 core/ChangeLog.qml:66
-#: core/ChangeLog.qml:73 core/ChangeLog.qml:82 core/ChangeLog.qml:89
-#: core/ChangeLog.qml:102 core/ChangeLog.qml:140 core/ChangeLog.qml:146
-msgctxt "ChangeLog|"
-msgid "Many bug fixes"
-msgstr "Marekebisho mengi ya hitilafu"
-
-#: core/ChangeLog.qml:44
+#: core/ChangeLog.qml:50
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translation added for Azerbaijani"
@@ -28631,26 +28648,26 @@ msgctxt "ChangeLog|"
 msgid "Translation added for Sanskrit"
 msgstr "Tafsiri imeongezwa kwa Kiazabajani"
 
-#: core/ChangeLog.qml:46 core/ChangeLog.qml:72 core/ChangeLog.qml:81
-#: core/ChangeLog.qml:88 core/ChangeLog.qml:101 core/ChangeLog.qml:119
-#: core/ChangeLog.qml:134 core/ChangeLog.qml:139 core/ChangeLog.qml:145
+#: core/ChangeLog.qml:52 core/ChangeLog.qml:78 core/ChangeLog.qml:87
+#: core/ChangeLog.qml:94 core/ChangeLog.qml:107 core/ChangeLog.qml:125
+#: core/ChangeLog.qml:140 core/ChangeLog.qml:145 core/ChangeLog.qml:151
 msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "Picha nyingi mpya"
 
-#: core/ChangeLog.qml:48
+#: core/ChangeLog.qml:54
 msgctxt "ChangeLog|"
 msgid ""
 "Automatic application of new language when changing it in the menu (no need "
 "to restart GCompris)"
 msgstr ""
 
-#: core/ChangeLog.qml:49
+#: core/ChangeLog.qml:55
 msgctxt "ChangeLog|"
 msgid "Add splash screen at startup"
 msgstr ""
 
-#: core/ChangeLog.qml:50
+#: core/ChangeLog.qml:56
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid ""
@@ -28662,7 +28679,7 @@ msgstr ""
 "Chaguo jipya la mstari wa amri kuorodhesha shughuli zote na kuanza kwenye "
 "maalum"
 
-#: core/ChangeLog.qml:59
+#: core/ChangeLog.qml:65
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translation added for Azerbaijani"
@@ -28670,12 +28687,12 @@ msgctxt "ChangeLog|"
 msgid "Translation added for Latvian"
 msgstr "Tafsiri imeongezwa kwa Kiazabajani"
 
-#: core/ChangeLog.qml:70
+#: core/ChangeLog.qml:76
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
 msgstr "Tafsiri zimeongezwa kwa Kibulgaria, Kigalisia na Kiswahili"
 
-#: core/ChangeLog.qml:74
+#: core/ChangeLog.qml:80
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to directly start an activity at a specific level (--"
@@ -28684,17 +28701,17 @@ msgstr ""
 "Chaguo jipya la mstari wa amri ili kuanzisha shughuli moja kwa moja katika "
 "kiwango maalum (--start-level level, itatumika na --launch shughuli)"
 
-#: core/ChangeLog.qml:79
+#: core/ChangeLog.qml:85
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
 msgstr "Tafsiri zimeongezwa kwa Kiarabu na Kiesperanto"
 
-#: core/ChangeLog.qml:80 core/ChangeLog.qml:87
+#: core/ChangeLog.qml:86 core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
 msgstr "Sasisho nyingi za tafsiri"
 
-#: core/ChangeLog.qml:86
+#: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
@@ -28703,22 +28720,22 @@ msgstr ""
 "Chaguo jipya la mstari wa amri (--difficulty {value|min-max}) ili kuanzisha "
 "GCompris kwa ugumu mahususi"
 
-#: core/ChangeLog.qml:93
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
 msgstr "Rekebisha suala katika shughuli ya kulinganisha"
 
-#: core/ChangeLog.qml:97
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr "Ramani ya Uhispania imeongezwa kwa shughuli za jiografia"
 
-#: core/ChangeLog.qml:98
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
 msgstr "Sauti zimeongezwa kwa Kiukreni"
 
-#: core/ChangeLog.qml:99
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
@@ -28727,7 +28744,7 @@ msgstr ""
 "Chaguo jipya la mstari wa amri kuorodhesha shughuli zote na kuanza kwenye "
 "maalum"
 
-#: core/ChangeLog.qml:106
+#: core/ChangeLog.qml:112
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
@@ -28736,31 +28753,31 @@ msgstr ""
 "Punguza saizi ya vifurushi kwa mifumo yote na ya seti za picha za maneno za "
 "nje"
 
-#: core/ChangeLog.qml:107
+#: core/ChangeLog.qml:113
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Boresha ubora wa picha katika shughuli kadhaa"
 
-#: core/ChangeLog.qml:108
+#: core/ChangeLog.qml:114
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 "Rekebisha baadhi ya mabadiliko katika nishati mbadala/mzunguko wa maji "
 "kwenye baadhi ya mifumo"
 
-#: core/ChangeLog.qml:109
+#: core/ChangeLog.qml:115
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr "Rekebisha vitufe vilivyopuuzwa kwenye Linux kwa shughuli za kuandika"
 
-#: core/ChangeLog.qml:110
+#: core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 "Rekebisha uwekaji upya kiwango unapobadilisha kiwango wewe mwenyewe katika "
 "Uhusiano wa Mantiki"
 
-#: core/ChangeLog.qml:114
+#: core/ChangeLog.qml:120
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
@@ -28768,37 +28785,37 @@ msgstr ""
 "Rekebisha mlolongo wa Alfabeti, nambari na Nambari sawa na zisizo za kawaida "
 "katika shughuli za mpangilio"
 
-#: core/ChangeLog.qml:118 core/ChangeLog.qml:126
+#: core/ChangeLog.qml:124 core/ChangeLog.qml:132
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Marekebisho kadhaa ya hitilafu"
 
-#: core/ChangeLog.qml:120
+#: core/ChangeLog.qml:126
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Tafsiri imesasishwa kwa Kirusi"
 
-#: core/ChangeLog.qml:121
+#: core/ChangeLog.qml:127
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Sauti mpya za Kinorwe Kipya"
 
-#: core/ChangeLog.qml:125
+#: core/ChangeLog.qml:131
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "Tafsiri zimeongezwa kwa Kibretoni, Kicheki na Kimasedonia"
 
-#: core/ChangeLog.qml:130
+#: core/ChangeLog.qml:136
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "Tafsiri imeongezwa kwa Kiazabajani"
 
-#: core/ChangeLog.qml:131
+#: core/ChangeLog.qml:137
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Ramani mpya na sasisho la ramani za shughuli za jiografia"
 
-#: core/ChangeLog.qml:132
+#: core/ChangeLog.qml:138
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -28807,7 +28824,7 @@ msgstr ""
 "Seti mpya ya data iliyo na shughuli za vitanzi vya upangaji programu, na "
 "kufanya picha za mafunzo kutafsiriwa"
 
-#: core/ChangeLog.qml:133
+#: core/ChangeLog.qml:139
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
@@ -28816,57 +28833,57 @@ msgstr ""
 "Ongezeko la kiwango cha kufundisha kitanzi cha chanzo cha voltage katika "
 "shughuli za umeme wa analogi"
 
-#: core/ChangeLog.qml:143
+#: core/ChangeLog.qml:149
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "Menyu Mpya ya Mipangilio ya Shughuli, iliyo na uteuzi wa seti ya data"
 
-#: core/ChangeLog.qml:149
+#: core/ChangeLog.qml:155
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Vijamii vipya vya kupanga shughuli"
 
-#: core/ChangeLog.qml:150
+#: core/ChangeLog.qml:156
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "Tafsiri imeongezwa kwa Kimasedonia."
 
-#: core/ChangeLog.qml:151
+#: core/ChangeLog.qml:157
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Shughuli mpya za Kupanga Maze na Tangram ya Mtoto"
 
-#: core/ChangeLog.qml:152
+#: core/ChangeLog.qml:158
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Muziki mpya wa chini  na mipangilio ya sauti."
 
-#: core/ChangeLog.qml:153
+#: core/ChangeLog.qml:159
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "Mpangilio mpya wa kasi katika shughuli kadhaa."
 
-#: core/ChangeLog.qml:154
+#: core/ChangeLog.qml:160
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "Chaguo jipya katika chess ili kuonyesha vipande vilivyokamatwa."
 
-#: core/ChangeLog.qml:155
+#: core/ChangeLog.qml:161
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "Picha mpya katika Rangi, Rangi za Juu na mchezo unaolengwa."
 
-#: core/ChangeLog.qml:156
+#: core/ChangeLog.qml:162
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "Sauti mpya za Kiingereza cha Marekani."
 
-#: core/ChangeLog.qml:157 core/ChangeLog.qml:165
+#: core/ChangeLog.qml:163 core/ChangeLog.qml:171
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Marekebisho mengi madogo na maboresho."
 
-#: core/ChangeLog.qml:158
+#: core/ChangeLog.qml:164
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -28875,18 +28892,18 @@ msgstr ""
 "Tafsiri imesasishwa kwa lugha nyingi (Kibretoni, Kireno cha Kibrazili, "
 "Kifini...)."
 
-#: core/ChangeLog.qml:159
+#: core/ChangeLog.qml:165
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr ""
 "Ongeza mkusanyiko wa data wa Kirusi kwa Bofya kwenye shughuli ya barua."
 
-#: core/ChangeLog.qml:160
+#: core/ChangeLog.qml:166
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "Shughuli ya Lang sasa inapatikana kwa Kiholanzi."
 
-#: core/ChangeLog.qml:161
+#: core/ChangeLog.qml:167
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -28895,17 +28912,17 @@ msgstr ""
 "Unganisha kaunti za Norwegian Nord-Trøndelag na Sør-Trøndelag hadi Trendelag "
 "katika shughuli za kijiografia."
 
-#: core/ChangeLog.qml:162
+#: core/ChangeLog.qml:168
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr "Rekebisha katika shughuli za breli ambapo seli zinaanzia 1, si 0."
 
-#: core/ChangeLog.qml:163
+#: core/ChangeLog.qml:169
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "Tafsiri imeongezwa kwa Basque, Hungarian na Malayalam."
 
-#: core/ChangeLog.qml:164
+#: core/ChangeLog.qml:170
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -28914,48 +28931,48 @@ msgstr ""
 "Inapakia/kuhifadhi ubunifu (Baby Wordprocessor, Sanduku la Mizani na Muundo "
 "wa Piano)."
 
-#: core/ChangeLog.qml:165
+#: core/ChangeLog.qml:171
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "Tafsiri zimeongezwa kwa Kigaeli cha Kiskoti."
 
-#: core/ChangeLog.qml:166
+#: core/ChangeLog.qml:172
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "Ukurasa wa leseni umeongezwa katika usanidi."
 
-#: core/ChangeLog.qml:166
+#: core/ChangeLog.qml:172
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Mabadiliko mengi kwenye mipangilio ili kuboresha ergonomy."
 
-#: core/ChangeLog.qml:167
+#: core/ChangeLog.qml:173
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr ""
 "Shughuli ya Lang sasa inapatikana katika Kipolandi, Kiswidi na Kiukreni."
 
-#: core/ChangeLog.qml:168
+#: core/ChangeLog.qml:174
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Kipengele cha utafutaji."
 
-#: core/ChangeLog.qml:169
+#: core/ChangeLog.qml:175
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "A Changelog."
 
-#: core/ChangeLog.qml:170
+#: core/ChangeLog.qml:176
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Marekebisho mengi madogo."
 
-#: core/ChangeLog.qml:170
+#: core/ChangeLog.qml:176
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "Shughuli ya Lang sasa inapatikana kwa Kifaransa."
 
-#: core/ChangeLog.qml:171
+#: core/ChangeLog.qml:177
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -28964,7 +28981,7 @@ msgstr ""
 "Kuongeza wekeleo la upakiaji ili kumjulisha mtumiaji kuwa baadhi ya vitendo "
 "vinafanyika (kupakia shughuli kwa mfano) na inaweza kuchukua sekunde kadhaa."
 
-#: core/ChangeLog.qml:171
+#: core/ChangeLog.qml:177
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -28974,12 +28991,12 @@ msgstr ""
 "Kifini (92% kilitafsiriwa), Kirusi (98% kilitafsiriwa), Kislovakia (92% "
 "kilitafsiriwa), Kituruki."
 
-#: core/ChangeLog.qml:172
+#: core/ChangeLog.qml:178
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Tafsiri zilizoongezwa kwa: Kislovenia, Kijerumani, Kigalisia."
 
-#: core/ChangeLog.qml:226
+#: core/ChangeLog.qml:232
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
