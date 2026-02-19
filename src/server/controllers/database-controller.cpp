@@ -646,13 +646,14 @@ namespace controllers {
         int datasetId = -1;
         QSqlQuery query(database);
         // since the dataset does not exist, create the new dataset and add description and users to it
-        query.prepare("INSERT INTO dataset_ (dataset_name, activity_id, dataset_objective, dataset_difficulty, dataset_content, is_created_dataset) VALUES (:datasetName,:activityId,:objective,:difficulty,:content,:isCreatedByUser)");
+        query.prepare("INSERT INTO dataset_ (dataset_name, activity_id, dataset_objective, dataset_difficulty, dataset_content, is_created_dataset, internal_name) VALUES (:datasetName,:activityId,:objective,:difficulty,:content,:isCreatedByUser,:internalName)");
         query.bindValue(":datasetName", datasetName);
         query.bindValue(":activityId", activityId);
         query.bindValue(":objective", objective);
         query.bindValue(":difficulty", difficulty);
         query.bindValue(":content", content);
         query.bindValue(":isCreatedByUser", isCreatedByUser);
+        query.bindValue(":internalName", isCreatedByUser ? QString("c-"+datasetName) : datasetName);
 
         bool datasetAdded = query.exec();
         if (datasetAdded)
@@ -666,7 +667,7 @@ namespace controllers {
     {
         // No need to update is_created_dataset because we can only update created datasets, not internal ones
         QSqlQuery query(database);
-        QString sqlStatement = "UPDATE dataset_ SET dataset_name=:datasetName, dataset_objective=:objective, dataset_difficulty=:difficulty, dataset_content=:content WHERE dataset_id=:id";
+        QString sqlStatement = "UPDATE dataset_ SET dataset_name=:datasetName, dataset_objective=:objective, dataset_difficulty=:difficulty, dataset_content=:content, internal_name=:internalName WHERE dataset_id=:id";
         if (!query.prepare(sqlStatement))
             return false;
         query.bindValue(":id", datasetId);
@@ -674,6 +675,7 @@ namespace controllers {
         query.bindValue(":objective", objective);
         query.bindValue(":difficulty", difficulty);
         query.bindValue(":content", content);
+        query.bindValue(":internalName", QString("c-"+datasetName));
 
         if (!query.exec()) {
             triggerDBError(query.lastError(), tr("Dataset <b>%1</b> could not be updated to <b>%2</b>.").arg(datasetId).arg(datasetName));
