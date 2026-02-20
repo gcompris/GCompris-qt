@@ -17875,7 +17875,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr ""
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr ""
@@ -17971,7 +17971,7 @@ msgid ""
 "validate it."
 msgstr ""
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Decimal number system."

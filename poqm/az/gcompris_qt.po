@@ -18407,7 +18407,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Şapkaya vuraraq oyuna başlayın"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "Qalan ulduzları 3-ə qədər hesablayın."
@@ -18512,7 +18512,7 @@ msgstr ""
 "hesablayın. Cavabınızı yazmaq üçün alt cərgəyə vurun. OLDU düyməsi ilə "
 "cavabınızı yoxlayın."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "3-ə qədər ulduzlar daxil edin."

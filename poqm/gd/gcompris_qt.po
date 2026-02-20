@@ -18299,7 +18299,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Breab am bàla dhan tadhal"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Count how many items are under the magic hat"
@@ -18419,7 +18419,7 @@ msgstr ""
 "gluasad fon ad? Cunnt iad gu cùramach. :) Briog air an raon air a’ bhonn gu "
 "deas gus freagairt a thoirt."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Learn addition"

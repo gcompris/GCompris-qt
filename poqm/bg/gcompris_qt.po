@@ -17932,7 +17932,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Кликни върху шапката, за да започнеш играта"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "Изчисли оставащите звезди до 3."
@@ -18028,7 +18028,7 @@ msgstr ""
 "Преброй внимателно. Кликни върху долната област, за да въведеш отговора си и "
 "върху бутона ОК, за да го потвърдиш."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "Добави звезди до 3."

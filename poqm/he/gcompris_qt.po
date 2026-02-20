@@ -1,11 +1,11 @@
 # Amihay Gal <Amihaygal@gmail.com>, 2019.
 # ami.g <amihaygal@gmail.com>, 2020, 2021, 2023.
-# SPDX-FileCopyrightText: 2024, 2025 Yaron Shahrabani <sh.yaron@gmail.com>
+# SPDX-FileCopyrightText: 2024, 2025, 2026 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-12-30 11:23+0200\n"
+"PO-Revision-Date: 2026-02-19 09:24+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 25.12.0\n"
+"X-Generator: Lokalize 25.12.1\n"
 "X-Qt-Contexts: true\n"
 "X-Poedit-Bookmarks: -1,2919,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
@@ -17442,7 +17442,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "ללחוץ על הכובע כדי להתחיל את המשחק"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "לחשב כוכבים שנשארו עד 3."
@@ -17486,12 +17486,9 @@ msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr "לחשב כוכבים שנשארו עד 10,000 עם שארית."
 
 #: activities/magic-hat-minus/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Calculate remaining stars up to 100 with coefficients."
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 10, with 2 or 3 different star sets."
-msgstr "לחשב כוכבים שנשארו עד 100 עם שארית."
+msgstr "לחשב כוכבים שנשארו עד 10, עם 2 או 3 סדרות שונות של כוכבים."
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
 #: activities/magic-hat-minus/StarsBar.qml:36
@@ -17537,7 +17534,7 @@ msgstr ""
 "ללחוץ על הכובע כדי לפתוח אותו. כמה כוכבים משתובבים? לספור בדיוק. כדי לכתוב "
 "את התשובה צריך ללחוץ בחלק התחתון. כדי לבדוק את התשובה ללחוץ על \"אישור\"."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "לחבר כוכבים עד 3."
@@ -17581,12 +17578,9 @@ msgid "Add stars up to 10000 with coefficients."
 msgstr "לחבר כוכבים שנשארו עד 10000 עם שארית."
 
 #: activities/magic-hat-plus/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 100 with coefficients."
 msgctxt "Data|"
 msgid "Add stars up to 10, with 2 or 3 different star sets."
-msgstr "לחבר כוכבים שנשארו עד 100 עם שארית."
+msgstr "לחבר כוכבים עד 10, עם 2 או 3 סדרות שונות של כוכבים."
 
 #. Activity title
 #: activities/maze/ActivityInfo.qml:15
@@ -19377,15 +19371,12 @@ msgid ""
 msgstr "ג׳יקומפרי מחובר לשרת מורה, אבל הסיסמה שהוקלדה למשתמש הנבחר שגויה."
 
 #: activities/menu/Menu.qml:213
-#, fuzzy, qt-format
-#| msgctxt "Menu|"
-#| msgid ""
-#| "GCompris is connected to teacher's server, and the user is authenticated."
+#, qt-format
 msgctxt "Menu|"
 msgid ""
 "GCompris is connected to teacher's server, and the user is authenticated as "
 "%1."
-msgstr "ג׳יקומפרי מחובר לשרת מורה והמשתמש מאומת."
+msgstr "ג׳יקומפרי מחובר לשרת מורה והמשתמש מאומת בתור %1."
 
 #: activities/menu/Menu.qml:214
 msgctxt "Menu|"

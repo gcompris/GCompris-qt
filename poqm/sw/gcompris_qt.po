@@ -18284,7 +18284,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Bonyeza kofia ili kuanza mchezo"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "Hesabu nyota zilizosalia hadi 3."
@@ -18389,7 +18389,7 @@ msgstr ""
 "kwa uangalifu. Bofya kwenye eneo la chini ili kuingiza jibu lako na kwenye "
 "kitufe cha Sawa ili kulithibitisha."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "Ongeza nyota hadi 3."

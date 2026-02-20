@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-02-18 18:03+0300\n"
+"PO-Revision-Date: 2026-02-19 15:36+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -17827,7 +17827,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Şapkaya tıklayarak oyuna başla"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "Kalan yıldızları 3’e kadar hesapla."
@@ -17871,12 +17871,9 @@ msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr "Katsayılarla 10.000’e kadar kalan yıldızları hesapla."
 
 #: activities/magic-hat-minus/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Calculate remaining stars up to 100 with coefficients."
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 10, with 2 or 3 different star sets."
-msgstr "Katsayılarla 100’e kadar kalan yıldızları hesapla."
+msgstr "2 veya 3 farklı yıldız kümesiyle 10’a kadar kalan yıldızları hesapla."
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
 #: activities/magic-hat-minus/StarsBar.qml:36
@@ -17922,7 +17919,7 @@ msgstr ""
 "Açmak için şapkaya tıkla. Şapkanın altına kaç yıldız girdi? Dikkatlice say. "
 "Yanıtını girmek için alt alana ve onu doğrulamak için OK düğmesine tıkla."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "3’e kadar yıldız ekle."
@@ -17957,7 +17954,7 @@ msgstr "Katsayılarla 100’e kadar yıldız ekle."
 #: activities/magic-hat-plus/resource/7/Data.qml:16
 msgctxt "Data|"
 msgid "Add stars up to 1000 with coefficients."
-msgstr "Katsayılarla 1.000’e kadar yıldız ekleyin."
+msgstr "Katsayılarla 1.000’e kadar yıldız ekle."
 
 #. Coefficients are the numbers by which the numbers of stars are multiplied to get the total
 #: activities/magic-hat-plus/resource/8/Data.qml:16
@@ -17966,12 +17963,9 @@ msgid "Add stars up to 10000 with coefficients."
 msgstr "Katsayılarla 10.000’e kadar yıldız ekle."
 
 #: activities/magic-hat-plus/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 100 with coefficients."
 msgctxt "Data|"
 msgid "Add stars up to 10, with 2 or 3 different star sets."
-msgstr "Katsayılarla 100’e kadar yıldız ekle."
+msgstr "2 veya 3 yıldız kümesiyle 10’a kadar yıldızlar ekle."
 
 #. Activity title
 #: activities/maze/ActivityInfo.qml:15

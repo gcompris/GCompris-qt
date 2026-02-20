@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-02-18 07:19+0100\n"
+"PO-Revision-Date: 2026-02-19 07:00+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -17836,7 +17836,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Kliknite na klobuk, da začnete igro"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "Preračunajte preostale zvezdice do 3."
@@ -17880,12 +17880,9 @@ msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr "Preračunajte preostale zvezdice do 10000 s koeficienti."
 
 #: activities/magic-hat-minus/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Calculate remaining stars up to 100 with coefficients."
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 10, with 2 or 3 different star sets."
-msgstr "Preračunajte preostale zvezdice do 100 s koeficienti."
+msgstr "Izračunajte preostale zvezde do 10, z 2 ali 3 različnimi nabori zvezd."
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
 #: activities/magic-hat-minus/StarsBar.qml:36
@@ -17932,7 +17929,7 @@ msgstr ""
 "štejte. Kliknite na spodnji del, da vnesete svoj odgovor, in gumb V redu, "
 "dapreverite."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "Dodajte zvezdice do 3."
@@ -17976,12 +17973,9 @@ msgid "Add stars up to 10000 with coefficients."
 msgstr "Dodajte zvezdice do 10000 s koeficienti."
 
 #: activities/magic-hat-plus/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 100 with coefficients."
 msgctxt "Data|"
 msgid "Add stars up to 10, with 2 or 3 different star sets."
-msgstr "Dodajte zvezdice do 100 s koeficienti."
+msgstr "Dodajte zvezdice do 10, z 2 ali 3 različnimi kompleti zvezdic."
 
 #. Activity title
 #: activities/maze/ActivityInfo.qml:15

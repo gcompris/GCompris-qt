@@ -17925,7 +17925,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Klik war an tog evit kregiñ gant ar c'hoari"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "Kontañ ar stered a chom betek 3."
@@ -18021,7 +18021,7 @@ msgstr ""
 "dindanañ ? Kont mat. Klik er c'hombodoù war al linenn en traoñ evit reiñ da "
 "respont a-raok pouezañ war OK a-zehoù."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "Ouzhpenn betek 3 steredenn."

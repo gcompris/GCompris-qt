@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2026-02-18 08:18+0200\n"
+"PO-Revision-Date: 2026-02-19 08:51+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -18008,7 +18008,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Натисніть на капелюсі, щоб розпочати гру"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "Лічба решти зірок до 3."
@@ -18052,12 +18052,9 @@ msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr "Лічба решти зірок до 10000 з коефіцієнтами."
 
 #: activities/magic-hat-minus/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Calculate remaining stars up to 100 with coefficients."
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 10, with 2 or 3 different star sets."
-msgstr "Лічба решти зірок до 100 з коефіцієнтами."
+msgstr "Лічба решти зірок до 10 з 2 або 3 різними наборами зірок."
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
 #: activities/magic-hat-minus/StarsBar.qml:36
@@ -18104,7 +18101,7 @@ msgstr ""
 "Рахуйте уважно. Натисніть унизу, щоб ввести вашу відповідь, а потім "
 "натисніть кнопку «Гаразд», щоб перевірити її."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "Додавання зірок до 3."
@@ -18148,12 +18145,9 @@ msgid "Add stars up to 10000 with coefficients."
 msgstr "Додавання зірок до 10000 з коефіцієнтами."
 
 #: activities/magic-hat-plus/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 100 with coefficients."
 msgctxt "Data|"
 msgid "Add stars up to 10, with 2 or 3 different star sets."
-msgstr "Додавання зірок до 100 з коефіцієнтами."
+msgstr "Додавання зірок до до 10 з 2 або 3 різними наборами зірок."
 
 #. Activity title
 #: activities/maze/ActivityInfo.qml:15

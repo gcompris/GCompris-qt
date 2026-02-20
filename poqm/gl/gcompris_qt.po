@@ -18027,7 +18027,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Preme o sombreiro para comezar a partida"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "Calcula as estrelas que restan ata 3."
@@ -18123,7 +18123,7 @@ msgstr ""
 "Preme na parte inferior para escribir a túa resposta e no botón de «Aceptar» "
 "para validala."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "Sumar estrelas ata 3."

@@ -568,7 +568,7 @@ msgid "Lines: %1"
 msgstr "Regels: %1"
 
 #. Success ratio, example: "50 %"
-#: server/activities/DailyReport.qml:313
+#: server/activities/DailyReport.qml:314
 #, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %"
@@ -992,14 +992,14 @@ msgctxt "LineReport|"
 msgid "Lines: %1"
 msgstr "Regels: %1"
 
-#: server/activities/LineReport.qml:227
+#: server/activities/LineReport.qml:228
 #, qt-format
 msgctxt "LineReport|"
 msgid "Level: <b>%1</b>"
 msgstr "Niveau: <b>%1</b>"
 
 #. Result duration in seconds. Example: "Duration: 25s"
-#: server/activities/LineReport.qml:243 server/activities/LineReport.qml:253
+#: server/activities/LineReport.qml:244 server/activities/LineReport.qml:254
 #, qt-format
 msgctxt "LineReport|"
 msgid "Duration: %1s"
@@ -1218,12 +1218,12 @@ msgctxt "EditorBox|"
 msgid "Move down"
 msgstr "Omlaag verplaatsen"
 
-#: server/components/FieldEdit.qml:321
+#: server/components/FieldEdit.qml:323
 msgctxt "FieldEdit|"
 msgid "Add an entry"
 msgstr "Een item toevoegen"
 
-#: server/components/FieldEdit.qml:333
+#: server/components/FieldEdit.qml:335
 msgctxt "FieldEdit|"
 msgid "Remove last entry"
 msgstr "Laatste item verwijderen"
@@ -1453,37 +1453,37 @@ msgctxt "DatasetEditorDialog|"
 msgid "Editor"
 msgstr "Bewerker"
 
-#: server/dialogs/DatasetEditorDialog.qml:348
+#: server/dialogs/DatasetEditorDialog.qml:349
 msgctxt "DatasetEditorDialog|"
 msgid "Raw JSON"
 msgstr "Ruwe JSON"
 
-#: server/dialogs/DatasetEditorDialog.qml:378
+#: server/dialogs/DatasetEditorDialog.qml:379
 msgctxt "DatasetEditorDialog|"
 msgid "Activity name"
 msgstr "Naam activiteit"
 
-#: server/dialogs/DatasetEditorDialog.qml:392
+#: server/dialogs/DatasetEditorDialog.qml:393
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name"
 msgstr "Naam van gegevensset"
 
-#: server/dialogs/DatasetEditorDialog.qml:406
+#: server/dialogs/DatasetEditorDialog.qml:407
 msgctxt "DatasetEditorDialog|"
 msgid "Goal"
 msgstr "Doel"
 
-#: server/dialogs/DatasetEditorDialog.qml:420
+#: server/dialogs/DatasetEditorDialog.qml:421
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty"
 msgstr "Moeilijkheid"
 
-#: server/dialogs/DatasetEditorDialog.qml:518
+#: server/dialogs/DatasetEditorDialog.qml:519
 msgctxt "DatasetEditorDialog|"
 msgid "Instructions"
 msgstr "Instructies"
 
-#: server/dialogs/DatasetEditorDialog.qml:524
+#: server/dialogs/DatasetEditorDialog.qml:525
 msgctxt "DatasetEditorDialog|"
 msgid "No specific instructions for this editor."
 msgstr "Geen specifieke instructies voor deze bewerker."
@@ -1561,12 +1561,12 @@ msgctxt "PupilDialog|"
 msgid "Password"
 msgstr "Wachtwoord"
 
-#: server/dialogs/PupilDialog.qml:217
+#: server/dialogs/PupilDialog.qml:218
 msgctxt "PupilDialog|"
 msgid "Password images:"
 msgstr "Wachtwoordafbeeldingen:"
 
-#: server/dialogs/PupilDialog.qml:252
+#: server/dialogs/PupilDialog.qml:254
 msgctxt "PupilDialog|"
 msgid "Groups"
 msgstr "Groepen"
@@ -1622,7 +1622,7 @@ msgctxt "SqlLineDialog|"
 msgid "Line details"
 msgstr "Details van regels"
 
-#: server/dialogs/SqlLineDialog.qml:193
+#: server/dialogs/SqlLineDialog.qml:194
 msgctxt "SqlLineDialog|"
 msgid "Close"
 msgstr "Sluiten"

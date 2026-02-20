@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-02-18 11:01+0100\n"
+"PO-Revision-Date: 2026-02-19 09:38+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -18010,7 +18010,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Klik op de hoed om het spel te beginnen"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "Overblijvende sterren berekenen tot 3."
@@ -18054,12 +18054,10 @@ msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr "Overblijvende sterren berekenen tot 10000 met coëfficiënten."
 
 #: activities/magic-hat-minus/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Calculate remaining stars up to 100 with coefficients."
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 10, with 2 or 3 different star sets."
-msgstr "Overblijvende sterren berekenen tot 100 met coëfficiënten."
+msgstr ""
+"Overblijvende sterren berekenen tot 10 met 2 of 3 verschillende sets sterren."
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
 #: activities/magic-hat-minus/StarsBar.qml:36
@@ -18106,7 +18104,7 @@ msgstr ""
 "Tel ze aandachtig. Klik in het onderste gebied om je antwoord in te voeren "
 "en daarna op de knop OK om te kijken of het goed is."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "Sterren tot 3 optellen."
@@ -18150,12 +18148,9 @@ msgid "Add stars up to 10000 with coefficients."
 msgstr "Sterren optellen tot 10000 stuks met coëfficiënten."
 
 #: activities/magic-hat-plus/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 100 with coefficients."
 msgctxt "Data|"
 msgid "Add stars up to 10, with 2 or 3 different star sets."
-msgstr "Sterren optellen tot 100 stuks met coëfficiënten."
+msgstr "Sterren optellen tot 10, met 2 of 3 verschillende sets sterren."
 
 #. Activity title
 #: activities/maze/ActivityInfo.qml:15

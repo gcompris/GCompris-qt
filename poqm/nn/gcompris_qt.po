@@ -17826,7 +17826,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Trykk på hatten for å starta spelet"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "Rekna ut stjerner opptil 3"
@@ -17871,8 +17871,6 @@ msgstr "Rekna ut stjerner opptil 10 000, med koeffisientar"
 
 #: activities/magic-hat-minus/resource/9/Data.qml:13
 #, fuzzy
-#| msgctxt "Data|"
-#| msgid "Calculate remaining stars up to 100 with coefficients."
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 10, with 2 or 3 different star sets."
 msgstr "Rekna ut stjerner opptil 100, med koeffisientar"
@@ -17926,7 +17924,7 @@ msgstr ""
 "Tel nøye etter. Trykk på området nede til høgre for å svara og så på «OK»-"
 "knappen for å sjå om svaret var rett."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "Addera opptil 3 stjerner"
@@ -17971,8 +17969,6 @@ msgstr "Addera opptil 10 000 stjerner, med koeffisientar"
 
 #: activities/magic-hat-plus/resource/9/Data.qml:13
 #, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 100 with coefficients."
 msgctxt "Data|"
 msgid "Add stars up to 10, with 2 or 3 different star sets."
 msgstr "Addera opptil 100 stjerner, med koeffisientar"

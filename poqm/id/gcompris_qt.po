@@ -18124,7 +18124,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Klik pada topi untuk memulai permainan"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "Belajar cara menghitung bintang yang tersisa hingga 3."
@@ -18224,7 +18224,7 @@ msgstr ""
 "bawahnya? Hitung dengan hati-hati. Klik pada area bawah untuk memasukkan "
 "jawaban kamu dan pada tombol OK untuk menyetujui jawaban."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "Penambahan bintang hingga 3."

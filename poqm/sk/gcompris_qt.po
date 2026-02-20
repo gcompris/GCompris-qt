@@ -18233,7 +18233,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Klikni na klobúk na začatie hry"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Count how many items are under the magic hat"
@@ -18347,7 +18347,7 @@ msgstr ""
 "presúvaní sa okolo? Počítajte pozorne. Kliknutím na spodnú časť zadajte "
 "svoju odpoveď a kliknutím na tlačidlo OK potvrďte svoju odpoveď."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "Dopĺňanie hviezd do 3."

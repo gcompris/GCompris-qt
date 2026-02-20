@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2026-02-18 12:56+0100\n"
+"PO-Revision-Date: 2026-02-19 11:29+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -18359,7 +18359,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Fes clic en el barret per a començar el joc"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "Calcula els estels restants fins a 3."
@@ -18403,12 +18403,10 @@ msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr "Calcula els estels restants fins a 10.000 amb coeficients."
 
 #: activities/magic-hat-minus/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Calculate remaining stars up to 100 with coefficients."
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 10, with 2 or 3 different star sets."
-msgstr "Calcula els estels restants fins a 100 amb coeficients."
+msgstr ""
+"Calcula els estels restants fins a 10, amb 2 o 3 conjunts d'estels diferents."
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
 #: activities/magic-hat-minus/StarsBar.qml:36
@@ -18455,7 +18453,7 @@ msgstr ""
 "Compta amb cura. Fes clic en l'àrea inferior per a introduir la teva "
 "resposta i en el botó «OK» per a validar-la."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "Afegeix estels fins a 3."
@@ -18499,12 +18497,9 @@ msgid "Add stars up to 10000 with coefficients."
 msgstr "Afegeix estels fins a 10.000 amb coeficients."
 
 #: activities/magic-hat-plus/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 100 with coefficients."
 msgctxt "Data|"
 msgid "Add stars up to 10, with 2 or 3 different star sets."
-msgstr "Afegeix estels fins a 100 amb coeficients."
+msgstr "Afegeix estels fins a 10, amb 2 o 3 conjunts d'estels diferents."
 
 #. Activity title
 #: activities/maze/ActivityInfo.qml:15

@@ -18326,7 +18326,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Mängu alustamiseks klõpsa kübaral"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "Arvutage ülejäänud tähed 3me piires."
@@ -18431,7 +18431,7 @@ msgstr ""
 "Loe need hoolikalt kokku. Klõpsa alumisel real vastuse andmiseks ja vastuse "
 "kinnitamiseks vajuta nupule OK."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "Liida tähekesi 3me piires."
