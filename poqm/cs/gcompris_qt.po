@@ -17414,7 +17414,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Pro započetí hry klikni na klobouk"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "Spočítat zbývající hvězdy do 3."
@@ -17502,7 +17502,7 @@ msgstr ""
 "kloboukem? Počítej pozorně. Klikni na pole pod čarou pro vložení odpovědi a "
 "potvrď stisknutím OK."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "Sčítat hvězdy až do 3."

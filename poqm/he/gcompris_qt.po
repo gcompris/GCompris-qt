@@ -17442,7 +17442,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "ללחוץ על הכובע כדי להתחיל את המשחק"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "לחשב כוכבים שנשארו עד 3."
@@ -17529,7 +17529,7 @@ msgstr ""
 "ללחוץ על הכובע כדי לפתוח אותו. כמה כוכבים משתובבים? לספור בדיוק. כדי לכתוב "
 "את התשובה צריך ללחוץ בחלק התחתון. כדי לבדוק את התשובה ללחוץ על \"אישור\"."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "לחבר כוכבים עד 3."

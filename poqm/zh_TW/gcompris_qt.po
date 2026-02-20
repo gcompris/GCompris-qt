@@ -17782,7 +17782,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "點擊帽子開始遊戲"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "計算最多 3 個星星。"
@@ -17878,7 +17878,7 @@ msgstr ""
 "按一下帽子可以把它打開。有多少顆星星跑到帽子底下了？請細心地計算 :) 按一下底"
 "部區域就可以輸入您的答案，然後點擊「確定」來揭曉。"
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "計算最多 3 個星星。"

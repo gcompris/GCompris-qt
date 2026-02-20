@@ -17417,7 +17417,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Šutni loptu u gol"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 #, fuzzy
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
@@ -17512,7 +17512,7 @@ msgstr ""
 "vidiš da se kreću unaokolo? Broj pažljivo. :) Klikni pri dnu desno da uneseš "
 "svoj odgovor."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 #, fuzzy
 msgctxt "Data|"
 msgid "Add stars up to 3."

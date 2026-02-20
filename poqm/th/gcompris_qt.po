@@ -18235,7 +18235,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "เตะลูกบอลเข้าประตู"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Count how many items are under the magic hat"
@@ -18346,7 +18346,7 @@ msgstr ""
 "คลิกที่หมวกเพื่อเปิดหรือปิดหมวก ถามว่า ที่ใต้หมวกมีดาววิ่งอยู่กี่ดวงที่คุณเห็น? นับดีๆ นะ :) "
 "คลิกที่บริเวณล่างขวาเพื่อป้อนคำตอบ"
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Learn addition"

@@ -17483,7 +17483,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "क्रीडां आरभ्य टोपीं नुदन्तु"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "3 पर्यन्तं अवशिष्टतारकाणां गणनां कुर्वन्तु।"
@@ -17573,7 +17573,7 @@ msgstr ""
 "टोपीं उद्घाटयितुं टोपीं नुदन्तु । तस्य अधः कति तारकाः गतवन्तः ? सावधानतया गणयन्तु। भवतः "
 "उत्तरं निवेशयितुं अधः क्षेत्रे नुदन्तु तथा च तस्य प्रमाणीकरणार्थं OK बटन् नुदन्तु ।"
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "३ पर्यन्तं ताराणि योजयन्तु ।"

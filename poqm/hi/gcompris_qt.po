@@ -19630,7 +19630,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "खेल शुरू करने के लिए टोपी पर क्लिक करें"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Count how many items are under the magic hat"
@@ -19743,7 +19743,7 @@ msgstr ""
 "इसे खोलने या बंद करने के लिए टोपी पर क्लिक करें। टोपी के नीचे, आप कितने तारे देख सकते हैं? "
 "सावधानी से गणना करें अपने जवाब को इनपुट करने के लिए नीचे-दाएं क्षेत्र में क्लिक करें।"
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Learn addition"

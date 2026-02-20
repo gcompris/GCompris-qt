@@ -18008,7 +18008,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Натисніть на капелюсі, щоб розпочати гру"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "Лічба решти зірок до 3."
@@ -18096,7 +18096,7 @@ msgstr ""
 "Рахуйте уважно. Натисніть унизу, щоб ввести вашу відповідь, а потім "
 "натисніть кнопку «Гаразд», щоб перевірити її."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "Додавання зірок до 3."

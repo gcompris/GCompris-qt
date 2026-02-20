@@ -18008,7 +18008,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Që të fillohet loja, klikoni mbi kapelën"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "Llogaritni yjet e mbetur, deri në 3."
@@ -18096,7 +18096,7 @@ msgstr ""
 "Klikoni te fusha poshtë që të jepni përgjigjen tuaj dhe mbi butonin OK, që "
 "ajo të vlerësohet."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "Shtoni deri në 3 yje."

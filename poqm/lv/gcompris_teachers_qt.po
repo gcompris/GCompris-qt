@@ -563,7 +563,7 @@ msgid "Lines: %1"
 msgstr "Rindas: %1"
 
 #. Success ratio, example: "50 %"
-#: server/activities/DailyReport.qml:313
+#: server/activities/DailyReport.qml:314
 #, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %"
@@ -984,14 +984,14 @@ msgctxt "LineReport|"
 msgid "Lines: %1"
 msgstr "Rindas: %1"
 
-#: server/activities/LineReport.qml:227
+#: server/activities/LineReport.qml:228
 #, qt-format
 msgctxt "LineReport|"
 msgid "Level: <b>%1</b>"
 msgstr "Līmenis: <b>%1</b>"
 
 #. Result duration in seconds. Example: "Duration: 25s"
-#: server/activities/LineReport.qml:243 server/activities/LineReport.qml:253
+#: server/activities/LineReport.qml:244 server/activities/LineReport.qml:254
 #, qt-format
 msgctxt "LineReport|"
 msgid "Duration: %1s"
@@ -1439,37 +1439,37 @@ msgctxt "DatasetEditorDialog|"
 msgid "Editor"
 msgstr "Redaktors"
 
-#: server/dialogs/DatasetEditorDialog.qml:348
+#: server/dialogs/DatasetEditorDialog.qml:349
 msgctxt "DatasetEditorDialog|"
 msgid "Raw JSON"
 msgstr "Neapstrādāts JSON"
 
-#: server/dialogs/DatasetEditorDialog.qml:378
+#: server/dialogs/DatasetEditorDialog.qml:379
 msgctxt "DatasetEditorDialog|"
 msgid "Activity name"
 msgstr "Aktivitātes nosaukums"
 
-#: server/dialogs/DatasetEditorDialog.qml:392
+#: server/dialogs/DatasetEditorDialog.qml:393
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name"
 msgstr "Datu kopas nosaukums"
 
-#: server/dialogs/DatasetEditorDialog.qml:406
+#: server/dialogs/DatasetEditorDialog.qml:407
 msgctxt "DatasetEditorDialog|"
 msgid "Goal"
 msgstr "Mērķis"
 
-#: server/dialogs/DatasetEditorDialog.qml:420
+#: server/dialogs/DatasetEditorDialog.qml:421
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty"
 msgstr "Grūtība"
 
-#: server/dialogs/DatasetEditorDialog.qml:518
+#: server/dialogs/DatasetEditorDialog.qml:519
 msgctxt "DatasetEditorDialog|"
 msgid "Instructions"
 msgstr "Norādes"
 
-#: server/dialogs/DatasetEditorDialog.qml:524
+#: server/dialogs/DatasetEditorDialog.qml:525
 msgctxt "DatasetEditorDialog|"
 msgid "No specific instructions for this editor."
 msgstr "Šim redaktoram nav specifisku norāžu."
@@ -1547,12 +1547,12 @@ msgctxt "PupilDialog|"
 msgid "Password"
 msgstr "Parole"
 
-#: server/dialogs/PupilDialog.qml:217
+#: server/dialogs/PupilDialog.qml:218
 msgctxt "PupilDialog|"
 msgid "Password images:"
 msgstr "Paroles attēli:"
 
-#: server/dialogs/PupilDialog.qml:252
+#: server/dialogs/PupilDialog.qml:254
 msgctxt "PupilDialog|"
 msgid "Groups"
 msgstr "Grupas"
@@ -1606,7 +1606,7 @@ msgctxt "SqlLineDialog|"
 msgid "Line details"
 msgstr "Rindas informācija"
 
-#: server/dialogs/SqlLineDialog.qml:193
+#: server/dialogs/SqlLineDialog.qml:194
 msgctxt "SqlLineDialog|"
 msgid "Close"
 msgstr "Aizvērt"

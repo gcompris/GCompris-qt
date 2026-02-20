@@ -17781,7 +17781,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Kattins a kalapra a játék indításához"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "Számold meg a maradék csillagokat 3-ig!"
@@ -17872,7 +17872,7 @@ msgstr ""
 "okosan! Kattints a lenti területre hogy beírhasd a válaszodat, majd az OK "
 "gombra hogy ellenrőizd azt."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "Add össze a csillagokat 3-ig!"

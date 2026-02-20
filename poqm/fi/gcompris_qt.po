@@ -18454,7 +18454,7 @@ msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Aloita peli painamalla hatusta"
 
-#: activities/magic-hat-minus/resource/1/Data.qml:49
+#: activities/magic-hat-minus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 3."
 msgstr "Laske jäljellä olevat tähdet kolmeen asti."
@@ -18545,7 +18545,7 @@ msgstr ""
 "huolellisesti. Napsauta alaosassa olevaa aluetta syöttääksesi vastauksesi ja "
 "OK-painiketta vahvistaaksesi sen."
 
-#: activities/magic-hat-plus/resource/1/Data.qml:49
+#: activities/magic-hat-plus/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Add stars up to 3."
 msgstr "Lisää tähtiä kolmeen asti."

@@ -4,6 +4,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n < 11 ? "
+"3 : 4\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
 #: server/activities/binary_bulb/ActivityEditor.qml:12
@@ -520,7 +522,7 @@ msgid "Lines: %1"
 msgstr ""
 
 #. Success ratio, example: "50 %"
-#: server/activities/DailyReport.qml:313
+#: server/activities/DailyReport.qml:314
 #, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %"
@@ -931,14 +933,14 @@ msgctxt "LineReport|"
 msgid "Lines: %1"
 msgstr ""
 
-#: server/activities/LineReport.qml:227
+#: server/activities/LineReport.qml:228
 #, qt-format
 msgctxt "LineReport|"
 msgid "Level: <b>%1</b>"
 msgstr ""
 
 #. Result duration in seconds. Example: "Duration: 25s"
-#: server/activities/LineReport.qml:243 server/activities/LineReport.qml:253
+#: server/activities/LineReport.qml:244 server/activities/LineReport.qml:254
 #, qt-format
 msgctxt "LineReport|"
 msgid "Duration: %1s"
@@ -1375,37 +1377,37 @@ msgctxt "DatasetEditorDialog|"
 msgid "Editor"
 msgstr ""
 
-#: server/dialogs/DatasetEditorDialog.qml:348
+#: server/dialogs/DatasetEditorDialog.qml:349
 msgctxt "DatasetEditorDialog|"
 msgid "Raw JSON"
 msgstr ""
 
-#: server/dialogs/DatasetEditorDialog.qml:378
+#: server/dialogs/DatasetEditorDialog.qml:379
 msgctxt "DatasetEditorDialog|"
 msgid "Activity name"
 msgstr ""
 
-#: server/dialogs/DatasetEditorDialog.qml:392
+#: server/dialogs/DatasetEditorDialog.qml:393
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name"
 msgstr ""
 
-#: server/dialogs/DatasetEditorDialog.qml:406
+#: server/dialogs/DatasetEditorDialog.qml:407
 msgctxt "DatasetEditorDialog|"
 msgid "Goal"
 msgstr ""
 
-#: server/dialogs/DatasetEditorDialog.qml:420
+#: server/dialogs/DatasetEditorDialog.qml:421
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty"
 msgstr ""
 
-#: server/dialogs/DatasetEditorDialog.qml:518
+#: server/dialogs/DatasetEditorDialog.qml:519
 msgctxt "DatasetEditorDialog|"
 msgid "Instructions"
 msgstr ""
 
-#: server/dialogs/DatasetEditorDialog.qml:524
+#: server/dialogs/DatasetEditorDialog.qml:525
 msgctxt "DatasetEditorDialog|"
 msgid "No specific instructions for this editor."
 msgstr ""
@@ -1479,12 +1481,12 @@ msgctxt "PupilDialog|"
 msgid "Password"
 msgstr ""
 
-#: server/dialogs/PupilDialog.qml:217
+#: server/dialogs/PupilDialog.qml:218
 msgctxt "PupilDialog|"
 msgid "Password images:"
 msgstr ""
 
-#: server/dialogs/PupilDialog.qml:252
+#: server/dialogs/PupilDialog.qml:254
 msgctxt "PupilDialog|"
 msgid "Groups"
 msgstr ""
@@ -1538,7 +1540,7 @@ msgctxt "SqlLineDialog|"
 msgid "Line details"
 msgstr ""
 
-#: server/dialogs/SqlLineDialog.qml:193
+#: server/dialogs/SqlLineDialog.qml:194
 msgctxt "SqlLineDialog|"
 msgid "Close"
 msgstr ""
