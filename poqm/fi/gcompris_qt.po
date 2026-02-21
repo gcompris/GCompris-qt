@@ -2,12 +2,12 @@
 # Jyrki Kuoppala <jkp@kaapeli.fi>, 2001.
 # Ilkka Tuohela <hile@iki.fi>, 2005.
 # Lasse Liehu <lasse.liehu@gmail.com>, 2014, 2015, 2016.
-# SPDX-FileCopyrightText: 2014, 2015, 2018, 2019, 2020, 2021, 2023, 2024, 2025 Tommi Nieminen <translator@legisign.org>
+# SPDX-FileCopyrightText: 2014, 2015, 2018, 2019, 2020, 2021, 2023, 2024, 2025, 2026 Tommi Nieminen <translator@legisign.org>
 # Rami Aubourg-Kaires <rami at kaires.org>, 2003-2004.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2025-03-04 09:30+0200\n"
+"PO-Revision-Date: 2026-02-09 19:32+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 25.04.0\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -81,47 +81,39 @@ msgstr "Etsi vaaditut luvut ja vedä ne oikeisiin kohtiin."
 
 #. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:56
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the previous numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n previous number(s)."
 msgid_plural "Find the %n previous number(s)."
-msgstr[0] "Etsi edelliset luvut."
-msgstr[1] "Etsi edelliset luvut."
+msgstr[0] "Etsi edellinen luku."
+msgstr[1] "Etsi %n edellistä lukua."
 
 #. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:60
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the next numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n next number(s)."
 msgid_plural "Find the %n next number(s)."
-msgstr[0] "Etsi seuraavat luvut."
-msgstr[1] "Etsi seuraavat luvut."
+msgstr[0] "Etsi seuraava luku."
+msgstr[1] "Etsi %n seuraavaa lukua."
 
 #. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:64
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find the in-between numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n in-between number(s)"
 msgid_plural "Find the %n in-between number(s)"
-msgstr[0] "Etsi välissä olevat luvut."
-msgstr[1] "Etsi välissä olevat luvut."
+msgstr[0] "Etsi välissä oleva luku"
+msgstr[1] "Etsi %n välissä olevaa lukua"
 
 #. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
 #: activities/adjacent_numbers/Adjacent_numbers.qml:68
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
+#, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n missing numbers"
 msgid_plural "Find the %n missing numbers"
-msgstr[0] "Etsi kumpikin luku."
-msgstr[1] "Etsi kumpikin luku."
+msgstr[0] "Etsi puuttuva luku"
+msgstr[1] "Etsi %n puuttuvaa lukua"
 
 # Huom! … eikä –, jotta negatiiviset luvut erottuisivat
 #: activities/adjacent_numbers/resource/1/Data.qml:9
@@ -6905,7 +6897,7 @@ msgstr "Ctrl + O: avaa kuva"
 #: activities/drawing_wheels/DrawingWheels.qml:399
 msgctxt "DrawingWheels|"
 msgid "File menu"
-msgstr ""
+msgstr "Tiedostovalikko"
 
 #: activities/drawing_wheels/DrawingWheels.qml:411
 msgctxt "DrawingWheels|"
@@ -6937,9 +6929,6 @@ msgid "Undo"
 msgstr "Kumoa"
 
 #: activities/drawing_wheels/DrawingWheels.qml:486
-#, fuzzy
-#| msgctxt "Checkers|"
-#| msgid "Redo"
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "Tee uudelleen"
@@ -6947,12 +6936,12 @@ msgstr "Tee uudelleen"
 #: activities/drawing_wheels/DrawingWheels.qml:520
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
-msgstr ""
+msgstr "Pysäytä piirtäminen"
 
 #: activities/drawing_wheels/DrawingWheels.qml:520
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
-msgstr ""
+msgstr "Aloita piirtäminen"
 
 #: activities/drawing_wheels/DrawingWheels.qml:553
 msgctxt "DrawingWheels|"
@@ -7025,12 +7014,12 @@ msgstr "Nopeus"
 #: activities/drawing_wheels/DrawingWheels.qml:1020
 msgctxt "DrawingWheels|"
 msgid "Slow"
-msgstr ""
+msgstr "Hidas"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1040
 msgctxt "DrawingWheels|"
 msgid "Fast"
-msgstr ""
+msgstr "Nopea"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1083
 #, fuzzy
@@ -7051,7 +7040,7 @@ msgstr "Peittävyys"
 #: activities/drawing_wheels/DrawingWheels.qml:1163
 msgctxt "DrawingWheels|"
 msgid "Offset"
-msgstr ""
+msgstr "Siirtymä"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1201
 #, fuzzy
@@ -18296,6 +18285,8 @@ msgid ""
 "Read about some key events in the life of the braille system inventor, and "
 "remember their chronological order."
 msgstr ""
+"Lue pistekirjoituksen keksijän elämän kohokohdista ja muista niiden "
+"ajallinen järjestys."
 
 #. Help goal
 #: activities/louis-braille/ActivityInfo.qml:20
@@ -18303,7 +18294,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Remember the order of an event sequence. Learn about the life of Louis "
 "Braille."
-msgstr ""
+msgstr "Muista tapahtumasarjan järjestys. Opi Louis Braillen elämästä."
 
 #. Help manual
 #: activities/louis-braille/ActivityInfo.qml:23
@@ -18394,17 +18385,12 @@ msgstr ""
 "opettamalla sitä instituutissa salaa."
 
 #: activities/louis-braille/louis_braille_data.js:52
-#, fuzzy
-#| msgctxt "louis_braille_data|"
-#| msgid ""
-#| "He revised and extended braille to include mathematics, symbols, "
-#| "punctuations and music notations."
 msgctxt "louis_braille_data|"
 msgid ""
 "He revised and extended braille to include mathematics, symbols, punctuation "
 "and music notations."
 msgstr ""
-"Hän uudisti ja laajensi pistekirjoitusta matematiikkaan, symboleihin, "
+"Uudisti ja laajensi pistekirjoitusta matematiikkaan, symboleihin, "
 "välimerkkeihin ja nuotteihin."
 
 #: activities/louis-braille/louis_braille_data.js:57
@@ -20357,7 +20343,7 @@ msgstr "Fontin kirjasinvälistys"
 #: activities/menu/ConfigurationItem.qml:445
 msgctxt "ConfigurationItem|"
 msgid "Teacher's server config"
-msgstr ""
+msgstr "Opettajan palvelimen asetukset"
 
 #: activities/menu/ConfigurationItem.qml:653
 msgctxt "ConfigurationItem|"
@@ -20454,7 +20440,7 @@ msgstr "Sanasto"
 #: activities/menu/Menu.qml:211
 msgctxt "Menu|"
 msgid "GCompris is not connected to teacher's server."
-msgstr ""
+msgstr "GComprisilla ei yhteyttä opettajan palvelimeen."
 
 #: activities/menu/Menu.qml:212
 msgctxt "Menu|"
@@ -20462,6 +20448,8 @@ msgid ""
 "GCompris is connected to teacher's server, but the password entered for "
 "selected user is wrong."
 msgstr ""
+"GCompris on yhdistetty opettajan palvelimeen, mutta annettu valitun "
+"käyttäjän salasana on väärin."
 
 #: activities/menu/Menu.qml:213
 #, qt-format
@@ -20474,12 +20462,12 @@ msgstr ""
 #: activities/menu/Menu.qml:214
 msgctxt "Menu|"
 msgid "GCompris has lost the connection to teacher's server."
-msgstr ""
+msgstr "GCompris kadotti yhteyden opettajan palvelimeen."
 
 #: activities/menu/Menu.qml:215
 msgctxt "Menu|"
 msgid "GCompris has been disconnected from teacher's server."
-msgstr ""
+msgstr "GComprisin yhteys opettajan palvelimeen on katkaistu."
 
 #: activities/menu/Menu.qml:216
 msgctxt "Menu|"
@@ -20487,6 +20475,8 @@ msgid ""
 "GCompris is connected to teacher's server, but the user is not yet "
 "authenticated."
 msgstr ""
+"GCompris on yhdistetty opettajan palvelimeen, mutta käyttäjä ei ole vielä "
+"tunnistautunut."
 
 #: activities/menu/Menu.qml:678
 msgctxt "Menu|"
@@ -20510,17 +20500,17 @@ msgstr "Toiminnon asetukset"
 #: activities/menu/ServerConfigPage.qml:61
 msgctxt "ServerConfigPage|"
 msgid "Teacher's server settings"
-msgstr ""
+msgstr "Opettajan palvelimen asetukset"
 
 #: activities/menu/ServerConfigPage.qml:111
 msgctxt "ServerConfigPage|"
 msgid "Teacher's identifier"
-msgstr ""
+msgstr "Opettajan tunniste"
 
 #: activities/menu/ServerConfigPage.qml:142
 msgctxt "ServerConfigPage|"
 msgid "Server port"
-msgstr ""
+msgstr "Palvelimen portti"
 
 #: activities/menu/ServerConfigPage.qml:177
 #, fuzzy
@@ -21144,13 +21134,13 @@ msgstr "Kertolasku."
 #: activities/multiple_choice_questions/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "A generic activity for multiple-choice questions."
-msgstr ""
+msgstr "Yleinen monivalintakysymysharjoitus."
 
 #. Help goal
 #: activities/multiple_choice_questions/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Answer questions sent by the teacher."
-msgstr ""
+msgstr "Vastaa opettajan lähettämiin kysymyksiin."
 
 #. Help manual
 #: activities/multiple_choice_questions/ActivityInfo.qml:24
@@ -21161,6 +21151,11 @@ msgid ""
 "For some questions, after validating the answer, a feedback text panel will "
 "be displayed: click anywhere to close this panel after reading it."
 msgstr ""
+"Valitse vastaus napsauttamalla sitä ja tarkista vastaus painamalla OK. "
+"Jotkin kysymykset vaativat yhden vastauksen, jotkin useita. Joissakin "
+"kysymyksissä näytetään vastauksen tarkistamisen jälkeen "
+"palautetekstipaneeli. Luettuasi palautteen sulje paneeli napsauttamalla "
+"mihin vain."
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:26
 #, fuzzy
@@ -21206,7 +21201,7 @@ msgstr "Mylly (Tuxia vastaan)"
 #: activities/nine_men_morris_2players/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop strategic and spatial visualization skills."
-msgstr ""
+msgstr "Kehitä strategisia ja tilahavaintokykyjä."
 
 #. Help manual
 #: activities/nine_men_morris/ActivityInfo.qml:23
@@ -28478,24 +28473,15 @@ msgid "Many bug fixes"
 msgstr "Monia virheenkorjauksia"
 
 #: core/ChangeLog.qml:36
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Kannada and Tamil"
-msgstr "Latviannos lisätty"
+msgstr "Kannadannos ja tamilinnos lisätty"
 
 #: core/ChangeLog.qml:37
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid "New command-line option to set the locale (--locale locale)"
 msgstr ""
-"Uudella komentorivivalitsemella voi luetella kaikki toiminnot ja käynnistää "
-"tietyn"
+"Uusi komentorivivalitsin maa-asetuksen asettamiseksi (--locale maa-asetus)"
 
 #: core/ChangeLog.qml:38
 msgctxt "ChangeLog|"
@@ -28531,16 +28517,10 @@ msgid "Add splash screen at startup"
 msgstr "Lisätty käynnistykseen tervetuloikkuna"
 
 #: core/ChangeLog.qml:56
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgstr ""
-"Uudella komentorivivalitsemella voi luetella kaikki toiminnot ja käynnistää "
-"tietyn"
+"Uusi komentorivivalitsin hahmontimen vaihtamiseksi (--renderer hahmonnin)"
 
 #: core/ChangeLog.qml:65
 msgctxt "ChangeLog|"
@@ -28553,18 +28533,13 @@ msgid "Translations added for Bulgarian, Galician and Swahili"
 msgstr "Bulgariannos, galiciannos ja suahilinnos lisätty"
 
 #: core/ChangeLog.qml:80
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option (--difficulty {value|min-max}) to start GCompris "
-#| "at specific difficulty"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to directly start an activity at a specific level (--"
 "start-level level, to be used with --launch activity)"
 msgstr ""
-"Uusi komentorivivalitsin (--difficulty {arvo|pienin-suurin}) GComprisin "
-"aloittamiseksi tietyllä vaikeudella"
+"Uusi komentorivivalitsin harjoituksen käynnistämiseksi suoraan määrätasolta "
+"(--start-level taso, joka vaatii valitsimen --launch harjoitus)"
 
 #: core/ChangeLog.qml:85
 msgctxt "ChangeLog|"
@@ -29246,12 +29221,9 @@ msgid "No data found for %1."
 msgstr "%1: dataa ei löytynyt."
 
 #: core/GCCreationHandler.qml:185
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "%1 deleted successfully!"
 msgctxt "GCCreationHandler|"
 msgid "File deleted successfully!"
-msgstr "%1 poistettiin onnistuneesti!"
+msgstr "Tiedoston poistaminen onnistui!"
 
 #: core/GCCreationHandler.qml:186 core/GCCreationHandler.qml:194
 #: core/GCCreationHandler.qml:253
@@ -29260,12 +29232,9 @@ msgid "OK"
 msgstr "OK"
 
 #: core/GCCreationHandler.qml:193
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "Unable to delete %1!"
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete the file!"
-msgstr "Ei voida poistaa kohdetta %1!"
+msgstr "Tiedostoa ei voitu poistaa!"
 
 #: core/GCCreationHandler.qml:230
 msgctxt "GCCreationHandler|"
@@ -29320,7 +29289,7 @@ msgstr "Poista"
 #: core/GCCreationHandler.qml:429
 msgctxt "GCCreationHandler|"
 msgid "Open folder"
-msgstr ""
+msgstr "Avaa kansio"
 
 #: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"
@@ -29447,22 +29416,19 @@ msgstr ""
 "valitsimen kanssa."
 
 #: core/main.cpp:146
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid "Specify the activity when starting GCompris."
 msgctxt "QObject|"
 msgid "Specify the locale when starting GCompris."
-msgstr "Määritä GComprisin aloittava toiminto."
+msgstr "Määritä GComprisin käyttämä maa-asetus."
 
 #: core/main.cpp:150
 msgctxt "QObject|"
 msgid "Hide the Home button in the bar."
-msgstr ""
+msgstr "Piilota riviltä kotipainike."
 
 #: core/main.cpp:154
 msgctxt "QObject|"
 msgid "Show the Home button in the bar (default)."
-msgstr ""
+msgstr "Näytä rivillä kotipainike (oletus)."
 
 #: core/main.qml:238
 msgctxt "main|"
@@ -29553,47 +29519,36 @@ msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris on päivitetty! Tässä ovat uudet muutokset:<br/>"
 
 #: core/main.qml:509
-#, fuzzy, qt-format
-#| msgctxt "ConfigurationItem|"
-#| msgid "Do you want to download them now?"
+#, qt-format
 msgctxt "main|"
 msgid "Do you want to connect to server %1?"
-msgstr "Haluatko ladata ne nyt?"
+msgstr "Haluatko yhdistää palvelimeen %1?"
 
 #: core/main.qml:530
 #, qt-format
 msgctxt "main|"
 msgid "Password rejected by server %1"
-msgstr ""
+msgstr "Palvelin %1 hylkäsi salasanan."
 
 #: core/main.qml:531 core/main.qml:550 core/main.qml:625
-#, fuzzy
-#| msgctxt "Balancebox|"
-#| msgid "OK"
 msgctxt "main|"
 msgid "OK"
 msgstr "OK"
 
 #: core/main.qml:546
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "main|"
 msgid "Select your username"
-msgstr "Valitse tila"
+msgstr "Valitse käyttäjätunnus"
 
 #: core/main.qml:556
 msgctxt "main|"
 msgid "Please select your username in the list or cancel."
-msgstr ""
+msgstr "Valitse luettelosta käyttäjätunnus tai peru."
 
 #: core/main.qml:623
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "main|"
 msgid "Enter your password"
-msgstr "Vahvista vastausksesi"
+msgstr "Anna salasana"
 
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"
