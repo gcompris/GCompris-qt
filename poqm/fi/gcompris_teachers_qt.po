@@ -1,0 +1,2253 @@
+# SPDX-FileCopyrightText: 2026 Tommi Nieminen <translator@legisign.org>
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2026-02-09 19:34+0200\n"
+"Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
+"Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 25.04.0\n"
+"X-Qt-Contexts: true\n"
+
+#: server/activities/adjacent_numbers/ActivityEditor.qml:13
+#: server/activities/binary_bulb/ActivityEditor.qml:12
+#: server/activities/fractions_create/ActivityEditor.qml:12
+#: server/activities/learn_additions/ActivityEditor.qml:14
+#: server/activities/learn_digits/ActivityEditor.qml:13
+#: server/activities/learn_subtractions/ActivityEditor.qml:14
+#: server/activities/multiple_choice_questions/ActivityEditor.qml:13
+msgctxt "ActivityEditor|"
+msgid "Rules to create a valid dataset:"
+msgstr ""
+
+#: server/activities/adjacent_numbers/ActivityEditor.qml:15
+msgctxt "ActivityEditor|"
+msgid ""
+"If \"Random start number\" is selected, the number of sublevels will be the "
+"minimum between the \"Sublevels\" value and the result of: (\"Maximum start "
+"number\" - \"Minimum start number\") / \"Step between numbers\" + 1."
+msgstr ""
+"Jos ”satunnainen aloitusluku” on valittu, alitasojen määrä on minimi "
+"”Alitasot”-arvosta ja seuraavan lausekkeen tuloksesta: (”Suurin aloitusluku” "
+"– ”Pienin aloitusluku”) / ”Lukujen väli” + 1."
+
+#: server/activities/adjacent_numbers/ActivityEditor.qml:17
+msgctxt "ActivityEditor|"
+msgid ""
+"If \"Random start number\" is not selected, the \"Start numbers\" list must "
+"contain only numbers, and each of them will be used as start number for a "
+"sublevel."
+msgstr ""
+"Ellei ”satunnaista aloituslukua” ole valittu, aloituslukujen tulee koostua "
+"vain luvuista ja kutakin niistä käytetään alitason aloituslukuna."
+
+#: server/activities/adjacent_numbers/ActivityEditor.qml:19
+msgctxt "ActivityEditor|"
+msgid ""
+"\"Position of missing numbers\" must contain a list of numbers corresponding "
+"to the index of numbers to find. Index numbers start from 0 (the first "
+"number of the sequence), and must not be greater than \"Sequence length\" - "
+"1. Also, the length of the list can not be greater than \"Sequence length\" "
+"- 2, to always have at least 2 visible numbers in the sequence."
+msgstr ""
+
+#: server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:36
+msgctxt "AdjacentNumbersDataDisplay|"
+msgid "Tiles:"
+msgstr ""
+
+#: server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:60
+msgctxt "AdjacentNumbersDataDisplay|"
+msgid "Answer:"
+msgstr "Vastaus:"
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:28
+msgctxt "AdjacentNumbersEditor|"
+msgid "Random start numbers"
+msgstr "Satunnaiset aloitusluvut"
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:29
+msgctxt "AdjacentNumbersEditor|"
+msgid "Sublevels"
+msgstr "Alitasot"
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:30
+msgctxt "AdjacentNumbersEditor|"
+msgid "Start numbers"
+msgstr "Aloitusluvut"
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:31
+msgctxt "AdjacentNumbersEditor|"
+msgid "Minimum start number"
+msgstr "Pienin aloitusluku"
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:32
+msgctxt "AdjacentNumbersEditor|"
+msgid "Maximum start number"
+msgstr "Suurin aloitusluku"
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:33
+msgctxt "AdjacentNumbersEditor|"
+msgid "Step between numbers"
+msgstr "Väli lukujen välillä"
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:34
+msgctxt "AdjacentNumbersEditor|"
+msgid "Sequence length"
+msgstr "Jakson pituus"
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:35
+msgctxt "AdjacentNumbersEditor|"
+msgid "Position of missing numbers"
+msgstr "Puuttuvien lukujen sijainti"
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:36
+msgctxt "AdjacentNumbersEditor|"
+msgid "Proposed numbers"
+msgstr "Ehdotetut luvut"
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:98
+msgctxt "AdjacentNumbersEditor|"
+msgid "Dataset is empty."
+msgstr "Tietojoukko on tyhjä."
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:100
+msgctxt "AdjacentNumbersEditor|"
+msgid "\"Start numbers\" must contain only numbers, and not be empty."
+msgstr "”Aloituslukujen” tulee sisältää vain lukuja eikä se saa olla tyhjä."
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:102
+msgctxt "AdjacentNumbersEditor|"
+msgid ""
+"\"Position of missing numbers\" must contain only numbers, and not be empty."
+msgstr ""
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:104
+msgctxt "AdjacentNumbersEditor|"
+msgid "\"Position of missing numbers\" contains too much numbers."
+msgstr ""
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:106
+msgctxt "AdjacentNumbersEditor|"
+msgid "\"Position of missing numbers\" contains invalid numbers."
+msgstr ""
+
+#: server/activities/algebra_by/AlgebraDataDisplay.qml:19
+msgctxt "AlgebraDataDisplay|"
+msgid "timeout"
+msgstr "aikakatkaisu"
+
+#. %1 is an operation, %2 the result. Example: "2 x 5 = 10"
+#: server/activities/algebra_by/AlgebraDataDisplay.qml:22
+#, qt-format
+msgctxt "AlgebraDataDisplay|"
+msgid "%1 = %2"
+msgstr "%1 = %2"
+
+#. %1 is the answer. Example: "Answer: 10"
+#: server/activities/algebra_by/AlgebraDataDisplay.qml:24
+#, qt-format
+msgctxt "AlgebraDataDisplay|"
+msgid "Answer: %1"
+msgstr "Vastaus: %1"
+
+#: server/activities/algebra_by/AlgebraEditor.qml:25
+msgctxt "AlgebraEditor|"
+msgid "Rules to create a valid dataset:"
+msgstr ""
+
+#: server/activities/algebra_by/AlgebraEditor.qml:27
+msgctxt "AlgebraEditor|"
+msgid ""
+"When \"Random operands\" is selected, if \"Result value limit\" is more than "
+"0 it defines the maximum allowed for the result of each operation. It must "
+"be large enough to generate enough questions for the given number of "
+"sublevels using the minimum and maximum operand values."
+msgstr ""
+
+#: server/activities/algebra_by/AlgebraEditor.qml:29
+msgctxt "AlgebraEditor|"
+msgid ""
+"If \"Random operands\" is not selected, the sublevel list on the right side "
+"must not be empty."
+msgstr ""
+
+#: server/activities/algebra_by/AlgebraEditor.qml:33
+msgctxt "AlgebraEditor|"
+msgid "Random operands"
+msgstr ""
+
+#: server/activities/algebra_by/AlgebraEditor.qml:34
+#: server/activities/algebra_by/AlgebraEditor.qml:39
+msgctxt "AlgebraEditor|"
+msgid "Sublevels"
+msgstr "Alitasot"
+
+#: server/activities/algebra_by/AlgebraEditor.qml:35
+msgctxt "AlgebraEditor|"
+msgid "Minimum operand value"
+msgstr ""
+
+#: server/activities/algebra_by/AlgebraEditor.qml:36
+msgctxt "AlgebraEditor|"
+msgid "Maximum operand value"
+msgstr ""
+
+#: server/activities/algebra_by/AlgebraEditor.qml:37
+msgctxt "AlgebraEditor|"
+msgid "Result value limit"
+msgstr ""
+
+#: server/activities/algebra_by/AlgebraEditor.qml:38
+msgctxt "AlgebraEditor|"
+msgid "Shuffle"
+msgstr "Sekoita"
+
+#: server/activities/algebra_by/AlgebraEditor.qml:44
+msgctxt "AlgebraEditor|"
+msgid "First operand"
+msgstr ""
+
+#: server/activities/algebra_by/AlgebraEditor.qml:45
+msgctxt "AlgebraEditor|"
+msgid "Second operand"
+msgstr ""
+
+#: server/activities/algebra_div/ActivityEditor.qml:16
+msgctxt "ActivityEditor|"
+msgid ""
+"When \"Random operands\" is selected, the right side operand is always "
+"between minimum and maximum values. The left side operand is generated by "
+"multiplying the right side operand by another number between minimum and "
+"maximum values."
+msgstr ""
+
+#: server/activities/algebra_div/ActivityEditor.qml:18
+msgctxt "ActivityEditor|"
+msgid ""
+"If \"Random operands\" is not selected, for each sublevel you must make sure "
+"that the \"First operand\" is a multiple of the \"Second operand\"."
+msgstr ""
+
+#: server/activities/algebra_div/ActivityEditor.qml:23
+msgctxt "ActivityEditor|"
+msgid "Random operands"
+msgstr ""
+
+#: server/activities/algebra_div/ActivityEditor.qml:24
+#: server/activities/algebra_div/ActivityEditor.qml:29
+msgctxt "ActivityEditor|"
+msgid "Sublevels"
+msgstr "Alitasot"
+
+#: server/activities/algebra_div/ActivityEditor.qml:25
+msgctxt "ActivityEditor|"
+msgid "Minimum operand value"
+msgstr ""
+
+#: server/activities/algebra_div/ActivityEditor.qml:26
+msgctxt "ActivityEditor|"
+msgid "Maximum operand value"
+msgstr ""
+
+#: server/activities/algebra_div/ActivityEditor.qml:27
+msgctxt "ActivityEditor|"
+msgid "Result value limit"
+msgstr ""
+
+#: server/activities/algebra_div/ActivityEditor.qml:28
+msgctxt "ActivityEditor|"
+msgid "Shuffle"
+msgstr "Sekoita"
+
+#: server/activities/algebra_div/ActivityEditor.qml:34
+msgctxt "ActivityEditor|"
+msgid "First operand"
+msgstr ""
+
+#: server/activities/algebra_div/ActivityEditor.qml:35
+msgctxt "ActivityEditor|"
+msgid "Second operand"
+msgstr ""
+
+#: server/activities/algebra_minus/ActivityEditor.qml:16
+msgctxt "ActivityEditor|"
+msgid ""
+"If \"Random operands\" is not selected, for each sublevel you must make sure "
+"that the \"First operand\" is greater than the \"Second operand\"."
+msgstr ""
+
+#: server/activities/binary_bulb/ActivityEditor.qml:14
+msgctxt "ActivityEditor|"
+msgid ""
+"If \"Random numbers\" is not selected, \"Numbers to find\" must contain a "
+"list of integer numbers. Each number must be between 0 and the maximum "
+"number which can be represented with the given \"Bulb count\"."
+msgstr ""
+
+#: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:28
+msgctxt "BinaryBulbDataDisplay|"
+msgid "Expected:"
+msgstr "Odotettu:"
+
+#: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:34
+msgctxt "BinaryBulbDataDisplay|"
+msgid "Answer:"
+msgstr "Vastaus:"
+
+#. %1 is the numerical value, %2 is the binary value. Example: "5 (101)"
+#: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:46
+#: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:55
+#, qt-format
+msgctxt "BinaryBulbDataDisplay|"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:28
+msgctxt "BinaryBulbEditor|"
+msgid "Random numbers"
+msgstr "Satunnaiset luvut"
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:29
+msgctxt "BinaryBulbEditor|"
+msgid "Sublevels"
+msgstr "Alitasot"
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:30
+msgctxt "BinaryBulbEditor|"
+msgid "Numbers to find"
+msgstr "Etsittävät luvut"
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:31
+msgctxt "BinaryBulbEditor|"
+msgid "Shuffle questions"
+msgstr "Sekoita kysymykset"
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:32
+msgctxt "BinaryBulbEditor|"
+msgid "Bulb count"
+msgstr ""
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:33
+msgctxt "BinaryBulbEditor|"
+msgid "Display the current result"
+msgstr "Näytä nykyinen tulos"
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:34
+msgctxt "BinaryBulbEditor|"
+msgid "Display the bulb values"
+msgstr ""
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:87
+msgctxt "BinaryBulbEditor|"
+msgid "Dataset is empty."
+msgstr "Tietojoukko on tyhjä."
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:101
+#, qt-format
+msgctxt "BinaryBulbEditor|"
+msgid "\"Numbers to find\" for level %1 must not be empty."
+msgstr "”Etsittävät luvut” ei saa olla tyhjä tasolla %1."
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:115
+#, qt-format
+msgctxt "BinaryBulbEditor|"
+msgid ""
+"These values are invalid for level %1: %2. The values must be integer "
+"numbers between 0 and %3."
+msgstr ""
+"Nämä arvot ovat virheellisiä tasolle %1: %2. Arvojen on oltava "
+"kokonaislukuja väliltä 0–%3."
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:119
+#, qt-format
+msgctxt "BinaryBulbEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr "Seuraavat virheet on korjattava:<ul>%1</ul>"
+
+#: server/activities/clockgame/ClockGameDataDisplay.qml:30
+msgctxt "ClockGameDataDisplay|"
+msgid "Expected:"
+msgstr "Odotettu:"
+
+#: server/activities/clockgame/ClockGameDataDisplay.qml:36
+msgctxt "ClockGameDataDisplay|"
+msgid "Answer:"
+msgstr "Vastaus:"
+
+#: server/activities/clockgame/ClockgameEditor.qml:27
+msgctxt "ClockgameEditor|"
+msgid "Exercise count"
+msgstr "Harjoituslaskuri"
+
+#: server/activities/clockgame/ClockgameEditor.qml:28
+msgctxt "ClockgameEditor|"
+msgid "Find minutes"
+msgstr "Etsi minuutit"
+
+#: server/activities/clockgame/ClockgameEditor.qml:29
+msgctxt "ClockgameEditor|"
+msgid "Find seconds"
+msgstr "Etsi sekunnit"
+
+#: server/activities/clockgame/ClockgameEditor.qml:30
+msgctxt "ClockgameEditor|"
+msgid "Display hours numbers"
+msgstr "Näytä tuntiluvut"
+
+#: server/activities/clockgame/ClockgameEditor.qml:31
+msgctxt "ClockgameEditor|"
+msgid "Display hours marks"
+msgstr "Näytä tuntien merkit"
+
+#: server/activities/clockgame/ClockgameEditor.qml:32
+msgctxt "ClockgameEditor|"
+msgid "Grey/white background between each hour"
+msgstr "Harmaa/valkoinen tausta kunkin tunnin välissä"
+
+#: server/activities/clockgame/ClockgameEditor.qml:33
+msgctxt "ClockgameEditor|"
+msgid "Display minutes numbers"
+msgstr "Näytä minuuttiluvut"
+
+#: server/activities/clockgame/ClockgameEditor.qml:34
+msgctxt "ClockgameEditor|"
+msgid "Hide the Hint button in the bar (which gives the current time)"
+msgstr "Piilota riviltä vihjepainike (joka antaa nykyisen kellonajan)"
+
+#: server/activities/clockgame/ClockgameEditor.qml:35
+msgctxt "ClockgameEditor|"
+msgid "Fixed hour"
+msgstr "Kiinteä tunti"
+
+#: server/activities/clockgame/ClockgameEditor.qml:36
+#: server/activities/clockgame/ClockgameEditor.qml:38
+#: server/activities/clockgame/ClockgameEditor.qml:40
+msgctxt "ClockgameEditor|"
+msgid "Value"
+msgstr "Arvo"
+
+#: server/activities/clockgame/ClockgameEditor.qml:37
+msgctxt "ClockgameEditor|"
+msgid "Fixed minutes"
+msgstr "Kiinteät minuutit"
+
+#: server/activities/clockgame/ClockgameEditor.qml:39
+msgctxt "ClockgameEditor|"
+msgid "Fixed seconds"
+msgstr "Kiinteät sekunnit"
+
+#: server/activities/comparator/ComparatorDataDisplay.qml:30
+msgctxt "ComparatorDataDisplay|"
+msgid "Result:"
+msgstr "Tulos:"
+
+#: server/activities/comparator/ComparatorEditor.qml:29
+msgctxt "ComparatorEditor|"
+msgid "Shuffle"
+msgstr "Sekoita"
+
+#: server/activities/comparator/ComparatorEditor.qml:30
+msgctxt "ComparatorEditor|"
+msgid "Questions"
+msgstr "Kysymykset"
+
+#: server/activities/comparator/ComparatorEditor.qml:36
+msgctxt "ComparatorEditor|"
+msgid "Left number"
+msgstr "Vasen numero"
+
+#: server/activities/comparator/ComparatorEditor.qml:37
+msgctxt "ComparatorEditor|"
+msgid "Right number"
+msgstr "Oikea numero"
+
+#: server/activities/comparator/ComparatorEditor.qml:109
+msgctxt "ComparatorEditor|"
+msgid "Dataset is empty."
+msgstr "Tietojoukko on tyhjä."
+
+#: server/activities/comparator/ComparatorEditor.qml:119
+#, qt-format
+msgctxt "ComparatorEditor|"
+msgid "Level %1 must not be empty."
+msgstr "Taso %1 ei saa olla tyhjä."
+
+#: server/activities/comparator/ComparatorEditor.qml:126
+#, qt-format
+msgctxt "ComparatorEditor|"
+msgid "\"Left number\" in Question %1 of Level %2 must contain a number."
+msgstr ""
+
+#: server/activities/comparator/ComparatorEditor.qml:130
+#, qt-format
+msgctxt "ComparatorEditor|"
+msgid "\"Right number\" in Question %1 of Level %2 must contain a number."
+msgstr ""
+
+#: server/activities/comparator/ComparatorEditor.qml:136
+#, qt-format
+msgctxt "ComparatorEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr "Seuraavat virheet on korjattava:<ul>%1</ul>"
+
+#: server/activities/DailyReport.qml:33
+msgctxt "DailyReport|"
+msgid "All groups"
+msgstr "Kaikki ryhmät"
+
+#. Group name first, then Date range, with a space between them. Example: "Group Name 01/07/2025-08/07/2025"
+#: server/activities/DailyReport.qml:129
+#, qt-format
+msgctxt "DailyReport|"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: server/activities/DailyReport.qml:133
+msgctxt "DailyReport|"
+msgid "Calendar"
+msgstr "Kalenteri"
+
+#: server/activities/DailyReport.qml:184
+msgctxt "DailyReport|"
+msgid "Count"
+msgstr "Määrä"
+
+#: server/activities/DailyReport.qml:193
+msgctxt "DailyReport|"
+msgid "Time"
+msgstr "Aika"
+
+#: server/activities/DailyReport.qml:202
+msgctxt "DailyReport|"
+msgid "Ratio"
+msgstr "Suhde"
+
+#. Number of result lines
+#: server/activities/DailyReport.qml:213
+#, qt-format
+msgctxt "DailyReport|"
+msgid "Lines: %1"
+msgstr "Rivejä: %1"
+
+#. Success ratio, example: "50 %"
+#: server/activities/DailyReport.qml:314
+#, qt-format
+msgctxt "DailyReport|"
+msgid "%1 %"
+msgstr "%1 %"
+
+#: server/activities/fractions_create/ActivityEditor.qml:14
+msgctxt "ActivityEditor|"
+msgid ""
+"\"Instruction\" must contain some text telling the fraction to represent."
+msgstr ""
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:29
+msgctxt "FractionsCreateEditor|"
+msgid "Shuffle"
+msgstr "Sekoita"
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:30
+msgctxt "FractionsCreateEditor|"
+msgid "Questions"
+msgstr "Kysymykset"
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:36
+msgctxt "FractionsCreateEditor|"
+msgid "Numerator"
+msgstr "Osoittaja"
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:37
+msgctxt "FractionsCreateEditor|"
+msgid "Denominator"
+msgstr "Nimittäjä"
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:38
+msgctxt "FractionsCreateEditor|"
+msgid "Instruction"
+msgstr "Ohje"
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:130
+msgctxt "FractionsCreateEditor|"
+msgid "Dataset is empty."
+msgstr "Tietojoukko on tyhjä."
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:140
+#, qt-format
+msgctxt "FractionsCreateEditor|"
+msgid "Level %1 must not be empty."
+msgstr "Taso %1 ei saa olla tyhjä."
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:146
+#, qt-format
+msgctxt "FractionsCreateEditor|"
+msgid "\"Instruction\" of Question %1 from Level %2 must not be empty."
+msgstr ""
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:152
+#, qt-format
+msgctxt "FractionsCreateEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr "Seuraavat virheet on korjattava:<ul>%1</ul>"
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:160
+msgctxt "FractionsCreateEditor|"
+msgid "Rectangle"
+msgstr "Nelikulmio"
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:161
+msgctxt "FractionsCreateEditor|"
+msgid "Circle"
+msgstr "Ympyrä"
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:164
+msgctxt "FractionsCreateEditor|"
+msgid "Chart Type"
+msgstr "Kaavion tyyppi"
+
+#: server/activities/fractions_find/FractionsFindDataDisplay.qml:26
+msgctxt "FractionsFindDataDisplay|"
+msgid "Expected:"
+msgstr "Odotettu:"
+
+#: server/activities/fractions_find/FractionsFindDataDisplay.qml:60
+msgctxt "FractionsFindDataDisplay|"
+msgid "Answer:"
+msgstr "Vastaus:"
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:29
+msgctxt "FractionsFindEditor|"
+msgid "Shuffle"
+msgstr "Sekoita"
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:30
+msgctxt "FractionsFindEditor|"
+msgid "Questions"
+msgstr "Kysymykset"
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:36
+msgctxt "FractionsFindEditor|"
+msgid "Static numerator"
+msgstr ""
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:37
+msgctxt "FractionsFindEditor|"
+msgid "Static denominator"
+msgstr ""
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:38
+msgctxt "FractionsFindEditor|"
+msgid "Numerator"
+msgstr "Osoittaja"
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:39
+msgctxt "FractionsFindEditor|"
+msgid "Denominator"
+msgstr "Nimittäjä"
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:40
+msgctxt "FractionsFindEditor|"
+msgid "Maximum of units"
+msgstr ""
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:41
+msgctxt "FractionsFindEditor|"
+msgid "Random fraction"
+msgstr "Satunnainen murtoluku"
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:159
+msgctxt "FractionsFindEditor|"
+msgid "Dataset is empty."
+msgstr "Tietojoukko on tyhjä."
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:169
+#, qt-format
+msgctxt "FractionsFindEditor|"
+msgid "Level %1 must not be empty."
+msgstr "Taso %1 ei saa olla tyhjä."
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:173
+#, qt-format
+msgctxt "FractionsFindEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr "Seuraavat virheet on korjattava:<ul>%1</ul>"
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:181
+msgctxt "FractionsFindEditor|"
+msgid "Rectangle"
+msgstr "Nelikulmio"
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:182
+msgctxt "FractionsFindEditor|"
+msgid "Circle"
+msgstr "Ympyrä"
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:185
+msgctxt "FractionsFindEditor|"
+msgid "Chart Type"
+msgstr "Kaavion tyyppi"
+
+#. %1 is number of hints displayed. Example: "Hints: 1"
+#: server/activities/guess24/Guess24DataDisplay.qml:79
+#, qt-format
+msgctxt "Guess24DataDisplay|"
+msgid "Hints: %1"
+msgstr "Vihjeet: %1"
+
+#: server/activities/learn_additions/ActivityEditor.qml:16
+msgctxt "ActivityEditor|"
+msgid ""
+"\"Additions\" must contain a list of additions which results are between 0 "
+"and 9."
+msgstr ""
+"”Yhteenlaskujen” tulee koostua yhteenlaskuista, joiden tulokset ovat väliltä "
+"0–9."
+
+#: server/activities/learn_additions/ActivityEditor.qml:18
+#: server/activities/learn_subtractions/ActivityEditor.qml:18
+msgctxt "ActivityEditor|"
+msgid ""
+"\"Number of circles\" can not be smaller than the largest result to find."
+msgstr "”Ympyröiden määrä” ei saa olla pienempi kuin suurin etsittävä tulos."
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:28
+msgctxt "LearnDecimalsEditor|"
+msgid "Shuffle"
+msgstr "Sekoita"
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:29
+msgctxt "LearnDecimalsEditor|"
+msgid "Sublevels"
+msgstr "Alitasot"
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:39
+msgctxt "LearnDecimalsEditor|"
+msgid "Fixed Number"
+msgstr "Kiinteä luku"
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:40
+msgctxt "LearnDecimalsEditor|"
+msgid "Minimum Value"
+msgstr "Vähimmäisarvo"
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:41
+msgctxt "LearnDecimalsEditor|"
+msgid "Maximum Value"
+msgstr "Enimmäisarvo"
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:140
+msgctxt "LearnDecimalsEditor|"
+msgid "Dataset is empty."
+msgstr "Tietojoukko on tyhjä."
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:150
+#, qt-format
+msgctxt "LearnDecimalsEditor|"
+msgid "Level %1 must not be empty."
+msgstr "Taso %1 ei saa olla tyhjä."
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:154
+#, qt-format
+msgctxt "LearnDecimalsEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr "Seuraavat virheet on korjattava:<ul>%1</ul>"
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:162
+msgctxt "LearnDecimalsEditor|"
+msgid "Random"
+msgstr "Satunnainen"
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:163
+msgctxt "LearnDecimalsEditor|"
+msgid "Fixed"
+msgstr "Kiinteä"
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:168
+msgctxt "LearnDecimalsEditor|"
+msgid "Mode"
+msgstr "Tila"
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:29
+msgctxt "DecimalAdditionEditor|"
+msgid "Shuffle"
+msgstr "Sekoita"
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:30
+msgctxt "DecimalAdditionEditor|"
+msgid "Sublevels"
+msgstr "Alitasot"
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:41
+msgctxt "DecimalAdditionEditor|"
+msgid "First Number"
+msgstr "Ensimmäinen luku"
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:42
+msgctxt "DecimalAdditionEditor|"
+msgid "Second Number"
+msgstr "Toinen luku"
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:43
+msgctxt "DecimalAdditionEditor|"
+msgid "Minimum Value"
+msgstr "Vähimmäisarvo"
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:44
+msgctxt "DecimalAdditionEditor|"
+msgid "Maximum Value"
+msgstr "Enimmäisarvo"
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:182
+msgctxt "DecimalAdditionEditor|"
+msgid "Dataset is empty."
+msgstr "Tietojoukko on tyhjä."
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:192
+#, qt-format
+msgctxt "DecimalAdditionEditor|"
+msgid "Level %1 must not be empty."
+msgstr "Taso %1 ei saa olla tyhjä."
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:196
+#, qt-format
+msgctxt "DecimalAdditionEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr "Seuraavat virheet on korjattava:<ul>%1</ul>"
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:204
+msgctxt "DecimalAdditionEditor|"
+msgid "Random"
+msgstr "Satunnainen"
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:205
+msgctxt "DecimalAdditionEditor|"
+msgid "Fixed"
+msgstr "Kiinteä"
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:210
+msgctxt "DecimalAdditionEditor|"
+msgid "Mode"
+msgstr "Tila"
+
+#: server/activities/learn_digits/ActivityEditor.qml:15
+msgctxt "ActivityEditor|"
+msgid "\"Numbers\" must contain a list of numbers between 0 and 9."
+msgstr "”Lukujen” tulee koostua luvuista väliltä 0–9."
+
+#: server/activities/learn_digits/ActivityEditor.qml:17
+msgctxt "ActivityEditor|"
+msgid ""
+"\"Number of circles\" can not be smaller than the largest number to find."
+msgstr "”Ympyröiden määrä” ei saa olla pienempi kuin suurin etsittävä luku."
+
+#. %1 is an operation, %2 the result. Example: "2 x 5 = 10"
+#: server/activities/learn_digits/LearnDigitsDataDisplay.qml:24
+#, qt-format
+msgctxt "LearnDigitsDataDisplay|"
+msgid "%1 = %2"
+msgstr "%1 = %2"
+
+#. %1 is the answer. Example: "Answer: 10"
+#: server/activities/learn_digits/LearnDigitsDataDisplay.qml:27
+#, qt-format
+msgctxt "LearnDigitsDataDisplay|"
+msgid "Answer: %1"
+msgstr "Vastaus: %1"
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:32
+msgctxt "LearnDigitsEditor|"
+msgid "Number of circles"
+msgstr "Ympyröiden määrä"
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:33
+msgctxt "LearnDigitsEditor|"
+msgid "Random order"
+msgstr "Satunnainen järjestys"
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:99
+msgctxt "LearnDigitsEditor|"
+msgid "Dataset is empty."
+msgstr "Tietojoukko on tyhjä."
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:101
+msgctxt "LearnDigitsEditor|"
+msgid ""
+"\"Numbers\" must only contain integer numbers between 0 and 9, and must not "
+"be empty."
+msgstr "”Lukujen” tulee koostua kokonaisluvuista 0–9 eikä se saa olla tyhjä."
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:103
+msgctxt "LearnDigitsEditor|"
+msgid ""
+"\"Additions\" must only contain additions which results are integer numbers "
+"between 0 and 9, and must not be empty."
+msgstr ""
+"”Yhteenlaskujen” tulee koostua yhteenlaskuista, joiden tulokset ovat "
+"kokonaislukuja 0–9, eikä se saa olla tyhjä."
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:105
+msgctxt "LearnDigitsEditor|"
+msgid ""
+"\"Subtractions\" must only contain subtractions which results are integer "
+"numbers between 0 and 9, and must not be empty."
+msgstr ""
+"”Vähennyslaskujen” tulee koostua vain vähennyslaskuista, joiden tulokset "
+"ovat kokonaislukuja 0–9, eikä se saa olla tyhjä."
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:161
+msgctxt "LearnDigitsEditor|"
+msgid "Numbers"
+msgstr "Luvut"
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:163
+msgctxt "LearnDigitsEditor|"
+msgid "Additions"
+msgstr "Yhteenlaskut"
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:165
+msgctxt "LearnDigitsEditor|"
+msgid "Subtractions"
+msgstr "Vähennyslaskut"
+
+#: server/activities/learn_quantities/ActivityEditor.qml:24
+msgctxt "ActivityEditor|"
+msgid "Fixed Number"
+msgstr "Kiinteä luku"
+
+#: server/activities/learn_quantities/ActivityEditor.qml:25
+msgctxt "ActivityEditor|"
+msgid "Minimum Value"
+msgstr "Vähimmäisarvo"
+
+#: server/activities/learn_quantities/ActivityEditor.qml:26
+msgctxt "ActivityEditor|"
+msgid "Maximum Value"
+msgstr "Enimmäisarvo"
+
+#: server/activities/learn_subtractions/ActivityEditor.qml:16
+msgctxt "ActivityEditor|"
+msgid ""
+"\"Subtractions\" must contain a list of subtractions which results are "
+"between 0 and 9."
+msgstr ""
+"”Vähennyslaskujen” tulee koostua vähennyslaskuista, joiden tulokset ovat "
+"väliltä 0–9."
+
+#: server/activities/LineReport.qml:65
+msgctxt "LineReport|"
+msgid "Back"
+msgstr "Takaisin"
+
+#: server/activities/LineReport.qml:71
+msgctxt "LineReport|"
+msgid "Refresh"
+msgstr "Virkistä"
+
+#: server/activities/LineReport.qml:77
+#, qt-format
+msgctxt "LineReport|"
+msgid "Lines: %1"
+msgstr "Rivejä: %1"
+
+#: server/activities/LineReport.qml:228
+#, qt-format
+msgctxt "LineReport|"
+msgid "Level: <b>%1</b>"
+msgstr "Taso: <b>%1</b>"
+
+#. Result duration in seconds. Example: "Duration: 25s"
+#: server/activities/LineReport.qml:244 server/activities/LineReport.qml:254
+#, qt-format
+msgctxt "LineReport|"
+msgid "Duration: %1s"
+msgstr "Kesto: %1 s"
+
+#: server/activities/multiple_choice_questions/ActivityEditor.qml:15
+msgctxt "ActivityEditor|"
+msgid ""
+"In \"Single answer\" mode, users can select only one answer. In \"Multiple "
+"answers\" mode, they can select multiple answers."
+msgstr ""
+"”Yhden vastauksen” tilassa käyttäjä voi valita vain yhden vastauksen. ”Monen "
+"vastauksen” tilassa voi valita useampia vastauksia."
+
+#: server/activities/multiple_choice_questions/ActivityEditor.qml:17
+msgctxt "ActivityEditor|"
+msgid ""
+"All entries in the \"Correct answers\" list must also be present in the "
+"\"Answers\" list."
+msgstr ""
+"Kaikkien ”Oikeat vastaukset” -kohtien tulee olla läsnä myös ”Vastaukset”-"
+"luettelossa."
+
+#: server/activities/multiple_choice_questions/ActivityEditor.qml:19
+msgctxt "ActivityEditor|"
+msgid ""
+"\"Correct answer text\" and \"Wrong answer text\" are optional messages "
+"displayed after users validate their answer. You can leave those empty if "
+"you want."
+msgstr ""
+"”Oikean vastauksen teksti” ja ”Väärän vastauksen teksti” ovat valinnaisia "
+"viestejä, jotka näytetään käyttäjän tarkistettua vastauksensa. Ne voi "
+"halutessaan jättää tyhjiksi."
+
+#: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:27
+msgctxt "MultipleChoiceDataDisplay|"
+msgid "Question:"
+msgstr "Kysymys:"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:33
+msgctxt "MultipleChoiceDataDisplay|"
+msgid "Answer:"
+msgstr "Vastaus:"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:39
+msgctxt "MultipleChoiceDataDisplay|"
+msgid "Expected:"
+msgstr "Odotettu:"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:45
+msgctxt "MultipleChoiceDataDisplay|"
+msgid "Proposed:"
+msgstr "Ehdotettu:"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:29
+msgctxt "MultipleChoiceEditor|"
+msgid "Shuffle"
+msgstr "Sekoita"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:30
+msgctxt "MultipleChoiceEditor|"
+msgid "Sublevels"
+msgstr "Alitasot"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:36
+msgctxt "MultipleChoiceEditor|"
+msgid "Shuffle answers"
+msgstr "Sekoita vastaukset"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:37
+msgctxt "MultipleChoiceEditor|"
+msgid "Question"
+msgstr "Kysymys"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:38
+msgctxt "MultipleChoiceEditor|"
+msgid "Answers"
+msgstr "Oikeat vastaukset"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:39
+msgctxt "MultipleChoiceEditor|"
+msgid "Correct answers"
+msgstr "Oikeat vastaukset"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:40
+msgctxt "MultipleChoiceEditor|"
+msgid "Correct answer text"
+msgstr "Oikean vastauksen teksti"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:41
+msgctxt "MultipleChoiceEditor|"
+msgid "Wrong answer text"
+msgstr "Väärän vastauksen teksti"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:121
+msgctxt "MultipleChoiceEditor|"
+msgid "Dataset is empty."
+msgstr "Tietojoukko on tyhjä."
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:131
+#, qt-format
+msgctxt "MultipleChoiceEditor|"
+msgid "Level %1 must not be empty."
+msgstr "Taso %1 ei saa olla tyhjä."
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:138
+#, qt-format
+msgctxt "MultipleChoiceEditor|"
+msgid "\"Question\" in Sublevel %1 of Level %2 must not be empty."
+msgstr "Tason %2 alitason %1 ”Kysymys” ei saa olla tyhjä."
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:143
+#, qt-format
+msgctxt "MultipleChoiceEditor|"
+msgid "\"Answers\" in Sublevel %1 of Level %2 must not be empty."
+msgstr "Tason %2 alitason %1 ”Vastaukset” ei saa olla tyhjä."
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:148
+#, qt-format
+msgctxt "MultipleChoiceEditor|"
+msgid "\"Correct answers\" in Sublevel %1 of Level %2 must not be empty."
+msgstr "Tason %2 alitason %1 ”Oikeat vastaukset” ei saa olla tyhjä."
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:155
+#, qt-format
+msgctxt "MultipleChoiceEditor|"
+msgid ""
+"In Sublevel %1 of Level %2, the correct answer \"%3\" is not in the \"Answers"
+"\" list."
+msgstr "Tason %2 alitasolla %1 oikea vastaus ”%3” ei ole ”Vastauksissa”."
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:163
+#, qt-format
+msgctxt "MultipleChoiceEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr "Seuraavat virheet on korjattava:<ul>%1</ul>"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:171
+msgctxt "MultipleChoiceEditor|"
+msgid "Single answer"
+msgstr "Yksi vastaus"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:172
+msgctxt "MultipleChoiceEditor|"
+msgid "Multiple answers"
+msgstr "Monta vastausta"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:177
+msgctxt "MultipleChoiceEditor|"
+msgid "Mode"
+msgstr "Tila"
+
+#: server/activities/vertical_subtraction/VerticalEditor.qml:29
+msgctxt "VerticalEditor|"
+msgid "Sublevels"
+msgstr "Alitasot"
+
+#: server/activities/vertical_subtraction/VerticalEditor.qml:31
+msgctxt "VerticalEditor|"
+msgid "Number of digits"
+msgstr "Numeroiden määrä"
+
+#: server/activities/vertical_subtraction/VerticalEditor.qml:33
+msgctxt "VerticalEditor|"
+msgid "Number of lines"
+msgstr "Rivien määrä"
+
+#: server/activities/vertical_subtraction/VerticalEditor.qml:34
+msgctxt "VerticalEditor|"
+msgid "With carry"
+msgstr ""
+
+#: server/activities/vertical_subtraction/VerticalEditor.qml:35
+msgctxt "VerticalEditor|"
+msgid "Already laid"
+msgstr ""
+
+#: server/activities/vertical_subtraction/VerticalEditor.qml:36
+msgctxt "VerticalEditor|"
+msgid "Write your operation"
+msgstr ""
+
+#: server/components/CalendarPane.qml:77
+msgctxt "CalendarPane|"
+msgid "Calendar"
+msgstr "Kalenteri"
+
+#: server/components/CheckUserEditDelegate.qml:34
+msgctxt "CheckUserEditDelegate|"
+msgid "Edit pupil"
+msgstr "Muokkaa oppilasta"
+
+#: server/components/EditorBox.qml:84
+msgctxt "EditorBox|"
+msgid "Add"
+msgstr "Lisää"
+
+#: server/components/EditorBox.qml:95
+msgctxt "EditorBox|"
+msgid "Remove"
+msgstr "Poista"
+
+#: server/components/EditorBox.qml:107
+msgctxt "EditorBox|"
+msgid "Move up"
+msgstr "Siirrä ylemmäs"
+
+#: server/components/EditorBox.qml:119
+msgctxt "EditorBox|"
+msgid "Move down"
+msgstr "Siirrä alemmas"
+
+#: server/components/FieldEdit.qml:321
+msgctxt "FieldEdit|"
+msgid "Add an entry"
+msgstr "Lisää tietue"
+
+#: server/components/FieldEdit.qml:333
+msgctxt "FieldEdit|"
+msgid "Remove last entry"
+msgstr "Poista viimeisin tietue"
+
+#: server/components/FoldDown.qml:151
+msgctxt "FoldDown|"
+msgid "Filter list"
+msgstr "Suodata luetteloa"
+
+#: server/components/OkCancelButtons.qml:21
+msgctxt "OkCancelButtons|"
+msgid "OK"
+msgstr "OK"
+
+#: server/components/OkCancelButtons.qml:22
+msgctxt "OkCancelButtons|"
+msgid "Cancel"
+msgstr "Peru"
+
+#: server/components/RadioGroupEditDelegate.qml:59
+msgctxt "RadioGroupEditDelegate|"
+msgid "Edit group"
+msgstr "Muokkaa ryhmää"
+
+#: server/components/RadioGroupEditDelegate.qml:71
+msgctxt "RadioGroupEditDelegate|"
+msgid "Delete group"
+msgstr "Poista ryhmä"
+
+#: server/components/ServerLanguageList.qml:32
+msgctxt "ServerLanguageList|"
+msgid "Your system default"
+msgstr "Järjestelmän oletus"
+
+#: server/controllers/database-controller.cpp:83
+#: server/controllers/database-controller.cpp:89
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid ""
+"File %1\n"
+"Error SQL: %2"
+msgstr ""
+"Tiedosto %1\n"
+"SQL-virhe: %2"
+
+#: server/controllers/database-controller.cpp:125
+msgctxt "controllers::DatabaseController|"
+msgid "Table teacher_ could not be updated to current version."
+msgstr "Taulukkoa teacher_ ei voitu päivittää nykyiseen versioon."
+
+#: server/controllers/database-controller.cpp:351
+msgctxt "controllers::DatabaseController|"
+msgid "Error creating teacher."
+msgstr "Virhe luotaessa opettajaa."
+
+#: server/controllers/database-controller.cpp:373
+msgctxt "controllers::DatabaseController|"
+msgid "Wrong password."
+msgstr "Väärä salasana."
+
+#: server/controllers/database-controller.cpp:417
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Group <b>%1</b> already exists."
+msgstr "Ryhmä <b>%1</b> on jo olemassa."
+
+#: server/controllers/database-controller.cpp:438
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Group <b>%1</b> could not be updated to <b>%2</b>."
+msgstr "Ryhmää <b>%1</b> ei voitu päivittää ryhmäksi <b>%2</b>."
+
+#: server/controllers/database-controller.cpp:456
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Group <b>%1</b> could not be deleted from table group_."
+msgstr "Ryhmää <b>%1</b> ei voitu poistaa taulukosta group_."
+
+#: server/controllers/database-controller.cpp:459
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Group <b>%1</b> could not be deleted from table group_user_."
+msgstr "Ryhmää <b>%1</b> ei voitu poistaa taulukosta group_user_."
+
+#: server/controllers/database-controller.cpp:483
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Pupil login <b>%1</b> already exists or password is empty."
+msgstr "Oppilastunnus <b>%1</b> on jo olemassa tai salasana on tyhjä."
+
+#: server/controllers/database-controller.cpp:502
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "<b>%1</b> could not be updated to <b>%2</b>."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:522
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "User <b>%1</b> could not be deleted from table user_."
+msgstr "Käyttäjää <b>%1</b> ei voitu poistaa taulukosta user_."
+
+#: server/controllers/database-controller.cpp:527
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "User <b>%1</b> could not be deleted from table result_."
+msgstr "Käyttäjää <b>%1</b> ei voitu poistaa taulukosta result_."
+
+#: server/controllers/database-controller.cpp:542
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "User <b>%1</b> could not be deleted from table group_user_."
+msgstr "Käyttäjää <b>%1</b> ei voitu poistaa taulukosta group_user_."
+
+#: server/controllers/database-controller.cpp:557
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "User <b>%1</b> already exists in group <b>%2</b>."
+msgstr "Käyttäjä <b>%1</b> on jo ryhmässä <b>%2</b>."
+
+#: server/controllers/database-controller.cpp:572
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "User <b>%1</b> group <b>%2</b> couldn't be deleted."
+msgstr "Käyttäjän <b>%1</b> ryhmää <b>%2</b> ei voitu poistaa."
+
+#: server/controllers/database-controller.cpp:607
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Result could not be added for user <b>%1</b>"
+msgstr "Tulosta ei voitu lisätä käyttäjälle <b>%1</b>"
+
+#: server/controllers/database-controller.cpp:619
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Error inserting activity: %1"
+msgstr "Virhe lisättäessä harjoitusta: %1"
+
+#: server/controllers/database-controller.cpp:665
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Dataset <b>%1</b> already exists."
+msgstr "Tietojoukko <b>%1</b> on jo olemassa."
+
+#: server/controllers/database-controller.cpp:682
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Dataset <b>%1</b> could not be updated to <b>%2</b>."
+msgstr "Tietojoukkoa <b>%1</b> ei voitu päivittää joukoksi <b>%2</b>."
+
+#: server/controllers/database-controller.cpp:697
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Dataset <b>%1</b> couldn't be deleted."
+msgstr "Tietojoukkoa <b>%1</b> ei voitu poistaa."
+
+#: server/controllers/network-controller.cpp:46
+#, qt-format
+msgctxt "controllers::NetworkController|"
+msgid "Unable to start the server: %1."
+msgstr "Palvelinta ei voi käynnistää: %1."
+
+#: server/dialogs/CreateDbDialog.qml:19
+msgctxt "CreateDbDialog|"
+msgid "You are about to create a new GCompris database."
+msgstr "Olet luomassa uutta GCompris-tietokantaa."
+
+#: server/dialogs/CreateDbDialog.qml:38
+msgctxt "CreateDbDialog|"
+msgid "Database file"
+msgstr "Tietokantatiedosto"
+
+#: server/dialogs/CreateDbDialog.qml:40
+msgctxt "CreateDbDialog|"
+msgid "created in:"
+msgstr "luotu:"
+
+#: server/dialogs/CreateDbDialog.qml:64
+msgctxt "CreateDbDialog|"
+msgid "New database creation"
+msgstr "Uuden tietokannan luonti"
+
+#: server/dialogs/CreateDbDialog.qml:92
+msgctxt "CreateDbDialog|"
+msgid "Teacher login"
+msgstr "Opettajan kirjautuminen"
+
+#: server/dialogs/CreateDbDialog.qml:108
+msgctxt "CreateDbDialog|"
+msgid "Password"
+msgstr "Salasana"
+
+#: server/dialogs/CreateDbDialog.qml:124
+msgctxt "CreateDbDialog|"
+msgid "Encrypted database (enabled by default)"
+msgstr "Salattu tietokanta (käytössä oletusarvoisesti)"
+
+#: server/dialogs/DatasetEditorDialog.qml:56
+msgctxt "DatasetEditorDialog|"
+msgid "Create dataset"
+msgstr "Luo tietojoukko"
+
+#: server/dialogs/DatasetEditorDialog.qml:66
+msgctxt "DatasetEditorDialog|"
+msgid "Update dataset"
+msgstr "Päivitä tietojoukko"
+
+#: server/dialogs/DatasetEditorDialog.qml:81
+msgctxt "DatasetEditorDialog|"
+msgid "Dataset name is empty"
+msgstr "Tietojoukon nimi on tyhjä"
+
+#: server/dialogs/DatasetEditorDialog.qml:88
+msgctxt "DatasetEditorDialog|"
+msgid "Difficulty should be between 1 and 6"
+msgstr "Vaikeuden tulisi olla väliltä 1–6"
+
+#: server/dialogs/DatasetEditorDialog.qml:242
+msgctxt "DatasetEditorDialog|"
+msgid "INVALID DATASET"
+msgstr "VIRHEELLINEN TIETOJOUKKO"
+
+#: server/dialogs/DatasetEditorDialog.qml:345
+msgctxt "DatasetEditorDialog|"
+msgid "Editor"
+msgstr "Muokkain"
+
+#: server/dialogs/DatasetEditorDialog.qml:349
+msgctxt "DatasetEditorDialog|"
+msgid "Raw JSON"
+msgstr "Raaka JSON"
+
+#: server/dialogs/DatasetEditorDialog.qml:379
+msgctxt "DatasetEditorDialog|"
+msgid "Activity name"
+msgstr "Harjoituksen nimi"
+
+#: server/dialogs/DatasetEditorDialog.qml:393
+msgctxt "DatasetEditorDialog|"
+msgid "Dataset name"
+msgstr "Tietojoukon nimi"
+
+#: server/dialogs/DatasetEditorDialog.qml:407
+msgctxt "DatasetEditorDialog|"
+msgid "Goal"
+msgstr "Tavoite"
+
+#: server/dialogs/DatasetEditorDialog.qml:421
+msgctxt "DatasetEditorDialog|"
+msgid "Difficulty"
+msgstr "Vaikeus"
+
+#: server/dialogs/DatasetEditorDialog.qml:519
+msgctxt "DatasetEditorDialog|"
+msgid "Instructions"
+msgstr "Ohjeet"
+
+#: server/dialogs/DatasetEditorDialog.qml:525
+msgctxt "DatasetEditorDialog|"
+msgid "No specific instructions for this editor."
+msgstr "Tähän muokkaimeen ei ole erityisohjeita."
+
+#: server/dialogs/ErrorDialog.qml:46
+msgctxt "ErrorDialog|"
+msgid "Information"
+msgstr "Tietoa"
+
+#: server/dialogs/ExportPupilsDialog.qml:79
+msgctxt "ExportPupilsDialog|"
+msgid "Export pupils to CSV file"
+msgstr "Vie oppilaat CSV-tiedostoksi"
+
+#: server/dialogs/ExportPupilsDialog.qml:121
+msgctxt "ExportPupilsDialog|"
+msgid "Save file"
+msgstr "Tallenna tiedosto"
+
+#: server/dialogs/ExportPupilsDialog.qml:131
+msgctxt "ExportPupilsDialog|"
+msgid "Pupils"
+msgstr "Oppilaat"
+
+#: server/dialogs/GroupDialog.qml:114
+msgctxt "GroupDialog|"
+msgid "Name"
+msgstr "Nimi"
+
+#: server/dialogs/GroupDialog.qml:128
+msgctxt "GroupDialog|"
+msgid "Description"
+msgstr "Kuvaus"
+
+#: server/dialogs/ImportPupilsDialog.qml:70
+msgctxt "ImportPupilsDialog|"
+msgid "Import pupils from CSV file"
+msgstr "Tuo oppilaat CSV-tiedostosta"
+
+#: server/dialogs/ImportPupilsDialog.qml:88
+msgctxt "ImportPupilsDialog|"
+msgid ""
+"Format: name;groups;password\n"
+"Example:\n"
+"Patrick Dummy;group 1;1234\n"
+"Patricia Brown;group 1,group 2;4321\n"
+msgstr ""
+"Muoto: nimi;ryhmät;salasana\n"
+"Esimerkki:\n"
+"Timo Tyhjälä;ryhmä 1;1234\n"
+"Elisa Ei-kukaan;ryhmä 1,ryhmä 2;4321\n"
+
+#: server/dialogs/ImportPupilsDialog.qml:94
+msgctxt "ImportPupilsDialog|"
+msgid "Add CSV file"
+msgstr "Lisää CSV-tiedosto"
+
+#: server/dialogs/ImportPupilsDialog.qml:141
+msgctxt "ImportPupilsDialog|"
+msgid "Import pupils"
+msgstr "Tuo oppilaita"
+
+#: server/dialogs/PupilDialog.qml:59
+msgctxt "PupilDialog|"
+msgid "Pupil's name is empty"
+msgstr "Oppilaan nimi on tyhjä"
+
+#: server/dialogs/PupilDialog.qml:153
+msgctxt "PupilDialog|"
+msgid "Pupil's name"
+msgstr "Oppilaan nimi"
+
+#: server/dialogs/PupilDialog.qml:166
+msgctxt "PupilDialog|"
+msgid "Password"
+msgstr "Salasana"
+
+#: server/dialogs/PupilDialog.qml:218
+msgctxt "PupilDialog|"
+msgid "Password images:"
+msgstr "Salasanakuvat:"
+
+#: server/dialogs/PupilDialog.qml:254
+msgctxt "PupilDialog|"
+msgid "Groups"
+msgstr "Ryhmät"
+
+#: server/dialogs/PupilsToGroupsDialog.qml:87
+msgctxt "PupilsToGroupsDialog|"
+msgid "Select the groups to add these pupils to:"
+msgstr "Valitse ryhmät, joihin nämä oppilaat lisätään:"
+
+#: server/dialogs/PupilsToGroupsDialog.qml:88
+msgctxt "PupilsToGroupsDialog|"
+msgid "Select the groups from which to remove these pupils:"
+msgstr "Valitse ryhmät, joista nämä oppilaat poistetaan:"
+
+#: server/dialogs/RemoveDatasetDialog.qml:70
+msgctxt "RemoveDatasetDialog|"
+msgid ""
+"Are you sure you want to delete the following dataset from the database?"
+msgstr "Haluatko varmasti poistaa tietokannasta seuraavan tietojoukon?"
+
+#: server/dialogs/RemovePupilsDialog.qml:76
+msgctxt "RemovePupilsDialog|"
+msgid ""
+"Are you sure you want to remove the following pupils from the database ?"
+msgstr "Haluatko varmasti poistaa tietokannasta seuraavat oppilaat?"
+
+#: server/dialogs/SendDatasetDialog.qml:93
+msgctxt "SendDatasetDialog|"
+msgid "Do you want to send the dataset to selected pupils?"
+msgstr "Haluatko varmasti lähettää tietojoukon valituille oppilaille?"
+
+#: server/dialogs/SendDatasetDialog.qml:94
+msgctxt "SendDatasetDialog|"
+msgid "Are you sure you want to remove the dataset from selected pupils?"
+msgstr "Haluatko varmasti poistaa tietojoukon valituilta käyttäjiltä?"
+
+#: server/dialogs/SendDatasetDialog.qml:95
+msgctxt "SendDatasetDialog|"
+msgid ""
+"Are you sure you want to remove all the existing datasets from selected "
+"pupils?"
+msgstr ""
+"Haluatko varmasti poistaa valituilta käyttäjiltä kaikki olemassa olevat "
+"tietojoukot?"
+
+#: server/dialogs/SendDatasetDialog.qml:129
+msgctxt "SendDatasetDialog|"
+msgid "Pupils"
+msgstr "Oppilaat"
+
+#: server/dialogs/SqlLineDialog.qml:19
+msgctxt "SqlLineDialog|"
+msgid "Line details"
+msgstr "Rivin tiedot"
+
+#: server/dialogs/SqlLineDialog.qml:194
+msgctxt "SqlLineDialog|"
+msgid "Close"
+msgstr "Sulje"
+
+#: server/Main.qml:48
+msgctxt "Main|"
+msgid "GCompris Teachers Tool"
+msgstr "GComprisin opettajatyökalu"
+
+#: server/panels/NavigationPanel.qml:70
+msgctxt "NavigationPanel|"
+msgid "Login"
+msgstr "Kirjaudu"
+
+#: server/panels/NavigationPanel.qml:78
+msgctxt "NavigationPanel|"
+msgid "Pupils and Groups"
+msgstr "Oppilaat ja ryhmät"
+
+#: server/panels/NavigationPanel.qml:86
+msgctxt "NavigationPanel|"
+msgid "Connect devices"
+msgstr "Kytke laitteita"
+
+#: server/panels/NavigationPanel.qml:94
+msgctxt "NavigationPanel|"
+msgid "Activities"
+msgstr "Harjoitukset"
+
+#: server/panels/NavigationPanel.qml:102
+msgctxt "NavigationPanel|"
+msgid "Datasets"
+msgstr "Tietojoukot"
+
+#: server/panels/NavigationPanel.qml:110
+msgctxt "NavigationPanel|"
+msgid "Charts"
+msgstr "Kaaviot"
+
+#: server/panels/NavigationPanel.qml:118
+msgctxt "NavigationPanel|"
+msgid "Settings"
+msgstr "Asetukset"
+
+#: server/panels/SelectorPanel.qml:50
+msgctxt "SelectorPanel|"
+msgid "Groups"
+msgstr "Ryhmät"
+
+#: server/panels/SelectorPanel.qml:69
+msgctxt "SelectorPanel|"
+msgid "Pupils"
+msgstr "Oppilaat"
+
+#: server/panels/SelectorPanel.qml:85
+msgctxt "SelectorPanel|"
+msgid "Activities"
+msgstr "Harjoitukset"
+
+#: server/singletons/Master.qml:40
+msgctxt "Master|"
+msgid "User ID"
+msgstr "Käyttäjätunniste"
+
+#: server/singletons/Master.qml:41
+msgctxt "Master|"
+msgid "Name"
+msgstr "Nimi"
+
+#: server/singletons/Master.qml:42
+msgctxt "Master|"
+msgid "Names"
+msgstr "Nimet"
+
+#: server/singletons/Master.qml:43
+msgctxt "Master|"
+msgid "Password"
+msgstr "Salasana"
+
+#: server/singletons/Master.qml:44
+msgctxt "Master|"
+msgid "Users IDs"
+msgstr "Käyttäjätunnisteet"
+
+#: server/singletons/Master.qml:45
+msgctxt "Master|"
+msgid "Activity Id"
+msgstr "Harjoituksen tunniste"
+
+#: server/singletons/Master.qml:46
+msgctxt "Master|"
+msgid "Activity"
+msgstr "Harjoitus"
+
+#: server/singletons/Master.qml:47
+msgctxt "Master|"
+msgid "Group"
+msgstr "Ryhmä"
+
+#: server/singletons/Master.qml:48
+msgctxt "Master|"
+msgid "Description"
+msgstr "Kuvaus"
+
+#: server/singletons/Master.qml:49
+msgctxt "Master|"
+msgid "Groups"
+msgstr "Ryhmät"
+
+#: server/singletons/Master.qml:50
+msgctxt "Master|"
+msgid "Groups IDs"
+msgstr "Ryhmätunnisteet"
+
+#: server/singletons/Master.qml:51 server/singletons/Master.qml:55
+msgctxt "Master|"
+msgid "Date"
+msgstr "Päiväys"
+
+#: server/singletons/Master.qml:52 server/singletons/Master.qml:57
+msgctxt "Master|"
+msgid "Success"
+msgstr "Onnistuminen"
+
+#: server/singletons/Master.qml:53
+msgctxt "Master|"
+msgid "Duration"
+msgstr "Kesto"
+
+#: server/singletons/Master.qml:54
+msgctxt "Master|"
+msgid "Data"
+msgstr "Data"
+
+#: server/singletons/Master.qml:56
+msgctxt "Master|"
+msgid "Count"
+msgstr "Määrä"
+
+#: server/singletons/Master.qml:58
+msgctxt "Master|"
+msgid "Failed"
+msgstr "Hylätty"
+
+#: server/singletons/Master.qml:59
+msgctxt "Master|"
+msgid "Success ratio"
+msgstr "Onnistumisosuus"
+
+#: server/views/ChartsView.qml:136
+msgctxt "ChartsView|"
+msgid "Activities"
+msgstr "Harjoitukset"
+
+#: server/views/ChartsView.qml:143
+msgctxt "ChartsView|"
+msgid "Pupils"
+msgstr "Oppilaat"
+
+#: server/views/datas/AllData.qml:69
+msgctxt "AllData|"
+msgid "Available requests"
+msgstr "Saatavilla olevat pyynnöt"
+
+#: server/views/datas/AllData.qml:77
+msgctxt "AllData|"
+msgid "All users activities"
+msgstr "Kaikkien käyttäjien harjoitukset"
+
+#: server/views/datas/AllData.qml:77
+msgctxt "AllData|"
+msgid "Pupils activities"
+msgstr "Oppilaan harjoitukset"
+
+#: server/views/datas/AllData.qml:77
+msgctxt "AllData|"
+msgid "All groups"
+msgstr "Kaikki ryhmät"
+
+#: server/views/datas/AllData.qml:77
+msgctxt "AllData|"
+msgid "Failed activities"
+msgstr "Hylätyt harjoitukset"
+
+#: server/views/datas/AllData.qml:78
+msgctxt "AllData|"
+msgid "User's groups"
+msgstr "Käyttäjän ryhmät"
+
+#: server/views/datas/AllData.qml:78
+msgctxt "AllData|"
+msgid "Group's users"
+msgstr "Ryhmän käyttäjät"
+
+#: server/views/datas/AllData.qml:78
+msgctxt "AllData|"
+msgid "Daily activities"
+msgstr "Päivittäiset harjoitukset"
+
+#: server/views/datas/AllData.qml:78
+msgctxt "AllData|"
+msgid "Daily ratios"
+msgstr "Päivittäiset osuudet"
+
+#. Number of lines
+#: server/views/datas/AllData.qml:90
+#, qt-format
+msgctxt "AllData|"
+msgid "%1 lines"
+msgstr "%1 riviä"
+
+#: server/views/datas/DuplicateData.qml:175
+msgctxt "DuplicateData|"
+msgid "Commands"
+msgstr "Komennot"
+
+#: server/views/datas/DuplicateData.qml:188
+msgctxt "DuplicateData|"
+msgid "Random date"
+msgstr "Satunnainen päiväys"
+
+#: server/views/datas/DuplicateData.qml:195
+msgctxt "DuplicateData|"
+msgid "Duplicate"
+msgstr "Monista"
+
+#: server/views/datas/DuplicateData.qml:199
+msgctxt "DuplicateData|"
+msgid "You are about to duplicate datas"
+msgstr "Olet monistamassa tietoja"
+
+#: server/views/datas/DuplicateData.qml:199
+#: server/views/datas/DuplicateData.qml:212
+msgctxt "DuplicateData|"
+msgid "No action now"
+msgstr "Ei toimintoja nyt"
+
+#: server/views/datas/DuplicateData.qml:208
+msgctxt "DuplicateData|"
+msgid "Delete"
+msgstr "Poista"
+
+#: server/views/datas/DuplicateData.qml:212
+msgctxt "DuplicateData|"
+msgid "You are about to delete datas"
+msgstr "Olet poistamassa tietoja"
+
+#: server/views/datas/DuplicateData.qml:230
+msgctxt "DuplicateData|"
+msgid "Copy to"
+msgstr "Kopioi kohteeseen"
+
+#: server/views/DatasetsView.qml:44
+msgctxt "DatasetsView|"
+msgid "Activities"
+msgstr "Harjoitukset"
+
+#: server/views/DatasetsView.qml:63
+msgctxt "DatasetsView|"
+msgid "Datasets"
+msgstr "Tietojoukot"
+
+#: server/views/DatasetsView.qml:95
+msgctxt "DatasetsView|"
+msgid "Datasets management"
+msgstr "Tietojoukkojen hallinnointi"
+
+#: server/views/DatasetsView.qml:113
+msgctxt "DatasetsView|"
+msgid "Create dataset"
+msgstr "Luo tietojoukko"
+
+#: server/views/DatasetsView.qml:124
+msgctxt "DatasetsView|"
+msgid "Update dataset"
+msgstr "Päivitä tietojoukko"
+
+#: server/views/DatasetsView.qml:135
+msgctxt "DatasetsView|"
+msgid "Send dataset to clients"
+msgstr "Lähetä asiakkaille tietojoukko"
+
+#: server/views/DatasetsView.qml:154
+msgctxt "DatasetsView|"
+msgid "Remove dataset from clients"
+msgstr "Poista asiakkailta tietojoukko"
+
+#: server/views/DatasetsView.qml:179
+msgctxt "DatasetsView|"
+msgid "Remove all datasets from clients"
+msgstr "Poista asiakkailta kaikki tietojoukot"
+
+#: server/views/DatasetsView.qml:189
+msgctxt "DatasetsView|"
+msgid "Delete dataset"
+msgstr "Poista tietojoukko"
+
+#: server/views/DevelopmentView.qml:43
+msgctxt "DevelopmentView|"
+msgid "Edit data"
+msgstr "Muokkaa tietoja"
+
+#: server/views/DevelopmentView.qml:47
+msgctxt "DevelopmentView|"
+msgid "All requests"
+msgstr "Kaikki pyynnöt"
+
+#: server/views/DevicesView.qml:52
+msgctxt "DevicesView|"
+msgid "Not connected"
+msgstr "Ei yhteyttä"
+
+#: server/views/DevicesView.qml:54
+msgctxt "DevicesView|"
+msgid "Bad password input"
+msgstr ""
+
+#: server/views/DevicesView.qml:56
+msgctxt "DevicesView|"
+msgid "Logged"
+msgstr "Kirjauduttu"
+
+#: server/views/DevicesView.qml:58
+msgctxt "DevicesView|"
+msgid "Connection lost"
+msgstr "Yhteys katkesi"
+
+#: server/views/DevicesView.qml:60
+msgctxt "DevicesView|"
+msgid "Disconnected"
+msgstr "Ei yhteyttä"
+
+#: server/views/DevicesView.qml:62
+msgctxt "DevicesView|"
+msgid "Unknown connection status"
+msgstr "Tuntematon yhteystila"
+
+#: server/views/DevicesView.qml:84
+msgctxt "DevicesView|"
+msgid "Groups"
+msgstr "Ryhmät"
+
+#: server/views/DevicesView.qml:101
+msgctxt "DevicesView|"
+msgid "Pupils"
+msgstr "Oppilaat"
+
+#: server/views/DevicesView.qml:135
+msgctxt "DevicesView|"
+msgid "Network"
+msgstr "Verkko"
+
+#: server/views/DevicesView.qml:158
+msgctxt "DevicesView|"
+msgid "Connect devices"
+msgstr "Kytke laitteita"
+
+#: server/views/DevicesView.qml:171
+msgctxt "DevicesView|"
+msgid "Send login list"
+msgstr "Lähetä kirjautumisluettelo"
+
+#: server/views/DevicesView.qml:195
+msgctxt "DevicesView|"
+msgid "Disconnect selected pupils"
+msgstr "Katkaise valittujen oppilaiden yhteys"
+
+#: server/views/DevicesView.qml:213
+msgctxt "DevicesView|"
+msgid "Disconnect everybody"
+msgstr "Katkaise kaikilta yhteys"
+
+#: server/views/DevicesView.qml:229
+msgctxt "DevicesView|"
+msgid "Server ID:"
+msgstr "Palvelimen tunniste:"
+
+#: server/views/DevicesView.qml:236
+msgctxt "DevicesView|"
+msgid "Teacher port:"
+msgstr "Opettajan portti:"
+
+#: server/views/DevicesView.qml:243
+msgctxt "DevicesView|"
+msgid "Connected:"
+msgstr "Yhdistetty:"
+
+#: server/views/DevicesView.qml:250
+msgctxt "DevicesView|"
+msgid "Logged:"
+msgstr "Kirjauduttu:"
+
+#: server/views/DevicesView.qml:257
+msgctxt "DevicesView|"
+msgid "Data received:"
+msgstr "Dataa vastaanotettu:"
+
+#: server/views/DevicesView.qml:285
+msgctxt "DevicesView|"
+msgid "Network logs"
+msgstr "Verkkolokit"
+
+#: server/views/DevicesView.qml:297
+msgctxt "DevicesView|"
+msgid "Clear logs"
+msgstr "Tyhjennä lokit"
+
+#: server/views/DevicesView.qml:317
+#, qt-format
+msgctxt "DevicesView|"
+msgid "Server already running on port %1"
+msgstr "Palvelin on jo käynnissä portissa %1"
+
+#: server/views/LoginView.qml:43
+msgctxt "LoginView|"
+msgid "Incorrect password"
+msgstr "Väärä salasana"
+
+#: server/views/LoginView.qml:47
+msgctxt "LoginView|"
+msgid "GCompris-teachers is already running on this computer"
+msgstr "GCompris-teachers on jo käynnissä tällä koneella"
+
+#: server/views/LoginView.qml:48
+msgctxt "LoginView|"
+msgid "Only data browsing is permitted"
+msgstr "Vain tiedon selaus sallitaan"
+
+#: server/views/LoginView.qml:89
+msgctxt "LoginView|"
+msgid "Teacher login"
+msgstr "Opettajan kirjautuminen"
+
+#: server/views/LoginView.qml:110
+msgctxt "LoginView|"
+msgid "Password"
+msgstr "Salasana"
+
+#: server/views/LoginView.qml:128
+msgctxt "LoginView|"
+msgid "Login"
+msgstr "Kirjaudu"
+
+#: server/views/LoginView.qml:137
+msgctxt "LoginView|"
+msgid "Create teacher database"
+msgstr "Luo opettajan tietokanta"
+
+#: server/views/LoginView.qml:158
+msgctxt "LoginView|"
+msgid "Database file:"
+msgstr "Tietokantatiedosto:"
+
+#: server/views/ManagePupilsView.qml:34 server/views/ManagePupilsView.qml:149
+msgctxt "ManagePupilsView|"
+msgid "Add a group"
+msgstr "Lisää ryhmä"
+
+#: server/views/ManagePupilsView.qml:44
+msgctxt "ManagePupilsView|"
+msgid "Are you sure you want to remove this group?"
+msgstr "Haluatko varmasti poistaa tämän ryhmän?"
+
+#: server/views/ManagePupilsView.qml:45
+msgctxt "ManagePupilsView|"
+msgid "Pupils will not be removed."
+msgstr "Oppilaita ei poisteta."
+
+#: server/views/ManagePupilsView.qml:52
+msgctxt "ManagePupilsView|"
+msgid "Edit group"
+msgstr "Muokkaa ryhmää"
+
+#: server/views/ManagePupilsView.qml:68 server/views/ManagePupilsView.qml:207
+msgctxt "ManagePupilsView|"
+msgid "Add a pupil"
+msgstr "Lisää oppilas"
+
+#: server/views/ManagePupilsView.qml:74
+msgctxt "ManagePupilsView|"
+msgid "Edit pupil's name and groups"
+msgstr "Muokkaa oppilaan nimeä ja ryhmiä"
+
+#: server/views/ManagePupilsView.qml:122
+msgctxt "ManagePupilsView|"
+msgid "Groups"
+msgstr "Ryhmät"
+
+#: server/views/ManagePupilsView.qml:159
+msgctxt "ManagePupilsView|"
+msgid "Pupils and groups"
+msgstr "Oppilaat ja ryhmät"
+
+#: server/views/ManagePupilsView.qml:188
+msgctxt "ManagePupilsView|"
+msgid "Pupils management"
+msgstr "Oppilaiden hallinnointi"
+
+#: server/views/ManagePupilsView.qml:216
+msgctxt "ManagePupilsView|"
+msgid "Add to groups"
+msgstr "Lisää ryhmiin"
+
+#: server/views/ManagePupilsView.qml:225
+msgctxt "ManagePupilsView|"
+msgid "Remove from groups"
+msgstr "Poista ryhmistä"
+
+#: server/views/ManagePupilsView.qml:234
+msgctxt "ManagePupilsView|"
+msgid "Export pupils"
+msgstr "Vie oppilaat"
+
+#: server/views/ManagePupilsView.qml:242
+msgctxt "ManagePupilsView|"
+msgid "Import pupils"
+msgstr "Tuo oppilaat"
+
+#: server/views/ManagePupilsView.qml:251
+msgctxt "ManagePupilsView|"
+msgid "Remove pupils"
+msgstr "Poista oppilaat"
+
+#: server/views/SettingsView.qml:65
+msgctxt "SettingsView|"
+msgid "Menu panel"
+msgstr "Valikkopaneeli"
+
+#: server/views/SettingsView.qml:66
+msgctxt "SettingsView|"
+msgid "Left"
+msgstr "Vasemmalla"
+
+#: server/views/SettingsView.qml:66
+msgctxt "SettingsView|"
+msgid "Right"
+msgstr "Oikealla"
+
+#: server/views/SettingsView.qml:77
+msgctxt "SettingsView|"
+msgid "Font size"
+msgstr "Fonttikoko"
+
+#: server/views/SettingsView.qml:87
+msgctxt "SettingsView|"
+msgid "Theme"
+msgstr "Teema"
+
+#: server/views/SettingsView.qml:88
+msgctxt "SettingsView|"
+msgid "Dark"
+msgstr "Tumma"
+
+#: server/views/SettingsView.qml:88
+msgctxt "SettingsView|"
+msgid "Light"
+msgstr "Vaalea"
+
+#: server/views/SettingsView.qml:103
+msgctxt "SettingsView|"
+msgid "Language selector"
+msgstr "Kielivalinta"
+
+#: server/views/SettingsView.qml:149
+msgctxt "SettingsView|"
+msgid "Server ID"
+msgstr "Palvelimen tunniste"
+
+#: server/views/SettingsView.qml:171
+msgctxt "SettingsView|"
+msgid "Port"
+msgstr "Portti"
+
+#. next line will display if the server is running or already running
+#: server/views/SettingsView.qml:189
+msgctxt "SettingsView|"
+msgid "Server is"
+msgstr "Palvelin on"
+
+#: server/views/SettingsView.qml:190
+msgctxt "SettingsView|"
+msgid "Running"
+msgstr "Käynnissä"
+
+#: server/views/SettingsView.qml:190
+#, qt-format
+msgctxt "SettingsView|"
+msgid "Already running on port %1"
+msgstr "On jo käynnissä portissa %1"
+
+#: server/views/SettingsView.qml:198
+msgctxt "SettingsView|"
+msgid "Host name"
+msgstr "Konenimi"
+
+#: server/views/SettingsView.qml:205
+msgctxt "SettingsView|"
+msgid "Server IP"
+msgstr "Palvelimen IP"
+
+#: server/views/SettingsView.qml:212
+msgctxt "SettingsView|"
+msgid "Broadcast IPs"
+msgstr "Yleislähetys-IP:t"
+
+#: server/views/SettingsView.qml:219
+msgctxt "SettingsView|"
+msgid "Netmask"
+msgstr "Verkkopeite"
+
+#: server/views/SettingsView.qml:224
+msgctxt "SettingsView|"
+msgid "MAC address"
+msgstr "MAC-osoite"
+
+#: server/views/SettingsView.qml:231
+msgctxt "SettingsView|"
+msgid "GCompris version"
+msgstr "GComprisin versio"
+
+#: server/views/SettingsView.qml:238
+msgctxt "SettingsView|"
+msgid "Qt version"
+msgstr "Qt-versio"
+
+#: server/views/SettingsView.qml:251
+msgctxt "SettingsView|"
+msgid "Teacher login"
+msgstr "Opettajan kirjautuminen"
+
+#: server/views/SettingsView.qml:259
+msgctxt "SettingsView|"
+msgid "Database file"
+msgstr "Tietokantatiedosto"
+
+#: server/views/SettingsView.qml:266
+msgctxt "SettingsView|"
+msgid "Encrypted database"
+msgstr "Salattu tietokanta"
+
+#: server/views/SettingsView.qml:267
+msgctxt "SettingsView|"
+msgid "Yes"
+msgstr "Kyllä"
+
+#: server/views/SettingsView.qml:267
+msgctxt "SettingsView|"
+msgid "No"
+msgstr "Ei"
+
+#: server/views/SettingsView.qml:272
+msgctxt "SettingsView|"
+msgid "Pupils"
+msgstr "Oppilaat"
+
+#: server/views/SettingsView.qml:278
+msgctxt "SettingsView|"
+msgid "Groups"
+msgstr "Ryhmät"
+
+#: server/views/SettingsView.qml:291
+msgctxt "SettingsView|"
+msgid "Pupils connected"
+msgstr "Yhdistäneet oppilaat"
+
+#: server/views/SettingsView.qml:298
+msgctxt "SettingsView|"
+msgid "Pupils logged"
+msgstr "Kirjautuneet oppilaat"
+
+#: server/views/SettingsView.qml:305
+msgctxt "SettingsView|"
+msgid "Activities data received"
+msgstr "Vastaanotettu harjoitusdata"
