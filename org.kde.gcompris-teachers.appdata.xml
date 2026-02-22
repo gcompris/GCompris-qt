@@ -18,6 +18,7 @@
   <name xml:lang="ca">GCompris-teachers</name>
   <name xml:lang="ca-valencia">GCompris-teachers</name>
   <name xml:lang="es">GCompris-teachers</name>
+  <name xml:lang="fr">GCompris-teachers</name>
   <name xml:lang="he">ג׳יקומפרי למורים</name>
   <name xml:lang="ka">GCompris-teachers</name>
   <name xml:lang="nl">GCompris-docenten</name>
@@ -31,6 +32,7 @@
   <summary xml:lang="ca">Acompanyament del professorat del GCompris</summary>
   <summary xml:lang="ca-valencia">Acompanyament del professorat de GCompris</summary>
   <summary xml:lang="es">Complemento de GCompris para profesores</summary>
+  <summary xml:lang="fr">Compagnon d'administration de GCompris pour les enseignants</summary>
   <summary xml:lang="he">נלווה של ג׳יקומפרי למורים</summary>
   <summary xml:lang="ka">GCompris-teachers-ის მომყოლი</summary>
   <summary xml:lang="nl">Compagnon van GCompris-docenten</summary>
@@ -45,6 +47,7 @@
     <p xml:lang="ca">El GCompris-teachers és una aplicació d'acompanyament del professorat per a millorar l'ús del GCompris a les seves classes.</p>
     <p xml:lang="ca-valencia">GCompris-teachers és una aplicació d'acompanyament del professorat per a millorar l'ús de GCompris en les seues classes.</p>
     <p xml:lang="es">GCompris-teachers es una aplicación complementaria para profesores que permite potenciar el uso de GCompris en clase.</p>
+    <p xml:lang="fr">GCompris-teachers est une application pour les enseignants afin d'améliorer l'utilisation de GCompris en école.</p>
     <p xml:lang="he">ג׳יקומפרי למורים הוא יישום נלווה למורים כדי לשפר את יכולות ההטמעה של ג׳יקופמרי בכיתות שלהם.</p>
     <p xml:lang="ka">GCompris-teachers მომყოლი აპლიკაციაა მასწავლებლებისთვის, რომ GCompris-ის საკლასო ოთახში გამოყენება გაფართოვდეს.</p>
     <p xml:lang="nl">GCompris-docenten is een compagnontoepassing voor docenten om hun gebruik van GCompris in hun klas te vergroten.</p>
@@ -59,6 +62,7 @@
     <p xml:lang="ca">Permet als professors crear conjunts de dades personalitzats i rebre els resultats dels alumnes per a algunes activitats.</p>
     <p xml:lang="ca-valencia">Permet als professors crear conjunts de dades personalitzats i rebre els resultats dels alumnes per a algunes activitats.</p>
     <p xml:lang="es">Permite a los profesores crear conjuntos de datos personalizados y recibir de los alumnos el resultado de algunas actividades.</p>
+    <p xml:lang="fr">L'outil permet aux enseignants de créer des jeux de données personnalisés et de recevoir les résultats des élèves pour plusieurs activités.</p>
     <p xml:lang="he">מאפשר למורים ליצור סדרות נתונים מותאמות ולקבל את תוצאות התלמידים בחלק מהפעילויות.</p>
     <p xml:lang="ka">ის აძლევს მასწავლებლებს საშუალებას, შექმნან სასურველი მონაცემთა ნაკრებები და მიიღონ მოსწავლის შედეგები ზოგიერთი აქტივობისთვის.</p>
     <p xml:lang="nl">Het biedt docenten om aangepaste gegevenssets te maken en resultaten van leerlingen van sommige activiteiten terug te krijgen.</p>
@@ -75,6 +79,7 @@
       <caption xml:lang="ca">Gestió d'alumnes i grups</caption>
       <caption xml:lang="ca-valencia">Gestioneu alumnes i grups</caption>
       <caption xml:lang="es">Gestión de alumnos y grupos</caption>
+      <caption xml:lang="fr">Gestion des élèves et des groupes</caption>
       <caption xml:lang="he">ניהול תלמידים וקבוצות</caption>
       <caption xml:lang="ka">მოსწავლეებისა და ჯგუფების მართვა</caption>
       <caption xml:lang="nl">Beheer van leerlingen en groepen</caption>
@@ -91,6 +96,7 @@
       <caption xml:lang="ca">Visualització de resultats d'un alumne</caption>
       <caption xml:lang="ca-valencia">Visualització de resultats d'un alumne</caption>
       <caption xml:lang="es">Visualización de los resultados de un alumno</caption>
+      <caption xml:lang="fr">Résultats affichés pour un élève</caption>
       <caption xml:lang="he">תצוגת תוצאות לתלמיד בנפרד</caption>
       <caption xml:lang="ka">შედეგების ჩვენება ერთი მოსწავლისთვის</caption>
       <caption xml:lang="nl">Resultaten tonen van één leerling</caption>
@@ -107,6 +113,7 @@
       <caption xml:lang="ca">Visualització de resultats de l'activitat de sostracció vertical</caption>
       <caption xml:lang="ca-valencia">Visualització de resultats de l'activitat de sostracció vertical</caption>
       <caption xml:lang="es">Visualización de los resultados de la actividad de resta vertical</caption>
+      <caption xml:lang="fr">Résultats affichés pour l'activité de soustraction verticale</caption>
       <caption xml:lang="he">הצגת תוצאות לפעילות חיסור במאונך</caption>
       <caption xml:lang="ka">შედეგების ჩვენება ვერტიკალური გამოკლების აქტივობისთვის</caption>
       <caption xml:lang="nl">Resultaten tonen van de activiteit verticaal aftrekken</caption>
