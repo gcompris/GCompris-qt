@@ -156,6 +156,7 @@ path_decoding
 path_decoding_relative
 path_encoding
 path_encoding_relative
+peg_solitaire
 penalty
 photo_hunter
 piano_composition
