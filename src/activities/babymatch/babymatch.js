@@ -14,9 +14,7 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var useMultipleDataset;
-var currentSubLevel = 0;
 var numberOfLevel;
-var numberOfSubLevel;
 var items;
 var imagesUrl;
 var soundsUrl;
@@ -39,8 +37,8 @@ function start(items_, imagesUrl_, soundsUrl_, boardsUrl_, levelCount_, answerGl
 
     items.currentLevel = Core.getInitialLevel(numberOfLevel);
 
-    currentSubLevel = 0;
-    numberOfSubLevel = 0;
+    items.score.currentSubLevel = 0;
+    items.score.numberOfSubLevels = 0;
     resetData();
     initLevel();
 }
@@ -66,9 +64,9 @@ function stop() {
 
 function initLevel() {
     if(useMultipleDataset)
-        items.dataset.source = items.levels[items.currentLevel][currentSubLevel];
+        items.dataset.source = items.levels[items.currentLevel][items.score.currentSubLevel];
     else
-        items.dataset.source = boardsUrl + "board" + "/" + "board" + (items.currentLevel+1) + "_" + currentSubLevel + ".qml";
+        items.dataset.source = boardsUrl + "board" + "/" + "board" + (items.currentLevel+1) + "_" + items.score.currentSubLevel + ".qml";
     var levelData = items.dataset.item;
     resetData();
     items.availablePieces.view.currentDisplayedGroup = 0;
@@ -81,11 +79,8 @@ function initLevel() {
     var dropItemComponent = Qt.createComponent("qrc:/gcompris/src/activities/babymatch/DropAnswerItem.qml");
     var textItemComponent = Qt.createComponent("qrc:/gcompris/src/activities/babymatch/TextItem.qml");
 
-    if(currentSubLevel == 0 && levelData.numberOfSubLevel != undefined)
-        numberOfSubLevel = levelData.numberOfSubLevel;
-
-    items.score.currentSubLevel = currentSubLevel + 1;
-    items.score.numberOfSubLevels = numberOfSubLevel + 1;
+    if(items.score.currentSubLevel == 0 && levelData.numberOfSubLevel != undefined)
+        items.score.numberOfSubLevels = levelData.numberOfSubLevel + 1;
 
     if(levelData.glow === undefined)
         glowEnabled = glowEnabledDefault;
@@ -188,29 +183,31 @@ function hideInstructions() {
 }
 
 function nextSubLevel() {
-    if(numberOfSubLevel < ++currentSubLevel) {
-        nextLevel();
+    if(items.score.currentSubLevel >= items.score.numberOfSubLevels) {
+        items.bonus.good("flower");
     }
-    else
+    else {
         initLevel();
+    }
 }
 
 function nextLevel() {
-    currentSubLevel = 0;
-    numberOfSubLevel = 0;
+    items.score.currentSubLevel = 0;
+    items.score.numberOfSubLevels = 0;
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    currentSubLevel = 0;
-    numberOfSubLevel = 0;
+    items.score.currentSubLevel = 0;
+    items.score.numberOfSubLevels = 0;
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function win() {
-    items.bonus.good("flower");
+    items.score.currentSubLevel += 1;
+    items.score.playWinAnimation();
 }
 
 function getClosestSpot(x, y) {

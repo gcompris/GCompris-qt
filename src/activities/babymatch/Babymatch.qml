@@ -126,11 +126,12 @@ ActivityBase {
             anchors.right: parent.right
             anchors.rightMargin: GCStyle.baseMargins
             anchors.bottom: bar.top
+            onStop: Activity.nextSubLevel()
         }
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextSubLevel);
+            Component.onCompleted: win.connect(Activity.nextLevel);
         }
 
         Image {
