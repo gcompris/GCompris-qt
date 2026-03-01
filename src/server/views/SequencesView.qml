@@ -27,6 +27,30 @@ Item {
 
     property int selectedSequence: -1
 
+    ListModel {
+        id: sequenceDetailsModel
+    }
+
+    function updateSequenceDetails() {
+        sequenceDetailsModel.clear()
+        var currentSequence = Master.findObjectInModel(Master.sequenceModel, function(item) { return item.sequence_id === sequencesView.selectedSequence })
+        if (!currentSequence) {
+            return
+        }
+        for (var i = 0; i < currentSequence.sequenceList.count; ++ i) {
+            var s = currentSequence.sequenceList.get(i)
+            var act = Master.findObjectInModel(Master.activityModel, function(item) { return item.activity_id === s.activity_id })
+            sequenceDetailsModel.append({
+                "activity_id": s.activity_id,
+                "activity_name": s.activity_name,
+                "activity_title": act.activity_title,
+                "dataset_id": s.dataset_id,
+                "dataset_name": s.dataset_name,
+                "internal_name": s.internal_name
+            })
+        }
+    }
+
     StyledSplitView {
         id: splitSequenceView
         anchors.fill: parent
@@ -51,24 +75,73 @@ Item {
             clickOnClear: true
             onSelectionClicked: (modelId) => {
                 sequencesView.selectedSequence = modelId
+
+                updateSequenceDetails();
             }
         }
 
-        // TODO Not a foldDown, more a list of activities with details on the lines below
-        FoldDown { // Activities with selected sequence names below
-            id: activitiesPane
+        Rectangle {
+            id: elements
             SplitView.fillWidth: true
-            SplitView.minimumWidth: splitSequenceView.minSplitWidth
-            title: qsTr("Details")
-            foldModel: Master.filteredDatasetModel // filteredSequenceModel
-            indexKey: "dataset_id"
-            nameKey: "dataset_name"
-            checkKey: "dataset_checked"
-            delegateName: "radio"
-            filterVisible: false
-            collapsable: false
-            onSelectionClicked: (modelId) => {
-                //sequencesView.selectedSequence = modelId
+            color: Style.selectedPalette.alternateBase
+            Rectangle {
+                id: foldDownHeader
+                width: parent.width
+                height: Style.lineHeight
+                color: Style.selectedPalette.base
+                border.width: Style.defaultBorderWidth
+                border.color: Style.selectedPalette.accent
+                DefaultLabel {
+                    id: columnTitle
+                    anchors.fill: parent
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.margins: Style.margins
+                    horizontalAlignment: Text.AlignHCenter
+                    font.bold: true
+                    text: qsTr("Details")
+                }
+            }
+
+            Flickable {
+                id: sequenceDetails
+                anchors.top: foldDownHeader.bottom
+                anchors.bottom: parent.bottom
+                anchors.left: parent.left
+                anchors.right: parent.right
+                width: parent.width
+                contentWidth: width
+                contentHeight: boxes.height
+                flickableDirection: Flickable.VerticalFlick
+                boundsBehavior: Flickable.StopAtBounds
+                clip: true
+
+                ScrollBar.vertical: ScrollBar {
+                    policy: ScrollBar.AsNeeded
+                    contentItem: Rectangle {
+                        implicitWidth: 6
+                        radius: width
+                        opacity: sequenceDetails.contentHeight > sequenceDetails.height ? 1 : 0
+                        color: parent.pressed ? Style.selectedPalette.highlight : Style.selectedPalette.button
+                    }
+                }
+
+                Column {
+                    id: boxes
+                    height: implicitHeight
+                    Repeater {
+                        model: sequenceDetailsModel
+                        delegate: SequenceElement {
+                            width: sequenceDetails.width - 10
+                            height: 20 * Style.margins
+                            enabled: false
+                        }
+                    }
+
+                    Item {
+                        width: 1
+                        height: Style.bigMargins
+                    }
+                }
             }
         }
 
@@ -181,6 +254,9 @@ Item {
             addMode: true
             sequence_Name: ""
             sequence_Objective: ""
+            onSequenceUpdated: {
+                updateSequenceDetails();
+            }
         }
 
         RemoveSequenceDialog {

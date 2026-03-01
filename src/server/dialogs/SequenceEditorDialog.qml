@@ -29,6 +29,12 @@ Popup {
     property alias sequence_Objective: sequenceObjective.text
     property var currentSequence: null
 
+    signal sequenceUpdated
+
+    ListModel {
+        id: sequenceDetailsModel
+    }
+
     parent: Overlay.overlay
     width: Overlay.overlay.width
     height: Overlay.overlay.height
@@ -38,7 +44,7 @@ Popup {
     function openDataEditor(selectedSequence) {
         currentSequence = Master.findObjectInModel(Master.sequenceModel, function(item) { return item.sequence_id === selectedSequence })
 
-        sequenceModel.clear()
+        sequenceDetailsModel.clear()
         splitDatasetView.resetState()
         if (!currentSequence) {
             label = qsTr("Create sequence")
@@ -56,7 +62,7 @@ Popup {
             for (var i = 0; i < currentSequence.sequenceList.count; ++ i) {
                 var s = currentSequence.sequenceList.get(i)
                 var act = Master.findObjectInModel(Master.activityModel, function(item) { return item.activity_id === s.activity_id })
-                sequenceModel.append({
+                sequenceDetailsModel.append({
                     "activity_id": s.activity_id,
                     "activity_name": s.activity_name,
                     "activity_title": act.activity_title,
@@ -78,8 +84,8 @@ Popup {
         }
 
         var sequenceList = [];
-        for(var i = 0; i < sequenceModel.count; ++ i) {
-            var elt = sequenceModel.get(i)
+        for(var i = 0; i < sequenceDetailsModel.count; ++ i) {
+            var elt = sequenceDetailsModel.get(i)
             sequenceList.push({
                 "activity_id": elt.activity_id,
                 "activity_name": elt.activity_name,
@@ -92,11 +98,15 @@ Popup {
         if (addMode) {
             // Add the sequence to database
             sequence_Id = Master.createSequence(sequenceName.text, sequenceObjective.text, sequenceList)
-            if (sequence_Id !== -1)
-                sequenceEditor.close()
-        } else {
-            if (Master.updateSequence(sequence_Id, sequenceName.text, sequenceObjective.text, sequenceList))
+            if (sequence_Id !== -1) {
+                sequenceEditor.sequenceUpdated();
                 sequenceEditor.close();
+            }
+        } else {
+            if (Master.updateSequence(sequence_Id, sequenceName.text, sequenceObjective.text, sequenceList)) {
+                sequenceEditor.sequenceUpdated();
+                sequenceEditor.close();
+            }
         }
     }
 
@@ -279,11 +289,7 @@ Popup {
                 }
             }
         }
-        // Sequence - Make its own Item once we have an idea on what to do
-        // This is mostly copied from EditorBox.qml
-        ListModel {
-            id: sequenceModel
-        }
+
         Rectangle {
             id: elements
             SplitView.fillWidth: true
@@ -294,8 +300,8 @@ Popup {
 
             // Properties initialized with parent properties.
             readonly property bool removeEnabled: elements.current !== -1
-            readonly property bool upEnabled: (sequenceModel.count > 1) && (elements.current > 0)
-            readonly property bool downEnabled: (sequenceModel.count > 1) && (elements.current < sequenceModel.count - 1) && (elements.current !== -1)
+            readonly property bool upEnabled: (sequenceDetailsModel.count > 1) && (elements.current > 0)
+            readonly property bool downEnabled: (sequenceDetailsModel.count > 1) && (elements.current < sequenceDetailsModel.count - 1) && (elements.current !== -1)
             property int current: -1
 
             Row {
@@ -315,8 +321,8 @@ Popup {
                             "dataset_name": splitDatasetView.selectedDatasetName,
                             "internal_name": splitDatasetView.selectedInternalDatasetName
                         };
-                        sequenceModel.append(elt);
-                        elements.current = sequenceModel.count - 1;
+                        sequenceDetailsModel.append(elt);
+                        elements.current = sequenceDetailsModel.count - 1;
                     }
                 }
 
@@ -328,7 +334,7 @@ Popup {
                     onClicked: {
                         var toRemove = elements.current;
                         elements.current = -1;
-                        sequenceModel.remove(toRemove);
+                        sequenceDetailsModel.remove(toRemove);
                     }
                 }
 
@@ -338,7 +344,7 @@ Popup {
                     toolTipOnHover: true
                     toolTipText: qsTr("Move up")
                     onClicked: {
-                        sequenceModel.move(elements.current, elements.current - 1, 1);
+                        sequenceDetailsModel.move(elements.current, elements.current - 1, 1);
                         elements.current = elements.current - 1;
                     }
                 }
@@ -350,7 +356,7 @@ Popup {
                     toolTipOnHover: true
                     toolTipText: qsTr("Move down")
                     onClicked: {
-                        sequenceModel.move(elements.current, elements.current + 1, 1);
+                        sequenceDetailsModel.move(elements.current, elements.current + 1, 1);
                         elements.current = elements.current + 1;
                     }
                 }
@@ -381,53 +387,10 @@ Popup {
                     id: boxes
                     height: implicitHeight
                     Repeater {
-                        model: sequenceModel
-                        delegate: Rectangle {
-                            id: sequenceItem
-                            required property var modelData
-                            required property int index
+                        model: sequenceDetailsModel
+                        delegate: SequenceElement {
                             width: scrollLines.width - 10
                             height: 20 * Style.margins
-                            color: mainMouseArea.pressed ? Style.selectedPalette.highlight : Style.selectedPalette.base
-                            border.color: sequenceItem.activeFocus ? Style.selectedPalette.highlight :
-                            (mainMouseArea.hovered || (elements.current === index) ? Style.selectedPalette.text :
-                            Style.selectedPalette.accent)
-                            border.width: (sequenceItem.activeFocus || (elements.current === index)) ? 2 : 1
-                            activeFocusOnTab: true
-
-                            function selectItem() {
-                                elements.current = index;
-                            }
-
-                            MouseArea {
-                                id: mainMouseArea
-                                anchors.fill: parent
-                                hoverEnabled: true
-                                propagateComposedEvents: true
-                                onClicked: {
-                                    sequenceItem.selectItem();
-                                }
-                            }
-
-                            Keys.onPressed: (event) => {
-                                if(event.key == Qt.Key_Space) {
-                                    sequenceItem.selectItem();
-                                }
-                            }
-                            Text {
-                                anchors.fill: parent
-                                text: modelData.activity_title
-                            }
-                            Rectangle {
-                                width: sequenceItem - 10
-                                height:  Style.lineHeight
-                                anchors.bottom: parent.bottom
-                                color: Style.selectedPalette.alternateBase
-                                Text {
-                                    anchors.fill: parent
-                                    text: modelData.dataset_name
-                                }
-                            }
                         }
                     }
 
