@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-01-27 09:13+0100\n"
+"PO-Revision-Date: 2026-02-25 17:28+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.12.1\n"
+"X-Generator: Lokalize 25.12.2\n"
 "X-Qt-Contexts: true\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
@@ -1011,9 +1011,6 @@ msgid "Duration: %1s"
 msgstr "Durata: %1s"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:29
-#, fuzzy
-#| msgctxt "ActivityEditor|"
-#| msgid "Rules to create a valid dataset:"
 msgctxt "MagicHatEditor|"
 msgid "Rules to create a valid dataset:"
 msgstr "Regole per creare un insieme di dati valido:"
@@ -1021,7 +1018,7 @@ msgstr "Regole per creare un insieme di dati valido:"
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:31
 msgctxt "MagicHatEditor|"
 msgid "If \"Use coefficients\" is not checked:"
-msgstr ""
+msgstr "Se «Utilizza i coefficienti» non è selezionato:"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:33
 #, qt-format
@@ -1033,6 +1030,11 @@ msgid ""
 "must be between %1 and %2, the others between 0 and %2. Also the minimum "
 "numbers must not be larger than the corresponding maximum numbers."
 msgstr ""
+"«Numero massimo di stelle» e «Numero minimo di stelle» limitano il numero di "
+"stelle per ciascuna delle 3 righe del primo operando (quello in alto). "
+"Devono contenere esattamente 3 numeri interi, uno per ogni riga. La prima "
+"voce deve essere compresa tra %1 e %2, le altre tra 0 e %2. Inoltre i numeri "
+"minimi non devono essere maggiori dei corrispondenti numeri massimi."
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:36
 msgctxt "MagicHatEditor|"
@@ -1042,6 +1044,10 @@ msgid ""
 "of the corresponding row of the first operand, the result will not be more "
 "than the \"Maximum result per row\" value."
 msgstr ""
+"Ogni riga del secondo operando (quella in basso) conterrà un numero di "
+"stelle generato in modo tale che, sottratto al numero di stelle della "
+"corrispondente riga del primo operando, il risultato non sarà superiore al "
+"valore «Risultato massimo per riga»."
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:37
 msgctxt "MagicHatEditor|"
@@ -1051,6 +1057,10 @@ msgid ""
 "corresponding row of the first operand, the result will not be more than the "
 "\"Maximum result per row\" value."
 msgstr ""
+"Ogni riga del secondo operando (quella in basso) conterrà un numero di "
+"stelle generato in modo tale che sommato al numero di stelle della "
+"corrispondente riga del primo operando, il risultato non sarà superiore al "
+"valore «Risultato massimo per riga»."
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:41
 msgctxt "MagicHatEditor|"
@@ -1058,6 +1068,8 @@ msgid ""
 "If \"Maximum number of stars\" for a row is 0, this row will be empty and "
 "hidden for both operands."
 msgstr ""
+"Se il «Numero massimo di stelle» per una riga è 0, questa riga sarà vuota e "
+"nascosta per entrambi gli operandi."
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:44
 msgctxt "MagicHatEditor|"
@@ -1065,11 +1077,13 @@ msgid ""
 "\"Maximum result per row\" must be larger than any value in \"Maximum number "
 "of stars\"."
 msgstr ""
+"Il «Risultato massimo per riga» deve essere maggiore di qualsiasi valore in "
+"«Numero massimo di stelle»."
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:46
 msgctxt "MagicHatEditor|"
 msgid "If \"Use coefficients\" is checked:"
-msgstr ""
+msgstr "Se è selezionato «Utilizza i coefficienti»:"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:48
 msgctxt "MagicHatEditor|"
@@ -1078,55 +1092,46 @@ msgid ""
 "must be between 1 and 10, the others between 0 and 10, and the sum of the 3 "
 "entries must not be larger than 10."
 msgstr ""
+"«Coefficienti di riga» deve contenere esattamente 3 numeri interi. La prima "
+"voce deve essere compresa tra 1 e 10, le altre tra 0 e 10 e la somma delle 3 "
+"voci non deve essere maggiore di 10."
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:52
 msgctxt "MagicHatEditor|"
 msgid "Use coefficients"
-msgstr ""
+msgstr "Utilizza i coefficienti"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:53
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Maximum start number"
 msgctxt "MagicHatEditor|"
 msgid "Maximum result per row"
-msgstr "Numero massimo di partenza"
+msgstr "Risultato massimo per riga"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:54
 msgctxt "MagicHatEditor|"
 msgid "Use different star sets per row"
-msgstr ""
+msgstr "Utilizza diversi insieme di stelle per riga"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:55
-#, fuzzy
-#| msgctxt "FractionsFindEditor|"
-#| msgid "Maximum of units"
 msgctxt "MagicHatEditor|"
 msgid "Maximum number of stars"
-msgstr "Massimo di unità"
+msgstr "Numero massimo di stelle"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:56
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Minimum start number"
 msgctxt "MagicHatEditor|"
 msgid "Minimum number of stars"
-msgstr "Numero minimo di partenza"
+msgstr "Numero minimo di stelle"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:57
 msgctxt "MagicHatEditor|"
 msgid "Coefficient multiplier"
-msgstr ""
+msgstr "Moltiplicatore di coefficienti"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:58
 msgctxt "MagicHatEditor|"
 msgid "Row coefficients"
-msgstr ""
+msgstr "Coefficienti di riga"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:120
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "MagicHatEditor|"
 msgid "Dataset is empty."
 msgstr "Il nome dell'insieme di dati è vuoto."
@@ -1138,6 +1143,9 @@ msgid ""
 "Level %1 must contain exactly 3 integer numbers in \"Maximum number of stars"
 "\". The first entry must be between %2 and %3, the others between 0 and %3."
 msgstr ""
+"Il livello %1 deve contenere esattamente 3 numeri interi in «Numero massimo "
+"di stelle». La prima voce deve essere compresa tra %2 e %3, le altre tra 0 e "
+"%3."
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:169
 #, qt-format
@@ -1148,6 +1156,10 @@ msgid ""
 "and each number must not be larger than the corresponding number in "
 "\"Maximum number of stars\"."
 msgstr ""
+"Il livello %1 deve contenere esattamente 3 numeri interi in «Numero minimo "
+"di stelle». La prima voce deve essere compresa tra %2 e %3, le altre tra 0 e "
+"%3, e ciascun numero non deve essere maggiore del numero corrispondente in "
+"«Numero massimo di stelle»."
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:183
 #, qt-format
@@ -1156,6 +1168,8 @@ msgid ""
 "In Level %1, \"Maximum result per row\" must be larger than any value in "
 "\"Maximum number of stars\"."
 msgstr ""
+"Nel livello %1, «Risultato massimo per riga» deve essere maggiore di "
+"qualsiasi valore in «Numero massimo di stelle»."
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:213
 #, qt-format
@@ -1165,21 +1179,22 @@ msgid ""
 "first entry must be between 1 and 10, the others between 0 and 10, and the "
 "sum of the 3 entries must not be larger than 10."
 msgstr ""
+"Il livello %1 deve contenere esattamente 3 numeri interi in «Coefficienti di "
+"riga». La prima voce deve essere compresa tra 1 e 10, le altre tra 0 e 10 e "
+"la somma delle 3 voci non deve essere maggiore di 10."
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:219
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "MagicHatEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "I seguenti errori devono essere corretti:<ul>%1</ul>"
+msgstr "È necessario correggere i seguenti errori:<ul>%1</ul>"
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
 #: server/activities/magic-hat-minus/StarsBar.qml:53
 #, qt-format
 msgctxt "StarsBar|"
 msgid "%1x"
-msgstr ""
+msgstr "%1x"
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
@@ -1336,7 +1351,7 @@ msgstr "Modalità"
 #: server/activities/tens_complement_use/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
 msgid "All numbers must be positive integers"
-msgstr ""
+msgstr "Tutti i numeri devono essere numeri interi positivi"
 
 #: server/activities/tens_complement_find/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
@@ -1345,6 +1360,9 @@ msgid ""
 "cards, and there is already 1 card per addition, or 2 cards per addition if "
 "\"Find both numbers\" is selected."
 msgstr ""
+"Non aggiungere troppe «Schede aggiuntive»! Ogni sottolivello non deve avere "
+"più di 6 schede e c'è già 1 scheda per addizione o 2 schede per addizione se "
+"è selezionato «Trova entrambi i numeri»."
 
 #: server/activities/tens_complement_find/ActivityEditor.qml:19
 msgctxt "ActivityEditor|"
@@ -1353,28 +1371,22 @@ msgid ""
 "must contain 1, 2 or 3 numbers between 1 and 9. There is one addition for "
 "each \"First operand\" number."
 msgstr ""
+"Se «Domande casuali» non è selezionato, i «Primi operandi» di ogni "
+"sottolivello devono contenere 1, 2 o 3 numeri compresi tra 1 e 9. C'è "
+"un'addizione per ogni numero del «Primo operando»."
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:27
-#, fuzzy
-#| msgctxt "FractionsFindEditor|"
-#| msgid "Random fraction"
 msgctxt "TensComplementFindEditor|"
 msgid "Random questions"
-msgstr "Frazione casuale"
+msgstr "Domande casuali"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:28
-#, fuzzy
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "Random numbers"
 msgctxt "TensComplementFindEditor|"
 msgid "Find both numbers"
-msgstr "Numeri casuali"
+msgstr "Trova entrambi i numeri"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:29
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:35
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "TensComplementFindEditor|"
 msgid "Sublevels"
 msgstr "Sottolivelli"
@@ -1382,50 +1394,35 @@ msgstr "Sottolivelli"
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:30
 msgctxt "TensComplementFindEditor|"
 msgid "Additions per sublevel"
-msgstr ""
+msgstr "Addizioni per sottolivello"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:31
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:41
 msgctxt "TensComplementFindEditor|"
 msgid "Extra cards"
-msgstr ""
+msgstr "Schede aggiuntive"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:32
-#, fuzzy
-#| msgctxt "AlgebraEditor|"
-#| msgid "Minimum operand value"
 msgctxt "TensComplementFindEditor|"
 msgid "Minimum first operand"
-msgstr "Valore minimo dell'operando"
+msgstr "Primo operando minimo"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:33
-#, fuzzy
-#| msgctxt "AlgebraEditor|"
-#| msgid "Maximum operand value"
 msgctxt "TensComplementFindEditor|"
 msgid "Maximum first operand"
-msgstr "Valore massimo dell'operando"
+msgstr "Primo operando massimo"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:34
-#, fuzzy
-#| msgctxt "MultipleChoiceEditor|"
-#| msgid "Shuffle answers"
 msgctxt "TensComplementFindEditor|"
 msgid "Shuffle operands"
-msgstr "Mescola le risposte"
+msgstr "Mescola gli operandi"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:40
-#, fuzzy
-#| msgctxt "AlgebraEditor|"
-#| msgid "First operand"
 msgctxt "TensComplementFindEditor|"
 msgid "First operands"
-msgstr "Primo operando"
+msgstr "Primi operandi"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:163
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "TensComplementFindEditor|"
 msgid "Dataset is empty."
 msgstr "Il nome dell'insieme di dati è vuoto."
@@ -1434,54 +1431,46 @@ msgstr "Il nome dell'insieme di dati è vuoto."
 #, qt-format
 msgctxt "TensComplementFindEditor|"
 msgid "Level %1 contains too many extra cards."
-msgstr ""
+msgstr "Il livello %1 contiene troppe schede aggiuntive."
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:184
-#, fuzzy, qt-format
-#| msgctxt "ComparatorEditor|"
-#| msgid "Level %1 must not be empty."
+#, qt-format
 msgctxt "TensComplementFindEditor|"
 msgid "Level %1 must not be empty."
 msgstr "Il livello %1 non deve essere vuoto."
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:193
-#, fuzzy, qt-format
-#| msgctxt "MultipleChoiceEditor|"
-#| msgid "\"Answers\" in Sublevel %1 of Level %2 must not be empty."
+#, qt-format
 msgctxt "TensComplementFindEditor|"
 msgid "Sublevel %2 of Level %1 must not be empty."
-msgstr "«Risposte» nel sottolivello %1 del livello %2 non deve essere vuoto."
+msgstr "Il sottolivello %2 del livello %1 non deve essere vuoto."
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:200
 #, qt-format
 msgctxt "TensComplementFindEditor|"
 msgid "Sublevel %2 of Level %1 contains invalid First operands."
-msgstr ""
+msgstr "Il sottolivello %2 del livello %1 contiene primi operandi non validi."
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:210
 #, qt-format
 msgctxt "TensComplementFindEditor|"
 msgid "Sublevel %2 of Level %1 contains invalid extra cards."
 msgstr ""
+"Il sottolivello %2 del livello %1 contiene schede aggiuntive non valide."
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:218
 #, qt-format
 msgctxt "TensComplementFindEditor|"
 msgid "Sublevel %2 of Level %1 contains too many extra cards."
-msgstr ""
+msgstr "Il sottolivello %2 del livello %1 contiene troppe schede aggiuntive."
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:226
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "TensComplementFindEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "I seguenti errori devono essere corretti:<ul>%1</ul>"
+msgstr "È necessario correggere i seguenti errori:<ul>%1</ul>"
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:25
-#, fuzzy
-#| msgctxt "ActivityEditor|"
-#| msgid "Rules to create a valid dataset:"
 msgctxt "TensComplementSwapEditor|"
 msgid "Rules to create a valid dataset:"
 msgstr "Regole per creare un insieme di dati valido:"
@@ -1489,24 +1478,18 @@ msgstr "Regole per creare un insieme di dati valido:"
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:27
 msgctxt "TensComplementSwapEditor|"
 msgid "All numbers must be positive integers"
-msgstr ""
+msgstr "Tutti i numeri devono essere numeri interi positivi"
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:29
-#, fuzzy
-#| msgctxt "ActivityEditor|"
-#| msgid ""
-#| "If \"Random numbers\" is not selected, \"Numbers to find\" must contain a "
-#| "list of integer numbers. Each number must be between 0 and the maximum "
-#| "number which can be represented with the given \"Bulb count\"."
 msgctxt "TensComplementSwapEditor|"
 msgid ""
 "If \"Random operands\" is not selected, \"Operands\" must contain 1, 2 or 3 "
 "entries. Each entry must be a number between 1 and 9. The resulting addition "
 "will contain the given entries and their complement to 10."
 msgstr ""
-"Se «Numeri casuali» non è selezionato, «Numeri da trovare» deve contenere un "
-"elenco di numeri interi. Ogni numero deve essere compreso tra 0 e il numero "
-"massimo rappresentabile con il «Conteggio lampadine» specificato."
+"Se «Operandi casuali» non è selezionato, «Operandi» deve contenere 1, 2 o 3 "
+"voci. Ciascuna voce deve essere un numero compreso tra 1 e 9. L'addizione "
+"risultante conterrà le voci indicate e il loro complemento a 10."
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:31
 msgctxt "TensComplementSwapEditor|"
@@ -1516,67 +1499,48 @@ msgid ""
 "if \"Operands\" contains 2 numbers, and not used if \"Operands\" contains 3 "
 "numbers."
 msgstr ""
+"«Operando aggiuntivo» può contenere 1 numero compreso tra 1 e 9 che sarà "
+"aggiunto all'addizione. È obbligatorio se «Operandi» contiene 1 numero, "
+"facoltativo se «Operandi» contiene 2 numeri e non utilizzato se «Operandi» "
+"contiene 3 numeri."
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:35
-#, fuzzy
-#| msgctxt "AlgebraEditor|"
-#| msgid "Shuffle"
 msgctxt "TensComplementSwapEditor|"
 msgid "Shuffle"
 msgstr "Mescola"
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:36
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Additions"
 msgctxt "TensComplementSwapEditor|"
 msgid "Additions"
 msgstr "Addizioni"
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:41
-#, fuzzy
-#| msgctxt "AlgebraEditor|"
-#| msgid "Random operands"
 msgctxt "TensComplementSwapEditor|"
 msgid "Random operands"
 msgstr "Operandi casuali"
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:42
-#, fuzzy
-#| msgctxt "VerticalEditor|"
-#| msgid "Number of lines"
 msgctxt "TensComplementSwapEditor|"
 msgid "Number of operands"
-msgstr "Numero di righe"
+msgstr "Numero di operandi"
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:43
-#, fuzzy
-#| msgctxt "AlgebraEditor|"
-#| msgid "Random operands"
 msgctxt "TensComplementSwapEditor|"
 msgid "Operands"
-msgstr "Operandi casuali"
+msgstr "Operandi"
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:44
-#, fuzzy
-#| msgctxt "AlgebraEditor|"
-#| msgid "First operand"
 msgctxt "TensComplementSwapEditor|"
 msgid "Extra operand"
-msgstr "Primo operando"
+msgstr "Operando aggiuntivo"
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:144
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "TensComplementSwapEditor|"
 msgid "Dataset is empty."
 msgstr "Il nome dell'insieme di dati è vuoto."
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:154
-#, fuzzy, qt-format
-#| msgctxt "ComparatorEditor|"
-#| msgid "Level %1 must not be empty."
+#, qt-format
 msgctxt "TensComplementSwapEditor|"
 msgid "Level %1 must not be empty."
 msgstr "Il livello %1 non deve essere vuoto."
@@ -1588,14 +1552,14 @@ msgid ""
 "Content of Addition %2 of Level %1 is not valid. Please check the "
 "instructions."
 msgstr ""
+"Il contenuto dell'addizione %2 del livello %1 non è valido. Controllare le "
+"istruzioni."
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:198
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "TensComplementSwapEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "I seguenti errori devono essere corretti:<ul>%1</ul>"
+msgstr "È necessario correggere i seguenti errori:<ul>%1</ul>"
 
 #: server/activities/tens_complement_use/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
@@ -1603,58 +1567,40 @@ msgid ""
 "Do not add too many \"Extra cards\"! Each sublevel must not have more than 6 "
 "cards, and there are already 2 cards per addition."
 msgstr ""
+"Non aggiungere troppe «schede aggiuntive»! Ogni sottolivello non deve avere "
+"più di 6 schede e ci sono già 2 schede per aggiunta."
 
 #: server/activities/tens_complement_use/ActivityEditor.qml:19
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid ""
-#| "\"Additions\" must only contain additions which results are integer "
-#| "numbers between 0 and 9, and must not be empty."
 msgctxt "ActivityEditor|"
 msgid ""
 "In \"Additions\", each entry must be an addition which first number is "
 "between 1 and 9, and which result is between 11 and 99."
 msgstr ""
-"«Addizioni» deve contenere solo addizioni i cui risultati sono numeri interi "
-"compresi tra 0 e 9 e non deve essere vuoto."
+"In «Addizioni», ciascuna voce deve essere un'addizione il cui primo numero è "
+"compreso tra 1 e 9 e il cui risultato è compreso tra 11 e 99."
 
 #: server/activities/tens_complement_use/TensComplementUseDataDisplay.qml:36
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Proposed numbers"
 msgctxt "TensComplementUseDataDisplay|"
 msgid "Proposed numbers:"
-msgstr "Numeri proposti"
+msgstr "Numeri proposti:"
 
 #: server/activities/tens_complement_use/TensComplementUseDataDisplay.qml:71
-#, fuzzy
-#| msgctxt "MultipleChoiceDataDisplay|"
-#| msgid "Question:"
 msgctxt "TensComplementUseDataDisplay|"
 msgid "Question:"
 msgstr "Domanda:"
 
 #: server/activities/tens_complement_use/TensComplementUseDataDisplay.qml:97
-#, fuzzy
-#| msgctxt "AdjacentNumbersDataDisplay|"
-#| msgid "Answer:"
 msgctxt "TensComplementUseDataDisplay|"
 msgid "Answer:"
 msgstr "Risposta:"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:27
-#, fuzzy
-#| msgctxt "FractionsFindEditor|"
-#| msgid "Random fraction"
 msgctxt "TensComplementUseEditor|"
 msgid "Random questions"
-msgstr "Frazione casuale"
+msgstr "Domande casuali"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:28
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:34
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "TensComplementUseEditor|"
 msgid "Sublevels"
 msgstr "Sottolivelli"
@@ -1662,50 +1608,35 @@ msgstr "Sottolivelli"
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:29
 msgctxt "TensComplementUseEditor|"
 msgid "Additions per sublevel"
-msgstr ""
+msgstr "Addizioni per sottolivello"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:30
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:40
 msgctxt "TensComplementUseEditor|"
 msgid "Extra cards"
-msgstr ""
+msgstr "Schede aggiuntive"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:31
-#, fuzzy
-#| msgctxt "LearnDecimalsEditor|"
-#| msgid "Minimum Value"
 msgctxt "TensComplementUseEditor|"
 msgid "Minimum result"
-msgstr "Valore minimo"
+msgstr "Risultato minimo"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:32
-#, fuzzy
-#| msgctxt "FractionsFindEditor|"
-#| msgid "Maximum of units"
 msgctxt "TensComplementUseEditor|"
 msgid "Maximum result"
-msgstr "Massimo di unità"
+msgstr "Risultato massimo"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:33
-#, fuzzy
-#| msgctxt "AlgebraEditor|"
-#| msgid "Shuffle"
 msgctxt "TensComplementUseEditor|"
 msgid "Shuffle"
 msgstr "Mescola"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:39
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Additions"
 msgctxt "TensComplementUseEditor|"
 msgid "Additions"
 msgstr "Addizioni"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:156
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "TensComplementUseEditor|"
 msgid "Dataset is empty."
 msgstr "Il nome dell'insieme di dati è vuoto."
@@ -1714,51 +1645,44 @@ msgstr "Il nome dell'insieme di dati è vuoto."
 #, qt-format
 msgctxt "TensComplementUseEditor|"
 msgid "Level %1 contains too many extra cards."
-msgstr ""
+msgstr "Il livello %1 contiene troppe schede aggiuntive."
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:175
-#, fuzzy, qt-format
-#| msgctxt "ComparatorEditor|"
-#| msgid "Level %1 must not be empty."
+#, qt-format
 msgctxt "TensComplementUseEditor|"
 msgid "Level %1 must not be empty."
 msgstr "Il livello %1 non deve essere vuoto."
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:184
-#, fuzzy, qt-format
-#| msgctxt "MultipleChoiceEditor|"
-#| msgid "\"Answers\" in Sublevel %1 of Level %2 must not be empty."
+#, qt-format
 msgctxt "TensComplementUseEditor|"
 msgid "Sublevel %2 of Level %1 must not be empty."
-msgstr "«Risposte» nel sottolivello %1 del livello %2 non deve essere vuoto."
+msgstr "Il sottolivello %2 del livello %1 non deve essere vuoto."
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:194
-#, fuzzy, qt-format
-#| msgctxt "MultipleChoiceEditor|"
-#| msgid "\"Question\" in Sublevel %1 of Level %2 must not be empty."
+#, qt-format
 msgctxt "TensComplementUseEditor|"
 msgid "Addition %3 of Sublevel %2 of Level %1 is not correct."
-msgstr "«Domande» nel sottolivello %1 del livello %2 non deve essere vuoto."
+msgstr "L'addizione %3 del sottolivello %2 del livello %1 non è corretta."
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:204
 #, qt-format
 msgctxt "TensComplementUseEditor|"
 msgid "Sublevel %2 of Level %1 contains invalid extra cards."
 msgstr ""
+"Il sottolivello %2 del livello %1 contiene schede aggiuntive non valide."
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:212
 #, qt-format
 msgctxt "TensComplementUseEditor|"
 msgid "Sublevel %2 of Level %1 contains too many extra cards."
-msgstr ""
+msgstr "Il sottolivello %2 del livello %1 contiene troppe schede aggiuntive."
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:220
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "TensComplementUseEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "I seguenti errori devono essere corretti:<ul>%1</ul>"
+msgstr "È necessario correggere i seguenti errori:<ul>%1</ul>"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:29
 msgctxt "VerticalEditor|"
