@@ -89,6 +89,7 @@ Q_SIGNALS:
     void allCharactersChanged();
     void startingActivityChanged();
     void startingLevelChanged();
+    void activitiesWithoutDatasets(QList<ActivityInfo *> activitiesWithoutActiveDatasets);
 
 private:
     explicit ActivityInfoTree(QObject *parent = nullptr);

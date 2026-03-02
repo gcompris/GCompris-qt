@@ -300,6 +300,8 @@ void ActivityInfoTree::initialize(QQmlEngine *engine)
 
     const QStringList activities = getActivityList();
     QString startingActivity = m_startingActivity;
+
+    QList<ActivityInfo *> activitiesWithoutActiveDatasets;
     for (const QString &line: activities) {
         QString url = QString("qrc:/gcompris/src/activities/%1/ActivityInfo.qml").arg(line);
 
@@ -319,6 +321,10 @@ void ActivityInfoTree::initialize(QQmlEngine *engine)
             // Check if the activity is the one we want to start in and set the full name
             if (!startingActivity.isEmpty() && startingActivity == line) {
                 startingActivity = activityInfo->name();
+            }
+
+            if(!activityInfo->levels().empty() && activityInfo->currentLevels().empty()) {
+                activitiesWithoutActiveDatasets << activityInfo;
             }
         }
         else {
@@ -342,6 +348,10 @@ void ActivityInfoTree::initialize(QQmlEngine *engine)
     }
     else {
         m_startingActivity = startingActivity;
+    }
+
+    if (!activitiesWithoutActiveDatasets.empty()) {
+        Q_EMIT activitiesWithoutDatasets(activitiesWithoutActiveDatasets);
     }
 
     filterByTag("favorite", "", false);
@@ -494,11 +504,15 @@ void ActivityInfoTree::removeDataset(const QJsonObject &dataset, bool clearCache
                 ignoredLevels.removeOne(datasetName);
                 ApplicationSettings::getInstance()->setIgnoredLevels(activityName, ignoredLevels);
             }
+
+            if (clearCache) {
+                if (!activity->levels().empty() && activity->currentLevels().empty()) {
+                    Q_EMIT activitiesWithoutDatasets({activity});
+                }
+                engine->clearComponentCache();
+            }
             break;
         }
-    }
-    if (clearCache) {
-        engine->clearComponentCache();
     }
 }
 
@@ -515,6 +529,19 @@ void ActivityInfoTree::removeAllLocalDatasets()
             removeDataset(dataset, false);
         }
     }
+
+    QList<ActivityInfo *> activitiesWithoutActiveDatasets;
+    const auto &constMenuTreeFull = m_menuTreeFull;
+    for (const auto &activity: constMenuTreeFull) {
+        if(!activity->levels().empty() && activity->currentLevels().empty()) {
+            activitiesWithoutActiveDatasets << activity;
+        }
+    }
+
+    if (!activitiesWithoutActiveDatasets.empty()) {
+        Q_EMIT activitiesWithoutDatasets(activitiesWithoutActiveDatasets);
+    }
+
     QQmlEngine *engine = qmlEngine(this);
     engine->clearComponentCache();
 }

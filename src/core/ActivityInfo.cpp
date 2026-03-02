@@ -416,6 +416,8 @@ bool ActivityInfo::acceptDataset() const
 
 void ActivityInfo::resetLevels()
 {
+    m_ignoredLevels.clear();
+    ApplicationSettings::getInstance()->setIgnoredLevels(shortName(), m_ignoredLevels);
     enableDatasetsBetweenDifficulties(1, 6);
 }
 

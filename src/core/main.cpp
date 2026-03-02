@@ -307,6 +307,7 @@ int main(int argc, char *argv[])
 
     ClientNetworkMessages clientNetworkMessages;
     engine.rootContext()->setContextProperty("clientNetworkMessages", &clientNetworkMessages);
+    engine.rootContext()->setContextProperty("activityInfoTree", ActivityInfoTree::getInstance());
 
     QObject::connect(&engine, &QQmlApplicationEngine::quit, DownloadManager::getInstance(),
                      &DownloadManager::shutdown);

@@ -212,7 +212,7 @@ public:
     /*
      * Reset all the current levels to be enabled.
      */
-    void resetLevels();
+    Q_INVOKABLE void resetLevels();
 
     /*
      * Remove the dataset from the activity

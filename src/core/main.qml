@@ -487,6 +487,23 @@ Window {
     }
 
     Connections {
+        id: connectionActivityInfoTree
+        target: activityInfoTree
+        function onActivitiesWithoutDatasets(activitiesWithoutActiveDatasets) {
+            var text = "<ul>";
+            for (var i = 0; i < activitiesWithoutActiveDatasets.length; ++ i) {
+                text += "<li>" + activitiesWithoutActiveDatasets[i].title + "</li>";
+                // Restore datasets
+                activitiesWithoutActiveDatasets[i].resetLevels();
+            }
+            text += "</ul>";
+            Core.showMessageDialog(main,
+                                   qsTr("The following activities have no active dataset! All their datasets will be reactivated.") + "<br>" + text + "<br>",
+                                   "", null, "", null, null);
+        }
+    }
+
+    Connections {
         id: connection
         target: clientNetworkMessages
 
