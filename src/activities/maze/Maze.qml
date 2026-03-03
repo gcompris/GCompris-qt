@@ -28,6 +28,10 @@ ActivityBase {
 
     Keys.onPressed: (event) => { Activity.processPressedKey(event) }
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         source: Activity.url + "maze_bg.svg"
@@ -49,6 +53,9 @@ ActivityBase {
             property Item main: activity.main
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 25
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias mazeRows: maze.rows
             property alias mazeColumns: maze.columns
@@ -379,7 +386,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(activity.nextLevel)
         }
     }
 }

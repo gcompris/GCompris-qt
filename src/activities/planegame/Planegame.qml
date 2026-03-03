@@ -42,6 +42,10 @@ ActivityBase {
         oldHeight = height
     }
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         anchors.fill: parent
@@ -67,6 +71,9 @@ ActivityBase {
             property alias activityBackground: activityBackground
             property alias bar: bar
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias score: score
             property alias plane: plane
@@ -149,7 +156,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(activity.nextLevel)
         }
 
         Score {

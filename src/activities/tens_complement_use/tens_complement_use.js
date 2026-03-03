@@ -7,7 +7,6 @@
 .pragma library
 .import "../../core/core.js" as Core
 
-var numberOfLevel;
 var numberOfSubLevel;
 var items;
 var questionArrayValue = [null, "+", null, "=", null];
@@ -23,8 +22,8 @@ var questionList = [];
 
 function start(items_) {
     items = items_
-    numberOfLevel = items.levels.length;
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.numberOfLevel = items.levels.length;
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
     items.score.currentSubLevel = 0
     initLevel()
 }
@@ -283,7 +282,7 @@ function initLevel() {
 
 function nextLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     items.score.currentSubLevel = 0;
     initLevel();
 }
@@ -298,7 +297,7 @@ function nextSubLevel() {
 
 function previousLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     items.score.currentSubLevel = 0;
     initLevel();
 }

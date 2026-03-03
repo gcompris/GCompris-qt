@@ -23,6 +23,10 @@ ActivityBase {
     onStop: {}
     property bool isHorizontal: activityBackground.width >= activityBackground.height
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         source: Activity.resourceURL + "railroad-bg.svg"
@@ -44,6 +48,9 @@ ActivityBase {
             property Item main: activity.main
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel 
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 10
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias score: score
             property alias goodAnswerSound: goodAnswerSound

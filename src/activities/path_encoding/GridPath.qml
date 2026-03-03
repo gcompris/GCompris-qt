@@ -20,6 +20,10 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Rectangle {
         id: activityBackground
         color: "#42993E"
@@ -52,6 +56,9 @@ ActivityBase {
             property alias movesListModel: movesListModel
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
         }
 
@@ -257,7 +264,7 @@ ActivityBase {
         Bonus {
             id: bonus
             winSound: "qrc:/gcompris/src/activities/ballcatch/resource/tuxok.wav"
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(activity.nextLevel)
         }
 
         Keys.onLeftPressed: (items.mode === 'encode') ? Activity.moveTowards(Activity.Directions.LEFT) : null

@@ -12,13 +12,12 @@
 
 var url = "qrc:/gcompris/src/activities/color_mix/resource/"
 
-var numberOfLevel = 6
 var items
 var maxSteps = 1
 
 function start(items_) {
     items = items_
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
     items.score.numberOfSubLevels = 6
     items.score.currentSubLevel = 0
     initLevel()
@@ -66,13 +65,13 @@ function nextLevel() {
     items.score.stopWinAnimation()
     items.score.currentSubLevel = 0
 
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel()
 }
 
 function previousLevel() {
     items.score.stopWinAnimation()
     items.score.currentSubLevel = 0
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel()
 }

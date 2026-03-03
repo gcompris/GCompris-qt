@@ -14,7 +14,6 @@
 
 const svgUrl = "qrc:/gcompris/src/activities/frieze/resource/svg/"
 
-var numberOfLevel
 var items
 var friezeSize = 10
 var innerColor = "burlywood"
@@ -60,8 +59,8 @@ var noDupPatterns = {}      // Non-duplicate pattern (never use the same symbol 
 
 function start(items_) {
     items = items_;
-    numberOfLevel = items.levels.length;
-    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+    items.numberOfLevel = items.levels.length;
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
     for(var symbol in tokenSvg) {   // Load svg as source code
         shapes[symbol] = items.file.read(svgUrl + tokenSvg[symbol]);
         if (symbol === "e")
@@ -231,7 +230,7 @@ function checkResult() {
 
 function initLevel() {
     items.buttonsBlocked = false;
-    numberOfLevel = items.levels.length;
+    items.numberOfLevel = items.levels.length;
     items.instructionItem.text = items.levels[items.currentLevel].title;
     items.subLevelCount = items.levels[items.currentLevel].subLevels.length;
     if (items.levels[items.currentLevel].shuffle)
@@ -241,14 +240,14 @@ function initLevel() {
 
 function nextLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     items.currentSubLevel = 0;
     initLevel();
 }
 
 function previousLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     items.currentSubLevel = 0;
     initLevel();
 }

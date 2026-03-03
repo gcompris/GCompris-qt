@@ -34,7 +34,6 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var levels;
-var numberOfLevel;
 var items = null;
 var startingAltitudeReal = 100.0;
 var startingOffsetPx = 10;  // y-value for setting rocket initially
@@ -55,8 +54,8 @@ function start(items_) {
     items = items_;
     lastLevel = -1;
     levels = items_.levels;
-    numberOfLevel = levels.length;
-    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+    items.numberOfLevel = levels.length;
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
 
     barAtStart = GCompris.ApplicationSettings.isBarHidden;
     GCompris.ApplicationSettings.isBarHidden = true;
@@ -153,12 +152,12 @@ function getAltitudeReal()
 }
 
 function nextLevel() {
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 

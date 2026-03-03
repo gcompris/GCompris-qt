@@ -41,6 +41,10 @@ ActivityBase {
     Keys.onPressed: (event) => { Activity.processKeyPress(event.key) }
     Keys.onReleased: (event) => { Activity.processKeyRelease(event.key) }
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         source: "qrc:/gcompris/src/activities/maze/resource/maze_bg.svg"
@@ -114,6 +118,9 @@ ActivityBase {
             property Item main: activity.main
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias tilt: tilt
             property alias timer: timer
@@ -491,7 +498,7 @@ ActivityBase {
 
             looseSound: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
             Component.onCompleted: {
-                win.connect(Activity.nextLevel);
+                win.connect(activity.nextLevel);
                 loose.connect(Activity.initLevel);
             }
         }

@@ -21,7 +21,6 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-
     pageComponent: Rectangle {
         id: activityBackground
         anchors.fill: parent

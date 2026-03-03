@@ -71,7 +71,9 @@ ActivityBase {
             // we initialize it to -1, so on start() function,
             // it forces a layout refresh when it's set to 0
             property int currentLevel: -1
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
             property int numberOfLevel: dataset.length
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property bool buttonsBlocked: false
 
             property var dataset: [
@@ -197,13 +199,13 @@ ActivityBase {
 
             function nextLevel() {
                 score.stopWinAnimation()
-                currentLevel = Core.getNextLevel(currentLevel, numberOfLevel);
+                currentLevel = Core.getNextLevel(currentLevel, items.numberOfLevel);
                 initLevel();
             }
 
             function previousLevel() {
                 score.stopWinAnimation()
-                currentLevel = Core.getPreviousLevel(currentLevel, numberOfLevel);
+                currentLevel = Core.getPreviousLevel(currentLevel, items.numberOfLevel);
                 initLevel();
             }
 

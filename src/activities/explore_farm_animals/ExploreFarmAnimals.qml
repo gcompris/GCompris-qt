@@ -14,7 +14,7 @@ import core 1.0
 ExploreLevels {
     id: activity
 
-    numberOfLevels: 1
+    numberOfLevel: 1
     url: "qrc:/gcompris/src/activities/explore_farm_animals/resource/"
     hasAudioQuestions: true
     needsVoices: true

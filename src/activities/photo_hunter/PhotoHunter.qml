@@ -21,6 +21,10 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         anchors.fill: parent
@@ -44,6 +48,9 @@ ActivityBase {
             property alias brickSound: brickSound
             property alias bleepSound: bleepSound
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property var model
             property alias img1: img1
@@ -202,7 +209,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(activity.nextLevel)
         }
 
         Score {

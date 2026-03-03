@@ -14,7 +14,6 @@
 
 var url = "qrc:/gcompris/src/activities/braille_alphabets/resource/"
 
-var numberOfLevel
 var items
 var dataset
 var currentDataSet
@@ -22,8 +21,8 @@ var currentDataSet
 function start(items_, dataset_) {
     items = items_
     dataset = dataset_
-    numberOfLevel = dataset.length * 2
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.numberOfLevel = dataset.length * 2
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
     initLevel()
 }
 
@@ -102,13 +101,13 @@ function initLevel() {
 
 function nextLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 

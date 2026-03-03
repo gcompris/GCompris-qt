@@ -218,11 +218,11 @@ var levels = [
             {extraColor:0, graph:graphs[6]}
         ];
 
-var numberOfLevel = levels.length
 
 function start(items_) {
     items = items_
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.numberOfLevel = levels.length
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
     initLevel()
 }
 
@@ -324,12 +324,12 @@ function checkAdjacent() {
 }
 
 function nextLevel() {
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 

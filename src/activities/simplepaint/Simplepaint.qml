@@ -23,6 +23,10 @@ ActivityBase {
 
     onStart: focus = true
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         source: items.backgroundImg
@@ -148,6 +152,9 @@ ActivityBase {
         QtObject {
             id: items
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property int paintModel: 1
             property alias paintArea: paintArea
             property alias colorSelector: colorSelector
@@ -420,7 +427,7 @@ ActivityBase {
             }
             onReloadClicked: Activity.initLevel()
             onPreviousLevelClicked: Activity.previousLevel()
-            onNextLevelClicked: Activity.nextLevel()
+            onNextLevelClicked: activity.nextLevel()
             onHomeClicked: activity.home()
         }
     }

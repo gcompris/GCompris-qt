@@ -13,7 +13,6 @@
 .import core 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var numberOfLevel = 8
 var items
 var createdLineParts
 var movedOut = true
@@ -23,7 +22,7 @@ var isStopped = false
 function start(items_) {
     isStopped = false
     items = items_
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
     initLevel()
 }
 
@@ -103,12 +102,12 @@ function initLevel() {
 }
 
 function nextLevel() {
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 

@@ -15,7 +15,6 @@
 .import core 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var numberOfLevel = 10
 var solutionArray = []
 var backupListModel = []
 var isNewLevel = true
@@ -45,7 +44,7 @@ var dataset = {
 function start(items_) {
     items = items_;
     items.score.numberOfSubLevels = dataset["numberOfSubLevels"];
-    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
     items.score.currentSubLevel = 0;
     initLevel();
 }
@@ -98,7 +97,7 @@ function initLevel() {
 
 function nextLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     items.score.currentSubLevel = 0;
     isNewLevel = true;
     initLevel();
@@ -106,7 +105,7 @@ function nextLevel() {
 
 function previousLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     items.score.currentSubLevel = 0;
     isNewLevel = true;
     initLevel();

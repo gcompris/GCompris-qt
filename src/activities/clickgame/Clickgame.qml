@@ -23,6 +23,10 @@ ActivityBase {
     onStart: {}
     onStop: {}
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         signal start
@@ -62,6 +66,9 @@ ActivityBase {
             property alias score: score
             property alias killedFishes: score.currentSubLevel
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
         }
 
         Timer {
@@ -110,7 +117,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(activity.nextLevel)
         }
     }
 

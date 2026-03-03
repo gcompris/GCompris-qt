@@ -27,6 +27,10 @@ ActivityBase {
         Activity.processKey(event);
     }
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         signal start
@@ -48,6 +52,9 @@ ActivityBase {
             id: items
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias ball: ball
             property alias smudgeSound: smudgeSound
             property alias rightHand: rightHand
@@ -100,7 +107,7 @@ ActivityBase {
             winSound: "qrc:/gcompris/src/activities/ballcatch/resource/tuxok.wav"
             looseSound: "qrc:/gcompris/src/activities/ballcatch/resource/youcannot.wav"
             Component.onCompleted: {
-                win.connect(Activity.nextLevel);
+                win.connect(activity.nextLevel);
                 loose.connect(Activity.restartLevel);
             }
             onStart: tux.opacity = 0;

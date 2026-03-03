@@ -25,6 +25,10 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         anchors.fill: parent
@@ -54,6 +58,9 @@ ActivityBase {
             property alias player1score: player1score
             property alias player2score: player2score
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias repeater: repeater
             property alias columns: grid.columns

@@ -23,6 +23,10 @@ ActivityBase {
 
     property var dataset
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         anchors.fill: parent
@@ -57,6 +61,9 @@ ActivityBase {
             readonly property var levels: activity.datasets
             property alias tuxMoney: tuxMoney
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property int itemIndex
             property int moneyCount
@@ -323,7 +330,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(activity.nextLevel)
         }
     }
 

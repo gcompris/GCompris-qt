@@ -11,7 +11,6 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/maze/resource/"
-var numberOfLevel = 25
 var items
 var relativeMode
 var invisibleMode
@@ -30,7 +29,7 @@ function start(items_, relativeMode_, invisibleMode_) {
     items = items_
     relativeMode = relativeMode_
     invisibleMode = invisibleMode_
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
     initLevel()
 }
 
@@ -238,12 +237,12 @@ function generateMaze(x, y) {
 }
 
 function nextLevel() {
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 

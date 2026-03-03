@@ -29,6 +29,10 @@ ActivityBase {
     // so limit more by default on mobile which typically has less RAM than computers
     property int undoSetting: ApplicationInfo.isMobile ? 5 : 10
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Rectangle {
         id: activityBackground
 
@@ -47,7 +51,9 @@ ActivityBase {
             property Item main: activity.main
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
-            property alias bonus: bonus
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 2
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             readonly property bool isHorizontalLayout: activityBackground.width >= activityBackground.height
 
             property alias creationHandler: creationHandler
@@ -1391,7 +1397,7 @@ ActivityBase {
                         activity.home()
                         break
                     case "next" :
-                        Activity.nextLevel()
+                        activity.nextLevel()
                         break
                     case "previous" :
                         Activity.previousLevel()
@@ -1439,7 +1445,7 @@ ActivityBase {
             content: BarEnumContent { value: help | home | level | reload | activityConfig }
             onHelpClicked: displayDialog(dialogHelp)
             onPreviousLevelClicked: Activity.previousLevel()
-            onNextLevelClicked: Activity.nextLevel()
+            onNextLevelClicked: activity.nextLevel()
             onReloadClicked: {
                 if(!items.isFileSaved) {
                     items.actionAfter = "create"
@@ -1454,11 +1460,6 @@ ActivityBase {
             onHomeClicked: {
                 activityBackground.requestHome()
             }
-        }
-
-        Bonus {
-            id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
 }

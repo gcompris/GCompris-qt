@@ -15,7 +15,6 @@
 .import core 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var numberOfLevel = 7
 var items
 var userDir = "file://" + GCompris.ApplicationSettings.userDataPath + "/" + "piano_composition"
 var userFile = userDir + "/melodies.json"
@@ -45,7 +44,7 @@ var instructions = [{
 
 function start(items_) {
     items = items_
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
     initLevel()
 }
 
@@ -118,12 +117,12 @@ function undoChange() {
 
 function nextLevel() {
     items.multipleStaff.eraseAllNotes()
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel()
 }
 
 function previousLevel() {
     items.multipleStaff.eraseAllNotes()
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel()
 }

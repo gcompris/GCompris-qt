@@ -22,6 +22,10 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         source: Activity.url + "background.svg"
@@ -45,6 +49,9 @@ ActivityBase {
             property int numberOfBalls: 1
             property alias answerBallsPlacement: answerBallsPlacement
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 4
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias okArea: okArea
 

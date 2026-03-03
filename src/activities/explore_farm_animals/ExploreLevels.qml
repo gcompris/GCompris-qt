@@ -20,7 +20,6 @@ import "explore-level.js" as Activity
 ActivityBase {
     id: activity
 
-    property int numberOfLevels
     property string url
     property bool hasAudioQuestions
     property bool needsVoices: false
@@ -29,6 +28,10 @@ ActivityBase {
     onStop: {}
 
     isMusicalActivity: needsVoices
+
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
 
     pageComponent: Image {
         id: activityBackground
@@ -81,6 +84,9 @@ ActivityBase {
             property alias badAnswerSound: badAnswerSound
             property Item main: activity.main
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: activity.numberOfLevel
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias score: score
             property alias progressbar: progressbar
@@ -110,7 +116,7 @@ ActivityBase {
 
         onStart: {
             activity.audioVoices.done.connect(voiceDone)
-            Activity.start(items, url, numberOfLevels)
+            Activity.start(items, url)
             if(activity.needsVoices === true) {
                 if(!ApplicationSettings.isAudioVoicesEnabled || !ApplicationSettings.isAudioEffectsEnabled)
                     activityBackground.audioDisabled = true

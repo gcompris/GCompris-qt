@@ -23,6 +23,10 @@ ActivityBase {
     onStop: {}
     isMusicalActivity: true
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Rectangle {
         id: activityBackground
         anchors.fill: parent
@@ -46,8 +50,10 @@ ActivityBase {
             property var questionToPlay
             property var answer
             property alias questionInterval: questionPlayer.interval
-            readonly property int numberOfLevel: 10
             property int currentLevel: 0
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            readonly property int numberOfLevel: 10
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property bool running: false
             property bool buttonsBlocked: false
         }

@@ -21,6 +21,10 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Item {
         id: activityBackground
         anchors.fill: parent
@@ -41,6 +45,9 @@ ActivityBase {
             property alias miningBg: miningBg
             property alias tuto: tuto
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 3
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias mineModel: mineObjects.model
             property alias rainbowSound: rainbowSound
@@ -558,7 +565,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(activity.nextLevel)
         }
 
     }

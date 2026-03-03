@@ -23,6 +23,10 @@ ActivityBase {
 
     property string mode: "minus"
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         anchors.fill: parent
@@ -58,6 +62,9 @@ ActivityBase {
             property alias activityBackground: activityBackground
             property alias smudgeSound: smudgeSound
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             readonly property var levels: activity.datasets
             property alias bonus: bonus
             property alias hat: theHat
@@ -275,7 +282,7 @@ ActivityBase {
         Bonus {
             id: bonus
             onLoose: items.inputBlocked = false
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(activity.nextLevel)
         }
     }
 

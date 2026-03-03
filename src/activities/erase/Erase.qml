@@ -24,6 +24,10 @@ ActivityBase {
     onStart: {}
     onStop: {}
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         signal start
@@ -45,6 +49,9 @@ ActivityBase {
             property alias activityBackground: activityBackground
             property alias blocks: blocks
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 6
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias score: score
             property alias okButton: okButton

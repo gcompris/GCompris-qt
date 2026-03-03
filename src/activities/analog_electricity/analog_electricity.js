@@ -17,7 +17,6 @@
 var url = "qrc:/gcompris/src/activities/analog_electricity/resource/";
 var urlDigital = "qrc:/gcompris/src/activities/digital_electricity/resource/";
 
-var numberOfLevel;
 var items;
 var view;
 var toolDelete;
@@ -80,8 +79,8 @@ var viewPort = {
 
 function start(items_) {
     items = items_;
-    numberOfLevel = items.tutorialDataset.tutorialLevels.length;
-    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+    items.numberOfLevel = items.tutorialDataset.tutorialLevels.length;
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
     initLevel();
 }
 
@@ -287,12 +286,12 @@ function updateComponentDimension(zoomRatio) {
 }
 
 function nextLevel() {
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     reset();
 }
 
 function previousLevel() {
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     reset();
 }
 

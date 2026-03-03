@@ -23,6 +23,10 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         source: activity.resourceUrl + "background.svg"
@@ -49,6 +53,9 @@ ActivityBase {
             property alias fire: fire
             property alias lineBrokenTimer: lineBrokenTimer
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 8
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property int currentLock: 0
             property int lastLock: 0
@@ -145,7 +152,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(activity.nextLevel)
         }
 
         MouseArea {

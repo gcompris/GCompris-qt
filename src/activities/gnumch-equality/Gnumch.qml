@@ -29,6 +29,10 @@ ActivityBase {
     onStart: {}
     onStop: {}
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         anchors.fill: parent
@@ -49,6 +53,9 @@ ActivityBase {
             property alias modelCells: modelCells
             property alias bonus: bonus
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias eatSound: eatSound
             property alias smudgeSound: smudgeSound
             property int goal: 1
@@ -349,7 +356,7 @@ ActivityBase {
         Bonus {
             id: bonus
             Component.onCompleted: {
-                win.connect(Activity.nextLevel);
+                win.connect(activity.nextLevel);
                 loose.connect(Activity.initLevel)
             }
         }

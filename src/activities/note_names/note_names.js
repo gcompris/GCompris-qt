@@ -11,7 +11,6 @@
 .import QtQuick as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var numberOfLevel
 var dataset
 var items
 var levels
@@ -28,8 +27,8 @@ function start(items_, timerNormalInterval_) {
     timerNormalInterval = timerNormalInterval_
     dataset = items.dataset.item
     levels = dataset.levels
-    numberOfLevel = levels.length
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.numberOfLevel = levels.length
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
     items.doubleOctave.coloredKeyLabels = dataset.referenceNotes[levels[0]["clef"]]
     items.doubleOctave.currentOctaveNb = 1
     items.introMessage.intro.clear();
@@ -153,11 +152,11 @@ function checkAnswer(noteName) {
 }
 
 function nextLevel() {
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel)
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel)
     initLevel()
 }
 
 function previousLevel() {
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel()
 }

@@ -11,7 +11,6 @@
 
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var numberOfLevel = 10;
 var items;
 var selectedArrow;
 var pastQuestionsH = [];
@@ -21,8 +20,8 @@ var targetHour;
 
 function start(items_) {
     items = items_;
-    numberOfLevel = items.levels.length;
-    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+    items.numberOfLevel = items.levels.length;
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
     pastQuestionsH = [];
     pastQuestionsM = [];
     pastQuestionsS = [];
@@ -195,7 +194,7 @@ function checkAnswer() {
 
 function nextLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     pastQuestionsH = [];
     pastQuestionsM = [];
     pastQuestionsS = [];
@@ -204,7 +203,7 @@ function nextLevel() {
 
 function previousLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     pastQuestionsH = [];
     pastQuestionsM = [];
     pastQuestionsS = [];

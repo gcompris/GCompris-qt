@@ -12,7 +12,6 @@
 .import QtQuick as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var numberOfLevel = 3
 var items
 var maxSubLevel;
 var set = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
@@ -22,7 +21,7 @@ var url = "qrc:/gcompris/src/activities/braille_fun/resource/"
 
 function start(items_ ) {
     items = items_
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
     initLevel()
 }
 
@@ -83,12 +82,12 @@ function goodAnswer() {
 
 function nextLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }

@@ -12,7 +12,6 @@
 .import QtQuick as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var numberOfLevel = 10
 var noteIndexAnswered
 var items
 var levels
@@ -21,7 +20,7 @@ var isIntroductoryAudioPlaying = false
 
 function start(items_) {
     items = items_
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
     levels = items.parser.parseFromUrl("qrc:/gcompris/src/activities/play_piano/dataset.json").levels
     items.introductoryAudioTimer.start()
     initLevel()
@@ -101,12 +100,12 @@ function answerFeedback() {
 
 function nextLevel() {
     items.score.stopWinAnimation()
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
     items.score.stopWinAnimation()
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }

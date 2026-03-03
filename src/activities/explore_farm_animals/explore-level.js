@@ -14,15 +14,13 @@
 .import core 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var numberOfLevel
 var items
 var url
 
-function start(items_,url_,levelCount_) {
+function start(items_,url_) {
     items = items_
     url = url_
-    numberOfLevel = levelCount_
-    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
     items.score.currentSubLevel = 1
 
     initLevel()
@@ -57,7 +55,7 @@ function initLevel() {
 function nextLevel() {
     items.progressbar.stopWinAnimation()
     ++items.score.currentSubLevel
-    if((items.currentLevel + 1) >= numberOfLevel && items.score.numberOfSubLevels < items.score.currentSubLevel)
+    if((items.currentLevel + 1) >= items.numberOfLevel && items.score.numberOfSubLevels < items.score.currentSubLevel)
     {
         items.currentLevel = -1
     }
@@ -81,7 +79,7 @@ function previousLevel() {
     --items.score.currentSubLevel
     if(items.currentLevel <= 0 && items.score.currentSubLevel < 1)
     {
-        items.currentLevel = numberOfLevel-1
+        items.currentLevel = items.numberOfLevel-1
         items.score.currentSubLevel = items.score.numberOfSubLevels
     }
     else if(items.score.currentSubLevel < 1) {

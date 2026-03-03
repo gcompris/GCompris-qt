@@ -20,6 +20,10 @@ ActivityBase {
 
     onStart: focus = true;
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Rectangle {
         id: activityBackground
         color: GCStyle.lightBlueBg
@@ -30,6 +34,9 @@ ActivityBase {
         QtObject {
             id: items
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias imageAnimOff: imageAnimOff
             property alias leftButton: leftButton

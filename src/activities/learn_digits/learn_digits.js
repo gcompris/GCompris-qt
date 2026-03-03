@@ -12,7 +12,6 @@
 .import core 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var numberOfLevel;
 var items;
 var operationMode;
 var questionsArray;
@@ -25,8 +24,8 @@ function start(items_, operationMode_) {
     operationMode = operationMode_;
     if(!operationMode && items.voicesEnabled)
         Core.checkForVoices(items_.activityPage);
-    numberOfLevel = items.levels.length;
-    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+    items.numberOfLevel = items.levels.length;
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
 }
 
 function stop() {
@@ -60,14 +59,14 @@ function initLevel() {
 
 function nextLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     items.score.currentSubLevel = 0;
     initLevel();
 }
 
 function previousLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     items.score.currentSubLevel = 0;
     initLevel();
 }

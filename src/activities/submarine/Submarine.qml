@@ -26,6 +26,10 @@ ActivityBase {
 
     property string url: "qrc:/gcompris/src/activities/submarine/resource/"
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         source: url + "background.svg"
@@ -100,6 +104,9 @@ ActivityBase {
             property Item main: activity.main
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 10
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias crown: crown
             property alias whale: whale
@@ -999,7 +1006,7 @@ ActivityBase {
         Bonus {
             id: bonus
             onLoose: Activity.initLevel()
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(activity.nextLevel)
         }
         /*
         DebugDraw {

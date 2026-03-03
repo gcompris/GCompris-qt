@@ -26,6 +26,10 @@ ActivityBase {
     Keys.onPressed: (event) => { Activity.processKeyPress(event) }
     Keys.onReleased: (event) => { Activity.processKeyRelease(event) }
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Rectangle {
         id: activityBackground
         anchors.fill: parent
@@ -49,6 +53,9 @@ ActivityBase {
             property bool startMessage: true
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias processTimer: processTimer
             property alias planetCreation: planetCreation
@@ -205,7 +212,7 @@ ActivityBase {
             id: bonus
             Component.onCompleted: {
                 loose.connect(Activity.initLevel)
-                win.connect(Activity.nextLevel)
+                win.connect(activity.nextLevel)
             }
         }
 

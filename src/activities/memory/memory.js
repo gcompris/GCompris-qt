@@ -17,7 +17,6 @@
 var url = "qrc:/gcompris/src/activities/memory/resource/"
 
 var items
-var numberOfLevel
 var nbOfPair
 var cardLeft
 var cardList
@@ -26,8 +25,8 @@ function start(items_) {
 
     items = items_
 
-    numberOfLevel = items.levels.length
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.numberOfLevel = items.levels.length
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
 
     initLevel()
 }
@@ -136,7 +135,7 @@ function getShownPair() {
 // Calc randomly if Tux is a good player
 // Return true if Tux should play correctly
 function getRandomTuxIsGood() {
-    return Math.random() * numberOfLevel < items.currentLevel
+    return Math.random() * items.numberOfLevel < items.currentLevel
 }
 
 function chooseCard() {
@@ -276,12 +275,12 @@ function repeatCurrentLevel() {
 }
 
 function nextLevel() {
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 

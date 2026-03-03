@@ -13,12 +13,11 @@
 .import QtQuick as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var numberOfLevel = 10
 var items
 
 function start(items_) {
     items = items_
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
     initLevel()
 }
 
@@ -83,7 +82,7 @@ function nextLevel() {
     items.processingAnswer = true
     closeGate()
 
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
@@ -91,6 +90,6 @@ function previousLevel() {
     items.processingAnswer = true
     closeGate()
 
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }

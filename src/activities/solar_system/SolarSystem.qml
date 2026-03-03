@@ -21,6 +21,10 @@ ActivityBase {
     }
     onStop: {}
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Rectangle {
         id: activityBackground
         anchors.fill: parent
@@ -61,6 +65,9 @@ ActivityBase {
             property Item main: activity.main
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bar: bar
             property alias bonus: bonus
             property alias planetsModel: planetsModel
@@ -387,7 +394,7 @@ ActivityBase {
                 if(activityData && activityData["mode"]) {
                     items.mode = activityData["mode"];
                 }
-                Activity.numberOfLevel = items.assessmentMode ? 1 : 2
+                items.numberOfLevel = items.assessmentMode ? 1 : 2
             }
         }
 
@@ -439,7 +446,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(activity.nextLevel)
         }
     }
 }

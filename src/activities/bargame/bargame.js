@@ -35,7 +35,6 @@ var levelsProperties = [
 ];
 
 var moveCount = -1
-var numberOfLevel = 4
 var listWin = []
 var items
 var gameMode
@@ -45,7 +44,7 @@ var url= "qrc:/gcompris/src/activities/bargame/resource/";
 function start(items_, gameMode_) {
     items = items_;
     gameMode = gameMode_;
-    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
     initLevel();
 }
 
@@ -74,12 +73,12 @@ function initLevel() {
 }
 
 function nextLevel() {
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
@@ -115,7 +114,7 @@ function calculateWinPlaces() {
         winners = [];
     } else {
         winners = winners.slice(-levelWin);
-        if (items.currentLevel == numberOfLevel - 1) {
+        if (items.currentLevel == items.numberOfLevel - 1) {
             winners = winners.slice(1);
         }
     }

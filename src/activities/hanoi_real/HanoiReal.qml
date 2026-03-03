@@ -27,6 +27,10 @@ ActivityBase {
     property string activityMode: "real"
     resourceUrl: "qrc:/gcompris/src/activities/hanoi_real/resource/"
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         source: activity.resourceUrl + "background.svg"
@@ -47,6 +51,9 @@ ActivityBase {
             property Item main: activity.main
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias discRepeater: discRepeater
             property alias towerModel: towerModel
@@ -216,7 +223,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(activity.nextLevel)
         }
     }
 }

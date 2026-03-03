@@ -10,7 +10,6 @@
 .import "../../core/core.js" as Core
 
 var items;
-var numberOfLevel = 3;
 var animalCountForBonus = 0;
 var cardsToDisplay;
 // different number of cards to display per level
@@ -26,7 +25,7 @@ var Position = {
 
 function start(items_) {
     items = items_
-    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
     initLevel()
 }
 
@@ -83,12 +82,12 @@ function initLevel() {
 }
 
 function nextLevel() {
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 

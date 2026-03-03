@@ -20,14 +20,13 @@ var baseUrl = "qrc:/gcompris/src/activities/guesscount/resource";
 var builtinFile = baseUrl + "/levels-default.json";
 var dataset = []
 
-var numberOfLevel = Data.levelSchema.length
 var items
 var dataItems
 var levelSchema
 
 function start(items_) {
     items = items_
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
     initLevel()
 }
 
@@ -52,14 +51,14 @@ function initLevel() {
         }
 
         defaultOperators = multipleDataOperators
-        numberOfLevel = multipleDataSchema.length
+        items.numberOfLevel = multipleDataSchema.length
         dataItems = multipleDataItems
         levelSchema = multipleDataSchema
         items.data = buildDataset(dataItems, levelSchema)
         items.operatorRow.repeater.model = defaultOperators[items.currentLevel]
     }
     else if(items.mode === "admin") {
-        numberOfLevel = Data.levelSchema.length
+        items.numberOfLevel = Data.levelSchema.length
         items.data = buildDataset(Data.dataset, Data.levelSchema)
         items.operatorRow.repeater.model = items.levelArr[items.currentLevel]
     }
@@ -78,7 +77,7 @@ function clearOperations() {
     items.clearOperations = false
 }
 
-function initSubLevel(){
+function initSubLevel() {
     clearOperations()
     items.operandRow.repeater.model = items.data[items.score.currentSubLevel][0]
     items.result = items.data[items.score.currentSubLevel][1]
@@ -99,14 +98,14 @@ function nextSubLevel() {
 function nextLevel() {
     items.score.stopWinAnimation();
     items.score.currentSubLevel = 0;
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel()
 }
 
 function previousLevel() {
     items.score.stopWinAnimation();
     items.score.currentSubLevel = 0;
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel()
 }
 

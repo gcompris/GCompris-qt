@@ -19,6 +19,10 @@ ActivityBase {
         focus = true;
     }
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         source: "qrc:/gcompris/src/activities/algebra_by/resource/background.svg"
@@ -38,6 +42,9 @@ ActivityBase {
             id: items
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias score: score
             property alias errorRectangle: errorRectangle
@@ -188,7 +195,7 @@ ActivityBase {
             id: bonus
             Component.onCompleted: {
                 loose.connect(Activity.run)
-                win.connect(Activity.nextLevel)
+                win.connect(activity.nextLevel)
             }
         }
 

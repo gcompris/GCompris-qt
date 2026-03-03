@@ -24,6 +24,10 @@ ActivityBase {
 
     property bool vert: activityBackground.width <= activityBackground.height
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
@@ -44,6 +48,9 @@ ActivityBase {
             property Item main: activity.main
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias categoryReview: categoryReview
             property alias menuScreen: menuScreen
@@ -137,7 +144,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(activity.nextLevel)
             onStop: items.okEnabled = true
         }
 

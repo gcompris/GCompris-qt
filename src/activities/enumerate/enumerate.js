@@ -17,7 +17,6 @@ var url2 = "qrc:/gcompris/src/activities/algorithm/resource/";
 var items;
 var maxSubLevel;
 var dataset;
-var numberOfLevel;
 var numberOfItemType;
 var numberOfItemMax;
 var itemIcons = [
@@ -46,8 +45,8 @@ function start(items_) {
     items = items_;
     answersMode = items.mode;
     dataset = items.levels;
-    numberOfLevel = dataset.length;
-    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+    items.numberOfLevel = dataset.length;
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
     initLevel();
 }
 
@@ -70,13 +69,13 @@ function initLevel() {
 
 function nextLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 

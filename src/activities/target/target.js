@@ -15,17 +15,16 @@
 var url = "qrc:/gcompris/src/activities/target/resource/"
 
 var levels
-var numberOfLevel
 var items
 
 function start(items_) {
     items = items_
     levels = items.levels
-    numberOfLevel = levels.length
+    items.numberOfLevel = levels.length
     items.score.currentSubLevel = 0
     items.numberOfSubLevel = 5
 
-    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
 
     initLevel()
 }
@@ -59,14 +58,14 @@ function nextSubLevel() {
 function nextLevel() {
     items.score.stopWinAnimation();
     items.score.currentSubLevel = 0;
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
     items.score.stopWinAnimation();
     items.score.currentSubLevel = 0;
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 

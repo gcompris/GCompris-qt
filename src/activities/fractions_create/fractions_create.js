@@ -9,7 +9,6 @@
 .import QtQuick as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var numberOfLevel;
 var levels;
 var items;
 
@@ -18,8 +17,8 @@ var previousQuestion = {"numerator": -1, "denominator": -1};
 function start(items_) {
     items = items_;
     levels = items.levels;
-    numberOfLevel = levels.length;
-    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+    items.numberOfLevel = levels.length;
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
     initLevel();
 }
 
@@ -90,7 +89,7 @@ function initSubLevel() {
 
 function nextLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
@@ -106,7 +105,7 @@ function nextSubLevel() {
 
 function previousLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 

@@ -64,7 +64,6 @@ var currentInstruction
 
 var url = "qrc:/gcompris/src/activities/programmingMaze/resource/"
 var reverseCountUrl = "qrc:/gcompris/src/activities/reversecount/resource/"
-var numberOfLevel
 var items
 
 var NORTH = 0
@@ -94,8 +93,8 @@ var instructionComponents = {
 function start(items_) {
     items = items_
     mazeBlocks = items.levels
-    numberOfLevel = mazeBlocks.length
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.numberOfLevel = mazeBlocks.length
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
     resetTux = false
     initLevel()
 }
@@ -338,13 +337,13 @@ function checkSuccessAndExecuteNextInstruction() {
 
 function nextLevel() {
     resetTux = false
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
     resetTux = false
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 

@@ -18,14 +18,13 @@
 var items;
 var url = "qrc:/gcompris/src/activities/family/resource/"
 
-var numberOfLevel
 var shuffledLevelIndex = []
 var levelToLoad
 
 function start(items_) {
     items = items_
-    numberOfLevel = items.dataset.levelElements.length
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.numberOfLevel = items.dataset.levelElements.length
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
 
     shuffle()
 
@@ -106,7 +105,7 @@ function loadDatasets() {
 }
 
 function shuffle() {
-    for (var i = 0;i < numberOfLevel;i++) {
+    for (var i = 0;i < items.numberOfLevel;i++) {
         shuffledLevelIndex[i] = i
     }
 
@@ -122,11 +121,11 @@ function getCurrentLevelIndex() {
 }
 
 function nextLevel() {
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }

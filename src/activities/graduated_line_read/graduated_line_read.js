@@ -9,7 +9,6 @@
 .import core 1.0 as GCompris // for ApplicationInfo
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var numberOfLevel
 var items
 var activityMode
 var maxSolutionSize = 0
@@ -204,9 +203,9 @@ function start(items_, activityMode_) {
     activityMode = activityMode_
     items.orientation = (Core.isLeftToRightLocale(GCompris.ApplicationSettings.locale)) ?  Qt.LeftToRight : Qt.RightToLeft
 //    items.orientation = Qt.RightToLeft  // Force RightToLeft here
-    // Make sure numberOfLevel is initialized before calling Core.getInitialLevel
-    numberOfLevel = items.levels.length
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    // Make sure items.numberOfLevel is initialized before calling Core.getInitialLevel
+    items.numberOfLevel = items.levels.length
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
     initLevel();
 }
 
@@ -225,13 +224,13 @@ function initLevel() {
 
 function nextLevel() {
     items.score.stopWinAnimation()
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
     items.score.stopWinAnimation()
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 

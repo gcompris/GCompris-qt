@@ -22,6 +22,10 @@ ActivityBase {
 
     onStart: focus = true
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         source: "qrc:/gcompris/src/activities/menu/resource/background.svg"
@@ -40,6 +44,9 @@ ActivityBase {
             id: items
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 12
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias hexagonModel: hexagonModel
             property alias winSound: winSound
@@ -134,7 +141,7 @@ ActivityBase {
         Bonus {
             id: bonus
             interval: 2000
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(activity.nextLevel)
         }
     }
 

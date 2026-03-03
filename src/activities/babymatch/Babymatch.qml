@@ -30,6 +30,10 @@ ActivityBase {
     onStart: focus = true;
     onStop: {}
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         anchors.fill: parent
@@ -51,6 +55,9 @@ ActivityBase {
             id: items
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias availablePieces: availablePieces
             property alias backgroundPiecesModel: backgroundPiecesModel
@@ -143,7 +150,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel);
+            Component.onCompleted: win.connect(activity.nextLevel);
         }
 
         Image {

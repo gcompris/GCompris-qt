@@ -66,12 +66,11 @@ var items
 var createdBlocks
 var killedBlocks
 
-var numberOfLevel = 6
 var blockImagesIndex
 
 function start(items_) {
     items = items_
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
     items_.currentSubLevel = 0
     currentImage = 0
     blockImagesIndex = 0
@@ -114,7 +113,7 @@ function initLevel() {
 
 function nextLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     items.currentSubLevel = 0;
     initLevel();
 }
@@ -129,7 +128,7 @@ function nextSubLevel() {
 
 function previousLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     items.currentSubLevel = 0;
     initLevel();
 }

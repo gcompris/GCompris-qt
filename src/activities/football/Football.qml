@@ -24,6 +24,10 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Rectangle {
         id: activityBackground
         anchors.fill: parent
@@ -48,6 +52,9 @@ ActivityBase {
             property alias tux: tux
             property alias moveTux: moveTux
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 8
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias timer: timer
             property alias brickSound: brickSound
@@ -164,7 +171,7 @@ ActivityBase {
                         id: tux
                         source: activity.resourceUrl+"tux_top.svg"
                         /* Increase size of TUX for each level */
-                        sourceSize.height: ball.height + (border.height - ball.height * 3) / Activity.numberOfLevel * (items.currentLevel + 1)
+                        sourceSize.height: ball.height + (border.height - ball.height * 3) / items.numberOfLevel * (items.currentLevel + 1)
                         x: border.width - tux.width
                         y: (border.height - tux.height) * 0.5
                         SequentialAnimation on y {
@@ -232,7 +239,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(activity.nextLevel)
         }
     }
 }

@@ -35,6 +35,10 @@ ActivityBase {
         }
     }
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         source: activity.dataSetUrl + "background.svg"
@@ -64,6 +68,9 @@ ActivityBase {
             property alias activityBackground: activityBackground
             property Item ourActivity: activity
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias keyboard: keyboard
             property alias hidden: hiddenTextPanel.textItem

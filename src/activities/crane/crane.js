@@ -14,7 +14,6 @@
 .import core 1.0 as GCompris
 
 var numberLevelsWords = 2
-var numberOfLevel
 var words3Letters = []
 var words4Letters = []
 var words5Letters = []
@@ -29,8 +28,8 @@ var levels
 function start(items_) {
     items = items_
     levels = items.levels
-    numberOfLevel = levels.length
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.numberOfLevel = levels.length
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
     currentLocale = GCompris.ApplicationInfo.getVoicesLocale(GCompris.ApplicationSettings.locale)
 
     /*: Translators: NOTE: Word list for crane activity.
@@ -343,7 +342,7 @@ function nextLevel() {
         items.answerRepeater.movingFigure.anim.stop();
     }
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
@@ -353,7 +352,7 @@ function previousLevel() {
         items.answerRepeater.movingFigure.anim.stop();
     }
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 

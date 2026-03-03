@@ -15,7 +15,6 @@
 .import core 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var numberOfLevel
 var items
 
 var savedTotalBoys
@@ -28,7 +27,7 @@ var subLevelData
 
 function start(items_) {
     items = items_
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
     initLevel()
 }
 
@@ -42,7 +41,7 @@ function initLevel() {
 function setUp() {
     items.errorRectangle.resetState()
     var levelData = items.levels
-    numberOfLevel = items.levels.length
+    items.numberOfLevel = items.levels.length
     subLevelData = levelData[items.currentLevel][items.score.currentSubLevel];
     // use board levels
     if (!subLevelData["randomisedInputData"]) {
@@ -204,14 +203,14 @@ function nextSubLevel() {
 
 function nextLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     items.score.currentSubLevel = 0;
     initLevel();
 }
 
 function previousLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     items.score.currentSubLevel = 0;
     initLevel();
 }

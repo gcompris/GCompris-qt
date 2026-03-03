@@ -12,7 +12,6 @@
 .import QtQuick as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var numberOfLevel;
 var items;
 var currentPiece;
 var currentPlayer;
@@ -31,8 +30,8 @@ var randomMiss;
 function start(items_, twoPlayer_) {
     items = items_;
     twoPlayer = twoPlayer_;
-    numberOfLevel = twoPlayer ? 1 : weight.length;
-    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+    items.numberOfLevel = twoPlayer ? 1 : weight.length;
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
     initLevel();
 }
 
@@ -83,12 +82,12 @@ function initLevel() {
 }
 
 function nextLevel() {
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 

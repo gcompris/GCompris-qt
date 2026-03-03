@@ -61,6 +61,9 @@ ActivityBase {
             property Item main: activity.main
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: dataset.length
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias score: score
             property alias textInput: textInput
@@ -69,7 +72,6 @@ ActivityBase {
             property bool audioMode: false
             property string questionText: ""
             property string questionValue
-            property int numberOfLevel: dataset.length
             property bool buttonsBlocked: false
             readonly property string middleDot: '·'
             readonly property var regexSpaceReplace: new RegExp(keyboard.space, "g")
@@ -121,13 +123,13 @@ ActivityBase {
 
             function nextLevel() {
                 score.stopWinAnimation();
-                currentLevel = Core.getNextLevel(currentLevel, numberOfLevel);
+                currentLevel = Core.getNextLevel(currentLevel, items.numberOfLevel);
                 initLevel();
             }
 
             function previousLevel() {
                 score.stopWinAnimation();
-                currentLevel = Core.getPreviousLevel(currentLevel, numberOfLevel);
+                currentLevel = Core.getPreviousLevel(currentLevel, items.numberOfLevel);
                 initLevel();
             }
 

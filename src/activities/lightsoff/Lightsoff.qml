@@ -25,6 +25,10 @@ ActivityBase {
 
     }
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         source: "qrc:/gcompris/src/activities/family/resource/background.svg"
@@ -51,6 +55,9 @@ ActivityBase {
             property alias activityBackground: activityBackground
             property alias scrollSound: scrollSound
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property bool isPortrait: (activityBackground.height >= activityBackground.width - tux.width)
             property alias nightSky: nightSky.opacity
@@ -292,7 +299,7 @@ ActivityBase {
         Bonus {
             id: bonus
             onStop: items.blockClicks = false
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(activity.nextLevel)
         }
     }
 }

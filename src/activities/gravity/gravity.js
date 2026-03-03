@@ -42,7 +42,6 @@ var levels = [
             }
         ]
 
-var numberOfLevel = levels.length;
 var items;
 var message;
 
@@ -60,7 +59,8 @@ var planetsCounter = 0;
 
 function start(items_,message_) {
     items = items_;
-    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+    items.numberOfLevel = levels.length;
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
     message = message_;
     initLevel();
 }
@@ -95,12 +95,12 @@ function initLevel() {
 }
 
 function nextLevel() {
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 

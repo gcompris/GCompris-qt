@@ -18,7 +18,6 @@ var items
 var lessons
 var categories
 var images
-var numberOfLevel
 var index
 var imagesData = []
 var categoriesData = []
@@ -129,7 +128,7 @@ function startCategory() {
 function storeCategoriesLevels(index_) {
     index = index_
     items.currentLevel = 0
-    numberOfLevel = 0
+    items.numberOfLevel = 0
     initLevel()
 }
 
@@ -137,7 +136,7 @@ function initLevel() {
     items.categoryReview.score.currentSubLevel = 0
     items.instructionsVisible = true
     getCategoryLevels(index);
-    numberOfLevel = items.details.length;
+    items.numberOfLevel = items.details.length;
     items.categoryReview.leftZone.clear();
     items.categoryReview.rightZone.clear();
     items.categoryReview.start();
@@ -145,14 +144,14 @@ function initLevel() {
 }
 
 function nextLevel() {
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     items.categoryReview.score.currentSubLevel = 0
     initLevel(index);
     getCategoryLevels();
 }
 
 function previousLevel() {
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel(index);
     getCategoryLevels();
 }

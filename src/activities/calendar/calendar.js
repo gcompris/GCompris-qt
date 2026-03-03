@@ -14,7 +14,6 @@
 .import core 1.0 as GCompris //for ApplicationInfo
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var numberOfLevel
 var currentDataSet
 var currentLevelConfig
 var dataset
@@ -27,8 +26,8 @@ var mode
 function start(items_, dataset_) {
     items = items_
     dataset = dataset_
-    numberOfLevel = dataset.length
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.numberOfLevel = dataset.length
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
 
     var currentLocale = Qt.locale(GCompris.ApplicationInfo.getVoicesLocale(GCompris.ApplicationSettings.locale))
     // First day of the week is either Saturday, Sunday or Monday depending on the country
@@ -62,13 +61,13 @@ function nextSubLevel() {
 
 function nextLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 

@@ -18,7 +18,6 @@ var url = "qrc:/gcompris/src/activities/money/resource/"
 // We create 3 prices categories to make the game more realistic.
 // List of images to use in the game (cheap objects)
 
-var numberOfLevel
 var dataset
 var items
 var centsMode
@@ -46,8 +45,8 @@ function start(items_, datasetName) {
             backMode = true
             break
     }
-    numberOfLevel = dataset.length
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.numberOfLevel = dataset.length
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
     initLevel()
 }
 
@@ -251,11 +250,11 @@ function unpay(index) {
 }
 
 function nextLevel() {
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }

@@ -11,7 +11,6 @@
 
 var url = "qrc:/gcompris/src/activities/colors/resource/"
 
-var numberOfLevel
 var items
 var dataset
 
@@ -26,8 +25,8 @@ function start(items_, dataset_, mode_) {
         Core.checkForVoices(items_.activityPage);
     items = items_
     dataset = dataset_
-    numberOfLevel = dataset.length
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.numberOfLevel = dataset.length
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
     items.firstQuestion = true
     items.audioOk = false
     items.score.currentSubLevel = 0
@@ -79,14 +78,14 @@ function nextQuestion() {
 function nextLevel() {
     items.score.stopWinAnimation()
     items.score.currentSubLevel = 0
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
     items.score.stopWinAnimation()
     items.score.currentSubLevel = 0
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 

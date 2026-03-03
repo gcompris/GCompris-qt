@@ -12,7 +12,6 @@
 .import QtQuick as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var numberOfLevel
 var currentNote = 0
 var items
 var levels
@@ -21,8 +20,8 @@ var isIntroductoryAudioPlaying = false
 function start(items_) {
     items = items_
     levels = items.parser.parseFromUrl("qrc:/gcompris/src/activities/play_rhythm/resource/dataset.json").levels
-    numberOfLevel = levels.length
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.numberOfLevel = levels.length
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
     items.introductoryAudioTimer.start()
     initLevel()
 }
@@ -102,12 +101,12 @@ function initSubLevel() {
 
 function nextLevel() {
     items.score.stopWinAnimation()
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel()
 }
 
 function previousLevel() {
     items.score.stopWinAnimation()
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel()
 }

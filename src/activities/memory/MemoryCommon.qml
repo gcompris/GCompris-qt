@@ -30,6 +30,10 @@ ActivityBase {
 
     isMusicalActivity: needsVoices
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         source: activity.backgroundImg
@@ -56,6 +60,9 @@ ActivityBase {
         QtObject {
             id: items
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias winSound: winSound
             property alias flipSound: flipSound
@@ -298,7 +305,7 @@ ActivityBase {
             id: bonus
             interval: 2000
             Component.onCompleted: {
-                win.connect(Activity.nextLevel)
+                win.connect(activity.nextLevel)
                 loose.connect(Activity.repeatCurrentLevel)
             }
         }

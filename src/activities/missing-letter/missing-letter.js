@@ -18,7 +18,6 @@ var url = "qrc:/gcompris/src/activities/missing-letter/resource/"
 var langUrl = "qrc:/gcompris/src/activities/lang/resource/";
 
 var items
-var numberOfLevel
 
 var questions
 var dataset
@@ -72,8 +71,8 @@ function start() {
 
     lessons = Lang.getAllLessons(dataset)
     questions = initDataset()
-    numberOfLevel = questions.length
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.numberOfLevel = questions.length
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
     initLevel()
 }
 
@@ -202,7 +201,7 @@ function showQuestion() {
 
 function nextLevel() {
     items.score.stopWinAnimation()
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
@@ -216,7 +215,7 @@ function nextSubLevel() {
 
 function previousLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 

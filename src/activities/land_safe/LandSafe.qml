@@ -38,6 +38,10 @@ ActivityBase {
     onHeightChanged: if (inForeground)
                          Activity.initLevel();
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
 
@@ -94,6 +98,9 @@ ActivityBase {
             property alias activityBackground: activityBackground
             property alias bar: bar
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias rocket: rocket
             property alias leftEngine: leftEngine
@@ -757,7 +764,7 @@ ActivityBase {
             id: bonus
             Component.onCompleted: {
                 loose.connect(Activity.initLevel);
-                win.connect(Activity.nextLevel);
+                win.connect(activity.nextLevel);
             }
         }
 

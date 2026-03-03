@@ -119,11 +119,11 @@ var backgrounds = [
 
 var items
 
-var numberOfLevel = backgrounds.length
 
 function start(items_) {
     items = items_
-    Core.getInitialLevel(numberOfLevel);
+    items.numberOfLevel = backgrounds.length;
+    Core.getInitialLevel(items.numberOfLevel);
     initLevel()
 }
 
@@ -149,12 +149,12 @@ function resetCursor() {
 }
 
 function nextLevel() {
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 

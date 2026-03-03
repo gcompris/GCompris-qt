@@ -8,7 +8,6 @@
 .import QtQuick as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var numberOfLevel;
 var items;
 var symbols;
 var url = "qrc:/gcompris/src/activities/sudoku/resource/";
@@ -80,8 +79,8 @@ function getVisualOperator(operator) {
 
 function start(items_) {
     items = items_;
-    numberOfLevel = items.levels.length;
-    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+    items.numberOfLevel = items.levels.length;
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
     items.score.currentSubLevel = 0;
     // Shuffle all levels
     for(var nb = 0 ; nb < items.levels.length ; ++ nb) {
@@ -401,14 +400,14 @@ function reinitLevel() {
 function nextLevel() {
     items.score.stopWinAnimation();
     items.score.currentSubLevel = 0;
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
     items.score.stopWinAnimation();
     items.score.currentSubLevel = 0;
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 

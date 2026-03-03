@@ -23,6 +23,10 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Rectangle {
         id: activityBackground
         anchors.fill: parent
@@ -50,6 +54,9 @@ ActivityBase {
             readonly property var levels: activity.datasets
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias chooseDiceBar: chooseDiceBar
             property alias tux: tux
@@ -297,7 +304,7 @@ ActivityBase {
             id: bonus
             winSound: "qrc:/gcompris/src/activities/ballcatch/resource/tuxok.wav"
             looseSound: "qrc:/gcompris/src/activities/ballcatch/resource/youcannot.wav"
-            onWin: Activity.nextLevel()
+            onWin: activity.nextLevel()
             onLoose: Activity.initLevel()
         }
     }

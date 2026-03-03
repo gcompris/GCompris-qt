@@ -20,6 +20,10 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         source: "qrc:/gcompris/src/activities/crane/resource/background.svg"
@@ -46,6 +50,9 @@ ActivityBase {
             property var levels: activity.datasets
             property int subLevelCount: 0
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property int currentSubLevel: 0
             property alias solution: solution
             property alias answer: answer
@@ -395,7 +402,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(activity.nextLevel)
             onStop: (items.solution.visible = !items.levels[items.currentLevel].hidden)
         }
 

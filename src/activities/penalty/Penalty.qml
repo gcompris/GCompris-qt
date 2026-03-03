@@ -22,6 +22,10 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         source: Activity.url + "penalty_bg.svg"
@@ -43,6 +47,9 @@ ActivityBase {
             property Item main: activity.main
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 9
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias ball: ball
             property alias progressLeft: progressLeft
             property alias progressRight: progressRight
@@ -377,7 +384,7 @@ ActivityBase {
             looseSound: "qrc:/gcompris/src/activities/ballcatch/resource/youcannot.wav"
             Component.onCompleted: {
                 loose.connect(Activity.setBallToRetun)
-                win.connect(Activity.nextLevel)
+                win.connect(activity.nextLevel)
             }
         }
     }

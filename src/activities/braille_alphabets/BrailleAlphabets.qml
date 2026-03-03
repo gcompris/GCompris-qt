@@ -22,6 +22,10 @@ ActivityBase {
 
     property var dataset: Dataset.get()
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         anchors.fill: parent
@@ -81,6 +85,9 @@ ActivityBase {
             property alias goodAnswerSound: goodAnswerSound
             property alias clickSound: clickSound
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias containerModel: containerModel
             property alias questionItem: questionItem
@@ -318,7 +325,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(activity.nextLevel)
         }
     }
 

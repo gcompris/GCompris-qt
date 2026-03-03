@@ -22,7 +22,6 @@
 
 var currentSubLevel = 0;
 var level = null;
-var numberOfLevel = 0;
 var maxSubLevel = 0; // store number of falling elements for each level
 var items;
 var uppercaseOnly;
@@ -125,8 +124,8 @@ function start(items_, uppercaseOnly_,  _mode, speedSetting_) {
         // We remove the using of default file for next time we enter this function
         items.wordlist.useDefault = false
     }
-    numberOfLevel = items.wordlist.maxLevel;
-    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+    items.numberOfLevel = items.wordlist.maxLevel;
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
     droppedWords = new Array();
     droppedWordsCounter = 0;
     initLevel();
@@ -472,13 +471,13 @@ function audioCrashPlay() {
 }
 
 function nextLevel() {
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     currentSubLevel = 0;
     initLevel();
 }
 
 function previousLevel() {
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     currentSubLevel = 0;
     initLevel();
 }

@@ -20,7 +20,6 @@ var defaultLevelsFile = ":/gcompris/src/activities/click_on_letter/resource/leve
 var maxLettersPerLine = 6;
 
 var levels;
-var numberOfLevel;
 var currentLetter;
 var level;
 var questions;
@@ -41,8 +40,8 @@ function start(_items, _mode)
     GCompris.DownloadManager.updateResource(GCompris.GCompris.VOICES, {"locale": locale})
     loadLevels();
     items.score.currentSubLevel = 0;
-    numberOfLevel = levels.length;
-    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+    items.numberOfLevel = levels.length;
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
     initLevel();
 }
 
@@ -166,7 +165,7 @@ function playLetter(letter) {
 function nextLevel() {
     items.score.stopWinAnimation();
     items.audioVoices.clearQueue();
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     items.score.currentSubLevel = 0;
     initLevel();
 }
@@ -174,7 +173,7 @@ function nextLevel() {
 function previousLevel() {
     items.score.stopWinAnimation();
     items.audioVoices.clearQueue();
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     items.score.currentSubLevel = 0;
     initLevel();
 }

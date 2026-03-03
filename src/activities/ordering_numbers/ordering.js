@@ -14,7 +14,6 @@
 .import core 1.0 as GCompris
 .import "../../core/core.js" as Core
 
-var numberOfLevel = 0
 
 var items
 var mode
@@ -54,8 +53,8 @@ function start(items_, mode_) {
         }
     }
 
-    numberOfLevel = levels.length
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.numberOfLevel = levels.length
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
     initLevel()
 }
 
@@ -147,12 +146,12 @@ function generateNumbers() {
 }
 
 function nextLevel() {
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel()
 }
 
 function previousLevel() {
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel()
 }
 

@@ -56,6 +56,10 @@ ActivityBase {
         }
     }
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         source: activity.dataSetUrl + "background.svg"
@@ -83,6 +87,9 @@ ActivityBase {
             property string instructionText: ""
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias wordlist: wordlist
             property alias score: score
@@ -229,7 +236,7 @@ ActivityBase {
         Bonus {
             id: bonus
             interval: 2000
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(activity.nextLevel)
             onStop: items.client.sendToServer(true)         // send data for server version
         }
 

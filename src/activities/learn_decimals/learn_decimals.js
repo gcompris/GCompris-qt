@@ -14,7 +14,6 @@
 .import core 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var numberOfLevel;
 var items;
 var dataset;
 var generatedNumber;
@@ -34,8 +33,8 @@ var currentSubLevelIndex;
 function start(items_) {
     items = items_;
     dataset = items.levels;
-    numberOfLevel = dataset.length;
-    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+    items.numberOfLevel = dataset.length;
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
     items.score.currentSubLevel = 0;
     firstNumberList = [];
 
@@ -124,14 +123,14 @@ function setupDraggedItems() {
 
 function nextLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     items.score.currentSubLevel = 0;
     initLevel();
 }
 
 function previousLevel() {
     items.score.stopWinAnimation();
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     items.score.currentSubLevel = 0;
     initLevel();
 }

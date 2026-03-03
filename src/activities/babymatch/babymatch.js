@@ -14,7 +14,6 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var useMultipleDataset;
-var numberOfLevel;
 var items;
 var imagesUrl;
 var soundsUrl;
@@ -31,11 +30,11 @@ function start(items_, imagesUrl_, soundsUrl_, boardsUrl_, levelCount_, answerGl
     soundsUrl = soundsUrl_;
     boardsUrl = boardsUrl_;
     useMultipleDataset = useMultipleDataset_;
-    numberOfLevel = useMultipleDataset ? items.levels.length : levelCount_;
+    items.numberOfLevel = useMultipleDataset ? items.levels.length : levelCount_;
     glowEnabledDefault = answerGlow_;
     displayDropCircle = displayDropCircle_;
 
-    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
 
     items.score.currentSubLevel = 0;
     items.score.numberOfSubLevels = 0;
@@ -194,14 +193,14 @@ function nextSubLevel() {
 function nextLevel() {
     items.score.currentSubLevel = 0;
     items.score.numberOfSubLevels = 0;
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
     items.score.currentSubLevel = 0;
     items.score.numberOfSubLevels = 0;
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 

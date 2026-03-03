@@ -22,6 +22,10 @@ ActivityBase {
     onStop: {}
     isMusicalActivity: true
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Rectangle {
         id: activityBackground
         anchors.fill: parent
@@ -46,6 +50,9 @@ ActivityBase {
             property alias badAnswerSound: badAnswerSound
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias parser: parser
             property alias score: score
@@ -394,7 +401,7 @@ ActivityBase {
         Bonus {
             id: bonus
             Component.onCompleted: {
-                win.connect(Activity.nextLevel)
+                win.connect(activity.nextLevel)
             }
         }
 

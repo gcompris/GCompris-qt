@@ -22,7 +22,6 @@ const defaultLevelsFile = "en";
 var dataSetUrl = ""
 var syntaxList = []
 
-var numberOfLevel
 var grammarMode
 var translationMode
 var items
@@ -93,14 +92,14 @@ function start(items_, grammarMode_, translationMode_) {
     grammarMode = grammarMode_
     translationMode = translationMode_
     dataSetUrl = "qrc:/gcompris/src/activities/grammar" + grammarMode + "/resource/"
-    numberOfLevel = 0
+    items.numberOfLevel = 0
     items.currentExercise = 0
     loadDatas();
     if (datas === null) return
 
     checkLevels()
-    numberOfLevel = datas["levels"].length
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.numberOfLevel = datas["levels"].length
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
     items.wordsFlow.layoutDirection = (datas.rightToLeft) ? Qt.LeftToRight : Qt.RightToLeft
     initSyntax()
     initExercises()
@@ -197,14 +196,14 @@ function initLevel() {
 function nextLevel() {
     items.score.stopWinAnimation()
     items.currentExercise = 0
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initExercises()
     initLevel();
 }
 
 function previousLevel() {
     items.score.stopWinAnimation()
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     if (datas === null) return
     items.currentExercise = 0
     initExercises()

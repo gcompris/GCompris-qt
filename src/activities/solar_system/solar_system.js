@@ -12,7 +12,6 @@
 .import "Dataset.js" as Dataset
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var numberOfLevel
 var items
 var dataset
 var currentPlanetLevels
@@ -159,7 +158,7 @@ function showQuizScreen(index) {
 }
 
 function nextLevel() {
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     if(!items.assessmentMode)
         initLevel()
     else
@@ -167,6 +166,6 @@ function nextLevel() {
 }
 
 function previousLevel() {
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }

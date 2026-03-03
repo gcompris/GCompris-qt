@@ -11,7 +11,6 @@
 .import QtQuick as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var numberOfLevel = 5
 var items
 
 var url = "qrc:/gcompris/src/activities/tic_tac_toe/resource/"
@@ -27,7 +26,7 @@ var stopper     //For stopping game when doing reset
 
 function start(items_, twoPlayer_) {
     items = items_
-    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
     currentPlayer = 1
     twoPlayer = twoPlayer_
     items.playSecond = 0
@@ -58,12 +57,12 @@ function initLevel() {
 }
 
 function nextLevel() {
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     reset();
 }
 
 function previousLevel() {
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     reset();
 }
 

@@ -52,7 +52,9 @@ ActivityBase {
             property alias waterSound: waterSound
             // we initialize it to -1, so onStart it forces a layout refresh when it's set to 0
             property int currentLevel: -1
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
             property int numberOfLevel: 3
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property bool sunIsUp: true
             property color consumeColor: "#E09C4C"
             property color consumeColorBorder: "#81531E"

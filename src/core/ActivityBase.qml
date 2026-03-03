@@ -121,6 +121,7 @@ Item {
      * The current level for this activity.
      */
     property int currentLevel: 0
+    property int numberOfLevel: 0
 
     property var datasets: []
     property var levelFolder
@@ -211,6 +212,12 @@ Item {
     onHome: menu ? menu.home() : ""
     onDisplayDialog: (dialog) => menu ? menu.displayDialog(dialog) : ""
     onDisplayDialogs: (dialogs) => menu ? menu.displayDialogs(dialogs) : ""
+
+    signal activityNextLevel
+    signal nextLevel
+    onNextLevel: {
+        activityNextLevel();
+    }
 
     Keys.forwardTo: activity.children
     Keys.onEscapePressed: home();

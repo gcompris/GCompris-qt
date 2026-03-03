@@ -15,7 +15,6 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 const dataUrl = "qrc:/gcompris/src/activities/guess24/resource/guess24.json"
-var numberOfLevel
 var items
 var allProblems = []        // All dataset problems
 var problems = []           // Dataset for current level
@@ -39,8 +38,8 @@ var OperandsEnum = {
 
 function start(items_) {
     items = items_
-    numberOfLevel = items.levels.length
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.numberOfLevel = items.levels.length
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
     allProblems = items.jsonParser.parseFromUrl(dataUrl)
     initLevel()
 }
@@ -63,13 +62,13 @@ function initLevel() {
 
 function nextLevel() {
     items.score.stopWinAnimation()
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
     items.score.stopWinAnimation()
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 

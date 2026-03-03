@@ -17,6 +17,10 @@ ActivityBase {
     id: activity
 
     onStart: focus = true;
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         source: "qrc:/gcompris/src/activities/family/resource/background.svg"
@@ -32,6 +36,9 @@ ActivityBase {
         QtObject {
             id: items
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             readonly property var levels: activity.datasets
             property alias goodAnswerSound: goodAnswerSound
@@ -320,7 +327,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            onWin: Activity.nextLevel()
+            onWin: activity.nextLevel()
         }
 
         Score {

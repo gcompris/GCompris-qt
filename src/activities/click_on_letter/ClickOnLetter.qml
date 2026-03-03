@@ -34,6 +34,10 @@ ActivityBase {
         }
     }
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Image {
         id: activityBackground
         source: Activity.url + "background.svg"
@@ -72,6 +76,9 @@ ActivityBase {
             id: items
             property Item activityPage: activity
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: 0
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias trainModel: trainModel
             property GCAudio audioVoices: activity.audioVoices
             property alias winSound: winSound
@@ -188,7 +195,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(activity.nextLevel)
         }
 
         BarButton {

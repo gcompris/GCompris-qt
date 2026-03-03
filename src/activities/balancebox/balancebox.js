@@ -49,7 +49,6 @@ var lastKey;
 var keyboardIsTilting = false;  // tilting or resetting to horizontal
 
 var debugDraw = false;
-var numberOfLevel = 0;
 var items;
 var level;
 var map; // current map
@@ -123,10 +122,10 @@ function start(items_) {
         // testmode:
         dataset = [items.testLevel];
     }
-    numberOfLevel = dataset.length;
+    items.numberOfLevel = dataset.length;
 
     if(GCompris.ActivityInfoTree.startingLevel != -1) {
-        items.currentLevel = Core.getInitialLevel(numberOfLevel);
+        items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
     }
 
     reconfigureScene();
@@ -232,7 +231,7 @@ function finishBall(won, x, y)
         items.bonus.good("flower");
         if (items.levelSet === "builtin" && items.mode === "play") {
             GCompris.ApplicationSettings.saveActivityProgress("balancebox",
-                        items.currentLevel+1 >= numberOfLevel ? 0 : items.currentLevel+1);
+                        items.currentLevel+1 >= items.numberOfLevel ? 0 : items.currentLevel+1);
         }
     } else
         items.bonus.bad("flower");
@@ -546,11 +545,11 @@ function processKeyRelease(key)
 }
 
 function nextLevel() {
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }

@@ -28,6 +28,10 @@ ActivityBase {
 
     Keys.onPressed: (event) => { Activity.processPressedKey(event) }
 
+     onActivityNextLevel: {
+         Activity.nextLevel()
+    }
+
     pageComponent: Rectangle {
         id: activityBackground
         color: "#b9d3ff"
@@ -72,6 +76,9 @@ ActivityBase {
             property Item main: activity.main
             property alias activityBackground: activityBackground
             property int currentLevel: activity.currentLevel
+            onCurrentLevelChanged: activity.currentLevel = currentLevel
+            property int numberOfLevel: activity.dataset.length
+            onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias checkWinTimer: checkWinTimer
             property alias bonus: bonus
             property alias modelListModel: modelList.model
@@ -79,7 +86,6 @@ ActivityBase {
             property alias userListModel: userList.model
             property Item selectedItem
             property var currentTans: activity.dataset[items.currentLevel]
-            property int numberOfLevel: activity.dataset.length
             property bool editionMode: false
         }
 
@@ -362,11 +368,7 @@ ActivityBase {
         Bonus {
             id: bonus
             interval: 1600
-            Component.onCompleted: win.connect(nextLevel)
-
-            function nextLevel() {
-                Activity.nextLevel()
-            }
+            Component.onCompleted: win.connect(activity.nextLevel)
         }
     }
 

@@ -16,7 +16,6 @@
 .import "qrc:/gcompris/src/activities/lang/lang_api.js" as Lang
 
 var currentSubLevel;
-var numberOfLevel;
 var maxSubLevel;
 var items;
 
@@ -50,8 +49,8 @@ function start(items_) {
     dataset = data["dataset"];
     items.activityBackground.englishFallback = data["englishFallback"];
     lessons = Lang.getAllLessons(dataset);
-    numberOfLevel = lessons.length;
-    items.currentLevel = Core.getInitialLevel(numberOfLevel);
+    items.numberOfLevel = lessons.length;
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
     initLevel();
 }
 
@@ -169,14 +168,14 @@ function processKeyPress(text) {
 }
 
 function nextLevel() {
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     currentSubLevel = 0;
     initLevel();
 }
 
 
 function previousLevel() {
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     currentSubLevel = 0;
     initLevel();
 }
