@@ -206,8 +206,12 @@ function previousLevel() {
 }
 
 function win() {
-    items.score.currentSubLevel += 1;
-    items.score.playWinAnimation();
+    if(items.score.visible) {
+        items.score.currentSubLevel += 1;
+        items.score.playWinAnimation();
+    } else {
+        items.bonus.good("flower");
+    }
 }
 
 function getClosestSpot(x, y) {
