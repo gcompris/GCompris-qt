@@ -122,9 +122,7 @@ GridView {
          */
         function insertIntoModel(model, area) {
             if(!area.isEditingInstruction) {
-                if(items.numberOfInstructionsAdded >= items.maxNumberOfInstructionsAllowed)
-                    constraintInstruction.changeConstraintInstructionOpacity()
-                else {
+                if(items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed) {
                     playClickedAnimation()
                     model.append({ "name": name })
                     items.numberOfInstructionsAdded++
