@@ -171,6 +171,7 @@ Item {
             view.showGlow = true;
             for(var i = 0 ; i < model.count ; ++i) {
                 if(repeater.itemAt(i).dropStatus !== 1) {
+                    items.badAnswerSound.play();
                     return;
                 }
             }

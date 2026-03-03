@@ -206,6 +206,7 @@ function previousLevel() {
 }
 
 function win() {
+    items.goodAnswerSound.play();
     if(items.score.visible) {
         items.score.currentSubLevel += 1;
         items.score.playWinAnimation();

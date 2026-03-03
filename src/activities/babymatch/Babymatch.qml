@@ -61,6 +61,8 @@ ActivityBase {
             property alias instructionPanel: instructionPanel
             property alias toolTip: toolTip
             property alias score: score
+            property alias goodAnswerSound: goodAnswerSound
+            property alias badAnswerSound: badAnswerSound
             readonly property var levels: activity.datasets.length !== 0 ? activity.datasets : null
             property alias dataset: dataset
             property bool inputLocked: false
@@ -72,6 +74,16 @@ ActivityBase {
         Loader {
             id: dataset
             asynchronous: false
+        }
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
         onStart: { Activity.start(items, imagesUrl, soundsUrl, boardsUrl, levelCount, answerGlow, displayDropCircle, useMultipleDataset); }
