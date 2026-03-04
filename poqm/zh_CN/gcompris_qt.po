@@ -23499,7 +23499,7 @@ msgstr "图章工具"
 #: activities/sketch/TextToolPanel.qml:17
 msgctxt "TextToolPanel|"
 msgid "Text Tool"
-msgstr "文字工具"
+msgstr "文本工具"
 
 #: activities/sketch/TextToolPanel.qml:33
 msgctxt "TextToolPanel|"
