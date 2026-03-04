@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-22 00:38+0000\n"
+"POT-Creation-Date: 2026-03-04 00:40+0000\n"
 "PO-Revision-Date: 2024-06-07 11:37+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -1042,6 +1042,12 @@ msgstr ""
 #, kde-format
 msgid "Use the arrows to move Tux along the path and reach the target."
 msgstr "Použij šipky pro pohyb Tuxe podle cesty a dosažení cíle."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "peg_solitaire"
+#: activities/peg_solitaire/ActivityInfo.qml:17
+#, kde-format
+msgid "Remove all the pieces in the correct order until only one remains."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "penalty"
 #: activities/penalty/ActivityInfo.qml:18

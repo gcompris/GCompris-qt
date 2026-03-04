@@ -77,7 +77,7 @@ msgid "Find the requested numbers and drag them to the corresponding spot."
 msgstr ""
 
 #. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
-#: activities/adjacent_numbers/Adjacent_numbers.qml:56
+#: activities/adjacent_numbers/Adjacent_numbers.qml:60
 #, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n previous number(s)."
@@ -85,7 +85,7 @@ msgid_plural "Find the %n previous number(s)."
 msgstr[0] ""
 
 #. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
-#: activities/adjacent_numbers/Adjacent_numbers.qml:60
+#: activities/adjacent_numbers/Adjacent_numbers.qml:64
 #, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n next number(s)."
@@ -93,7 +93,7 @@ msgid_plural "Find the %n next number(s)."
 msgstr[0] ""
 
 #. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
-#: activities/adjacent_numbers/Adjacent_numbers.qml:64
+#: activities/adjacent_numbers/Adjacent_numbers.qml:68
 #, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n in-between number(s)"
@@ -101,7 +101,7 @@ msgid_plural "Find the %n in-between number(s)"
 msgstr[0] ""
 
 #. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
-#: activities/adjacent_numbers/Adjacent_numbers.qml:68
+#: activities/adjacent_numbers/Adjacent_numbers.qml:72
 #, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n missing numbers"
@@ -2525,7 +2525,7 @@ msgid ""
 "Finally, to load your level set, click on the 'Load saved levels' button."
 msgstr "最后，要加载您的关卡集，请单击“加载已保存关卡”按钮。"
 
-#: activities/balancebox/balancebox.js:72
+#: activities/balancebox/balancebox.js:71
 msgctxt "balancebox|"
 msgid ""
 "Either create your levels by starting the level editor in the activity "
@@ -2534,20 +2534,20 @@ msgstr ""
 "要么在活动设置菜单中启动关卡编辑器创建关卡，然后加载您的关卡文件，要么选择“内"
 "置”关卡。"
 
-#: activities/balancebox/balancebox.js:106
+#: activities/balancebox/balancebox.js:105
 #, qt-format
 msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
 msgstr "文件 \"%1\" 缺失！<br>退回到内置关卡。"
 
-#: activities/balancebox/Balancebox.qml:70
+#: activities/balancebox/Balancebox.qml:74
 msgctxt "Balancebox|"
 msgid ""
 "You selected the user-defined level set, but you have not yet loaded any "
 "user level!"
 msgstr "您选择了用户定义的级别，但您尚未加载任何用户级别！"
 
-#: activities/balancebox/Balancebox.qml:72
+#: activities/balancebox/Balancebox.qml:76
 msgctxt "Balancebox|"
 msgid "OK"
 msgstr "确定"
@@ -2613,13 +2613,13 @@ msgid ""
 "same time."
 msgstr "同时按下左右方向键，使球走直线。在触摸屏上，您必须用双手同时点击。"
 
-#: activities/ballcatch/Ballcatch.qml:227
+#: activities/ballcatch/Ballcatch.qml:234
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr "同时轻击两只手，使球走直线。"
 
-#: activities/ballcatch/Ballcatch.qml:233
+#: activities/ballcatch/Ballcatch.qml:240
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2739,12 +2739,12 @@ msgid ""
 "When you have achieved it, press OK."
 msgstr "打开右边的灯泡表示给定十进制数字的二进制数。完成后，按确定."
 
-#: activities/binary_bulb/BinaryBulb.qml:95
+#: activities/binary_bulb/BinaryBulb.qml:102
 msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr "这个活动教学如何将十进制数字转换为二进制数字。"
 
-#: activities/binary_bulb/BinaryBulb.qml:99
+#: activities/binary_bulb/BinaryBulb.qml:106
 msgctxt "BinaryBulb|"
 msgid ""
 "Computers use transistors to count and transistors have only two states, 0 "
@@ -2754,19 +2754,19 @@ msgstr ""
 "计算机使用晶体管进行计数，而晶体管只有两个状态，也就是关和开。 数学上来说，这"
 "些状态由 0 和 1 表示，构成二元计算系统。"
 
-#: activities/binary_bulb/BinaryBulb.qml:103
+#: activities/binary_bulb/BinaryBulb.qml:110
 msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr "在活动0和1中用点亮或熄灭的灯泡模拟。"
 
-#: activities/binary_bulb/BinaryBulb.qml:107
+#: activities/binary_bulb/BinaryBulb.qml:114
 msgctxt "BinaryBulb|"
 msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
 "to 255 with 8 bits only."
 msgstr "二进制系统非常有效地使用这些数字，只用8比特就可以从0到255计数。"
 
-#: activities/binary_bulb/BinaryBulb.qml:111
+#: activities/binary_bulb/BinaryBulb.qml:118
 msgctxt "BinaryBulb|"
 msgid ""
 "Each bit adds a progressive value, corresponding to the powers of 2, "
@@ -2778,24 +2778,24 @@ msgstr ""
 "2¹=2，位 3 → 2²=4，位 4 → 2³=8，位 5 → 2⁴=16，位 6 → 2⁵=32，位 7 → 2⁶=64，位 "
 "8 → 2⁷=128。"
 
-#: activities/binary_bulb/BinaryBulb.qml:115
+#: activities/binary_bulb/BinaryBulb.qml:122
 msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr "要将十进制的 5 转换为二进制值，则添加1和4。"
 
-#: activities/binary_bulb/BinaryBulb.qml:119
+#: activities/binary_bulb/BinaryBulb.qml:126
 msgctxt "BinaryBulb|"
 msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
 "equal to binary 101."
 msgstr "相应的位数设置为1，其他位数设置为0。十进制 5 等于二进制 101 。"
 
-#: activities/binary_bulb/BinaryBulb.qml:123
+#: activities/binary_bulb/BinaryBulb.qml:130
 msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "这个图片将帮助您计算位值。"
 
-#: activities/binary_bulb/BinaryBulb.qml:171
+#: activities/binary_bulb/BinaryBulb.qml:178
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -2902,30 +2902,30 @@ msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
 msgstr "空格：打开或关闭盲文图表"
 
-#: activities/braille_alphabets/braille_alphabets.js:43
-#: activities/braille_alphabets/braille_alphabets.js:53
-#: activities/braille_alphabets/braille_alphabets.js:63
-#: activities/braille_alphabets/braille_alphabets.js:73
-#: activities/braille_alphabets/braille_alphabets.js:83
+#: activities/braille_alphabets/braille_alphabets.js:42
+#: activities/braille_alphabets/braille_alphabets.js:52
+#: activities/braille_alphabets/braille_alphabets.js:62
+#: activities/braille_alphabets/braille_alphabets.js:72
+#: activities/braille_alphabets/braille_alphabets.js:82
 msgctxt "braille_alphabets|"
 msgid "Now it's a little bit harder without the reference."
 msgstr "现在没有盲文图作为参考，有点难了。"
 
-#: activities/braille_alphabets/braille_alphabets.js:48
+#: activities/braille_alphabets/braille_alphabets.js:47
 msgctxt "braille_alphabets|"
 msgid ""
 "Look at the braille character chart and observe how similar the first and "
 "second lines are."
 msgstr "查看盲文字符图，观察第一和第二行的相似性。"
 
-#: activities/braille_alphabets/braille_alphabets.js:58
+#: activities/braille_alphabets/braille_alphabets.js:57
 msgctxt "braille_alphabets|"
 msgid ""
 "Again, similar to the first line in the character chart but take care, the "
 "'W' letter was added afterward."
 msgstr "再来，与字母图的第一行类似。但是注意，新的字母 'W' 添加在后面了。"
 
-#: activities/braille_alphabets/braille_alphabets.js:68
+#: activities/braille_alphabets/braille_alphabets.js:67
 msgctxt "braille_alphabets|"
 msgid "This is easy, numbers are the same as letters from A to J."
 msgstr "这个简单，数字和从 A 到 J 的字母一样。"
@@ -3170,37 +3170,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "空格或回车：验证您的答案"
 
-#: activities/calendar/Calendar.qml:94
+#: activities/calendar/Calendar.qml:101
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "星期日"
 
-#: activities/calendar/Calendar.qml:95
+#: activities/calendar/Calendar.qml:102
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "星期一"
 
-#: activities/calendar/Calendar.qml:96
+#: activities/calendar/Calendar.qml:103
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "星期二"
 
-#: activities/calendar/Calendar.qml:97
+#: activities/calendar/Calendar.qml:104
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "星期三"
 
-#: activities/calendar/Calendar.qml:98
+#: activities/calendar/Calendar.qml:105
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "星期四"
 
-#: activities/calendar/Calendar.qml:99
+#: activities/calendar/Calendar.qml:106
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "星期五"
 
-#: activities/calendar/Calendar.qml:100
+#: activities/calendar/Calendar.qml:107
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "星期六"
@@ -3539,7 +3539,7 @@ msgctxt "ActivityInfo|"
 msgid "Review the instructions and then drag and drop the items as specified."
 msgstr "查看说明，然后拖放指定的项目。"
 
-#: activities/categorization/Categorization.qml:149
+#: activities/categorization/Categorization.qml:156
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3549,12 +3549,12 @@ msgstr ""
 "您没有此活动的所有图片资源。点击“更新图片集”下载完整的单词图片集。 单击 x 或"
 "单击“不再显示此对话框”来启动演示版本。"
 
-#: activities/categorization/Categorization.qml:152
+#: activities/categorization/Categorization.qml:159
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "更新图片集"
 
-#: activities/categorization/Categorization.qml:153
+#: activities/categorization/Categorization.qml:160
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "不再显示此对话框"
@@ -4127,22 +4127,22 @@ msgstr ""
 "使用的跳棋库是 draughts.js &lt;https://github.com/shubhendusaurabh/draughts."
 "js&gt;。指引来自于 Wikipedia &lt;https://en.wikipedia.org/wiki/Draughts&gt;"
 
-#: activities/checkers/checkers.js:69
+#: activities/checkers/checkers.js:68
 msgctxt "checkers|"
 msgid "Black's turn"
 msgstr "黑棋落子"
 
-#: activities/checkers/checkers.js:69
+#: activities/checkers/checkers.js:68
 msgctxt "checkers|"
 msgid "White's turn"
 msgstr "白棋落子"
 
-#: activities/checkers/checkers.js:72
+#: activities/checkers/checkers.js:71
 msgctxt "checkers|"
 msgid "White wins"
 msgstr "白方胜"
 
-#: activities/checkers/checkers.js:72
+#: activities/checkers/checkers.js:71
 msgctxt "checkers|"
 msgid "Black wins"
 msgstr "黑方胜"
@@ -4264,58 +4264,58 @@ msgid ""
 "The chess engine is p4wn &lt;https://github.com/douglasbagnall/p4wn&gt;."
 msgstr "象棋引擎为 p4wn &lt;https://github.com/douglasbagnall/p4wn&gt;。"
 
-#: activities/chess/chess.js:117
+#: activities/chess/chess.js:116
 msgctxt "chess|"
 msgid "Black's turn"
 msgstr "黑方行"
 
-#: activities/chess/chess.js:117
+#: activities/chess/chess.js:116
 msgctxt "chess|"
 msgid "White's turn"
 msgstr "白方行"
 
-#: activities/chess/chess.js:122
+#: activities/chess/chess.js:121
 msgctxt "chess|white wins"
 msgid "White mates"
 msgstr "白子"
 
-#: activities/chess/chess.js:122
+#: activities/chess/chess.js:121
 msgctxt "chess|black wins"
 msgid "Black mates"
 msgstr "黑子"
 
-#: activities/chess/chess.js:132
+#: activities/chess/chess.js:131
 msgctxt "chess|"
 msgid "Drawn game"
 msgstr "和局"
 
-#: activities/chess/chess.js:141
+#: activities/chess/chess.js:140
 msgctxt "chess|black king is under attack"
 msgid "White checks"
 msgstr "白子将军"
 
-#: activities/chess/chess.js:141
+#: activities/chess/chess.js:140
 msgctxt "chess|white king is under attack"
 msgid "Black checks"
 msgstr "黑子将军"
 
-#: activities/chess/chess.js:144
+#: activities/chess/chess.js:143
 msgctxt "chess|"
 msgid "Invalid, your king may be in check"
 msgstr "错误，您的王可能被将军"
 
 #. Translators: undo all the moves in chess activity
-#: activities/chess/Chess.qml:140
+#: activities/chess/Chess.qml:147
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
 msgstr "您真的想要撤销所有的移动吗？"
 
-#: activities/chess/Chess.qml:141
+#: activities/chess/Chess.qml:148
 msgctxt "Chess|"
 msgid "Yes"
 msgstr "是"
 
-#: activities/chess/Chess.qml:142
+#: activities/chess/Chess.qml:149
 msgctxt "Chess|"
 msgid "No"
 msgstr "否"
@@ -4953,26 +4953,26 @@ msgid ""
 "and the longest hand indicates the seconds."
 msgstr "最短的指针表示小时，长的指针表示分钟，最长的指表示秒。"
 
-#: activities/clockgame/Clockgame.qml:124
+#: activities/clockgame/Clockgame.qml:130
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "设置手表到："
 
-#: activities/clockgame/Clockgame.qml:127
+#: activities/clockgame/Clockgame.qml:133
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
 msgid_plural "%n hour(s)"
 msgstr[0] "%n 小时"
 
-#: activities/clockgame/Clockgame.qml:130
+#: activities/clockgame/Clockgame.qml:136
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
 msgid_plural "%n minute(s)"
 msgstr[0] "%n 分钟"
 
-#: activities/clockgame/Clockgame.qml:133
+#: activities/clockgame/Clockgame.qml:139
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5059,67 +5059,67 @@ msgstr ""
 "颜色。对于颜料/油墨来说，基色包括青色 (一种特别的蓝色)、洋红色 (一种特别的粉"
 "红色) 和黄色。"
 
-#: activities/color_mix/ColorMix.qml:92
+#: activities/color_mix/ColorMix.qml:99
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "匹配颜色"
 
-#: activities/color_mix/ColorMix.qml:230
+#: activities/color_mix/ColorMix.qml:237
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "不够红"
 
-#: activities/color_mix/ColorMix.qml:232
+#: activities/color_mix/ColorMix.qml:239
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "太红"
 
-#: activities/color_mix/ColorMix.qml:235
+#: activities/color_mix/ColorMix.qml:242
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "不够绿"
 
-#: activities/color_mix/ColorMix.qml:237
+#: activities/color_mix/ColorMix.qml:244
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "太绿"
 
-#: activities/color_mix/ColorMix.qml:240
+#: activities/color_mix/ColorMix.qml:247
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "不够蓝"
 
-#: activities/color_mix/ColorMix.qml:242
+#: activities/color_mix/ColorMix.qml:249
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "太蓝"
 
-#: activities/color_mix/ColorMix.qml:246
+#: activities/color_mix/ColorMix.qml:253
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "不够洋红色"
 
-#: activities/color_mix/ColorMix.qml:248
+#: activities/color_mix/ColorMix.qml:255
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "洋红色太多"
 
-#: activities/color_mix/ColorMix.qml:251
+#: activities/color_mix/ColorMix.qml:258
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "不够黄"
 
-#: activities/color_mix/ColorMix.qml:253
+#: activities/color_mix/ColorMix.qml:260
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "太黄"
 
-#: activities/color_mix/ColorMix.qml:256
+#: activities/color_mix/ColorMix.qml:263
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "不够青"
 
-#: activities/color_mix/ColorMix.qml:258
+#: activities/color_mix/ColorMix.qml:265
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "太青"
@@ -5261,7 +5261,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "找出粉色鸭子"
 
-#: activities/colors/FindIt.qml:266
+#: activities/colors/FindIt.qml:273
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5269,12 +5269,12 @@ msgid ""
 msgstr ""
 "这个活动需要声音，所以即使在主配置中禁用音频或特效，它也会播放一些声音。"
 
-#: activities/colors/FindIt.qml:267
+#: activities/colors/FindIt.qml:274
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "退出"
 
-#: activities/colors/FindIt.qml:268
+#: activities/colors/FindIt.qml:275
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "继续"
@@ -5441,7 +5441,7 @@ msgid "Space or Enter or Tab: select the next item"
 msgstr "空格或回车或制表键 (Tab)：选择下一个项目"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 15–25 simple 3-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: cat;dog;win;red;yes
-#: activities/crane/crane.js:41
+#: activities/crane/crane.js:40
 msgctxt "crane|"
 msgid ""
 "cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg"
@@ -5449,7 +5449,7 @@ msgstr ""
 "cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 4-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: blue;best;good;area
-#: activities/crane/crane.js:48
+#: activities/crane/crane.js:47
 msgctxt "crane|"
 msgid ""
 "blue;best;good;area;bell;coat;easy;farm;food;else;girl;give;hero;help;hour;"
@@ -5459,7 +5459,7 @@ msgstr ""
 "sand;song"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 5-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: happy;child;white;apple
-#: activities/crane/crane.js:55
+#: activities/crane/crane.js:54
 msgctxt "crane|"
 msgid ""
 "happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;"
@@ -5933,12 +5933,12 @@ msgstr ""
 "数字电路仅处理两种状态：0 和 1 。这是计算机技术的基础。在实际中，0 通常表示近"
 "乎等于接地电压的电压值，而 1 则表示电路的电源电压。 "
 
-#: activities/digital_electricity/DigitalElectricity.qml:248
+#: activities/digital_electricity/DigitalElectricity.qml:255
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "输入"
 
-#: activities/digital_electricity/DigitalElectricity.qml:266
+#: activities/digital_electricity/DigitalElectricity.qml:273
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "输出"
@@ -6386,143 +6386,143 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ctrl + O：打开图像"
 
-#: activities/drawing_wheels/DrawingWheels.qml:399
+#: activities/drawing_wheels/DrawingWheels.qml:405
 msgctxt "DrawingWheels|"
 msgid "File menu"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:411
+#: activities/drawing_wheels/DrawingWheels.qml:417
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:435
+#: activities/drawing_wheels/DrawingWheels.qml:441
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:447
+#: activities/drawing_wheels/DrawingWheels.qml:453
 msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:474
+#: activities/drawing_wheels/DrawingWheels.qml:480
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:486
+#: activities/drawing_wheels/DrawingWheels.qml:492
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:520
+#: activities/drawing_wheels/DrawingWheels.qml:526
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:520
+#: activities/drawing_wheels/DrawingWheels.qml:526
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:553
+#: activities/drawing_wheels/DrawingWheels.qml:559
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:553
+#: activities/drawing_wheels/DrawingWheels.qml:559
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:712
+#: activities/drawing_wheels/DrawingWheels.qml:718
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:727
+#: activities/drawing_wheels/DrawingWheels.qml:733
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:756
+#: activities/drawing_wheels/DrawingWheels.qml:762
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:775
+#: activities/drawing_wheels/DrawingWheels.qml:781
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:856
+#: activities/drawing_wheels/DrawingWheels.qml:862
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:923
+#: activities/drawing_wheels/DrawingWheels.qml:929
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:986
+#: activities/drawing_wheels/DrawingWheels.qml:992
 #, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1004
+#: activities/drawing_wheels/DrawingWheels.qml:1010
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1020
+#: activities/drawing_wheels/DrawingWheels.qml:1026
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1040
+#: activities/drawing_wheels/DrawingWheels.qml:1046
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1083
+#: activities/drawing_wheels/DrawingWheels.qml:1089
 msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1120
+#: activities/drawing_wheels/DrawingWheels.qml:1126
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1163
+#: activities/drawing_wheels/DrawingWheels.qml:1169
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1201
+#: activities/drawing_wheels/DrawingWheels.qml:1207
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1381
+#: activities/drawing_wheels/DrawingWheels.qml:1387
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1382
+#: activities/drawing_wheels/DrawingWheels.qml:1388
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1383
+#: activities/drawing_wheels/DrawingWheels.qml:1389
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1384
+#: activities/drawing_wheels/DrawingWheels.qml:1390
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr ""
@@ -6835,7 +6835,7 @@ msgid ""
 "animal that matches the text."
 msgstr "在第三级中显示随机文字提示, 您必须点击匹配文字的动物。"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:306
+#: activities/explore_farm_animals/ExploreLevels.qml:312
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -6843,12 +6843,12 @@ msgid ""
 msgstr ""
 "此活动需要声音，因此即使在主配置中禁用了音频语音或效果，它也会播放一些声音。"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:307
+#: activities/explore_farm_animals/ExploreLevels.qml:313
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "退出"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:308
+#: activities/explore_farm_animals/ExploreLevels.qml:314
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "继续"
@@ -9061,17 +9061,17 @@ msgstr ""
 "圆圈与线链接以标记关系。已婚夫妇在链接上标有圆环。\n"
 "你是白人圈子里的人。选择您应该在橙色圆圈中称呼此人的名字。\n"
 
-#: activities/family/Family.qml:251
+#: activities/family/Family.qml:258
 msgctxt "Family|"
 msgid "Me"
 msgstr "我"
 
-#: activities/family/Family.qml:276
+#: activities/family/Family.qml:283
 msgctxt "Family|"
 msgid "?"
 msgstr "?"
 
-#: activities/family/Family.qml:337
+#: activities/family/Family.qml:344
 #, qt-format
 msgctxt "Family|"
 msgid "Select one of the pairs corresponding to: %1"
@@ -9288,6 +9288,7 @@ msgstr "移动每项重建图像。"
 
 #. Help goal
 #: activities/fifteen/ActivityInfo.qml:20
+#: activities/peg_solitaire/ActivityInfo.qml:19
 #: activities/traffic/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and spatial visualization skills."
@@ -9558,7 +9559,7 @@ msgstr ""
 "屏幕上会显示一个被分割成相等部分的图形。请选择合适数量的部分，以表示给定的分"
 "数。"
 
-#: activities/fractions_create/fractions_create.js:80
+#: activities/fractions_create/fractions_create.js:79
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
 msgstr "找到表示的分数。"
@@ -9985,7 +9986,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr ""
 
-#: activities/frieze/Frieze.qml:287
+#: activities/frieze/Frieze.qml:294
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "准备好了"
@@ -14402,7 +14403,7 @@ msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
 msgstr ""
 
-#: activities/graduated_line_read/graduated_line_read.js:134
+#: activities/graduated_line_read/graduated_line_read.js:133
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
 msgstr ""
@@ -14608,7 +14609,7 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:401
+#: activities/grammar_analysis/grammar_analysis.js:400
 msgctxt "grammar_analysis|"
 msgid "Empty"
 msgstr ""
@@ -14778,7 +14779,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr ""
 
-#: activities/gravity/Gravity.qml:222
+#: activities/gravity/Gravity.qml:229
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -14787,7 +14788,7 @@ msgid ""
 "square of the distance between their centers."
 msgstr ""
 
-#: activities/gravity/Gravity.qml:225
+#: activities/gravity/Gravity.qml:232
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -14795,7 +14796,7 @@ msgid ""
 "greater gravitational force."
 msgstr ""
 
-#: activities/gravity/Gravity.qml:228
+#: activities/gravity/Gravity.qml:235
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -14803,7 +14804,7 @@ msgid ""
 "gravitational force."
 msgstr ""
 
-#: activities/gravity/Gravity.qml:231
+#: activities/gravity/Gravity.qml:238
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -14811,7 +14812,7 @@ msgid ""
 "of the gravity on your ship."
 msgstr ""
 
-#: activities/gravity/Gravity.qml:234
+#: activities/gravity/Gravity.qml:241
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -14875,7 +14876,7 @@ msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
 msgstr ""
 
-#: activities/guess24/Guess24.qml:135
+#: activities/guess24/Guess24.qml:142
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr ""
@@ -14968,17 +14969,17 @@ msgctxt "Admin|"
 msgid "Level %1"
 msgstr "等级 %1"
 
-#: activities/guesscount/guesscount.js:140
+#: activities/guesscount/guesscount.js:139
 msgctxt "guesscount|"
 msgid "result is not positive integer"
 msgstr ""
 
-#: activities/guesscount/guesscount.js:142
+#: activities/guesscount/guesscount.js:141
 msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr ""
 
-#: activities/guesscount/Guesscount.qml:151
+#: activities/guesscount/Guesscount.qml:158
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -15055,17 +15056,17 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
 msgstr "退格：删除一个数字"
 
-#: activities/guessnumber/guessnumber.js:57
+#: activities/guessnumber/guessnumber.js:56
 msgctxt "guessnumber|"
 msgid "Your number is too high"
 msgstr "您的数字太高了"
 
-#: activities/guessnumber/guessnumber.js:60
+#: activities/guessnumber/guessnumber.js:59
 msgctxt "guessnumber|"
 msgid "Your number is too low"
 msgstr "您的数字太低了"
 
-#: activities/guessnumber/guessnumber.js:65
+#: activities/guessnumber/guessnumber.js:64
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr "您找到了数字！"
@@ -15149,18 +15150,18 @@ msgid ""
 "attempts are remaining."
 msgstr ""
 
-#: activities/hangman/hangman.js:212
+#: activities/hangman/hangman.js:211
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "已尝试：%1"
 
-#: activities/hangman/Hangman.qml:370
+#: activities/hangman/Hangman.qml:377
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "抱歉，我们找不到适合您的语言的翻译。"
 
-#: activities/hangman/Hangman.qml:371
+#: activities/hangman/Hangman.qml:378
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -15170,7 +15171,7 @@ msgstr ""
 "GCompris 由 KDE 社区开发，您可以通过加入翻译团队 (<a href=\"%2\">%2</a>) 来贡"
 "献翻译"
 
-#: activities/hangman/Hangman.qml:373
+#: activities/hangman/Hangman.qml:380
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -15249,12 +15250,12 @@ msgid ""
 "Tower_of_hanoi)"
 msgstr ""
 
-#: activities/hanoi_real/HanoiReal.qml:75
+#: activities/hanoi_real/HanoiReal.qml:82
 msgctxt "HanoiReal|"
 msgid "Move the entire stack to the right peg, one disc at a time."
 msgstr "将整摞碟子移动到右边的柱子上，一次只能移动一个碟子。"
 
-#: activities/hanoi_real/HanoiReal.qml:76
+#: activities/hanoi_real/HanoiReal.qml:83
 msgctxt "HanoiReal|"
 msgid ""
 "Build the same tower in the empty area as the one you see on the right-hand "
@@ -15797,31 +15798,31 @@ msgid ""
 "rotate the spaceship"
 msgstr ""
 
-#: activities/land_safe/LandSafe.qml:584
+#: activities/land_safe/LandSafe.qml:591
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "燃料：%1"
 
-#: activities/land_safe/LandSafe.qml:594
+#: activities/land_safe/LandSafe.qml:601
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "高度：%1"
 
-#: activities/land_safe/LandSafe.qml:604
+#: activities/land_safe/LandSafe.qml:611
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "速度：%1"
 
-#: activities/land_safe/LandSafe.qml:615
+#: activities/land_safe/LandSafe.qml:622
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "加速度：%1"
 
-#: activities/land_safe/LandSafe.qml:649
+#: activities/land_safe/LandSafe.qml:656
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -16177,31 +16178,31 @@ msgid ""
 "button to validate your answer."
 msgstr ""
 
-#: activities/learn_decimals/Learn_decimals.qml:165
+#: activities/learn_decimals/Learn_decimals.qml:172
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr ""
 
-#: activities/learn_decimals/Learn_decimals.qml:166
+#: activities/learn_decimals/Learn_decimals.qml:173
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr ""
 
-#: activities/learn_decimals/Learn_decimals.qml:167
+#: activities/learn_decimals/Learn_decimals.qml:174
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr ""
 
-#: activities/learn_decimals/Learn_decimals.qml:168
+#: activities/learn_decimals/Learn_decimals.qml:175
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr ""
 
-#: activities/learn_decimals/Learn_decimals.qml:185
+#: activities/learn_decimals/Learn_decimals.qml:192
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -16669,12 +16670,12 @@ msgctxt "ActivityInfo|"
 msgid "Right arrow: right hand answer"
 msgstr ""
 
-#: activities/leftright/Leftright.qml:156
+#: activities/leftright/Leftright.qml:163
 msgctxt "Leftright|"
 msgid "Left hand"
 msgstr "左手"
 
-#: activities/leftright/Leftright.qml:178
+#: activities/leftright/Leftright.qml:185
 msgctxt "Leftright|"
 msgid "Right hand"
 msgstr "右手"
@@ -16741,12 +16742,12 @@ msgid ""
 "words in the list containing this letter and then press the OK button."
 msgstr ""
 
-#: activities/letter-in-word/LetterInWord.qml:335
+#: activities/letter-in-word/LetterInWord.qml:342
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "抱歉，我们找不到适合您的语言的翻译。"
 
-#: activities/letter-in-word/LetterInWord.qml:336
+#: activities/letter-in-word/LetterInWord.qml:343
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16756,7 +16757,7 @@ msgstr ""
 "GCompris 由 KDE 社区开发，您可以通过加入翻译团队 (<a href=\"%2\">%2</a>) 来贡"
 "献翻译"
 
-#: activities/letter-in-word/LetterInWord.qml:338
+#: activities/letter-in-word/LetterInWord.qml:345
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -17004,7 +17005,7 @@ msgid ""
 "to input your answer and on the OK button to validate it."
 msgstr ""
 
-#: activities/magic-hat-minus/MagicHat.qml:272
+#: activities/magic-hat-minus/MagicHat.qml:279
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "点击帽子来开始游戏"
@@ -17211,7 +17212,7 @@ msgid ""
 "of the screen to toggle the run-fast-mode.\t"
 msgstr ""
 
-#: activities/maze/Maze.qml:346
+#: activities/maze/Maze.qml:353
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -17337,19 +17338,19 @@ msgid ""
 "repeat button."
 msgstr ""
 
-#: activities/melody/Melody.qml:338
+#: activities/melody/Melody.qml:344
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
 
-#: activities/melody/Melody.qml:339
+#: activities/melody/Melody.qml:345
 msgctxt "Melody|"
 msgid "Quit"
 msgstr ""
 
-#: activities/melody/Melody.qml:340
+#: activities/melody/Melody.qml:346
 msgctxt "Melody|"
 msgid "Continue"
 msgstr ""
@@ -18449,19 +18450,19 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:362
+#: activities/memory/MemoryCommon.qml:369
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
 
-#: activities/memory/MemoryCommon.qml:363
+#: activities/memory/MemoryCommon.qml:370
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "退出"
 
-#: activities/memory/MemoryCommon.qml:364
+#: activities/memory/MemoryCommon.qml:371
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "继续"
@@ -19021,7 +19022,7 @@ msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr ""
 
-#: activities/mining/Mining.qml:447
+#: activities/mining/Mining.qml:454
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -19034,39 +19035,39 @@ msgstr ""
 "您有触控板，把光标指在闪光点上然后用单指在右边区域或双指在中心拖动。在触摸板"
 "区域，拖动两指离开闪光点，一根手指一个方向。"
 
-#: activities/mining/Mining.qml:463
+#: activities/mining/Mining.qml:470
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "完美缩放。继续直到您看见金块。"
 
-#: activities/mining/Mining.qml:471
+#: activities/mining/Mining.qml:478
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "嗯，小心，您缩放得离闪光点太远。"
 
-#: activities/mining/Mining.qml:479
+#: activities/mining/Mining.qml:486
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "现在您看见金块了，点击抓住它。"
 
-#: activities/mining/Mining.qml:487
+#: activities/mining/Mining.qml:494
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
 "close as you can from the sparkle."
 msgstr "嗯，您离看见金块太远。离闪光点尽可能靠近反缩放然后再缩放。"
 
-#: activities/mining/Mining.qml:495
+#: activities/mining/Mining.qml:502
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "现在反缩放并尝试发现另一闪光点。"
 
-#: activities/mining/Mining.qml:503
+#: activities/mining/Mining.qml:510
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "继续反缩放直到您看见闪光点。"
 
-#: activities/mining/Mining.qml:511
+#: activities/mining/Mining.qml:518
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "现在您看见闪光点了，继续，您可以在它上面缩放。"
@@ -19104,12 +19105,12 @@ msgid ""
 "the letter on your keyboard."
 msgstr ""
 
-#: activities/missing-letter/MissingLetter.qml:322
+#: activities/missing-letter/MissingLetter.qml:329
 msgctxt "MissingLetter|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "抱歉，我们找不到适合您的语言的翻译。"
 
-#: activities/missing-letter/MissingLetter.qml:323
+#: activities/missing-letter/MissingLetter.qml:330
 #, qt-format
 msgctxt "MissingLetter|"
 msgid ""
@@ -19119,7 +19120,7 @@ msgstr ""
 "GCompris 由 KDE 社区开发，您可以通过加入翻译团队 (<a href=\"%2\">%2</a>) 来贡"
 "献翻译"
 
-#: activities/missing-letter/MissingLetter.qml:325
+#: activities/missing-letter/MissingLetter.qml:332
 msgctxt "MissingLetter|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -19181,7 +19182,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
 msgstr ""
 
-#: activities/money/money.js:148
+#: activities/money/money.js:147
 msgctxt "money|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
@@ -19189,7 +19190,7 @@ msgid ""
 msgstr ""
 "点击屏幕底部的硬币或纸币来付款。如果您想要移走硬币或纸币，点击屏幕上方区域。"
 
-#: activities/money/money.js:179
+#: activities/money/money.js:178
 #, qt-format
 msgctxt "money|"
 msgid ""
@@ -19350,13 +19351,13 @@ msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
 
-#: activities/morse_code/MorseCode.qml:364
+#: activities/morse_code/MorseCode.qml:366
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr ""
 
-#: activities/morse_code/MorseCode.qml:365
+#: activities/morse_code/MorseCode.qml:367
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -19565,51 +19566,51 @@ msgstr ""
 "子，您可以将它们移到任意空白位置。当对方无法移动任何棋子或者只剩下 2 个棋子"
 "时，该玩家获胜。 "
 
-#: activities/nine_men_morris/nine_men_morris.js:240
-#: activities/nine_men_morris/nine_men_morris.js:1086
+#: activities/nine_men_morris/nine_men_morris.js:239
+#: activities/nine_men_morris/nine_men_morris.js:1085
 msgctxt "nine_men_morris|"
 msgid "Place a piece"
 msgstr "放置棋子"
 
-#: activities/nine_men_morris/nine_men_morris.js:366
-#: activities/nine_men_morris/nine_men_morris.js:1144
+#: activities/nine_men_morris/nine_men_morris.js:365
+#: activities/nine_men_morris/nine_men_morris.js:1143
 msgctxt "nine_men_morris|"
 msgid "Move a piece"
 msgstr "移动棋子"
 
-#: activities/nine_men_morris/nine_men_morris.js:918
+#: activities/nine_men_morris/nine_men_morris.js:917
 msgctxt "nine_men_morris|"
 msgid "Remove a piece"
 msgstr "移除棋子"
 
-#: activities/nine_men_morris/nine_men_morris.js:1121
+#: activities/nine_men_morris/nine_men_morris.js:1120
 msgctxt "nine_men_morris|"
 msgid "Congratulations"
 msgstr "恭喜"
 
-#: activities/nine_men_morris/nine_men_morris.js:1124
+#: activities/nine_men_morris/nine_men_morris.js:1123
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 1"
 msgstr "恭喜玩家1"
 
-#: activities/nine_men_morris/nine_men_morris.js:1135
+#: activities/nine_men_morris/nine_men_morris.js:1134
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 2"
 msgstr "恭喜玩家2"
 
-#: activities/nine_men_morris/nine_men_morris.js:1138
+#: activities/nine_men_morris/nine_men_morris.js:1137
 msgctxt "nine_men_morris|"
 msgid "Try again"
 msgstr "再试一次"
 
-#: activities/nine_men_morris/NineMenMorris.qml:348
+#: activities/nine_men_morris/NineMenMorris.qml:355
 msgctxt "NineMenMorris|"
 msgid ""
 "You and Tux start with 9 pieces each, and take turns to place your pieces on "
 "the empty spots of the board (by clicking on the spots)."
 msgstr ""
 
-#: activities/nine_men_morris/NineMenMorris.qml:352
+#: activities/nine_men_morris/NineMenMorris.qml:359
 msgctxt "NineMenMorris|"
 msgid ""
 "If you form a mill (line of 3 pieces), then select one of Tux's pieces to "
@@ -19617,7 +19618,7 @@ msgid ""
 "are left on the board."
 msgstr ""
 
-#: activities/nine_men_morris/NineMenMorris.qml:356
+#: activities/nine_men_morris/NineMenMorris.qml:363
 msgctxt "NineMenMorris|"
 msgid ""
 "After all the pieces are placed, you and Tux will take turns to move them. "
@@ -19625,14 +19626,14 @@ msgid ""
 "there. Green color spots indicates where you can move."
 msgstr ""
 
-#: activities/nine_men_morris/NineMenMorris.qml:360
+#: activities/nine_men_morris/NineMenMorris.qml:367
 msgctxt "NineMenMorris|"
 msgid ""
 "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
 "moved to any vacant spot on the board."
 msgstr ""
 
-#: activities/nine_men_morris/NineMenMorris.qml:364
+#: activities/nine_men_morris/NineMenMorris.qml:371
 msgctxt "NineMenMorris|"
 msgid ""
 "If you immobilize the computer or leave it with less than 3 pieces, then you "
@@ -19692,32 +19693,32 @@ msgid ""
 "100% to complete the level."
 msgstr "识别音符，在钢琴键盘上弹奏它们，达到 100% 的准确率以通关。"
 
-#: activities/note_names/NoteNames.qml:201
+#: activities/note_names/NoteNames.qml:208
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
 msgstr ""
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:271
+#: activities/note_names/NoteNames.qml:278
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:449
+#: activities/note_names/NoteNames.qml:456
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
 
-#: activities/note_names/NoteNames.qml:450
+#: activities/note_names/NoteNames.qml:457
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "退出"
 
-#: activities/note_names/NoteNames.qml:451
+#: activities/note_names/NoteNames.qml:458
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "继续"
@@ -20059,32 +20060,32 @@ msgid ""
 "ascending or descending order as requested."
 msgstr ""
 
-#: activities/ordering_numbers/ordering.js:66
+#: activities/ordering_numbers/ordering.js:65
 msgctxt "ordering|"
 msgid "Drag and drop the items in ascending order."
 msgstr ""
 
-#: activities/ordering_numbers/ordering.js:67
+#: activities/ordering_numbers/ordering.js:66
 msgctxt "ordering|"
 msgid "Drag and drop the items in descending order."
 msgstr ""
 
-#: activities/ordering_numbers/ordering.js:68
+#: activities/ordering_numbers/ordering.js:67
 msgctxt "ordering|"
 msgid "Drag and drop the letters in alphabetical order."
 msgstr ""
 
-#: activities/ordering_numbers/ordering.js:69
+#: activities/ordering_numbers/ordering.js:68
 msgctxt "ordering|"
 msgid "Drag and drop the letters in reverse alphabetical order."
 msgstr ""
 
-#: activities/ordering_numbers/ordering.js:70
+#: activities/ordering_numbers/ordering.js:69
 msgctxt "ordering|"
 msgid "Drag and drop the items in chronological order."
 msgstr ""
 
-#: activities/ordering_numbers/ordering.js:71
+#: activities/ordering_numbers/ordering.js:70
 msgctxt "ordering|"
 msgid "Drag and drop the words to the upper box to form a meaningful sentence."
 msgstr ""
@@ -20542,7 +20543,7 @@ msgctxt "ActivityInfo|"
 msgid "Arrows: directions"
 msgstr "方向键：控制方向"
 
-#: activities/path_encoding/GridPath.qml:130
+#: activities/path_encoding/GridPath.qml:137
 #, qt-format
 msgctxt "GridPath|"
 msgid "Errors: %1"
@@ -20553,6 +20554,67 @@ msgstr "错误：%1"
 msgctxt "ActivityInfo|"
 msgid "Relative path encoding"
 msgstr "相对路径编码"
+
+#: activities/peg_solitaire/ActivityConfig.qml:27
+msgctxt "ActivityConfig|"
+msgid "Use the default starting hole"
+msgstr ""
+
+#. Activity title
+#: activities/peg_solitaire/ActivityInfo.qml:14
+msgctxt "ActivityInfo|"
+msgid "Peg solitaire"
+msgstr ""
+
+#. Help title
+#: activities/peg_solitaire/ActivityInfo.qml:16
+msgctxt "ActivityInfo|"
+msgid "Remove all the pieces in the correct order until only one remains."
+msgstr ""
+
+#. Help manual
+#: activities/peg_solitaire/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"To move a piece, make it jump another one in an orthogonal direction, to a "
+"hole two positions away. The jumped piece is removed from the board. You can "
+"click on a movable piece and then on its destination, or drag and drop it to "
+"its destination. The game is over when no more piece can be moved, and is "
+"won if only one piece remains. If the option to use the default starting "
+"hole is not selected, you need to choose the first piece to remove by "
+"clicking on it. You can use the undo button to undo your last move, and the "
+"redo button to redo it."
+msgstr ""
+
+#. Board for the Peg solitaire game
+#: activities/peg_solitaire/peg_solitaire.js:28
+msgctxt "peg_solitaire|"
+msgid "English board"
+msgstr ""
+
+#. Board for the Peg solitaire game
+#: activities/peg_solitaire/peg_solitaire.js:44
+#, fuzzy
+#| msgctxt "board14_0|"
+#| msgid "French Polynesia"
+msgctxt "peg_solitaire|"
+msgid "French board"
+msgstr "法属波利尼西亚"
+
+#. Board for the Peg solitaire game
+#: activities/peg_solitaire/peg_solitaire.js:61
+msgctxt "peg_solitaire|"
+msgid "32 holes diamond board"
+msgstr ""
+
+#. Board for the Peg solitaire game
+#: activities/peg_solitaire/peg_solitaire.js:79
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Numerical order"
+msgctxt "peg_solitaire|"
+msgid "Asymmetrical board"
+msgstr "数字顺序"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -20576,14 +20638,14 @@ msgid ""
 "back to its initial position."
 msgstr ""
 
-#: activities/penalty/Penalty.qml:239
+#: activities/penalty/Penalty.qml:246
 msgctxt "Penalty|"
 msgid ""
 "Double click or double tap on the side of the goal you want to put the ball "
 "in."
 msgstr ""
 
-#: activities/penalty/Penalty.qml:240
+#: activities/penalty/Penalty.qml:247
 msgctxt "Penalty|"
 msgid "Click or tap on the ball to bring it back to its initial position."
 msgstr ""
@@ -20614,12 +20676,12 @@ msgid ""
 "you find a difference you must click on it."
 msgstr "请仔细观察这两幅图片，其中有几处不同。请点击您认为两者不同的地方。"
 
-#: activities/photo_hunter/PhotoHunter.qml:88
+#: activities/photo_hunter/PhotoHunter.qml:95
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "拖动滑块以显示差异。"
 
-#: activities/photo_hunter/PhotoHunter.qml:89
+#: activities/photo_hunter/PhotoHunter.qml:96
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "请点击两幅图片中的不同之处。"
@@ -21004,34 +21066,34 @@ msgctxt "OptionsRow|"
 msgid "Flat notes"
 msgstr ""
 
-#: activities/piano_composition/piano_composition.js:24
+#: activities/piano_composition/piano_composition.js:23
 msgctxt "piano_composition|"
 msgid "This is the treble clef staff for high pitched notes."
 msgstr ""
 
-#: activities/piano_composition/piano_composition.js:27
+#: activities/piano_composition/piano_composition.js:26
 msgctxt "piano_composition|"
 msgid "This is the bass clef staff for low pitched notes."
 msgstr ""
 
-#: activities/piano_composition/piano_composition.js:30
+#: activities/piano_composition/piano_composition.js:29
 msgctxt "piano_composition|"
 msgid "The black keys are sharp and flat keys. Sharp notes have a ♯ sign."
 msgstr ""
 
-#: activities/piano_composition/piano_composition.js:33
+#: activities/piano_composition/piano_composition.js:32
 msgctxt "piano_composition|"
 msgid "Each black key has two names: flat and sharp. Flat notes have ♭ sign."
 msgstr ""
 
-#: activities/piano_composition/piano_composition.js:36
+#: activities/piano_composition/piano_composition.js:35
 msgctxt "piano_composition|"
 msgid ""
 "Click on the note symbol to write different length notes such as whole "
 "notes, half notes, quarter notes and eighth notes."
 msgstr ""
 
-#: activities/piano_composition/piano_composition.js:39
+#: activities/piano_composition/piano_composition.js:38
 msgctxt "piano_composition|"
 msgid ""
 "Rests are equivalent to notes during which silence is maintained. Click on "
@@ -21039,66 +21101,66 @@ msgid ""
 "to enter it to the staff."
 msgstr ""
 
-#: activities/piano_composition/piano_composition.js:42
+#: activities/piano_composition/piano_composition.js:41
 msgctxt "piano_composition|"
 msgid "Now you can load music and also save your compositions."
 msgstr ""
 
-#: activities/piano_composition/piano_composition.js:63
+#: activities/piano_composition/piano_composition.js:62
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Error saving melody to your file (%1)"
 msgstr "保存旋律到文件时发生错误 (%1)"
 
-#: activities/piano_composition/piano_composition.js:68
+#: activities/piano_composition/piano_composition.js:67
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Melody saved to your file (%1)"
 msgstr "旋律已保存到文件 (%1)"
 
-#: activities/piano_composition/Piano_composition.qml:369
+#: activities/piano_composition/Piano_composition.qml:376
 msgctxt "Piano_composition|"
 msgid "You have not selected any note. Do you want to erase all the notes?"
 msgstr ""
 
-#: activities/piano_composition/Piano_composition.qml:370
+#: activities/piano_composition/Piano_composition.qml:377
 msgctxt "Piano_composition|"
 msgid "Yes"
 msgstr "是"
 
-#: activities/piano_composition/Piano_composition.qml:376
+#: activities/piano_composition/Piano_composition.qml:383
 msgctxt "Piano_composition|"
 msgid "No"
 msgstr "否"
 
-#: activities/piano_composition/Piano_composition.qml:423
+#: activities/piano_composition/Piano_composition.qml:430
 msgctxt "Piano_composition|"
 msgid "Select the type of melody to load."
 msgstr "选择要加载的旋律类型。"
 
-#: activities/piano_composition/Piano_composition.qml:428
+#: activities/piano_composition/Piano_composition.qml:435
 msgctxt "Piano_composition|"
 msgid "Pre-defined melodies"
 msgstr "预存的旋律"
 
-#: activities/piano_composition/Piano_composition.qml:446
+#: activities/piano_composition/Piano_composition.qml:453
 msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "您保存的旋律"
 
-#: activities/piano_composition/Piano_composition.qml:550
+#: activities/piano_composition/Piano_composition.qml:557
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
 
-#: activities/piano_composition/Piano_composition.qml:551
+#: activities/piano_composition/Piano_composition.qml:558
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "退出"
 
-#: activities/piano_composition/Piano_composition.qml:552
+#: activities/piano_composition/Piano_composition.qml:559
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "继续"
@@ -21371,24 +21433,24 @@ msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
 msgstr ""
 
-#: activities/play_piano/PlayPiano.qml:189
+#: activities/play_piano/PlayPiano.qml:196
 msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr ""
 
-#: activities/play_piano/PlayPiano.qml:322
+#: activities/play_piano/PlayPiano.qml:329
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
 
-#: activities/play_piano/PlayPiano.qml:323
+#: activities/play_piano/PlayPiano.qml:330
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "退出"
 
-#: activities/play_piano/PlayPiano.qml:324
+#: activities/play_piano/PlayPiano.qml:331
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "继续"
@@ -21466,33 +21528,33 @@ msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
 msgstr ""
 
-#: activities/play_rhythm/PlayRhythm.qml:121
+#: activities/play_rhythm/PlayRhythm.qml:128
 msgctxt "PlayRhythm|"
 msgid ""
 "Use the metronome to estimate the time intervals and play the rhythm "
 "correctly."
 msgstr ""
 
-#: activities/play_rhythm/PlayRhythm.qml:122
+#: activities/play_rhythm/PlayRhythm.qml:129
 msgctxt "PlayRhythm|"
 msgid ""
 "Follow the vertical line and click on the drum or press space key to play "
 "the rhythm correctly."
 msgstr ""
 
-#: activities/play_rhythm/PlayRhythm.qml:406
+#: activities/play_rhythm/PlayRhythm.qml:413
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
 
-#: activities/play_rhythm/PlayRhythm.qml:407
+#: activities/play_rhythm/PlayRhythm.qml:414
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "退出"
 
-#: activities/play_rhythm/PlayRhythm.qml:408
+#: activities/play_rhythm/PlayRhythm.qml:415
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "继续"
@@ -21724,92 +21786,92 @@ msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:224
+#: activities/programmingMaze/ProgrammingMaze.qml:231
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:260
+#: activities/programmingMaze/ProgrammingMaze.qml:267
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:294
+#: activities/programmingMaze/ProgrammingMaze.qml:301
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:294
+#: activities/programmingMaze/ProgrammingMaze.qml:301
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:542
+#: activities/programmingMaze/ProgrammingMaze.qml:549
 msgctxt "ProgrammingMaze|"
 msgid "Instruction Area:"
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:543
+#: activities/programmingMaze/ProgrammingMaze.qml:550
 msgctxt "ProgrammingMaze|"
 msgid ""
 "There are 3 instructions which you can use to code and lead Tux to the fish:"
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:544
+#: activities/programmingMaze/ProgrammingMaze.qml:551
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
 "facing."
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:545
+#: activities/programmingMaze/ProgrammingMaze.qml:552
 msgctxt "ProgrammingMaze|"
 msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:546
+#: activities/programmingMaze/ProgrammingMaze.qml:553
 msgctxt "ProgrammingMaze|"
 msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:550
+#: activities/programmingMaze/ProgrammingMaze.qml:557
 msgctxt "ProgrammingMaze|"
 msgid "Main Function:"
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:551
+#: activities/programmingMaze/ProgrammingMaze.qml:558
 msgctxt "ProgrammingMaze|"
 msgid "The execution of the code starts here."
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:552
+#: activities/programmingMaze/ProgrammingMaze.qml:559
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-Click on any instruction in the <b>instruction area</b> to add it to the "
 "<b>Main Function</b>."
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:553
+#: activities/programmingMaze/ProgrammingMaze.qml:560
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-The instructions will execute in order until there's none left, or until a "
 "dead-end, or when Tux reaches the fish."
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:563
+#: activities/programmingMaze/ProgrammingMaze.qml:570
 msgctxt "ProgrammingMaze|"
 msgid "Procedure:"
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:564
+#: activities/programmingMaze/ProgrammingMaze.qml:571
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
 "the code by calling it where needed</b>."
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:565
+#: activities/programmingMaze/ProgrammingMaze.qml:572
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
@@ -21817,19 +21879,19 @@ msgid ""
 "Function</b> label."
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:575
+#: activities/programmingMaze/ProgrammingMaze.qml:582
 msgctxt "ProgrammingMaze|"
 msgid "Loop:"
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:576
+#: activities/programmingMaze/ProgrammingMaze.qml:583
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
 "the number of times defined by the number inside it</b>."
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:577
+#: activities/programmingMaze/ProgrammingMaze.qml:584
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
@@ -21908,14 +21970,14 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr ""
 
-#: activities/railroad/Railroad.qml:126
+#: activities/railroad/Railroad.qml:133
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
 "to set up a similar train."
 msgstr "在计时器结束前，观察并记住列车。随后，拖拽组件来组成一辆相似的列车。"
 
-#: activities/railroad/Railroad.qml:129
+#: activities/railroad/Railroad.qml:136
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -21948,7 +22010,7 @@ msgid ""
 "appear and disappear. Did the given word appear in the list?"
 msgstr ""
 
-#: activities/readingh/Readingh.qml:306
+#: activities/readingh/Readingh.qml:313
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -21956,12 +22018,12 @@ msgid ""
 "\">%1</font></b><br/><font color=\"#373737\">is displayed</font>"
 msgstr ""
 
-#: activities/readingh/Readingh.qml:366
+#: activities/readingh/Readingh.qml:373
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "是的，我看到了！"
 
-#: activities/readingh/Readingh.qml:387
+#: activities/readingh/Readingh.qml:394
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "不，它不在其中！"
@@ -22112,14 +22174,14 @@ msgid ""
 "To win you must switch on all the consumers while all the producers are up."
 msgstr ""
 
-#: activities/renewable_energy/RenewableEnergy.qml:273
+#: activities/renewable_energy/RenewableEnergy.qml:275
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
 "up so he can have light in his home."
 msgstr "小企鹅从一次漫长的捕鱼派对归来了。请开启供电系统，让它的家中更明亮。"
 
-#: activities/renewable_energy/RenewableEnergy.qml:276
+#: activities/renewable_energy/RenewableEnergy.qml:278
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22128,7 +22190,7 @@ msgstr ""
 "点击不同的可用组件：太阳、云、大坝、太阳能电池、风力发电场和和变压器，来重启"
 "整个电力系统。"
 
-#: activities/renewable_energy/RenewableEnergy.qml:279
+#: activities/renewable_energy/RenewableEnergy.qml:281
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22138,12 +22200,12 @@ msgstr ""
 "当系统就绪、小企鹅回到家中时，请为它按下灯开关。若要完成任务，您需要在所有动"
 "力设备启动时打开所有的用电设备。"
 
-#: activities/renewable_energy/RenewableEnergy.qml:282
+#: activities/renewable_energy/RenewableEnergy.qml:284
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "学习基于可再生能源的电力系统。玩的开心！"
 
-#: activities/renewable_energy/RenewableEnergy.qml:308
+#: activities/renewable_energy/RenewableEnergy.qml:310
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -22283,8 +22345,8 @@ msgctxt "ActivityInfo|"
 msgid "Letters: type roman numerals (with I, V, X, L, C, D and M)"
 msgstr ""
 
-#: activities/roman_numerals/RomanNumerals.qml:80
-#: activities/roman_numerals/RomanNumerals.qml:86
+#: activities/roman_numerals/RomanNumerals.qml:82
+#: activities/roman_numerals/RomanNumerals.qml:88
 msgctxt "RomanNumerals|"
 msgid ""
 "The roman numbers are all built out of these 7 numbers:\n"
@@ -22296,32 +22358,32 @@ msgid ""
 "number 0."
 msgstr ""
 
-#: activities/roman_numerals/RomanNumerals.qml:81
-#: activities/roman_numerals/RomanNumerals.qml:93
-#: activities/roman_numerals/RomanNumerals.qml:105
-#: activities/roman_numerals/RomanNumerals.qml:117
-#: activities/roman_numerals/RomanNumerals.qml:129
+#: activities/roman_numerals/RomanNumerals.qml:83
+#: activities/roman_numerals/RomanNumerals.qml:95
+#: activities/roman_numerals/RomanNumerals.qml:107
+#: activities/roman_numerals/RomanNumerals.qml:119
+#: activities/roman_numerals/RomanNumerals.qml:131
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the roman number %1 to arabic."
 msgstr ""
 
-#: activities/roman_numerals/RomanNumerals.qml:87
-#: activities/roman_numerals/RomanNumerals.qml:99
-#: activities/roman_numerals/RomanNumerals.qml:111
-#: activities/roman_numerals/RomanNumerals.qml:123
-#: activities/roman_numerals/RomanNumerals.qml:135
-#: activities/roman_numerals/RomanNumerals.qml:141
-#: activities/roman_numerals/RomanNumerals.qml:147
-#: activities/roman_numerals/RomanNumerals.qml:153
-#: activities/roman_numerals/RomanNumerals.qml:159
+#: activities/roman_numerals/RomanNumerals.qml:89
+#: activities/roman_numerals/RomanNumerals.qml:101
+#: activities/roman_numerals/RomanNumerals.qml:113
+#: activities/roman_numerals/RomanNumerals.qml:125
+#: activities/roman_numerals/RomanNumerals.qml:137
+#: activities/roman_numerals/RomanNumerals.qml:143
+#: activities/roman_numerals/RomanNumerals.qml:149
+#: activities/roman_numerals/RomanNumerals.qml:155
+#: activities/roman_numerals/RomanNumerals.qml:161
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the arabic number %1 to roman."
 msgstr "请将阿拉伯数字 %1 转换成罗马数字。"
 
-#: activities/roman_numerals/RomanNumerals.qml:92
-#: activities/roman_numerals/RomanNumerals.qml:98
+#: activities/roman_numerals/RomanNumerals.qml:94
+#: activities/roman_numerals/RomanNumerals.qml:100
 msgctxt "RomanNumerals|"
 msgid ""
 "All the units except 4 and 9 are built using sums of I and V:\n"
@@ -22330,8 +22392,8 @@ msgid ""
 "IV (5 – 1) and IX (10 – 1)."
 msgstr ""
 
-#: activities/roman_numerals/RomanNumerals.qml:104
-#: activities/roman_numerals/RomanNumerals.qml:110
+#: activities/roman_numerals/RomanNumerals.qml:106
+#: activities/roman_numerals/RomanNumerals.qml:112
 msgctxt "RomanNumerals|"
 msgid ""
 "All the tens except 40 and 90 are built using sums of X and L:\n"
@@ -22340,8 +22402,8 @@ msgid ""
 "XL (10 taken from 50) and XC (10 taken from 100)."
 msgstr ""
 
-#: activities/roman_numerals/RomanNumerals.qml:116
-#: activities/roman_numerals/RomanNumerals.qml:122
+#: activities/roman_numerals/RomanNumerals.qml:118
+#: activities/roman_numerals/RomanNumerals.qml:124
 msgctxt "RomanNumerals|"
 msgid ""
 "All the hundreds except 400 and 900 are built using sums of C and D:\n"
@@ -22350,8 +22412,8 @@ msgid ""
 "CD (100 taken from 500) and CM (100 taken from 1000)."
 msgstr ""
 
-#: activities/roman_numerals/RomanNumerals.qml:128
-#: activities/roman_numerals/RomanNumerals.qml:134
+#: activities/roman_numerals/RomanNumerals.qml:130
+#: activities/roman_numerals/RomanNumerals.qml:136
 msgctxt "RomanNumerals|"
 msgid ""
 "Sums of M are used for building thousands: M, MM, MMM.\n"
@@ -22361,19 +22423,19 @@ msgid ""
 "hand, it limits the maximum roman number to 3999 (MMMCMXCIX)."
 msgstr ""
 
-#: activities/roman_numerals/RomanNumerals.qml:140
+#: activities/roman_numerals/RomanNumerals.qml:142
 msgctxt "RomanNumerals|"
 msgid ""
 "Now you know the rules, you can read and write numbers in roman numerals."
 msgstr ""
 
-#: activities/roman_numerals/RomanNumerals.qml:387
+#: activities/roman_numerals/RomanNumerals.qml:389
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "罗马数字：%1"
 
-#: activities/roman_numerals/RomanNumerals.qml:388
+#: activities/roman_numerals/RomanNumerals.qml:390
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -23268,7 +23330,7 @@ msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr ""
 
-#: activities/share/share.js:115
+#: activities/share/share.js:114
 #, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -23277,7 +23339,7 @@ msgid "Place %n boy(s) "
 msgid_plural "Place %n boy(s) "
 msgstr[0] "放置 %n 个男孩"
 
-#: activities/share/share.js:119
+#: activities/share/share.js:118
 #, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -23286,7 +23348,7 @@ msgid "and %n girl(s) in the center. "
 msgid_plural "and %n girl(s) in the center. "
 msgstr[0] "和 %n 个女孩于中心。"
 
-#: activities/share/share.js:123
+#: activities/share/share.js:122
 #, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -23295,7 +23357,7 @@ msgid "Then split %n pieces of candy equally between them."
 msgid_plural "Then split %n pieces of candy equally between them."
 msgstr[0] ""
 
-#: activities/share/Share.qml:359
+#: activities/share/Share.qml:366
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
@@ -23514,7 +23576,7 @@ msgstr "图章工具"
 #: activities/sketch/TextToolPanel.qml:17
 msgctxt "TextToolPanel|"
 msgid "Text Tool"
-msgstr "文字工具"
+msgstr "文本工具"
 
 #: activities/sketch/TextToolPanel.qml:33
 msgctxt "TextToolPanel|"
@@ -24802,7 +24864,7 @@ msgid ""
 "questions."
 msgstr ""
 
-#: activities/solar_system/SolarSystem.qml:152
+#: activities/solar_system/SolarSystem.qml:159
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24813,24 +24875,24 @@ msgid ""
 "knowledge about the Solar System."
 msgstr ""
 
-#: activities/solar_system/SolarSystem.qml:152
+#: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "评估"
 
-#: activities/solar_system/SolarSystem.qml:152
+#: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr ""
 
-#: activities/solar_system/SolarSystem.qml:157
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
 "options, out of which one is correct."
 msgstr ""
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:167
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -24840,14 +24902,14 @@ msgid ""
 "you can click on it to get a hint to find the answer."
 msgstr ""
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:177
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
 "the bottom right of the screen shows your percentage score."
 msgstr ""
 
-#: activities/solar_system/SolarSystem.qml:173
+#: activities/solar_system/SolarSystem.qml:180
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -24856,14 +24918,14 @@ msgid ""
 "asked after which no more question will be added."
 msgstr ""
 
-#: activities/solar_system/SolarSystem.qml:176
+#: activities/solar_system/SolarSystem.qml:183
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
 "expert!"
 msgstr ""
 
-#: activities/solar_system/SolarSystem.qml:355
+#: activities/solar_system/SolarSystem.qml:362
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24871,7 +24933,7 @@ msgid ""
 "temperature.<br><font color=\"#3bb0de\">%1</font>"
 msgstr ""
 
-#: activities/solar_system/SolarSystem.qml:356
+#: activities/solar_system/SolarSystem.qml:363
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24880,7 +24942,7 @@ msgid ""
 msgstr ""
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:359
+#: activities/solar_system/SolarSystem.qml:366
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -24888,12 +24950,12 @@ msgid ""
 "b>other <b>J</b>ust <b>S</b>erved <b>U</b>s <b>N</b>oodles.<br>"
 msgstr ""
 
-#: activities/solar_system/SolarSystem.qml:361
+#: activities/solar_system/SolarSystem.qml:368
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "提示"
 
-#: activities/solar_system/SolarSystem.qml:369
+#: activities/solar_system/SolarSystem.qml:376
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "查看太阳系"
@@ -25010,55 +25072,55 @@ msgctxt "Controls|"
 msgid "Right Ballast Tank"
 msgstr "右侧压水舱"
 
-#: activities/submarine/Submarine.qml:133
+#: activities/submarine/Submarine.qml:140
 msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "移动潜艇到屏幕另一侧。"
 
-#: activities/submarine/Submarine.qml:136
+#: activities/submarine/Submarine.qml:143
 msgctxt "Submarine|"
 msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
 "indicating the current speed of the submarine."
 msgstr ""
 
-#: activities/submarine/Submarine.qml:139
+#: activities/submarine/Submarine.qml:146
 msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr ""
 
-#: activities/submarine/Submarine.qml:142
+#: activities/submarine/Submarine.qml:149
 msgctxt "Submarine|"
 msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
 "velocity."
 msgstr ""
 
-#: activities/submarine/Submarine.qml:149
+#: activities/submarine/Submarine.qml:156
 msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr ""
 
-#: activities/submarine/Submarine.qml:152
+#: activities/submarine/Submarine.qml:159
 msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr ""
 
-#: activities/submarine/Submarine.qml:155
+#: activities/submarine/Submarine.qml:162
 msgctxt "Submarine|"
 msgid ""
 "If the ballast tanks are empty, the submarine will float. If the ballast "
 "tanks are full of water, the submarine will dive underwater."
 msgstr ""
 
-#: activities/submarine/Submarine.qml:158
+#: activities/submarine/Submarine.qml:165
 msgctxt "Submarine|"
 msgid ""
 "Turning the upper valve on or off will alternatively allow or stop the water "
 "from filling in the ballast tank, thus allowing it to dive underwater."
 msgstr ""
 
-#: activities/submarine/Submarine.qml:161
+#: activities/submarine/Submarine.qml:168
 msgctxt "Submarine|"
 msgid ""
 "Turning the lower valve on or off will alternatively allow or stop the water "
@@ -25066,40 +25128,40 @@ msgid ""
 "of the water."
 msgstr ""
 
-#: activities/submarine/Submarine.qml:168
+#: activities/submarine/Submarine.qml:175
 msgctxt "Submarine|"
 msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
 "submarine."
 msgstr "控制面板最右侧的装置控制潜艇的水平舵。"
 
-#: activities/submarine/Submarine.qml:171
+#: activities/submarine/Submarine.qml:178
 msgctxt "Submarine|"
 msgid ""
 "The diving planes in a submarine are used to control the depth of the "
 "submarine accurately once it is underwater."
 msgstr ""
 
-#: activities/submarine/Submarine.qml:174
+#: activities/submarine/Submarine.qml:181
 msgctxt "Submarine|"
 msgid ""
 "Once the submarine is moving underwater, increasing or decreasing the angle "
 "of the planes will increase and decrease the depth of the submarine."
 msgstr ""
 
-#: activities/submarine/Submarine.qml:177
+#: activities/submarine/Submarine.qml:184
 msgctxt "Submarine|"
 msgid ""
 "The + button will increase the depth of the submarine, while the - button "
 "will decrease the depth of the submarine."
 msgstr ""
 
-#: activities/submarine/Submarine.qml:180
+#: activities/submarine/Submarine.qml:187
 msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr ""
 
-#: activities/submarine/Submarine.qml:183
+#: activities/submarine/Submarine.qml:190
 msgctxt "Submarine|"
 msgid "Check out the help menu for the keyboard controls."
 msgstr ""
@@ -25203,12 +25265,12 @@ msgid ""
 "you un-mark them, by double clicking on them again."
 msgstr ""
 
-#: activities/superbrain/Superbrain.qml:167
+#: activities/superbrain/Superbrain.qml:174
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr ""
 
-#: activities/superbrain/Superbrain.qml:169
+#: activities/superbrain/Superbrain.qml:176
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr ""
@@ -25831,39 +25893,39 @@ msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
 msgstr "求解四位或五位数的减法运算，分两行。 "
 
-#: activities/vertical_subtraction/subtraction.js:79
+#: activities/vertical_subtraction/subtraction.js:78
 msgctxt "subtraction|"
 msgid "Write:"
 msgstr "写："
 
-#: activities/vertical_subtraction/subtraction.js:79
+#: activities/vertical_subtraction/subtraction.js:78
 msgctxt "subtraction|"
 msgid "Solve:"
 msgstr "解："
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
-#: activities/vertical_subtraction/subtraction.js:190
+#: activities/vertical_subtraction/subtraction.js:189
 #, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
 msgstr "解：%1"
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:99
+#: activities/vertical_subtraction/VerticalSubtraction.qml:106
 msgctxt "VerticalSubtraction|"
 msgid "Write your own addition and solve it."
 msgstr ""
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:100
+#: activities/vertical_subtraction/VerticalSubtraction.qml:107
 msgctxt "VerticalSubtraction|"
 msgid "Write your own subtraction and solve it."
 msgstr ""
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:426
+#: activities/vertical_subtraction/VerticalSubtraction.qml:433
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
 msgstr "准备就绪"
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:464
+#: activities/vertical_subtraction/VerticalSubtraction.qml:471
 msgctxt "VerticalSubtraction|"
 msgid "The result should not be a negative number."
 msgstr ""

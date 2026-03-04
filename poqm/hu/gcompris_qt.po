@@ -82,7 +82,7 @@ msgid "Find the requested numbers and drag them to the corresponding spot."
 msgstr "Hasonlítsd össze a számokat a megfelelő jelek segítségével!"
 
 #. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
-#: activities/adjacent_numbers/Adjacent_numbers.qml:56
+#: activities/adjacent_numbers/Adjacent_numbers.qml:60
 #, fuzzy, qt-format
 #| msgctxt "Data|"
 #| msgid "Find the previous numbers."
@@ -93,7 +93,7 @@ msgstr[0] "Találd meg az előző számot!"
 msgstr[1] "Találd meg az előző számot!"
 
 #. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
-#: activities/adjacent_numbers/Adjacent_numbers.qml:60
+#: activities/adjacent_numbers/Adjacent_numbers.qml:64
 #, fuzzy, qt-format
 #| msgctxt "Data|"
 #| msgid "Find the next numbers."
@@ -104,7 +104,7 @@ msgstr[0] "Találd meg a következő számot!"
 msgstr[1] "Találd meg a következő számot!"
 
 #. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
-#: activities/adjacent_numbers/Adjacent_numbers.qml:64
+#: activities/adjacent_numbers/Adjacent_numbers.qml:68
 #, fuzzy, qt-format
 #| msgctxt "Data|"
 #| msgid "Find the in-between numbers."
@@ -115,7 +115,7 @@ msgstr[0] "Találd meg a két szám közötti számot!"
 msgstr[1] "Találd meg a két szám közötti számot!"
 
 #. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
-#: activities/adjacent_numbers/Adjacent_numbers.qml:68
+#: activities/adjacent_numbers/Adjacent_numbers.qml:72
 #, fuzzy, qt-format
 #| msgctxt "Data|"
 #| msgid "Find the missing numbers"
@@ -2659,7 +2659,7 @@ msgstr ""
 "Végül, a pályakészlet betöltéséhez kattinsunk a 'Mentett pályák betöltése' "
 "gombra."
 
-#: activities/balancebox/balancebox.js:72
+#: activities/balancebox/balancebox.js:71
 msgctxt "balancebox|"
 msgid ""
 "Either create your levels by starting the level editor in the activity "
@@ -2668,13 +2668,13 @@ msgstr ""
 "Ha pályát szerkesztünk, mindig töltsük be a pályát vagy válasszuk a "
 "beépített pályákat."
 
-#: activities/balancebox/balancebox.js:106
+#: activities/balancebox/balancebox.js:105
 #, qt-format
 msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
 msgstr "Az alábbi fájl '%1' nem található!<br>Betöltöm a beépített pályákat."
 
-#: activities/balancebox/Balancebox.qml:70
+#: activities/balancebox/Balancebox.qml:74
 msgctxt "Balancebox|"
 msgid ""
 "You selected the user-defined level set, but you have not yet loaded any "
@@ -2683,7 +2683,7 @@ msgstr ""
 "Egy felhasználó által létrehozott pályakészletet választottál, de még egyet "
 "sem töltöttél be!"
 
-#: activities/balancebox/Balancebox.qml:72
+#: activities/balancebox/Balancebox.qml:76
 msgctxt "Balancebox|"
 msgid "OK"
 msgstr "OK"
@@ -2753,13 +2753,13 @@ msgstr ""
 "Nyomd meg a jobbra-balra nyilakat egyszerre, hogy egyenesen induljon el a "
 "labda. Értinőképernyőn a két kezet egyszerre kell megérintened!"
 
-#: activities/ballcatch/Ballcatch.qml:227
+#: activities/ballcatch/Ballcatch.qml:234
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr "Koppints a két kézre egyszerre, hogy a labda egyenesen guruljon."
 
-#: activities/ballcatch/Ballcatch.qml:233
+#: activities/ballcatch/Ballcatch.qml:240
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2891,7 +2891,7 @@ msgstr ""
 "kettes számrendszeri megfelelője. Ha sikerült, nyomd meg az OK gombot. "
 "értékét jellemzi."
 
-#: activities/binary_bulb/BinaryBulb.qml:95
+#: activities/binary_bulb/BinaryBulb.qml:102
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid ""
@@ -2902,7 +2902,7 @@ msgstr ""
 "Ez a tevékenység megtanítja, hogyan válts át egy tízes számrendszerbeli "
 "számot kettes számrendszerbelivé."
 
-#: activities/binary_bulb/BinaryBulb.qml:99
+#: activities/binary_bulb/BinaryBulb.qml:106
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid ""
@@ -2919,7 +2919,7 @@ msgstr ""
 "ismer a 0-t és az 1-est. Matematikailag ezt bináris jeleknek hívjuk, mert "
 "ott is két szám lehet 0 vagy 1-es."
 
-#: activities/binary_bulb/BinaryBulb.qml:103
+#: activities/binary_bulb/BinaryBulb.qml:110
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
@@ -2929,7 +2929,7 @@ msgstr ""
 "Ebben a feladatban a 0-t és az 1-est égők szimbolizálják, melyeket ki/be "
 "kell kapcsolni."
 
-#: activities/binary_bulb/BinaryBulb.qml:107
+#: activities/binary_bulb/BinaryBulb.qml:114
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid ""
@@ -2943,7 +2943,7 @@ msgstr ""
 "A kettes számrendszer ezeket a jeleket hatékonyan használja, egy szám csak 8 "
 "biten számolhat és csak 0 és 255 között."
 
-#: activities/binary_bulb/BinaryBulb.qml:111
+#: activities/binary_bulb/BinaryBulb.qml:118
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid ""
@@ -2962,7 +2962,7 @@ msgstr ""
 "sorrendben: 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → 2²=4 , bit 4 → 2³=8 , bit 5 → "
 "2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit 8 → 2⁷=128."
 
-#: activities/binary_bulb/BinaryBulb.qml:115
+#: activities/binary_bulb/BinaryBulb.qml:122
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
@@ -2972,7 +2972,7 @@ msgstr ""
 "A 5-ös számot kettes számrendszerbe való átírásához össze fel kell bontani 1 "
 "és a 4 összegére."
 
-#: activities/binary_bulb/BinaryBulb.qml:119
+#: activities/binary_bulb/BinaryBulb.qml:126
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid ""
@@ -2986,7 +2986,7 @@ msgstr ""
 "A hozzá tartozó biteket 1-re, a többit nullára kell állítani. Az 5-ös szám "
 "kettes számrendszerbeli (bináris) megfelelője 101."
 
-#: activities/binary_bulb/BinaryBulb.qml:123
+#: activities/binary_bulb/BinaryBulb.qml:130
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid "This image will help you to compute bits' value."
@@ -2994,7 +2994,7 @@ msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Ez a kép segít a \"bitek helyi értékének\" meghatározásában."
 
-#: activities/binary_bulb/BinaryBulb.qml:171
+#: activities/binary_bulb/BinaryBulb.qml:178
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3103,16 +3103,16 @@ msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
 msgstr "Szóköz: Braille abc mutatása, elrejtése."
 
-#: activities/braille_alphabets/braille_alphabets.js:43
-#: activities/braille_alphabets/braille_alphabets.js:53
-#: activities/braille_alphabets/braille_alphabets.js:63
-#: activities/braille_alphabets/braille_alphabets.js:73
-#: activities/braille_alphabets/braille_alphabets.js:83
+#: activities/braille_alphabets/braille_alphabets.js:42
+#: activities/braille_alphabets/braille_alphabets.js:52
+#: activities/braille_alphabets/braille_alphabets.js:62
+#: activities/braille_alphabets/braille_alphabets.js:72
+#: activities/braille_alphabets/braille_alphabets.js:82
 msgctxt "braille_alphabets|"
 msgid "Now it's a little bit harder without the reference."
 msgstr "A segítség nélkül már kicsit nehezebb."
 
-#: activities/braille_alphabets/braille_alphabets.js:48
+#: activities/braille_alphabets/braille_alphabets.js:47
 msgctxt "braille_alphabets|"
 msgid ""
 "Look at the braille character chart and observe how similar the first and "
@@ -3121,7 +3121,7 @@ msgstr ""
 "Nézd meg a Braille betűket, és figyeld meg, hogy mennyire hasonlít az első "
 "és a második vonal."
 
-#: activities/braille_alphabets/braille_alphabets.js:58
+#: activities/braille_alphabets/braille_alphabets.js:57
 msgctxt "braille_alphabets|"
 msgid ""
 "Again, similar to the first line in the character chart but take care, the "
@@ -3129,7 +3129,7 @@ msgid ""
 msgstr ""
 "Ismét hasonló, mint az első sor, de vigyázz: a „W” betűt később adták hozzá."
 
-#: activities/braille_alphabets/braille_alphabets.js:68
+#: activities/braille_alphabets/braille_alphabets.js:67
 msgctxt "braille_alphabets|"
 msgid "This is easy, numbers are the same as letters from A to J."
 msgstr "Ez könnyű, mert a számok megegyeznek a betűkkel A-tól J-ig."
@@ -3389,37 +3389,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "Szóköz vagy Enter: Válasz elfogadása"
 
-#: activities/calendar/Calendar.qml:94
+#: activities/calendar/Calendar.qml:101
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "Vasárnap"
 
-#: activities/calendar/Calendar.qml:95
+#: activities/calendar/Calendar.qml:102
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "Hétfő"
 
-#: activities/calendar/Calendar.qml:96
+#: activities/calendar/Calendar.qml:103
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "Kedd"
 
-#: activities/calendar/Calendar.qml:97
+#: activities/calendar/Calendar.qml:104
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "Szerda"
 
-#: activities/calendar/Calendar.qml:98
+#: activities/calendar/Calendar.qml:105
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "Csütörtök"
 
-#: activities/calendar/Calendar.qml:99
+#: activities/calendar/Calendar.qml:106
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "Péntek"
 
-#: activities/calendar/Calendar.qml:100
+#: activities/calendar/Calendar.qml:107
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "Szombat"
@@ -3773,7 +3773,7 @@ msgctxt "ActivityInfo|"
 msgid "Review the instructions and then drag and drop the items as specified."
 msgstr "Az utasítások elolvasása után húzd a tárgyakat a megfelelő helyekre!"
 
-#: activities/categorization/Categorization.qml:149
+#: activities/categorization/Categorization.qml:156
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3784,12 +3784,12 @@ msgstr ""
 "képek letöltéséhez! Az X megnyomásával indíthatod a demó változatot vagy "
 "kapcsolhatod ki ezt az üzetnetet ha többé nem akarod látni!"
 
-#: activities/categorization/Categorization.qml:152
+#: activities/categorization/Categorization.qml:159
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Képkészlet frissítése"
 
-#: activities/categorization/Categorization.qml:153
+#: activities/categorization/Categorization.qml:160
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Ne mutassa többé a szövegablakot!"
@@ -4368,22 +4368,22 @@ msgstr ""
 "draughts.js&gt;. Az útmutató az alábbi oldalról származik &lt;https://en."
 "wikipedia.org/wiki/Draughts&gt;"
 
-#: activities/checkers/checkers.js:69
+#: activities/checkers/checkers.js:68
 msgctxt "checkers|"
 msgid "Black's turn"
 msgstr "A fekete következik"
 
-#: activities/checkers/checkers.js:69
+#: activities/checkers/checkers.js:68
 msgctxt "checkers|"
 msgid "White's turn"
 msgstr "A fehér következik"
 
-#: activities/checkers/checkers.js:72
+#: activities/checkers/checkers.js:71
 msgctxt "checkers|"
 msgid "White wins"
 msgstr "A fehér nyert"
 
-#: activities/checkers/checkers.js:72
+#: activities/checkers/checkers.js:71
 msgctxt "checkers|"
 msgid "Black wins"
 msgstr "A fekete nyert"
@@ -4515,58 +4515,58 @@ msgid ""
 "The chess engine is p4wn &lt;https://github.com/douglasbagnall/p4wn&gt;."
 msgstr "A sakk motorja p4wn &lt;https://github.com/douglasbagnall/p4wn&gt;."
 
-#: activities/chess/chess.js:117
+#: activities/chess/chess.js:116
 msgctxt "chess|"
 msgid "Black's turn"
 msgstr "A fekete következik"
 
-#: activities/chess/chess.js:117
+#: activities/chess/chess.js:116
 msgctxt "chess|"
 msgid "White's turn"
 msgstr "A fehér következik"
 
-#: activities/chess/chess.js:122
+#: activities/chess/chess.js:121
 msgctxt "chess|white wins"
 msgid "White mates"
 msgstr "Fehér matt"
 
-#: activities/chess/chess.js:122
+#: activities/chess/chess.js:121
 msgctxt "chess|black wins"
 msgid "Black mates"
 msgstr "Fekete matt"
 
-#: activities/chess/chess.js:132
+#: activities/chess/chess.js:131
 msgctxt "chess|"
 msgid "Drawn game"
 msgstr "Döntetlen"
 
-#: activities/chess/chess.js:141
+#: activities/chess/chess.js:140
 msgctxt "chess|black king is under attack"
 msgid "White checks"
 msgstr "Fehér sakk"
 
-#: activities/chess/chess.js:141
+#: activities/chess/chess.js:140
 msgctxt "chess|white king is under attack"
 msgid "Black checks"
 msgstr "Fekete sakk"
 
-#: activities/chess/chess.js:144
+#: activities/chess/chess.js:143
 msgctxt "chess|"
 msgid "Invalid, your king may be in check"
 msgstr "Helytelen lépés, a kiráylod sakkban van"
 
 #. Translators: undo all the moves in chess activity
-#: activities/chess/Chess.qml:140
+#: activities/chess/Chess.qml:147
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
 msgstr "Valóban vissza akarod vonni az összes lépést?"
 
-#: activities/chess/Chess.qml:141
+#: activities/chess/Chess.qml:148
 msgctxt "Chess|"
 msgid "Yes"
 msgstr "Igen"
 
-#: activities/chess/Chess.qml:142
+#: activities/chess/Chess.qml:149
 msgctxt "Chess|"
 msgid "No"
 msgstr "Nem"
@@ -5228,12 +5228,12 @@ msgstr ""
 "A rövidebb kar az órát jelzi, a hosszabbik a perceket, a leghosszabb a "
 "másodperceket jelöli."
 
-#: activities/clockgame/Clockgame.qml:124
+#: activities/clockgame/Clockgame.qml:130
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Állítsd be az órát erre:"
 
-#: activities/clockgame/Clockgame.qml:127
+#: activities/clockgame/Clockgame.qml:133
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5241,7 +5241,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n óra"
 msgstr[1] "%n órák"
 
-#: activities/clockgame/Clockgame.qml:130
+#: activities/clockgame/Clockgame.qml:136
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5249,7 +5249,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n perc"
 msgstr[1] "%n percek"
 
-#: activities/clockgame/Clockgame.qml:133
+#: activities/clockgame/Clockgame.qml:139
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5343,67 +5343,67 @@ msgstr ""
 "alapszínek a festék/tinta esetén cyan (a kék egy árnyalata), magenta (a "
 "rózsaszín egy árnyalata), és a sárga."
 
-#: activities/color_mix/ColorMix.qml:92
+#: activities/color_mix/ColorMix.qml:99
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "Keverd ki a színt"
 
-#: activities/color_mix/ColorMix.qml:230
+#: activities/color_mix/ColorMix.qml:237
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "Nem elég a piros"
 
-#: activities/color_mix/ColorMix.qml:232
+#: activities/color_mix/ColorMix.qml:239
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "Túl sok a piros"
 
-#: activities/color_mix/ColorMix.qml:235
+#: activities/color_mix/ColorMix.qml:242
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "Nem elég a zöld"
 
-#: activities/color_mix/ColorMix.qml:237
+#: activities/color_mix/ColorMix.qml:244
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "Túl sok a zöld"
 
-#: activities/color_mix/ColorMix.qml:240
+#: activities/color_mix/ColorMix.qml:247
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "Nem elég a kék"
 
-#: activities/color_mix/ColorMix.qml:242
+#: activities/color_mix/ColorMix.qml:249
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "Túl sok a kék"
 
-#: activities/color_mix/ColorMix.qml:246
+#: activities/color_mix/ColorMix.qml:253
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "Nem elég a bíborvörös"
 
-#: activities/color_mix/ColorMix.qml:248
+#: activities/color_mix/ColorMix.qml:255
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "Túl sok a bíborvörös"
 
-#: activities/color_mix/ColorMix.qml:251
+#: activities/color_mix/ColorMix.qml:258
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "Nem elég a sárga"
 
-#: activities/color_mix/ColorMix.qml:253
+#: activities/color_mix/ColorMix.qml:260
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "Túl sok a sárga"
 
-#: activities/color_mix/ColorMix.qml:256
+#: activities/color_mix/ColorMix.qml:263
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "Nem elég a ciánkék"
 
-#: activities/color_mix/ColorMix.qml:258
+#: activities/color_mix/ColorMix.qml:265
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "Túl sok a ciánkék"
@@ -5548,7 +5548,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Találd meg a rózsaszín kacsát"
 
-#: activities/colors/FindIt.qml:266
+#: activities/colors/FindIt.qml:273
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5557,12 +5557,12 @@ msgstr ""
 "Ez a tevékenység hangot igényel. Akkor is hangokat fogsz hallani, ha azokat "
 "a főmenüben kikapcsoltad!"
 
-#: activities/colors/FindIt.qml:267
+#: activities/colors/FindIt.qml:274
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Kilépsz?"
 
-#: activities/colors/FindIt.qml:268
+#: activities/colors/FindIt.qml:275
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Folytatás"
@@ -5732,7 +5732,7 @@ msgid "Space or Enter or Tab: select the next item"
 msgstr "Szóköz vagy tab: Következő választása."
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 15–25 simple 3-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: cat;dog;win;red;yes
-#: activities/crane/crane.js:41
+#: activities/crane/crane.js:40
 msgctxt "crane|"
 msgid ""
 "cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg"
@@ -5740,7 +5740,7 @@ msgstr ""
 "hat;hal;sor;nap;fej;por;fon;kap;ken;lap;pap;arc;haj;sor;tol;bak;sok;pad;int"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 4-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: blue;best;good;area
-#: activities/crane/crane.js:48
+#: activities/crane/crane.js:47
 msgctxt "crane|"
 msgid ""
 "blue;best;good;area;bell;coat;easy;farm;food;else;girl;give;hero;help;hour;"
@@ -5750,7 +5750,7 @@ msgstr ""
 "zene;bont"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 5-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: happy;child;white;apple
-#: activities/crane/crane.js:55
+#: activities/crane/crane.js:54
 msgctxt "crane|"
 msgid ""
 "happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;"
@@ -6248,12 +6248,12 @@ msgstr ""
 "kivonás... Ez a számítástechnika alapja. A valóságban a 0 a feszültség "
 "hiányát jelöli, ha a feszültség 1-es akkor az adott áramkörben van áram."
 
-#: activities/digital_electricity/DigitalElectricity.qml:248
+#: activities/digital_electricity/DigitalElectricity.qml:255
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Bemenet"
 
-#: activities/digital_electricity/DigitalElectricity.qml:266
+#: activities/digital_electricity/DigitalElectricity.qml:273
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Kimenet"
@@ -6760,17 +6760,17 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ctrl + O:  kép megnyitása"
 
-#: activities/drawing_wheels/DrawingWheels.qml:399
+#: activities/drawing_wheels/DrawingWheels.qml:405
 msgctxt "DrawingWheels|"
 msgid "File menu"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:411
+#: activities/drawing_wheels/DrawingWheels.qml:417
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:435
+#: activities/drawing_wheels/DrawingWheels.qml:441
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Piano composition"
@@ -6778,7 +6778,7 @@ msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr "Dallamírás zongorán"
 
-#: activities/drawing_wheels/DrawingWheels.qml:447
+#: activities/drawing_wheels/DrawingWheels.qml:453
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font selector"
@@ -6786,7 +6786,7 @@ msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr "Betűtipus választó"
 
-#: activities/drawing_wheels/DrawingWheels.qml:474
+#: activities/drawing_wheels/DrawingWheels.qml:480
 #, fuzzy
 #| msgctxt "OptionsRow|"
 #| msgid "Undo"
@@ -6794,32 +6794,32 @@ msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Visszavonom"
 
-#: activities/drawing_wheels/DrawingWheels.qml:486
+#: activities/drawing_wheels/DrawingWheels.qml:492
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:520
+#: activities/drawing_wheels/DrawingWheels.qml:526
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:520
+#: activities/drawing_wheels/DrawingWheels.qml:526
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:553
+#: activities/drawing_wheels/DrawingWheels.qml:559
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:553
+#: activities/drawing_wheels/DrawingWheels.qml:559
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:712
+#: activities/drawing_wheels/DrawingWheels.qml:718
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Save your image"
@@ -6827,7 +6827,7 @@ msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Mentsd el a képet!"
 
-#: activities/drawing_wheels/DrawingWheels.qml:727
+#: activities/drawing_wheels/DrawingWheels.qml:733
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Open an image"
@@ -6835,7 +6835,7 @@ msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Kép megnyitása"
 
-#: activities/drawing_wheels/DrawingWheels.qml:756
+#: activities/drawing_wheels/DrawingWheels.qml:762
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Create a new image"
@@ -6843,7 +6843,7 @@ msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Új kép létrehozása"
 
-#: activities/drawing_wheels/DrawingWheels.qml:775
+#: activities/drawing_wheels/DrawingWheels.qml:781
 #, fuzzy
 #| msgctxt "BackgroundColorSelector|"
 #| msgid "Background color"
@@ -6851,17 +6851,17 @@ msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Háttérszín"
 
-#: activities/drawing_wheels/DrawingWheels.qml:856
+#: activities/drawing_wheels/DrawingWheels.qml:862
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:923
+#: activities/drawing_wheels/DrawingWheels.qml:929
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:986
+#: activities/drawing_wheels/DrawingWheels.qml:992
 #, fuzzy, qt-format
 #| msgctxt "SignalGenerator|"
 #| msgid "%1 s"
@@ -6869,7 +6869,7 @@ msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 s"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1004
+#: activities/drawing_wheels/DrawingWheels.qml:1010
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Speed"
@@ -6877,17 +6877,17 @@ msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Sebesség"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1020
+#: activities/drawing_wheels/DrawingWheels.qml:1026
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1040
+#: activities/drawing_wheels/DrawingWheels.qml:1046
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1083
+#: activities/drawing_wheels/DrawingWheels.qml:1089
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font size"
@@ -6895,7 +6895,7 @@ msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "Betűméret"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1120
+#: activities/drawing_wheels/DrawingWheels.qml:1126
 #, fuzzy
 #| msgctxt "ToolsPanel|"
 #| msgid "Opacity"
@@ -6903,12 +6903,12 @@ msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Átlátszóság"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1163
+#: activities/drawing_wheels/DrawingWheels.qml:1169
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1201
+#: activities/drawing_wheels/DrawingWheels.qml:1207
 #, fuzzy
 #| msgctxt "IntroMessage|"
 #| msgid "Start"
@@ -6916,7 +6916,7 @@ msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "Indítás"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1381
+#: activities/drawing_wheels/DrawingWheels.qml:1387
 #, fuzzy
 #| msgctxt "Sketch|"
 #| msgid "You did not save this image. Do you want to close this activity?"
@@ -6924,7 +6924,7 @@ msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Nem mentetted el ezt a képet. Be akarod zárni ezt a tevékenységet?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1382
+#: activities/drawing_wheels/DrawingWheels.qml:1388
 #, fuzzy
 #| msgctxt "Sketch|"
 #| msgid "Do you want to erase this image?"
@@ -6932,7 +6932,7 @@ msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Szeretnéd törölni a képet?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1383
+#: activities/drawing_wheels/DrawingWheels.qml:1389
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -6940,7 +6940,7 @@ msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Igen"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1384
+#: activities/drawing_wheels/DrawingWheels.qml:1390
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -7286,7 +7286,7 @@ msgstr ""
 "A harmadik szinten egy véletlen szöveg jelenik meg és a hozzá illő állat "
 "nevére kell kattintanod."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:306
+#: activities/explore_farm_animals/ExploreLevels.qml:312
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -7295,12 +7295,12 @@ msgstr ""
 "Ez a feladat hangokat használ, így akkor is hallasz pár hangot, ho a "
 "főmenüben kikapcsoltad azokat!"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:307
+#: activities/explore_farm_animals/ExploreLevels.qml:313
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Kilépsz?"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:308
+#: activities/explore_farm_animals/ExploreLevels.qml:314
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Folytatás"
@@ -9597,17 +9597,17 @@ msgstr ""
 "Te a fehér körben lévő személy vagy. Válaszd ki a narancssárga körben lévő "
 "személy nevét .\n"
 
-#: activities/family/Family.qml:251
+#: activities/family/Family.qml:258
 msgctxt "Family|"
 msgid "Me"
 msgstr "Én"
 
-#: activities/family/Family.qml:276
+#: activities/family/Family.qml:283
 msgctxt "Family|"
 msgid "?"
 msgstr "?"
 
-#: activities/family/Family.qml:337
+#: activities/family/Family.qml:344
 #, qt-format
 msgctxt "Family|"
 msgid "Select one of the pairs corresponding to: %1"
@@ -9825,6 +9825,7 @@ msgstr "Mozgasd az elemeket, a kép rendezéséhez."
 
 #. Help goal
 #: activities/fifteen/ActivityInfo.qml:20
+#: activities/peg_solitaire/ActivityInfo.qml:19
 #: activities/traffic/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and spatial visualization skills."
@@ -10097,7 +10098,7 @@ msgid ""
 "parts to represent the given fraction."
 msgstr "Válaszd ki az utasításoknak megfelelő számú részt!"
 
-#: activities/fractions_create/fractions_create.js:80
+#: activities/fractions_create/fractions_create.js:79
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
 msgstr "Találd meg a megjelölt törtet!"
@@ -10530,7 +10531,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Szóköz: Váltás a minta szerkesztése,megtekintése között."
 
-#: activities/frieze/Frieze.qml:287
+#: activities/frieze/Frieze.qml:294
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Készen állok."
@@ -15005,7 +15006,7 @@ msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
 msgstr "Szóköz vagy Enter: Válasz elfogadása"
 
-#: activities/graduated_line_read/graduated_line_read.js:134
+#: activities/graduated_line_read/graduated_line_read.js:133
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
 msgstr "(változó határok)"
@@ -15222,7 +15223,7 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
 msgstr "A backspace választja az utolsó szót-"
 
-#: activities/grammar_analysis/grammar_analysis.js:401
+#: activities/grammar_analysis/grammar_analysis.js:400
 msgctxt "grammar_analysis|"
 msgid "Empty"
 msgstr "Üres"
@@ -15445,7 +15446,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "A bal és a jobb nyilak: Az űrhajó mozgatása."
 
-#: activities/gravity/Gravity.qml:222
+#: activities/gravity/Gravity.qml:229
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15458,7 +15459,7 @@ msgstr ""
 "közvetlenül a két test tömegétől függ, és fordítottan arányos a "
 "középpontjaik távolságának négyzetével."
 
-#: activities/gravity/Gravity.qml:225
+#: activities/gravity/Gravity.qml:232
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -15469,7 +15470,7 @@ msgstr ""
 "tárgyra, a nehezebb tárgyak nagyobb erővel vonzzák egymást. Ha bármelyik "
 "tárgy tömege megnő, akkor a rá ható gravitációs vonzása is növekszik."
 
-#: activities/gravity/Gravity.qml:228
+#: activities/gravity/Gravity.qml:235
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -15480,7 +15481,7 @@ msgstr ""
 "így minél nagyobb a távolság a két tárgy közt, a gravitációs erő is "
 "csökkenni fog."
 
-#: activities/gravity/Gravity.qml:231
+#: activities/gravity/Gravity.qml:238
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -15491,7 +15492,7 @@ msgstr ""
 "módosításával. Ne engedd túl közel Tuxot a bolygókhoz, mert lezuhan! A nyíl "
 "jelzi a hajóra ható erők irányát."
 
-#: activities/gravity/Gravity.qml:234
+#: activities/gravity/Gravity.qml:241
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -15558,7 +15559,7 @@ msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
 msgstr "Tabulálás: váltás a számok és a műveletek között"
 
-#: activities/guess24/Guess24.qml:135
+#: activities/guess24/Guess24.qml:142
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr "Használd a négy számot a megadott műveletekkel, hogy megtaláld a 24-et"
@@ -15656,17 +15657,17 @@ msgctxt "Admin|"
 msgid "Level %1"
 msgstr "Szint %1"
 
-#: activities/guesscount/guesscount.js:140
+#: activities/guesscount/guesscount.js:139
 msgctxt "guesscount|"
 msgid "result is not positive integer"
 msgstr "az eredmény nem pozitív egész"
 
-#: activities/guesscount/guesscount.js:142
+#: activities/guesscount/guesscount.js:141
 msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "az eredmény nem szám"
 
-#: activities/guesscount/Guesscount.qml:151
+#: activities/guesscount/Guesscount.qml:158
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -15752,17 +15753,17 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
 msgstr "backspace: Szám törlése"
 
-#: activities/guessnumber/guessnumber.js:57
+#: activities/guessnumber/guessnumber.js:56
 msgctxt "guessnumber|"
 msgid "Your number is too high"
 msgstr "Túl magas a szám"
 
-#: activities/guessnumber/guessnumber.js:60
+#: activities/guessnumber/guessnumber.js:59
 msgctxt "guessnumber|"
 msgid "Your number is too low"
 msgstr "Túl alacsony a szám"
 
-#: activities/guessnumber/guessnumber.js:65
+#: activities/guessnumber/guessnumber.js:64
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr "Válaszd ki a páratlan számokat!"
@@ -15855,18 +15856,18 @@ msgstr ""
 "hangfile elérhető, az adott szót fogod hallani, ha már csak három "
 "lehetőséged maradt"
 
-#: activities/hangman/hangman.js:212
+#: activities/hangman/hangman.js:211
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Próbálkozások száma: %1"
 
-#: activities/hangman/Hangman.qml:370
+#: activities/hangman/Hangman.qml:377
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Sajnáljuk, de a fordítás még ne elérhető a választott nyelven."
 
-#: activities/hangman/Hangman.qml:371
+#: activities/hangman/Hangman.qml:378
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -15876,7 +15877,7 @@ msgstr ""
 "A GComprist a KDE közösség fejleszti. Te is csatlakozhatsz a fordító "
 "csapatunkba a <a href=\"%2\">%2</a> címen."
 
-#: activities/hangman/Hangman.qml:373
+#: activities/hangman/Hangman.qml:380
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -15966,13 +15967,13 @@ msgstr ""
 "tisztázott, hogy a történetet Lucas tallta ki, vagy ez alapján készítette a "
 "játékot. forrás Wikipedia: http://en.wikipedia.org/wiki/Tower_of_hanoi)"
 
-#: activities/hanoi_real/HanoiReal.qml:75
+#: activities/hanoi_real/HanoiReal.qml:82
 msgctxt "HanoiReal|"
 msgid "Move the entire stack to the right peg, one disc at a time."
 msgstr ""
 "Húzd a torony darabjait egyszerre a jobb rúdra.  Egyszerre egy karikát."
 
-#: activities/hanoi_real/HanoiReal.qml:76
+#: activities/hanoi_real/HanoiReal.qml:83
 msgctxt "HanoiReal|"
 msgid ""
 "Build the same tower in the empty area as the one you see on the right-hand "
@@ -16536,31 +16537,31 @@ msgstr ""
 "Balra és jobbra nyilak: Az első pályákon, oldara mozgatnak, a későbbieken "
 "forgatják az űrhajót."
 
-#: activities/land_safe/LandSafe.qml:584
+#: activities/land_safe/LandSafe.qml:591
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "Üzemanyag: %1"
 
-#: activities/land_safe/LandSafe.qml:594
+#: activities/land_safe/LandSafe.qml:601
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "Magasság: %1"
 
-#: activities/land_safe/LandSafe.qml:604
+#: activities/land_safe/LandSafe.qml:611
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "Sebeség: %1"
 
-#: activities/land_safe/LandSafe.qml:615
+#: activities/land_safe/LandSafe.qml:622
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "Gyorsulás: %1"
 
-#: activities/land_safe/LandSafe.qml:649
+#: activities/land_safe/LandSafe.qml:656
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -16948,31 +16949,31 @@ msgstr ""
 "Ezt addig ismételd, amíg a kivonszolt rész nem egyezik a megjelenetített "
 "tizedes számmal. Ezután kattints az OK gombra az elleőrzéshez!"
 
-#: activities/learn_decimals/Learn_decimals.qml:165
+#: activities/learn_decimals/Learn_decimals.qml:172
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "Jelöld be a %1 értéket!"
 
-#: activities/learn_decimals/Learn_decimals.qml:166
+#: activities/learn_decimals/Learn_decimals.qml:173
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "%1 + %2 eredményét mutatja."
 
-#: activities/learn_decimals/Learn_decimals.qml:167
+#: activities/learn_decimals/Learn_decimals.qml:174
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "%1 - %2 különbségét mutatja."
 
-#: activities/learn_decimals/Learn_decimals.qml:168
+#: activities/learn_decimals/Learn_decimals.qml:175
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "Az alábbi mennyiséget mutatja: %1 "
 
-#: activities/learn_decimals/Learn_decimals.qml:185
+#: activities/learn_decimals/Learn_decimals.qml:192
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -17526,12 +17527,12 @@ msgctxt "ActivityInfo|"
 msgid "Right arrow: right hand answer"
 msgstr "Jobb nyíl: A jobb kéz megoldása"
 
-#: activities/leftright/Leftright.qml:156
+#: activities/leftright/Leftright.qml:163
 msgctxt "Leftright|"
 msgid "Left hand"
 msgstr "Bal kéz"
 
-#: activities/leftright/Leftright.qml:178
+#: activities/leftright/Leftright.qml:185
 msgctxt "Leftright|"
 msgid "Right hand"
 msgstr "Jobb kéz"
@@ -17600,12 +17601,12 @@ msgstr ""
 "A repülő egy zászlót visz amire egy betűt írtunk fel. Válaszd ki azon "
 "szavakat, amelyekben a megadott betű szerepel, majd kattints az OK-ra!"
 
-#: activities/letter-in-word/LetterInWord.qml:335
+#: activities/letter-in-word/LetterInWord.qml:342
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Sajnáljuk nincs elérhető fordítás a választott nyelven."
 
-#: activities/letter-in-word/LetterInWord.qml:336
+#: activities/letter-in-word/LetterInWord.qml:343
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17615,7 +17616,7 @@ msgstr ""
 "A GCompris a KDE közösség fejlesztésében készül. Te is lehetsz fordító ha "
 "csatlakozol a csapatunkhoz a <a href=\"%2\">%2</a> oldalon"
 
-#: activities/letter-in-word/LetterInWord.qml:338
+#: activities/letter-in-word/LetterInWord.qml:345
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -17907,7 +17908,7 @@ msgstr ""
 "Meg kell számolnod, hogy maradt a kalap alatt. Kattints a lenti területre, "
 "hogy beírhasd a válaszodat, majd az OK gombra hogy ellenőizd azt."
 
-#: activities/magic-hat-minus/MagicHat.qml:272
+#: activities/magic-hat-minus/MagicHat.qml:279
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Kattins a kalapra a játék indításához"
@@ -18138,7 +18139,7 @@ msgstr ""
 "sarokban.\n"
 "\t"
 
-#: activities/maze/Maze.qml:346
+#: activities/maze/Maze.qml:353
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -18278,7 +18279,7 @@ msgstr ""
 "Hallgasd meg a hangsort, majd ismételd meg a xilofon lapjaira kattintva! Az "
 "Ismétlés gombra kattintva újra meghallgathatod a dallamot."
 
-#: activities/melody/Melody.qml:338
+#: activities/melody/Melody.qml:344
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -18287,12 +18288,12 @@ msgstr ""
 "Ez a feladat hangokat használ, így akkor is hallasz pár hangot, ho a "
 "főmenüben kikapcsoltad azokat!"
 
-#: activities/melody/Melody.qml:339
+#: activities/melody/Melody.qml:345
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "Kilépsz?"
 
-#: activities/melody/Melody.qml:340
+#: activities/melody/Melody.qml:346
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "Folytatás"
@@ -19436,7 +19437,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "+"
 
-#: activities/memory/MemoryCommon.qml:362
+#: activities/memory/MemoryCommon.qml:369
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19445,12 +19446,12 @@ msgstr ""
 "Ez a feladat hangokat használ, így akkor is hallasz pár hangot, ho a "
 "főmenüben kikapcsoltad azokat!"
 
-#: activities/memory/MemoryCommon.qml:363
+#: activities/memory/MemoryCommon.qml:370
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Kilépés"
 
-#: activities/memory/MemoryCommon.qml:364
+#: activities/memory/MemoryCommon.qml:371
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Folytatás"
@@ -20043,7 +20044,7 @@ msgstr ""
 "metalpaint.wav - remixelve  akkor használja a program mikor egy aranyrögöt "
 "begyűjtünk"
 
-#: activities/mining/Mining.qml:447
+#: activities/mining/Mining.qml:454
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -20058,22 +20059,22 @@ msgstr ""
 "helyre középről. Az érintési területen húzd két ujjad távolabb a szikrától, "
 "ellentétes irányba."
 
-#: activities/mining/Mining.qml:463
+#: activities/mining/Mining.qml:470
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Remek. Most ránagyítottál. Folytasd amíg nem látod az aranyrögöt!"
 
-#: activities/mining/Mining.qml:471
+#: activities/mining/Mining.qml:478
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "No, vcsak óvatosan, túl messzire zummoltál a szikrától."
 
-#: activities/mining/Mining.qml:479
+#: activities/mining/Mining.qml:486
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Most már láthatod a rögöt, kattints rá, ha el akarod kapni."
 
-#: activities/mining/Mining.qml:487
+#: activities/mining/Mining.qml:494
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -20082,17 +20083,17 @@ msgstr ""
 "No, túl messze vagy a rögrtől, így nem látod. Távolíts aztán nagyíts vissza "
 "amennyire csak lehet a szikrától."
 
-#: activities/mining/Mining.qml:495
+#: activities/mining/Mining.qml:502
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Most távolíts és próbálj keresni egy újabb szikrát."
 
-#: activities/mining/Mining.qml:503
+#: activities/mining/Mining.qml:510
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Távolíts amíg nem látod a szikrát."
 
-#: activities/mining/Mining.qml:511
+#: activities/mining/Mining.qml:518
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Most már látod a szikrát, menj előre most már nagyíthatod."
@@ -20132,12 +20133,12 @@ msgstr ""
 "Egy tárgy képe jelenik meg a képernyőn és alatta egy hiányos szó. Válaszd ki "
 "a hiányzó betűt a szó kiegészítéséhez!"
 
-#: activities/missing-letter/MissingLetter.qml:322
+#: activities/missing-letter/MissingLetter.qml:329
 msgctxt "MissingLetter|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Sajnálom, a te nyelveden még nem elérhető a program."
 
-#: activities/missing-letter/MissingLetter.qml:323
+#: activities/missing-letter/MissingLetter.qml:330
 #, qt-format
 msgctxt "MissingLetter|"
 msgid ""
@@ -20147,7 +20148,7 @@ msgstr ""
 "A GCompris-t a KDE közöség fejleszti, te is lehetsz fordító ha felkeresd a "
 "<a href=\"%2\">%2</a> oldalt."
 
-#: activities/missing-letter/MissingLetter.qml:325
+#: activities/missing-letter/MissingLetter.qml:332
 msgctxt "MissingLetter|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -20212,7 +20213,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
 msgstr "Tab: Moizgás a fenti és a lenti részek között."
 
-#: activities/money/money.js:148
+#: activities/money/money.js:147
 msgctxt "money|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
@@ -20222,7 +20223,7 @@ msgstr ""
 "akarsz távolítani egy érmét vagy papírpénzt, akkor kattints rá a képernyő "
 "felső részén."
 
-#: activities/money/money.js:179
+#: activities/money/money.js:178
 #, qt-format
 msgctxt "money|"
 msgid ""
@@ -20396,13 +20397,13 @@ msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr "Ha elkészültél, kattints Tuxra, és átalakítja Morze-kódra!"
 
-#: activities/morse_code/MorseCode.qml:364
+#: activities/morse_code/MorseCode.qml:366
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Morze értéke: %1"
 
-#: activities/morse_code/MorseCode.qml:365
+#: activities/morse_code/MorseCode.qml:367
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -20626,44 +20627,44 @@ msgstr ""
 "helyre ugorhatsz velük. Egy játékos akkor nyer, ha a másik játékos nem tud "
 "egyetlen bábut sem mozgatni, vagy csak 2 bábuja maradt."
 
-#: activities/nine_men_morris/nine_men_morris.js:240
-#: activities/nine_men_morris/nine_men_morris.js:1086
+#: activities/nine_men_morris/nine_men_morris.js:239
+#: activities/nine_men_morris/nine_men_morris.js:1085
 msgctxt "nine_men_morris|"
 msgid "Place a piece"
 msgstr "Korong lerakása"
 
-#: activities/nine_men_morris/nine_men_morris.js:366
-#: activities/nine_men_morris/nine_men_morris.js:1144
+#: activities/nine_men_morris/nine_men_morris.js:365
+#: activities/nine_men_morris/nine_men_morris.js:1143
 msgctxt "nine_men_morris|"
 msgid "Move a piece"
 msgstr "Egy darab mozgatása"
 
-#: activities/nine_men_morris/nine_men_morris.js:918
+#: activities/nine_men_morris/nine_men_morris.js:917
 msgctxt "nine_men_morris|"
 msgid "Remove a piece"
 msgstr "Egy darab eltávolítása"
 
-#: activities/nine_men_morris/nine_men_morris.js:1121
+#: activities/nine_men_morris/nine_men_morris.js:1120
 msgctxt "nine_men_morris|"
 msgid "Congratulations"
 msgstr "Gratulálok"
 
-#: activities/nine_men_morris/nine_men_morris.js:1124
+#: activities/nine_men_morris/nine_men_morris.js:1123
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 1"
 msgstr "Gratulálok Egyes játékos"
 
-#: activities/nine_men_morris/nine_men_morris.js:1135
+#: activities/nine_men_morris/nine_men_morris.js:1134
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 2"
 msgstr "Gratulálok Kettes játékos"
 
-#: activities/nine_men_morris/nine_men_morris.js:1138
+#: activities/nine_men_morris/nine_men_morris.js:1137
 msgctxt "nine_men_morris|"
 msgid "Try again"
 msgstr "Próbáld újra"
 
-#: activities/nine_men_morris/NineMenMorris.qml:348
+#: activities/nine_men_morris/NineMenMorris.qml:355
 #, fuzzy
 #| msgctxt "nine_men_morris|"
 #| msgid ""
@@ -20677,7 +20678,7 @@ msgstr ""
 "Te és Tux is 9 koronggal kezdesz., Felváltva raktok az üres helyekre (ha "
 "rájuk klikkelsz) a táblán."
 
-#: activities/nine_men_morris/NineMenMorris.qml:352
+#: activities/nine_men_morris/NineMenMorris.qml:359
 #, fuzzy
 #| msgctxt "nine_men_morris|"
 #| msgid ""
@@ -20694,7 +20695,7 @@ msgstr ""
 "vedd le! A malomba rendezett korongok nem vehetők le kivéve ha nincs más "
 "különálló korong a táblán."
 
-#: activities/nine_men_morris/NineMenMorris.qml:356
+#: activities/nine_men_morris/NineMenMorris.qml:363
 #, fuzzy
 #| msgctxt "nine_men_morris|"
 #| msgid ""
@@ -20711,7 +20712,7 @@ msgstr ""
 "Kattints az egyik korongra aztán egy üres területre, hogy oda tehesd! A zöld "
 "színű foltok jelzik a pontokat ahová léphetsz."
 
-#: activities/nine_men_morris/NineMenMorris.qml:360
+#: activities/nine_men_morris/NineMenMorris.qml:367
 #, fuzzy
 #| msgctxt "nine_men_morris|"
 #| msgid ""
@@ -20725,7 +20726,7 @@ msgstr ""
 "Ha csak három korongod maradt, ugrálhatsz a táblán, így bármelyik szabad "
 "mezőre átteheted azokat."
 
-#: activities/nine_men_morris/NineMenMorris.qml:364
+#: activities/nine_men_morris/NineMenMorris.qml:371
 #, fuzzy
 #| msgctxt "nine_men_morris|"
 #| msgid ""
@@ -20794,20 +20795,20 @@ msgid ""
 "100% to complete the level."
 msgstr "Ismerd fel a hangjegyeket és érj egy 100%-ot a pálya teljesítéséhez!"
 
-#: activities/note_names/NoteNames.qml:201
+#: activities/note_names/NoteNames.qml:208
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
 msgstr "Új hangjegy: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:271
+#: activities/note_names/NoteNames.qml:278
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:449
+#: activities/note_names/NoteNames.qml:456
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20816,12 +20817,12 @@ msgstr ""
 "Ez a feladat hangokat használ, így akkor is hallasz pár hangot, ho a "
 "főmenüben kikapcsoltad azokat!"
 
-#: activities/note_names/NoteNames.qml:450
+#: activities/note_names/NoteNames.qml:457
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Kilépsz?"
 
-#: activities/note_names/NoteNames.qml:451
+#: activities/note_names/NoteNames.qml:458
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Folytatás"
@@ -21186,32 +21187,32 @@ msgstr ""
 "Néhány számot látsz! Húzd őket a felső sávba növekvő vagy csökkenő sorrend "
 "szerint, mindig ahogy a feladat kéri!"
 
-#: activities/ordering_numbers/ordering.js:66
+#: activities/ordering_numbers/ordering.js:65
 msgctxt "ordering|"
 msgid "Drag and drop the items in ascending order."
 msgstr "Húzd az egérrel a képeket növekvő sorrendbe!"
 
-#: activities/ordering_numbers/ordering.js:67
+#: activities/ordering_numbers/ordering.js:66
 msgctxt "ordering|"
 msgid "Drag and drop the items in descending order."
 msgstr "Húzd az egérrel a képeket csökkenő sorrendbe!"
 
-#: activities/ordering_numbers/ordering.js:68
+#: activities/ordering_numbers/ordering.js:67
 msgctxt "ordering|"
 msgid "Drag and drop the letters in alphabetical order."
 msgstr "Húzd az egérrel a betűket abc sorrendbe!"
 
-#: activities/ordering_numbers/ordering.js:69
+#: activities/ordering_numbers/ordering.js:68
 msgctxt "ordering|"
 msgid "Drag and drop the letters in reverse alphabetical order."
 msgstr "Húzd az egérrel a betűket fordított sorrendbe!"
 
-#: activities/ordering_numbers/ordering.js:70
+#: activities/ordering_numbers/ordering.js:69
 msgctxt "ordering|"
 msgid "Drag and drop the items in chronological order."
 msgstr "Húzd az egérrel a képeket időrendbe!"
 
-#: activities/ordering_numbers/ordering.js:71
+#: activities/ordering_numbers/ordering.js:70
 msgctxt "ordering|"
 msgid "Drag and drop the words to the upper box to form a meaningful sentence."
 msgstr ""
@@ -21716,7 +21717,7 @@ msgctxt "ActivityInfo|"
 msgid "Arrows: directions"
 msgstr "Nyilak: irányok"
 
-#: activities/path_encoding/GridPath.qml:130
+#: activities/path_encoding/GridPath.qml:137
 #, qt-format
 msgctxt "GridPath|"
 msgid "Errors: %1"
@@ -21727,6 +21728,67 @@ msgstr "Hibák: %1"
 msgctxt "ActivityInfo|"
 msgid "Relative path encoding"
 msgstr "Útvonalkövetés"
+
+#: activities/peg_solitaire/ActivityConfig.qml:27
+msgctxt "ActivityConfig|"
+msgid "Use the default starting hole"
+msgstr ""
+
+#. Activity title
+#: activities/peg_solitaire/ActivityInfo.qml:14
+msgctxt "ActivityInfo|"
+msgid "Peg solitaire"
+msgstr ""
+
+#. Help title
+#: activities/peg_solitaire/ActivityInfo.qml:16
+msgctxt "ActivityInfo|"
+msgid "Remove all the pieces in the correct order until only one remains."
+msgstr ""
+
+#. Help manual
+#: activities/peg_solitaire/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"To move a piece, make it jump another one in an orthogonal direction, to a "
+"hole two positions away. The jumped piece is removed from the board. You can "
+"click on a movable piece and then on its destination, or drag and drop it to "
+"its destination. The game is over when no more piece can be moved, and is "
+"won if only one piece remains. If the option to use the default starting "
+"hole is not selected, you need to choose the first piece to remove by "
+"clicking on it. You can use the undo button to undo your last move, and the "
+"redo button to redo it."
+msgstr ""
+
+#. Board for the Peg solitaire game
+#: activities/peg_solitaire/peg_solitaire.js:28
+msgctxt "peg_solitaire|"
+msgid "English board"
+msgstr ""
+
+#. Board for the Peg solitaire game
+#: activities/peg_solitaire/peg_solitaire.js:44
+#, fuzzy
+#| msgctxt "board14_0|"
+#| msgid "French Polynesia"
+msgctxt "peg_solitaire|"
+msgid "French board"
+msgstr "Francia Polinézia"
+
+#. Board for the Peg solitaire game
+#: activities/peg_solitaire/peg_solitaire.js:61
+msgctxt "peg_solitaire|"
+msgid "32 holes diamond board"
+msgstr ""
+
+#. Board for the Peg solitaire game
+#: activities/peg_solitaire/peg_solitaire.js:79
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Numerical order"
+msgctxt "peg_solitaire|"
+msgid "Asymmetrical board"
+msgstr "Számok sorrendje"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -21753,14 +21815,14 @@ msgstr ""
 "kattinthatsz duplán. Ha vesztesz Tux elkapja a labdát. Ha vissza akarod teni "
 "a kezdőpozícióba, kattints ismét a labdára!"
 
-#: activities/penalty/Penalty.qml:239
+#: activities/penalty/Penalty.qml:246
 msgctxt "Penalty|"
 msgid ""
 "Double click or double tap on the side of the goal you want to put the ball "
 "in."
 msgstr "Kattints vagy koppints duplán a háló bármelyik részén a rúgáshoz."
 
-#: activities/penalty/Penalty.qml:240
+#: activities/penalty/Penalty.qml:247
 msgctxt "Penalty|"
 msgid "Click or tap on the ball to bring it back to its initial position."
 msgstr ""
@@ -21794,12 +21856,12 @@ msgstr ""
 "Vizsgáld meg alaposan a két képet. Apró különbségeket fedezhetsz fel köztük. "
 "Ha különbséget találtál, kattints rá!"
 
-#: activities/photo_hunter/PhotoHunter.qml:88
+#: activities/photo_hunter/PhotoHunter.qml:95
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "Húzd le a csúszkát és meglátod a különbségeket!"
 
-#: activities/photo_hunter/PhotoHunter.qml:89
+#: activities/photo_hunter/PhotoHunter.qml:96
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Keresd meg a két kép közötti különbségeket!"
@@ -22205,30 +22267,30 @@ msgctxt "OptionsRow|"
 msgid "Flat notes"
 msgstr "bé hangok"
 
-#: activities/piano_composition/piano_composition.js:24
+#: activities/piano_composition/piano_composition.js:23
 msgctxt "piano_composition|"
 msgid "This is the treble clef staff for high pitched notes."
 msgstr "Ez egy violin (g) kulcs a magas hangoknál használjuk."
 
-#: activities/piano_composition/piano_composition.js:27
+#: activities/piano_composition/piano_composition.js:26
 msgctxt "piano_composition|"
 msgid "This is the bass clef staff for low pitched notes."
 msgstr "Ez egy basszuskulcs a mély hangoknál használjuk."
 
-#: activities/piano_composition/piano_composition.js:30
+#: activities/piano_composition/piano_composition.js:29
 msgctxt "piano_composition|"
 msgid "The black keys are sharp and flat keys. Sharp notes have a ♯ sign."
 msgstr ""
 "A fekete billentyűk a félhangok (magas és mély) és # jel van a nevük előtt."
 
-#: activities/piano_composition/piano_composition.js:33
+#: activities/piano_composition/piano_composition.js:32
 msgctxt "piano_composition|"
 msgid "Each black key has two names: flat and sharp. Flat notes have ♭ sign."
 msgstr ""
 "Minden fekete billentyű lehet magas vagy mély hang. A mély hangok neve előtt "
 "b jel van."
 
-#: activities/piano_composition/piano_composition.js:36
+#: activities/piano_composition/piano_composition.js:35
 msgctxt "piano_composition|"
 msgid ""
 "Click on the note symbol to write different length notes such as whole "
@@ -22237,7 +22299,7 @@ msgstr ""
 "Kattints a hangjegy szimbólumra a különböző hosszúságú hangok gyakorlására, "
 "pl: fél, teljes, negyed és nylcad hangok."
 
-#: activities/piano_composition/piano_composition.js:39
+#: activities/piano_composition/piano_composition.js:38
 msgctxt "piano_composition|"
 msgid ""
 "Rests are equivalent to notes during which silence is maintained. Click on "
@@ -22247,55 +22309,55 @@ msgstr ""
 "A szünet egyenlő hosszúságú egy hanggal. Kattints a  szünet jelre hogy "
 "kiválaszd a hosszúságát majd a hozzáad gombbal zudod beszúrni azt."
 
-#: activities/piano_composition/piano_composition.js:42
+#: activities/piano_composition/piano_composition.js:41
 msgctxt "piano_composition|"
 msgid "Now you can load music and also save your compositions."
 msgstr ""
 "Mostantól a saját dallamaidat elmentheted, és később vissza is töltheted."
 
-#: activities/piano_composition/piano_composition.js:63
+#: activities/piano_composition/piano_composition.js:62
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Error saving melody to your file (%1)"
 msgstr "A %n nevű dallam nem menthető (%1)"
 
-#: activities/piano_composition/piano_composition.js:68
+#: activities/piano_composition/piano_composition.js:67
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Melody saved to your file (%1)"
 msgstr "A %n  nevű dallamot az alábbi pályanévre mentettük (%1)"
 
-#: activities/piano_composition/Piano_composition.qml:369
+#: activities/piano_composition/Piano_composition.qml:376
 msgctxt "Piano_composition|"
 msgid "You have not selected any note. Do you want to erase all the notes?"
 msgstr "Nem választottál egy hangot sem. Biztosan mindent törölni szeretnél?"
 
-#: activities/piano_composition/Piano_composition.qml:370
+#: activities/piano_composition/Piano_composition.qml:377
 msgctxt "Piano_composition|"
 msgid "Yes"
 msgstr "Igen"
 
-#: activities/piano_composition/Piano_composition.qml:376
+#: activities/piano_composition/Piano_composition.qml:383
 msgctxt "Piano_composition|"
 msgid "No"
 msgstr "Nem"
 
-#: activities/piano_composition/Piano_composition.qml:423
+#: activities/piano_composition/Piano_composition.qml:430
 msgctxt "Piano_composition|"
 msgid "Select the type of melody to load."
 msgstr "Válaszd ki a betöltendő dallamot."
 
-#: activities/piano_composition/Piano_composition.qml:428
+#: activities/piano_composition/Piano_composition.qml:435
 msgctxt "Piano_composition|"
 msgid "Pre-defined melodies"
 msgstr "Beépített dallamok"
 
-#: activities/piano_composition/Piano_composition.qml:446
+#: activities/piano_composition/Piano_composition.qml:453
 msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "Mentett dallamaid"
 
-#: activities/piano_composition/Piano_composition.qml:550
+#: activities/piano_composition/Piano_composition.qml:557
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -22304,12 +22366,12 @@ msgstr ""
 "Ez a tevékenység hangot igényel. Akkor is hangokat fogsz hallani, ha azokat "
 "a főmenüben kikapcsoltad!"
 
-#: activities/piano_composition/Piano_composition.qml:551
+#: activities/piano_composition/Piano_composition.qml:558
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "Kilépsz?"
 
-#: activities/piano_composition/Piano_composition.qml:552
+#: activities/piano_composition/Piano_composition.qml:559
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "Folytatás"
@@ -22591,12 +22653,12 @@ msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
 msgstr "Backspace vagy Delete: Mégsem"
 
-#: activities/play_piano/PlayPiano.qml:189
+#: activities/play_piano/PlayPiano.qml:196
 msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "Kattints a megadott hangjegyekre a zongorán."
 
-#: activities/play_piano/PlayPiano.qml:322
+#: activities/play_piano/PlayPiano.qml:329
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -22605,12 +22667,12 @@ msgstr ""
 "Ez a tevékenység hangot igényel. Akkor is hangokat fogsz hallani, ha azokat "
 "a főmenüben kikapcsoltad!"
 
-#: activities/play_piano/PlayPiano.qml:323
+#: activities/play_piano/PlayPiano.qml:330
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "Kilépsz?"
 
-#: activities/play_piano/PlayPiano.qml:324
+#: activities/play_piano/PlayPiano.qml:331
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "Folytatás"
@@ -22696,7 +22758,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
 msgstr "Tab: Metronóm ki-bekapcsolása (ha látható)"
 
-#: activities/play_rhythm/PlayRhythm.qml:121
+#: activities/play_rhythm/PlayRhythm.qml:128
 msgctxt "PlayRhythm|"
 msgid ""
 "Use the metronome to estimate the time intervals and play the rhythm "
@@ -22705,7 +22767,7 @@ msgstr ""
 "Használd a metronómot a szünetek idejének megállapításához, így időben tud d "
 "a ritmust lejátszani."
 
-#: activities/play_rhythm/PlayRhythm.qml:122
+#: activities/play_rhythm/PlayRhythm.qml:129
 msgctxt "PlayRhythm|"
 msgid ""
 "Follow the vertical line and click on the drum or press space key to play "
@@ -22714,7 +22776,7 @@ msgstr ""
 "Kövesd a függőleges vonalat és kattints a dobra vagy nyomd le a szóközt és "
 "játszd le a ritmust helyesen."
 
-#: activities/play_rhythm/PlayRhythm.qml:406
+#: activities/play_rhythm/PlayRhythm.qml:413
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -22723,12 +22785,12 @@ msgstr ""
 "Ez a tevékenység hangot igényel. Akkor is hangokat fogsz hallani, ha azokat "
 "a főmenüben kikapcsoltad!"
 
-#: activities/play_rhythm/PlayRhythm.qml:407
+#: activities/play_rhythm/PlayRhythm.qml:414
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "Kilépsz?"
 
-#: activities/play_rhythm/PlayRhythm.qml:408
+#: activities/play_rhythm/PlayRhythm.qml:415
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "Folytatás"
@@ -22978,28 +23040,28 @@ msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "Válaszd ki a parancsot"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:224
+#: activities/programmingMaze/ProgrammingMaze.qml:231
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Érd el a halat kevesebb mint %1 utasításból!"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:260
+#: activities/programmingMaze/ProgrammingMaze.qml:267
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Programablak"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:294
+#: activities/programmingMaze/ProgrammingMaze.qml:301
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Eljárások"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:294
+#: activities/programmingMaze/ProgrammingMaze.qml:301
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Hurok"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:542
+#: activities/programmingMaze/ProgrammingMaze.qml:549
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid "Instruction Area:"
@@ -23007,7 +23069,7 @@ msgctxt "ProgrammingMaze|"
 msgid "Instruction Area:"
 msgstr "Feladatterület"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:543
+#: activities/programmingMaze/ProgrammingMaze.qml:550
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid ""
@@ -23019,7 +23081,7 @@ msgid ""
 msgstr ""
 "Három parancs van amit használhatsz a kódhoz, hogy Tuxot a halhoz vezethesd!"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:544
+#: activities/programmingMaze/ProgrammingMaze.qml:551
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid ""
@@ -23031,7 +23093,7 @@ msgid ""
 "facing."
 msgstr "<b>1 Előre lépés:</b> Tux előre lép egyet, abba az irányba amerre néz."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:545
+#: activities/programmingMaze/ProgrammingMaze.qml:552
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid "<b>2. Turn left:</b> Turns Tux to the left."
@@ -23039,7 +23101,7 @@ msgctxt "ProgrammingMaze|"
 msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgstr "<b>2. Balra fordulj:</b> Balra fordítja Tuxot."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:546
+#: activities/programmingMaze/ProgrammingMaze.qml:553
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid "<b>3. Turn right:</b> Turns Tux to the right."
@@ -23047,7 +23109,7 @@ msgctxt "ProgrammingMaze|"
 msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgstr "<b>3. Jobbra fordulj:</b> Jobbra fordítja Tuxot."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:550
+#: activities/programmingMaze/ProgrammingMaze.qml:557
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid "Main Function:"
@@ -23055,7 +23117,7 @@ msgctxt "ProgrammingMaze|"
 msgid "Main Function:"
 msgstr "Programablak"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:551
+#: activities/programmingMaze/ProgrammingMaze.qml:558
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid "The execution of the code starts here."
@@ -23063,7 +23125,7 @@ msgctxt "ProgrammingMaze|"
 msgid "The execution of the code starts here."
 msgstr "Itt kezdődik a kód futtatása."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:552
+#: activities/programmingMaze/ProgrammingMaze.qml:559
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid ""
@@ -23077,7 +23139,7 @@ msgstr ""
 "Kattints az utasításra <b>az utasítás részen</b> hogy hozzáadd <b>a "
 "programkódhoz</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:553
+#: activities/programmingMaze/ProgrammingMaze.qml:560
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid ""
@@ -23091,7 +23153,7 @@ msgstr ""
 "-Az utasítások sorban futnak le, amíg el nem fogynak vagy végtelen ciklusba "
 "nem lépnek, esetleg ha Tux elérte a halat."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:563
+#: activities/programmingMaze/ProgrammingMaze.qml:570
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid "Procedure:"
@@ -23099,7 +23161,7 @@ msgctxt "ProgrammingMaze|"
 msgid "Procedure:"
 msgstr "Eljárások"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:564
+#: activities/programmingMaze/ProgrammingMaze.qml:571
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid ""
@@ -23113,7 +23175,7 @@ msgstr ""
 "<b>Eljárások</b> utasítások újrafelhasználható sorozata<b>a kód hívja meg "
 "őket ahol szükségesek</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:565
+#: activities/programmingMaze/ProgrammingMaze.qml:572
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid ""
@@ -23129,7 +23191,7 @@ msgstr ""
 "-Ha a <b>eljárások</b> ablak <b>és</b> a <b>Főablak között</b> akarsz "
 "váltani <b>kattints a eljárások</b> vagy a<b>Főablak gombra</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:575
+#: activities/programmingMaze/ProgrammingMaze.qml:582
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid "Loop:"
@@ -23137,7 +23199,7 @@ msgctxt "ProgrammingMaze|"
 msgid "Loop:"
 msgstr "Hurok:"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:576
+#: activities/programmingMaze/ProgrammingMaze.qml:583
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid ""
@@ -23151,7 +23213,7 @@ msgstr ""
 "A <b>hurok</b> utasítások sorozata <b>ami folyamatosan ismétlődik a benne "
 "lévő számszor</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:577
+#: activities/programmingMaze/ProgrammingMaze.qml:584
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid ""
@@ -23241,7 +23303,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "A megoldásaidat az Enter gombbal tudod elküldeni"
 
-#: activities/railroad/Railroad.qml:126
+#: activities/railroad/Railroad.qml:133
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -23250,7 +23312,7 @@ msgstr ""
 "Tanulmányozd és jegyezd meg a vonat sorrendjét mielőtt lejár az idő, majd "
 "húzd be a részeket, hogy egy ugyanolyan vonatot építs."
 
-#: activities/railroad/Railroad.qml:129
+#: activities/railroad/Railroad.qml:136
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -23287,7 +23349,7 @@ msgstr ""
 "A tábla jobb felső részén megjelenik egy szó. Bal oldalon szavak jelennek "
 "meg, majd tűnnek el. Szerepelt a listában az adott szó?"
 
-#: activities/readingh/Readingh.qml:306
+#: activities/readingh/Readingh.qml:313
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -23297,12 +23359,12 @@ msgstr ""
 "<font color=\"#373737\">Ellenőrizd ha ez a szó<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">olvasható</font>"
 
-#: activities/readingh/Readingh.qml:366
+#: activities/readingh/Readingh.qml:373
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Igen, láttam!"
 
-#: activities/readingh/Readingh.qml:387
+#: activities/readingh/Readingh.qml:394
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Nem, nem volt ott!"
@@ -23469,7 +23531,7 @@ msgstr ""
 "rendszer visszakapcsol, és Tux hazaért kapcsold fel a lámpát neki. Ha nyerni "
 "akarsz minden elektromos eszközt be kell kapcsolnod."
 
-#: activities/renewable_energy/RenewableEnergy.qml:273
+#: activities/renewable_energy/RenewableEnergy.qml:275
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -23478,7 +23540,7 @@ msgstr ""
 "Tux visszatért a horgászatból. Állítsd vissza az elektromos rendszert, hogy "
 "lássa merre kell hazamennie!"
 
-#: activities/renewable_energy/RenewableEnergy.qml:276
+#: activities/renewable_energy/RenewableEnergy.qml:278
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -23487,7 +23549,7 @@ msgstr ""
 "Kattints a különféle aktív elemekre pl: nap, felhő, gát, napelem, "
 "szélturbina,transzformátor, hogy bekapcsolhasd az elektromos rendszert!"
 
-#: activities/renewable_energy/RenewableEnergy.qml:279
+#: activities/renewable_energy/RenewableEnergy.qml:281
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -23497,12 +23559,12 @@ msgstr ""
 "Ha a rendszer visszakapcsol, és Tux hazaért kapcsold fel a lámpát neki! Ha "
 "nyerni akarsz minden elektromos eszközt be kell kapcsolnod!"
 
-#: activities/renewable_energy/RenewableEnergy.qml:282
+#: activities/renewable_energy/RenewableEnergy.qml:284
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "Tanuljunk játékosan a megújuló enegriaforrásokról. "
 
-#: activities/renewable_energy/RenewableEnergy.qml:308
+#: activities/renewable_energy/RenewableEnergy.qml:310
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -23655,8 +23717,8 @@ msgctxt "ActivityInfo|"
 msgid "Letters: type roman numerals (with I, V, X, L, C, D and M)"
 msgstr "Betűk: írj római számokat (I, V, L, C, D és M)"
 
-#: activities/roman_numerals/RomanNumerals.qml:80
-#: activities/roman_numerals/RomanNumerals.qml:86
+#: activities/roman_numerals/RomanNumerals.qml:82
+#: activities/roman_numerals/RomanNumerals.qml:88
 msgctxt "RomanNumerals|"
 msgid ""
 "The roman numbers are all built out of these 7 numbers:\n"
@@ -23674,32 +23736,32 @@ msgstr ""
 " és M (1000-et ér)\n"
 " Érdekes megfigyelés,de a római számok között nincs 0."
 
-#: activities/roman_numerals/RomanNumerals.qml:81
-#: activities/roman_numerals/RomanNumerals.qml:93
-#: activities/roman_numerals/RomanNumerals.qml:105
-#: activities/roman_numerals/RomanNumerals.qml:117
-#: activities/roman_numerals/RomanNumerals.qml:129
+#: activities/roman_numerals/RomanNumerals.qml:83
+#: activities/roman_numerals/RomanNumerals.qml:95
+#: activities/roman_numerals/RomanNumerals.qml:107
+#: activities/roman_numerals/RomanNumerals.qml:119
+#: activities/roman_numerals/RomanNumerals.qml:131
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the roman number %1 to arabic."
 msgstr "Melyik arab szám jelöli ezt a római számot: %1?"
 
-#: activities/roman_numerals/RomanNumerals.qml:87
-#: activities/roman_numerals/RomanNumerals.qml:99
-#: activities/roman_numerals/RomanNumerals.qml:111
-#: activities/roman_numerals/RomanNumerals.qml:123
-#: activities/roman_numerals/RomanNumerals.qml:135
-#: activities/roman_numerals/RomanNumerals.qml:141
-#: activities/roman_numerals/RomanNumerals.qml:147
-#: activities/roman_numerals/RomanNumerals.qml:153
-#: activities/roman_numerals/RomanNumerals.qml:159
+#: activities/roman_numerals/RomanNumerals.qml:89
+#: activities/roman_numerals/RomanNumerals.qml:101
+#: activities/roman_numerals/RomanNumerals.qml:113
+#: activities/roman_numerals/RomanNumerals.qml:125
+#: activities/roman_numerals/RomanNumerals.qml:137
+#: activities/roman_numerals/RomanNumerals.qml:143
+#: activities/roman_numerals/RomanNumerals.qml:149
+#: activities/roman_numerals/RomanNumerals.qml:155
+#: activities/roman_numerals/RomanNumerals.qml:161
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the arabic number %1 to roman."
 msgstr "Melyik római szám jelöli ezt az arab számot: %1?"
 
-#: activities/roman_numerals/RomanNumerals.qml:92
-#: activities/roman_numerals/RomanNumerals.qml:98
+#: activities/roman_numerals/RomanNumerals.qml:94
+#: activities/roman_numerals/RomanNumerals.qml:100
 msgctxt "RomanNumerals|"
 msgid ""
 "All the units except 4 and 9 are built using sums of I and V:\n"
@@ -23712,8 +23774,8 @@ msgstr ""
 "A 4 és 9 a különbségeken alapul:\n"
 "IV (5 – 1) és a IX (10 – 1)"
 
-#: activities/roman_numerals/RomanNumerals.qml:104
-#: activities/roman_numerals/RomanNumerals.qml:110
+#: activities/roman_numerals/RomanNumerals.qml:106
+#: activities/roman_numerals/RomanNumerals.qml:112
 msgctxt "RomanNumerals|"
 msgid ""
 "All the tens except 40 and 90 are built using sums of X and L:\n"
@@ -23726,8 +23788,8 @@ msgstr ""
 "A 40 és 90 a különbségeken alapul:\n"
 "XL (10-el 50 előtt) és a XC (10-el 100 előtt)"
 
-#: activities/roman_numerals/RomanNumerals.qml:116
-#: activities/roman_numerals/RomanNumerals.qml:122
+#: activities/roman_numerals/RomanNumerals.qml:118
+#: activities/roman_numerals/RomanNumerals.qml:124
 msgctxt "RomanNumerals|"
 msgid ""
 "All the hundreds except 400 and 900 are built using sums of C and D:\n"
@@ -23740,8 +23802,8 @@ msgstr ""
 "A 400 és 900 a különbségeken alapul:\n"
 "CD (100-al 500 előtt vagy 500-100) és CM (100-al 1000 előtt vagy 1000-100)"
 
-#: activities/roman_numerals/RomanNumerals.qml:128
-#: activities/roman_numerals/RomanNumerals.qml:134
+#: activities/roman_numerals/RomanNumerals.qml:130
+#: activities/roman_numerals/RomanNumerals.qml:136
 msgctxt "RomanNumerals|"
 msgid ""
 "Sums of M are used for building thousands: M, MM, MMM.\n"
@@ -23755,7 +23817,7 @@ msgstr ""
 "csak összegekből számokat alkotni, muszáj különbségeket is használni. "
 "Másfelől a maximális római szám ami így leírható az a 3999 (MMMCMXCIX)."
 
-#: activities/roman_numerals/RomanNumerals.qml:140
+#: activities/roman_numerals/RomanNumerals.qml:142
 msgctxt "RomanNumerals|"
 msgid ""
 "Now you know the rules, you can read and write numbers in roman numerals."
@@ -23763,13 +23825,13 @@ msgstr ""
 "Most, hogy tudod a szabályokat, bármelyik arab számot átírhatod római szám "
 "alakba."
 
-#: activities/roman_numerals/RomanNumerals.qml:387
+#: activities/roman_numerals/RomanNumerals.qml:389
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Értéke római számban: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:388
+#: activities/roman_numerals/RomanNumerals.qml:390
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -24769,7 +24831,7 @@ msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr "Maximum 30 cukor és 6 gyerek, valószínű maradék."
 
-#: activities/share/share.js:115
+#: activities/share/share.js:114
 #, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -24779,7 +24841,7 @@ msgid_plural "Place %n boy(s) "
 msgstr[0] "Adj %t a fiúnak "
 msgstr[1] "Adj %t a fiúknak "
 
-#: activities/share/share.js:119
+#: activities/share/share.js:118
 #, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -24789,7 +24851,7 @@ msgid_plural "and %n girl(s) in the center. "
 msgstr[0] "és %db-ot a középső lánynak. "
 msgstr[1] "és %db-ot a középső lányoknak. "
 
-#: activities/share/share.js:123
+#: activities/share/share.js:122
 #, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -24799,7 +24861,7 @@ msgid_plural "Then split %n pieces of candy equally between them."
 msgstr[0] "Aztán egyenlően oszd el a % darab cukorkát közte."
 msgstr[1] "Aztán egyenlően oszd el a % db cukorkát köztük."
 
-#: activities/share/Share.qml:359
+#: activities/share/Share.qml:366
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
@@ -26318,7 +26380,7 @@ msgid ""
 "questions."
 msgstr "Remek! Tudásodat felfrissítheted további kérdések segítségével."
 
-#: activities/solar_system/SolarSystem.qml:152
+#: activities/solar_system/SolarSystem.qml:159
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26333,17 +26395,17 @@ msgstr ""
 "módban játszva tanulhatsz a Naprendszerről.<br><b>2. Vizsga mód</b> - Ebben "
 "a módban tesztelheted tudásodat a Naprendszerről."
 
-#: activities/solar_system/SolarSystem.qml:152
+#: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Vizsga"
 
-#: activities/solar_system/SolarSystem.qml:152
+#: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Tanulás"
 
-#: activities/solar_system/SolarSystem.qml:157
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -26352,7 +26414,7 @@ msgstr ""
 "Kattints bármelyik bolygó napjára a kérdésekhez! Minden kérdéshez négy "
 "válasz tartozik, amelyből csak az egyik helyes."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:167
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -26366,7 +26428,7 @@ msgstr ""
 "jelzi. Próbáld meg 100%-ot elérni a mérő segítségével, vagy lesd meg a "
 "helyes választ."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:177
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -26375,7 +26437,7 @@ msgstr ""
 "Összesen 20 kérdés van, egyenként 4 válaszlehetőséggel. A haladásmérő a jobb "
 "alső sarokban mutatja a százalékos pontjaidat."
 
-#: activities/solar_system/SolarSystem.qml:173
+#: activities/solar_system/SolarSystem.qml:180
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -26387,7 +26449,7 @@ msgstr ""
 "egy újabb kérdést kapsz a helytelenül megválaszolt helyett.<br>Maximum 25 "
 "kérdést teszünk fel, ehhez már nem tartozk plusz kérdés."
 
-#: activities/solar_system/SolarSystem.qml:176
+#: activities/solar_system/SolarSystem.qml:183
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -26395,7 +26457,7 @@ msgid ""
 msgstr ""
 "Ha a Naprendszer mindentudója akarsz lenni 90% fölött kell teljesítened!"
 
-#: activities/solar_system/SolarSystem.qml:355
+#: activities/solar_system/SolarSystem.qml:362
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26405,7 +26467,7 @@ msgstr ""
 "1. A <b>a legtávolabbi bolygó</b> a Naptól, számítva, <b>ahogy távolodunk</"
 "b>csükken a hőmérséklete .<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:356
+#: activities/solar_system/SolarSystem.qml:363
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26416,7 +26478,7 @@ msgstr ""
 "b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:359
+#: activities/solar_system/SolarSystem.qml:366
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -26427,12 +26489,12 @@ msgstr ""
 "<b>E</b>xcellent <b>M</b>other <b>J</b>ust <b>S</b>erved <b>U</b>s <b>N</"
 "b>oodles.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:361
+#: activities/solar_system/SolarSystem.qml:368
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Segítség"
 
-#: activities/solar_system/SolarSystem.qml:369
+#: activities/solar_system/SolarSystem.qml:376
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Megnézem a Naprendszert"
@@ -26551,7 +26613,7 @@ msgctxt "Controls|"
 msgid "Right Ballast Tank"
 msgstr "Jobb levegő tartály"
 
-#: activities/submarine/Submarine.qml:133
+#: activities/submarine/Submarine.qml:140
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Move the submarine to the other side of the screen."
@@ -26559,7 +26621,7 @@ msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "Kormányozd a tengeralattjárót a képernyő másik végéig."
 
-#: activities/submarine/Submarine.qml:136
+#: activities/submarine/Submarine.qml:143
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26573,7 +26635,7 @@ msgstr ""
 "A bal szélen lévő kapcsoló a vezérlőpulton a tengeralattjáró motorja. A "
 "jelenlegi sbességet jelzi."
 
-#: activities/submarine/Submarine.qml:139
+#: activities/submarine/Submarine.qml:146
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Increase or decrease the velocity of the submarine using the engine."
@@ -26582,7 +26644,7 @@ msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr ""
 "Növeld vagy csökkentsd a tengeralattjáró sbességét a motor segítségével."
 
-#: activities/submarine/Submarine.qml:142
+#: activities/submarine/Submarine.qml:149
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26596,7 +26658,7 @@ msgstr ""
 "Nyomd meg a + gombot a sebesség növeléséhez, vagy a - gombot a "
 "csökkentéséhez."
 
-#: activities/submarine/Submarine.qml:149
+#: activities/submarine/Submarine.qml:156
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "The item next to the engine is the ballast tank."
@@ -26604,7 +26666,7 @@ msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr "Ez a gomb a motor mellet a levegő tartály gombja."
 
-#: activities/submarine/Submarine.qml:152
+#: activities/submarine/Submarine.qml:159
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "The ballast tanks are used to float or dive under water."
@@ -26612,7 +26674,7 @@ msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr "A levegő tartály segítségével tud merülni a hajó a víz alá."
 
-#: activities/submarine/Submarine.qml:155
+#: activities/submarine/Submarine.qml:162
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26626,7 +26688,7 @@ msgstr ""
 "Ha a levegő tartály üres, a tengeralattjáró felemelkedik a felszínre. Ha a "
 "levegő tartály teli van vízzel, a hajó lemerül a víz alá."
 
-#: activities/submarine/Submarine.qml:158
+#: activities/submarine/Submarine.qml:165
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26641,7 +26703,7 @@ msgstr ""
 "A felső zsilipet megnyitva/elzárva a víz befolyik, a tartályba és telíti meg "
 "azt, így a hajó lemerülhet a víz alá."
 
-#: activities/submarine/Submarine.qml:161
+#: activities/submarine/Submarine.qml:168
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26657,7 +26719,7 @@ msgstr ""
 "Az alsó zsilipet megnyitva/elzárva a víz kifolyik a tartályból és kiürül, "
 "így a hajó felemelkedik a víz felszínére."
 
-#: activities/submarine/Submarine.qml:168
+#: activities/submarine/Submarine.qml:175
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26670,7 +26732,7 @@ msgid ""
 msgstr ""
 "A jobbszélső kapcsoló a vezérlőpulton a tenegaralattjáró lapátjait irányítja."
 
-#: activities/submarine/Submarine.qml:171
+#: activities/submarine/Submarine.qml:178
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26684,7 +26746,7 @@ msgstr ""
 "A lapátokkal a mélységet lehet pontosan vezérelni, ha a tengeralattjáró a "
 "víz felszíne alatt van."
 
-#: activities/submarine/Submarine.qml:174
+#: activities/submarine/Submarine.qml:181
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26698,7 +26760,7 @@ msgstr ""
 "Ha a tengeralattjáró a víz alá süllyed, a lapátok szögének változtatásával a "
 "mélységet lehet vezérelni."
 
-#: activities/submarine/Submarine.qml:177
+#: activities/submarine/Submarine.qml:184
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -26712,7 +26774,7 @@ msgstr ""
 "A + gombbal növeljük a mélységet, a - gombbal csökentjük azt, így a "
 "tengeralattjáról +-nál süllyedni, --nál emelkedni fog."
 
-#: activities/submarine/Submarine.qml:180
+#: activities/submarine/Submarine.qml:187
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Grab the crown to open the gate."
@@ -26720,7 +26782,7 @@ msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "Fogd meg a koronát, hogy kinyithasd a kaput."
 
-#: activities/submarine/Submarine.qml:183
+#: activities/submarine/Submarine.qml:190
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Check out the help menu for the keyboard controls."
@@ -26846,12 +26908,12 @@ msgstr ""
 "később is ki lesznek amíg mást ki nem jelölsz helyettük egy másikra való "
 "kattintással/koppintással."
 
-#: activities/superbrain/Superbrain.qml:167
+#: activities/superbrain/Superbrain.qml:174
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Ez az elem a helyén van"
 
-#: activities/superbrain/Superbrain.qml:169
+#: activities/superbrain/Superbrain.qml:176
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Ez az elem nincs a helyén"
@@ -27542,24 +27604,24 @@ msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
 msgstr "Kivonás megoldása, 4 vagy 5 számjeggyel, 2 sor."
 
-#: activities/vertical_subtraction/subtraction.js:79
+#: activities/vertical_subtraction/subtraction.js:78
 msgctxt "subtraction|"
 msgid "Write:"
 msgstr "Írás:"
 
-#: activities/vertical_subtraction/subtraction.js:79
+#: activities/vertical_subtraction/subtraction.js:78
 msgctxt "subtraction|"
 msgid "Solve:"
 msgstr "Művelet:"
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
-#: activities/vertical_subtraction/subtraction.js:190
+#: activities/vertical_subtraction/subtraction.js:189
 #, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
 msgstr "Megoldás: %1"
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:99
+#: activities/vertical_subtraction/VerticalSubtraction.qml:106
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid "Write your own addition and solve it."
@@ -27567,7 +27629,7 @@ msgctxt "VerticalSubtraction|"
 msgid "Write your own addition and solve it."
 msgstr "Írj saját összeadást és oldd meg!"
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:100
+#: activities/vertical_subtraction/VerticalSubtraction.qml:107
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid "Write your own subtraction and solve it."
@@ -27575,12 +27637,12 @@ msgctxt "VerticalSubtraction|"
 msgid "Write your own subtraction and solve it."
 msgstr "Írd meg a saját kivonásodat és oldd meg!"
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:426
+#: activities/vertical_subtraction/VerticalSubtraction.qml:433
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
 msgstr "Készen állok."
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:464
+#: activities/vertical_subtraction/VerticalSubtraction.qml:471
 msgctxt "VerticalSubtraction|"
 msgid "The result should not be a negative number."
 msgstr ""

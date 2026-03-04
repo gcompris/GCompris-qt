@@ -77,7 +77,7 @@ msgid "Find the requested numbers and drag them to the corresponding spot."
 msgstr "Tafuta nambari zilizoombwa na uziburute hadi mahali sambamba."
 
 #. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
-#: activities/adjacent_numbers/Adjacent_numbers.qml:56
+#: activities/adjacent_numbers/Adjacent_numbers.qml:60
 #, fuzzy, qt-format
 #| msgctxt "Data|"
 #| msgid "Find the previous numbers."
@@ -88,7 +88,7 @@ msgstr[0] "Tafuta nambari zilizopita."
 msgstr[1] "Tafuta nambari zilizopita."
 
 #. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
-#: activities/adjacent_numbers/Adjacent_numbers.qml:60
+#: activities/adjacent_numbers/Adjacent_numbers.qml:64
 #, fuzzy, qt-format
 #| msgctxt "Data|"
 #| msgid "Find the next numbers."
@@ -99,7 +99,7 @@ msgstr[0] "Tafuta nambari zinazofuata."
 msgstr[1] "Tafuta nambari zinazofuata."
 
 #. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
-#: activities/adjacent_numbers/Adjacent_numbers.qml:64
+#: activities/adjacent_numbers/Adjacent_numbers.qml:68
 #, fuzzy, qt-format
 #| msgctxt "Data|"
 #| msgid "Find the in-between numbers."
@@ -110,7 +110,7 @@ msgstr[0] "Tafuta nambari za kati."
 msgstr[1] "Tafuta nambari za kati."
 
 #. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
-#: activities/adjacent_numbers/Adjacent_numbers.qml:68
+#: activities/adjacent_numbers/Adjacent_numbers.qml:72
 #, fuzzy, qt-format
 #| msgctxt "Data|"
 #| msgid "Find the missing numbers"
@@ -2689,7 +2689,7 @@ msgstr ""
 "Hatimaye, ili kupakia seti yako ya kiwango, bofya kitufe cha 'Pakia viwango "
 "vilivyohifadhiwa'."
 
-#: activities/balancebox/balancebox.js:72
+#: activities/balancebox/balancebox.js:71
 msgctxt "balancebox|"
 msgid ""
 "Either create your levels by starting the level editor in the activity "
@@ -2699,13 +2699,13 @@ msgstr ""
 "mipangilio ya shughuli kisha upakie faili lako, au uchague seti ya kiwango "
 "cha 'imejengewa ndani'."
 
-#: activities/balancebox/balancebox.js:106
+#: activities/balancebox/balancebox.js:105
 #, qt-format
 msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
 msgstr "Faili '%1' haipo!<br> Kuanguka nyuma kwa viwango vya ujenzi."
 
-#: activities/balancebox/Balancebox.qml:70
+#: activities/balancebox/Balancebox.qml:74
 msgctxt "Balancebox|"
 msgid ""
 "You selected the user-defined level set, but you have not yet loaded any "
@@ -2714,7 +2714,7 @@ msgstr ""
 "Umechagua kiwango kilichobainishwa na mtumiaji, lakini bado hujapakia "
 "kiwango chochote cha mtumiaji!"
 
-#: activities/balancebox/Balancebox.qml:72
+#: activities/balancebox/Balancebox.qml:76
 #, fuzzy
 #| msgctxt "Hangman|"
 #| msgid "OK"
@@ -2793,7 +2793,7 @@ msgstr ""
 "kufanya mpira uende kwenye mstari ulionyooka. Kwenye skrini ya kugusa "
 "unapaswa kugusa mikono miwili kwa wakati mmoja."
 
-#: activities/ballcatch/Ballcatch.qml:227
+#: activities/ballcatch/Ballcatch.qml:234
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
@@ -2801,7 +2801,7 @@ msgstr ""
 "Gonga mikono yote miwili kwa wakati mmoja, ili kufanya mpira uende kwenye "
 "mstari ulio sawa."
 
-#: activities/ballcatch/Ballcatch.qml:233
+#: activities/ballcatch/Ballcatch.qml:240
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2930,7 +2930,7 @@ msgstr ""
 "Washa balbu za kulia ili kuwakilisha jozi ya nambari ya desimali "
 "iliyotolewa. Unapoifanikisha, bonyeza Sawa."
 
-#: activities/binary_bulb/BinaryBulb.qml:95
+#: activities/binary_bulb/BinaryBulb.qml:102
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid ""
@@ -2941,7 +2941,7 @@ msgstr ""
 "Shughuli hii inafundisha jinsi ya kubadilisha nambari za desimali hadi "
 "nambari za binary."
 
-#: activities/binary_bulb/BinaryBulb.qml:99
+#: activities/binary_bulb/BinaryBulb.qml:106
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid ""
@@ -2958,7 +2958,7 @@ msgstr ""
 "na 1. Kihisabati, mataifa haya yanawakilishwa na 0 na 1, ambayo hufanya "
 "mfumo wa binary wa kuhesabu."
 
-#: activities/binary_bulb/BinaryBulb.qml:103
+#: activities/binary_bulb/BinaryBulb.qml:110
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
@@ -2966,7 +2966,7 @@ msgctxt "BinaryBulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr "Katika shughuli 0 na 1 huigwa na balbu, huwashwa au kuzimwa."
 
-#: activities/binary_bulb/BinaryBulb.qml:107
+#: activities/binary_bulb/BinaryBulb.qml:114
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid ""
@@ -2980,7 +2980,7 @@ msgstr ""
 "Mfumo wa binary hutumia nambari hizi kwa ufanisi sana, kuruhusu kuhesabu "
 "kutoka 0 hadi 255 na biti 8 pekee."
 
-#: activities/binary_bulb/BinaryBulb.qml:111
+#: activities/binary_bulb/BinaryBulb.qml:118
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid ""
@@ -3000,7 +3000,7 @@ msgstr ""
 "2²=4 , bit 4 → 2³=8 , kidogo 5 → 2⁴=16 , kidogo 6 → 2⁵=32 , kidogo 7 → "
 "2⁶=64 , kidogo 8 → 2⁷= 128."
 
-#: activities/binary_bulb/BinaryBulb.qml:115
+#: activities/binary_bulb/BinaryBulb.qml:122
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
@@ -3008,7 +3008,7 @@ msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr "Ili kubadilisha desimali 5 kuwa thamani ya binary, 1 na 4 huongezwa."
 
-#: activities/binary_bulb/BinaryBulb.qml:119
+#: activities/binary_bulb/BinaryBulb.qml:126
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid ""
@@ -3022,7 +3022,7 @@ msgstr ""
 "Biti zao zinazolingana zimewekwa kuwa 1, zingine zimewekwa 0. Desimali 5 ni "
 "sawa na binary 101."
 
-#: activities/binary_bulb/BinaryBulb.qml:123
+#: activities/binary_bulb/BinaryBulb.qml:130
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid "This image will help you to compute bits' value."
@@ -3030,7 +3030,7 @@ msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Picha hii itakusaidia kukokotoa thamani ya biti."
 
-#: activities/binary_bulb/BinaryBulb.qml:171
+#: activities/binary_bulb/BinaryBulb.qml:178
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3140,16 +3140,16 @@ msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
 msgstr "Nafasi: fungua au funga chati ya breli"
 
-#: activities/braille_alphabets/braille_alphabets.js:43
-#: activities/braille_alphabets/braille_alphabets.js:53
-#: activities/braille_alphabets/braille_alphabets.js:63
-#: activities/braille_alphabets/braille_alphabets.js:73
-#: activities/braille_alphabets/braille_alphabets.js:83
+#: activities/braille_alphabets/braille_alphabets.js:42
+#: activities/braille_alphabets/braille_alphabets.js:52
+#: activities/braille_alphabets/braille_alphabets.js:62
+#: activities/braille_alphabets/braille_alphabets.js:72
+#: activities/braille_alphabets/braille_alphabets.js:82
 msgctxt "braille_alphabets|"
 msgid "Now it's a little bit harder without the reference."
 msgstr "Sasa ni ngumu kidogo bila rejeleo."
 
-#: activities/braille_alphabets/braille_alphabets.js:48
+#: activities/braille_alphabets/braille_alphabets.js:47
 msgctxt "braille_alphabets|"
 msgid ""
 "Look at the braille character chart and observe how similar the first and "
@@ -3158,7 +3158,7 @@ msgstr ""
 "Angalia chati ya herufi na uangalie jinsi mistari ya kwanza na ya pili "
 "inavyofanana."
 
-#: activities/braille_alphabets/braille_alphabets.js:58
+#: activities/braille_alphabets/braille_alphabets.js:57
 msgctxt "braille_alphabets|"
 msgid ""
 "Again, similar to the first line in the character chart but take care, the "
@@ -3167,7 +3167,7 @@ msgstr ""
 "Tena, sawa na mstari wa kwanza katika chati ya wahusika lakini jihadhari, "
 "herufi ya 'W' iliongezwa baadaye."
 
-#: activities/braille_alphabets/braille_alphabets.js:68
+#: activities/braille_alphabets/braille_alphabets.js:67
 msgctxt "braille_alphabets|"
 msgid "This is easy, numbers are the same as letters from A to J."
 msgstr "Hii ni rahisi, nambari ni sawa na herufi kutoka A hadi J."
@@ -3431,37 +3431,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "Nafasi au Ingiza: thibitisha jibu lako"
 
-#: activities/calendar/Calendar.qml:94
+#: activities/calendar/Calendar.qml:101
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "Jumapili"
 
-#: activities/calendar/Calendar.qml:95
+#: activities/calendar/Calendar.qml:102
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "Jumatatu"
 
-#: activities/calendar/Calendar.qml:96
+#: activities/calendar/Calendar.qml:103
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "Jumanne"
 
-#: activities/calendar/Calendar.qml:97
+#: activities/calendar/Calendar.qml:104
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "Jumatano"
 
-#: activities/calendar/Calendar.qml:98
+#: activities/calendar/Calendar.qml:105
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "Alhamisi"
 
-#: activities/calendar/Calendar.qml:99
+#: activities/calendar/Calendar.qml:106
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "Ijumaa"
 
-#: activities/calendar/Calendar.qml:100
+#: activities/calendar/Calendar.qml:107
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "Jumamosi"
@@ -3814,7 +3814,7 @@ msgid "Review the instructions and then drag and drop the items as specified."
 msgstr ""
 "Kagua maagizo na kisha uburute na uangushe vipengee kama ilivyobainishwa."
 
-#: activities/categorization/Categorization.qml:149
+#: activities/categorization/Categorization.qml:156
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3825,12 +3825,12 @@ msgstr ""
 "kupakua seti kamili ya picha ya neno. Bofya kwenye msalaba au kwenye "
 "'Usionyeshe kidirisha hiki tena' ili kucheza na toleo la onyesho."
 
-#: activities/categorization/Categorization.qml:152
+#: activities/categorization/Categorization.qml:159
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Sasisha seti ya picha"
 
-#: activities/categorization/Categorization.qml:153
+#: activities/categorization/Categorization.qml:160
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Usiwahi kuonyesha mazungumzo haya tena"
@@ -4425,22 +4425,22 @@ msgstr ""
 "draughts.js&gt;. Mwongozo unatoka wikipedia &lt;https://en.wikipedia.org/"
 "wiki/Draughts&gt;"
 
-#: activities/checkers/checkers.js:69
+#: activities/checkers/checkers.js:68
 msgctxt "checkers|"
 msgid "Black's turn"
 msgstr "zamu ya mweusi"
 
-#: activities/checkers/checkers.js:69
+#: activities/checkers/checkers.js:68
 msgctxt "checkers|"
 msgid "White's turn"
 msgstr "zamu nyeupe"
 
-#: activities/checkers/checkers.js:72
+#: activities/checkers/checkers.js:71
 msgctxt "checkers|"
 msgid "White wins"
 msgstr "Nyeupe inashinda"
 
-#: activities/checkers/checkers.js:72
+#: activities/checkers/checkers.js:71
 msgctxt "checkers|"
 msgid "Black wins"
 msgstr "Black wins"
@@ -4579,58 +4579,58 @@ msgid ""
 msgstr ""
 "Injini ya chess ni p4wn &lt;https://github.com/douglasbagnall/p4wn&gt;."
 
-#: activities/chess/chess.js:117
+#: activities/chess/chess.js:116
 msgctxt "chess|"
 msgid "Black's turn"
 msgstr "zamu ya mweusi"
 
-#: activities/chess/chess.js:117
+#: activities/chess/chess.js:116
 msgctxt "chess|"
 msgid "White's turn"
 msgstr "zamu nyeupe"
 
-#: activities/chess/chess.js:122
+#: activities/chess/chess.js:121
 msgctxt "chess|white wins"
 msgid "White mates"
 msgstr "Wenzi weupe"
 
-#: activities/chess/chess.js:122
+#: activities/chess/chess.js:121
 msgctxt "chess|black wins"
 msgid "Black mates"
 msgstr "Wenzi weusi"
 
-#: activities/chess/chess.js:132
+#: activities/chess/chess.js:131
 msgctxt "chess|"
 msgid "Drawn game"
 msgstr "Mchezo uliochorwa"
 
-#: activities/chess/chess.js:141
+#: activities/chess/chess.js:140
 msgctxt "chess|black king is under attack"
 msgid "White checks"
 msgstr "Cheki nyeupe"
 
-#: activities/chess/chess.js:141
+#: activities/chess/chess.js:140
 msgctxt "chess|white king is under attack"
 msgid "Black checks"
 msgstr "Hundi nyeusi"
 
-#: activities/chess/chess.js:144
+#: activities/chess/chess.js:143
 msgctxt "chess|"
 msgid "Invalid, your king may be in check"
 msgstr "Si sahihi, mfalme wako anaweza kudhibitiwa"
 
 #. Translators: undo all the moves in chess activity
-#: activities/chess/Chess.qml:140
+#: activities/chess/Chess.qml:147
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
 msgstr "Je, kweli unataka kutendua hatua zote?"
 
-#: activities/chess/Chess.qml:141
+#: activities/chess/Chess.qml:148
 msgctxt "Chess|"
 msgid "Yes"
 msgstr "Ndiyo"
 
-#: activities/chess/Chess.qml:142
+#: activities/chess/Chess.qml:149
 msgctxt "Chess|"
 msgid "No"
 msgstr "Hapana"
@@ -5339,12 +5339,12 @@ msgstr ""
 "Mkono mfupi zaidi unaonyesha saa, mkono mrefu zaidi unaonyesha dakika, na "
 "mkono mrefu zaidi unaonyesha sekunde."
 
-#: activities/clockgame/Clockgame.qml:124
+#: activities/clockgame/Clockgame.qml:130
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Weka saa iwe:"
 
-#: activities/clockgame/Clockgame.qml:127
+#: activities/clockgame/Clockgame.qml:133
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5352,7 +5352,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n hour"
 msgstr[1] "%n hours"
 
-#: activities/clockgame/Clockgame.qml:130
+#: activities/clockgame/Clockgame.qml:136
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5360,7 +5360,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n minute"
 msgstr[1] "%n minutes"
 
-#: activities/clockgame/Clockgame.qml:133
+#: activities/clockgame/Clockgame.qml:139
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5460,67 +5460,67 @@ msgstr ""
 "za msingi za rangi/wino ni cyan (kivuli maalum cha bluu), magenta (kivuli "
 "maalum cha waridi), na manjano."
 
-#: activities/color_mix/ColorMix.qml:92
+#: activities/color_mix/ColorMix.qml:99
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "Linganisha rangi"
 
-#: activities/color_mix/ColorMix.qml:230
+#: activities/color_mix/ColorMix.qml:237
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "Nyekundu haitoshi"
 
-#: activities/color_mix/ColorMix.qml:232
+#: activities/color_mix/ColorMix.qml:239
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "Nyekundu nyingi sana"
 
-#: activities/color_mix/ColorMix.qml:235
+#: activities/color_mix/ColorMix.qml:242
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "Haitoshi kijani"
 
-#: activities/color_mix/ColorMix.qml:237
+#: activities/color_mix/ColorMix.qml:244
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "Kijani sana"
 
-#: activities/color_mix/ColorMix.qml:240
+#: activities/color_mix/ColorMix.qml:247
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "Sio bluu ya kutosha"
 
-#: activities/color_mix/ColorMix.qml:242
+#: activities/color_mix/ColorMix.qml:249
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "Bluu nyingi sana"
 
-#: activities/color_mix/ColorMix.qml:246
+#: activities/color_mix/ColorMix.qml:253
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "Majenta haitoshi"
 
-#: activities/color_mix/ColorMix.qml:248
+#: activities/color_mix/ColorMix.qml:255
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "magenta"
 
-#: activities/color_mix/ColorMix.qml:251
+#: activities/color_mix/ColorMix.qml:258
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "Haitoshi njano"
 
-#: activities/color_mix/ColorMix.qml:253
+#: activities/color_mix/ColorMix.qml:260
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "Njano nyingi sana"
 
-#: activities/color_mix/ColorMix.qml:256
+#: activities/color_mix/ColorMix.qml:263
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "Sio rangi ya samawati ya kutosha"
 
-#: activities/color_mix/ColorMix.qml:258
+#: activities/color_mix/ColorMix.qml:265
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "samawati nyingi sana"
@@ -5682,7 +5682,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Tafuta bata wa pinki"
 
-#: activities/colors/FindIt.qml:266
+#: activities/colors/FindIt.qml:273
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5691,12 +5691,12 @@ msgstr ""
 "Shughuli hii inahitaji sauti, kwa hivyo itacheza baadhi ya sauti hata kama "
 "sauti au madoido yamezimwa katika usanidi mkuu."
 
-#: activities/colors/FindIt.qml:267
+#: activities/colors/FindIt.qml:274
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Toka"
 
-#: activities/colors/FindIt.qml:268
+#: activities/colors/FindIt.qml:275
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Endelea"
@@ -5866,7 +5866,7 @@ msgid "Space or Enter or Tab: select the next item"
 msgstr "Nafasi au Ingiza au Kichupo: chagua kipengee kinachofuata"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 15–25 simple 3-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: cat;dog;win;red;yes
-#: activities/crane/crane.js:41
+#: activities/crane/crane.js:40
 msgctxt "crane|"
 msgid ""
 "cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg"
@@ -5875,7 +5875,7 @@ msgstr ""
 "siku;kula;kofia;mguu;barafu;zamani;yai"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 4-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: blue;best;good;area
-#: activities/crane/crane.js:48
+#: activities/crane/crane.js:47
 msgctxt "crane|"
 msgid ""
 "blue;best;good;area;bell;coat;easy;farm;food;else;girl;give;hero;help;hour;"
@@ -5885,7 +5885,7 @@ msgstr ""
 "toa;shujaa;msaada;saa;mchanga;wimbo"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 5-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: happy;child;white;apple
-#: activities/crane/crane.js:55
+#: activities/crane/crane.js:54
 msgctxt "crane|"
 msgid ""
 "happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;"
@@ -6419,12 +6419,12 @@ msgstr ""
 "voltage karibu sawa na voltage ya ardhi na 1 ni uwakilishi wa voltage ya "
 "usambazaji wa mzunguko."
 
-#: activities/digital_electricity/DigitalElectricity.qml:248
+#: activities/digital_electricity/DigitalElectricity.qml:255
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Ingizo"
 
-#: activities/digital_electricity/DigitalElectricity.qml:266
+#: activities/digital_electricity/DigitalElectricity.qml:273
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Pato"
@@ -6938,17 +6938,17 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:399
+#: activities/drawing_wheels/DrawingWheels.qml:405
 msgctxt "DrawingWheels|"
 msgid "File menu"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:411
+#: activities/drawing_wheels/DrawingWheels.qml:417
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:435
+#: activities/drawing_wheels/DrawingWheels.qml:441
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Piano composition"
@@ -6956,7 +6956,7 @@ msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr "Muundo wa piano"
 
-#: activities/drawing_wheels/DrawingWheels.qml:447
+#: activities/drawing_wheels/DrawingWheels.qml:453
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font selector"
@@ -6964,7 +6964,7 @@ msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr "Kiteuzi cha fonti"
 
-#: activities/drawing_wheels/DrawingWheels.qml:474
+#: activities/drawing_wheels/DrawingWheels.qml:480
 #, fuzzy
 #| msgctxt "OptionsRow|"
 #| msgid "Undo"
@@ -6972,7 +6972,7 @@ msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Tengua"
 
-#: activities/drawing_wheels/DrawingWheels.qml:486
+#: activities/drawing_wheels/DrawingWheels.qml:492
 #, fuzzy
 #| msgctxt "Checkers|"
 #| msgid "Redo"
@@ -6980,27 +6980,27 @@ msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "Rudia"
 
-#: activities/drawing_wheels/DrawingWheels.qml:520
+#: activities/drawing_wheels/DrawingWheels.qml:526
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:520
+#: activities/drawing_wheels/DrawingWheels.qml:526
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:553
+#: activities/drawing_wheels/DrawingWheels.qml:559
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:553
+#: activities/drawing_wheels/DrawingWheels.qml:559
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:712
+#: activities/drawing_wheels/DrawingWheels.qml:718
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Select your mode"
@@ -7008,7 +7008,7 @@ msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Chagua hali yako"
 
-#: activities/drawing_wheels/DrawingWheels.qml:727
+#: activities/drawing_wheels/DrawingWheels.qml:733
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Many new images"
@@ -7016,7 +7016,7 @@ msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Picha nyingi mpya"
 
-#: activities/drawing_wheels/DrawingWheels.qml:756
+#: activities/drawing_wheels/DrawingWheels.qml:762
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Many new images"
@@ -7024,7 +7024,7 @@ msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Picha nyingi mpya"
 
-#: activities/drawing_wheels/DrawingWheels.qml:775
+#: activities/drawing_wheels/DrawingWheels.qml:781
 #, fuzzy
 #| msgctxt "DownloadDialog|"
 #| msgid "Background"
@@ -7032,17 +7032,17 @@ msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Usuli"
 
-#: activities/drawing_wheels/DrawingWheels.qml:856
+#: activities/drawing_wheels/DrawingWheels.qml:862
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:923
+#: activities/drawing_wheels/DrawingWheels.qml:929
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:986
+#: activities/drawing_wheels/DrawingWheels.qml:992
 #, fuzzy, qt-format
 #| msgctxt "SignalGenerator|"
 #| msgid "%1 s"
@@ -7050,7 +7050,7 @@ msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 s"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1004
+#: activities/drawing_wheels/DrawingWheels.qml:1010
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Speed"
@@ -7058,17 +7058,17 @@ msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Kasi"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1020
+#: activities/drawing_wheels/DrawingWheels.qml:1026
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1040
+#: activities/drawing_wheels/DrawingWheels.qml:1046
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1083
+#: activities/drawing_wheels/DrawingWheels.qml:1089
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font size"
@@ -7076,17 +7076,17 @@ msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "Ukubwa wa herufi"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1120
+#: activities/drawing_wheels/DrawingWheels.qml:1126
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1163
+#: activities/drawing_wheels/DrawingWheels.qml:1169
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1201
+#: activities/drawing_wheels/DrawingWheels.qml:1207
 #, fuzzy
 #| msgctxt "IntroMessage|"
 #| msgid "Start"
@@ -7094,7 +7094,7 @@ msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "Anzisha"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1381
+#: activities/drawing_wheels/DrawingWheels.qml:1387
 #, fuzzy
 #| msgctxt "Piano_composition|"
 #| msgid "You have not selected any note. Do you want to erase all the notes?"
@@ -7102,7 +7102,7 @@ msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Hujachagua dokezo lolote. Je, ungependa kufuta madokezo yote?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1382
+#: activities/drawing_wheels/DrawingWheels.qml:1388
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Do you want to download it now?"
@@ -7110,7 +7110,7 @@ msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Je, ungependa kuipakua sasa?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1383
+#: activities/drawing_wheels/DrawingWheels.qml:1389
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -7118,7 +7118,7 @@ msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Ndiyo"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1384
+#: activities/drawing_wheels/DrawingWheels.qml:1390
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -7468,7 +7468,7 @@ msgstr ""
 "Katika kiwango cha tatu, kidokezo cha maandishi bila mpangilio kinaonyeshwa "
 "na lazima ubofye mnyama anayelingana na maandishi."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:306
+#: activities/explore_farm_animals/ExploreLevels.qml:312
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -7477,12 +7477,12 @@ msgstr ""
 "Shughuli hii inahitaji sauti, kwa hivyo itacheza baadhi ya sauti hata kama "
 "sauti au madoido yamezimwa katika usanidi mkuu."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:307
+#: activities/explore_farm_animals/ExploreLevels.qml:313
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Toka"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:308
+#: activities/explore_farm_animals/ExploreLevels.qml:314
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Endelea"
@@ -9813,17 +9813,17 @@ msgstr ""
 "Wewe ndiye mtu aliye kwenye duara nyeupe. Chagua jina unalopaswa kumwita mtu "
 "katika mduara wa chungwa.\n"
 
-#: activities/family/Family.qml:251
+#: activities/family/Family.qml:258
 msgctxt "Family|"
 msgid "Me"
 msgstr "Mimi"
 
-#: activities/family/Family.qml:276
+#: activities/family/Family.qml:283
 msgctxt "Family|"
 msgid "?"
 msgstr "?"
 
-#: activities/family/Family.qml:337
+#: activities/family/Family.qml:344
 #, qt-format
 msgctxt "Family|"
 msgid "Select one of the pairs corresponding to: %1"
@@ -10051,6 +10051,7 @@ msgstr "Sogeza kila kipengee ili kuunda upya picha."
 
 #. Help goal
 #: activities/fifteen/ActivityInfo.qml:20
+#: activities/peg_solitaire/ActivityInfo.qml:19
 #: activities/traffic/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and spatial visualization skills."
@@ -10331,7 +10332,7 @@ msgid ""
 "parts to represent the given fraction."
 msgstr "Chagua idadi inayofaa ya sehemu kama ilivyoelezewa katika maagizo."
 
-#: activities/fractions_create/fractions_create.js:80
+#: activities/fractions_create/fractions_create.js:79
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
 msgstr "Tafuta sehemu iliyowakilishwa."
@@ -10761,7 +10762,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Kichupo: badilisha kati ya kuhariri frieze na kutazama modeli"
 
-#: activities/frieze/Frieze.qml:287
+#: activities/frieze/Frieze.qml:294
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Niko tayari"
@@ -15272,7 +15273,7 @@ msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
 msgstr "Nafasi, Rudisha au Ingiza: thibitisha jibu lako"
 
-#: activities/graduated_line_read/graduated_line_read.js:134
+#: activities/graduated_line_read/graduated_line_read.js:133
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
 msgstr "(mipaka inayobadilika)"
@@ -15488,7 +15489,7 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
 msgstr "Backspace: chagua neno lililotangulia"
 
-#: activities/grammar_analysis/grammar_analysis.js:401
+#: activities/grammar_analysis/grammar_analysis.js:400
 msgctxt "grammar_analysis|"
 msgid "Empty"
 msgstr "Tupu"
@@ -15707,7 +15708,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Kushoto na kulia mishale: hoja spaceship"
 
-#: activities/gravity/Gravity.qml:222
+#: activities/gravity/Gravity.qml:229
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15720,7 +15721,7 @@ msgstr ""
 "moja kwa moja wingi wa vitu vyote viwili na inawiana kinyume na mraba wa "
 "umbali kati ya vituo vyao."
 
-#: activities/gravity/Gravity.qml:225
+#: activities/gravity/Gravity.qml:232
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -15731,7 +15732,7 @@ msgstr ""
 "viwili vinavyoingiliana, vitu vikubwa zaidi vitavutia kila mmoja kwa nguvu "
 "kubwa zaidi ya uvutano."
 
-#: activities/gravity/Gravity.qml:228
+#: activities/gravity/Gravity.qml:235
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -15741,7 +15742,7 @@ msgstr ""
 "Lakini kwa vile nguvu hii inawiana kinyume na mraba wa umbali kati ya vitu "
 "viwili vinavyoingiliana, umbali zaidi utasababisha nguvu dhaifu ya uvutano."
 
-#: activities/gravity/Gravity.qml:231
+#: activities/gravity/Gravity.qml:238
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -15752,7 +15753,7 @@ msgstr ""
 "kituo cha anga. Mshale unaonyesha mwelekeo na ukubwa wa mvuto kwenye meli "
 "yako."
 
-#: activities/gravity/Gravity.qml:234
+#: activities/gravity/Gravity.qml:241
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -15825,7 +15826,7 @@ msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
 msgstr "Jedwali: badilisha kati ya nambari na waendeshaji"
 
-#: activities/guess24/Guess24.qml:135
+#: activities/guess24/Guess24.qml:142
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr "Tumia nambari nne zilizo na waendeshaji fulani kupata 24."
@@ -15931,17 +15932,17 @@ msgctxt "Admin|"
 msgid "Level %1"
 msgstr "Kiwango cha %1"
 
-#: activities/guesscount/guesscount.js:140
+#: activities/guesscount/guesscount.js:139
 msgctxt "guesscount|"
 msgid "result is not positive integer"
 msgstr "matokeo sio nambari chanya"
 
-#: activities/guesscount/guesscount.js:142
+#: activities/guesscount/guesscount.js:141
 msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "matokeo sio nambari kamili"
 
-#: activities/guesscount/Guesscount.qml:151
+#: activities/guesscount/Guesscount.qml:158
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -16028,17 +16029,17 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
 msgstr "Backspace: futa nambari"
 
-#: activities/guessnumber/guessnumber.js:57
+#: activities/guessnumber/guessnumber.js:56
 msgctxt "guessnumber|"
 msgid "Your number is too high"
 msgstr "Nambari yako ni kubwa mno"
 
-#: activities/guessnumber/guessnumber.js:60
+#: activities/guessnumber/guessnumber.js:59
 msgctxt "guessnumber|"
 msgid "Your number is too low"
 msgstr "Nambari yako ni ndogo sana"
 
-#: activities/guessnumber/guessnumber.js:65
+#: activities/guessnumber/guessnumber.js:64
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr "Umepata nambari!"
@@ -16130,18 +16131,18 @@ msgstr ""
 "inayolingana inapatikana, utasikia neno kutafuta wakati majaribio matatu "
 "yamesalia."
 
-#: activities/hangman/hangman.js:212
+#: activities/hangman/hangman.js:211
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Umejaribu: %1"
 
-#: activities/hangman/Hangman.qml:370
+#: activities/hangman/Hangman.qml:377
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Samahani, bado hatuna tafsiri ya lugha yako."
 
-#: activities/hangman/Hangman.qml:371
+#: activities/hangman/Hangman.qml:378
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -16151,7 +16152,7 @@ msgstr ""
 "GCompris imetengenezwa na jumuiya ya KDE, unaweza kutafsiri GCompris kwa "
 "kujiunga na timu ya utafsiri kwenye <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:373
+#: activities/hangman/Hangman.qml:380
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -16250,13 +16251,13 @@ msgstr ""
 "hii au aliongozwa nayo. (chanzo Wikipedia: https://en.wikipedia.org/wiki/"
 "Tower_of_hanoi)"
 
-#: activities/hanoi_real/HanoiReal.qml:75
+#: activities/hanoi_real/HanoiReal.qml:82
 msgctxt "HanoiReal|"
 msgid "Move the entire stack to the right peg, one disc at a time."
 msgstr ""
 "Sogeza safu nzima kwenye kigingi cha kulia, diski moja kwa wakati mmoja."
 
-#: activities/hanoi_real/HanoiReal.qml:76
+#: activities/hanoi_real/HanoiReal.qml:83
 msgctxt "HanoiReal|"
 msgid ""
 "Build the same tower in the empty area as the one you see on the right-hand "
@@ -16824,31 +16825,31 @@ msgstr ""
 "Mishale ya kushoto na ya kulia: katika viwango vya kwanza, songa kwa pande; "
 "katika viwango vya juu, mzunguko spaceship"
 
-#: activities/land_safe/LandSafe.qml:584
+#: activities/land_safe/LandSafe.qml:591
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "Mafuta: %1"
 
-#: activities/land_safe/LandSafe.qml:594
+#: activities/land_safe/LandSafe.qml:601
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "Mwinuko: %1"
 
-#: activities/land_safe/LandSafe.qml:604
+#: activities/land_safe/LandSafe.qml:611
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "Kasi: %1"
 
-#: activities/land_safe/LandSafe.qml:615
+#: activities/land_safe/LandSafe.qml:622
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "Kuongeza kasi: %1"
 
-#: activities/land_safe/LandSafe.qml:649
+#: activities/land_safe/LandSafe.qml:656
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -17259,31 +17260,31 @@ msgstr ""
 "inalingana na nambari ya desimali iliyoonyeshwa. Kisha ubofye kitufe cha "
 "Sawa ili kuthibitisha jibu lako."
 
-#: activities/learn_decimals/Learn_decimals.qml:165
+#: activities/learn_decimals/Learn_decimals.qml:172
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "Onyesha nambari: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:166
+#: activities/learn_decimals/Learn_decimals.qml:173
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "Onyesha matokeo ya: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:167
+#: activities/learn_decimals/Learn_decimals.qml:174
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "Onyesha matokeo ya: %1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:168
+#: activities/learn_decimals/Learn_decimals.qml:175
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "Wakilisha wingi: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:185
+#: activities/learn_decimals/Learn_decimals.qml:192
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -17895,12 +17896,12 @@ msgctxt "ActivityInfo|"
 msgid "Right arrow: right hand answer"
 msgstr "Mshale wa kulia: jibu la mkono wa kulia"
 
-#: activities/leftright/Leftright.qml:156
+#: activities/leftright/Leftright.qml:163
 msgctxt "Leftright|"
 msgid "Left hand"
 msgstr "Mkono wa kushoto"
 
-#: activities/leftright/Leftright.qml:178
+#: activities/leftright/Leftright.qml:185
 msgctxt "Leftright|"
 msgid "Right hand"
 msgstr "Mkono wa kulia"
@@ -17972,12 +17973,12 @@ msgstr ""
 "Barua inaonyeshwa kwenye bendera iliyowekwa kwenye ndege. Chagua maneno yote "
 "kwenye orodha iliyo na herufi hii kisha ubonyeze kitufe cha Sawa."
 
-#: activities/letter-in-word/LetterInWord.qml:335
+#: activities/letter-in-word/LetterInWord.qml:342
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Samahani, bado hatuna tafsiri ya lugha yako."
 
-#: activities/letter-in-word/LetterInWord.qml:336
+#: activities/letter-in-word/LetterInWord.qml:343
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17987,7 +17988,7 @@ msgstr ""
 "GCompris imetengenezwa na jumuiya ya KDE, unaweza kutafsiri GCompris kwa "
 "kujiunga na timu ya utafsiri kwenye <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:338
+#: activities/letter-in-word/LetterInWord.qml:345
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -18282,7 +18283,7 @@ msgstr ""
 "Unapaswa kuhesabu nyota ngapi bado ziko chini ya kofia. Bofya kwenye eneo la "
 "chini ili kuingiza jibu lako na kwenye kitufe cha Sawa ili kulithibitisha."
 
-#: activities/magic-hat-minus/MagicHat.qml:272
+#: activities/magic-hat-minus/MagicHat.qml:279
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Bonyeza kofia ili kuanza mchezo"
@@ -18519,7 +18520,7 @@ msgstr ""
 "kukizima katika viwango vya juu, bofya aikoni ya \"barefoot/sportshoe\" "
 "kwenye kona ya juu kushoto ya skrini ili kugeuza hali ya kukimbia-haraka."
 
-#: activities/maze/Maze.qml:346
+#: activities/maze/Maze.qml:353
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -18659,7 +18660,7 @@ msgstr ""
 "Sikiliza mfuatano wa sauti unaochezwa, na urudie kwa kubofya pau za marimba. "
 "Unaweza kusikiliza tena mlolongo wa sauti kwa kubofya kitufe cha kurudia."
 
-#: activities/melody/Melody.qml:338
+#: activities/melody/Melody.qml:344
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -18668,12 +18669,12 @@ msgstr ""
 "Shughuli hii inahitaji sauti, kwa hivyo itacheza baadhi ya sauti hata kama "
 "sauti au madoido yamezimwa katika usanidi mkuu."
 
-#: activities/melody/Melody.qml:339
+#: activities/melody/Melody.qml:345
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "Toka"
 
-#: activities/melody/Melody.qml:340
+#: activities/melody/Melody.qml:346
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "Endelea"
@@ -19868,7 +19869,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:362
+#: activities/memory/MemoryCommon.qml:369
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19877,12 +19878,12 @@ msgstr ""
 "Shughuli hii inahitaji sauti, kwa hivyo itacheza baadhi ya sauti hata kama "
 "sauti au madoido yamezimwa katika usanidi mkuu."
 
-#: activities/memory/MemoryCommon.qml:363
+#: activities/memory/MemoryCommon.qml:370
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Toka"
 
-#: activities/memory/MemoryCommon.qml:364
+#: activities/memory/MemoryCommon.qml:371
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Endelea"
@@ -20481,7 +20482,7 @@ msgstr ""
 "metalpaint.wav - iliyochanganywa na kutumika wakati nugget ya dhahabu "
 "inakusanywa"
 
-#: activities/mining/Mining.qml:447
+#: activities/mining/Mining.qml:454
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -20496,22 +20497,22 @@ msgstr ""
 "kulia au vidole viwili katikati. Kwenye eneo la kugusa, buruta vidole viwili "
 "kutoka kwenye kung'aa, kimoja katika kila upande."
 
-#: activities/mining/Mining.qml:463
+#: activities/mining/Mining.qml:470
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Ni sawa kabisa unakuza. Endelea hadi uone nugget."
 
-#: activities/mining/Mining.qml:471
+#: activities/mining/Mining.qml:478
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Ahh, kuwa mwangalifu, unakuza mbali sana na mng'ao."
 
-#: activities/mining/Mining.qml:479
+#: activities/mining/Mining.qml:486
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Sasa unaona nugget, bonyeza juu yake ili kuikamata."
 
-#: activities/mining/Mining.qml:487
+#: activities/mining/Mining.qml:494
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -20520,17 +20521,17 @@ msgstr ""
 "Hum, uko mbali sana na nugget kuiona. Zungusha kisha zoom tena kwa ukaribu "
 "uwezavyo kutoka kwenye kumetameta."
 
-#: activities/mining/Mining.qml:495
+#: activities/mining/Mining.qml:502
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Sasa fungua na ujaribu kutafuta mng'aro mwingine."
 
-#: activities/mining/Mining.qml:503
+#: activities/mining/Mining.qml:510
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Endelea kuvuta hadi uone kumeta."
 
-#: activities/mining/Mining.qml:511
+#: activities/mining/Mining.qml:518
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Sasa unaona kung'aa, endelea, unaweza kuvuta juu yake."
@@ -20574,12 +20575,12 @@ msgstr ""
 "ya picha. Bofya herufi inayokosekana ili kukamilisha neno, au charaza herufi "
 "kwenye kibodi yako."
 
-#: activities/missing-letter/MissingLetter.qml:322
+#: activities/missing-letter/MissingLetter.qml:329
 msgctxt "MissingLetter|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Samahani, bado hatuna tafsiri ya lugha yako."
 
-#: activities/missing-letter/MissingLetter.qml:323
+#: activities/missing-letter/MissingLetter.qml:330
 #, qt-format
 msgctxt "MissingLetter|"
 msgid ""
@@ -20589,7 +20590,7 @@ msgstr ""
 "GCompris imetengenezwa na jumuiya ya KDE, unaweza kutafsiri GCompris kwa "
 "kujiunga na timu ya utafsiri kwenye <a href=\"%2\">%2</a>"
 
-#: activities/missing-letter/MissingLetter.qml:325
+#: activities/missing-letter/MissingLetter.qml:332
 msgctxt "MissingLetter|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -20657,7 +20658,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
 msgstr "Kichupo: abiri kati ya sehemu za chini na za juu"
 
-#: activities/money/money.js:148
+#: activities/money/money.js:147
 msgctxt "money|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
@@ -20666,7 +20667,7 @@ msgstr ""
 "Bofya kwenye sarafu au kwenye noti chini ya skrini ili kulipa. Ikiwa unataka "
 "kuondoa sarafu au noti, bonyeza juu yake kwenye eneo la juu la skrini."
 
-#: activities/money/money.js:179
+#: activities/money/money.js:178
 #, qt-format
 msgctxt "money|"
 msgid ""
@@ -20861,13 +20862,13 @@ msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr "Ukiwa tayari, bofya Tux na tutazungumza kwa msimbo wa Morse."
 
-#: activities/morse_code/MorseCode.qml:364
+#: activities/morse_code/MorseCode.qml:366
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Thamani ya ziada: %1"
 
-#: activities/morse_code/MorseCode.qml:365
+#: activities/morse_code/MorseCode.qml:367
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -21093,39 +21094,39 @@ msgid ""
 "has only 2 pieces left."
 msgstr ""
 
-#: activities/nine_men_morris/nine_men_morris.js:240
-#: activities/nine_men_morris/nine_men_morris.js:1086
+#: activities/nine_men_morris/nine_men_morris.js:239
+#: activities/nine_men_morris/nine_men_morris.js:1085
 msgctxt "nine_men_morris|"
 msgid "Place a piece"
 msgstr "Weka kipande"
 
-#: activities/nine_men_morris/nine_men_morris.js:366
-#: activities/nine_men_morris/nine_men_morris.js:1144
+#: activities/nine_men_morris/nine_men_morris.js:365
+#: activities/nine_men_morris/nine_men_morris.js:1143
 msgctxt "nine_men_morris|"
 msgid "Move a piece"
 msgstr "Hamisha kipande"
 
-#: activities/nine_men_morris/nine_men_morris.js:918
+#: activities/nine_men_morris/nine_men_morris.js:917
 msgctxt "nine_men_morris|"
 msgid "Remove a piece"
 msgstr "Ondoa kipande"
 
-#: activities/nine_men_morris/nine_men_morris.js:1121
+#: activities/nine_men_morris/nine_men_morris.js:1120
 msgctxt "nine_men_morris|"
 msgid "Congratulations"
 msgstr "Hongera sana"
 
-#: activities/nine_men_morris/nine_men_morris.js:1124
+#: activities/nine_men_morris/nine_men_morris.js:1123
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 1"
 msgstr "Hongera Mchezaji 1"
 
-#: activities/nine_men_morris/nine_men_morris.js:1135
+#: activities/nine_men_morris/nine_men_morris.js:1134
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 2"
 msgstr "Hongera Mchezaji 2"
 
-#: activities/nine_men_morris/nine_men_morris.js:1138
+#: activities/nine_men_morris/nine_men_morris.js:1137
 msgctxt "nine_men_morris|"
 msgid "Try again"
 msgstr ""
@@ -21134,7 +21135,7 @@ msgstr ""
 "na ubonyeze kitufe cha Enter ili kuangalia ikiwa umeliweka sawa. Ikiwa "
 "sivyo, jaribu tena."
 
-#: activities/nine_men_morris/NineMenMorris.qml:348
+#: activities/nine_men_morris/NineMenMorris.qml:355
 #, fuzzy
 #| msgctxt "nine_men_morris|"
 #| msgid ""
@@ -21148,7 +21149,7 @@ msgstr ""
 "Wewe na Tux mnaanza na vipande 9 kila mmoja, na mnapokezana kuweka vipande "
 "vyenu kwenye sehemu tupu za ubao (kwa kubofya sehemu zilizo wazi)."
 
-#: activities/nine_men_morris/NineMenMorris.qml:352
+#: activities/nine_men_morris/NineMenMorris.qml:359
 #, fuzzy
 #| msgctxt "nine_men_morris|"
 #| msgid ""
@@ -21165,7 +21166,7 @@ msgstr ""
 "Tux ili kukiondoa. Vipande vya kinu vilivyotengenezwa haviwezi kuondolewa "
 "isipokuwa hakuna vipande vingine vilivyoachwa kwenye ubao."
 
-#: activities/nine_men_morris/NineMenMorris.qml:356
+#: activities/nine_men_morris/NineMenMorris.qml:363
 #, fuzzy
 #| msgctxt "nine_men_morris|"
 #| msgid ""
@@ -21183,7 +21184,7 @@ msgstr ""
 "kuisogeza hapo. Matangazo ya rangi ya kijani yanaonyesha wapi unaweza "
 "kusonga."
 
-#: activities/nine_men_morris/NineMenMorris.qml:360
+#: activities/nine_men_morris/NineMenMorris.qml:367
 #, fuzzy
 #| msgctxt "nine_men_morris|"
 #| msgid ""
@@ -21197,7 +21198,7 @@ msgstr ""
 "Ukibakiwa na vipande 3, vitapata uwezo wa 'kuruka' na vinaweza kusogezwa "
 "hadi sehemu yoyote iliyo wazi ubaoni."
 
-#: activities/nine_men_morris/NineMenMorris.qml:364
+#: activities/nine_men_morris/NineMenMorris.qml:371
 #, fuzzy
 #| msgctxt "nine_men_morris|"
 #| msgid ""
@@ -21269,20 +21270,20 @@ msgid ""
 "100% to complete the level."
 msgstr "Tambua madokezo kwa usahihi na upate alama 100% to ukamilishe kiwango."
 
-#: activities/note_names/NoteNames.qml:201
+#: activities/note_names/NoteNames.qml:208
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
 msgstr "Dokezo jipya: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:271
+#: activities/note_names/NoteNames.qml:278
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:449
+#: activities/note_names/NoteNames.qml:456
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21291,12 +21292,12 @@ msgstr ""
 "Shughuli hii inahitaji sauti, kwa hivyo itacheza baadhi ya sauti hata kama "
 "sauti au madoido yamezimwa katika usanidi mkuu."
 
-#: activities/note_names/NoteNames.qml:450
+#: activities/note_names/NoteNames.qml:457
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Toka"
 
-#: activities/note_names/NoteNames.qml:451
+#: activities/note_names/NoteNames.qml:458
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Endelea"
@@ -21699,32 +21700,32 @@ msgstr ""
 "Umepewa baadhi ya nambari. Buruta na uangushe hadi eneo la juu kwa mpangilio "
 "wa kupanda au kushuka kama ilivyoombwa."
 
-#: activities/ordering_numbers/ordering.js:66
+#: activities/ordering_numbers/ordering.js:65
 msgctxt "ordering|"
 msgid "Drag and drop the items in ascending order."
 msgstr "Buruta na uangushe vipengee kwa mpangilio wa kupanda."
 
-#: activities/ordering_numbers/ordering.js:67
+#: activities/ordering_numbers/ordering.js:66
 msgctxt "ordering|"
 msgid "Drag and drop the items in descending order."
 msgstr "Buruta na udondoshe vipengee kwa mpangilio wa kushuka."
 
-#: activities/ordering_numbers/ordering.js:68
+#: activities/ordering_numbers/ordering.js:67
 msgctxt "ordering|"
 msgid "Drag and drop the letters in alphabetical order."
 msgstr "Buruta na udondoshe herufi kwa mpangilio wa alfabeti."
 
-#: activities/ordering_numbers/ordering.js:69
+#: activities/ordering_numbers/ordering.js:68
 msgctxt "ordering|"
 msgid "Drag and drop the letters in reverse alphabetical order."
 msgstr "Buruta na udondoshe herufi kwa mpangilio wa kialfabeti wa kinyume."
 
-#: activities/ordering_numbers/ordering.js:70
+#: activities/ordering_numbers/ordering.js:69
 msgctxt "ordering|"
 msgid "Drag and drop the items in chronological order."
 msgstr "Buruta na uangushe vipengee kwa mpangilio wa matukio."
 
-#: activities/ordering_numbers/ordering.js:71
+#: activities/ordering_numbers/ordering.js:70
 msgctxt "ordering|"
 msgid "Drag and drop the words to the upper box to form a meaningful sentence."
 msgstr ""
@@ -22259,7 +22260,7 @@ msgctxt "ActivityInfo|"
 msgid "Arrows: directions"
 msgstr "Mishale: maelekezo"
 
-#: activities/path_encoding/GridPath.qml:130
+#: activities/path_encoding/GridPath.qml:137
 #, qt-format
 msgctxt "GridPath|"
 msgid "Errors: %1"
@@ -22273,6 +22274,67 @@ msgstr "Hitilafu: %1"
 msgctxt "ActivityInfo|"
 msgid "Relative path encoding"
 msgstr "Usimbaji wa njia"
+
+#: activities/peg_solitaire/ActivityConfig.qml:27
+msgctxt "ActivityConfig|"
+msgid "Use the default starting hole"
+msgstr ""
+
+#. Activity title
+#: activities/peg_solitaire/ActivityInfo.qml:14
+msgctxt "ActivityInfo|"
+msgid "Peg solitaire"
+msgstr ""
+
+#. Help title
+#: activities/peg_solitaire/ActivityInfo.qml:16
+msgctxt "ActivityInfo|"
+msgid "Remove all the pieces in the correct order until only one remains."
+msgstr ""
+
+#. Help manual
+#: activities/peg_solitaire/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"To move a piece, make it jump another one in an orthogonal direction, to a "
+"hole two positions away. The jumped piece is removed from the board. You can "
+"click on a movable piece and then on its destination, or drag and drop it to "
+"its destination. The game is over when no more piece can be moved, and is "
+"won if only one piece remains. If the option to use the default starting "
+"hole is not selected, you need to choose the first piece to remove by "
+"clicking on it. You can use the undo button to undo your last move, and the "
+"redo button to redo it."
+msgstr ""
+
+#. Board for the Peg solitaire game
+#: activities/peg_solitaire/peg_solitaire.js:28
+msgctxt "peg_solitaire|"
+msgid "English board"
+msgstr ""
+
+#. Board for the Peg solitaire game
+#: activities/peg_solitaire/peg_solitaire.js:44
+#, fuzzy
+#| msgctxt "board14_0|"
+#| msgid "French Polynesia"
+msgctxt "peg_solitaire|"
+msgid "French board"
+msgstr "Polynesia ya Kifaransa"
+
+#. Board for the Peg solitaire game
+#: activities/peg_solitaire/peg_solitaire.js:61
+msgctxt "peg_solitaire|"
+msgid "32 holes diamond board"
+msgstr ""
+
+#. Board for the Peg solitaire game
+#: activities/peg_solitaire/peg_solitaire.js:79
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Numbers in order"
+msgctxt "peg_solitaire|"
+msgid "Asymmetrical board"
+msgstr "Nambari kwa mpangilio"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -22301,7 +22363,7 @@ msgstr ""
 "kipanya. Usipobofya mara mbili haraka vya kutosha, Tux atashika mpira. "
 "Lazima ubofye juu yake ili kuirejesha kwenye nafasi yake ya awali."
 
-#: activities/penalty/Penalty.qml:239
+#: activities/penalty/Penalty.qml:246
 msgctxt "Penalty|"
 msgid ""
 "Double click or double tap on the side of the goal you want to put the ball "
@@ -22310,7 +22372,7 @@ msgstr ""
 "Bofya mara mbili au gusa mara mbili kwenye upande wa lengo unalotaka kuweka "
 "mpira ndani."
 
-#: activities/penalty/Penalty.qml:240
+#: activities/penalty/Penalty.qml:247
 msgctxt "Penalty|"
 msgid "Click or tap on the ball to bring it back to its initial position."
 msgstr "Bofya au uguse mpira ili kuurudisha kwenye nafasi yake ya awali."
@@ -22343,12 +22405,12 @@ msgstr ""
 "Zingatia picha hizo mbili kwa makini. Kuna baadhi ya tofauti kidogo. "
 "Unapopata tofauti lazima ubofye juu yake."
 
-#: activities/photo_hunter/PhotoHunter.qml:88
+#: activities/photo_hunter/PhotoHunter.qml:95
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "Buruta kitelezi ili kuonyesha tofauti."
 
-#: activities/photo_hunter/PhotoHunter.qml:89
+#: activities/photo_hunter/PhotoHunter.qml:96
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Bofya kwenye tofauti kati ya picha hizo mbili."
@@ -22756,29 +22818,29 @@ msgctxt "OptionsRow|"
 msgid "Flat notes"
 msgstr "Noti za usawa"
 
-#: activities/piano_composition/piano_composition.js:24
+#: activities/piano_composition/piano_composition.js:23
 msgctxt "piano_composition|"
 msgid "This is the treble clef staff for high pitched notes."
 msgstr "Hawa ndio wafanyakazi wa treble clef kwa noti za sauti ya juu."
 
-#: activities/piano_composition/piano_composition.js:27
+#: activities/piano_composition/piano_composition.js:26
 msgctxt "piano_composition|"
 msgid "This is the bass clef staff for low pitched notes."
 msgstr "Hawa ni wafanyakazi wa bass clef kwa maelezo ya chini."
 
-#: activities/piano_composition/piano_composition.js:30
+#: activities/piano_composition/piano_composition.js:29
 msgctxt "piano_composition|"
 msgid "The black keys are sharp and flat keys. Sharp notes have a ♯ sign."
 msgstr "Funguo nyeusi ni funguo kali na gorofa. Vidokezo vikali vina ishara ♯."
 
-#: activities/piano_composition/piano_composition.js:33
+#: activities/piano_composition/piano_composition.js:32
 msgctxt "piano_composition|"
 msgid "Each black key has two names: flat and sharp. Flat notes have ♭ sign."
 msgstr ""
 "Kila ufunguo mweusi una majina mawili: gorofa na mkali. Noti tambarare zina "
 "alama ♭."
 
-#: activities/piano_composition/piano_composition.js:36
+#: activities/piano_composition/piano_composition.js:35
 msgctxt "piano_composition|"
 msgid ""
 "Click on the note symbol to write different length notes such as whole "
@@ -22787,7 +22849,7 @@ msgstr ""
 "Bofya alama ya noti ili kuandika vidokezo vya urefu tofauti kama vile noti "
 "nzima, noti nusu, noti za robo na noti za nane."
 
-#: activities/piano_composition/piano_composition.js:39
+#: activities/piano_composition/piano_composition.js:38
 msgctxt "piano_composition|"
 msgid ""
 "Rests are equivalent to notes during which silence is maintained. Click on "
@@ -22798,54 +22860,54 @@ msgstr ""
 "iliyosalia ili kuchagua urefu wa mapumziko kisha ubofye kitufe cha kuongeza "
 "ili uiweke kwa wafanyakazi."
 
-#: activities/piano_composition/piano_composition.js:42
+#: activities/piano_composition/piano_composition.js:41
 msgctxt "piano_composition|"
 msgid "Now you can load music and also save your compositions."
 msgstr "Sasa unaweza kupakia muziki na pia kuhifadhi nyimbo zako."
 
-#: activities/piano_composition/piano_composition.js:63
+#: activities/piano_composition/piano_composition.js:62
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Error saving melody to your file (%1)"
 msgstr "Hitilafu katika kuhifadhi wimbo kwenye faili yako (%1)"
 
-#: activities/piano_composition/piano_composition.js:68
+#: activities/piano_composition/piano_composition.js:67
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Melody saved to your file (%1)"
 msgstr "Melody imehifadhiwa kwenye faili yako (%1)"
 
-#: activities/piano_composition/Piano_composition.qml:369
+#: activities/piano_composition/Piano_composition.qml:376
 msgctxt "Piano_composition|"
 msgid "You have not selected any note. Do you want to erase all the notes?"
 msgstr "Hujachagua dokezo lolote. Je, ungependa kufuta madokezo yote?"
 
-#: activities/piano_composition/Piano_composition.qml:370
+#: activities/piano_composition/Piano_composition.qml:377
 msgctxt "Piano_composition|"
 msgid "Yes"
 msgstr "Ndiyo"
 
-#: activities/piano_composition/Piano_composition.qml:376
+#: activities/piano_composition/Piano_composition.qml:383
 msgctxt "Piano_composition|"
 msgid "No"
 msgstr "Hapana"
 
-#: activities/piano_composition/Piano_composition.qml:423
+#: activities/piano_composition/Piano_composition.qml:430
 msgctxt "Piano_composition|"
 msgid "Select the type of melody to load."
 msgstr "Chagua aina ya wimbo wa kupakia."
 
-#: activities/piano_composition/Piano_composition.qml:428
+#: activities/piano_composition/Piano_composition.qml:435
 msgctxt "Piano_composition|"
 msgid "Pre-defined melodies"
 msgstr "Nyimbo zilizofafanuliwa mapema"
 
-#: activities/piano_composition/Piano_composition.qml:446
+#: activities/piano_composition/Piano_composition.qml:453
 msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "Nyimbo zako ulizohifadhi"
 
-#: activities/piano_composition/Piano_composition.qml:550
+#: activities/piano_composition/Piano_composition.qml:557
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -22854,12 +22916,12 @@ msgstr ""
 "Shughuli hii inahitaji sauti, kwa hivyo itacheza baadhi ya sauti hata kama "
 "sauti au madoido yamezimwa katika usanidi mkuu."
 
-#: activities/piano_composition/Piano_composition.qml:551
+#: activities/piano_composition/Piano_composition.qml:558
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "Toka"
 
-#: activities/piano_composition/Piano_composition.qml:552
+#: activities/piano_composition/Piano_composition.qml:559
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "Endelea"
@@ -23157,12 +23219,12 @@ msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
 msgstr "Backspace au Futa: tengua"
 
-#: activities/play_piano/PlayPiano.qml:189
+#: activities/play_piano/PlayPiano.qml:196
 msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "Bofya kwenye vitufe vya piano vinavyolingana na madokezo uliyopewa."
 
-#: activities/play_piano/PlayPiano.qml:322
+#: activities/play_piano/PlayPiano.qml:329
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -23171,12 +23233,12 @@ msgstr ""
 "Shughuli hii inahitaji sauti, kwa hivyo itacheza baadhi ya sauti hata kama "
 "sauti au madoido yamezimwa katika usanidi mkuu."
 
-#: activities/play_piano/PlayPiano.qml:323
+#: activities/play_piano/PlayPiano.qml:330
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "Toka"
 
-#: activities/play_piano/PlayPiano.qml:324
+#: activities/play_piano/PlayPiano.qml:331
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "Endelea"
@@ -23266,7 +23328,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
 msgstr "Tab: Anzisha au usimamishe metronome ikiwa inaonekana"
 
-#: activities/play_rhythm/PlayRhythm.qml:121
+#: activities/play_rhythm/PlayRhythm.qml:128
 msgctxt "PlayRhythm|"
 msgid ""
 "Use the metronome to estimate the time intervals and play the rhythm "
@@ -23274,7 +23336,7 @@ msgid ""
 msgstr ""
 "Tumia metronome kukadiria vipindi vya saa na ucheze mdundo kwa usahihi."
 
-#: activities/play_rhythm/PlayRhythm.qml:122
+#: activities/play_rhythm/PlayRhythm.qml:129
 msgctxt "PlayRhythm|"
 msgid ""
 "Follow the vertical line and click on the drum or press space key to play "
@@ -23283,7 +23345,7 @@ msgstr ""
 "Fuata mstari wa wima na ubofye kwenye ngoma au ubonyeze kitufe cha nafasi "
 "ili kucheza mdundo kwa usahihi."
 
-#: activities/play_rhythm/PlayRhythm.qml:406
+#: activities/play_rhythm/PlayRhythm.qml:413
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -23292,12 +23354,12 @@ msgstr ""
 "Shughuli hii inahitaji sauti, kwa hivyo itacheza baadhi ya sauti hata kama "
 "sauti au madoido yamezimwa katika usanidi mkuu."
 
-#: activities/play_rhythm/PlayRhythm.qml:407
+#: activities/play_rhythm/PlayRhythm.qml:414
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "Toka"
 
-#: activities/play_rhythm/PlayRhythm.qml:408
+#: activities/play_rhythm/PlayRhythm.qml:415
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "Endelea"
@@ -23548,28 +23610,28 @@ msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "Chagua maelekezo"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:224
+#: activities/programmingMaze/ProgrammingMaze.qml:231
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Fikia samaki kwa chini ya maagizo %1."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:260
+#: activities/programmingMaze/ProgrammingMaze.qml:267
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Kazi kuu"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:294
+#: activities/programmingMaze/ProgrammingMaze.qml:301
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Utaratibu"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:294
+#: activities/programmingMaze/ProgrammingMaze.qml:301
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Kurudia"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:542
+#: activities/programmingMaze/ProgrammingMaze.qml:549
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid "Instruction Area:"
@@ -23577,7 +23639,7 @@ msgctxt "ProgrammingMaze|"
 msgid "Instruction Area:"
 msgstr "Eneo la Maagizo:"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:543
+#: activities/programmingMaze/ProgrammingMaze.qml:550
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid ""
@@ -23590,7 +23652,7 @@ msgstr ""
 "Kuna maagizo 3 ambayo unaweza kutumia kuweka msimbo na kuelekeza Tux kwa "
 "samaki:"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:544
+#: activities/programmingMaze/ProgrammingMaze.qml:551
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid ""
@@ -23604,7 +23666,7 @@ msgstr ""
 "<b>1. Songa mbele:</b> Husogeza Tux hatua moja mbele kuelekea upande "
 "inakoelekea."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:545
+#: activities/programmingMaze/ProgrammingMaze.qml:552
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid "<b>2. Turn left:</b> Turns Tux to the left."
@@ -23612,7 +23674,7 @@ msgctxt "ProgrammingMaze|"
 msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgstr "<b>2. Geuka kushoto:</b> Geuza Tux upande wa kushoto."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:546
+#: activities/programmingMaze/ProgrammingMaze.qml:553
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid "<b>3. Turn right:</b> Turns Tux to the right."
@@ -23620,7 +23682,7 @@ msgctxt "ProgrammingMaze|"
 msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgstr "<b>3. Geuza kulia:</b> Geuza Tux kulia."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:550
+#: activities/programmingMaze/ProgrammingMaze.qml:557
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid "Main Function:"
@@ -23628,7 +23690,7 @@ msgctxt "ProgrammingMaze|"
 msgid "Main Function:"
 msgstr "Kazi Kuu:"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:551
+#: activities/programmingMaze/ProgrammingMaze.qml:558
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid "The execution of the code starts here."
@@ -23636,7 +23698,7 @@ msgctxt "ProgrammingMaze|"
 msgid "The execution of the code starts here."
 msgstr "Utekelezaji wa kanuni huanza hapa."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:552
+#: activities/programmingMaze/ProgrammingMaze.qml:559
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid ""
@@ -23650,7 +23712,7 @@ msgstr ""
 "-Bofya maagizo yoyote katika <b>eneo la maelekezo</b> ili kuyaongeza kwenye "
 "<b>Kazi Kuu</b> ."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:553
+#: activities/programmingMaze/ProgrammingMaze.qml:560
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid ""
@@ -23664,7 +23726,7 @@ msgstr ""
 "-Maelekezo yatatekelezwa kwa mpangilio mpaka kusiwepo na yoyote iliyobaki, "
 "au hadi mwisho, au Tux atakapomfikia samaki."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:563
+#: activities/programmingMaze/ProgrammingMaze.qml:570
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid "Procedure:"
@@ -23672,7 +23734,7 @@ msgctxt "ProgrammingMaze|"
 msgid "Procedure:"
 msgstr "Utaratibu:"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:564
+#: activities/programmingMaze/ProgrammingMaze.qml:571
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid ""
@@ -23686,7 +23748,7 @@ msgstr ""
 "<b>Utaratibu</b> ni seti ya maagizo inayoweza kutumika tena ambayo inaweza "
 "<b>kutumika katika msimbo kwa kuiita inapohitajika</b> ."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:565
+#: activities/programmingMaze/ProgrammingMaze.qml:572
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid ""
@@ -23703,7 +23765,7 @@ msgstr ""
 "Kuu</b> ili kuongeza msimbo wako, bofya kwenye <b>Utaratibu</b> au lebo "
 "<b>ya Kazi Kuu</b> ."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:575
+#: activities/programmingMaze/ProgrammingMaze.qml:582
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid "Loop:"
@@ -23711,7 +23773,7 @@ msgctxt "ProgrammingMaze|"
 msgid "Loop:"
 msgstr "Kurudia:"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:576
+#: activities/programmingMaze/ProgrammingMaze.qml:583
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid ""
@@ -23725,7 +23787,7 @@ msgstr ""
 "<b>Rudia</b> ni mlolongo wa maagizo ambao <b>hurudiwa mara kwa mara idadi ya "
 "nyakati zilizofafanuliwa na nambari iliyo ndani yake</b> ."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:577
+#: activities/programmingMaze/ProgrammingMaze.qml:584
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid ""
@@ -23819,7 +23881,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Ingiza au Rudisha: wasilisha jibu lako"
 
-#: activities/railroad/Railroad.qml:126
+#: activities/railroad/Railroad.qml:133
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -23828,7 +23890,7 @@ msgstr ""
 "Angalia na ukumbuke treni kabla ya kipima muda kuisha na kisha uburute vitu "
 "ili kusanidi treni kama hiyo."
 
-#: activities/railroad/Railroad.qml:129
+#: activities/railroad/Railroad.qml:136
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -23864,7 +23926,7 @@ msgstr ""
 "Neno linaonyeshwa kwenye ubao. Orodha ya maneno, iliyoonyeshwa kwa usawa, "
 "itaonekana na kutoweka. Je, neno lililotolewa lilionekana kwenye orodha?"
 
-#: activities/readingh/Readingh.qml:306
+#: activities/readingh/Readingh.qml:313
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -23874,12 +23936,12 @@ msgstr ""
 "<font color=\"#373737\">Angalia ikiwa neno<br/></font> <b><font color="
 "\"#315AAA\">%1</font></b><br/> <font color=\"#373737\">inaonyeshwa</font>"
 
-#: activities/readingh/Readingh.qml:366
+#: activities/readingh/Readingh.qml:373
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Ndiyo niliona!"
 
-#: activities/readingh/Readingh.qml:387
+#: activities/readingh/Readingh.qml:394
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Hapana, haikuwepo!"
@@ -24045,7 +24107,7 @@ msgstr ""
 "ajili yake. Ili kushinda lazima uwashe watumiaji wote wakati wazalishaji "
 "wote wapo juu."
 
-#: activities/renewable_energy/RenewableEnergy.qml:273
+#: activities/renewable_energy/RenewableEnergy.qml:275
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -24054,7 +24116,7 @@ msgstr ""
 "Tux amerejea kutoka kuvua samaki kwenye mashua yake. Rudisha mfumo wa umeme "
 "ili apate mwanga nyumbani kwake."
 
-#: activities/renewable_energy/RenewableEnergy.qml:276
+#: activities/renewable_energy/RenewableEnergy.qml:278
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -24063,7 +24125,7 @@ msgstr ""
 "Bofya kwenye vipengele tofauti vya kazi: jua, wingu, bwawa, safu ya jua, "
 "shamba la upepo na transfoma, ili kurejesha mfumo mzima wa umeme."
 
-#: activities/renewable_energy/RenewableEnergy.qml:279
+#: activities/renewable_energy/RenewableEnergy.qml:281
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -24074,12 +24136,12 @@ msgstr ""
 "mwanga kwa ajili yake. Ili kushinda lazima uwashe watumiaji wote wakati "
 "wazalishaji wote wapo juu."
 
-#: activities/renewable_energy/RenewableEnergy.qml:282
+#: activities/renewable_energy/RenewableEnergy.qml:284
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "Jifunze kuhusu mfumo wa umeme kulingana na nishati mbadala. Furahia."
 
-#: activities/renewable_energy/RenewableEnergy.qml:308
+#: activities/renewable_energy/RenewableEnergy.qml:310
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -24249,8 +24311,8 @@ msgctxt "ActivityInfo|"
 msgid "Letters: type roman numerals (with I, V, X, L, C, D and M)"
 msgstr "Herufi: chapa nambari za Kirumi (na I, V, X, L, C, D na M)"
 
-#: activities/roman_numerals/RomanNumerals.qml:80
-#: activities/roman_numerals/RomanNumerals.qml:86
+#: activities/roman_numerals/RomanNumerals.qml:82
+#: activities/roman_numerals/RomanNumerals.qml:88
 msgctxt "RomanNumerals|"
 msgid ""
 "The roman numbers are all built out of these 7 numbers:\n"
@@ -24269,32 +24331,32 @@ msgstr ""
 " Uchunguzi wa kuvutia hapa ni kwamba mfumo wa nambari wa Kirumi hauna "
 "nambari 0."
 
-#: activities/roman_numerals/RomanNumerals.qml:81
-#: activities/roman_numerals/RomanNumerals.qml:93
-#: activities/roman_numerals/RomanNumerals.qml:105
-#: activities/roman_numerals/RomanNumerals.qml:117
-#: activities/roman_numerals/RomanNumerals.qml:129
+#: activities/roman_numerals/RomanNumerals.qml:83
+#: activities/roman_numerals/RomanNumerals.qml:95
+#: activities/roman_numerals/RomanNumerals.qml:107
+#: activities/roman_numerals/RomanNumerals.qml:119
+#: activities/roman_numerals/RomanNumerals.qml:131
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the roman number %1 to arabic."
 msgstr "Badilisha nambari ya Kirumi %1 kuwa Kiarabu."
 
-#: activities/roman_numerals/RomanNumerals.qml:87
-#: activities/roman_numerals/RomanNumerals.qml:99
-#: activities/roman_numerals/RomanNumerals.qml:111
-#: activities/roman_numerals/RomanNumerals.qml:123
-#: activities/roman_numerals/RomanNumerals.qml:135
-#: activities/roman_numerals/RomanNumerals.qml:141
-#: activities/roman_numerals/RomanNumerals.qml:147
-#: activities/roman_numerals/RomanNumerals.qml:153
-#: activities/roman_numerals/RomanNumerals.qml:159
+#: activities/roman_numerals/RomanNumerals.qml:89
+#: activities/roman_numerals/RomanNumerals.qml:101
+#: activities/roman_numerals/RomanNumerals.qml:113
+#: activities/roman_numerals/RomanNumerals.qml:125
+#: activities/roman_numerals/RomanNumerals.qml:137
+#: activities/roman_numerals/RomanNumerals.qml:143
+#: activities/roman_numerals/RomanNumerals.qml:149
+#: activities/roman_numerals/RomanNumerals.qml:155
+#: activities/roman_numerals/RomanNumerals.qml:161
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the arabic number %1 to roman."
 msgstr "Badilisha nambari ya Kiarabu %1 kuwa kirumi."
 
-#: activities/roman_numerals/RomanNumerals.qml:92
-#: activities/roman_numerals/RomanNumerals.qml:98
+#: activities/roman_numerals/RomanNumerals.qml:94
+#: activities/roman_numerals/RomanNumerals.qml:100
 msgctxt "RomanNumerals|"
 msgid ""
 "All the units except 4 and 9 are built using sums of I and V:\n"
@@ -24307,8 +24369,8 @@ msgstr ""
 " Vitengo 4 na 9 vinajengwa kwa kutumia tofauti:\n"
 "IV (5 – 1) na IX (10 – 1)."
 
-#: activities/roman_numerals/RomanNumerals.qml:104
-#: activities/roman_numerals/RomanNumerals.qml:110
+#: activities/roman_numerals/RomanNumerals.qml:106
+#: activities/roman_numerals/RomanNumerals.qml:112
 msgctxt "RomanNumerals|"
 msgid ""
 "All the tens except 40 and 90 are built using sums of X and L:\n"
@@ -24321,8 +24383,8 @@ msgstr ""
 "Makumi 40 na 90 hujengwa kwa kutumia tofauti:\n"
 "XL (10 kuchukuliwa kutoka 50) na XC (10 kuchukuliwa kutoka 100)."
 
-#: activities/roman_numerals/RomanNumerals.qml:116
-#: activities/roman_numerals/RomanNumerals.qml:122
+#: activities/roman_numerals/RomanNumerals.qml:118
+#: activities/roman_numerals/RomanNumerals.qml:124
 msgctxt "RomanNumerals|"
 msgid ""
 "All the hundreds except 400 and 900 are built using sums of C and D:\n"
@@ -24335,8 +24397,8 @@ msgstr ""
 "400 na mamia 900 hujengwa kwa kutumia tofauti:\n"
 "CD (100 kuchukuliwa kutoka 500) na CM (100 kuchukuliwa kutoka 1000)."
 
-#: activities/roman_numerals/RomanNumerals.qml:128
-#: activities/roman_numerals/RomanNumerals.qml:134
+#: activities/roman_numerals/RomanNumerals.qml:130
+#: activities/roman_numerals/RomanNumerals.qml:136
 msgctxt "RomanNumerals|"
 msgid ""
 "Sums of M are used for building thousands: M, MM, MMM.\n"
@@ -24351,7 +24413,7 @@ msgstr ""
 "vyote vinavyowezekana, makumi au mamia, lazima utumie tofauti pia. Kwa "
 "upande mwingine, inaweka idadi ya juu zaidi ya kirumi hadi 3999 (MMMCMXCIX)."
 
-#: activities/roman_numerals/RomanNumerals.qml:140
+#: activities/roman_numerals/RomanNumerals.qml:142
 msgctxt "RomanNumerals|"
 msgid ""
 "Now you know the rules, you can read and write numbers in roman numerals."
@@ -24359,13 +24421,13 @@ msgstr ""
 "Sasa unajua sheria, unaweza kusoma na kuandika nambari katika nambari za "
 "Kirumi."
 
-#: activities/roman_numerals/RomanNumerals.qml:387
+#: activities/roman_numerals/RomanNumerals.qml:389
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Thamani ya Kirumi: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:388
+#: activities/roman_numerals/RomanNumerals.qml:390
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -25408,7 +25470,7 @@ msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr "Upeo wa vipande 30 vya pipi na watoto 6, kupumzika iwezekanavyo."
 
-#: activities/share/share.js:115
+#: activities/share/share.js:114
 #, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -25418,7 +25480,7 @@ msgid_plural "Place %n boy(s) "
 msgstr[0] "Place %n boy "
 msgstr[1] "Place %n boys "
 
-#: activities/share/share.js:119
+#: activities/share/share.js:118
 #, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -25428,7 +25490,7 @@ msgid_plural "and %n girl(s) in the center. "
 msgstr[0] "and %n girl in the centre. "
 msgstr[1] "and %n girls in the centre. "
 
-#: activities/share/share.js:123
+#: activities/share/share.js:122
 #, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -25438,7 +25500,7 @@ msgid_plural "Then split %n pieces of candy equally between them."
 msgstr[0] "Then split %n sweet equally between them."
 msgstr[1] "Then split %n sweets equally between them."
 
-#: activities/share/Share.qml:359
+#: activities/share/Share.qml:366
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
@@ -27063,7 +27125,7 @@ msgstr ""
 "Kubwa! Unaweza kucheza tena tathmini ili kupima maarifa yako kuhusu maswali "
 "zaidi."
 
-#: activities/solar_system/SolarSystem.qml:152
+#: activities/solar_system/SolarSystem.qml:159
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -27079,17 +27141,17 @@ msgstr ""
 "Mfumo wa Jua.<br> <b>2. Hali ya Tathmini</b> - Katika hali hii unaweza "
 "kupima ujuzi wako kuhusu Mfumo wa Jua."
 
-#: activities/solar_system/SolarSystem.qml:152
+#: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Tathmini"
 
-#: activities/solar_system/SolarSystem.qml:152
+#: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "kujifunza"
 
-#: activities/solar_system/SolarSystem.qml:157
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -27098,7 +27160,7 @@ msgstr ""
 "Bofya kwenye Jua au sayari yoyote ili kufichua maswali. Kila swali lina "
 "chaguzi 4, kati ya hizo moja ni sahihi."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:167
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -27113,7 +27175,7 @@ msgstr ""
 "c100 kwa kufuata mita ya ukaribu. Ikiwa kitufe cha kidokezo kinaonekana, "
 "unaweza kubofya ili kupata kidokezo ili kupata jibu."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:177
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -27122,7 +27184,7 @@ msgstr ""
 "Kuna maswali 20 mwanzoni na chaguzi 4 kila moja. Upau wa maendeleo ulio "
 "chini kulia mwa skrini unaonyesha alama yako ya asilimia."
 
-#: activities/solar_system/SolarSystem.qml:173
+#: activities/solar_system/SolarSystem.qml:180
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -27135,7 +27197,7 @@ msgstr ""
 "na swali lililojibiwa vibaya.<br> Maswali yasiyozidi 25 yataulizwa baada ya "
 "hapo hakuna swali zaidi litakaloongezwa."
 
-#: activities/solar_system/SolarSystem.qml:176
+#: activities/solar_system/SolarSystem.qml:183
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -27144,7 +27206,7 @@ msgstr ""
 "Unapaswa kupata alama zaidi ya 90% to kupita tathmini na kuwa mtaalamu wa "
 "Mfumo wa Jua!"
 
-#: activities/solar_system/SolarSystem.qml:355
+#: activities/solar_system/SolarSystem.qml:362
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -27154,7 +27216,7 @@ msgstr ""
 "1. Sayari ikiwa <b>mbali</b> na Jua, ndivyo joto lake la <b>chini</b> "
 "linavyopungua.<br> <font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:356
+#: activities/solar_system/SolarSystem.qml:363
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -27165,7 +27227,7 @@ msgstr ""
 "<br> <font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:359
+#: activities/solar_system/SolarSystem.qml:366
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -27177,12 +27239,12 @@ msgstr ""
 "xcellent <b>M</b> nyingine <b>J</b> ust <b>S</b> erved <b>U</b> s <b>N</b> "
 "oodles.<br>"
 
-#: activities/solar_system/SolarSystem.qml:361
+#: activities/solar_system/SolarSystem.qml:368
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Kidokezo"
 
-#: activities/solar_system/SolarSystem.qml:369
+#: activities/solar_system/SolarSystem.qml:376
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Tazama mfumo wa jua"
@@ -27301,7 +27363,7 @@ msgctxt "Controls|"
 msgid "Right Ballast Tank"
 msgstr "Tangi ya kulia ya Ballast"
 
-#: activities/submarine/Submarine.qml:133
+#: activities/submarine/Submarine.qml:140
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Move the submarine to the other side of the screen."
@@ -27309,7 +27371,7 @@ msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "Sogeza manowari hadi upande mwingine wa skrini."
 
-#: activities/submarine/Submarine.qml:136
+#: activities/submarine/Submarine.qml:143
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -27323,7 +27385,7 @@ msgstr ""
 "Kitu cha kushoto kabisa kwenye paneli ya kudhibiti ni injini ya manowari, "
 "inayoonyesha kasi ya sasa ya manowari."
 
-#: activities/submarine/Submarine.qml:139
+#: activities/submarine/Submarine.qml:146
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Increase or decrease the velocity of the submarine using the engine."
@@ -27331,7 +27393,7 @@ msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr "Ongeza au punguza kasi ya manowari kwa kutumia injini."
 
-#: activities/submarine/Submarine.qml:142
+#: activities/submarine/Submarine.qml:149
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -27344,7 +27406,7 @@ msgid ""
 msgstr ""
 "Bonyeza kitufe cha + ili kuongeza kasi, au kitufe cha - ili kupunguza kasi."
 
-#: activities/submarine/Submarine.qml:149
+#: activities/submarine/Submarine.qml:156
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "The item next to the engine is the ballast tank."
@@ -27352,7 +27414,7 @@ msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr "Kitu karibu na injini ni tank ya ballast."
 
-#: activities/submarine/Submarine.qml:152
+#: activities/submarine/Submarine.qml:159
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "The ballast tanks are used to float or dive under water."
@@ -27360,7 +27422,7 @@ msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr "Mizinga ya ballast hutumiwa kuelea au kupiga mbizi chini ya maji."
 
-#: activities/submarine/Submarine.qml:155
+#: activities/submarine/Submarine.qml:162
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -27374,7 +27436,7 @@ msgstr ""
 "Ikiwa mizinga ya ballast ni tupu, manowari itaelea. Ikiwa mizinga ya ballast "
 "imejaa maji, manowari itapiga mbizi chini ya maji."
 
-#: activities/submarine/Submarine.qml:158
+#: activities/submarine/Submarine.qml:165
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -27389,7 +27451,7 @@ msgstr ""
 "Kuwasha au kuzima vali ya juu kutaruhusu au kusimamisha maji yasijae kwenye "
 "tanki la ballast, na hivyo kuiruhusu kupiga mbizi chini ya maji."
 
-#: activities/submarine/Submarine.qml:161
+#: activities/submarine/Submarine.qml:168
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -27405,7 +27467,7 @@ msgstr ""
 "Kuwasha au kuzima vali ya chini kutaruhusu au kusimamisha maji kutoka nje ya "
 "tanki la ballast, na hivyo kuiruhusu kuelea juu ya uso wa maji."
 
-#: activities/submarine/Submarine.qml:168
+#: activities/submarine/Submarine.qml:175
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -27419,7 +27481,7 @@ msgstr ""
 "Kipengee cha kulia kabisa katika paneli dhibiti hudhibiti ndege za kuzamia "
 "za manowari"
 
-#: activities/submarine/Submarine.qml:171
+#: activities/submarine/Submarine.qml:178
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -27433,7 +27495,7 @@ msgstr ""
 "Ndege za kupiga mbizi katika manowari hutumiwa kudhibiti kina cha manowari "
 "kwa usahihi mara inapokuwa chini ya maji."
 
-#: activities/submarine/Submarine.qml:174
+#: activities/submarine/Submarine.qml:181
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -27447,7 +27509,7 @@ msgstr ""
 "Mara tu manowari inaposonga chini ya maji, kuongezeka au kupunguza pembe ya "
 "ndege kutaongeza na kupunguza kina cha manowari."
 
-#: activities/submarine/Submarine.qml:177
+#: activities/submarine/Submarine.qml:184
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -27461,7 +27523,7 @@ msgstr ""
 "Kitufe + kitaongeza kina cha manowari, wakati kifungo - kitapunguza kina cha "
 "manowari."
 
-#: activities/submarine/Submarine.qml:180
+#: activities/submarine/Submarine.qml:187
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Grab the crown to open the gate."
@@ -27469,7 +27531,7 @@ msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "Kunyakua taji ili kufungua lango."
 
-#: activities/submarine/Submarine.qml:183
+#: activities/submarine/Submarine.qml:190
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Check out the help menu for the keyboard controls."
@@ -27601,12 +27663,12 @@ msgstr ""
 "kiotomatiki katika makadirio yako ya sasa na yajayo hadi utakapoviondoa, kwa "
 "kuvibofya mara mbili tena."
 
-#: activities/superbrain/Superbrain.qml:167
+#: activities/superbrain/Superbrain.qml:174
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Kipengee hiki kimewekwa vizuri."
 
-#: activities/superbrain/Superbrain.qml:169
+#: activities/superbrain/Superbrain.qml:176
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Kipengee hiki kimewekwa vibaya."
@@ -28334,18 +28396,18 @@ msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
 msgstr "Utoaji na 1, 2 na 3."
 
-#: activities/vertical_subtraction/subtraction.js:79
+#: activities/vertical_subtraction/subtraction.js:78
 msgctxt "subtraction|"
 msgid "Write:"
 msgstr ""
 
-#: activities/vertical_subtraction/subtraction.js:79
+#: activities/vertical_subtraction/subtraction.js:78
 msgctxt "subtraction|"
 msgid "Solve:"
 msgstr ""
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
-#: activities/vertical_subtraction/subtraction.js:190
+#: activities/vertical_subtraction/subtraction.js:189
 #, fuzzy, qt-format
 #| msgctxt "BackgroundMusicList|"
 #| msgid "Title: %1"
@@ -28353,7 +28415,7 @@ msgctxt "subtraction|"
 msgid "Solve: %1"
 msgstr "Kichwa: %1"
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:99
+#: activities/vertical_subtraction/VerticalSubtraction.qml:106
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid "Learn subtraction table of 1."
@@ -28361,7 +28423,7 @@ msgctxt "VerticalSubtraction|"
 msgid "Write your own addition and solve it."
 msgstr "Jifunze jedwali la kutoa 1."
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:100
+#: activities/vertical_subtraction/VerticalSubtraction.qml:107
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid "Learn subtraction table of 1."
@@ -28369,7 +28431,7 @@ msgctxt "VerticalSubtraction|"
 msgid "Write your own subtraction and solve it."
 msgstr "Jifunze jedwali la kutoa 1."
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:426
+#: activities/vertical_subtraction/VerticalSubtraction.qml:433
 #, fuzzy
 #| msgctxt "Frieze|"
 #| msgid "I am Ready"
@@ -28377,7 +28439,7 @@ msgctxt "VerticalSubtraction|"
 msgid "Ready"
 msgstr "Niko tayari"
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:464
+#: activities/vertical_subtraction/VerticalSubtraction.qml:471
 msgctxt "VerticalSubtraction|"
 msgid "The result should not be a negative number."
 msgstr ""

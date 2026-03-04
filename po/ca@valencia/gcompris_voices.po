@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-22 00:38+0000\n"
+"POT-Creation-Date: 2026-03-04 00:40+0000\n"
 "PO-Revision-Date: 2026-01-09 11:34+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -1083,6 +1083,12 @@ msgid "Use the arrows to move Tux along the path and reach the target."
 msgstr ""
 "Utilitza les fletxes per a moure en Tux al llarg del camí i que arribe fins "
 "a l'objectiu."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "peg_solitaire"
+#: activities/peg_solitaire/ActivityInfo.qml:17
+#, kde-format
+msgid "Remove all the pieces in the correct order until only one remains."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "penalty"
 #: activities/penalty/ActivityInfo.qml:18

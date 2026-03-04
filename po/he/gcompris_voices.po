@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-22 00:38+0000\n"
+"POT-Creation-Date: 2026-03-04 00:40+0000\n"
 "PO-Revision-Date: 2025-12-30 11:23+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -1010,6 +1010,12 @@ msgstr ""
 #, kde-format
 msgid "Use the arrows to move Tux along the path and reach the target."
 msgstr "יש להשתמש בחצים כדי להזיז את טאקס לאורך הנתיב ולהגיע ליעד."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "peg_solitaire"
+#: activities/peg_solitaire/ActivityInfo.qml:17
+#, kde-format
+msgid "Remove all the pieces in the correct order until only one remains."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "penalty"
 #: activities/penalty/ActivityInfo.qml:18

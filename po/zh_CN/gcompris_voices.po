@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-22 00:38+0000\n"
+"POT-Creation-Date: 2026-03-04 00:40+0000\n"
 "PO-Revision-Date: 2024-04-22 16:04\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -959,6 +959,12 @@ msgstr "按照给定的方向点击网格方块，帮助 Tux 到达目标。"
 #, kde-format
 msgid "Use the arrows to move Tux along the path and reach the target."
 msgstr "使用箭头沿路径移动小企鹅并到达目标。"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "peg_solitaire"
+#: activities/peg_solitaire/ActivityInfo.qml:17
+#, kde-format
+msgid "Remove all the pieces in the correct order until only one remains."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "penalty"
 #: activities/penalty/ActivityInfo.qml:18

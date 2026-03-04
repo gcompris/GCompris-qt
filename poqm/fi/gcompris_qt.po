@@ -80,7 +80,7 @@ msgid "Find the requested numbers and drag them to the corresponding spot."
 msgstr "Etsi vaaditut luvut ja vedä ne oikeisiin kohtiin."
 
 #. One or more numbers to find, all at the beginning of the list. Don't display the %n in the translation if possible (actual English strings are "Find the previous number" and "Find the previous numbers")
-#: activities/adjacent_numbers/Adjacent_numbers.qml:56
+#: activities/adjacent_numbers/Adjacent_numbers.qml:60
 #, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n previous number(s)."
@@ -89,7 +89,7 @@ msgstr[0] "Etsi edellinen luku."
 msgstr[1] "Etsi %n edellistä lukua."
 
 #. One or more numbers to find, at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the next number" and "Find the next numbers")
-#: activities/adjacent_numbers/Adjacent_numbers.qml:60
+#: activities/adjacent_numbers/Adjacent_numbers.qml:64
 #, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n next number(s)."
@@ -98,7 +98,7 @@ msgstr[0] "Etsi seuraava luku."
 msgstr[1] "Etsi %n seuraavaa lukua."
 
 #. One or more numbers to find, not at the beginning nor at the end of the list. Don't display the %n in the translation if possible (actual English strings are "Find the in-between number" and "Find the in-between numbers")
-#: activities/adjacent_numbers/Adjacent_numbers.qml:64
+#: activities/adjacent_numbers/Adjacent_numbers.qml:68
 #, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n in-between number(s)"
@@ -107,7 +107,7 @@ msgstr[0] "Etsi välissä oleva luku"
 msgstr[1] "Etsi %n välissä olevaa lukua"
 
 #. More than one number to find, with at least one number at the beginning or at the end of the list. Don't display the %n in the translation if possible (actual English string is "Find the missing numbers")
-#: activities/adjacent_numbers/Adjacent_numbers.qml:68
+#: activities/adjacent_numbers/Adjacent_numbers.qml:72
 #, qt-format
 msgctxt "Adjacent_numbers|"
 msgid "Find the %n missing numbers"
@@ -2648,7 +2648,7 @@ msgstr ""
 "Lopuksi ladataksesi tasosarjasi, napsauta 'Lataa tallennetut tasot' -"
 "painiketta."
 
-#: activities/balancebox/balancebox.js:72
+#: activities/balancebox/balancebox.js:71
 msgctxt "balancebox|"
 msgid ""
 "Either create your levels by starting the level editor in the activity "
@@ -2657,13 +2657,13 @@ msgstr ""
 "Luo tasosi käynnistämällä tasoeditori toimintoasetusten valikosta ja lataa "
 "sitten tiedosto tai valitse \"sisäänrakennettu\" tasosarja."
 
-#: activities/balancebox/balancebox.js:106
+#: activities/balancebox/balancebox.js:105
 #, qt-format
 msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
 msgstr "Tiedosto ”%1” puuttuu!<br>Palataan sisäänrakennettuihin tasoihin."
 
-#: activities/balancebox/Balancebox.qml:70
+#: activities/balancebox/Balancebox.qml:74
 msgctxt "Balancebox|"
 msgid ""
 "You selected the user-defined level set, but you have not yet loaded any "
@@ -2672,7 +2672,7 @@ msgstr ""
 "Valitsit käyttäjän määrittämän tasojoukon, mutta et ole vielä ladannut "
 "yhtään käyttäjätasoa!"
 
-#: activities/balancebox/Balancebox.qml:72
+#: activities/balancebox/Balancebox.qml:76
 msgctxt "Balancebox|"
 msgid "OK"
 msgstr "OK"
@@ -2745,14 +2745,14 @@ msgstr ""
 "yhtä aikaa. Kosketusnäytöllä kosketa näyttöä kummallakin kädellä "
 "samanaikaisesti."
 
-#: activities/ballcatch/Ballcatch.qml:227
+#: activities/ballcatch/Ballcatch.qml:234
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr ""
 "Saat pallon kulkemaan suoraan napauttamalla kummallakin kädellä yhtä aikaa."
 
-#: activities/ballcatch/Ballcatch.qml:233
+#: activities/ballcatch/Ballcatch.qml:240
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2890,7 +2890,7 @@ msgstr ""
 "Kytke oikeat polttimot päälle edustamaan annetun desimaaliluvun "
 "binäärilukua. Kun olet saavuttanut sen, paina OK."
 
-#: activities/binary_bulb/BinaryBulb.qml:95
+#: activities/binary_bulb/BinaryBulb.qml:102
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid ""
@@ -2899,7 +2899,7 @@ msgctxt "BinaryBulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr "Tämä tehtävä opettaa kuinka muuntaa desimaaliluvut binääriluvuiksi."
 
-#: activities/binary_bulb/BinaryBulb.qml:99
+#: activities/binary_bulb/BinaryBulb.qml:106
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid ""
@@ -2916,7 +2916,7 @@ msgstr ""
 "kaksi tilaa, 0 ja 1. Matemaattisesti näitä tiloja edustavat 0 ja 1, jotka "
 "muodostavat binaarisen numerointijärjestelmät."
 
-#: activities/binary_bulb/BinaryBulb.qml:103
+#: activities/binary_bulb/BinaryBulb.qml:110
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
@@ -2925,7 +2925,7 @@ msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
 msgstr ""
 "Tehtävässä 0 ja 1 simuloidaan lampuilla, jotka kytketään päälle tai pois."
 
-#: activities/binary_bulb/BinaryBulb.qml:107
+#: activities/binary_bulb/BinaryBulb.qml:114
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid ""
@@ -2939,7 +2939,7 @@ msgstr ""
 "Binaarijärjestelmä käyttää näitä numeroita tehokkaasti ja laskee 0:sta 255:"
 "een vain 8 bitillä."
 
-#: activities/binary_bulb/BinaryBulb.qml:111
+#: activities/binary_bulb/BinaryBulb.qml:118
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid ""
@@ -2959,7 +2959,7 @@ msgstr ""
 "”painonsa” oikealta vasemmalle: 1, 2, 4, 8, 16, 32 jne. Ne vastaavat "
 "desimaalilukuja 2^0, 2^1, 2^2, 2^3 jne."
 
-#: activities/binary_bulb/BinaryBulb.qml:115
+#: activities/binary_bulb/BinaryBulb.qml:122
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
@@ -2967,7 +2967,7 @@ msgctxt "BinaryBulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr "Desimaaliluvun 5 muuntamiseksi binaariseksi summataan 1 ja 4."
 
-#: activities/binary_bulb/BinaryBulb.qml:119
+#: activities/binary_bulb/BinaryBulb.qml:126
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid ""
@@ -2981,7 +2981,7 @@ msgstr ""
 "Niitä vastaavat bitit asetetaan ykkösiksi, muut nolliksi. Desimaalinen 5 "
 "vastaa binaarilukua 101."
 
-#: activities/binary_bulb/BinaryBulb.qml:123
+#: activities/binary_bulb/BinaryBulb.qml:130
 #, fuzzy
 #| msgctxt "binary_bulb|"
 #| msgid "This image will help you to compute bits' value."
@@ -2989,7 +2989,7 @@ msgctxt "BinaryBulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Tämä kuva auttaa laskemaan bittien arvot."
 
-#: activities/binary_bulb/BinaryBulb.qml:171
+#: activities/binary_bulb/BinaryBulb.qml:178
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3098,16 +3098,16 @@ msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
 msgstr "Välilyönti: avaa tai sulje pistekirjoituskaavio"
 
-#: activities/braille_alphabets/braille_alphabets.js:43
-#: activities/braille_alphabets/braille_alphabets.js:53
-#: activities/braille_alphabets/braille_alphabets.js:63
-#: activities/braille_alphabets/braille_alphabets.js:73
-#: activities/braille_alphabets/braille_alphabets.js:83
+#: activities/braille_alphabets/braille_alphabets.js:42
+#: activities/braille_alphabets/braille_alphabets.js:52
+#: activities/braille_alphabets/braille_alphabets.js:62
+#: activities/braille_alphabets/braille_alphabets.js:72
+#: activities/braille_alphabets/braille_alphabets.js:82
 msgctxt "braille_alphabets|"
 msgid "Now it's a little bit harder without the reference."
 msgstr "Ilman merkkikarttaa tämä on vähän vaikeampaa."
 
-#: activities/braille_alphabets/braille_alphabets.js:48
+#: activities/braille_alphabets/braille_alphabets.js:47
 msgctxt "braille_alphabets|"
 msgid ""
 "Look at the braille character chart and observe how similar the first and "
@@ -3116,7 +3116,7 @@ msgstr ""
 "Katso merkkikarttaa niin huomaat, kuinka samanlaiset ensimmäinen ja toinen "
 "rivi ovat."
 
-#: activities/braille_alphabets/braille_alphabets.js:58
+#: activities/braille_alphabets/braille_alphabets.js:57
 msgctxt "braille_alphabets|"
 msgid ""
 "Again, similar to the first line in the character chart but take care, the "
@@ -3125,7 +3125,7 @@ msgstr ""
 "Jälleen samanlainen kuin ensimmäinen rivi mutta varo: ”W”-kirjain lisättiin "
 "myöhemmin."
 
-#: activities/braille_alphabets/braille_alphabets.js:68
+#: activities/braille_alphabets/braille_alphabets.js:67
 msgctxt "braille_alphabets|"
 msgid "This is easy, numbers are the same as letters from A to J."
 msgstr "Tämä on helppo, numerot ovat samat kuin kirjaimet A:sta J:hin."
@@ -3386,37 +3386,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "2. Vahvista vastaus Enter- tai Return-näppäimellä"
 
-#: activities/calendar/Calendar.qml:94
+#: activities/calendar/Calendar.qml:101
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "Sunnuntai"
 
-#: activities/calendar/Calendar.qml:95
+#: activities/calendar/Calendar.qml:102
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "Maanantai"
 
-#: activities/calendar/Calendar.qml:96
+#: activities/calendar/Calendar.qml:103
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "Tiistai"
 
-#: activities/calendar/Calendar.qml:97
+#: activities/calendar/Calendar.qml:104
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "Weskiviikko"
 
-#: activities/calendar/Calendar.qml:98
+#: activities/calendar/Calendar.qml:105
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "Torstai"
 
-#: activities/calendar/Calendar.qml:99
+#: activities/calendar/Calendar.qml:106
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "Perjantai"
 
-#: activities/calendar/Calendar.qml:100
+#: activities/calendar/Calendar.qml:107
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "Lauantai"
@@ -3767,7 +3767,7 @@ msgctxt "ActivityInfo|"
 msgid "Review the instructions and then drag and drop the items as specified."
 msgstr "Lue ohjeet ja vedä ja pudota esineitä niiden mukaan."
 
-#: activities/categorization/Categorization.qml:149
+#: activities/categorization/Categorization.qml:156
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3778,12 +3778,12 @@ msgstr ""
 "painamalla Päivitä. Pelaa demoversiota painamalla ristiä tai valitse ”Älä "
 "näytä tätä ikkunaa enää”, ellet enää halua nähdä tätä ikkunaa.."
 
-#: activities/categorization/Categorization.qml:152
+#: activities/categorization/Categorization.qml:159
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Päivitä kuvajoukko"
 
-#: activities/categorization/Categorization.qml:153
+#: activities/categorization/Categorization.qml:160
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Älä näytä tätä ikkunaa enää"
@@ -4406,22 +4406,22 @@ msgstr ""
 "draughts.js&gt;. Käsikirja on Wikipediasta &lt;https://fi.wikipedia.org/wiki/"
 "Tammi_(peli)&gt;"
 
-#: activities/checkers/checkers.js:69
+#: activities/checkers/checkers.js:68
 msgctxt "checkers|"
 msgid "Black's turn"
 msgstr "Mustan vuoro"
 
-#: activities/checkers/checkers.js:69
+#: activities/checkers/checkers.js:68
 msgctxt "checkers|"
 msgid "White's turn"
 msgstr "Valkoisen vuoro"
 
-#: activities/checkers/checkers.js:72
+#: activities/checkers/checkers.js:71
 msgctxt "checkers|"
 msgid "White wins"
 msgstr "Valkoinen voittaa"
 
-#: activities/checkers/checkers.js:72
+#: activities/checkers/checkers.js:71
 msgctxt "checkers|"
 msgid "Black wins"
 msgstr "Musta voittaa"
@@ -4584,58 +4584,58 @@ msgid ""
 "The chess engine is p4wn &lt;https://github.com/douglasbagnall/p4wn&gt;."
 msgstr "Šakkimoottori on p4wn &lt;https://github.com/douglasbagnall/p4wn&gt;."
 
-#: activities/chess/chess.js:117
+#: activities/chess/chess.js:116
 msgctxt "chess|"
 msgid "Black's turn"
 msgstr "Mustan vuoro"
 
-#: activities/chess/chess.js:117
+#: activities/chess/chess.js:116
 msgctxt "chess|"
 msgid "White's turn"
 msgstr "Valkoisen vuoro"
 
-#: activities/chess/chess.js:122
+#: activities/chess/chess.js:121
 msgctxt "chess|white wins"
 msgid "White mates"
 msgstr "Valkoinen saa matin"
 
-#: activities/chess/chess.js:122
+#: activities/chess/chess.js:121
 msgctxt "chess|black wins"
 msgid "Black mates"
 msgstr "Musta saa matin"
 
-#: activities/chess/chess.js:132
+#: activities/chess/chess.js:131
 msgctxt "chess|"
 msgid "Drawn game"
 msgstr "Tasapeli"
 
-#: activities/chess/chess.js:141
+#: activities/chess/chess.js:140
 msgctxt "chess|black king is under attack"
 msgid "White checks"
 msgstr "Valkoinen šakkaa"
 
-#: activities/chess/chess.js:141
+#: activities/chess/chess.js:140
 msgctxt "chess|white king is under attack"
 msgid "Black checks"
 msgstr "Musta šakkaa"
 
-#: activities/chess/chess.js:144
+#: activities/chess/chess.js:143
 msgctxt "chess|"
 msgid "Invalid, your king may be in check"
 msgstr "Virhe: kuningastasi voidaan šakata"
 
 #. Translators: undo all the moves in chess activity
-#: activities/chess/Chess.qml:140
+#: activities/chess/Chess.qml:147
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
 msgstr "Haluatko varmasti kumota kaikki siirrot?"
 
-#: activities/chess/Chess.qml:141
+#: activities/chess/Chess.qml:148
 msgctxt "Chess|"
 msgid "Yes"
 msgstr "Kyllä"
 
-#: activities/chess/Chess.qml:142
+#: activities/chess/Chess.qml:149
 msgctxt "Chess|"
 msgid "No"
 msgstr "Ei"
@@ -5314,12 +5314,12 @@ msgid ""
 "and the longest hand indicates the seconds."
 msgstr "Lyhin viisari osoittaa tunteja, pidempi minuutteja ja pisin sekunteja."
 
-#: activities/clockgame/Clockgame.qml:124
+#: activities/clockgame/Clockgame.qml:130
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Käännä kellon viisarit aikaan:"
 
-#: activities/clockgame/Clockgame.qml:127
+#: activities/clockgame/Clockgame.qml:133
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5327,7 +5327,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n tunti"
 msgstr[1] "%n tuntia"
 
-#: activities/clockgame/Clockgame.qml:130
+#: activities/clockgame/Clockgame.qml:136
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5335,7 +5335,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "% minuutti"
 msgstr[1] "%n minuuttia"
 
-#: activities/clockgame/Clockgame.qml:133
+#: activities/clockgame/Clockgame.qml:139
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5432,67 +5432,67 @@ msgstr ""
 "(erityinen sinisen sävy), magenta (erityinen vaaleanpunaisen sävy) ja "
 "keltainen."
 
-#: activities/color_mix/ColorMix.qml:92
+#: activities/color_mix/ColorMix.qml:99
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "Sovita värit"
 
-#: activities/color_mix/ColorMix.qml:230
+#: activities/color_mix/ColorMix.qml:237
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "Ei tarpeeksi punaista"
 
-#: activities/color_mix/ColorMix.qml:232
+#: activities/color_mix/ColorMix.qml:239
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "Liikaa punaista"
 
-#: activities/color_mix/ColorMix.qml:235
+#: activities/color_mix/ColorMix.qml:242
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "Ei tarpeeksi vihreää"
 
-#: activities/color_mix/ColorMix.qml:237
+#: activities/color_mix/ColorMix.qml:244
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "Liikaa vihreää"
 
-#: activities/color_mix/ColorMix.qml:240
+#: activities/color_mix/ColorMix.qml:247
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "Ei tarpeeksi sinistä"
 
-#: activities/color_mix/ColorMix.qml:242
+#: activities/color_mix/ColorMix.qml:249
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "Liikaa sinistä"
 
-#: activities/color_mix/ColorMix.qml:246
+#: activities/color_mix/ColorMix.qml:253
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "Ei tarpeeksi magentaa"
 
-#: activities/color_mix/ColorMix.qml:248
+#: activities/color_mix/ColorMix.qml:255
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "Liikaa magentaa"
 
-#: activities/color_mix/ColorMix.qml:251
+#: activities/color_mix/ColorMix.qml:258
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "Ei tarpeeksi keltaista"
 
-#: activities/color_mix/ColorMix.qml:253
+#: activities/color_mix/ColorMix.qml:260
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "Liikaa keltaista"
 
-#: activities/color_mix/ColorMix.qml:256
+#: activities/color_mix/ColorMix.qml:263
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "Ei tarpeeksi syaania"
 
-#: activities/color_mix/ColorMix.qml:258
+#: activities/color_mix/ColorMix.qml:265
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "Liikaa syaania"
@@ -5654,7 +5654,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Etsi vaaleanpunainen ankka"
 
-#: activities/colors/FindIt.qml:266
+#: activities/colors/FindIt.qml:273
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5663,12 +5663,12 @@ msgstr ""
 "Tämä toiminto vaatii ääntä, joten se toistaa joitain ääniä, vaikka äänet tai "
 "tehosteet olisivat pois käytöstä pääasetuksissa."
 
-#: activities/colors/FindIt.qml:267
+#: activities/colors/FindIt.qml:274
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Lopeta"
 
-#: activities/colors/FindIt.qml:268
+#: activities/colors/FindIt.qml:275
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Jatka"
@@ -5837,7 +5837,7 @@ msgid "Space or Enter or Tab: select the next item"
 msgstr "Välilyönti, Enter tai sarkain: valitse seuraava kohde"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 15–25 simple 3-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: cat;dog;win;red;yes
-#: activities/crane/crane.js:41
+#: activities/crane/crane.js:40
 msgctxt "crane|"
 msgid ""
 "cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg"
@@ -5846,7 +5846,7 @@ msgstr ""
 "hauskaa;päivä;syö;hattu"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 4-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: blue;best;good;area
-#: activities/crane/crane.js:48
+#: activities/crane/crane.js:47
 msgctxt "crane|"
 msgid ""
 "blue;best;good;area;bell;coat;easy;farm;food;else;girl;give;hero;help;hour;"
@@ -5857,7 +5857,7 @@ msgstr ""
 
 # *** TARKISTA: Kuinka tärkeä on esitetty vaatimus viisikirjaimisuudesta? Käännettynä valtaosa sanoista on joko lyhyempiä tai pidempiä, joten pitäisikö käyttää aivan muita sanoja?
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 5-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: happy;child;white;apple
-#: activities/crane/crane.js:55
+#: activities/crane/crane.js:54
 msgctxt "crane|"
 msgid ""
 "happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;"
@@ -6390,12 +6390,12 @@ msgstr ""
 "usein esitys jännitteestä, joka on lähes yhtä suuri kuin maajännite ja 1 on "
 "esitys piirin syöttöjännitteestä."
 
-#: activities/digital_electricity/DigitalElectricity.qml:248
+#: activities/digital_electricity/DigitalElectricity.qml:255
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Syöte"
 
-#: activities/digital_electricity/DigitalElectricity.qml:266
+#: activities/digital_electricity/DigitalElectricity.qml:273
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Tuloste"
@@ -6897,17 +6897,17 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ctrl + O: avaa kuva"
 
-#: activities/drawing_wheels/DrawingWheels.qml:399
+#: activities/drawing_wheels/DrawingWheels.qml:405
 msgctxt "DrawingWheels|"
 msgid "File menu"
 msgstr "Tiedostovalikko"
 
-#: activities/drawing_wheels/DrawingWheels.qml:411
+#: activities/drawing_wheels/DrawingWheels.qml:417
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:435
+#: activities/drawing_wheels/DrawingWheels.qml:441
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Piano composition"
@@ -6915,7 +6915,7 @@ msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr "Pianosävellys"
 
-#: activities/drawing_wheels/DrawingWheels.qml:447
+#: activities/drawing_wheels/DrawingWheels.qml:453
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font selector"
@@ -6923,7 +6923,7 @@ msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr "Fontin valinta"
 
-#: activities/drawing_wheels/DrawingWheels.qml:474
+#: activities/drawing_wheels/DrawingWheels.qml:480
 #, fuzzy
 #| msgctxt "OptionsRow|"
 #| msgid "Undo"
@@ -6931,32 +6931,32 @@ msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Kumoa"
 
-#: activities/drawing_wheels/DrawingWheels.qml:486
+#: activities/drawing_wheels/DrawingWheels.qml:492
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "Tee uudelleen"
 
-#: activities/drawing_wheels/DrawingWheels.qml:520
+#: activities/drawing_wheels/DrawingWheels.qml:526
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr "Pysäytä piirtäminen"
 
-#: activities/drawing_wheels/DrawingWheels.qml:520
+#: activities/drawing_wheels/DrawingWheels.qml:526
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr "Aloita piirtäminen"
 
-#: activities/drawing_wheels/DrawingWheels.qml:553
+#: activities/drawing_wheels/DrawingWheels.qml:559
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:553
+#: activities/drawing_wheels/DrawingWheels.qml:559
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:712
+#: activities/drawing_wheels/DrawingWheels.qml:718
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Save your image"
@@ -6964,7 +6964,7 @@ msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Tallenna kuvasi"
 
-#: activities/drawing_wheels/DrawingWheels.qml:727
+#: activities/drawing_wheels/DrawingWheels.qml:733
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Open an image"
@@ -6972,7 +6972,7 @@ msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Avaa kuva"
 
-#: activities/drawing_wheels/DrawingWheels.qml:756
+#: activities/drawing_wheels/DrawingWheels.qml:762
 #, fuzzy
 #| msgctxt "FilesPanel|"
 #| msgid "Create a new image"
@@ -6980,7 +6980,7 @@ msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Luo uusi kuva"
 
-#: activities/drawing_wheels/DrawingWheels.qml:775
+#: activities/drawing_wheels/DrawingWheels.qml:781
 #, fuzzy
 #| msgctxt "BackgroundColorSelector|"
 #| msgid "Background color"
@@ -6988,17 +6988,17 @@ msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Taustaväri"
 
-#: activities/drawing_wheels/DrawingWheels.qml:856
+#: activities/drawing_wheels/DrawingWheels.qml:862
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:923
+#: activities/drawing_wheels/DrawingWheels.qml:929
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:986
+#: activities/drawing_wheels/DrawingWheels.qml:992
 #, fuzzy, qt-format
 #| msgctxt "SignalGenerator|"
 #| msgid "%1 s"
@@ -7006,7 +7006,7 @@ msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 s"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1004
+#: activities/drawing_wheels/DrawingWheels.qml:1010
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Speed"
@@ -7014,17 +7014,17 @@ msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Nopeus"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1020
+#: activities/drawing_wheels/DrawingWheels.qml:1026
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr "Hidas"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1040
+#: activities/drawing_wheels/DrawingWheels.qml:1046
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr "Nopea"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1083
+#: activities/drawing_wheels/DrawingWheels.qml:1089
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font size"
@@ -7032,7 +7032,7 @@ msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "Fonttikoko"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1120
+#: activities/drawing_wheels/DrawingWheels.qml:1126
 #, fuzzy
 #| msgctxt "ToolsPanel|"
 #| msgid "Opacity"
@@ -7040,12 +7040,12 @@ msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Peittävyys"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1163
+#: activities/drawing_wheels/DrawingWheels.qml:1169
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr "Siirtymä"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1201
+#: activities/drawing_wheels/DrawingWheels.qml:1207
 #, fuzzy
 #| msgctxt "IntroMessage|"
 #| msgid "Start"
@@ -7053,7 +7053,7 @@ msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "Käynnistä"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1381
+#: activities/drawing_wheels/DrawingWheels.qml:1387
 #, fuzzy
 #| msgctxt "Sketch|"
 #| msgid "You did not save this image. Do you want to close this activity?"
@@ -7061,7 +7061,7 @@ msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Et tallentanut kuvaa. Haluatko sulkea harjoituksen?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1382
+#: activities/drawing_wheels/DrawingWheels.qml:1388
 #, fuzzy
 #| msgctxt "Sketch|"
 #| msgid "Do you want to erase this image?"
@@ -7069,7 +7069,7 @@ msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Haluatko pyyhkiä tämän kuvan?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1383
+#: activities/drawing_wheels/DrawingWheels.qml:1389
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -7077,7 +7077,7 @@ msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Kyllä"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1384
+#: activities/drawing_wheels/DrawingWheels.qml:1390
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -7446,7 +7446,7 @@ msgstr ""
 "Tasolla kolme näytetään satunnainen tekstikehote, ja sinun on napsautettava "
 "tekstiä vastaavaa eläintä."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:306
+#: activities/explore_farm_animals/ExploreLevels.qml:312
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -7455,12 +7455,12 @@ msgstr ""
 "Harjoitus vaatii ääniä, joten joitakin ääniä toistetaan, vaikka puhe- ja "
 "tehosteäänet olisi asetuksissa poistettu käytöstä."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:307
+#: activities/explore_farm_animals/ExploreLevels.qml:313
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Lopeta"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:308
+#: activities/explore_farm_animals/ExploreLevels.qml:314
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Jatka"
@@ -9995,17 +9995,17 @@ msgstr ""
 "Olet henkilö valkoisessa ympyrässä. Valitse nimi, jota haluat kutsua "
 "oranssissa ympyrässä olevaa henkilöä.\n"
 
-#: activities/family/Family.qml:251
+#: activities/family/Family.qml:258
 msgctxt "Family|"
 msgid "Me"
 msgstr "Minä"
 
-#: activities/family/Family.qml:276
+#: activities/family/Family.qml:283
 msgctxt "Family|"
 msgid "?"
 msgstr "?"
 
-#: activities/family/Family.qml:337
+#: activities/family/Family.qml:344
 #, qt-format
 msgctxt "Family|"
 msgid "Select one of the pairs corresponding to: %1"
@@ -10233,6 +10233,7 @@ msgstr "Luo kuva uudelleen liikuttamalla kutakin kohdetta."
 
 #. Help goal
 #: activities/fifteen/ActivityInfo.qml:20
+#: activities/peg_solitaire/ActivityInfo.qml:19
 #: activities/traffic/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and spatial visualization skills."
@@ -10516,7 +10517,7 @@ msgid ""
 "parts to represent the given fraction."
 msgstr "Valitse ohjeiden mukaisesti oikea määrä osia."
 
-#: activities/fractions_create/fractions_create.js:80
+#: activities/fractions_create/fractions_create.js:79
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
 msgstr "Etsi esitetty murtoluku."
@@ -10986,7 +10987,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Väilyönti: vaihda näkymättömän ja näkyvän tilan välillä"
 
-#: activities/frieze/Frieze.qml:287
+#: activities/frieze/Frieze.qml:294
 #, fuzzy
 #| msgctxt "ReadyButton|"
 #| msgid "I am Ready"
@@ -15471,7 +15472,7 @@ msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
 msgstr "Välilyönti ja Enter: tarkista vastauksesi"
 
-#: activities/graduated_line_read/graduated_line_read.js:134
+#: activities/graduated_line_read/graduated_line_read.js:133
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
 msgstr ""
@@ -15716,7 +15717,7 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
 msgstr "Askelpalautin: poista vastauksen viimeinen numero"
 
-#: activities/grammar_analysis/grammar_analysis.js:401
+#: activities/grammar_analysis/grammar_analysis.js:400
 #, fuzzy
 #| msgctxt "Admin|"
 #| msgid "empty"
@@ -15942,7 +15943,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Vasen ja oikea nuoli: liikuta avaruusalusta"
 
-#: activities/gravity/Gravity.qml:222
+#: activities/gravity/Gravity.qml:229
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15955,7 +15956,7 @@ msgstr ""
 "välinen vetovoima riippuu suoraan kappaleiden massasta ja on kääntäen "
 "verrannollinen niiden keskipisteiden etäisyyden neliöön."
 
-#: activities/gravity/Gravity.qml:225
+#: activities/gravity/Gravity.qml:232
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -15967,7 +15968,7 @@ msgstr ""
 "painovoimalla. Toisin sanoen, kun kummankaan kappaleen massa suurenee, "
 "kappaleiden välinen painovoima lisääntyy."
 
-#: activities/gravity/Gravity.qml:228
+#: activities/gravity/Gravity.qml:235
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -15977,7 +15978,7 @@ msgstr ""
 "Painovoima on kuitenkin kääntäen verrannollinen kappaleiden välisen "
 "etäisyyden neliöön eli suuremmasta etäisyydestä seuraa pienempi painovoima."
 
-#: activities/gravity/Gravity.qml:231
+#: activities/gravity/Gravity.qml:238
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -15988,7 +15989,7 @@ msgstr ""
 "kunnes saavut avaruusasemalle. Nuoli osoittaa painovoiman suunnan ja "
 "voimakkuuden aluksellasi."
 
-#: activities/gravity/Gravity.qml:234
+#: activities/gravity/Gravity.qml:241
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -16069,7 +16070,7 @@ msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
 msgstr "Sarkain: vaihda numeroiden ja laskutoimitusten välillä"
 
-#: activities/guess24/Guess24.qml:135
+#: activities/guess24/Guess24.qml:142
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr "Käytä neljää lukua annetuilla laskutoimituksilla saadaksesi luvun 24."
@@ -16178,17 +16179,17 @@ msgctxt "Admin|"
 msgid "Level %1"
 msgstr "Taso %1"
 
-#: activities/guesscount/guesscount.js:140
+#: activities/guesscount/guesscount.js:139
 msgctxt "guesscount|"
 msgid "result is not positive integer"
 msgstr "tulos ei ole positiivinen kokonaisluku"
 
-#: activities/guesscount/guesscount.js:142
+#: activities/guesscount/guesscount.js:141
 msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "tulos ei ole kokonaisluku"
 
-#: activities/guesscount/Guesscount.qml:151
+#: activities/guesscount/Guesscount.qml:158
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -16275,17 +16276,17 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
 msgstr "Askelpalautin: poista numero"
 
-#: activities/guessnumber/guessnumber.js:57
+#: activities/guessnumber/guessnumber.js:56
 msgctxt "guessnumber|"
 msgid "Your number is too high"
 msgstr "Luku on liian iso"
 
-#: activities/guessnumber/guessnumber.js:60
+#: activities/guessnumber/guessnumber.js:59
 msgctxt "guessnumber|"
 msgid "Your number is too low"
 msgstr "Luku on liian pieni"
 
-#: activities/guessnumber/guessnumber.js:65
+#: activities/guessnumber/guessnumber.js:64
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr "Luku löytyi!"
@@ -16374,18 +16375,18 @@ msgstr ""
 "Jos vaihtoehto 'Puhu sanat löytääksesi...' on käytössä ja jos vastaava ääni "
 "on saatavilla, kuulet etsittävän sanan, kun kolme yritystä on jäljellä."
 
-#: activities/hangman/hangman.js:212
+#: activities/hangman/hangman.js:211
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Yrityksiä: %1"
 
-#: activities/hangman/Hangman.qml:370
+#: activities/hangman/Hangman.qml:377
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Valitettavasti kielellesi ei ole vielä käännöstä."
 
-#: activities/hangman/Hangman.qml:371
+#: activities/hangman/Hangman.qml:378
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -16395,7 +16396,7 @@ msgstr ""
 "GComprisin on kehittänyt KDE-yhteisö. Voit kääntää GComprisia liittymällä "
 "käännösryhmään osoitteessa <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:373
+#: activities/hangman/Hangman.qml:380
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -16491,12 +16492,12 @@ msgstr ""
 "Brahman torneina. Ei ole tiedossa, keksikö Lucas tarinan vai saiko siitä "
 "ideansa. (Lähteenä Wikipedia: https://fi.wikipedia.org/wiki/Hanoin_torni)"
 
-#: activities/hanoi_real/HanoiReal.qml:75
+#: activities/hanoi_real/HanoiReal.qml:82
 msgctxt "HanoiReal|"
 msgid "Move the entire stack to the right peg, one disc at a time."
 msgstr "Siirrä koko pino oikeanpuoleiseen paaluun levy kerrallaan."
 
-#: activities/hanoi_real/HanoiReal.qml:76
+#: activities/hanoi_real/HanoiReal.qml:83
 msgctxt "HanoiReal|"
 msgid ""
 "Build the same tower in the empty area as the one you see on the right-hand "
@@ -17060,31 +17061,31 @@ msgstr ""
 "Vasen ja oikea nuoli: siirry ensimmäisellä tasolla sivuille; korkeammilla "
 "tasoilla, kierrä avaruusalusta"
 
-#: activities/land_safe/LandSafe.qml:584
+#: activities/land_safe/LandSafe.qml:591
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "Polttoaine: %1"
 
-#: activities/land_safe/LandSafe.qml:594
+#: activities/land_safe/LandSafe.qml:601
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "Korkeus: %1"
 
-#: activities/land_safe/LandSafe.qml:604
+#: activities/land_safe/LandSafe.qml:611
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "Nopeus: %1"
 
-#: activities/land_safe/LandSafe.qml:615
+#: activities/land_safe/LandSafe.qml:622
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "Kiihtyvyys: %1"
 
-#: activities/land_safe/LandSafe.qml:649
+#: activities/land_safe/LandSafe.qml:656
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -17484,31 +17485,31 @@ msgstr ""
 "näytössä näkyvää desimaalilukua. Napsauta sitten OK-painiketta "
 "vahvistaaksesi vastauksesi."
 
-#: activities/learn_decimals/Learn_decimals.qml:165
+#: activities/learn_decimals/Learn_decimals.qml:172
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "Näytä numero: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:166
+#: activities/learn_decimals/Learn_decimals.qml:173
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "Näytä tulos: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:167
+#: activities/learn_decimals/Learn_decimals.qml:174
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "Näytä tulos: %1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:168
+#: activities/learn_decimals/Learn_decimals.qml:175
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "Esitä määrä: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:185
+#: activities/learn_decimals/Learn_decimals.qml:192
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -18092,12 +18093,12 @@ msgctxt "ActivityInfo|"
 msgid "Right arrow: right hand answer"
 msgstr "Nuoli oikealle: oikeanpuoleinen vastaus"
 
-#: activities/leftright/Leftright.qml:156
+#: activities/leftright/Leftright.qml:163
 msgctxt "Leftright|"
 msgid "Left hand"
 msgstr "Vasen käsi"
 
-#: activities/leftright/Leftright.qml:178
+#: activities/leftright/Leftright.qml:185
 msgctxt "Leftright|"
 msgid "Right hand"
 msgstr "Oikea käsi"
@@ -18166,12 +18167,12 @@ msgstr ""
 "Koneeseen kiinnitetyssä lipussa näkyy kirjain. Valitse kaikki tämän "
 "kirjaimen sisältävät sanat ja paina sitten OK-painiketta."
 
-#: activities/letter-in-word/LetterInWord.qml:335
+#: activities/letter-in-word/LetterInWord.qml:342
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Valitettavasti kielellesi ei ole vielä käännöstä."
 
-#: activities/letter-in-word/LetterInWord.qml:336
+#: activities/letter-in-word/LetterInWord.qml:343
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -18181,7 +18182,7 @@ msgstr ""
 "GComprisin on kehittänyt KDE-yhteisö. Voit kääntää GComprisia liittymällä "
 "käännösryhmään osoitteessa <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:338
+#: activities/letter-in-word/LetterInWord.qml:345
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -18464,7 +18465,7 @@ msgstr ""
 "Sinun on laskettava, montako hatun alla yhä on. Anna vastauksesi "
 "napsauttamalla alempaa aluetta ja vahvista se painamalla OK."
 
-#: activities/magic-hat-minus/MagicHat.qml:272
+#: activities/magic-hat-minus/MagicHat.qml:279
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Aloita peli painamalla hatusta"
@@ -18693,7 +18694,7 @@ msgstr ""
 "myöhemmillä, napsauta ”paljaat jalat/urheilutossut” -kuvaketta ruudun "
 "vasemmasta yläkulmasta vaihtaaksesi tilaa.\t"
 
-#: activities/maze/Maze.qml:346
+#: activities/maze/Maze.qml:353
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -18831,7 +18832,7 @@ msgstr ""
 "Kuuntele soitettava äänisarja ja toista se painamalla ksylofonin kapuloista. "
 "Voit kuunnella uudestaan painamalla toistamispainiketta."
 
-#: activities/melody/Melody.qml:338
+#: activities/melody/Melody.qml:344
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -18840,12 +18841,12 @@ msgstr ""
 "Tämä toiminto vaatii ääntä, joten se toistaa joitain ääniä, vaikka äänet tai "
 "tehosteet olisivat pois käytöstä pääasetuksissa."
 
-#: activities/melody/Melody.qml:339
+#: activities/melody/Melody.qml:345
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "Lopeta"
 
-#: activities/melody/Melody.qml:340
+#: activities/melody/Melody.qml:346
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "Jatka"
@@ -19994,7 +19995,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:362
+#: activities/memory/MemoryCommon.qml:369
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20003,12 +20004,12 @@ msgstr ""
 "Tämä toiminto vaatii ääntä, joten se toistaa joitain ääniä, vaikka äänet tai "
 "tehosteet olisivat pois käytöstä pääasetukissa."
 
-#: activities/memory/MemoryCommon.qml:363
+#: activities/memory/MemoryCommon.qml:370
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Lopeta"
 
-#: activities/memory/MemoryCommon.qml:364
+#: activities/memory/MemoryCommon.qml:371
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Jatka"
@@ -20602,7 +20603,7 @@ msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr "metalpaint.wav – miksataan käyttöön, kun kultahippu on poimittu"
 
-#: activities/mining/Mining.qml:447
+#: activities/mining/Mining.qml:454
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -20618,22 +20619,22 @@ msgstr ""
 "Kosketusnäytöllä vedä kahta sormea poispäin kimalluksesta, kumpaakin sormea "
 "eri suuntaan."
 
-#: activities/mining/Mining.qml:463
+#: activities/mining/Mining.qml:470
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Lähennät täydellisesti. Jatka, kunnes näet kultajyvän."
 
-#: activities/mining/Mining.qml:471
+#: activities/mining/Mining.qml:478
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Hmm, varovasti, loitonnat liian kauas kimalluksesta."
 
-#: activities/mining/Mining.qml:479
+#: activities/mining/Mining.qml:486
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Nyt näet kultajyvän: ota se napsauttamalla."
 
-#: activities/mining/Mining.qml:487
+#: activities/mining/Mining.qml:494
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -20642,17 +20643,17 @@ msgstr ""
 "Hmm, olet liian kaukana kultajyvästä nähdäksesi sitä. Loitonna ensin ja "
 "sitten lähennä niin lähelle kimallusta kuin voit."
 
-#: activities/mining/Mining.qml:495
+#: activities/mining/Mining.qml:502
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Loitonna nyt ja yritä löytää uusi kimallus."
 
-#: activities/mining/Mining.qml:503
+#: activities/mining/Mining.qml:510
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Jatka loitontamista kunnes näet kimalluksen."
 
-#: activities/mining/Mining.qml:511
+#: activities/mining/Mining.qml:518
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Nyt näet kimalluksen ja voit lähentää siihen."
@@ -20693,12 +20694,12 @@ msgstr ""
 "Täydennä sana napsauttamalla puuttuvaa kirjainta tai kirjoittamalla se "
 "näppäimistöltä."
 
-#: activities/missing-letter/MissingLetter.qml:322
+#: activities/missing-letter/MissingLetter.qml:329
 msgctxt "MissingLetter|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Valitettavasti kielellesi ei ole vielä käännöstä."
 
-#: activities/missing-letter/MissingLetter.qml:323
+#: activities/missing-letter/MissingLetter.qml:330
 #, qt-format
 msgctxt "MissingLetter|"
 msgid ""
@@ -20708,7 +20709,7 @@ msgstr ""
 "GComprisin on kehittänyt KDE-yhteisö. Voit kääntää GComprisia liittymällä "
 "käännösryhmään osoitteessa <a href=\"%2\">%2</a>"
 
-#: activities/missing-letter/MissingLetter.qml:325
+#: activities/missing-letter/MissingLetter.qml:332
 msgctxt "MissingLetter|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -20773,7 +20774,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
 msgstr "Tab-näppäin: navigoi ala- ja yläosan välillä"
 
-#: activities/money/money.js:148
+#: activities/money/money.js:147
 msgctxt "money|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
@@ -20782,7 +20783,7 @@ msgstr ""
 "Napsauta alhaalla olevia kolikoita tai seteleitä maksaaksesi. Jos haluat "
 "poistaa kolikon tai setelin, napsauta sitä näytön yläosassa."
 
-#: activities/money/money.js:179
+#: activities/money/money.js:178
 #, qt-format
 msgctxt "money|"
 msgid ""
@@ -20980,13 +20981,13 @@ msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
 "Kun olet valmis, napsauta tästä ja ala kirjoittaa pistekirjoitusmerkkejä."
 
-#: activities/morse_code/MorseCode.qml:364
+#: activities/morse_code/MorseCode.qml:366
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Morse-arvo: %1"
 
-#: activities/morse_code/MorseCode.qml:365
+#: activities/morse_code/MorseCode.qml:367
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -21216,44 +21217,44 @@ msgid ""
 "has only 2 pieces left."
 msgstr ""
 
-#: activities/nine_men_morris/nine_men_morris.js:240
-#: activities/nine_men_morris/nine_men_morris.js:1086
+#: activities/nine_men_morris/nine_men_morris.js:239
+#: activities/nine_men_morris/nine_men_morris.js:1085
 msgctxt "nine_men_morris|"
 msgid "Place a piece"
 msgstr "Sijoita nappula"
 
-#: activities/nine_men_morris/nine_men_morris.js:366
-#: activities/nine_men_morris/nine_men_morris.js:1144
+#: activities/nine_men_morris/nine_men_morris.js:365
+#: activities/nine_men_morris/nine_men_morris.js:1143
 msgctxt "nine_men_morris|"
 msgid "Move a piece"
 msgstr "Siirrä nappulaa"
 
-#: activities/nine_men_morris/nine_men_morris.js:918
+#: activities/nine_men_morris/nine_men_morris.js:917
 msgctxt "nine_men_morris|"
 msgid "Remove a piece"
 msgstr "Poista nappula"
 
-#: activities/nine_men_morris/nine_men_morris.js:1121
+#: activities/nine_men_morris/nine_men_morris.js:1120
 msgctxt "nine_men_morris|"
 msgid "Congratulations"
 msgstr "Onnea"
 
-#: activities/nine_men_morris/nine_men_morris.js:1124
+#: activities/nine_men_morris/nine_men_morris.js:1123
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 1"
 msgstr "Onnea, pelaaja 1"
 
-#: activities/nine_men_morris/nine_men_morris.js:1135
+#: activities/nine_men_morris/nine_men_morris.js:1134
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 2"
 msgstr "Onnea, pelaaja 2"
 
-#: activities/nine_men_morris/nine_men_morris.js:1138
+#: activities/nine_men_morris/nine_men_morris.js:1137
 msgctxt "nine_men_morris|"
 msgid "Try again"
 msgstr "Yritä uudelleen"
 
-#: activities/nine_men_morris/NineMenMorris.qml:348
+#: activities/nine_men_morris/NineMenMorris.qml:355
 #, fuzzy
 #| msgctxt "nine_men_morris|"
 #| msgid ""
@@ -21267,7 +21268,7 @@ msgstr ""
 "Sinä ja Tux aloitatte kummatkin 9 nappulalla ja asetatte nappulanne "
 "vuorotellen laudan tyhjille paikoille (napsauttamalla pisteitä)."
 
-#: activities/nine_men_morris/NineMenMorris.qml:352
+#: activities/nine_men_morris/NineMenMorris.qml:359
 #, fuzzy
 #| msgctxt "nine_men_morris|"
 #| msgid ""
@@ -21284,7 +21285,7 @@ msgstr ""
 "valitsemalla se. Valmiita myllyjä ei voi poistaa, ellei laudalle jää muita "
 "paloja."
 
-#: activities/nine_men_morris/NineMenMorris.qml:356
+#: activities/nine_men_morris/NineMenMorris.qml:363
 #, fuzzy
 #| msgctxt "nine_men_morris|"
 #| msgid ""
@@ -21301,7 +21302,7 @@ msgstr ""
 "Napsauta yhtä nappuloistasi ja sitten viereistä tyhjää kohtaa siirtääksesi "
 "sen sinne. Vihreät väritäplät osoittavat, minne voit liikkua."
 
-#: activities/nine_men_morris/NineMenMorris.qml:360
+#: activities/nine_men_morris/NineMenMorris.qml:367
 #, fuzzy
 #| msgctxt "nine_men_morris|"
 #| msgid ""
@@ -21315,7 +21316,7 @@ msgstr ""
 "Jos sinulla on jäljellä 3 nappulaa, ne saavat kyvyn \"lentää\" ja ne voidaan "
 "siirtää mihin tahansa vapaaseen paikkaan laudalla."
 
-#: activities/nine_men_morris/NineMenMorris.qml:364
+#: activities/nine_men_morris/NineMenMorris.qml:371
 #, fuzzy
 #| msgctxt "nine_men_morris|"
 #| msgid ""
@@ -21386,20 +21387,20 @@ msgstr ""
 "Tunnista nuotit oikein, soita ne pianonkoskettimistolla ja päätä taso "
 "saavuttamalla 100 prosentin tulos."
 
-#: activities/note_names/NoteNames.qml:201
+#: activities/note_names/NoteNames.qml:208
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
 msgstr "Uusi nuotti: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:271
+#: activities/note_names/NoteNames.qml:278
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1 %"
 
-#: activities/note_names/NoteNames.qml:449
+#: activities/note_names/NoteNames.qml:456
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21408,12 +21409,12 @@ msgstr ""
 "Tämä toiminto vaatii ääntä, joten se toistaa joitain ääniä, vaikka äänet tai "
 "tehosteet olisivat pois käytöstä pääasetuksissa."
 
-#: activities/note_names/NoteNames.qml:450
+#: activities/note_names/NoteNames.qml:457
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Lopeta"
 
-#: activities/note_names/NoteNames.qml:451
+#: activities/note_names/NoteNames.qml:458
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Jatka"
@@ -21811,32 +21812,32 @@ msgstr ""
 "Näet joitakin lukuja. Vedä ja pudota ne ylemmälle alueelle pyynnön mukaan "
 "joko isommasta pienempään tai pienemmästä isompaan."
 
-#: activities/ordering_numbers/ordering.js:66
+#: activities/ordering_numbers/ordering.js:65
 msgctxt "ordering|"
 msgid "Drag and drop the items in ascending order."
 msgstr "Vedä ja pudota kohteet järjestykseen pienimmästä isoimpaan."
 
-#: activities/ordering_numbers/ordering.js:67
+#: activities/ordering_numbers/ordering.js:66
 msgctxt "ordering|"
 msgid "Drag and drop the items in descending order."
 msgstr "Vedä ja pudota kohteet järjestykseen isoimmasta pienimpään."
 
-#: activities/ordering_numbers/ordering.js:68
+#: activities/ordering_numbers/ordering.js:67
 msgctxt "ordering|"
 msgid "Drag and drop the letters in alphabetical order."
 msgstr "Vedä ja pudota kirjaimet aakkosjärjestykseen."
 
-#: activities/ordering_numbers/ordering.js:69
+#: activities/ordering_numbers/ordering.js:68
 msgctxt "ordering|"
 msgid "Drag and drop the letters in reverse alphabetical order."
 msgstr "Vedä ja pudota kirjaimet käänteiseen aakkosjärjestykseen."
 
-#: activities/ordering_numbers/ordering.js:70
+#: activities/ordering_numbers/ordering.js:69
 msgctxt "ordering|"
 msgid "Drag and drop the items in chronological order."
 msgstr "Vedä ja pudota kohteet aikajärjestykseen."
 
-#: activities/ordering_numbers/ordering.js:71
+#: activities/ordering_numbers/ordering.js:70
 msgctxt "ordering|"
 msgid "Drag and drop the words to the upper box to form a meaningful sentence."
 msgstr ""
@@ -22373,7 +22374,7 @@ msgctxt "ActivityInfo|"
 msgid "Arrows: directions"
 msgstr "Nuolet: ohjeet"
 
-#: activities/path_encoding/GridPath.qml:130
+#: activities/path_encoding/GridPath.qml:137
 #, qt-format
 msgctxt "GridPath|"
 msgid "Errors: %1"
@@ -22387,6 +22388,67 @@ msgstr "Virheitä: %1"
 msgctxt "ActivityInfo|"
 msgid "Relative path encoding"
 msgstr "Polun koodaus"
+
+#: activities/peg_solitaire/ActivityConfig.qml:27
+msgctxt "ActivityConfig|"
+msgid "Use the default starting hole"
+msgstr ""
+
+#. Activity title
+#: activities/peg_solitaire/ActivityInfo.qml:14
+msgctxt "ActivityInfo|"
+msgid "Peg solitaire"
+msgstr ""
+
+#. Help title
+#: activities/peg_solitaire/ActivityInfo.qml:16
+msgctxt "ActivityInfo|"
+msgid "Remove all the pieces in the correct order until only one remains."
+msgstr ""
+
+#. Help manual
+#: activities/peg_solitaire/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"To move a piece, make it jump another one in an orthogonal direction, to a "
+"hole two positions away. The jumped piece is removed from the board. You can "
+"click on a movable piece and then on its destination, or drag and drop it to "
+"its destination. The game is over when no more piece can be moved, and is "
+"won if only one piece remains. If the option to use the default starting "
+"hole is not selected, you need to choose the first piece to remove by "
+"clicking on it. You can use the undo button to undo your last move, and the "
+"redo button to redo it."
+msgstr ""
+
+#. Board for the Peg solitaire game
+#: activities/peg_solitaire/peg_solitaire.js:28
+msgctxt "peg_solitaire|"
+msgid "English board"
+msgstr ""
+
+#. Board for the Peg solitaire game
+#: activities/peg_solitaire/peg_solitaire.js:44
+#, fuzzy
+#| msgctxt "board14_0|"
+#| msgid "French Polynesia"
+msgctxt "peg_solitaire|"
+msgid "French board"
+msgstr "Ranskan Polynesia"
+
+#. Board for the Peg solitaire game
+#: activities/peg_solitaire/peg_solitaire.js:61
+msgctxt "peg_solitaire|"
+msgid "32 holes diamond board"
+msgstr ""
+
+#. Board for the Peg solitaire game
+#: activities/peg_solitaire/peg_solitaire.js:79
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Numerical order"
+msgctxt "peg_solitaire|"
+msgid "Asymmetrical board"
+msgstr "Numerojärjestys"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -22417,7 +22479,7 @@ msgstr ""
 "nappaa pallon. Sinun on napsautettava sitä palauttaaksesi sen alkuperäiseen "
 "paikkaansa."
 
-#: activities/penalty/Penalty.qml:239
+#: activities/penalty/Penalty.qml:246
 msgctxt "Penalty|"
 msgid ""
 "Double click or double tap on the side of the goal you want to put the ball "
@@ -22426,7 +22488,7 @@ msgstr ""
 "Kaksoisnapsauta tai kaksoisnapauta sen maalin puolta, johon haluat laittaa "
 "pallon."
 
-#: activities/penalty/Penalty.qml:240
+#: activities/penalty/Penalty.qml:247
 msgctxt "Penalty|"
 msgid "Click or tap on the ball to bring it back to its initial position."
 msgstr ""
@@ -22460,12 +22522,12 @@ msgstr ""
 "Tarkkaile kahta kuvaa huolellisesti. Niissä on joitain pieniä eroja. Kun "
 "löydät eron, sinun on napsautettava sitä."
 
-#: activities/photo_hunter/PhotoHunter.qml:88
+#: activities/photo_hunter/PhotoHunter.qml:95
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "Näytä erot vetämällä säädintä."
 
-#: activities/photo_hunter/PhotoHunter.qml:89
+#: activities/photo_hunter/PhotoHunter.qml:96
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Napsauta kahden kuvan välisiä eroja."
@@ -22877,30 +22939,30 @@ msgctxt "OptionsRow|"
 msgid "Flat notes"
 msgstr "Alennetut nuotit"
 
-#: activities/piano_composition/piano_composition.js:24
+#: activities/piano_composition/piano_composition.js:23
 msgctxt "piano_composition|"
 msgid "This is the treble clef staff for high pitched notes."
 msgstr "Tämä on diskanttiavaimen varsi korkeisiin säveliin."
 
-#: activities/piano_composition/piano_composition.js:27
+#: activities/piano_composition/piano_composition.js:26
 msgctxt "piano_composition|"
 msgid "This is the bass clef staff for low pitched notes."
 msgstr "Tämä on bassoavaimen varsi matalia ääniä varten."
 
 # ID:ssä ei ole järkeä
-#: activities/piano_composition/piano_composition.js:30
+#: activities/piano_composition/piano_composition.js:29
 msgctxt "piano_composition|"
 msgid "The black keys are sharp and flat keys. Sharp notes have a ♯ sign."
 msgstr "Mustat koskettimet ovat ylennetyt ja alennetut koskettimet (♯-merkki)."
 
-#: activities/piano_composition/piano_composition.js:33
+#: activities/piano_composition/piano_composition.js:32
 msgctxt "piano_composition|"
 msgid "Each black key has two names: flat and sharp. Flat notes have ♭ sign."
 msgstr ""
 "Kullakin mustalla koskettimella on kaksi nimeä: alennettu ja ylennetty. "
 "Alennetut nuotit osoitetaan b-merkillä."
 
-#: activities/piano_composition/piano_composition.js:36
+#: activities/piano_composition/piano_composition.js:35
 msgctxt "piano_composition|"
 msgid ""
 "Click on the note symbol to write different length notes such as whole "
@@ -22909,7 +22971,7 @@ msgstr ""
 "Napsauta nuottisymbolia kirjoittaaksesi eripituisia nuotteja, kuten "
 "kokonaisia, puolikkaita, neljäsosia ja kahdeksasosia."
 
-#: activities/piano_composition/piano_composition.js:39
+#: activities/piano_composition/piano_composition.js:38
 msgctxt "piano_composition|"
 msgid ""
 "Rests are equivalent to notes during which silence is maintained. Click on "
@@ -22922,54 +22984,54 @@ msgstr ""
 "hiljaisuutta. Valitse ensin tauon pituus napsauttamalla tauon merkkiä ja "
 "lisää tauko nuottiviivastolle painamalla Lisää-painiketta."
 
-#: activities/piano_composition/piano_composition.js:42
+#: activities/piano_composition/piano_composition.js:41
 msgctxt "piano_composition|"
 msgid "Now you can load music and also save your compositions."
 msgstr "Nyt musiikkia voi ladata ja sävellyksesi myös tallentaa."
 
-#: activities/piano_composition/piano_composition.js:63
+#: activities/piano_composition/piano_composition.js:62
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Error saving melody to your file (%1)"
 msgstr "Virhe tallennettaessa melodiaa tiedostoosi (%1)"
 
-#: activities/piano_composition/piano_composition.js:68
+#: activities/piano_composition/piano_composition.js:67
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Melody saved to your file (%1)"
 msgstr "Melodia tallennettiin tiedostoon (%1)"
 
-#: activities/piano_composition/Piano_composition.qml:369
+#: activities/piano_composition/Piano_composition.qml:376
 msgctxt "Piano_composition|"
 msgid "You have not selected any note. Do you want to erase all the notes?"
 msgstr "Et ole valinnut mitään nuottia. Haluatko tyhjentää kaikki nuotit?"
 
-#: activities/piano_composition/Piano_composition.qml:370
+#: activities/piano_composition/Piano_composition.qml:377
 msgctxt "Piano_composition|"
 msgid "Yes"
 msgstr "Kyllä"
 
-#: activities/piano_composition/Piano_composition.qml:376
+#: activities/piano_composition/Piano_composition.qml:383
 msgctxt "Piano_composition|"
 msgid "No"
 msgstr "Ei"
 
-#: activities/piano_composition/Piano_composition.qml:423
+#: activities/piano_composition/Piano_composition.qml:430
 msgctxt "Piano_composition|"
 msgid "Select the type of melody to load."
 msgstr "Valitse ladattavan melodian tyyppi."
 
-#: activities/piano_composition/Piano_composition.qml:428
+#: activities/piano_composition/Piano_composition.qml:435
 msgctxt "Piano_composition|"
 msgid "Pre-defined melodies"
 msgstr "Ennalta määritetyt melodiat"
 
-#: activities/piano_composition/Piano_composition.qml:446
+#: activities/piano_composition/Piano_composition.qml:453
 msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "Tallennetut melodiasi"
 
-#: activities/piano_composition/Piano_composition.qml:550
+#: activities/piano_composition/Piano_composition.qml:557
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -22978,12 +23040,12 @@ msgstr ""
 "Tämä toiminto vaatii ääntä, joten se toistaa joitain ääniä, vaikka äänet tai "
 "tehosteet olisivat pois käytöstä pääasetuksissa."
 
-#: activities/piano_composition/Piano_composition.qml:551
+#: activities/piano_composition/Piano_composition.qml:558
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "Lopeta"
 
-#: activities/piano_composition/Piano_composition.qml:552
+#: activities/piano_composition/Piano_composition.qml:559
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "Jatka"
@@ -23267,12 +23329,12 @@ msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
 msgstr "Askelpalautin tai Del: kumoa"
 
-#: activities/play_piano/PlayPiano.qml:189
+#: activities/play_piano/PlayPiano.qml:196
 msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "Napsauta pianonkoskettimia, jotka vastaavat annettuja nuotteja."
 
-#: activities/play_piano/PlayPiano.qml:322
+#: activities/play_piano/PlayPiano.qml:329
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -23281,12 +23343,12 @@ msgstr ""
 "Harjoitus vaatii ääniä, joten joitakin ääniä toistetaan, vaikka puhe- ja "
 "tehosteäänet olisi yleisasetuksissa poistettu käytöstä."
 
-#: activities/play_piano/PlayPiano.qml:323
+#: activities/play_piano/PlayPiano.qml:330
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "Lopeta"
 
-#: activities/play_piano/PlayPiano.qml:324
+#: activities/play_piano/PlayPiano.qml:331
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "Jatka"
@@ -23372,14 +23434,14 @@ msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
 msgstr "Sarkain: käynnistä tai pysäytä metronomi, jos se on näkyvillä"
 
-#: activities/play_rhythm/PlayRhythm.qml:121
+#: activities/play_rhythm/PlayRhythm.qml:128
 msgctxt "PlayRhythm|"
 msgid ""
 "Use the metronome to estimate the time intervals and play the rhythm "
 "correctly."
 msgstr "Arvioi aikavälit metronomia käyttäen ja toista rytmi oikein."
 
-#: activities/play_rhythm/PlayRhythm.qml:122
+#: activities/play_rhythm/PlayRhythm.qml:129
 msgctxt "PlayRhythm|"
 msgid ""
 "Follow the vertical line and click on the drum or press space key to play "
@@ -23388,7 +23450,7 @@ msgstr ""
 "Seuraa pystyviivaa ja napsauta rumpua tai paina välilyöntinäppäintä "
 "toistaaksesi oikean rytmin."
 
-#: activities/play_rhythm/PlayRhythm.qml:406
+#: activities/play_rhythm/PlayRhythm.qml:413
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -23397,12 +23459,12 @@ msgstr ""
 "Tämä toiminto vaatii ääntä, joten se toistaa joitain ääniä, vaikka äänet tai "
 "tehosteet olisivat pois käytöstä pääasetukissa."
 
-#: activities/play_rhythm/PlayRhythm.qml:407
+#: activities/play_rhythm/PlayRhythm.qml:414
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "Lopeta"
 
-#: activities/play_rhythm/PlayRhythm.qml:408
+#: activities/play_rhythm/PlayRhythm.qml:415
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "Jatka"
@@ -23650,28 +23712,28 @@ msgctxt "InstructionArea|"
 msgid "Choose the instructions"
 msgstr "Valitse ohjeet"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:224
+#: activities/programmingMaze/ProgrammingMaze.qml:231
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Tavoita kalat alle %1 ohjeella."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:260
+#: activities/programmingMaze/ProgrammingMaze.qml:267
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Päätoiminto"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:294
+#: activities/programmingMaze/ProgrammingMaze.qml:301
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Proseduuri"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:294
+#: activities/programmingMaze/ProgrammingMaze.qml:301
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Silmukka"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:542
+#: activities/programmingMaze/ProgrammingMaze.qml:549
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid "Instruction Area:"
@@ -23679,7 +23741,7 @@ msgctxt "ProgrammingMaze|"
 msgid "Instruction Area:"
 msgstr "Ohjealue:"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:543
+#: activities/programmingMaze/ProgrammingMaze.qml:550
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid ""
@@ -23690,7 +23752,7 @@ msgid ""
 "There are 3 instructions which you can use to code and lead Tux to the fish:"
 msgstr "Voit koodata Tuxin kalaan kolmella ohjeella:"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:544
+#: activities/programmingMaze/ProgrammingMaze.qml:551
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid ""
@@ -23704,7 +23766,7 @@ msgstr ""
 "<b>1. Liikkuminen eteenpäin:</b> Siirtää Tuxia askeleen eteenpäin sen "
 "silloiseen suuntaan."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:545
+#: activities/programmingMaze/ProgrammingMaze.qml:552
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid "<b>2. Turn left:</b> Turns Tux to the left."
@@ -23712,7 +23774,7 @@ msgctxt "ProgrammingMaze|"
 msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgstr "<b>2. Käänny vasemmalle:</b> Kääntää Tuxin vasemmalle."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:546
+#: activities/programmingMaze/ProgrammingMaze.qml:553
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid "<b>3. Turn right:</b> Turns Tux to the right."
@@ -23720,7 +23782,7 @@ msgctxt "ProgrammingMaze|"
 msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgstr "<b>3. Käänny oikealle:</b> Kääntää Tuxin oikealle."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:550
+#: activities/programmingMaze/ProgrammingMaze.qml:557
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid "Main Function:"
@@ -23728,7 +23790,7 @@ msgctxt "ProgrammingMaze|"
 msgid "Main Function:"
 msgstr "Päätoiminto:"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:551
+#: activities/programmingMaze/ProgrammingMaze.qml:558
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid "The execution of the code starts here."
@@ -23736,7 +23798,7 @@ msgctxt "ProgrammingMaze|"
 msgid "The execution of the code starts here."
 msgstr "Koodin suoritus alkaa tästä."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:552
+#: activities/programmingMaze/ProgrammingMaze.qml:559
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid ""
@@ -23750,7 +23812,7 @@ msgstr ""
 "- Napsauta mitä tahansa ohjetta <b>ohjealueella</b> lisätäksesi sen "
 "<b>päätoimintoon</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:553
+#: activities/programmingMaze/ProgrammingMaze.qml:560
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid ""
@@ -23764,7 +23826,7 @@ msgstr ""
 "-Ohjeet suoritetaan järjestyksessä, kunnes niitä ei ole jäljellä, umpikujaan "
 "asti tai kun Tux saavuttaa kalan."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:563
+#: activities/programmingMaze/ProgrammingMaze.qml:570
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid "Procedure:"
@@ -23772,7 +23834,7 @@ msgctxt "ProgrammingMaze|"
 msgid "Procedure:"
 msgstr "Proseduuri:"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:564
+#: activities/programmingMaze/ProgrammingMaze.qml:571
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid ""
@@ -23786,7 +23848,7 @@ msgstr ""
 "<b>Toimenpide</b> on uudelleenkäytettävä ohjesarja, jota voidaan <b>käyttää "
 "koodissa kutsumalla sitä tarvittaessa</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:565
+#: activities/programmingMaze/ProgrammingMaze.qml:572
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid ""
@@ -23803,7 +23865,7 @@ msgstr ""
 "b> välillä ja lisää koodisi, napsauta <b>Toimenpide</b> tai <b>Päätoiminto</"
 "b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:575
+#: activities/programmingMaze/ProgrammingMaze.qml:582
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid "Loop:"
@@ -23811,7 +23873,7 @@ msgctxt "ProgrammingMaze|"
 msgid "Loop:"
 msgstr "Silmukka:"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:576
+#: activities/programmingMaze/ProgrammingMaze.qml:583
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid ""
@@ -23825,7 +23887,7 @@ msgstr ""
 "<b>Silmukka</b> on käskysarja, joka <b>toistetaan jatkuvasti sen sisällä "
 "olevan numeron määrittämän määrän kertoja</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:577
+#: activities/programmingMaze/ProgrammingMaze.qml:584
 #, fuzzy
 #| msgctxt "programmingMaze|"
 #| msgid ""
@@ -23916,7 +23978,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Vahvista vastaus Enter- tai Return-näppäimellä"
 
-#: activities/railroad/Railroad.qml:126
+#: activities/railroad/Railroad.qml:133
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -23926,7 +23988,7 @@ msgstr ""
 "kohteista sitten samanlainen juna.Tarkastele junaa ja paina se mieleesi "
 "kunnes ajastimesta loppuu aika, ja luo kohteista sitten samanlainen juna."
 
-#: activities/railroad/Railroad.qml:129
+#: activities/railroad/Railroad.qml:136
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -23963,7 +24025,7 @@ msgstr ""
 "Laudalla näytetään sana. Luettelo vaakasuunnassa esitettyjä sanoja ilmestyy "
 "ja katoaa. Kuuluuko annettu sana luetteloon?"
 
-#: activities/readingh/Readingh.qml:306
+#: activities/readingh/Readingh.qml:313
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -23973,12 +24035,12 @@ msgstr ""
 "<font color=\"#373737\">Tarkista, onko sana<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">näkyvissä</font>"
 
-#: activities/readingh/Readingh.qml:366
+#: activities/readingh/Readingh.qml:373
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Kyllä, näin sen!"
 
-#: activities/readingh/Readingh.qml:387
+#: activities/readingh/Readingh.qml:394
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Ei, se puuttui!"
@@ -24142,7 +24204,7 @@ msgstr ""
 "hänen valopainikettaan. Voittaaksesi sinun on otettava käyttöön kaikki "
 "kuluttajat, kun kaikki tuottajat ovat käynnissä."
 
-#: activities/renewable_energy/RenewableEnergy.qml:273
+#: activities/renewable_energy/RenewableEnergy.qml:275
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -24152,7 +24214,7 @@ msgstr ""
 "hän saa kotiinsa valot.Tux on palannut veneellään kalasta. Palauta "
 "sähköjärjestelmä kuntoon, jotta hän saa kotiinsa valot."
 
-#: activities/renewable_energy/RenewableEnergy.qml:276
+#: activities/renewable_energy/RenewableEnergy.qml:278
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -24162,7 +24224,7 @@ msgstr ""
 "elementtejä: aurinkoa, pilviä, patoa, aurinkopaneelia, tuulipuistoa ja "
 "muuntajia."
 
-#: activities/renewable_energy/RenewableEnergy.qml:279
+#: activities/renewable_energy/RenewableEnergy.qml:281
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -24173,14 +24235,14 @@ msgstr ""
 "valopainiketta. Voittaaksesi sinun on kytkettävä kaikki kuluttajat päälle, "
 "kun kaikki tuottajat ovat käynnissä."
 
-#: activities/renewable_energy/RenewableEnergy.qml:282
+#: activities/renewable_energy/RenewableEnergy.qml:284
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Opi uusiutuvaan energiaan perustuvasta sähköjärjestelmästä. Pidä hauskaa!Opi "
 "uusiutuvaan energiaan perustuvasta sähköjärjestelmästä. Pidä hauskaa!."
 
-#: activities/renewable_energy/RenewableEnergy.qml:308
+#: activities/renewable_energy/RenewableEnergy.qml:310
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -24343,8 +24405,8 @@ msgid "Letters: type roman numerals (with I, V, X, L, C, D and M)"
 msgstr ""
 "Kirjaimet: kirjoita roomalaisia lukuja (kirjaimin I, V, X, L, C, D ja M)"
 
-#: activities/roman_numerals/RomanNumerals.qml:80
-#: activities/roman_numerals/RomanNumerals.qml:86
+#: activities/roman_numerals/RomanNumerals.qml:82
+#: activities/roman_numerals/RomanNumerals.qml:88
 msgctxt "RomanNumerals|"
 msgid ""
 "The roman numbers are all built out of these 7 numbers:\n"
@@ -24362,32 +24424,32 @@ msgstr ""
 "sekä M (1000).\n"
 "Huomaa, että roomalaisista numeroista puuttuu luku 0."
 
-#: activities/roman_numerals/RomanNumerals.qml:81
-#: activities/roman_numerals/RomanNumerals.qml:93
-#: activities/roman_numerals/RomanNumerals.qml:105
-#: activities/roman_numerals/RomanNumerals.qml:117
-#: activities/roman_numerals/RomanNumerals.qml:129
+#: activities/roman_numerals/RomanNumerals.qml:83
+#: activities/roman_numerals/RomanNumerals.qml:95
+#: activities/roman_numerals/RomanNumerals.qml:107
+#: activities/roman_numerals/RomanNumerals.qml:119
+#: activities/roman_numerals/RomanNumerals.qml:131
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the roman number %1 to arabic."
 msgstr "Muunna roomalainen numero %1 arabialaiseen muotoon."
 
-#: activities/roman_numerals/RomanNumerals.qml:87
-#: activities/roman_numerals/RomanNumerals.qml:99
-#: activities/roman_numerals/RomanNumerals.qml:111
-#: activities/roman_numerals/RomanNumerals.qml:123
-#: activities/roman_numerals/RomanNumerals.qml:135
-#: activities/roman_numerals/RomanNumerals.qml:141
-#: activities/roman_numerals/RomanNumerals.qml:147
-#: activities/roman_numerals/RomanNumerals.qml:153
-#: activities/roman_numerals/RomanNumerals.qml:159
+#: activities/roman_numerals/RomanNumerals.qml:89
+#: activities/roman_numerals/RomanNumerals.qml:101
+#: activities/roman_numerals/RomanNumerals.qml:113
+#: activities/roman_numerals/RomanNumerals.qml:125
+#: activities/roman_numerals/RomanNumerals.qml:137
+#: activities/roman_numerals/RomanNumerals.qml:143
+#: activities/roman_numerals/RomanNumerals.qml:149
+#: activities/roman_numerals/RomanNumerals.qml:155
+#: activities/roman_numerals/RomanNumerals.qml:161
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the arabic number %1 to roman."
 msgstr "Muunna arabialainen numero %1 roomalaiseen muotoon."
 
-#: activities/roman_numerals/RomanNumerals.qml:92
-#: activities/roman_numerals/RomanNumerals.qml:98
+#: activities/roman_numerals/RomanNumerals.qml:94
+#: activities/roman_numerals/RomanNumerals.qml:100
 msgctxt "RomanNumerals|"
 msgid ""
 "All the units except 4 and 9 are built using sums of I and V:\n"
@@ -24400,8 +24462,8 @@ msgstr ""
 "4 ja 9 rakennetaan erotuksina:\n"
 "IV (5 – 1) ja IX (10 – 1)"
 
-#: activities/roman_numerals/RomanNumerals.qml:104
-#: activities/roman_numerals/RomanNumerals.qml:110
+#: activities/roman_numerals/RomanNumerals.qml:106
+#: activities/roman_numerals/RomanNumerals.qml:112
 msgctxt "RomanNumerals|"
 msgid ""
 "All the tens except 40 and 90 are built using sums of X and L:\n"
@@ -24414,8 +24476,8 @@ msgstr ""
 "40 ja 90 rakennetaan erotuksina:\n"
 "XL (50 – 10) ja XC (100 – 10)."
 
-#: activities/roman_numerals/RomanNumerals.qml:116
-#: activities/roman_numerals/RomanNumerals.qml:122
+#: activities/roman_numerals/RomanNumerals.qml:118
+#: activities/roman_numerals/RomanNumerals.qml:124
 msgctxt "RomanNumerals|"
 msgid ""
 "All the hundreds except 400 and 900 are built using sums of C and D:\n"
@@ -24428,8 +24490,8 @@ msgstr ""
 "400 ja 900 rakennetaan erotuksina:\n"
 "CD (500 – 100) ja CM (1000 – 100)."
 
-#: activities/roman_numerals/RomanNumerals.qml:128
-#: activities/roman_numerals/RomanNumerals.qml:134
+#: activities/roman_numerals/RomanNumerals.qml:130
+#: activities/roman_numerals/RomanNumerals.qml:136
 msgctxt "RomanNumerals|"
 msgid ""
 "Sums of M are used for building thousands: M, MM, MMM.\n"
@@ -24445,7 +24507,7 @@ msgstr ""
 "luku on 3999 (MMMCMXCIX).\n"
 "."
 
-#: activities/roman_numerals/RomanNumerals.qml:140
+#: activities/roman_numerals/RomanNumerals.qml:142
 msgctxt "RomanNumerals|"
 msgid ""
 "Now you know the rules, you can read and write numbers in roman numerals."
@@ -24453,13 +24515,13 @@ msgstr ""
 "Nyt kun tiedät säännöt, voit lukea ja kirjoittaa minkä tahansa luvun "
 "roomalaisin numeroin."
 
-#: activities/roman_numerals/RomanNumerals.qml:387
+#: activities/roman_numerals/RomanNumerals.qml:389
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Roomalainen arvo: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:388
+#: activities/roman_numerals/RomanNumerals.qml:390
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -25475,7 +25537,7 @@ msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr "Enintään 30 karkkia ja 6 lasta, tauko mahdollinen."
 
 # Poedit cannot handle this, format
-#: activities/share/share.js:115
+#: activities/share/share.js:114
 #, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -25485,7 +25547,7 @@ msgid_plural "Place %n boy(s) "
 msgstr[0] "Aseta %n poika keskelle "
 msgstr[1] "Aseta %n poikaa keskelle "
 
-#: activities/share/share.js:119
+#: activities/share/share.js:118
 #, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -25495,7 +25557,7 @@ msgid_plural "and %n girl(s) in the center. "
 msgstr[0] "ja %n tyttö keskelle. "
 msgstr[1] "ja %n tyttöä keskelle. "
 
-#: activities/share/share.js:123
+#: activities/share/share.js:122
 #, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -25505,7 +25567,7 @@ msgid_plural "Then split %n pieces of candy equally between them."
 msgstr[0] "Jaa sitten %n karkki tasan kaikkien kesken."
 msgstr[1] "Jaa sitten %n karkkia tasan kaikkien kesken."
 
-#: activities/share/Share.qml:359
+#: activities/share/Share.qml:366
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
@@ -27039,7 +27101,7 @@ msgid ""
 "questions."
 msgstr "Hienoa! Voit toistaa tehtävän testataksesi tietojasi lisäkysymyksillä."
 
-#: activities/solar_system/SolarSystem.qml:152
+#: activities/solar_system/SolarSystem.qml:159
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -27054,17 +27116,17 @@ msgstr ""
 "– jossa voit oppia asioita aurinkokunnasta.<br><b>2. Tehtävätila</b> – jossa "
 "voit testata tietojasi aurinkokunnasta."
 
-#: activities/solar_system/SolarSystem.qml:152
+#: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Arviointi"
 
-#: activities/solar_system/SolarSystem.qml:152
+#: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Oppiminen"
 
-#: activities/solar_system/SolarSystem.qml:157
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -27073,7 +27135,7 @@ msgstr ""
 "Paljasta kysymykset napsauttamalla aurinkoa tai jotakin planeettaa. Kussakin "
 "kysymyksessä on neljä vaihtoehtoa, joista yksi on oikein."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:167
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -27088,7 +27150,7 @@ msgstr ""
 "100 prosenttiin. Jos vihjepainike on näkyvissä, sitä napsauttamalla voi "
 "saada vastauksesta vihjeen."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:177
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -27099,7 +27161,7 @@ msgstr ""
 "kysymyksiä on 20, joissa kussakin 4 vastausvaihtoehtoa. Näytössä alaoikealla "
 "oleva edistymispalkki näyttää prosentuaaliset pisteesi."
 
-#: activities/solar_system/SolarSystem.qml:173
+#: activities/solar_system/SolarSystem.qml:180
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -27112,7 +27174,7 @@ msgstr ""
 "kysymyksen lisäksi.<br> Kysymyksiä esitetään enintään 25, minkä jälkeen "
 "lisäkysymyksiä ei tule."
 
-#: activities/solar_system/SolarSystem.qml:176
+#: activities/solar_system/SolarSystem.qml:183
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -27122,7 +27184,7 @@ msgstr ""
 "asiantuntijaksi!Sinun on saatava yli 90 % läpäistäksesi tehtävän ja "
 "tullaksesi aurinkokunnan asiantuntijaksi!"
 
-#: activities/solar_system/SolarSystem.qml:355
+#: activities/solar_system/SolarSystem.qml:362
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -27132,7 +27194,7 @@ msgstr ""
 "1. Mitä <b>kauempana</b> planeetta on auringosta, sitä <b>alhaisempi</b> on "
 "sen lämpötila.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:356
+#: activities/solar_system/SolarSystem.qml:363
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -27143,7 +27205,7 @@ msgstr ""
 "<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:359
+#: activities/solar_system/SolarSystem.qml:366
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -27154,12 +27216,12 @@ msgstr ""
 "sanan ensimmäinen kirjain - <b>M</b>inun <b>V</b>ihreä <b>E</b>erinomainen "
 "<b >M</b>uukalainen <b>J</b>oka <b>U</b>skoo <b>N</b>oitiin.<br>"
 
-#: activities/solar_system/SolarSystem.qml:361
+#: activities/solar_system/SolarSystem.qml:368
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Vihje"
 
-#: activities/solar_system/SolarSystem.qml:369
+#: activities/solar_system/SolarSystem.qml:376
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Tarkastele aurinkokuntaa"
@@ -27278,7 +27340,7 @@ msgctxt "Controls|"
 msgid "Right Ballast Tank"
 msgstr "Oikea painolastitankki"
 
-#: activities/submarine/Submarine.qml:133
+#: activities/submarine/Submarine.qml:140
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Move the submarine to the other side of the screen."
@@ -27286,7 +27348,7 @@ msgctxt "Submarine|"
 msgid "Move the submarine to the other side of the screen."
 msgstr "Siirrä sukellusvene näytön toiseen laitaan."
 
-#: activities/submarine/Submarine.qml:136
+#: activities/submarine/Submarine.qml:143
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -27300,7 +27362,7 @@ msgstr ""
 "Ohjauspaneelin vasemmaisin kohde on sukellusveneen moottori, joka osoittaa "
 "sukellusveneen kulkunopeutta."
 
-#: activities/submarine/Submarine.qml:139
+#: activities/submarine/Submarine.qml:146
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Increase or decrease the velocity of the submarine using the engine."
@@ -27308,7 +27370,7 @@ msgctxt "Submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
 msgstr "Nosta tai laske sukellusveneen nopeutta moottorin avulla."
 
-#: activities/submarine/Submarine.qml:142
+#: activities/submarine/Submarine.qml:149
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -27320,7 +27382,7 @@ msgid ""
 "velocity."
 msgstr "Lisää nopeutta painamalla + tai vähennä sitä painamalla –."
 
-#: activities/submarine/Submarine.qml:149
+#: activities/submarine/Submarine.qml:156
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "The item next to the engine is the ballast tank."
@@ -27328,7 +27390,7 @@ msgctxt "Submarine|"
 msgid "The item next to the engine is the ballast tank."
 msgstr "Moottorin vieressä on painolastisäiliö."
 
-#: activities/submarine/Submarine.qml:152
+#: activities/submarine/Submarine.qml:159
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "The ballast tanks are used to float or dive under water."
@@ -27336,7 +27398,7 @@ msgctxt "Submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr "Painolastitankkeja käytetään kellumiseen ja sukeltamiseen."
 
-#: activities/submarine/Submarine.qml:155
+#: activities/submarine/Submarine.qml:162
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -27350,7 +27412,7 @@ msgstr ""
 "Jos painolastitankit ovat tyhjät, sukellusvene kelluu. Jos ne ovat täynnä "
 "vettä, sukellusvene sukeltaa veden alle."
 
-#: activities/submarine/Submarine.qml:158
+#: activities/submarine/Submarine.qml:165
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -27365,7 +27427,7 @@ msgstr ""
 "Ylemmän venttiilin avaaminen ja sulkeminen säätelee veden pääsyä "
 "painolastitankkeihin ja mahdollistaa siten sukeltamisen."
 
-#: activities/submarine/Submarine.qml:161
+#: activities/submarine/Submarine.qml:168
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -27382,7 +27444,7 @@ msgstr ""
 "virratapainolastitankeista pois tai vaihtoehtoisesti estää sen, mikä "
 "mahdollistaa vedenpinnalla kellumisen."
 
-#: activities/submarine/Submarine.qml:168
+#: activities/submarine/Submarine.qml:175
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -27395,7 +27457,7 @@ msgid ""
 msgstr ""
 "Ohjauspaneelin oikeammaisin kohde säätelee sukellusveneen sukellustasoja"
 
-#: activities/submarine/Submarine.qml:171
+#: activities/submarine/Submarine.qml:178
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -27409,7 +27471,7 @@ msgstr ""
 "Sukellusveneen sukellustasoja käytetään säätelemään sukellussyvyyttä "
 "tarkasti heti kun ollaan veden alla."
 
-#: activities/submarine/Submarine.qml:174
+#: activities/submarine/Submarine.qml:181
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -27423,7 +27485,7 @@ msgstr ""
 "Sukellusveneen liikkuessa veden alla tasojen kulman kasvattaminen tai "
 "pienentäminen nostaa tai laskee sukellusveneen sukellussyvyyttä."
 
-#: activities/submarine/Submarine.qml:177
+#: activities/submarine/Submarine.qml:184
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid ""
@@ -27436,7 +27498,7 @@ msgid ""
 msgstr ""
 "+-painike painaa sukellusvenettä syvemmälle, kun taas – nostaa sitä ylemmäs."
 
-#: activities/submarine/Submarine.qml:180
+#: activities/submarine/Submarine.qml:187
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Grab the crown to open the gate."
@@ -27444,7 +27506,7 @@ msgctxt "Submarine|"
 msgid "Grab the crown to open the gate."
 msgstr "Avaa portti nappaamalla kruunu."
 
-#: activities/submarine/Submarine.qml:183
+#: activities/submarine/Submarine.qml:190
 #, fuzzy
 #| msgctxt "submarine|"
 #| msgid "Check out the help menu for the keyboard controls."
@@ -27562,12 +27624,12 @@ msgstr ""
 "automaattisesti nykyisissä ja tulevissa arvauksissasi, kunnes poistat niiden "
 "merkinnät kaksoisnapsauttamalla niitä uudelleen."
 
-#: activities/superbrain/Superbrain.qml:167
+#: activities/superbrain/Superbrain.qml:174
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Tämä on oikeassa paikassa."
 
-#: activities/superbrain/Superbrain.qml:169
+#: activities/superbrain/Superbrain.qml:176
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Tämä on väärässä paikassa."
@@ -28199,24 +28261,24 @@ msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
 msgstr "Ratkaise vähennyslasku, 4 tai 5 lukua, 2 riviä."
 
-#: activities/vertical_subtraction/subtraction.js:79
+#: activities/vertical_subtraction/subtraction.js:78
 msgctxt "subtraction|"
 msgid "Write:"
 msgstr "Kirjoita:"
 
-#: activities/vertical_subtraction/subtraction.js:79
+#: activities/vertical_subtraction/subtraction.js:78
 msgctxt "subtraction|"
 msgid "Solve:"
 msgstr "Ratkaise:"
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
-#: activities/vertical_subtraction/subtraction.js:190
+#: activities/vertical_subtraction/subtraction.js:189
 #, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
 msgstr "Ratkaise: %1"
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:99
+#: activities/vertical_subtraction/VerticalSubtraction.qml:106
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid "Write your own addition and solve it."
@@ -28224,7 +28286,7 @@ msgctxt "VerticalSubtraction|"
 msgid "Write your own addition and solve it."
 msgstr "Kirjoita oma yhteenlasku ja ratkaise se."
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:100
+#: activities/vertical_subtraction/VerticalSubtraction.qml:107
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid "Write your own subtraction and solve it."
@@ -28232,12 +28294,12 @@ msgctxt "VerticalSubtraction|"
 msgid "Write your own subtraction and solve it."
 msgstr "Kirjoita oma vähennyslaskusi ja ratkaise se."
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:426
+#: activities/vertical_subtraction/VerticalSubtraction.qml:433
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
 msgstr "Valmis"
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:464
+#: activities/vertical_subtraction/VerticalSubtraction.qml:471
 msgctxt "VerticalSubtraction|"
 msgid "The result should not be a negative number."
 msgstr ""
