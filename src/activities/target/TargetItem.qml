@@ -27,10 +27,18 @@ Image {
 
     property int zoom: 2
     property alias model: targetModel
+    property int targetSize: 250
     property bool stopMe: false
     property list<int> scores: []
     property string scoreText
     property int scoreTotal
+
+    onTargetSizeChanged: {
+        width = Math.max(parent.width * zoom,
+                        targetSize * 2 * ApplicationInfo.ratio)
+        height = Math.max(parent.height * zoom,
+                          targetSize* 2 * ApplicationInfo.ratio)
+    }
 
     signal start
     signal stop
@@ -139,9 +147,9 @@ Image {
             required property int score
             anchors.centerIn: targetItem
             width: size * ApplicationInfo.ratio
-            height: size * ApplicationInfo.ratio
+            height: width
             color: circleColor
-            radius: width * 0.5
+            radius: width
             border.width: GCStyle.thinnestBorder
             border.color: "#40000000"
             
