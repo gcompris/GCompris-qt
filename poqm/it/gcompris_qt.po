@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2026-02-20 11:55+0100\n"
+"PO-Revision-Date: 2026-03-04 15:11+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -6844,16 +6844,6 @@ msgstr "Scopri gli ipotrocoidi e usali come strumenti di pittura digitale."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Make beautiful drawings by rolling the gear in the cogwheel with the "
-#| "chosen pen. Select a wheel size, a gear size, pen's settings and color "
-#| "from the popup panels, and press the play button to roll the gear. You "
-#| "can use the file menu to save your image, open a previously saved image, "
-#| "or create a new image with selected background color. Saving an image "
-#| "will save it in an SVG file (vector format), along with a PNG file (pixel "
-#| "format). Only the SVG file can be opened again from the activity."
 msgctxt "ActivityInfo|"
 msgid ""
 "Make beautiful drawings by rolling the gear in the cogwheel with the chosen "
@@ -6871,7 +6861,10 @@ msgstr ""
 "dentata con la penna scelta. Seleziona la dimensione della ruota, la "
 "dimensione dell'ingranaggio, le impostazioni della penna e il colore dai "
 "pannelli a comparsa e premi il pulsante di riproduzione per far scorrere "
-"l'ingranaggio. Puoi utilizzare il menu File per salvare l'immagine, aprire "
+"l'ingranaggio. Al primo livello, sono disponibili solo alcune specifiche "
+"combinazioni di ruote e ingranaggi per iniziare. Al secondo livello, sono "
+"disponibili tutte le combinazioni di dimensioni per offrire maggiore libertà "
+"creativa.Puoi utilizzare il menu File per salvare l'immagine, aprire "
 "un'immagine salvata in precedenza o creare una nuova immagine con il colore "
 "di sfondo selezionato. Il salvataggio di un'immagine la salverà in un file "
 "SVG (formato vettoriale), insieme a un file PNG (formato pixel). "
@@ -21987,19 +21980,20 @@ msgstr "Codifica del percorso relativo"
 #: activities/peg_solitaire/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
 msgid "Use the default starting hole"
-msgstr ""
+msgstr "Utilizza il buco di partenza predefinito"
 
 #. Activity title
 #: activities/peg_solitaire/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Peg solitaire"
-msgstr ""
+msgstr "Solitario con i pioli"
 
 #. Help title
 #: activities/peg_solitaire/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Remove all the pieces in the correct order until only one remains."
 msgstr ""
+"Rimuovi tutti i pezzi nell'ordine corretto finché non ne rimane solo uno."
 
 #. Help manual
 #: activities/peg_solitaire/ActivityInfo.qml:23
@@ -22014,36 +22008,39 @@ msgid ""
 "clicking on it. You can use the undo button to undo your last move, and the "
 "redo button to redo it."
 msgstr ""
+"Per muovere un pezzo, fallo saltare su un altro pezzo in direzione "
+"ortogonale, fino a un buco a due posizioni di distanza. Il pezzo saltato "
+"viene rimosso dalla tavola. Puoi fare clic su un pezzo mobile e poi sulla "
+"sua destinazione, oppure trascinarlo e rilasciarlo nella sua destinazione. "
+"La partita termina quando non è più possibile muovere altri pezzi e si vince "
+"se ne rimane solo uno. Se l'opzione per utilizzare il buco di partenza "
+"predefinita non è selezionata, devi scegliere il primo pezzo da rimuovere "
+"facendo clic su di esso. Puoi usare il pulsante «Annulla» per annullare "
+"l'ultima mossa e il pulsante «Ripeti» per ripeterla."
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:28
 msgctxt "peg_solitaire|"
 msgid "English board"
-msgstr ""
+msgstr "Tavola inglese"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:44
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "French Polynesia"
 msgctxt "peg_solitaire|"
 msgid "French board"
-msgstr "Polinesia Francese"
+msgstr "Tavola francese"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:61
 msgctxt "peg_solitaire|"
 msgid "32 holes diamond board"
-msgstr ""
+msgstr "Tavola a diamante con 32 buchi"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:79
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numerical order"
 msgctxt "peg_solitaire|"
 msgid "Asymmetrical board"
-msgstr "Ordine numerico"
+msgstr "Tavola asimmetrica"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15

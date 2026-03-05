@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-03-03 07:34+0100\n"
+"PO-Revision-Date: 2026-03-04 07:30+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -21636,19 +21636,20 @@ msgstr "Relativno kodiranje poti"
 #: activities/peg_solitaire/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
 msgid "Use the default starting hole"
-msgstr ""
+msgstr "Uporabi privzeto začetno luknjo"
 
 #. Activity title
 #: activities/peg_solitaire/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Peg solitaire"
-msgstr ""
+msgstr "Peg solitaire"
 
 #. Help title
 #: activities/peg_solitaire/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Remove all the pieces in the correct order until only one remains."
 msgstr ""
+"Odstranite vse figure v pravilnem vrstnem redu, dokler ne ostane samo ena."
 
 #. Help manual
 #: activities/peg_solitaire/ActivityInfo.qml:23
@@ -21663,36 +21664,38 @@ msgid ""
 "clicking on it. You can use the undo button to undo your last move, and the "
 "redo button to redo it."
 msgstr ""
+"Če želite premakniti figuro, jo pustite, da skoči na drugo figuro v "
+"pravokotni smeri, v luknjo, ki je dve mesti stran. Preskočena figura se "
+"odstrani s plošče. Kliknete lahko na premično figuro in nato na njen cilj "
+"ali pa jo povlečete in spustite na cilj. Igra je končana, ko ni mogoče "
+"premakniti več figur, in je zmagana, če ostane samo ena figura. Če možnost "
+"uporabe privzete začetne luknje ni izbrana, morate izbrati prvo figuro, ki "
+"jo želite odstraniti, tako da kliknete nanjo. Z gumbom za razveljavitev "
+"lahko razveljavite zadnjo potezo, z gumbom za ponovitev pa jo ponovite."
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:28
 msgctxt "peg_solitaire|"
 msgid "English board"
-msgstr ""
+msgstr "Angleška plošča"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:44
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "French Polynesia"
 msgctxt "peg_solitaire|"
 msgid "French board"
-msgstr "Francoska Polinezija"
+msgstr "Francoska plošča"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:61
 msgctxt "peg_solitaire|"
 msgid "32 holes diamond board"
-msgstr ""
+msgstr "plošča romb 7 32 luknjami"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:79
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numerical order"
 msgctxt "peg_solitaire|"
 msgid "Asymmetrical board"
-msgstr "Številčni vrstni red"
+msgstr "Asimetrična plošča"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15

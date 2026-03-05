@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-03-03 08:35-0300\n"
+"PO-Revision-Date: 2026-03-04 07:40-0300\n"
 "Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -21984,19 +21984,19 @@ msgstr "Codificação de caminho relativo"
 #: activities/peg_solitaire/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
 msgid "Use the default starting hole"
-msgstr ""
+msgstr "Usar o buraco inicial padrão"
 
 #. Activity title
 #: activities/peg_solitaire/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Peg solitaire"
-msgstr ""
+msgstr "Resta um"
 
 #. Help title
 #: activities/peg_solitaire/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Remove all the pieces in the correct order until only one remains."
-msgstr ""
+msgstr "Remova todas as peças na ordem correta até que reste apenas uma."
 
 #. Help manual
 #: activities/peg_solitaire/ActivityInfo.qml:23
@@ -22011,36 +22011,39 @@ msgid ""
 "clicking on it. You can use the undo button to undo your last move, and the "
 "redo button to redo it."
 msgstr ""
+"Para mover uma peça, faça-a saltar uma peça na direção ortogonal, para um "
+"buraco a duas posições de distância. A peça saltada é removida do tabuleiro. "
+"Você pode clicar em uma peça que pode ser movida e depois em seu destino, ou "
+"arrastá-la e soltá-la no destino. O jogo termina quando não for mais "
+"possível mover nenhuma peça e é ganho se restar apenas uma peça. Se a opção "
+"de usar o buraco inicial padrão não estiver selecionada, você precisa "
+"escolher a primeira peça a ser removida clicando nela. Você pode usar o "
+"botão \"desfazer\" para desfazer seu último movimento e o botão \"refazer\" "
+"para refazê-lo."
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:28
 msgctxt "peg_solitaire|"
 msgid "English board"
-msgstr ""
+msgstr "Tabuleiro inglês"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:44
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "French Polynesia"
 msgctxt "peg_solitaire|"
 msgid "French board"
-msgstr "Polinésia Francesa"
+msgstr "Tabuleiro francês"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:61
 msgctxt "peg_solitaire|"
 msgid "32 holes diamond board"
-msgstr ""
+msgstr "Tabuleiro em diamante com 32 buracos"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:79
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numerical order"
 msgctxt "peg_solitaire|"
 msgid "Asymmetrical board"
-msgstr "Ordem numérica"
+msgstr "Tabuleiro assimétrico"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15

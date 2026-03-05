@@ -20460,19 +20460,20 @@ msgstr "ფარდობითი ბილიკის კოდირებ�
 #: activities/peg_solitaire/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
 msgid "Use the default starting hole"
-msgstr ""
+msgstr "ნაგულისხმევი საწყისი ნახვრეტის გამოყენება"
 
 #. Activity title
 #: activities/peg_solitaire/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Peg solitaire"
-msgstr ""
+msgstr "ერთკაციანი პასეანსი"
 
 #. Help title
 #: activities/peg_solitaire/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Remove all the pieces in the correct order until only one remains."
 msgstr ""
+"მოაცილეთ ყველა კარტი სწორი მიმდევრობით, სანამ, მხოლოდ, ერთი არ დაგრჩებათ."
 
 #. Help manual
 #: activities/peg_solitaire/ActivityInfo.qml:23
@@ -20492,31 +20493,25 @@ msgstr ""
 #: activities/peg_solitaire/peg_solitaire.js:28
 msgctxt "peg_solitaire|"
 msgid "English board"
-msgstr ""
+msgstr "ინგლისური დაფა"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:44
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "French Polynesia"
 msgctxt "peg_solitaire|"
 msgid "French board"
-msgstr "ფრანგული პოლინეზია"
+msgstr "ფრანგული დაფა"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:61
 msgctxt "peg_solitaire|"
 msgid "32 holes diamond board"
-msgstr ""
+msgstr "32 ნახვრეტიანი ალმასის დაფა"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:79
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numerical order"
 msgctxt "peg_solitaire|"
 msgid "Asymmetrical board"
-msgstr "რიცხვითი მიმდევრობა"
+msgstr "ასიმეტრიული დაფა"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -20529,6 +20524,7 @@ msgstr "საჯარიმო დარტყმა"
 msgctxt "ActivityInfo|"
 msgid "Double click or double tap on any side of the goal in order to score."
 msgstr ""
+"ორმაგი წკაპი ან ორმაგი დატყაპუნება დარტყმის მიმართულებით გოლის გასატანად."
 
 #. Help manual
 #: activities/penalty/ActivityInfo.qml:23

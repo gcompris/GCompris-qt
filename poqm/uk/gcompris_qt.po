@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2026-03-03 15:40+0200\n"
+"PO-Revision-Date: 2026-03-04 15:07+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -21852,19 +21852,19 @@ msgstr "Кодування відносного шляху"
 #: activities/peg_solitaire/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
 msgid "Use the default starting hole"
-msgstr ""
+msgstr "Використовувати типову початкове порожнє поле"
 
 #. Activity title
 #: activities/peg_solitaire/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Peg solitaire"
-msgstr ""
+msgstr "Солітер"
 
 #. Help title
 #: activities/peg_solitaire/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Remove all the pieces in the correct order until only one remains."
-msgstr ""
+msgstr "Вилучіть усі шматочки у належному порядку, доки не лишиться лише один."
 
 #. Help manual
 #: activities/peg_solitaire/ActivityInfo.qml:23
@@ -21879,36 +21879,40 @@ msgid ""
 "clicking on it. You can use the undo button to undo your last move, and the "
 "redo button to redo it."
 msgstr ""
+"Щоб перемістити фішку, змусьте її стрибнути на іншу фішку в ортогональному "
+"напрямку до отвору, розташованого на дві позиції далі. Фішку, на яку "
+"перестрибнули, буде вилучено з дошки. Ви можете натиснути на рухомій фішці, "
+"а потім на її пункті призначення, або перетягнути її до пункту призначення. "
+"Гра закінчується, коли не можна буде перемістити жодної фішки, а виграшем "
+"вважається позиція, коли залишається лише одна фішка. Якщо не позначено "
+"пункт використання типового початкового отвору, вам слід буде вибрати першу "
+"фішку для вилучення, клацнувши на ній. Ви можете скористатися кнопкою "
+"скасування, щоб скасувати свій останній хід, і кнопкою повторення, щоб "
+"повторити його."
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:28
 msgctxt "peg_solitaire|"
 msgid "English board"
-msgstr ""
+msgstr "Англійська дошка"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:44
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "French Polynesia"
 msgctxt "peg_solitaire|"
 msgid "French board"
-msgstr "Французька Полінезія"
+msgstr "Французька дошка"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:61
 msgctxt "peg_solitaire|"
 msgid "32 holes diamond board"
-msgstr ""
+msgstr "Дошка-ромб із 32 отворами"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:79
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numerical order"
 msgctxt "peg_solitaire|"
 msgid "Asymmetrical board"
-msgstr "Порядок чисел"
+msgstr "Асиметрична дошка"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15

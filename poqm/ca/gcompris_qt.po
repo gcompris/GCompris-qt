@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2026-03-03 10:24+0100\n"
+"PO-Revision-Date: 2026-03-04 10:52+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -22256,19 +22256,20 @@ msgstr "Codificació relativa del camí"
 #: activities/peg_solitaire/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
 msgid "Use the default starting hole"
-msgstr ""
+msgstr "Usa el forat d'inici predeterminat"
 
 #. Activity title
 #: activities/peg_solitaire/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Peg solitaire"
-msgstr ""
+msgstr "Solitari"
 
 #. Help title
 #: activities/peg_solitaire/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Remove all the pieces in the correct order until only one remains."
 msgstr ""
+"Elimina totes les peces amb l'ordre correcte fins que només en quedi una."
 
 #. Help manual
 #: activities/peg_solitaire/ActivityInfo.qml:23
@@ -22283,36 +22284,39 @@ msgid ""
 "clicking on it. You can use the undo button to undo your last move, and the "
 "redo button to redo it."
 msgstr ""
+"Per a moure una peça, fes que salti una altra en direcció ortogonal, a un "
+"forat a dues posicions de distància. La peça saltada s'elimina del tauler. "
+"Pots fer clic sobre una peça que es pugui moure i després sobre la seva "
+"destinació, o arrossegar-la i deixar-la anar a la seva destinació. El joc "
+"s'acaba quan no es pot moure cap més peça, i es guanya si només queda una "
+"peça. Si l'opció d'utilitzar el forat inicial predeterminat no està "
+"seleccionada, has de triar la primera peça a eliminar fent-hi clic a sobre. "
+"Pots utilitzar el botó de desfer per a desfer l'últim moviment, i el botó de "
+"refer per a refer-lo."
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:28
 msgctxt "peg_solitaire|"
 msgid "English board"
-msgstr ""
+msgstr "Tauler anglès"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:44
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "French Polynesia"
 msgctxt "peg_solitaire|"
 msgid "French board"
-msgstr "Polinèsia Francesa"
+msgstr "Tauler francès"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:61
 msgctxt "peg_solitaire|"
 msgid "32 holes diamond board"
-msgstr ""
+msgstr "Tauler de diamant de 32 forats"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:79
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numerical order"
 msgctxt "peg_solitaire|"
 msgid "Asymmetrical board"
-msgstr "Ordre numèric"
+msgstr "Tauler asimètric"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15

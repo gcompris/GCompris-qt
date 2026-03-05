@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-03-03 10:49+0100\n"
+"PO-Revision-Date: 2026-03-04 12:22+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -21870,19 +21870,21 @@ msgstr "Codering van het relatieve pad"
 #: activities/peg_solitaire/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
 msgid "Use the default starting hole"
-msgstr ""
+msgstr "Gebruik het standaard begingat"
 
 #. Activity title
 #: activities/peg_solitaire/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Peg solitaire"
-msgstr ""
+msgstr "Pin-solitaire"
 
 #. Help title
 #: activities/peg_solitaire/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Remove all the pieces in the correct order until only one remains."
 msgstr ""
+"Alle pinnen in de juiste volgorde verwijderen totdat er slechts een "
+"overblijft."
 
 #. Help manual
 #: activities/peg_solitaire/ActivityInfo.qml:23
@@ -21897,36 +21899,40 @@ msgid ""
 "clicking on it. You can use the undo button to undo your last move, and the "
 "redo button to redo it."
 msgstr ""
+"Om een pin te verplaatsen, laat je het over een andere pin in een "
+"orthogonale (horizontaal of verticaal) richting springen, naar een gat twee "
+"posities verderop. De pin waaroverheen gesprongen wordt wordt van het bord "
+"verwijderd. Je kunt op een verplaatsbare pin klikken en vervolgens op de "
+"bestemming, of het naar de bestemming slepen. Het spel is afgelopen wanneer "
+"er geen pinnen meer verplaatst kunnen worden en is gewonnen als er nog maar "
+"één pin over is. Als de optie om het standaard begingat te gebruiken niet is "
+"geselecteerd, moet je de eerste pin die je wilt verwijderen kiezen door erop "
+"te klikken. Je kunt de knop 'Ongedaan maken' gebruiken om je laatste zet "
+"ongedaan te maken en de knop 'Opnieuw' om deze opnieuw uit te voeren."
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:28
 msgctxt "peg_solitaire|"
 msgid "English board"
-msgstr ""
+msgstr "Engels bord"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:44
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "French Polynesia"
 msgctxt "peg_solitaire|"
 msgid "French board"
-msgstr "Frans-Polynesië"
+msgstr "Frans bord"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:61
 msgctxt "peg_solitaire|"
 msgid "32 holes diamond board"
-msgstr ""
+msgstr "Ruitvormig bord met 32 gaten"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:79
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numerical order"
 msgctxt "peg_solitaire|"
 msgid "Asymmetrical board"
-msgstr "Numerieke volgorde"
+msgstr "Asymmetrisch bord"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15

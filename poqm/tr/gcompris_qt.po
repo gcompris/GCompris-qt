@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-03-03 10:27+0300\n"
+"PO-Revision-Date: 2026-03-04 13:09+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -21620,19 +21620,19 @@ msgstr "Göreceli yol kodlama"
 #: activities/peg_solitaire/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
 msgid "Use the default starting hole"
-msgstr ""
+msgstr "Öntanımlı başlangıç deliğini kullan"
 
 #. Activity title
 #: activities/peg_solitaire/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Peg solitaire"
-msgstr ""
+msgstr "Solo Test"
 
 #. Help title
 #: activities/peg_solitaire/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Remove all the pieces in the correct order until only one remains."
-msgstr ""
+msgstr "Yalnızca bir tane kalana kadar tüm parçaları doğru sırada kaldır."
 
 #. Help manual
 #: activities/peg_solitaire/ActivityInfo.qml:23
@@ -21647,36 +21647,39 @@ msgid ""
 "clicking on it. You can use the undo button to undo your last move, and the "
 "redo button to redo it."
 msgstr ""
+"Bir taşı hareket ettirmek için, onu dik yönde başka bir taşın üzerinden, iki "
+"pozisyon ötedeki bir deliğe zıplat. Zıplayan taş tahtadan kaldırılır. "
+"Hareket ettirilebilir bir taşa ve ardından hedef konumuna tıklayabilir veya "
+"sürükleyip bırakarak hedef konumuna taşıyabilirsin. Oyun, artık hiçbir taş "
+"hareket ettirilemediğinde sona erer ve yalnızca bir taş kaldığında "
+"kazanılır. Öntanımlı başlangıç deliğini kullanma seçeneği seçilmemişse "
+"kaldırmak istediğin ilk taşı üzerine tıklayarak seçmen gerekir. Son hamleni "
+"geri almak için geri al düğmesini, yinelemek içinse yinele düğmesini "
+"kullanabilirsin."
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:28
 msgctxt "peg_solitaire|"
 msgid "English board"
-msgstr ""
+msgstr "İngiliz Tahtası"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:44
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "French Polynesia"
 msgctxt "peg_solitaire|"
 msgid "French board"
-msgstr "Fransız Polinezyası"
+msgstr "Fransız Tahtası"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:61
 msgctxt "peg_solitaire|"
 msgid "32 holes diamond board"
-msgstr ""
+msgstr "32 Delikli Elmas Tahta"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:79
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numerical order"
 msgctxt "peg_solitaire|"
 msgid "Asymmetrical board"
-msgstr "Sayısal sıra"
+msgstr "Asimetrik Tahta"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
