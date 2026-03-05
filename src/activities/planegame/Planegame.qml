@@ -28,14 +28,14 @@ ActivityBase {
     property ListModel tutorialInstructions
     property bool showTutorial: false
 
-    property int oldWidth: width
+    property int oldWidth: 1
     onWidthChanged: {
         // Reposition helico and clouds, same for height
         Activity.repositionObjectsOnWidthChanged(width / oldWidth)
         oldWidth = width
     }
 
-    property int oldHeight: height
+    property int oldHeight: 1
     onHeightChanged: {
         // Reposition helico and clouds, same for height
         Activity.repositionObjectsOnHeightChanged(height / oldHeight)
@@ -44,6 +44,11 @@ ActivityBase {
 
      onActivityNextLevel: {
          Activity.nextLevel()
+    }
+
+    Component.onCompleted: {
+        oldWidth = width;
+        oldHeight = height;
     }
 
     pageComponent: Image {
@@ -85,6 +90,16 @@ ActivityBase {
             property bool showTutorial: activity.showTutorial
             property bool goToNextLevel: false
             property alias toolTipText: toolTipPanel.textItem
+
+            // Fastest speed for last level
+            property int fastestSpeed: 10000
+            // Slowest speed for 1st level
+            property int slowestSpeed: 15000
+            // Speed range between fastest and slowest
+            readonly property int accelPerLevel: (slowestSpeed - fastestSpeed) / (numberOfLevel - 1)
+            property int cloudSpeed: slowestSpeed - (accelPerLevel * currentLevel)
+            // Generate new cloud around halfway of previous cloud
+            property int cloudCreationSpeed: cloudSpeed * 0.5
        }
 
        onVoiceDone: {
@@ -187,7 +202,7 @@ ActivityBase {
             id: cloudCreation
             running: false
             repeat: true
-            interval: 10200 - (bar.level * 200)
+            interval: items.cloudCreationSpeed
             onTriggered: Activity.createCloud()
         }
 

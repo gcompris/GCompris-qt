@@ -86,7 +86,6 @@ function initLevel() {
     cloudDestroy(clouds)
     cloudDestroy(cloudsErased)
 
-    // Tend towards 0.5 ratio
     items.plane.state = "init"
     items.movePlaneTimer.interval = 1000
     items.movePlaneTimer.start();
@@ -115,6 +114,10 @@ function repositionObjectsOnWidthChanged(factor) {
     }
     for(var i = clouds.length - 1; i >= 0 ; --i) {
         var cloud = clouds[i];
+        cloud.cloudSpeed = 1;
+        cloud.x *= factor;
+        cloud.cloudSpeed = cloud.x * items.cloudSpeed / items.activityBackground.width;
+        cloud.x = -cloud.width - 1;
     }
 }
 
@@ -138,7 +141,8 @@ function createCloud() {
                 items.activityBackground, {
                     "cloudBackground": items.activityBackground,
                     "x": items.activityBackground.width,
-                    "heightRatio": 1.0 - 0.5 * items.currentLevel / 10
+                    "heightRatio": 1.0 - 0.5 * items.currentLevel / 10,
+                    "cloudSpeed": items.cloudSpeed
                 });
 
     /* Random cloud number but at least one in 3 */
