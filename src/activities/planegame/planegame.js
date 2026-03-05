@@ -17,7 +17,6 @@
 var url = "qrc:/gcompris/src/activities/planegame/"
 
 var max_velocity = 500 * GCompris.ApplicationInfo.ratio
-var numberOfLevel
 var currentSubLevel
 var numberOfSubLevels
 
@@ -41,8 +40,8 @@ function start(items_, dataset_) {
 
     items = items_
     dataset = dataset_
-    numberOfLevel = dataset.length
-    items.currentLevel = Core.getInitialLevel(numberOfLevel)
+    items.numberOfLevel = dataset.length
+    items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
     if(items.showTutorial === false) {
       initLevel()
     }
@@ -87,7 +86,6 @@ function initLevel() {
     cloudDestroy(clouds)
     cloudDestroy(cloudsErased)
 
-    // Tend towards 0.5 ratio
     items.plane.state = "init"
     items.movePlaneTimer.interval = 1000
     items.movePlaneTimer.start();
@@ -100,12 +98,12 @@ function initLevel() {
 }
 
 function nextLevel() {
-    items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
     initLevel();
 }
 
@@ -116,6 +114,10 @@ function repositionObjectsOnWidthChanged(factor) {
     }
     for(var i = clouds.length - 1; i >= 0 ; --i) {
         var cloud = clouds[i];
+        cloud.cloudSpeed = 1;
+        cloud.x *= factor;
+        cloud.cloudSpeed = cloud.x * items.cloudSpeed / items.activityBackground.width;
+        cloud.x = -cloud.width - 1;
     }
 }
 
@@ -139,7 +141,8 @@ function createCloud() {
                 items.activityBackground, {
                     "cloudBackground": items.activityBackground,
                     "x": items.activityBackground.width,
-                    "heightRatio": 1.0 - 0.5 * items.currentLevel / 10
+                    "heightRatio": 1.0 - 0.5 * items.currentLevel / 10,
+                    "cloudSpeed": items.cloudSpeed
                 });
 
     /* Random cloud number but at least one in 3 */

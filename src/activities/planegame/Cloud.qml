@@ -17,6 +17,7 @@ Image {
     property Item cloudBackground
     property alias text: number.text
     property double heightRatio: 1
+    property int cloudSpeed: 1
 
     /* An helper property to remember if a cloud has been wrongly touched */
     property bool touched: false
@@ -55,7 +56,7 @@ Image {
         y = Activity.getRandomInt(0, cloudBackground.height - (cloud.height + Activity.items.bar.height))
     }
 
-    Behavior on x { PropertyAnimation { duration: 20000 } }
+    Behavior on x { PropertyAnimation { duration: cloud.cloudSpeed } }
     Behavior on opacity { PropertyAnimation { duration: 400 } }
 
     Timer {
