@@ -37,9 +37,11 @@ function initLevel() {
     items.errorRectangle.resetState()
     items.targetModel.clear()
     items.arrowFlying = false
-    for(var i = levels[items.currentLevel].length - 1;  i >= 0 ; --i) {
+    var biggestCircleIndex = levels[items.currentLevel].length - 1
+    for(var i = biggestCircleIndex;  i >= 0 ; --i) {
         items.targetModel.append(levels[items.currentLevel][i])
     }
+    items.targetSize = levels[items.currentLevel][biggestCircleIndex].size
     // Reset the arrows first
     items.nbArrow = 0
     items.nbArrow = Math.min(items.currentLevel + 3, 6)
