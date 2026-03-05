@@ -216,10 +216,9 @@ ActivityBase {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             width: 60 * ApplicationInfo.ratio
-            anchors.bottom: bar.top
-            anchors.bottomMargin: bar.height * 0.5
+            anchors.bottom: score.top
             anchors.right: parent.right
-            anchors.rightMargin: GCStyle.baseMargins
+            anchors.margins: GCStyle.baseMargins
             mouseArea.enabled: !items.inputLocked
             visible: items.currentArrow == items.nbArrow
             onClicked: {
@@ -303,8 +302,9 @@ ActivityBase {
         Score {
             id: score
             anchors.right: parent.right
-            anchors.top: parent.top
-            anchors.bottom: undefined
+            anchors.top: undefined
+            anchors.bottom: bar.top
+            anchors.bottomMargin: bar.height * 0.5
             currentSubLevel: 0
             numberOfSubLevels: items.numberOfSubLevel
             onStop: Activity.nextSubLevel()
