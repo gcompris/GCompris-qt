@@ -36,7 +36,7 @@ var fishes = [
             {
               "imgName": "cichlid4.webp",
               "nbFrame": 2,
-              "width": 73,
+              "width": 75,
               "height": 44
             },
             {
@@ -60,7 +60,7 @@ var fishes = [
             {
               "imgName": "f00.webp",
               "nbFrame": 2,
-              "width": 64,
+              "width": 66,
               "height": 59
             },
             {
@@ -72,73 +72,73 @@ var fishes = [
             {
               "imgName": "f02.webp",
               "nbFrame": 2,
-              "width": 71,
+              "width": 73,
               "height": 44
             },
             {
               "imgName": "f03.webp",
               "nbFrame": 2,
-              "width": 83,
+              "width": 85,
               "height": 52
             },
             {
               "imgName": "f04.webp",
               "nbFrame": 2,
-              "width": 93,
+              "width": 95,
               "height": 62
             },
             {
               "imgName": "f05.webp",
               "nbFrame": 2,
-              "width": 90,
+              "width": 92,
               "height": 49
             },
             {
               "imgName": "f06.webp",
               "nbFrame": 2,
-              "width": 93,
+              "width": 95,
               "height": 44
             },
             {
               "imgName": "f07.webp",
               "nbFrame": 2,
-              "width": 82,
+              "width": 84,
               "height": 75
             },
             {
               "imgName": "f08.webp",
               "nbFrame": 2,
-              "width": 91,
+              "width": 93,
               "height": 70
             },
             {
               "imgName": "f09.webp",
               "nbFrame": 2,
-              "width": 108,
+              "width": 110,
               "height": 86
             },
             {
               "imgName": "f10.webp",
               "nbFrame": 2,
-              "width": 97,
+              "width": 99,
               "height": 60
             },
             {
               "imgName": "f11.webp",
               "nbFrame": 2,
-              "width": 116,
+              "width": 118,
               "height": 42
             },
             {
               "imgName": "f12.webp",
               "nbFrame": 2,
-              "width": 100,
+              "width": 102,
               "height": 35
             },
             {
               "imgName": "f13.webp",
               "nbFrame": 2,
-              "width": 116,
+              "width": 118,
               "height": 73
             },
             {
@@ -156,19 +156,19 @@ var fishes = [
             {
               "imgName": "QueenAngel.webp",
               "nbFrame": 2,
-              "width": 78,
+              "width": 80,
               "height": 54
             },
             {
               "imgName": "shark1.webp",
               "nbFrame": 2,
-              "width": 187,
+              "width": 189,
               "height": 53
             },
             {
               "imgName": "six_barred.webp",
               "nbFrame": 2,
-              "width": 76,
+              "width": 78,
               "height": 63
             },
             {
