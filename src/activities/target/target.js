@@ -64,6 +64,7 @@ function initSubLevel() {
         }
         items.targetModel.append(currentCircle)
     }
+    items.targetValues = levelData.circleValues
     items.targetSize = (biggestCircleIndex + 1) * circleStepSize
     // Reset the arrows first
     items.nbArrow = levelData.arrows
@@ -128,13 +129,16 @@ function previousLevel() {
 
 function checkAnswer() {
     items.inputLocked = true;
-    if(items.targetItem.scoreTotal.toString() === items.userEntry.text) {
+    items.expectedAnswer = items.targetItem.scoreTotal.toString();
+    if( items.expectedAnswer === items.userEntry.text) {
         items.score.currentSubLevel++
         items.score.playWinAnimation()
         items.goodAnswerSound.play()
+        items.client.sendToServer(true);
     }
     else {
         items.errorRectangle.startAnimation()
         items.badAnswerSound.play()
+        items.client.sendToServer(false);
     }
 }

@@ -80,6 +80,9 @@ ActivityBase {
             property alias targetItem: targetItem
             property alias arrowRepeater: arrowRepeater
             property alias userEntry: userEntry
+            property string expectedAnswer: ""
+            property list<int> targetValues: []
+            property alias client: client
             property int currentArrow
             property int nbArrow
             property int currentSubLevel
@@ -93,6 +96,21 @@ ActivityBase {
             Activity.start(items)
         }
         onStop: { Activity.stop() }
+
+        Client {    // Client for gcompris-teachers. Prepare data from activity to server
+            id: client
+            getDataCallback: function() {
+                var data = {
+                    "targetValues": items.targetValues,
+                    "addition": items.targetItem.scoreText,
+                    "answer": items.userEntry.text,
+                    "expectedAnswer": items.expectedAnswer
+                }
+
+                return data;
+            }
+        }
+
 
         TargetItem {
             id: targetItem
