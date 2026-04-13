@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-04-09 09:04+0300\n"
+"PO-Revision-Date: 2026-04-12 09:54+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -1339,17 +1339,14 @@ msgid "Mode"
 msgstr "Режим"
 
 #: server/activities/share/ShareDataDisplay.qml:49
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Number of circles"
 msgctxt "ShareDataDisplay|"
 msgid "Number of candies:"
-msgstr "Кількість кіл"
+msgstr "Кількість цукерок:"
 
 #: server/activities/share/ShareDataDisplay.qml:76
 msgctxt "ShareDataDisplay|"
 msgid "Placed girls:"
-msgstr ""
+msgstr "Розміщені дівчата:"
 
 #. Display a fraction
 #: server/activities/share/ShareDataDisplay.qml:87
@@ -1358,45 +1355,39 @@ msgstr ""
 #, qt-format
 msgctxt "ShareDataDisplay|"
 msgid "%1 / %2"
-msgstr ""
+msgstr "%1 / %2"
 
 #: server/activities/share/ShareDataDisplay.qml:107
 msgctxt "ShareDataDisplay|"
 msgid "Placed boys:"
-msgstr ""
+msgstr "Розміщені хлопчики:"
 
 #: server/activities/share/ShareDataDisplay.qml:137
 msgctxt "ShareDataDisplay|"
 msgid "Expected candies per child:"
-msgstr ""
+msgstr "Очікувана кількість цукерок на дитину:"
 
 #: server/activities/share/ShareDataDisplay.qml:164
 msgctxt "ShareDataDisplay|"
 msgid "Candies for girls:"
-msgstr ""
+msgstr "Цукерки для дівчаток:"
 
 #: server/activities/share/ShareDataDisplay.qml:195
 msgctxt "ShareDataDisplay|"
 msgid "Candies for boys:"
-msgstr ""
+msgstr "Цукерки для хлопчиків:"
 
 #: server/activities/share/ShareDataDisplay.qml:224
 msgctxt "ShareDataDisplay|"
 msgid "Jar placed:"
-msgstr ""
+msgstr "Розміщені банки"
 
 #: server/activities/share/ShareDataDisplay.qml:234
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Yes"
 msgctxt "ShareDataDisplay|"
 msgid "Yes"
 msgstr "Так"
 
 #: server/activities/share/ShareDataDisplay.qml:234
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "No"
 msgctxt "ShareDataDisplay|"
 msgid "No"
 msgstr "Ні"
@@ -1404,12 +1395,9 @@ msgstr "Ні"
 #: server/activities/share/ShareDataDisplay.qml:251
 msgctxt "ShareDataDisplay|"
 msgid "Candies in the jar:"
-msgstr ""
+msgstr "Цукерок у банці:"
 
 #: server/activities/share/ShareEditor.qml:22
-#, fuzzy
-#| msgctxt "ActivityEditor|"
-#| msgid "Rules to create a valid dataset:"
 msgctxt "ShareEditor|"
 msgid "Rules to create a valid dataset:"
 msgstr "Правила створення коректного набору даних:"
@@ -1418,7 +1406,7 @@ msgstr "Правила створення коректного набору да
 msgctxt "ShareEditor|"
 msgid ""
 "In general, there can not be more than 6 children, and 6 candies per child."
-msgstr ""
+msgstr "Загалом, може бути не більше 6 дітей і 6 цукерок на дитину."
 
 #: server/activities/share/ShareEditor.qml:26
 msgctxt "ShareEditor|"
@@ -1426,6 +1414,8 @@ msgid ""
 "If \"Random numbers\" is selected, the number of already placed candies per "
 "child must be defined such that not all candies are already placed."
 msgstr ""
+"Якщо вибрано «Випадкові числа», кількість уже розміщених цукерок на дитину "
+"має бути визначена таким чином, щоб не всі цукерки вже були розміщені."
 
 #: server/activities/share/ShareEditor.qml:28
 msgctxt "ShareEditor|"
@@ -1433,130 +1423,95 @@ msgid ""
 "The \"Instruction\" field allows to give a specific instruction for each "
 "sublevel. If it is empty, a default instruction text is used."
 msgstr ""
+"Поле «Настанови» надає змогу вказати конкретні настанови для кожного "
+"підрівня. Якщо воно порожнє, буде використано типовий текст настанов."
 
 #: server/activities/share/ShareEditor.qml:33
-#, fuzzy
-#| msgctxt "AlgebraEditor|"
-#| msgid "Shuffle"
 msgctxt "ShareEditor|"
 msgid "Shuffle"
 msgstr "Перемішати"
 
 #: server/activities/share/ShareEditor.qml:34
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "ShareEditor|"
 msgid "Sublevels"
 msgstr "Підрівні"
 
 #: server/activities/share/ShareEditor.qml:40
-#, fuzzy
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "Random numbers"
 msgctxt "ShareEditor|"
 msgid "Random numbers"
 msgstr "Випадкові числа"
 
 #: server/activities/share/ShareEditor.qml:44
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Number of circles"
 msgctxt "ShareEditor|"
 msgid "Number of girls"
-msgstr "Кількість кіл"
+msgstr "Кількість дівчаток"
 
 #: server/activities/share/ShareEditor.qml:45
-#, fuzzy
-#| msgctxt "VerticalEditor|"
-#| msgid "Number of lines"
 msgctxt "ShareEditor|"
 msgid "Number of boys"
-msgstr "Кількість рядків"
+msgstr "Кількість хлопчиків"
 
 #: server/activities/share/ShareEditor.qml:46
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Number of circles"
 msgctxt "ShareEditor|"
 msgid "Number of candies"
-msgstr "Кількість кіл"
+msgstr "Кількість цукерок"
 
 #: server/activities/share/ShareEditor.qml:47
 msgctxt "ShareEditor|"
 msgid "Candies already placed per girl"
-msgstr ""
+msgstr "Кількість вже розміщених цукерок на дівчинку"
 
 #: server/activities/share/ShareEditor.qml:48
 msgctxt "ShareEditor|"
 msgid "Candies already placed per boy"
-msgstr ""
+msgstr "Кількість вже розміщених цукерок на хлопчика"
 
 #: server/activities/share/ShareEditor.qml:49
 msgctxt "ShareEditor|"
 msgid "Force showing the jar"
-msgstr ""
+msgstr "Примусовий показ банки"
 
 #: server/activities/share/ShareEditor.qml:52
-#, fuzzy
-#| msgctxt "MagicHatEditor|"
-#| msgid "Maximum number of stars"
 msgctxt "ShareEditor|"
 msgid "Maximum number of girls"
-msgstr "Максимальна кількість зірок"
+msgstr "Максимальна кількість дівчат"
 
 #: server/activities/share/ShareEditor.qml:53
-#, fuzzy
-#| msgctxt "MagicHatEditor|"
-#| msgid "Maximum number of stars"
 msgctxt "ShareEditor|"
 msgid "Maximum number of boys"
-msgstr "Максимальна кількість зірок"
+msgstr "Максимальна кількість хлопчиків"
 
 #: server/activities/share/ShareEditor.qml:54
-#, fuzzy
-#| msgctxt "MagicHatEditor|"
-#| msgid "Maximum number of stars"
 msgctxt "ShareEditor|"
 msgid "Maximum number of candies"
-msgstr "Максимальна кількість зірок"
+msgstr "Максимальна кількість цукерок"
 
 #: server/activities/share/ShareEditor.qml:55
 msgctxt "ShareEditor|"
 msgid "Already place some candies"
-msgstr ""
+msgstr "Вже розміщено деякі цукерки"
 
 #: server/activities/share/ShareEditor.qml:58
-#, fuzzy
-#| msgctxt "FractionsCreateEditor|"
-#| msgid "Instruction"
 msgctxt "ShareEditor|"
 msgid "Instruction"
 msgstr "Настанови"
 
 #: server/activities/share/ShareEditor.qml:289
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "ShareEditor|"
 msgid "Dataset is empty."
 msgstr "Набір даних є порожнім."
 
 #: server/activities/share/ShareEditor.qml:299
-#, fuzzy, qt-format
-#| msgctxt "ComparatorEditor|"
-#| msgid "Level %1 must not be empty."
+#, qt-format
 msgctxt "ShareEditor|"
 msgid "Level %1 must not be empty."
 msgstr "Рівень %1 має бути непорожнім."
 
 #: server/activities/share/ShareEditor.qml:309
-#, fuzzy, qt-format
-#| msgctxt "TensComplementFindEditor|"
-#| msgid "Sublevel %2 of Level %1 must not be empty."
+#, qt-format
 msgctxt "ShareEditor|"
 msgid "In Sublevel %2 of Level %1, the total number of children is 0."
-msgstr "Підрівень %2 рівня %1 має бути непорожнім."
+msgstr "На підрівні %2 рівня %1 загальна кількість дітей дорівнює 0."
 
 #: server/activities/share/ShareEditor.qml:317
 #, qt-format
@@ -1564,11 +1519,10 @@ msgctxt "ShareEditor|"
 msgid ""
 "In Sublevel %2 of Level %1, the number of already placed candies is too high."
 msgstr ""
+"На підрівні %2 рівня %1 кількість вже розміщених цукерок є надто великою."
 
 #: server/activities/share/ShareEditor.qml:324
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "ShareEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Слід виправити такі помилки:<ul>%1</ul>"

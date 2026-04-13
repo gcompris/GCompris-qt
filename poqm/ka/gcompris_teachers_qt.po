@@ -1338,17 +1338,14 @@ msgid "Mode"
 msgstr "რეჟიმი"
 
 #: server/activities/share/ShareDataDisplay.qml:49
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Number of circles"
 msgctxt "ShareDataDisplay|"
 msgid "Number of candies:"
-msgstr "წრეების რაოდენობა"
+msgstr "კონფეტების რაოდენობა:"
 
 #: server/activities/share/ShareDataDisplay.qml:76
 msgctxt "ShareDataDisplay|"
 msgid "Placed girls:"
-msgstr ""
+msgstr "მოთავსებული გოგონები:"
 
 #. Display a fraction
 #: server/activities/share/ShareDataDisplay.qml:87
@@ -1357,45 +1354,39 @@ msgstr ""
 #, qt-format
 msgctxt "ShareDataDisplay|"
 msgid "%1 / %2"
-msgstr ""
+msgstr "%1 / %2"
 
 #: server/activities/share/ShareDataDisplay.qml:107
 msgctxt "ShareDataDisplay|"
 msgid "Placed boys:"
-msgstr ""
+msgstr "მოთავსებული ბიჭები:"
 
 #: server/activities/share/ShareDataDisplay.qml:137
 msgctxt "ShareDataDisplay|"
 msgid "Expected candies per child:"
-msgstr ""
+msgstr "მოსალოდნელი კონფეტი თითოეული ბავშვისთვის:"
 
 #: server/activities/share/ShareDataDisplay.qml:164
 msgctxt "ShareDataDisplay|"
 msgid "Candies for girls:"
-msgstr ""
+msgstr "კონფეტები გოგონებისთვის:"
 
 #: server/activities/share/ShareDataDisplay.qml:195
 msgctxt "ShareDataDisplay|"
 msgid "Candies for boys:"
-msgstr ""
+msgstr "კონფეტები ბიჭებისთვის:"
 
 #: server/activities/share/ShareDataDisplay.qml:224
 msgctxt "ShareDataDisplay|"
 msgid "Jar placed:"
-msgstr ""
+msgstr "მოთავსებული ქილა:"
 
 #: server/activities/share/ShareDataDisplay.qml:234
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Yes"
 msgctxt "ShareDataDisplay|"
 msgid "Yes"
 msgstr "დიახ"
 
 #: server/activities/share/ShareDataDisplay.qml:234
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "No"
 msgctxt "ShareDataDisplay|"
 msgid "No"
 msgstr "არა"
@@ -1403,12 +1394,9 @@ msgstr "არა"
 #: server/activities/share/ShareDataDisplay.qml:251
 msgctxt "ShareDataDisplay|"
 msgid "Candies in the jar:"
-msgstr ""
+msgstr "კონფეტი ქილაში:"
 
 #: server/activities/share/ShareEditor.qml:22
-#, fuzzy
-#| msgctxt "ActivityEditor|"
-#| msgid "Rules to create a valid dataset:"
 msgctxt "ShareEditor|"
 msgid "Rules to create a valid dataset:"
 msgstr "წესები სწორი მონაცემთა ნაკრების შესაქმნელად:"
@@ -1418,6 +1406,8 @@ msgctxt "ShareEditor|"
 msgid ""
 "In general, there can not be more than 6 children, and 6 candies per child."
 msgstr ""
+"ზოგადად, არ შეიძლება, იყოს 6-ზე მეტი ბავშვი და 6-ზე მეტი კონფეტი თითო "
+"ბავშვისთვის."
 
 #: server/activities/share/ShareEditor.qml:26
 msgctxt "ShareEditor|"
@@ -1425,6 +1415,9 @@ msgid ""
 "If \"Random numbers\" is selected, the number of already placed candies per "
 "child must be defined such that not all candies are already placed."
 msgstr ""
+"თუ არჩეულია \"შემთხვევითი რიცხვები\", უკვე მოთავსებული კონფეტების რაოდენობა "
+"თითოეული ბავშვისთვის უნდა აღწეროთ ისე, რომ ყველა კონფეტი უკვე განაწილებული "
+"არ იყოს."
 
 #: server/activities/share/ShareEditor.qml:28
 msgctxt "ShareEditor|"
@@ -1432,130 +1425,96 @@ msgid ""
 "The \"Instruction\" field allows to give a specific instruction for each "
 "sublevel. If it is empty, a default instruction text is used."
 msgstr ""
+"ველი \"ინსტრუქცია\" საშუალებას გაძლევთ, მიუთითოთ საკუთარი ინსტრუქცია "
+"თითოეული ქვედონისთვის. თუ ეს ცარიელია, გამოყენებული იქნება ნაგულისხმევი "
+"ინსტრუქციის ტექსტი."
 
 #: server/activities/share/ShareEditor.qml:33
-#, fuzzy
-#| msgctxt "AlgebraEditor|"
-#| msgid "Shuffle"
 msgctxt "ShareEditor|"
 msgid "Shuffle"
 msgstr "არევა"
 
 #: server/activities/share/ShareEditor.qml:34
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "ShareEditor|"
 msgid "Sublevels"
 msgstr "ქვედონეები"
 
 #: server/activities/share/ShareEditor.qml:40
-#, fuzzy
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "Random numbers"
 msgctxt "ShareEditor|"
 msgid "Random numbers"
 msgstr "შემთხვევითი რიცხვები"
 
 #: server/activities/share/ShareEditor.qml:44
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Number of circles"
 msgctxt "ShareEditor|"
 msgid "Number of girls"
-msgstr "წრეების რაოდენობა"
+msgstr "გოგონების რაოდენობა"
 
 #: server/activities/share/ShareEditor.qml:45
-#, fuzzy
-#| msgctxt "VerticalEditor|"
-#| msgid "Number of lines"
 msgctxt "ShareEditor|"
 msgid "Number of boys"
-msgstr "ხაზების რაოდენობა"
+msgstr "ბიჭების რაოდენობა"
 
 #: server/activities/share/ShareEditor.qml:46
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Number of circles"
 msgctxt "ShareEditor|"
 msgid "Number of candies"
-msgstr "წრეების რაოდენობა"
+msgstr "კონფეტების რაოდენობა"
 
 #: server/activities/share/ShareEditor.qml:47
 msgctxt "ShareEditor|"
 msgid "Candies already placed per girl"
-msgstr ""
+msgstr "უკვე მოთავსებული კონფეტები თითოეული გოგონასთვის"
 
 #: server/activities/share/ShareEditor.qml:48
 msgctxt "ShareEditor|"
 msgid "Candies already placed per boy"
-msgstr ""
+msgstr "უკვე მოთავსებული კონფეტები თითოეული ბიჭისთვის"
 
 #: server/activities/share/ShareEditor.qml:49
 msgctxt "ShareEditor|"
 msgid "Force showing the jar"
-msgstr ""
+msgstr "ქილის ნაძალადევი ჩვენება"
 
 #: server/activities/share/ShareEditor.qml:52
-#, fuzzy
-#| msgctxt "MagicHatEditor|"
-#| msgid "Maximum number of stars"
 msgctxt "ShareEditor|"
 msgid "Maximum number of girls"
-msgstr "ვარსკვლავების მაქსიმალური რაოდენობა"
+msgstr "გოგონების მაქსიმალური რაოდენობა"
 
 #: server/activities/share/ShareEditor.qml:53
-#, fuzzy
-#| msgctxt "MagicHatEditor|"
-#| msgid "Maximum number of stars"
 msgctxt "ShareEditor|"
 msgid "Maximum number of boys"
-msgstr "ვარსკვლავების მაქსიმალური რაოდენობა"
+msgstr "ბიჭების მაქსიმალური რაოდენობა"
 
 #: server/activities/share/ShareEditor.qml:54
-#, fuzzy
-#| msgctxt "MagicHatEditor|"
-#| msgid "Maximum number of stars"
 msgctxt "ShareEditor|"
 msgid "Maximum number of candies"
-msgstr "ვარსკვლავების მაქსიმალური რაოდენობა"
+msgstr "კონფეტების მაქსიმალური რაოდენობა"
 
 #: server/activities/share/ShareEditor.qml:55
 msgctxt "ShareEditor|"
 msgid "Already place some candies"
-msgstr ""
+msgstr "ზოგიერთი კონფეტის უკვე მოთავსება"
 
 #: server/activities/share/ShareEditor.qml:58
-#, fuzzy
-#| msgctxt "FractionsCreateEditor|"
-#| msgid "Instruction"
 msgctxt "ShareEditor|"
 msgid "Instruction"
 msgstr "ინსტრუქცია"
 
 #: server/activities/share/ShareEditor.qml:289
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "ShareEditor|"
 msgid "Dataset is empty."
 msgstr "მონაცემთა ნაკრები ცარიელია."
 
 #: server/activities/share/ShareEditor.qml:299
-#, fuzzy, qt-format
-#| msgctxt "ComparatorEditor|"
-#| msgid "Level %1 must not be empty."
+#, qt-format
 msgctxt "ShareEditor|"
 msgid "Level %1 must not be empty."
 msgstr "დონე %1 ცარიელი არ უნდა იყოს."
 
 #: server/activities/share/ShareEditor.qml:309
-#, fuzzy, qt-format
-#| msgctxt "TensComplementFindEditor|"
-#| msgid "Sublevel %2 of Level %1 must not be empty."
+#, qt-format
 msgctxt "ShareEditor|"
 msgid "In Sublevel %2 of Level %1, the total number of children is 0."
-msgstr "დონის %1 ქვედონე %2 ცარიელი არ უნდა იყოს."
+msgstr "დონის %1 ქვედონეში %2 ბავშვების ჯამური რაოდენობა ნულის ტოლია."
 
 #: server/activities/share/ShareEditor.qml:317
 #, qt-format
@@ -1563,11 +1522,11 @@ msgctxt "ShareEditor|"
 msgid ""
 "In Sublevel %2 of Level %1, the number of already placed candies is too high."
 msgstr ""
+"ქვედონეში %2 დონისთვის %1 უკვე მოთავსებული კონფეტების რაოდენობა მეტისმეტად "
+"დიდია."
 
 #: server/activities/share/ShareEditor.qml:324
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "ShareEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "საჭიროა შემდეგი შეცდომების გასწორება:<ul>%1</ul>"

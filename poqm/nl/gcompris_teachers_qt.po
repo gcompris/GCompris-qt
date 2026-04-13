@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-04-09 15:04+0200\n"
+"PO-Revision-Date: 2026-04-12 15:58+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -1347,17 +1347,14 @@ msgid "Mode"
 msgstr "Modus"
 
 #: server/activities/share/ShareDataDisplay.qml:49
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Number of circles"
 msgctxt "ShareDataDisplay|"
 msgid "Number of candies:"
-msgstr "Aantal cirkels"
+msgstr "Aantal snoepjes:"
 
 #: server/activities/share/ShareDataDisplay.qml:76
 msgctxt "ShareDataDisplay|"
 msgid "Placed girls:"
-msgstr ""
+msgstr "Geplaatste meisjes:"
 
 #. Display a fraction
 #: server/activities/share/ShareDataDisplay.qml:87
@@ -1366,45 +1363,39 @@ msgstr ""
 #, qt-format
 msgctxt "ShareDataDisplay|"
 msgid "%1 / %2"
-msgstr ""
+msgstr "%1 / %2"
 
 #: server/activities/share/ShareDataDisplay.qml:107
 msgctxt "ShareDataDisplay|"
 msgid "Placed boys:"
-msgstr ""
+msgstr "Geplaatste jongens:"
 
 #: server/activities/share/ShareDataDisplay.qml:137
 msgctxt "ShareDataDisplay|"
 msgid "Expected candies per child:"
-msgstr ""
+msgstr "Verwacht aantal snoepjes per kind:"
 
 #: server/activities/share/ShareDataDisplay.qml:164
 msgctxt "ShareDataDisplay|"
 msgid "Candies for girls:"
-msgstr ""
+msgstr "Snoepjes voor meisjes:"
 
 #: server/activities/share/ShareDataDisplay.qml:195
 msgctxt "ShareDataDisplay|"
 msgid "Candies for boys:"
-msgstr ""
+msgstr "Snoepjes voor jongens:"
 
 #: server/activities/share/ShareDataDisplay.qml:224
 msgctxt "ShareDataDisplay|"
 msgid "Jar placed:"
-msgstr ""
+msgstr "Pot geplaatst:"
 
 #: server/activities/share/ShareDataDisplay.qml:234
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Yes"
 msgctxt "ShareDataDisplay|"
 msgid "Yes"
 msgstr "Ja"
 
 #: server/activities/share/ShareDataDisplay.qml:234
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "No"
 msgctxt "ShareDataDisplay|"
 msgid "No"
 msgstr "Nee"
@@ -1412,12 +1403,9 @@ msgstr "Nee"
 #: server/activities/share/ShareDataDisplay.qml:251
 msgctxt "ShareDataDisplay|"
 msgid "Candies in the jar:"
-msgstr ""
+msgstr "Snoepjes per pot:"
 
 #: server/activities/share/ShareEditor.qml:22
-#, fuzzy
-#| msgctxt "ActivityEditor|"
-#| msgid "Rules to create a valid dataset:"
 msgctxt "ShareEditor|"
 msgid "Rules to create a valid dataset:"
 msgstr "Regels om een geldige gegevensset aan te maken:"
@@ -1427,6 +1415,8 @@ msgctxt "ShareEditor|"
 msgid ""
 "In general, there can not be more than 6 children, and 6 candies per child."
 msgstr ""
+"In het algemeen mogen er niet meer dan 6 kinderen zijn, en 6 snoepjes per "
+"kind."
 
 #: server/activities/share/ShareEditor.qml:26
 msgctxt "ShareEditor|"
@@ -1434,6 +1424,9 @@ msgid ""
 "If \"Random numbers\" is selected, the number of already placed candies per "
 "child must be defined such that not all candies are already placed."
 msgstr ""
+"Als \"Willekeurige getallen\" is geselecteerd, moet het aantal reeds "
+"geplaatste snoepjes per kind zo worden ingesteld dat niet alle snoepjes al "
+"geplaatst zijn."
 
 #: server/activities/share/ShareEditor.qml:28
 msgctxt "ShareEditor|"
@@ -1441,130 +1434,96 @@ msgid ""
 "The \"Instruction\" field allows to give a specific instruction for each "
 "sublevel. If it is empty, a default instruction text is used."
 msgstr ""
+"Het veld \"Instructie\" maakt het mogelijk om voor elk subniveau een "
+"specifieke instructie op te geven. Als dit veld leeg is, wordt een "
+"standaardinstructietekst gebruikt."
 
 #: server/activities/share/ShareEditor.qml:33
-#, fuzzy
-#| msgctxt "AlgebraEditor|"
-#| msgid "Shuffle"
 msgctxt "ShareEditor|"
 msgid "Shuffle"
 msgstr "Schudden"
 
 #: server/activities/share/ShareEditor.qml:34
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "ShareEditor|"
 msgid "Sublevels"
 msgstr "Subniveaus"
 
 #: server/activities/share/ShareEditor.qml:40
-#, fuzzy
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "Random numbers"
 msgctxt "ShareEditor|"
 msgid "Random numbers"
 msgstr "Willekeurige getallen"
 
 #: server/activities/share/ShareEditor.qml:44
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Number of circles"
 msgctxt "ShareEditor|"
 msgid "Number of girls"
-msgstr "Aantal cirkels"
+msgstr "Aantal meisjes"
 
 #: server/activities/share/ShareEditor.qml:45
-#, fuzzy
-#| msgctxt "VerticalEditor|"
-#| msgid "Number of lines"
 msgctxt "ShareEditor|"
 msgid "Number of boys"
-msgstr "Aantal regels:"
+msgstr "Aantal jongens"
 
 #: server/activities/share/ShareEditor.qml:46
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Number of circles"
 msgctxt "ShareEditor|"
 msgid "Number of candies"
-msgstr "Aantal cirkels"
+msgstr "Aantal snoepjes"
 
 #: server/activities/share/ShareEditor.qml:47
 msgctxt "ShareEditor|"
 msgid "Candies already placed per girl"
-msgstr ""
+msgstr "Snoepjes al geplaatst per meisje"
 
 #: server/activities/share/ShareEditor.qml:48
 msgctxt "ShareEditor|"
 msgid "Candies already placed per boy"
-msgstr ""
+msgstr "Snoepjes al geplaatst per jongen"
 
 #: server/activities/share/ShareEditor.qml:49
 msgctxt "ShareEditor|"
 msgid "Force showing the jar"
-msgstr ""
+msgstr "Dwing het tonen van de pot af"
 
 #: server/activities/share/ShareEditor.qml:52
-#, fuzzy
-#| msgctxt "MagicHatEditor|"
-#| msgid "Maximum number of stars"
 msgctxt "ShareEditor|"
 msgid "Maximum number of girls"
-msgstr "Maximaal aantal sterren"
+msgstr "Maximaal aantal meisjes"
 
 #: server/activities/share/ShareEditor.qml:53
-#, fuzzy
-#| msgctxt "MagicHatEditor|"
-#| msgid "Maximum number of stars"
 msgctxt "ShareEditor|"
 msgid "Maximum number of boys"
-msgstr "Maximaal aantal sterren"
+msgstr "Maximaal aantal jongens"
 
 #: server/activities/share/ShareEditor.qml:54
-#, fuzzy
-#| msgctxt "MagicHatEditor|"
-#| msgid "Maximum number of stars"
 msgctxt "ShareEditor|"
 msgid "Maximum number of candies"
-msgstr "Maximaal aantal sterren"
+msgstr "Maximaal aantal snoepjes"
 
 #: server/activities/share/ShareEditor.qml:55
 msgctxt "ShareEditor|"
 msgid "Already place some candies"
-msgstr ""
+msgstr "Al enige snoepjes geplaatst"
 
 #: server/activities/share/ShareEditor.qml:58
-#, fuzzy
-#| msgctxt "FractionsCreateEditor|"
-#| msgid "Instruction"
 msgctxt "ShareEditor|"
 msgid "Instruction"
 msgstr "Instructie"
 
 #: server/activities/share/ShareEditor.qml:289
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "ShareEditor|"
 msgid "Dataset is empty."
 msgstr "Gegevensset is leeg."
 
 #: server/activities/share/ShareEditor.qml:299
-#, fuzzy, qt-format
-#| msgctxt "ComparatorEditor|"
-#| msgid "Level %1 must not be empty."
+#, qt-format
 msgctxt "ShareEditor|"
 msgid "Level %1 must not be empty."
 msgstr "Niveau %1 mag niet leeg zijn."
 
 #: server/activities/share/ShareEditor.qml:309
-#, fuzzy, qt-format
-#| msgctxt "TensComplementFindEditor|"
-#| msgid "Sublevel %2 of Level %1 must not be empty."
+#, qt-format
 msgctxt "ShareEditor|"
 msgid "In Sublevel %2 of Level %1, the total number of children is 0."
-msgstr "Subniveau %2 van niveau %1 mag niet leeg zijn."
+msgstr "In subniveau %2 van niveau %1, is het totale aantal kinderen 0."
 
 #: server/activities/share/ShareEditor.qml:317
 #, qt-format
@@ -1572,11 +1531,10 @@ msgctxt "ShareEditor|"
 msgid ""
 "In Sublevel %2 of Level %1, the number of already placed candies is too high."
 msgstr ""
+"In subniveau %2 van niveau %1, is het aantal al geplaatste snoepjes te hoog."
 
 #: server/activities/share/ShareEditor.qml:324
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "ShareEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "De volgende fouten moeten gerepareerd worden:<ul>%1</ul>"
