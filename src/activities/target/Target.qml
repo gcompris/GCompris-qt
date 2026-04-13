@@ -5,6 +5,7 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -77,6 +78,7 @@ ActivityBase {
             property alias targetSize: targetItem.targetSize
             readonly property var levels: activity.datasets
             property alias targetItem: targetItem
+            property alias arrowRepeater: arrowRepeater
             property alias userEntry: userEntry
             property int currentArrow
             property int nbArrow
@@ -84,11 +86,6 @@ ActivityBase {
             property int numberOfSubLevel
             property bool arrowFlying
             property bool inputLocked: true
-
-            onNbArrowChanged: {
-                arrowRepeater.init(nbArrow)
-                items.currentArrow = 0
-            }
         }
 
         onStart: {
