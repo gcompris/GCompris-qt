@@ -1,14 +1,14 @@
 # Spanish translations for gcompris_teachers_qt.po package.
-# Copyright (C) 2025 This file is copyright:
+# Copyright (C) 2025-2026 This file is copyright:
 # This file is distributed under the same license as the gcompris package.
 #
-# SPDX-FileCopyrightText: 2025 Eloy Cuadra <ecuadra@eloihr.net>
+# SPDX-FileCopyrightText: 2025, 2026 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_teachers_qt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-23 00:32+0100\n"
-"PO-Revision-Date: 2025-12-30 01:19+0100\n"
+"PO-Revision-Date: 2026-04-12 22:11+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.12.0\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
 #: server/activities/binary_bulb/ActivityEditor.qml:12
@@ -585,7 +585,7 @@ msgctxt "ActivityEditor|"
 msgid ""
 "\"Instruction\" must contain some text telling the fraction to represent."
 msgstr ""
-"La «Instrucción» debe contener un texto que indique la fracción que se va a "
+"«Instrucciones» debe contener un texto que indique la fracción que se va a "
 "representar."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:29
@@ -611,7 +611,7 @@ msgstr "Denominador"
 #: server/activities/fractions_create/FractionsCreateEditor.qml:38
 msgctxt "FractionsCreateEditor|"
 msgid "Instruction"
-msgstr "Instrucción"
+msgstr "Instrucciones"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:130
 msgctxt "FractionsCreateEditor|"
@@ -628,7 +628,8 @@ msgstr "El nivel %1 no puede estar vacío."
 #, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "\"Instruction\" of Question %1 from Level %2 must not be empty."
-msgstr "La «Instrucción» de la pregunta %1 del nivel %2 no puede estar vacía."
+msgstr ""
+"Las «Instrucciones» de la pregunta %1 del nivel %2 no pueden estar vacía."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:152
 #, qt-format
@@ -2306,19 +2307,3 @@ msgstr "Alumnos con sesión iniciada"
 msgctxt "SettingsView|"
 msgid "Activities data received"
 msgstr "Datos de actividades recibidos"
-
-#~ msgctxt "NavigationPanel|"
-#~ msgid "Development (WIP)"
-#~ msgstr "Desarrollo (WIP)"
-
-#~ msgctxt "SqlLineDialog|"
-#~ msgid "<"
-#~ msgstr "<"
-
-#~ msgctxt "SqlLineDialog|"
-#~ msgid ">"
-#~ msgstr ">"
-
-#~ msgctxt "LoginView|"
-#~ msgid "GCompris Teachers Tool"
-#~ msgstr "Herramienta del profesor de GCompris"
