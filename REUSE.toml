@@ -3920,6 +3920,12 @@ SPDX-FileCopyrightText = ["2019 Adrián Chaves", "2023 Pablo"]
 SPDX-License-Identifier = "CC0-1.0"
 
 [[annotations]]
+path = "src/activities/lang/resource/content-gu.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Samyak Vidhan"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
 path = "src/activities/lang/resource/content-he.json"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2020 amihaygal"
