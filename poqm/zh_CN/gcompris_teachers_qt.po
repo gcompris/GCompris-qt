@@ -1340,20 +1340,14 @@ msgid "Shuffle"
 msgstr ""
 
 #: server/activities/share/ShareEditor.qml:34
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "ShareEditor|"
 msgid "Sublevels"
 msgstr "子级"
 
 #: server/activities/share/ShareEditor.qml:40
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Random start numbers"
 msgctxt "ShareEditor|"
 msgid "Random numbers"
-msgstr "随机起始数字"
+msgstr ""
 
 #: server/activities/share/ShareEditor.qml:44
 msgctxt "ShareEditor|"
@@ -1386,28 +1380,19 @@ msgid "Force showing the jar"
 msgstr ""
 
 #: server/activities/share/ShareEditor.qml:52
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Maximum start number"
 msgctxt "ShareEditor|"
 msgid "Maximum number of girls"
-msgstr "最大起始数字"
+msgstr ""
 
 #: server/activities/share/ShareEditor.qml:53
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Maximum start number"
 msgctxt "ShareEditor|"
 msgid "Maximum number of boys"
-msgstr "最大起始数字"
+msgstr ""
 
 #: server/activities/share/ShareEditor.qml:54
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Maximum start number"
 msgctxt "ShareEditor|"
 msgid "Maximum number of candies"
-msgstr "最大起始数字"
+msgstr ""
 
 #: server/activities/share/ShareEditor.qml:55
 msgctxt "ShareEditor|"
@@ -1420,9 +1405,6 @@ msgid "Instruction"
 msgstr ""
 
 #: server/activities/share/ShareEditor.qml:289
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "ShareEditor|"
 msgid "Dataset is empty."
 msgstr "数据集为空。"

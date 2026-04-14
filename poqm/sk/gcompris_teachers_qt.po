@@ -1,17 +1,14 @@
-# SPDX-FileCopyrightText: 2026 giovanni <g.sora@tiscali.it>
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"PO-Revision-Date: 2026-04-13 10:27+0200\n"
-"Last-Translator: giovanni <g.sora@tiscali.it>\n"
-"Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
-"Language: ia\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.04.0\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
 #: server/activities/binary_bulb/ActivityEditor.qml:12
@@ -55,12 +52,12 @@ msgstr ""
 #: server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:36
 msgctxt "AdjacentNumbersDataDisplay|"
 msgid "Tiles:"
-msgstr "Tegulas :"
+msgstr ""
 
 #: server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:60
 msgctxt "AdjacentNumbersDataDisplay|"
 msgid "Answer:"
-msgstr "Responde:"
+msgstr ""
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:28
 msgctxt "AdjacentNumbersEditor|"
@@ -70,7 +67,7 @@ msgstr ""
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:29
 msgctxt "AdjacentNumbersEditor|"
 msgid "Sublevels"
-msgstr "Subnivellos"
+msgstr ""
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:30
 msgctxt "AdjacentNumbersEditor|"
@@ -110,7 +107,7 @@ msgstr ""
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:98
 msgctxt "AdjacentNumbersEditor|"
 msgid "Dataset is empty."
-msgstr "Insimul de datos es vacue."
+msgstr ""
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:100
 msgctxt "AdjacentNumbersEditor|"
@@ -136,21 +133,21 @@ msgstr ""
 #: server/activities/algebra_by/AlgebraDataDisplay.qml:19
 msgctxt "AlgebraDataDisplay|"
 msgid "timeout"
-msgstr "Tempore limite"
+msgstr ""
 
 #. %1 is an operation, %2 the result. Example: "2 x 5 = 10"
 #: server/activities/algebra_by/AlgebraDataDisplay.qml:22
 #, qt-format
 msgctxt "AlgebraDataDisplay|"
 msgid "%1 = %2"
-msgstr "%1 = %2"
+msgstr ""
 
 #. %1 is the answer. Example: "Answer: 10"
 #: server/activities/algebra_by/AlgebraDataDisplay.qml:24
 #, qt-format
 msgctxt "AlgebraDataDisplay|"
 msgid "Answer: %1"
-msgstr "Responsa: %1"
+msgstr ""
 
 #: server/activities/algebra_by/AlgebraEditor.qml:25
 msgctxt "AlgebraEditor|"
@@ -182,7 +179,7 @@ msgstr ""
 #: server/activities/algebra_by/AlgebraEditor.qml:39
 msgctxt "AlgebraEditor|"
 msgid "Sublevels"
-msgstr "Subnivellos"
+msgstr ""
 
 #: server/activities/algebra_by/AlgebraEditor.qml:35
 msgctxt "AlgebraEditor|"
@@ -202,7 +199,7 @@ msgstr ""
 #: server/activities/algebra_by/AlgebraEditor.qml:38
 msgctxt "AlgebraEditor|"
 msgid "Shuffle"
-msgstr "Shuffle (miscer)"
+msgstr ""
 
 #: server/activities/algebra_by/AlgebraEditor.qml:44
 msgctxt "AlgebraEditor|"
@@ -239,7 +236,7 @@ msgstr ""
 #: server/activities/algebra_div/ActivityEditor.qml:29
 msgctxt "ActivityEditor|"
 msgid "Sublevels"
-msgstr "Subnivellos"
+msgstr ""
 
 #: server/activities/algebra_div/ActivityEditor.qml:25
 msgctxt "ActivityEditor|"
@@ -259,7 +256,7 @@ msgstr ""
 #: server/activities/algebra_div/ActivityEditor.qml:28
 msgctxt "ActivityEditor|"
 msgid "Shuffle"
-msgstr "Shuffle (miscer)"
+msgstr ""
 
 #: server/activities/algebra_div/ActivityEditor.qml:34
 msgctxt "ActivityEditor|"
@@ -289,12 +286,12 @@ msgstr ""
 #: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:28
 msgctxt "BinaryBulbDataDisplay|"
 msgid "Expected:"
-msgstr "Expectate:"
+msgstr ""
 
 #: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:34
 msgctxt "BinaryBulbDataDisplay|"
 msgid "Answer:"
-msgstr "Responde:"
+msgstr ""
 
 #. %1 is the numerical value, %2 is the binary value. Example: "5 (101)"
 #: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:46
@@ -307,12 +304,12 @@ msgstr ""
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:28
 msgctxt "BinaryBulbEditor|"
 msgid "Random numbers"
-msgstr "Numeros aleatori"
+msgstr ""
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:29
 msgctxt "BinaryBulbEditor|"
 msgid "Sublevels"
-msgstr "Subnivellos"
+msgstr ""
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:30
 msgctxt "BinaryBulbEditor|"
@@ -342,7 +339,7 @@ msgstr ""
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:87
 msgctxt "BinaryBulbEditor|"
 msgid "Dataset is empty."
-msgstr "Insimul de datos es vacue."
+msgstr ""
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:101
 #, qt-format
@@ -367,12 +364,12 @@ msgstr ""
 #: server/activities/clockgame/ClockGameDataDisplay.qml:30
 msgctxt "ClockGameDataDisplay|"
 msgid "Expected:"
-msgstr "Expectate:"
+msgstr ""
 
 #: server/activities/clockgame/ClockGameDataDisplay.qml:36
 msgctxt "ClockGameDataDisplay|"
 msgid "Answer:"
-msgstr "Responde:"
+msgstr ""
 
 #: server/activities/clockgame/ClockgameEditor.qml:27
 msgctxt "ClockgameEditor|"
@@ -424,7 +421,7 @@ msgstr ""
 #: server/activities/clockgame/ClockgameEditor.qml:40
 msgctxt "ClockgameEditor|"
 msgid "Value"
-msgstr "Valor"
+msgstr ""
 
 #: server/activities/clockgame/ClockgameEditor.qml:37
 msgctxt "ClockgameEditor|"
@@ -439,17 +436,17 @@ msgstr ""
 #: server/activities/comparator/ComparatorDataDisplay.qml:30
 msgctxt "ComparatorDataDisplay|"
 msgid "Result:"
-msgstr "Resultato:"
+msgstr ""
 
 #: server/activities/comparator/ComparatorEditor.qml:29
 msgctxt "ComparatorEditor|"
 msgid "Shuffle"
-msgstr "Shuffle (miscer)"
+msgstr ""
 
 #: server/activities/comparator/ComparatorEditor.qml:30
 msgctxt "ComparatorEditor|"
 msgid "Questions"
-msgstr "Demandas"
+msgstr ""
 
 #: server/activities/comparator/ComparatorEditor.qml:36
 msgctxt "ComparatorEditor|"
@@ -464,7 +461,7 @@ msgstr ""
 #: server/activities/comparator/ComparatorEditor.qml:109
 msgctxt "ComparatorEditor|"
 msgid "Dataset is empty."
-msgstr "Insimul de datos es vacue."
+msgstr ""
 
 #: server/activities/comparator/ComparatorEditor.qml:119
 #, qt-format
@@ -500,41 +497,41 @@ msgstr ""
 #, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %2"
-msgstr "%1 %2"
+msgstr ""
 
 #: server/activities/DailyReport.qml:133
 msgctxt "DailyReport|"
 msgid "Calendar"
-msgstr "Calendario"
+msgstr ""
 
 #: server/activities/DailyReport.qml:184
 msgctxt "DailyReport|"
 msgid "Count"
-msgstr "Computo"
+msgstr ""
 
 #: server/activities/DailyReport.qml:193
 msgctxt "DailyReport|"
 msgid "Time"
-msgstr "Tempore"
+msgstr ""
 
 #: server/activities/DailyReport.qml:202
 msgctxt "DailyReport|"
 msgid "Ratio"
-msgstr "Proportion"
+msgstr ""
 
 #. Number of result lines
 #: server/activities/DailyReport.qml:213
 #, qt-format
 msgctxt "DailyReport|"
 msgid "Lines: %1"
-msgstr "Lineas: %1"
+msgstr ""
 
 #. Success ratio, example: "50 %"
 #: server/activities/DailyReport.qml:314
 #, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %"
-msgstr "%1 %"
+msgstr ""
 
 #: server/activities/fractions_create/ActivityEditor.qml:14
 msgctxt "ActivityEditor|"
@@ -545,17 +542,17 @@ msgstr ""
 #: server/activities/fractions_create/FractionsCreateEditor.qml:29
 msgctxt "FractionsCreateEditor|"
 msgid "Shuffle"
-msgstr "Shuffle (miscer)"
+msgstr ""
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:30
 msgctxt "FractionsCreateEditor|"
 msgid "Questions"
-msgstr "Demandas"
+msgstr ""
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:36
 msgctxt "FractionsCreateEditor|"
 msgid "Numerator"
-msgstr "Numerator"
+msgstr ""
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:37
 msgctxt "FractionsCreateEditor|"
@@ -565,12 +562,12 @@ msgstr ""
 #: server/activities/fractions_create/FractionsCreateEditor.qml:38
 msgctxt "FractionsCreateEditor|"
 msgid "Instruction"
-msgstr "Instruction"
+msgstr ""
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:130
 msgctxt "FractionsCreateEditor|"
 msgid "Dataset is empty."
-msgstr "Insimul de datos es vacue."
+msgstr ""
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:140
 #, qt-format
@@ -593,37 +590,37 @@ msgstr ""
 #: server/activities/fractions_create/FractionsCreateEditor.qml:160
 msgctxt "FractionsCreateEditor|"
 msgid "Rectangle"
-msgstr "Rectangulo"
+msgstr ""
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:161
 msgctxt "FractionsCreateEditor|"
 msgid "Circle"
-msgstr "Circulo"
+msgstr ""
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:164
 msgctxt "FractionsCreateEditor|"
 msgid "Chart Type"
-msgstr "Typo de diagramma"
+msgstr ""
 
 #: server/activities/fractions_find/FractionsFindDataDisplay.qml:26
 msgctxt "FractionsFindDataDisplay|"
 msgid "Expected:"
-msgstr "Expectate:"
+msgstr ""
 
 #: server/activities/fractions_find/FractionsFindDataDisplay.qml:60
 msgctxt "FractionsFindDataDisplay|"
 msgid "Answer:"
-msgstr "Responde:"
+msgstr ""
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:29
 msgctxt "FractionsFindEditor|"
 msgid "Shuffle"
-msgstr "Shuffle (miscer)"
+msgstr ""
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:30
 msgctxt "FractionsFindEditor|"
 msgid "Questions"
-msgstr "Demandas"
+msgstr ""
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:36
 msgctxt "FractionsFindEditor|"
@@ -638,7 +635,7 @@ msgstr ""
 #: server/activities/fractions_find/FractionsFindEditor.qml:38
 msgctxt "FractionsFindEditor|"
 msgid "Numerator"
-msgstr "Numerator"
+msgstr ""
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:39
 msgctxt "FractionsFindEditor|"
@@ -658,7 +655,7 @@ msgstr ""
 #: server/activities/fractions_find/FractionsFindEditor.qml:159
 msgctxt "FractionsFindEditor|"
 msgid "Dataset is empty."
-msgstr "Insimul de datos es vacue."
+msgstr ""
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:169
 #, qt-format
@@ -675,24 +672,24 @@ msgstr ""
 #: server/activities/fractions_find/FractionsFindEditor.qml:181
 msgctxt "FractionsFindEditor|"
 msgid "Rectangle"
-msgstr "Rectangulo"
+msgstr ""
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:182
 msgctxt "FractionsFindEditor|"
 msgid "Circle"
-msgstr "Circulo"
+msgstr ""
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:185
 msgctxt "FractionsFindEditor|"
 msgid "Chart Type"
-msgstr "Typo de diagramma"
+msgstr ""
 
 #. %1 is number of hints displayed. Example: "Hints: 1"
 #: server/activities/guess24/Guess24DataDisplay.qml:79
 #, qt-format
 msgctxt "Guess24DataDisplay|"
 msgid "Hints: %1"
-msgstr "Suggerentias: %1"
+msgstr ""
 
 #: server/activities/learn_additions/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
@@ -711,12 +708,12 @@ msgstr ""
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:28
 msgctxt "LearnDecimalsEditor|"
 msgid "Shuffle"
-msgstr "Shuffle (miscer)"
+msgstr ""
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:29
 msgctxt "LearnDecimalsEditor|"
 msgid "Sublevels"
-msgstr "Subnivellos"
+msgstr ""
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:39
 msgctxt "LearnDecimalsEditor|"
@@ -726,17 +723,17 @@ msgstr ""
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:40
 msgctxt "LearnDecimalsEditor|"
 msgid "Minimum Value"
-msgstr "Valor minime:"
+msgstr ""
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:41
 msgctxt "LearnDecimalsEditor|"
 msgid "Maximum Value"
-msgstr "Valor maxime:"
+msgstr ""
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:140
 msgctxt "LearnDecimalsEditor|"
 msgid "Dataset is empty."
-msgstr "Insimul de datos es vacue."
+msgstr ""
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:150
 #, qt-format
@@ -753,52 +750,52 @@ msgstr ""
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:162
 msgctxt "LearnDecimalsEditor|"
 msgid "Random"
-msgstr "Casual"
+msgstr ""
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:163
 msgctxt "LearnDecimalsEditor|"
 msgid "Fixed"
-msgstr "Fixate"
+msgstr ""
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:168
 msgctxt "LearnDecimalsEditor|"
 msgid "Mode"
-msgstr "Modo"
+msgstr ""
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:29
 msgctxt "DecimalAdditionEditor|"
 msgid "Shuffle"
-msgstr "Shuffle (miscer)"
+msgstr ""
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:30
 msgctxt "DecimalAdditionEditor|"
 msgid "Sublevels"
-msgstr "Subnivellos"
+msgstr ""
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:41
 msgctxt "DecimalAdditionEditor|"
 msgid "First Number"
-msgstr "Prime numero"
+msgstr ""
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:42
 msgctxt "DecimalAdditionEditor|"
 msgid "Second Number"
-msgstr "Secunde numero"
+msgstr ""
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:43
 msgctxt "DecimalAdditionEditor|"
 msgid "Minimum Value"
-msgstr "Valor minime:"
+msgstr ""
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:44
 msgctxt "DecimalAdditionEditor|"
 msgid "Maximum Value"
-msgstr "Valor maxime:"
+msgstr ""
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:182
 msgctxt "DecimalAdditionEditor|"
 msgid "Dataset is empty."
-msgstr "Insimul de datos es vacue."
+msgstr ""
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:192
 #, qt-format
@@ -815,17 +812,17 @@ msgstr ""
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:204
 msgctxt "DecimalAdditionEditor|"
 msgid "Random"
-msgstr "Casual"
+msgstr ""
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:205
 msgctxt "DecimalAdditionEditor|"
 msgid "Fixed"
-msgstr "Fixate"
+msgstr ""
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:210
 msgctxt "DecimalAdditionEditor|"
 msgid "Mode"
-msgstr "Modo"
+msgstr ""
 
 #: server/activities/learn_digits/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
@@ -843,14 +840,14 @@ msgstr ""
 #, qt-format
 msgctxt "LearnDigitsDataDisplay|"
 msgid "%1 = %2"
-msgstr "%1 = %2"
+msgstr ""
 
 #. %1 is the answer. Example: "Answer: 10"
 #: server/activities/learn_digits/LearnDigitsDataDisplay.qml:27
 #, qt-format
 msgctxt "LearnDigitsDataDisplay|"
 msgid "Answer: %1"
-msgstr "Responsa: %1"
+msgstr ""
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:32
 msgctxt "LearnDigitsEditor|"
@@ -865,7 +862,7 @@ msgstr ""
 #: server/activities/learn_digits/LearnDigitsEditor.qml:99
 msgctxt "LearnDigitsEditor|"
 msgid "Dataset is empty."
-msgstr "Insimul de datos es vacue."
+msgstr ""
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:101
 msgctxt "LearnDigitsEditor|"
@@ -891,17 +888,17 @@ msgstr ""
 #: server/activities/learn_digits/LearnDigitsEditor.qml:161
 msgctxt "LearnDigitsEditor|"
 msgid "Numbers"
-msgstr "Numeros"
+msgstr ""
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:163
 msgctxt "LearnDigitsEditor|"
 msgid "Additions"
-msgstr "Additiones"
+msgstr ""
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:165
 msgctxt "LearnDigitsEditor|"
 msgid "Subtractions"
-msgstr "Subtractiones"
+msgstr ""
 
 #: server/activities/learn_quantities/ActivityEditor.qml:24
 msgctxt "ActivityEditor|"
@@ -911,12 +908,12 @@ msgstr ""
 #: server/activities/learn_quantities/ActivityEditor.qml:25
 msgctxt "ActivityEditor|"
 msgid "Minimum Value"
-msgstr "Valor minime:"
+msgstr ""
 
 #: server/activities/learn_quantities/ActivityEditor.qml:26
 msgctxt "ActivityEditor|"
 msgid "Maximum Value"
-msgstr "Valor maxime:"
+msgstr ""
 
 #: server/activities/learn_subtractions/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
@@ -928,31 +925,31 @@ msgstr ""
 #: server/activities/LineReport.qml:65
 msgctxt "LineReport|"
 msgid "Back"
-msgstr "Retro"
+msgstr ""
 
 #: server/activities/LineReport.qml:71
 msgctxt "LineReport|"
 msgid "Refresh"
-msgstr "Refresca"
+msgstr ""
 
 #: server/activities/LineReport.qml:77
 #, qt-format
 msgctxt "LineReport|"
 msgid "Lines: %1"
-msgstr "Lineas: %1"
+msgstr ""
 
 #: server/activities/LineReport.qml:228
 #, qt-format
 msgctxt "LineReport|"
 msgid "Level: <b>%1</b>"
-msgstr "Nivello: <b>%1</b>"
+msgstr ""
 
 #. Result duration in seconds. Example: "Duration: 25s"
 #: server/activities/LineReport.qml:244 server/activities/LineReport.qml:254
 #, qt-format
 msgctxt "LineReport|"
 msgid "Duration: %1s"
-msgstr "Duration: %1s"
+msgstr ""
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:29
 msgctxt "MagicHatEditor|"
@@ -1058,7 +1055,7 @@ msgstr ""
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:120
 msgctxt "MagicHatEditor|"
 msgid "Dataset is empty."
-msgstr "Insimul de datos es vacue."
+msgstr ""
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:149
 #, qt-format
@@ -1106,7 +1103,7 @@ msgstr ""
 #, qt-format
 msgctxt "StarsBar|"
 msgid "%1x"
-msgstr "%1x"
+msgstr ""
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
@@ -1133,17 +1130,17 @@ msgstr ""
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:27
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Question:"
-msgstr "Demanda:"
+msgstr ""
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:33
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Answer:"
-msgstr "Responde:"
+msgstr ""
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:39
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Expected:"
-msgstr "Expectate:"
+msgstr ""
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:45
 msgctxt "MultipleChoiceDataDisplay|"
@@ -1153,12 +1150,12 @@ msgstr ""
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:29
 msgctxt "MultipleChoiceEditor|"
 msgid "Shuffle"
-msgstr "Shuffle (miscer)"
+msgstr ""
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:30
 msgctxt "MultipleChoiceEditor|"
 msgid "Sublevels"
-msgstr "Subnivellos"
+msgstr ""
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:36
 msgctxt "MultipleChoiceEditor|"
@@ -1168,7 +1165,7 @@ msgstr ""
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:37
 msgctxt "MultipleChoiceEditor|"
 msgid "Question"
-msgstr "Demanda"
+msgstr ""
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:38
 msgctxt "MultipleChoiceEditor|"
@@ -1178,7 +1175,7 @@ msgstr ""
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:39
 msgctxt "MultipleChoiceEditor|"
 msgid "Correct answers"
-msgstr "Responsas Correcte "
+msgstr ""
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:40
 msgctxt "MultipleChoiceEditor|"
@@ -1193,7 +1190,7 @@ msgstr ""
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:121
 msgctxt "MultipleChoiceEditor|"
 msgid "Dataset is empty."
-msgstr "Insimul de datos es vacue."
+msgstr ""
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:131
 #, qt-format
@@ -1246,12 +1243,12 @@ msgstr ""
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:177
 msgctxt "MultipleChoiceEditor|"
 msgid "Mode"
-msgstr "Modo"
+msgstr ""
 
 #: server/activities/share/ShareDataDisplay.qml:49
 msgctxt "ShareDataDisplay|"
 msgid "Number of candies:"
-msgstr "Numero de bonbones:"
+msgstr ""
 
 #: server/activities/share/ShareDataDisplay.qml:76
 msgctxt "ShareDataDisplay|"
@@ -1295,12 +1292,12 @@ msgstr ""
 #: server/activities/share/ShareDataDisplay.qml:234
 msgctxt "ShareDataDisplay|"
 msgid "Yes"
-msgstr "Si"
+msgstr ""
 
 #: server/activities/share/ShareDataDisplay.qml:234
 msgctxt "ShareDataDisplay|"
 msgid "No"
-msgstr "No"
+msgstr ""
 
 #: server/activities/share/ShareDataDisplay.qml:251
 msgctxt "ShareDataDisplay|"
@@ -1335,32 +1332,32 @@ msgstr ""
 #: server/activities/share/ShareEditor.qml:33
 msgctxt "ShareEditor|"
 msgid "Shuffle"
-msgstr "Shuffle (miscer)"
+msgstr ""
 
 #: server/activities/share/ShareEditor.qml:34
 msgctxt "ShareEditor|"
 msgid "Sublevels"
-msgstr "Subnivellos"
+msgstr ""
 
 #: server/activities/share/ShareEditor.qml:40
 msgctxt "ShareEditor|"
 msgid "Random numbers"
-msgstr "Numeros aleatori"
+msgstr ""
 
 #: server/activities/share/ShareEditor.qml:44
 msgctxt "ShareEditor|"
 msgid "Number of girls"
-msgstr "Numero de pueras"
+msgstr ""
 
 #: server/activities/share/ShareEditor.qml:45
 msgctxt "ShareEditor|"
 msgid "Number of boys"
-msgstr "Numero de pueros"
+msgstr ""
 
 #: server/activities/share/ShareEditor.qml:46
 msgctxt "ShareEditor|"
 msgid "Number of candies"
-msgstr "Numero de bonbones"
+msgstr ""
 
 #: server/activities/share/ShareEditor.qml:47
 msgctxt "ShareEditor|"
@@ -1380,7 +1377,7 @@ msgstr ""
 #: server/activities/share/ShareEditor.qml:52
 msgctxt "ShareEditor|"
 msgid "Maximum number of girls"
-msgstr "Maxime numero de pueras"
+msgstr ""
 
 #: server/activities/share/ShareEditor.qml:53
 msgctxt "ShareEditor|"
@@ -1390,7 +1387,7 @@ msgstr ""
 #: server/activities/share/ShareEditor.qml:54
 msgctxt "ShareEditor|"
 msgid "Maximum number of candies"
-msgstr "Maxime numero de bonbones"
+msgstr ""
 
 #: server/activities/share/ShareEditor.qml:55
 msgctxt "ShareEditor|"
@@ -1400,12 +1397,12 @@ msgstr ""
 #: server/activities/share/ShareEditor.qml:58
 msgctxt "ShareEditor|"
 msgid "Instruction"
-msgstr "Instruction"
+msgstr ""
 
 #: server/activities/share/ShareEditor.qml:289
 msgctxt "ShareEditor|"
 msgid "Dataset is empty."
-msgstr "Insimul de datos es vacue."
+msgstr ""
 
 #: server/activities/share/ShareEditor.qml:299
 #, qt-format
@@ -1457,18 +1454,18 @@ msgstr ""
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:27
 msgctxt "TensComplementFindEditor|"
 msgid "Random questions"
-msgstr "Demandas aleatori"
+msgstr ""
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:28
 msgctxt "TensComplementFindEditor|"
 msgid "Find both numbers"
-msgstr "Trova ambes le numeros"
+msgstr ""
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:29
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:35
 msgctxt "TensComplementFindEditor|"
 msgid "Sublevels"
-msgstr "Subnivellos"
+msgstr ""
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:30
 msgctxt "TensComplementFindEditor|"
@@ -1494,17 +1491,17 @@ msgstr ""
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:34
 msgctxt "TensComplementFindEditor|"
 msgid "Shuffle operands"
-msgstr "Shuffle (miscer) operandos"
+msgstr ""
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:40
 msgctxt "TensComplementFindEditor|"
 msgid "First operands"
-msgstr "Prime operandos"
+msgstr ""
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:163
 msgctxt "TensComplementFindEditor|"
 msgid "Dataset is empty."
-msgstr "Insimul de datos es vacue."
+msgstr ""
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:178
 #, qt-format
@@ -1578,12 +1575,12 @@ msgstr ""
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:35
 msgctxt "TensComplementSwapEditor|"
 msgid "Shuffle"
-msgstr "Shuffle (miscer)"
+msgstr ""
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:36
 msgctxt "TensComplementSwapEditor|"
 msgid "Additions"
-msgstr "Additiones"
+msgstr ""
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:41
 msgctxt "TensComplementSwapEditor|"
@@ -1593,7 +1590,7 @@ msgstr ""
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:42
 msgctxt "TensComplementSwapEditor|"
 msgid "Number of operands"
-msgstr "Numero de operandos"
+msgstr ""
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:43
 msgctxt "TensComplementSwapEditor|"
@@ -1608,7 +1605,7 @@ msgstr ""
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:144
 msgctxt "TensComplementSwapEditor|"
 msgid "Dataset is empty."
-msgstr "Insimul de datos es vacue."
+msgstr ""
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:154
 #, qt-format
@@ -1652,23 +1649,23 @@ msgstr ""
 #: server/activities/tens_complement_use/TensComplementUseDataDisplay.qml:71
 msgctxt "TensComplementUseDataDisplay|"
 msgid "Question:"
-msgstr "Demanda:"
+msgstr ""
 
 #: server/activities/tens_complement_use/TensComplementUseDataDisplay.qml:97
 msgctxt "TensComplementUseDataDisplay|"
 msgid "Answer:"
-msgstr "Responde:"
+msgstr ""
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:27
 msgctxt "TensComplementUseEditor|"
 msgid "Random questions"
-msgstr "Demandas aleatori"
+msgstr ""
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:28
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:34
 msgctxt "TensComplementUseEditor|"
 msgid "Sublevels"
-msgstr "Subnivellos"
+msgstr ""
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:29
 msgctxt "TensComplementUseEditor|"
@@ -1684,27 +1681,27 @@ msgstr ""
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:31
 msgctxt "TensComplementUseEditor|"
 msgid "Minimum result"
-msgstr "Resultato minime"
+msgstr ""
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:32
 msgctxt "TensComplementUseEditor|"
 msgid "Maximum result"
-msgstr "Resultato maxime"
+msgstr ""
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:33
 msgctxt "TensComplementUseEditor|"
 msgid "Shuffle"
-msgstr "Shuffle (miscer)"
+msgstr ""
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:39
 msgctxt "TensComplementUseEditor|"
 msgid "Additions"
-msgstr "Additiones"
+msgstr ""
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:156
 msgctxt "TensComplementUseEditor|"
 msgid "Dataset is empty."
-msgstr "Insimul de datos es vacue."
+msgstr ""
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:169
 #, qt-format
@@ -1751,17 +1748,17 @@ msgstr ""
 #: server/activities/vertical_subtraction/VerticalEditor.qml:29
 msgctxt "VerticalEditor|"
 msgid "Sublevels"
-msgstr "Subnivellos"
+msgstr ""
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:31
 msgctxt "VerticalEditor|"
 msgid "Number of digits"
-msgstr "Numero de cifras"
+msgstr ""
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:33
 msgctxt "VerticalEditor|"
 msgid "Number of lines"
-msgstr "Numero de Lineas"
+msgstr ""
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:34
 msgctxt "VerticalEditor|"
@@ -1781,7 +1778,7 @@ msgstr ""
 #: server/components/CalendarPane.qml:77
 msgctxt "CalendarPane|"
 msgid "Calendar"
-msgstr "Calendario"
+msgstr ""
 
 #: server/components/CheckUserEditDelegate.qml:34
 msgctxt "CheckUserEditDelegate|"
@@ -1791,22 +1788,22 @@ msgstr ""
 #: server/components/EditorBox.qml:84
 msgctxt "EditorBox|"
 msgid "Add"
-msgstr "Adde"
+msgstr ""
 
 #: server/components/EditorBox.qml:95
 msgctxt "EditorBox|"
 msgid "Remove"
-msgstr "Remove"
+msgstr ""
 
 #: server/components/EditorBox.qml:107
 msgctxt "EditorBox|"
 msgid "Move up"
-msgstr "Move in alto"
+msgstr ""
 
 #: server/components/EditorBox.qml:119
 msgctxt "EditorBox|"
 msgid "Move down"
-msgstr "Move a basso "
+msgstr ""
 
 #: server/components/FieldEdit.qml:329
 msgctxt "FieldEdit|"
@@ -1826,34 +1823,34 @@ msgstr ""
 #: server/components/OkCancelButtons.qml:21
 msgctxt "OkCancelButtons|"
 msgid "OK"
-msgstr "OK"
+msgstr ""
 
 #: server/components/OkCancelButtons.qml:22
 msgctxt "OkCancelButtons|"
 msgid "Cancel"
-msgstr "Cancella"
+msgstr ""
 
 #: server/components/RadioGroupEditDelegate.qml:59
 msgctxt "RadioGroupEditDelegate|"
 msgid "Edit group"
-msgstr "Modifica Gruppo"
+msgstr ""
 
 #: server/components/RadioGroupEditDelegate.qml:71
 msgctxt "RadioGroupEditDelegate|"
 msgid "Delete group"
-msgstr "Dele gruppo"
+msgstr ""
 
 #. Argument is dataset name
 #: server/components/SequenceElement.qml:72
 #, qt-format
 msgctxt "SequenceElement|"
 msgid "Dataset: %1"
-msgstr "Insimul de datos: %1"
+msgstr ""
 
 #: server/components/ServerLanguageList.qml:32
 msgctxt "ServerLanguageList|"
 msgid "Your system default"
-msgstr "Tu predefinition de systema"
+msgstr ""
 
 #: server/controllers/database-controller.cpp:79
 #: server/controllers/database-controller.cpp:85
@@ -1877,7 +1874,7 @@ msgstr ""
 #: server/controllers/database-controller.cpp:373
 msgctxt "controllers::DatabaseController|"
 msgid "Wrong password."
-msgstr " Contrasigno errate."
+msgstr ""
 
 #: server/controllers/database-controller.cpp:417
 #, qt-format
@@ -2043,7 +2040,7 @@ msgstr ""
 #: server/dialogs/CreateDbDialog.qml:108
 msgctxt "CreateDbDialog|"
 msgid "Password"
-msgstr "Contrasigno"
+msgstr ""
 
 #: server/dialogs/CreateDbDialog.qml:124
 msgctxt "CreateDbDialog|"
@@ -2078,7 +2075,7 @@ msgstr ""
 #: server/dialogs/DatasetEditorDialog.qml:345
 msgctxt "DatasetEditorDialog|"
 msgid "Editor"
-msgstr "Editor"
+msgstr ""
 
 #: server/dialogs/DatasetEditorDialog.qml:349
 msgctxt "DatasetEditorDialog|"
@@ -2088,22 +2085,22 @@ msgstr ""
 #: server/dialogs/DatasetEditorDialog.qml:379
 msgctxt "DatasetEditorDialog|"
 msgid "Activity name"
-msgstr "Nomine de activitate"
+msgstr ""
 
 #: server/dialogs/DatasetEditorDialog.qml:393
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name"
-msgstr "Nomine  de insimul de datos"
+msgstr ""
 
 #: server/dialogs/DatasetEditorDialog.qml:407
 msgctxt "DatasetEditorDialog|"
 msgid "Goal"
-msgstr "Scopo"
+msgstr ""
 
 #: server/dialogs/DatasetEditorDialog.qml:421
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty"
-msgstr "Difficultate"
+msgstr ""
 
 #: server/dialogs/DatasetEditorDialog.qml:519
 msgctxt "DatasetEditorDialog|"
@@ -2118,7 +2115,7 @@ msgstr ""
 #: server/dialogs/ErrorDialog.qml:46
 msgctxt "ErrorDialog|"
 msgid "Information"
-msgstr "Information"
+msgstr ""
 
 #: server/dialogs/ExportPupilsDialog.qml:79
 msgctxt "ExportPupilsDialog|"
@@ -2128,7 +2125,7 @@ msgstr ""
 #: server/dialogs/ExportPupilsDialog.qml:121
 msgctxt "ExportPupilsDialog|"
 msgid "Save file"
-msgstr "Salveguarda file"
+msgstr ""
 
 #: server/dialogs/ExportPupilsDialog.qml:131
 msgctxt "ExportPupilsDialog|"
@@ -2138,12 +2135,12 @@ msgstr ""
 #: server/dialogs/GroupDialog.qml:114
 msgctxt "GroupDialog|"
 msgid "Name"
-msgstr "Nomine"
+msgstr ""
 
 #: server/dialogs/GroupDialog.qml:128
 msgctxt "GroupDialog|"
 msgid "Description"
-msgstr "Description"
+msgstr ""
 
 #: server/dialogs/ImportPupilsDialog.qml:70
 msgctxt "ImportPupilsDialog|"
@@ -2183,7 +2180,7 @@ msgstr ""
 #: server/dialogs/PupilDialog.qml:166
 msgctxt "PupilDialog|"
 msgid "Password"
-msgstr "Contrasigno"
+msgstr ""
 
 #: server/dialogs/PupilDialog.qml:218
 msgctxt "PupilDialog|"
@@ -2193,7 +2190,7 @@ msgstr ""
 #: server/dialogs/PupilDialog.qml:254
 msgctxt "PupilDialog|"
 msgid "Groups"
-msgstr "Gruppos"
+msgstr ""
 
 #: server/dialogs/PupilsToGroupsDialog.qml:87
 msgctxt "PupilsToGroupsDialog|"
@@ -2290,37 +2287,37 @@ msgstr ""
 #: server/dialogs/SequenceEditorDialog.qml:177
 msgctxt "SequenceEditorDialog|"
 msgid "Goal"
-msgstr "Scopo"
+msgstr ""
 
 #: server/dialogs/SequenceEditorDialog.qml:245
 msgctxt "SequenceEditorDialog|"
 msgid "Activities"
-msgstr "Activitates"
+msgstr ""
 
 #: server/dialogs/SequenceEditorDialog.qml:272
 msgctxt "SequenceEditorDialog|"
 msgid "Datasets"
-msgstr "Insimules de datos"
+msgstr ""
 
 #: server/dialogs/SequenceEditorDialog.qml:323
 msgctxt "SequenceEditorDialog|"
 msgid "Add"
-msgstr "Adde"
+msgstr ""
 
 #: server/dialogs/SequenceEditorDialog.qml:343
 msgctxt "SequenceEditorDialog|"
 msgid "Remove"
-msgstr "Remove"
+msgstr ""
 
 #: server/dialogs/SequenceEditorDialog.qml:355
 msgctxt "SequenceEditorDialog|"
 msgid "Move up"
-msgstr "Move in alto"
+msgstr ""
 
 #: server/dialogs/SequenceEditorDialog.qml:367
 msgctxt "SequenceEditorDialog|"
 msgid "Move down"
-msgstr "Move a basso "
+msgstr ""
 
 #: server/dialogs/SqlLineDialog.qml:19
 msgctxt "SqlLineDialog|"
@@ -2330,7 +2327,7 @@ msgstr ""
 #: server/dialogs/SqlLineDialog.qml:194
 msgctxt "SqlLineDialog|"
 msgid "Close"
-msgstr "Claude"
+msgstr ""
 
 #: server/Main.qml:48
 msgctxt "Main|"
@@ -2340,7 +2337,7 @@ msgstr ""
 #: server/panels/NavigationPanel.qml:71
 msgctxt "NavigationPanel|"
 msgid "Login"
-msgstr "Accesso de identification"
+msgstr ""
 
 #: server/panels/NavigationPanel.qml:79
 msgctxt "NavigationPanel|"
@@ -2355,12 +2352,12 @@ msgstr ""
 #: server/panels/NavigationPanel.qml:95
 msgctxt "NavigationPanel|"
 msgid "Activities"
-msgstr "Activitates"
+msgstr ""
 
 #: server/panels/NavigationPanel.qml:103
 msgctxt "NavigationPanel|"
 msgid "Datasets"
-msgstr "Gruppo de datos"
+msgstr ""
 
 #: server/panels/NavigationPanel.qml:111
 msgctxt "NavigationPanel|"
@@ -2370,17 +2367,17 @@ msgstr ""
 #: server/panels/NavigationPanel.qml:119
 msgctxt "NavigationPanel|"
 msgid "Charts"
-msgstr "Graphicos"
+msgstr ""
 
 #: server/panels/NavigationPanel.qml:127
 msgctxt "NavigationPanel|"
 msgid "Settings"
-msgstr "Preferentias"
+msgstr ""
 
 #: server/panels/SelectorPanel.qml:50
 msgctxt "SelectorPanel|"
 msgid "Groups"
-msgstr "Gruppos"
+msgstr ""
 
 #: server/panels/SelectorPanel.qml:69
 msgctxt "SelectorPanel|"
@@ -2390,27 +2387,27 @@ msgstr ""
 #: server/panels/SelectorPanel.qml:85
 msgctxt "SelectorPanel|"
 msgid "Activities"
-msgstr "Activitates"
+msgstr ""
 
 #: server/singletons/Master.qml:43
 msgctxt "Master|"
 msgid "User ID"
-msgstr "ID de usator"
+msgstr ""
 
 #: server/singletons/Master.qml:44
 msgctxt "Master|"
 msgid "Name"
-msgstr "Nomine"
+msgstr ""
 
 #: server/singletons/Master.qml:45
 msgctxt "Master|"
 msgid "Names"
-msgstr "Nomines"
+msgstr ""
 
 #: server/singletons/Master.qml:46
 msgctxt "Master|"
 msgid "Password"
-msgstr "Contrasigno"
+msgstr ""
 
 #: server/singletons/Master.qml:47
 msgctxt "Master|"
@@ -2425,22 +2422,22 @@ msgstr ""
 #: server/singletons/Master.qml:49
 msgctxt "Master|"
 msgid "Activity"
-msgstr "Activitate"
+msgstr ""
 
 #: server/singletons/Master.qml:50
 msgctxt "Master|"
 msgid "Group"
-msgstr "Gruppo"
+msgstr ""
 
 #: server/singletons/Master.qml:51
 msgctxt "Master|"
 msgid "Description"
-msgstr "Description"
+msgstr ""
 
 #: server/singletons/Master.qml:52
 msgctxt "Master|"
 msgid "Groups"
-msgstr "Gruppos"
+msgstr ""
 
 #: server/singletons/Master.qml:53
 msgctxt "Master|"
@@ -2450,32 +2447,32 @@ msgstr ""
 #: server/singletons/Master.qml:54 server/singletons/Master.qml:58
 msgctxt "Master|"
 msgid "Date"
-msgstr "Data"
+msgstr ""
 
 #: server/singletons/Master.qml:55 server/singletons/Master.qml:60
 msgctxt "Master|"
 msgid "Success"
-msgstr "Successo"
+msgstr ""
 
 #: server/singletons/Master.qml:56
 msgctxt "Master|"
 msgid "Duration"
-msgstr "Duration"
+msgstr ""
 
 #: server/singletons/Master.qml:57
 msgctxt "Master|"
 msgid "Data"
-msgstr "Datos"
+msgstr ""
 
 #: server/singletons/Master.qml:59
 msgctxt "Master|"
 msgid "Count"
-msgstr "Computo"
+msgstr ""
 
 #: server/singletons/Master.qml:61
 msgctxt "Master|"
 msgid "Failed"
-msgstr "Fallite"
+msgstr ""
 
 #: server/singletons/Master.qml:62
 msgctxt "Master|"
@@ -2495,7 +2492,7 @@ msgstr ""
 #: server/views/ChartsView.qml:136
 msgctxt "ChartsView|"
 msgid "Activities"
-msgstr "Activitates"
+msgstr ""
 
 #: server/views/ChartsView.qml:143
 msgctxt "ChartsView|"
@@ -2552,12 +2549,12 @@ msgstr ""
 #, qt-format
 msgctxt "AllData|"
 msgid "%1 lines"
-msgstr "%1 lineas"
+msgstr ""
 
 #: server/views/datas/DuplicateData.qml:175
 msgctxt "DuplicateData|"
 msgid "Commands"
-msgstr "Commandos"
+msgstr ""
 
 #: server/views/datas/DuplicateData.qml:188
 msgctxt "DuplicateData|"
@@ -2567,7 +2564,7 @@ msgstr ""
 #: server/views/datas/DuplicateData.qml:195
 msgctxt "DuplicateData|"
 msgid "Duplicate"
-msgstr "Duplica"
+msgstr ""
 
 #: server/views/datas/DuplicateData.qml:199
 msgctxt "DuplicateData|"
@@ -2583,7 +2580,7 @@ msgstr ""
 #: server/views/datas/DuplicateData.qml:208
 msgctxt "DuplicateData|"
 msgid "Delete"
-msgstr "Dele"
+msgstr ""
 
 #: server/views/datas/DuplicateData.qml:212
 msgctxt "DuplicateData|"
@@ -2593,17 +2590,17 @@ msgstr ""
 #: server/views/datas/DuplicateData.qml:230
 msgctxt "DuplicateData|"
 msgid "Copy to"
-msgstr "Copia a"
+msgstr ""
 
 #: server/views/DatasetsView.qml:44
 msgctxt "DatasetsView|"
 msgid "Activities"
-msgstr "Activitates"
+msgstr ""
 
 #: server/views/DatasetsView.qml:63
 msgctxt "DatasetsView|"
 msgid "Datasets"
-msgstr "Gruppo de datos"
+msgstr ""
 
 #: server/views/DatasetsView.qml:95
 msgctxt "DatasetsView|"
@@ -2643,7 +2640,7 @@ msgstr ""
 #: server/views/DevelopmentView.qml:43
 msgctxt "DevelopmentView|"
 msgid "Edit data"
-msgstr "Modifica datos"
+msgstr ""
 
 #: server/views/DevelopmentView.qml:47
 msgctxt "DevelopmentView|"
@@ -2653,27 +2650,27 @@ msgstr ""
 #: server/views/DevicesView.qml:52
 msgctxt "DevicesView|"
 msgid "Not connected"
-msgstr "Non connectite"
+msgstr ""
 
 #: server/views/DevicesView.qml:54
 msgctxt "DevicesView|"
 msgid "Incorrect password"
-msgstr "Contrasigno incorrecte."
+msgstr ""
 
 #: server/views/DevicesView.qml:56
 msgctxt "DevicesView|"
 msgid "Logged in"
-msgstr "Aperi session"
+msgstr ""
 
 #: server/views/DevicesView.qml:58
 msgctxt "DevicesView|"
 msgid "Connection lost"
-msgstr "Connexion perdite"
+msgstr ""
 
 #: server/views/DevicesView.qml:60
 msgctxt "DevicesView|"
 msgid "Disconnected"
-msgstr "Disconnectite"
+msgstr ""
 
 #: server/views/DevicesView.qml:62
 msgctxt "DevicesView|"
@@ -2683,7 +2680,7 @@ msgstr ""
 #: server/views/DevicesView.qml:84
 msgctxt "DevicesView|"
 msgid "Groups"
-msgstr "Gruppos"
+msgstr ""
 
 #: server/views/DevicesView.qml:101
 msgctxt "DevicesView|"
@@ -2693,7 +2690,7 @@ msgstr ""
 #: server/views/DevicesView.qml:135
 msgctxt "DevicesView|"
 msgid "Network"
-msgstr "Rete"
+msgstr ""
 
 #: server/views/DevicesView.qml:158
 msgctxt "DevicesView|"
@@ -2728,12 +2725,12 @@ msgstr ""
 #: server/views/DevicesView.qml:243
 msgctxt "DevicesView|"
 msgid "Connected:"
-msgstr "Connectite:"
+msgstr ""
 
 #: server/views/DevicesView.qml:250
 msgctxt "DevicesView|"
 msgid "Logged in:"
-msgstr "Aperi session:"
+msgstr ""
 
 #: server/views/DevicesView.qml:257
 msgctxt "DevicesView|"
@@ -2759,7 +2756,7 @@ msgstr ""
 #: server/views/LoginView.qml:43
 msgctxt "LoginView|"
 msgid "Incorrect password"
-msgstr "Contrasigno incorrecte."
+msgstr ""
 
 #: server/views/LoginView.qml:47
 msgctxt "LoginView|"
@@ -2779,12 +2776,12 @@ msgstr ""
 #: server/views/LoginView.qml:110
 msgctxt "LoginView|"
 msgid "Password"
-msgstr "Contrasigno"
+msgstr ""
 
 #: server/views/LoginView.qml:128
 msgctxt "LoginView|"
 msgid "Login"
-msgstr "Accesso de identification"
+msgstr ""
 
 #: server/views/LoginView.qml:137
 msgctxt "LoginView|"
@@ -2814,7 +2811,7 @@ msgstr ""
 #: server/views/ManagePupilsView.qml:52
 msgctxt "ManagePupilsView|"
 msgid "Edit group"
-msgstr "Modifica Gruppo"
+msgstr ""
 
 #: server/views/ManagePupilsView.qml:68 server/views/ManagePupilsView.qml:207
 msgctxt "ManagePupilsView|"
@@ -2829,7 +2826,7 @@ msgstr ""
 #: server/views/ManagePupilsView.qml:122
 msgctxt "ManagePupilsView|"
 msgid "Groups"
-msgstr "Gruppos"
+msgstr ""
 
 #: server/views/ManagePupilsView.qml:159
 msgctxt "ManagePupilsView|"
@@ -2874,7 +2871,7 @@ msgstr ""
 #: server/views/SequencesView.qml:102
 msgctxt "SequencesView|"
 msgid "Details"
-msgstr "Detalios"
+msgstr ""
 
 #: server/views/SequencesView.qml:169
 msgctxt "SequencesView|"
@@ -2909,32 +2906,32 @@ msgstr ""
 #: server/views/SettingsView.qml:66
 msgctxt "SettingsView|"
 msgid "Left"
-msgstr "Sinistra"
+msgstr ""
 
 #: server/views/SettingsView.qml:66
 msgctxt "SettingsView|"
 msgid "Right"
-msgstr "Dextera"
+msgstr ""
 
 #: server/views/SettingsView.qml:77
 msgctxt "SettingsView|"
 msgid "Font size"
-msgstr "Dimension de font"
+msgstr ""
 
 #: server/views/SettingsView.qml:87
 msgctxt "SettingsView|"
 msgid "Theme"
-msgstr "Thema"
+msgstr ""
 
 #: server/views/SettingsView.qml:88
 msgctxt "SettingsView|"
 msgid "Dark"
-msgstr "Obscur"
+msgstr ""
 
 #: server/views/SettingsView.qml:88
 msgctxt "SettingsView|"
 msgid "Light"
-msgstr "Legier"
+msgstr ""
 
 #: server/views/SettingsView.qml:103
 msgctxt "SettingsView|"
@@ -2949,17 +2946,17 @@ msgstr ""
 #: server/views/SettingsView.qml:171
 msgctxt "SettingsView|"
 msgid "Port"
-msgstr "Porto"
+msgstr ""
 
 #: server/views/SettingsView.qml:188
 msgctxt "SettingsView|"
 msgid "Server status"
-msgstr "Stato de servitor"
+msgstr ""
 
 #: server/views/SettingsView.qml:189
 msgctxt "SettingsView|As in 'The server is running'"
 msgid "Running"
-msgstr "Il es in execution"
+msgstr ""
 
 #: server/views/SettingsView.qml:189
 #, qt-format
@@ -2970,7 +2967,7 @@ msgstr ""
 #: server/views/SettingsView.qml:197
 msgctxt "SettingsView|"
 msgid "Host name"
-msgstr "Nomine de hospite"
+msgstr ""
 
 #: server/views/SettingsView.qml:204
 msgctxt "SettingsView|"
@@ -2985,12 +2982,12 @@ msgstr ""
 #: server/views/SettingsView.qml:218
 msgctxt "SettingsView|"
 msgid "Netmask"
-msgstr "Netmask (Mascara de rete)"
+msgstr ""
 
 #: server/views/SettingsView.qml:223
 msgctxt "SettingsView|"
 msgid "MAC address"
-msgstr "Adresse MAC"
+msgstr ""
 
 #: server/views/SettingsView.qml:230
 msgctxt "SettingsView|"
@@ -3000,7 +2997,7 @@ msgstr ""
 #: server/views/SettingsView.qml:237
 msgctxt "SettingsView|"
 msgid "Qt version"
-msgstr "Version de Qt"
+msgstr ""
 
 #: server/views/SettingsView.qml:250
 msgctxt "SettingsView|"
@@ -3020,12 +3017,12 @@ msgstr ""
 #: server/views/SettingsView.qml:266
 msgctxt "SettingsView|"
 msgid "Yes"
-msgstr "Si"
+msgstr ""
 
 #: server/views/SettingsView.qml:266
 msgctxt "SettingsView|"
 msgid "No"
-msgstr "No"
+msgstr ""
 
 #: server/views/SettingsView.qml:271
 msgctxt "SettingsView|"
@@ -3035,7 +3032,7 @@ msgstr ""
 #: server/views/SettingsView.qml:277
 msgctxt "SettingsView|"
 msgid "Groups"
-msgstr "Gruppos"
+msgstr ""
 
 #: server/views/SettingsView.qml:290
 msgctxt "SettingsView|"
