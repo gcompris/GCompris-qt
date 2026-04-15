@@ -1,19 +1,20 @@
 # SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2023, 2024 Vít Pelčák <vit@pelcak.org>
 # SPDX-FileCopyrightText: 2021, 2022, 2023, 2024 Vit Pelcak <vit@pelcak.org>
+# SPDX-FileCopyrightText: 2026 Libor Filípek <filipek.libor@protonmail.com>
 # SPDX-FileCopyrightText: 2025 Jan Papež (honyczek)
 # SPDX-FileCopyrightText: 2024, 2025, 2026 Jan Papez (honyczek)
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-01-18 22:20+0100\n"
-"Last-Translator: Jan Papez (honyczek) <honyczek@centrum.cz>\n"
-"Language-Team: Czech <kde-i18n-cs@kde.org>\n"
+"PO-Revision-Date: 2026-04-14 18:11+0200\n"
+"Last-Translator: Libor Filípek <filipek.libor@protonmail.com>\n"
+"Language-Team: \n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 25.12.1\n"
+"X-Generator: Lokalize 25.12.3\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -1026,7 +1027,7 @@ msgid ""
 msgstr ""
 "Na obrazovce se zobrazí dělení. Vypočítej podíl a zadej jej pomocí "
 "klávesnice počítače nebo klávesnice na obrazovce.Musíš být rychlý a zadat "
-"odpověď dříve, než tučňáci v balónu přistanou! "
+"odpověď dříve, než tučňáci v balónu přistanou!"
 
 #: activities/algebra_div/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -1417,7 +1418,7 @@ msgstr "Pochytej helikoptérou všechny mraky v pořadí podle abecedy."
 #: activities/ordering_alphabets/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Learn the alphabetical order."
-msgstr "Nauč se pořadí v abecedě"
+msgstr "Nauč se pořadí v abecedě."
 
 #. Help prerequisite
 #: activities/alphabet-sequence/ActivityInfo.qml:22
@@ -1560,7 +1561,7 @@ msgstr ""
 #: activities/analog_electricity/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "The electric simulation engine is from edX: "
-msgstr "Elektrický simulační engine je od edX:"
+msgstr "Elektrický simulační engine je od edX: "
 
 #: activities/analog_electricity/cktsim.js:138
 msgctxt "cktsim|"
@@ -2009,7 +2010,7 @@ msgid ""
 " A red LED converts electrical energy into red light energy under particular "
 "conditions."
 msgstr ""
-"Červená LED za určitých podmínek mění elektrickou energii na červenou "
+" Červená LED za určitých podmínek mění elektrickou energii na červenou "
 "světelnou energii."
 
 #: activities/analog_electricity/TutorialDataset.qml:252
@@ -3235,31 +3236,31 @@ msgstr ""
 #: activities/calcudoku/resource/1/Data.qml:66
 msgctxt "Data|"
 msgid "Small grids with + operator."
-msgstr "Malé mřížky s operátorem +. "
+msgstr "Malé mřížky s operátorem +."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr "Malé mřížky s operátory + a -. "
+msgstr "Malé mřížky s operátory + a -."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr "Malé mřížky s operátory +, - a ×. "
+msgstr "Malé mřížky s operátory +, - a ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr "Střední mřížky s operátory +, - a ×. "
+msgstr "Střední mřížky s operátory +, - a ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr "Velké mřížky s operátory +, -, × a /. "
+msgstr "Velké mřížky s operátory +, -, × a /."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -3355,7 +3356,7 @@ msgstr "Sobota"
 #: activities/calendar/calendar_dataset.js:35
 msgctxt "calendar_dataset|"
 msgid "Select the 23rd"
-msgstr "Vyber 23."
+msgstr "Vyber 23"
 
 #: activities/calendar/calendar_dataset.js:39
 msgctxt "calendar_dataset|"
@@ -3677,7 +3678,7 @@ msgstr "Řazení do kategorií"
 #: activities/categorization/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Categorize the items into correct and incorrect groups."
-msgstr "Zařazuj prvky do správných a nesprávných skupin"
+msgstr "Zařazuj prvky do správných a nesprávných skupin."
 
 #. Help goal
 #: activities/categorization/ActivityInfo.qml:20
@@ -5620,33 +5621,27 @@ msgid "2 decimal places between 0 and 99.99."
 msgstr "2 desetinná místa mezi 0 a 99,99."
 
 #: activities/compass/ActivityConfig.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Free Mode"
 msgctxt "ActivityConfig|"
 msgid "Template Mode"
-msgstr "Volný režim"
+msgstr "Režim šablon"
 
 #. Activity title
 #: activities/compass/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Compass"
-msgstr ""
+msgstr "Kružítko"
 
 #. Help title
 #: activities/compass/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Use the compass to draw."
-msgstr ""
+msgstr "Kresli pomocí kružítka."
 
 #. Help goal
 #: activities/compass/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to draw letters in a fun way."
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw circles and arcs with a compass."
-msgstr "Nauč se kreslit písmena zábavným způsobem."
+msgstr "Nauč se kreslit kružnice a oblouky pomocí kružítka."
 
 #. Help manual
 #: activities/compass/ActivityInfo.qml:23
@@ -5656,33 +5651,31 @@ msgid ""
 "inspiration from. In free mode, you can draw freely and adjust the canvas "
 "size and grid spacing as you want from the compass settings menu."
 msgstr ""
+"V režimu šablon obsahuje každá úroveň šablonu, kterou můžeš kopírovat nebo z "
+"níž můžeš čerpat inspiraci. V režimu volného kreslení můžeš kreslit "
+"libovolně a v nabídce nastavení kompasu si podle libosti upravit velikost "
+"plátna a rozestupy mřížky."
 
 #: activities/compass/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "<br><b>Drawing with the compass:</b>"
-msgstr ""
+msgstr "<br><b>Kreslení s kružítkem:</b>"
 
 #: activities/compass/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Move the compass by dragging the leg without the pen."
-msgstr ""
+msgstr "Přesuň kružítko tažením za jeho rameno bez hrotu."
 
 #: activities/compass/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Complete the puzzle by dragging each piece on the side to the matching "
-#| "spot."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move the pen by dragging the other leg or the circle around the pen tip."
-msgstr ""
-"Dokonči skládačku přetažením každého dílku po straně na odpovídající místo."
+msgstr "Pero posuň tak, že přetáhneš druhé rameno nebo kruh kolem hrotu pera."
 
 #: activities/compass/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Rotate and draw by dragging the pen with the left mouse button."
-msgstr ""
+msgstr "Otáčej a kresli tažením pera pomocí levého tlačítka myši."
 
 #: activities/compass/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -5690,6 +5683,8 @@ msgid ""
 "Rotate without drawing by dragging the compass hinge, or by dragging the pen "
 "with the right mouse button."
 msgstr ""
+"Otoč bez kreslení přetažením kloubu kružítka nebo přetažením pera pravým "
+"tlačítkem myši."
 
 #: activities/compass/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -5697,14 +5692,12 @@ msgid ""
 "The snap to grid setting can be temporarily inverted by pressing the Control "
 "key."
 msgstr ""
+"Nastavení přichycení k mřížce lze dočasně obrátit stisknutím klávesy Control."
 
 #: activities/compass/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "<b>Diving planes</b>"
 msgctxt "ActivityInfo|"
 msgid "<b>Templates:</b>"
-msgstr "<b>Hloubková kormidla</b>"
+msgstr "<b>Šablony:</b>"
 
 #: activities/compass/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -5712,6 +5705,8 @@ msgid ""
 "Each level in template mode presents a template to replicate or to get "
 "inspiration from."
 msgstr ""
+"Každá úroveň v režimu šablon nabízí šablonu, kterou lze napodobit nebo z níž "
+"lze čerpat inspiraci."
 
 #: activities/compass/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -5719,6 +5714,8 @@ msgid ""
 "Each template is divided into steps which can be scrolled through using the "
 "arrows."
 msgstr ""
+"Každá šablona je rozdělena na jednotlivé kroky, mezi nimiž lze listovat "
+"pomocí šipek."
 
 #: activities/compass/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
@@ -5726,14 +5723,13 @@ msgid ""
 "Each step shows where to place the tip of the compass and the circle or arc "
 "to be drawn."
 msgstr ""
+"V každém kroku je uvedeno, kam umístit hrot kružítka a jaký kruh nebo oblouk "
+"je třeba nakreslit."
 
 #: activities/compass/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid "You can change the rheostat value by dragging its slider."
 msgctxt "ActivityInfo|"
 msgid "You can change the position of the template by clicking on its corners."
-msgstr "Přetažením posuvníku reostatu můžeš měnit jeho hodnotu."
+msgstr "Polohu šablony můžeš změnit kliknutím na její rohy."
 
 #: activities/compass/ActivityInfo.qml:36
 #: activities/drawing_wheels/ActivityInfo.qml:29
@@ -5747,7 +5743,7 @@ msgstr "Ctrl + Z: Vrátit zpět poslední činnost"
 #: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
-msgstr "Ctrl + Y: Znovu provést poslední činnost."
+msgstr "Ctrl + Y: Znovu provést poslední činnost"
 
 #: activities/compass/ActivityInfo.qml:38
 #: activities/drawing_wheels/ActivityInfo.qml:31
@@ -5766,80 +5762,59 @@ msgstr "Ctrl + O: Otevřít obrázek"
 #: activities/compass/ActivityInfo.qml:40
 msgctxt "ActivityInfo|"
 msgid "Ctrl: invert snap to grid while it is pressed"
-msgstr ""
+msgstr "Ctrl: při stisknutí této klávesy se připnutí k mřížce přepne na opačné"
 
 #: activities/compass/ActivityInfo.qml:41
 msgctxt "ActivityInfo|"
 msgid "P: open the pen panel"
-msgstr ""
+msgstr "P: otevřít panel pera"
 
 #: activities/compass/ActivityInfo.qml:42
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Down arrow: select previous item"
 msgctxt "ActivityInfo|"
 msgid "Left arrow: previous template step"
-msgstr "Šipka dolů: výběr předchozí položky"
+msgstr "Šipka vlevo: předchozí krok šablony"
 
 #: activities/compass/ActivityInfo.qml:43
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Right arrow: right hand answer"
 msgctxt "ActivityInfo|"
 msgid "Right arrow: next template step"
-msgstr "Šipka doprava: odpověď pravá ruka"
+msgstr "Šipka vpravo: další krok šablony"
 
 #: activities/compass/ActivityInfo.qml:44
 msgctxt "ActivityInfo|"
 msgid "Tab: toggle the template visibility"
-msgstr ""
+msgstr "Záložka: přepínání viditelnosti šablony"
 
 #: activities/compass/ActivityInfo.qml:45
 msgctxt "ActivityInfo|"
 msgid "Space: toggle the compass and grid visibility"
-msgstr ""
+msgstr "Mezerník: přepínání zobrazení kružítka a mřížky"
 
 #: activities/compass/compass.js:103
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Free Mode"
 msgctxt "compass|"
 msgid "Free mode"
 msgstr "Volný režim"
 
 #: activities/compass/Compass.qml:439
-#, fuzzy
-#| msgctxt "IntroMessage|"
-#| msgid "Previous"
 msgctxt "Compass|"
 msgid "Previous step"
-msgstr "Předchozí"
+msgstr "Předchozí krok"
 
 #: activities/compass/Compass.qml:464
-#, fuzzy
-#| msgctxt "IntroMessage|"
-#| msgid "Next"
 msgctxt "Compass|"
 msgid "Next step"
-msgstr "Následující"
+msgstr "Další krok"
 
 #: activities/compass/Compass.qml:477
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "All the words"
 msgctxt "Compass|"
 msgid "All steps"
-msgstr "Všechna slova"
+msgstr "Všechny kroky"
 
 #: activities/compass/Compass.qml:477
 msgctxt "Compass|"
 msgid "Current step"
-msgstr ""
+msgstr "Aktuální krok"
 
 #: activities/compass/Compass.qml:549
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "File menu"
 msgctxt "Compass|"
 msgid "File menu"
 msgstr "Nabídka souboru"
@@ -5847,28 +5822,19 @@ msgstr "Nabídka souboru"
 #: activities/compass/Compass.qml:558
 msgctxt "Compass|"
 msgid "Compass and grid settings"
-msgstr ""
+msgstr "Kružítko a nastavení mřížky"
 
 #: activities/compass/Compass.qml:567
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "%1 settings"
 msgctxt "Compass|"
 msgid "Pen settings"
-msgstr "Nastavení %1"
+msgstr "Nastavení pera"
 
 #: activities/compass/Compass.qml:588
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Undo"
 msgctxt "Compass|"
 msgid "Undo"
 msgstr "Zpět"
 
 #: activities/compass/Compass.qml:598
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Redo"
 msgctxt "Compass|"
 msgid "Redo"
 msgstr "Znovu"
@@ -5876,263 +5842,194 @@ msgstr "Znovu"
 #: activities/compass/Compass.qml:612
 msgctxt "Compass|"
 msgid "Show template"
-msgstr ""
+msgstr "Zobrazit šablony"
 
 #: activities/compass/Compass.qml:612
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Golden Temple"
 msgctxt "Compass|"
 msgid "Hide template"
-msgstr "Hari Mandir Sáhib"
+msgstr "Skrýt šablony"
 
 #: activities/compass/Compass.qml:624
 msgctxt "Compass|"
 msgid "Show compass and grid"
-msgstr ""
+msgstr "Zobrazit kružítko a mřížku"
 
 #: activities/compass/Compass.qml:624
 msgctxt "Compass|"
 msgid "Hide compass and grid"
-msgstr ""
+msgstr "Skrýt kružítko a mřížku"
 
 #: activities/compass/Compass.qml:775
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Save your image"
 msgctxt "Compass|"
 msgid "Save your image"
 msgstr "Uložit si obrázek"
 
 #: activities/compass/Compass.qml:790
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Open an image"
 msgctxt "Compass|"
 msgid "Open an image"
 msgstr "Otevřít obrázek"
 
 #: activities/compass/Compass.qml:813
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Create a new image"
 msgctxt "Compass|"
 msgid "Create a new image"
 msgstr "Vytvořit nový obrázek"
 
 #: activities/compass/Compass.qml:832
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Background color"
 msgctxt "Compass|"
 msgid "Background color"
 msgstr "Barva pozadí"
 
 #: activities/compass/Compass.qml:892
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Pen size"
 msgctxt "Compass|"
 msgid "Canvas size"
-msgstr "Velikost pera"
+msgstr "Velikost plátna"
 
 #: activities/compass/Compass.qml:962
 msgctxt "Compass|"
 msgid "Grid spacing"
-msgstr ""
+msgstr "Rozteč mřížky"
 
 #: activities/compass/Compass.qml:1013
 msgctxt "Compass|"
 msgid "Snap to grid"
-msgstr ""
+msgstr "Přichytávat k mřížce"
 
 #: activities/compass/Compass.qml:1039
 msgctxt "Compass|"
 msgid "Show grid"
-msgstr ""
+msgstr "Zobrazit mřížku"
 
 #: activities/compass/Compass.qml:1103
-#, fuzzy
-#| msgctxt "category_colors|"
-#| msgid "Colors"
 msgctxt "Compass|"
 msgid "Color"
-msgstr "Barvy"
+msgstr "Barva"
 
 #: activities/compass/Compass.qml:1149
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Opacity"
 msgctxt "Compass|"
 msgid "Opacity"
 msgstr "Krytí"
 
 #: activities/compass/Compass.qml:1193
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Pen size"
 msgctxt "Compass|"
 msgid " Pen size"
-msgstr "Velikost pera"
+msgstr " Velikost pera"
 
 #: activities/compass/Compass.qml:1254
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "You did not save this image. Do you want to close this activity?"
 msgctxt "Compass|"
 msgid "You did not save this image. Do you want to close this activity?"
-msgstr "Tento obrázek jste neuložili. Chcete tuto aktivitu zavřít?"
+msgstr "Tento obrázek jsi neuložil. Chceš tuto aktivitu zavřít?"
 
 #: activities/compass/Compass.qml:1255
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Do you want to erase this image?"
 msgctxt "Compass|"
 msgid "Do you want to erase this image?"
-msgstr "Chcete tento obrázek odstranit?"
+msgstr "Chceš tento obrázek odstranit?"
 
 #: activities/compass/Compass.qml:1256
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Compass|"
 msgid "Yes"
 msgstr "Ano"
 
 #: activities/compass/Compass.qml:1257
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Compass|"
 msgid "No"
 msgstr "Ne"
 
 #: activities/compass/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Third largest"
 msgctxt "Data|"
 msgid "The target"
-msgstr "Třetí největší"
+msgstr "Cíl"
 
 #: activities/compass/resource/10/Data.qml:13
-#, fuzzy
-#| msgctxt "board8|"
-#| msgid "The Pantheon"
 msgctxt "Data|"
 msgid "The peony"
-msgstr "Pantheon"
+msgstr "Pivoňka"
 
 #: activities/compass/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The same"
 msgctxt "Data|"
 msgid "The snail"
-msgstr "Stejný"
+msgstr "Šnek"
 
 #: activities/compass/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The same"
 msgctxt "Data|"
 msgid "The rose"
-msgstr "Stejný"
+msgstr "Růže"
 
 #: activities/compass/resource/13/Data.qml:13
 msgctxt "Data|"
 msgid "The swirl"
-msgstr ""
+msgstr "Vír"
 
 #: activities/compass/resource/14/Data.qml:13
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The same"
 msgctxt "Data|"
 msgid "The spiral"
-msgstr "Stejný"
+msgstr "Spirála"
 
 #: activities/compass/resource/15/Data.qml:13
 msgctxt "Data|"
 msgid "The twist"
-msgstr ""
+msgstr "Copy"
 
 #: activities/compass/resource/16/Data.qml:15
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The same"
 msgctxt "Data|"
 msgid "The face"
-msgstr "Stejný"
+msgstr "Obličej"
 
 #: activities/compass/resource/17/Data.qml:15
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The same"
 msgctxt "Data|"
 msgid "The bear"
-msgstr "Stejný"
+msgstr "Medvěd"
 
 #: activities/compass/resource/18/Data.qml:14
 msgctxt "Data|"
 msgid "The lion"
-msgstr ""
+msgstr "Lev"
 
 #. The animal
 #: activities/compass/resource/19/Data.qml:16
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "house"
 msgctxt "Data|"
 msgid "The mouse"
-msgstr "dům"
+msgstr "Myš"
 
 #: activities/compass/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The same"
 msgctxt "Data|"
 msgid "The shell"
-msgstr "Stejný"
+msgstr "Skořápka"
 
 #: activities/compass/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "The lotus flower"
-msgstr ""
+msgstr "Lotosový květ"
 
 #: activities/compass/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "The carpet of flowers"
-msgstr ""
+msgstr "Květinový koberec"
 
 #: activities/compass/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "The clover"
-msgstr ""
+msgstr "Jetel"
 
 #: activities/compass/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "board8|"
-#| msgid "The Pantheon"
 msgctxt "Data|"
 msgid "The balloon"
-msgstr "Pantheon"
+msgstr "Balón"
 
 #: activities/compass/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "The daisy"
-msgstr ""
+msgstr "Sedmikráska"
 
 #. The flower
 #: activities/compass/resource/8/Data.qml:14
 msgctxt "Data|"
 msgid "The periwinkle"
-msgstr ""
+msgstr "Brčál barvínek"
 
 #: activities/compass/resource/9/Data.qml:13
 msgctxt "Data|"
 msgid "The soccer ball"
-msgstr ""
+msgstr "Fotbalový míč"
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -6206,8 +6103,8 @@ msgid ""
 "happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;"
 "shape;shirt;study"
 msgstr ""
-"klika;holka;potok;okoun;nanuk;vztek;palec;model;kniha;obraz;hrana;lampa;"
-"bedna;"
+"šťastný;dítě;bílý;jablko;hnědý;pravda;čerstvý;zelený;kůň;hotel;dům;papír;"
+"tvar;košile;studium"
 
 #: activities/crane/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -6568,7 +6465,7 @@ msgid ""
 "the output is equal to 0 and as soon as one input is equal to 0 it gives a 1:"
 msgstr ""
 "Hradlo NAND má na výstupu opak hradla AND. Pokud jsou všechny vstupy 1 bude "
-"na výstupu 0. Ve chvíli, kdy jeden vstup bude 0, bude výstupem 1."
+"na výstupu 0. Ve chvíli, kdy jeden vstup bude 0, bude výstupem 1:"
 
 #: activities/digital_electricity/components/NandGate.qml:24
 msgctxt "NandGate|"
@@ -6583,7 +6480,7 @@ msgid ""
 "to 0:"
 msgstr ""
 "Výstupem hradla NOR je opak hradla OR. Pokud je na nějakém vstupu 1, výstup "
-"má hodnotu 0. Pokud má výstup být 1, všechny vstupy musí být 0."
+"má hodnotu 0. Pokud má výstup být 1, všechny vstupy musí být 0:"
 
 #: activities/digital_electricity/components/NorGate.qml:24
 msgctxt "NorGate|"
@@ -6597,7 +6494,7 @@ msgid ""
 "input 0 gives an output 1. An Input 1 gives an output 0:"
 msgstr ""
 "Hradlo NOT (také známé jako inverter) má na výstupu opak vstupu. Pokud je na "
-"vstupu 1, výstupem je 0. Pokud je na vstupu 0, výstupem je 1."
+"vstupu 1, výstupem je 0. Pokud je na vstupu 0, výstupem je 1:"
 
 #: activities/digital_electricity/components/NotGate.qml:23
 msgctxt "NotGate|"
@@ -7146,16 +7043,6 @@ msgstr ""
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Make beautiful drawings by rolling the gear in the cogwheel with the "
-#| "chosen pen. Select a wheel size, a gear size, pen's settings and color "
-#| "from the popup panels, and press the play button to roll the gear. You "
-#| "can use the file menu to save your image, open a previously saved image, "
-#| "or create a new image with selected background color. Saving an image "
-#| "will save it in an SVG file (vector format), along with a PNG file (pixel "
-#| "format). Only the SVG file can be opened again from the activity."
 msgctxt "ActivityInfo|"
 msgid ""
 "Make beautiful drawings by rolling the gear in the cogwheel with the chosen "
@@ -7169,13 +7056,16 @@ msgid ""
 "format), along with a PNG file (pixel format). Only the SVG file can be "
 "opened again from the activity."
 msgstr ""
-"Vytvářejte krásné kresby pomocí zvoleného pera při otáčení ozubeného kolečka "
-"v kolečku s vnitřním ozubením. Vyberte velikost vnějšího ozubeného kola, "
-"velikost ozubeného kola, nastavení pera a barvu v rozbalovacích panelech a "
-"stiskněte tlačítko přehrání pro otáčení kola. V nabídce souboru můžete "
-"uložit obrázek, otevřít dříve uložený obrázek nebo vytvořit nový obrázek s "
-"vybranou barvou pozadí. Uložení vytvoří soubor SVG (vektorový formát) a "
-"soubor PNG (pixelový formát). Z aktivity lze znovu otevřít jen soubor SVG."
+"Vytvářejte krásné kresby otáčením ozubeného kola pomocí vybraného pera. Z "
+"rozbalovacích panelů vyberte velikost kola, velikost ozubeného kola, "
+"nastavení pera a barvu a stisknutím tlačítka přehrávání roztočte ozubené "
+"kolo. Na první úrovni jsou pro začátek k dispozici pouze některé konkrétní "
+"kombinace velikostí kol a ozubených kol. Ve druhé úrovni jsou k dispozici "
+"všechny kombinace velikostí, což vám dává větší tvůrčí svobodu. Pomocí "
+"nabídky Soubor můžete obrázek uložit, otevřít dříve uložený obrázek nebo "
+"vytvořit nový obrázek s vybranou barvou pozadí. Při uložení obrázku se uloží "
+"soubor SVG (vektorový formát) spolu se souborem PNG (pixelový formát). Z "
+"této aktivity lze znovu otevřít pouze soubor SVG."
 
 #: activities/drawing_wheels/DrawingWheels.qml:405
 msgctxt "DrawingWheels|"
@@ -7835,7 +7725,7 @@ msgid ""
 "can be sheared and used to produce textile fibre."
 msgstr ""
 "Ovce dělají 'bé'. Většina ovčích plemen má na sobě vlnu. Vlna se může "
-"stříhat a použít na výrobu textilních vláken. "
+"stříhat a použít na výrobu textilních vláken."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
 msgctxt "board1|"
@@ -8131,6 +8021,11 @@ msgid ""
 "relics of the Buddha. It was crowned by the chatra, a parasol-like structure "
 "symbolizing high rank, which was intended to honor and shelter the relics."
 msgstr ""
+"Velká stúpa v Sančí je nejstarší kamennou stavbou v Indii a byla původně "
+"zřízena císařem Ašókou Velikým ve 3. století př. n. l. Její jádro tvořila "
+"jednoduchá polokulová cihlová stavba postavená nad Buddhovými relikviemi. "
+"Byla korunována čatrou, stavbou připomínající slunečník, která symbolizovala "
+"vysoké postavení a měla za úkol uctít a chránit relikvie."
 
 #: activities/explore_monuments/resource/board/board2.qml:62
 #: activities/explore_monuments/resource/board/board2.qml:65
@@ -8149,6 +8044,14 @@ msgid ""
 "gesture, pose and form. Since 1983, the caves have been a UNESCO World "
 "Heritage Site."
 msgstr ""
+"Jeskyně v Adžantě tvoří přibližně 29 buddhistických skalních jeskynních "
+"památek, které pocházejí z období od 2. století př. n. l. do přibližně roku "
+"480 n. l. a nacházejí se v okrese Aurangábád ve státě Maháráštra v Indii. V "
+"jeskyních se nacházejí malby a skalní sochy, které jsou považovány za jedny "
+"z nejkrásnějších dochovaných příkladů starověkého indického umění, zejména "
+"pak expresivní malby, které vyjadřují emoce prostřednictvím gest, póz a "
+"tvarů. Od roku 1983 jsou tyto jeskyně zapsány na seznamu světového dědictví "
+"UNESCO."
 
 #: activities/explore_monuments/resource/board/board2.qml:73
 #: activities/explore_monuments/resource/board/board2.qml:76
@@ -8163,6 +8066,9 @@ msgid ""
 "dedicated to the Sun god. Shaped like a giant chariot, the temple is known "
 "for the exquisite stone carvings that cover the entire structure."
 msgstr ""
+"Chrám slunce v Konarku (také psáno Konarak) je hinduistický chrám ze 13. "
+"století zasvěcený bohu Slunce. Chrám, který má tvar obrovského vozu, je "
+"známý svými nádhernými kamennými řezbami, které pokrývají celou stavbu."
 
 #: activities/explore_monuments/resource/board/board2.qml:84
 #: activities/explore_monuments/resource/board/board2.qml:87
@@ -8178,6 +8084,10 @@ msgid ""
 "the heart of the city of Mysore. The palace was initially built by the "
 "Wodeyar kings in the 14th century."
 msgstr ""
+"Palác v Mysore, známý také jako palác mahárádži z Mysore, patří k největším "
+"a nejimpozantnějším památkám v Indii. Je známý také pod názvem Amba Vilas a "
+"nachází se v samém srdci města Mysore. Palác byl původně postaven králi z "
+"rodu Wodeyarů ve 14. století."
 
 #: activities/explore_monuments/resource/board/board2.qml:95
 #: activities/explore_monuments/resource/board/board2.qml:98
@@ -8194,6 +8104,11 @@ msgid ""
 "become synonymous with the monument. The Charminar is a massive and "
 "impressive structure with four minarets."
 msgstr ""
+"Charminar v Hyderabadu byl postaven v roce 1591 Mohammedem Quli Qutabem "
+"Shahem. Charminar nechal postavit na památku ukončení morové epidemie ve "
+"městě Hyderabad. Od doby výstavby Charminaru se město Hyderabad stalo téměř "
+"synonymem pro tuto památku. Charminar je mohutná a impozantní stavba se "
+"čtyřmi minarety."
 
 #: activities/explore_monuments/resource/board/board2.qml:106
 #: activities/explore_monuments/resource/board/board2.qml:109
@@ -8209,6 +8124,10 @@ msgid ""
 "blends the best of the British and Mughal architecture. The Victoria "
 "Memorial hall was built with white Makrana marbles."
 msgstr ""
+"Památník Viktorie byl postaven na památku vrcholného období Britského "
+"impéria v Indii. Představuje architektonický vrchol města Kalkaty a spojuje "
+"v sobě to nejlepší z britské a mughálské architektury. Budova Památníku "
+"Viktorie byla postavena z bílého mramoru z Makrany."
 
 #: activities/explore_monuments/resource/board/board2.qml:117
 #: activities/explore_monuments/resource/board/board2.qml:120
@@ -8224,6 +8143,10 @@ msgid ""
 "buffalo fights and other sports at Rupahi Pathar - particularly during the "
 "Rongali Bihu festival in the Ahom capital of Rangpur."
 msgstr ""
+"Rang Ghar je dvoupodlažní budova, která kdysi sloužila jako královský "
+"sportovní pavilon, odkud ahomští králové a šlechtici sledovali zápasy, jako "
+"byly souboje buvolů, a další sportovní utkání v Rupahi Pathar – zejména "
+"během festivalu Rongali Bihu v ahomském hlavním městě Rangpur."
 
 #: activities/explore_monuments/resource/board/board2.qml:128
 #: activities/explore_monuments/resource/board/board2.qml:131
@@ -8240,6 +8163,11 @@ msgid ""
 "which is a UNESCO World Heritage Site. The tower, located in the Mehrauli "
 "area of Delhi, is made of red sandstone and marble."
 msgstr ""
+"Qutub Minar je se svými 74 metry nejvyšší cihlový minaret na světě a po "
+"Fateh Burj v Mohali druhý nejvyšší minaret v Indii. Spolu s okolními "
+"starověkými a středověkými památkami tvoří komplex Qutb, který je zapsán na "
+"seznamu světového dědictví UNESCO. Věž, která se nachází v oblasti Mehrauli "
+"v Dillí, je postavena z červeného pískovce a mramoru."
 
 #: activities/explore_monuments/resource/board/board2.qml:141
 msgctxt "board2|"
@@ -8267,6 +8195,11 @@ msgid ""
 "unique feature of Mont Saint-Michel is that it is completely surrounded by "
 "water and can only be accessed at low tide."
 msgstr ""
+"Hora svatého Michaela je skalnatý přílivový ostrov ležící v Normandii, v "
+"ústí řeky Couesnon, nedaleko města Avranches. Nejvyšším bodem ostrova je věž "
+"na vrcholu zvonice opatství, která se tyčí 170 metrů nad mořem. V současné "
+"době na ostrově žije méně než 50 lidí. Jedinečností Mont Saint-Michel je to, "
+"že je zcela obklopen vodou a přístupný je pouze při odlivu."
 
 #: activities/explore_monuments/resource/board/board3.qml:29
 #: activities/explore_monuments/resource/board/board3.qml:32
@@ -8283,6 +8216,12 @@ msgid ""
 "is a dramatic representation of medieval architecture perched on a rocky "
 "spur that towers above the River Aude, southeast of the new town."
 msgstr ""
+"S více než 4 miliony návštěvníků ročně patří Carcassonne k nejprestižnějším "
+"turistickým destinacím ve Francii, na stejné úrovni jako hora svatého "
+"Michaela a pařížská katedrála Notre-Dame. Carcassonne, které je od roku 1997 "
+"zapsáno na seznamu světového dědictví UNESCO, představuje působivý příklad "
+"středověké architektury a tyčí se na skalnatém výběžku nad řekou Aude, "
+"jihovýchodně od nové části města."
 
 #: activities/explore_monuments/resource/board/board3.qml:40
 #: activities/explore_monuments/resource/board/board3.qml:43
@@ -8300,12 +8239,18 @@ msgid ""
 "Site since 1991. The Mecca for tourists in the Champagne region welcomes "
 "1500000 visitors every year."
 msgstr ""
+"Co se velikosti týče, je katedrála v Remeši skutečně mimořádnou stavbou: "
+"byla navržena tak, aby pojala obrovské davy lidí, a její gigantické rozměry "
+"zahrnují plochu 6 650 m² a délku 122 m. Toto mistrovské dílo gotického umění "
+"a místo korunovace francouzských králů je od roku 1991 zapsáno na seznamu "
+"světového dědictví UNESCO. Tato turistická mekka regionu Champagne "
+"každoročně přivítá 1 500 000 návštěvníků."
 
 #: activities/explore_monuments/resource/board/board3.qml:51
 #: activities/explore_monuments/resource/board/board3.qml:54
 msgctxt "board3|"
 msgid "Pont du Gard"
-msgstr "Gardský most"
+msgstr "Most Pont du Gard"
 
 #: activities/explore_monuments/resource/board/board3.qml:52
 msgctxt "board3|"
@@ -8316,6 +8261,11 @@ msgid ""
 "stands almost 50 m high and is on three levels – the longest measuring 275 m "
 "– created a technical as well as an artistic masterpiece."
 msgstr ""
+"Most Pont du Gard byl postaven krátce před naším letopočtem, aby umožnil "
+"akvaduktu z Nîmes (který je dlouhý téměř 50 km) překonat řeku Gardon. Římští "
+"architekti a vodohospodáři, kteří navrhli tento most, jenž se tyčí do výšky "
+"téměř 50 metrů a má tři úrovně – z nichž nejdelší měří 275 metrů –, "
+"vytvořili technické i umělecké mistrovské dílo."
 
 #: activities/explore_monuments/resource/board/board3.qml:62
 #: activities/explore_monuments/resource/board/board3.qml:65
@@ -8331,6 +8281,9 @@ msgid ""
 "Antiquity. Modified many times, it was finally renovated during the 19th "
 "century."
 msgstr ""
+"Tento římský amfiteátr pochází z 1. století př. n. l. a ve starověku se v "
+"něm konaly gladiátorské souboje a závody spřežení. Během své existence "
+"prošel mnoha úpravami a v 19. století byl nakonec zrekonstruován."
 
 #: activities/explore_monuments/resource/board/board3.qml:73
 #: activities/explore_monuments/resource/board/board3.qml:76
@@ -8347,6 +8300,11 @@ msgid ""
 "its domain. This remarkable piece of architecture is certainly more than "
 "just a castle: it is the dream of a king, transformed into reality."
 msgstr ""
+"Prestižní, majestátní, kolosální, extravagantní – stačí tato přídavná jména "
+"k tomu, aby plně vystihla nádheru zámku Chambord? Největší zámek v údolí "
+"Loiry je skutečně plný překvapení pro ty, kteří mají to štěstí a mohou jeho "
+"areál prozkoumat. Toto pozoruhodné architektonické dílo je rozhodně víc než "
+"jen zámek: je to králův sen, který se stal skutečností."
 
 #: activities/explore_monuments/resource/board/board3.qml:84
 #: activities/explore_monuments/resource/board/board3.qml:87
@@ -8364,6 +8322,11 @@ msgid ""
 "“houses on the river, churches on the houses, rocks on the churches, castle "
 "on the rock”."
 msgstr ""
+"Když přijíždíte po silnici z Cahors, Rocamadour se náhle objeví, jak se "
+"nebezpečně drží na útesu nad kaňonem řeky Alzou. Rocamadour, jedna z "
+"nejznámějších vesnic Evropy, jako by popírala zákony gravitace. Tuto "
+"závratnou Citadelu víry nejlépe vystihuje staré místní rčení: \"domy na "
+"řece, kostely na domech, skály na kostelech, hrad na skále\"."
 
 #: activities/explore_monuments/resource/board/board3.qml:95
 #: activities/explore_monuments/resource/board/board3.qml:98
@@ -8379,6 +8342,9 @@ msgid ""
 "importance. It is one of the largest and most important medieval Gothic "
 "buildings in Europe."
 msgstr ""
+"Hlavní atrakcí Avignonu je Palais des Papes (Papežský palác), rozlehlý hrad "
+"s významným historickým, náboženským a architektonickým významem. Jedná se o "
+"jednu z největších a nejvýznamnějších středověkých gotických staveb v Evropě."
 
 #: activities/explore_monuments/resource/board/board3.qml:106
 #: activities/explore_monuments/resource/board/board3.qml:109
@@ -8396,6 +8362,11 @@ msgid ""
 "influenced the construction and development of this French Château over the "
 "centuries."
 msgstr ""
+"Zámek Chenonceau patří k mnoha zámkům v údolí Loiry, které se pyšní "
+"úchvatnou architekturou a historickým významem a přitahují tisíce turistů z "
+"celého světa. Někteří historici zámek Chenonceau někdy nazývají \"dámským "
+"zámkem\", protože na jeho stavbu a vývoj měly v průběhu staletí velký vliv "
+"ženské osobnosti."
 
 #: activities/explore_monuments/resource/board/board3.qml:117
 #: activities/explore_monuments/resource/board/board3.qml:120
@@ -8410,6 +8381,9 @@ msgid ""
 "Exhibition in 1889 for the centenary of the French Revolution. At the time "
 "of its inauguration, it was the world’s tallest monument."
 msgstr ""
+"Tato světově proslulá kovová věž byla postavena pro Pařížskou světovou "
+"výstavu v roce 1889 u příležitosti stého výročí Francouzské revoluce. V době "
+"svého slavnostního otevření byla nejvyšší památkou na světě."
 
 #: activities/explore_monuments/resource/board/board3.qml:130
 msgctxt "board3|"
@@ -8438,6 +8412,13 @@ msgid ""
 "most photographed building in the country and one of the most popular "
 "tourist attractions in Germany."
 msgstr ""
+"Neuschwanstein, pohádkový zámek par excellence, se tyčí na strmém kopci "
+"nedaleko města Füssen v jihozápadním Bavorsku. Byl předlohou pro zámky "
+"Šípkové Růženky v parcích Disneylandu. Zámek nechal postavit bavorský král "
+"Ludvík II., který byl v roce 1886, kdy byl zámek téměř dokončen, prohlášen "
+"za duševně chorého a o několik dní později nalezen mrtvý. Neuschwanstein je "
+"nejfotografovanější stavbou v zemi a jednou z nejoblíbenějších turistických "
+"atrakcí v Německu."
 
 #: activities/explore_monuments/resource/board/board4.qml:29
 #: activities/explore_monuments/resource/board/board4.qml:32
@@ -8452,6 +8433,10 @@ msgid ""
 "It is designated as part of the Roman Monuments, Cathedral of St. Peter and "
 "Church of Our Lady in Trier UNESCO World Heritage Site."
 msgstr ""
+"Císařské lázně v Trevíru jsou rozsáhlý komplex římských lázní v německém "
+"městě Trevír. Jsou zařazeny do seznamu světového dědictví UNESCO jako "
+"součást komplexu římských památek, katedrály sv. Petra a kostela Panny Marie "
+"v Trevíru."
 
 #: activities/explore_monuments/resource/board/board4.qml:40
 #: activities/explore_monuments/resource/board/board4.qml:43
@@ -8469,6 +8454,11 @@ msgid ""
 "the Prussian monarchs. It is regarded as one of the most famous landmarks in "
 "Europe."
 msgstr ""
+"Brandenburská brána je jedinou dochovanou městskou bránou v Berlíně a "
+"symbolizuje sjednocení východního a západního Berlína. Brandenburská brána, "
+"postavená v 18. století, tvoří vstup na Unter den Linden, proslulý bulvár "
+"lemovaný lípami, který kdysi vedl přímo k paláci pruských panovníků. Je "
+"považována za jednu z nejznámějších památek v Evropě."
 
 #: activities/explore_monuments/resource/board/board4.qml:51
 #: activities/explore_monuments/resource/board/board4.qml:54
@@ -8484,6 +8474,10 @@ msgid ""
 "beyond the borders of the parish and of Berlin, the cathedral attracts "
 "thousands of visitors, year after year, from Germany and abroad."
 msgstr ""
+"Berlínská katedrála je největším kostelem ve městě a představuje významné "
+"centrum německé evangelické církve. Svým významem daleko přesahuje hranice "
+"farnosti i samotného Berlína a každoročně přitahuje tisíce návštěvníků z "
+"Německa i ze zahraničí."
 
 #: activities/explore_monuments/resource/board/board4.qml:62
 #: activities/explore_monuments/resource/board/board4.qml:65
@@ -8498,6 +8492,9 @@ msgid ""
 "is reflected in the waters of Lake Schwerin. It was completed in 1857 and "
 "symbolized the powerful dynasty of its founder, Friedrich Franz II."
 msgstr ""
+"Tato romantická pohádková pevnost se svými četnými věžemi, kopulemi a křídly "
+"se odráží ve vodách Zveřínského jezera. Byla dokončena v roce 1857 a "
+"symbolizovala mocnou dynastii svého zakladatele, Fridricha Franze II."
 
 #: activities/explore_monuments/resource/board/board4.qml:73
 #: activities/explore_monuments/resource/board/board4.qml:76
@@ -8513,6 +8510,10 @@ msgid ""
 "built a settlement inside the roofless ruin. In the 12th century, the apse "
 "was converted into a tower to accommodate the Archbishop of Trier."
 msgstr ""
+"Tato dlouhá cihlová budova s vysokými stropy sloužila jako trůnní sál "
+"římského císaře až do doby, kdy město zničily germánské kmeny. Útočníci si "
+"uvnitř zříceniny bez střechy vybudovali osadu. Ve 12. století byla apsida "
+"přestavěna na věž, aby zde mohl sídlit trevírský arcibiskup."
 
 #: activities/explore_monuments/resource/board/board4.qml:84
 #: activities/explore_monuments/resource/board/board4.qml:87
@@ -8528,6 +8529,10 @@ msgid ""
 "distinctive conical towers, Worms Cathedral was constructed in phases "
 "throughout the twelfth century and mostly completed by 1181."
 msgstr ""
+"Katedrála ve Wormsu (Wormser Dom), známá také jako katedrála svatého Petra, "
+"je románská katedrála v německém městě Worms. Tato pískovcová stavba s "
+"charakteristickými kuželovitými věžemi byla budována v několika etapách v "
+"průběhu 12. století a z větší části dokončena v roce 1181."
 
 #: activities/explore_monuments/resource/board/board4.qml:97
 msgctxt "board4|"
@@ -8555,6 +8560,12 @@ msgid ""
 "in September 1542, three months after departing from Barra de Navidad on the "
 "west coast of Mexico."
 msgstr ""
+"Národní památník Cabrillo, který se nachází na poloostrově Point Loma v San "
+"Diegu v Kalifornii, připomíná prvního Evropana, který přistál na západním "
+"pobřeží Spojených států, Juana Rodrígueze Cabrilla. Cabrillo, který byl "
+"původem Portugalec, při svých výpravách za dobytím Nového světa nesl "
+"španělskou vlajku. Do zálivu San Diego dorazil v září 1542, tři měsíce po "
+"vyplutí z Barra de Navidad na západním pobřeží Mexika."
 
 #: activities/explore_monuments/resource/board/board5.qml:29
 #: activities/explore_monuments/resource/board/board5.qml:32
@@ -8573,6 +8584,13 @@ msgid ""
 "formations, including Spider Rock, an 800-foot-tall sandstone spire that "
 "rises eerily from the bottom of the canyon floor."
 msgstr ""
+"Stoické červené ruiny kaňonu Canyon de Chelly v severovýchodní Arizoně "
+"spadají jak pod Správu národních parků, tak pod území kmene Navajo, přičemž "
+"byly v roce 1931 vyhlášeny národní památkou. Na ploše téměř 84 000 akrů "
+"parku je zachováno množství významných raných indiánských památek a Canyon "
+"de Chelly nabízí také řadu geologických útvarů typických pro jihozápad, "
+"včetně Spider Rock, 800 stop vysoké pískovcové věže, která se tajemně tyčí "
+"ze dna kaňonu."
 
 #: activities/explore_monuments/resource/board/board5.qml:40
 #: activities/explore_monuments/resource/board/board5.qml:43
@@ -8588,6 +8606,11 @@ msgid ""
 "still a Spanish territory. Constructed out of the rare coquina limestone, "
 "the star-shaped Castillo also is the oldest masonry fort in the country."
 msgstr ""
+"Pevnost svatého Marka, rozkládající se na ploše více než 20 akrů ve městě "
+"St. Augustine na Floridě, bylo dokončeno jako obranná pevnost města v roce "
+"1695, kdy byla Florida ještě španělským územím. Tato hvězdicovitá pevnost, "
+"postavená z vzácného vápence zvaného coquina, je zároveň nejstarší zděnou "
+"pevností v zemi."
 
 #: activities/explore_monuments/resource/board/board5.qml:51
 #: activities/explore_monuments/resource/board/board5.qml:54
@@ -8604,6 +8627,11 @@ msgid ""
 "protect New York from a British invasion during the War of 1812, and was "
 "dedicated as a national monument in 1946."
 msgstr ""
+"Tato kruhová pevnost z pískovce, která se tyčí na jižním cípu ostrova "
+"Manhattan, předcházela Ellis Islandu jako první imigrační kontrolní "
+"stanoviště v USA o zhruba 50 let. Hrad Clinton (nps.gov/cacl) byl původně "
+"postaven jako pevnost na ochranu New Yorku před britskou invazí během války "
+"z roku 1812 a v roce 1946 byl prohlášen za národní památku."
 
 #: activities/explore_monuments/resource/board/board5.qml:62
 #: activities/explore_monuments/resource/board/board5.qml:65
@@ -8620,6 +8648,11 @@ msgid ""
 "February 22, 1732. He lived here until age three, returning later as a "
 "teenager."
 msgstr ""
+"Národní památník místa narození George Washingtona se nachází v okrese "
+"Westmoreland ve státě Virginie ve Spojených státech amerických. Tuto oblast "
+"původně osídlil John Washington, pradědeček George Washingtona, a právě zde "
+"se George Washington narodil 22. února 1732. Žil zde do svých tří let a "
+"později se sem vrátil jako teenager."
 
 #: activities/explore_monuments/resource/board/board5.qml:73
 #: activities/explore_monuments/resource/board/board5.qml:76
@@ -8638,6 +8671,13 @@ msgid ""
 "chambers with inscriptions of Lincoln’s Second Inaugural Address and "
 "arguably his most famous speech, the Gettysburg Address."
 msgstr ""
+"Lincolnův památník, postavený z bílého kamene a zdobený 36 "
+"charakteristickými sloupy, patří k nejznámějším stavbám ve Spojených "
+"státech. Památník se nachází na západním konci National Mall, v West Potomac "
+"Parku, a je příkladem neoklasicistní architektury. Jeho dominantou je "
+"osamocená, 5,8 metru vysoká socha Abrahama Lincolna sedícího v zamyšlení, "
+"kterou po obou stranách lemují nápisy z Lincolnovy druhé inaugurační řeči a "
+"pravděpodobně jeho nejslavnějšího projevu, Gettysburgské řeči."
 
 #: activities/explore_monuments/resource/board/board5.qml:84
 #: activities/explore_monuments/resource/board/board5.qml:87
@@ -8655,6 +8695,12 @@ msgid ""
 "exalted American presidents that symbolize this nation's rich history, "
 "rugged determination and lasting achievements."
 msgstr ""
+"Hora Rushmore je svatyní demokracie, památníkem a pomníkem George "
+"Washingtona, zrodu, rozvoje a ideálů této země. Hora Rushmore symbolizuje "
+"velikost tohoto národa skrze velikost jeho vůdců. Epická sochařská kompozice "
+"na hoře Rushmore zachycuje tváře čtyř významných amerických prezidentů, "
+"kteří symbolizují bohatou historii, neochvějnou odhodlanost a trvalé úspěchy "
+"tohoto národa."
 
 #: activities/explore_monuments/resource/board/board5.qml:95
 #: activities/explore_monuments/resource/board/board5.qml:98
@@ -8676,6 +8722,17 @@ msgid ""
 "free tours of the Keet Seel and Betatakin cliff dwellings. The Inscription "
 "House site, further west, is currently closed to public access."
 msgstr ""
+"Navajo National Monument je národní památka nacházející se v severozápadní "
+"části území národa Navajo v severní Arizoně, která byla zřízena za účelem "
+"ochrany tří dobře zachovaných skalních obydlí předků kmene Pueblo: Keet Seel "
+"(Kitsʼiil), Betatakin (Bitátʼahkin) a Inscription House (Tsʼah Biiʼ Kin). "
+"Památník se nachází vysoko na náhorní plošině Shonto s výhledem na systém "
+"kaňonů Tsegi, západně od Kayenty v Arizoně. Najdete zde návštěvnické centrum "
+"s muzeem, dvě krátké stezky po vrcholu náhorní plošiny, které lze projít bez "
+"průvodce, dvě malá kempoviště a piknikovou oblast. Strážci provádějí "
+"návštěvníky na bezplatných prohlídkách skalních obydlí Keet Seel a "
+"Betatakin. Lokalita Inscription House, ležící dále na západ, je v současné "
+"době uzavřena pro veřejnost."
 
 #: activities/explore_monuments/resource/board/board5.qml:106
 #: activities/explore_monuments/resource/board/board5.qml:109
@@ -8691,6 +8748,9 @@ msgid ""
 "statue was a gift from the people of France and was dedicated in October "
 "1886."
 msgstr ""
+"Snad nejznámější památkou a symbolem Spojených států je Socha svobody, která "
+"stojí na vlastním malém ostrově v New Yorku. Socha byla darem francouzského "
+"lidu a byla slavnostně odhalena v říjnu 1886."
 
 #: activities/explore_monuments/resource/board/board5.qml:117
 #: activities/explore_monuments/resource/board/board5.qml:120
@@ -8707,6 +8767,11 @@ msgid ""
 "exhibits offer perspectives on U.S. history, particularly the divisions "
 "between North and South that eventually resulted in the war."
 msgstr ""
+"Původně byla postavena jako obranná stavba po válce z roku 1812 a právě v "
+"této pobřežní pevnosti v přístavu Charleston v Jižní Karolíně padly první "
+"výstřely americké občanské války. Uvnitř pevnosti Fort Sumter nabízí řada "
+"expozic pohled na historii Spojených států, zejména na rozpory mezi Severem "
+"a Jihem, které nakonec vedly k vypuknutí války."
 
 #: activities/explore_monuments/resource/board/board5.qml:130
 msgctxt "board5|"
@@ -8737,12 +8802,19 @@ msgid ""
 "stone have been used in the construction. The height of the pyramid is "
 "approximately 139 meters making it the highest pyramid of Egypt."
 msgstr ""
+"Velká pyramida v Gíze je také známá jako Cheopsova pyramida. Je považována "
+"za nejstarší ze všech sedmi divů starověkého světa. Je také největší ze "
+"všech tří pyramid v Gíze. Nachází se v Gízské nekropoli v Egyptě. S "
+"výstavbou započal egyptský faraon Chufu, pokračoval v ní jeho syn Chafre a "
+"dokončil ji Menkaure. Stavba pyramidy trvala téměř 20 let a na její výstavbu "
+"bylo použito přibližně 2 miliony kamenných bloků. Výška pyramidy je "
+"přibližně 139 metrů, což z ní činí nejvyšší pyramidu v Egyptě."
 
 #: activities/explore_monuments/resource/board/board6.qml:28
 #: activities/explore_monuments/resource/board/board6.qml:31
 msgctxt "board6|"
 msgid "Bent Pyramid"
-msgstr "Lomená pyramida"
+msgstr "Šikmá pyramida"
 
 #: activities/explore_monuments/resource/board/board6.qml:29
 msgctxt "board6|"
@@ -8756,6 +8828,13 @@ msgid ""
 "Pyramid is the only pyramid in Egypt of which the outer casing of polished "
 "limestone is still largely intact."
 msgstr ""
+"Šikmá pyramida v Dahšúru byla druhou pyramidou postavenou faraonem "
+"Sneferuem. Tato pravá pyramida se záhadně tyčí z pouště pod úhlem 55 stupňů "
+"a poté náhle přechází do pozvolnějšího sklonu 43 stupňů. Jedna z teorií "
+"tvrdí, že kvůli strmosti původního úhlu se váha, kterou bylo třeba přidat "
+"nad vnitřní komory a chodby, stala příliš velkou, což stavitele donutilo "
+"zvolit mírnější sklon. Dnes je Šikmá pyramida jedinou pyramidou v Egyptě, "
+"jejíž vnější obklad z leštěného vápence je stále z velké části neporušený."
 
 #: activities/explore_monuments/resource/board/board6.qml:39
 #: activities/explore_monuments/resource/board/board6.qml:42
@@ -8775,6 +8854,13 @@ msgid ""
 "marking the first attempt by the ancient Egyptians at the construction of a "
 "true pyramid."
 msgstr ""
+"Pět mil jižně od egyptské Sakkáry se tyčí tajemná věžovitá pyramida v "
+"Meidumu, která dnes s typickou pyramidou téměř vůbec nepřipomíná. Tato "
+"pyramida byla pravděpodobně postavena za vlády faraóna Sneferua ze 4. "
+"dynastie, ačkoli někteří se domnívají, že její stavbu mohl zahájit již "
+"Sneferuův předchůdce Huni. V určitém okamžiku během její výstavby byly "
+"schody pyramidy vyplněny vápencovým obkladem, což představuje první pokus "
+"starověkých Egypťanů o stavbu skutečné pyramidy."
 
 #: activities/explore_monuments/resource/board/board6.qml:50
 #: activities/explore_monuments/resource/board/board6.qml:53
@@ -8792,6 +8878,12 @@ msgid ""
 "red limestone stones, hence the name. The local people of Egypt called it as "
 "el-heram el-watwaat meaning the Bat Pyramid."
 msgstr ""
+"Červená pyramida byla jedním z nejkrásnějších a nejúspěšnějších pokusů "
+"faraóna Sneferua o vybudování vůbec první pyramidy s hladkými stěnami v "
+"historii starověkého Egypta. Výška pyramidy činí 104 metrů, což z ní činí "
+"čtvrtou největší pyramidu v Egyptě. Pyramida byla postavena z červených "
+"vápencových kamenů, odtud pochází i její název. Místní obyvatelé Egypta ji "
+"nazývali \"el-heram el-watwaat\", což znamená Netopýří pyramida."
 
 #: activities/explore_monuments/resource/board/board6.qml:63
 msgctxt "board6|"
@@ -8822,6 +8914,15 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
+"Zakázané město, ležící v samém srdci čínského Pekingu, je velkolepý komplex "
+"císařských paláců, který po téměř 500 let, od dynastie Ming (1368–1644) až "
+"do konce dynastie Čching (1644–1912), sloužil jako sídlo čínských císařů a "
+"politické centrum země. Toto rozlehlé architektonické mistrovské dílo, "
+"postavené v letech 1406 až 1420, se rozkládá na ploše 180 akrů a zahrnuje "
+"více než 980 zachovalých budov s 8 700 místnostmi, které představují "
+"tradiční čínský palácový design. Zakázané město, obklopené příkopem a "
+"mohutnou zdí, bylo kdysi pro veřejnost nepřístupné a symbolizovalo císařskou "
+"moc a exkluzivitu."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
@@ -8842,6 +8943,15 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
+"Obří Buddha v Leshanu, nacházející se v čínské provincii S'-čchuan, je "
+"kolosální socha vytesaná do útesu na soutoku řek Min, Dadu a Čching-i. Se "
+"svou výškou 71 metrů (233 stop) je nejvyšší předmoderní sochou na světě a je "
+"zapsána na seznamu světového dědictví UNESCO. Socha byla postavena během "
+"dynastie Tang (713–803 n. l.) a představuje Maitreju, Buddhu budoucnosti. "
+"Byla vytvořena s cílem uklidnit bouřlivé vody, které ohrožovaly místní lodní "
+"dopravu. Socha je důmyslně navržena a obsahuje skrytý odvodňovací systém, "
+"který zabraňuje erozi. Její klidný výraz a složité řemeslné zpracování z ní "
+"činí symbol duchovního a uměleckého úspěchu."
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
@@ -8862,6 +8972,15 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
+"Palác Potala, tyčící se na Červeném kopci v Lhase v Tibetu, je ikonickým "
+"symbolem tibetské kultury a památkou zapsanou na seznamu světového dědictví "
+"UNESCO. Byl původně postaven v 7. století a rozšířen v 17. století; sloužil "
+"jako zimní sídlo dalajlámů a centrum tibetské správy. Palác, který se tyčí "
+"do výšky 13 pater a má přes 1 000 pokojů, kombinuje složitou tibetskou "
+"architekturu, zářivé nástěnné malby a posvátné relikvie. Je rozdělen na Bílý "
+"palác, v němž se nacházejí administrativní prostory, a Červený palác, "
+"věnovaný náboženským studiím a modlitbám. Palác Potala je svědectvím "
+"duchovního a historického dědictví Tibetu."
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
@@ -8879,6 +8998,13 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
+"Terakotová armáda je sbírka tisíců hliněných vojáků, koní a válečných vozů v "
+"životní velikosti, které byly pohřbeny spolu s prvním čínským císařem Čchin "
+"Š'-chuangem, aby mu dělaly společnost v posmrtném životě. Tyto sochy, "
+"objevené v roce 1974 nedaleko města Si-an, pocházejí přibližně z roku 210 "
+"př. n. l. a jsou proslulé svou neuvěřitelnou detailností; každý válečník je "
+"jedinečně ztvárněn tak, aby představoval rozmanité hodnosti a role starověké "
+"čínské armády."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
@@ -8899,6 +9025,15 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
+"Pagody Slunce a Měsíce, které se nacházejí v čínském Guilin, jsou ikonické "
+"dvojité věže symbolizující kulturní a duchovní dědictví města. Původně byly "
+"postaveny za dynastie Tang a ve 20. století byly zrekonstruovány jako "
+"impozantní dominanty jezera Shanhu. Pagoda Slunce, vysoká 41 metrů, je "
+"bronzová stavba – nejvyšší svého druhu na světě –, zatímco Pagoda Měsíce, "
+"vysoká 35 metrů, je postavena z glazovaných tašek. Tyto pagody představují "
+"harmonii jin a jang a jsou propojeny podvodním skleněným tunelem. V noci "
+"jsou osvětlené a představují oblíbené atrakce, které představují tradiční "
+"čínskou architekturu a moderní vynalézavost."
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
@@ -8919,6 +9054,15 @@ msgid ""
 "UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
 "towers remain, offering insight into this unique architectural heritage."
 msgstr ""
+"Věže Diaolou, které se nacházejí v Kaipingu v čínské provincii Kuang-tung, "
+"jsou opevněné vícepodlažní stavby postavené na přelomu 19. a 20. století "
+"jako ochrana před lupiči a povodněmi. Spojují západní architektonické styly, "
+"jako je románský a barokní, s tradičními čínskými prvky a odrážejí bohatství "
+"a vliv čínských emigrantů v zahraničí. Tyto věže, postavené z železobetonu, "
+"symbolizují období kulturního a ekonomického přechodu ve venkovské Číně. V "
+"roce 2007 byly zapsány na seznam světového dědictví UNESCO. Z původních 3 "
+"000 věží jich zůstalo zachováno asi 1 800, které nabízejí vhled do tohoto "
+"jedinečného architektonického dědictví."
 
 #: activities/explore_monuments/resource/board/board7.qml:85
 msgctxt "board7|"
@@ -8951,6 +9095,17 @@ msgid ""
 "centuries. The Pantheon’s harmonious proportions and historical significance "
 "make it a timeless masterpiece of classical architecture."
 msgstr ""
+"Pantheon v Římě v Itálii je ikonický antický chrám postavený kolem roku 126 "
+"n. l. za vlády císaře Hadriána na místě dřívějších staveb, které nechal "
+"vybudovat Marcus Agrippa. Je proslulý svou architektonickou dokonalostí a "
+"vyznačuje se mohutnou klenutou střechou s centrálním okulusem, který "
+"symbolizuje nebesa a propouští do interiéru přirozené světlo. Původně byl "
+"zasvěcen všem římským bohům, později byl v roce 609 n. l. přeměněn na "
+"křesťanský kostel známý jako bazilika sv. Marie a mučedníků (Santa Maria ad "
+"Martyres). Jeho kupole, největší nevyztužená betonová kupole na světě, je "
+"ukázkou pozoruhodného inženýrského umění a symetrie a po staletí inspiruje "
+"architekty. Harmonické proporce a historický význam Pantheonu z něj činí "
+"nadčasové mistrovské dílo klasické architektury."
 
 #: activities/explore_monuments/resource/board/board8.qml:28
 #: activities/explore_monuments/resource/board/board8.qml:31
@@ -8971,6 +9126,15 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
+"Milánská katedrála (Duomo di Milano) je ikonické gotické mistrovské dílo, "
+"které se nachází v samém srdci italského Milána. Její stavba trvala téměř "
+"šest století a dnes patří k největším katedrálám na světě a je symbolem "
+"milánského uměleckého a kulturního dědictví. Její složitá fasáda je zdobena "
+"nesčetnými sochami, věžičkami a chrliči, které odrážejí velkolepost gotické "
+"architektury. Návštěvníci mohou prozkoumat její ohromující interiéry s "
+"nádhernými vitrážovými okny a složitými mramorovými detaily, nebo vystoupat "
+"na střechu a kochat se dechberoucím výhledem na město a Alpy. Duomo je "
+"svědectvím bohaté historie a architektonické brilantnosti Itálie."
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
@@ -8992,6 +9156,16 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
+"Katedrála ve Florencii, oficiálně známá jako Cattedrale di Santa Maria del "
+"Fiore, je proslulým mistrovským dílem gotické a renesanční architektury, "
+"které se nachází ve Florencii v Itálii. Stavba byla dokončena v roce 1436 a "
+"proslavila se svou mohutnou kopulí pokrytou červenými taškami, kterou navrhl "
+"Filippo Brunelleschi a která dodnes představuje technický zázrak a symbol "
+"města. Složitá mramorová fasáda katedrály, přistavěná v 19. století, "
+"doplňuje její bohatě zdobený interiér a umělecké poklady. Spolu s Giottovou "
+"zvonicí a baptisteriem sv. Jana tvoří součást památky zapsané na seznamu "
+"světového dědictví UNESCO a díky svému historickému, kulturnímu a "
+"architektonickému významu přitahuje každoročně miliony návštěvníků."
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
@@ -9012,6 +9186,15 @@ msgid ""
 "with intricately carved columns and arches. Recognized as a UNESCO World "
 "Heritage Site, it remains a symbol of resilience and ingenuity."
 msgstr ""
+"Šikmá věž v Pise, nacházející se v italském městě Pisa, je celosvětově "
+"proslulým architektonickým skvostem. Byla postavena jako samostatně stojící "
+"zvonice k městské katedrále a proslavila se svým nechtěným nakloněním, "
+"způsobeným nestabilním podložím. Stavba věže byla zahájena v roce 1173 a "
+"trvala téměř 200 let, během nichž se podnikaly pokusy o stabilizaci jejího "
+"sklonu. Věž je vysoká přibližně 56 metrů (183 stop) a její románský design "
+"zahrnuje osm podlaží, včetně zvonice, zdobené složitě vyřezávanými sloupy a "
+"oblouky. Je zapsána na seznamu světového dědictví UNESCO a zůstává symbolem "
+"odolnosti a vynalézavosti."
 
 #: activities/explore_monuments/resource/board/board8.qml:61
 #: activities/explore_monuments/resource/board/board8.qml:64
@@ -9033,6 +9216,16 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
+"Bazilika svatého Marka v italských Benátkách je ikonickým mistrovským dílem "
+"byzantské architektury a jednou z nejznámějších památek města. Původně byla "
+"postavena v roce 828 jako úložiště relikvií evangelisty svatého Marka a do "
+"své současné podoby byla přestavěna v 11. století. Bazilika, známá svým "
+"opulentním designem, se vyznačuje směsicí východních a západních vlivů, "
+"které jsou patrné na jejích pěti kupolích, složitých mozaikách a zdobené "
+"fasádě s sochami a řezbami. Interiér je bohatě zdoben zlatými mozaikami a "
+"mramorovými podlahami, které demonstrují bohatství a moc Benátské republiky. "
+"Bazilika, sousedící s náměstím sv. Marka, zůstává symbolem historického, "
+"kulturního a náboženského dědictví Benátek."
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
@@ -9054,6 +9247,16 @@ msgid ""
 "Site and remains one of the most important archaeological discoveries in "
 "history."
 msgstr ""
+"Pompeje byly starověké římské město ležící nedaleko dnešního Neapole v "
+"Itálii, které se proslavilo svým zachováním poté, co bylo v roce 79 n. l. "
+"zasypáno při erupci Vesuvu. Erupce vyvolala smrtící směs popela, pemzy a "
+"pyroklastických proudů, které pohltily město i jeho obyvatele a zachovaly "
+"budovy, artefakty a dokonce i lidské ostatky v neuvěřitelných detailech. "
+"Vykopávky v Pompejích poskytly cenné poznatky o každodenním životě, "
+"architektuře a společnosti Římanů a odhalily město s dobře plánovanými "
+"ulicemi, domy, veřejnými lázněmi a chrámy. Místo je nyní zapsáno na seznamu "
+"světového dědictví UNESCO a zůstává jedním z nejdůležitějších "
+"archeologických objevů v historii."
 
 #: activities/explore_monuments/resource/board/board8.qml:85
 msgctxt "board8|"
@@ -9082,6 +9285,13 @@ msgid ""
 "the white plastered earthen walls and in the subtlety of the relationships "
 "between the building masses and the multiple roof layers."
 msgstr ""
+"Himedži je nejvýznamnější dochovaný příklad japonské hradní architektury z "
+"počátku 17. století. Skládá se z 83 budov s vysoce propracovaným obranným "
+"systémem a důmyslnými ochrannými prvky, které pocházejí z počátku šógunátu. "
+"Jedná se o mistrovské dílo dřevěné architektury, které spojuje funkčnost s "
+"estetickou přitažlivostí, a to jak ve svém elegantním vzhledu, který "
+"sjednocují bílé omítnuté hliněné zdi, tak v jemné harmonii mezi hmotami "
+"budov a vrstvami střech."
 
 #: activities/explore_monuments/resource/board/board9.qml:28
 #: activities/explore_monuments/resource/board/board9.qml:31
@@ -9103,6 +9313,15 @@ msgid ""
 "a solemn space for reflection, honoring the lives lost and advocating for "
 "global peace."
 msgstr ""
+"Mírový pamětní park v Hirošimě je symbolem míru a připomínkou ničivých "
+"následků války. Tento park, který se nachází v japonské Hirošimě, je věnován "
+"památce obětí atomového bombardování ze 6. srpna 1945. V parku se nachází "
+"několik památníků, včetně ikonické budovy „Atomic Bomb Dome“, která kdysi "
+"sloužila jako vládní budova a dnes je zapsána na seznamu světového dědictví "
+"UNESCO. V parku se také nachází Muzeum míru v Hirošimě, které návštěvníkům "
+"přibližuje události spojené s bombardováním a šíří poselství míru, nenásilí "
+"a důležitosti jaderného odzbrojení. Slouží jako pietní místo k zamyšlení, "
+"uctění památky obětí a prosazování světového míru."
 
 #: activities/explore_monuments/resource/board/board9.qml:39
 #: activities/explore_monuments/resource/board/board9.qml:42
@@ -9124,6 +9343,15 @@ msgid ""
 "cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
 "Mt. Fuji."
 msgstr ""
+"Svatyně byla založena v roce 705 za účelem uctívání místního božstva. Po "
+"velkém výbuchu hory Fudži v roce 807 vyslal císař do této svatyně císařského "
+"vyslance, aby zde vykonal obřad k zastavení erupce. Říká se, že během období "
+"válčících států, kdy Takeda Nobutora, otec slavného vojevůdce Takedy "
+"Shingena, bojoval s rodem Hojo, zde rozbil tábor, modlil se za vítězství a "
+"bitvu vyhrál. Poté této svatyni věnoval svůj meč. Dnes sem místní obyvatelé "
+"i návštěvníci z daleka přicházejí, aby se zbavili zlých sil, modlili se za "
+"štěstí rodiny a bezpečný porod. Na jaře kvetou třešňové stromy a shromažďují "
+"se zde davy lidí, aby si užily úchvatný výhled na horu Fuji."
 
 #: activities/explore_monuments/resource/board/board9.qml:50
 #: activities/explore_monuments/resource/board/board9.qml:53
@@ -9145,6 +9373,17 @@ msgid ""
 "much of the castle was lost in a fire in 2019, but efforts to restore it are "
 "ongoing, reflecting its enduring importance to Okinawa's heritage."
 msgstr ""
+"Hrad Šuri, který se nachází v japonském městě Naha na Okinawě, je zapsán na "
+"seznamu světového dědictví UNESCO a představuje symbol bohaté kulturní "
+"historie Ryukyuského království. Hrad, jehož stavba byla zahájena ve 14. "
+"století, po staletí sloužil jako politické, hospodářské a kulturní centrum "
+"království. Hrad Shuri, proslulý svou charakteristickou fúzí čínského a "
+"japonského architektonického stylu, se vyznačuje budovami lakovanými v barvě "
+"vermilionu, bohatými ozdobami a impozantní polohou na vrcholu kopce. Ačkoli "
+"byl během druhé světové války zničen, byl pečlivě zrekonstruován a stal se "
+"klíčovou turistickou atrakcí. Bohužel byla velká část hradu zničena při "
+"požáru v roce 2019, ale úsilí o jeho obnovu pokračuje, což odráží jeho "
+"trvalý význam pro dědictví Okinawy."
 
 #: activities/explore_monuments/resource/board/board9.qml:63
 msgctxt "board9|"
@@ -9253,7 +9492,7 @@ msgid ""
 "their legs, which are usually 1.8 meters long, are taller than most humans!"
 msgstr ""
 "Žirafa žije v Africe a je nejvyšším savcem na světě. I její nohy, které jsou "
-"obvykle vysoké okolo 1,8m jsou větší, než většina lidí."
+"obvykle vysoké okolo 1,8m jsou větší, než většina lidí!"
 
 #: activities/explore_world_animals/resource/board/board1.qml:52
 #: activities/explore_world_animals/resource/board/board1.qml:55
@@ -9322,7 +9561,7 @@ msgid ""
 "to a ton and can be as long as 3 meters!"
 msgstr ""
 "Lední medvěd je jeden z největších dravých savců. Může vážit až tunu a být 3 "
-"metry dlouhý."
+"metry dlouhý!"
 
 #: activities/explore_world_animals/resource/board/board2.qml:41
 #: activities/explore_world_animals/resource/board/board2.qml:44
@@ -9369,7 +9608,7 @@ msgid ""
 msgstr ""
 "Jedná se o největšího ze všech jelenovitých. Los sní až 25 kg potravy za "
 "den, pro kterou se občas musí postavit na zadní, aby dosáhl na větve ve "
-"výšce až 4 metry."
+"výšce až 4 metry!"
 
 #: activities/explore_world_animals/resource/board/board2.qml:76
 msgctxt "board2|"
@@ -9588,6 +9827,9 @@ msgid ""
 "to scare enemies in battle. It is very loud, and performances are very "
 "exciting with crowds cheering and performers yelling!"
 msgstr ""
+"Hra na bubny taiko pochází z Japonska. Tento způsob hry na bubny se původně "
+"používal k zastrašování nepřátel v boji. Je velmi hlasitá a vystoupení jsou "
+"velmi strhující, s jásajícím davem a křičícími účinkujícími!"
 
 #: activities/explore_world_music/resource/board/board1.qml:68
 #: activities/explore_world_music/resource/board/board1.qml:72
@@ -9602,6 +9844,9 @@ msgid ""
 "narrative poem or story. Typical instruments include bagpipes, fiddles, "
 "flutes, harps, and accordions."
 msgstr ""
+"Lidová hudba tohoto regionu se nazývá keltská hudba. Často v ní zaznívají "
+"narativní básně nebo příběhy. Mezi typické nástroje patří dudy, housle, "
+"flétny, harfy a akordeony."
 
 #: activities/explore_world_music/resource/board/board1.qml:80
 #: activities/explore_world_music/resource/board/board1.qml:84
@@ -9616,6 +9861,9 @@ msgid ""
 "a story by acting and singing. Opera singers, both male and female, learn "
 "special techniques to sing operas."
 msgstr ""
+"Itálie je proslulá svou operou. Opera je hudební divadlo, v němž herci "
+"vyprávějí příběh prostřednictvím hereckého výkonu a zpěvu. Operní pěvci, ať "
+"už muži, nebo ženy, se učí speciální techniky pro operní zpěv."
 
 #: activities/explore_world_music/resource/board/board1.qml:92
 #: activities/explore_world_music/resource/board/board1.qml:96
@@ -9971,7 +10219,7 @@ msgstr ""
 #: activities/fifteen/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Arrows: move a piece to the empty space."
-msgstr "Šipky: pohyb dílku na volné místo"
+msgstr "Šipky: pohyb dílku na volné místo."
 
 #. Activity title
 #: activities/find_the_day/ActivityInfo.qml:15
@@ -10827,7 +11075,7 @@ msgstr "Přesuň oblasti na správné místo a dokonči mapu."
 #: activities/geo-country/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Countries of America."
-msgstr "Země Ameriky"
+msgstr "Země Ameriky."
 
 #: activities/geo-country/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -16527,53 +16775,38 @@ msgid "Find the tuba"
 msgstr "Najdi tubu"
 
 #: activities/keyboard_training/ActivityConfig.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw letters"
 msgctxt "ActivityConfig|"
 msgid "Uppercase letters"
-msgstr "Kreslení písmen"
+msgstr "Velká písmena"
 
 #: activities/keyboard_training/ActivityConfig.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw letters"
 msgctxt "ActivityConfig|"
 msgid "Lowercase letters"
-msgstr "Kreslení písmen"
+msgstr "Malá písmena"
 
 #. Activity title
 #: activities/keyboard_training/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Memory training."
 msgctxt "ActivityInfo|"
 msgid "Keyboard training"
-msgstr "Procvičování paměti."
+msgstr "Procvičení klávesnice"
 
 #. Help title
 #: activities/keyboard_training/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Read the score, and then play it on the keyboard."
 msgctxt "ActivityInfo|"
 msgid "Find the requested character and type it on the keyboard."
-msgstr "Přečti si osnovu a pak ji přehraj na klaviatuře."
+msgstr "Najdi požadovaný znak a zadejte jej na klávesnici."
 
 #. Help goal
 #: activities/keyboard_training/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to spell words."
 msgctxt "ActivityInfo|"
 msgid "Learn to type on a keyboard."
-msgstr "Nauč se hláskovat slova."
+msgstr "Nauč se psát na klávesnici."
 
 #. Help manual
 #: activities/keyboard_training/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "A character is displayed. Find it on the keyboard and type it."
-msgstr ""
+msgstr "Zobrazí se písmeno. Najdi ho na klávesnici a zadej ho."
 
 #. Activity title
 #: activities/land_safe/ActivityInfo.qml:15
@@ -16617,7 +16850,7 @@ msgid ""
 msgstr ""
 "V prvních úrovních použij šipky nahoru/dolů pro ovládání trysky a šipky "
 "vpravo/vlevo pro ovládání směru. Na dotykových obrazovkách můžeš raketu "
-"ovládat pomocí odpovídajících tlačítek zobrazených na obrazovce"
+"ovládat pomocí odpovídajících tlačítek zobrazených na obrazovce."
 
 #: activities/land_safe/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -17210,7 +17443,7 @@ msgstr "Sčítat čísla desítkové soustavy až po 5."
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Subtraction with decimal numbers"
-msgstr "Odčítání s čísly desítkové soustavy."
+msgstr "Odčítání s čísly desítkové soustavy"
 
 #. Help title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:16
@@ -17432,7 +17665,7 @@ msgstr ""
 #: activities/learn_quantities/Learn_quantities.qml:16
 msgctxt "Learn_quantities|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
-msgstr "Je vyžadováno množství. Šipka umožňuje výběr až 10 pomerančů. "
+msgstr "Je vyžadováno množství. Šipka umožňuje výběr až 10 pomerančů."
 
 #: activities/learn_quantities/Learn_quantities.qml:20
 msgctxt "Learn_quantities|"
@@ -17487,7 +17720,7 @@ msgstr "Výuka odčítání"
 #: activities/learn_subtractions/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction with small numbers."
-msgstr "Nauč se odčítání s malými čísly"
+msgstr "Nauč se odčítání s malými čísly."
 
 #. Help goal
 #: activities/learn_subtractions/ActivityInfo.qml:20
@@ -17709,7 +17942,7 @@ msgstr "Vypínání světel"
 #: activities/lightsoff/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Turn off all the lights."
-msgstr "Zhasněte všechna světla"
+msgstr "Zhasněte všechna světla."
 
 #. Help goal
 #: activities/lightsoff/ActivityInfo.qml:20
@@ -18016,12 +18249,9 @@ msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr "Spočítat zbývající hvězdy do 10000 s násobky."
 
 #: activities/magic-hat-minus/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Calculate remaining stars up to 100 with coefficients."
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 10, with 2 or 3 different star sets."
-msgstr "Spočítat zbývající hvězdy do 100 s násobky."
+msgstr "Spočítat zbývající hvězdy do 10, se 2 nebo 3 různými sadami hvězd."
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
 #: activities/magic-hat-minus/StarsBar.qml:36
@@ -18112,12 +18342,9 @@ msgid "Add stars up to 10000 with coefficients."
 msgstr "Sčítat hvězdy do 10000 s násobky."
 
 #: activities/magic-hat-plus/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 100 with coefficients."
 msgctxt "Data|"
 msgid "Add stars up to 10, with 2 or 3 different star sets."
-msgstr "Sčítat hvězdy do 100 s násobky."
+msgstr "Sčítat hvězdy do 10, se 2 nebo 3 různými sadami hvězd."
 
 #. Activity title
 #: activities/maze/ActivityInfo.qml:15
@@ -18191,7 +18418,7 @@ msgstr ""
 "Na vyšších úrovních je režim rychlochůze aktivován automaticky. Pokud chceš "
 "tuto funkci na dřívějších úrovních, nebo ji chceš zakázat ve větších "
 "bludištích, kliknutím na ikonu \"bosý / běžecké boty\" v levém horním rohu "
-"lze rychlochůzi přepínat."
+"lze rychlochůzi přepínat.\t"
 
 #: activities/maze/Maze.qml:353
 msgctxt "Maze|"
@@ -18569,7 +18796,7 @@ msgstr "Procvičuj sčítání, odčítání, násobení, dělení."
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Addition, subtraction, multiplication, division."
-msgstr "Sčítání, odčítání, násobení, dělení"
+msgstr "Sčítání, odčítání, násobení, dělení."
 
 #. Help manual
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:24
@@ -19632,7 +19859,7 @@ msgstr "<b>Klávesové zkratky:</b>"
 #: activities/menu/ActivityInfo.qml:39
 msgctxt "ActivityInfo|"
 msgid "Ctrl+B: Show or Hide the control bar"
-msgstr "Ctrl+B: Zobrazit nebo skrýt ovládací lištu."
+msgstr "Ctrl+B: Zobrazit nebo skrýt ovládací lištu"
 
 #: activities/menu/ActivityInfo.qml:40
 msgctxt "ActivityInfo|"
@@ -19944,15 +20171,12 @@ msgstr ""
 "uživatele není správné."
 
 #: activities/menu/Menu.qml:215
-#, fuzzy, qt-format
-#| msgctxt "Menu|"
-#| msgid ""
-#| "GCompris is connected to teacher's server, and the user is authenticated."
+#, qt-format
 msgctxt "Menu|"
 msgid ""
 "GCompris is connected to teacher's server, and the user is authenticated as "
 "%1."
-msgstr "GCompris je připojen na učitelský server a uživatel je ověřen."
+msgstr "GCompris je připojen na učitelský server a uživatel je ověřen jako %1."
 
 #: activities/menu/Menu.qml:216
 msgctxt "Menu|"
@@ -20029,7 +20253,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to use the mousewheel or the zoom / pinch gesture to zoom in and out."
-msgstr "Nauč se používat kolečko nebo prsty pro přiblížení a oddálení"
+msgstr "Nauč se používat kolečko nebo prsty pro přiblížení a oddálení."
 
 #. Help prerequisite
 #: activities/mining/ActivityInfo.qml:22
@@ -20710,7 +20934,7 @@ msgid ""
 "the empty spots of the board (by clicking on the spots)."
 msgstr ""
 "Ty a Tux začínáte každý s 9 kameny. Umísti své kameny na volná místa na "
-"desce (pomocí klikání na tato místa). "
+"desce (pomocí klikání na tato místa)."
 
 #: activities/nine_men_morris/NineMenMorris.qml:359
 msgctxt "NineMenMorris|"
@@ -21062,7 +21286,7 @@ msgstr ""
 #: activities/ordering_alphabets/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Ascending order, 5 defined letters."
-msgstr "Vzestupně, 5 písmen"
+msgstr "Vzestupně, 5 písmen."
 
 #. Add 5 letters in ascending lexicographical order, separated by | character. The objective is to give children these letters in random order and ask them to sort in ascending lexicographical order.
 #: activities/ordering_alphabets/resource/1/Data.qml:22
@@ -21235,12 +21459,12 @@ msgstr "Přetáhni slova do horní části tak, aby skládaly smysluplnou větu.
 #: activities/ordering_numbers/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Ascending order, 5 defined numbers between 1 and 5."
-msgstr "Řazení vzestupně, 5 čísel mezi 1 a 5"
+msgstr "Řazení vzestupně, 5 čísel mezi 1 a 5."
 
 #: activities/ordering_numbers/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Descending order, 5 defined numbers between 1 and 5."
-msgstr "Řazení sestupně, 5 čísel mezi 1 a 5"
+msgstr "Řazení sestupně, 5 čísel mezi 1 a 5."
 
 #: activities/ordering_numbers/resource/3/Data.qml:13
 msgctxt "Data|"
@@ -21370,7 +21594,7 @@ msgstr "Hrát oware proti Tuxovi"
 #: activities/oware/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Play the Oware strategy game against Tux."
-msgstr "Hrát strategickou hru oware proti Tuxovi"
+msgstr "Hrát strategickou hru oware proti Tuxovi."
 
 #. Help goal
 #: activities/oware/ActivityInfo.qml:19
@@ -21499,41 +21723,43 @@ msgid ""
 "Katsushika Hokusai, Viewing Sunset over the Ryogoku Bridge from the Ommaya "
 "Embankment - 1830"
 msgstr ""
+"Katsushika Hokusai, Pohled na západ slunce nad mostem Ryogoku z nábřeží "
+"Ommaya – 1830"
 
 #: activities/paintings/resource/board/board11_0.qml:14
 msgctxt "board11_0|"
 msgid "Katsushika Hokusa, Poppies - 1833-1834"
-msgstr ""
+msgstr "Katsushika Hokusai, Mák – 1833–1834"
 
 #: activities/paintings/resource/board/board12_0.qml:14
 msgctxt "board12_0|"
 msgid "Katsushika Hokusai, Kazusa sea Route - 1830."
-msgstr ""
+msgstr "Katsushika Hokusai, Námořní cesta v Kazuse – 1830."
 
 #: activities/paintings/resource/board/board13_0.qml:14
 msgctxt "board13_0|"
 msgid "Michelangelo, Pieta - 1499"
-msgstr ""
+msgstr "Michelangelo, Pieta - 1499"
 
 #: activities/paintings/resource/board/board14_0.qml:14
 msgctxt "board14_0|"
 msgid "Leonardo da Vinci, Mona Lisa - 1503-19"
-msgstr ""
+msgstr "Leonardo da Vinci, Mona Lisa - 1503-19"
 
 #: activities/paintings/resource/board/board15_0.qml:14
 msgctxt "board15_0|"
 msgid "Giovanni Bellini, La Pala di Pesaro - 1475-85"
-msgstr ""
+msgstr "Giovanni Bellini, Oltářní obraz z Pesara - 1475-85"
 
 #: activities/paintings/resource/board/board16_0.qml:14
 msgctxt "board16_0|"
 msgid "Albrecht Dürer, Lion - 1494"
-msgstr ""
+msgstr "Albrecht Dürer, Lev - 1494"
 
 #: activities/paintings/resource/board/board17_0.qml:14
 msgctxt "board17_0|"
 msgid "Pieter Brugel, The Harvesters - 1565"
-msgstr ""
+msgstr "Pieter Bruegel, Ženci – 1565"
 
 #: activities/paintings/resource/board/board18_0.qml:14
 msgctxt "board18_0|"
@@ -21543,52 +21769,52 @@ msgstr "Pierre-Auguste Renoir, Dívky u piana - 1892"
 #: activities/paintings/resource/board/board19_0.qml:14
 msgctxt "board19_0|"
 msgid "Wassily Kandinsky, Composition VIII - 1923"
-msgstr ""
+msgstr "Vasilij Kandinskij, Kompozice VIII – 1923"
 
 #: activities/paintings/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
 msgid "Pierre-Auguste Renoir, Bal du moulin de la Galette - 1876"
-msgstr ""
+msgstr "Pierre-Auguste Renoir, Ples v mlýně La Galette – 1876"
 
 #: activities/paintings/resource/board/board20_0.qml:14
 msgctxt "board20_0|"
 msgid "Bazille, The Ramparts at Aigues-Mortes - 1867"
-msgstr ""
+msgstr "Bazille, Hradby v Aigues-Mortes – 1867"
 
 #: activities/paintings/resource/board/board21_0.qml:14
 msgctxt "board21_0|"
 msgid "Mary Cassatt, Summertime - 1894"
-msgstr ""
+msgstr "Mary Cassattová, Léto – 1894"
 
 #: activities/paintings/resource/board/board22_0.qml:14
 msgctxt "board22_0|"
 msgid "Vincent Van Gogh, Village Street in Auvers - 1890"
-msgstr ""
+msgstr "Vincent van Gogh, Vesnická ulice v Auvers – 1890"
 
 #: activities/paintings/resource/board/board2_0.qml:14
 msgctxt "board2_0|"
 msgid "Giuseppe Arcimboldo, Spring - 1573"
-msgstr ""
+msgstr "Giuseppe Arcimboldo, Jaro – 1573"
 
 #: activities/paintings/resource/board/board3_0.qml:14
 msgctxt "board3_0|"
 msgid "Giuseppe Arcimboldo, The Librarian - 1566"
-msgstr ""
+msgstr "Giuseppe Arcimboldo, Knihovník – 1566"
 
 #: activities/paintings/resource/board/board4_0.qml:14
 msgctxt "board4_0|"
 msgid "Katsushika Hokusai, Oiran and Kamuro"
-msgstr ""
+msgstr "Katsushika Hokusai, Oiran a Kamuro"
 
 #: activities/paintings/resource/board/board5_0.qml:14
 msgctxt "board5_0|"
 msgid "Katsushika Hokusai, Woman holding a fan"
-msgstr ""
+msgstr "Katsushika Hokusai, Žena s vějířem"
 
 #: activities/paintings/resource/board/board6_0.qml:14
 msgctxt "board6_0|"
 msgid "Katsushika Hokusai, Ejiri in Suruga Province - 1830-1833"
-msgstr ""
+msgstr "Katsushika Hokusai, Ejiri v provincii Suruga – 1830–1833"
 
 #: activities/paintings/resource/board/board7_0.qml:14
 msgctxt "board7_0|"
@@ -21603,7 +21829,7 @@ msgstr "Utagawa Hiroshige, Svatyně Benzaiten v Inokašira pod sněhem - 1760-70
 #: activities/paintings/resource/board/board9_0.qml:14
 msgctxt "board9_0|"
 msgid "Utagawa Hiroshige, Horse-mackerel and Prawn - 1840"
-msgstr ""
+msgstr "Utagawa Hiroshige, Kranas a kreveta – 1840"
 
 #. Activity title
 #: activities/path_decoding/ActivityInfo.qml:14
@@ -21737,19 +21963,19 @@ msgstr "Relativní kódování cesty"
 #: activities/peg_solitaire/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
 msgid "Use the default starting hole"
-msgstr ""
+msgstr "Použít výchozí startovní jamku"
 
 #. Activity title
 #: activities/peg_solitaire/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Peg solitaire"
-msgstr ""
+msgstr "Solitér s kolíčky"
 
 #. Help title
 #: activities/peg_solitaire/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Remove all the pieces in the correct order until only one remains."
-msgstr ""
+msgstr "Odstraňuj všechny dílky ve správném pořadí, dokud zůstane jen jeden."
 
 #. Help manual
 #: activities/peg_solitaire/ActivityInfo.qml:23
@@ -21764,36 +21990,38 @@ msgid ""
 "clicking on it. You can use the undo button to undo your last move, and the "
 "redo button to redo it."
 msgstr ""
+"Chcete-li přesunout dílek, nechte jej přeskočit o jiný dílek v kolmém směru "
+"na políčko vzdálené o dvě pozice. Přeskočený dílek se z hrací plochy "
+"odstraní. Můžete kliknout na dílek, který chcete přesunout, a poté na jeho "
+"cíl, nebo ho přetáhnout na místo určení. Hra končí, když již nelze přesunout "
+"žádný dílek, a vyhrává ten, komu zůstane pouze jeden dílek. Pokud není "
+"vybrána možnost použít výchozí startovní jamku, musíte vybrat první dílek, "
+"který chcete odstranit, kliknutím na něj. Pomocí tlačítka Zpět můžete vrátit "
+"zpět svůj poslední tah a pomocí tlačítka Znovu jej zopakovat."
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:28
 msgctxt "peg_solitaire|"
 msgid "English board"
-msgstr ""
+msgstr "Anglická deska"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:44
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "French Polynesia"
 msgctxt "peg_solitaire|"
 msgid "French board"
-msgstr "Francouzská Polynésie"
+msgstr "Francouzská deska"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:61
 msgctxt "peg_solitaire|"
 msgid "32 holes diamond board"
-msgstr ""
+msgstr "Diamantová deska s 32 jamkami"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:79
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numerical order"
 msgctxt "peg_solitaire|"
 msgid "Asymmetrical board"
-msgstr "Číselné pořadí"
+msgstr "Asymetrická deska"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -24753,7 +24981,7 @@ msgid ""
 "friends."
 msgstr ""
 "Jonášův táta mu dal 17 sladkostí, aby je spravedlivě rozdělil mezi kamarády: "
-"2 kluky a 2 holky. Pomůžeš mu sladkosti rozdělit?"
+"2 kluky a 2 holky. Pomož mu sladkosti rozdělit."
 
 #: activities/share/resource/2/Data.qml:252
 msgctxt "Data|"
@@ -24798,9 +25026,9 @@ msgctxt ""
 "split %n pieces of candy equally between them."
 msgid "and %n girl(s) in the center. "
 msgid_plural "and %n girl(s) in the center. "
-msgstr[0] "a %n děvče doprostřed."
-msgstr[1] "a %n děvčata doprostřed."
-msgstr[2] "a %n děvčata doprostřed."
+msgstr[0] "a %n děvče doprostřed. "
+msgstr[1] "a %n děvčata doprostřed. "
+msgstr[2] "a %n děvčata doprostřed. "
 
 #: activities/share/share.js:157
 #, qt-format
@@ -24817,7 +25045,7 @@ msgstr[2] "Potom mezi ně rozděl spravedlivě %n sladkostí."
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
-msgstr "Nemůžeš do stejného obdélníku dát více než %1 sladkostí."
+msgstr "Nemůžeš do stejného obdélníku dát více než %1 sladkostí"
 
 #. Activity title
 #: activities/simplepaint/ActivityInfo.qml:15
@@ -25299,7 +25527,7 @@ msgstr "Sluneční soustava"
 #: activities/solar_system/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn about the solar system."
-msgstr "Uč se o Sluneční soustavě"
+msgstr "Uč se o Sluneční soustavě."
 
 #. Help goal
 #: activities/solar_system/ActivityInfo.qml:23
@@ -26414,7 +26642,7 @@ msgid ""
 "expert!"
 msgstr ""
 "Aby z tebe byl expert na Sluneční soustavu, musíš kvíz zvládnout s "
-"úspěšností alespoň 90%."
+"úspěšností alespoň 90%!"
 
 #: activities/solar_system/SolarSystem.qml:362
 #, qt-format
@@ -26642,7 +26870,7 @@ msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
 "submarine."
 msgstr ""
-"Položka nejvíce vpravo na ovládacím panelu řídí hloubková kormidla ponorky"
+"Položka nejvíce vpravo na ovládacím panelu řídí hloubková kormidla ponorky."
 
 #: activities/submarine/Submarine.qml:178
 msgctxt "Submarine|"
@@ -27249,6 +27477,18 @@ msgid ""
 "it; in this case, click on the Ready button when the operation is written "
 "correctly and then solve it."
 msgstr ""
+"Při svislém sčítání se čísla zapisují jedno pod druhé. Musí být správně "
+"zarovnána, počínaje sloupcem na pravé straně. Výsledek se zapíše do spodního "
+"řádku. Chcete-li sčítání vyřešit, začněte sčítáním čísel v prvním sloupci "
+"(na pravé straně) a výsledek napište do spodního řádku stejného sloupce. "
+"Pokud je výsledek dvouciferné číslo, napište do výsledku pouze jednotky a "
+"desítky přidejte vedle horního čísla v dalším sloupci: tomuto se říká "
+"přenos. Poté sečtěte čísla v dalším sloupci, včetně přeneseného čísla, a "
+"postup opakujte, dokud není výpočet dokončen. Jakmile zjistíte výsledek, "
+"klikněte na tlačítko OK, abyste potvrdili svou odpověď. V některých úrovních "
+"budete muset před vyřešením výpočtu zapsat daný výpočet; v takovém případě "
+"klikněte na tlačítko Připraven, až bude výpočet zapsán správně, a poté jej "
+"vyřešte."
 
 #: activities/vertical_addition/resource/1/Data.qml:12
 msgctxt "Data|"
@@ -27364,6 +27604,25 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"Při svislém odčítání se čísla zapisují jedno pod druhé. Musí být správně "
+"zarovnána, počínaje sloupcem na pravé straně. Horní číslo se nazývá "
+"odčítané: je to částka, od které vycházíme a od které se odečítá jiné číslo, "
+"abychom získali rozdíl. Číslo pod ním se nazývá odečítané: je to částka, "
+"kterou odečteme od minuendu, abychom získali rozdíl. Výsledek se zapisuje do "
+"spodního řádku. Chcete-li vyřešit odčítání, začněte odečtením spodního čísla "
+"prvního sloupce od horního čísla prvního sloupce (na pravé straně) a "
+"výsledek zapište do spodního řádku stejného sloupce. Pokud je horní číslo "
+"menší než spodní číslo, můžete si půjčit z minuendu v dalším sloupci: "
+"například pokud k hornímu číslu přidáte 10 jednotek, musíte odečíst jednu "
+"jednotku od horního čísla v dalším sloupci. Této metodě se říká přenášení "
+"pomocí přeskupení. Chcete-li to v této aktivitě provést, klikněte na prázdný "
+"obdélník vlevo od horního čísla, vyberte 1 a v dalším sloupci klikněte na "
+"prázdný obdélník vpravo od horního čísla a vyberte -1. Poté zapište výsledek "
+"sloupce do spodního řádku a postupujte stejně v dalších sloupcích, dokud "
+"není operace dokončena. Jakmile zjistíte výsledek, klikněte na tlačítko OK "
+"pro potvrzení odpovědi. V některých úrovních budete muset před vyřešením "
+"zapsat daný příklad; v takovém případě klikněte na tlačítko Ready, jakmile "
+"je příklad zapsán správně a vyřešte jej."
 
 #: activities/vertical_subtraction/resource/1/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
@@ -27514,6 +27773,25 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"Při svislém odčítání se čísla zapisují jedno pod druhé. Musí být správně "
+"zarovnána, počínaje sloupcem na pravé straně. Horní číslo se nazývá "
+"odčítané: je to částka, od které vycházíme a od které se odečítá jiné číslo, "
+"abychom získali rozdíl. Číslo pod ním se nazývá odečítané: je to částka, "
+"kterou odečteme od minuendu, abychom získali rozdíl. Výsledek se zapisuje do "
+"spodního řádku. Chcete-li vyřešit odečítání, začněte odečtením spodního "
+"čísla prvního sloupce od horního čísla prvního sloupce (na pravé straně) a "
+"výsledek zapište do spodního řádku stejného sloupce. Pokud je horní číslo "
+"menší než spodní číslo, můžete si půjčit z odčítaného v dalším sloupci: "
+"například pokud k hornímu číslu přidáte 10 jednotek, musíte přidat jednu "
+"jednotku ke spodnímu číslu v dalším sloupci. Této metodě se říká metoda "
+"půjčování kompenzací. Chcete-li to v této aktivitě provést, klikněte na "
+"prázdný obdélník vlevo od horního čísla, vyberte 1 a v dalším sloupci "
+"klikněte na prázdný obdélník vpravo od spodního čísla a vyberte +1. Poté "
+"zapište výsledek sloupce do spodního řádku a postupujte stejně v dalších "
+"sloupcích, dokud není operace dokončena. Jakmile zjistíte výsledek, klikněte "
+"na tlačítko OK pro potvrzení odpovědi. V některých úrovních budete muset "
+"před vyřešením zapsat daný příklad; v takovém případě klikněte na tlačítko "
+"Ready, jakmile je příklad zapsán a vyřešte jej."
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15
@@ -27682,37 +27960,26 @@ msgctxt "ActivityBase|"
 msgid ""
 "You are currently in a sequence, going back to the menu will cancel it, do "
 "you confirm?"
-msgstr ""
+msgstr "Právě provádíš sérii úkonů. Návrat do nabídky ji zruší. Potvrzuješ to?"
 
 #: core/ActivityBase.qml:219
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "ActivityBase|"
 msgid "Yes"
 msgstr "Ano"
 
 #: core/ActivityBase.qml:224
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "ActivityBase|"
 msgid "No"
 msgstr "Ne"
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to run a list of activities with specific datasets "
 "in sequence (--with-sequence sequence.json)"
 msgstr ""
-"Nové volby příkazového řádku pro výpis všech aktivit a spuštění některé "
-"vybrané"
+"Nová volba příkazového řádku pro postupné spuštění seznamu úkonů s "
+"konkrétními datovými sadami (--with-sequence sequence.json)"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:44 core/ChangeLog.qml:50
 #: core/ChangeLog.qml:56 core/ChangeLog.qml:65 core/ChangeLog.qml:71
@@ -27881,7 +28148,7 @@ msgstr "Oprava resetování úrovně při ruční změně úrovně v Logických 
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
-msgstr "Oprava aktivit Abeceda, Sudá a lichá čísla a Pořadí čísel "
+msgstr "Oprava aktivit Abeceda, Sudá a lichá čísla a Pořadí čísel"
 
 #: core/ChangeLog.qml:129 core/ChangeLog.qml:137
 msgctxt "ChangeLog|"
@@ -27943,7 +28210,7 @@ msgstr "Nové podkategorie pro uspořádání aktivit"
 #: core/ChangeLog.qml:161
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
-msgstr "Přidán překlad pro makedonštinu"
+msgstr "Přidán překlad pro makedonštinu."
 
 #: core/ChangeLog.qml:162
 msgctxt "ChangeLog|"
@@ -28056,7 +28323,7 @@ msgstr "Funkce vyhledávání."
 #: core/ChangeLog.qml:180
 msgctxt "ChangeLog|"
 msgid "A Changelog."
-msgstr "Seznam změn"
+msgstr "Seznam změn."
 
 #: core/ChangeLog.qml:181
 msgctxt "ChangeLog|"
@@ -28676,7 +28943,7 @@ msgstr ""
 #: core/main.cpp:149
 msgctxt "QObject|"
 msgid "Start the sequence of activities passed in the json file."
-msgstr ""
+msgstr "Spustit sled činností zadaných v souboru JSON."
 
 #: core/main.cpp:153
 msgctxt "QObject|"
@@ -28787,6 +29054,8 @@ msgid ""
 "The following activities do not have any active datasets! All of their "
 "datasets will be reactivated."
 msgstr ""
+"Následující aktivity nemají žádné aktivní datové sady! Všechny jejich datové "
+"sady budou znovu aktivovány."
 
 #: core/main.qml:547
 #, qt-format

@@ -10,15 +10,15 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-04 00:40+0000\n"
-"PO-Revision-Date: 2026-04-13 19:09+0200\n"
-"Last-Translator: Libor Filípek <filipek.libor@protonmail.com>\n"
+"PO-Revision-Date: 2026-04-14 17:15+0200\n"
+"Last-Translator: Libor Filípek <libor.filipek@gmail.com>\n"
 "Language-Team: \n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Poedit 3.8\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
 #: activities/adjacent_numbers/ActivityInfo.qml:17
@@ -186,7 +186,7 @@ msgid ""
 "When you have achieved it, press OK"
 msgstr ""
 "Zapni správné žárovky, abys představil binární podobu daného desítkového "
-"čísla. Jakmile toho docílíš stiskni OK."
+"čísla. Jakmile toho docílíš stiskni OK"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "braille_alphabets"
 #: activities/braille_alphabets/ActivityInfo.qml:18
@@ -346,7 +346,7 @@ msgid ""
 " Click on each item in turn, in the blue frame, and move them to reproduce "
 "the pattern from the pink frame."
 msgstr ""
-"Klikni na položky v modrém rámečku a přesuň je pro zopakování vzoru z "
+" Klikni na položky v modrém rámečku a přesuň je pro zopakování vzoru z "
 "růžového rámečku."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "details"
@@ -391,7 +391,7 @@ msgstr ""
 #: activities/erase/ActivityInfo.qml:18
 #, kde-format
 msgid " Clear the window with your sponge and discover the hidden picture."
-msgstr "Očisti houbou okno a objev skrytý obrázek."
+msgstr " Očisti houbou okno a objev skrytý obrázek."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "erase_2clic"
 #: activities/erase_2clic/ActivityInfo.qml:18
@@ -463,7 +463,7 @@ msgstr "Vyber požadovaný den."
 #: activities/followline/ActivityInfo.qml:18
 #, kde-format
 msgid " Move the mouse or your finger along the pipe to stop the fire."
-msgstr "Pro uhašení požáru pohybuj myší nebo svým prstem podél hadice."
+msgstr " Pro uhašení požáru pohybuj myší nebo svým prstem podél hadice."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "football"
 #: activities/football/ActivityInfo.qml:18
@@ -597,7 +597,7 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:17
 #, kde-format
 msgid "Use the four numbers with given operators to find 24"
-msgstr "Použij čtyři čísla s daným operátorem tak, abys našel číslo 24."
+msgstr "Použij čtyři čísla s daným operátorem tak, abys našel číslo 24"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22
