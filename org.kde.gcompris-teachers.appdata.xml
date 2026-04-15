@@ -17,7 +17,7 @@
   <name xml:lang="bg">GCompris за учители</name>
   <name xml:lang="ca">GCompris-teachers</name>
   <name xml:lang="ca-valencia">GCompris-teachers</name>
-  <name xml:lang="cs">GCompris-teachers pro učitele</name>
+  <name xml:lang="cs">GCompris – učitelé</name>
   <name xml:lang="de">GCompris-teachers</name>
   <name xml:lang="es">GCompris-teachers</name>
   <name xml:lang="eu">GCompris-teachers</name>
@@ -36,6 +36,7 @@
   <summary xml:lang="bg">Съпътстваща програма за учители на GCompris</summary>
   <summary xml:lang="ca">Acompanyament del professorat del GCompris</summary>
   <summary xml:lang="ca-valencia">Acompanyament del professorat de GCompris</summary>
+  <summary xml:lang="cs">Průvodce pro učitele k GCompris</summary>
   <summary xml:lang="de">GCompris-Begleitanwendung für Lehrer</summary>
   <summary xml:lang="es">Complemento de GCompris para profesores</summary>
   <summary xml:lang="eu">GCompriserako irakasleen laguntzailea</summary>
@@ -55,6 +56,7 @@
     <p xml:lang="bg">GCompris-за учители е съпътстващо приложение за учители, което им помага да подобрят използването на GCompris в класните занимания.</p>
     <p xml:lang="ca">El GCompris-teachers és una aplicació d'acompanyament del professorat per a millorar l'ús del GCompris a les seves classes.</p>
     <p xml:lang="ca-valencia">GCompris-teachers és una aplicació d'acompanyament del professorat per a millorar l'ús de GCompris en les seues classes.</p>
+    <p xml:lang="cs">GCompris - učitelé je doplňková aplikace pro učitele, která jim pomáhá lépe využívat program GCompris při výuce.</p>
     <p xml:lang="de">GCompris-teachers ist eine Begleitanwendung für Lehrer, die den Einsatz von GCompris im Unterricht erweitert.</p>
     <p xml:lang="es">GCompris-teachers es una aplicación complementaria para profesores que permite potenciar el uso de GCompris en clase.</p>
     <p xml:lang="eu">GCompris-teachers irakasleentzako aplikazio osagarri bat da, GComprisen erabilera ikasgelan hobetzea helburu duena.</p>
@@ -74,6 +76,7 @@
     <p xml:lang="bg">Тя позволява на учителите да създават персонализирани набори от данни и да получават резултатите на учениците за някои дейности.</p>
     <p xml:lang="ca">Permet als professors crear conjunts de dades personalitzats i rebre els resultats dels alumnes per a algunes activitats.</p>
     <p xml:lang="ca-valencia">Permet als professors crear conjunts de dades personalitzats i rebre els resultats dels alumnes per a algunes activitats.</p>
+    <p xml:lang="cs">Umožňuje učitelům vytvářet vlastní datové soubory a získávat výsledky žáků u některých úkolů.</p>
     <p xml:lang="de">Es ermöglicht Lehrern, benutzerdefinierte Datensätze zu erstellen. Außerdem ist es bei einigen Aktivitäten möglich, die Ergebnisse der Schüler zu empfangen.</p>
     <p xml:lang="es">Permite a los profesores crear conjuntos de datos personalizados y recibir de los alumnos el resultado de algunas actividades.</p>
     <p xml:lang="eu">Irakasleei datu-multzo pertsonalizatuak sortzeko eta zenbait jardueratan ikasleen emaitzak jasotzeko aukera ematen die.</p>
@@ -95,6 +98,7 @@
       <caption xml:lang="bg">Управление на учениците и групите</caption>
       <caption xml:lang="ca">Gestió d'alumnes i grups</caption>
       <caption xml:lang="ca-valencia">Gestioneu alumnes i grups</caption>
+      <caption xml:lang="cs">Správa žáků a skupin</caption>
       <caption xml:lang="de">Verwaltung von Schülern und Gruppen</caption>
       <caption xml:lang="es">Gestión de alumnos y grupos</caption>
       <caption xml:lang="eu">Ikasleen eta taldeen kudeaketa</caption>
@@ -116,6 +120,7 @@
       <caption xml:lang="bg">Резултати за определен ученик</caption>
       <caption xml:lang="ca">Visualització de resultats d'un alumne</caption>
       <caption xml:lang="ca-valencia">Visualització de resultats d'un alumne</caption>
+      <caption xml:lang="cs">Zobrazení výsledků pro jednoho žáka</caption>
       <caption xml:lang="de">Ergebnisanzeige für einen Schüler</caption>
       <caption xml:lang="es">Visualización de los resultados de un alumno</caption>
       <caption xml:lang="eu">Ikasle baten emaitzen bistaratzea</caption>
@@ -137,6 +142,7 @@
       <caption xml:lang="bg">Показване на резултати за упражнението за вертикално изваждане</caption>
       <caption xml:lang="ca">Visualització de resultats de l'activitat de sostracció vertical</caption>
       <caption xml:lang="ca-valencia">Visualització de resultats de l'activitat de sostracció vertical</caption>
+      <caption xml:lang="cs">Zobrazení výsledků při vertikálním odečítání</caption>
       <caption xml:lang="de">Ergebnisanzeige für Aktivität „Senkrechte Subtraktion“</caption>
       <caption xml:lang="es">Visualización de los resultados de la actividad de resta vertical</caption>
       <caption xml:lang="eu">Kenketa bertikalaren jarduerako emaitzen bistaratzea</caption>
