@@ -28,6 +28,7 @@
   <name xml:lang="ka">GCompris-teachers</name>
   <name xml:lang="nl">GCompris-docenten</name>
   <name xml:lang="pt-BR">GCompris-teachers</name>
+  <name xml:lang="sk">GCompris-teachers</name>
   <name xml:lang="sl">GCompris-teachers</name>
   <name xml:lang="tr">GCompris-Teachers</name>
   <name xml:lang="uk">GCompris-teachers</name>
@@ -47,6 +48,7 @@
   <summary xml:lang="ka">GCompris-teachers-ის მომყოლი</summary>
   <summary xml:lang="nl">Compagnon van GCompris-docenten</summary>
   <summary xml:lang="pt-BR">Aplicativo complementar do GCompris para professores</summary>
+  <summary xml:lang="sk">Sprievodná aplikácia GCompris pre učiteľov</summary>
   <summary xml:lang="sl">GCompris učiteljev pomočnik</summary>
   <summary xml:lang="tr">GCompris öğretmen yardımcısı</summary>
   <summary xml:lang="uk">Компаньйон GCompris для вчителів</summary>
@@ -67,6 +69,7 @@
     <p xml:lang="ka">GCompris-teachers მომყოლი აპლიკაციაა მასწავლებლებისთვის, რომ GCompris-ის საკლასო ოთახში გამოყენება გაფართოვდეს.</p>
     <p xml:lang="nl">GCompris-docenten is een compagnontoepassing voor docenten om hun gebruik van GCompris in hun klas te vergroten.</p>
     <p xml:lang="pt-BR">GCompris-teachers é um aplicativo complementar para professores que visa aprimorar o uso do GCompris em sala de aula.</p>
+    <p xml:lang="sk">GCompris-teachers je sprievodná aplikácia pre učiteľov na vylepšenie používania GCompris v triede.</p>
     <p xml:lang="sl">GCompris-teachers je spremljevalna aplikacija za učitelje, ki jim omogoča boljšo uporabo GComprisa v razredu.</p>
     <p xml:lang="tr">GCompris-Teachers, öğretmenlerin GCompris’i sınıflarında daha etkili kullanmalarını sağlayan yardımcı bir uygulamadır.</p>
     <p xml:lang="uk">GCompris-teachers – це супутня програма для вчителів, яка полегшує використання GCompris у класі.</p>
@@ -87,6 +90,7 @@
     <p xml:lang="ka">ის აძლევს მასწავლებლებს საშუალებას, შექმნან სასურველი მონაცემთა ნაკრებები და მიიღონ მოსწავლის შედეგები ზოგიერთი აქტივობისთვის.</p>
     <p xml:lang="nl">Het biedt docenten om aangepaste gegevenssets te maken en resultaten van leerlingen van sommige activiteiten terug te krijgen.</p>
     <p xml:lang="pt-BR">Permite que os professores criem conjuntos de dados personalizados e recebam os resultados dos alunos em determinadas atividades.</p>
+    <p xml:lang="sk">Umožňuje učiteľom vytvárať prispôsobené súbory údajov a prijímať výsledky žiakov pre niektoré aktivity.</p>
     <p xml:lang="sl">Učiteljem omogoča ustvarjanje prilagojenih naborov podatkov in prejemanje rezultatov učencev za nekatere dejavnosti.</p>
     <p xml:lang="tr">Bu özellik, öğretmenlerin özelleştirilmiş veri kümeleri oluşturmasına ve bazı etkinlikler için öğrencilerin sonuçlarını almasına olanak tanır.</p>
     <p xml:lang="uk">Надає змогу вчителям створювати нетипові набори даних та отримати результати учнів для деяких вправ.</p>
@@ -109,6 +113,7 @@
       <caption xml:lang="ka">მოსწავლეებისა და ჯგუფების მართვა</caption>
       <caption xml:lang="nl">Beheer van leerlingen en groepen</caption>
       <caption xml:lang="pt-BR">Gerenciamento de alunos e grupos</caption>
+      <caption xml:lang="sk">Správa žiakov a skupín</caption>
       <caption xml:lang="sl">Upravljanje učencev in skupin</caption>
       <caption xml:lang="tr">Öğrenci ve grup yönetimi</caption>
       <caption xml:lang="uk">Керування записами учнів та груп</caption>
@@ -131,6 +136,7 @@
       <caption xml:lang="ka">შედეგების ჩვენება ერთი მოსწავლისთვის</caption>
       <caption xml:lang="nl">Resultaten tonen van één leerling</caption>
       <caption xml:lang="pt-BR">Exibição dos resultados para um aluno</caption>
+      <caption xml:lang="sk">Zobrazenie výsledkov jedného žiaka</caption>
       <caption xml:lang="sl">Prikaz rezultatov za enega učenca</caption>
       <caption xml:lang="tr">Öğrenci sonuçlarını görüntüleme</caption>
       <caption xml:lang="uk">Показ результатів для одного учня</caption>
@@ -153,6 +159,7 @@
       <caption xml:lang="ka">შედეგების ჩვენება ვერტიკალური გამოკლების აქტივობისთვის</caption>
       <caption xml:lang="nl">Resultaten tonen van de activiteit verticaal aftrekken</caption>
       <caption xml:lang="pt-BR">Exibição dos resultados da atividade de subtração vertical</caption>
+      <caption xml:lang="sk">Zobrazenie výsledkov aktivity vertikálneho odčítania</caption>
       <caption xml:lang="sl">Prikaz rezultatov za dejavnost navpičnega odštevanja</caption>
       <caption xml:lang="tr">Dikey çıkarma etkinliği sonuçlarını görüntüleme</caption>
       <caption xml:lang="uk">Показ результатів для вправи з вертикального віднімання</caption>
