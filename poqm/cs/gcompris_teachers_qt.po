@@ -1,16 +1,17 @@
 # SPDX-FileCopyrightText: 2026 Vít Pelčák <vit@pelcak.org>
+# SPDX-FileCopyrightText: 2026 Libor Filípek <filipek.libor@protonmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-03-17 08:45+0100\n"
-"Last-Translator:  Vít Pelčák <vit@pelcak.org>\n"
-"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2026-04-15 21:13+0200\n"
+"Last-Translator: Libor Filípek <libor.filipek@gmail.com>\n"
+"Language-Team: \n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Poedit 3.8\n"
 "X-Qt-Contexts: true\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
@@ -24,7 +25,7 @@ msgstr ""
 #: server/activities/tens_complement_use/ActivityEditor.qml:13
 msgctxt "ActivityEditor|"
 msgid "Rules to create a valid dataset:"
-msgstr ""
+msgstr "Pravidla pro vytvoření platného souboru dat:"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
@@ -33,6 +34,10 @@ msgid ""
 "minimum between the \"Sublevels\" value and the result of: (\"Maximum start "
 "number\" - \"Minimum start number\") / \"Step between numbers\" + 1."
 msgstr ""
+"Pokud je zvolena možnost \"Náhodné počáteční číslo\", bude počet podúrovní "
+"roven menšímu z těchto dvou čísel: hodnota z pole \"Podúrovně\" a výsledek "
+"výpočtu: (\"Maximální počáteční číslo\" – \"Minimální počáteční číslo\") / "
+"\"Rozdíl mezi čísly\" + 1."
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
@@ -41,6 +46,9 @@ msgid ""
 "contain only numbers, and each of them will be used as start number for a "
 "sublevel."
 msgstr ""
+"Pokud není zaškrtnuto políčko \"Náhodné počáteční číslo\", musí seznam "
+"\"Počáteční čísla\" obsahovat pouze čísla a každé z nich bude použito jako "
+"počáteční číslo pro podúroveň."
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:19
 msgctxt "ActivityEditor|"
@@ -51,6 +59,11 @@ msgid ""
 "1. Also, the length of the list can not be greater than \"Sequence length\" "
 "- 2, to always have at least 2 visible numbers in the sequence."
 msgstr ""
+"\"Pozice chybějících čísel\" musí obsahovat seznam čísel odpovídající "
+"indexům čísel, která mají být nalezena. Indexy čísel začínají od 0 (první "
+"číslo posloupnosti) a nesmí být větší než \"Délka posloupnosti\" – 1. Délka "
+"seznamu navíc nesmí být větší než \"Délka posloupnosti\" – 2, aby v "
+"posloupnosti vždy zůstaly alespoň 2 viditelná čísla."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:36
 msgctxt "AdjacentNumbersDataDisplay|"
@@ -65,73 +78,74 @@ msgstr "Odpověď:"
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:28
 msgctxt "AdjacentNumbersEditor|"
 msgid "Random start numbers"
-msgstr ""
+msgstr "Náhodná počáteční čísla"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:29
 msgctxt "AdjacentNumbersEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Podúrovně"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:30
 msgctxt "AdjacentNumbersEditor|"
 msgid "Start numbers"
-msgstr ""
+msgstr "Počáteční číslo"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:31
 msgctxt "AdjacentNumbersEditor|"
 msgid "Minimum start number"
-msgstr ""
+msgstr "Minimální počáteční číslo"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:32
 msgctxt "AdjacentNumbersEditor|"
 msgid "Maximum start number"
-msgstr ""
+msgstr "Maximální počáteční číslo"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:33
 msgctxt "AdjacentNumbersEditor|"
 msgid "Step between numbers"
-msgstr ""
+msgstr "Krok mezi čísly"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:34
 msgctxt "AdjacentNumbersEditor|"
 msgid "Sequence length"
-msgstr ""
+msgstr "Délka sekvence"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:35
 msgctxt "AdjacentNumbersEditor|"
 msgid "Position of missing numbers"
-msgstr ""
+msgstr "Umístění chybějících čísel"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:36
 msgctxt "AdjacentNumbersEditor|"
 msgid "Proposed numbers"
-msgstr ""
+msgstr "Navrhovaná čísla"
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:98
 msgctxt "AdjacentNumbersEditor|"
 msgid "Dataset is empty."
-msgstr ""
+msgstr "Soubor dat je prázdný."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:100
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Start numbers\" must contain only numbers, and not be empty."
-msgstr ""
+msgstr "\"Startovní čísla\" musí obsahovat pouze číslice a nesmí být prázdná."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:102
 msgctxt "AdjacentNumbersEditor|"
 msgid ""
 "\"Position of missing numbers\" must contain only numbers, and not be empty."
 msgstr ""
+"\"Pozice chybějících čísel\" musí obsahovat pouze čísla a nesmí být prázdné."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:104
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Position of missing numbers\" contains too much numbers."
-msgstr ""
+msgstr "\"Pozice chybějících čísel\" obsahuje příliš mnoho čísel."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:106
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Position of missing numbers\" contains invalid numbers."
-msgstr ""
+msgstr "\"Pozice chybějících čísel\" obsahuje neplatná čísla."
 
 #: server/activities/algebra_by/AlgebraDataDisplay.qml:19
 msgctxt "AlgebraDataDisplay|"
@@ -155,7 +169,7 @@ msgstr "Odpověď: %1"
 #: server/activities/algebra_by/AlgebraEditor.qml:25
 msgctxt "AlgebraEditor|"
 msgid "Rules to create a valid dataset:"
-msgstr ""
+msgstr "Pravidla pro vytvoření platného souboru dat:"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:27
 msgctxt "AlgebraEditor|"
@@ -165,6 +179,11 @@ msgid ""
 "be large enough to generate enough questions for the given number of "
 "sublevels using the minimum and maximum operand values."
 msgstr ""
+"Je-li zvolena možnost \"Náhodné operandy\" a hodnota \"Omezení výsledku\" je "
+"větší než 0, určuje tato hodnota maximální povolenou hodnotu výsledku každé "
+"operace. Musí být dostatečně velká, aby bylo možné vygenerovat dostatek "
+"otázek pro daný počet podúrovní při použití minimálních a maximálních hodnot "
+"operandů."
 
 #: server/activities/algebra_by/AlgebraEditor.qml:29
 msgctxt "AlgebraEditor|"
@@ -172,47 +191,49 @@ msgid ""
 "If \"Random operands\" is not selected, the sublevel list on the right side "
 "must not be empty."
 msgstr ""
+"Pokud není zaškrtnuto políčko \"Náhodné operandy\", nesmí být seznam "
+"podúrovní na pravé straně prázdný."
 
 #: server/activities/algebra_by/AlgebraEditor.qml:33
 msgctxt "AlgebraEditor|"
 msgid "Random operands"
-msgstr ""
+msgstr "Náhodné operandy"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:34
 #: server/activities/algebra_by/AlgebraEditor.qml:39
 msgctxt "AlgebraEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Podúrovně"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:35
 msgctxt "AlgebraEditor|"
 msgid "Minimum operand value"
-msgstr ""
+msgstr "Minimální hodnota operandu"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:36
 msgctxt "AlgebraEditor|"
 msgid "Maximum operand value"
-msgstr ""
+msgstr "Maximální hodnota operandu"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:37
 msgctxt "AlgebraEditor|"
 msgid "Result value limit"
-msgstr ""
+msgstr "Limit hodnoty výsledku"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:38
 msgctxt "AlgebraEditor|"
 msgid "Shuffle"
-msgstr "Zamíchat"
+msgstr "Náhodné"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:44
 msgctxt "AlgebraEditor|"
 msgid "First operand"
-msgstr ""
+msgstr "První operand"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:45
 msgctxt "AlgebraEditor|"
 msgid "Second operand"
-msgstr ""
+msgstr "Druhý operand"
 
 #: server/activities/algebra_div/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
@@ -222,6 +243,10 @@ msgid ""
 "multiplying the right side operand by another number between minimum and "
 "maximum values."
 msgstr ""
+"Je-li zvolena možnost \"Náhodné operandy\", pravý operand se vždy pohybuje v "
+"rozmezí mezi minimální a maximální hodnotou. Levý operand se vypočítá "
+"vynásobením pravého operandu dalším číslem, které se pohybuje v rozmezí mezi "
+"minimální a maximální hodnotou."
 
 #: server/activities/algebra_div/ActivityEditor.qml:18
 msgctxt "ActivityEditor|"
@@ -229,47 +254,49 @@ msgid ""
 "If \"Random operands\" is not selected, for each sublevel you must make sure "
 "that the \"First operand\" is a multiple of the \"Second operand\"."
 msgstr ""
+"Když není zvolena možnost \"Náhodné operandy\", musíte u každé podúrovně "
+"zajistit, aby \"První operand\" byl násobkem \"Druhého operandu\"."
 
 #: server/activities/algebra_div/ActivityEditor.qml:23
 msgctxt "ActivityEditor|"
 msgid "Random operands"
-msgstr ""
+msgstr "Náhodné operandy"
 
 #: server/activities/algebra_div/ActivityEditor.qml:24
 #: server/activities/algebra_div/ActivityEditor.qml:29
 msgctxt "ActivityEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Podúrovně"
 
 #: server/activities/algebra_div/ActivityEditor.qml:25
 msgctxt "ActivityEditor|"
 msgid "Minimum operand value"
-msgstr ""
+msgstr "Minimální hodnota operandu"
 
 #: server/activities/algebra_div/ActivityEditor.qml:26
 msgctxt "ActivityEditor|"
 msgid "Maximum operand value"
-msgstr ""
+msgstr "Maximální hodnota operandu"
 
 #: server/activities/algebra_div/ActivityEditor.qml:27
 msgctxt "ActivityEditor|"
 msgid "Result value limit"
-msgstr ""
+msgstr "Limit hodnoty výsledku"
 
 #: server/activities/algebra_div/ActivityEditor.qml:28
 msgctxt "ActivityEditor|"
 msgid "Shuffle"
-msgstr ""
+msgstr "Náhodné"
 
 #: server/activities/algebra_div/ActivityEditor.qml:34
 msgctxt "ActivityEditor|"
 msgid "First operand"
-msgstr ""
+msgstr "První operand"
 
 #: server/activities/algebra_div/ActivityEditor.qml:35
 msgctxt "ActivityEditor|"
 msgid "Second operand"
-msgstr ""
+msgstr "Druhý operand"
 
 #: server/activities/algebra_minus/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
@@ -277,6 +304,8 @@ msgid ""
 "If \"Random operands\" is not selected, for each sublevel you must make sure "
 "that the \"First operand\" is greater than the \"Second operand\"."
 msgstr ""
+"Když není zvolena možnost \"Náhodné operandy\", musíte u každé podúrovně "
+"zajistit, aby \"První operand\" byl větší než \"Druhý operand\"."
 
 #: server/activities/binary_bulb/ActivityEditor.qml:14
 msgctxt "ActivityEditor|"
@@ -285,16 +314,19 @@ msgid ""
 "list of integer numbers. Each number must be between 0 and the maximum "
 "number which can be represented with the given \"Bulb count\"."
 msgstr ""
+"Když není zvolena možnost \"Náhodná čísla\", musí pole \"Hledaná čísla\" "
+"obsahovat seznam celých čísel. Každé číslo musí být v rozmezí od 0 do "
+"maximální hodnoty, kterou lze vyjádřit pomocí zadaného \"počtu žárovek\"."
 
 #: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:28
 msgctxt "BinaryBulbDataDisplay|"
 msgid "Expected:"
-msgstr ""
+msgstr "Očekáváno:"
 
 #: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:34
 msgctxt "BinaryBulbDataDisplay|"
 msgid "Answer:"
-msgstr ""
+msgstr "Odpověď:"
 
 #. %1 is the numerical value, %2 is the binary value. Example: "5 (101)"
 #: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:46
@@ -302,53 +334,53 @@ msgstr ""
 #, qt-format
 msgctxt "BinaryBulbDataDisplay|"
 msgid "%1 (%2)"
-msgstr ""
+msgstr "%1 (%2)"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:28
 msgctxt "BinaryBulbEditor|"
 msgid "Random numbers"
-msgstr ""
+msgstr "Náhodná čísla"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:29
 msgctxt "BinaryBulbEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Podúrovně"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:30
 msgctxt "BinaryBulbEditor|"
 msgid "Numbers to find"
-msgstr ""
+msgstr "Hledaná čísla"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:31
 msgctxt "BinaryBulbEditor|"
 msgid "Shuffle questions"
-msgstr ""
+msgstr "Náhodné pořadí otázek"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:32
 msgctxt "BinaryBulbEditor|"
 msgid "Bulb count"
-msgstr ""
+msgstr "Počet žárovek"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:33
 msgctxt "BinaryBulbEditor|"
 msgid "Display the current result"
-msgstr ""
+msgstr "Zobrazit aktuální výsledek"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:34
 msgctxt "BinaryBulbEditor|"
 msgid "Display the bulb values"
-msgstr ""
+msgstr "Zobrazit hodnoty žárovek"
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:87
 msgctxt "BinaryBulbEditor|"
 msgid "Dataset is empty."
-msgstr ""
+msgstr "Soubor dat je prázdný."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:101
 #, qt-format
 msgctxt "BinaryBulbEditor|"
 msgid "\"Numbers to find\" for level %1 must not be empty."
-msgstr ""
+msgstr "\"Hledaná čísla\" pro úroveň %1 nesmí být prázdná."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:115
 #, qt-format
@@ -357,342 +389,345 @@ msgid ""
 "These values are invalid for level %1: %2. The values must be integer "
 "numbers between 0 and %3."
 msgstr ""
+"Tyto hodnoty nejsou pro úroveň %1 platné: %2. Hodnoty musí být celá čísla v "
+"rozmezí od 0 do %3."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:119
 #, qt-format
 msgctxt "BinaryBulbEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "Je třeba opravit následující chyby:<ul>%1</ul>"
 
 #: server/activities/clockgame/ClockGameDataDisplay.qml:30
 msgctxt "ClockGameDataDisplay|"
 msgid "Expected:"
-msgstr ""
+msgstr "Očekáváno:"
 
 #: server/activities/clockgame/ClockGameDataDisplay.qml:36
 msgctxt "ClockGameDataDisplay|"
 msgid "Answer:"
-msgstr ""
+msgstr "Odpověď:"
 
 #: server/activities/clockgame/ClockgameEditor.qml:27
 msgctxt "ClockgameEditor|"
 msgid "Exercise count"
-msgstr ""
+msgstr "Počet cvičení"
 
 #: server/activities/clockgame/ClockgameEditor.qml:28
 msgctxt "ClockgameEditor|"
 msgid "Find minutes"
-msgstr ""
+msgstr "Najít minuty"
 
 #: server/activities/clockgame/ClockgameEditor.qml:29
 msgctxt "ClockgameEditor|"
 msgid "Find seconds"
-msgstr ""
+msgstr "Najít sekundy"
 
 #: server/activities/clockgame/ClockgameEditor.qml:30
 msgctxt "ClockgameEditor|"
 msgid "Display hours numbers"
-msgstr ""
+msgstr "Zobrazit čísla hodin"
 
 #: server/activities/clockgame/ClockgameEditor.qml:31
 msgctxt "ClockgameEditor|"
 msgid "Display hours marks"
-msgstr ""
+msgstr "Zobrazit značky hodin"
 
 #: server/activities/clockgame/ClockgameEditor.qml:32
 msgctxt "ClockgameEditor|"
 msgid "Grey/white background between each hour"
-msgstr ""
+msgstr "Šedé/bílé pozadí mezi jednotlivými hodinami"
 
 #: server/activities/clockgame/ClockgameEditor.qml:33
 msgctxt "ClockgameEditor|"
 msgid "Display minutes numbers"
-msgstr ""
+msgstr "Zobrazit čísla minut"
 
 #: server/activities/clockgame/ClockgameEditor.qml:34
 msgctxt "ClockgameEditor|"
 msgid "Hide the Hint button in the bar (which gives the current time)"
-msgstr ""
+msgstr "Skrýt tlačítko Tip v liště (které zobrazuje aktuální čas)"
 
 #: server/activities/clockgame/ClockgameEditor.qml:35
 msgctxt "ClockgameEditor|"
 msgid "Fixed hour"
-msgstr ""
+msgstr "Pevné hodiny"
 
 #: server/activities/clockgame/ClockgameEditor.qml:36
 #: server/activities/clockgame/ClockgameEditor.qml:38
 #: server/activities/clockgame/ClockgameEditor.qml:40
 msgctxt "ClockgameEditor|"
 msgid "Value"
-msgstr ""
+msgstr "Hodnota"
 
 #: server/activities/clockgame/ClockgameEditor.qml:37
 msgctxt "ClockgameEditor|"
 msgid "Fixed minutes"
-msgstr ""
+msgstr "Pevné minuty"
 
 #: server/activities/clockgame/ClockgameEditor.qml:39
 msgctxt "ClockgameEditor|"
 msgid "Fixed seconds"
-msgstr ""
+msgstr "Pevné sekundy"
 
 #: server/activities/comparator/ComparatorDataDisplay.qml:30
 msgctxt "ComparatorDataDisplay|"
 msgid "Result:"
-msgstr ""
+msgstr "Výsledek:"
 
 #: server/activities/comparator/ComparatorEditor.qml:29
 msgctxt "ComparatorEditor|"
 msgid "Shuffle"
-msgstr ""
+msgstr "Náhodné"
 
 #: server/activities/comparator/ComparatorEditor.qml:30
 msgctxt "ComparatorEditor|"
 msgid "Questions"
-msgstr ""
+msgstr "Otázky"
 
 #: server/activities/comparator/ComparatorEditor.qml:36
 msgctxt "ComparatorEditor|"
 msgid "Left number"
-msgstr ""
+msgstr "Číslo vlevo"
 
 #: server/activities/comparator/ComparatorEditor.qml:37
 msgctxt "ComparatorEditor|"
 msgid "Right number"
-msgstr ""
+msgstr "Číslo vpravo"
 
 #: server/activities/comparator/ComparatorEditor.qml:109
 msgctxt "ComparatorEditor|"
 msgid "Dataset is empty."
-msgstr ""
+msgstr "Soubor dat je prázdný."
 
 #: server/activities/comparator/ComparatorEditor.qml:119
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "Level %1 must not be empty."
-msgstr ""
+msgstr "Úroveň %1 nesmí být prázdná."
 
 #: server/activities/comparator/ComparatorEditor.qml:126
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "\"Left number\" in Question %1 of Level %2 must contain a number."
-msgstr ""
+msgstr "\"Číslo vlevo\" v otázce %1 na úrovni %2 musí obsahovat číslo."
 
 #: server/activities/comparator/ComparatorEditor.qml:130
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "\"Right number\" in Question %1 of Level %2 must contain a number."
-msgstr ""
+msgstr "\"Číslo vpravo\" v otázce %1 na úrovni %2 musí obsahovat číslo."
 
 #: server/activities/comparator/ComparatorEditor.qml:136
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "Je třeba opravit následující chyby:<ul>%1</ul>"
 
 #: server/activities/DailyReport.qml:33
 msgctxt "DailyReport|"
 msgid "All groups"
-msgstr ""
+msgstr "Všechny skupiny"
 
 #. Group name first, then Date range, with a space between them. Example: "Group Name 01/07/2025-08/07/2025"
 #: server/activities/DailyReport.qml:129
 #, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %2"
-msgstr ""
+msgstr "%1 %2"
 
 #: server/activities/DailyReport.qml:133
 msgctxt "DailyReport|"
 msgid "Calendar"
-msgstr ""
+msgstr "Kalendář"
 
 #: server/activities/DailyReport.qml:184
 msgctxt "DailyReport|"
 msgid "Count"
-msgstr ""
+msgstr "Počet"
 
 #: server/activities/DailyReport.qml:193
 msgctxt "DailyReport|"
 msgid "Time"
-msgstr ""
+msgstr "Čas"
 
 #: server/activities/DailyReport.qml:202
 msgctxt "DailyReport|"
 msgid "Ratio"
-msgstr ""
+msgstr "Poměr"
 
 #. Number of result lines
 #: server/activities/DailyReport.qml:213
 #, qt-format
 msgctxt "DailyReport|"
 msgid "Lines: %1"
-msgstr ""
+msgstr "Řádků: %1"
 
 #. Success ratio, example: "50 %"
 #: server/activities/DailyReport.qml:314
 #, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %"
-msgstr ""
+msgstr "%1 %"
 
 #: server/activities/fractions_create/ActivityEditor.qml:14
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Instruction\" must contain some text telling the fraction to represent."
 msgstr ""
+"\"Instrukce\" musí obsahovat text, který určuje, jaký zlomek má být zobrazen."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:29
 msgctxt "FractionsCreateEditor|"
 msgid "Shuffle"
-msgstr ""
+msgstr "Náhodné"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:30
 msgctxt "FractionsCreateEditor|"
 msgid "Questions"
-msgstr ""
+msgstr "Otázky"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:36
 msgctxt "FractionsCreateEditor|"
 msgid "Numerator"
-msgstr ""
+msgstr "Čitatel"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:37
 msgctxt "FractionsCreateEditor|"
 msgid "Denominator"
-msgstr ""
+msgstr "Jmenovatel"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:38
 msgctxt "FractionsCreateEditor|"
 msgid "Instruction"
-msgstr ""
+msgstr "Instrukce"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:130
 msgctxt "FractionsCreateEditor|"
 msgid "Dataset is empty."
-msgstr ""
+msgstr "Soubor dat je prázdný."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:140
 #, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "Level %1 must not be empty."
-msgstr ""
+msgstr "Úroveň %1 nesmí být prázdná."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:146
 #, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "\"Instruction\" of Question %1 from Level %2 must not be empty."
-msgstr ""
+msgstr "\"Instrukce\" k otázce %1 z úrovně %2 nesmí být prázdné."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:152
 #, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "Je třeba opravit následující chyby:<ul>%1</ul>"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:160
 msgctxt "FractionsCreateEditor|"
 msgid "Rectangle"
-msgstr ""
+msgstr "Obdélník"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:161
 msgctxt "FractionsCreateEditor|"
 msgid "Circle"
-msgstr ""
+msgstr "Kruh"
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:164
 msgctxt "FractionsCreateEditor|"
 msgid "Chart Type"
-msgstr ""
+msgstr "Druh grafu"
 
 #: server/activities/fractions_find/FractionsFindDataDisplay.qml:26
 msgctxt "FractionsFindDataDisplay|"
 msgid "Expected:"
-msgstr ""
+msgstr "Očekáváno:"
 
 #: server/activities/fractions_find/FractionsFindDataDisplay.qml:60
 msgctxt "FractionsFindDataDisplay|"
 msgid "Answer:"
-msgstr ""
+msgstr "Odpověď:"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:29
 msgctxt "FractionsFindEditor|"
 msgid "Shuffle"
-msgstr ""
+msgstr "Náhodné"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:30
 msgctxt "FractionsFindEditor|"
 msgid "Questions"
-msgstr ""
+msgstr "Otázky"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:36
 msgctxt "FractionsFindEditor|"
 msgid "Static numerator"
-msgstr ""
+msgstr "Statický čitatel"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:37
 msgctxt "FractionsFindEditor|"
 msgid "Static denominator"
-msgstr ""
+msgstr "Statický jmenovatel"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:38
 msgctxt "FractionsFindEditor|"
 msgid "Numerator"
-msgstr ""
+msgstr "Čitatel"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:39
 msgctxt "FractionsFindEditor|"
 msgid "Denominator"
-msgstr ""
+msgstr "Jmenovatel"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:40
 msgctxt "FractionsFindEditor|"
 msgid "Maximum of units"
-msgstr ""
+msgstr "Maximální počet jednotek"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:41
 msgctxt "FractionsFindEditor|"
 msgid "Random fraction"
-msgstr ""
+msgstr "Náhodný zlomek"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:159
 msgctxt "FractionsFindEditor|"
 msgid "Dataset is empty."
-msgstr ""
+msgstr "Soubor dat je prázdný."
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:169
 #, qt-format
 msgctxt "FractionsFindEditor|"
 msgid "Level %1 must not be empty."
-msgstr ""
+msgstr "Úroveň %1 nesmí být prázdná."
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:173
 #, qt-format
 msgctxt "FractionsFindEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "Je třeba opravit následující chyby:<ul>%1</ul>"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:181
 msgctxt "FractionsFindEditor|"
 msgid "Rectangle"
-msgstr ""
+msgstr "Obdélník"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:182
 msgctxt "FractionsFindEditor|"
 msgid "Circle"
-msgstr ""
+msgstr "Kruh"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:185
 msgctxt "FractionsFindEditor|"
 msgid "Chart Type"
-msgstr ""
+msgstr "Druh grafu"
 
 #. %1 is number of hints displayed. Example: "Hints: 1"
 #: server/activities/guess24/Guess24DataDisplay.qml:79
 #, qt-format
 msgctxt "Guess24DataDisplay|"
 msgid "Hints: %1"
-msgstr ""
+msgstr "Tipy: %1"
 
 #: server/activities/learn_additions/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
@@ -700,172 +735,174 @@ msgid ""
 "\"Additions\" must contain a list of additions which results are between 0 "
 "and 9."
 msgstr ""
+"\"Sčítání\" musí obsahovat seznam sčítání, jejichž výsledky se pohybují v "
+"rozmezí 0 až 9."
 
 #: server/activities/learn_additions/ActivityEditor.qml:18
 #: server/activities/learn_subtractions/ActivityEditor.qml:18
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Number of circles\" can not be smaller than the largest result to find."
-msgstr ""
+msgstr "\"Počet kruhů\" nesmí být menší než největší hledaný výsledek."
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:28
 msgctxt "LearnDecimalsEditor|"
 msgid "Shuffle"
-msgstr ""
+msgstr "Náhodné"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:29
 msgctxt "LearnDecimalsEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Podúrovně"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:39
 msgctxt "LearnDecimalsEditor|"
 msgid "Fixed Number"
-msgstr ""
+msgstr "Pevné číslo"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:40
 msgctxt "LearnDecimalsEditor|"
 msgid "Minimum Value"
-msgstr ""
+msgstr "Minimální hodnota"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:41
 msgctxt "LearnDecimalsEditor|"
 msgid "Maximum Value"
-msgstr ""
+msgstr "Maximální hodnota"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:140
 msgctxt "LearnDecimalsEditor|"
 msgid "Dataset is empty."
-msgstr ""
+msgstr "Soubor dat je prázdný."
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:150
 #, qt-format
 msgctxt "LearnDecimalsEditor|"
 msgid "Level %1 must not be empty."
-msgstr ""
+msgstr "Úroveň %1 nesmí být prázdná."
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:154
 #, qt-format
 msgctxt "LearnDecimalsEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "Je třeba opravit následující chyby:<ul>%1</ul>"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:162
 msgctxt "LearnDecimalsEditor|"
 msgid "Random"
-msgstr ""
+msgstr "Náhodné"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:163
 msgctxt "LearnDecimalsEditor|"
 msgid "Fixed"
-msgstr ""
+msgstr "Pevné"
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:168
 msgctxt "LearnDecimalsEditor|"
 msgid "Mode"
-msgstr ""
+msgstr "Režim"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:29
 msgctxt "DecimalAdditionEditor|"
 msgid "Shuffle"
-msgstr ""
+msgstr "Náhodné"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:30
 msgctxt "DecimalAdditionEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Podúrovně"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:41
 msgctxt "DecimalAdditionEditor|"
 msgid "First Number"
-msgstr ""
+msgstr "První číslo"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:42
 msgctxt "DecimalAdditionEditor|"
 msgid "Second Number"
-msgstr ""
+msgstr "Druhé číslo"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:43
 msgctxt "DecimalAdditionEditor|"
 msgid "Minimum Value"
-msgstr ""
+msgstr "Minimální hodnota"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:44
 msgctxt "DecimalAdditionEditor|"
 msgid "Maximum Value"
-msgstr ""
+msgstr "Maximální hodnota"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:182
 msgctxt "DecimalAdditionEditor|"
 msgid "Dataset is empty."
-msgstr ""
+msgstr "Soubor dat je prázdný."
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:192
 #, qt-format
 msgctxt "DecimalAdditionEditor|"
 msgid "Level %1 must not be empty."
-msgstr ""
+msgstr "Úroveň %1 nesmí být prázdná."
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:196
 #, qt-format
 msgctxt "DecimalAdditionEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "Je třeba opravit následující chyby:<ul>%1</ul>"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:204
 msgctxt "DecimalAdditionEditor|"
 msgid "Random"
-msgstr ""
+msgstr "Náhodné"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:205
 msgctxt "DecimalAdditionEditor|"
 msgid "Fixed"
-msgstr ""
+msgstr "Pevné"
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:210
 msgctxt "DecimalAdditionEditor|"
 msgid "Mode"
-msgstr ""
+msgstr "Režim"
 
 #: server/activities/learn_digits/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
 msgid "\"Numbers\" must contain a list of numbers between 0 and 9."
-msgstr ""
+msgstr "\"Čísla\" musí obsahovat seznam čísel v rozmezí 0 až 9."
 
 #: server/activities/learn_digits/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Number of circles\" can not be smaller than the largest number to find."
-msgstr ""
+msgstr "\"Počet kruhů\" nesmí být menší než největší hledané číslo."
 
 #. %1 is an operation, %2 the result. Example: "2 x 5 = 10"
 #: server/activities/learn_digits/LearnDigitsDataDisplay.qml:24
 #, qt-format
 msgctxt "LearnDigitsDataDisplay|"
 msgid "%1 = %2"
-msgstr ""
+msgstr "%1 = %2"
 
 #. %1 is the answer. Example: "Answer: 10"
 #: server/activities/learn_digits/LearnDigitsDataDisplay.qml:27
 #, qt-format
 msgctxt "LearnDigitsDataDisplay|"
 msgid "Answer: %1"
-msgstr ""
+msgstr "Odpověď: %1"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:32
 msgctxt "LearnDigitsEditor|"
 msgid "Number of circles"
-msgstr ""
+msgstr "Počet kruhů"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:33
 msgctxt "LearnDigitsEditor|"
 msgid "Random order"
-msgstr ""
+msgstr "Náhodné pořadí"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:99
 msgctxt "LearnDigitsEditor|"
 msgid "Dataset is empty."
-msgstr ""
+msgstr "Soubor dat je prázdný."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:101
 msgctxt "LearnDigitsEditor|"
@@ -873,6 +910,8 @@ msgid ""
 "\"Numbers\" must only contain integer numbers between 0 and 9, and must not "
 "be empty."
 msgstr ""
+"\"Čísla\" smí obsahovat pouze celá čísla v rozmezí 0 až 9 a nesmí být "
+"prázdná."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:103
 msgctxt "LearnDigitsEditor|"
@@ -880,6 +919,8 @@ msgid ""
 "\"Additions\" must only contain additions which results are integer numbers "
 "between 0 and 9, and must not be empty."
 msgstr ""
+"\"Sčítání\" smí obsahovat pouze součty, jejichž výsledky jsou celá čísla v "
+"rozmezí 0 až 9, a nesmí být prázdné."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:105
 msgctxt "LearnDigitsEditor|"
@@ -887,36 +928,38 @@ msgid ""
 "\"Subtractions\" must only contain subtractions which results are integer "
 "numbers between 0 and 9, and must not be empty."
 msgstr ""
+"\"Odečítání\" musí obsahovat pouze odečítání, jejichž výsledky jsou celá "
+"čísla v rozmezí 0 až 9, a nesmí být prázdné."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:161
 msgctxt "LearnDigitsEditor|"
 msgid "Numbers"
-msgstr ""
+msgstr "Čísla"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:163
 msgctxt "LearnDigitsEditor|"
 msgid "Additions"
-msgstr ""
+msgstr "Sčítání"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:165
 msgctxt "LearnDigitsEditor|"
 msgid "Subtractions"
-msgstr ""
+msgstr "Odečítání"
 
 #: server/activities/learn_quantities/ActivityEditor.qml:24
 msgctxt "ActivityEditor|"
 msgid "Fixed Number"
-msgstr ""
+msgstr "Pevné číslo"
 
 #: server/activities/learn_quantities/ActivityEditor.qml:25
 msgctxt "ActivityEditor|"
 msgid "Minimum Value"
-msgstr ""
+msgstr "Minimální hodnota"
 
 #: server/activities/learn_quantities/ActivityEditor.qml:26
 msgctxt "ActivityEditor|"
 msgid "Maximum Value"
-msgstr ""
+msgstr "Maximální hodnota"
 
 #: server/activities/learn_subtractions/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
@@ -924,45 +967,47 @@ msgid ""
 "\"Subtractions\" must contain a list of subtractions which results are "
 "between 0 and 9."
 msgstr ""
+"\"Odečítání\" musí obsahovat seznam odečítání, jehož výsledky se pohybují v "
+"rozmezí 0 až 9."
 
 #: server/activities/LineReport.qml:65
 msgctxt "LineReport|"
 msgid "Back"
-msgstr ""
+msgstr "Zpět"
 
 #: server/activities/LineReport.qml:71
 msgctxt "LineReport|"
 msgid "Refresh"
-msgstr ""
+msgstr "Obnovit"
 
 #: server/activities/LineReport.qml:77
 #, qt-format
 msgctxt "LineReport|"
 msgid "Lines: %1"
-msgstr ""
+msgstr "Řádků: %1"
 
 #: server/activities/LineReport.qml:228
 #, qt-format
 msgctxt "LineReport|"
 msgid "Level: <b>%1</b>"
-msgstr ""
+msgstr "Úroveň: <b>%1</b>"
 
 #. Result duration in seconds. Example: "Duration: 25s"
 #: server/activities/LineReport.qml:244 server/activities/LineReport.qml:254
 #, qt-format
 msgctxt "LineReport|"
 msgid "Duration: %1s"
-msgstr ""
+msgstr "Doba trvání: %1 s"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:29
 msgctxt "MagicHatEditor|"
 msgid "Rules to create a valid dataset:"
-msgstr ""
+msgstr "Pravidla pro vytvoření platného souboru dat:"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:31
 msgctxt "MagicHatEditor|"
 msgid "If \"Use coefficients\" is not checked:"
-msgstr ""
+msgstr "Pokud není zaškrtnuto \"Použít koeficienty\":"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:33
 #, qt-format
@@ -974,6 +1019,11 @@ msgid ""
 "must be between %1 and %2, the others between 0 and %2. Also the minimum "
 "numbers must not be larger than the corresponding maximum numbers."
 msgstr ""
+"\"Maximální počet hvězdiček\" a \"Minimální počet hvězdiček\" omezují počet "
+"hvězdiček pro každý ze tří řádků prvního operandu (horního). Musí obsahovat "
+"přesně tři celá čísla, po jednom pro každý řádek. První hodnota musí být v "
+"rozmezí %1 až %2, ostatní v rozmezí 0 až %2. Minimální hodnoty navíc nesmí "
+"být větší než odpovídající maximální hodnoty."
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:36
 msgctxt "MagicHatEditor|"
@@ -983,6 +1033,10 @@ msgid ""
 "of the corresponding row of the first operand, the result will not be more "
 "than the \"Maximum result per row\" value."
 msgstr ""
+"Každý řádek druhého operandu (spodního) bude obsahovat takový počet "
+"hvězdiček, že při odečtení od počtu hvězdiček v odpovídajícím řádku prvního "
+"operandu nebude výsledek vyšší než hodnota \"Maximální výsledek na na řádek"
+"\"."
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:37
 msgctxt "MagicHatEditor|"
@@ -992,6 +1046,10 @@ msgid ""
 "corresponding row of the first operand, the result will not be more than the "
 "\"Maximum result per row\" value."
 msgstr ""
+"Každý řádek druhého operandu (spodního) bude obsahovat počet hvězdiček "
+"vygenerovaný tak, aby při sečtení s počtem hvězdiček v odpovídajícím řádku "
+"prvního operandu výsledek nepřekročil hodnotu \"Maximální výsledek na řádek"
+"\"."
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:41
 msgctxt "MagicHatEditor|"
@@ -999,6 +1057,8 @@ msgid ""
 "If \"Maximum number of stars\" for a row is 0, this row will be empty and "
 "hidden for both operands."
 msgstr ""
+"Pokud je \"Maximální počet hvězdiček\" pro daný řádek nastaven na 0, bude "
+"tento řádek prázdný a skrytý pro oba operandy."
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:44
 msgctxt "MagicHatEditor|"
@@ -1006,11 +1066,13 @@ msgid ""
 "\"Maximum result per row\" must be larger than any value in \"Maximum number "
 "of stars\"."
 msgstr ""
+"\"Maximální výsledek na řádek\" musí být větší než jakákoli hodnota v poli "
+"\"Maximální počet hvězdiček\"."
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:46
 msgctxt "MagicHatEditor|"
 msgid "If \"Use coefficients\" is checked:"
-msgstr ""
+msgstr "Pokud je zaškrtnuto \"Použít koeficienty\":"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:48
 msgctxt "MagicHatEditor|"
@@ -1019,46 +1081,49 @@ msgid ""
 "must be between 1 and 10, the others between 0 and 10, and the sum of the 3 "
 "entries must not be larger than 10."
 msgstr ""
+"\"Koeficienty řádků\" musí obsahovat přesně 3 celá čísla. První hodnota musí "
+"být v rozmezí 1 až 10, ostatní v rozmezí 0 až 10 a součet všech tří hodnot "
+"nesmí být větší než 10."
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:52
 msgctxt "MagicHatEditor|"
 msgid "Use coefficients"
-msgstr ""
+msgstr "Použít koeficienty"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:53
 msgctxt "MagicHatEditor|"
 msgid "Maximum result per row"
-msgstr ""
+msgstr "Maximální výsledek na řádek"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:54
 msgctxt "MagicHatEditor|"
 msgid "Use different star sets per row"
-msgstr ""
+msgstr "Použít v každém řádku jinou sadu hvězdiček"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:55
 msgctxt "MagicHatEditor|"
 msgid "Maximum number of stars"
-msgstr ""
+msgstr "Maximální počet hvězdiček"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:56
 msgctxt "MagicHatEditor|"
 msgid "Minimum number of stars"
-msgstr ""
+msgstr "Minimální počet hvězdiček"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:57
 msgctxt "MagicHatEditor|"
 msgid "Coefficient multiplier"
-msgstr ""
+msgstr "Násobitel koeficientu"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:58
 msgctxt "MagicHatEditor|"
 msgid "Row coefficients"
-msgstr ""
+msgstr "Koeficienty řádků"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:120
 msgctxt "MagicHatEditor|"
 msgid "Dataset is empty."
-msgstr ""
+msgstr "Soubor dat je prázdný."
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:149
 #, qt-format
@@ -1067,6 +1132,8 @@ msgid ""
 "Level %1 must contain exactly 3 integer numbers in \"Maximum number of stars"
 "\". The first entry must be between %2 and %3, the others between 0 and %3."
 msgstr ""
+"Úroveň %1 musí v poli \"Maximální počet hvězdiček\" obsahovat přesně 3 celá "
+"čísla. První hodnota musí být v rozmezí %2 až %3, ostatní v rozmezí 0 až %3."
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:169
 #, qt-format
@@ -1077,6 +1144,10 @@ msgid ""
 "and each number must not be larger than the corresponding number in "
 "\"Maximum number of stars\"."
 msgstr ""
+"Úroveň %1 musí v poli \"Minimální počet hvězdiček\" obsahovat přesně 3 celá "
+"čísla. První hodnota musí být v rozmezí %2 až %3, ostatní v rozmezí 0 až %3 "
+"a žádné číslo nesmí být větší než odpovídající číslo v poli \"Maximální "
+"počet hvězdiček\"."
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:183
 #, qt-format
@@ -1085,6 +1156,8 @@ msgid ""
 "In Level %1, \"Maximum result per row\" must be larger than any value in "
 "\"Maximum number of stars\"."
 msgstr ""
+"V úrovni %1 musí být hodnota \"Maximální výsledek na řádek\" větší než "
+"jakákoli hodnota v poli \"Maximální počet hvězdiček\"."
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:213
 #, qt-format
@@ -1094,12 +1167,15 @@ msgid ""
 "first entry must be between 1 and 10, the others between 0 and 10, and the "
 "sum of the 3 entries must not be larger than 10."
 msgstr ""
+"Úroveň %1 musí v poli \"Koeficienty řádků\" obsahovat přesně 3 celá čísla. "
+"První hodnota musí být v rozmezí 1 až 10, ostatní v rozmezí 0 až 10 a součet "
+"těchto 3 hodnot nesmí být větší než 10."
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:219
 #, qt-format
 msgctxt "MagicHatEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "Je třeba opravit následující chyby:<ul>%1</ul>"
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
 #: server/activities/magic-hat-minus/StarsBar.qml:53
@@ -1114,6 +1190,8 @@ msgid ""
 "In \"Single answer\" mode, users can select only one answer. In \"Multiple "
 "answers\" mode, they can select multiple answers."
 msgstr ""
+"V režimu \"Jedna odpověď\" mohou uživatelé vybrat pouze jednu odpověď. V "
+"režimu \"Více odpovědí\" mohou vybrat více odpovědí."
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
@@ -1121,6 +1199,8 @@ msgid ""
 "All entries in the \"Correct answers\" list must also be present in the "
 "\"Answers\" list."
 msgstr ""
+"Všechny položky v seznamu \"Správné odpovědi\" musí být obsaženy také v "
+"seznamu \"Odpovědi\"."
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:19
 msgctxt "ActivityEditor|"
@@ -1129,95 +1209,98 @@ msgid ""
 "displayed after users validate their answer. You can leave those empty if "
 "you want."
 msgstr ""
+"\"Text správné odpovědi\" a \"Text nesprávné odpovědi\" jsou volitelné "
+"zprávy, které se zobrazí poté, co uživatelé potvrdí svou odpověď. Pokud "
+"chcete, můžete tato pole nechat prázdná."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:27
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Question:"
-msgstr ""
+msgstr "Otázka:"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:33
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Answer:"
-msgstr ""
+msgstr "Odpověď:"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:39
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Expected:"
-msgstr ""
+msgstr "Očekáváno:"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:45
 msgctxt "MultipleChoiceDataDisplay|"
 msgid "Proposed:"
-msgstr ""
+msgstr "Návrh:"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:29
 msgctxt "MultipleChoiceEditor|"
 msgid "Shuffle"
-msgstr ""
+msgstr "Náhodné"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:30
 msgctxt "MultipleChoiceEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Podúrovně"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:36
 msgctxt "MultipleChoiceEditor|"
 msgid "Shuffle answers"
-msgstr ""
+msgstr "Náhodné odpovědi"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:37
 msgctxt "MultipleChoiceEditor|"
 msgid "Question"
-msgstr ""
+msgstr "Otázka"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:38
 msgctxt "MultipleChoiceEditor|"
 msgid "Answers"
-msgstr ""
+msgstr "Odpovědi"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:39
 msgctxt "MultipleChoiceEditor|"
 msgid "Correct answers"
-msgstr ""
+msgstr "Správné odpovědi"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:40
 msgctxt "MultipleChoiceEditor|"
 msgid "Correct answer text"
-msgstr ""
+msgstr "Text správné odpovědi"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:41
 msgctxt "MultipleChoiceEditor|"
 msgid "Wrong answer text"
-msgstr ""
+msgstr "Text nesprávné odpovědi"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:121
 msgctxt "MultipleChoiceEditor|"
 msgid "Dataset is empty."
-msgstr ""
+msgstr "Soubor dat je prázdný."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:131
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "Level %1 must not be empty."
-msgstr ""
+msgstr "Úroveň %1 nesmí být prázdná."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:138
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Question\" in Sublevel %1 of Level %2 must not be empty."
-msgstr ""
+msgstr "\"Otázka\" v podúrovni %1 úrovně %2 nesmí být prázdná."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:143
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Answers\" in Sublevel %1 of Level %2 must not be empty."
-msgstr ""
+msgstr "\"Odpovědi\" v podúrovni %1 úrovně %2 nesmí být prázdné."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:148
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Correct answers\" in Sublevel %1 of Level %2 must not be empty."
-msgstr ""
+msgstr "\"Správná odpověď\" v podúrovni %1 úrovně %2 nesmí být prázdná."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:155
 #, qt-format
@@ -1226,37 +1309,39 @@ msgid ""
 "In Sublevel %1 of Level %2, the correct answer \"%3\" is not in the \"Answers"
 "\" list."
 msgstr ""
+"V podúrovni %1 úrovně %2 není správná odpověď \"%3\" uvedena v seznamu "
+"\"Odpovědi\"."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:163
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "Je třeba opravit následující chyby:<ul>%1</ul>"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:171
 msgctxt "MultipleChoiceEditor|"
 msgid "Single answer"
-msgstr ""
+msgstr "Jedna odpověď"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:172
 msgctxt "MultipleChoiceEditor|"
 msgid "Multiple answers"
-msgstr ""
+msgstr "Více odpovědí"
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:177
 msgctxt "MultipleChoiceEditor|"
 msgid "Mode"
-msgstr ""
+msgstr "Režim"
 
 #: server/activities/share/ShareDataDisplay.qml:49
 msgctxt "ShareDataDisplay|"
 msgid "Number of candies:"
-msgstr ""
+msgstr "Počet bonbónů:"
 
 #: server/activities/share/ShareDataDisplay.qml:76
 msgctxt "ShareDataDisplay|"
 msgid "Placed girls:"
-msgstr ""
+msgstr "Umístění dívek:"
 
 #. Display a fraction
 #: server/activities/share/ShareDataDisplay.qml:87
@@ -1265,58 +1350,60 @@ msgstr ""
 #, qt-format
 msgctxt "ShareDataDisplay|"
 msgid "%1 / %2"
-msgstr ""
+msgstr "%1 / %2"
 
 #: server/activities/share/ShareDataDisplay.qml:107
 msgctxt "ShareDataDisplay|"
 msgid "Placed boys:"
-msgstr ""
+msgstr "Umístění chlapců:"
 
 #: server/activities/share/ShareDataDisplay.qml:137
 msgctxt "ShareDataDisplay|"
 msgid "Expected candies per child:"
-msgstr ""
+msgstr "Předpokládaný počet bonbónů na dítě:"
 
 #: server/activities/share/ShareDataDisplay.qml:164
 msgctxt "ShareDataDisplay|"
 msgid "Candies for girls:"
-msgstr ""
+msgstr "Bonbóny pro dívky:"
 
 #: server/activities/share/ShareDataDisplay.qml:195
 msgctxt "ShareDataDisplay|"
 msgid "Candies for boys:"
-msgstr ""
+msgstr "Bonbóny pro chlapce:"
 
 #: server/activities/share/ShareDataDisplay.qml:224
 msgctxt "ShareDataDisplay|"
 msgid "Jar placed:"
-msgstr ""
+msgstr "Umístění nádoby:"
 
 #: server/activities/share/ShareDataDisplay.qml:234
 msgctxt "ShareDataDisplay|"
 msgid "Yes"
-msgstr ""
+msgstr "Ano"
 
 #: server/activities/share/ShareDataDisplay.qml:234
 msgctxt "ShareDataDisplay|"
 msgid "No"
-msgstr ""
+msgstr "Ne"
 
 #: server/activities/share/ShareDataDisplay.qml:251
 msgctxt "ShareDataDisplay|"
 msgid "Candies in the jar:"
-msgstr ""
+msgstr "Bonbónů v nádobě:"
 
 #: server/activities/share/ShareEditor.qml:22
 msgctxt "ShareEditor|"
 msgid "Rules to create a valid dataset:"
-msgstr ""
+msgstr "Pravidla pro vytvoření platného souboru dat:"
 
 #: server/activities/share/ShareEditor.qml:24
 msgctxt "ShareEditor|"
 msgid ""
 "In general, there can not be more than 6 children, and 6 candies per child."
 msgstr ""
+"Obecně platí, že počet dětí nesmí přesáhnout 6 a na jedno dítě připadá "
+"maximálně 6 bonbónů."
 
 #: server/activities/share/ShareEditor.qml:26
 msgctxt "ShareEditor|"
@@ -1324,6 +1411,9 @@ msgid ""
 "If \"Random numbers\" is selected, the number of already placed candies per "
 "child must be defined such that not all candies are already placed."
 msgstr ""
+"Je-li zvolena možnost \"Náhodná čísla\", je třeba nastavit počet již "
+"umístěných bonbónů na jedno dítě tak, aby nebyly všechny bonbóny již "
+"umístěny."
 
 #: server/activities/share/ShareEditor.qml:28
 msgctxt "ShareEditor|"
@@ -1331,96 +1421,95 @@ msgid ""
 "The \"Instruction\" field allows to give a specific instruction for each "
 "sublevel. If it is empty, a default instruction text is used."
 msgstr ""
+"Pole \"Instrukce\" umožňuje zadat konkrétní pokyn pro každou podúroveň. Je-"
+"li prázdné, použije se výchozí text."
 
 #: server/activities/share/ShareEditor.qml:33
-#, fuzzy
-#| msgctxt "AlgebraEditor|"
-#| msgid "Shuffle"
 msgctxt "ShareEditor|"
 msgid "Shuffle"
-msgstr "Zamíchat"
+msgstr "Náhodné"
 
 #: server/activities/share/ShareEditor.qml:34
 msgctxt "ShareEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Podúrovně"
 
 #: server/activities/share/ShareEditor.qml:40
 msgctxt "ShareEditor|"
 msgid "Random numbers"
-msgstr ""
+msgstr "Náhodná čísla"
 
 #: server/activities/share/ShareEditor.qml:44
 msgctxt "ShareEditor|"
 msgid "Number of girls"
-msgstr ""
+msgstr "Počet dívek"
 
 #: server/activities/share/ShareEditor.qml:45
 msgctxt "ShareEditor|"
 msgid "Number of boys"
-msgstr ""
+msgstr "Počet chlapců"
 
 #: server/activities/share/ShareEditor.qml:46
 msgctxt "ShareEditor|"
 msgid "Number of candies"
-msgstr ""
+msgstr "Počet bonbónů"
 
 #: server/activities/share/ShareEditor.qml:47
 msgctxt "ShareEditor|"
 msgid "Candies already placed per girl"
-msgstr ""
+msgstr "Bonbóny již rozdělené každé dívce"
 
 #: server/activities/share/ShareEditor.qml:48
 msgctxt "ShareEditor|"
 msgid "Candies already placed per boy"
-msgstr ""
+msgstr "Bonbóny již rozdělené každému chlapci"
 
 #: server/activities/share/ShareEditor.qml:49
 msgctxt "ShareEditor|"
 msgid "Force showing the jar"
-msgstr ""
+msgstr "Vynutit zobrazení nádoby"
 
 #: server/activities/share/ShareEditor.qml:52
 msgctxt "ShareEditor|"
 msgid "Maximum number of girls"
-msgstr ""
+msgstr "Maximální počet dívek"
 
 #: server/activities/share/ShareEditor.qml:53
 msgctxt "ShareEditor|"
 msgid "Maximum number of boys"
-msgstr ""
+msgstr "Maximální počet chlapců"
 
 #: server/activities/share/ShareEditor.qml:54
 msgctxt "ShareEditor|"
 msgid "Maximum number of candies"
-msgstr ""
+msgstr "Maximální počet bonbónů"
 
 #: server/activities/share/ShareEditor.qml:55
 msgctxt "ShareEditor|"
 msgid "Already place some candies"
-msgstr ""
+msgstr "Rozděl už nějaké bonbóny"
 
 #: server/activities/share/ShareEditor.qml:58
 msgctxt "ShareEditor|"
 msgid "Instruction"
-msgstr ""
+msgstr "Instrukce"
 
 #: server/activities/share/ShareEditor.qml:289
 msgctxt "ShareEditor|"
 msgid "Dataset is empty."
-msgstr ""
+msgstr "Soubor dat je prázdný."
 
 #: server/activities/share/ShareEditor.qml:299
 #, qt-format
 msgctxt "ShareEditor|"
 msgid "Level %1 must not be empty."
-msgstr ""
+msgstr "Úroveň %1 nesmí být prázdná."
 
 #: server/activities/share/ShareEditor.qml:309
 #, qt-format
 msgctxt "ShareEditor|"
 msgid "In Sublevel %2 of Level %1, the total number of children is 0."
-msgstr ""
+msgstr "V podúrovni %2 úrovně %1 je celkový počet podúrovní 0."
 
 #: server/activities/share/ShareEditor.qml:317
 #, qt-format
@@ -1428,18 +1517,19 @@ msgctxt "ShareEditor|"
 msgid ""
 "In Sublevel %2 of Level %1, the number of already placed candies is too high."
 msgstr ""
+"V podúrovni %2 úrovně %1 je počet již umístěných bonbónů příliš vysoký."
 
 #: server/activities/share/ShareEditor.qml:324
 #, qt-format
 msgctxt "ShareEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "Je třeba opravit následující chyby:<ul>%1</ul>"
 
 #: server/activities/tens_complement_find/ActivityEditor.qml:15
 #: server/activities/tens_complement_use/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
 msgid "All numbers must be positive integers"
-msgstr ""
+msgstr "Všechna čísla musí být kladná celá čísla"
 
 #: server/activities/tens_complement_find/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
@@ -1448,6 +1538,9 @@ msgid ""
 "cards, and there is already 1 card per addition, or 2 cards per addition if "
 "\"Find both numbers\" is selected."
 msgstr ""
+"Nepřidávejte příliš mnoho \"extra karet\"! Každá podúroveň nesmí obsahovat "
+"více než 6 karet a za každé přidání se již přidává 1 karta, resp. 2 karty, "
+"pokud je zvolena možnost \"Najdi obě čísla\"."
 
 #: server/activities/tens_complement_find/ActivityEditor.qml:19
 msgctxt "ActivityEditor|"
@@ -1456,110 +1549,113 @@ msgid ""
 "must contain 1, 2 or 3 numbers between 1 and 9. There is one addition for "
 "each \"First operand\" number."
 msgstr ""
+"Pokud není zaškrtnuta možnost \"Náhodné otázky\", musí \"první operandy\" "
+"každé podúrovně obsahovat 1, 2 nebo 3 čísla v rozmezí 1 až 9. Pro každé "
+"číslo v \"prvním operandu\" je zadán jeden příklad sčítání."
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:27
 msgctxt "TensComplementFindEditor|"
 msgid "Random questions"
-msgstr ""
+msgstr "Náhodné otázky"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:28
 msgctxt "TensComplementFindEditor|"
 msgid "Find both numbers"
-msgstr ""
+msgstr "Najdi obě čísla"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:29
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:35
 msgctxt "TensComplementFindEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Podúrovně"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:30
 msgctxt "TensComplementFindEditor|"
 msgid "Additions per sublevel"
-msgstr ""
+msgstr "Sčítání na podúrovni"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:31
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:41
 msgctxt "TensComplementFindEditor|"
 msgid "Extra cards"
-msgstr ""
+msgstr "Extra karty"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:32
 msgctxt "TensComplementFindEditor|"
 msgid "Minimum first operand"
-msgstr ""
+msgstr "Minimální hodnota prvního operandu"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:33
 msgctxt "TensComplementFindEditor|"
 msgid "Maximum first operand"
-msgstr ""
+msgstr "Maximální hodnota prvního operandu"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:34
 msgctxt "TensComplementFindEditor|"
 msgid "Shuffle operands"
-msgstr ""
+msgstr "Náhodné operandy"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:40
 msgctxt "TensComplementFindEditor|"
 msgid "First operands"
-msgstr ""
+msgstr "První operandy"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:163
 msgctxt "TensComplementFindEditor|"
 msgid "Dataset is empty."
-msgstr ""
+msgstr "Soubor dat je prázdný."
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:178
 #, qt-format
 msgctxt "TensComplementFindEditor|"
 msgid "Level %1 contains too many extra cards."
-msgstr ""
+msgstr "Úroveň %1 obsahuje příliš mnoho extra karet."
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:184
 #, qt-format
 msgctxt "TensComplementFindEditor|"
 msgid "Level %1 must not be empty."
-msgstr ""
+msgstr "Úroveň %1 nesmí být prázdná."
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:193
 #, qt-format
 msgctxt "TensComplementFindEditor|"
 msgid "Sublevel %2 of Level %1 must not be empty."
-msgstr ""
+msgstr "Podúroveň %2 úrovně %1 nesmí být prázdná."
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:200
 #, qt-format
 msgctxt "TensComplementFindEditor|"
 msgid "Sublevel %2 of Level %1 contains invalid First operands."
-msgstr ""
+msgstr "Podúroveň %2 úrovně %1 obsahuje neplatné první operandy."
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:210
 #, qt-format
 msgctxt "TensComplementFindEditor|"
 msgid "Sublevel %2 of Level %1 contains invalid extra cards."
-msgstr ""
+msgstr "Podúroveň %2 úrovně %1 obsahuje neplatné extra karty."
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:218
 #, qt-format
 msgctxt "TensComplementFindEditor|"
 msgid "Sublevel %2 of Level %1 contains too many extra cards."
-msgstr ""
+msgstr "Podúroveň %2 úrovně %1 obsahuje příliš mnoho extra karet."
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:226
 #, qt-format
 msgctxt "TensComplementFindEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "Je třeba opravit následující chyby:<ul>%1</ul>"
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:25
 msgctxt "TensComplementSwapEditor|"
 msgid "Rules to create a valid dataset:"
-msgstr ""
+msgstr "Pravidla pro vytvoření platného souboru dat:"
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:27
 msgctxt "TensComplementSwapEditor|"
 msgid "All numbers must be positive integers"
-msgstr ""
+msgstr "Všechna čísla musí být kladná celá čísla"
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:29
 msgctxt "TensComplementSwapEditor|"
@@ -1568,6 +1664,9 @@ msgid ""
 "entries. Each entry must be a number between 1 and 9. The resulting addition "
 "will contain the given entries and their complement to 10."
 msgstr ""
+"Pokud není zaškrtnuto \"Náhodné operandy\", musí pole \"Operandy\" obsahovat "
+"1, 2 nebo 3 položky. Každá položka musí být číslo v rozmezí 1 až 9. Výsledek "
+"sčítání bude obsahovat zadané položky a jejich doplněk k 10."
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:31
 msgctxt "TensComplementSwapEditor|"
@@ -1577,47 +1676,51 @@ msgid ""
 "if \"Operands\" contains 2 numbers, and not used if \"Operands\" contains 3 "
 "numbers."
 msgstr ""
+"\"Extra operand\" může obsahovat jedno číslo v rozmezí 1 až 9, které bude k "
+"součtu přičteno. Je povinný, pokud pole \"Operandy\" obsahuje jedno číslo, "
+"volitelný, pokud obsahuje dvě čísla, a nepoužívá se, pokud obsahuje tři "
+"čísla."
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:35
 msgctxt "TensComplementSwapEditor|"
 msgid "Shuffle"
-msgstr ""
+msgstr "Náhodné"
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:36
 msgctxt "TensComplementSwapEditor|"
 msgid "Additions"
-msgstr ""
+msgstr "Sčítání"
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:41
 msgctxt "TensComplementSwapEditor|"
 msgid "Random operands"
-msgstr ""
+msgstr "Náhodné operandy"
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:42
 msgctxt "TensComplementSwapEditor|"
 msgid "Number of operands"
-msgstr ""
+msgstr "Počet operandů"
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:43
 msgctxt "TensComplementSwapEditor|"
 msgid "Operands"
-msgstr ""
+msgstr "Operandy"
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:44
 msgctxt "TensComplementSwapEditor|"
 msgid "Extra operand"
-msgstr ""
+msgstr "Extra operand"
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:144
 msgctxt "TensComplementSwapEditor|"
 msgid "Dataset is empty."
-msgstr ""
+msgstr "Soubor dat je prázdný."
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:154
 #, qt-format
 msgctxt "TensComplementSwapEditor|"
 msgid "Level %1 must not be empty."
-msgstr ""
+msgstr "Úroveň %1 nesmí být prázdná."
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:192
 #, qt-format
@@ -1625,13 +1728,13 @@ msgctxt "TensComplementSwapEditor|"
 msgid ""
 "Content of Addition %2 of Level %1 is not valid. Please check the "
 "instructions."
-msgstr ""
+msgstr "Obsah doplňku %2 úrovně %1 není platný. Zkontrolujte prosím instrukce."
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:198
 #, qt-format
 msgctxt "TensComplementSwapEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "Je třeba opravit následující chyby:<ul>%1</ul>"
 
 #: server/activities/tens_complement_use/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
@@ -1639,6 +1742,8 @@ msgid ""
 "Do not add too many \"Extra cards\"! Each sublevel must not have more than 6 "
 "cards, and there are already 2 cards per addition."
 msgstr ""
+"Nepřidávejte příliš mnoho \"extra karet\"! Každá podúroveň nesmí obsahovat "
+"více než 6 karet a ke každému sčítání již patří 2 karty."
 
 #: server/activities/tens_complement_use/ActivityEditor.qml:19
 msgctxt "ActivityEditor|"
@@ -1646,217 +1751,219 @@ msgid ""
 "In \"Additions\", each entry must be an addition which first number is "
 "between 1 and 9, and which result is between 11 and 99."
 msgstr ""
+"V části \"Sčítání\" musí být každý záznam součtem, jehož první číslo je v "
+"rozmezí 1 až 9 a jehož výsledek je v rozmezí 11 až 99."
 
 #: server/activities/tens_complement_use/TensComplementUseDataDisplay.qml:36
 msgctxt "TensComplementUseDataDisplay|"
 msgid "Proposed numbers:"
-msgstr ""
+msgstr "Navrhovaná čísla:"
 
 #: server/activities/tens_complement_use/TensComplementUseDataDisplay.qml:71
 msgctxt "TensComplementUseDataDisplay|"
 msgid "Question:"
-msgstr ""
+msgstr "Otázka:"
 
 #: server/activities/tens_complement_use/TensComplementUseDataDisplay.qml:97
 msgctxt "TensComplementUseDataDisplay|"
 msgid "Answer:"
-msgstr ""
+msgstr "Odpověď:"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:27
 msgctxt "TensComplementUseEditor|"
 msgid "Random questions"
-msgstr ""
+msgstr "Náhodné otázky"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:28
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:34
 msgctxt "TensComplementUseEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Podúrovně"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:29
 msgctxt "TensComplementUseEditor|"
 msgid "Additions per sublevel"
-msgstr ""
+msgstr "Sčítání na podúrovni"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:30
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:40
 msgctxt "TensComplementUseEditor|"
 msgid "Extra cards"
-msgstr ""
+msgstr "Extra karty"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:31
 msgctxt "TensComplementUseEditor|"
 msgid "Minimum result"
-msgstr ""
+msgstr "Minimální výsledek"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:32
 msgctxt "TensComplementUseEditor|"
 msgid "Maximum result"
-msgstr ""
+msgstr "Maximální výsledek"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:33
 msgctxt "TensComplementUseEditor|"
 msgid "Shuffle"
-msgstr ""
+msgstr "Náhodné"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:39
 msgctxt "TensComplementUseEditor|"
 msgid "Additions"
-msgstr ""
+msgstr "Sčítání"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:156
 msgctxt "TensComplementUseEditor|"
 msgid "Dataset is empty."
-msgstr ""
+msgstr "Soubor dat je prázdný."
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:169
 #, qt-format
 msgctxt "TensComplementUseEditor|"
 msgid "Level %1 contains too many extra cards."
-msgstr ""
+msgstr "Úroveň %1 obsahuje příliš mnoho extra karet."
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:175
 #, qt-format
 msgctxt "TensComplementUseEditor|"
 msgid "Level %1 must not be empty."
-msgstr ""
+msgstr "Úroveň %1 nesmí být prázdná."
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:184
 #, qt-format
 msgctxt "TensComplementUseEditor|"
 msgid "Sublevel %2 of Level %1 must not be empty."
-msgstr ""
+msgstr "Podúroveň %2 úrovně %1 nesmí být prázdná."
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:194
 #, qt-format
 msgctxt "TensComplementUseEditor|"
 msgid "Addition %3 of Sublevel %2 of Level %1 is not correct."
-msgstr ""
+msgstr "Sčítání %3 v podúrovni %2 na úrovni %1 není správné."
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:204
 #, qt-format
 msgctxt "TensComplementUseEditor|"
 msgid "Sublevel %2 of Level %1 contains invalid extra cards."
-msgstr ""
+msgstr "Podúroveň %2 úrovně %1 obsahuje neplatné extra karty."
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:212
 #, qt-format
 msgctxt "TensComplementUseEditor|"
 msgid "Sublevel %2 of Level %1 contains too many extra cards."
-msgstr ""
+msgstr "Podúroveň %2 úrovně %1 obsahuje příliš mnoho extra karet."
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:220
 #, qt-format
 msgctxt "TensComplementUseEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr ""
+msgstr "Je třeba opravit následující chyby:<ul>%1</ul>"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:29
 msgctxt "VerticalEditor|"
 msgid "Sublevels"
-msgstr ""
+msgstr "Podúrovně"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:31
 msgctxt "VerticalEditor|"
 msgid "Number of digits"
-msgstr ""
+msgstr "Počet číslic"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:33
 msgctxt "VerticalEditor|"
 msgid "Number of lines"
-msgstr ""
+msgstr "Počet řádků"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:34
 msgctxt "VerticalEditor|"
 msgid "With carry"
-msgstr ""
+msgstr "Přenosné"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:35
 msgctxt "VerticalEditor|"
 msgid "Already laid"
-msgstr ""
+msgstr "Položeno"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:36
 msgctxt "VerticalEditor|"
 msgid "Write your operation"
-msgstr ""
+msgstr "Zadejte operaci"
 
 #: server/components/CalendarPane.qml:77
 msgctxt "CalendarPane|"
 msgid "Calendar"
-msgstr ""
+msgstr "Kalendář"
 
 #: server/components/CheckUserEditDelegate.qml:34
 msgctxt "CheckUserEditDelegate|"
 msgid "Edit pupil"
-msgstr ""
+msgstr "Upravit žáka"
 
 #: server/components/EditorBox.qml:84
 msgctxt "EditorBox|"
 msgid "Add"
-msgstr ""
+msgstr "Přidat"
 
 #: server/components/EditorBox.qml:95
 msgctxt "EditorBox|"
 msgid "Remove"
-msgstr ""
+msgstr "Odstranit"
 
 #: server/components/EditorBox.qml:107
 msgctxt "EditorBox|"
 msgid "Move up"
-msgstr ""
+msgstr "Přesunout nahoru"
 
 #: server/components/EditorBox.qml:119
 msgctxt "EditorBox|"
 msgid "Move down"
-msgstr ""
+msgstr "Přesunout dolů"
 
 #: server/components/FieldEdit.qml:329
 msgctxt "FieldEdit|"
 msgid "Add an entry"
-msgstr ""
+msgstr "Přidat položku"
 
 #: server/components/FieldEdit.qml:341
 msgctxt "FieldEdit|"
 msgid "Remove last entry"
-msgstr ""
+msgstr "Odstranit poslední položku"
 
 #: server/components/FoldDown.qml:156
 msgctxt "FoldDown|@action"
 msgid "Filter list"
-msgstr ""
+msgstr "Seznam filtrů"
 
 #: server/components/OkCancelButtons.qml:21
 msgctxt "OkCancelButtons|"
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: server/components/OkCancelButtons.qml:22
 msgctxt "OkCancelButtons|"
 msgid "Cancel"
-msgstr ""
+msgstr "Zrušit"
 
 #: server/components/RadioGroupEditDelegate.qml:59
 msgctxt "RadioGroupEditDelegate|"
 msgid "Edit group"
-msgstr ""
+msgstr "Upravit skupinu"
 
 #: server/components/RadioGroupEditDelegate.qml:71
 msgctxt "RadioGroupEditDelegate|"
 msgid "Delete group"
-msgstr ""
+msgstr "Smazat skupinu"
 
 #. Argument is dataset name
 #: server/components/SequenceElement.qml:72
 #, qt-format
 msgctxt "SequenceElement|"
 msgid "Dataset: %1"
-msgstr ""
+msgstr "Soubor dat: %1"
 
 #: server/components/ServerLanguageList.qml:32
 msgctxt "ServerLanguageList|"
 msgid "Your system default"
-msgstr ""
+msgstr "Výchozí jazyk systému"
 
 #: server/controllers/database-controller.cpp:79
 #: server/controllers/database-controller.cpp:85
@@ -1866,129 +1973,131 @@ msgid ""
 "File %1\n"
 "Error SQL: %2"
 msgstr ""
+"Soubor %1\n"
+"Chyba SQL: %2"
 
 #: server/controllers/database-controller.cpp:121
 msgctxt "controllers::DatabaseController|"
 msgid "Table teacher_ could not be updated to current version."
-msgstr ""
+msgstr "Tabulku teacher_ se nepodařilo aktualizovat na aktuální verzi."
 
 #: server/controllers/database-controller.cpp:351
 msgctxt "controllers::DatabaseController|"
 msgid "Error creating teacher."
-msgstr ""
+msgstr "Došlo k chybě při vytváření učitele."
 
 #: server/controllers/database-controller.cpp:373
 msgctxt "controllers::DatabaseController|"
 msgid "Wrong password."
-msgstr ""
+msgstr "Chybné heslo."
 
 #: server/controllers/database-controller.cpp:417
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> already exists."
-msgstr ""
+msgstr "Skupina <b>%1</b> již existuje."
 
 #: server/controllers/database-controller.cpp:438
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be updated to <b>%2</b>."
-msgstr ""
+msgstr "Skupinu <b>%1</b> se nepodařilo aktualizovat na <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:456
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_."
-msgstr ""
+msgstr "Skupinu <b>%1</b> se nepodařilo odstranit z tabulky group_."
 
 #: server/controllers/database-controller.cpp:459
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> could not be deleted from table group_user_."
-msgstr ""
+msgstr "Skupinu <b>%1</b> se nepodařilo odstranit z tabulky group_user_."
 
 #: server/controllers/database-controller.cpp:481
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Pupil login <b>%1</b> already exists."
-msgstr ""
+msgstr "Přihlašovací údaje žáka <b>%1</b> již existují."
 
 #: server/controllers/database-controller.cpp:500
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "<b>%1</b> could not be updated to <b>%2</b>."
-msgstr ""
+msgstr "<b>%1</b> se nepodařilo aktualizovat na <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:520
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table user_."
-msgstr ""
+msgstr "Uživatel <b>%1</b> nemohl být odstraněn z tabulky user_."
 
 #: server/controllers/database-controller.cpp:525
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table result_."
-msgstr ""
+msgstr "Uživatel <b>%1</b> nemohl být odstraněn z tabulky result_."
 
 #: server/controllers/database-controller.cpp:540
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> could not be deleted from table group_user_."
-msgstr ""
+msgstr "Uživatel <b>%1</b> nemohl být odstraněn z tabulky group_user_."
 
 #: server/controllers/database-controller.cpp:555
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> already exists in group <b>%2</b>."
-msgstr ""
+msgstr "Uživatel <b>%1</b> již existuje ve skupině <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:570
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> group <b>%2</b> couldn't be deleted."
-msgstr ""
+msgstr "Uživatele <b>%1</b> ve skupině <b>%2</b> se nepodařilo odstranit."
 
 #: server/controllers/database-controller.cpp:605
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Result could not be added for user <b>%1</b>"
-msgstr ""
+msgstr "Výsledek nebylo možné přidat pro uživatele <b>%1</b>"
 
 #: server/controllers/database-controller.cpp:617
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Error inserting activity: %1"
-msgstr ""
+msgstr "Chyba při vkládání aktivity: %1"
 
 #: server/controllers/database-controller.cpp:664
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> already exists."
-msgstr ""
+msgstr "Soubor dat <b>%1</b> již existuje."
 
 #: server/controllers/database-controller.cpp:683
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> could not be updated to <b>%2</b>."
-msgstr ""
+msgstr "Soubor dat <b>%1</b> se nepodařilo aktualizovat na <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:698
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> couldn't be deleted."
-msgstr ""
+msgstr "Soubor dat <b>%1</b> se nepodařilo odstranit."
 
 #: server/controllers/database-controller.cpp:714
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Error inserting sequence in table sequence_: <b>%1</b>."
-msgstr ""
+msgstr "Chyba při vkládání sekvence do tabulky sequence_: <b>%1</b>."
 
 #: server/controllers/database-controller.cpp:746
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Error updating sequence in table sequence_: <b>%1</b>."
-msgstr ""
+msgstr "Chyba při aktualizaci sekvence v tabulce sequence_: <b>%1</b>."
 
 #: server/controllers/database-controller.cpp:754
 #: server/controllers/database-controller.cpp:802
@@ -1997,6 +2106,7 @@ msgctxt "controllers::DatabaseController|"
 msgid ""
 "Sequence <b>%1</b> couldn't be deleted from table sequence_with_activity_."
 msgstr ""
+"Sekvenci <b>%1</b> se nepodařilo odstranit z tabulky sequence_with_activity_."
 
 #: server/controllers/database-controller.cpp:759
 #: server/controllers/database-controller.cpp:806
@@ -2005,153 +2115,154 @@ msgctxt "controllers::DatabaseController|"
 msgid ""
 "Sequence <b>%1</b> couldn't be deleted from table activity_with_datasets_."
 msgstr ""
+"Sekvenci <b>%1</b> se nepodařilo odstranit z tabulky activity_with_datasets_."
 
 #: server/controllers/database-controller.cpp:798
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Sequence <b>%1</b> could not be deleted from table sequence_."
-msgstr ""
+msgstr "Sekvenci <b>%1</b> se nepodařilo odstranit z tabulky sequence_."
 
 #: server/controllers/network-controller.cpp:46
 #, qt-format
 msgctxt "controllers::NetworkController|"
 msgid "Unable to start the server: %1."
-msgstr ""
+msgstr "Nelze spustit server: %1."
 
 #: server/dialogs/CreateDbDialog.qml:19
 msgctxt "CreateDbDialog|"
 msgid "You are about to create a new GCompris database."
-msgstr ""
+msgstr "Chystáte se vytvořit novou databázi GCompris."
 
 #: server/dialogs/CreateDbDialog.qml:38
 msgctxt "CreateDbDialog|"
 msgid "Database file"
-msgstr ""
+msgstr "Databázový soubor"
 
 #: server/dialogs/CreateDbDialog.qml:40
 msgctxt "CreateDbDialog|"
 msgid "created in:"
-msgstr ""
+msgstr "vytvořeno v:"
 
 #: server/dialogs/CreateDbDialog.qml:64
 msgctxt "CreateDbDialog|"
 msgid "New database creation"
-msgstr ""
+msgstr "Vytvoření nové databáze"
 
 #: server/dialogs/CreateDbDialog.qml:92
 msgctxt "CreateDbDialog|"
 msgid "Teacher login"
-msgstr ""
+msgstr "Přihlašovací jméno učitele"
 
 #: server/dialogs/CreateDbDialog.qml:108
 msgctxt "CreateDbDialog|"
 msgid "Password"
-msgstr ""
+msgstr "Heslo"
 
 #: server/dialogs/CreateDbDialog.qml:124
 msgctxt "CreateDbDialog|"
 msgid "Encrypted database (enabled by default)"
-msgstr ""
+msgstr "Šifrovaná databáze (ve výchozím nastavení zapnuto)"
 
 #: server/dialogs/DatasetEditorDialog.qml:56
 msgctxt "DatasetEditorDialog|"
 msgid "Create dataset"
-msgstr ""
+msgstr "Vytvořit soubor dat"
 
 #: server/dialogs/DatasetEditorDialog.qml:66
 msgctxt "DatasetEditorDialog|"
 msgid "Update dataset"
-msgstr ""
+msgstr "Aktualizovat soubor dat"
 
 #: server/dialogs/DatasetEditorDialog.qml:81
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name is empty"
-msgstr ""
+msgstr "Soubor dat je prázdný"
 
 #: server/dialogs/DatasetEditorDialog.qml:88
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty should be between 1 and 6"
-msgstr ""
+msgstr "Úroveň obtížnosti by měla být mezi 1 a 6"
 
 #: server/dialogs/DatasetEditorDialog.qml:242
 msgctxt "DatasetEditorDialog|"
 msgid "INVALID DATASET"
-msgstr ""
+msgstr "Neplatný soubor dat"
 
 #: server/dialogs/DatasetEditorDialog.qml:345
 msgctxt "DatasetEditorDialog|"
 msgid "Editor"
-msgstr ""
+msgstr "Editor"
 
 #: server/dialogs/DatasetEditorDialog.qml:349
 msgctxt "DatasetEditorDialog|"
 msgid "Raw JSON"
-msgstr ""
+msgstr "Prostý JSON"
 
 #: server/dialogs/DatasetEditorDialog.qml:379
 msgctxt "DatasetEditorDialog|"
 msgid "Activity name"
-msgstr ""
+msgstr "Název aktivity"
 
 #: server/dialogs/DatasetEditorDialog.qml:393
 msgctxt "DatasetEditorDialog|"
 msgid "Dataset name"
-msgstr ""
+msgstr "Název souboru dat"
 
 #: server/dialogs/DatasetEditorDialog.qml:407
 msgctxt "DatasetEditorDialog|"
 msgid "Goal"
-msgstr ""
+msgstr "Cíl"
 
 #: server/dialogs/DatasetEditorDialog.qml:421
 msgctxt "DatasetEditorDialog|"
 msgid "Difficulty"
-msgstr ""
+msgstr "Obtížnost"
 
 #: server/dialogs/DatasetEditorDialog.qml:519
 msgctxt "DatasetEditorDialog|"
 msgid "Instructions"
-msgstr ""
+msgstr "Instrukce"
 
 #: server/dialogs/DatasetEditorDialog.qml:525
 msgctxt "DatasetEditorDialog|"
 msgid "No specific instructions for this editor."
-msgstr ""
+msgstr "K tomuto editoru nejsou k dispozici žádné konkrétní instrukce."
 
 #: server/dialogs/ErrorDialog.qml:46
 msgctxt "ErrorDialog|"
 msgid "Information"
-msgstr ""
+msgstr "Informace"
 
 #: server/dialogs/ExportPupilsDialog.qml:79
 msgctxt "ExportPupilsDialog|"
 msgid "Export pupils to CSV file"
-msgstr ""
+msgstr "Exportovat žáky do souboru CSV"
 
 #: server/dialogs/ExportPupilsDialog.qml:121
 msgctxt "ExportPupilsDialog|"
 msgid "Save file"
-msgstr ""
+msgstr "Uložit soubor"
 
 #: server/dialogs/ExportPupilsDialog.qml:131
 msgctxt "ExportPupilsDialog|"
 msgid "Pupils"
-msgstr ""
+msgstr "Žáci"
 
 #: server/dialogs/GroupDialog.qml:114
 msgctxt "GroupDialog|"
 msgid "Name"
-msgstr ""
+msgstr "Název"
 
 #: server/dialogs/GroupDialog.qml:128
 msgctxt "GroupDialog|"
 msgid "Description"
-msgstr ""
+msgstr "Popis"
 
 #: server/dialogs/ImportPupilsDialog.qml:70
 msgctxt "ImportPupilsDialog|"
 msgid "Import pupils from CSV file"
-msgstr ""
+msgstr "Importovat žáky ze souboru CSV"
 
 #: server/dialogs/ImportPupilsDialog.qml:88
 #, qt-format
@@ -2162,79 +2273,83 @@ msgid ""
 "Patrick Dummy;group 1;%1\n"
 "Patricia Brown;group 1,group 2;%2\n"
 msgstr ""
+"Formát: jméno;skupina;heslo\n"
+"Příklad:\n"
+"Patrik Novák;skupina 1;%1\n"
+"Patricie Nováková;skupina 1,skupina 2;%2\n"
 
 #: server/dialogs/ImportPupilsDialog.qml:94
 msgctxt "ImportPupilsDialog|"
 msgid "Add CSV file"
-msgstr ""
+msgstr "Přidat soubor CSV"
 
 #: server/dialogs/ImportPupilsDialog.qml:141
 msgctxt "ImportPupilsDialog|"
 msgid "Import pupils"
-msgstr ""
+msgstr "Importovat žáky"
 
 #: server/dialogs/PupilDialog.qml:59
 msgctxt "PupilDialog|"
 msgid "Pupil's name is empty"
-msgstr ""
+msgstr "Jméno žáka je prázdné"
 
 #: server/dialogs/PupilDialog.qml:153
 msgctxt "PupilDialog|"
 msgid "Pupil's name"
-msgstr ""
+msgstr "Jméno žáka"
 
 #: server/dialogs/PupilDialog.qml:166
 msgctxt "PupilDialog|"
 msgid "Password"
-msgstr ""
+msgstr "Heslo"
 
 #: server/dialogs/PupilDialog.qml:218
 msgctxt "PupilDialog|"
 msgid "Password images:"
-msgstr ""
+msgstr "Obrázky s heslem:"
 
 #: server/dialogs/PupilDialog.qml:254
 msgctxt "PupilDialog|"
 msgid "Groups"
-msgstr ""
+msgstr "Skupiny"
 
 #: server/dialogs/PupilsToGroupsDialog.qml:87
 msgctxt "PupilsToGroupsDialog|"
 msgid "Select the groups to add these pupils to:"
-msgstr ""
+msgstr "Vyberte skupiny, do kterých chcete tyto žáky přidat:"
 
 #: server/dialogs/PupilsToGroupsDialog.qml:88
 msgctxt "PupilsToGroupsDialog|"
 msgid "Select the groups from which to remove these pupils:"
-msgstr ""
+msgstr "Vyberte skupiny, ze kterých chcete tyto žáky odebrat:"
 
 #: server/dialogs/RemoveDatasetDialog.qml:70
 msgctxt "RemoveDatasetDialog|"
 msgid ""
 "Are you sure you want to delete the following dataset from the database?"
-msgstr ""
+msgstr "Opravdu chcete odstranit následující soubor dat z databáze?"
 
 #: server/dialogs/RemovePupilsDialog.qml:76
 msgctxt "RemovePupilsDialog|"
 msgid ""
 "Are you sure you want to remove the following pupils from the database ?"
-msgstr ""
+msgstr "Opravdu chcete odstranit následující žáky z databáze?"
 
 #: server/dialogs/RemoveSequenceDialog.qml:64
 msgctxt "RemoveSequenceDialog|"
 msgid ""
 "Are you sure you want to delete the following sequence from the database?"
-msgstr ""
+msgstr "Opravdu chcete odstranit následující sekvenci z databáze?"
 
 #: server/dialogs/SendDatasetDialog.qml:93
 msgctxt "SendDatasetDialog|"
 msgid "Do you want to send the dataset to selected pupils?"
-msgstr ""
+msgstr "Chcete odeslat soubor dat vybraným žákům?"
 
 #: server/dialogs/SendDatasetDialog.qml:94
 msgctxt "SendDatasetDialog|"
 msgid "Are you sure you want to remove the dataset from selected pupils?"
-msgstr ""
+msgstr "Opravdu chcete odstranit soubor dat vybraných žáků?"
 
 #: server/dialogs/SendDatasetDialog.qml:95
 msgctxt "SendDatasetDialog|"
@@ -2242,815 +2357,816 @@ msgid ""
 "Are you sure you want to remove all the existing datasets from selected "
 "pupils?"
 msgstr ""
+"Opravdu chcete odstranit všechny stávající soubory dat od vybraných žáků?"
 
 #: server/dialogs/SendDatasetDialog.qml:129
 msgctxt "SendDatasetDialog|"
 msgid "Pupils"
-msgstr ""
+msgstr "Žáci"
 
 #: server/dialogs/SendSequenceDialog.qml:104
 msgctxt "SendSequenceDialog|"
 msgid "Do you want to send the sequence to selected pupils?"
-msgstr ""
+msgstr "Chcete tuto sekvenci odeslat vybraným žákům?"
 
 #: server/dialogs/SendSequenceDialog.qml:105
 msgctxt "SendSequenceDialog|"
 msgid "Are you sure you want to remove the sequence from selected pupils?"
-msgstr ""
+msgstr "Opravdu chcete odstranit sekvenci od vybraných žáků?"
 
 #: server/dialogs/SendSequenceDialog.qml:106
 msgctxt "SendSequenceDialog|"
 msgid ""
 "Are you sure you want to remove all the existing sequences from selected "
 "pupils?"
-msgstr ""
+msgstr "Opravdu chcete odstranit všechny stávající sekvence u vybraných žáků?"
 
 #: server/dialogs/SendSequenceDialog.qml:140
 msgctxt "SendSequenceDialog|"
 msgid "Pupils"
-msgstr ""
+msgstr "Žáci"
 
 #: server/dialogs/SequenceEditorDialog.qml:50
 msgctxt "SequenceEditorDialog|"
 msgid "Create sequence"
-msgstr ""
+msgstr "Vytvořit sekvenci"
 
 #: server/dialogs/SequenceEditorDialog.qml:56
 msgctxt "SequenceEditorDialog|"
 msgid "Update sequence"
-msgstr ""
+msgstr "Aktualizovat sekvenci"
 
 #: server/dialogs/SequenceEditorDialog.qml:81
 msgctxt "SequenceEditorDialog|"
 msgid "Sequence name is empty"
-msgstr ""
+msgstr "Název sekvence je prázdný"
 
 #: server/dialogs/SequenceEditorDialog.qml:163
 msgctxt "SequenceEditorDialog|"
 msgid "Sequence name"
-msgstr ""
+msgstr "Název sekvence"
 
 #: server/dialogs/SequenceEditorDialog.qml:177
 msgctxt "SequenceEditorDialog|"
 msgid "Goal"
-msgstr ""
+msgstr "Cíl"
 
 #: server/dialogs/SequenceEditorDialog.qml:245
 msgctxt "SequenceEditorDialog|"
 msgid "Activities"
-msgstr ""
+msgstr "Aktivity"
 
 #: server/dialogs/SequenceEditorDialog.qml:272
 msgctxt "SequenceEditorDialog|"
 msgid "Datasets"
-msgstr ""
+msgstr "Soubory dat"
 
 #: server/dialogs/SequenceEditorDialog.qml:323
 msgctxt "SequenceEditorDialog|"
 msgid "Add"
-msgstr ""
+msgstr "Přidat"
 
 #: server/dialogs/SequenceEditorDialog.qml:343
 msgctxt "SequenceEditorDialog|"
 msgid "Remove"
-msgstr ""
+msgstr "Odstranit"
 
 #: server/dialogs/SequenceEditorDialog.qml:355
 msgctxt "SequenceEditorDialog|"
 msgid "Move up"
-msgstr ""
+msgstr "Přesunout nahoru"
 
 #: server/dialogs/SequenceEditorDialog.qml:367
 msgctxt "SequenceEditorDialog|"
 msgid "Move down"
-msgstr ""
+msgstr "Přesunout dolů"
 
 #: server/dialogs/SqlLineDialog.qml:19
 msgctxt "SqlLineDialog|"
 msgid "Line details"
-msgstr ""
+msgstr "Podrobnosti řádku"
 
 #: server/dialogs/SqlLineDialog.qml:194
 msgctxt "SqlLineDialog|"
 msgid "Close"
-msgstr ""
+msgstr "Zavřít"
 
 #: server/Main.qml:48
 msgctxt "Main|"
 msgid "GCompris Teachers Tool"
-msgstr ""
+msgstr "Nástroj GCompris – učitelé"
 
 #: server/panels/NavigationPanel.qml:71
 msgctxt "NavigationPanel|"
 msgid "Login"
-msgstr ""
+msgstr "Přihlášení"
 
 #: server/panels/NavigationPanel.qml:79
 msgctxt "NavigationPanel|"
 msgid "Pupils and Groups"
-msgstr ""
+msgstr "Žáci a skupiny"
 
 #: server/panels/NavigationPanel.qml:87
 msgctxt "NavigationPanel|"
 msgid "Connect devices"
-msgstr ""
+msgstr "Připojená zařízení"
 
 #: server/panels/NavigationPanel.qml:95
 msgctxt "NavigationPanel|"
 msgid "Activities"
-msgstr ""
+msgstr "Aktivity"
 
 #: server/panels/NavigationPanel.qml:103
 msgctxt "NavigationPanel|"
 msgid "Datasets"
-msgstr ""
+msgstr "Soubory dat"
 
 #: server/panels/NavigationPanel.qml:111
 msgctxt "NavigationPanel|"
 msgid "Sequences"
-msgstr ""
+msgstr "Sekvence"
 
 #: server/panels/NavigationPanel.qml:119
 msgctxt "NavigationPanel|"
 msgid "Charts"
-msgstr ""
+msgstr "Grafy"
 
 #: server/panels/NavigationPanel.qml:127
 msgctxt "NavigationPanel|"
 msgid "Settings"
-msgstr ""
+msgstr "Nastavení"
 
 #: server/panels/SelectorPanel.qml:50
 msgctxt "SelectorPanel|"
 msgid "Groups"
-msgstr ""
+msgstr "Skupiny"
 
 #: server/panels/SelectorPanel.qml:69
 msgctxt "SelectorPanel|"
 msgid "Pupils"
-msgstr ""
+msgstr "Žáci"
 
 #: server/panels/SelectorPanel.qml:85
 msgctxt "SelectorPanel|"
 msgid "Activities"
-msgstr ""
+msgstr "Aktivity"
 
 #: server/singletons/Master.qml:43
 msgctxt "Master|"
 msgid "User ID"
-msgstr ""
+msgstr "ID uživatele"
 
 #: server/singletons/Master.qml:44
 msgctxt "Master|"
 msgid "Name"
-msgstr ""
+msgstr "Název"
 
 #: server/singletons/Master.qml:45
 msgctxt "Master|"
 msgid "Names"
-msgstr ""
+msgstr "Jména"
 
 #: server/singletons/Master.qml:46
 msgctxt "Master|"
 msgid "Password"
-msgstr ""
+msgstr "Heslo"
 
 #: server/singletons/Master.qml:47
 msgctxt "Master|"
 msgid "Users IDs"
-msgstr ""
+msgstr "ID uživatelů"
 
 #: server/singletons/Master.qml:48
 msgctxt "Master|"
 msgid "Activity ID"
-msgstr ""
+msgstr "ID aktivity"
 
 #: server/singletons/Master.qml:49
 msgctxt "Master|"
 msgid "Activity"
-msgstr ""
+msgstr "Aktivita"
 
 #: server/singletons/Master.qml:50
 msgctxt "Master|"
 msgid "Group"
-msgstr ""
+msgstr "Skupina"
 
 #: server/singletons/Master.qml:51
 msgctxt "Master|"
 msgid "Description"
-msgstr ""
+msgstr "Popis"
 
 #: server/singletons/Master.qml:52
 msgctxt "Master|"
 msgid "Groups"
-msgstr ""
+msgstr "Skupiny"
 
 #: server/singletons/Master.qml:53
 msgctxt "Master|"
 msgid "Groups IDs"
-msgstr ""
+msgstr "ID skupin"
 
 #: server/singletons/Master.qml:54 server/singletons/Master.qml:58
 msgctxt "Master|"
 msgid "Date"
-msgstr ""
+msgstr "Datum"
 
 #: server/singletons/Master.qml:55 server/singletons/Master.qml:60
 msgctxt "Master|"
 msgid "Success"
-msgstr ""
+msgstr "Úspěch"
 
 #: server/singletons/Master.qml:56
 msgctxt "Master|"
 msgid "Duration"
-msgstr ""
+msgstr "Trvání"
 
 #: server/singletons/Master.qml:57
 msgctxt "Master|"
 msgid "Data"
-msgstr ""
+msgstr "Data"
 
 #: server/singletons/Master.qml:59
 msgctxt "Master|"
 msgid "Count"
-msgstr ""
+msgstr "Počet"
 
 #: server/singletons/Master.qml:61
 msgctxt "Master|"
 msgid "Failed"
-msgstr ""
+msgstr "Neúspěšné"
 
 #: server/singletons/Master.qml:62
 msgctxt "Master|"
 msgid "Success ratio"
-msgstr ""
+msgstr "Poměr úspěšnosti"
 
 #: server/views/charts/ActivitiesChart.qml:104
 msgctxt "ActivitiesChart|"
 msgid "Daily activities chart"
-msgstr ""
+msgstr "Graf denních činností"
 
 #: server/views/charts/PupilsChart.qml:101
 msgctxt "PupilsChart|"
 msgid "User activities chart"
-msgstr ""
+msgstr "Graf činností uživatele"
 
 #: server/views/ChartsView.qml:136
 msgctxt "ChartsView|"
 msgid "Activities"
-msgstr ""
+msgstr "Aktivity"
 
 #: server/views/ChartsView.qml:143
 msgctxt "ChartsView|"
 msgid "Pupils"
-msgstr ""
+msgstr "Žáci"
 
 #: server/views/datas/AllData.qml:69
 msgctxt "AllData|"
 msgid "Available requests"
-msgstr ""
+msgstr "Dostupné požadavky"
 
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
 msgid "All users activities"
-msgstr ""
+msgstr "Všechny aktivity uživatelů"
 
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
 msgid "Pupils activities"
-msgstr ""
+msgstr "Aktivity žáků"
 
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
 msgid "All groups"
-msgstr ""
+msgstr "Všechny skupiny"
 
 #: server/views/datas/AllData.qml:77
 msgctxt "AllData|"
 msgid "Failed activities"
-msgstr ""
+msgstr "Neúspěšné aktivity"
 
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "User's groups"
-msgstr ""
+msgstr "Skupiny uživatelů"
 
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "Group's users"
-msgstr ""
+msgstr "Uživatelé skupiny"
 
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "Daily activities"
-msgstr ""
+msgstr "Denní aktivity"
 
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "Daily ratios"
-msgstr ""
+msgstr "Denní poměr"
 
 #. Number of lines
 #: server/views/datas/AllData.qml:90
 #, qt-format
 msgctxt "AllData|"
 msgid "%1 lines"
-msgstr ""
+msgstr "%1 řádků"
 
 #: server/views/datas/DuplicateData.qml:175
 msgctxt "DuplicateData|"
 msgid "Commands"
-msgstr ""
+msgstr "Příkazy"
 
 #: server/views/datas/DuplicateData.qml:188
 msgctxt "DuplicateData|"
 msgid "Random date"
-msgstr ""
+msgstr "Náhodné datum"
 
 #: server/views/datas/DuplicateData.qml:195
 msgctxt "DuplicateData|"
 msgid "Duplicate"
-msgstr ""
+msgstr "Duplikovat"
 
 #: server/views/datas/DuplicateData.qml:199
 msgctxt "DuplicateData|"
 msgid "You are about to duplicate datas"
-msgstr ""
+msgstr "Chystáte se duplikovat data"
 
 #: server/views/datas/DuplicateData.qml:199
 #: server/views/datas/DuplicateData.qml:212
 msgctxt "DuplicateData|"
 msgid "No action now"
-msgstr ""
+msgstr "Zatím žádné kroky"
 
 #: server/views/datas/DuplicateData.qml:208
 msgctxt "DuplicateData|"
 msgid "Delete"
-msgstr ""
+msgstr "Smazat"
 
 #: server/views/datas/DuplicateData.qml:212
 msgctxt "DuplicateData|"
 msgid "You are about to delete data"
-msgstr ""
+msgstr "Chystáte se smazat data"
 
 #: server/views/datas/DuplicateData.qml:230
 msgctxt "DuplicateData|"
 msgid "Copy to"
-msgstr ""
+msgstr "Kopírovat do"
 
 #: server/views/DatasetsView.qml:44
 msgctxt "DatasetsView|"
 msgid "Activities"
-msgstr ""
+msgstr "Aktivity"
 
 #: server/views/DatasetsView.qml:63
 msgctxt "DatasetsView|"
 msgid "Datasets"
-msgstr ""
+msgstr "Soubory dat"
 
 #: server/views/DatasetsView.qml:95
 msgctxt "DatasetsView|"
 msgid "Datasets management"
-msgstr ""
+msgstr "Správa souboru dat"
 
 #: server/views/DatasetsView.qml:113
 msgctxt "DatasetsView|"
 msgid "Create dataset"
-msgstr ""
+msgstr "Vytvořit soubor dat"
 
 #: server/views/DatasetsView.qml:124
 msgctxt "DatasetsView|"
 msgid "Update dataset"
-msgstr ""
+msgstr "Aktualizovat soubor dat"
 
 #: server/views/DatasetsView.qml:135
 msgctxt "DatasetsView|"
 msgid "Send dataset to clients"
-msgstr ""
+msgstr "Odeslat soubor dat klientům"
 
 #: server/views/DatasetsView.qml:154
 msgctxt "DatasetsView|"
 msgid "Remove dataset from clients"
-msgstr ""
+msgstr "Odstranit soubor dat od klientů"
 
 #: server/views/DatasetsView.qml:179
 msgctxt "DatasetsView|"
 msgid "Remove all datasets from clients"
-msgstr ""
+msgstr "Odstranit všechny soubory dat od klientů"
 
 #: server/views/DatasetsView.qml:189
 msgctxt "DatasetsView|"
 msgid "Delete dataset"
-msgstr ""
+msgstr "Smazat soubor dat"
 
 #: server/views/DevelopmentView.qml:43
 msgctxt "DevelopmentView|"
 msgid "Edit data"
-msgstr ""
+msgstr "Upravit data"
 
 #: server/views/DevelopmentView.qml:47
 msgctxt "DevelopmentView|"
 msgid "All requests"
-msgstr ""
+msgstr "Všechny požadavky"
 
 #: server/views/DevicesView.qml:52
 msgctxt "DevicesView|"
 msgid "Not connected"
-msgstr ""
+msgstr "Nepřipojeno"
 
 #: server/views/DevicesView.qml:54
 msgctxt "DevicesView|"
 msgid "Incorrect password"
-msgstr ""
+msgstr "Špatné heslo"
 
 #: server/views/DevicesView.qml:56
 msgctxt "DevicesView|"
 msgid "Logged in"
-msgstr ""
+msgstr "Přihlášeno v"
 
 #: server/views/DevicesView.qml:58
 msgctxt "DevicesView|"
 msgid "Connection lost"
-msgstr ""
+msgstr "Spojení ztraceno"
 
 #: server/views/DevicesView.qml:60
 msgctxt "DevicesView|"
 msgid "Disconnected"
-msgstr ""
+msgstr "Odpojeno"
 
 #: server/views/DevicesView.qml:62
 msgctxt "DevicesView|"
 msgid "Unknown connection status"
-msgstr ""
+msgstr "Neznámý stav připojení"
 
 #: server/views/DevicesView.qml:84
 msgctxt "DevicesView|"
 msgid "Groups"
-msgstr ""
+msgstr "Skupiny"
 
 #: server/views/DevicesView.qml:101
 msgctxt "DevicesView|"
 msgid "Pupils"
-msgstr ""
+msgstr "Žáci"
 
 #: server/views/DevicesView.qml:135
 msgctxt "DevicesView|"
 msgid "Network"
-msgstr ""
+msgstr "Síť"
 
 #: server/views/DevicesView.qml:158
 msgctxt "DevicesView|"
 msgid "Connect devices"
-msgstr ""
+msgstr "Připojená zařízení"
 
 #: server/views/DevicesView.qml:171
 msgctxt "DevicesView|"
 msgid "Send login list"
-msgstr ""
+msgstr "Odeslat seznam přihlášených"
 
 #: server/views/DevicesView.qml:195
 msgctxt "DevicesView|"
 msgid "Disconnect selected pupils"
-msgstr ""
+msgstr "Odpojit vybrané žáky"
 
 #: server/views/DevicesView.qml:213
 msgctxt "DevicesView|"
 msgid "Disconnect everybody"
-msgstr ""
+msgstr "Odpojit všechny"
 
 #: server/views/DevicesView.qml:229
 msgctxt "DevicesView|"
 msgid "Server ID:"
-msgstr ""
+msgstr "ID serveru:"
 
 #: server/views/DevicesView.qml:236
 msgctxt "DevicesView|"
 msgid "Teacher port:"
-msgstr ""
+msgstr "Port učitele:"
 
 #: server/views/DevicesView.qml:243
 msgctxt "DevicesView|"
 msgid "Connected:"
-msgstr ""
+msgstr "Připojeno:"
 
 #: server/views/DevicesView.qml:250
 msgctxt "DevicesView|"
 msgid "Logged in:"
-msgstr ""
+msgstr "Přihlášeno v:"
 
 #: server/views/DevicesView.qml:257
 msgctxt "DevicesView|"
 msgid "Data received:"
-msgstr ""
+msgstr "Přijatá data:"
 
 #: server/views/DevicesView.qml:285
 msgctxt "DevicesView|"
 msgid "Network logs"
-msgstr ""
+msgstr "Síťové protokoly"
 
 #: server/views/DevicesView.qml:297
 msgctxt "DevicesView|"
 msgid "Clear logs"
-msgstr ""
+msgstr "Smazat protokoly"
 
 #: server/views/DevicesView.qml:317
 #, qt-format
 msgctxt "DevicesView|"
 msgid "Server already running on port %1"
-msgstr ""
+msgstr "Server již běží na portu %1"
 
 #: server/views/LoginView.qml:43
 msgctxt "LoginView|"
 msgid "Incorrect password"
-msgstr ""
+msgstr "Špatné heslo"
 
 #: server/views/LoginView.qml:47
 msgctxt "LoginView|"
 msgid "GCompris-teachers is already running on this computer"
-msgstr ""
+msgstr "Na tomto počítači již běží GCompris - učitelé"
 
 #: server/views/LoginView.qml:48
 msgctxt "LoginView|"
 msgid "Only data browsing is permitted"
-msgstr ""
+msgstr "Je povoleno pouze procházení dat"
 
 #: server/views/LoginView.qml:89
 msgctxt "LoginView|"
 msgid "Teacher login"
-msgstr ""
+msgstr "Přihlašovací jméno učitele"
 
 #: server/views/LoginView.qml:110
 msgctxt "LoginView|"
 msgid "Password"
-msgstr ""
+msgstr "Heslo"
 
 #: server/views/LoginView.qml:128
 msgctxt "LoginView|"
 msgid "Login"
-msgstr ""
+msgstr "Přihlášení"
 
 #: server/views/LoginView.qml:137
 msgctxt "LoginView|"
 msgid "Create teacher database"
-msgstr ""
+msgstr "Vytvořit databázi učitele"
 
 #: server/views/LoginView.qml:158
 msgctxt "LoginView|"
 msgid "Database file:"
-msgstr ""
+msgstr "Databázový soubor:"
 
 #: server/views/ManagePupilsView.qml:34 server/views/ManagePupilsView.qml:149
 msgctxt "ManagePupilsView|"
 msgid "Add a group"
-msgstr ""
+msgstr "Přidat skupinu"
 
 #: server/views/ManagePupilsView.qml:44
 msgctxt "ManagePupilsView|"
 msgid "Are you sure you want to remove this group?"
-msgstr ""
+msgstr "Opravdu chcete tuto skupinu odstranit?"
 
 #: server/views/ManagePupilsView.qml:45
 msgctxt "ManagePupilsView|"
 msgid "Pupils will not be removed."
-msgstr ""
+msgstr "Žáci nebudou odstraněni."
 
 #: server/views/ManagePupilsView.qml:52
 msgctxt "ManagePupilsView|"
 msgid "Edit group"
-msgstr ""
+msgstr "Upravit skupinu"
 
 #: server/views/ManagePupilsView.qml:68 server/views/ManagePupilsView.qml:207
 msgctxt "ManagePupilsView|"
 msgid "Add a pupil"
-msgstr ""
+msgstr "Přidat žáka"
 
 #: server/views/ManagePupilsView.qml:74
 msgctxt "ManagePupilsView|"
 msgid "Edit pupil's name and groups"
-msgstr ""
+msgstr "Upravit jméno žáka a skupiny"
 
 #: server/views/ManagePupilsView.qml:122
 msgctxt "ManagePupilsView|"
 msgid "Groups"
-msgstr ""
+msgstr "Skupiny"
 
 #: server/views/ManagePupilsView.qml:159
 msgctxt "ManagePupilsView|"
 msgid "Pupils and groups"
-msgstr ""
+msgstr "Žáci a skupiny"
 
 #: server/views/ManagePupilsView.qml:188
 msgctxt "ManagePupilsView|"
 msgid "Pupils management"
-msgstr ""
+msgstr "Správa žáků"
 
 #: server/views/ManagePupilsView.qml:216
 msgctxt "ManagePupilsView|"
 msgid "Add to groups"
-msgstr ""
+msgstr "Přidat ke skupině"
 
 #: server/views/ManagePupilsView.qml:225
 msgctxt "ManagePupilsView|"
 msgid "Remove from groups"
-msgstr ""
+msgstr "Odstranit ze skupiny"
 
 #: server/views/ManagePupilsView.qml:234
 msgctxt "ManagePupilsView|"
 msgid "Export pupils"
-msgstr ""
+msgstr "Exportovat žáky"
 
 #: server/views/ManagePupilsView.qml:242
 msgctxt "ManagePupilsView|"
 msgid "Import pupils"
-msgstr ""
+msgstr "Importovat žáky"
 
 #: server/views/ManagePupilsView.qml:251
 msgctxt "ManagePupilsView|"
 msgid "Remove pupils"
-msgstr ""
+msgstr "Odstranit žáky"
 
 #: server/views/SequencesView.qml:67
 msgctxt "SequencesView|"
 msgid "Sequences"
-msgstr ""
+msgstr "Sekvence"
 
 #: server/views/SequencesView.qml:102
 msgctxt "SequencesView|"
 msgid "Details"
-msgstr ""
+msgstr "Podrobnosti"
 
 #: server/views/SequencesView.qml:169
 msgctxt "SequencesView|"
 msgid "Sequences management"
-msgstr ""
+msgstr "Správa sekvencí"
 
 #: server/views/SequencesView.qml:187
 msgctxt "SequencesView|"
 msgid "Create sequence"
-msgstr ""
+msgstr "Vytvořit sekvenci"
 
 #: server/views/SequencesView.qml:195
 msgctxt "SequencesView|"
 msgid "Update sequence"
-msgstr ""
+msgstr "Aktualizovat sekvenci"
 
 #: server/views/SequencesView.qml:204
 msgctxt "SequencesView|"
 msgid "Send sequence to clients"
-msgstr ""
+msgstr "Odeslat sekvenci klientům"
 
 #: server/views/SequencesView.qml:247
 msgctxt "SequencesView|"
 msgid "Delete sequence"
-msgstr ""
+msgstr "Smazat sekvenci"
 
 #: server/views/SettingsView.qml:65
 msgctxt "SettingsView|"
 msgid "Menu panel"
-msgstr ""
+msgstr "Panel nabídky"
 
 #: server/views/SettingsView.qml:66
 msgctxt "SettingsView|"
 msgid "Left"
-msgstr ""
+msgstr "Vlevo"
 
 #: server/views/SettingsView.qml:66
 msgctxt "SettingsView|"
 msgid "Right"
-msgstr ""
+msgstr "Vpravo"
 
 #: server/views/SettingsView.qml:77
 msgctxt "SettingsView|"
 msgid "Font size"
-msgstr ""
+msgstr "Velikost písma"
 
 #: server/views/SettingsView.qml:87
 msgctxt "SettingsView|"
 msgid "Theme"
-msgstr ""
+msgstr "Motiv"
 
 #: server/views/SettingsView.qml:88
 msgctxt "SettingsView|"
 msgid "Dark"
-msgstr ""
+msgstr "Tmavý"
 
 #: server/views/SettingsView.qml:88
 msgctxt "SettingsView|"
 msgid "Light"
-msgstr ""
+msgstr "Světlý"
 
 #: server/views/SettingsView.qml:103
 msgctxt "SettingsView|"
 msgid "Language selector"
-msgstr ""
+msgstr "Výběr jazyka"
 
 #: server/views/SettingsView.qml:149
 msgctxt "SettingsView|"
 msgid "Server ID"
-msgstr ""
+msgstr "ID serveru"
 
 #: server/views/SettingsView.qml:171
 msgctxt "SettingsView|"
 msgid "Port"
-msgstr ""
+msgstr "Port"
 
 #: server/views/SettingsView.qml:188
 msgctxt "SettingsView|"
 msgid "Server status"
-msgstr ""
+msgstr "Stav serveru"
 
 #: server/views/SettingsView.qml:189
 msgctxt "SettingsView|As in 'The server is running'"
 msgid "Running"
-msgstr ""
+msgstr "Spuštěno"
 
 #: server/views/SettingsView.qml:189
 #, qt-format
 msgctxt "SettingsView|As in 'The Server is already running on port %1'"
 msgid "Already running on port %1"
-msgstr ""
+msgstr "Již běží na portu %1"
 
 #: server/views/SettingsView.qml:197
 msgctxt "SettingsView|"
 msgid "Host name"
-msgstr ""
+msgstr "Název hostitele"
 
 #: server/views/SettingsView.qml:204
 msgctxt "SettingsView|"
 msgid "Server IP"
-msgstr ""
+msgstr "IP serveru"
 
 #: server/views/SettingsView.qml:211
 msgctxt "SettingsView|"
 msgid "Broadcast IPs"
-msgstr ""
+msgstr "IP adresy broadcastu"
 
 #: server/views/SettingsView.qml:218
 msgctxt "SettingsView|"
 msgid "Netmask"
-msgstr ""
+msgstr "Maska sítě"
 
 #: server/views/SettingsView.qml:223
 msgctxt "SettingsView|"
 msgid "MAC address"
-msgstr ""
+msgstr "MAC adresa"
 
 #: server/views/SettingsView.qml:230
 msgctxt "SettingsView|"
 msgid "GCompris version"
-msgstr ""
+msgstr "Verze GCompris"
 
 #: server/views/SettingsView.qml:237
 msgctxt "SettingsView|"
 msgid "Qt version"
-msgstr ""
+msgstr "Verze Qt"
 
 #: server/views/SettingsView.qml:250
 msgctxt "SettingsView|"
 msgid "Teacher login"
-msgstr ""
+msgstr "Přihlašovací jméno učitele"
 
 #: server/views/SettingsView.qml:258
 msgctxt "SettingsView|"
 msgid "Database file"
-msgstr ""
+msgstr "Databázový soubor"
 
 #: server/views/SettingsView.qml:265
 msgctxt "SettingsView|"
 msgid "Encrypted database"
-msgstr ""
+msgstr "Šifrovaná databáze"
 
 #: server/views/SettingsView.qml:266
 msgctxt "SettingsView|"
 msgid "Yes"
-msgstr ""
+msgstr "Ano"
 
 #: server/views/SettingsView.qml:266
 msgctxt "SettingsView|"
 msgid "No"
-msgstr ""
+msgstr "Ne"
 
 #: server/views/SettingsView.qml:271
 msgctxt "SettingsView|"
 msgid "Pupils"
-msgstr ""
+msgstr "Žáci"
 
 #: server/views/SettingsView.qml:277
 msgctxt "SettingsView|"
 msgid "Groups"
-msgstr ""
+msgstr "Skupiny"
 
 #: server/views/SettingsView.qml:290
 msgctxt "SettingsView|"
 msgid "Pupils connected"
-msgstr ""
+msgstr "Žáci připojeni"
 
 #: server/views/SettingsView.qml:297
 msgctxt "SettingsView|"
 msgid "Pupils logged in"
-msgstr ""
+msgstr "Žáci připojeni v"
 
 #: server/views/SettingsView.qml:304
 msgctxt "SettingsView|"
 msgid "Activities data received"
-msgstr ""
+msgstr "Přijatá data o aktivitách"
