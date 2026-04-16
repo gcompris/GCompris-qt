@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-04-14 18:11+0200\n"
+"PO-Revision-Date: 2026-04-14 18:43+0200\n"
 "Last-Translator: Libor Filípek <filipek.libor@protonmail.com>\n"
 "Language-Team: \n"
 "Language: cs\n"
@@ -27899,7 +27899,8 @@ msgctxt "DialogAbout|"
 msgid "translator-credits"
 msgstr ""
 "Jan Papež<br/>Vít Pelčák<br/>Miloslav Trmač<br/>Naďa Pourová<br/>Martin "
-"Šín<br/>Martin Schwarz<br/>Kamil Páral<br/>Petr Kovář<br/>Marek Černocký<br/>"
+"Šín<br/>Martin Schwarz<br/>Kamil Páral<br/>Petr Kovář<br/>Marek Černocký<br/"
+"> Libor Filípek<br/>"
 
 #: core/DialogAbout.qml:55
 #, qt-format
