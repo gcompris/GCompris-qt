@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-04-14 23:21+0300\n"
+"PO-Revision-Date: 2026-04-16 09:36+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
 #: server/activities/binary_bulb/ActivityEditor.qml:12
@@ -1353,7 +1353,7 @@ msgstr "ממתקים לבנים:"
 #: server/activities/share/ShareDataDisplay.qml:224
 msgctxt "ShareDataDisplay|"
 msgid "Jar placed:"
-msgstr ""
+msgstr "הוצבו בצנצנת:"
 
 #: server/activities/share/ShareDataDisplay.qml:234
 msgctxt "ShareDataDisplay|"
@@ -1387,6 +1387,8 @@ msgid ""
 "If \"Random numbers\" is selected, the number of already placed candies per "
 "child must be defined such that not all candies are already placed."
 msgstr ""
+"אם נבחרה האפשרות „מספרים אקראיים”, חובה להגדיר את מספר הממתקים שכבר הוצבו "
+"עבור כל ילד כך שלא כל הממתקים כבר הוצבו."
 
 #: server/activities/share/ShareEditor.qml:28
 msgctxt "ShareEditor|"
@@ -1394,6 +1396,8 @@ msgid ""
 "The \"Instruction\" field allows to give a specific instruction for each "
 "sublevel. If it is empty, a default instruction text is used."
 msgstr ""
+"שדה ה„הנחיות” מאפשר לך לספק הנחיה נקודתית לכל תת־שלב. אם הוא ריק, נעשה שימוש "
+"בטקסט הנחיה כברירת מחדל."
 
 #: server/activities/share/ShareEditor.qml:33
 msgctxt "ShareEditor|"
@@ -1458,7 +1462,7 @@ msgstr "כמות הממתקים המרבית"
 #: server/activities/share/ShareEditor.qml:55
 msgctxt "ShareEditor|"
 msgid "Already place some candies"
-msgstr ""
+msgstr "כבר הוצבו כמה ממתקים"
 
 #: server/activities/share/ShareEditor.qml:58
 msgctxt "ShareEditor|"
