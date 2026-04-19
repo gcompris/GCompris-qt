@@ -1,12 +1,12 @@
 # (null) <>, 2026.
-# Samyak Vidhan <CrazyCourt651@gmail.com>, 2026.
+# SPDX-FileCopyrightText: 2026 Samyak Vidhan <CrazyCourt651@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\\\\n\\n\n"
-"PO-Revision-Date: 2026-04-12 19:12+0530\n"
-"Last-Translator: Samyak Vidhan <CrazyCourt651@gmail.com>\n"
-"Language-Team: Gujarati\n"
+"PO-Revision-Date: 2026-04-18 22:30+0530\n"
+"Last-Translator: Samyak Vidhan <crazycourt651@gmail.com>\n"
+"Language-Team: gu\n"
 "Language: gu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-DL-Lang: gu\n"
 "X-DL-Module: Gcompris\n"
-"X-Generator: Gtranslator 50.0\n"
+"X-Generator: Lokalize 25.08.1\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -58,13 +58,13 @@ msgstr "જવાબો ચકાસો"
 #: activities/adjacent_numbers/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find the adjacent numbers"
-msgstr "બાજુના અંકો શોધો"
+msgstr "નજીકની સંખ્યાઓ શોધો"
 
 #. Help title
 #: activities/adjacent_numbers/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the missing adjacent numbers."
-msgstr "ખૂટતા બાજુના અંકો શોધો."
+msgstr "ખૂટતા નજીકની સંખ્યાઓ શોધો."
 
 #. Help goal
 #: activities/adjacent_numbers/ActivityInfo.qml:19
@@ -162,7 +162,7 @@ msgstr "અસામાન્ય રંગો ઓળખતા શીખો."
 #: activities/positions/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Can read."
-msgstr "વાંચી શકાય છે."
+msgstr "વાંચી શકતા હોવા જોઈએ."
 
 #. Help manual
 #: activities/advanced_colors/ActivityInfo.qml:24
@@ -1613,7 +1613,7 @@ msgid ""
 "supplied voltage. It will be broken if there is a power greater than a "
 "certain limit."
 msgstr ""
-"જ્યારે બલ્બને પૂરતી શક્તિ મળે છે ત્યારે તે ચમકે છે. તેની તીવ્રતા સપ્લાય થયેલ વોલ્ટેજ પર આધાર "
+"જ્યારે બલ્બને પૂરતો પાવર મળે છે ત્યારે તે ચમકે છે. તેની તીવ્રતા સપ્લાય થયેલ વોલ્ટેજ પર આધાર "
 "રાખે છે. જો ચોક્કસ મર્યાદા કરતાં વધુ પાવર હોય તો તે તૂટી જશે."
 
 #. 1st V for Voltage, 2nd V for Volt
@@ -2422,7 +2422,7 @@ msgstr "વપરાશકર્તા"
 #: activities/balancebox/ActivityConfig.qml:34
 msgctxt "ActivityConfig|"
 msgid "Select your level set"
-msgstr "તમારો લેવલ સેટ પસંદ કરો."
+msgstr "તમારો સ્તર સમૂહ પસંદ કરો."
 
 #: activities/balancebox/ActivityConfig.qml:41
 msgctxt "ActivityConfig|"
@@ -2437,12 +2437,12 @@ msgstr "એડિટર વાપરવા માટે પ્રવૃત્ત
 #: activities/balancebox/ActivityConfig.qml:51
 msgctxt "ActivityConfig|"
 msgid "Load saved levels"
-msgstr "સાચવેલા લેવલ લોડ કરો"
+msgstr "સાચવેલા સ્તર લોડ કરો"
 
 #: activities/balancebox/ActivityConfig.qml:51
 msgctxt "ActivityConfig|"
 msgid "Start the activity to load your levels"
-msgstr "તમારા લેવલ લોડ કરવા માટે પ્રવૃત્તિ શરૂ કરો."
+msgstr "તમારા સ્તર લોડ કરવા માટે પ્રવૃત્તિ શરૂ કરો."
 
 #. Activity title
 #: activities/balancebox/ActivityInfo.qml:18
@@ -2484,9 +2484,9 @@ msgid ""
 "set, select the 'user' level set and start the level editor by clicking on "
 "the corresponding button."
 msgstr ""
-"પ્રવૃત્તિ સેટિંગ્સ મેનૂમાં, તમે ડિફોલ્ટ 'બિલ્ટ-ઇન' લેવલ સેટ અને તમે જાતે બનાવી શકો તેવા "
-"('યુઝર') લેવલ સેટ વચ્ચે પસંદગી કરી શકો છો. લેવલ સેટ બનાવવા માટે, 'યુઝર' લેવલ સેટ પસંદ કરો "
-"અને સંબંધિત બટન પર ક્લિક કરીને લેવલ એડિટર શરૂ કરો."
+"પ્રવૃત્તિ સેટિંગ્સ મેનૂમાં, તમે ડિફોલ્ટ 'બિલ્ટ-ઇન' સ્તર સમૂહ અને તમે જાતે બનાવી શકો તેવા "
+"('યુઝર') સ્તર સમૂહ વચ્ચે પસંદગી કરી શકો છો. સ્તર સમૂહ બનાવવા માટે, 'યુઝર' સ્તર સેટ પસંદ "
+"કરો અને સંબંધિત બટન પર ક્લિક કરીને સ્તર એડિટર શરૂ કરો."
 
 #: activities/balancebox/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -2495,8 +2495,8 @@ msgid ""
 "editing tools on the side to modify the map cells of the currently active "
 "level in the editor:"
 msgstr ""
-"<b>લેવલ એડિટર</b>માં તમે તમારા પોતાના લેવલ બનાવી શકો છો. એડિટરમાં હાલમાં સક્રિય "
-"લેવલના નકશા કોષોને સુધારવા માટે બાજુ પરના એડિટિંગ ટૂલ્સમાંથી એક પસંદ કરો:"
+"<b>સ્તર એડિટર</b>માં તમે તમારા પોતાના સ્તર બનાવી શકો છો. એડિટરમાં હાલમાં સક્રિય "
+"સ્તરના નકશા કોષોને સુધારવા માટે બાજુ પરના એડિટિંગ ટૂલ્સમાંથી એક પસંદ કરો:"
 
 #: activities/balancebox/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -2558,7 +2558,7 @@ msgid ""
 "button on the bar or by pressing escape on your keyboard or the back-button "
 "on your mobile device."
 msgstr ""
-"તમે એડિટર વ્યુની બાજુમાં આવેલા 'ટેસ્ટ' બટન પર ક્લિક કરીને સુધારેલા લેવલને ચકાસી શકો છો. તમે "
+"તમે એડિટર વ્યુની બાજુમાં આવેલા 'ટેસ્ટ' બટન પર ક્લિક કરીને સુધારેલા સ્તરને ચકાસી શકો છો. તમે "
 "બાર પરના હોમ-બટન પર ક્લિક કરીને અથવા તમારા કીબોર્ડ પર એસ્કેપ દબાવીને અથવા તમારા "
 "મોબાઇલ ડિવાઇસ પરના બેક-બટન દ્વારા ટેસ્ટિંગ મોડમાંથી પાછા આવી શકો છો."
 
@@ -2569,8 +2569,8 @@ msgid ""
 "buttons on the bar. Back in the editor you can continue editing the current "
 "level and test it again if needed."
 msgstr ""
-"એડિટરમાં તમે બાર પરના એરો બટનોનો ઉપયોગ કરીને હાલમાં સંપાદિત લેવલ બદલી શકો છો. "
-"એડિટરમાં પાછા આવીને તમે વર્તમાન લેવલને સંપાદિત કરવાનું ચાલુ રાખી શકો છો અને જરૂર જણાય તો "
+"એડિટરમાં તમે બાર પરના એરો બટનોનો ઉપયોગ કરીને હાલમાં સંપાદિત સ્તર બદલી શકો છો. "
+"એડિટરમાં પાછા આવીને તમે વર્તમાન સ્તરને સંપાદિત કરવાનું ચાલુ રાખી શકો છો અને જરૂર જણાય તો "
 "તેને ફરીથી ચકાસી શકો છો."
 
 #: activities/balancebox/ActivityInfo.qml:42
@@ -2579,7 +2579,7 @@ msgid ""
 "When your level is finished you can save it to a file by clicking on the "
 "'Save' button on the side."
 msgstr ""
-"જ્યારે તમારું લેવલ પૂરું થઈ જાય, ત્યારે તમે બાજુ પરના 'સેવ' બટન પર ક્લિક કરીને તેને ફાઇલમાં સેવ "
+"જ્યારે તમારું સ્તર પૂરું થઈ જાય, ત્યારે તમે બાજુ પરના 'સેવ' બટન પર ક્લિક કરીને તેને ફાઇલમાં સેવ "
 "કરી શકો છો."
 
 #: activities/balancebox/ActivityInfo.qml:43
@@ -2595,7 +2595,8 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid ""
 "Finally, to load your level set, click on the 'Load saved levels' button."
-msgstr "છેલ્લે, તમારો લેવલ સેટ લોડ કરવા માટે, 'સેવ કરેલા લેવલ લોડ કરો' બટન પર ક્લિક કરો."
+msgstr ""
+"છેલ્લે, તમારો સ્તર સમૂહ લોડ કરવા માટે, 'સેવ કરેલા સ્તર લોડ કરો' બટન પર ક્લિક કરો."
 
 #: activities/balancebox/balancebox.js:71
 msgctxt "balancebox|"
@@ -2603,14 +2604,14 @@ msgid ""
 "Either create your levels by starting the level editor in the activity "
 "settings menu and then load your file, or choose the 'built-in' level set."
 msgstr ""
-"પ્રવૃત્તિ સેટિંગ્સ મેનૂમાં લેવલ એડિટર શરૂ કરીને તમારા લેવલ બનાવો અને પછી તમારી ફાઇલ લોડ "
-"કરો, અથવા 'બિલ્ટ-ઇન' લેવલ સેટ પસંદ કરો."
+"પ્રવૃત્તિ સેટિંગ્સ મેનૂમાં સ્તર એડિટર શરૂ કરીને તમારા સ્તર બનાવો અને પછી તમારી ફાઇલ લોડ "
+"કરો, અથવા 'બિલ્ટ-ઇન' સ્તર સમૂહ પસંદ કરો."
 
 #: activities/balancebox/balancebox.js:105
 #, qt-format
 msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
-msgstr "ફાઇલ '%1' ખૂટે છે!<br>બિલ્ટ-ઇન લેવલ પર પાછા આવી રહ્યા છીએ."
+msgstr "ફાઇલ '%1' ખૂટે છે!<br>બિલ્ટ-ઇન સ્તર પર પાછા આવી રહ્યા છીએ."
 
 #: activities/balancebox/Balancebox.qml:74
 msgctxt "Balancebox|"
@@ -2618,7 +2619,7 @@ msgid ""
 "You selected the user-defined level set, but you have not yet loaded any "
 "user level!"
 msgstr ""
-"તમે વપરાશકર્તા-નિર્ધારિત લેવલ સેટ પસંદ કર્યો છે, પરંતુ તમે હજી સુધી કોઈ વપરાશકર્તા લેવલ "
+"તમે વપરાશકર્તા-નિર્ધારિત સ્તર સમૂહ પસંદ કર્યો છે, પરંતુ તમે હજી સુધી કોઈ વપરાશકર્તા સ્તર "
 "લોડ કર્યું નથી!"
 
 #: activities/balancebox/Balancebox.qml:76
@@ -2632,7 +2633,7 @@ msgid ""
 "You have unsaved changes!<br/> Do you really want to leave this level and "
 "lose your changes?"
 msgstr ""
-"તમારી પાસે સેવ ન કરેલા ફેરફારો છે!<br/> શું તમે ખરેખર આ લેવલ છોડીને તમારા ફેરફારો ગુમાવવા "
+"તમારી પાસે સેવ ન કરેલા ફેરફારો છે!<br/> શું તમે ખરેખર આ સ્તર છોડીને તમારા ફેરફારો ગુમાવવા "
 "માંગો છો?"
 
 #: activities/balancebox/editor/balanceboxeditor.js:256
@@ -3256,7 +3257,7 @@ msgid ""
 "In some levels, you need to find the day of the week for a given date. In "
 "this case, click on the corresponding day of the week in the list."
 msgstr ""
-"કેટલાક લેવલમાં, તમને આપેલી તારીખનો અઠવાડિયાનો કયો દિવસ છે તે શોધવાનું હોય છે. ત્યારે, "
+"કેટલાક સ્તરમાં, તમને આપેલી તારીખનો અઠવાડિયાનો કયો દિવસ છે તે શોધવાનું હોય છે. ત્યારે, "
 "યાદીમાંથી અઠવાડિયાના સાચા દિવસ પર ક્લિક કરો."
 
 #: activities/calendar/ActivityInfo.qml:26
@@ -3566,7 +3567,7 @@ msgstr ""
 #: activities/canal_lock/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Understand how a canal lock works."
-msgstr "નહેરનું તાળું કેવી રીતે કામ કરે છે તે સમજો."
+msgstr "નહેરના લોકની કાર્યપદ્ધતિ સમજો"
 
 #. Help manual
 #: activities/canal_lock/ActivityInfo.qml:23
@@ -3659,7 +3660,7 @@ msgid ""
 "show this dialog again' to play with the demo version."
 msgstr ""
 "તમારી પાસે આ પ્રવૃત્તિ માટેની બધી છબીઓ નથી. સંપૂર્ણ શબ્દ છબી સેટ ડાઉનલોડ કરવા માટે "
-"'ચિત્ર સમૂહ અપડેટ કરો' પર ક્લિક કરો. ડેમો સંસ્કરણ સાથે રમવા માટે ક્રોસ પર અથવા 'આ સંવાદ "
+"'ચિત્ર સમૂહ અપડેટ કરો' પર ક્લિક કરો. ડેમો આવૃત્તિ સાથે રમવા માટે ક્રોસ પર અથવા 'આ સંવાદ "
 "ફરી ક્યારેય બતાવશો નહીં' પર ક્લિક કરો."
 
 #: activities/categorization/Categorization.qml:159
@@ -4227,7 +4228,7 @@ msgstr ""
 #: activities/checkers_2players/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "This version of checkers follows the rules of international draughts."
-msgstr "આ ચેકર્સ સંસ્કરણ આંતરરાષ્ટ્રીય ડ્રાફ્ટના નિયમોનું પાલન કરે છે."
+msgstr "આ ચેકર્સ આવૃત્તિ આંતરરાષ્ટ્રીય ડ્રાફ્ટના નિયમોનું પાલન કરે છે."
 
 #: activities/checkers/ActivityInfo.qml:29
 #: activities/checkers_2players/ActivityInfo.qml:27
@@ -4238,7 +4239,7 @@ msgid ""
 "Draughts&gt;"
 msgstr ""
 "ચેકર્સ લાયબ્રેરી draughts.js &lt;https://github.com/shubhendusaurabh/draughts."
-"js&gt; છે. મેન્યુઅલ વિકિપીડિયા &lt;https://en.wikipedia.org/wiki/Draughts&gt; "
+"js&gt; છે.વિકિપીડિયા સૂચનાઓ &lt;https://en.wikipedia.org/wiki/Draughts&gt; "
 "પરથી છે."
 
 #: activities/checkers/checkers.js:68
@@ -4947,7 +4948,7 @@ msgstr "મોટા અક્ષરોના નામ ઓળખો."
 #: activities/number_sequence/ActivityConfig.qml:24
 msgctxt "ActivityConfig|"
 msgid "Manual"
-msgstr "મેન્યુઅલ"
+msgstr "સૂચનાઓ"
 
 #: activities/clickanddraw/ActivityConfig.qml:32
 #: activities/drawletters/ActivityConfig.qml:32
@@ -5536,33 +5537,27 @@ msgid "2 decimal places between 0 and 99.99."
 msgstr "0 અને 99.99 ની વચ્ચે 2 દશાંશ સ્થળો."
 
 #: activities/compass/ActivityConfig.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Free Mode"
 msgctxt "ActivityConfig|"
 msgid "Template Mode"
-msgstr "મુક્ત મોડ"
+msgstr "નમૂના મોડ"
 
 #. Activity title
 #: activities/compass/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Compass"
-msgstr ""
+msgstr "પરિકર"
 
 #. Help title
 #: activities/compass/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Use the compass to draw."
-msgstr ""
+msgstr "દોરવા માટે પરિકરનો ઉપયોગ કરો"
 
 #. Help goal
 #: activities/compass/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to draw letters in a fun way."
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw circles and arcs with a compass."
-msgstr "મનોરંજક રીતે અક્ષરો કેવી રીતે દોરવા તે શીખો."
+msgstr "પરિકર વડે વર્તુળ તેમજ ચાપ કેવી રીતે દોરવા તે શીખો."
 
 #. Help manual
 #: activities/compass/ActivityInfo.qml:23
@@ -5572,32 +5567,30 @@ msgid ""
 "inspiration from. In free mode, you can draw freely and adjust the canvas "
 "size and grid spacing as you want from the compass settings menu."
 msgstr ""
+"નમૂના મોડમાં, દરેક સ્તર એક ટેમ્પલેટ ધરાવે છે જેની તમે નકલ કરી શકો છો અથવા તેમાથી પ્રેરણા "
+"મેળવી શકો છો.મુક્ત મોડમાં તમે મનચાહી રીતે દોરી શકો છો  અને કેનવાસનુ કદ પસંદ કરી શકો છો "
+"તેમજ સહાયક જાળીઓ વચ્ચેનુ અંતર પણ પરિકરની ગોઠવણમાંથી બદલી શકો છો."
 
 #: activities/compass/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "<br><b>Drawing with the compass:</b>"
-msgstr ""
+msgstr "<br><b>પરિકર વડે દોરવુ:</b>"
 
 #: activities/compass/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Move the compass by dragging the leg without the pen."
-msgstr ""
+msgstr "પરિકરને ખસેડવા માટે તેનો પેન વગરનો છેડો પકડીને ખસેડો."
 
 #: activities/compass/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Complete the puzzle by dragging each piece on the side to the matching "
-#| "spot."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move the pen by dragging the other leg or the circle around the pen tip."
-msgstr "બાજુના દરેક ટુકડાને ખેંચીને તેની સાચી જગ્યાએ મૂકીને પઝલ પૂરી કરો."
+msgstr "પેનને ખસેડવા માટે તેનો બીજો છેડો અથવા પેનની અણી પાસેનુ વર્તુળ પકડીને ખસેડો."
 
 #: activities/compass/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Rotate and draw by dragging the pen with the left mouse button."
-msgstr ""
+msgstr "માઉસના ડાબા બટન વડે પેનને ખેંચીને ફેરવો અને ચિત્ર દોરો."
 
 #: activities/compass/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -5605,28 +5598,27 @@ msgid ""
 "Rotate without drawing by dragging the compass hinge, or by dragging the pen "
 "with the right mouse button."
 msgstr ""
+"ચિત્ર દોર્યા વગર ફેરવવા માટે કંપાસના મિજાગરાને ખેંચો, અથવા માઉસના જમણા બટન વડે પેનને "
+"ખેંચો."
 
 #: activities/compass/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid ""
 "The snap to grid setting can be temporarily inverted by pressing the Control "
 "key."
-msgstr ""
+msgstr "કંટ્રોલ કી દબાવી રાખવાથી 'સ્નેપ ટુ ગ્રીડ' સેટિંગને થોડા સમય માટે થોભાવી શકાય છે."
 
 #: activities/compass/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "<b>Diving planes</b>"
 msgctxt "ActivityInfo|"
 msgid "<b>Templates:</b>"
-msgstr "<b>ડાઇવિંગ પ્લેન્સ</b>"
+msgstr "<b>ટેમ્પલેટો</b>"
 
 #: activities/compass/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid ""
 "Each level in template mode presents a template to replicate or to get "
 "inspiration from."
-msgstr ""
+msgstr "ટેમ્પલેટ મોડમાં દરેક સ્તર નકલ કરવા માટે અથવા પ્રેરણા લેવા માટે એક નમૂનો રજૂ કરે છે."
 
 #: activities/compass/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -5634,21 +5626,19 @@ msgid ""
 "Each template is divided into steps which can be scrolled through using the "
 "arrows."
 msgstr ""
+"દરેક નમૂનાને અલગ-અલગ પગલાઓમાં વહેંચવામાં આવ્યો છે, જેને તીરનો ઉપયોગ કરીને જોઈ શકાય છે."
 
 #: activities/compass/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid ""
 "Each step shows where to place the tip of the compass and the circle or arc "
 "to be drawn."
-msgstr ""
+msgstr "દરેક સ્ટેપ બતાવે છે કે પરિકરની અણી ક્યાં રાખવી અને કયું વર્તુળ અથવા ચાપ દોરવો."
 
 #: activities/compass/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid "You can change the rheostat value by dragging its slider."
 msgctxt "ActivityInfo|"
 msgid "You can change the position of the template by clicking on its corners."
-msgstr "તમે રિયોસ્ટેટના સ્લાઇડરને ખેંચીને તેનું મૂલ્ય બદલી શકો છો."
+msgstr "તમે ટેમ્પલેટના ખૂણાઓ પર ક્લિક કરીને તેનું સ્થાન બદલી શકો છો."
 
 #: activities/compass/ActivityInfo.qml:36
 #: activities/drawing_wheels/ActivityInfo.qml:29
@@ -5681,80 +5671,59 @@ msgstr "Ctrl + O: ઇમેજ ખોલો"
 #: activities/compass/ActivityInfo.qml:40
 msgctxt "ActivityInfo|"
 msgid "Ctrl: invert snap to grid while it is pressed"
-msgstr ""
+msgstr "Ctrl: કી દબાવી રાખવા દરમિયાન 'સ્નેપ ટુ ગ્રીડ' ઉલટાવો"
 
 #: activities/compass/ActivityInfo.qml:41
 msgctxt "ActivityInfo|"
 msgid "P: open the pen panel"
-msgstr ""
+msgstr "P: પેન પેનલ ખોલો"
 
 #: activities/compass/ActivityInfo.qml:42
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Down arrow: select previous item"
 msgctxt "ActivityInfo|"
 msgid "Left arrow: previous template step"
-msgstr "નીચેની એરો કી: અગાઉની વસ્તુ પસંદ કરો"
+msgstr "ડાબું તીર: ટેમ્પલેટનું પાછલું પગલુ"
 
 #: activities/compass/ActivityInfo.qml:43
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Right arrow: right hand answer"
 msgctxt "ActivityInfo|"
 msgid "Right arrow: next template step"
-msgstr "જમણું એરો: જમણા હાથનો જવાબ"
+msgstr "જમણું તીર: ટેમ્પલેટનું આગળનું પગલુ"
 
 #: activities/compass/ActivityInfo.qml:44
 msgctxt "ActivityInfo|"
 msgid "Tab: toggle the template visibility"
-msgstr ""
+msgstr "Tab: ટેમ્પલેટની દૃશ્યતા ચાલુ/બંધ કરો"
 
 #: activities/compass/ActivityInfo.qml:45
 msgctxt "ActivityInfo|"
 msgid "Space: toggle the compass and grid visibility"
-msgstr ""
+msgstr "Space: પરિકર અને ગ્રીડની દૃશ્યતા ચાલુ/બંધ કરો"
 
 #: activities/compass/compass.js:103
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Free Mode"
 msgctxt "compass|"
 msgid "Free mode"
 msgstr "મુક્ત મોડ"
 
 #: activities/compass/Compass.qml:439
-#, fuzzy
-#| msgctxt "IntroMessage|"
-#| msgid "Previous"
 msgctxt "Compass|"
 msgid "Previous step"
-msgstr "પહેલાનું"
+msgstr "પહેલાનું પગલું"
 
 #: activities/compass/Compass.qml:464
-#, fuzzy
-#| msgctxt "IntroMessage|"
-#| msgid "Next"
 msgctxt "Compass|"
 msgid "Next step"
-msgstr "પછીનું"
+msgstr "આગળનૂ પગલુ"
 
 #: activities/compass/Compass.qml:477
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "All the words"
 msgctxt "Compass|"
 msgid "All steps"
-msgstr "બધા શબ્દો"
+msgstr "બધા પગલાઓ"
 
 #: activities/compass/Compass.qml:477
 msgctxt "Compass|"
 msgid "Current step"
-msgstr ""
+msgstr "હાલનૂ પગલુ"
 
 #: activities/compass/Compass.qml:549
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "File menu"
 msgctxt "Compass|"
 msgid "File menu"
 msgstr "ફાઇલ મેનુ"
@@ -5762,28 +5731,19 @@ msgstr "ફાઇલ મેનુ"
 #: activities/compass/Compass.qml:558
 msgctxt "Compass|"
 msgid "Compass and grid settings"
-msgstr ""
+msgstr "પરિકર અને ગર્િડની ગોઠવણો"
 
 #: activities/compass/Compass.qml:567
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "%1 settings"
 msgctxt "Compass|"
 msgid "Pen settings"
-msgstr "%1 સેટિંગ્સ"
+msgstr "પેનની ગોઠવણ"
 
 #: activities/compass/Compass.qml:588
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Undo"
 msgctxt "Compass|"
 msgid "Undo"
 msgstr "અનડૂ"
 
 #: activities/compass/Compass.qml:598
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Redo"
 msgctxt "Compass|"
 msgid "Redo"
 msgstr "રીડૂ"
@@ -5791,263 +5751,194 @@ msgstr "રીડૂ"
 #: activities/compass/Compass.qml:612
 msgctxt "Compass|"
 msgid "Show template"
-msgstr ""
+msgstr "નમુનો બતાવો"
 
 #: activities/compass/Compass.qml:612
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Golden Temple"
 msgctxt "Compass|"
 msgid "Hide template"
-msgstr "સુવર્ણ મંદિર"
+msgstr "નમુનો છુપાવો"
 
 #: activities/compass/Compass.qml:624
 msgctxt "Compass|"
 msgid "Show compass and grid"
-msgstr ""
+msgstr "પરિકર તેમજ ગ્રિડ બતાવો"
 
 #: activities/compass/Compass.qml:624
 msgctxt "Compass|"
 msgid "Hide compass and grid"
-msgstr ""
+msgstr "પરિકર તેમજ ગ્રિડ છુપાવો"
 
 #: activities/compass/Compass.qml:775
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Save your image"
 msgctxt "Compass|"
 msgid "Save your image"
 msgstr "તમારી છબી સાચવો"
 
 #: activities/compass/Compass.qml:790
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Open an image"
 msgctxt "Compass|"
 msgid "Open an image"
 msgstr "એક છબી ખોલો"
 
 #: activities/compass/Compass.qml:813
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Create a new image"
 msgctxt "Compass|"
 msgid "Create a new image"
 msgstr "નવી છબી બનાવો"
 
 #: activities/compass/Compass.qml:832
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Background color"
 msgctxt "Compass|"
 msgid "Background color"
 msgstr "બેકગ્રાઉન્ડ રંગ"
 
 #: activities/compass/Compass.qml:892
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Pen size"
 msgctxt "Compass|"
 msgid "Canvas size"
-msgstr "પેનનું કદ"
+msgstr "કેનવાસનું કદ"
 
 #: activities/compass/Compass.qml:962
 msgctxt "Compass|"
 msgid "Grid spacing"
-msgstr ""
+msgstr "ગ્રીડ વચ્ચેની જગ્યાં"
 
 #: activities/compass/Compass.qml:1013
 msgctxt "Compass|"
 msgid "Snap to grid"
-msgstr ""
+msgstr "ગ્રીડ સાથે જોડાણ"
 
 #: activities/compass/Compass.qml:1039
 msgctxt "Compass|"
 msgid "Show grid"
-msgstr ""
+msgstr "ગ્રીડ બતાવો"
 
 #: activities/compass/Compass.qml:1103
-#, fuzzy
-#| msgctxt "category_colors|"
-#| msgid "Colors"
 msgctxt "Compass|"
 msgid "Color"
-msgstr "રંગો"
+msgstr "રંગ"
 
 #: activities/compass/Compass.qml:1149
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Opacity"
 msgctxt "Compass|"
 msgid "Opacity"
 msgstr "અપારદર્શકતા"
 
 #: activities/compass/Compass.qml:1193
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Pen size"
 msgctxt "Compass|"
 msgid " Pen size"
 msgstr "પેનનું કદ"
 
 #: activities/compass/Compass.qml:1254
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "You did not save this image. Do you want to close this activity?"
 msgctxt "Compass|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "તમે આ છબી સાચવી નથી. શું તમે આ પ્રવૃત્તિ બંધ કરવા માંગો છો?"
 
 #: activities/compass/Compass.qml:1255
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Do you want to erase this image?"
 msgctxt "Compass|"
 msgid "Do you want to erase this image?"
 msgstr "શું તમે આ છબી ભૂંસી નાખવા માંગો છો?"
 
 #: activities/compass/Compass.qml:1256
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Compass|"
 msgid "Yes"
 msgstr "હા"
 
 #: activities/compass/Compass.qml:1257
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Compass|"
 msgid "No"
 msgstr "ના"
 
 #: activities/compass/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Third largest"
 msgctxt "Data|"
 msgid "The target"
-msgstr "ત્રીજો સૌથી મોટો"
+msgstr "લક્ષ્ય"
 
 #: activities/compass/resource/10/Data.qml:13
-#, fuzzy
-#| msgctxt "board8|"
-#| msgid "The Pantheon"
 msgctxt "Data|"
 msgid "The peony"
-msgstr "પેન્થિઓન"
+msgstr "પિઓની ફૂલ"
 
 #: activities/compass/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The same"
 msgctxt "Data|"
 msgid "The snail"
-msgstr "સરખું"
+msgstr "ગોકળગાય"
 
 #: activities/compass/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The same"
 msgctxt "Data|"
 msgid "The rose"
-msgstr "સરખું"
+msgstr "ગુલાબ"
 
 #: activities/compass/resource/13/Data.qml:13
 msgctxt "Data|"
 msgid "The swirl"
-msgstr ""
+msgstr "વમળ"
 
 #: activities/compass/resource/14/Data.qml:13
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The same"
 msgctxt "Data|"
 msgid "The spiral"
-msgstr "સરખું"
+msgstr "ગૂંચળું"
 
 #: activities/compass/resource/15/Data.qml:13
 msgctxt "Data|"
 msgid "The twist"
-msgstr ""
+msgstr "મરોડ"
 
 #: activities/compass/resource/16/Data.qml:15
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The same"
 msgctxt "Data|"
 msgid "The face"
-msgstr "સરખું"
+msgstr "ચહેરો"
 
 #: activities/compass/resource/17/Data.qml:15
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The same"
 msgctxt "Data|"
 msgid "The bear"
-msgstr "સરખું"
+msgstr "રીંછ"
 
 #: activities/compass/resource/18/Data.qml:14
 msgctxt "Data|"
 msgid "The lion"
-msgstr ""
+msgstr "સિંહ"
 
 #. The animal
 #: activities/compass/resource/19/Data.qml:16
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "house"
 msgctxt "Data|"
 msgid "The mouse"
-msgstr "ઘર"
+msgstr "ઊંદર"
 
 #: activities/compass/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The same"
 msgctxt "Data|"
 msgid "The shell"
-msgstr "સરખું"
+msgstr "કવચ"
 
 #: activities/compass/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "The lotus flower"
-msgstr ""
+msgstr "કમળનું ફૂલ"
 
 #: activities/compass/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "The carpet of flowers"
-msgstr ""
+msgstr "ફૂલોની ચાદર"
 
 #: activities/compass/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "The clover"
-msgstr ""
+msgstr "ત્રિપર્ણી"
 
 #: activities/compass/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "board8|"
-#| msgid "The Pantheon"
 msgctxt "Data|"
 msgid "The balloon"
-msgstr "પેન્થિઓન"
+msgstr "ફુગ્ગો"
 
 #: activities/compass/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "The daisy"
-msgstr ""
+msgstr "ડેઝીનું ફૂલ"
 
 #. The flower
 #: activities/compass/resource/8/Data.qml:14
 msgctxt "Data|"
 msgid "The periwinkle"
-msgstr ""
+msgstr "બારમાસીનું ફૂલ"
 
 #: activities/compass/resource/9/Data.qml:13
 msgctxt "Data|"
 msgid "The soccer ball"
-msgstr ""
+msgstr "ફૂટબોલ"
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -7044,16 +6935,6 @@ msgstr "હાઈપોટ્રોકોઈડ્સ શોધો અને ત
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Make beautiful drawings by rolling the gear in the cogwheel with the "
-#| "chosen pen. Select a wheel size, a gear size, pen's settings and color "
-#| "from the popup panels, and press the play button to roll the gear. You "
-#| "can use the file menu to save your image, open a previously saved image, "
-#| "or create a new image with selected background color. Saving an image "
-#| "will save it in an SVG file (vector format), along with a PNG file (pixel "
-#| "format). Only the SVG file can be opened again from the activity."
 msgctxt "ActivityInfo|"
 msgid ""
 "Make beautiful drawings by rolling the gear in the cogwheel with the chosen "
@@ -7067,12 +6948,13 @@ msgid ""
 "format), along with a PNG file (pixel format). Only the SVG file can be "
 "opened again from the activity."
 msgstr ""
-"પસંદ કરેલ પેન વડે કોગવ્હીલમાં ગિયરને રોલ કરીને સુંદર ચિત્રો બનાવો. પોપઅપ પેનલ્સમાંથી વ્હીલ "
-"સાઈઝ, ગિયર સાઈઝ, પેનનું સેટિંગ્સ અને રંગ પસંદ કરો, અને ગિયરને રોલ કરવા માટે પ્લે બટન "
-"દબાવો. તમે તમારી ઇમેજ સેવ કરવા, અગાઉ સેવ કરેલી ઇમેજ ખોલવા અથવા પસંદ કરેલા બેકગ્રાઉન્ડ "
-"રંગ સાથે નવી ઇમેજ બનાવવા માટે ફાઇલ મેનુનો ઉપયોગ કરી શકો છો. ઇમેજ સેવ કરવાથી તે SVG "
-"ફાઇલમાં (વેક્ટર ફોર્મેટ), PNG ફાઇલ (પિક્સેલ ફોર્મેટ) સાથે સેવ થશે. માત્ર SVG ફાઇલ જ "
-"પ્રવૃત્તિમાંથી ફરીથી ખોલી શકાય છે."
+"પસંદ કરેલ પેન વડે કોગવ્હીલમાં ગિયરને ફેરવીને સુંદર ચિત્રો બનાવો. પોપઅપ પેનલ્સમાંથી વ્હીલ "
+"સાઈઝ, ગિયર સાઈઝ, પેનનું સેટિંગ્સ અને રંગ પસંદ કરો, અને ગિયરને ફેરવવા માટે પ્લે બટન દબાવો. "
+"પ્રથમ સ્તરમાં, શરૂઆત કરવા માટે વ્હીલ અને ગિયર સાઈઝના ફક્ત અમુક ચોક્કસ સંયોજનો જ ઉપલબ્ધ "
+"છે. બીજા સ્તરમાં, વધુ સર્જનાત્મક સ્વતંત્રતા આપવા માટે તમામ સાઈઝના સંયોજનો ઉપલબ્ધ છે. તમે "
+"તમારી ઇમેજ સેવ કરવા, અગાઉ સેવ કરેલી ઇમેજ ખોલવા અથવા પસંદ કરેલા બેકગ્રાઉન્ડ રંગ સાથે નવી "
+"ઇમેજ બનાવવા માટે ફાઇલ મેનુનો ઉપયોગ કરી શકો છો. ઇમેજ સેવ કરવાથી તે SVG ફાઇલ અને PNG "
+"ફાઇલ એમ બંનેમાં સેવ થશે. માત્ર SVG ફાઇલ જ પ્રવૃત્તિમાંથી ફરીથી ખોલી શકાય છે."
 
 #: activities/drawing_wheels/DrawingWheels.qml:405
 msgctxt "DrawingWheels|"
@@ -7506,7 +7388,7 @@ msgid ""
 msgstr ""
 "પ્રથમ સ્તરમાં, ખેલાડીઓ સ્ક્રીન પર દરેક પ્રાણીનું અન્વેષણ કરે છે. પ્રાણી પર ક્લિક કરો અને તેના "
 "વિશે જાણો, તેનું નામ શું છે, તે કેવો અવાજ કરે છે અને તે કેવું દેખાય છે. આ માહિતીનો સારી રીતે "
-"અભ્યાસ કરો, કારણ કે તમારી પરીક્ષા લેવલ 2 અને 3 માં લેવામાં આવશે."
+"અભ્યાસ કરો, કારણ કે તમારી પરીક્ષા સ્તર 2 અને 3 માં લેવામાં આવશે."
 
 #: activities/explore_farm_animals/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -7787,9 +7669,9 @@ msgid ""
 "established before the period of Christopher Columbus and probably served as "
 "the religion center of Yucatan for a while."
 msgstr ""
-"ચિચેન ઇત્ઝા, જેનો અર્થ છે 'ઇત્ઝાના કુવાના મુખ પર', એ મેક્સિકોના યુકાટન દ્વીપકલ્પમાં, "
-"વલાડોલિડ અને મેરિડાની વચ્ચે આવેલું એક માયાન શહેર છે. તેની સ્થાપના ક્રિસ્ટોફર કોલંબસના સમય "
-"પહેલા થઈ હતી અને કદાચ તે થોડા સમય માટે યુકાટનનું ધાર્મિક કેન્દ્ર હતું."
+"ચિચેન ઇત્ઝા, જેનો અર્થ 'ઇત્ઝાના કૂવાના મુખ પર' થાય છે, તે મેક્સિકોના યુકાટન દ્વીપકલ્પમાં "
+"વલાડોલિડ અને મેરિડાની વચ્ચે સ્થિત એક માયાન શહેર છે. તેની સ્થાપના કોલંબસના સમય પહેલા થઈ "
+"હતી અને તે યુકાટનનું મુખ્ય ધાર્મિક કેન્દ્ર હતું"
 
 #: activities/explore_monuments/resource/board/board1.qml:30
 #: activities/explore_monuments/resource/board/board1.qml:33
@@ -7863,8 +7745,11 @@ msgid ""
 "slopes of the Andes, encompasses the upper Amazon basin with its rich "
 "diversity of flora and fauna."
 msgstr ""
-"માચુ પિચ્ચુ સમુદ્ર સપાટીથી 2430 મીટરની ઊંચાઈ પર, એક સુંદર ઉષ્ણકટિબંધીય પહાડી જંગલની વચ્ચે "
-"આવેલું છે. તે કદાચ ઇન્કા સામ્રાજ્યની સૌથી આશ્ચર્યજનક શહેરી રચના હતી."
+"માચુ પિચ્ચુ સમુદ્ર સપાટીથી ૨૪૩૦ મીટરની ઊંચાઈ પર, એક સુંદર ઉષ્ણકટિબંધીય પહાડી જંગલની વચ્ચે "
+"આવેલું છે. તે ઇન્કા સામ્રાજ્યના સુવર્ણકાળની સૌથી અદભૂત શહેરી રચના હતી. તેની વિશાળ દીવાલો "
+"અને રસ્તાઓ જાણે પથ્થરોમાંથી કુદરતી રીતે કોતરાયેલા હોય તેવા લાગે છે. એન્ડીઝ પર્વતમાળાના "
+"પૂર્વીય ઢોળાવ પર સ્થિત આ સ્થળ એમેઝોન બેસિનની વનસ્પતિ અને પ્રાણીસૃષ્ટિની વિવિધતાથી ઘેરાયેલું "
+"છે."
 
 #: activities/explore_monuments/resource/board/board1.qml:74
 #: activities/explore_monuments/resource/board/board1.qml:77
@@ -7881,8 +7766,9 @@ msgid ""
 "of the Arab Nabataeans, it is a symbol of Jordan, as well as Jordan's most-"
 "visited tourist attraction."
 msgstr ""
-"પેટ્રા એ દક્ષિણ જોર્ડનનું એક ઐતિહાસિક અને પુરાતત્વીય શહેર છે, જે તેના પથ્થરોમાં કોતરેલા "
-"સ્થાપત્ય માટે પ્રખ્યાત છે. તે 312 બીસીમાં આરબ નાબાતિયનોની રાજધાની તરીકે સ્થાપિત થયું હતું."
+"પેટ્રા એ દક્ષિણ જોર્ડનનું એક ઐતિહાસિક અને પુરાતત્વીય શહેર છે, જે પથ્થરોમાં કોતરેલા સ્થાપત્ય "
+"અને તેની જટિલ જળ વ્યવસ્થા માટે પ્રખ્યાત છે. ઈ.સ. પૂર્વે ૩૧૨માં આરબ નાબાતિયનોની રાજધાની "
+"તરીકે સ્થપાયેલ આ શહેર જોર્ડનનું પ્રતીક છે અને ત્યાંનું સૌથી લોકપ્રિય પ્રવાસી આકર્ષણ છે."
 
 #: activities/explore_monuments/resource/board/board1.qml:85
 msgctxt "board1|"
@@ -8989,8 +8875,15 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
-"વેનિસમાં આવેલી સેન્ટ માર્કસ બેસિલિકા બાયઝેન્ટાઇન સ્થાપત્યનું એક ઉત્તમ ઉદાહરણ છે. તે તેના "
-"સોનાના મોઝેઇક અને અદભૂત આંતરિક ડિઝાઇન માટે પ્રખ્યાત છે."
+"સેન્ટ માર્કસ બેસિલિકા, જે ઇટાલીના વેનિસમાં આવેલી છે, તે બાયઝેન્ટાઇન સ્થાપત્યનો એક ઉત્કૃષ્ટ "
+"નમૂનો છે અને આ શહેરના સૌથી પ્રખ્યાત સીમાચિહ્નોમાંનું એક છે. મૂળરૂપે સેન્ટ માર્ક ધ ઇવેન્જલિસ્ટના "
+"અવશેષો રાખવા માટે ૮૨૮માં બનાવવામાં આવી હતી, તેનું ૧૧મી સદીમાં વર્તમાન સ્વરૂપમાં "
+"પુનઃનિર્માણ કરવામાં આવ્યું હતું. તેની ભવ્ય ડિઝાઇન માટે જાણીતી આ બેસિલિકામાં પૂર્વીય અને "
+"પશ્ચિમી સંસ્કૃતિનો પ્રભાવ જોવા મળે છે, જે તેના પાંચ ગુંબજ, જટિલ મોઝેઇક અને મૂર્તિઓ તથા "
+"કોતરણીથી શણગારેલા આગળના ભાગ (ફેસાડ) પરથી સ્પષ્ટ થાય છે. તેનું આંતરિક ભાગ સોનેરી મોઝેઇક "
+"અને આરસપહાણના ભોંયતળિયાથી સમૃદ્ધપણે શણગારેલું છે, જે વેનિસ ગણરાજ્યની સંપત્તિ અને શક્તિ દર્શાવે "
+"છે. સેન્ટ માર્કસ સ્ક્વેરની બાજુમાં આવેલી આ ઇમારત વેનિસના ઐતિહાસિક, સાંસ્કૃતિક અને ધાર્મિક "
+"વારસાનું પ્રતીક બની રહી છે."
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
@@ -15467,9 +15360,9 @@ msgid ""
 "dependent upon the mass of both objects and inversely proportional to the "
 "square of the distance between their centers."
 msgstr ""
-"ગુરુત્વાકર્ષણ સાર્વત્રિક છે અને ન્યૂટનનો ગુરુત્વાકર્ષણનો નિયમ પૃથ્વીની બહાર પણ ગુરુત્વાકર્ષણને "
-"લાગુ પડે છે. આ ગુરુત્વાકર્ષણ આકર્ષણ બળ બંને પદાર્થોના દળ પર સીધો આધાર રાખે છે અને તેમના "
-"કેન્દ્રો વચ્ચેના અંતરના વર્ગના વ્યસ્ત પ્રમાણમાં હોય છે."
+"ગુરુત્વાકર્ષણ સાર્વત્રિક છે અને ન્યૂટનનો સાર્વત્રિક ગુરુત્વાકર્ષણનો નિયમ પૃથ્વીની બહાર પણ લાગુ "
+"પડે છે. આ આકર્ષણ બળ બંને પદાર્થોના દળના સમપ્રમાણમાં અને તેમના કેન્દ્રો વચ્ચેના  અંતરના વર્ગના "
+"વ્યસ્ત પ્રમાણમાં હોય છે."
 
 #: activities/gravity/Gravity.qml:232
 msgctxt "Gravity|"
@@ -16440,53 +16333,38 @@ msgid "Find the tuba"
 msgstr "ટ્યુબા શોધો"
 
 #: activities/keyboard_training/ActivityConfig.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw letters"
 msgctxt "ActivityConfig|"
 msgid "Uppercase letters"
-msgstr "અક્ષરો દોરો"
+msgstr "મોટી લિપિના અક્ષરો"
 
 #: activities/keyboard_training/ActivityConfig.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw letters"
 msgctxt "ActivityConfig|"
 msgid "Lowercase letters"
-msgstr "અક્ષરો દોરો"
+msgstr "નાની લિપિના અક્ષરો"
 
 #. Activity title
 #: activities/keyboard_training/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Memory training."
 msgctxt "ActivityInfo|"
 msgid "Keyboard training"
-msgstr "મેમરી તાલીમ."
+msgstr "કીબોર્ડ તાલીમ."
 
 #. Help title
 #: activities/keyboard_training/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Read the score, and then play it on the keyboard."
 msgctxt "ActivityInfo|"
 msgid "Find the requested character and type it on the keyboard."
-msgstr "સ્કોર વાંચો અને પછી તેને કીબોર્ડ પર વગાડો."
+msgstr "માંગેલ અક્ષર શોધો અને તેને કીબોર્ડ પર ટાઈપ કરો."
 
 #. Help goal
 #: activities/keyboard_training/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to spell words."
 msgctxt "ActivityInfo|"
 msgid "Learn to type on a keyboard."
-msgstr "શબ્દોના જોડણી શીખો."
+msgstr "કીબોર્ડ પર ટાઈપ કરવાનું શીખો."
 
 #. Help manual
 #: activities/keyboard_training/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "A character is displayed. Find it on the keyboard and type it."
-msgstr ""
+msgstr "એક અક્ષર દેખાશે. તેને કીબોર્ડ પર શોધો અને ટાઈપ કરો."
 
 #. Activity title
 #: activities/land_safe/ActivityInfo.qml:15
@@ -16527,7 +16405,7 @@ msgid ""
 "left keys to control the direction. On touch screens you can control the "
 "rocket through the corresponding on-screen buttons."
 msgstr ""
-"પ્રથમ લેવલમાં, થ્રસ્ટને નિયંત્રિત કરવા માટે ઉપર/નીચેની કી અને દિશાને નિયંત્રિત કરવા માટે "
+"પ્રથમ સ્તરમાં, થ્રસ્ટને નિયંત્રિત કરવા માટે ઉપર/નીચેની કી અને દિશાને નિયંત્રિત કરવા માટે "
 "જમણી/ડાબી કીનો ઉપયોગ કરો. ટચ સ્ક્રીન પર તમે સ્ક્રીન પરના બટનો દ્વારા રોકેટને નિયંત્રિત "
 "કરી શકો છો."
 
@@ -16538,7 +16416,7 @@ msgid ""
 "By rotating the spaceship you can trigger an acceleration in non-vertical "
 "direction using the up/down keys."
 msgstr ""
-"ઉચ્ચ લેવલમાં, તમે સ્પેસશિપને ફેરવવા માટે જમણી/ડાબી કીનો ઉપયોગ કરી શકો છો. સ્પેસશિપને "
+"ઉચ્ચ સ્તરમાં, તમે સ્પેસશિપને ફેરવવા માટે જમણી/ડાબી કીનો ઉપયોગ કરી શકો છો. સ્પેસશિપને "
 "ફેરવીને તમે ઉપર/નીચેની કીનો ઉપયોગ કરીને બિન-ઊભી દિશામાં પ્રવેગ લાવી શકો છો."
 
 #: activities/land_safe/ActivityInfo.qml:26
@@ -16571,7 +16449,7 @@ msgid ""
 "Left and Right arrows: at first levels, move to the sides; at higher levels, "
 "rotate the spaceship"
 msgstr ""
-"ડાબે અને જમણે એરો: શરૂઆતના લેવલમાં બાજુઓ પર ખસેડવા માટે; ઉચ્ચ લેવલમાં સ્પેસશિપને ફેરવવા માટે"
+"ડાબે અને જમણે એરો: શરૂઆતના સ્તરમાં બાજુઓ પર ખસેડવા માટે; ઉચ્ચ સ્તરમાં સ્પેસશિપને ફેરવવા માટે"
 
 #: activities/land_safe/LandSafe.qml:591
 #, qt-format
@@ -17904,12 +17782,11 @@ msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr "ગુણાંક સાથે 10000 સુધી બાકી રહેલા તારાઓની ગણતરી કરો."
 
 #: activities/magic-hat-minus/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Calculate remaining stars up to 100 with coefficients."
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 10, with 2 or 3 different star sets."
-msgstr "ગુણાંક સાથે 100 સુધી બાકી રહેલા તારાઓની ગણતરી કરો."
+msgstr ""
+"૨ અથવા ૩ અલગ-અલગ તારાઓના જૂથો સાથે, ૧૦ સુધી પહોંચવા માટે બાકી રહેતા તારાઓની ગણતરી "
+"કરો."
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
 #: activities/magic-hat-minus/StarsBar.qml:36
@@ -17999,12 +17876,11 @@ msgid "Add stars up to 10000 with coefficients."
 msgstr "ગુણાંક સાથે ૧૦૦૦૦ સુધીના તારાઓ ઉમેરો."
 
 #: activities/magic-hat-plus/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 100 with coefficients."
 msgctxt "Data|"
 msgid "Add stars up to 10, with 2 or 3 different star sets."
-msgstr "ગુણાંક સાથે 100 સુધી તારાઓ ઉમેરો."
+msgstr ""
+"૨ અથવા ૩ અલગ-અલગ તારાઓના જૂથો સાથે, ૧૦ સુધી પહોંચવા માટે બાકી રહેતા તારાઓની ગણતરી "
+"કરો."
 
 #. Activity title
 #: activities/maze/ActivityInfo.qml:15
@@ -19815,15 +19691,12 @@ msgstr ""
 "પાસવર્ડ ખોટો છે."
 
 #: activities/menu/Menu.qml:215
-#, fuzzy, qt-format
-#| msgctxt "Menu|"
-#| msgid ""
-#| "GCompris is connected to teacher's server, and the user is authenticated."
+#, qt-format
 msgctxt "Menu|"
 msgid ""
 "GCompris is connected to teacher's server, and the user is authenticated as "
 "%1."
-msgstr "GCompris શિક્ષકના સર્વર સાથે જોડાયેલ છે, અને વપરાશકર્તા પ્રમાણિત છે."
+msgstr "GCompris શિક્ષકના સર્વર સાથે જોડાયેલું છે, અને વપરાશકર્તાની ઓળખ %1 તરીકે થયેલ છે."
 
 #: activities/menu/Menu.qml:216
 msgctxt "Menu|"
@@ -19916,7 +19789,7 @@ msgid ""
 "the sparkle. Click on the gold nugget to collect it."
 msgstr ""
 "રોકવૉલને જોતા, તમે ક્યાંક ચમક જોઈ શકો છો. આ ચમકની બાજુમાં જાઓ અને ઝૂમ ઇન કરવા માટે "
-"માઉસવ્હીલ અથવા ઝૂમ હાવભાવનો ઉપયોગ કરો. જ્યારે તમે મહત્તમ ઝૂમ લેવલ પર પહોંચશો, ત્યારે "
+"માઉસવ્હીલ અથવા ઝૂમ હાવભાવનો ઉપયોગ કરો. જ્યારે તમે મહત્તમ ઝૂમ સ્તર પર પહોંચશો, ત્યારે "
 "ચમકની સ્થિતિ પર સોનાનો ટુકડો દેખાશે. તેને એકત્રિત કરવા માટે સોનાના ટુકડા પર ક્લિક કરો."
 
 #: activities/mining/ActivityInfo.qml:25
@@ -19928,7 +19801,7 @@ msgid ""
 "complete the level."
 msgstr ""
 "ટુકડો એકત્રિત કર્યા પછી, ફરીથી ઝૂમ આઉટ કરવા માટે માઉસવ્હીલ અથવા પિંચ હાવભાવનો ઉપયોગ "
-"કરો. જ્યારે તમે ન્યૂનતમ ઝૂમ લેવલ પર પહોંચશો, ત્યારે બીજી ચમક દેખાશે, જે આગામી સોનાનો ટુકડો "
+"કરો. જ્યારે તમે ન્યૂનતમ ઝૂમ સ્તર પર પહોંચશો, ત્યારે બીજી ચમક દેખાશે, જે આગામી સોનાનો ટુકડો "
 "એકત્રિત કરવાનું દર્શાવશે. સ્તર પૂર્ણ કરવા માટે પૂરતા ટુકડાઓ એકત્રિત કરો."
 
 #: activities/mining/ActivityInfo.qml:26
@@ -21590,19 +21463,19 @@ msgstr "સાપેક્ષ પથ એન્કોડિંગ"
 #: activities/peg_solitaire/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
 msgid "Use the default starting hole"
-msgstr ""
+msgstr "મૂળભૂત શરૂઆતના ખાડાનો ઉપયોગ કરો"
 
 #. Activity title
 #: activities/peg_solitaire/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Peg solitaire"
-msgstr ""
+msgstr "પેગ સોલિટેર"
 
 #. Help title
 #: activities/peg_solitaire/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Remove all the pieces in the correct order until only one remains."
-msgstr ""
+msgstr "બધા ટુકડાઓને યોગ્ય ક્રમમાં દૂર કરો જ્યાં સુધી માત્ર એક જ બાકી રહે."
 
 #. Help manual
 #: activities/peg_solitaire/ActivityInfo.qml:23
@@ -21617,36 +21490,39 @@ msgid ""
 "clicking on it. You can use the undo button to undo your last move, and the "
 "redo button to redo it."
 msgstr ""
+"કોઈ ટુકડા (ગોટી) ને ખસેડવા માટે, તેને તેની બાજુના બીજા ટુકડા ઉપરથી સીધી દિશામાં કૂદકો "
+"મરાવી, બે સ્થાન દૂર આવેલા ખાલી ખાડામાં મૂકો. જે ટુકડા ઉપરથી કૂદકો માર્યો હોય તેને બોર્ડ "
+"પરથી દૂર કરવામાં આવશે. તમે ખસેડી શકાય તેવા ટુકડા પર ક્લિક કરીને અને પછી તેના લક્ષ્ય સ્થાન "
+"પર ક્લિક કરી શકો છો, અથવા તેને ખેંચીને તેના લક્ષ્ય સ્થાન પર મૂકી શકો છો. જ્યારે કોઈ પણ "
+"ટુકડો ખસેડી શકાય તેમ ન હોય ત્યારે રમત પૂર્ણ થાય છે, અને જો માત્ર એક જ ટુકડો બાકી રહે તો "
+"તમે જીતી ગયા ગણાશો. જો 'મૂળભૂત શરૂઆતના ખાડાનો ઉપયોગ કરો' વિકલ્પ પસંદ કરેલ ન હોય, તો "
+"તમારે જે ટુકડો સૌથી પહેલા દૂર કરવો હોય તેના પર ક્લિક કરીને તેને પસંદ કરવો પડશે. તમે તમારી "
+"છેલ્લી ચાલને રદ કરવા માટે 'undo' બટનનો અને તેને ફરીથી કરવા માટે 'redo' બટનનો ઉપયોગ "
+"કરી શકો છો."
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:28
 msgctxt "peg_solitaire|"
 msgid "English board"
-msgstr ""
+msgstr "અંગ્રેજી બોર્ડ"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:44
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "French Polynesia"
 msgctxt "peg_solitaire|"
 msgid "French board"
-msgstr "ફ્રેન્ચ પોલિનેશિયા"
+msgstr "ફ્રેન્ચ બોર્ડ"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:61
 msgctxt "peg_solitaire|"
 msgid "32 holes diamond board"
-msgstr ""
+msgstr "૩૨ ખાડાવાળું હીરા આકારનું બોર્ડ"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:79
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numerical order"
 msgctxt "peg_solitaire|"
 msgid "Asymmetrical board"
-msgstr "અંક ક્રમ"
+msgstr "અસમપ્રમાણ બોર્ડ"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -22486,7 +22362,7 @@ msgid ""
 "On levels 1 to 5 you will practice treble clef notes and on levels 6 to 10 "
 "you will practice bass clef notes."
 msgstr ""
-"લેવલ 1 થી 5 પર તમે ટ્રેબલ ક્લેફ નોટ્સની પ્રેક્ટિસ કરશો અને લેવલ 6 થી 10 પર તમે બેસ ક્લેફ "
+"સ્તર 1 થી 5 પર તમે ટ્રેબલ ક્લેફ નોટ્સની પ્રેક્ટિસ કરશો અને સ્તર 6 થી 10 પર તમે બેસ ક્લેફ "
 "નોટ્સની પ્રેક્ટિસ કરશો."
 
 #: activities/play_piano/ActivityInfo.qml:34
@@ -22560,7 +22436,7 @@ msgid ""
 "Odd levels display a vertical line on the staff following the rhythm: click "
 "on the drum when the line is in the middle of the notes."
 msgstr ""
-"એકી લેવલ પર રિધમને અનુસરીને સ્ટાફ પર એક ઊભી લાઇન દેખાય છે: જ્યારે લાઇન નોટ્સની મધ્યમાં "
+"એકી સ્તર પર રિધમને અનુસરીને સ્ટાફ પર એક ઊભી લાઇન દેખાય છે: જ્યારે લાઇન નોટ્સની મધ્યમાં "
 "હોય ત્યારે ડ્રમ પર ક્લિક કરો."
 
 #: activities/play_rhythm/ActivityInfo.qml:30
@@ -22570,7 +22446,7 @@ msgid ""
 "notes length and play the rhythm accordingly. You can also click on the "
 "metronome to hear the quarter notes as reference."
 msgstr ""
-"બેકી લેવલ વધુ મુશ્કેલ છે, કારણ કે તેમાં કોઈ ઊભી લાઇન નથી. તમારે નોટ્સની લંબાઈ વાંચવી પડશે "
+"બેકી સ્તર વધુ મુશ્કેલ છે, કારણ કે તેમાં કોઈ ઊભી લાઇન નથી. તમારે નોટ્સની લંબાઈ વાંચવી પડશે "
 "અને તે મુજબ રિધમ વગાડવી પડશે. તમે સંદર્ભ તરીકે ક્વાર્ટર નોટ્સ સાંભળવા માટે મેટ્રોનોમ પર પણ "
 "ક્લિક કરી શકો છો."
 
@@ -26168,10 +26044,9 @@ msgid ""
 "closeness by following the closeness meter. If the hint button is visible, "
 "you can click on it to get a hint to find the answer."
 msgstr ""
-"ગ્રહ પર ક્લિક કર્યા પછી, સ્ક્રીનના નીચેના જમણા ખૂણે આવેલ ક્લોઝનેસ મીટર તમારા પસંદ કરેલા "
-"જવાબની ચોકસાઈ દર્શાવે છે. સૌથી ઓછો સાચો જવાબ 1% દ્વારા દર્શાવવામાં આવે છે. ક્લોઝનેસ "
-"મીટરને અનુસરીને જ્યાં સુધી તમે 100% સુધી ન પહોંચો ત્યાં સુધી ફરી પ્રયાસ કરો. જો હિન્ટ બટન "
-"દેખાતું હોય, તો જવાબ શોધવા માટે તમે તેના પર ક્લિક કરી શકો છો."
+"જ્યારે તમે કોઈ ગ્રહ પર ક્લિક કરો છો, ત્યારે સ્ક્રીનના નીચેના જમણા ખૂણે આવેલ 'ક્લોઝનેસ મીટર' "
+"તમારા જવાબની સચોટતા દર્શાવે છે. સૌથી ઓછો સાચો જવાબ ૧% તરીકે બતાવવામાં આવે છે. જ્યાં "
+"સુધી તમે મીટરને અનુસરીને ૧૦૦% સચોટતા સુધી ન પહોંચો ત્યાં સુધી ફરી પ્રયાસ કરો."
 
 #: activities/solar_system/SolarSystem.qml:177
 msgctxt "SolarSystem|"
@@ -27487,36 +27362,27 @@ msgid ""
 "You are currently in a sequence, going back to the menu will cancel it, do "
 "you confirm?"
 msgstr ""
+"તમે અત્યારે એક ક્રમ (sequence) માં છો, મેનુમાં પાછા જવાથી તે રદ થઈ જશે, શું તમે તેની પુષ્ટિ "
+"કરો છો?\""
 
 #: core/ActivityBase.qml:219
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "ActivityBase|"
 msgid "Yes"
 msgstr "હા"
 
 #: core/ActivityBase.qml:224
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "ActivityBase|"
 msgid "No"
 msgstr "ના"
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to run a list of activities with specific datasets "
 "in sequence (--with-sequence sequence.json)"
 msgstr ""
-"બધી પ્રવૃત્તિઓની યાદી બનાવવા અને કોઈ ચોક્કસ પ્રવૃત્તિ પર શરૂ કરવા માટે નવો કમાન્ડ-લાઈન "
-"વિકલ્પ"
+"ચોક્કસ માહિતી સંગ્રહો સાથે પ્રવૃત્તિઓની યાદીને ક્રમબદ્ધ ચલાવવા માટે નવો કમાન્ડ-લાઇન "
+"વિકલ્પ (--with-sequence sequence.json)"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:44 core/ChangeLog.qml:50
 #: core/ChangeLog.qml:56 core/ChangeLog.qml:65 core/ChangeLog.qml:71
@@ -27672,7 +27538,7 @@ msgstr "ટાઈપિંગ પ્રવૃત્તિઓ માટે Linux 
 #: core/ChangeLog.qml:121
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
-msgstr "તાર્કિક જોડાણોમાં મેન્યુઅલી લેવલ બદલતી વખતે લેવલ રીસેટ કરવાની સમસ્યા ઠીક કરવી"
+msgstr "તાર્કિક જોડાણોમાં મેન્યુઅલી સ્તર બદલતી વખતે સ્તર રીસેટ કરવાની સમસ્યા ઠીક કરવી"
 
 #: core/ChangeLog.qml:125
 msgctxt "ChangeLog|"
@@ -27716,7 +27582,7 @@ msgid ""
 "New dataset containing loops operations for programming maze, and make "
 "tutorial images translated"
 msgstr ""
-"પ્રોગ્રામિંગ મેઝ માટે લૂપ ઓપરેશન ધરાવતું નવું ડેટાસેટ, અને ટ્યુટોરીયલ છબીઓનો અનુવાદ કર્યો"
+"પ્રોગ્રામિંગ મેઝ માટે લૂપ ઓપરેશન ધરાવતું નવું માહિતી સંગ્રહ, અને ટ્યુટોરીયલ છબીઓનો અનુવાદ કર્યો"
 
 #: core/ChangeLog.qml:144
 msgctxt "ChangeLog|"
@@ -27728,7 +27594,7 @@ msgstr "એનાલોગ વીજળી પ્રવૃત્તિમાં 
 #: core/ChangeLog.qml:154
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
-msgstr "નવું પ્રવૃત્તિ સેટિંગ્સ મેનૂ, ડેટાસેટ પસંદગી સાથે"
+msgstr "નવું પ્રવૃત્તિ સેટિંગ્સ મેનૂ, માહિતી સંગ્રહ પસંદગી સાથે"
 
 #: core/ChangeLog.qml:160
 msgctxt "ChangeLog|"
@@ -27786,7 +27652,7 @@ msgstr ""
 #: core/ChangeLog.qml:170
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
-msgstr "અક્ષર પર ક્લિક કરો પ્રવૃત્તિ માટે રશિયન ડેટાસેટ ઉમેરો."
+msgstr "અક્ષર પર ક્લિક કરો પ્રવૃત્તિ માટે રશિયન માહિતી સંગ્રહ ઉમેરો."
 
 #: core/ChangeLog.qml:171
 msgctxt "ChangeLog|"
@@ -28104,7 +27970,7 @@ msgstr "%1 સેટિંગ્સ"
 #: core/DialogChooseLevel.qml:208
 msgctxt "DialogChooseLevel|"
 msgid "Dataset"
-msgstr "ડેટાસેટ"
+msgstr "માહિતી સંગ્રહ"
 
 #: core/DialogChooseLevel.qml:221
 msgctxt "DialogChooseLevel|"
@@ -28457,7 +28323,7 @@ msgstr ""
 #: core/main.cpp:149
 msgctxt "QObject|"
 msgid "Start the sequence of activities passed in the json file."
-msgstr ""
+msgstr "JSON ફાઇલમાં આપેલ પ્રવૃત્તિઓનો ક્રમ શરૂ કરો."
 
 #: core/main.cpp:153
 msgctxt "QObject|"
@@ -28514,7 +28380,8 @@ msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
-"કેટલીક પ્રવૃત્તિઓ માટે નવો ડેટાસેટ ઉપલબ્ધ છે. શું તમે તેમની ડેટાસેટ પસંદગી રીસેટ કરવા માંગો છો?"
+"કેટલીક પ્રવૃત્તિઓ માટે નવો માહિતી સંગ્રહ ઉપલબ્ધ છે. શું તમે તેમની માહિતી સંગ્રહ પસંદગી રીસેટ "
+"કરવા માંગો છો?"
 
 #: core/main.qml:274
 msgctxt "main|"
@@ -28567,6 +28434,8 @@ msgid ""
 "The following activities do not have any active datasets! All of their "
 "datasets will be reactivated."
 msgstr ""
+"નીચેની પ્રવૃત્તિઓમાં કોઈ પણ માહિતી સંગ્રહ સક્રિય નથી! તેના તમામ માહિતી સંગ્રહો ફરીથી "
+"સક્રિય કરવામાં આવશે."
 
 #: core/main.qml:547
 #, qt-format
