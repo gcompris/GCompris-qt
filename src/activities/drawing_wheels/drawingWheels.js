@@ -115,7 +115,7 @@ function initLevel() {
     items.animationCanvas.paintActionFinished();
     initWheel()
     items.toothOffset = 0
-    items.svgTank.resetSvg(canvasSize, items.backgroundColor)
+    items.svgTank.resetSvg(canvasSize, canvasSize, items.backgroundColor)
     items.isFileSaved = true
     items.canvasLocked = false
 }
@@ -188,7 +188,7 @@ function startGear() {
 
 function stopGear(completed = false) {
     items.gearTimer.stop()
-    items.svgTank.finishPath()
+    items.svgTank.closePath()
     items.svgTank.writeSvg()
     items.fileIsEmpty = false
     items.animationCanvas.paintActionFinished();
@@ -222,7 +222,7 @@ function rotateGear(angle) {
         items.runCompleted = true
         items.theGear.wheelAngle = 0
         if(items.startedFromOrigin) {
-            items.svgTank.closePath()
+            items.svgTank.finishPath()
         }
     } else {
         items.svgTank.addLine(pos.x, pos.y)

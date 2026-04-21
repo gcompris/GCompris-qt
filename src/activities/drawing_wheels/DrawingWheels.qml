@@ -217,7 +217,8 @@ ActivityBase {
         SvgTank {
             id: svgTank
             fileName: canvasArea.tempSavePath + "/GCDrawingWheels.svg"
-            stroke: items.penColor
+            precision: 3
+            strokeColor: items.penColor
             strokeWidth: items.actualPenWidth
             svgOpacity: items.penOpacity
         }
@@ -1359,7 +1360,7 @@ ActivityBase {
             onClose: activity.focus = true;
             onFileLoaded: (data, filePath) => {
                 Activity.initLevel()
-                svgTank.loadSvg(file.read(filePath))  // Reset svgTank with loaded svg
+                svgTank.loadSvg(file.read(filePath), false, true)  // Reset svgTank with loaded svg
                 loadedImage.sourceSize.width = loadedImage.width
                 loadedImage.sourceSize.height = loadedImage.height
                 loadedImage.source = filePath

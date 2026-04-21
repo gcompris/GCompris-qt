@@ -1225,8 +1225,7 @@ ActivityBase {
             onClose: activity.focus = true
             onFileLoaded: (data, filePath) => {
                               Activity.initLevel()
-                              // items.viewSize = Activity.level.size
-                              svgTank.loadSvg(file.read(filePath), true)
+                              svgTank.loadSvg(file.read(filePath), true, false)
                               mainImage.source = svgTank.svgProtocol + svgTank.getSource()
                               sceneGrid.requestPaint()
             }

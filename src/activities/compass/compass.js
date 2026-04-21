@@ -133,7 +133,7 @@ function initLevel() {
 function addStep(step) {
     if (items.stepsCount === 0)   // no template
         return
-    items.svgTemplate.setDash("6")
+    items.svgTemplate.svgDash = "6"
     if (step.hasOwnProperty("start") && step.hasOwnProperty("end")) {
         if (step.end - step.start >= 360) {
             items.svgTemplate.addCircle(step.centerX, step.centerY, step.radius)
@@ -143,7 +143,7 @@ function addStep(step) {
         }
     }
     items.svgTemplate.strokeWidth = 2
-    items.svgTemplate.setDash("")
+    items.svgTemplate.svgDash = ""
     items.svgTemplate.addCross(step.centerX, step.centerY, 5)
 }
 
