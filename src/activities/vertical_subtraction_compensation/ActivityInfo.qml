@@ -8,7 +8,7 @@ import core 1.0
 
 ActivityInfo {
   name: "vertical_subtraction_compensation/VerticalSubtractionCompensation.qml"
-  difficulty: 1
+  difficulty: 4
   icon: "vertical_subtraction_compensation/vertical_subtraction_compensation.svg"
   author: "Bruno ANSELME &lt;be.root@free.fr&gt;"
   //: Activity title

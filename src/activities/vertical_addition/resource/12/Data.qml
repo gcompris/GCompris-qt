@@ -10,7 +10,7 @@ import core 1.0
 
 Data {
     objective: qsTr("Write your own addition and solve it.")
-    difficulty: 1
+    difficulty: 4
     data: [
         {
             "nbSubLevel": 10,
