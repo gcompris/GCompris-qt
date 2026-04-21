@@ -8,7 +8,7 @@ import core 1.0
 
 ActivityInfo {
   name: "vertical_addition/VerticalAddition.qml"
-  difficulty: 1
+  difficulty: 4
   icon: "vertical_addition/vertical_addition.svg"
   author: "Bruno ANSELME &lt;be.root@free.fr&gt;"
   //: Activity title

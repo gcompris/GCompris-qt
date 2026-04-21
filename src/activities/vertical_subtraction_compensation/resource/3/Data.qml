@@ -10,7 +10,7 @@ import core 1.0
 
 Data {
     objective: qsTr("Solve subtraction, 2 or 3 digits, 2 lines.")
-    difficulty: 1
+    difficulty: 4
     data: [
         {
             "nbSubLevel": 10,
