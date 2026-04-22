@@ -6152,7 +6152,7 @@ msgctxt "Compass|"
 msgid " Pen size"
 msgstr "Μέγεθος στυλό"
 
-#: activities/compass/Compass.qml:1254
+#: activities/compass/Compass.qml:1253
 #, fuzzy
 #| msgctxt "DrawingWheels|"
 #| msgid "You did not save this image. Do you want to close this activity?"
@@ -6161,7 +6161,7 @@ msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
 "Δεν έχεις αποθηκεύσει την εικόνα. Θέλεις να κλείσεις αυτή τη δραστηριότητα;"
 
-#: activities/compass/Compass.qml:1255
+#: activities/compass/Compass.qml:1254
 #, fuzzy
 #| msgctxt "DrawingWheels|"
 #| msgid "Do you want to erase this image?"
@@ -6169,7 +6169,7 @@ msgctxt "Compass|"
 msgid "Do you want to erase this image?"
 msgstr "Θέλεις να διαγράψεις αυτή την εικόνα;"
 
-#: activities/compass/Compass.qml:1256
+#: activities/compass/Compass.qml:1255
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -6177,7 +6177,7 @@ msgctxt "Compass|"
 msgid "Yes"
 msgstr "Ναι"
 
-#: activities/compass/Compass.qml:1257
+#: activities/compass/Compass.qml:1256
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -7410,144 +7410,144 @@ msgstr ""
 "εικονοστοιχείων). Μόνο το αρχείο SVG μπορεί να ανοιχτεί ξανά από τη "
 "δραστηριότητα."
 
-#: activities/drawing_wheels/DrawingWheels.qml:405
+#: activities/drawing_wheels/DrawingWheels.qml:406
 msgctxt "DrawingWheels|"
 msgid "File menu"
 msgstr "Αρχείο"
 
-#: activities/drawing_wheels/DrawingWheels.qml:417
+#: activities/drawing_wheels/DrawingWheels.qml:418
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr "Τροχός και γρανάζι"
 
-#: activities/drawing_wheels/DrawingWheels.qml:441
+#: activities/drawing_wheels/DrawingWheels.qml:442
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr "Μέγεθος και θέση του μολυβιού"
 
-#: activities/drawing_wheels/DrawingWheels.qml:453
+#: activities/drawing_wheels/DrawingWheels.qml:454
 msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr "Επιλογέας χρώματος"
 
-#: activities/drawing_wheels/DrawingWheels.qml:480
+#: activities/drawing_wheels/DrawingWheels.qml:481
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Αναίρεση"
 
-#: activities/drawing_wheels/DrawingWheels.qml:492
+#: activities/drawing_wheels/DrawingWheels.qml:493
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "Ακύρωση αναίρεσης"
 
-#: activities/drawing_wheels/DrawingWheels.qml:526
+#: activities/drawing_wheels/DrawingWheels.qml:527
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr "Διακοπή σχεδίασης"
 
-#: activities/drawing_wheels/DrawingWheels.qml:526
+#: activities/drawing_wheels/DrawingWheels.qml:527
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr "Εκκίνηση σχεδίασης"
 
-#: activities/drawing_wheels/DrawingWheels.qml:559
+#: activities/drawing_wheels/DrawingWheels.qml:560
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr "Εμφάνιση τροχού και γραναζιού"
 
-#: activities/drawing_wheels/DrawingWheels.qml:559
+#: activities/drawing_wheels/DrawingWheels.qml:560
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr "Απόκρυψη τροχού και γραναζιού"
 
-#: activities/drawing_wheels/DrawingWheels.qml:718
+#: activities/drawing_wheels/DrawingWheels.qml:719
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Αποθήκευση εικόνας"
 
-#: activities/drawing_wheels/DrawingWheels.qml:733
+#: activities/drawing_wheels/DrawingWheels.qml:734
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Άνοιγμα εικόνας"
 
-#: activities/drawing_wheels/DrawingWheels.qml:762
+#: activities/drawing_wheels/DrawingWheels.qml:763
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Δημιουργία νέας εικόνας"
 
-#: activities/drawing_wheels/DrawingWheels.qml:781
+#: activities/drawing_wheels/DrawingWheels.qml:782
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Χρώμα παρασκηνίου"
 
-#: activities/drawing_wheels/DrawingWheels.qml:862
+#: activities/drawing_wheels/DrawingWheels.qml:863
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr "Τροχός"
 
-#: activities/drawing_wheels/DrawingWheels.qml:929
+#: activities/drawing_wheels/DrawingWheels.qml:930
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr "Γρανάζι"
 
-#: activities/drawing_wheels/DrawingWheels.qml:992
+#: activities/drawing_wheels/DrawingWheels.qml:993
 #, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 δόντια"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1010
+#: activities/drawing_wheels/DrawingWheels.qml:1011
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Ταχύτητα"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1026
+#: activities/drawing_wheels/DrawingWheels.qml:1027
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr "Αργά"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1046
+#: activities/drawing_wheels/DrawingWheels.qml:1047
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr "Γρήγορα"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1089
+#: activities/drawing_wheels/DrawingWheels.qml:1090
 msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "Μέγεθος στυλό"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1126
+#: activities/drawing_wheels/DrawingWheels.qml:1127
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Διαφάνεια"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1169
+#: activities/drawing_wheels/DrawingWheels.qml:1170
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr "Αντιστάθμιση"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1207
+#: activities/drawing_wheels/DrawingWheels.qml:1208
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "Έναρξη οδοντοστοιχίας"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1387
+#: activities/drawing_wheels/DrawingWheels.qml:1388
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
 "Δεν έχεις αποθηκεύσει την εικόνα. Θέλεις να κλείσεις αυτή τη δραστηριότητα;"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1388
+#: activities/drawing_wheels/DrawingWheels.qml:1389
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Θέλεις να διαγράψεις αυτή την εικόνα;"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1389
+#: activities/drawing_wheels/DrawingWheels.qml:1390
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Ναι"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1390
+#: activities/drawing_wheels/DrawingWheels.qml:1391
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "Όχι"

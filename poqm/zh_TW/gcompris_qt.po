@@ -6015,7 +6015,7 @@ msgctxt "Compass|"
 msgid " Pen size"
 msgstr "字型大小"
 
-#: activities/compass/Compass.qml:1254
+#: activities/compass/Compass.qml:1253
 #, fuzzy
 #| msgctxt "Piano_composition|"
 #| msgid "You have not selected any note. Do you want to erase all the notes?"
@@ -6023,7 +6023,7 @@ msgctxt "Compass|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "您沒有選擇任何音符。您要刪除所有的音符嗎？"
 
-#: activities/compass/Compass.qml:1255
+#: activities/compass/Compass.qml:1254
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Do you want to download them now?"
@@ -6031,7 +6031,7 @@ msgctxt "Compass|"
 msgid "Do you want to erase this image?"
 msgstr "您要現在下載嗎？"
 
-#: activities/compass/Compass.qml:1256
+#: activities/compass/Compass.qml:1255
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -6039,7 +6039,7 @@ msgctxt "Compass|"
 msgid "Yes"
 msgstr "是"
 
-#: activities/compass/Compass.qml:1257
+#: activities/compass/Compass.qml:1256
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -7179,17 +7179,17 @@ msgid ""
 "opened again from the activity."
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:405
+#: activities/drawing_wheels/DrawingWheels.qml:406
 msgctxt "DrawingWheels|"
 msgid "File menu"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:417
+#: activities/drawing_wheels/DrawingWheels.qml:418
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:441
+#: activities/drawing_wheels/DrawingWheels.qml:442
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Piano composition"
@@ -7197,7 +7197,7 @@ msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr "鋼琴作曲家"
 
-#: activities/drawing_wheels/DrawingWheels.qml:453
+#: activities/drawing_wheels/DrawingWheels.qml:454
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font selector"
@@ -7205,7 +7205,7 @@ msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr "字型選擇器"
 
-#: activities/drawing_wheels/DrawingWheels.qml:480
+#: activities/drawing_wheels/DrawingWheels.qml:481
 #, fuzzy
 #| msgctxt "OptionsRow|"
 #| msgid "Undo"
@@ -7213,32 +7213,32 @@ msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "復原"
 
-#: activities/drawing_wheels/DrawingWheels.qml:492
+#: activities/drawing_wheels/DrawingWheels.qml:493
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:526
+#: activities/drawing_wheels/DrawingWheels.qml:527
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:526
+#: activities/drawing_wheels/DrawingWheels.qml:527
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:559
+#: activities/drawing_wheels/DrawingWheels.qml:560
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:559
+#: activities/drawing_wheels/DrawingWheels.qml:560
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:718
+#: activities/drawing_wheels/DrawingWheels.qml:719
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Select your mode"
@@ -7246,7 +7246,7 @@ msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "請選擇您的模式"
 
-#: activities/drawing_wheels/DrawingWheels.qml:733
+#: activities/drawing_wheels/DrawingWheels.qml:734
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Many new images"
@@ -7254,7 +7254,7 @@ msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "新增許多圖片"
 
-#: activities/drawing_wheels/DrawingWheels.qml:762
+#: activities/drawing_wheels/DrawingWheels.qml:763
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Many new images"
@@ -7262,7 +7262,7 @@ msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "新增許多圖片"
 
-#: activities/drawing_wheels/DrawingWheels.qml:781
+#: activities/drawing_wheels/DrawingWheels.qml:782
 #, fuzzy
 #| msgctxt "DownloadDialog|"
 #| msgid "Background"
@@ -7270,17 +7270,17 @@ msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "背景"
 
-#: activities/drawing_wheels/DrawingWheels.qml:862
+#: activities/drawing_wheels/DrawingWheels.qml:863
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:929
+#: activities/drawing_wheels/DrawingWheels.qml:930
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:992
+#: activities/drawing_wheels/DrawingWheels.qml:993
 #, fuzzy, qt-format
 #| msgctxt "SignalGenerator|"
 #| msgid "%1 s"
@@ -7288,7 +7288,7 @@ msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 秒"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1010
+#: activities/drawing_wheels/DrawingWheels.qml:1011
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Speed"
@@ -7296,17 +7296,17 @@ msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "速度"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1026
+#: activities/drawing_wheels/DrawingWheels.qml:1027
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1046
+#: activities/drawing_wheels/DrawingWheels.qml:1047
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1089
+#: activities/drawing_wheels/DrawingWheels.qml:1090
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font size"
@@ -7314,17 +7314,17 @@ msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "字型大小"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1126
+#: activities/drawing_wheels/DrawingWheels.qml:1127
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1169
+#: activities/drawing_wheels/DrawingWheels.qml:1170
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1207
+#: activities/drawing_wheels/DrawingWheels.qml:1208
 #, fuzzy
 #| msgctxt "IntroMessage|"
 #| msgid "Start"
@@ -7332,7 +7332,7 @@ msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "開始"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1387
+#: activities/drawing_wheels/DrawingWheels.qml:1388
 #, fuzzy
 #| msgctxt "Piano_composition|"
 #| msgid "You have not selected any note. Do you want to erase all the notes?"
@@ -7340,7 +7340,7 @@ msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "您沒有選擇任何音符。您要刪除所有的音符嗎？"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1388
+#: activities/drawing_wheels/DrawingWheels.qml:1389
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Do you want to download them now?"
@@ -7348,7 +7348,7 @@ msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "您要現在下載嗎？"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1389
+#: activities/drawing_wheels/DrawingWheels.qml:1390
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -7356,7 +7356,7 @@ msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "是"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1390
+#: activities/drawing_wheels/DrawingWheels.qml:1391
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"

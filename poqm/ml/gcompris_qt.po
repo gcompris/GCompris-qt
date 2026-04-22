@@ -5938,7 +5938,7 @@ msgctxt "Compass|"
 msgid " Pen size"
 msgstr "പേനയുടെ വലിപ്പം"
 
-#: activities/compass/Compass.qml:1254
+#: activities/compass/Compass.qml:1253
 #, fuzzy
 #| msgctxt "DrawingWheels|"
 #| msgid "You did not save this image. Do you want to close this activity?"
@@ -5946,7 +5946,7 @@ msgctxt "Compass|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "നിങ്ങളുടെ ചിത്രം സേവ് ചെയ്തിട്ടില്ല. ഈ പ്രവർത്തനം നിർത്തണമോ?"
 
-#: activities/compass/Compass.qml:1255
+#: activities/compass/Compass.qml:1254
 #, fuzzy
 #| msgctxt "DrawingWheels|"
 #| msgid "Do you want to erase this image?"
@@ -5954,7 +5954,7 @@ msgctxt "Compass|"
 msgid "Do you want to erase this image?"
 msgstr "ഈ ചിത്രം മായിക്കണമോ?"
 
-#: activities/compass/Compass.qml:1256
+#: activities/compass/Compass.qml:1255
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -5962,7 +5962,7 @@ msgctxt "Compass|"
 msgid "Yes"
 msgstr "വേണം"
 
-#: activities/compass/Compass.qml:1257
+#: activities/compass/Compass.qml:1256
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -7137,143 +7137,143 @@ msgstr ""
 "ഫോർമാറ്റ്) PNG ഫയലിലും (പിക്സൽ ഫോർമാറ്റ്) സേവു ചെയ്യും. ഈ പ്രവർത്തനത്തിൽ നിന്നും SVG ഫയൽ "
 "മാത്രമേ വീണ്ടും തുറക്കാൻ കഴിയുകയുള്ളൂ."
 
-#: activities/drawing_wheels/DrawingWheels.qml:405
+#: activities/drawing_wheels/DrawingWheels.qml:406
 msgctxt "DrawingWheels|"
 msgid "File menu"
 msgstr "ഫയൽ മെനു"
 
-#: activities/drawing_wheels/DrawingWheels.qml:417
+#: activities/drawing_wheels/DrawingWheels.qml:418
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr "ചക്രവും ഗിയറും"
 
-#: activities/drawing_wheels/DrawingWheels.qml:441
+#: activities/drawing_wheels/DrawingWheels.qml:442
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr "പേനയുടെ വലിപ്പവും സ്ഥാനവും"
 
-#: activities/drawing_wheels/DrawingWheels.qml:453
+#: activities/drawing_wheels/DrawingWheels.qml:454
 msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr "കളർ സെലക്ടർ"
 
-#: activities/drawing_wheels/DrawingWheels.qml:480
+#: activities/drawing_wheels/DrawingWheels.qml:481
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "അൺഡു"
 
-#: activities/drawing_wheels/DrawingWheels.qml:492
+#: activities/drawing_wheels/DrawingWheels.qml:493
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "റീഡു"
 
-#: activities/drawing_wheels/DrawingWheels.qml:526
+#: activities/drawing_wheels/DrawingWheels.qml:527
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr "വര നിർത്തുക"
 
-#: activities/drawing_wheels/DrawingWheels.qml:526
+#: activities/drawing_wheels/DrawingWheels.qml:527
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr "വര തുടങ്ങുക"
 
-#: activities/drawing_wheels/DrawingWheels.qml:559
+#: activities/drawing_wheels/DrawingWheels.qml:560
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr "ചക്രവു ഗിയറും കാണിക്കുക"
 
-#: activities/drawing_wheels/DrawingWheels.qml:559
+#: activities/drawing_wheels/DrawingWheels.qml:560
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr "ചക്രവു ഗിയറും മറയ്ക്കുക"
 
-#: activities/drawing_wheels/DrawingWheels.qml:718
+#: activities/drawing_wheels/DrawingWheels.qml:719
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "ചിത്രം സേവ് ചെയ്യുക"
 
-#: activities/drawing_wheels/DrawingWheels.qml:733
+#: activities/drawing_wheels/DrawingWheels.qml:734
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "ചിത്രം തുറക്കുക"
 
-#: activities/drawing_wheels/DrawingWheels.qml:762
+#: activities/drawing_wheels/DrawingWheels.qml:763
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "പുതിയ ചിത്രം വരക്കുക"
 
-#: activities/drawing_wheels/DrawingWheels.qml:781
+#: activities/drawing_wheels/DrawingWheels.qml:782
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "പശ്ചാത്തല നിറം"
 
-#: activities/drawing_wheels/DrawingWheels.qml:862
+#: activities/drawing_wheels/DrawingWheels.qml:863
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr "ചക്രം"
 
-#: activities/drawing_wheels/DrawingWheels.qml:929
+#: activities/drawing_wheels/DrawingWheels.qml:930
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr "ഗിയർ"
 
-#: activities/drawing_wheels/DrawingWheels.qml:992
+#: activities/drawing_wheels/DrawingWheels.qml:993
 #, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 പല്ലുകൾ"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1010
+#: activities/drawing_wheels/DrawingWheels.qml:1011
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "വേഗത"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1026
+#: activities/drawing_wheels/DrawingWheels.qml:1027
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr "മെല്ലെ"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1046
+#: activities/drawing_wheels/DrawingWheels.qml:1047
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr "വേഗം"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1089
+#: activities/drawing_wheels/DrawingWheels.qml:1090
 msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "പേനയുടെ വലിപ്പം"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1126
+#: activities/drawing_wheels/DrawingWheels.qml:1127
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "അതാര്യത"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1169
+#: activities/drawing_wheels/DrawingWheels.qml:1170
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr "ഓഫ്സെറ്റ്"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1207
+#: activities/drawing_wheels/DrawingWheels.qml:1208
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "തുടക്കത്തിലെ പല്ല്"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1387
+#: activities/drawing_wheels/DrawingWheels.qml:1388
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "നിങ്ങളുടെ ചിത്രം സേവ് ചെയ്തിട്ടില്ല. ഈ പ്രവർത്തനം നിർത്തണമോ?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1388
+#: activities/drawing_wheels/DrawingWheels.qml:1389
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "ഈ ചിത്രം മായിക്കണമോ?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1389
+#: activities/drawing_wheels/DrawingWheels.qml:1390
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "വേണം"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1390
+#: activities/drawing_wheels/DrawingWheels.qml:1391
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "വേണ്ട"

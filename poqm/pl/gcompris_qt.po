@@ -6018,7 +6018,7 @@ msgctxt "Compass|"
 msgid " Pen size"
 msgstr "Rozmiar ołówka"
 
-#: activities/compass/Compass.qml:1254
+#: activities/compass/Compass.qml:1253
 #, fuzzy
 #| msgctxt "DrawingWheels|"
 #| msgid "You did not save this image. Do you want to close this activity?"
@@ -6026,7 +6026,7 @@ msgctxt "Compass|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Ten obraz jest niezapisany. Czy chcesz zamknąć tę aktywność?"
 
-#: activities/compass/Compass.qml:1255
+#: activities/compass/Compass.qml:1254
 #, fuzzy
 #| msgctxt "DrawingWheels|"
 #| msgid "Do you want to erase this image?"
@@ -6034,7 +6034,7 @@ msgctxt "Compass|"
 msgid "Do you want to erase this image?"
 msgstr "Czy chcesz usunąć ten obraz?"
 
-#: activities/compass/Compass.qml:1256
+#: activities/compass/Compass.qml:1255
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -6042,7 +6042,7 @@ msgctxt "Compass|"
 msgid "Yes"
 msgstr "Tak"
 
-#: activities/compass/Compass.qml:1257
+#: activities/compass/Compass.qml:1256
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -7251,143 +7251,143 @@ msgid ""
 "opened again from the activity."
 msgstr "Przetłumaczone"
 
-#: activities/drawing_wheels/DrawingWheels.qml:405
+#: activities/drawing_wheels/DrawingWheels.qml:406
 msgctxt "DrawingWheels|"
 msgid "File menu"
 msgstr "Menu pliku"
 
-#: activities/drawing_wheels/DrawingWheels.qml:417
+#: activities/drawing_wheels/DrawingWheels.qml:418
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr "Koło i koło zębate"
 
-#: activities/drawing_wheels/DrawingWheels.qml:441
+#: activities/drawing_wheels/DrawingWheels.qml:442
 msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr "Rozmiar i położenie ołówka"
 
-#: activities/drawing_wheels/DrawingWheels.qml:453
+#: activities/drawing_wheels/DrawingWheels.qml:454
 msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr "Wybór czcionki"
 
-#: activities/drawing_wheels/DrawingWheels.qml:480
+#: activities/drawing_wheels/DrawingWheels.qml:481
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Cofnij"
 
-#: activities/drawing_wheels/DrawingWheels.qml:492
+#: activities/drawing_wheels/DrawingWheels.qml:493
 msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "Przywróć"
 
-#: activities/drawing_wheels/DrawingWheels.qml:526
+#: activities/drawing_wheels/DrawingWheels.qml:527
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr "Zakończ rysowanie"
 
-#: activities/drawing_wheels/DrawingWheels.qml:526
+#: activities/drawing_wheels/DrawingWheels.qml:527
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr "Zacznij rysowanie"
 
-#: activities/drawing_wheels/DrawingWheels.qml:559
+#: activities/drawing_wheels/DrawingWheels.qml:560
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr "Pokaż koło i koło zębate"
 
-#: activities/drawing_wheels/DrawingWheels.qml:559
+#: activities/drawing_wheels/DrawingWheels.qml:560
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr "Ukryj koło i koło zębate"
 
-#: activities/drawing_wheels/DrawingWheels.qml:718
+#: activities/drawing_wheels/DrawingWheels.qml:719
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Zapisz swój obraz"
 
-#: activities/drawing_wheels/DrawingWheels.qml:733
+#: activities/drawing_wheels/DrawingWheels.qml:734
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Otwórz obraz"
 
-#: activities/drawing_wheels/DrawingWheels.qml:762
+#: activities/drawing_wheels/DrawingWheels.qml:763
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Utwórz nowy obraz"
 
-#: activities/drawing_wheels/DrawingWheels.qml:781
+#: activities/drawing_wheels/DrawingWheels.qml:782
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Barwa tła"
 
-#: activities/drawing_wheels/DrawingWheels.qml:862
+#: activities/drawing_wheels/DrawingWheels.qml:863
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr "Koło"
 
-#: activities/drawing_wheels/DrawingWheels.qml:929
+#: activities/drawing_wheels/DrawingWheels.qml:930
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr "Koło zębate"
 
-#: activities/drawing_wheels/DrawingWheels.qml:992
+#: activities/drawing_wheels/DrawingWheels.qml:993
 #, qt-format
 msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 kolców"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1010
+#: activities/drawing_wheels/DrawingWheels.qml:1011
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Szybkość"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1026
+#: activities/drawing_wheels/DrawingWheels.qml:1027
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr "Wolno"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1046
+#: activities/drawing_wheels/DrawingWheels.qml:1047
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr "Szybko"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1089
+#: activities/drawing_wheels/DrawingWheels.qml:1090
 msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "Rozmiar ołówka"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1126
+#: activities/drawing_wheels/DrawingWheels.qml:1127
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Nieprzezroczystość"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1169
+#: activities/drawing_wheels/DrawingWheels.qml:1170
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr "Przesunięcie"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1207
+#: activities/drawing_wheels/DrawingWheels.qml:1208
 msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "Rozpocznij ząbek"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1387
+#: activities/drawing_wheels/DrawingWheels.qml:1388
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Ten obraz jest niezapisany. Czy chcesz zamknąć tę aktywność?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1388
+#: activities/drawing_wheels/DrawingWheels.qml:1389
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Czy chcesz usunąć ten obraz?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1389
+#: activities/drawing_wheels/DrawingWheels.qml:1390
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Tak"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1390
+#: activities/drawing_wheels/DrawingWheels.qml:1391
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "Nie"

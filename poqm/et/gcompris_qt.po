@@ -6238,7 +6238,7 @@ msgctxt "Compass|"
 msgid " Pen size"
 msgstr "Fondi suurus"
 
-#: activities/compass/Compass.qml:1254
+#: activities/compass/Compass.qml:1253
 #, fuzzy
 #| msgctxt "Piano_composition|"
 #| msgid "You have not selected any note. Do you want to erase all the notes?"
@@ -6246,13 +6246,13 @@ msgctxt "Compass|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Sa ei ole valinud ühtegi nooti. Kas kustutada kõik noodid?"
 
-#: activities/compass/Compass.qml:1255
+#: activities/compass/Compass.qml:1254
 #, fuzzy
 msgctxt "Compass|"
 msgid "Do you want to erase this image?"
 msgstr "Kas soovite alla laadida järgmised välised varad?"
 
-#: activities/compass/Compass.qml:1256
+#: activities/compass/Compass.qml:1255
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -6260,7 +6260,7 @@ msgctxt "Compass|"
 msgid "Yes"
 msgstr "Jah"
 
-#: activities/compass/Compass.qml:1257
+#: activities/compass/Compass.qml:1256
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -7472,17 +7472,17 @@ msgid ""
 "opened again from the activity."
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:405
+#: activities/drawing_wheels/DrawingWheels.qml:406
 msgctxt "DrawingWheels|"
 msgid "File menu"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:417
+#: activities/drawing_wheels/DrawingWheels.qml:418
 msgctxt "DrawingWheels|"
 msgid "Wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:441
+#: activities/drawing_wheels/DrawingWheels.qml:442
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Piano composition"
@@ -7490,7 +7490,7 @@ msgctxt "DrawingWheels|"
 msgid "Pencil size and position"
 msgstr "Klaverikompositsioon"
 
-#: activities/drawing_wheels/DrawingWheels.qml:453
+#: activities/drawing_wheels/DrawingWheels.qml:454
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font selector"
@@ -7498,7 +7498,7 @@ msgctxt "DrawingWheels|"
 msgid "Color selector"
 msgstr "Fondivalija"
 
-#: activities/drawing_wheels/DrawingWheels.qml:480
+#: activities/drawing_wheels/DrawingWheels.qml:481
 #, fuzzy
 #| msgctxt "OptionsRow|"
 #| msgid "Undo"
@@ -7506,7 +7506,7 @@ msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Võta tagasi"
 
-#: activities/drawing_wheels/DrawingWheels.qml:492
+#: activities/drawing_wheels/DrawingWheels.qml:493
 #, fuzzy
 #| msgctxt "Checkers|"
 #| msgid "Redo"
@@ -7514,27 +7514,27 @@ msgctxt "DrawingWheels|"
 msgid "Redo"
 msgstr "Tee uuesti"
 
-#: activities/drawing_wheels/DrawingWheels.qml:526
+#: activities/drawing_wheels/DrawingWheels.qml:527
 msgctxt "DrawingWheels|"
 msgid "Stop drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:526
+#: activities/drawing_wheels/DrawingWheels.qml:527
 msgctxt "DrawingWheels|"
 msgid "Start drawing"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:559
+#: activities/drawing_wheels/DrawingWheels.qml:560
 msgctxt "DrawingWheels|"
 msgid "Show wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:559
+#: activities/drawing_wheels/DrawingWheels.qml:560
 msgctxt "DrawingWheels|"
 msgid "Hide wheel and gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:718
+#: activities/drawing_wheels/DrawingWheels.qml:719
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Select your mode"
@@ -7542,7 +7542,7 @@ msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Vali tegutsemisviis"
 
-#: activities/drawing_wheels/DrawingWheels.qml:733
+#: activities/drawing_wheels/DrawingWheels.qml:734
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Many new images"
@@ -7550,7 +7550,7 @@ msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Palju uusi pilte"
 
-#: activities/drawing_wheels/DrawingWheels.qml:762
+#: activities/drawing_wheels/DrawingWheels.qml:763
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Many new images"
@@ -7558,7 +7558,7 @@ msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Palju uusi pilte"
 
-#: activities/drawing_wheels/DrawingWheels.qml:781
+#: activities/drawing_wheels/DrawingWheels.qml:782
 #, fuzzy
 #| msgctxt "DownloadDialog|"
 #| msgid "Background"
@@ -7566,17 +7566,17 @@ msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Taust"
 
-#: activities/drawing_wheels/DrawingWheels.qml:862
+#: activities/drawing_wheels/DrawingWheels.qml:863
 msgctxt "DrawingWheels|"
 msgid "Wheel"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:929
+#: activities/drawing_wheels/DrawingWheels.qml:930
 msgctxt "DrawingWheels|"
 msgid "Gear"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:992
+#: activities/drawing_wheels/DrawingWheels.qml:993
 #, fuzzy, qt-format
 #| msgctxt "SignalGenerator|"
 #| msgid "%1 s"
@@ -7584,7 +7584,7 @@ msgctxt "DrawingWheels|"
 msgid "%1 spikes"
 msgstr "%1 s"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1010
+#: activities/drawing_wheels/DrawingWheels.qml:1011
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Speed"
@@ -7592,17 +7592,17 @@ msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Kiirus"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1026
+#: activities/drawing_wheels/DrawingWheels.qml:1027
 msgctxt "DrawingWheels|"
 msgid "Slow"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1046
+#: activities/drawing_wheels/DrawingWheels.qml:1047
 msgctxt "DrawingWheels|"
 msgid "Fast"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1089
+#: activities/drawing_wheels/DrawingWheels.qml:1090
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Font size"
@@ -7610,17 +7610,17 @@ msgctxt "DrawingWheels|"
 msgid "Pen size"
 msgstr "Fondi suurus"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1126
+#: activities/drawing_wheels/DrawingWheels.qml:1127
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1169
+#: activities/drawing_wheels/DrawingWheels.qml:1170
 msgctxt "DrawingWheels|"
 msgid "Offset"
 msgstr ""
 
-#: activities/drawing_wheels/DrawingWheels.qml:1207
+#: activities/drawing_wheels/DrawingWheels.qml:1208
 #, fuzzy
 #| msgctxt "IntroMessage|"
 #| msgid "Start"
@@ -7628,7 +7628,7 @@ msgctxt "DrawingWheels|"
 msgid "Start tooth"
 msgstr "Alusta"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1387
+#: activities/drawing_wheels/DrawingWheels.qml:1388
 #, fuzzy
 #| msgctxt "Piano_composition|"
 #| msgid "You have not selected any note. Do you want to erase all the notes?"
@@ -7636,13 +7636,13 @@ msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Sa ei ole valinud ühtegi nooti. Kas kustutada kõik noodid?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1388
+#: activities/drawing_wheels/DrawingWheels.qml:1389
 #, fuzzy
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Kas soovite alla laadida järgmised välised varad?"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1389
+#: activities/drawing_wheels/DrawingWheels.qml:1390
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -7650,7 +7650,7 @@ msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Jah"
 
-#: activities/drawing_wheels/DrawingWheels.qml:1390
+#: activities/drawing_wheels/DrawingWheels.qml:1391
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
