@@ -3,18 +3,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-02-01 20:51+0100\n"
+"PO-Revision-Date: 2026-04-24 17:23+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
-"Language-Team: \n"
+"Language-Team: fr\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 25.12.3\n"
 "X-Language: fr\n"
 "X-Qt-Contexts: true\n"
 "X-Text-Markup: qtrich\n"
-"X-Generator: Lokalize 25.12.1\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
 #: server/activities/binary_bulb/ActivityEditor.qml:12
@@ -2879,7 +2879,7 @@ msgstr "Activités échouées"
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
 msgid "User's groups"
-msgstr "Groupes de l'utilisateurs"
+msgstr "Groupes d'utilisateurs"
 
 #: server/views/datas/AllData.qml:78
 msgctxt "AllData|"
@@ -3324,7 +3324,7 @@ msgstr "Port"
 #: server/views/SettingsView.qml:188
 msgctxt "SettingsView|"
 msgid "Server status"
-msgstr "Etat du serveur"
+msgstr "État du serveur"
 
 #: server/views/SettingsView.qml:189
 msgctxt "SettingsView|As in 'The server is running'"
