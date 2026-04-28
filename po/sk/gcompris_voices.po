@@ -308,13 +308,13 @@ msgstr ""
 #: activities/color_mix/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the color by moving the sliders on the tubes of paint"
-msgstr "Priraďte the color by moving the sliders on the tubes of paint"
+msgstr "Priraďte farbu posúvaním posuvníkov na tubách farby"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "color_mix_light"
 #: activities/color_mix_light/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the color by moving the sliders on the torches"
-msgstr "Priraďte the color by moving the sliders on the torches"
+msgstr "Priraďte farbu posúvaním posuvníkov na fakliach"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "colors"
 #: activities/colors/ActivityInfo.qml:18
@@ -350,7 +350,8 @@ msgstr "Posuňte obrázky na ich jednotlivé ciele"
 #: activities/digital_electricity/ActivityInfo.qml:18
 #, kde-format
 msgid "Learn how digital electronics work and create your own circuit."
-msgstr "Naučiť sa how digital electronics work and create your own circuit."
+msgstr ""
+"Naučte sa, ako funguje digitálna elektronika, a vytvorte si vlastný obvod."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawing_wheels"
 #: activities/drawing_wheels/ActivityInfo.qml:22
@@ -376,8 +377,7 @@ msgstr "Nakresli čísla prepojením bodov v správnom poradí."
 msgid ""
 "Count the elements by organizing them then type the answer on your keyboard."
 msgstr ""
-"Počítajte the elements by organizing them then type the answer on your "
-"keyboard."
+"Spočítajte prvky ich usporiadaním a potom zadajte odpoveď na klávesnici."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "erase"
 #: activities/erase/ActivityInfo.qml:18
@@ -403,7 +403,7 @@ msgstr ""
 #: activities/explore_farm_animals/ActivityInfo.qml:18
 #, kde-format
 msgid "Learn about farmyard animals and the noises that they make."
-msgstr "Naučiť sa about farmyard animals and the noises that they make."
+msgstr "Naučte sa o hospodárskych zvieratách a zvukoch, ktoré vydávajú."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_monuments"
 #: activities/explore_monuments/ActivityInfo.qml:18
@@ -415,7 +415,7 @@ msgstr "Objavte pamiatky sveta."
 #: activities/explore_world_animals/ActivityInfo.qml:22
 #, kde-format
 msgid "Learn about world animals and locate them on a map."
-msgstr "Naučiť sa about world animals and locate them on a map."
+msgstr "Spoznajte svetové zvieratá a nájdite ich na mape."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_world_music"
 #: activities/explore_world_music/ActivityInfo.qml:18
@@ -457,7 +457,7 @@ msgstr "Vyberte požadovaný deň."
 #: activities/followline/ActivityInfo.qml:18
 #, kde-format
 msgid " Move the mouse or your finger along the pipe to stop the fire."
-msgstr " Presuňte the mouse or your finger along the pipe to stop the fire."
+msgstr " Pohybujte myšou alebo prstom pozdĺž rúry, aby ste zastavili oheň."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "football"
 #: activities/football/ActivityInfo.qml:18
@@ -478,8 +478,7 @@ msgstr ""
 #: activities/fractions_find/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the correct numerator and denominator of the represented fraction"
-msgstr ""
-"Nájdite the correct numerator and denominator of the represented fraction"
+msgstr "Nájdite správneho čitateľa a menovateľa zobrazeného zlomku"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "frieze"
 #: activities/frieze/ActivityInfo.qml:17
@@ -503,7 +502,7 @@ msgstr "Potiahnite and drop the objects to complete the map."
 #: activities/gletters/ActivityInfo.qml:18
 #, kde-format
 msgid "Type the letters on your keyboard before they reach the ground."
-msgstr "Type písmená on your keyboard before they reach the ground."
+msgstr "Napíšte písmená na klávesnici skôr, ako dosiahnu zem."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-equality"
 #: activities/gnumch-equality/ActivityInfo.qml:18
@@ -512,8 +511,8 @@ msgid ""
 "Guide the number eater with the arrow keys to the required numbers and press "
 "the space bar to swallow them."
 msgstr ""
-"Guide the number eater with the arrow keys to the vyžadované numbers and "
-"press the space bar to swallow them."
+"Navádzajte pojeda čísel pomocou klávesov so šípkami k požadovaným číslam a "
+"stlačte medzerník na ich prehltnutie."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-factors"
 #: activities/gnumch-factors/ActivityInfo.qml:18
@@ -559,8 +558,7 @@ msgstr ""
 #: activities/graduated_line_read/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the value corresponding to the given spot on the graduated line."
-msgstr ""
-"Nájdite the value corresponding to the given spot on the graduated line."
+msgstr "Nájdite hodnotu zodpovedajúcu zadanému miestu na stupnicovej čiare."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_use"
 #: activities/graduated_line_use/ActivityInfo.qml:17
@@ -588,8 +586,8 @@ msgstr "Vyfarbite graf tak, aby žiadne dva susedné uzly nemali rovnakú farbu.
 msgid ""
 "Move the spaceship to avoid hitting the planets and reach the space station."
 msgstr ""
-"Presuňte the spaceship to avoid hitting the planets and reach the space "
-"station."
+"Presuňte kozmickú loď tak, aby ste sa vyhli zrážke s planétami a dosiahli "
+"vesmírnu stanicu."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guess24"
 #: activities/guess24/ActivityInfo.qml:17
@@ -602,13 +600,14 @@ msgstr "Use the four numbers with given operators to find 24"
 #, kde-format
 msgid ""
 "Use the numbers and operations suggested to find the results proposed above."
-msgstr "Use čísla and operations suggested to find the results proposed above."
+msgstr ""
+"Použite navrhované čísla a operácie na nájdenie výsledkov navrhnutých vyššie."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guessnumber"
 #: activities/guessnumber/ActivityInfo.qml:18
 #, kde-format
 msgid "Find out the number by typing a number from the range proposed."
-msgstr "Nájdite out the number by typing a number from the range proposed."
+msgstr "Zistite číslo zadaním čísla z navrhovaného rozsahu."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hangman"
 #: activities/hangman/ActivityInfo.qml:21
@@ -623,7 +622,8 @@ msgid ""
 "Rebuild the same tower in the empty area as the one you see on the right "
 "hand side."
 msgstr ""
-"Rebuild rovnaký tower in the empty area as the one you see vpravo hand side."
+"Postavte rovnakú vežu v prázdnej oblasti ako tú, ktorú vidíte na pravej "
+"strane."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hanoi_real"
 #: activities/hanoi_real/ActivityInfo.qml:18
@@ -689,8 +689,8 @@ msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
 "the bar to the empty area to represent the decimal number."
 msgstr ""
-"Drag the arrow to select a part of the bar, and drag the vybrané part of the "
-"bar to the empty area to represent the decimal number."
+"Potiahnutím šípky vyberte časť tyče a potiahnutím vybranej časti tyče ju "
+"presuňte do prázdnej oblasti na zobrazenie desatinného čísla."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals_additions"
 #: activities/learn_decimals_additions/ActivityInfo.qml:17
@@ -699,8 +699,8 @@ msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
 "the bar to the empty area to represent the result of the addition."
 msgstr ""
-"Drag the arrow to select a part of the bar, and drag the vybrané part of the "
-"bar to the empty area to represent the result of the addition."
+"Potiahnutím šípky vyberte časť tyče a potiahnutím vybranej časti tyče ju "
+"presuňte do prázdnej oblasti na zobrazenie výsledku sčítania."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals_subtractions"
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:17
@@ -721,8 +721,8 @@ msgid ""
 "Drag the arrow to select a number of oranges, and drag the oranges to the "
 "empty area to represent the requested quantity."
 msgstr ""
-"Drag the arrow to select a počet oranges, and drag the oranges to the empty "
-"area to represent the requested quantity."
+"Potiahnutím šípky vyberte počet pomarančov a potiahnutím pomarančov ich "
+"presuňte do prázdnej oblasti na zobrazenie požadovaného množstva."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "left_right_click"
 #: activities/left_right_click/ActivityInfo.qml:17
@@ -730,8 +730,8 @@ msgstr ""
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
-"Presuňte animals to their homes using a vľavo click or vpravo click on your "
-"mouse."
+"Presuňte zvieratá do ich domovov pomocou ľavého alebo pravého kliknutia "
+"myšou."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
 #: activities/leftright/ActivityInfo.qml:18
@@ -774,8 +774,8 @@ msgid ""
 "Count the number of stars hidden under the hat and then click on the stars "
 "to indicate their number."
 msgstr ""
-"Count the počet stars hidden under the hat and then click on the stars to "
-"indicate their number."
+"Spočítajte počet hviezd skrytých pod klobúkom a potom kliknite na hviezdy na "
+"ich označenie."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "maze"
 #: activities/maze/ActivityInfo.qml:18
@@ -802,8 +802,8 @@ msgid ""
 "Help Tux find his way out. Left and right are used to turn and up to go "
 "forward."
 msgstr ""
-"Help Tux find his way out. Left and right are používaný na turn and up to go "
-"forward."
+"Pomôžte Tuxovi nájsť cestu von. Vľavo a vpravo sa používa na otáčanie a hore "
+"na pohyb vpred."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "melody"
 #: activities/melody/ActivityInfo.qml:18
@@ -821,15 +821,14 @@ msgstr ""
 #: activities/memory-case-association/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the upper case card with its lower case pair."
-msgstr "Priraďte the horeper case card with its lower case pair."
+msgstr "Priraďte kartu s veľkým písmenom k jej páru s malým písmenom."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-enumerate"
 #: activities/memory-enumerate/ActivityInfo.qml:18
 #, kde-format
 msgid ""
 "Match a number card with a card displaying the same number of butterflies."
-msgstr ""
-"Priraďte a number card with a card displaying the same number of butterflies."
+msgstr "Priraďte kartu s číslom ku karte zobrazujúcej rovnaký počet motýľov."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-minus"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add-tux"
@@ -893,9 +892,9 @@ msgid ""
 "cursor next to this sparkle and use the mousewheel or the zoom gesture to "
 "zoom in."
 msgstr ""
-"Looking at the rockwall, môžete see a sparkle somewhere. Move the mouse "
-"cursor next to this sparkle and use the mousewheel or the zoom gesture to "
-"zoom in."
+"Pri pohľade na skalnatú stenu môžete niekde vidieť iskru. Presuňte kurzor "
+"myši vedľa tejto iskry a pomocou kolieska myši alebo gestá priblíženia "
+"priblížte zobrazenie."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "missing-letter"
 #: activities/missing-letter/ActivityInfo.qml:19
@@ -932,7 +931,7 @@ msgstr "Kliknite na peniaze na zaplatenie."
 #: activities/morse_code/ActivityInfo.qml:21
 #, kde-format
 msgid "Learn and practice the International Morse code"
-msgstr "Naučiť sa and practice the International Morse code"
+msgstr "Naučte sa a precvičujte medzinárodnú Morseovu abecedu"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
@@ -1018,7 +1017,7 @@ msgstr "Arrange the given words to form a meaningful sentence."
 #: activities/oware_2players/ActivityInfo.qml:17
 #, kde-format
 msgid "Capture at least 25 seeds to win the game"
-msgstr "Capture aspoň 25 seeds to win the game"
+msgstr "Zajmite aspoň 25 semien na výhru v hre"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "paintings"
 #: activities/paintings/ActivityInfo.qml:23
@@ -1155,7 +1154,7 @@ msgstr ""
 #: activities/roman_numerals/ActivityInfo.qml:18
 #, kde-format
 msgid "Learn and practice roman to arabic numerals conversion"
-msgstr "Naučiť sa and practice roman to arabic numerals conversion"
+msgstr "Naučte sa a precvičujte prevod rímskych číslíc na arabské"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard_weight_avoirdupois"
@@ -1174,8 +1173,8 @@ msgid ""
 "Share the candies equally among the specified number of children and notice "
 "that there may be a rest left"
 msgstr ""
-"Share the candies equally among zadaný počet children and notice that there "
-"may be a rest left"
+"Rozdeľte cukríky rovnomerne medzi zadaný počet detí a všimnite si, že môže "
+"zostať zvyšok"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "simplepaint"
 #: activities/simplepaint/ActivityInfo.qml:18
@@ -1207,7 +1206,7 @@ msgstr ""
 #, kde-format
 msgid ""
 "Count the numbers on the dominoes then type the result on your keyboard."
-msgstr "Počítajte čísla on the dominoes then type the result on your keyboard."
+msgstr "Spočítajte čísla na dominách a potom napíšte výsledok na klávesnici."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "solar_system"
 #: activities/solar_system/ActivityInfo.qml:21
@@ -1286,8 +1285,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
-"Create pairs of numbers equal to ten. Vyberte a number in the list, then "
-"select an empty spot of an operation to move the vybrané number there."
+"Vytvorte páry čísel rovnajúce sa desiatim. Vyberte číslo zo zoznamu, potom "
+"vyberte prázdne miesto operácie na presunutie vybraného čísla tam."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_swap"
 #: activities/tens_complement_swap/ActivityInfo.qml:17
@@ -1307,9 +1306,9 @@ msgid ""
 "number in the list, then select an empty spot of an operation to move the "
 "selected number there."
 msgstr ""
-"Decompose the operations to include a pair of numbers equal to ten. Vyberte "
-"a number in the list, then select an empty spot of an operation to move the "
-"vybrané number there."
+"Rozložte operácie tak, aby obsahovali pár čísel rovnajúcich sa desiatim. "
+"Vyberte číslo zo zoznamu, potom vyberte prázdne miesto operácie na "
+"presunutie vybraného čísla tam."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe_2players"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe"
