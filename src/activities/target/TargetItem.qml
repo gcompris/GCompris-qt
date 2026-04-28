@@ -13,6 +13,7 @@ import QtQuick
 import core 1.0
 
 import "../../core"
+import "qrc:/gcompris/src/core/core.js" as Core
 import "target.js" as Activity
 
 Image {
@@ -32,6 +33,9 @@ Image {
     property list<int> scores: []
     property string scoreText
     property int scoreTotal
+
+    readonly property bool isLeftToRightLocale: Core.isLeftToRightLocale(ApplicationSettings.locale)
+    readonly property string questionMark: isLeftToRightLocale ? "?" : "؟"
 
     onTargetSizeChanged: {
         width = Math.max(parent.width * zoom,
@@ -95,7 +99,11 @@ Image {
                 break
             }
         }
-        scores.push(score)
+        if(isLeftToRightLocale) {
+            scores.push(score)
+        } else {
+            scores = [score].concat(scores)
+        }
         scoreTotal += score
         scoreText = scores.join(" + ")
         targetReached()
