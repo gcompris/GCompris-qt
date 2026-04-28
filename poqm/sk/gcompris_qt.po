@@ -1926,7 +1926,7 @@ msgid ""
 "circuit. It is like a \"push\" or \"pull\" for electric charge."
 msgstr ""
 "Napätie alebo elektrický potenciálový rozdiel je to, čo vytvára prúd v "
-"obvode. Je to ako \"tlak\" alebo \"ťah\" pre elektrický náboj."
+"obvode. Je to ako \\\"tlak\\\" alebo \\\"ťah\\\" pre elektrický náboj."
 
 #: activities/analog_electricity/TutorialDataset.qml:180
 msgctxt "TutorialDataset|"
@@ -3096,7 +3096,7 @@ msgid ""
 "left, each dot is referenced by a number from 1 to 6."
 msgstr ""
 "Každý znak alebo bunka je v Braillovom písme tvorená najviac šiestimi "
-"bodkami, usporiadanými v obdľžniku obsahujúcom dva stĺpce, kde každý stĺpec "
+"bodkami, usporiadanými v obdĺžniku obsahujúcom dva stĺpce, kde každý stĺpec "
 "má tri pozície. Ako vidíš vľavo, každej bodke je priradené číslo od 1 do 6."
 
 #: activities/braille_alphabets/FirstScreen.qml:87
@@ -3235,7 +3235,7 @@ msgid ""
 "of only one cell directly provide the number to enter."
 msgstr ""
 "Pre vyplnenie mriežky, zvoľ číslo v zozname a klikni na jeho cieľové "
-"umiestnenie. Každé číslo sa musí nachádzať v celom riadku a celom stľpci iba "
+"umiestnenie. Každé číslo sa musí nachádzať v celom riadku a celom stĺpci iba "
 "raz. Klietky sú skupiny buniek, ktoré poskytujú informáciu ako ich vyplniť. "
 "Klietky, ktoré  tvorí viac ako jedna bunka poskytujú výsledok a operátor: "
 "keď sa skombinujú všetky čísla v klietke pomocou operátora, musí vyjsť "
@@ -6353,7 +6353,7 @@ msgstr "The simulation is horedated in real time by any user action."
 #: activities/digital_electricity/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "In the working area, you can move the components by dragging them."
-msgstr "In the working area, môžete move the components by dragging them."
+msgstr "V pracovnej oblasti môžete komponenty presúvať ich potiahnutím."
 
 #: activities/digital_electricity/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -6385,8 +6385,8 @@ msgid ""
 "You can rotate the selected component using the rotate buttons (circle arrow "
 "icons) from the tool menu."
 msgstr ""
-"You can rotate the vybrané component using the rotate buttons (circle arrow "
-"icons) from the tool menu."
+"Vybranú súčiastku môžete otočiť pomocou tlačidiel otočenia (ikony šípky v "
+"kruhu) z ponuky nástrojov."
 
 #: activities/digital_electricity/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -6394,8 +6394,8 @@ msgid ""
 "You can read information about the selected component using the info button "
 "(i icon) from the tool menu."
 msgstr ""
-"You can read information about the vybrané component using the info button "
-"(i icon) from the tool menu."
+"Informácie o vybranej súčiastke môžete prečítať pomocou tlačidla informácií "
+"(ikona i) z ponuky nástrojov."
 
 #: activities/digital_electricity/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
@@ -6403,20 +6403,21 @@ msgid ""
 "You can zoom in or out the working area using the + and - keys, using the "
 "zoom buttons from the tool menu, or using pinch gestures on a touchscreen."
 msgstr ""
-"Môžete zoom in or out the working area using the + and - keys, using the "
-"zoom buttons from the tool menu, or using pinch gestures on a touchscreen."
+"Pracovnú plochu môžete priblížiť alebo oddialiť pomocou klávesov + a -, "
+"pomocou tlačidiel priblíženia z ponuky nástrojov alebo pomocou stiahnutia "
+"prstov na dotykovej obrazovke."
 
 #: activities/digital_electricity/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid ""
 "You can pan the working area by clicking on an empty area and dragging it."
 msgstr ""
-"Môžete pan the working area by clicking on an empty area and dragging it."
+"Pracovnú plochu môžete posúvať kliknutím na prázdnu oblasť a jej ťahaním."
 
 #: activities/digital_electricity/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "You can click on a switch component to open and close it."
-msgstr "Môžete click on a switch component to open and close it."
+msgstr "Kliknutím na komponent prepínača ho môžete otvoriť alebo zatvoriť."
 
 #: activities/digital_electricity/components/AndGate.qml:21
 msgctxt "AndGate|"
@@ -7046,8 +7047,8 @@ msgid ""
 "Warning: setting the number of undo too high can make the application crash "
 "if your device doesn't have enough memory."
 msgstr ""
-"Varovanie: setting the počet undo too high can make the application crash "
-"akr device doesn't have enough memory."
+"Varovanie: nastavenie príliš vysokého počtu krokov späť môže spôsobiť pád "
+"aplikácie, ak vaše zariadenie nemá dostatok pamäte."
 
 #. Activity title
 #: activities/drawing_wheels/ActivityInfo.qml:19
@@ -7261,9 +7262,8 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
-"Draw the letters by connecting the dots in the correct order. Môžete click "
-"and drag from one point to the next ones, or click on each point one after "
-"the other."
+"Kreslite písmená spájaním bodov v správnom poradí. Môžete kliknúť a ťahať z "
+"jedného bodu na ďalšie, alebo klikať na každý bod jeden po druhom."
 
 #. Activity title
 #: activities/drawnumbers/ActivityInfo.qml:15
@@ -7291,9 +7291,8 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
-"Draw the numbers by connecting the dots in the correct order. Môžete click "
-"and drag from one point to the next ones, or click on each point one after "
-"the other."
+"Kreslite čísla spájaním bodov v správnom poradí. Môžete kliknúť a ťahať z "
+"jedného bodu na ďalšie, alebo klikať na každý bod jeden po druhom."
 
 #. Activity title
 #: activities/enumerate/ActivityInfo.qml:15
@@ -7746,8 +7745,8 @@ msgid ""
 "The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
 "can be sheared and used to produce textile fibre."
 msgstr ""
-"The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
-"môže byť sheared and used to produce textile fibre."
+"Ovca hovorí „bé”. Väčšina plemien oviec nesie vlnenú rúno. Rúno je možné "
+"ostrihať a použiť na výrobu textilného vlákna."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
 msgctxt "board1|"
@@ -9176,16 +9175,16 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
-"The Florence Cathedral, officially known as the Cattedrale di Santa Maria "
-"del Fiore, is a renowned masterpiece of Gothic and Renaissance architecture "
-"located in Florence, Italy. Completed in 1436, it is famous for its massive "
-"red-tiled dome designed by Filippo Brunelleschi, which remains an "
-"engineering marvel and a symbol of the city. The cathedral's intricate "
-"marble facade, added in the 19th century, complements its richly decorated "
-"interior and artistic treasures. Together with Giotto’s Campanile and the "
-"Baptistery of St. John, it forms súčasť a UNESCO World Heritage Site, "
-"drawing millions of visitors annually for its historical, cultural, and "
-"architectural significance."
+"Florentská katedrála, oficiálne známa ako Cattedrale di Santa Maria del "
+"Fiore, je renomovaným majstrovským dielom gotickej a renesančnej "
+"architektúry nachádzajúcim sa vo Florencii v Taliansku. Dokončená v roku "
+"1436, je slávna pre svoju masívnu kupolu pokrytú červenými dlaždicami "
+"navrhnutú Filipom Brunelleschim, ktorá zostáva inžinierskym zázrakom a "
+"symbolom mesta. Zložitá mramorová fasáda katedrály, pridaná v 19. storočí, "
+"dopĺňa jej bohato zdobený interiér a umelecké poklady. Spolu s Giottoho "
+"zvonicou a Krstiteľnicou sv. Jána tvorí súčasť lokality svetového dedičstva "
+"UNESCO, ktorá každoročne priťahuje milióny návštevníkov pre svoj historický, "
+"kultúrny a architektonický význam."
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
@@ -10830,9 +10829,7 @@ msgstr "Zisti správneho čitateľa a menovateľa zobrazeného zlomku."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to write a fraction corresponding to a given fractional representation."
-msgstr ""
-"Naučiť sa to write a fraction corresponding to a given fractional "
-"representation."
+msgstr "Naučte sa písať zlomok zodpovedajúci zadanému zobrazeniu zlomku."
 
 #. Help manual
 #: activities/fractions_find/ActivityInfo.qml:22
@@ -10843,9 +10840,9 @@ msgid ""
 "denominator. Then count the number of selected parts, and set it as the "
 "numerator."
 msgstr ""
-"Write the fraction corresponding to the fractional representation: Count the "
-"total počet parts of the represented shape, and set it as the denominator. "
-"Then count the počet selected parts, and set it as the numerator."
+"Napíšte zlomok zodpovedajúci zobrazeniu zlomku: Spočítajte celkový počet "
+"dielov zobrazeného tvaru a nastavte ho ako menovateľa. Potom spočítajte "
+"počet vybraných dielov a nastavte ho ako čitateľa."
 
 #: activities/fractions_find/resource/1/Data.qml:19
 msgctxt "Data|"
@@ -10902,8 +10899,8 @@ msgid ""
 "Reproduce the frieze on top. On some levels, you may have to complete the "
 "frieze or to reproduce it after you've memorized it."
 msgstr ""
-"Reproduce the frieze on top. On some levels, môžete have to complete the "
-"frieze or to reproduce it after you've memorized it."
+"Reprodukujte vlys navrchu. Na niektorých úrovniach možno budete musieť vlys "
+"dokončiť alebo ho reprodukovať po tom, čo ste si ho zapamätali."
 
 #: activities/frieze/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -11087,7 +11084,7 @@ msgstr "Umiestnite regióny na mapy krajín."
 #: activities/geo-country/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Learn to locate and place the regions of countries."
-msgstr "Naučiť sa to locate and place the regions of countries."
+msgstr "Naučte sa nájsť a umiestniť regióny krajín."
 
 #. Help manual
 #: activities/geo-country/ActivityInfo.qml:27
@@ -13887,8 +13884,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to locate and place the continents and many countries on the world map."
 msgstr ""
-"Naučiť sa to locate and place the continents and many countries on the world "
-"map."
+"Naučte sa lokalizovať a umiestniť kontinenty a mnohé krajiny na mape sveta."
 
 #. Help manual
 #: activities/geography/ActivityInfo.qml:27
@@ -15016,7 +15012,7 @@ msgstr "Stlač klávesu padajúceho písmena skôr ako dopadne."
 #: activities/gletters/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Match letters on the keyboard with letters on the screen."
-msgstr "Priraďte letters on the keyboard with letters on the screen."
+msgstr "Priraďte písmená na klávesnici k písmenám na obrazovke."
 
 #. Help manual
 #: activities/gletters/ActivityInfo.qml:23
@@ -15612,8 +15608,8 @@ msgid ""
 "Space: assign the selected class to the selected word and then select the "
 "next word"
 msgstr ""
-"Space: assign the vybrané class to the vybrané word and then select the next "
-"word"
+"Medzera: priradí vybraný slovný druh k vybranému slovu a potom vyberie "
+"ďalšie slovo"
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
 #: activities/grammar_classes/ActivityInfo.qml:33
@@ -15639,8 +15635,7 @@ msgstr "Naučiť sa to identify grammatical classes."
 #: activities/grammar_analysis/GrammarAnalysis.qml:28
 msgctxt "GrammarAnalysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
-msgstr ""
-"Nájdite all the words corresponding to the requested grammatical classes."
+msgstr "Nájdite všetky slová zodpovedajúce požadovaným slovným druhom."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:29
 msgctxt "GrammarAnalysis|"
@@ -15695,8 +15690,7 @@ msgstr "Naučiť sa to identify grammatical classes."
 #: activities/grammar_classes/GrammarClasses.qml:17
 msgctxt "GrammarClasses|"
 msgid "Find all the words corresponding to the requested grammatical class."
-msgstr ""
-"Nájdite all the words corresponding to the requested grammatical class."
+msgstr "Nájdite všetky slová zodpovedajúce požadovanému slovnému druhu."
 
 #: activities/grammar_classes/GrammarClasses.qml:18
 msgctxt "GrammarClasses|"
@@ -15788,8 +15782,8 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Move the spaceship to avoid hitting the planets and reach the space station."
 msgstr ""
-"Pohybujte kozmickou loďou, aby ste sa vyhli zrážke s planétami a dostali sa "
-"na vesmírnu stanicu."
+"Presuňte kozmickú loď tak, aby ste sa vyhli zrážke s planétami a dosiahli "
+"vesmírnu stanicu."
 
 #. Help manual
 #: activities/gravity/ActivityInfo.qml:27
@@ -15988,7 +15982,7 @@ msgstr "Počet uhádnutí"
 #: activities/guesscount/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Find the operations to get the required result."
-msgstr "Nájdite the operations to get the required result."
+msgstr "Nájdite operácie, ktoré vedú k požadovanému výsledku."
 
 #. Help goal
 #: activities/guesscount/ActivityInfo.qml:24
@@ -16097,9 +16091,10 @@ msgstr ""
 "Prečítajte si inštrukcie, ktoré vám povedia, z akého intervalu čísel máte "
 "zistiť číslo. Zadajte číslo do poľa vpravo hore. Povie sa vám, či je vaše "
 "číslo väčšie alebo menšie. Potom to skúste znova, až kým nenájdete správnu "
-"odpoveď. Vzdialenosť Tuxa od východu reprezentuje ako blízko ste k správnemu "
-"číslu. Ak je Tux nad alebo pod východom, znamená to, že vaše číslo je väčšie "
-"alebo menšie ako správne číslo."
+"odpoveď. Vzdialenosť Tuxa od pravého okraja obrazovky reprezentuje, ako "
+"blízko ste k správnemu číslu. Ak je Tux nad alebo pod vertikálnym stredom "
+"obrazovky, znamená to, že vaše číslo je väčšie alebo menšie ako správne "
+"číslo."
 
 #: activities/guessnumber/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -16163,7 +16158,7 @@ msgctxt "ActivityConfig|"
 msgid ""
 "Speak the words to find (if available) when three attempts are remaining"
 msgstr ""
-"Speak the words to find (if dostupné) when three attempts are remaining"
+"Vyslovi hľadané slová (ak je to k dispozícii), keď zostávajú tri pokusy"
 
 #. Activity title
 #: activities/hangman/ActivityInfo.qml:15
@@ -16175,7 +16170,7 @@ msgstr "Klasická hra Kat"
 #: activities/hangman/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Guess the letters of the given word."
-msgstr "Guess písmená of the given word."
+msgstr "Hádajte písmená zadaného slova."
 
 #. Help goal
 #: activities/hangman/ActivityInfo.qml:19
@@ -16298,11 +16293,10 @@ msgid ""
 "one disc can be moved at a time, and a disc can never be placed on a smaller "
 "disc."
 msgstr ""
-"Drag and drop one top disc at a time, from one tower to another, to "
-"reproduce the tower vľavo-hand side onto the right-hand side peg. The discs "
-"can move back and forth freely on the pegs, following two rules: only one "
-"disc can be moved at a time, and a disc can never be placed on a smaller "
-"disc."
+"Ťahajte a ukladajte vždy jeden vrchný disk z jednej veže na druhú, aby ste "
+"reprodukovali vežu z ľavej strany na pravú tyč. Disky sa môžu voľne "
+"pohybovať po tyčiach, pričom platia dve pravidlá: naraz je možné presunúť "
+"iba jeden disk a disk nikdy nemožno umiestniť na menší disk."
 
 #: activities/hanoi_real/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -16879,9 +16873,9 @@ msgid ""
 "left keys to control the direction. On touch screens you can control the "
 "rocket through the corresponding on-screen buttons."
 msgstr ""
-"In first levels, use the up/down keys to control the thrust and the right/"
-"left keys to control the direction. On touch screens môžete control the "
-"rocket through the corresponding on-screen buttons."
+"Na prvých úrovniach použite klávesy hore/dole na ovládanie ťahu a klávesy "
+"vpravo/vľavo na ovládanie smeru. Na dotykových obrazovkách môžete raketu "
+"ovládať pomocou zodpovedajúcich tlačidiel na obrazovke."
 
 #: activities/land_safe/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -16890,9 +16884,9 @@ msgid ""
 "By rotating the spaceship you can trigger an acceleration in non-vertical "
 "direction using the up/down keys."
 msgstr ""
-"In higher levels, môžete use the right/left keys to rotate the spaceship. By "
-"rotating the spaceship môžete trigger an acceleration in non-vertical "
-"direction using the up/down keys."
+"Na vyšších úrovniach môžete používať klávesy vpravo/vľavo na otáčanie "
+"kozmickej lode. Otáčaním kozmickej lode môžete spustiť zrýchlenie v "
+"nevodorovnom smere pomocou klávesov hore/dole."
 
 #: activities/land_safe/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -17250,8 +17244,8 @@ msgid ""
 "An addition is displayed on the screen. Calculate the result, fill the "
 "corresponding number of circles and validate your answer."
 msgstr ""
-"An addition is displayed on the screen. Calculate the result, fill the "
-"corresponding počet circles and validate your answer."
+"Na obrazovke je zobrazené sčítanie. Vypočítajte výsledok, vyplňte "
+"zodpovedajúci počet krúžkov a potvrďte svoju odpoveď."
 
 #: activities/learn_additions/ActivityInfo.qml:26
 #: activities/learn_digits/ActivityInfo.qml:26
@@ -17303,10 +17297,10 @@ msgid ""
 "steps until the number of dropped bars corresponds to the displayed decimal "
 "number. Then click on the OK button to validate your answer."
 msgstr ""
-"A decimal number is displayed. Drag the arrow to select a súčasť the unit "
-"bar, and drag vybraný súčasť the bar to the empty area. Repeat these steps "
-"until the počet dropped bars corresponds to the displayed decimal number. "
-"Then click on the OK button to validate your answer."
+"Zobrazí sa desatinné číslo. Potiahnutím šípky vyberte časť jednotkovej tyče "
+"a potiahnutím vybranej časti tyče ju presuňte do prázdnej oblasti. Opakujte "
+"tieto kroky, kým počet odložených tyčí nebude zodpovedať zobrazenému "
+"desatinnému číslu. Potom kliknite na tlačidlo OK na potvrdenie odpovede."
 
 #: activities/learn_decimals/Learn_decimals.qml:30
 msgctxt "Learn_decimals|"
@@ -17325,10 +17319,10 @@ msgid ""
 "bars corresponds to the displayed decimal number. Then click on the OK "
 "button to validate your answer."
 msgstr ""
-"Drag the arrow to select a súčasť the bar, and drag vybraný súčasť the bar "
-"to the empty area. Repeat these steps until the počet dropped bars "
-"corresponds to the displayed decimal number. Then click on the OK button to "
-"validate your answer."
+"Potiahnutím šípky vyberte časť tyče a potiahnutím vybranej časti tyče ju "
+"presuňte do prázdnej oblasti. Opakujte tieto kroky, kým počet odložených "
+"tyčí nebude zodpovedať zobrazenému desatinnému číslu. Potom kliknite na "
+"tlačidlo OK na potvrdenie odpovede."
 
 #: activities/learn_decimals/Learn_decimals.qml:172
 #, qt-format
@@ -17402,10 +17396,10 @@ msgid ""
 "area. Repeat these steps until the number of dropped bars corresponds to the "
 "result of the addition, and click on the OK button to validate your answer."
 msgstr ""
-"An addition with two decimal numbers is displayed. Drag the arrow to select "
-"a súčasť the unit bar, and drag vybraný súčasť the bar to the empty area. "
-"Repeat these steps until the počet dropped bars corresponds to the result of "
-"the addition, and click on the OK button to validate your answer."
+"Zobrazí sa sčítanie dvoch desatinných čísel. Potiahnutím šípky vyberte časť "
+"jednotkovej tyče a potiahnutím vybranej časti tyče ju presuňte do prázdnej "
+"oblasti. Opakujte tieto kroky, kým počet odložených tyčí nebude zodpovedať "
+"výsledku sčítania, a kliknite na tlačidlo OK na potvrdenie odpovede."
 
 #: activities/learn_decimals_additions/ActivityInfo.qml:23
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:23
@@ -17442,10 +17436,10 @@ msgid ""
 "bars corresponds to the result of the addition, and click on the OK button "
 "to validate your answer."
 msgstr ""
-"Drag the arrow to select a súčasť the bar, and drag vybraný súčasť the bar "
-"to the empty area. Repeat these steps until the počet dropped bars "
-"corresponds to the result of the addition, and click on the OK button to "
-"validate your answer."
+"Potiahnutím šípky vyberte časť tyče a potiahnutím vybranej časti tyče ju "
+"presuňte do prázdnej oblasti. Opakujte tieto kroky, kým počet odložených "
+"tyčí nebude zodpovedať výsledku sčítania, a kliknite na tlačidlo OK na "
+"potvrdenie odpovede."
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:24
 msgctxt "Learn_decimals_additions|"
@@ -17670,7 +17664,7 @@ msgstr "Učiť sa množstvá"
 #: activities/learn_quantities/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Learn to represent a quantity of objects."
-msgstr "Naučiť sa to represent a quantity of objects."
+msgstr "Naučte sa znázorniť množstvo objektov."
 
 #. Help goal
 #: activities/learn_quantities/ActivityInfo.qml:19
@@ -17691,10 +17685,10 @@ msgid ""
 "number of dropped oranges corresponds to the requested quantity. Then click "
 "on the OK button to validate your answer."
 msgstr ""
-"A quantity is requested. Drag the arrow to select a počet oranges, and drag "
-"vybraný oranges to the empty area. Repeat these steps until the počet "
-"dropped oranges corresponds to the requested quantity. Then click on the OK "
-"button to validate your answer."
+"Je požadované množstvo. Potiahnutím šípky vyberte počet pomarančov a "
+"potiahnutím vybraných pomarančov ich presuňte do prázdnej oblasti. Opakujte "
+"tieto kroky, kým počet odložených pomarančov nebude zodpovedať požadovanému "
+"množstvu. Potom kliknite na tlačidlo OK na potvrdenie odpovede."
 
 #: activities/learn_quantities/Learn_quantities.qml:16
 msgctxt "Learn_quantities|"
@@ -17810,7 +17804,8 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
-"Presuňte zvieratá do ich domovov kiknutím ľavým alebo pravým tlačidlom myši."
+"Presuňte zvieratá do ich domovov pomocou ľavého alebo pravého kliknutia "
+"myšou."
 
 #. Help goal
 #: activities/left_right_click/ActivityInfo.qml:19
@@ -18075,8 +18070,8 @@ msgid ""
 "Remember the order of an event sequence. Learn about the life of Louis "
 "Braille."
 msgstr ""
-"Remember the order of an event sequence. Naučiť sa about the life of Louis "
-"Braille."
+"Zapamätajte si poradie postupnosti udalostí. Naučte sa o živote Louisa "
+"Brailla."
 
 #. Help manual
 #: activities/louis-braille/ActivityInfo.qml:23
@@ -19008,8 +19003,8 @@ msgid ""
 "Each card is hiding either an operation (an addition or a subtraction), or a "
 "result. You have to match the operations with their result."
 msgstr ""
-"Each card is hiding either an operation (an addition or a subtraction), or a "
-"result. Musíte match the operations with their result."
+"Každá karta skrýva buď operáciu (sčítanie alebo odčítanie), alebo výsledok. "
+"Musíte priradiť operácie k ich výsledku."
 
 #. Activity title
 #: activities/memory-math-add-minus/ActivityInfo.qml:15
@@ -19053,8 +19048,8 @@ msgid ""
 "Each card is hiding either an addition, or a result. You have to match the "
 "additions with their result."
 msgstr ""
-"Each card is hiding either an addition, or a result. Musíte match the "
-"additions with their result."
+"Každá karta skrýva buď sčítanie, alebo výsledok. Musíte priradiť sčítania k "
+"ich výsledku."
 
 #: activities/memory-math-add-tux/resource/1/Data.qml:15
 #: activities/memory-math-add/resource/1/Data.qml:15
@@ -19164,8 +19159,8 @@ msgid ""
 "Each card is hiding either a division, or a result. You have to match the "
 "divisions with their result."
 msgstr ""
-"Each card is hiding either a division, or a result. Musíte match the "
-"divisions with their result."
+"Každá karta skrýva buď delenie, alebo výsledok. Musíte priradiť delenia k "
+"ich výsledku."
 
 #: activities/memory-math-div-tux/resource/1/Data.qml:15
 #: activities/memory-math-div/resource/1/Data.qml:15
@@ -19275,8 +19270,8 @@ msgid ""
 "Each card is hiding either a subtraction, or a result. You have to match the "
 "subtractions with their result."
 msgstr ""
-"Each card is hiding either a subtraction, or a result. Musíte match the "
-"subtractions with their result."
+"Každá karta skrýva buď odčítanie, alebo výsledok. Musíte priradiť odčítania "
+"k ich výsledku."
 
 #: activities/memory-math-minus-tux/resource/1/Data.qml:15
 #: activities/memory-math-minus/resource/1/Data.qml:15
@@ -19388,8 +19383,8 @@ msgid ""
 "Each card is hiding either an operation (a multiplication or a division), or "
 "a result. You have to match the operations with their result."
 msgstr ""
-"Each card is hiding either an operation (a multiplication or a division), or "
-"a result. Musíte match the operations with their result."
+"Každá karta skrýva buď operáciu (násobenie alebo delenie), alebo výsledok. "
+"Musíte priradiť operácie k ich výsledku."
 
 #. Activity title
 #: activities/memory-math-mult-div/ActivityInfo.qml:15
@@ -19442,8 +19437,8 @@ msgid ""
 "Each card is hiding either a multiplication, or a result. You have to match "
 "the multiplications with their result."
 msgstr ""
-"Each card is hiding either a multiplication, or a result. Musíte match the "
-"multiplications with their result."
+"Každá karta skrýva buď násobenie, alebo výsledok. Musíte priradiť násobenia "
+"k ich výsledku."
 
 #: activities/memory-math-mult-tux/resource/1/Data.qml:15
 #: activities/memory-math-mult/resource/1/Data.qml:15
@@ -20443,7 +20438,7 @@ msgstr "Chýbajúce písmeno"
 #: activities/missing-letter/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Find the missing letter to complete the word."
-msgstr "Nájdite the missing letter to complete the word."
+msgstr "Nájdite chýbajúce písmeno na doplnenie slova."
 
 #. Help goal
 #: activities/missing-letter/ActivityInfo.qml:21
@@ -20952,10 +20947,10 @@ msgid ""
 "any vacant spot. A player wins when the other player can't move any piece or "
 "has only 2 pieces left."
 msgstr ""
-"Play with Tux. First take turns to place nine pieces, and then take turns to "
-"move your pieces. Ak have only 3 pieces left, môžete make them fly to any "
-"vacant spot. A player wins when the other player can't move any piece or has "
-"only 2 pieces left."
+"Hrajte s Tuxom. Najprv sa striedajte v ukladaní deviatich kameňov, a potom "
+"sa striedajte v pohybe vašich kameňov. Ak vám zostanú iba 3 kamene, môžete "
+"ich nechať „lietať” na ľubovoľné voľné miesto. Hráč vyhráva, keď druhý hráč "
+"nemôže pohnúť žiadnym kameňom alebo mu zostanú iba 2 kamene."
 
 #: activities/nine_men_morris/nine_men_morris.js:239
 #: activities/nine_men_morris/nine_men_morris.js:1085
@@ -21065,10 +21060,10 @@ msgid ""
 "fly to any vacant spot. A player wins when the other player can't move any "
 "piece or has only 2 pieces left."
 msgstr ""
-"Play with a friend. First take turns to place nine pieces, and then take "
-"turns to move your pieces. Ak have only 3 pieces left, môžete make them fly "
-"to any vacant spot. A player wins when the other player can't move any piece "
-"or has only 2 pieces left."
+"Hrajte s priateľom. Najprv sa striedajte v ukladaní deviatich kameňov, a "
+"potom sa striedajte v pohybe vašich kameňov. Ak vám zostanú iba 3 kamene, "
+"môžete ich nechať „lietať” na ľubovoľné voľné miesto. Hráč vyhráva, keď "
+"druhý hráč nemôže pohnúť žiadnym kameňom alebo mu zostanú iba 2 kamene."
 
 #. Activity title
 #: activities/note_names/ActivityInfo.qml:18
@@ -21163,7 +21158,7 @@ msgstr "Sekvencia čísel"
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the numbers one after the other according to the numerical sequence."
-msgstr "Vyberte čísla one after the other according to the numerical sequence."
+msgstr "Vyberte čísla jedno po druhom podľa číselnej postupnosti."
 
 #. Help goal
 #: activities/number_sequence/ActivityInfo.qml:20
@@ -21201,7 +21196,7 @@ msgstr ""
 #: activities/numbers-odd-even/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to recognize even and odd numbers and their numerical order."
-msgstr "Naučiť sa to recognize even and odd numbers and their numerical order."
+msgstr "Naučte sa rozoznávať párne a nepárne čísla a ich číselné poradie."
 
 #. Help manual
 #: activities/numbers-odd-even/ActivityInfo.qml:23
@@ -21692,11 +21687,10 @@ msgid ""
 "seeds, it is possible for the game to end in a draw, where each player has "
 "captured 24."
 msgstr ""
-"The game starts with four seeds in each house. The objective of the game is "
-"to capture more seeds than your opponent. Since the game has only 48 seeds, "
-"capturing 25 is sufficient to win the game. Since existuje an even počet "
-"seeds, it is possible for the game to end in a draw, where each player has "
-"captured 24."
+"Hra začína so štyrmi semenami v každom dome. Cieľom hry je zajať viac semien "
+"ako váš súper. Keďže hra má iba 48 semien, zajatie 25 semien postačuje na "
+"výhru. Keďže existuje párny počet semien, je možné, aby hra skončila "
+"remízou, keď každý hráč zajal 24 semien."
 
 #: activities/oware/ActivityInfo.qml:23
 #: activities/oware_2players/ActivityInfo.qml:23
@@ -21710,13 +21704,13 @@ msgid ""
 "empty; if it contained 12 (or more) seeds, it is skipped, and the twelfth "
 "seed is placed in the next house."
 msgstr ""
-"Players take turns moving the seeds. On each turn, a player chooses jedna z "
-"the six houses under their control. The player removes all seeds from that "
-"house and distributes them, in a process called sowing, into nasledujúce "
-"houses (counter-clockwise). Seeds are not distributed into the end scoring "
-"houses, nor into the house drawn from. The starting house is always left "
-"empty; if it contained 12 (or more) seeds, it is skipped, and the twelfth "
-"seed is placed in the next house."
+"Hráči sa striedajú v pohybe semien. V každom ťahu si hráč vyberie jeden zo "
+"šiestich domov pod svojou kontrolou. Hráč odstráni všetky semená z tohto "
+"domu a rozmiestni ich, v procese nazývanom siatie, do nasledujúcich domov "
+"(proti smeru hodinových ručičiek). Semená sa nerozmiestňujú do záverečných "
+"bodovacích domov ani do domu, z ktorého boli odobrané. Východiskový dom "
+"zostáva vždy prázdny; ak obsahoval 12 (alebo viac) semien, preskočí sa a "
+"dvanáste semeno sa umiestni do nasledujúceho domu."
 
 #: activities/oware/ActivityInfo.qml:24
 #: activities/oware_2players/ActivityInfo.qml:24
@@ -21733,16 +21727,15 @@ msgid ""
 "this would prevent the opponent from continuing the game, and the seeds are "
 "instead left on the board."
 msgstr ""
-"Capturing occurs only when a player brings the count of an opponent's house "
-"to exactly two or three with the final seed he sowed in that turn. This "
-"always captures the seeds in the corresponding house, and possibly more: if "
-"the previous-to-last seed also brought an opponent's house to two or three, "
-"these are captured tiež, a tak ďalej until a house is reached which does not "
-"contain two or three seeds or does not belong to the opponent. The captured "
-"seeds are placed in the player's scoring house. However, if a move would "
-"capture všetky z an opponent's seeds, the capture is forfeited since this "
-"would prevent the opponent from continuing the game, and the seeds are "
-"instead left on the board."
+"Zajatie nastáva iba vtedy, keď hráč posledným siatym semenom v danom ťahu "
+"privedie počet semien v súperovom dome presne na dve alebo tri. Toto vždy "
+"zajme semená v príslušnom dome, a prípadne aj viac: ak predposledné semeno "
+"tiež priviedlo súperov dom na dve alebo tri, tieto sú tiež zajaté, a tak "
+"ďalej, kým sa nedosiahne dom, ktorý neobsahuje dve alebo tri semená alebo "
+"nepatrí súperovi. Zajaté semená sa umiestnia do bodovacieho domu hráča. Ak "
+"by však ťah zajal všetky súperove semená, zajatie sa vzdá, pretože by to "
+"zabránilo súperovi pokračovať v hre, a semená namiesto toho zostanú na "
+"hracej ploche."
 
 #: activities/oware/ActivityInfo.qml:25
 #: activities/oware_2players/ActivityInfo.qml:25
@@ -21752,9 +21745,9 @@ msgid ""
 "that gives the opponent seeds. If no such move is possible, the current "
 "player captures all seeds in their own territory, ending the game."
 msgstr ""
-"If an opponent's houses are all empty, aktuálny player must make a move that "
-"gives the opponent seeds. If no such move is possible, aktuálny player "
-"captures all seeds in their own territory, ending the game."
+"Ak sú všetky súperove domy prázdne, aktuálny hráč musí urobiť ťah, ktorý dá "
+"súperovi semená. Ak takýto ťah nie je možný, aktuálny hráč zajme všetky "
+"semená vo svojom území a ukončí hru."
 
 #: activities/oware/oware.js:107
 msgctxt "oware|"
@@ -21955,9 +21948,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "The directions are absolute, they do not depend on the current orientation "
 "of Tux."
-msgstr ""
-"The directions are absolute, they do not depend on aktuálny orientation of "
-"Tux."
+msgstr "Smery sú absolútne, nezávisia od aktuálnej orientácie Tuxa."
 
 #: activities/path_decoding/resource/1/Data.qml:13
 #: activities/path_decoding/resource/2/Data.qml:13
@@ -21990,7 +21981,7 @@ msgstr "Dekódovanie relatívnej cesty"
 #: activities/path_encoding_relative/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "The directions are relative to the current orientation of Tux."
-msgstr "The directions are relative to aktuálny orientation of Tux."
+msgstr "Smery sú relatívne vzhľadom k aktuálnej orientácii Tuxa."
 
 #: activities/path_decoding_relative/ActivityInfo.qml:24
 #: activities/path_encoding_relative/ActivityInfo.qml:24
@@ -22962,8 +22953,8 @@ msgid ""
 "Some notes are played on the staff. Click on the keyboard keys matching the "
 "notes on the staff."
 msgstr ""
-"Some notes are played on the staff. Kliknite na kľúčboard keys matching the "
-"notes on the staff."
+"Na notovej osnove sa prehrávajú niektoré noty. Kliknite na klávesy "
+"klávesnice zodpovedajúce notám na notovej osnove."
 
 #: activities/play_piano/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -23035,9 +23026,9 @@ msgid ""
 "the same rhythm. If you clicked at correct times, another rhythm is played. "
 "If not, you must try again."
 msgstr ""
-"Listen to the rhythm played. When you're ready, click on the drum following "
-"rovnaký rhythm. Ak clicked at correct times, another rhythm is played. If "
-"not, you must try again."
+"Počúvajte prehrávaný rytmus. Keď ste pripravený, kliknite na bubon podľa "
+"rovnakého rytmu. Ak ste klikli v správnych časoch, prehrá sa ďalší rytmus. "
+"Ak nie, musíte to skúsiť znova."
 
 #: activities/play_rhythm/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -23055,9 +23046,9 @@ msgid ""
 "notes length and play the rhythm accordingly. You can also click on the "
 "metronome to hear the quarter notes as reference."
 msgstr ""
-"Even levels are harder, because existuje no vertical line. You must read the "
-"notes length and play the rhythm accordingly. Môžete also click on the "
-"metronome to hear the quarter notes as reference."
+"Párne úrovne sú ťažšie, pretože neexistuje zvislá čiara. Musíte si prečítať "
+"dĺžku nôt a podľa toho hrať rytmus. Môžete tiež kliknúť na metronóm, aby ste "
+"počuli štvrťové noty ako referenciu."
 
 #: activities/play_rhythm/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -23130,7 +23121,7 @@ msgstr "Umiestnenie"
 #: activities/positions/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Find the boy's position in relation to the box."
-msgstr "Nájdite the boy's position in relation to the box."
+msgstr "Nájdite polohu chlapca vzhľadom na škatuľu."
 
 #. Help goal
 #: activities/positions/ActivityInfo.qml:20
@@ -23146,8 +23137,8 @@ msgid ""
 "out the position of the boy in relation to the box and select the correct "
 "answer."
 msgstr ""
-"You will see different images representing a boy and a box, musíte find out "
-"the position of the boy in relation to the box and select the correct answer."
+"Uvidíte rôzne obrázky zobrazujúce chlapca a krabicu, musíte zistiť polohu "
+"chlapca voči krabici a vybrať správnu odpoveď."
 
 #: activities/positions/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -23238,7 +23229,7 @@ msgstr "Vyberte the image where the child is under the box."
 #: activities/positions/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "All positions (with left and right)."
-msgstr "All positions (with vľavo and vpravo)."
+msgstr "Všetky polohy (s vľavo a vpravo)."
 
 #. it refers to the position on the right side
 #: activities/positions/resource/2/Data.qml:20
@@ -23260,7 +23251,7 @@ msgstr "vľavo"
 #: activities/positions/resource/2/Data.qml:27
 msgctxt "Data|"
 msgid "Select the image where the child is at the left of the box."
-msgstr "Vyberte the image where the child is at the vľavo of the box."
+msgstr "Vyberte obrázok, kde je dieťa naľavo od škatule."
 
 #. Activity title
 #: activities/programmingMaze/ActivityInfo.qml:16
@@ -23305,8 +23296,8 @@ msgid ""
 "Up and Down arrows: increase or decrease the loop counter if the loop area "
 "is selected"
 msgstr ""
-"Up and Down arrows: increase or decrease the loop counter if the loop area "
-"is vybrané"
+"Šípky nahor a nadol: zvýšia alebo znížia počítadlo slučky, ak je vybraná "
+"oblasť slučky"
 
 #: activities/programmingMaze/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -23563,7 +23554,7 @@ msgstr ""
 #: activities/railroad/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Delete or Backspace: remove the selected item from the answer area"
-msgstr "Delete or Backspace: remove the vybrané item from the answer area"
+msgstr "Delete alebo Backspace: odstrániť vybranú položku z oblasti odpovede"
 
 #: activities/railroad/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -23674,7 +23665,7 @@ msgstr "Dokonale nakresliť daný obrázok na prázdnej mriežke."
 #: activities/redraw/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to identify a location in a grid and to reproduce a model."
-msgstr "Naučiť sa to identify a location in a grid and to reproduce a model."
+msgstr "Naučte sa identifikovať miesto v mriežke a reprodukovať model."
 
 #. Help manual
 #: activities/redraw/ActivityInfo.qml:23
@@ -23739,9 +23730,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to identify a location in a grid and to reproduce a model "
 "symmetrically."
-msgstr ""
-"Naučiť sa to identify a location in a grid and to reproduce a model "
-"symmetrically."
+msgstr "Naučte sa určiť polohu v mriežke a symetricky reprodukovať vzor."
 
 #: activities/redraw_symmetrical/resource/1/Data.qml:16
 msgctxt "Data|"
@@ -23946,8 +23935,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to read and write Roman numerals and convert them to Arabic numerals."
 msgstr ""
-"Naučiť sa to read and write Roman numerals and convert them to Arabic "
-"numerals."
+"Naučte sa čítať a písať rímske číslice a prevádzať ich na arabské číslice."
 
 #. Help manual
 #: activities/roman_numerals/ActivityInfo.qml:23
@@ -27281,12 +27269,12 @@ msgid ""
 "are incorrect, a cross icon will appear on the corresponding lines. Correct "
 "the errors, then press the OK button again."
 msgstr ""
-"Create pairs of numbers equal to ten within each parentheses. Select a "
-"number, then select another počet rovnaký operation to swap their position. "
-"On each line, input the final sum in last box. When all the lines are "
-"completed, press the OK button to validate the answers. If some answers are "
-"incorrect, a cross icon will appear on the corresponding lines. Correct the "
-"errors, then press the OK button again."
+"Vytvorte páry čísel rovnajúce sa desiatim v každej zátvorkе. Vyberte číslo, "
+"potom vyberte iné číslo tej istej operácie na vzájomnú výmenu ich polohy. Na "
+"každom riadku zadajte konečný súčet do posledného poľa. Keď sú všetky riadky "
+"dokončené, stlačte tlačidlo OK na potvrdenie odpovedí. Ak sú niektoré "
+"odpovede nesprávne, na zodpovedajúcich riadkoch sa zobrazí ikona krížika. "
+"Opravte chyby a potom znova stlačte tlačidlo OK."
 
 #: activities/tens_complement_calculate/resource/1/Data.qml:52
 msgctxt "Data|"
@@ -27344,8 +27332,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
-"Create pairs of numbers equal to ten. Vyberte a number in the list, then "
-"select an empty spot of an operation to move the vybrané number there."
+"Vytvorte páry čísel rovnajúce sa desiatim. Vyberte číslo zo zoznamu, potom "
+"vyberte prázdne miesto operácie na presunutie vybraného čísla tam."
 
 #: activities/tens_complement_find/resource/1/Data.qml:56
 msgctxt "Data|"
@@ -27381,8 +27369,8 @@ msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation."
 msgstr ""
-"Naučiť sa to use ten's complement to optimize the order of numbers in an "
-"operation."
+"Naučte sa používať doplnok do desiatich na optimalizáciu poradia čísel v "
+"operácii."
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
@@ -27400,11 +27388,11 @@ msgid ""
 "the answers. If some answers are incorrect, a cross icon will appear on the "
 "corresponding lines. Correct the errors, then press the OK button again."
 msgstr ""
-"Create pairs of numbers equal to ten within each parentheses. Select a "
-"number, then select another počet rovnaký operation to swap their position. "
-"When all the lines are completed, press the OK button to validate the "
-"answers. If some answers are incorrect, a cross icon will appear on the "
-"corresponding lines. Correct the errors, then press the OK button again."
+"Vytvorte páry čísel rovnajúce sa desiatim v každej zátvorkе. Vyberte číslo, "
+"potom vyberte iné číslo tej istej operácie na vzájomnú výmenu ich polohy. "
+"Keď sú všetky riadky dokončené, stlačte tlačidlo OK na potvrdenie odpovedí. "
+"Ak sú niektoré odpovede nesprávne, na zodpovedajúcich riadkoch sa zobrazí "
+"ikona krížika. Opravte chyby a potom znova stlačte tlačidlo OK."
 
 #: activities/tens_complement_swap/resource/1/Data.qml:50
 msgctxt "Data|"
@@ -27448,9 +27436,9 @@ msgid ""
 "parentheses. Select a number in the list, then select an empty spot of an "
 "operation to move the selected number there."
 msgstr ""
-"Decompose the additions to create pairs of numbers equal to ten within each "
-"parentheses. Vyberte a number in the list, then select an empty spot of an "
-"operation to move the vybrané number there."
+"Rozložte sčítania na vytvorenie párov čísel rovnajúcich sa desiatim v každej "
+"zátvorkе. Vyberte číslo zo zoznamu, potom vyberte prázdne miesto operácie na "
+"presunutie vybraného čísla tam."
 
 #: activities/tens_complement_use/resource/1/Data.qml:59
 msgctxt "Data|"
@@ -27582,19 +27570,18 @@ msgid ""
 "it; in this case, click on the Ready button when the operation is written "
 "correctly and then solve it."
 msgstr ""
-"In a vertical addition, numbers are written one below the other. They need "
-"to be lined-up properly, starting from the column vpravo-hand side. The "
-"result is written on the bottom line. To solve the addition, start by adding "
-"up the numbers of the first column (vpravo-hand side), and write the result "
-"on the bottom line of rovnaký column. If the result gives a two digit "
-"number, write only the units digit on the result, and add the tens digit "
-"next to the top počet the next column: toto je called the carry. Then add up "
-"the numbers of the next column, including the carry number, and repeat the "
-"process until the operation is finished. Once you have found the result, "
-"click on the OK button to validate your answer. In some levels, you will be "
-"need to write the given operation before solving it; v tomto prípade, click "
-"on the Ready button when the operation is written correctly and then solve "
-"it."
+"Pri vertikálnom sčítaní sú čísla zapísané jedno pod druhým. Musia byť "
+"správne zarovnané, počínajúc stĺpcom na pravej strane. Výsledok je zapísaný "
+"na spodnom riadku. Na riešenie sčítania začnite sčítaním čísel prvého stĺpca "
+"(na pravej strane) a napíšte výsledok na spodný riadok toho istého stĺpca. "
+"Ak výsledok dáva dvojciferné číslo, napíšte do výsledku iba cifru jednotiek "
+"a pridajte cifru desiatok vedľa horného čísla nasledujúceho stĺpca: toto sa "
+"nazýva prenos. Potom sčítajte čísla nasledujúceho stĺpca vrátane čísla "
+"prenosu a opakujte postup, kým nie je operácia dokončená. Keď nájdete "
+"výsledok, kliknite na tlačidlo OK na potvrdenie odpovede. Na niektorých "
+"úrovniach budete musieť napísať zadanú operáciu pred jej riešením; v takom "
+"prípade kliknite na tlačidlo Pripravený, keď je operácia správne zapísaná, a "
+"potom ju vyriešte."
 
 #: activities/vertical_addition/resource/1/Data.qml:12
 msgctxt "Data|"
@@ -27676,8 +27663,7 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by regrouping "
 "method."
 msgstr ""
-"Naučiť sa to solve vertical subtractions, with the borrowing by regrohoreing "
-"method."
+"Naučte sa riešiť vertikálne odčítania metódou požičiavania preusporiadaním."
 
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:22
@@ -27712,26 +27698,25 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
-"In a vertical subtraction, numbers are written one below the other. They "
-"need to be lined-up properly, starting from the column vpravo-hand side. The "
-"top number is called the minuend: it is the amount that we are starting "
-"with, that another number is being subtracted from to get the difference. "
-"The number below is called the subtrahend: it is the amount to subtract from "
-"the minuend to get the difference. The result is written on the bottom line. "
-"To solve the subtraction, start by subtracting the bottom počet the first "
-"column from the top počet the first column (vpravo-hand side), and write the "
-"result on the bottom line of rovnaký column. If the top number is smaller "
-"than the bottom number, môžete borrow from the minuend on the next column: "
-"napríklad, ak add 10 units to the top number, potrebujete to remove one unit "
-"from the top počet the next column. Toto je called the borrowing by "
-"regrouping method. To do that in this activity, click on the empty rectangle "
-"vľavo of the top number, select 1, and on the next column click on the empty "
-"rectangle vpravo of the top number and select -1. Then write the result of "
-"the column on the bottom line, and do rovnaký on the next columns until the "
-"operation is finished. Once you have found the result, click on the OK "
-"button to validate your answer. In some levels, you will be need to write "
-"the given operation before solving it; v tomto prípade, click on the Ready "
-"button when the operation is written correctly and then solve it."
+"Pri vertikálnom odčítaní sú čísla zapísané jedno pod druhým. Musia byť "
+"správne zarovnané, počínajúc stĺpcom na pravej strane. Horné číslo sa nazýva "
+"menšenec: je to množstvo, od ktorého začíname, od ktorého sa odčíta iné "
+"číslo, aby sme získali rozdiel. Číslo pod ním sa nazýva menšiteľ: je to "
+"množstvo, ktoré sa odčíta od menšenca, aby sme získali rozdiel. Výsledok je "
+"zapísaný na spodnom riadku. Na riešenie odčítania začnite odčítaním spodného "
+"čísla prvého stĺpca od horného čísla prvého stĺpca (na pravej strane) a "
+"napíšte výsledok na spodný riadok toho istého stĺpca. Ak je horné číslo "
+"menšie ako spodné, môžete si požičať od menšenca v nasledujúcom stĺpci: "
+"napríklad ak pridáte 10 jednotiek k hornému číslu, musíte odobrať jednu "
+"jednotku od horného čísla nasledujúceho stĺpca. Toto sa nazýva metóda "
+"požičiavania preusporiadaním. Na to v tejto aktivite kliknite na prázdny "
+"obdĺžnik naľavo od horného čísla, vyberte 1, a v nasledujúcom stĺpci "
+"kliknite na prázdny obdĺžnik napravo od horného čísla a vyberte -1. Potom "
+"napíšte výsledok stĺpca na spodný riadok a urobte to isté na nasledujúcich "
+"stĺpcoch, kým nie je operácia dokončená. Keď nájdete výsledok, kliknite na "
+"tlačidlo OK na potvrdenie odpovede. Na niektorých úrovniach budete musieť "
+"napísať zadanú operáciu pred jej riešením; v takom prípade kliknite na "
+"tlačidlo Pripravený, keď je operácia správne zapísaná, a potom ju vyriešte."
 
 #: activities/vertical_subtraction/resource/1/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
@@ -27884,27 +27869,25 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
-"In a vertical subtraction, numbers are written one below the other. They "
-"need to be lined-up properly, starting from the column vpravo-hand side. The "
-"top number is called the minuend: it is the amount that we are starting "
-"with, that another number is being subtracted from to get the difference. "
-"The number below is called the subtrahend: it is the amount to subtract from "
-"the minuend to get the difference. The result is written on the bottom line. "
-"To solve the subtraction, start by subtracting the bottom počet the first "
-"column from the top počet the first column (vpravo-hand side), and write the "
-"result on the bottom line of rovnaký column. If the top number is smaller "
-"than the bottom number, môžete borrow from the subtrahend on the next "
-"column: napríklad, ak add 10 units to the top number, potrebujete to add one "
-"unit to the bottom počet the next column. Toto je called the borrowing by "
-"compensation method. To do that in this activity, click on the empty "
-"rectangle vľavo of the top number, select 1, and on the next column click on "
-"the empty rectangle vpravo of the bottom number and select +1. Then write "
-"the result of the column on the bottom line, and do rovnaký on the next "
-"columns until the operation is finished. Once you have found the result, "
-"click on the OK button to validate your answer. In some levels, you will be "
-"need to write the given operation before solving it; v tomto prípade, click "
-"on the Ready button when the operation is written correctly and then solve "
-"it."
+"Pri vertikálnom odčítaní sú čísla zapísané jedno pod druhým. Musia byť "
+"správne zarovnané, počínajúc stĺpcom na pravej strane. Horné číslo sa nazýva "
+"menšenec: je to množstvo, od ktorého začíname, od ktorého sa odčíta iné "
+"číslo, aby sme získali rozdiel. Číslo pod ním sa nazýva menšiteľ: je to "
+"množstvo, ktoré sa odčíta od menšenca, aby sme získali rozdiel. Výsledok je "
+"zapísaný na spodnom riadku. Na riešenie odčítania začnite odčítaním spodného "
+"čísla prvého stĺpca od horného čísla prvého stĺpca (na pravej strane) a "
+"napíšte výsledok na spodný riadok toho istého stĺpca. Ak je horné číslo "
+"menšie ako spodné, môžete si požičať od menšiteľa v nasledujúcom stĺpci: "
+"napríklad ak pridáte 10 jednotiek k hornému číslu, musíte pridať jednu "
+"jednotku k spodnému číslu nasledujúceho stĺpca. Toto sa nazýva metóda "
+"požičiavania kompenzáciou. Na to v tejto aktivite kliknite na prázdny "
+"obdĺžnik naľavo od horného čísla, vyberte 1, a v nasledujúcom stĺpci "
+"kliknite na prázdny obdĺžnik napravo od spodného čísla a vyberte +1. Potom "
+"napíšte výsledok stĺpca na spodný riadok a urobte to isté na nasledujúcich "
+"stĺpcoch, kým nie je operácia dokončená. Keď nájdete výsledok, kliknite na "
+"tlačidlo OK na potvrdenie odpovede. Na niektorých úrovniach budete musieť "
+"napísať zadanú operáciu pred jej riešením; v takom prípade kliknite na "
+"tlačidlo Pripravený, keď je operácia správne zapísaná, a potom ju vyriešte."
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15
@@ -28620,10 +28603,10 @@ msgstr ""
 "Softvér je vždy možné zlepšiť a tím KDE je pripravený tak robiť. Avšak, vy - "
 "používateľ - nám musí povedať, keď niečo nefunguje, ako sa očakávalo, alebo "
 "by mohlo byť urobené lepšie.<br /><br />KDE má systém sledovania chýb. "
-"Navštívte <a href=\"%1\">%1</a>, aby ste nahlásili chybu.<br /><br />Ak máte "
-"nejaký návrh na zlepšenie, potom by bolo od vás vítané, keby ste "
+"Navštívte <a href=\\\"%1\\\">%1</a>, aby ste nahlásili chybu.<br /><br />Ak "
+"máte nejaký návrh na zlepšenie, potom by bolo od vás vítané, keby ste "
 "zaregistrovať vaše želanie cez systém sledovania chýb. Uistite sa, že "
-"používate kritickosť s názvom \"Wishlist\"."
+"používate kritickosť s názvom \\\"Wishlist\\\"."
 
 #: core/DialogAbout.qml:105
 #, qt-format
