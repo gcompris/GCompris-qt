@@ -28407,30 +28407,33 @@ msgstr ""
 "ಎಲ್ಲಾ ಬಾಣಗಳನ್ನು ಹೂಡಿದ ನಂತರ ನಿಮ್ಮ ಸ್ಕೋರನ್ನು ಲೆಕ್ಕಾಚಾರ ಮಾಡಲು ನಿಮ್ಮನ್ನು ಕೇಳಲಾಗುತ್ತದೆ. "
 "ಕೀಬೋರ್ಡ್ ಬಳಸಿ ಸ್ಕೋರನ್ನು ಟೈಪ್ ಮಾಡಿ."
 
-#: activities/target/resource/1/Data.qml:13
+#: activities/target/resource/1/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 10."
 msgstr "ಗರಿಷ್ಠ ಬೆಲೆ: 10."
 
-#: activities/target/resource/2/Data.qml:13
+#: activities/target/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 50."
 msgstr "ಗರಿಷ್ಠ ಬೆಲೆ: 50."
 
-#: activities/target/resource/3/Data.qml:13
+#: activities/target/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 500."
 msgstr "ಗರಿಷ್ಠ ಬೆಲೆ: 500."
 
-#: activities/target/resource/4/Data.qml:13
+#: activities/target/resource/4/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Maximum value: 50000."
+msgctxt "Data|"
+msgid "Maximum value: 5000."
+msgstr "ಗರಿಷ್ಠ ಬೆಲೆ: 50000."
+
+#: activities/target/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 50000."
 msgstr "ಗರಿಷ್ಠ ಬೆಲೆ: 50000."
-
-#: activities/target/resource/5/Data.qml:13
-msgctxt "Data|"
-msgid "Maximum value: 500000."
-msgstr "ಗರಿಷ್ಠ ಬೆಲೆ: 500000."
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
@@ -30507,6 +30510,10 @@ msgstr "ಬಿಟ್ಟುಬಿಡಿ"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "ಪ್ರಾರಂಭಿಸೋಣ"
+
+#~ msgctxt "Data|"
+#~ msgid "Maximum value: 500000."
+#~ msgstr "ಗರಿಷ್ಠ ಬೆಲೆ: 500000."
 
 #, fuzzy
 #~| msgctxt "Data|"

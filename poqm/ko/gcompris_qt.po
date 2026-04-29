@@ -26344,29 +26344,29 @@ msgid ""
 "Enter the score with the keyboard."
 msgstr ""
 
-#: activities/target/resource/1/Data.qml:13
+#: activities/target/resource/1/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 10."
 msgstr ""
 
-#: activities/target/resource/2/Data.qml:13
+#: activities/target/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 50."
 msgstr ""
 
-#: activities/target/resource/3/Data.qml:13
+#: activities/target/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 500."
 msgstr ""
 
-#: activities/target/resource/4/Data.qml:13
+#: activities/target/resource/4/Data.qml:14
 msgctxt "Data|"
-msgid "Maximum value: 50000."
+msgid "Maximum value: 5000."
 msgstr ""
 
-#: activities/target/resource/5/Data.qml:13
+#: activities/target/resource/5/Data.qml:14
 msgctxt "Data|"
-msgid "Maximum value: 500000."
+msgid "Maximum value: 50000."
 msgstr ""
 
 #. Activity title

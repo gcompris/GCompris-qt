@@ -28258,30 +28258,33 @@ msgstr ""
 "maalia. Heitettyäsi kaikki tikat sinua pyydetään laskemaan tuloksesi. "
 "Kirjoita tuloksesi näppäimistöllä."
 
-#: activities/target/resource/1/Data.qml:13
+#: activities/target/resource/1/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 10."
 msgstr "Enimmäisarvo: 10."
 
-#: activities/target/resource/2/Data.qml:13
+#: activities/target/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 50."
 msgstr "Enimmäisarvo: 50."
 
-#: activities/target/resource/3/Data.qml:13
+#: activities/target/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 500."
 msgstr "Enimmäisarvo: 500."
 
-#: activities/target/resource/4/Data.qml:13
+#: activities/target/resource/4/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Maximum value: 50000."
+msgctxt "Data|"
+msgid "Maximum value: 5000."
+msgstr "Enimmäisarvo: 50 000."
+
+#: activities/target/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 50000."
 msgstr "Enimmäisarvo: 50 000."
-
-#: activities/target/resource/5/Data.qml:13
-msgctxt "Data|"
-msgid "Maximum value: 500000."
-msgstr "Enimmäisarvo: 500 000."
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
@@ -30233,6 +30236,10 @@ msgstr "Ohita"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Käynnistä"
+
+#~ msgctxt "Data|"
+#~ msgid "Maximum value: 500000."
+#~ msgstr "Enimmäisarvo: 500 000."
 
 #, fuzzy
 #~| msgctxt "Data|"

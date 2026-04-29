@@ -20,6 +20,7 @@ msgstr ""
 #: server/activities/learn_digits/ActivityEditor.qml:13
 #: server/activities/learn_subtractions/ActivityEditor.qml:14
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:13
+#: server/activities/target/ActivityEditor.qml:12
 #: server/activities/tens_complement_find/ActivityEditor.qml:13
 #: server/activities/tens_complement_use/ActivityEditor.qml:13
 msgctxt "ActivityEditor|"
@@ -1552,6 +1553,96 @@ msgstr ""
 #| msgctxt "BinaryBulbEditor|"
 #| msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgctxt "ShareEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr "Folgende Fehler müssen behoben werden:<ul>%1</ul>"
+
+#: server/activities/target/ActivityEditor.qml:14
+msgctxt "ActivityEditor|"
+msgid ""
+"\"Target values\" defines the score for each circle of the target, from the "
+"center outward. It must contain only integer numbers. Typically all values "
+"should be in descending order."
+msgstr ""
+
+#: server/activities/target/TargetDataDisplay.qml:34
+msgctxt "TargetDataDisplay|"
+msgid "Target values:"
+msgstr ""
+
+#: server/activities/target/TargetDataDisplay.qml:64
+#, fuzzy
+#| msgctxt "LearnDigitsEditor|"
+#| msgid "Additions"
+msgctxt "TargetDataDisplay|"
+msgid "Addition:"
+msgstr "Additionen"
+
+#: server/activities/target/TargetDataDisplay.qml:92
+#, fuzzy
+#| msgctxt "AdjacentNumbersDataDisplay|"
+#| msgid "Answer:"
+msgctxt "TargetDataDisplay|"
+msgid "Answer:"
+msgstr "Antwort:"
+
+#: server/activities/target/TargetDataDisplay.qml:118
+#, fuzzy
+#| msgctxt "BinaryBulbDataDisplay|"
+#| msgid "Expected:"
+msgctxt "TargetDataDisplay|"
+msgid "Expected answer:"
+msgstr "Erwartet:"
+
+#: server/activities/target/TargetEditor.qml:27
+#, fuzzy
+#| msgctxt "AdjacentNumbersEditor|"
+#| msgid "Sublevels"
+msgctxt "TargetEditor|"
+msgid "Sublevels"
+msgstr "Unterstufen"
+
+#: server/activities/target/TargetEditor.qml:28
+#, fuzzy
+#| msgctxt "VerticalEditor|"
+#| msgid "Number of digits"
+msgctxt "TargetEditor|"
+msgid "Number of darts"
+msgstr "Ziffernanzahl"
+
+#: server/activities/target/TargetEditor.qml:29
+msgctxt "TargetEditor|"
+msgid "Target values"
+msgstr ""
+
+#: server/activities/target/TargetEditor.qml:73
+#, fuzzy
+#| msgctxt "AdjacentNumbersEditor|"
+#| msgid "Dataset is empty."
+msgctxt "TargetEditor|"
+msgid "Dataset is empty."
+msgstr "Datensatz ist leer."
+
+#: server/activities/target/TargetEditor.qml:84
+#, fuzzy, qt-format
+#| msgctxt "BinaryBulbEditor|"
+#| msgid "\"Numbers to find\" for level %1 must not be empty."
+msgctxt "TargetEditor|"
+msgid "\"Target values\" for level %1 must not be empty."
+msgstr "„Zu suchende Zahlen“ für Stufe %1 darf nicht leer sein."
+
+#: server/activities/target/TargetEditor.qml:90
+#, fuzzy, qt-format
+#| msgctxt "TensComplementFindEditor|"
+#| msgid "Sublevel %2 of Level %1 contains invalid extra cards."
+msgctxt "TargetEditor|"
+msgid "\"Target values\" for level %1 contains invalid entries."
+msgstr "Unterstufe %2 der Stufe %1 enthält ungültige Zusatzkarten."
+
+#: server/activities/target/TargetEditor.qml:97
+#, fuzzy, qt-format
+#| msgctxt "BinaryBulbEditor|"
+#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgctxt "TargetEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Folgende Fehler müssen behoben werden:<ul>%1</ul>"
 

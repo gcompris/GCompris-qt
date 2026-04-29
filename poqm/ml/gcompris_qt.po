@@ -27127,30 +27127,33 @@ msgstr ""
 "വട്ടത്തിന്റെ വേഗതയും ദിശയും ശ്രദ്ധിക്കുക, എന്നിട്ട് അതിൽ ക്ലിക്ക് ചെയ്ത്  അമ്പ് എയ്യൂ. എല്ലാ അമ്പും "
 "എയ്ത് കഴിയുമ്പോൾ നിങ്ങളുടെ സ്കോർ എണ്ണാൻ ചോദിക്കും. കീബോർഡ് ഉപയോഗിച്ച് സ്കോർ ടൈപ്പ് ചെയ്യുക."
 
-#: activities/target/resource/1/Data.qml:13
+#: activities/target/resource/1/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 10."
 msgstr "പരമാവധി വില: 10."
 
-#: activities/target/resource/2/Data.qml:13
+#: activities/target/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 50."
 msgstr "പരമാവധി വില: 50."
 
-#: activities/target/resource/3/Data.qml:13
+#: activities/target/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 500."
 msgstr "പരമാവധി വില: 500."
 
-#: activities/target/resource/4/Data.qml:13
+#: activities/target/resource/4/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Maximum value: 50000."
+msgctxt "Data|"
+msgid "Maximum value: 5000."
+msgstr "പരമാവധി വില: 50000."
+
+#: activities/target/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 50000."
 msgstr "പരമാവധി വില: 50000."
-
-#: activities/target/resource/5/Data.qml:13
-msgctxt "Data|"
-msgid "Maximum value: 500000."
-msgstr "പരമാവധി വില: 500000."
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
@@ -29120,6 +29123,10 @@ msgstr "നോക്കാതെ വിടുക"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "തുടങ്ങാം"
+
+#~ msgctxt "Data|"
+#~ msgid "Maximum value: 500000."
+#~ msgstr "പരമാവധി വില: 500000."
 
 #, fuzzy
 #~| msgctxt "Data|"

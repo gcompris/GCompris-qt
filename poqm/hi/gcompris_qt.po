@@ -30545,7 +30545,7 @@ msgstr ""
 "जब आपके सभी डार्ट्स फेंक दिए जाते हैं, तो आपको आपके स्कोर की गणना करने के लिए कहा जाता "
 "है। कीबोर्ड के साथ स्कोर दर्ज करें"
 
-#: activities/target/resource/1/Data.qml:13
+#: activities/target/resource/1/Data.qml:14
 #, fuzzy
 #| msgctxt "RomanNumerals|"
 #| msgid "Arabic value: %1"
@@ -30553,24 +30553,27 @@ msgctxt "Data|"
 msgid "Maximum value: 10."
 msgstr "अरबी मूल्य : %1"
 
-#: activities/target/resource/2/Data.qml:13
+#: activities/target/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 50."
 msgstr ""
 
-#: activities/target/resource/3/Data.qml:13
+#: activities/target/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 500."
 msgstr ""
 
-#: activities/target/resource/4/Data.qml:13
+#: activities/target/resource/4/Data.qml:14
+#, fuzzy
+#| msgctxt "RomanNumerals|"
+#| msgid "Arabic value: %1"
+msgctxt "Data|"
+msgid "Maximum value: 5000."
+msgstr "अरबी मूल्य : %1"
+
+#: activities/target/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 50000."
-msgstr ""
-
-#: activities/target/resource/5/Data.qml:13
-msgctxt "Data|"
-msgid "Maximum value: 500000."
 msgstr ""
 
 #. Activity title

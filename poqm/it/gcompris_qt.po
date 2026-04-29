@@ -27660,30 +27660,33 @@ msgstr ""
 "lanciate, ti sarà chiesto di contare il punteggio. Digita il punteggio con "
 "la tastiera."
 
-#: activities/target/resource/1/Data.qml:13
+#: activities/target/resource/1/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 10."
 msgstr "Valore massimo: 10."
 
-#: activities/target/resource/2/Data.qml:13
+#: activities/target/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 50."
 msgstr "Valore massimo: 50."
 
-#: activities/target/resource/3/Data.qml:13
+#: activities/target/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 500."
 msgstr "Valore massimo: 500."
 
-#: activities/target/resource/4/Data.qml:13
+#: activities/target/resource/4/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Maximum value: 50000."
+msgctxt "Data|"
+msgid "Maximum value: 5000."
+msgstr "Valore massimo: 50000."
+
+#: activities/target/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 50000."
 msgstr "Valore massimo: 50000."
-
-#: activities/target/resource/5/Data.qml:13
-msgctxt "Data|"
-msgid "Maximum value: 500000."
-msgstr "Valore massimo: 500000."
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
@@ -29724,6 +29727,10 @@ msgstr "Salta"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Inizia"
+
+#~ msgctxt "Data|"
+#~ msgid "Maximum value: 500000."
+#~ msgstr "Valore massimo: 500000."
 
 #~ msgctxt "Data|"
 #~ msgid "Find the correct answer."

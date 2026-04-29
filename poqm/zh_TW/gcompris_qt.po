@@ -27389,30 +27389,33 @@ msgstr ""
 "檢查目標的速度和方向，然後在目標上按一下來射出飛鏢。當您射完所有飛鏢，會出現"
 "一個視窗要求您去計算分數。用鍵盤輸入分數之後，按下「Enter」鍵或「OK」鈕。"
 
-#: activities/target/resource/1/Data.qml:13
+#: activities/target/resource/1/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 10."
 msgstr "最大值：10。"
 
-#: activities/target/resource/2/Data.qml:13
+#: activities/target/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 50."
 msgstr "最大值：50。"
 
-#: activities/target/resource/3/Data.qml:13
+#: activities/target/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 500."
 msgstr "最大值：500。"
 
-#: activities/target/resource/4/Data.qml:13
+#: activities/target/resource/4/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Maximum value: 50000."
+msgctxt "Data|"
+msgid "Maximum value: 5000."
+msgstr "最大值：50000。"
+
+#: activities/target/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 50000."
 msgstr "最大值：50000。"
-
-#: activities/target/resource/5/Data.qml:13
-msgctxt "Data|"
-msgid "Maximum value: 500000."
-msgstr "最大值：500000。"
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
@@ -29438,6 +29441,10 @@ msgstr "略過"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "開始"
+
+#~ msgctxt "Data|"
+#~ msgid "Maximum value: 500000."
+#~ msgstr "最大值：500000。"
 
 #, fuzzy
 #~| msgctxt "Data|"

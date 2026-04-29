@@ -27131,30 +27131,33 @@ msgstr ""
 "लक्ष्यस्य वेगं दिशां च पश्यन्तु, ततः तस्मिन् क्लिक् कृत्वा बाणं प्रक्षेपणं कुर्वन्तु । यदा भवतः सर्वे "
 "बाणाः क्षिप्ताः भवन्ति तदा भवतः स्कोरं गणयितुं प्रार्थ्यते । कीबोर्ड् इत्यनेन स्कोरं प्रविशन्तु ।"
 
-#: activities/target/resource/1/Data.qml:13
+#: activities/target/resource/1/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 10."
 msgstr "अधिकतमं मूल्यम् : 10."
 
-#: activities/target/resource/2/Data.qml:13
+#: activities/target/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 50."
 msgstr "अधिकतमं मूल्यम् : ५० ।"
 
-#: activities/target/resource/3/Data.qml:13
+#: activities/target/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 500."
 msgstr "अधिकतमं मूल्यम् : ५०० ।"
 
-#: activities/target/resource/4/Data.qml:13
+#: activities/target/resource/4/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Maximum value: 50000."
+msgctxt "Data|"
+msgid "Maximum value: 5000."
+msgstr "अधिकतमं मूल्यम् : 50000 ।"
+
+#: activities/target/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 50000."
 msgstr "अधिकतमं मूल्यम् : 50000 ।"
-
-#: activities/target/resource/5/Data.qml:13
-msgctxt "Data|"
-msgid "Maximum value: 500000."
-msgstr "अधिकतमं मूल्यम् : 500000।"
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
@@ -29180,6 +29183,10 @@ msgstr "क्षिपते"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "प्रारंभः"
+
+#~ msgctxt "Data|"
+#~ msgid "Maximum value: 500000."
+#~ msgstr "अधिकतमं मूल्यम् : 500000।"
 
 #, fuzzy
 #~| msgctxt "Data|"

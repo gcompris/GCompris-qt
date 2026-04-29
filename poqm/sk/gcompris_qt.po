@@ -6426,7 +6426,7 @@ msgid ""
 "input is equal to 0 the result is 0. The output for a 2 inputs AND gate is:"
 msgstr ""
 "Výstupom hradla AND je 1, iba ak sú všetky jeho vstupy rovné 1. Len čo sa "
-"jeden vstup rovná 0, výsledok je 0. Výstup pre 2 vstupy hradla AND sú:"
+"jeden vstup rovná 0, výsledok je 0. Výstup pre 2 vstupy hradla AND je:"
 
 #: activities/digital_electricity/components/AndGate.qml:24
 msgctxt "AndGate|"
@@ -7745,8 +7745,8 @@ msgid ""
 "The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
 "can be sheared and used to produce textile fibre."
 msgstr ""
-"Ovca hovorí „bé”. Väčšina plemien oviec nesie vlnenú rúno. Rúno je možné "
-"ostrihať a použiť na výrobu textilného vlákna."
+"Ovca hovorí „bé“. Väčšina plemién ovíc má vlnené rúno. Rúno je možné "
+"ostričať a použiť na výrobu textilého vlákna."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
 msgctxt "board1|"
@@ -10841,8 +10841,8 @@ msgid ""
 "numerator."
 msgstr ""
 "Napíšte zlomok zodpovedajúci zobrazeniu zlomku: Spočítajte celkový počet "
-"dielov zobrazeného tvaru a nastavte ho ako menovateľa. Potom spočítajte "
-"počet vybraných dielov a nastavte ho ako čitateľa."
+"dielov zobrazeného tvaru a nastavte ho ako menovateľ. Potom spočítajte počet "
+"vybraných dielov a nastavte ho ako čitateľ."
 
 #: activities/fractions_find/resource/1/Data.qml:19
 msgctxt "Data|"
@@ -27203,30 +27203,33 @@ msgstr ""
 "šípku. Keď sú všetky vaše šípky vyhádzané, budete požiadaní, aby ste si "
 "spočítať skóre. Zadajte skóre pomocou klávesnice."
 
-#: activities/target/resource/1/Data.qml:13
+#: activities/target/resource/1/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 10."
 msgstr "Maximálna hodnota: 10."
 
-#: activities/target/resource/2/Data.qml:13
+#: activities/target/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 50."
 msgstr "Maximálna hodnota: 50."
 
-#: activities/target/resource/3/Data.qml:13
+#: activities/target/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 500."
 msgstr "Maximálna hodnota: 500."
 
-#: activities/target/resource/4/Data.qml:13
+#: activities/target/resource/4/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Maximum value: 50000."
+msgctxt "Data|"
+msgid "Maximum value: 5000."
+msgstr "Maximálna hodnota: 50000."
+
+#: activities/target/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 50000."
 msgstr "Maximálna hodnota: 50000."
-
-#: activities/target/resource/5/Data.qml:13
-msgctxt "Data|"
-msgid "Maximum value: 500000."
-msgstr "Maximálna hodnota: 500000."
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
@@ -28600,13 +28603,13 @@ msgid ""
 "system to register your wish. Make sure you use the severity called "
 "\"Wishlist\"."
 msgstr ""
-"Softvér je vždy možné zlepšiť a tím KDE je pripravený tak robiť. Avšak, vy - "
-"používateľ - nám musí povedať, keď niečo nefunguje, ako sa očakávalo, alebo "
-"by mohlo byť urobené lepšie.<br /><br />KDE má systém sledovania chýb. "
-"Navštívte <a href=\\\"%1\\\">%1</a>, aby ste nahlásili chybu.<br /><br />Ak "
-"máte nejaký návrh na zlepšenie, potom by bolo od vás vítané, keby ste "
-"zaregistrovať vaše želanie cez systém sledovania chýb. Uistite sa, že "
-"používate kritickosť s názvom \\\"Wishlist\\\"."
+"Softvér je vždy možné zlepšiť a tím KDE je pripravený tak robiť. Avšak vy - "
+"používateľ - nám musíte povedať, keď niečo nefunguje, ako sa očakávalo, "
+"alebo by mohlo byť urobené lepšie.<br /><br />KDE má systém sledovania chýb. "
+"Navštívte <a href=\"%1\">%1</a>, aby ste nahlásili chybu.<br /><br />Ak máte "
+"nejaký návrh na zlepšenie, potom by bolo vítané, keby ste zaregistrovali "
+"vaše želanie cez systém sledovania chýb. Uistite sa, že používate kritickosť "
+"s názvom \"Wishlist\"."
 
 #: core/DialogAbout.qml:105
 #, qt-format
@@ -29127,8 +29130,8 @@ msgid ""
 "You should verify that your application settings especially your language is "
 "set correctly. You can do this in the Configuration dialog."
 msgstr ""
-"Mali by ste si overiť, že vaše nastavenia aplikácie, predovšetkým váš jazyk "
-"je nastavený správne. To môžete urobiť v dialógu Predvoľby."
+"Mali by ste si overiť, že vaše nastavenia aplikácie, predovšetkým váš jazyk, "
+"sú nastavené správne. To môžete urobiť v dialógu Predvoľby."
 
 #: core/main.qml:364
 msgctxt "main|"
@@ -29211,6 +29214,10 @@ msgstr "Preskočiť"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Spustiť"
+
+#~ msgctxt "Data|"
+#~ msgid "Maximum value: 500000."
+#~ msgstr "Maximálna hodnota: 500000."
 
 #, fuzzy
 #~ msgctxt "Data|"

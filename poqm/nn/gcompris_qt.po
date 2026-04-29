@@ -27372,30 +27372,33 @@ msgstr ""
 "skyta ei pil mot ho. Når du har skote alle pilene, dukkar det opp eit "
 "poengfelt der du kan skriva inn kor mange poeng du fekk."
 
-#: activities/target/resource/1/Data.qml:13
+#: activities/target/resource/1/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 10."
 msgstr "Høgaste verdi: 10"
 
-#: activities/target/resource/2/Data.qml:13
+#: activities/target/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 50."
 msgstr "Høgaste verdi: 50"
 
-#: activities/target/resource/3/Data.qml:13
+#: activities/target/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 500."
 msgstr "Høgaste verdi: 500"
 
-#: activities/target/resource/4/Data.qml:13
+#: activities/target/resource/4/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Maximum value: 50000."
+msgctxt "Data|"
+msgid "Maximum value: 5000."
+msgstr "Høgaste verdi: 50 000"
+
+#: activities/target/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 50000."
 msgstr "Høgaste verdi: 50 000"
-
-#: activities/target/resource/5/Data.qml:13
-msgctxt "Data|"
-msgid "Maximum value: 500000."
-msgstr "Høgaste verdi: 500 000"
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
@@ -29361,3 +29364,7 @@ msgstr "Lukk"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Start"
+
+#~ msgctxt "Data|"
+#~ msgid "Maximum value: 500000."
+#~ msgstr "Høgaste verdi: 500 000"

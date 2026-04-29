@@ -28371,30 +28371,33 @@ msgstr ""
 "அனைத்து அம்புகளும் எறிந்து முடிந்ததும் உங்கள் மதிப்பெண்ணைக் கணக்கிடும்படி கேட்கப்படும். "
 "கீபோர்டைப் பயன்படுத்தி மதிப்பெண்ணைத் தட்டச்சு செய்யவும்."
 
-#: activities/target/resource/1/Data.qml:13
+#: activities/target/resource/1/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 10."
 msgstr "அதிகபட்ச விலை: 10."
 
-#: activities/target/resource/2/Data.qml:13
+#: activities/target/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 50."
 msgstr "அதிகபட்ச விலை: 50."
 
-#: activities/target/resource/3/Data.qml:13
+#: activities/target/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 500."
 msgstr "அதிகபட்ச விலை: 500."
 
-#: activities/target/resource/4/Data.qml:13
+#: activities/target/resource/4/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Maximum value: 50000."
+msgctxt "Data|"
+msgid "Maximum value: 5000."
+msgstr "அதிகபட்ச விலை: 50000."
+
+#: activities/target/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 50000."
 msgstr "அதிகபட்ச விலை: 50000."
-
-#: activities/target/resource/5/Data.qml:13
-msgctxt "Data|"
-msgid "Maximum value: 500000."
-msgstr "அதிகபட்ச விலை: 500000."
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
@@ -30476,6 +30479,10 @@ msgstr "தவிர்"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "தொடங்கு"
+
+#~ msgctxt "Data|"
+#~ msgid "Maximum value: 500000."
+#~ msgstr "அதிகபட்ச விலை: 500000."
 
 #, fuzzy
 #~| msgctxt "Data|"

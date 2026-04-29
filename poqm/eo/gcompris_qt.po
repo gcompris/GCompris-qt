@@ -27305,30 +27305,33 @@ msgstr ""
 "lanĉi sageton. Kiam ĉiuj viaj sagetoj estas ĵetitaj, oni petas vin kalkuli "
 "vian poentaron. Enigu la partituron per la klavaro."
 
-#: activities/target/resource/1/Data.qml:13
+#: activities/target/resource/1/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 10."
 msgstr "Maksimuma valoro: 10."
 
-#: activities/target/resource/2/Data.qml:13
+#: activities/target/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 50."
 msgstr "Maksimuma valoro: 50."
 
-#: activities/target/resource/3/Data.qml:13
+#: activities/target/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 500."
 msgstr "Maksimuma valoro: 500."
 
-#: activities/target/resource/4/Data.qml:13
+#: activities/target/resource/4/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Maximum value: 50000."
+msgctxt "Data|"
+msgid "Maximum value: 5000."
+msgstr "Maksimuma valoro: 50000."
+
+#: activities/target/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 50000."
 msgstr "Maksimuma valoro: 50000."
-
-#: activities/target/resource/5/Data.qml:13
-msgctxt "Data|"
-msgid "Maximum value: 500000."
-msgstr "Maksimuma valoro: 500000."
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
@@ -29294,6 +29297,10 @@ msgstr "Salti"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Komenci"
+
+#~ msgctxt "Data|"
+#~ msgid "Maximum value: 500000."
+#~ msgstr "Maksimuma valoro: 500000."
 
 #, fuzzy
 #~| msgctxt "Data|"
