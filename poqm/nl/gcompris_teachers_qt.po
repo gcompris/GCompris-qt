@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2025, 2026 Freek de Kruijf <freekdekruijf@kde.nl>
+# SPDX-FileCopyrightText: 2025-2026 Freek de Kruijf <freekdekruijf@kde.nl>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-04-12 15:58+0200\n"
+"PO-Revision-Date: 2026-04-29 10:30+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Lokalize 26.04.0\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
 #: server/activities/binary_bulb/ActivityEditor.qml:12
@@ -1547,85 +1547,64 @@ msgid ""
 "center outward. It must contain only integer numbers. Typically all values "
 "should be in descending order."
 msgstr ""
+"\"Doelwaarden\" definiëren de score voor elke cirkel van het doel, van het "
+"midden naar buiten. Het mag alleen gehele getallen bevatten. Doorgaans "
+"moeten alle waarden in aflopende volgorde staan."
 
 #: server/activities/target/TargetDataDisplay.qml:34
 msgctxt "TargetDataDisplay|"
 msgid "Target values:"
-msgstr ""
+msgstr "Doelwaarden:"
 
 #: server/activities/target/TargetDataDisplay.qml:64
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Additions"
 msgctxt "TargetDataDisplay|"
 msgid "Addition:"
-msgstr "Optellingen"
+msgstr "Optelling:"
 
 #: server/activities/target/TargetDataDisplay.qml:92
-#, fuzzy
-#| msgctxt "AdjacentNumbersDataDisplay|"
-#| msgid "Answer:"
 msgctxt "TargetDataDisplay|"
 msgid "Answer:"
 msgstr "Antwoord:"
 
 #: server/activities/target/TargetDataDisplay.qml:118
-#, fuzzy
-#| msgctxt "BinaryBulbDataDisplay|"
-#| msgid "Expected:"
 msgctxt "TargetDataDisplay|"
 msgid "Expected answer:"
-msgstr "Verwacht:"
+msgstr "Verwacht antwoord:"
 
 #: server/activities/target/TargetEditor.qml:27
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "TargetEditor|"
 msgid "Sublevels"
 msgstr "Subniveaus"
 
 #: server/activities/target/TargetEditor.qml:28
-#, fuzzy
-#| msgctxt "VerticalEditor|"
-#| msgid "Number of digits"
 msgctxt "TargetEditor|"
 msgid "Number of darts"
-msgstr "Aantal cijfers"
+msgstr "Aantal darts"
 
 #: server/activities/target/TargetEditor.qml:29
 msgctxt "TargetEditor|"
 msgid "Target values"
-msgstr ""
+msgstr "Doelwaarden"
 
 #: server/activities/target/TargetEditor.qml:73
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "TargetEditor|"
 msgid "Dataset is empty."
 msgstr "Gegevensset is leeg."
 
 #: server/activities/target/TargetEditor.qml:84
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "\"Numbers to find\" for level %1 must not be empty."
+#, qt-format
 msgctxt "TargetEditor|"
 msgid "\"Target values\" for level %1 must not be empty."
-msgstr "\"Te vinden aantal\" voor niveau %1 mag niet leeg zijn."
+msgstr "\"Doelwaarden\" voor niveau %1 mag niet leeg zijn."
 
 #: server/activities/target/TargetEditor.qml:90
-#, fuzzy, qt-format
-#| msgctxt "TensComplementFindEditor|"
-#| msgid "Sublevel %2 of Level %1 contains invalid extra cards."
+#, qt-format
 msgctxt "TargetEditor|"
 msgid "\"Target values\" for level %1 contains invalid entries."
-msgstr "Subniveau %2 van niveau %1 bevat ongeldige extra kaarten."
+msgstr "\"Doelwaarden\" voor niveau %1 bevat ongeldige extra items."
 
 #: server/activities/target/TargetEditor.qml:97
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "TargetEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "De volgende fouten moeten gerepareerd worden:<ul>%1</ul>"

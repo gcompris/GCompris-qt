@@ -2496,6 +2496,9 @@ msgid ""
 "editing tools on the side to modify the map cells of the currently active "
 "level in the editor:"
 msgstr ""
+"<b>დონის რედაქტორში</b> საკუთარი დონეების შექმნა შეგიძლიათ. აირჩიეთ ერთ-ერთი "
+"რედაქტორის ხელსაწყო გვერდზე, რომ რედაქტორში შეცვალოთ ამჟამად აქტიური დონის "
+"რუკის უჯრედები:"
 
 #: activities/balancebox/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -2852,6 +2855,10 @@ msgid ""
 "bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit 8 → "
 "2⁷=128."
 msgstr ""
+"თითოეული ბიტი ამატებს ზრდად მნიშვნელობას, რომელიც შეესაბამება 2-ის ხარისხის, "
+"ზრდადს მარჯვნიდან მარცხნივ: ბიტი 1 → 2⁰=1 , ბიტი 2 → 2¹=2 , ბიტი 3 → 2²=4 , "
+"ბიტი 4 → 2³=8 , ბიტი 5 → 2⁴=16 , ბიტი 6 → 2⁵=32 , ბიტი 7 → 2⁶=64 , ბიტი 8 → "
+"2⁷=128."
 
 #: activities/binary_bulb/BinaryBulb.qml:122
 msgctxt "BinaryBulb|"
@@ -3145,6 +3152,8 @@ msgid ""
 "Develop some logical skills (data linking, deduction) and spatial "
 "visualization while using calculation."
 msgstr ""
+"განივითარეთ ზოგიერთი ლოკალური უნარი (მონაცემების დაკავშირება და დასკვნების "
+"გამოტანა) და სივრცითი ვიზუალიზაცია გამოთვლის გამოყენებისას."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
@@ -25718,12 +25727,9 @@ msgid "Maximum value: 500."
 msgstr "მაქსიმალური მნიშვნელობა: 500."
 
 #: activities/target/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Maximum value: 50000."
 msgctxt "Data|"
 msgid "Maximum value: 5000."
-msgstr "მაქსიმალური მნიშვნელობა: 50000."
+msgstr "მაქსიმალური მნიშვნელობა: 5000."
 
 #: activities/target/resource/5/Data.qml:14
 msgctxt "Data|"

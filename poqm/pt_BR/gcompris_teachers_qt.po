@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2025, 2026 Marcus Gama <marcus.gama@gmail.com>
+# SPDX-FileCopyrightText: 2025-2026 Marcus Gama <marcus.gama@gmail.com>
 # SPDX-FileCopyrightText: 2025 Guilherme Marçal Silva <guimarcalsilva@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-04-12 09:51-0300\n"
+"PO-Revision-Date: 2026-04-29 07:13-0300\n"
 "Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Lokalize 26.04.0\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
 #: server/activities/binary_bulb/ActivityEditor.qml:12
@@ -1548,85 +1548,64 @@ msgid ""
 "center outward. It must contain only integer numbers. Typically all values "
 "should be in descending order."
 msgstr ""
+"\"Valores-alvo\" define a pontuação para cada círculo do alvo, do centro "
+"para fora. Deve conter apenas números inteiros. Normalmente, todos os "
+"valores devem estar em ordem decrescente."
 
 #: server/activities/target/TargetDataDisplay.qml:34
 msgctxt "TargetDataDisplay|"
 msgid "Target values:"
-msgstr ""
+msgstr "Valores-alvo:"
 
 #: server/activities/target/TargetDataDisplay.qml:64
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Additions"
 msgctxt "TargetDataDisplay|"
 msgid "Addition:"
-msgstr "Adições"
+msgstr "Adição:"
 
 #: server/activities/target/TargetDataDisplay.qml:92
-#, fuzzy
-#| msgctxt "AdjacentNumbersDataDisplay|"
-#| msgid "Answer:"
 msgctxt "TargetDataDisplay|"
 msgid "Answer:"
 msgstr "Resposta:"
 
 #: server/activities/target/TargetDataDisplay.qml:118
-#, fuzzy
-#| msgctxt "BinaryBulbDataDisplay|"
-#| msgid "Expected:"
 msgctxt "TargetDataDisplay|"
 msgid "Expected answer:"
-msgstr "Esperado:"
+msgstr "Resposta esperada:"
 
 #: server/activities/target/TargetEditor.qml:27
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "TargetEditor|"
 msgid "Sublevels"
 msgstr "Subníveis"
 
 #: server/activities/target/TargetEditor.qml:28
-#, fuzzy
-#| msgctxt "VerticalEditor|"
-#| msgid "Number of digits"
 msgctxt "TargetEditor|"
 msgid "Number of darts"
-msgstr "Número de dígitos"
+msgstr "Número de dardos"
 
 #: server/activities/target/TargetEditor.qml:29
 msgctxt "TargetEditor|"
 msgid "Target values"
-msgstr ""
+msgstr "Valores-alvo"
 
 #: server/activities/target/TargetEditor.qml:73
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "TargetEditor|"
 msgid "Dataset is empty."
 msgstr "O conjunto de dados está vazio."
 
 #: server/activities/target/TargetEditor.qml:84
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "\"Numbers to find\" for level %1 must not be empty."
+#, qt-format
 msgctxt "TargetEditor|"
 msgid "\"Target values\" for level %1 must not be empty."
-msgstr "Os \"números a encontrar\" para o nível %1 não podem estar vazios."
+msgstr "Os \"valores-alvo\" para o nível %1 não podem estar vazios."
 
 #: server/activities/target/TargetEditor.qml:90
-#, fuzzy, qt-format
-#| msgctxt "TensComplementFindEditor|"
-#| msgid "Sublevel %2 of Level %1 contains invalid extra cards."
+#, qt-format
 msgctxt "TargetEditor|"
 msgid "\"Target values\" for level %1 contains invalid entries."
-msgstr "O subnível %2 do nível %1 contém cartões extras inválidos."
+msgstr "Os \"valores-alvo\" para o nível %1 contém entradas inválidas."
 
 #: server/activities/target/TargetEditor.qml:97
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "TargetEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Os seguintes erros precisam ser corrigidos:<ul>%1</ul>"

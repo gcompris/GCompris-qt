@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2026-04-12 12:03+0200\n"
+"PO-Revision-Date: 2026-04-29 10:14+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -27962,17 +27962,14 @@ msgid "Maximum value: 500."
 msgstr "Valor màxim: 500."
 
 #: activities/target/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Maximum value: 50000."
 msgctxt "Data|"
 msgid "Maximum value: 5000."
-msgstr "Valor màxim: 50.000."
+msgstr "Valor màxim: 5000."
 
 #: activities/target/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Maximum value: 50000."
-msgstr "Valor màxim: 50.000."
+msgstr "Valor màxim: 50000."
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14

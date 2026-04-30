@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-04-13 21:01+0300\n"
+"PO-Revision-Date: 2026-04-29 14:46+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.12.2\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
 #: server/activities/binary_bulb/ActivityEditor.qml:12
@@ -1530,85 +1530,64 @@ msgid ""
 "center outward. It must contain only integer numbers. Typically all values "
 "should be in descending order."
 msgstr ""
+"“Hedef değerler”, hedefin merkezinden dışa doğru her bir daire için puanı "
+"tanımlar. Yalnızca bir tamsayı içermelidir. Genellikle tüm değerler azalan "
+"sırada olmalıdır."
 
 #: server/activities/target/TargetDataDisplay.qml:34
 msgctxt "TargetDataDisplay|"
 msgid "Target values:"
-msgstr ""
+msgstr "Hedef değerler:"
 
 #: server/activities/target/TargetDataDisplay.qml:64
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Additions"
 msgctxt "TargetDataDisplay|"
 msgid "Addition:"
-msgstr "Toplamalar"
+msgstr "Toplama:"
 
 #: server/activities/target/TargetDataDisplay.qml:92
-#, fuzzy
-#| msgctxt "AdjacentNumbersDataDisplay|"
-#| msgid "Answer:"
 msgctxt "TargetDataDisplay|"
 msgid "Answer:"
 msgstr "Yanıt:"
 
 #: server/activities/target/TargetDataDisplay.qml:118
-#, fuzzy
-#| msgctxt "BinaryBulbDataDisplay|"
-#| msgid "Expected:"
 msgctxt "TargetDataDisplay|"
 msgid "Expected answer:"
-msgstr "Beklenen:"
+msgstr "Beklenen yanıt:"
 
 #: server/activities/target/TargetEditor.qml:27
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "TargetEditor|"
 msgid "Sublevels"
 msgstr "Alt düzeyler"
 
 #: server/activities/target/TargetEditor.qml:28
-#, fuzzy
-#| msgctxt "VerticalEditor|"
-#| msgid "Number of digits"
 msgctxt "TargetEditor|"
 msgid "Number of darts"
-msgstr "Basamak sayısı"
+msgstr "Dart sayısı"
 
 #: server/activities/target/TargetEditor.qml:29
 msgctxt "TargetEditor|"
 msgid "Target values"
-msgstr ""
+msgstr "Hedef değerler"
 
 #: server/activities/target/TargetEditor.qml:73
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "TargetEditor|"
 msgid "Dataset is empty."
 msgstr "Veri kümesi boş."
 
 #: server/activities/target/TargetEditor.qml:84
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "\"Numbers to find\" for level %1 must not be empty."
+#, qt-format
 msgctxt "TargetEditor|"
 msgid "\"Target values\" for level %1 must not be empty."
-msgstr "Düzey %1 için “Bulunacak sayılar” boş olmamalıdır."
+msgstr "Düzey %1 için “Hedef değerler” boş olmamalıdır."
 
 #: server/activities/target/TargetEditor.qml:90
-#, fuzzy, qt-format
-#| msgctxt "TensComplementFindEditor|"
-#| msgid "Sublevel %2 of Level %1 contains invalid extra cards."
+#, qt-format
 msgctxt "TargetEditor|"
 msgid "\"Target values\" for level %1 contains invalid entries."
-msgstr "Alt Düzey %2/Düzey %1 geçersiz ekstra kartlar içeriyor."
+msgstr "Düzey %1 için “Hedef değerler” geçersiz girdiler içeriyor."
 
 #: server/activities/target/TargetEditor.qml:97
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "TargetEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Aşağıdaki hataların düzeltilmesi gerekiyor:<ul>%1</ul>"

@@ -4478,12 +4478,12 @@ msgstr "Bieleho ťah"
 #: activities/chess/chess.js:121
 msgctxt "chess|white wins"
 msgid "White mates"
-msgstr "Bieleho ťah"
+msgstr "Mat bielym"
 
 #: activities/chess/chess.js:121
 msgctxt "chess|black wins"
 msgid "Black mates"
-msgstr "Čierneho ťah"
+msgstr "Mat čiernym"
 
 #: activities/chess/chess.js:131
 msgctxt "chess|"
@@ -5638,7 +5638,7 @@ msgstr "2 desatinné miesta medzi 0 a 99,99."
 #: activities/compass/ActivityConfig.qml:18
 msgctxt "ActivityConfig|"
 msgid "Template Mode"
-msgstr "Voľný režim"
+msgstr "Režim šablóny"
 
 #. Activity title
 #: activities/compass/ActivityInfo.qml:14
@@ -5656,7 +5656,7 @@ msgstr "Použite kružidlo na kreslenie."
 #: activities/compass/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw circles and arcs with a compass."
-msgstr "Nauč sa kresliť písmená zábavným spôsobom."
+msgstr "Naučte sa kresliť kružnice a oblúky pomocou kružítka."
 
 #. Help manual
 #: activities/compass/ActivityInfo.qml:23
@@ -5714,7 +5714,7 @@ msgstr ""
 #: activities/compass/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "<b>Templates:</b>"
-msgstr "<b>Hĺbkové kormidlo</b>"
+msgstr "<b>Šablóny:</b>"
 
 #: activities/compass/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -5789,12 +5789,12 @@ msgstr "P: otvoriť panel pera"
 #: activities/compass/ActivityInfo.qml:42
 msgctxt "ActivityInfo|"
 msgid "Left arrow: previous template step"
-msgstr "Šípka dole: výber predchádzajúcej položky"
+msgstr "Šípka vľavo: predchádzajúci krok šablóny"
 
 #: activities/compass/ActivityInfo.qml:43
 msgctxt "ActivityInfo|"
 msgid "Right arrow: next template step"
-msgstr "Šípka vpravo: odpoveď vpravo"
+msgstr "Šípka vpravo: nasledujúci krok šablóny"
 
 #: activities/compass/ActivityInfo.qml:44
 msgctxt "ActivityInfo|"
@@ -5824,7 +5824,7 @@ msgstr "Nasledujúci"
 #: activities/compass/Compass.qml:477
 msgctxt "Compass|"
 msgid "All steps"
-msgstr "Všetky slová"
+msgstr "Všetky kroky"
 
 #: activities/compass/Compass.qml:477
 msgctxt "Compass|"
@@ -5844,7 +5844,7 @@ msgstr "Nastavenia kružidla a mriežky"
 #: activities/compass/Compass.qml:567
 msgctxt "Compass|"
 msgid "Pen settings"
-msgstr "%1 nastavenia"
+msgstr "Nastavenia pera"
 
 #: activities/compass/Compass.qml:588
 msgctxt "Compass|"
@@ -5864,7 +5864,7 @@ msgstr "Zobraziť šablóna"
 #: activities/compass/Compass.qml:612
 msgctxt "Compass|"
 msgid "Hide template"
-msgstr "Zlatý chrám"
+msgstr "Skryť šablónu"
 
 #: activities/compass/Compass.qml:624
 msgctxt "Compass|"
@@ -5879,27 +5879,27 @@ msgstr "Skryť kružidlo a mriežku"
 #: activities/compass/Compass.qml:775
 msgctxt "Compass|"
 msgid "Save your image"
-msgstr "Vyberte si svoj režim"
+msgstr "Uložiť obrázok"
 
 #: activities/compass/Compass.qml:790
 msgctxt "Compass|"
 msgid "Open an image"
-msgstr "Mnoho nových obrázkov"
+msgstr "Otvoriť obrázok"
 
 #: activities/compass/Compass.qml:813
 msgctxt "Compass|"
 msgid "Create a new image"
-msgstr "Mnoho nových obrázkov"
+msgstr "Vytvoriť nový obrázok"
 
 #: activities/compass/Compass.qml:832
 msgctxt "Compass|"
 msgid "Background color"
-msgstr "Pozadie"
+msgstr "Farba pozadia"
 
 #: activities/compass/Compass.qml:892
 msgctxt "Compass|"
 msgid "Canvas size"
-msgstr "Veľkosť písma"
+msgstr "Veľkosť plátna"
 
 #: activities/compass/Compass.qml:962
 msgctxt "Compass|"
@@ -5929,12 +5929,12 @@ msgstr "Nepriehľadnosť"
 #: activities/compass/Compass.qml:1193
 msgctxt "Compass|"
 msgid " Pen size"
-msgstr "Veľkosť písma"
+msgstr "Veľkosť pera"
 
 #: activities/compass/Compass.qml:1253
 msgctxt "Compass|"
 msgid "You did not save this image. Do you want to close this activity?"
-msgstr "Nevybrali ste žiadnu notu. Chcete vymazať všetky noty?"
+msgstr "Neuložili ste tento obrázok. Chcete zatvoriť túto aktivitu?"
 
 #: activities/compass/Compass.qml:1254
 msgctxt "Compass|"
@@ -5954,22 +5954,22 @@ msgstr "Nie"
 #: activities/compass/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "The target"
-msgstr "Tretia najväčšia"
+msgstr "Cieľ"
 
 #: activities/compass/resource/10/Data.qml:13
 msgctxt "Data|"
 msgid "The peony"
-msgstr "4 ročné obdobia"
+msgstr "Pivonka"
 
 #: activities/compass/resource/11/Data.qml:13
 msgctxt "Data|"
 msgid "The snail"
-msgstr "Rovnaké"
+msgstr "Slimák"
 
 #: activities/compass/resource/12/Data.qml:13
 msgctxt "Data|"
 msgid "The rose"
-msgstr "Rovnaké"
+msgstr "Ruža"
 
 #: activities/compass/resource/13/Data.qml:13
 msgctxt "Data|"
@@ -5979,7 +5979,7 @@ msgstr "Špirála"
 #: activities/compass/resource/14/Data.qml:13
 msgctxt "Data|"
 msgid "The spiral"
-msgstr "Rovnaké"
+msgstr "Špirála"
 
 #: activities/compass/resource/15/Data.qml:13
 msgctxt "Data|"
@@ -5989,12 +5989,12 @@ msgstr "Otočenie"
 #: activities/compass/resource/16/Data.qml:15
 msgctxt "Data|"
 msgid "The face"
-msgstr "Rovnaké"
+msgstr "Tvár"
 
 #: activities/compass/resource/17/Data.qml:15
 msgctxt "Data|"
 msgid "The bear"
-msgstr "Rovnaké"
+msgstr "Medveď"
 
 #: activities/compass/resource/18/Data.qml:14
 msgctxt "Data|"
@@ -6005,12 +6005,12 @@ msgstr "Lev"
 #: activities/compass/resource/19/Data.qml:16
 msgctxt "Data|"
 msgid "The mouse"
-msgstr "dom"
+msgstr "Myš"
 
 #: activities/compass/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "The shell"
-msgstr "Rovnaké"
+msgstr "Mušľa"
 
 #: activities/compass/resource/3/Data.qml:13
 msgctxt "Data|"
@@ -11091,8 +11091,7 @@ msgstr "Naučte sa nájsť a umiestniť regióny krajín."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop the regions to their correct location to complete the map."
-msgstr ""
-"Pretiahnite časti mapy do správneho umiestnenia, na pokrytie celej mapy."
+msgstr "Pretiahnite oblasti do správneho umiestnenia, na pokrytie celej mapy."
 
 #: activities/geo-country/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -12481,7 +12480,7 @@ msgstr "Île-de-France (Ostrov Francúzska)"
 #: activities/geo-country/resource/board/board1_0.qml:91
 msgctxt "board1_0|"
 msgid "Brittany"
-msgstr "Británia"
+msgstr "Bretónsko"
 
 #. Region of France: Normandy
 #: activities/geo-country/resource/board/board1_0.qml:99
@@ -14782,7 +14781,7 @@ msgstr "Alžírsko"
 #: activities/geography/resource/board/board8_0.qml:15
 msgctxt "board8_0|"
 msgid "Southern Africa"
-msgstr "Južná Afrika"
+msgstr "Južná Afrika (región)"
 
 #: activities/geography/resource/board/board8_0.qml:24
 msgctxt "board8_0|"
@@ -16801,12 +16800,12 @@ msgstr "Nájdi tubu"
 #: activities/keyboard_training/ActivityConfig.qml:28
 msgctxt "ActivityConfig|"
 msgid "Uppercase letters"
-msgstr "Kresliť písmená"
+msgstr "Veľké písmená"
 
 #: activities/keyboard_training/ActivityConfig.qml:29
 msgctxt "ActivityConfig|"
 msgid "Lowercase letters"
-msgstr "Kresliť písmená"
+msgstr "Malé písmená"
 
 #. Activity title
 #: activities/keyboard_training/ActivityInfo.qml:14
@@ -16818,13 +16817,13 @@ msgstr "Precvičovanie s klávesnicou."
 #: activities/keyboard_training/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the requested character and type it on the keyboard."
-msgstr "Nájdite správny dátum a vyberte ho v kalendári."
+msgstr "Nájdite požadovaný znak a napíšte ho na klávesnici."
 
 #. Help goal
 #: activities/keyboard_training/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to type on a keyboard."
-msgstr "Učiť sa abecedné poradie."
+msgstr "Naučiť sa písať na klávesnici."
 
 #. Help manual
 #: activities/keyboard_training/ActivityInfo.qml:23
@@ -21459,7 +21458,7 @@ msgstr "Cesta na Mesiac."
 #: activities/ordering_chronology/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Tux gathers an apple."
-msgstr "Tux a jabloň"
+msgstr "Tux zbiera jablko."
 
 #. Activity title
 #: activities/ordering_numbers/ActivityInfo.qml:20
@@ -21598,7 +21597,7 @@ msgstr ""
 #: activities/ordering_sentences/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Below 5 words."
-msgstr "Iba 5 slov"
+msgstr "Menej ako 5 slov."
 
 #. These sentences should not need to be translated word by word. Please add at least 10 sentences, each one being between 3 and 5 words. Use | to separate group of words. The aim of the string is to shuffle the group of words and let the child reorder them correctly. We should not be able to form a correct sentence by shuffling some words in the final sentence.
 #: activities/ordering_sentences/resource/1/Data.qml:18
@@ -22088,7 +22087,7 @@ msgstr "Anglická doska"
 #: activities/peg_solitaire/peg_solitaire.js:44
 msgctxt "peg_solitaire|"
 msgid "French board"
-msgstr "Francúzska Polynézia"
+msgstr "Francúzska tabuľa"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:61
@@ -22100,7 +22099,7 @@ msgstr "32-otvorová diamantová doska"
 #: activities/peg_solitaire/peg_solitaire.js:79
 msgctxt "peg_solitaire|"
 msgid "Asymmetrical board"
-msgstr "Poradie čísel"
+msgstr "Asymetrická tabuľa"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -22348,12 +22347,12 @@ msgstr "Basový kľúč"
 #: activities/piano_composition/KeyOption.qml:62
 msgctxt "KeyOption|"
 msgid "Treble clef added"
-msgstr "Husľový kľúč"
+msgstr "Husľový kľúč pridaný"
 
 #: activities/piano_composition/KeyOption.qml:62
 msgctxt "KeyOption|"
 msgid "Bass clef added"
-msgstr "Basový kľúč"
+msgstr "Basový kľúč pridaný"
 
 #: activities/piano_composition/LyricsArea.qml:40
 #, qt-format
@@ -25254,13 +25253,13 @@ msgstr "Odtieň"
 #: activities/sketch/ColorSelector.qml:267
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
-msgstr "Saturn"
+msgstr "Sýtosť"
 
 #. Color lightness
 #: activities/sketch/ColorSelector.qml:293
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
-msgstr "Svetlá sú vypnuté"
+msgstr "Svetlosť"
 
 #. Reload default color for selected slot
 #: activities/sketch/ColorSelector.qml:329
@@ -25322,7 +25321,7 @@ msgstr "Nástroje prechodu"
 #: activities/sketch/PaletteSelector.qml:148
 msgctxt "PaletteSelector|"
 msgid "Palettes"
-msgstr "Palestína"
+msgstr "Palety"
 
 #: activities/sketch/Sketch.qml:684
 msgctxt "Sketch|"
@@ -25392,7 +25391,7 @@ msgstr "Hustota"
 #: activities/sketch/ToolsPanel.qml:567
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
-msgstr "Bodky"
+msgstr "Veľkosť bodiek"
 
 #: activities/sketch/ToolsPanel.qml:586
 msgctxt "ToolsPanel|"
@@ -25402,7 +25401,7 @@ msgstr "Vyhladenie"
 #: activities/sketch/ToolsPanel.qml:647
 msgctxt "ToolsPanel|"
 msgid "Rotation"
-msgstr "akcia"
+msgstr "Rotácia"
 
 #: activities/sketch/ToolsPanel.qml:663
 msgctxt "ToolsPanel|"
@@ -25426,7 +25425,7 @@ msgstr "Spočítaj bodky na kocke skôr než dopadne na zem."
 #: activities/smallnumbers2/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice counting with a time limit."
-msgstr "Precvičovanie sčítania pomocou terčovej hry"
+msgstr "Precvičovanie počítania s časovým limitom."
 
 #. Help prerequisite
 #: activities/smallnumbers/ActivityInfo.qml:22
@@ -25545,14 +25544,14 @@ msgstr "Čísla s dominom"
 #: activities/smallnumbers2/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Count the number of dots on the domino before it reaches the ground."
-msgstr "Spočítaj bodky na kocke skôr než dopadne na zem."
+msgstr "Spočítaj bodky na domino skôr než dopadne na zem."
 
 #. Help manual
 #: activities/smallnumbers2/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Type the number of dots you see on each falling domino."
 msgstr ""
-"Stlač na klávesnici číslo zodpovedajúce počtu bodiek na padajúcej kocke."
+"Stlač na klávesnici číslo zodpovedajúce počtu bodiek na padajúcom domino."
 
 #: activities/smallnumbers2/resource/1/Data.qml:18
 msgctxt "Data|"
@@ -27219,12 +27218,9 @@ msgid "Maximum value: 500."
 msgstr "Maximálna hodnota: 500."
 
 #: activities/target/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Maximum value: 50000."
 msgctxt "Data|"
 msgid "Maximum value: 5000."
-msgstr "Maximálna hodnota: 50000."
+msgstr "Maximálna hodnota: 5000."
 
 #: activities/target/resource/5/Data.qml:14
 msgctxt "Data|"
@@ -27243,7 +27239,9 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Swap the numbers to create pairs equal to ten and input the answer of the "
 "final sum."
-msgstr "Vymeňte čísla a vytvorte páry rovné desiatim."
+msgstr ""
+"Vymeňte čísla, vytvorte páry rovné desiatim a zadajte odpoveď finálneho "
+"súčtu."
 
 #. Help goal
 #: activities/tens_complement_calculate/ActivityInfo.qml:19
@@ -27282,7 +27280,7 @@ msgstr ""
 #: activities/tens_complement_calculate/resource/1/Data.qml:52
 msgctxt "Data|"
 msgid "1 pair to make from 3 numbers."
-msgstr "Vytvoriť 2 páry so 4 čísel."
+msgstr "Vytvoriť 1 pár z 3 čísel."
 
 #: activities/tens_complement_calculate/resource/2/Data.qml:9
 #: activities/tens_complement_swap/resource/2/Data.qml:9
@@ -27547,13 +27545,13 @@ msgstr "Reprodukovať danú veža."
 #: activities/vertical_addition/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to solve vertical additions."
-msgstr "Precvičovanie delenia."
+msgstr "Naučiť sa riešiť zvislé sčítania."
 
 #. Help prerequisite
 #: activities/vertical_addition/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Addition tables."
-msgstr "Tabuľka sčítavania 1."
+msgstr "Tabuľky sčítavania."
 
 #. Help manual
 #: activities/vertical_addition/ActivityInfo.qml:24
@@ -27604,7 +27602,7 @@ msgstr "Solve addition, 4 digits, 4 lines."
 #: activities/vertical_addition/resource/12/Data.qml:12
 msgctxt "Data|"
 msgid "Write your own addition and solve it."
-msgstr "Write your own addition and solve it."
+msgstr "Napíšte vlastný príklad sčítania a vyriešte ho."
 
 #: activities/vertical_addition/resource/2/Data.qml:12
 msgctxt "Data|"
@@ -27657,7 +27655,7 @@ msgstr "Precvičovanie odčítania"
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Solve the given subtraction."
-msgstr "Zvoľte inštrukcie"
+msgstr "Vyriešte zadané odčítanie."
 
 #. Help goal
 #: activities/vertical_subtraction/ActivityInfo.qml:20
@@ -27673,7 +27671,7 @@ msgstr ""
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Subtraction tables."
-msgstr "Tabuľka odčítavania 1."
+msgstr "Tabuľky odčítavania."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:24
@@ -27731,19 +27729,19 @@ msgstr "Solve subtraction, 2 digits, 2 lines, without carry."
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 3 lines."
-msgstr "Odčítanie s 1, 2, a 3."
+msgstr "Vyriešte odčítanie, 4 alebo 5 cifier, 3 riadky."
 
 #: activities/vertical_subtraction/resource/11/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/11/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 4 lines."
-msgstr "Odčítanie s 1, 2, a 3."
+msgstr "Vyriešte odčítanie, 4 alebo 5 cifier, 4 riadky."
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
 msgctxt "Data|"
 msgid "Write your own subtraction and solve it."
-msgstr "Naučte sa tabuľku odčítania 1."
+msgstr "Napíšte vlastný príklad odčítania a vyriešte ho."
 
 #: activities/vertical_subtraction/resource/2/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
@@ -27755,13 +27753,13 @@ msgstr "Write and solve subtraction, 2 digits, 2 lines, without carry."
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Odčítanie s 1, 2, a 3."
+msgstr "Vyriešte odčítanie, 2 alebo 3 cifry, 2 riadky."
 
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Odčítanie s 1, 2, a 3."
+msgstr "Napíšte a vyriešte odčítanie, 2 alebo 3 cifry, 2 riadky."
 
 #: activities/vertical_subtraction/resource/5/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/5/Data.qml:12
@@ -27773,7 +27771,7 @@ msgstr "Odčítanie s 1, 2, a 3."
 #: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "Odčítanie s 1, 2, a 3."
+msgstr "Vyriešte odčítanie, 3 alebo 4 cifry, 2 riadky."
 
 #: activities/vertical_subtraction/resource/7/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
@@ -27785,13 +27783,13 @@ msgstr "Odčítanie s 1, 2, a 3."
 #: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 3 lines."
-msgstr "Odčítanie s 1, 2, a 3."
+msgstr "Vyriešte odčítanie, 3 alebo 4 cifry, 3 riadky."
 
 #: activities/vertical_subtraction/resource/9/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
-msgstr "Odčítanie s 1, 2, a 3."
+msgstr "Vyriešte odčítanie, 4 alebo 5 cifier, 2 riadky."
 
 #: activities/vertical_subtraction/subtraction.js:78
 msgctxt "subtraction|"
@@ -27808,7 +27806,7 @@ msgstr "Solve:"
 #, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
-msgstr "Názov: %1"
+msgstr "Vyriešiť: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:106
 msgctxt "VerticalSubtraction|"
@@ -27834,7 +27832,7 @@ msgstr "The result should not be a negative number."
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction (compensation)"
-msgstr "Precvičovanie odčítania."
+msgstr "Zvislé odčítanie (kompenzácia)"
 
 #. Help goal
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:20
@@ -28043,7 +28041,7 @@ msgstr "Úplne napíš padajúce slová skôr ako dopadnú na zem."
 #: activities/wordsgame/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice using a keyboard."
-msgstr "Precvičovanie rovnosti po delení."
+msgstr "Precvičovanie používania klávesnice."
 
 #. Help prerequisite
 #: activities/wordsgame/ActivityInfo.qml:22
@@ -28080,8 +28078,8 @@ msgid ""
 "New command-line option to run a list of activities with specific datasets "
 "in sequence (--with-sequence sequence.json)"
 msgstr ""
-"New command-line option to list all the activities and start on a specific "
-"one"
+"Nová voľba príkazového riadku pre spustenie zoznamu aktivít s konkrétnymi "
+"dátovými sadami v poradí (--with-sequence sequence.json)"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:44 core/ChangeLog.qml:50
 #: core/ChangeLog.qml:56 core/ChangeLog.qml:65 core/ChangeLog.qml:71
@@ -28103,7 +28101,7 @@ msgstr "Mnoho malých opráv."
 #: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
 msgid "Translation added for Kannada and Tamil"
-msgstr "Pridané preklady pre Azerbajdžančinu"
+msgstr "Pridaný preklad pre kannadu a tamilčinu"
 
 #: core/ChangeLog.qml:42
 msgctxt "ChangeLog|"
@@ -28122,7 +28120,7 @@ msgstr ""
 #: core/ChangeLog.qml:55
 msgctxt "ChangeLog|"
 msgid "Translation added for Sanskrit"
-msgstr "Pridané preklady pre Azerbajdžančinu"
+msgstr "Pridaný preklad pre sanskrit"
 
 #: core/ChangeLog.qml:57 core/ChangeLog.qml:83 core/ChangeLog.qml:92
 #: core/ChangeLog.qml:99 core/ChangeLog.qml:112 core/ChangeLog.qml:130
@@ -28153,12 +28151,12 @@ msgstr "New command-line option to switch the renderer (--renderer renderer)"
 #: core/ChangeLog.qml:70
 msgctxt "ChangeLog|"
 msgid "Translation added for Latvian"
-msgstr "Pridané preklady pre Azerbajdžančinu"
+msgstr "Pridaný preklad pre lotyštinu"
 
 #: core/ChangeLog.qml:81
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
-msgstr "Pridané preklady pre: slovinčinu, nemčinu, galícijčinu."
+msgstr "Pridané preklady pre: bulharčinu, galícijčinu a swahilčinu."
 
 #: core/ChangeLog.qml:85
 msgctxt "ChangeLog|"
@@ -28880,7 +28878,7 @@ msgstr "Nie"
 #: core/GCCreationHandler.qml:237
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
-msgstr "Naozaj chcete zrušiť všetky ťahy?"
+msgstr "Naozaj chcete vymazať tento súbor?"
 
 #: core/GCCreationHandler.qml:252
 msgctxt "GCCreationHandler|"
@@ -29049,7 +29047,7 @@ msgstr "Spustiť sekvenciu aktivít zadanú v súbore json."
 #: core/main.cpp:153
 msgctxt "QObject|"
 msgid "Specify the locale when starting GCompris."
-msgstr "Určite aktivitu pri spustení GComprisu."
+msgstr "Určite jazyk/lokáciu pri spustení GComprisu."
 
 #: core/main.cpp:157
 msgctxt "QObject|"
@@ -29178,7 +29176,7 @@ msgstr "OK"
 #: core/main.qml:584
 msgctxt "main|"
 msgid "Select your username"
-msgstr "Vyberte si svoj režim"
+msgstr "Vyberte si meno používateľa"
 
 #: core/main.qml:594
 msgctxt "main|"
@@ -29188,7 +29186,7 @@ msgstr "Vyberte si prosím svoje používateľské meno zo zoznamu alebo zrušte
 #: core/main.qml:661
 msgctxt "main|"
 msgid "Enter your password"
-msgstr "Enter: skontrolovať správnosť odpovede"
+msgstr "Zadajte heslo"
 
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"

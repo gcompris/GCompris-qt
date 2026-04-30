@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-04-09 15:42+0200\n"
+"PO-Revision-Date: 2026-04-29 11:40+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -25133,12 +25133,9 @@ msgid "Maximum value: 500."
 msgstr "Valor maxime: 500."
 
 #: activities/target/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Maximum value: 50000."
 msgctxt "Data|"
 msgid "Maximum value: 5000."
-msgstr "Valor maxime: 50000."
+msgstr "Valor maxime: 5000."
 
 #: activities/target/resource/5/Data.qml:14
 msgctxt "Data|"
