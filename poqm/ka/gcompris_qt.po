@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -2493,6 +2493,9 @@ msgid ""
 "editing tools on the side to modify the map cells of the currently active "
 "level in the editor:"
 msgstr ""
+"<b>დონის რედაქტორში</b> საკუთარი დონეების შექმნა შეგიძლიათ. აირჩიეთ ერთ-ერთი "
+"რედაქტორის ხელსაწყო გვერდზე, რომ რედაქტორში შეცვალოთ ამჟამად აქტიური დონის "
+"რუკის უჯრედები:"
 
 #: activities/balancebox/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -2849,6 +2852,10 @@ msgid ""
 "bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit 8 → "
 "2⁷=128."
 msgstr ""
+"თითოეული ბიტი ამატებს ზრდად მნიშვნელობას, რომელიც შეესაბამება 2-ის ხარისხის, "
+"ზრდადს მარჯვნიდან მარცხნივ: ბიტი 1 → 2⁰=1 , ბიტი 2 → 2¹=2 , ბიტი 3 → 2²=4 , "
+"ბიტი 4 → 2³=8 , ბიტი 5 → 2⁴=16 , ბიტი 6 → 2⁵=32 , ბიტი 7 → 2⁶=64 , ბიტი 8 → "
+"2⁷=128."
 
 #: activities/binary_bulb/BinaryBulb.qml:115
 msgctxt "BinaryBulb|"
@@ -3142,6 +3149,8 @@ msgid ""
 "Develop some logical skills (data linking, deduction) and spatial "
 "visualization while using calculation."
 msgstr ""
+"განივითარეთ ზოგიერთი ლოკალური უნარი (მონაცემების დაკავშირება და დასკვნების "
+"გამოტანა) და სივრცითი ვიზუალიზაცია გამოთვლის გამოყენებისას."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
@@ -6397,6 +6406,9 @@ msgid ""
 "Warning: setting the number of undo too high can make the application crash "
 "if your device doesn't have enough memory."
 msgstr ""
+"გაფრთხილება: გაუქმების რაოდენობის მეტისმეტად დიდი რიცხვზე დასრულება "
+"გამოიწვევს, რომ აპლიკაცია ავარიულად გაითიშება, თუ თქვენს მოწყობილობას "
+"საკმარისი მეხსიერება არ აქვს."
 
 #. Activity title
 #: activities/drawing_wheels/ActivityInfo.qml:19
@@ -14630,6 +14642,10 @@ msgid ""
 "dependent upon the mass of both objects and inversely proportional to the "
 "square of the distance between their centers."
 msgstr ""
+"გრავიტაცია უნივერსალურია და ნიუტონის უნივერსალური გრავიტაციის კანონი "
+"დედამიწის მიღმაც ვრცელდება. გრავიტაციის მიზიდულობის ეს ძალა პირდაპირაა "
+"დამოკიდებული ორივე ობიეტის მასაზე და უკუდამოკიდებულია მათ ცენტრებს შორის "
+"მანძილის კვადრატზე."
 
 #: activities/gravity/Gravity.qml:225
 msgctxt "Gravity|"
@@ -14638,6 +14654,8 @@ msgid ""
 "interacting objects, more massive objects will attract each other with a "
 "greater gravitational force."
 msgstr ""
+"რადგანაც გრავიტაციის ძალა პირდაპირაა დამოკიდებული ორივე ობიექტის მასაზე, რაც "
+"უფრო დიდია ობიექტი, მით დიდია მათი გრავიტაციული ძალა."
 
 #: activities/gravity/Gravity.qml:228
 msgctxt "Gravity|"
@@ -14646,6 +14664,8 @@ msgid ""
 "between the two interacting objects, more distance will result in weaker "
 "gravitational force."
 msgstr ""
+"რადგანაც ძალა უკუდამოკიდებულია ორი ურთიერთმოქმედ ობიექტებს შორის მანძილის "
+"კვადრატზე, რაც მეტია დაშორება, მით მეტია მიზიდულობის ძალა."
 
 #: activities/gravity/Gravity.qml:231
 msgctxt "Gravity|"
@@ -14654,6 +14674,9 @@ msgid ""
 "reach the space station. The arrow indicates the direction and the intensity "
 "of the gravity on your ship."
 msgstr ""
+"თქვენ ისე უნდა ამოძრაოთ კოსმოსური ხომალდი, რომ პლანეტებს არ შეასკდეთ, სანამ "
+"კოსმოსურ სადგურს მიაღწევთ. ისარი თქვენს ხომალდზე მოქმედი მიზიდულობის "
+"მიმართულებას და ინტენსივობას აღნიშნავს."
 
 #: activities/gravity/Gravity.qml:234
 msgctxt "Gravity|"
@@ -14661,6 +14684,7 @@ msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
 "size and direction of the arrow."
 msgstr ""
+"სცადეთ, დარჩეთ ეკრანის შუაში და დააკვირდეთ ისრის ზომას და მიმართულებას."
 
 #. Activity title
 #: activities/guess24/ActivityInfo.qml:14
@@ -14809,6 +14833,8 @@ msgid ""
 "Drag the numbers and operators to the boxes to obtain the number given in "
 "the instructions."
 msgstr ""
+"გადაათრიეთ რიცხვები და ოპერატორები ყუთებში, რომ მიიღოთ რიცხვი, რომელიც "
+"ინსტრუქციებში მოგეცათ."
 
 #: activities/guesscount/Admin.qml:34
 #, qt-format
@@ -20449,6 +20475,7 @@ msgstr "საჯარიმო დარტყმა"
 msgctxt "ActivityInfo|"
 msgid "Double click or double tap on any side of the goal in order to score."
 msgstr ""
+"ორმაგი წკაპი ან ორმაგი დატყაპუნება დარტყმის მიმართულებით გოლის გასატანად."
 
 #. Help manual
 #: activities/penalty/ActivityInfo.qml:23
@@ -20576,7 +20603,7 @@ msgstr ""
 #: activities/piano_composition/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Level 4: Flat notation used for black keys."
-msgstr ""
+msgstr "დონე 4: შავი კლავიშებისთვის გამოყენებული ბრტყელი ნოტაცია."
 
 #: activities/piano_composition/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -23083,7 +23110,7 @@ msgstr ""
 #: activities/share/resource/2/Data.qml:124
 msgctxt "Data|"
 msgid "Now, Alice wants to share 8 pieces of candy equally among her friends."
-msgstr ""
+msgstr "ახლა ალისას უნდა, 8 კონფეტი თანაბრად გაუნაწილოს მის მეგობრებს."
 
 #: activities/share/resource/2/Data.qml:134
 msgctxt "Data|"
@@ -23095,7 +23122,7 @@ msgstr ""
 #: activities/share/resource/2/Data.qml:144
 msgctxt "Data|"
 msgid "Alice wants to share 16 pieces of candy equally among her friends."
-msgstr ""
+msgstr "ალისას უნდა, 16 კონფეტი თანაბრად გაუნაწილოს მის მეგობრებს."
 
 #: activities/share/resource/2/Data.qml:154
 msgctxt "Data|"
@@ -23125,11 +23152,13 @@ msgctxt "Data|"
 msgid ""
 "Help Tux split 19 pieces of candies between his friends: 4 boys and 1 girl."
 msgstr ""
+"დაეხმარეთ ტუქსს, გაუნაწილოს 19 კონფეტი მის მეგობრებს: 4 ბიჭს და 1 გოგოს."
 
 #: activities/share/resource/2/Data.qml:196
 msgctxt "Data|"
 msgid "Help Maria share 18 pieces of candy equally between 3 boys and 2 girls."
 msgstr ""
+"დაეხმარეთ მარიას გაუნაწილოს 18 ცალი კონფეტი თანაბრად 3 ბიჭს და 2 გოგონას."
 
 #: activities/share/resource/2/Data.qml:208
 msgctxt "Data|"
@@ -23728,7 +23757,7 @@ msgstr "Escape: წინა ეკრანზე დაბრუნება"
 #: activities/solar_system/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Tab: view the hint (only when the hint icon is visible)"
-msgstr ""
+msgstr "Tab: მინიშნების ნახვა (მხოლოდ, მაშინ, როცა მინიშნების ხატულა ხილულია)"
 
 #: activities/solar_system/Dataset.js:14
 msgctxt "Dataset|"
@@ -25050,7 +25079,7 @@ msgstr ""
 #: activities/sudoku/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and logical ability."
-msgstr ""
+msgstr "პაზლის დასრულება მოთმინებისა და ლოგიკური უნარები სჭირდება."
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
@@ -25388,7 +25417,7 @@ msgstr "10-მდე შემავსებლის გამოყენე�
 #: activities/tens_complement_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Use a ten's complement to simplify the operation."
-msgstr ""
+msgstr "გამოიყენეთ 10-მდე შემავსებელი ოპერაციის გასამარტივებლად."
 
 #. Help goal
 #: activities/tens_complement_use/ActivityInfo.qml:19
@@ -25457,7 +25486,7 @@ msgstr ""
 #: activities/tic_tac_toe/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Tux will play better when you increase the level."
-msgstr ""
+msgstr "ტუქსი უკეთ ითამაშებს, როცა დონეს გაზრდით."
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18
@@ -26085,6 +26114,7 @@ msgstr "გაუმჯობესდა გამოსახულები�
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
+"გასწორდა გადასვლები განახლებად_ენერგიაში/წყლის ციკლში ზოგიერთ პლატფორმაზე"
 
 #: core/ChangeLog.qml:113
 msgctxt "ChangeLog|"
