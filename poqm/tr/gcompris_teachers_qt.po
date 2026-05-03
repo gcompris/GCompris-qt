@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-04-29 14:46+0300\n"
+"PO-Revision-Date: 2026-05-02 18:56+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -1409,7 +1409,7 @@ msgid ""
 "If \"Random numbers\" is selected, the number of already placed candies per "
 "child must be defined such that not all candies are already placed."
 msgstr ""
-"“Rastgele sayı” seçilmişse çocuk başına halihazırda koyulmuş şekerlemelerin "
+"“Rastgele sayı” seçilmişse çocuk başına hâlihazırda koyulmuş şekerlemelerin "
 "sayısı, tüm şekerlemeler koyulmamış olacak biçimde tanımlanmış olmalıdır."
 
 #: server/activities/share/ShareEditor.qml:28
@@ -1454,12 +1454,12 @@ msgstr "Şekerlemelerin sayısı"
 #: server/activities/share/ShareEditor.qml:47
 msgctxt "ShareEditor|"
 msgid "Candies already placed per girl"
-msgstr "Halihazırda kız başına koyulmuş şekerleme sayısı"
+msgstr "Hâlihazırda kız başına koyulmuş şekerleme sayısı"
 
 #: server/activities/share/ShareEditor.qml:48
 msgctxt "ShareEditor|"
 msgid "Candies already placed per boy"
-msgstr "Halihazırda oğlan başına koyulmuş şekerleme sayısı"
+msgstr "Hâlihazırda oğlan başına koyulmuş şekerleme sayısı"
 
 #: server/activities/share/ShareEditor.qml:49
 msgctxt "ShareEditor|"
@@ -1484,7 +1484,7 @@ msgstr "En büyük şekerleme sayısı"
 #: server/activities/share/ShareEditor.qml:55
 msgctxt "ShareEditor|"
 msgid "Already place some candies"
-msgstr "Bazı şekerlemeler halihazırda koyulmuş"
+msgstr "Bazı şekerlemeler hâlihazırda koyulmuş"
 
 #: server/activities/share/ShareEditor.qml:58
 msgctxt "ShareEditor|"
@@ -1514,7 +1514,7 @@ msgctxt "ShareEditor|"
 msgid ""
 "In Sublevel %2 of Level %1, the number of already placed candies is too high."
 msgstr ""
-"Alt Düzey %2/Düzey %1 içinde halihazırda koyulmuş şekerleme sayısı pek "
+"Alt Düzey %2/Düzey %1 içinde hâlihazırda koyulmuş şekerleme sayısı pek "
 "yüksek."
 
 #: server/activities/share/ShareEditor.qml:324
@@ -1810,7 +1810,7 @@ msgid ""
 "cards, and there are already 2 cards per addition."
 msgstr ""
 "Çok fazla “Ekstra kart” eklemeyin! Her alt düzeyde 6’dan fazla kart olmamalı "
-"ve her eklemede halihazırda 2 kart bulunmaktadır."
+"ve her eklemede hâlihazırda 2 kart bulunmaktadır."
 
 #: server/activities/tens_complement_use/ActivityEditor.qml:19
 msgctxt "ActivityEditor|"
@@ -1948,7 +1948,7 @@ msgstr "Elde ile"
 #: server/activities/vertical_subtraction/VerticalEditor.qml:35
 msgctxt "VerticalEditor|"
 msgid "Already laid"
-msgstr "Halihazırda elde"
+msgstr "Hâlihazırda elde"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:36
 msgctxt "VerticalEditor|"
@@ -2062,7 +2062,7 @@ msgstr "Yanlış parola."
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Group <b>%1</b> already exists."
-msgstr "Grup <b>%1</b> halihazırda var."
+msgstr "Grup <b>%1</b> hâlihazırda var."
 
 #: server/controllers/database-controller.cpp:438
 #, qt-format
@@ -2086,7 +2086,7 @@ msgstr "Grup <b>%1</b>, group_user_ tablosundan silinemedi."
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Pupil login <b>%1</b> already exists."
-msgstr "<b>%1</b> öğrencisinin oturumu halihazırda var."
+msgstr "<b>%1</b> öğrencisinin oturumu hâlihazırda var."
 
 #: server/controllers/database-controller.cpp:500
 #, qt-format
@@ -2116,7 +2116,7 @@ msgstr "<b>%1</b> kullanıcısı, group_user_ tablosundan silinemedi."
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "User <b>%1</b> already exists in group <b>%2</b>."
-msgstr "<b>%1</b> kullanıcısı, <b>%2</b> grubunda halihazırda var."
+msgstr "<b>%1</b> kullanıcısı, <b>%2</b> grubunda hâlihazırda var."
 
 #: server/controllers/database-controller.cpp:570
 #, qt-format
@@ -2140,7 +2140,7 @@ msgstr "Etkinlik girilirken hata: %1"
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Dataset <b>%1</b> already exists."
-msgstr "Veri kümesi <b>%1</b> halihazırda var."
+msgstr "Veri kümesi <b>%1</b> hâlihazırda var."
 
 #: server/controllers/database-controller.cpp:683
 #, qt-format
@@ -2946,7 +2946,7 @@ msgstr "Günlükleri temizle"
 #, qt-format
 msgctxt "DevicesView|"
 msgid "Server already running on port %1"
-msgstr "Sunucu halihazırda %1. kapıda çalışıyor"
+msgstr "Sunucu hâlihazırda %1. kapıda çalışıyor"
 
 #: server/views/LoginView.qml:43
 msgctxt "LoginView|"
@@ -2956,7 +2956,7 @@ msgstr "Yanlış parola"
 #: server/views/LoginView.qml:47
 msgctxt "LoginView|"
 msgid "GCompris-teachers is already running on this computer"
-msgstr "Bu bilgisayarda gcompris-teachers halihazırda çalışıyor"
+msgstr "Bu bilgisayarda gcompris-teachers hâlihazırda çalışıyor"
 
 #: server/views/LoginView.qml:48
 msgctxt "LoginView|"
@@ -3157,7 +3157,7 @@ msgstr "Çalışıyor"
 #, qt-format
 msgctxt "SettingsView|As in 'The Server is already running on port %1'"
 msgid "Already running on port %1"
-msgstr "Halihazırda %1. kapıda çalışıyor"
+msgstr "Hâlihazırda %1. kapıda çalışıyor"
 
 #: server/views/SettingsView.qml:197
 msgctxt "SettingsView|"
