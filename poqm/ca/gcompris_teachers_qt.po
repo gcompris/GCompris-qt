@@ -1,13 +1,13 @@
 # Translation of gcompris_teachers_qt.po to Catalan
-# Copyright (C) 2025 This_file_is_part_of_KDE
+# Copyright (C) 2025-2026 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# SPDX-FileCopyrightText: 2025 Josep M. Ferrer <txemaq@gmail.com>
+# SPDX-FileCopyrightText: 2025, 2026 Josep M. Ferrer <txemaq@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
-"PO-Revision-Date: 2025-12-23 08:52+0100\n"
+"PO-Revision-Date: 2026-05-02 13:54+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -382,7 +382,7 @@ msgstr "El conjunt de dades és buit."
 #, qt-format
 msgctxt "BinaryBulbEditor|"
 msgid "\"Numbers to find\" for level %1 must not be empty."
-msgstr "Els «Nombres a trobar» del nivell %1 no ha d'estar buit."
+msgstr "Els «Nombres a trobar» del nivell %1 no han d'estar buits."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:115
 #, qt-format

@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2026-03-31 17:24+0200\n"
+"PO-Revision-Date: 2026-04-29 10:14+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -27456,7 +27456,7 @@ msgstr "Valor màxim: 500."
 #: activities/target/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Maximum value: 50000."
-msgstr "Valor màxim: 50.000."
+msgstr "Valor màxim: 50000."
 
 #: activities/target/resource/5/Data.qml:13
 msgctxt "Data|"
