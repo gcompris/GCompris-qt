@@ -13,3 +13,9 @@ include:
       - /gitlab-templates/json-validation.yml
       - /gitlab-templates/cppcheck.yml
       - /gitlab-templates/snap-snapcraft-lxd.yml
+
+flatpak_for_teachers:
+  extends: flatpak-amd64
+  variables:
+    KDE_FLATPAK_MODULE_NAME: gcompris-teachers
+    KDE_FLATPAK_MANIFEST_FILE: .flatpak-manifest-teachers

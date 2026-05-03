@@ -8,6 +8,8 @@ include(ECMInstallIcons)
 ecm_install_icons(ICONS
     256-apps-gcompris-qt.png
     sc-apps-gcompris-qt.svg
+    256-apps-gcompris-teachers.png
+    sc-apps-gcompris-teachers.svg
     DESTINATION ${KDE_INSTALL_ICONDIR}
     THEME hicolor
 )
