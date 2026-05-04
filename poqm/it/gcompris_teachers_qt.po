@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2025, 2026 Vincenzo Reale <smart2128vr@gmail.com>
+# SPDX-FileCopyrightText: 2025-2026 Vincenzo Reale <smart2128vr@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-03-07 15:18+0100\n"
+"PO-Revision-Date: 2026-04-30 09:37+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Lokalize 26.04.0\n"
 "X-Qt-Contexts: true\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
@@ -1349,17 +1349,14 @@ msgid "Mode"
 msgstr "Modalità"
 
 #: server/activities/share/ShareDataDisplay.qml:49
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Number of circles"
 msgctxt "ShareDataDisplay|"
 msgid "Number of candies:"
-msgstr "Numero di cerchi"
+msgstr "Numero di caramelle:"
 
 #: server/activities/share/ShareDataDisplay.qml:76
 msgctxt "ShareDataDisplay|"
 msgid "Placed girls:"
-msgstr ""
+msgstr "Ragazze posizionate:"
 
 #. Display a fraction
 #: server/activities/share/ShareDataDisplay.qml:87
@@ -1368,45 +1365,39 @@ msgstr ""
 #, qt-format
 msgctxt "ShareDataDisplay|"
 msgid "%1 / %2"
-msgstr ""
+msgstr "%1 / %2"
 
 #: server/activities/share/ShareDataDisplay.qml:107
 msgctxt "ShareDataDisplay|"
 msgid "Placed boys:"
-msgstr ""
+msgstr "Ragazzi posizionati:"
 
 #: server/activities/share/ShareDataDisplay.qml:137
 msgctxt "ShareDataDisplay|"
 msgid "Expected candies per child:"
-msgstr ""
+msgstr "Caramelle previste per bambino:"
 
 #: server/activities/share/ShareDataDisplay.qml:164
 msgctxt "ShareDataDisplay|"
 msgid "Candies for girls:"
-msgstr ""
+msgstr "Caramelle per le ragazze:"
 
 #: server/activities/share/ShareDataDisplay.qml:195
 msgctxt "ShareDataDisplay|"
 msgid "Candies for boys:"
-msgstr ""
+msgstr "Caramelle per i ragazzi:"
 
 #: server/activities/share/ShareDataDisplay.qml:224
 msgctxt "ShareDataDisplay|"
 msgid "Jar placed:"
-msgstr ""
+msgstr "Barattolo posizionato:"
 
 #: server/activities/share/ShareDataDisplay.qml:234
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Yes"
 msgctxt "ShareDataDisplay|"
 msgid "Yes"
 msgstr "Sì"
 
 #: server/activities/share/ShareDataDisplay.qml:234
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "No"
 msgctxt "ShareDataDisplay|"
 msgid "No"
 msgstr "No"
@@ -1414,12 +1405,9 @@ msgstr "No"
 #: server/activities/share/ShareDataDisplay.qml:251
 msgctxt "ShareDataDisplay|"
 msgid "Candies in the jar:"
-msgstr ""
+msgstr "Caramelle nel barattolo:"
 
 #: server/activities/share/ShareEditor.qml:22
-#, fuzzy
-#| msgctxt "ActivityEditor|"
-#| msgid "Rules to create a valid dataset:"
 msgctxt "ShareEditor|"
 msgid "Rules to create a valid dataset:"
 msgstr "Regole per creare un insieme di dati valido:"
@@ -1429,6 +1417,7 @@ msgctxt "ShareEditor|"
 msgid ""
 "In general, there can not be more than 6 children, and 6 candies per child."
 msgstr ""
+"In generale, non possono esserci più di 6 bambini e 6 caramelle per bambino."
 
 #: server/activities/share/ShareEditor.qml:26
 msgctxt "ShareEditor|"
@@ -1436,6 +1425,9 @@ msgid ""
 "If \"Random numbers\" is selected, the number of already placed candies per "
 "child must be defined such that not all candies are already placed."
 msgstr ""
+"Se si seleziona «Numeri casuali», è necessario definire il numero di "
+"caramelle già posizionate per ogni bambino, in modo che non tutte le "
+"caramelle siano già state posizionate."
 
 #: server/activities/share/ShareEditor.qml:28
 msgctxt "ShareEditor|"
@@ -1443,130 +1435,96 @@ msgid ""
 "The \"Instruction\" field allows to give a specific instruction for each "
 "sublevel. If it is empty, a default instruction text is used."
 msgstr ""
+"Il campo «Istruzioni» consente di fornire istruzioni specifiche per ogni "
+"sottolivello. Se è vuoto, viene utilizzato un testo di istruzioni "
+"predefinito."
 
 #: server/activities/share/ShareEditor.qml:33
-#, fuzzy
-#| msgctxt "AlgebraEditor|"
-#| msgid "Shuffle"
 msgctxt "ShareEditor|"
 msgid "Shuffle"
 msgstr "Mescola"
 
 #: server/activities/share/ShareEditor.qml:34
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "ShareEditor|"
 msgid "Sublevels"
 msgstr "Sottolivelli"
 
 #: server/activities/share/ShareEditor.qml:40
-#, fuzzy
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "Random numbers"
 msgctxt "ShareEditor|"
 msgid "Random numbers"
 msgstr "Numeri casuali"
 
 #: server/activities/share/ShareEditor.qml:44
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Number of circles"
 msgctxt "ShareEditor|"
 msgid "Number of girls"
-msgstr "Numero di cerchi"
+msgstr "Numero di ragazze"
 
 #: server/activities/share/ShareEditor.qml:45
-#, fuzzy
-#| msgctxt "VerticalEditor|"
-#| msgid "Number of lines"
 msgctxt "ShareEditor|"
 msgid "Number of boys"
-msgstr "Numero di righe"
+msgstr "Numero di ragazzi"
 
 #: server/activities/share/ShareEditor.qml:46
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Number of circles"
 msgctxt "ShareEditor|"
 msgid "Number of candies"
-msgstr "Numero di cerchi"
+msgstr "Numero di caramelle"
 
 #: server/activities/share/ShareEditor.qml:47
 msgctxt "ShareEditor|"
 msgid "Candies already placed per girl"
-msgstr ""
+msgstr "Caramelle già posizionate per ragazza"
 
 #: server/activities/share/ShareEditor.qml:48
 msgctxt "ShareEditor|"
 msgid "Candies already placed per boy"
-msgstr ""
+msgstr "Caramelle già posizionate per ragazzo"
 
 #: server/activities/share/ShareEditor.qml:49
 msgctxt "ShareEditor|"
 msgid "Force showing the jar"
-msgstr ""
+msgstr "Forza la visualizzazione del barattolo"
 
 #: server/activities/share/ShareEditor.qml:52
-#, fuzzy
-#| msgctxt "MagicHatEditor|"
-#| msgid "Maximum number of stars"
 msgctxt "ShareEditor|"
 msgid "Maximum number of girls"
-msgstr "Numero massimo di stelle"
+msgstr "Numero massimo di ragazze"
 
 #: server/activities/share/ShareEditor.qml:53
-#, fuzzy
-#| msgctxt "MagicHatEditor|"
-#| msgid "Maximum number of stars"
 msgctxt "ShareEditor|"
 msgid "Maximum number of boys"
-msgstr "Numero massimo di stelle"
+msgstr "Numero massimo di ragazzi"
 
 #: server/activities/share/ShareEditor.qml:54
-#, fuzzy
-#| msgctxt "MagicHatEditor|"
-#| msgid "Maximum number of stars"
 msgctxt "ShareEditor|"
 msgid "Maximum number of candies"
-msgstr "Numero massimo di stelle"
+msgstr "Numero massimo di caramelle"
 
 #: server/activities/share/ShareEditor.qml:55
 msgctxt "ShareEditor|"
 msgid "Already place some candies"
-msgstr ""
+msgstr "Ho già posizionato alcune caramelle"
 
 #: server/activities/share/ShareEditor.qml:58
-#, fuzzy
-#| msgctxt "FractionsCreateEditor|"
-#| msgid "Instruction"
 msgctxt "ShareEditor|"
 msgid "Instruction"
 msgstr "Istruzione"
 
 #: server/activities/share/ShareEditor.qml:289
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "ShareEditor|"
 msgid "Dataset is empty."
-msgstr "Il nome dell'insieme di dati è vuoto."
+msgstr "L'insieme di dati è vuoto."
 
 #: server/activities/share/ShareEditor.qml:299
-#, fuzzy, qt-format
-#| msgctxt "ComparatorEditor|"
-#| msgid "Level %1 must not be empty."
+#, qt-format
 msgctxt "ShareEditor|"
 msgid "Level %1 must not be empty."
 msgstr "Il livello %1 non deve essere vuoto."
 
 #: server/activities/share/ShareEditor.qml:309
-#, fuzzy, qt-format
-#| msgctxt "TensComplementFindEditor|"
-#| msgid "Sublevel %2 of Level %1 must not be empty."
+#, qt-format
 msgctxt "ShareEditor|"
 msgid "In Sublevel %2 of Level %1, the total number of children is 0."
-msgstr "Il sottolivello %2 del livello %1 non deve essere vuoto."
+msgstr "Nel sottolivello %2 del livello %1, il numero totale di bambini è 0."
 
 #: server/activities/share/ShareEditor.qml:317
 #, qt-format
@@ -1574,14 +1532,14 @@ msgctxt "ShareEditor|"
 msgid ""
 "In Sublevel %2 of Level %1, the number of already placed candies is too high."
 msgstr ""
+"Nel sottolivello %2 del livello %1, il numero di caramelle già posizionate è "
+"troppo elevato."
 
 #: server/activities/share/ShareEditor.qml:324
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "ShareEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "I seguenti errori devono essere corretti:<ul>%1</ul>"
+msgstr "È necessario correggere i seguenti errori:<ul>%1</ul>"
 
 #: server/activities/target/ActivityEditor.qml:14
 msgctxt "ActivityEditor|"
@@ -1590,89 +1548,67 @@ msgid ""
 "center outward. It must contain only integer numbers. Typically all values "
 "should be in descending order."
 msgstr ""
+"«Valori del bersaglio» definisce il punteggio per ogni cerchio del "
+"bersaglio, dal centro verso l'esterno. Deve contenere solo numeri interi. In "
+"genere, tutti i valori dovrebbero essere in ordine decrescente."
 
 #: server/activities/target/TargetDataDisplay.qml:34
 msgctxt "TargetDataDisplay|"
 msgid "Target values:"
-msgstr ""
+msgstr "Valori del bersaglio:"
 
 #: server/activities/target/TargetDataDisplay.qml:64
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Additions"
 msgctxt "TargetDataDisplay|"
 msgid "Addition:"
-msgstr "Addizioni"
+msgstr "Addizione:"
 
 #: server/activities/target/TargetDataDisplay.qml:92
-#, fuzzy
-#| msgctxt "AdjacentNumbersDataDisplay|"
-#| msgid "Answer:"
 msgctxt "TargetDataDisplay|"
 msgid "Answer:"
 msgstr "Risposta:"
 
 #: server/activities/target/TargetDataDisplay.qml:118
-#, fuzzy
-#| msgctxt "BinaryBulbDataDisplay|"
-#| msgid "Expected:"
 msgctxt "TargetDataDisplay|"
 msgid "Expected answer:"
-msgstr "Prevista:"
+msgstr "Risposta attesa:"
 
 #: server/activities/target/TargetEditor.qml:27
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "TargetEditor|"
 msgid "Sublevels"
 msgstr "Sottolivelli"
 
 #: server/activities/target/TargetEditor.qml:28
-#, fuzzy
-#| msgctxt "VerticalEditor|"
-#| msgid "Number of digits"
 msgctxt "TargetEditor|"
 msgid "Number of darts"
-msgstr "Numero di cifre"
+msgstr "Numero di freccette"
 
 #: server/activities/target/TargetEditor.qml:29
 msgctxt "TargetEditor|"
 msgid "Target values"
-msgstr ""
+msgstr "Valori del bersaglio"
 
 #: server/activities/target/TargetEditor.qml:73
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "TargetEditor|"
 msgid "Dataset is empty."
-msgstr "Il nome dell'insieme di dati è vuoto."
+msgstr "L'insieme di dati è vuoto."
 
 #: server/activities/target/TargetEditor.qml:84
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "\"Numbers to find\" for level %1 must not be empty."
+#, qt-format
 msgctxt "TargetEditor|"
 msgid "\"Target values\" for level %1 must not be empty."
-msgstr "«Numeri da trovare» per il livello %1 non deve essere vuoto."
+msgstr "«Valori del bersaglio» per il livello %1 non deve essere vuoto."
 
 #: server/activities/target/TargetEditor.qml:90
-#, fuzzy, qt-format
-#| msgctxt "TensComplementFindEditor|"
-#| msgid "Sublevel %2 of Level %1 contains invalid extra cards."
+#, qt-format
 msgctxt "TargetEditor|"
 msgid "\"Target values\" for level %1 contains invalid entries."
-msgstr ""
-"Il sottolivello %2 del livello %1 contiene schede aggiuntive non valide."
+msgstr "«Valori del bersaglio» per il livello %1 contiene voci non valide."
 
 #: server/activities/target/TargetEditor.qml:97
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "TargetEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
-msgstr "I seguenti errori devono essere corretti:<ul>%1</ul>"
+msgstr "È necessario correggere i seguenti errori:<ul>%1</ul>"
 
 #: server/activities/tens_complement_find/ActivityEditor.qml:15
 #: server/activities/tens_complement_use/ActivityEditor.qml:15
@@ -2108,12 +2044,10 @@ msgstr "Elimina gruppo"
 
 #. Argument is dataset name
 #: server/components/SequenceElement.qml:72
-#, fuzzy, qt-format
-#| msgctxt "NavigationPanel|"
-#| msgid "Datasets"
+#, qt-format
 msgctxt "SequenceElement|"
 msgid "Dataset: %1"
-msgstr "Insiemi di dati"
+msgstr "Insieme di dati: %1"
 
 #: server/components/ServerLanguageList.qml:32
 msgctxt "ServerLanguageList|"
@@ -2247,40 +2181,42 @@ msgstr "Impossibile eliminare l'insieme di dati <b>%1</b>."
 msgctxt "controllers::DatabaseController|"
 msgid "Error inserting sequence in table sequence_: <b>%1</b>."
 msgstr ""
+"Errore durante l'inserimento della sequenza nella tabella sequence_: <b>%1</"
+"b>."
 
 #: server/controllers/database-controller.cpp:746
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Error updating sequence in table sequence_: <b>%1</b>."
 msgstr ""
+"Errore durante l'aggiornamento della sequenza nella tabella sequence_: <b>"
+"%1</b>."
 
 #: server/controllers/database-controller.cpp:754
 #: server/controllers/database-controller.cpp:802
-#, fuzzy, qt-format
-#| msgctxt "controllers::DatabaseController|"
-#| msgid "User <b>%1</b> could not be deleted from table result_."
+#, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid ""
 "Sequence <b>%1</b> couldn't be deleted from table sequence_with_activity_."
-msgstr "L'utente <b>%1</b> non può essere eliminato dalla tabella result_."
+msgstr ""
+"Impossibile eliminare la sequenza <b>%1</b> dalla tabella "
+"sequence_with_activity_."
 
 #: server/controllers/database-controller.cpp:759
 #: server/controllers/database-controller.cpp:806
-#, fuzzy, qt-format
-#| msgctxt "controllers::DatabaseController|"
-#| msgid "User <b>%1</b> could not be deleted from table user_."
+#, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid ""
 "Sequence <b>%1</b> couldn't be deleted from table activity_with_datasets_."
-msgstr "L'utente <b>%1</b> non può essere eliminato dalla tabella user_."
+msgstr ""
+"Impossibile eliminare la sequenza <b>%1</b> dalla tabella "
+"activity_with_datasets_."
 
 #: server/controllers/database-controller.cpp:798
-#, fuzzy, qt-format
-#| msgctxt "controllers::DatabaseController|"
-#| msgid "User <b>%1</b> could not be deleted from table user_."
+#, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Sequence <b>%1</b> could not be deleted from table sequence_."
-msgstr "L'utente <b>%1</b> non può essere eliminato dalla tabella user_."
+msgstr "Impossibile eliminare la sequenza <b>%1</b> dalla tabella sequence_."
 
 #: server/controllers/network-controller.cpp:46
 #, qt-format
@@ -2495,14 +2431,10 @@ msgid ""
 msgstr "Sei sicuro di voler rimuovere i seguenti alunni dalla banca dati?"
 
 #: server/dialogs/RemoveSequenceDialog.qml:64
-#, fuzzy
-#| msgctxt "RemoveDatasetDialog|"
-#| msgid ""
-#| "Are you sure you want to delete the following dataset from the database?"
 msgctxt "RemoveSequenceDialog|"
 msgid ""
 "Are you sure you want to delete the following sequence from the database?"
-msgstr "Vuoi davvero eliminare il seguente insieme di dati dalla banca dati?"
+msgstr "Sei sicuro di voler eliminare la seguente sequenza dalla banca dati?"
 
 #: server/dialogs/SendDatasetDialog.qml:93
 msgctxt "SendDatasetDialog|"
@@ -2529,127 +2461,80 @@ msgid "Pupils"
 msgstr "Alunni"
 
 #: server/dialogs/SendSequenceDialog.qml:104
-#, fuzzy
-#| msgctxt "SendDatasetDialog|"
-#| msgid "Do you want to send the dataset to selected pupils?"
 msgctxt "SendSequenceDialog|"
 msgid "Do you want to send the sequence to selected pupils?"
-msgstr "Vuoi inviare l'insieme di dati agli studenti selezionati?"
+msgstr "Desideri inviare la sequenza agli alunni selezionati?"
 
 #: server/dialogs/SendSequenceDialog.qml:105
-#, fuzzy
-#| msgctxt "SendDatasetDialog|"
-#| msgid "Are you sure you want to remove the dataset from selected pupils?"
 msgctxt "SendSequenceDialog|"
 msgid "Are you sure you want to remove the sequence from selected pupils?"
-msgstr "Vuoi davvero rimuovere l'insieme di dati dagli alunni selezionati?"
+msgstr "Sei sicuro di voler rimuovere la sequenza dagli alunni selezionati?"
 
 #: server/dialogs/SendSequenceDialog.qml:106
-#, fuzzy
-#| msgctxt "SendDatasetDialog|"
-#| msgid ""
-#| "Are you sure you want to remove all the existing datasets from selected "
-#| "pupils?"
 msgctxt "SendSequenceDialog|"
 msgid ""
 "Are you sure you want to remove all the existing sequences from selected "
 "pupils?"
 msgstr ""
-"Vuoi davvero rimuovere tutti gli insieme di dati esistenti dagli alunni "
+"Sei sicuro di voler rimuovere tutte le sequenze esistenti dagli alunni "
 "selezionati?"
 
 #: server/dialogs/SendSequenceDialog.qml:140
-#, fuzzy
-#| msgctxt "ExportPupilsDialog|"
-#| msgid "Pupils"
 msgctxt "SendSequenceDialog|"
 msgid "Pupils"
 msgstr "Alunni"
 
 #: server/dialogs/SequenceEditorDialog.qml:50
-#, fuzzy
-#| msgctxt "DatasetEditorDialog|"
-#| msgid "Create dataset"
 msgctxt "SequenceEditorDialog|"
 msgid "Create sequence"
-msgstr "Crea un insieme di dati"
+msgstr "Crea sequenza"
 
 #: server/dialogs/SequenceEditorDialog.qml:56
-#, fuzzy
-#| msgctxt "DatasetEditorDialog|"
-#| msgid "Update dataset"
 msgctxt "SequenceEditorDialog|"
 msgid "Update sequence"
-msgstr "Aggiorna l'insieme di dati"
+msgstr "Aggiorna la sequenza"
 
 #: server/dialogs/SequenceEditorDialog.qml:81
-#, fuzzy
-#| msgctxt "DatasetEditorDialog|"
-#| msgid "Dataset name is empty"
 msgctxt "SequenceEditorDialog|"
 msgid "Sequence name is empty"
-msgstr "Il nome dell'insieme di dati è vuoto"
+msgstr "Il nome della sequenza è vuoto"
 
 #: server/dialogs/SequenceEditorDialog.qml:163
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sequence length"
 msgctxt "SequenceEditorDialog|"
 msgid "Sequence name"
-msgstr "Lunghezza della sequenza"
+msgstr "Nome della sequenza"
 
 #: server/dialogs/SequenceEditorDialog.qml:177
-#, fuzzy
-#| msgctxt "DatasetEditorDialog|"
-#| msgid "Goal"
 msgctxt "SequenceEditorDialog|"
 msgid "Goal"
 msgstr "Obiettivo"
 
 #: server/dialogs/SequenceEditorDialog.qml:245
-#, fuzzy
-#| msgctxt "NavigationPanel|"
-#| msgid "Activities"
 msgctxt "SequenceEditorDialog|"
 msgid "Activities"
 msgstr "Attività"
 
 #: server/dialogs/SequenceEditorDialog.qml:272
-#, fuzzy
-#| msgctxt "NavigationPanel|"
-#| msgid "Datasets"
 msgctxt "SequenceEditorDialog|"
 msgid "Datasets"
 msgstr "Insiemi di dati"
 
 #: server/dialogs/SequenceEditorDialog.qml:323
-#, fuzzy
-#| msgctxt "EditorBox|"
-#| msgid "Add"
 msgctxt "SequenceEditorDialog|"
 msgid "Add"
 msgstr "Aggiungi"
 
 #: server/dialogs/SequenceEditorDialog.qml:343
-#, fuzzy
-#| msgctxt "EditorBox|"
-#| msgid "Remove"
 msgctxt "SequenceEditorDialog|"
 msgid "Remove"
 msgstr "Rimuovi"
 
 #: server/dialogs/SequenceEditorDialog.qml:355
-#, fuzzy
-#| msgctxt "EditorBox|"
-#| msgid "Move up"
 msgctxt "SequenceEditorDialog|"
 msgid "Move up"
 msgstr "Sposta in alto"
 
 #: server/dialogs/SequenceEditorDialog.qml:367
-#, fuzzy
-#| msgctxt "EditorBox|"
-#| msgid "Move down"
 msgctxt "SequenceEditorDialog|"
 msgid "Move down"
 msgstr "Sposta in basso"
@@ -2695,12 +2580,9 @@ msgid "Datasets"
 msgstr "Insiemi di dati"
 
 #: server/panels/NavigationPanel.qml:111
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sequence length"
 msgctxt "NavigationPanel|"
 msgid "Sequences"
-msgstr "Lunghezza della sequenza"
+msgstr "Sequenze"
 
 #: server/panels/NavigationPanel.qml:119
 msgctxt "NavigationPanel|"
@@ -3202,60 +3084,39 @@ msgid "Remove pupils"
 msgstr "Rimuovi gli alunni"
 
 #: server/views/SequencesView.qml:67
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sequence length"
 msgctxt "SequencesView|"
 msgid "Sequences"
-msgstr "Lunghezza della sequenza"
+msgstr "Sequenze"
 
 #: server/views/SequencesView.qml:102
-#, fuzzy
-#| msgctxt "SqlLineDialog|"
-#| msgid "Line details"
 msgctxt "SequencesView|"
 msgid "Details"
-msgstr "Dettagli della riga"
+msgstr "Dettagli"
 
 #: server/views/SequencesView.qml:169
-#, fuzzy
-#| msgctxt "ManagePupilsView|"
-#| msgid "Pupils management"
 msgctxt "SequencesView|"
 msgid "Sequences management"
-msgstr "Gestione degli alunni"
+msgstr "Gestione delle sequenze"
 
 #: server/views/SequencesView.qml:187
-#, fuzzy
-#| msgctxt "DatasetEditorDialog|"
-#| msgid "Create dataset"
 msgctxt "SequencesView|"
 msgid "Create sequence"
-msgstr "Crea un insieme di dati"
+msgstr "Crea una sequenza"
 
 #: server/views/SequencesView.qml:195
-#, fuzzy
-#| msgctxt "DatasetEditorDialog|"
-#| msgid "Update dataset"
 msgctxt "SequencesView|"
 msgid "Update sequence"
-msgstr "Aggiorna l'insieme di dati"
+msgstr "Aggiorna una sequenza"
 
 #: server/views/SequencesView.qml:204
-#, fuzzy
-#| msgctxt "DatasetsView|"
-#| msgid "Send dataset to clients"
 msgctxt "SequencesView|"
 msgid "Send sequence to clients"
-msgstr "Invia l'insieme di dati ai client"
+msgstr "Invia una sequenza ai client"
 
 #: server/views/SequencesView.qml:247
-#, fuzzy
-#| msgctxt "DatasetsView|"
-#| msgid "Delete dataset"
 msgctxt "SequencesView|"
 msgid "Delete sequence"
-msgstr "Elimina l'insieme di dati"
+msgstr "Elimina una sequenza"
 
 #: server/views/SettingsView.qml:65
 msgctxt "SettingsView|"

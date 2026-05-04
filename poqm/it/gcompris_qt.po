@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026 Vincenzo Reale <smart2128vr@gmail.com>
+# SPDX-FileCopyrightText: 2014-2026 Vincenzo Reale <smart2128vr@gmail.com>
 # Paolo Gibellini <p.gibellini@gmail.com>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2026-04-05 12:21+0200\n"
+"PO-Revision-Date: 2026-04-30 09:34+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Lokalize 26.04.0\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -27676,12 +27676,9 @@ msgid "Maximum value: 500."
 msgstr "Valore massimo: 500."
 
 #: activities/target/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Maximum value: 50000."
 msgctxt "Data|"
 msgid "Maximum value: 5000."
-msgstr "Valore massimo: 50000."
+msgstr "Valore massimo: 5000."
 
 #: activities/target/resource/5/Data.qml:14
 msgctxt "Data|"
@@ -28545,36 +28542,27 @@ msgid ""
 "You are currently in a sequence, going back to the menu will cancel it, do "
 "you confirm?"
 msgstr ""
+"Attualmente ti trovi in ​​una sequenza; tornando al menu, la annullerai. "
+"Confermi?"
 
 #: core/ActivityBase.qml:219
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "ActivityBase|"
 msgid "Yes"
 msgstr "Sì"
 
 #: core/ActivityBase.qml:224
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "ActivityBase|"
 msgid "No"
 msgstr "No"
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to run a list of activities with specific datasets "
 "in sequence (--with-sequence sequence.json)"
 msgstr ""
-"Nuova opzione della riga di comando per elencare tutte le attività e "
-"avviarne una specifica"
+"Nuova opzione da riga di comando per eseguire un elenco di attività con "
+"insiemi di dati specifici in sequenza (--with-sequence sequenza.json)"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:44 core/ChangeLog.qml:50
 #: core/ChangeLog.qml:56 core/ChangeLog.qml:65 core/ChangeLog.qml:71
@@ -29555,7 +29543,7 @@ msgstr ""
 #: core/main.cpp:149
 msgctxt "QObject|"
 msgid "Start the sequence of activities passed in the json file."
-msgstr ""
+msgstr "Avvia la sequenza di attività specificate nel file JSON."
 
 #: core/main.cpp:153
 msgctxt "QObject|"
