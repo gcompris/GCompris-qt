@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2026-03-31 17:24+0200\n"
+"PO-Revision-Date: 2026-04-29 10:14+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -2502,11 +2502,11 @@ msgid ""
 "logically to one object in the main board area. Drag each object from the "
 "side panel to the correct spot in the main area."
 msgstr ""
-"En l'àrea principal del tauler es mostra un conjunt d'objectes. En la "
-"subfinestra lateral es mostra un altre conjunt d'objectes, cada objecte en "
-"el quadro lateral es correspon lògicament amb un objecte en l'àrea del "
-"tauler principal. Arrossegueu cada objecte des de la subfinestra lateral cap "
-"al lloc correcte en l'àrea principal."
+"En l'àrea principal del tauler es mostra un conjunt d'objectes. A el quadro "
+"lateral es mostra un altre conjunt d'objectes, cada objecte en el quadro "
+"lateral es correspon lògicament amb un objecte en l'àrea del tauler "
+"principal. Arrossegueu cada objecte des d'el quadro lateral cap al lloc "
+"correcte en l'àrea principal."
 
 #: activities/babymatch/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
@@ -8369,7 +8369,7 @@ msgstr ""
 "L'atracció estrela d'Avinyó és el Palau dels Papes (Palais des Papes), un "
 "gran castell de significativa importància històrica, religiosa i "
 "arquitectònica. És un dels més grans i importants edificis medievals gòtics "
-"a Europa."
+"en Europa."
 
 # Nota: https://ca.wikipedia.org/wiki/Castell_de_Chenonceau
 #: activities/explore_monuments/resource/board/board3.qml:106
@@ -27134,8 +27134,8 @@ msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
 "indicating the current speed of the submarine."
 msgstr ""
-"L'element més a l'esquerra de la subfinestra de control és el motor del "
-"submarí, el qual indica la velocitat actual."
+"L'element més a l'esquerra del quadro de control és el motor del submarí, el "
+"qual indica la velocitat actual."
 
 #: activities/submarine/Submarine.qml:139
 msgctxt "Submarine|"
@@ -27148,7 +27148,7 @@ msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
 "velocity."
 msgstr ""
-"Prem el botó + per a augmentar la velocitat o el botó – per a fer-la "
+"Prem el botó «+» per a augmentar la velocitat o el botó «-» per a fer-la "
 "disminuir."
 
 #: activities/submarine/Submarine.qml:149
@@ -27196,7 +27196,7 @@ msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
 "submarine."
 msgstr ""
-"L'element més a la dreta de la subfinestra de control controla els alerons "
+"L'element més a la dreta del quadro de control controla els alerons "
 "d'immersió del submarí."
 
 #: activities/submarine/Submarine.qml:171
@@ -27223,7 +27223,7 @@ msgid ""
 "The + button will increase the depth of the submarine, while the - button "
 "will decrease the depth of the submarine."
 msgstr ""
-"El botó + augmentarà la profunditat del submarí, mentre que el botó – la "
+"El botó «+» augmentarà la profunditat del submarí, mentre que el botó «-» la "
 "farà disminuir."
 
 #: activities/submarine/Submarine.qml:180
@@ -27463,7 +27463,7 @@ msgstr "Valor màxim: 500."
 #: activities/target/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Maximum value: 50000."
-msgstr "Valor màxim: 50.000."
+msgstr "Valor màxim: 50000."
 
 #: activities/target/resource/5/Data.qml:13
 msgctxt "Data|"

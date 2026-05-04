@@ -1,13 +1,13 @@
 # Translation of gcompris_teachers_qt.po to Catalan (Valencian)
-# Copyright (C) 2025 This_file_is_part_of_KDE
+# Copyright (C) 2025-2026 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# SPDX-FileCopyrightText: 2025 Josep M. Ferrer <txemaq@gmail.com>
+# SPDX-FileCopyrightText: 2025, 2026 Josep M. Ferrer <txemaq@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
-"PO-Revision-Date: 2025-12-23 08:52+0100\n"
+"PO-Revision-Date: 2026-05-02 13:54+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -38,7 +38,7 @@ msgid ""
 msgstr ""
 "Si es tria «Números aleatoris d'inici», el nombre de subnivells serà el "
 "mínim entre el valor \"Subnivells\" i el resultat de: («Número d'inici "
-"màxim» - «Número d'inici mínim») / «Pas entre els números» + 1."
+"màxim» – «Número d'inici mínim») / «Pas entre els números» + 1."
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
@@ -63,8 +63,8 @@ msgstr ""
 "«Posició dels números que falten» ha de contindre una llista de números que "
 "corresponen a l'índex dels números a trobar. Els números d'índex comencen a "
 "partir de 0 (el primer nombre de la seqüència), i no han de ser més grans "
-"que la «Llargària de la seqüència» - 1, a més, la llargària de la llista no "
-"pot ser més gran que la «Llargària de la seqüència» - 2, cal que tinga "
+"que la «Llargària de la seqüència» – 1, a més, la llargària de la llista no "
+"pot ser més gran que la «Llargària de la seqüència» – 2, cal que tinga "
 "sempre almenys 2 números visibles en la seqüència."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:36
@@ -383,7 +383,7 @@ msgstr "El conjunt de dades està buit."
 #, qt-format
 msgctxt "BinaryBulbEditor|"
 msgid "\"Numbers to find\" for level %1 must not be empty."
-msgstr "Els «Nombres a trobar» del nivell %1 no ha d'estar buit."
+msgstr "Els «Nombres a trobar» del nivell %1 no han d'estar buits."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:115
 #, qt-format
