@@ -18,6 +18,15 @@ Gletters {
     useDataset: true
     property string dominoMode: "dot"
 
+    // keep names in sync with the list in ActivityConfig
+    readonly property var dominoModeNames: {
+        "dot": qsTr("Dots"),
+        "number": qsTr("Arabic numbers"),
+        "roman": qsTr("Roman numbers"),
+        "image": qsTr("Images")
+    }
+    readonly property string currentModeName: dominoModeNames[dominoMode]
+
     function getMode() {
         return activity.dominoMode;
     }

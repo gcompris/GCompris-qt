@@ -233,9 +233,7 @@ function initLevel() {
     else
         items.wordlist.initRandomWord(items.currentLevel + 1)
 
-    items.memWords = []
-    items.errorCount = 0
-    items.client.startTiming()      // for server version
+    items.droppedText = new Array();
     initSubLevel()
 }
 
@@ -267,6 +265,8 @@ function setLevelData() {
 }
 
 function initSubLevel() {
+    items.typedText = "";
+    items.client.startTiming();      // for server version
     currentWord = null;
     if (currentSubLevel != 0) {
         // increase speed
@@ -279,18 +279,37 @@ function initSubLevel() {
 //    console.log("Gletters: initializing subLevel " + (currentSubLevel + 1) + " words=" + JSON.stringify(level.words));
 }
 
+function sendClientAnswer(_isCorrect, _isMissed) {
+    if(_isMissed) {
+        items.client.tmpTypedText = "";
+        items.client.tmpMissedText = items.missedText;
+        items.client.tmpDroppedItems = "";
+        items.client.sendToServer(_isCorrect);
+        items.missedText = "";
+    } else {
+        items.client.tmpTypedText = items.typedText;
+        items.client.tmpMissedText = "";
+        items.client.tmpDroppedItems = items.droppedText;
+        items.client.sendToServer(_isCorrect);
+        items.typedText = "";
+    }
+}
+
 function processKeyPress(text) {
     if(items.inputLocked)
         return
 
     items.instructionHidden = true;
-    var typedText = uppercaseOnly ? text.toLocaleUpperCase() : text;
+
+    var typedChar = uppercaseOnly ? text.toLocaleUpperCase() : text;
+    items.typedText += typedChar;
 
     if (currentWord !== null) {
         // check against a currently typed word
-        if (!currentWord.checkMatch(typedText)) {
+        if (!currentWord.checkMatch(typedChar)) {
             currentWord = null;
-            audioCrashPlay()
+            audioCrashPlay();
+            sendClientAnswer(false, false)
         } else {
             playLetter(text)
         }
@@ -298,7 +317,7 @@ function processKeyPress(text) {
         // no current word, check against all available words
         var found = false
         for (var i = 0; i< droppedWords.length; i++) {
-            if (droppedWords[i].checkMatch(typedText)) {
+            if (droppedWords[i].checkMatch(typedChar)) {
                 // typed correctly
                 currentWord = droppedWords[i];
                 playLetter(text)
@@ -307,20 +326,33 @@ function processKeyPress(text) {
             }
         }
         if(!found) {
-            items.errorCount++
-            audioCrashPlay()
+            audioCrashPlay();
+            sendClientAnswer(false, false);
         }
     }
 
     if (currentWord !== null && currentWord.isCompleted()) {
         // win!
+
+        // send answer to server and delist word
+        sendClientAnswer(true, false);
+        currentWord.won();  // note: destroyWord() is triggered after fadeout
+        delistWord(currentWord);
         droppedWordsCounter -= 1
-        currentWord.won();  // note: deleteWord() is triggered after fadeout
         successRate += 0.1
         currentWord = null
         nextSubLevel();
     }
     focusTextInput();
+}
+
+function wordMissed(w) {
+    audioCrashPlay();
+    items.missedText = w.text;
+    sendClientAnswer(false, true);
+    appendRandomWord(w.text)
+    delistWord(w);
+    destroyWord(w);
 }
 
 function setSpeed()
@@ -344,23 +376,30 @@ function deleteWords()
 {
     if (droppedWords === undefined || droppedWords.length < 1)
         return;
-    for (var i = 0; i< droppedWords.length; i++)
+    for (var i = 0; i< droppedWords.length; i++) {
         droppedWords[i].destroy();
+    }
     droppedWords.length = 0;
+    items.droppedText.length = 0;
 }
 
-function deleteWord(w)
+function delistWord(w)
 {
     if (droppedWords === undefined || droppedWords.length < 1)
         return;
     if (w == currentWord)
         currentWord = null;
-    for (var i = 0; i< droppedWords.length; i++)
+    for (var i = 0; i< droppedWords.length; i++) {
         if (droppedWords[i] == w) {
-            droppedWords[i].destroy();
             droppedWords.splice(i, 1);
+            items.droppedText.splice(i, 1);
             break;
         }
+    }
+}
+
+function destroyWord(w) {
+    w.destroy();
 }
 
 function createWord()
@@ -412,7 +451,9 @@ function createWord()
         if (word === null)
             console.log("Gletters: Error creating word object");
         else {
-            droppedWords[droppedWords.length] = word;
+            var listLength = droppedWords.length;
+            droppedWords[listLength] = word;
+            items.droppedText[listLength] = text;
             droppedWordsCounter += 1
             // speed to duration:
             var duration = (items.main.height / 2) * speed / successRate;
@@ -425,8 +466,6 @@ function createWord()
     } else if (wordComponent.status == 3 /* Component.Error */) {
         console.log("Gletters: error creating word component: " + wordComponent.errorString());
     }
-    items.memWords.push(text)
-
 }
 
 function dropWord()

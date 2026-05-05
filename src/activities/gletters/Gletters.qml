@@ -101,8 +101,9 @@ ActivityBase {
             property bool inputLocked: false
             property bool instructionHidden: false
             property alias client: client
-            property var memWords: []
-            property int errorCount: 0
+            property string typedText: ""
+            property string missedText: ""
+            property var droppedText: []
         }
 
         onStart: {
@@ -128,12 +129,21 @@ ActivityBase {
 
         Client {    // Client for server version. Prepare data from activity to server
             id: client
+
+            property string tmpTypedText: ""
+            property string tmpMissedText: ""
+            property var tmpDroppedItems: null
+
             getDataCallback: function() {
-                var data = {
-                    "errors": items.errorCount,
-                    "words": items.memWords.join(" ")
+                var data  = {
+                    "typedText": tmpTypedText,
+                    "missedText": tmpMissedText,
+                    "droppedItems": tmpDroppedItems
+                };
+                if(activity.activityName === "smallnumbers2") {
+                    data["dominoMode"] = activity.currentModeName;
                 }
-                return data
+                return data;
             }
         }
 
@@ -237,7 +247,6 @@ ActivityBase {
             id: bonus
             interval: 2000
             Component.onCompleted: win.connect(activity.nextLevel)
-            onStop: items.client.sendToServer(true)         // send data for server version
         }
 
         Score {

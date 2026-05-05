@@ -16,6 +16,7 @@ Item {
     id: activityConfiguration
     property Item configBackground
     property alias modeBox: modeBox
+    // keep names in sync with the list in Smallnumbers2.qml
     property var availableModes: [
         { "text": qsTr("Dots"), "value": "dot" },
         { "text": qsTr("Arabic numbers"), "value": "number" },

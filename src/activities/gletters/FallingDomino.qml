@@ -31,6 +31,7 @@ Item {
     signal won
 
     onWon: {
+        down.stop()
         wonState = true
         particle.burst(30)
         fadeout.restart();
@@ -49,7 +50,7 @@ Item {
         to: 0
         duration: 1000
 
-        onStopped: Activity.deleteWord(word);
+        onStopped: Activity.destroyWord(word);
     }
 
     function checkMatch(c: string): bool
@@ -101,10 +102,8 @@ Item {
         to: word.parent.height
         duration: 10000
 
-        onStopped: {
-            Activity.audioCrashPlay();
-            Activity.appendRandomWord(word.text)
-            Activity.deleteWord(word);
+        onFinished: {
+            Activity.wordMissed(word);
         }
     }
 }
