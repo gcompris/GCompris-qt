@@ -141,7 +141,7 @@ ActivityBase {
         GCTextPanel {
             id: instructionPanel        //instruction rectangle
             z: 10
-            visible: items.levels
+            visible: items.levels && items.instructionText != ""
             opacity: items.instructionHidden ? 0 : 1
             panelWidth: parent.width - 2 * GCStyle.baseMargins
             panelHeight: Math.min(50 * ApplicationInfo.ratio, activityBackground.height * 0.2)
