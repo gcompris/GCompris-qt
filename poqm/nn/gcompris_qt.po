@@ -27389,8 +27389,6 @@ msgstr "Høgaste verdi: 500"
 
 #: activities/target/resource/4/Data.qml:14
 #, fuzzy
-#| msgctxt "Data|"
-#| msgid "Maximum value: 50000."
 msgctxt "Data|"
 msgid "Maximum value: 5000."
 msgstr "Høgaste verdi: 50 000"
@@ -29364,7 +29362,3 @@ msgstr "Lukk"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Start"
-
-#~ msgctxt "Data|"
-#~ msgid "Maximum value: 500000."
-#~ msgstr "Høgaste verdi: 500 000"
