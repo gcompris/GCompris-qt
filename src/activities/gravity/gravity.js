@@ -198,8 +198,15 @@ function destroyPlanet() {
 }
 
 function crash() {
+    items.processTimer.stop();
     items.crashSound.play();
     items.explosion.show();
     items.spaceship.hide();
-    stop();
+    items.planetCreation.stop();
+    currentPlanet.stopMoving();
+    items.activityBackground.stopSpace();
+    planetGravity = 0;
+    items.gravity = 0;
+    controlMove = 0;
+    move = 0;
 }
