@@ -30,6 +30,10 @@ Image {
         down.restart();
     }
 
+    function stopMoving() {
+        down.stop();
+    }
+
     NumberAnimation {
         id: down
         target: planet

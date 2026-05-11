@@ -111,6 +111,11 @@ ActivityBase {
             station.y = -station.height
         }
 
+        function stopSpace() {
+            down.stop();
+            down2.stop();
+        }
+
 
         GCSoundEffect {
             id: crashSound
