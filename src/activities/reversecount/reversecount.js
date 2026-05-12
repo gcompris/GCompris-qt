@@ -40,6 +40,7 @@ function start(items_) {
 
 function stop() {
     fishIndex = -1
+    items.tux.moveTimer.stop()
 }
 
 function initLevel() {
@@ -134,6 +135,7 @@ function moveTuxToIceBlock() {
             items.widthBase + (items.widthBase - items.tux.width) / 2
     items.tux.y = iceBlocksLayout[tuxIceBlockNumber % iceBlocksLayout.length][1] *
             items.heightBase + (items.heightBase - items.tux.height) / 2
+    items.tux.moveTimer.restart()
 }
 
 function tuxRunningChanged() {
