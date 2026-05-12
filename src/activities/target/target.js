@@ -73,6 +73,7 @@ function initSubLevel() {
     items.targetItem.start()
     items.userEntry.text = ""
     items.inputLocked = false
+    items.client.startTiming()      // for server version.
 }
 
 // Algo to spread circle colors as needed, with extra repeat from the border when needed
