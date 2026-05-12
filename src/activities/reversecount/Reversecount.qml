@@ -76,6 +76,15 @@ ActivityBase {
             Activity.stop()
         }
 
+        // keep names in sync with the list in ActivityConfig
+        readonly property var dominoModeNames: {
+            "dot": qsTr("Dots"),
+            "number": qsTr("Arabic numbers"),
+            "roman": qsTr("Roman numbers"),
+            "image": qsTr("Images")
+        }
+        readonly property string currentModeName: dominoModeNames[items.mode]
+
         Client {    // Client for server version. Prepare data from activity to server
             id: client
             getDataCallback: function() {
@@ -84,6 +93,7 @@ ActivityBase {
                     "currentPosition": Activity.tuxIceBlockNumber,
                     "dice1": chooseDiceBar.value1,
                     "dice2": chooseDiceBar.value2,
+                    "dominoMode": activityBackground.currentModeName
                 }
                 return data
             }

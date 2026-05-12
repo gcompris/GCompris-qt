@@ -18,6 +18,7 @@ Item {
     property alias modeBox: modeBox
     width: flick.width
     height: childrenRect.height
+    // keep names in sync with the list in Reversecount.qml
     property var availableModes: [
         { "text": qsTr("Dots"), "value": "dot" },
         { "text": qsTr("Arabic numbers"), "value": "number" },
