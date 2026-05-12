@@ -16295,7 +16295,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "இடது, வலது ஆரோ கீகள்: விண்கலத்தை நகர்த்துவதற்கு"
 
-#: activities/gravity/Gravity.qml:229
+#: activities/gravity/Gravity.qml:234
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -16308,7 +16308,7 @@ msgstr ""
 "விகிதத்திலும் பொருட்களின் மையங்களுக்கு இடையே உள்ள தூரத்தின் வர்க்கத்திற்கு எதிர் "
 "விகிதத்திலும் அமையும்."
 
-#: activities/gravity/Gravity.qml:232
+#: activities/gravity/Gravity.qml:237
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -16319,7 +16319,7 @@ msgstr ""
 "விகிதத்தில் இருப்பதால் அதிக நிறை கொண்ட பொருட்கள்  ஒன்றையொன்று அதிக ஈர்ப்பு விசையுடன் "
 "ஈர்க்கும்."
 
-#: activities/gravity/Gravity.qml:235
+#: activities/gravity/Gravity.qml:240
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -16330,7 +16330,7 @@ msgstr ""
 "வர்க்கத்திற்கு எதிர் விகிதத்தில் இருப்பதால், இடைவெளி கூடும்தோறும், ஈர்ப்பு விசை "
 "பலவீனமாகிறது."
 
-#: activities/gravity/Gravity.qml:238
+#: activities/gravity/Gravity.qml:243
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -16340,7 +16340,7 @@ msgstr ""
 "விண்கலம் விண்வெளி நிலையத்தை அடையும் வரை கிரகங்களில் மோதாமல் நகர்த்துவதே உங்களுடைய "
 "இலக்கு. விண்கலத்தின் ஈர்ப்பு விசையையும், திசையையும், தீவிரத்தையும் அம்புக்குறி குறிக்கிறது."
 
-#: activities/gravity/Gravity.qml:241
+#: activities/gravity/Gravity.qml:246
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "

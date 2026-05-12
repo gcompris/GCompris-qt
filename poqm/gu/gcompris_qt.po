@@ -15352,7 +15352,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "ડાબી અને જમણી એરો કી: સ્પેસશિપને ખસેડવા માટે"
 
-#: activities/gravity/Gravity.qml:229
+#: activities/gravity/Gravity.qml:234
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15364,7 +15364,7 @@ msgstr ""
 "પડે છે. આ આકર્ષણ બળ બંને પદાર્થોના દળના સમપ્રમાણમાં અને તેમના કેન્દ્રો વચ્ચેના  અંતરના વર્ગના "
 "વ્યસ્ત પ્રમાણમાં હોય છે."
 
-#: activities/gravity/Gravity.qml:232
+#: activities/gravity/Gravity.qml:237
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -15374,7 +15374,7 @@ msgstr ""
 "ગુરુત્વાકર્ષણ બળ બંને વસ્તુઓના દળના સીધા પ્રમાણમાં હોવાથી, વધુ દળ ધરાવતી વસ્તુઓ એકબીજાને "
 "વધુ ગુરુત્વાકર્ષણ બળથી આકર્ષશે."
 
-#: activities/gravity/Gravity.qml:235
+#: activities/gravity/Gravity.qml:240
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -15384,7 +15384,7 @@ msgstr ""
 "પરંતુ આ બળ બંને વસ્તુઓ વચ્ચેના અંતરના વર્ગના વ્યસ્ત પ્રમાણમાં હોવાથી, વધુ અંતર હોવાને કારણે "
 "ગુરુત્વાકર્ષણ બળ નબળું પડશે."
 
-#: activities/gravity/Gravity.qml:238
+#: activities/gravity/Gravity.qml:243
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -15394,7 +15394,7 @@ msgstr ""
 "તમારો ધ્યેય સ્પેસશિપને ખસેડવાનો અને સ્પેસ સ્ટેશન સુધી પહોંચતા પહેલા ગ્રહો સાથે અથડાતા બચવાનો "
 "છે. એરો તમારા જહાજ પરના ગુરુત્વાકર્ષણની દિશા અને તીવ્રતા દર્શાવે છે."
 
-#: activities/gravity/Gravity.qml:241
+#: activities/gravity/Gravity.qml:246
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "

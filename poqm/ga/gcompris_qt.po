@@ -15420,7 +15420,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Saigheada ar Chlé agus ar Dheis: bog an spáslong"
 
-#: activities/gravity/Gravity.qml:229
+#: activities/gravity/Gravity.qml:234
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15434,7 +15434,7 @@ msgstr ""
 "bíonn sé i gcomhréir chontrártha leis an fhad a scarann an dá lár óna chéile "
 "cearnaithe."
 
-#: activities/gravity/Gravity.qml:232
+#: activities/gravity/Gravity.qml:237
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -15446,7 +15446,7 @@ msgstr ""
 "sin, de réir mar a mhéadaíonn mais ceachtar rud, méadaíonn an fórsa "
 "imtharraingthe eatarthu fosta."
 
-#: activities/gravity/Gravity.qml:235
+#: activities/gravity/Gravity.qml:240
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -15457,7 +15457,7 @@ msgstr ""
 "chéile, áfach, agus de réir mar a mhéadaíonn an fad, éiríonn an fórsa "
 "imtharraingthe níos laige."
 
-#: activities/gravity/Gravity.qml:238
+#: activities/gravity/Gravity.qml:243
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -15468,7 +15468,7 @@ msgstr ""
 "timpeall air a athrú. Ná gabh róchóngarach do na pláinéid mar buailfidh tú "
 "iad. Léiríonn an saighead treo an fhórsa ar do spáslong."
 
-#: activities/gravity/Gravity.qml:241
+#: activities/gravity/Gravity.qml:246
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "

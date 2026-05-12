@@ -15982,7 +15982,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "→ і ←: пересування космічного корабля"
 
-#: activities/gravity/Gravity.qml:229
+#: activities/gravity/Gravity.qml:234
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15995,7 +15995,7 @@ msgstr ""
 "від мас обох об'єктів та зворотно пропорційна квадрату відстані між "
 "гравітаційними центрами тіл."
 
-#: activities/gravity/Gravity.qml:232
+#: activities/gravity/Gravity.qml:237
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -16005,7 +16005,7 @@ msgstr ""
 "Оскільки сила тяжіння пропорційна масі обох тіл, що взаємодіють, масивніші "
 "об'єкти притягують один одного з більшою силою тяжіння."
 
-#: activities/gravity/Gravity.qml:235
+#: activities/gravity/Gravity.qml:240
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -16015,7 +16015,7 @@ msgstr ""
 "Але ця сила зворотно пропорційна до квадрата відстані між центрами двох тіл, "
 "що взаємодіють. Тому, чим більшою є відстані між тілами, тим слабшою є сила."
 
-#: activities/gravity/Gravity.qml:238
+#: activities/gravity/Gravity.qml:243
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -16026,7 +16026,7 @@ msgstr ""
 "зіткнень з планетами. Стрілка на екрані показуватиме напрям та величину сили "
 "тяжіння, яка дії на ваш корабель."
 
-#: activities/gravity/Gravity.qml:241
+#: activities/gravity/Gravity.qml:246
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "

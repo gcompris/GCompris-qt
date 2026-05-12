@@ -15833,7 +15833,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Puščici levo in desno: premaknite vesoljko ladjo"
 
-#: activities/gravity/Gravity.qml:229
+#: activities/gravity/Gravity.qml:234
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15846,7 +15846,7 @@ msgstr ""
 "odvisna od njunih mas in obratno sorazmerna z kvadratom razdalje med njunima "
 "središčema."
 
-#: activities/gravity/Gravity.qml:232
+#: activities/gravity/Gravity.qml:237
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -15857,7 +15857,7 @@ msgstr ""
 "drug na drugega, bodo predmeti z večjo maso imeli tudi večjo silo težnosti. "
 "Če predmetu povečaš maso, se bo hkrati povečala tudi sila težnosti."
 
-#: activities/gravity/Gravity.qml:235
+#: activities/gravity/Gravity.qml:240
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -15867,7 +15867,7 @@ msgstr ""
 "Ker je ta sila obratno sorazmerna s kvadratom razdalje med dvema predmetoma, "
 "bo šibkejša, če se predmeta oddaljita drug od drugega."
 
-#: activities/gravity/Gravity.qml:238
+#: activities/gravity/Gravity.qml:243
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -15878,7 +15878,7 @@ msgstr ""
 "planeti, dokler ne dosežete vesoljske postaje. Puščica kaže smer in "
 "intenzivnost sile težnosti na vašo ladjo."
 
-#: activities/gravity/Gravity.qml:241
+#: activities/gravity/Gravity.qml:246
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "

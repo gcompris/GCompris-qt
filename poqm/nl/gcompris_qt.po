@@ -15978,7 +15978,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Pijlen links en rechts: verplaats het ruimteschip"
 
-#: activities/gravity/Gravity.qml:229
+#: activities/gravity/Gravity.qml:234
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15992,7 +15992,7 @@ msgstr ""
 "voorwerpen en is omgekeerd evenredig met het kwadraat van de afstand tussen "
 "hun centra."
 
-#: activities/gravity/Gravity.qml:232
+#: activities/gravity/Gravity.qml:237
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -16003,7 +16003,7 @@ msgstr ""
 "aantrekkende voorwerpen, zullen voorwerpen met meer massa elkaar met een "
 "grotere kracht aantrekken."
 
-#: activities/gravity/Gravity.qml:235
+#: activities/gravity/Gravity.qml:240
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -16014,7 +16014,7 @@ msgstr ""
 "tussen de twee elkaar beïnvloedende voorwerpen, zal een grotere afstand "
 "resulteren in een zwakkere aantrekkingskracht."
 
-#: activities/gravity/Gravity.qml:238
+#: activities/gravity/Gravity.qml:243
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -16025,7 +16025,7 @@ msgstr ""
 "totdat je het ruimtestation bereikt. De pijl geeft de richting en de sterkte "
 "van de aantrekkingskracht op jouw schip aan."
 
-#: activities/gravity/Gravity.qml:241
+#: activities/gravity/Gravity.qml:246
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "

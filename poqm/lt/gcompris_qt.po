@@ -16041,7 +16041,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Rodyklės kairėn ir dešinėn: erdvėlaivio valdymas"
 
-#: activities/gravity/Gravity.qml:229
+#: activities/gravity/Gravity.qml:234
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -16055,7 +16055,7 @@ msgstr ""
 "proporcinga atstumo tarp jų centrų kvadratui (kuo didesnis atstumas, tuo "
 "trauka mažesnė)."
 
-#: activities/gravity/Gravity.qml:232
+#: activities/gravity/Gravity.qml:237
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -16066,7 +16066,7 @@ msgstr ""
 "sąveikaujančių objektų masei (svoriui), sunkesni objektai traukia vienas "
 "kitą didesne gravitacine jėga."
 
-#: activities/gravity/Gravity.qml:235
+#: activities/gravity/Gravity.qml:240
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -16077,7 +16077,7 @@ msgstr ""
 "objektų kvadratui, didesnis atstumas reiškia silpnesnę gravitacinės traukos "
 "jėgą."
 
-#: activities/gravity/Gravity.qml:238
+#: activities/gravity/Gravity.qml:243
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -16088,7 +16088,7 @@ msgstr ""
 "planetose. Rodyklė prie kosminio laivo nurodo gravitacinės traukos jėgos "
 "kryptį bei stiprumą tavo laivui."
 
-#: activities/gravity/Gravity.qml:241
+#: activities/gravity/Gravity.qml:246
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "

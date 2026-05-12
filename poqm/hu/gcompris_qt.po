@@ -15935,7 +15935,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "A bal és a jobb nyilak: Az űrhajó mozgatása."
 
-#: activities/gravity/Gravity.qml:229
+#: activities/gravity/Gravity.qml:234
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15948,7 +15948,7 @@ msgstr ""
 "közvetlenül a két test tömegétől függ, és fordítottan arányos a "
 "középpontjaik távolságának négyzetével."
 
-#: activities/gravity/Gravity.qml:232
+#: activities/gravity/Gravity.qml:237
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -15959,7 +15959,7 @@ msgstr ""
 "tárgyra, a nehezebb tárgyak nagyobb erővel vonzzák egymást. Ha bármelyik "
 "tárgy tömege megnő, akkor a rá ható gravitációs vonzása is növekszik."
 
-#: activities/gravity/Gravity.qml:235
+#: activities/gravity/Gravity.qml:240
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -15970,7 +15970,7 @@ msgstr ""
 "így minél nagyobb a távolság a két tárgy közt, a gravitációs erő is "
 "csökkenni fog."
 
-#: activities/gravity/Gravity.qml:238
+#: activities/gravity/Gravity.qml:243
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -15981,7 +15981,7 @@ msgstr ""
 "módosításával. Ne engedd túl közel Tuxot a bolygókhoz, mert lezuhan! A nyíl "
 "jelzi a hajóra ható erők irányát."
 
-#: activities/gravity/Gravity.qml:241
+#: activities/gravity/Gravity.qml:246
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "

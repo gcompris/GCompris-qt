@@ -16233,7 +16233,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Vasak- ja paremnool: liikuge kosmoselaeva"
 
-#: activities/gravity/Gravity.qml:229
+#: activities/gravity/Gravity.qml:234
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -16245,7 +16245,7 @@ msgstr ""
 "sõltub otseselt mõlema objekti massist ja on pöördvõrdeline nende objektide "
 "keskpunkti lahutava vahemaa ruuduga."
 
-#: activities/gravity/Gravity.qml:232
+#: activities/gravity/Gravity.qml:237
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -16255,7 +16255,7 @@ msgstr ""
 "Kuna raskusjõud on võrdeline mõlema objekti massiga, siis mida suurema "
 "massiga objektid teineteist tõmbavad, seda tugevam on raskusjõud."
 
-#: activities/gravity/Gravity.qml:235
+#: activities/gravity/Gravity.qml:240
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -16266,7 +16266,7 @@ msgstr ""
 "objekti keskkoha vahemaa ruuduga, mis tähendab, et mida kaugemal objektid "
 "teineteisest asuvad, seda väiksem on raskusjõud."
 
-#: activities/gravity/Gravity.qml:238
+#: activities/gravity/Gravity.qml:243
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -16277,7 +16277,7 @@ msgstr ""
 "kuni jõuad kosmosejaama. Nool näitab sinu laeva mõjutava raskusjõu suunda ja "
 "tugevust."
 
-#: activities/gravity/Gravity.qml:241
+#: activities/gravity/Gravity.qml:246
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "

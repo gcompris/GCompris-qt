@@ -15806,7 +15806,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "ഇടതും വലതും ആരോകൾ: ബഹിരാകാശ കപ്പൽ ചലിപ്പിക്കാൻ"
 
-#: activities/gravity/Gravity.qml:229
+#: activities/gravity/Gravity.qml:234
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15819,7 +15819,7 @@ msgstr ""
 "അനുപാതത്തിലും വസ്തുക്കളുടെ കേന്ദ്രങ്ങൾ തമ്മിലുള്ള ദൂരത്തിന്റെ വർഗ്ഗത്തിന് വിപരീത "
 "അനുപാതത്തിലുമായിരിക്കും."
 
-#: activities/gravity/Gravity.qml:232
+#: activities/gravity/Gravity.qml:237
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -15829,7 +15829,7 @@ msgstr ""
 "ഗുരുത്വാകർഷണ ബലം, സമ്പർക്കത്തിലുള്ള രണ്ട് വസ്തുക്കളുടെയും പിണ്ഡത്തിന് നേർ അനുപാതത്തിൽ ആയതിനാൽ "
 "കൂടുതൽ പിണ്ഡമുള്ള വസ്തുക്കൾ തമ്മിൽ വലിയ ഗുരുത്വാകർഷണ ബലത്തോടുകൂടി ആകർഷിക്കപ്പെടും. "
 
-#: activities/gravity/Gravity.qml:235
+#: activities/gravity/Gravity.qml:240
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -15839,7 +15839,7 @@ msgstr ""
 "എന്നാൽ, ഈ ബലം സമ്പർക്കത്തിലുള്ള വസ്തുക്കളുടെ കേന്ദ്രങ്ങൾ തമ്മിലുള്ള ദൂരത്തിന്റെ വർഗ്ഗത്തിന് വിപരീത "
 "അനുപാതത്തിലായതിനാൽ, വേർപാടകലം കൂടുംതോറും ഉണ്ടാകുന്ന ഗുരുത്വാകർഷണ ബലം ദുർബലമാകും."
 
-#: activities/gravity/Gravity.qml:238
+#: activities/gravity/Gravity.qml:243
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -15850,7 +15850,7 @@ msgstr ""
 "നിങ്ങളുടെ ലക്ഷ്യം. നിങ്ങളുടെ കപ്പലിനുള്ള ഗുരുത്വാകർഷണത്തിന്റെ ദിശയും തീവ്രതയുമാണ് ആരോ "
 "സൂചിപ്പിക്കുന്നത്."
 
-#: activities/gravity/Gravity.qml:241
+#: activities/gravity/Gravity.qml:246
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "

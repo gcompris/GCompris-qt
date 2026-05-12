@@ -15776,7 +15776,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "左、右鍵：移動太空船"
 
-#: activities/gravity/Gravity.qml:229
+#: activities/gravity/Gravity.qml:234
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15787,7 +15787,7 @@ msgstr ""
 "牛頓定律中關於萬有引力的解釋是全宇宙通用的。重力吸引的大小直接與兩物件的質量"
 "相關，並跟兩物體質量中心距離的平方成反比。"
 
-#: activities/gravity/Gravity.qml:232
+#: activities/gravity/Gravity.qml:237
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -15797,7 +15797,7 @@ msgstr ""
 "因為重力直接與兩物體的質量相關，質量越大的物體會以越大的引力吸引另一個物體。"
 "因此物體的質量增加，兩者間的吸引力也會增加。"
 
-#: activities/gravity/Gravity.qml:235
+#: activities/gravity/Gravity.qml:240
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -15805,7 +15805,7 @@ msgid ""
 "gravitational force."
 msgstr "但這個力量與兩物體間的距離平方成反比。距離越遠，引力越小。"
 
-#: activities/gravity/Gravity.qml:238
+#: activities/gravity/Gravity.qml:243
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -15815,7 +15815,7 @@ msgstr ""
 "您的目標是移動小企鵝的太空船，避免撞上行星，順利抵達太空站。箭頭指示您的太空"
 "船的行進方向，以及受多大的重力吸引。"
 
-#: activities/gravity/Gravity.qml:241
+#: activities/gravity/Gravity.qml:246
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "

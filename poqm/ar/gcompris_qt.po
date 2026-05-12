@@ -15499,7 +15499,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "السهمان الأيمن والأيسر: حرّك سفينة الفضاء"
 
-#: activities/gravity/Gravity.qml:229
+#: activities/gravity/Gravity.qml:234
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15511,7 +15511,7 @@ msgstr ""
 "تعتمد قوة الجاذبية هذه بشكل مباشر على كتلة كلا الجسمين وتتناسب عكسياً مع مربع "
 "المسافة بين مركزيهما."
 
-#: activities/gravity/Gravity.qml:232
+#: activities/gravity/Gravity.qml:237
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -15521,7 +15521,7 @@ msgstr ""
 "نظرًا لأن قوة الجاذبية تتناسب طرديًا مع كتلة كلا الجسمين المتفاعلين، فإن "
 "الأجسام الأكثر ضخامة ستجذب بعضها البعض بقوة جاذبية أكبر."
 
-#: activities/gravity/Gravity.qml:235
+#: activities/gravity/Gravity.qml:240
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -15531,7 +15531,7 @@ msgstr ""
 "ولكن نظرًا لأن هذه القوة تتناسب عكسًا مع مربع المسافة بين الجسمين المتفاعلين، "
 "فإن المسافة الأكبر ستؤدي إلى قوة جاذبية أضعف."
 
-#: activities/gravity/Gravity.qml:238
+#: activities/gravity/Gravity.qml:243
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -15541,7 +15541,7 @@ msgstr ""
 "هدفك هو تحريك سفينة الفضاء وتجنب الاصطدام بالكواكب حتى تصل إلى المحطة "
 "الفضائية.يشير السهم إلى اتجاه وشدة الجاذبية على سفينتك."
 
-#: activities/gravity/Gravity.qml:241
+#: activities/gravity/Gravity.qml:246
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
