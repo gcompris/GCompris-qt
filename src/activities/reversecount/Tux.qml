@@ -44,14 +44,12 @@ Image {
     Behavior on x {
         SmoothedAnimation {
             reversingMode: SmoothedAnimation.Immediate
-            // onRunningChanged: Activity.tuxRunningChanged()
             duration: tux.duration
         }
     }
     Behavior on y {
         SmoothedAnimation {
             reversingMode: SmoothedAnimation.Immediate
-            // onRunningChanged: Activity.tuxRunningChanged()
             duration: tux.duration
         }
     }
