@@ -155,6 +155,7 @@ function calculateTuxIceBlockNextPos(numberOfMovesToDo) {
 }
 
 var previousFishIndex = 0
+
 function calculateNextPlaceFishToReach() {
     var index, newFishIndex
     do {
@@ -165,6 +166,7 @@ function calculateNextPlaceFishToReach() {
     previousFishIndex = newFishIndex
 
     fishIndex = (tuxIceBlockNumber + newFishIndex) % iceBlocksLayout.length
+    items.client.startTiming()      // restart timer for server version.
 }
 
 function placeFishToReach() {
