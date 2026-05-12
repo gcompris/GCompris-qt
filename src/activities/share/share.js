@@ -141,6 +141,7 @@ function setUp() {
         saveVariables()
     }
     resetBoard()
+    items.client.startTiming()      // for server version.
 }
 
 function generateInstruction() {
