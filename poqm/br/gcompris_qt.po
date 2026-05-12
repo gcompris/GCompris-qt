@@ -15520,7 +15520,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Biroù kleiz ha dehoù: dilec'h an egorlestr"
 
-#: activities/gravity/Gravity.qml:222
+#: activities/gravity/Gravity.qml:227
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15533,7 +15533,7 @@ msgstr ""
 "dedennañ gant tolzoù an traoù kenetreze ha ginfeuriek eo ouzh karrez ar "
 "pellder a zo etre o c'hreizoù-pouez."
 
-#: activities/gravity/Gravity.qml:225
+#: activities/gravity/Gravity.qml:230
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -15543,7 +15543,7 @@ msgstr ""
 "Peogwir eo kenfeuriek an nerzh dedennañ ouzh tolz an traoù kenetreze e vo "
 "brasoc'h an nerzh dedennañ gant traoù bras o zolz."
 
-#: activities/gravity/Gravity.qml:228
+#: activities/gravity/Gravity.qml:233
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -15554,7 +15554,7 @@ msgstr ""
 "ober an eil war egile, ha gant ur pellder brasoc'h e tigresko neuze an "
 "nerzhioù dedennañ."
 
-#: activities/gravity/Gravity.qml:231
+#: activities/gravity/Gravity.qml:236
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -15565,7 +15565,7 @@ msgstr ""
 "planedennoù eo da bal. Ar bir a ziskouez tu ha nerzh an nerzh-dedennañ war "
 "da egorlestr."
 
-#: activities/gravity/Gravity.qml:234
+#: activities/gravity/Gravity.qml:239
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "

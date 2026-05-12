@@ -15437,7 +15437,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Bultiņa pa kreisi un pa labi: pārvieto kosmosa kuģi"
 
-#: activities/gravity/Gravity.qml:222
+#: activities/gravity/Gravity.qml:227
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15450,7 +15450,7 @@ msgstr ""
 "no abu objektu masas un ir apgriezti proporcionāla to attāluma no objektu "
 "centra kvadrātam."
 
-#: activities/gravity/Gravity.qml:225
+#: activities/gravity/Gravity.qml:230
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -15460,7 +15460,7 @@ msgstr ""
 "Tā kā gravitācijas spēks ir tieši proporcionāls abu objektu masai, tad "
 "objekti ar lielāku masu viens otru pievilks ar lielāku gravitācijas spēku."
 
-#: activities/gravity/Gravity.qml:228
+#: activities/gravity/Gravity.qml:233
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -15470,7 +15470,7 @@ msgstr ""
 "Bet tā kā šis spēks ir apgriezti proporcionāls attālumam starp objektiem, "
 "tad lielāks attālums nozīmē mazāku gravitācijas spēku."
 
-#: activities/gravity/Gravity.qml:231
+#: activities/gravity/Gravity.qml:236
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -15481,7 +15481,7 @@ msgstr ""
 "planētās līdz sasniegsi kosmosa staciju. Bultiņa tava kuģa sajustās "
 "gravitācijas stiprumu un virzienu."
 
-#: activities/gravity/Gravity.qml:234
+#: activities/gravity/Gravity.qml:239
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "

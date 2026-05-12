@@ -15117,7 +15117,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "वामः दक्षिणः च बाणाः : अन्तरिक्षयानं चालयन्तु"
 
-#: activities/gravity/Gravity.qml:222
+#: activities/gravity/Gravity.qml:227
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15129,7 +15129,7 @@ msgstr ""
 "पृथिव्याः परं विस्तारयति । इदं गुरुत्वाकर्षणबलं प्रत्यक्षतया उभयवस्तूनाम् द्रव्यमानेन आश्रितं "
 "भवति, तेषां केन्द्रान्तरस्य वर्गस्य च विपरीतरूपेण आनुपातिकं भवति"
 
-#: activities/gravity/Gravity.qml:225
+#: activities/gravity/Gravity.qml:230
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -15139,7 +15139,7 @@ msgstr ""
 "गुरुत्वाकर्षणबलं द्वयोः परस्परक्रियाशीलवस्तूनाम् द्रव्यमानस्य साक्षात् आनुपातिकत्वात् "
 "अधिकविशालवस्तूनि अधिकेन गुरुत्वाकर्षणबलेन परस्परं आकर्षयिष्यन्ति"
 
-#: activities/gravity/Gravity.qml:228
+#: activities/gravity/Gravity.qml:233
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -15149,7 +15149,7 @@ msgstr ""
 "परन्तु यतः एतत् बलं द्वयोः परस्परक्रियाशीलवस्तूनाम् अन्तरस्य वर्गस्य विपरीतरूपेण आनुपातिकं "
 "भवति, तस्मात् अधिकं दूरं दुर्बलतरं गुरुत्वाकर्षणबलं भविष्यति"
 
-#: activities/gravity/Gravity.qml:231
+#: activities/gravity/Gravity.qml:236
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -15159,7 +15159,7 @@ msgstr ""
 "भवतः लक्ष्यं अस्ति यत् अन्तरिक्षयानं चालयितुं यावत् भवन्तः अन्तरिक्षस्थानकं न प्राप्नुवन्ति तावत् "
 "ग्रहाणां प्रहारं परिहरन्तु । बाणः भवतः पोते गुरुत्वाकर्षणस्य दिशां तीव्रता च सूचयति ।"
 
-#: activities/gravity/Gravity.qml:234
+#: activities/gravity/Gravity.qml:239
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "

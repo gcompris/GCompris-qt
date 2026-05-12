@@ -15092,7 +15092,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "חיצים שמאלה וימינה: להזיז את החללית"
 
-#: activities/gravity/Gravity.qml:222
+#: activities/gravity/Gravity.qml:227
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15104,7 +15104,7 @@ msgstr ""
 "המשיכה מעבר לכדור הארץ. הכח הזה של משיכת כבידה קשור באופן ישיר למאסה של שני "
 "הגופים וביחס הפוך לריבוע המרחק בין המרכזים שלהם."
 
-#: activities/gravity/Gravity.qml:225
+#: activities/gravity/Gravity.qml:230
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -15114,7 +15114,7 @@ msgstr ""
 "מכיון שכח המשיכה נמצא ביחס ישר למאסה של שני גופים שנמצאים באינטראקציה, גופים "
 "בעלי מאסה גדולה יותר ימשכו זה את זה בכח גדול יותר."
 
-#: activities/gravity/Gravity.qml:228
+#: activities/gravity/Gravity.qml:233
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -15124,7 +15124,7 @@ msgstr ""
 "אבל הכח הזה נמצא ביחס הפוך לריבוע המרחק בין שני העצמים המעורבים, מרחק גדול "
 "יותר יגרום לכח משיכה חלש יותר."
 
-#: activities/gravity/Gravity.qml:231
+#: activities/gravity/Gravity.qml:236
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -15134,7 +15134,7 @@ msgstr ""
 "המטרה היא להזיז את החללית ולהימנע מפגיעה בכוכבים עד להגעה לתחנת החלל. החץ "
 "מצביע על כיוון ועוצמת כח המשיכה שמופעל על החללית שלך."
 
-#: activities/gravity/Gravity.qml:234
+#: activities/gravity/Gravity.qml:239
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "

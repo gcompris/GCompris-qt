@@ -15693,7 +15693,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Panah kiri atau kanan: memindahkan pesawat ruang angkasa"
 
-#: activities/gravity/Gravity.qml:222
+#: activities/gravity/Gravity.qml:227
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15706,7 +15706,7 @@ msgstr ""
 "pada massa dari kedua benda dan berbanding terbalik dengan kuadrat jarak "
 "yang memisahkan pusatnya."
 
-#: activities/gravity/Gravity.qml:225
+#: activities/gravity/Gravity.qml:230
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -15718,7 +15718,7 @@ msgstr ""
 "besar. Jadi seiring dengan bertambahnya massa benda, kekuatan daya tarik "
 "gravitasi di antara keduanya juga meningkat."
 
-#: activities/gravity/Gravity.qml:228
+#: activities/gravity/Gravity.qml:233
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -15729,7 +15729,7 @@ msgstr ""
 "objek yang saling berinteraksi, jarak pemisah yang lebih banyak akan "
 "menghasilkan gaya gravitasi yang lebih lemah."
 
-#: activities/gravity/Gravity.qml:231
+#: activities/gravity/Gravity.qml:236
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -15740,7 +15740,7 @@ msgstr ""
 "tabrakan dengan planet sampai kamu mencapai stasiun ruang angkasa. Panah "
 "menunjukkan arah dan intensitas gravitasi di pesawat kamu."
 
-#: activities/gravity/Gravity.qml:234
+#: activities/gravity/Gravity.qml:239
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "

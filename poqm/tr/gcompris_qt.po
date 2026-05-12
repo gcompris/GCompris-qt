@@ -15434,7 +15434,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Sağ ve Sol oklar: Uzay gemisini hareket ettir"
 
-#: activities/gravity/Gravity.qml:222
+#: activities/gravity/Gravity.qml:227
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15447,7 +15447,7 @@ msgstr ""
 "kütlesine doğrudan bağlıdır ve merkezleri arasındaki mesafenin karesiyle "
 "ters orantılıdır."
 
-#: activities/gravity/Gravity.qml:225
+#: activities/gravity/Gravity.qml:230
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -15458,7 +15458,7 @@ msgstr ""
 "olduğundan, daha büyük nesneler, daha büyük bir yerçekimi kuvveti ile "
 "birbirlerini çekecektir."
 
-#: activities/gravity/Gravity.qml:228
+#: activities/gravity/Gravity.qml:233
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -15469,7 +15469,7 @@ msgstr ""
 "orantılı olduğundan, daha fazla mesafe, daha zayıf yerçekimi kuvveti ile "
 "sonuçlanacaktır."
 
-#: activities/gravity/Gravity.qml:231
+#: activities/gravity/Gravity.qml:236
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -15480,7 +15480,7 @@ msgstr ""
 "gezegenlere çarpmaktan kaçınmaktır. Ok, gemindeki yer çekiminin yönünü ve "
 "yoğunluğunu gösterir."
 
-#: activities/gravity/Gravity.qml:234
+#: activities/gravity/Gravity.qml:239
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "

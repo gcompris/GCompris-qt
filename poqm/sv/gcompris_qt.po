@@ -15455,7 +15455,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Vänster- och högerpilar: flytta rymdskeppet"
 
-#: activities/gravity/Gravity.qml:222
+#: activities/gravity/Gravity.qml:227
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15468,7 +15468,7 @@ msgstr ""
 "beror direkt på båda objektens massa och är omvänt proportionell mot "
 "kvadraten på avståndet mellan deras mittpunkter."
 
-#: activities/gravity/Gravity.qml:225
+#: activities/gravity/Gravity.qml:230
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -15479,7 +15479,7 @@ msgstr ""
 "samverkande objekten, attraherar massivare objekt varandra med en större "
 "gravitationskraft."
 
-#: activities/gravity/Gravity.qml:228
+#: activities/gravity/Gravity.qml:233
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -15490,7 +15490,7 @@ msgstr ""
 "mellan de två samverkande objektet, leder större separationsavstånd till "
 "svagare gravitationskraft."
 
-#: activities/gravity/Gravity.qml:231
+#: activities/gravity/Gravity.qml:236
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -15501,7 +15501,7 @@ msgstr ""
 "når rymdstationen. Pilen anger gravitationens riktning och storlek på "
 "skeppet."
 
-#: activities/gravity/Gravity.qml:234
+#: activities/gravity/Gravity.qml:239
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "

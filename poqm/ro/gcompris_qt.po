@@ -15599,7 +15599,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Săgețile stânga/dreapta: mișcă nava spațială"
 
-#: activities/gravity/Gravity.qml:222
+#: activities/gravity/Gravity.qml:227
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15612,7 +15612,7 @@ msgstr ""
 "forță este direct proporțională cu masele celor două corpuri și invers "
 "proporțională cu pătratul distanței dintre ele."
 
-#: activities/gravity/Gravity.qml:225
+#: activities/gravity/Gravity.qml:230
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -15624,7 +15624,7 @@ msgstr ""
 "mare. Așadar, pe măsură ce crește masa celor două corpuri, forța de atracție "
 "gravitațională dintre ele crește și ea."
 
-#: activities/gravity/Gravity.qml:228
+#: activities/gravity/Gravity.qml:233
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -15635,7 +15635,7 @@ msgstr ""
 "cele două corpuri, așa că o mică distanțare între corpuri va determina o mai "
 "mare scădere a forței de atracție dintre ele."
 
-#: activities/gravity/Gravity.qml:231
+#: activities/gravity/Gravity.qml:236
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -15646,7 +15646,7 @@ msgstr ""
 "planetele, până ajungi la stația spațială. Săgeata indică direcția și "
 "intensitatea forței gravitaționale asupra navei tale."
 
-#: activities/gravity/Gravity.qml:234
+#: activities/gravity/Gravity.qml:239
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "

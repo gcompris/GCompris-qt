@@ -15667,7 +15667,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Flechas izquierda y derecha: mover la nave espacial"
 
-#: activities/gravity/Gravity.qml:222
+#: activities/gravity/Gravity.qml:227
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15680,7 +15680,7 @@ msgstr ""
 "gravitatoria depende directamente de las masas de los dos objetos y es "
 "inversamente proporcional al cuadrado de la distancia que separa sus centros."
 
-#: activities/gravity/Gravity.qml:225
+#: activities/gravity/Gravity.qml:230
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -15691,7 +15691,7 @@ msgstr ""
 "objetos que interaccionan, los objetos con más masa atraerán a otros con una "
 "fuerza de gravedad mayor."
 
-#: activities/gravity/Gravity.qml:228
+#: activities/gravity/Gravity.qml:233
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -15702,7 +15702,7 @@ msgstr ""
 "distancia entre ambos objetos, una distancia mayor implica una fuerza de "
 "gravedad más débil."
 
-#: activities/gravity/Gravity.qml:231
+#: activities/gravity/Gravity.qml:236
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -15713,7 +15713,7 @@ msgstr ""
 "hasta que alcance la estación espacial. La flecha indica la dirección y la "
 "intensidad de la fuerza de gravedad sobre tu nave."
 
-#: activities/gravity/Gravity.qml:234
+#: activities/gravity/Gravity.qml:239
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "

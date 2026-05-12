@@ -15704,7 +15704,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Kushoto na kulia mishale: hoja spaceship"
 
-#: activities/gravity/Gravity.qml:222
+#: activities/gravity/Gravity.qml:227
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15717,7 +15717,7 @@ msgstr ""
 "moja kwa moja wingi wa vitu vyote viwili na inawiana kinyume na mraba wa "
 "umbali kati ya vituo vyao."
 
-#: activities/gravity/Gravity.qml:225
+#: activities/gravity/Gravity.qml:230
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -15728,7 +15728,7 @@ msgstr ""
 "viwili vinavyoingiliana, vitu vikubwa zaidi vitavutia kila mmoja kwa nguvu "
 "kubwa zaidi ya uvutano."
 
-#: activities/gravity/Gravity.qml:228
+#: activities/gravity/Gravity.qml:233
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -15738,7 +15738,7 @@ msgstr ""
 "Lakini kwa vile nguvu hii inawiana kinyume na mraba wa umbali kati ya vitu "
 "viwili vinavyoingiliana, umbali zaidi utasababisha nguvu dhaifu ya uvutano."
 
-#: activities/gravity/Gravity.qml:231
+#: activities/gravity/Gravity.qml:236
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -15749,7 +15749,7 @@ msgstr ""
 "kituo cha anga. Mshale unaonyesha mwelekeo na ukubwa wa mvuto kwenye meli "
 "yako."
 
-#: activities/gravity/Gravity.qml:234
+#: activities/gravity/Gravity.qml:239
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "

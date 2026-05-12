@@ -15860,7 +15860,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "ಎಡ ಮತ್ತು ಬಲ ಬಾಣದ ಕೀಗಳು: ಗಗನ ನೌಕೆಯನ್ನು ಸರಿಸಲು"
 
-#: activities/gravity/Gravity.qml:222
+#: activities/gravity/Gravity.qml:227
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15873,7 +15873,7 @@ msgstr ""
 "ದ್ರವ್ಯರಾಶಿಗಳ  ಗುಣಲಬ್ದಕ್ಕೆ ಸಮಾನುಪಾತಿಕವಾಗಿರುತ್ತದೆ ಮತ್ತು ಅವುಗಳ ಕೇಂದ್ರಗಳ ನಡುವಿನ ಅಂತರದ "
 "ವರ್ಗಕ್ಕೆ ವಿಲೋಮಾನುಪಾತಿಕವಾಗಿರುತ್ತದೆ."
 
-#: activities/gravity/Gravity.qml:225
+#: activities/gravity/Gravity.qml:230
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -15884,7 +15884,7 @@ msgstr ""
 "ಹೆಚ್ಚು ದ್ರವ್ಯರಾಶಿಯನ್ನು ಹೊಂದಿರುವ ವಸ್ತುಗಳು ತಮ್ಮೊಳಗೆ  ಹೆಚ್ಚು ಗುರುತ್ವಾಕರ್ಷಣಾ ಬಲದೊಂದಿಗೆ "
 "ಆಕರ್ಷಿಸುತ್ತವೆ. "
 
-#: activities/gravity/Gravity.qml:228
+#: activities/gravity/Gravity.qml:233
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -15894,7 +15894,7 @@ msgstr ""
 "ಆದರೆ ಈ ಬಲವು ಈ ಎರಡು ವಸ್ತುಗಳ ಕೇಂದ್ರಗಳ ನಡುವಿನ ಅಂತರದ ವರ್ಗಕ್ಕೆ "
 "ವಿಲೋಮಾನುಪಾತಿಕವಾಗಿವುದರಿಂದ ಹೆಚ್ಚು ಅಂತರ ಇದ್ದರೆ ಗುರುತ್ವಾಕರ್ಷಣಾ ಬಲವು ಕಡಿಮೆಯಾಗುತ್ತದೆ."
 
-#: activities/gravity/Gravity.qml:231
+#: activities/gravity/Gravity.qml:236
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -15904,7 +15904,7 @@ msgstr ""
 "ಗಗನ ನೌಕೆಯನ್ನು ಗ್ರಹಗಳಿಗೆ ತಾಗದೆ ಬಾಹ್ಯಾಕಾಶ ನಿಲಯಕ್ಕೆ ತಲುಪಿಸುವುದು ನಿಮ್ಮ ಗುರಿ. ನಿಮ್ಮ ಗಗನ "
 "ನೌಕೆಯ ಮೇಲಿರುವ  ಗುರುತ್ವಾಕರ್ಷಣೆಯ ದಿಶೆ ಮತ್ತು ತೀವ್ರತೆಯನ್ನು ಬಾಣದ ಗುರುತು ಸೂಚಿಸುತ್ತದೆ."
 
-#: activities/gravity/Gravity.qml:234
+#: activities/gravity/Gravity.qml:239
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
