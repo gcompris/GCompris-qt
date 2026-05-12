@@ -21,25 +21,37 @@ Image {
     z: 10
 
     property int duration: 1000
+    property alias moveTimer: moveTimer
 
     signal init
 
     onInit: {
-       tux.rotation = -90
+        moveTimer.stop()
+        tux.rotation = -90
         Activity.moveTuxToIceBlock()
+    }
+
+    Timer {
+        id: moveTimer
+        interval: tux.duration
+        repeat: false
+        running: false
+        onTriggered: {
+            Activity.tuxRunningChanged()
+        }
     }
 
     Behavior on x {
         SmoothedAnimation {
             reversingMode: SmoothedAnimation.Immediate
-            onRunningChanged: Activity.tuxRunningChanged()
+            // onRunningChanged: Activity.tuxRunningChanged()
             duration: tux.duration
         }
     }
     Behavior on y {
         SmoothedAnimation {
             reversingMode: SmoothedAnimation.Immediate
-            onRunningChanged: Activity.tuxRunningChanged()
+            // onRunningChanged: Activity.tuxRunningChanged()
             duration: tux.duration
         }
     }
