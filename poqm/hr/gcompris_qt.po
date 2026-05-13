@@ -25235,7 +25235,7 @@ msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr "Maksimalno 30 bombona i 6 djece, moguć ostatak."
 
-#: activities/share/share.js:149
+#: activities/share/share.js:150
 #, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -25246,7 +25246,7 @@ msgstr[0] "Stavi %n dječaka "
 msgstr[1] "Stavi %n dječaka "
 msgstr[2] "Stavi %n dječaka "
 
-#: activities/share/share.js:153
+#: activities/share/share.js:154
 #, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -25257,7 +25257,7 @@ msgstr[0] "i %n djevojku u sredinu. "
 msgstr[1] "i %n djevojke u sredinu. "
 msgstr[2] "i %n djevojaka u sredinu. "
 
-#: activities/share/share.js:157
+#: activities/share/share.js:158
 #, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "

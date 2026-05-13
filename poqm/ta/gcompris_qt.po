@@ -26102,7 +26102,7 @@ msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr "அதிகபட்சம் 30 மிட்டாய்கள் 6 குழந்தைகள், மீதி வரலாம்."
 
-#: activities/share/share.js:149
+#: activities/share/share.js:150
 #, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -26112,7 +26112,7 @@ msgid_plural "Place %n boy(s) "
 msgstr[0] "%n சிறுவர்(களை) யும் "
 msgstr[1] "%n சிறுவர்(களை) யும் "
 
-#: activities/share/share.js:153
+#: activities/share/share.js:154
 #, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -26122,7 +26122,7 @@ msgid_plural "and %n girl(s) in the center. "
 msgstr[0] "%n சிறுமி(களை) யும் நடுவில் வைக்கவும்."
 msgstr[1] "%n சிறுமி(களை) யும் நடுவில் வைக்கவும்."
 
-#: activities/share/share.js:157
+#: activities/share/share.js:158
 #, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "

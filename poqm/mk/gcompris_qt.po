@@ -26532,7 +26532,7 @@ msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr "Максимум 30 бонбони и 6 деца, можен одмор."
 
-#: activities/share/share.js:149
+#: activities/share/share.js:150
 #, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -26543,7 +26543,7 @@ msgstr[0] "Ставете %n момче "
 msgstr[1] "Ставете %n момчиња "
 msgstr[2] "Ставете %n момчиња "
 
-#: activities/share/share.js:153
+#: activities/share/share.js:154
 #, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -26554,7 +26554,7 @@ msgstr[0] "и %n девојче во средина "
 msgstr[1] "и %n девојчиња во средина "
 msgstr[2] "и %n девојчиња во средина "
 
-#: activities/share/share.js:157
+#: activities/share/share.js:158
 #, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "

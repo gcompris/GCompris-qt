@@ -25402,7 +25402,7 @@ msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr "Daugiausiai 30 saldainių, 6 vaikai, dalyba su liekana."
 
-#: activities/share/share.js:149
+#: activities/share/share.js:150
 #, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -25414,7 +25414,7 @@ msgstr[1] "Patalpink %n berniukus "
 msgstr[2] "Patalpink %n berniukų "
 msgstr[3] "Patalpink %n berniuką "
 
-#: activities/share/share.js:153
+#: activities/share/share.js:154
 #, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -25426,7 +25426,7 @@ msgstr[1] "ir %n mergaites į pagrindinę sritį. "
 msgstr[2] "ir %n mergaičių į pagrindinę sritį. "
 msgstr[3] "ir %n mergaitę į pagrindinę sritį. "
 
-#: activities/share/share.js:157
+#: activities/share/share.js:158
 #, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "

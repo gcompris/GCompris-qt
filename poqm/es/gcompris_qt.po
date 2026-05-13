@@ -25469,7 +25469,7 @@ msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr "Máximo de 30 caramelos y 6 niños, con posibles sobras."
 
-#: activities/share/share.js:149
+#: activities/share/share.js:150
 #, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -25479,7 +25479,7 @@ msgid_plural "Place %n boy(s) "
 msgstr[0] "Coloca %n niño "
 msgstr[1] "Coloca %n niños "
 
-#: activities/share/share.js:153
+#: activities/share/share.js:154
 #, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -25489,7 +25489,7 @@ msgid_plural "and %n girl(s) in the center. "
 msgstr[0] "y %n niña en el centro. "
 msgstr[1] "y %n niñas en el centro. "
 
-#: activities/share/share.js:157
+#: activities/share/share.js:158
 #, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
