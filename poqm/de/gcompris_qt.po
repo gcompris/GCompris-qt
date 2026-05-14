@@ -2,25 +2,25 @@
 # SPDX-FileCopyrightText: 2001 Martin Herweg <m.herweg@gmx.de>
 # SPDX-FileCopyrightText: 2003-2007 Ronny Standtke <Ronny.Standtke@gmx.net>
 # SPDX-FileCopyrightText: 2005 Hendrik Richter <hendrikr@gnome.org>
+# SPDX-FileCopyrightText: 2009-2011 Mario Blättermann <mario.blaettermann@gmail.com>
 # SPDX-FileCopyrightText: 2009-2012, 2014 Christian Kirbach <christian.kirbach@gmail.com>
-# SPDX-FileCopyrightText: 2009, 2010, 2011 Mario Blättermann <mario.blaettermann@gmail.com>
 # SPDX-FileCopyrightText: 2012 Wolfgang Stöggl <c72578@yahoo.de>
 # SPDX-FileCopyrightText: 2014 Manuel <manu@dreivierteleins.de>
-# SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021 Burkhard Lück <lueck@hube-lueck.de>
-# SPDX-FileCopyrightText: 2015, 2016 Holger Kaelberer <holger.k@elberer.de>
-# SPDX-FileCopyrightText: 2015, 2016, 2020, 2021, 2022, 2023 Frederik Schwarzer <schwarzer@kde.org>
+# SPDX-FileCopyrightText: 2014-2021 Burkhard Lück <lueck@hube-lueck.de>
+# SPDX-FileCopyrightText: 2015-2016 Holger Kaelberer <holger.k@elberer.de>
+# SPDX-FileCopyrightText: 2015-2016, 2020-2023 Frederik Schwarzer <schwarzer@kde.org>
 # SPDX-FileCopyrightText: 2019 Daniel Schlep <info@danielschlep.de>
 # SPDX-FileCopyrightText: 2020 Christian Buhtz <c.buhtz@posteo.jp>
-# SPDX-FileCopyrightText: 2020, 2021, 2024 Alois Spitzbart <spitz234@hotmail.com>
+# SPDX-FileCopyrightText: 2020-2021, 2024 Alois Spitzbart <spitz234@hotmail.com>
 # SPDX-FileCopyrightText: 2023 Lars Vogdt <lars@linux-schulserver.de>
-# SPDX-FileCopyrightText: 2025, 2026 Philipp Kiemle <l10n.daphipz@fastmail.de>
+# SPDX-FileCopyrightText: 2025-2026 Philipp Kiemle <l10n.daphipz@fastmail.de>
 # SPDX-FileCopyrightText: 2026 Alexander Becker <alex-at-kde-l10n-de@freenet.de>
 # SPDX-FileCopyrightText: 2015 Claudia und Emmanuel Charruau
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-04-01 23:26+0200\n"
+"PO-Revision-Date: 2026-05-10 21:01+0200\n"
 "Last-Translator: Alexander Becker <alex-at-kde-l10n-de@freenet.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -29,7 +29,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Lokalize 26.04.0\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -1948,9 +1948,9 @@ msgid ""
 "Create a circuit using the provided components so that the bulb glows only "
 "when the switch is on."
 msgstr ""
-"Erstelle einen Schaltkreis und benutze dazu die bereitgestellten "
-"Komponenten, so die das Lampe nur leuchtet, wenn der Schalter eingeschaltet "
-"sind."
+"Erstelle einen Schaltkreis unter Verwendung der bereitgestellten "
+"Komponenten. Die Lampe soll nur dann leuchten, wenn der Schalter "
+"eingeschaltet ist."
 
 #: activities/analog_electricity/TutorialDataset.qml:163
 msgctxt "TutorialDataset|"
@@ -1967,8 +1967,8 @@ msgid ""
 "Create a circuit so that one bulb should be always lit and the other should "
 "be lit only when the switch is on."
 msgstr ""
-"Erstelle einen Schaltkreis, so dass eine Lampe immer leuchtet die andere nur "
-"leuchtet, wenn der Schalter eingeschaltet ist."
+"Erstelle einen Schaltkreis so, dass eine Lampe immer leuchtet. Die andere "
+"Lampe soll nur dann leuchten, wenn der Schalter eingeschaltet ist."
 
 #: activities/analog_electricity/TutorialDataset.qml:177
 msgctxt "TutorialDataset|"
@@ -2060,8 +2060,8 @@ msgid ""
 "Connect the bulb to the appropriate terminals of the rheostat so that the "
 "light intensity of the bulb can be changed while dragging the slider."
 msgstr ""
-"Schließe die Lampe an die entsprechenden Klemmen des Schiebewiderstands an, "
-"so dass die Helligkeit der Lampe beim Ziehen des Schiebereglers verändert "
+"Schließe die Lampe an die entsprechenden Klemmen des Schiebewiderstands so "
+"an, dass die Helligkeit der Lampe durch Ziehen am Schieberegler verändert "
 "werden kann."
 
 #: activities/analog_electricity/TutorialDataset.qml:224
@@ -2079,8 +2079,8 @@ msgid ""
 "Connect the bulb to the appropriate terminals of the rheostat so that the "
 "slider cannot change the light intensity of the bulb."
 msgstr ""
-"Schließe die Lampe an die entsprechenden Klemmen des Schiebewiderstands an, "
-"so dass die Helligkeit der Lampe beim Ziehen des Schiebereglers nicht "
+"Schließe die Lampe an die entsprechenden Klemmen des Schiebewiderstands so "
+"an, dass die Helligkeit der Lampe durch Ziehen am Schieberegler nicht "
 "verändert werden kann."
 
 #: activities/analog_electricity/TutorialDataset.qml:238
@@ -2092,8 +2092,8 @@ msgid ""
 msgstr ""
 "Schließe die Lampe an die entsprechenden Klemmen des Schiebewiderstands an "
 "und stelle den Schieberegler so ein, dass der Spannungsabfall an der "
-"Glühlampe 10 V beträgt. Beachte, dass sich die Helligkeit der Lampe beim "
-"Ziehen des Schiebereglers verändert."
+"Glühlampe 10 V beträgt. Beachte, dass sich die Helligkeit der Lampe durch "
+"Ziehen am Schieberegler verändern soll."
 
 #: activities/analog_electricity/TutorialDataset.qml:251
 msgctxt "TutorialDataset|"
@@ -2519,27 +2519,27 @@ msgstr "Bello mit farbigen Formen."
 #: activities/babyshapes/resource/board/board7_0.qml:15
 msgctxt "board7_0|"
 msgid "Paul Gauguin, Arearea - 1892"
-msgstr "Paul Gauguin, Arearea - 1892"
+msgstr "Paul Gauguin, Arearea – 1892"
 
 #: activities/babyshapes/resource/board/board7_1.qml:14
 msgctxt "board7_1|"
 msgid "Pieter Bruegel the Elder, The peasants wedding - 1568"
-msgstr "Pieter Bruegel der Ältere, Bauernhochzeit - 1568"
+msgstr "Pieter Bruegel der Ältere, Bauernhochzeit – 1568"
 
 #: activities/babyshapes/resource/board/board7_2.qml:14
 msgctxt "board7_2|"
 msgid "The Lady and the Unicorn - XVe century"
-msgstr "Die Dame mit dem Einhorn - 15. Jahrhundert"
+msgstr "Die Dame mit dem Einhorn – 15. Jahrhundert"
 
 #: activities/babyshapes/resource/board/board7_3.qml:14
 msgctxt "board7_3|"
 msgid "Vincent van Gogh, Bedroom in Arles - 1888"
-msgstr "Vincent van Gogh, Schlafzimmer in Arles - 1888"
+msgstr "Vincent van Gogh, Schlafzimmer in Arles – 1888"
 
 #: activities/babyshapes/resource/board/board7_4.qml:14
 msgctxt "board7_4|"
 msgid "Ambrosius Bosschaert the Elder, Flower Still Life - 1614"
-msgstr "Ambrosius Bosschaert der Ältere, Flower Still Life - 1614"
+msgstr "Ambrosius Bosschaert der Ältere, Blumenstillleben – 1614"
 
 #: activities/balancebox/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
@@ -2820,8 +2820,8 @@ msgid ""
 "Press the left and right arrow keys at the same time, to make the ball go in "
 "a straight line."
 msgstr ""
-"Drücke die linke und rechte Pfeiltaste gleichzeitig, um den Ball gerade zu "
-"werfen."
+"Drücke die linke und rechte Pfeiltaste gleichzeitig, um den Ball geradeaus "
+"zu werfen."
 
 #. Help goal
 #: activities/ballcatch/ActivityInfo.qml:20
@@ -2837,15 +2837,15 @@ msgid ""
 "a straight line. On a touch screen you have to touch the two hands at the "
 "same time."
 msgstr ""
-"Drücke die linke und rechte Pfeiltaste gleichzeitig, um den Ball gerade zu "
-"werfen. Auf einem Touchscreen musst du die beiden Hände gleichzeitig "
+"Drücke die linke und rechte Pfeiltaste gleichzeitig, um den Ball geradeaus "
+"zu werfen. Auf einem Touchscreen musst du die beiden Hände gleichzeitig "
 "berühren."
 
 #: activities/ballcatch/Ballcatch.qml:234
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
-msgstr "Berühre beide Hände gleichzeitig damit der Ball geradeaus läuft."
+msgstr "Berühre beide Hände gleichzeitig, um den Ball geradeaus zu werfen."
 
 #: activities/ballcatch/Ballcatch.qml:240
 msgctxt "Ballcatch|"
@@ -2853,8 +2853,8 @@ msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
 "straight line."
 msgstr ""
-"Drücke die linke und rechte Pfeiltaste gleichzeitig, um den Ball gerade zu "
-"werfen."
+"Drücke die linke und rechte Pfeiltaste gleichzeitig, um den Ball geradeaus "
+"zu werfen."
 
 #: activities/bargame/ActivityConfig.qml:22
 #: activities/bargame_2players/ActivityConfig.qml:22
@@ -5846,7 +5846,7 @@ msgstr "Freier Modus"
 #: activities/compass/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Compass"
-msgstr ""
+msgstr "Kompass"
 
 #. Help title
 #: activities/compass/ActivityInfo.qml:16
@@ -5915,12 +5915,9 @@ msgid ""
 msgstr ""
 
 #: activities/compass/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "<b>Diving planes</b>"
 msgctxt "ActivityInfo|"
 msgid "<b>Templates:</b>"
-msgstr "<b>Tiefenruder</b>"
+msgstr "<b>Vorlagen:</b>"
 
 #: activities/compass/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -6018,9 +6015,6 @@ msgid "Space: toggle the compass and grid visibility"
 msgstr ""
 
 #: activities/compass/compass.js:103
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Free Mode"
 msgctxt "compass|"
 msgid "Free mode"
 msgstr "Freier Modus"
@@ -6055,9 +6049,6 @@ msgid "Current step"
 msgstr ""
 
 #: activities/compass/Compass.qml:549
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "File menu"
 msgctxt "Compass|"
 msgid "File menu"
 msgstr "Dateimenü"
@@ -6065,28 +6056,19 @@ msgstr "Dateimenü"
 #: activities/compass/Compass.qml:558
 msgctxt "Compass|"
 msgid "Compass and grid settings"
-msgstr ""
+msgstr "Kompass- und Raster-Einstellungen"
 
 #: activities/compass/Compass.qml:567
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "%1 settings"
 msgctxt "Compass|"
 msgid "Pen settings"
-msgstr "Einstellungen für %1"
+msgstr "Stift-Einstellungen"
 
 #: activities/compass/Compass.qml:588
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Undo"
 msgctxt "Compass|"
 msgid "Undo"
 msgstr "Rückgängig"
 
 #: activities/compass/Compass.qml:598
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Redo"
 msgctxt "Compass|"
 msgid "Redo"
 msgstr "Wiederherstellen"
@@ -6094,134 +6076,95 @@ msgstr "Wiederherstellen"
 #: activities/compass/Compass.qml:612
 msgctxt "Compass|"
 msgid "Show template"
-msgstr ""
+msgstr "Vorlage anzeigen"
 
 #: activities/compass/Compass.qml:612
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Golden Temple"
 msgctxt "Compass|"
 msgid "Hide template"
-msgstr "Der Goldene Tempel"
+msgstr "Vorlage ausblenden"
 
 #: activities/compass/Compass.qml:624
 msgctxt "Compass|"
 msgid "Show compass and grid"
-msgstr ""
+msgstr "Kompass und Raster anzeigen"
 
 #: activities/compass/Compass.qml:624
 msgctxt "Compass|"
 msgid "Hide compass and grid"
-msgstr ""
+msgstr "Kompass und Raster ausblenden"
 
 #: activities/compass/Compass.qml:775
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Save your image"
 msgctxt "Compass|"
 msgid "Save your image"
-msgstr "Speichere dein Bild"
+msgstr "Dein Bild speichern"
 
 #: activities/compass/Compass.qml:790
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Open an image"
 msgctxt "Compass|"
 msgid "Open an image"
 msgstr "Ein Bild öffnen"
 
 #: activities/compass/Compass.qml:813
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Create a new image"
 msgctxt "Compass|"
 msgid "Create a new image"
 msgstr "Ein neues Bild erstellen"
 
 #: activities/compass/Compass.qml:832
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Background color"
 msgctxt "Compass|"
 msgid "Background color"
 msgstr "Hintergrundfarbe"
 
 #: activities/compass/Compass.qml:892
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Pen size"
 msgctxt "Compass|"
 msgid "Canvas size"
-msgstr "Stiftgröße"
+msgstr "Leinwandgröße"
 
 #: activities/compass/Compass.qml:962
 msgctxt "Compass|"
 msgid "Grid spacing"
-msgstr ""
+msgstr "Rasterabstand"
 
 #: activities/compass/Compass.qml:1013
 msgctxt "Compass|"
 msgid "Snap to grid"
-msgstr ""
+msgstr "Am Raster einrasten"
 
 #: activities/compass/Compass.qml:1039
 msgctxt "Compass|"
 msgid "Show grid"
-msgstr ""
+msgstr "Raster anzeigen"
 
 #: activities/compass/Compass.qml:1103
-#, fuzzy
-#| msgctxt "category_colors|"
-#| msgid "Colors"
 msgctxt "Compass|"
 msgid "Color"
-msgstr "Farben"
+msgstr "Farbe"
 
 #: activities/compass/Compass.qml:1149
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Opacity"
 msgctxt "Compass|"
 msgid "Opacity"
 msgstr "Deckkraft"
 
 #: activities/compass/Compass.qml:1193
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Pen size"
 msgctxt "Compass|"
 msgid " Pen size"
-msgstr "Stiftgröße"
+msgstr " Stiftgröße"
 
 #: activities/compass/Compass.qml:1253
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "You did not save this image. Do you want to close this activity?"
 msgctxt "Compass|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
 "Du hast dieses Bild nicht gespeichert. Möchtest du diese Aktivität schließen?"
 
 #: activities/compass/Compass.qml:1254
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Do you want to erase this image?"
 msgctxt "Compass|"
 msgid "Do you want to erase this image?"
 msgstr "Möchtest du dieses Bild löschen?"
 
 #: activities/compass/Compass.qml:1255
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Compass|"
 msgid "Yes"
 msgstr "Ja"
 
 #: activities/compass/Compass.qml:1256
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Compass|"
 msgid "No"
 msgstr "Nein"
@@ -6555,7 +6498,7 @@ msgstr "Taj Mahal, Agra, Indien"
 #: activities/details/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
 msgid "Vincent van Gogh, Entrance Hall of Saint-Paul Hospital - 1889"
-msgstr "Vincent van Gogh, Eingangshalle des Saint-Paul-Hospitals - 1889"
+msgstr "Vincent van Gogh, Eingangshalle des Saint-Paul-Hospitals – 1889"
 
 #: activities/details/resource/board/board20_0.qml:14
 msgctxt "board20_0|"
@@ -6574,33 +6517,33 @@ msgid ""
 "- 1888"
 msgstr ""
 "Vincent van Gogh, Die Brücke von Langlois in Arles mit einer Dame mit "
-"Regenschirm - 1888"
+"Regenschirm – 1888"
 
 #: activities/details/resource/board/board3_0.qml:14
 msgctxt "board3_0|"
 msgid "Vincent van Gogh, The Church at Auvers-sur-Oise - 1890"
-msgstr "Vincent van Gogh, Kirche in Auvers-sur-Oise - 1890"
+msgstr "Vincent van Gogh, Kirche in Auvers-sur-Oise – 1890"
 
 #: activities/details/resource/board/board4_0.qml:14
 msgctxt "board4_0|"
 msgid "Vincent van Gogh, Painter on His Way to Work - 1888"
-msgstr "Vincent van Gogh, Maler auf dem Weg zur Arbeit - 1888"
+msgstr "Vincent van Gogh, Maler auf dem Weg zur Arbeit – 1888"
 
 #: activities/details/resource/board/board5_0.qml:14
 msgctxt "board5_0|"
 msgid "Vincent van Gogh, The Harvest - 1888"
-msgstr "Vincent van Gogh, Die Ernte - 1888"
+msgstr "Vincent van Gogh, Die Ernte – 1888"
 
 #: activities/details/resource/board/board6_0.qml:14
 msgctxt "board6_0|"
 msgid "Vincent van Gogh, Cafe Terrace at Night - 1888"
 msgstr ""
-"Vincent van Gogh, Nachts vor dem Café an der Place du Forum in Arles - 1888"
+"Vincent van Gogh, Nachts vor dem Café an der Place du Forum in Arles – 1888"
 
 #: activities/details/resource/board/board7_0.qml:14
 msgctxt "board7_0|"
 msgid "Vincent van Gogh, The Night Café - 1888"
-msgstr "Vincent van Gogh, Nachtcafé - 1888"
+msgstr "Vincent van Gogh, Nachtcafé – 1888"
 
 #: activities/details/resource/board/board8_0.qml:14
 msgctxt "board8_0|"
@@ -7143,8 +7086,8 @@ msgid ""
 "Create a circuit using the provided components so that the bulb glows only "
 "when both of the switches are turned on."
 msgstr ""
-"Erstelle einen Schaltkreis und benutze dazu die bereitgestellten "
-"Komponenten, so dass die Lampe nur leuchtet, wenn beide Schalter "
+"Erstelle einen Schaltkreis unter Verwendung der bereitgestellten "
+"Komponenten. Die Lampe soll nur dann leuchten, wenn beide Schalter "
 "eingeschaltet sind."
 
 #: activities/digital_electricity/TutorialDataset.qml:250
@@ -7154,8 +7097,8 @@ msgid ""
 "Create a circuit using the provided components so that the bulb glows when "
 "either of the switch is turned on."
 msgstr ""
-"Erstelle einen Schaltkreis und benutze dazu die bereitgestellten "
-"Komponenten, so dass die Lampe leuchtet, wenn einer der beiden Schalter "
+"Erstelle einen Schaltkreis unter Verwendung der bereitgestellten "
+"Komponenten. Die Lampe soll nur dann leuchten, wenn einer der Schalter "
 "eingeschaltet ist."
 
 #: activities/digital_electricity/TutorialDataset.qml:266
@@ -7252,8 +7195,8 @@ msgid ""
 "Use the gates so that the bulb glows only when the switch is turned off and "
 "doesn't glow when the switch is turned on."
 msgstr ""
-"Nutze die Gatter, so dass die Lampe nur leuchtet, wenn der Schalter "
-"ausgeschaltet ist, und aus bleibt, wenn der Schalter eingeschaltet wird."
+"Nutze die Gatter, sodass die Lampe nur dann leuchtet, wenn der Schalter "
+"ausgeschaltet ist, und aus bleibt, wenn der Schalter eingeschaltet ist."
 
 #: activities/digital_electricity/TutorialDataset.qml:418
 msgctxt "TutorialDataset|"
@@ -7261,8 +7204,8 @@ msgid ""
 "Create a circuit using the provided components so that the bulb glows only "
 "when both of the switches are turned off."
 msgstr ""
-"Erstelle einen Schaltkreis und benutze dazu die bereitgestellten "
-"Komponenten, so dass die Lampe nur leuchtet, wenn beide Schalter "
+"Erstelle einen Schaltkreis unter Verwendung der bereitgestellten "
+"Komponenten. Die Lampe soll nur dann leuchten, wenn beide Schalter "
 "ausgeschaltet sind."
 
 #: activities/digital_electricity/TutorialDataset.qml:434
@@ -7282,8 +7225,8 @@ msgid ""
 "Use the gates so that the bulb glows when the switch is turned off and "
 "doesn't glow when the switch is turned on."
 msgstr ""
-"Nutze die Gatter, so dass die Lampe leuchtet, wenn der Schalter "
-"ausgeschaltet ist, und aus bleibt, wenn der Schalter eingeschaltet wird."
+"Nutze die Gatter, sodass die Lampe leuchtet, wenn der Schalter ausgeschaltet "
+"ist, und aus bleibt, wenn der Schalter eingeschaltet ist."
 
 #: activities/digital_electricity/TutorialDataset.qml:479
 msgctxt "TutorialDataset|"
@@ -7291,8 +7234,8 @@ msgid ""
 "Create a circuit using the provided components so that the bulb glows when "
 "either of the switches are turned on."
 msgstr ""
-"Erstelle einen Schaltkreis und benutze dazu die bereitgestellten "
-"Komponenten, so dass die Lampe leuchtet, wenn einer der beiden Schalter "
+"Erstelle einen Schaltkreis unter Verwendung der bereitgestellten "
+"Komponenten. Die Lampe soll nur dann leuchten, wenn einer der Schalter "
 "eingeschaltet ist."
 
 #: activities/digital_electricity/TutorialDataset.qml:495
@@ -7301,8 +7244,8 @@ msgid ""
 "Create a circuit using the provided components so that the bulb glows when "
 "at least one of the switches is turned off."
 msgstr ""
-"Erstelle einen Schaltkreis und benutze dazu die bereitgestellten "
-"Komponenten, so dass die Lampe leuchtet, wenn mindestens einer der beiden "
+"Erstelle einen Schaltkreis unter Verwendung der bereitgestellten "
+"Komponenten. Die Lampe soll nur dann leuchten, wenn mindestens einer der "
 "Schalter ausgeschaltet ist."
 
 #: activities/digital_electricity/TutorialDataset.qml:511
@@ -7323,9 +7266,9 @@ msgid ""
 "the output of the first switch is less than or equal to the output of the "
 "second switch."
 msgstr ""
-"Erstelle mit den bereitgestellten Komponenten einen Schaltkreis, sodass die "
-"Lampe leuchtet, wenn der Ausgang des ersten Schalters kleiner oder gleich "
-"dem Ausgang des zweiten Schalters ist."
+"Erstelle einen Schaltkreis unter Verwendung der bereitgestellten "
+"Komponenten. Die Lampe soll nur dann leuchten, wenn der Ausgang des ersten "
+"Schalters kleiner oder gleich dem Ausgang des zweiten Schalters ist."
 
 #: activities/digital_electricity/TutorialDataset.qml:525
 msgctxt "TutorialDataset|"
@@ -7524,7 +7467,7 @@ msgstr "Zahn- und Kammrad ausblenden"
 #: activities/drawing_wheels/DrawingWheels.qml:719
 msgctxt "DrawingWheels|"
 msgid "Save your image"
-msgstr "Speichere dein Bild"
+msgstr "Dein Bild speichern"
 
 #: activities/drawing_wheels/DrawingWheels.qml:734
 msgctxt "DrawingWheels|"
@@ -20605,7 +20548,7 @@ msgstr "Hintergrundmusik herunterladen"
 #: activities/menu/ConfigurationItem.qml:222
 msgctxt "ConfigurationItem|"
 msgid "Enable background music"
-msgstr "Hintergrundmusik einschalten"
+msgstr "Hintergrundmusik aktivieren"
 
 #: activities/menu/ConfigurationItem.qml:231
 msgctxt "ConfigurationItem|"
@@ -21635,9 +21578,9 @@ msgid ""
 "Click on one of your pieces, and then on an adjacent empty spot to move it "
 "there. Green color spots indicates where you can move."
 msgstr ""
-"Nachdem alle Steine platziert wurden, wechselst du sich mit Tux beim ziehen "
+"Nachdem alle Steine platziert wurden, wechselst du dich mit Tux beim Ziehen "
 "der Steine ab. Klicke dazu erst einen deiner Steine und dann ein freies Feld "
-"daneben an, um ihn dorthin zu bewegen. Grüne Punkte zeigen an, wohin zu "
+"daneben an, um ihn dorthin zu bewegen. Grüne Punkte zeigen an, wohin du "
 "ziehen kannst."
 
 #: activities/nine_men_morris/NineMenMorris.qml:367
@@ -21991,8 +21934,8 @@ msgid ""
 "You are provided with some letters. Drag and drop them to the upper area in "
 "alphabetical order or in reverse alphabetical order as requested."
 msgstr ""
-"Du siehst einige Buchstaben. Ziehen sie per Drag und Drop im oberen Bereich "
-"in alphabetischer oder in umgekehrt alphabetischer Reihenfolge - wie "
+"Du siehst einige Buchstaben. Ziehe sie per „Ziehen und Ablegen“ im oberen "
+"Bereich in alphabetischer oder in umgekehrt alphabetischer Reihenfolge – wie "
 "beschrieben."
 
 #: activities/ordering_alphabets/resource/1/Data.qml:13
@@ -22889,11 +22832,11 @@ msgid ""
 msgstr ""
 "Entwickle ein Verständnis für Musikkomposition und steigere dein Interesse "
 "am Musikmachen mit einer Klaviatur. Diese Aktivität deckt viele grundlegende "
-"Aspekte der Musik ab, aber es gibt viel mehr bzgl. der Musikkomposition zu "
-"erleben. Wenn du diese Aktivität magst, aber ein fortgeschrittenes Werkzeug "
-"wünschst, lade Minuet (https://minuet.kde.org/) - eine Open-Source-Software "
-"für die Musikerziehung oder MuseScore (https://musescore.org) - ein Open-"
-"Source-Werkzeug für die Musiknotation - herunter."
+"Aspekte der Musik ab, aber es gibt viel mehr bezüglich der Musikkomposition "
+"zu erleben. Wenn du diese Aktivität magst, aber ein fortgeschrittenes "
+"Werkzeug wünschst, lade Minuet (https://minuet.kde.org/) – eine quelloffene "
+"Software für die Musikerziehung oder MuseScore (https://musescore.org) – ein "
+"quelloffenes Werkzeug für die Musiknotation herunter."
 
 #. Help prerequisite
 #: activities/piano_composition/ActivityInfo.qml:23
@@ -23291,7 +23234,7 @@ msgid ""
 "Click on the note symbol to write different length notes such as whole "
 "notes, half notes, quarter notes and eighth notes."
 msgstr ""
-"Klicke auf das Notensymbol, um verschiedene Längen von Noten zu schreiben - "
+"Klicke auf das Notensymbol, um verschiedene Längen von Noten zu schreiben – "
 "Ganze Noten, Halbe Noten, Viertelnoten und Achtelnoten."
 
 #: activities/piano_composition/piano_composition.js:38
@@ -26028,7 +25971,7 @@ msgstr "Farbe zurücksetzen"
 #: activities/sketch/FilesPanel.qml:35
 msgctxt "FilesPanel|"
 msgid "Save your image"
-msgstr "Speichere dein Bild"
+msgstr "Dein Bild speichern"
 
 #: activities/sketch/FilesPanel.qml:46
 msgctxt "FilesPanel|"
@@ -26429,7 +26372,7 @@ msgstr "Esc: Zurück zum vorherigen Bildschirm"
 msgctxt "ActivityInfo|"
 msgid "Tab: view the hint (only when the hint icon is visible)"
 msgstr ""
-"Tabulatortaste: Zeigt einen Hinweis, nur wenn das Hinweissymbol sichtbar ist."
+"Tabulatortaste: Zeigt einen Hinweis nur, wenn das Hinweissymbol sichtbar ist."
 
 #: activities/solar_system/Dataset.js:14
 msgctxt "Dataset|"
@@ -26524,7 +26467,7 @@ msgstr "4,5 Milliarden Jahre"
 #: activities/solar_system/Dataset.js:36
 msgctxt "Dataset|"
 msgid "How long does it take for the Sun’s light to reach the Earth?"
-msgstr "Wie lange braucht das Licht von der Sonne bis zur Erde?"
+msgstr "Wie lange benötigt das Licht von der Sonne bis zur Erde?"
 
 #: activities/solar_system/Dataset.js:37
 msgctxt "Dataset|"
@@ -26895,7 +26838,7 @@ msgstr "Fünfter"
 #: activities/solar_system/Dataset.js:159
 msgctxt "Dataset|"
 msgid "How long does it take for Earth to make one revolution around the Sun?"
-msgstr "Wie lange braucht die Erde, um einmal die Sonne zu umrunden?"
+msgstr "Wie lange benötigt die Erde, um einmal die Sonne zu umrunden?"
 
 #: activities/solar_system/Dataset.js:160
 msgctxt "Dataset|"
@@ -27049,7 +26992,7 @@ msgstr "24,5 Stunden"
 #: activities/solar_system/Dataset.js:234
 msgctxt "Dataset|"
 msgid "How long does it take for Mars to make one revolution around the Sun?"
-msgstr "Wie lange braucht der Mars, um einmal die Sonne zu umrunden?"
+msgstr "Wie lange benötigt der Mars, um einmal die Sonne zu umrunden?"
 
 #: activities/solar_system/Dataset.js:235
 msgctxt "Dataset|"
@@ -27138,7 +27081,7 @@ msgstr "10 Stunden"
 msgctxt "Dataset|"
 msgid ""
 "How long does it take for Jupiter to make one revolution around the Sun?"
-msgstr "Wie lange braucht der Jupiter, um einmal die Sonne zu umrunden?"
+msgstr "Wie lange benötigt der Jupiter, um einmal die Sonne zu umrunden?"
 
 #: activities/solar_system/Dataset.js:286
 msgctxt "Dataset|"
@@ -27231,7 +27174,7 @@ msgstr "-100 °C"
 #: activities/solar_system/Dataset.js:330
 msgctxt "Dataset|"
 msgid "How long does it take for Saturn to make one revolution around the Sun?"
-msgstr "Wie lange braucht der Saturn, um einmal die Sonne zu umrunden?"
+msgstr "Wie lange benötigt der Saturn, um einmal die Sonne zu umrunden?"
 
 #: activities/solar_system/Dataset.js:331
 msgctxt "Dataset|"
@@ -27551,8 +27494,8 @@ msgid ""
 "first letter in each word - <b>M</b>y <b>V</b>ery <b>E</b>xcellent <b>M</"
 "b>other <b>J</b>ust <b>S</b>erved <b>U</b>s <b>N</b>oodles.<br>"
 msgstr ""
-"3. Merke dir immer die ersten Buchstaben der Wörter in diesen Reim, um die "
-"Position der Planeten zu lernen - <b>M</b>ein <b>V</b>ater <b>e</b>rklärt "
+"3. Merke dir immer die ersten Buchstaben der Wörter in diesem Spruch, um die "
+"Position der Planeten zu lernen: <b>M</b>ein <b>V</b>ater <b>e</b>rklärt "
 "<b>m</b>ir <b>j</b>eden <b>S</b>onntag <b>u</b>nseren <b>N</b>achthimmel.<br>"
 
 #: activities/solar_system/SolarSystem.qml:368
@@ -27690,7 +27633,7 @@ msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
 "indicating the current speed of the submarine."
 msgstr ""
-"Die Anzeige ganz links im Kontrollbereich ist der Motor des Unterseebootes - "
+"Die Anzeige ganz links im Kontrollbereich ist der Motor des Unterseebootes – "
 "sie zeigt das aktuelle Tempo an."
 
 #: activities/submarine/Submarine.qml:146
@@ -28018,12 +27961,9 @@ msgid "Maximum value: 500."
 msgstr "Maximaler Wert: 500."
 
 #: activities/target/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Maximum value: 50000."
 msgctxt "Data|"
 msgid "Maximum value: 5000."
-msgstr "Maximaler Wert: 50000."
+msgstr "Maximaler Wert: 5000."
 
 #: activities/target/resource/5/Data.qml:14
 msgctxt "Data|"
@@ -28828,8 +28768,7 @@ msgstr "Tastatur-Handhabung."
 #: activities/wordsgame/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Type the complete word as it falls, before it reaches the ground."
-msgstr ""
-"Gib das vollständige Wort ein während es fällt, bevor es den Boden erreicht."
+msgstr "Gib das vollständige Wort ein, bevor es den Boden erreicht."
 
 #: core/ActivityBase.qml:218
 msgctxt "ActivityBase|"
@@ -28839,17 +28778,11 @@ msgid ""
 msgstr ""
 
 #: core/ActivityBase.qml:219
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "ActivityBase|"
 msgid "Yes"
 msgstr "Ja"
 
 #: core/ActivityBase.qml:224
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "ActivityBase|"
 msgid "No"
 msgstr "Nein"

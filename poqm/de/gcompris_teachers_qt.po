@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_teachers\n"
-"PO-Revision-Date: 2026-03-28 13:10+0100\n"
+"PO-Revision-Date: 2026-05-07 20:35+0200\n"
 "Last-Translator: Alexander Becker <alex-at-kde-l10n-de@freenet.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Lokalize 26.04.0\n"
 "X-Qt-Contexts: true\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
@@ -1369,17 +1369,11 @@ msgid "Jar placed:"
 msgstr ""
 
 #: server/activities/share/ShareDataDisplay.qml:234
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Yes"
 msgctxt "ShareDataDisplay|"
 msgid "Yes"
 msgstr "Ja"
 
 #: server/activities/share/ShareDataDisplay.qml:234
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "No"
 msgctxt "ShareDataDisplay|"
 msgid "No"
 msgstr "Nein"
@@ -1390,9 +1384,6 @@ msgid "Candies in the jar:"
 msgstr ""
 
 #: server/activities/share/ShareEditor.qml:22
-#, fuzzy
-#| msgctxt "ActivityEditor|"
-#| msgid "Rules to create a valid dataset:"
 msgctxt "ShareEditor|"
 msgid "Rules to create a valid dataset:"
 msgstr "Regeln zur Erstellung eines gültigen Datensatzes:"
@@ -1418,25 +1409,16 @@ msgid ""
 msgstr ""
 
 #: server/activities/share/ShareEditor.qml:33
-#, fuzzy
-#| msgctxt "AlgebraEditor|"
-#| msgid "Shuffle"
 msgctxt "ShareEditor|"
 msgid "Shuffle"
 msgstr "Mischen"
 
 #: server/activities/share/ShareEditor.qml:34
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "ShareEditor|"
 msgid "Sublevels"
 msgstr "Unterstufen"
 
 #: server/activities/share/ShareEditor.qml:40
-#, fuzzy
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "Random numbers"
 msgctxt "ShareEditor|"
 msgid "Random numbers"
 msgstr "Zufallszahlen"
@@ -1510,25 +1492,17 @@ msgid "Already place some candies"
 msgstr ""
 
 #: server/activities/share/ShareEditor.qml:58
-#, fuzzy
-#| msgctxt "FractionsCreateEditor|"
-#| msgid "Instruction"
 msgctxt "ShareEditor|"
 msgid "Instruction"
 msgstr "Anweisung"
 
 #: server/activities/share/ShareEditor.qml:289
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "ShareEditor|"
 msgid "Dataset is empty."
 msgstr "Datensatz ist leer."
 
 #: server/activities/share/ShareEditor.qml:299
-#, fuzzy, qt-format
-#| msgctxt "ComparatorEditor|"
-#| msgid "Level %1 must not be empty."
+#, qt-format
 msgctxt "ShareEditor|"
 msgid "Level %1 must not be empty."
 msgstr "Stufe %1 darf nicht leer sein."
@@ -1549,9 +1523,7 @@ msgid ""
 msgstr ""
 
 #: server/activities/share/ShareEditor.qml:324
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "ShareEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Folgende Fehler müssen behoben werden:<ul>%1</ul>"
@@ -1570,33 +1542,21 @@ msgid "Target values:"
 msgstr ""
 
 #: server/activities/target/TargetDataDisplay.qml:64
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Additions"
 msgctxt "TargetDataDisplay|"
 msgid "Addition:"
-msgstr "Additionen"
+msgstr "Addition:"
 
 #: server/activities/target/TargetDataDisplay.qml:92
-#, fuzzy
-#| msgctxt "AdjacentNumbersDataDisplay|"
-#| msgid "Answer:"
 msgctxt "TargetDataDisplay|"
 msgid "Answer:"
 msgstr "Antwort:"
 
 #: server/activities/target/TargetDataDisplay.qml:118
-#, fuzzy
-#| msgctxt "BinaryBulbDataDisplay|"
-#| msgid "Expected:"
 msgctxt "TargetDataDisplay|"
 msgid "Expected answer:"
-msgstr "Erwartet:"
+msgstr "Erwartete Antwort:"
 
 #: server/activities/target/TargetEditor.qml:27
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "TargetEditor|"
 msgid "Sublevels"
 msgstr "Unterstufen"
@@ -1615,9 +1575,6 @@ msgid "Target values"
 msgstr ""
 
 #: server/activities/target/TargetEditor.qml:73
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "TargetEditor|"
 msgid "Dataset is empty."
 msgstr "Datensatz ist leer."
@@ -1639,9 +1596,7 @@ msgid "\"Target values\" for level %1 contains invalid entries."
 msgstr "Unterstufe %2 der Stufe %1 enthält ungültige Zusatzkarten."
 
 #: server/activities/target/TargetEditor.qml:97
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "TargetEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Folgende Fehler müssen behoben werden:<ul>%1</ul>"
@@ -2079,12 +2034,10 @@ msgstr "Gruppe löschen"
 
 #. Argument is dataset name
 #: server/components/SequenceElement.qml:72
-#, fuzzy, qt-format
-#| msgctxt "NavigationPanel|"
-#| msgid "Datasets"
+#, qt-format
 msgctxt "SequenceElement|"
 msgid "Dataset: %1"
-msgstr "Datensätze"
+msgstr "Datensatz: %1"
 
 #: server/components/ServerLanguageList.qml:32
 msgctxt "ServerLanguageList|"
@@ -2542,9 +2495,6 @@ msgstr ""
 "löschen?"
 
 #: server/dialogs/SendSequenceDialog.qml:140
-#, fuzzy
-#| msgctxt "ExportPupilsDialog|"
-#| msgid "Pupils"
 msgctxt "SendSequenceDialog|"
 msgid "Pupils"
 msgstr "Schüler"
@@ -2582,41 +2532,26 @@ msgid "Sequence name"
 msgstr "Länge der Folge"
 
 #: server/dialogs/SequenceEditorDialog.qml:177
-#, fuzzy
-#| msgctxt "DatasetEditorDialog|"
-#| msgid "Goal"
 msgctxt "SequenceEditorDialog|"
 msgid "Goal"
 msgstr "Ziel"
 
 #: server/dialogs/SequenceEditorDialog.qml:245
-#, fuzzy
-#| msgctxt "NavigationPanel|"
-#| msgid "Activities"
 msgctxt "SequenceEditorDialog|"
 msgid "Activities"
 msgstr "Aktivitäten"
 
 #: server/dialogs/SequenceEditorDialog.qml:272
-#, fuzzy
-#| msgctxt "NavigationPanel|"
-#| msgid "Datasets"
 msgctxt "SequenceEditorDialog|"
 msgid "Datasets"
 msgstr "Datensätze"
 
 #: server/dialogs/SequenceEditorDialog.qml:323
-#, fuzzy
-#| msgctxt "EditorBox|"
-#| msgid "Add"
 msgctxt "SequenceEditorDialog|"
 msgid "Add"
 msgstr "Hinzufügen"
 
 #: server/dialogs/SequenceEditorDialog.qml:343
-#, fuzzy
-#| msgctxt "EditorBox|"
-#| msgid "Remove"
 msgctxt "SequenceEditorDialog|"
 msgid "Remove"
 msgstr "Entfernen"
