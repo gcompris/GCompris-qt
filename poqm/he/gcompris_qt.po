@@ -1,11 +1,11 @@
 # Amihay Gal <Amihaygal@gmail.com>, 2019.
 # ami.g <amihaygal@gmail.com>, 2020, 2021, 2023.
-# SPDX-FileCopyrightText: 2024, 2025, 2026 Yaron Shahrabani <sh.yaron@gmail.com>
+# SPDX-FileCopyrightText: 2024-2026 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2026-04-13 21:38+0300\n"
+"PO-Revision-Date: 2026-05-14 20:57+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Lokalize 26.04.0\n"
 "X-Qt-Contexts: true\n"
 "X-Poedit-Bookmarks: -1,2919,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
@@ -7129,7 +7129,7 @@ msgid ""
 "The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
 "and hearing at night."
 msgstr ""
-"הינשוף נושף „הוּוּט”. ינשוף הוא ציפור לילית, יש לו ראיה ושמיעה מצויינות בלילה."
+"הינשוף נושף „הוּוּט”. ינשוף הוא ציפור לילית, יש לו ראיה ושמיעה מצוינות בלילה."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
 msgctxt "board1|"
