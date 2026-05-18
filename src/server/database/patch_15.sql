@@ -1,0 +1,1 @@
+DELETE FROM result_  WHERE ROWID IN (SELECT res.ROWID FROM result_ res INNER JOIN activity_ act ON (res.activity_id == act.activity_id AND act.activity_name IN ("gletters", "wordsgame", "smallnumbers", "smallnumbers2")));

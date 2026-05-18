@@ -29,7 +29,7 @@
 
 #include "File.h"
 
-#define DB_VERSION 14
+#define DB_VERSION 15
 #define SCHEMA_SQL ":/gcompris/src/server/database/create_tables.sql"
 #define VIEWS_SQL ":/gcompris/src/server/database/create_views.sql"
 #define PATCH_SQL ":/gcompris/src/server/database/patch_%1.sql"
