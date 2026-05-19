@@ -29,6 +29,10 @@ Item {
         id: allLangs
     }
 
+    ServerChangeLog {
+        id: changelog
+    }
+
     Rectangle {
         id: topLiner
         width: parent.width
@@ -303,6 +307,21 @@ Item {
                 infoText.width: infoText.implicitWidth
                 label: qsTr("Activities data received")
                 info: (networkController) ? networkController.dataCount : 0
+            }
+
+            Item {
+                width: 1
+                height: Style.hugeMargins
+            }
+
+            ViewButton {
+                id: changelogButton
+                anchors.horizontalCenter: parent.horizontalCenter
+                text: qsTr("View Changelog")
+
+                onClicked: {
+                    changelog.open();
+                }
             }
 
             Item {
