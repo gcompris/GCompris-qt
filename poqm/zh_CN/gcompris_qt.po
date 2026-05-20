@@ -10713,7 +10713,7 @@ msgstr "阿萨姆"
 #: activities/geo-country/resource/board/board12_0.qml:172
 msgctxt "board12_0|"
 msgid "Arunachal Pradesh"
-msgstr "藏南地区 (伪阿鲁纳恰尔邦)"
+msgstr "藏南地区"
 
 #. State of India: Nagaland
 #: activities/geo-country/resource/board/board12_0.qml:179
