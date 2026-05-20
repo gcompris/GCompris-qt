@@ -863,7 +863,7 @@ msgstr "נא למצוא פרפר בצבע סגול כהה"
 #: activities/readingh/ActivityConfig.qml:43
 #: activities/readingv/ActivityConfig.qml:43
 #: activities/smallnumbers/ActivityConfig.qml:29
-#: activities/smallnumbers2/ActivityConfig.qml:42
+#: activities/smallnumbers2/ActivityConfig.qml:43
 #: activities/wordsgame/ActivityConfig.qml:49
 msgctxt "ActivityConfig|"
 msgid "Speed"
@@ -17198,8 +17198,8 @@ msgid "Arabic numerals"
 msgstr "ספרות ערביות"
 
 #: activities/learn_digits/ActivityConfig.qml:25
-#: activities/reversecount/ActivityConfig.qml:22
-#: activities/smallnumbers2/ActivityConfig.qml:20
+#: activities/reversecount/ActivityConfig.qml:23
+#: activities/smallnumbers2/ActivityConfig.qml:21
 msgctxt "ActivityConfig|"
 msgid "Dots"
 msgstr "נקודות"
@@ -23312,27 +23312,27 @@ msgstr ""
 "האספקה והביקוש אינם באיזון, תחנות כח וציוד הולכה עלולים להכבות, מה שבתרחיש "
 "הגרוע ביותר עלול להוביל להפסקת חשמל אזורית גדולה."
 
-#: activities/reversecount/ActivityConfig.qml:23
-#: activities/smallnumbers2/ActivityConfig.qml:21
+#: activities/reversecount/ActivityConfig.qml:24
+#: activities/smallnumbers2/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Arabic numbers"
 msgstr "מספרים בערבית"
 
-#: activities/reversecount/ActivityConfig.qml:24
-#: activities/smallnumbers2/ActivityConfig.qml:22
+#: activities/reversecount/ActivityConfig.qml:25
+#: activities/smallnumbers2/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Roman numbers"
 msgstr "ספרות רומיות"
 
-#: activities/reversecount/ActivityConfig.qml:25
-#: activities/smallnumbers2/ActivityConfig.qml:23
+#: activities/reversecount/ActivityConfig.qml:26
+#: activities/smallnumbers2/ActivityConfig.qml:24
 #: activities/traffic/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Images"
 msgstr "תמונת"
 
-#: activities/reversecount/ActivityConfig.qml:34
-#: activities/smallnumbers2/ActivityConfig.qml:37
+#: activities/reversecount/ActivityConfig.qml:35
+#: activities/smallnumbers2/ActivityConfig.qml:38
 msgctxt "ActivityConfig|"
 msgid "Select Domino Representation"
 msgstr "לבחור ייצוג של דומינו"
@@ -23390,6 +23390,38 @@ msgstr ""
 msgctxt "Data|"
 msgid "Numbers between %1 and %2."
 msgstr "מספרים בין %1 ו %2."
+
+#: activities/reversecount/Reversecount.qml:81
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Dots"
+msgctxt "Reversecount|"
+msgid "Dots"
+msgstr "נקודות"
+
+#: activities/reversecount/Reversecount.qml:82
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Arabic numbers"
+msgctxt "Reversecount|"
+msgid "Arabic numbers"
+msgstr "מספרים בערבית"
+
+#: activities/reversecount/Reversecount.qml:83
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Roman numbers"
+msgctxt "Reversecount|"
+msgid "Roman numbers"
+msgstr "ספרות רומיות"
+
+#: activities/reversecount/Reversecount.qml:84
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Images"
+msgctxt "Reversecount|"
+msgid "Images"
+msgstr "תמונת"
 
 #. Activity title
 #: activities/roman_numerals/ActivityInfo.qml:15
@@ -25036,6 +25068,38 @@ msgstr "להקליד את המספר על הדומינו, 1 עד 9."
 msgctxt "Data|"
 msgid "Type the number on the domino, from 0 to 9."
 msgstr "להקליד את המספר על הדומינו, 0 עד 9."
+
+#: activities/smallnumbers2/Smallnumbers2.qml:23
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Dots"
+msgctxt "Smallnumbers2|"
+msgid "Dots"
+msgstr "נקודות"
+
+#: activities/smallnumbers2/Smallnumbers2.qml:24
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Arabic numbers"
+msgctxt "Smallnumbers2|"
+msgid "Arabic numbers"
+msgstr "מספרים בערבית"
+
+#: activities/smallnumbers2/Smallnumbers2.qml:25
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Roman numbers"
+msgctxt "Smallnumbers2|"
+msgid "Roman numbers"
+msgstr "ספרות רומיות"
+
+#: activities/smallnumbers2/Smallnumbers2.qml:26
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Images"
+msgctxt "Smallnumbers2|"
+msgid "Images"
+msgstr "תמונת"
 
 #: activities/solar_system/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"

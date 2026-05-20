@@ -854,7 +854,7 @@ msgstr "കടും പർപ്പിൾ പൂമ്പാറ്റയെ ക
 #: activities/readingh/ActivityConfig.qml:43
 #: activities/readingv/ActivityConfig.qml:43
 #: activities/smallnumbers/ActivityConfig.qml:29
-#: activities/smallnumbers2/ActivityConfig.qml:42
+#: activities/smallnumbers2/ActivityConfig.qml:43
 #: activities/wordsgame/ActivityConfig.qml:49
 msgctxt "ActivityConfig|"
 msgid "Speed"
@@ -17556,8 +17556,8 @@ msgid "Arabic numerals"
 msgstr "അറബി അക്കങ്ങൾ"
 
 #: activities/learn_digits/ActivityConfig.qml:25
-#: activities/reversecount/ActivityConfig.qml:22
-#: activities/smallnumbers2/ActivityConfig.qml:20
+#: activities/reversecount/ActivityConfig.qml:23
+#: activities/smallnumbers2/ActivityConfig.qml:21
 msgctxt "ActivityConfig|"
 msgid "Dots"
 msgstr "കുത്തുകൾ"
@@ -23785,27 +23785,27 @@ msgstr ""
 "നിന്നു പോകാനും, ചില സാഹചര്യങ്ങളിൽ ഗുരുതരമായ പ്രാദേശിക ബ്ലാക്ക് ഔട്ട് വരെ ഉണ്ടാകാനും "
 "സാധ്യതയുണ്ട്."
 
-#: activities/reversecount/ActivityConfig.qml:23
-#: activities/smallnumbers2/ActivityConfig.qml:21
+#: activities/reversecount/ActivityConfig.qml:24
+#: activities/smallnumbers2/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Arabic numbers"
 msgstr "അറബി അക്കങ്ങൾ"
 
-#: activities/reversecount/ActivityConfig.qml:24
-#: activities/smallnumbers2/ActivityConfig.qml:22
+#: activities/reversecount/ActivityConfig.qml:25
+#: activities/smallnumbers2/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Roman numbers"
 msgstr "റോമൻ അക്കങ്ങൾ"
 
-#: activities/reversecount/ActivityConfig.qml:25
-#: activities/smallnumbers2/ActivityConfig.qml:23
+#: activities/reversecount/ActivityConfig.qml:26
+#: activities/smallnumbers2/ActivityConfig.qml:24
 #: activities/traffic/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Images"
 msgstr "ചിത്രങ്ങൾ"
 
-#: activities/reversecount/ActivityConfig.qml:34
-#: activities/smallnumbers2/ActivityConfig.qml:37
+#: activities/reversecount/ActivityConfig.qml:35
+#: activities/smallnumbers2/ActivityConfig.qml:38
 msgctxt "ActivityConfig|"
 msgid "Select Domino Representation"
 msgstr "ഡൊമിനോ രൂപം തിരഞ്ഞെടുക്കുക"
@@ -23862,6 +23862,38 @@ msgstr ""
 msgctxt "Data|"
 msgid "Numbers between %1 and %2."
 msgstr "%1-നും %2-നും ഇടയിലുള്ള സംഖ്യകൾ."
+
+#: activities/reversecount/Reversecount.qml:81
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Dots"
+msgctxt "Reversecount|"
+msgid "Dots"
+msgstr "കുത്തുകൾ"
+
+#: activities/reversecount/Reversecount.qml:82
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Arabic numbers"
+msgctxt "Reversecount|"
+msgid "Arabic numbers"
+msgstr "അറബി അക്കങ്ങൾ"
+
+#: activities/reversecount/Reversecount.qml:83
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Roman numbers"
+msgctxt "Reversecount|"
+msgid "Roman numbers"
+msgstr "റോമൻ അക്കങ്ങൾ"
+
+#: activities/reversecount/Reversecount.qml:84
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Images"
+msgctxt "Reversecount|"
+msgid "Images"
+msgstr "ചിത്രങ്ങൾ"
 
 #. Activity title
 #: activities/roman_numerals/ActivityInfo.qml:15
@@ -25534,6 +25566,38 @@ msgstr "ഡൊമിനോയുടെ മുകളിലെ എണ്ണം ട
 msgctxt "Data|"
 msgid "Type the number on the domino, from 0 to 9."
 msgstr "ഡൊമിനോയുടെ മുകളിലെ എണ്ണം ടൈപ്പ് ചെയ്യൂ, 0 മുതൽ 9 വരെ."
+
+#: activities/smallnumbers2/Smallnumbers2.qml:23
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Dots"
+msgctxt "Smallnumbers2|"
+msgid "Dots"
+msgstr "കുത്തുകൾ"
+
+#: activities/smallnumbers2/Smallnumbers2.qml:24
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Arabic numbers"
+msgctxt "Smallnumbers2|"
+msgid "Arabic numbers"
+msgstr "അറബി അക്കങ്ങൾ"
+
+#: activities/smallnumbers2/Smallnumbers2.qml:25
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Roman numbers"
+msgctxt "Smallnumbers2|"
+msgid "Roman numbers"
+msgstr "റോമൻ അക്കങ്ങൾ"
+
+#: activities/smallnumbers2/Smallnumbers2.qml:26
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Images"
+msgctxt "Smallnumbers2|"
+msgid "Images"
+msgstr "ചിത്രങ്ങൾ"
 
 #: activities/solar_system/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"

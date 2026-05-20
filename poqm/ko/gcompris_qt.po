@@ -866,7 +866,7 @@ msgstr ""
 #: activities/readingh/ActivityConfig.qml:43
 #: activities/readingv/ActivityConfig.qml:43
 #: activities/smallnumbers/ActivityConfig.qml:29
-#: activities/smallnumbers2/ActivityConfig.qml:42
+#: activities/smallnumbers2/ActivityConfig.qml:43
 #: activities/wordsgame/ActivityConfig.qml:49
 msgctxt "ActivityConfig|"
 msgid "Speed"
@@ -17023,8 +17023,8 @@ msgid "Arabic numerals"
 msgstr "루마니아"
 
 #: activities/learn_digits/ActivityConfig.qml:25
-#: activities/reversecount/ActivityConfig.qml:22
-#: activities/smallnumbers2/ActivityConfig.qml:20
+#: activities/reversecount/ActivityConfig.qml:23
+#: activities/smallnumbers2/ActivityConfig.qml:21
 msgctxt "ActivityConfig|"
 msgid "Dots"
 msgstr ""
@@ -23147,8 +23147,8 @@ msgid ""
 "regional blackout."
 msgstr ""
 
-#: activities/reversecount/ActivityConfig.qml:23
-#: activities/smallnumbers2/ActivityConfig.qml:21
+#: activities/reversecount/ActivityConfig.qml:24
+#: activities/smallnumbers2/ActivityConfig.qml:22
 #, fuzzy
 #| msgctxt "board6_0|"
 #| msgid "Romania"
@@ -23156,8 +23156,8 @@ msgctxt "ActivityConfig|"
 msgid "Arabic numbers"
 msgstr "루마니아"
 
-#: activities/reversecount/ActivityConfig.qml:24
-#: activities/smallnumbers2/ActivityConfig.qml:22
+#: activities/reversecount/ActivityConfig.qml:25
+#: activities/smallnumbers2/ActivityConfig.qml:23
 #, fuzzy
 #| msgctxt "board6_0|"
 #| msgid "Romania"
@@ -23165,8 +23165,8 @@ msgctxt "ActivityConfig|"
 msgid "Roman numbers"
 msgstr "루마니아"
 
-#: activities/reversecount/ActivityConfig.qml:25
-#: activities/smallnumbers2/ActivityConfig.qml:23
+#: activities/reversecount/ActivityConfig.qml:26
+#: activities/smallnumbers2/ActivityConfig.qml:24
 #: activities/traffic/ActivityConfig.qml:23
 #, fuzzy
 #| msgctxt "Traffic|"
@@ -23175,8 +23175,8 @@ msgctxt "ActivityConfig|"
 msgid "Images"
 msgstr "그림"
 
-#: activities/reversecount/ActivityConfig.qml:34
-#: activities/smallnumbers2/ActivityConfig.qml:37
+#: activities/reversecount/ActivityConfig.qml:35
+#: activities/smallnumbers2/ActivityConfig.qml:38
 #, fuzzy
 #| msgctxt "Traffic|"
 #| msgid "Select your mode"
@@ -23236,6 +23236,35 @@ msgstr ""
 msgctxt "Data|"
 msgid "Numbers between %1 and %2."
 msgstr ""
+
+#: activities/reversecount/Reversecount.qml:81
+msgctxt "Reversecount|"
+msgid "Dots"
+msgstr ""
+
+#: activities/reversecount/Reversecount.qml:82
+#, fuzzy
+#| msgctxt "board6_0|"
+#| msgid "Romania"
+msgctxt "Reversecount|"
+msgid "Arabic numbers"
+msgstr "루마니아"
+
+#: activities/reversecount/Reversecount.qml:83
+#, fuzzy
+#| msgctxt "board6_0|"
+#| msgid "Romania"
+msgctxt "Reversecount|"
+msgid "Roman numbers"
+msgstr "루마니아"
+
+#: activities/reversecount/Reversecount.qml:84
+#, fuzzy
+#| msgctxt "Traffic|"
+#| msgid "Images"
+msgctxt "Reversecount|"
+msgid "Images"
+msgstr "그림"
 
 #. Activity title
 #: activities/roman_numerals/ActivityInfo.qml:15
@@ -24811,6 +24840,35 @@ msgstr ""
 msgctxt "Data|"
 msgid "Type the number on the domino, from 0 to 9."
 msgstr ""
+
+#: activities/smallnumbers2/Smallnumbers2.qml:23
+msgctxt "Smallnumbers2|"
+msgid "Dots"
+msgstr ""
+
+#: activities/smallnumbers2/Smallnumbers2.qml:24
+#, fuzzy
+#| msgctxt "board6_0|"
+#| msgid "Romania"
+msgctxt "Smallnumbers2|"
+msgid "Arabic numbers"
+msgstr "루마니아"
+
+#: activities/smallnumbers2/Smallnumbers2.qml:25
+#, fuzzy
+#| msgctxt "board6_0|"
+#| msgid "Romania"
+msgctxt "Smallnumbers2|"
+msgid "Roman numbers"
+msgstr "루마니아"
+
+#: activities/smallnumbers2/Smallnumbers2.qml:26
+#, fuzzy
+#| msgctxt "Traffic|"
+#| msgid "Images"
+msgctxt "Smallnumbers2|"
+msgid "Images"
+msgstr "그림"
 
 #: activities/solar_system/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"

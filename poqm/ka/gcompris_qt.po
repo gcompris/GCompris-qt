@@ -850,7 +850,7 @@ msgstr "იპოვეთ მუქი იისფერი პეპელა
 #: activities/readingh/ActivityConfig.qml:43
 #: activities/readingv/ActivityConfig.qml:43
 #: activities/smallnumbers/ActivityConfig.qml:29
-#: activities/smallnumbers2/ActivityConfig.qml:42
+#: activities/smallnumbers2/ActivityConfig.qml:43
 #: activities/wordsgame/ActivityConfig.qml:49
 msgctxt "ActivityConfig|"
 msgid "Speed"
@@ -16666,8 +16666,8 @@ msgid "Arabic numerals"
 msgstr "არაბული ციფრები"
 
 #: activities/learn_digits/ActivityConfig.qml:25
-#: activities/reversecount/ActivityConfig.qml:22
-#: activities/smallnumbers2/ActivityConfig.qml:20
+#: activities/reversecount/ActivityConfig.qml:23
+#: activities/smallnumbers2/ActivityConfig.qml:21
 msgctxt "ActivityConfig|"
 msgid "Dots"
 msgstr "წერტილები"
@@ -22579,27 +22579,27 @@ msgid ""
 "regional blackout."
 msgstr ""
 
-#: activities/reversecount/ActivityConfig.qml:23
-#: activities/smallnumbers2/ActivityConfig.qml:21
+#: activities/reversecount/ActivityConfig.qml:24
+#: activities/smallnumbers2/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Arabic numbers"
 msgstr "არაბული რიცხვები"
 
-#: activities/reversecount/ActivityConfig.qml:24
-#: activities/smallnumbers2/ActivityConfig.qml:22
+#: activities/reversecount/ActivityConfig.qml:25
+#: activities/smallnumbers2/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Roman numbers"
 msgstr "რომაული რიცხვები"
 
-#: activities/reversecount/ActivityConfig.qml:25
-#: activities/smallnumbers2/ActivityConfig.qml:23
+#: activities/reversecount/ActivityConfig.qml:26
+#: activities/smallnumbers2/ActivityConfig.qml:24
 #: activities/traffic/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Images"
 msgstr "ასლები"
 
-#: activities/reversecount/ActivityConfig.qml:34
-#: activities/smallnumbers2/ActivityConfig.qml:37
+#: activities/reversecount/ActivityConfig.qml:35
+#: activities/smallnumbers2/ActivityConfig.qml:38
 msgctxt "ActivityConfig|"
 msgid "Select Domino Representation"
 msgstr "აირჩიეთ დომინოს გარეგნობა"
@@ -22654,6 +22654,38 @@ msgstr ""
 msgctxt "Data|"
 msgid "Numbers between %1 and %2."
 msgstr "რიცხვები შუალედიდან %1-%2."
+
+#: activities/reversecount/Reversecount.qml:81
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Dots"
+msgctxt "Reversecount|"
+msgid "Dots"
+msgstr "წერტილები"
+
+#: activities/reversecount/Reversecount.qml:82
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Arabic numbers"
+msgctxt "Reversecount|"
+msgid "Arabic numbers"
+msgstr "არაბული რიცხვები"
+
+#: activities/reversecount/Reversecount.qml:83
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Roman numbers"
+msgctxt "Reversecount|"
+msgid "Roman numbers"
+msgstr "რომაული რიცხვები"
+
+#: activities/reversecount/Reversecount.qml:84
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Images"
+msgctxt "Reversecount|"
+msgid "Images"
+msgstr "ასლები"
 
 #. Activity title
 #: activities/roman_numerals/ActivityInfo.qml:15
@@ -24187,6 +24219,38 @@ msgstr "აკრიფეთ რიცხვი დომინოზე, 1-დ
 msgctxt "Data|"
 msgid "Type the number on the domino, from 0 to 9."
 msgstr "აკრიფეთ რიცხვი დომინოზე, 0-დან 9-მდე."
+
+#: activities/smallnumbers2/Smallnumbers2.qml:23
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Dots"
+msgctxt "Smallnumbers2|"
+msgid "Dots"
+msgstr "წერტილები"
+
+#: activities/smallnumbers2/Smallnumbers2.qml:24
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Arabic numbers"
+msgctxt "Smallnumbers2|"
+msgid "Arabic numbers"
+msgstr "არაბული რიცხვები"
+
+#: activities/smallnumbers2/Smallnumbers2.qml:25
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Roman numbers"
+msgctxt "Smallnumbers2|"
+msgid "Roman numbers"
+msgstr "რომაული რიცხვები"
+
+#: activities/smallnumbers2/Smallnumbers2.qml:26
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Images"
+msgctxt "Smallnumbers2|"
+msgid "Images"
+msgstr "ასლები"
 
 #: activities/solar_system/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"

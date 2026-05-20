@@ -854,7 +854,7 @@ msgstr "Βρες τη σκούρα μωβ πεταλούδα"
 #: activities/readingh/ActivityConfig.qml:43
 #: activities/readingv/ActivityConfig.qml:43
 #: activities/smallnumbers/ActivityConfig.qml:29
-#: activities/smallnumbers2/ActivityConfig.qml:42
+#: activities/smallnumbers2/ActivityConfig.qml:43
 #: activities/wordsgame/ActivityConfig.qml:49
 msgctxt "ActivityConfig|"
 msgid "Speed"
@@ -18115,8 +18115,8 @@ msgid "Arabic numerals"
 msgstr "Αραβικοί αριθμοί"
 
 #: activities/learn_digits/ActivityConfig.qml:25
-#: activities/reversecount/ActivityConfig.qml:22
-#: activities/smallnumbers2/ActivityConfig.qml:20
+#: activities/reversecount/ActivityConfig.qml:23
+#: activities/smallnumbers2/ActivityConfig.qml:21
 msgctxt "ActivityConfig|"
 msgid "Dots"
 msgstr "Τελείες"
@@ -24529,27 +24529,27 @@ msgstr ""
 "ηλεκτρικής ενέργειας μπορεί να καταρρεύσει, με αποτέλεσμα τις διακοπές "
 "ρεύματος, που είναι γνωστές και ως blackout."
 
-#: activities/reversecount/ActivityConfig.qml:23
-#: activities/smallnumbers2/ActivityConfig.qml:21
+#: activities/reversecount/ActivityConfig.qml:24
+#: activities/smallnumbers2/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Arabic numbers"
 msgstr "Αραβικοί αριθμοί"
 
-#: activities/reversecount/ActivityConfig.qml:24
-#: activities/smallnumbers2/ActivityConfig.qml:22
+#: activities/reversecount/ActivityConfig.qml:25
+#: activities/smallnumbers2/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Roman numbers"
 msgstr "Ρωμαϊκή αρίθμηση"
 
-#: activities/reversecount/ActivityConfig.qml:25
-#: activities/smallnumbers2/ActivityConfig.qml:23
+#: activities/reversecount/ActivityConfig.qml:26
+#: activities/smallnumbers2/ActivityConfig.qml:24
 #: activities/traffic/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Images"
 msgstr "Εικόνες"
 
-#: activities/reversecount/ActivityConfig.qml:34
-#: activities/smallnumbers2/ActivityConfig.qml:37
+#: activities/reversecount/ActivityConfig.qml:35
+#: activities/smallnumbers2/ActivityConfig.qml:38
 msgctxt "ActivityConfig|"
 msgid "Select Domino Representation"
 msgstr "Επιλογή αναπαράστασης ντόμινο"
@@ -24606,6 +24606,38 @@ msgstr ""
 msgctxt "Data|"
 msgid "Numbers between %1 and %2."
 msgstr "Αριθμοί μεταξύ %1 και %2."
+
+#: activities/reversecount/Reversecount.qml:81
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Dots"
+msgctxt "Reversecount|"
+msgid "Dots"
+msgstr "Τελείες"
+
+#: activities/reversecount/Reversecount.qml:82
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Arabic numbers"
+msgctxt "Reversecount|"
+msgid "Arabic numbers"
+msgstr "Αραβικοί αριθμοί"
+
+#: activities/reversecount/Reversecount.qml:83
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Roman numbers"
+msgctxt "Reversecount|"
+msgid "Roman numbers"
+msgstr "Ρωμαϊκή αρίθμηση"
+
+#: activities/reversecount/Reversecount.qml:84
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Images"
+msgctxt "Reversecount|"
+msgid "Images"
+msgstr "Εικόνες"
 
 #. Activity title
 #: activities/roman_numerals/ActivityInfo.qml:15
@@ -26317,6 +26349,38 @@ msgstr "Πληκτρολόγησε τον αριθμό του ντόμινο, α
 msgctxt "Data|"
 msgid "Type the number on the domino, from 0 to 9."
 msgstr "Πληκτρολόγησε τον αριθμό του ντόμινο, από το 0 ως το 9."
+
+#: activities/smallnumbers2/Smallnumbers2.qml:23
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Dots"
+msgctxt "Smallnumbers2|"
+msgid "Dots"
+msgstr "Τελείες"
+
+#: activities/smallnumbers2/Smallnumbers2.qml:24
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Arabic numbers"
+msgctxt "Smallnumbers2|"
+msgid "Arabic numbers"
+msgstr "Αραβικοί αριθμοί"
+
+#: activities/smallnumbers2/Smallnumbers2.qml:25
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Roman numbers"
+msgctxt "Smallnumbers2|"
+msgid "Roman numbers"
+msgstr "Ρωμαϊκή αρίθμηση"
+
+#: activities/smallnumbers2/Smallnumbers2.qml:26
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Images"
+msgctxt "Smallnumbers2|"
+msgid "Images"
+msgstr "Εικόνες"
 
 #: activities/solar_system/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
