@@ -26,7 +26,7 @@ DatasetEditorBase {
 
     qsTr('"Sublevels" defines the amount of numbers which will appear in the level. Numbers will be randomly selected from the "Numbers" list.') + ("</li></ul><ul><li>") +
 
-    qsTr('"Numbers" must contain a list of integer numbers between 0 and 9, and it must contain at least two numbers. You can enter several times the same number to increase the probability that it will be appear.') + ("</li></ul><ul><li>") +
+    qsTr('"Numbers" must contain a list of integer numbers between 0 and 9, and it must contain at least two numbers. You can enter the same number several times to increase the probability that it will appear.') + ("</li></ul><ul><li>") +
 
     qsTr('You can enter an optional instruction sentence in the "Instruction" field, or leave it empty.') + ("</li></ul>")
 
