@@ -286,7 +286,7 @@ namespace controllers {
                 count++;
             }
         }
-        sendNetLog(QString("Login list sended to %1 users").arg(count));
+        sendNetLog(QString("Login list sent to %1 users").arg(count));
     }
 
     void NetworkController::sendDatasetToUsers(const QJsonValue &dataset_content, const QList<int> &selectedUsersId)
