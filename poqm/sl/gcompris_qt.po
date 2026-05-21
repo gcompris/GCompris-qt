@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-04-29 09:43+0200\n"
+"PO-Revision-Date: 2026-05-20 08:46+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -23936,33 +23936,21 @@ msgid "Numbers between %1 and %2."
 msgstr "Števila med %1 in %2."
 
 #: activities/reversecount/Reversecount.qml:81
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "Reversecount|"
 msgid "Dots"
 msgstr "Pike"
 
 #: activities/reversecount/Reversecount.qml:82
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Arabic numbers"
 msgctxt "Reversecount|"
 msgid "Arabic numbers"
 msgstr "Arabske številke"
 
 #: activities/reversecount/Reversecount.qml:83
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Roman numbers"
 msgctxt "Reversecount|"
 msgid "Roman numbers"
 msgstr "Rimske številke"
 
 #: activities/reversecount/Reversecount.qml:84
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Images"
 msgctxt "Reversecount|"
 msgid "Images"
 msgstr "Slike"
@@ -25658,33 +25646,21 @@ msgid "Type the number on the domino, from 0 to 9."
 msgstr "Vnesite število na domini od 1 do 9."
 
 #: activities/smallnumbers2/Smallnumbers2.qml:23
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "Smallnumbers2|"
 msgid "Dots"
 msgstr "Pike"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:24
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Arabic numbers"
 msgctxt "Smallnumbers2|"
 msgid "Arabic numbers"
 msgstr "Arabske številke"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:25
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Roman numbers"
 msgctxt "Smallnumbers2|"
 msgid "Roman numbers"
 msgstr "Rimske številke"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:26
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Images"
 msgctxt "Smallnumbers2|"
 msgid "Images"
 msgstr "Slike"

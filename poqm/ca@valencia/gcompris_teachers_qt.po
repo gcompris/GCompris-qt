@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
-"PO-Revision-Date: 2026-05-02 13:54+0200\n"
+"PO-Revision-Date: 2026-05-20 10:38+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -189,7 +189,7 @@ msgstr ""
 "Quan se selecciona «Operands aleatoris», si el «Límit del valor del "
 "resultat» és superior a 0, definix el màxim permés del resultat de cada "
 "operació. Ha de ser prou gran per a generar preguntes suficients per al "
-"número donat de subnivells utilitzant els valors mínims i màxims d'operand."
+"nombre donat de subnivells utilitzant els valors mínims i màxims d'operand."
 
 #: server/activities/algebra_by/AlgebraEditor.qml:29
 msgctxt "AlgebraEditor|"
@@ -733,25 +733,22 @@ msgstr "Tipus de gràfic"
 #: server/activities/gletters/GlettersDataDisplay.qml:36
 msgctxt "GlettersDataDisplay|"
 msgid "Domino mode:"
-msgstr ""
+msgstr "Mode del dòmino:"
 
 #: server/activities/gletters/GlettersDataDisplay.qml:66
 msgctxt "GlettersDataDisplay|"
 msgid "Visible items:"
-msgstr ""
+msgstr "Elements visibles:"
 
 #: server/activities/gletters/GlettersDataDisplay.qml:95
-#, fuzzy
-#| msgctxt "TargetDataDisplay|"
-#| msgid "Expected answer:"
 msgctxt "GlettersDataDisplay|"
 msgid "Typed answer:"
-msgstr "Resposta esperada:"
+msgstr "Resposta teclejada:"
 
 #: server/activities/gletters/GlettersDataDisplay.qml:121
 msgctxt "GlettersDataDisplay|"
 msgid "Missed item:"
-msgstr ""
+msgstr "Element que falta:"
 
 #. %1 is number of hints displayed. Example: "Hints: 1"
 #: server/activities/guess24/Guess24DataDisplay.qml:79
@@ -899,7 +896,7 @@ msgstr "Mode"
 #: server/activities/learn_digits/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
 msgid "\"Numbers\" must contain a list of numbers between 0 and 9."
-msgstr "«Nombres» ha de contindre una llista de nombres entre 0 i 9."
+msgstr "«Números» ha de contindre una llista de números entre 0 i 9."
 
 #: server/activities/learn_digits/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
@@ -943,7 +940,7 @@ msgid ""
 "\"Numbers\" must only contain integer numbers between 0 and 9, and must not "
 "be empty."
 msgstr ""
-"«Nombres» només ha de contindre nombres enters entre 0 i 9, i no ha d'estar "
+"«Números» només ha de contindre nombres enters entre 0 i 9, i no ha d'estar "
 "buit."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:103
@@ -967,7 +964,7 @@ msgstr ""
 #: server/activities/learn_digits/LearnDigitsEditor.qml:161
 msgctxt "LearnDigitsEditor|"
 msgid "Numbers"
-msgstr "Nombres"
+msgstr "Números"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:163
 msgctxt "LearnDigitsEditor|"
@@ -1371,25 +1368,19 @@ msgstr "Mode"
 #: server/activities/reversecount/ReversecountDataDisplay.qml:38
 msgctxt "ReversecountDataDisplay|"
 msgid "Domino mode:"
-msgstr ""
+msgstr "Mode del dòmino:"
 
 #: server/activities/reversecount/ReversecountDataDisplay.qml:67
-#, fuzzy
-#| msgctxt "MultipleChoiceDataDisplay|"
-#| msgid "Question:"
 msgctxt "ReversecountDataDisplay|"
 msgid "Tux position:"
-msgstr "Pregunta:"
+msgstr "Posició del Tux:"
 
 #: server/activities/reversecount/ReversecountDataDisplay.qml:92
 msgctxt "ReversecountDataDisplay|"
 msgid "Interval:"
-msgstr ""
+msgstr "Interval:"
 
 #: server/activities/reversecount/ReversecountDataDisplay.qml:119
-#, fuzzy
-#| msgctxt "AdjacentNumbersDataDisplay|"
-#| msgid "Answer:"
 msgctxt "ReversecountDataDisplay|"
 msgid "Answer:"
 msgstr "Resposta:"
@@ -1398,12 +1389,9 @@ msgstr "Resposta:"
 #, qt-format
 msgctxt "ReversecountDataDisplay|"
 msgid "(%1 + %2) = %3"
-msgstr ""
+msgstr "(%1 + %2) = %3"
 
 #: server/activities/reversecount/ReversecountEditor.qml:25
-#, fuzzy
-#| msgctxt "ActivityEditor|"
-#| msgid "Rules to create a valid dataset:"
 msgctxt "ReversecountEditor|"
 msgid "Rules to create a valid dataset:"
 msgstr "Regles per a crear un conjunt de dades vàlid:"
@@ -1414,12 +1402,15 @@ msgid ""
 "\"Maximum number\" is the maximum number which can be entered on each side "
 "of the domino."
 msgstr ""
+"«Nombre màxim» és el nombre màxim que es pot introduir a cada costat del "
+"dòmino."
 
 #: server/activities/reversecount/ReversecountEditor.qml:29
 msgctxt "ReversecountEditor|"
 msgid ""
 "The maximum interval is the smaller of 15 and 2 × \"Domino maximum number\"."
 msgstr ""
+"L'interval màxim és el més xicotet de 15 i 2 × «Nombre màxim del dòmino»."
 
 #: server/activities/reversecount/ReversecountEditor.qml:31
 msgctxt "ReversecountEditor|"
@@ -1429,62 +1420,49 @@ msgid ""
 "enter several times the same number to increase the probability that it will "
 "be selected."
 msgstr ""
+"Els «Intervals» han de contindre nombres enters entre 1 i l'interval màxim. "
+"Estos nombres se seleccionaran aleatòriament per a cada pregunta. Pots "
+"introduir diverses vegades el mateix nombre per a augmentar la probabilitat "
+"que se seleccione."
 
 #: server/activities/reversecount/ReversecountEditor.qml:35
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Maximum start number"
 msgctxt "ReversecountEditor|"
 msgid "Maximum number"
-msgstr "Número d'inici màxim"
+msgstr "Nombre màxim"
 
 #: server/activities/reversecount/ReversecountEditor.qml:36
 msgctxt "ReversecountEditor|"
 msgid "Intervals"
-msgstr ""
+msgstr "Intervals"
 
 #: server/activities/reversecount/ReversecountEditor.qml:37
-#, fuzzy
-#| msgctxt "VerticalEditor|"
-#| msgid "Number of lines"
 msgctxt "ReversecountEditor|"
 msgid "Number of fishes"
-msgstr "Nombre de línies"
+msgstr "Nombre de peixos"
 
 #: server/activities/reversecount/ReversecountEditor.qml:86
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "ReversecountEditor|"
 msgid "Dataset is empty."
 msgstr "El conjunt de dades està buit."
 
 #: server/activities/reversecount/ReversecountEditor.qml:99
-#, fuzzy, qt-format
-#| msgctxt "TargetEditor|"
-#| msgid "\"Target values\" for level %1 must not be empty."
+#, qt-format
 msgctxt "ReversecountEditor|"
 msgid "\"Intervals\" for level %1 must not be empty."
-msgstr "Els «Valors de la diana» del nivell %1 no han d'estar buits."
+msgstr "Els «Intervals» del nivell %1 no han d'estar buits."
 
 #: server/activities/reversecount/ReversecountEditor.qml:112
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid ""
-#| "These values are invalid for level %1: %2. The values must be integer "
-#| "numbers between 0 and %3."
+#, qt-format
 msgctxt "ReversecountEditor|"
 msgid ""
 "These intervals are invalid for level %1: %2. Read the instructions for more "
 "details."
 msgstr ""
-"Estos valors no són vàlids per al nivell %1: %2. Els valors han de ser "
-"nombres enters entre 0 i %3."
+"Estos intervals no són vàlids per al nivell %1: %2. Llegiu les instruccions "
+"per a més detalls."
 
 #: server/activities/reversecount/ReversecountEditor.qml:116
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "ReversecountEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Cal corregir els errors següents:<ul>%1</ul>"
@@ -1681,9 +1659,6 @@ msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Cal corregir els errors següents:<ul>%1</ul>"
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:25
-#, fuzzy
-#| msgctxt "ActivityEditor|"
-#| msgid "Rules to create a valid dataset:"
 msgctxt "SmallnumbersEditor|"
 msgid "Rules to create a valid dataset:"
 msgstr "Regles per a crear un conjunt de dades vàlid:"
@@ -1694,14 +1669,25 @@ msgid ""
 "\"Sublevels\" defines the amount of numbers which will appear in the level. "
 "Numbers will be randomly selected from the \"Numbers\" list."
 msgstr ""
+"«Subnivells» definix la quantitat de números que apareixeran al nivell. Els "
+"números se seleccionaran aleatòriament de la llista «Números»."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:29
+#, fuzzy
+#| msgctxt "SmallnumbersEditor|"
+#| msgid ""
+#| "\"Numbers\" must contain a list of integer numbers between 0 and 9, and "
+#| "it must contain at least two numbers. You can enter several times the "
+#| "same number to increase the probability that it will be appear."
 msgctxt "SmallnumbersEditor|"
 msgid ""
 "\"Numbers\" must contain a list of integer numbers between 0 and 9, and it "
-"must contain at least two numbers. You can enter several times the same "
-"number to increase the probability that it will be appear."
+"must contain at least two numbers. You can enter the same number several "
+"times to increase the probability that it will appear."
 msgstr ""
+"«Números» ha de contindre una llista de nombres enters entre 0 i 9, i ha de "
+"contindre almenys dos números. Pots introduir diverses vegades el mateix "
+"número per a augmentar la probabilitat que aparega."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:31
 msgctxt "SmallnumbersEditor|"
@@ -1709,61 +1695,44 @@ msgid ""
 "You can enter an optional instruction sentence in the \"Instruction\" field, "
 "or leave it empty."
 msgstr ""
+"Pots introduir una frase d'instrucció opcional al camp «Instrucció», o "
+"deixar-ho buit."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:36
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "SmallnumbersEditor|"
 msgid "Sublevels"
 msgstr "Subnivells"
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:37
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Numbers"
 msgctxt "SmallnumbersEditor|"
 msgid "Numbers"
-msgstr "Nombres"
+msgstr "Números"
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:38
-#, fuzzy
-#| msgctxt "FractionsCreateEditor|"
-#| msgid "Instruction"
 msgctxt "SmallnumbersEditor|"
 msgid "Instruction"
 msgstr "Instrucció"
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:79
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "SmallnumbersEditor|"
 msgid "Dataset is empty."
 msgstr "El conjunt de dades està buit."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:92
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "\"Numbers to find\" for level %1 must not be empty."
+#, qt-format
 msgctxt "SmallnumbersEditor|"
 msgid "\"Numbers\" for level %1 must not be empty."
-msgstr "Els «Nombres a trobar» del nivell %1 no han d'estar buits."
+msgstr "Els «Números» del nivell %1 no han d'estar buits."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:95
-#, fuzzy, qt-format
-#| msgctxt "TargetEditor|"
-#| msgid "\"Target values\" for level %1 contains invalid entries."
+#, qt-format
 msgctxt "SmallnumbersEditor|"
 msgid "\"Numbers\" for level %1 must contain at least two entries."
-msgstr "Els «Valors de la diana» del nivell %1 conté entrades no vàlides."
+msgstr ""
+"Els «Números» del nivell %1 cal que continguen dues entrades com a mínim."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:114
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid ""
-#| "These values are invalid for level %1: %2. The values must be integer "
-#| "numbers between 0 and %3."
+#, qt-format
 msgctxt "SmallnumbersEditor|"
 msgid ""
 "These values are invalid for level %1: %2. The values must be integer "
@@ -1773,9 +1742,7 @@ msgstr ""
 "nombres enters entre 0 i %3."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:118
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "SmallnumbersEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Cal corregir els errors següents:<ul>%1</ul>"

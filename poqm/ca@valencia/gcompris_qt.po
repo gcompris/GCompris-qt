@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2026-04-29 10:14+0200\n"
+"PO-Revision-Date: 2026-05-20 10:06+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -8294,8 +8294,8 @@ msgid ""
 msgstr ""
 "Petra és una ciutat històrica i arqueològica de la província jordana del sud "
 "de Ma'an que és famosa per la seua arquitectura i sistema de conducció "
-"d'aigua tallat en la roca. Fundada possiblement al 312 aC com la capital "
-"àrab dels nabateus, és un símbol de Jordània, així com la seua atracció "
+"d'aigua tallats en la roca. Fundada possiblement al 312 aC com la capital "
+"dels nabateus àrabs, és un símbol de Jordània, així com la seua atracció "
 "turística més visitada."
 
 # Nota: <http://ca.wikipedia.org/wiki/Taj_Mahal>
@@ -18650,7 +18650,7 @@ msgstr ""
 #: activities/louis-braille/louis_braille_data.js:12
 msgctxt "louis_braille_data|"
 msgid "Born on January 4th 1809 in Coupvray near Paris in France."
-msgstr "Va nàixer el 4 gener de 1809 a Coupvray, prop de París a França."
+msgstr "Va nàixer el 4 gener de 1809 en Coupvray, prop de París en França."
 
 #: activities/louis-braille/louis_braille_data.js:17
 msgctxt "louis_braille_data|"
@@ -24606,33 +24606,21 @@ msgid "Numbers between %1 and %2."
 msgstr "Nombres entre %1 i %2."
 
 #: activities/reversecount/Reversecount.qml:81
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "Reversecount|"
 msgid "Dots"
 msgstr "Punts"
 
 #: activities/reversecount/Reversecount.qml:82
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Arabic numbers"
 msgctxt "Reversecount|"
 msgid "Arabic numbers"
 msgstr "Nombres aràbics"
 
 #: activities/reversecount/Reversecount.qml:83
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Roman numbers"
 msgctxt "Reversecount|"
 msgid "Roman numbers"
 msgstr "Nombres romans"
 
 #: activities/reversecount/Reversecount.qml:84
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Images"
 msgctxt "Reversecount|"
 msgid "Images"
 msgstr "Imatges"
@@ -26340,33 +26328,21 @@ msgid "Type the number on the domino, from 0 to 9."
 msgstr "Escriu el nombre a la fitxa de dominó, des del 0 fins al 9."
 
 #: activities/smallnumbers2/Smallnumbers2.qml:23
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "Smallnumbers2|"
 msgid "Dots"
 msgstr "Punts"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:24
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Arabic numbers"
 msgctxt "Smallnumbers2|"
 msgid "Arabic numbers"
 msgstr "Nombres aràbics"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:25
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Roman numbers"
 msgctxt "Smallnumbers2|"
 msgid "Roman numbers"
 msgstr "Nombres romans"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:26
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Images"
 msgctxt "Smallnumbers2|"
 msgid "Images"
 msgstr "Imatges"

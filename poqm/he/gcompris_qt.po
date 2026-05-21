@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2026-05-14 20:57+0300\n"
+"PO-Revision-Date: 2026-05-20 12:55+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -23392,36 +23392,24 @@ msgid "Numbers between %1 and %2."
 msgstr "מספרים בין %1 ו %2."
 
 #: activities/reversecount/Reversecount.qml:81
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "Reversecount|"
 msgid "Dots"
 msgstr "נקודות"
 
 #: activities/reversecount/Reversecount.qml:82
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Arabic numbers"
 msgctxt "Reversecount|"
 msgid "Arabic numbers"
-msgstr "מספרים בערבית"
+msgstr "ספרות ערביות"
 
 #: activities/reversecount/Reversecount.qml:83
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Roman numbers"
 msgctxt "Reversecount|"
 msgid "Roman numbers"
 msgstr "ספרות רומיות"
 
 #: activities/reversecount/Reversecount.qml:84
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Images"
 msgctxt "Reversecount|"
 msgid "Images"
-msgstr "תמונת"
+msgstr "תמונות"
 
 #. Activity title
 #: activities/roman_numerals/ActivityInfo.qml:15
@@ -25070,36 +25058,24 @@ msgid "Type the number on the domino, from 0 to 9."
 msgstr "להקליד את המספר על הדומינו, 0 עד 9."
 
 #: activities/smallnumbers2/Smallnumbers2.qml:23
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "Smallnumbers2|"
 msgid "Dots"
 msgstr "נקודות"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:24
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Arabic numbers"
 msgctxt "Smallnumbers2|"
 msgid "Arabic numbers"
-msgstr "מספרים בערבית"
+msgstr "ספרות ערביות"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:25
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Roman numbers"
 msgctxt "Smallnumbers2|"
 msgid "Roman numbers"
 msgstr "ספרות רומיות"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:26
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Images"
 msgctxt "Smallnumbers2|"
 msgid "Images"
-msgstr "תמונת"
+msgstr "תמונות"
 
 #: activities/solar_system/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"

@@ -1748,8 +1748,8 @@ msgstr ""
 msgctxt "SmallnumbersEditor|"
 msgid ""
 "\"Numbers\" must contain a list of integer numbers between 0 and 9, and it "
-"must contain at least two numbers. You can enter several times the same "
-"number to increase the probability that it will be appear."
+"must contain at least two numbers. You can enter the same number several "
+"times to increase the probability that it will appear."
 msgstr ""
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:31

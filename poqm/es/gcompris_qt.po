@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-22 23:51+0100\n"
-"PO-Revision-Date: 2026-04-29 12:08+0100\n"
+"PO-Revision-Date: 2026-05-20 20:04+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: es\n"
-"X-Generator: Lokalize 26.04.0\n"
+"X-Generator: Lokalize 26.04.1\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -24273,33 +24273,21 @@ msgid "Numbers between %1 and %2."
 msgstr "Números entre %1 y %2."
 
 #: activities/reversecount/Reversecount.qml:81
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "Reversecount|"
 msgid "Dots"
 msgstr "Puntos"
 
 #: activities/reversecount/Reversecount.qml:82
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Arabic numbers"
 msgctxt "Reversecount|"
 msgid "Arabic numbers"
 msgstr "Números arábigos"
 
 #: activities/reversecount/Reversecount.qml:83
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Roman numbers"
 msgctxt "Reversecount|"
 msgid "Roman numbers"
 msgstr "Números romanos"
 
 #: activities/reversecount/Reversecount.qml:84
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Images"
 msgctxt "Reversecount|"
 msgid "Images"
 msgstr "Imágenes"
@@ -26003,33 +25991,21 @@ msgid "Type the number on the domino, from 0 to 9."
 msgstr "Escribe el número de la ficha de dominó, de 0 a 9."
 
 #: activities/smallnumbers2/Smallnumbers2.qml:23
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "Smallnumbers2|"
 msgid "Dots"
 msgstr "Puntos"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:24
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Arabic numbers"
 msgctxt "Smallnumbers2|"
 msgid "Arabic numbers"
 msgstr "Números arábigos"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:25
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Roman numbers"
 msgctxt "Smallnumbers2|"
 msgid "Roman numbers"
 msgstr "Números romanos"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:26
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Images"
 msgctxt "Smallnumbers2|"
 msgid "Images"
 msgstr "Imágenes"

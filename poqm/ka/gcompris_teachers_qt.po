@@ -728,25 +728,22 @@ msgstr "დიაგრამის ტიპი"
 #: server/activities/gletters/GlettersDataDisplay.qml:36
 msgctxt "GlettersDataDisplay|"
 msgid "Domino mode:"
-msgstr ""
+msgstr "დომინოს რეჟიმი:"
 
 #: server/activities/gletters/GlettersDataDisplay.qml:66
 msgctxt "GlettersDataDisplay|"
 msgid "Visible items:"
-msgstr ""
+msgstr "ხილული ელემენტები:"
 
 #: server/activities/gletters/GlettersDataDisplay.qml:95
-#, fuzzy
-#| msgctxt "TargetDataDisplay|"
-#| msgid "Expected answer:"
 msgctxt "GlettersDataDisplay|"
 msgid "Typed answer:"
-msgstr "მოსალოდნელი პასუხი:"
+msgstr "აკრეფილი პასუხი:"
 
 #: server/activities/gletters/GlettersDataDisplay.qml:121
 msgctxt "GlettersDataDisplay|"
 msgid "Missed item:"
-msgstr ""
+msgstr "გამოტოვებული ელემენტი:"
 
 #. %1 is number of hints displayed. Example: "Hints: 1"
 #: server/activities/guess24/Guess24DataDisplay.qml:79
@@ -1364,25 +1361,19 @@ msgstr "რეჟიმი"
 #: server/activities/reversecount/ReversecountDataDisplay.qml:38
 msgctxt "ReversecountDataDisplay|"
 msgid "Domino mode:"
-msgstr ""
+msgstr "დომინოს რეჟიმი:"
 
 #: server/activities/reversecount/ReversecountDataDisplay.qml:67
-#, fuzzy
-#| msgctxt "MultipleChoiceDataDisplay|"
-#| msgid "Question:"
 msgctxt "ReversecountDataDisplay|"
 msgid "Tux position:"
-msgstr "კითხვა:"
+msgstr "ტუქსის პოზიცია:"
 
 #: server/activities/reversecount/ReversecountDataDisplay.qml:92
 msgctxt "ReversecountDataDisplay|"
 msgid "Interval:"
-msgstr ""
+msgstr "ინტერვალი:"
 
 #: server/activities/reversecount/ReversecountDataDisplay.qml:119
-#, fuzzy
-#| msgctxt "AdjacentNumbersDataDisplay|"
-#| msgid "Answer:"
 msgctxt "ReversecountDataDisplay|"
 msgid "Answer:"
 msgstr "პასუხი:"
@@ -1391,12 +1382,9 @@ msgstr "პასუხი:"
 #, qt-format
 msgctxt "ReversecountDataDisplay|"
 msgid "(%1 + %2) = %3"
-msgstr ""
+msgstr "(%1 + %2) = %3"
 
 #: server/activities/reversecount/ReversecountEditor.qml:25
-#, fuzzy
-#| msgctxt "ActivityEditor|"
-#| msgid "Rules to create a valid dataset:"
 msgctxt "ReversecountEditor|"
 msgid "Rules to create a valid dataset:"
 msgstr "წესები სწორი მონაცემთა ნაკრების შესაქმნელად:"
@@ -1407,12 +1395,16 @@ msgid ""
 "\"Maximum number\" is the maximum number which can be entered on each side "
 "of the domino."
 msgstr ""
+"\"მაქსიმალური რიცხვი\" არის მაქსიმალური რიცხვი, რომლის შეყვანა შესაძლებელია "
+"დომინოს თითოეულ მხარეს."
 
 #: server/activities/reversecount/ReversecountEditor.qml:29
 msgctxt "ReversecountEditor|"
 msgid ""
 "The maximum interval is the smaller of 15 and 2 × \"Domino maximum number\"."
 msgstr ""
+"მაქსიმალური ინტერვალი არის 15-ზე ნაკლები და 2 × \"დომინოს მაქსიმალური რიცხვი"
+"\"."
 
 #: server/activities/reversecount/ReversecountEditor.qml:31
 msgctxt "ReversecountEditor|"
@@ -1422,62 +1414,49 @@ msgid ""
 "enter several times the same number to increase the probability that it will "
 "be selected."
 msgstr ""
+"\"ინტერვალები\" უნდა შეიცავდეს მთელ რიცხვებს 1-სა მაქსიმალურ ინტერვალს "
+"შორის. ეს რიცხვები შეირჩევა შემთხვევით თითოეული კითხვისთვის. შეგიძლიათ, "
+"შეიყვანოთ რამდენჯერმე ერთი და იგივე რიცხვი, რათა გაზარდოთ მისი შერჩევის "
+"ალბათობა."
 
 #: server/activities/reversecount/ReversecountEditor.qml:35
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Maximum start number"
 msgctxt "ReversecountEditor|"
 msgid "Maximum number"
-msgstr "მაქსიმალური საწყისი რიცხვი"
+msgstr "მაქსიმალური რიცხვი"
 
 #: server/activities/reversecount/ReversecountEditor.qml:36
 msgctxt "ReversecountEditor|"
 msgid "Intervals"
-msgstr ""
+msgstr "ინტერვალები"
 
 #: server/activities/reversecount/ReversecountEditor.qml:37
-#, fuzzy
-#| msgctxt "VerticalEditor|"
-#| msgid "Number of lines"
 msgctxt "ReversecountEditor|"
 msgid "Number of fishes"
-msgstr "ხაზების რაოდენობა"
+msgstr "თევზების რაოდენობა"
 
 #: server/activities/reversecount/ReversecountEditor.qml:86
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "ReversecountEditor|"
 msgid "Dataset is empty."
 msgstr "მონაცემთა ნაკრები ცარიელია."
 
 #: server/activities/reversecount/ReversecountEditor.qml:99
-#, fuzzy, qt-format
-#| msgctxt "TargetEditor|"
-#| msgid "\"Target values\" for level %1 must not be empty."
+#, qt-format
 msgctxt "ReversecountEditor|"
 msgid "\"Intervals\" for level %1 must not be empty."
-msgstr "\"სამიზნე მნიშვნელობები\" დონისთვის %1 ცარიელი არ უნდა იყოს."
+msgstr "\"ინტერვალები\" დონისთვის %1 ცარიელი არ უნდა იყოს."
 
 #: server/activities/reversecount/ReversecountEditor.qml:112
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid ""
-#| "These values are invalid for level %1: %2. The values must be integer "
-#| "numbers between 0 and %3."
+#, qt-format
 msgctxt "ReversecountEditor|"
 msgid ""
 "These intervals are invalid for level %1: %2. Read the instructions for more "
 "details."
 msgstr ""
-"ეს რიცხვები არასწორია დონისთვის %1: %2. მნიშვნელობები უნდა იყოს მთელი "
-"რიცხვები შუალედიდან 0-%3."
+"ეს ინტერვალები არასწორია დონისთვის %1: %2. მეტი ინფორმაციისთვის წაიკითხეთ "
+"ინსტრუქციები."
 
 #: server/activities/reversecount/ReversecountEditor.qml:116
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "ReversecountEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "საჭიროა შემდეგი შეცდომების გასწორება:<ul>%1</ul>"
@@ -1677,9 +1656,6 @@ msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "საჭიროა შემდეგი შეცდომების გასწორება:<ul>%1</ul>"
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:25
-#, fuzzy
-#| msgctxt "ActivityEditor|"
-#| msgid "Rules to create a valid dataset:"
 msgctxt "SmallnumbersEditor|"
 msgid "Rules to create a valid dataset:"
 msgstr "წესები სწორი მონაცემთა ნაკრების შესაქმნელად:"
@@ -1690,14 +1666,25 @@ msgid ""
 "\"Sublevels\" defines the amount of numbers which will appear in the level. "
 "Numbers will be randomly selected from the \"Numbers\" list."
 msgstr ""
+"\"ქვედონეები\" განსაზღვრავს რიცხვების რაოდენობას, რომლებიც გამოჩნდება "
+"დონეზე. ნომრები შემთხვევით შეირჩევა \"ნომრების\" სიიდან."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:29
+#, fuzzy
+#| msgctxt "SmallnumbersEditor|"
+#| msgid ""
+#| "\"Numbers\" must contain a list of integer numbers between 0 and 9, and "
+#| "it must contain at least two numbers. You can enter several times the "
+#| "same number to increase the probability that it will be appear."
 msgctxt "SmallnumbersEditor|"
 msgid ""
 "\"Numbers\" must contain a list of integer numbers between 0 and 9, and it "
-"must contain at least two numbers. You can enter several times the same "
-"number to increase the probability that it will be appear."
+"must contain at least two numbers. You can enter the same number several "
+"times to increase the probability that it will appear."
 msgstr ""
+"\"რიცხვები\" უნდა შეიცავდეს მთელი რიცხვების ჩამონათვალს 0-დან 9-მდე და ის "
+"უნდა შეიცავდეს მინიმუმ ორ რიცხვს. თქვენ შეგიძლიათ შეიყვანოთ რამდენჯერმე ერთი "
+"და იგივე რიცხვი, რათა გაზარდოთ მისი გამოჩენის ალბათობა."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:31
 msgctxt "SmallnumbersEditor|"
@@ -1705,73 +1692,53 @@ msgid ""
 "You can enter an optional instruction sentence in the \"Instruction\" field, "
 "or leave it empty."
 msgstr ""
+"შეგიძლიათ, შეიყვანოთ არასავალდებულო ინსტრუქციის წინადადება \"ინსტრუქციის\" "
+"ველში, ან დატოვოთ იგი ცარიელი."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:36
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "SmallnumbersEditor|"
 msgid "Sublevels"
 msgstr "ქვედონეები"
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:37
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Numbers"
 msgctxt "SmallnumbersEditor|"
 msgid "Numbers"
 msgstr "რიცხვები"
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:38
-#, fuzzy
-#| msgctxt "FractionsCreateEditor|"
-#| msgid "Instruction"
 msgctxt "SmallnumbersEditor|"
 msgid "Instruction"
 msgstr "ინსტრუქცია"
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:79
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "SmallnumbersEditor|"
 msgid "Dataset is empty."
 msgstr "მონაცემთა ნაკრები ცარიელია."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:92
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "\"Numbers to find\" for level %1 must not be empty."
+#, qt-format
 msgctxt "SmallnumbersEditor|"
 msgid "\"Numbers\" for level %1 must not be empty."
-msgstr "\"საპოვნელი რიცხვები\" დონისთვის %1 ცარიელი არ უნდა იყოს."
+msgstr "\"რიცხვები\" დონისთვის %1 ცარიელი არ უნდა იყოს."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:95
-#, fuzzy, qt-format
-#| msgctxt "TargetEditor|"
-#| msgid "\"Target values\" for level %1 contains invalid entries."
+#, qt-format
 msgctxt "SmallnumbersEditor|"
 msgid "\"Numbers\" for level %1 must contain at least two entries."
-msgstr "\"სამიზნე მნიშვნელობები\" დონისთვის %1 არასწორ ჩანაწერებს შეიცავს."
+msgstr "\"რიცხვები\" დონისთვის %1, სულ ცოტა, ორ ჩანაწერს უნდა შეიცავდეს."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:114
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid ""
-#| "These values are invalid for level %1: %2. The values must be integer "
-#| "numbers between 0 and %3."
+#, qt-format
 msgctxt "SmallnumbersEditor|"
 msgid ""
 "These values are invalid for level %1: %2. The values must be integer "
 "numbers between 0 and %3."
 msgstr ""
-"ეს რიცხვები არასწორია დონისთვის %1: %2. მნიშვნელობები უნდა იყოს მთელი "
+"ეს მნიშნელობები არასწორია დონისთვის %1: %2. მნიშვნელობები უნდა იყოს მთელი "
 "რიცხვები შუალედიდან 0-%3."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:118
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "SmallnumbersEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "საჭიროა შემდეგი შეცდომების გასწორება:<ul>%1</ul>"

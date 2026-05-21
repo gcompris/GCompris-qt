@@ -24037,32 +24037,24 @@ msgstr "Tal mellom %1 og %2"
 
 #: activities/reversecount/Reversecount.qml:81
 #, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "Reversecount|"
 msgid "Dots"
 msgstr "Prikkar"
 
 #: activities/reversecount/Reversecount.qml:82
 #, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Arabic numbers"
 msgctxt "Reversecount|"
 msgid "Arabic numbers"
 msgstr "Arabartal"
 
 #: activities/reversecount/Reversecount.qml:83
 #, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Roman numbers"
 msgctxt "Reversecount|"
 msgid "Roman numbers"
 msgstr "Romartal"
 
 #: activities/reversecount/Reversecount.qml:84
 #, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Images"
 msgctxt "Reversecount|"
 msgid "Images"
 msgstr "Teikningar"
@@ -25780,32 +25772,24 @@ msgstr "Skriv inn talet på dominobrikka, 0 til 9."
 
 #: activities/smallnumbers2/Smallnumbers2.qml:23
 #, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "Smallnumbers2|"
 msgid "Dots"
 msgstr "Prikkar"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:24
 #, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Arabic numbers"
 msgctxt "Smallnumbers2|"
 msgid "Arabic numbers"
 msgstr "Arabartal"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:25
 #, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Roman numbers"
 msgctxt "Smallnumbers2|"
 msgid "Roman numbers"
 msgstr "Romartal"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:26
 #, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Images"
 msgctxt "Smallnumbers2|"
 msgid "Images"
 msgstr "Teikningar"

@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2025, 2026 Emir SARI <emir_sari@icloud.com>
+# SPDX-FileCopyrightText: 2025-2026 Emir SARI <emir_sari@icloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-05-02 18:56+0300\n"
+"PO-Revision-Date: 2026-05-20 19:43+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Lokalize 26.04.0\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
 #: server/activities/binary_bulb/ActivityEditor.qml:12
@@ -723,25 +723,22 @@ msgstr "Çizelge türü"
 #: server/activities/gletters/GlettersDataDisplay.qml:36
 msgctxt "GlettersDataDisplay|"
 msgid "Domino mode:"
-msgstr ""
+msgstr "Domino kipi:"
 
 #: server/activities/gletters/GlettersDataDisplay.qml:66
 msgctxt "GlettersDataDisplay|"
 msgid "Visible items:"
-msgstr ""
+msgstr "Görünür ögeler:"
 
 #: server/activities/gletters/GlettersDataDisplay.qml:95
-#, fuzzy
-#| msgctxt "TargetDataDisplay|"
-#| msgid "Expected answer:"
 msgctxt "GlettersDataDisplay|"
 msgid "Typed answer:"
-msgstr "Beklenen yanıt:"
+msgstr "Yazılan yanıt:"
 
 #: server/activities/gletters/GlettersDataDisplay.qml:121
 msgctxt "GlettersDataDisplay|"
 msgid "Missed item:"
-msgstr ""
+msgstr "Atlanan öge:"
 
 #. %1 is number of hints displayed. Example: "Hints: 1"
 #: server/activities/guess24/Guess24DataDisplay.qml:79
@@ -1357,25 +1354,19 @@ msgstr "Kip"
 #: server/activities/reversecount/ReversecountDataDisplay.qml:38
 msgctxt "ReversecountDataDisplay|"
 msgid "Domino mode:"
-msgstr ""
+msgstr "Domino kipi:"
 
 #: server/activities/reversecount/ReversecountDataDisplay.qml:67
-#, fuzzy
-#| msgctxt "MultipleChoiceDataDisplay|"
-#| msgid "Question:"
 msgctxt "ReversecountDataDisplay|"
 msgid "Tux position:"
-msgstr "Soru:"
+msgstr "TuX konumu:"
 
 #: server/activities/reversecount/ReversecountDataDisplay.qml:92
 msgctxt "ReversecountDataDisplay|"
 msgid "Interval:"
-msgstr ""
+msgstr "Aralık:"
 
 #: server/activities/reversecount/ReversecountDataDisplay.qml:119
-#, fuzzy
-#| msgctxt "AdjacentNumbersDataDisplay|"
-#| msgid "Answer:"
 msgctxt "ReversecountDataDisplay|"
 msgid "Answer:"
 msgstr "Yanıt:"
@@ -1384,12 +1375,9 @@ msgstr "Yanıt:"
 #, qt-format
 msgctxt "ReversecountDataDisplay|"
 msgid "(%1 + %2) = %3"
-msgstr ""
+msgstr "(%1 + %2) = %3"
 
 #: server/activities/reversecount/ReversecountEditor.qml:25
-#, fuzzy
-#| msgctxt "ActivityEditor|"
-#| msgid "Rules to create a valid dataset:"
 msgctxt "ReversecountEditor|"
 msgid "Rules to create a valid dataset:"
 msgstr "Geçerli bir veri kümesi oluşturmak için kurallar:"
@@ -1400,12 +1388,13 @@ msgid ""
 "\"Maximum number\" is the maximum number which can be entered on each side "
 "of the domino."
 msgstr ""
+"“En büyük sayı”, dominonun her bir tarafına girilebilecek en büyük sayıdır."
 
 #: server/activities/reversecount/ReversecountEditor.qml:29
 msgctxt "ReversecountEditor|"
 msgid ""
 "The maximum interval is the smaller of 15 and 2 × \"Domino maximum number\"."
-msgstr ""
+msgstr "En büyük aralık, 15’ten küçük ve “En büyük sayı” × 2’dir. "
 
 #: server/activities/reversecount/ReversecountEditor.qml:31
 msgctxt "ReversecountEditor|"
@@ -1415,62 +1404,47 @@ msgid ""
 "enter several times the same number to increase the probability that it will "
 "be selected."
 msgstr ""
+"“Aralıklar”, 1 ve en büyük aralık arasında tamsayılar içermelidir. Bu "
+"sayılar, her bir soru için rastgele olarak seçilecektir. Seçilmesi "
+"olasılığını artırmak için aynı sayıyı birden çok kez girebilirsiniz."
 
 #: server/activities/reversecount/ReversecountEditor.qml:35
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Maximum start number"
 msgctxt "ReversecountEditor|"
 msgid "Maximum number"
-msgstr "En büyük başlangıç sayısı"
+msgstr "En büyük sayı"
 
 #: server/activities/reversecount/ReversecountEditor.qml:36
 msgctxt "ReversecountEditor|"
 msgid "Intervals"
-msgstr ""
+msgstr "Aralıklar"
 
 #: server/activities/reversecount/ReversecountEditor.qml:37
-#, fuzzy
-#| msgctxt "VerticalEditor|"
-#| msgid "Number of lines"
 msgctxt "ReversecountEditor|"
 msgid "Number of fishes"
-msgstr "Çizgi sayısı"
+msgstr "Balık sayısı"
 
 #: server/activities/reversecount/ReversecountEditor.qml:86
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "ReversecountEditor|"
 msgid "Dataset is empty."
 msgstr "Veri kümesi boş."
 
 #: server/activities/reversecount/ReversecountEditor.qml:99
-#, fuzzy, qt-format
-#| msgctxt "TargetEditor|"
-#| msgid "\"Target values\" for level %1 must not be empty."
+#, qt-format
 msgctxt "ReversecountEditor|"
 msgid "\"Intervals\" for level %1 must not be empty."
-msgstr "Düzey %1 için “Hedef değerler” boş olmamalıdır."
+msgstr "Düzey %1 için “Aralıklar” boş olmamalıdır."
 
 #: server/activities/reversecount/ReversecountEditor.qml:112
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid ""
-#| "These values are invalid for level %1: %2. The values must be integer "
-#| "numbers between 0 and %3."
+#, qt-format
 msgctxt "ReversecountEditor|"
 msgid ""
 "These intervals are invalid for level %1: %2. Read the instructions for more "
 "details."
 msgstr ""
-"Bu değerler düzey %1 için geçersiz: %2. Değerler, 0 ile %3 arasında "
-"tamsayılar olmalıdır."
+"Bu aralıklar düzey %1 için geçersiz: %2. Ayrıntılar için yönergeleri okuyun."
 
 #: server/activities/reversecount/ReversecountEditor.qml:116
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "ReversecountEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Aşağıdaki hataların düzeltilmesi gerekiyor:<ul>%1</ul>"
@@ -1668,9 +1642,6 @@ msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Aşağıdaki hataların düzeltilmesi gerekiyor:<ul>%1</ul>"
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:25
-#, fuzzy
-#| msgctxt "ActivityEditor|"
-#| msgid "Rules to create a valid dataset:"
 msgctxt "SmallnumbersEditor|"
 msgid "Rules to create a valid dataset:"
 msgstr "Geçerli bir veri kümesi oluşturmak için kurallar:"
@@ -1681,14 +1652,25 @@ msgid ""
 "\"Sublevels\" defines the amount of numbers which will appear in the level. "
 "Numbers will be randomly selected from the \"Numbers\" list."
 msgstr ""
+"“Alt düzeyler”, düzeyde görünecek sayıların miktarını tanımlar. Sayılar, "
+"“Sayılar” listesinden rastgele olarak seçileceklerdir."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:29
+#, fuzzy
+#| msgctxt "SmallnumbersEditor|"
+#| msgid ""
+#| "\"Numbers\" must contain a list of integer numbers between 0 and 9, and "
+#| "it must contain at least two numbers. You can enter several times the "
+#| "same number to increase the probability that it will be appear."
 msgctxt "SmallnumbersEditor|"
 msgid ""
 "\"Numbers\" must contain a list of integer numbers between 0 and 9, and it "
-"must contain at least two numbers. You can enter several times the same "
-"number to increase the probability that it will be appear."
+"must contain at least two numbers. You can enter the same number several "
+"times to increase the probability that it will appear."
 msgstr ""
+"“Sayılar”, 0 ila 9 arasında bir tamsayılar listesi içermeli ve aralarında en "
+"az iki sayı bulunmalıdır. Görünmesi olasılığını artırmak için aynı numarayı "
+"birden çok kez girebilirsiniz."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:31
 msgctxt "SmallnumbersEditor|"
@@ -1696,61 +1678,43 @@ msgid ""
 "You can enter an optional instruction sentence in the \"Instruction\" field, "
 "or leave it empty."
 msgstr ""
+"“Yönerge” alanına isteğe bağlı bir yönerge tümcesi girebilir veya onu boş "
+"bırakabilirsiniz."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:36
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "SmallnumbersEditor|"
 msgid "Sublevels"
 msgstr "Alt düzeyler"
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:37
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Numbers"
 msgctxt "SmallnumbersEditor|"
 msgid "Numbers"
 msgstr "Sayılar"
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:38
-#, fuzzy
-#| msgctxt "FractionsCreateEditor|"
-#| msgid "Instruction"
 msgctxt "SmallnumbersEditor|"
 msgid "Instruction"
 msgstr "Yönerge"
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:79
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "SmallnumbersEditor|"
 msgid "Dataset is empty."
 msgstr "Veri kümesi boş."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:92
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "\"Numbers to find\" for level %1 must not be empty."
+#, qt-format
 msgctxt "SmallnumbersEditor|"
 msgid "\"Numbers\" for level %1 must not be empty."
-msgstr "Düzey %1 için “Bulunacak sayılar” boş olmamalıdır."
+msgstr "Düzey %1 için “Sayılar” boş olmamalıdır."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:95
-#, fuzzy, qt-format
-#| msgctxt "TargetEditor|"
-#| msgid "\"Target values\" for level %1 contains invalid entries."
+#, qt-format
 msgctxt "SmallnumbersEditor|"
 msgid "\"Numbers\" for level %1 must contain at least two entries."
-msgstr "Düzey %1 için “Hedef değerler” geçersiz girdiler içeriyor."
+msgstr "Düzey %1 için “Sayılar”, en az iki girdi içermelidir."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:114
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid ""
-#| "These values are invalid for level %1: %2. The values must be integer "
-#| "numbers between 0 and %3."
+#, qt-format
 msgctxt "SmallnumbersEditor|"
 msgid ""
 "These values are invalid for level %1: %2. The values must be integer "
@@ -1760,9 +1724,7 @@ msgstr ""
 "tamsayılar olmalıdır."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:118
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "SmallnumbersEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Aşağıdaki hataların düzeltilmesi gerekiyor:<ul>%1</ul>"
