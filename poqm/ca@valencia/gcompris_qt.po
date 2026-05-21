@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2026-04-29 10:14+0200\n"
+"PO-Revision-Date: 2026-05-20 10:04+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -7902,7 +7902,7 @@ msgstr ""
 "Petra és una ciutat històrica i arqueològica de la província jordana del sud "
 "de Ma'an que és famosa per la seua arquitectura i sistema de conducció "
 "d'aigua tallats en la roca. Fundada possiblement al 312 aC com la capital "
-"Àrab dels nabateus, és un símbol de Jordània, així com la seua atracció "
+"dels nabateus àrabs, és un símbol de Jordània, així com la seua atracció "
 "turística més visitada."
 
 # Nota: <http://ca.wikipedia.org/wiki/Taj_Mahal>
@@ -17666,7 +17666,7 @@ msgstr "Resta nombres decimals fins a 5."
 #: activities/learn_digits/ActivityConfig.qml:24
 msgctxt "ActivityConfig|"
 msgid "Arabic numerals"
-msgstr "Nombres àrabs"
+msgstr "Nombres aràbics"
 
 #: activities/learn_digits/ActivityConfig.qml:25
 #: activities/reversecount/ActivityConfig.qml:22
@@ -18221,7 +18221,7 @@ msgstr ""
 #: activities/louis-braille/louis_braille_data.js:12
 msgctxt "louis_braille_data|"
 msgid "Born on January 4th 1809 in Coupvray near Paris in France."
-msgstr "Va nàixer el 4 gener de 1809 a Coupvray, prop de París a França."
+msgstr "Va nàixer el 4 gener de 1809 en Coupvray, prop de París en França."
 
 #: activities/louis-braille/louis_braille_data.js:17
 msgctxt "louis_braille_data|"
@@ -24025,7 +24025,7 @@ msgstr ""
 #: activities/smallnumbers2/ActivityConfig.qml:21
 msgctxt "ActivityConfig|"
 msgid "Arabic numbers"
-msgstr "Nombres àrabs"
+msgstr "Nombres aràbics"
 
 #: activities/reversecount/ActivityConfig.qml:24
 #: activities/smallnumbers2/ActivityConfig.qml:22
@@ -24150,7 +24150,7 @@ msgstr ""
 #: activities/roman_numerals/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Digits: type arabic numerals"
-msgstr "Dígits: per a escriure els nombres àrabs"
+msgstr "Dígits: per a escriure els nombres aràbics"
 
 #: activities/roman_numerals/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -24184,7 +24184,7 @@ msgstr ""
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the roman number %1 to arabic."
-msgstr "Convertix el número romà %1 a àrab."
+msgstr "Convertix el nombre romà %1 a aràbic."
 
 #: activities/roman_numerals/RomanNumerals.qml:87
 #: activities/roman_numerals/RomanNumerals.qml:99
@@ -24198,7 +24198,7 @@ msgstr "Convertix el número romà %1 a àrab."
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the arabic number %1 to roman."
-msgstr "Convertix el número àrab %1 a romà."
+msgstr "Convertix el nombre aràbic %1 a romà."
 
 #: activities/roman_numerals/RomanNumerals.qml:92
 #: activities/roman_numerals/RomanNumerals.qml:98
@@ -24276,7 +24276,7 @@ msgstr "Valor romà: %1"
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
-msgstr "Valor àrab: %1"
+msgstr "Valor aràbic: %1"
 
 #. Activity title
 #: activities/scalesboard/ActivityInfo.qml:15
@@ -29018,7 +29018,7 @@ msgstr "Punts"
 #: core/Domino.qml:60
 msgctxt "Domino|"
 msgid "Arabic Numbers"
-msgstr "Nombres àrabs"
+msgstr "Nombres aràbics"
 
 #. "Roman Numbers" is for representation of the points in a domino in the form of roman numbers
 #: core/Domino.qml:62

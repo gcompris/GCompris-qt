@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
-"PO-Revision-Date: 2026-05-02 13:54+0200\n"
+"PO-Revision-Date: 2026-05-20 10:38+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -186,7 +186,7 @@ msgstr ""
 "Quan se selecciona «Operands aleatoris», si el «Límit del valor del "
 "resultat» és superior a 0, definix el màxim permés del resultat de cada "
 "operació. Ha de ser prou gran per a generar preguntes suficients per al "
-"número donat de subnivells utilitzant els valors mínims i màxims d'operand."
+"nombre donat de subnivells utilitzant els valors mínims i màxims d'operand."
 
 #: server/activities/algebra_by/AlgebraEditor.qml:29
 msgctxt "AlgebraEditor|"
@@ -873,7 +873,7 @@ msgstr "Mode"
 #: server/activities/learn_digits/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
 msgid "\"Numbers\" must contain a list of numbers between 0 and 9."
-msgstr "«Nombres» ha de contindre una llista de nombres entre 0 i 9."
+msgstr "«Números» ha de contindre una llista de números entre 0 i 9."
 
 #: server/activities/learn_digits/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
@@ -917,7 +917,7 @@ msgid ""
 "\"Numbers\" must only contain integer numbers between 0 and 9, and must not "
 "be empty."
 msgstr ""
-"«Nombres» només ha de contindre nombres enters entre 0 i 9, i no ha d'estar "
+"«Números» només ha de contindre nombres enters entre 0 i 9, i no ha d'estar "
 "buit."
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:103
@@ -941,7 +941,7 @@ msgstr ""
 #: server/activities/learn_digits/LearnDigitsEditor.qml:161
 msgctxt "LearnDigitsEditor|"
 msgid "Numbers"
-msgstr "Nombres"
+msgstr "Números"
 
 #: server/activities/learn_digits/LearnDigitsEditor.qml:163
 msgctxt "LearnDigitsEditor|"
