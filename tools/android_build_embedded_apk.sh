@@ -10,7 +10,7 @@
 # This script builds an 'embedded' apk that includes a list of resources.
 # =======================================================================
 
-Qt6_BaseDIR=~/Qt6/6.10.1
+Qt6_BaseDIR=~/Qt6/6.11.1
 export ANDROID_NDK_ROOT=$ANDROID_NDK
 
 if [ "$#" -eq 1 ]; then
