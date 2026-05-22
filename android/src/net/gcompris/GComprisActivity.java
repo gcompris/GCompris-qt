@@ -18,6 +18,7 @@ import android.content.Context;
 import android.graphics.Insets;
 import android.graphics.Rect;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowInsets;
 import android.view.WindowManager;
 import android.view.WindowMetrics;
@@ -80,14 +81,22 @@ public class GComprisActivity extends QtActivity
         final WindowInsets windowInsets = metrics.getWindowInsets();
         Insets insets = windowInsets.getInsetsIgnoringVisibility(WindowInsets.Type.displayCutout());
 
-        int insetsWidth = insets.right + insets.left;
-        int insetsHeight = insets.top + insets.bottom;
+        if(insets != null) {
+            int insetsWidth = insets.right + insets.left;
+            int insetsHeight = insets.top + insets.bottom;
 
-        // Legacy size that Display#getSize reports
-        final Rect bounds = metrics.getBounds();
-        int legacyWidth = bounds.width() - insetsWidth;
-        int legacyHeight = bounds.height() - insetsHeight;
-        this.getWindow().setLayout(legacyWidth, legacyHeight);
+            // Legacy size that Display getSize reports
+            final Rect bounds = metrics.getBounds();
+            int legacyWidth = bounds.width() - insetsWidth;
+            int legacyHeight = bounds.height() - insetsHeight;
+            Window currentWindow = this.getWindow();
+            currentWindow.setLayout(legacyWidth, legacyHeight);
+
+            WindowManager.LayoutParams currentAttributes = currentWindow.getAttributes();
+            currentAttributes.x = insets.left;
+            currentAttributes.y = insets.top;
+            currentWindow.setAttributes(currentAttributes);
+        }
     }
 
     @Override
