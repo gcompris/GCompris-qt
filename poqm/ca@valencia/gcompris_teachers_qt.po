@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
-"PO-Revision-Date: 2026-05-20 10:38+0200\n"
+"PO-Revision-Date: 2026-05-21 09:30+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -1673,12 +1673,6 @@ msgstr ""
 "números se seleccionaran aleatòriament de la llista «Números»."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:29
-#, fuzzy
-#| msgctxt "SmallnumbersEditor|"
-#| msgid ""
-#| "\"Numbers\" must contain a list of integer numbers between 0 and 9, and "
-#| "it must contain at least two numbers. You can enter several times the "
-#| "same number to increase the probability that it will be appear."
 msgctxt "SmallnumbersEditor|"
 msgid ""
 "\"Numbers\" must contain a list of integer numbers between 0 and 9, and it "
@@ -1686,8 +1680,8 @@ msgid ""
 "times to increase the probability that it will appear."
 msgstr ""
 "«Números» ha de contindre una llista de nombres enters entre 0 i 9, i ha de "
-"contindre almenys dos números. Pots introduir diverses vegades el mateix "
-"número per a augmentar la probabilitat que aparega."
+"contindre almenys dos números. Pots introduir el mateix número diverses "
+"vegades per a augmentar la probabilitat que aparega."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:31
 msgctxt "SmallnumbersEditor|"

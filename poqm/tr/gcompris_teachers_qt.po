@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-05-20 19:43+0300\n"
+"PO-Revision-Date: 2026-05-21 11:58+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -1656,12 +1656,6 @@ msgstr ""
 "“Sayılar” listesinden rastgele olarak seçileceklerdir."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:29
-#, fuzzy
-#| msgctxt "SmallnumbersEditor|"
-#| msgid ""
-#| "\"Numbers\" must contain a list of integer numbers between 0 and 9, and "
-#| "it must contain at least two numbers. You can enter several times the "
-#| "same number to increase the probability that it will be appear."
 msgctxt "SmallnumbersEditor|"
 msgid ""
 "\"Numbers\" must contain a list of integer numbers between 0 and 9, and it "

@@ -1670,12 +1670,6 @@ msgstr ""
 "დონეზე. ნომრები შემთხვევით შეირჩევა \"ნომრების\" სიიდან."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:29
-#, fuzzy
-#| msgctxt "SmallnumbersEditor|"
-#| msgid ""
-#| "\"Numbers\" must contain a list of integer numbers between 0 and 9, and "
-#| "it must contain at least two numbers. You can enter several times the "
-#| "same number to increase the probability that it will be appear."
 msgctxt "SmallnumbersEditor|"
 msgid ""
 "\"Numbers\" must contain a list of integer numbers between 0 and 9, and it "
@@ -1683,8 +1677,8 @@ msgid ""
 "times to increase the probability that it will appear."
 msgstr ""
 "\"რიცხვები\" უნდა შეიცავდეს მთელი რიცხვების ჩამონათვალს 0-დან 9-მდე და ის "
-"უნდა შეიცავდეს მინიმუმ ორ რიცხვს. თქვენ შეგიძლიათ შეიყვანოთ რამდენჯერმე ერთი "
-"და იგივე რიცხვი, რათა გაზარდოთ მისი გამოჩენის ალბათობა."
+"უნდა შეიცავდეს მინიმუმ ორ რიცხვს. შეგიძლიათ, შეიყვანოთ რამდენჯერმე ერთი და "
+"იგივე რიცხვი, რათა გაზარდოთ მისი გამოჩენის ალბათობა."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:31
 msgctxt "SmallnumbersEditor|"
