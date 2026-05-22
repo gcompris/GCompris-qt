@@ -23,14 +23,16 @@
         android:requestLegacyExternalStorage="true"
         android:allowNativeHeapPointerTagging="false"
         android:allowBackup="true"
-        android:fullBackupOnly="false">
+        android:fullBackupOnly="false"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
         <activity
             android:name="net.gcompris.GComprisActivity"
             android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|layoutDirection|locale|fontScale|keyboard|keyboardHidden|navigation|mcc|mnc|density"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="unspecified"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
 	    <intent-filter>
 	      <action android:name="android.intent.action.MAIN"/>
 	      <category android:name="android.intent.category.LAUNCHER"/>

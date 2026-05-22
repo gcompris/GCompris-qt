@@ -40,12 +40,14 @@ import "qrc:/gcompris/src/core/core.js" as Core
  */
 Window {
     id: main
-    // Start in window mode at full screen size
-    width: ApplicationSettings.previousWidth
-    height: ApplicationSettings.previousHeight
+    // On mobile, set window size to screen size to avoid some corner-case bugs.
+    // Else, start with last saved size, typically fullscreen size.
+    width: ApplicationInfo.isMobile ? Screen.width : ApplicationSettings.previousWidth
+    height: ApplicationInfo.isMobile ? Screen.height : ApplicationSettings.previousHeight
     minimumWidth: 400 * ApplicationInfo.ratio
     minimumHeight: 400 * ApplicationInfo.ratio
     title: "GCompris"
+    color: "#000000"
 
     // Useful to uncomment to DEBUG focus issues.
     //onActiveFocusItemChanged: print("activeFocusItem", activeFocusItem)
@@ -325,6 +327,7 @@ Window {
 
     Loading {
         id: loading
+        parent: pageView
     }
 
     Timer {
@@ -750,7 +753,20 @@ Window {
 
     StackView {
         id: pageView
-        anchors.fill: parent
+        // NOTE: Check specific to Qt6, SafeArea is only available since Qt 6.9
+        property bool safeAreaAvailable: ApplicationInfo.isMobile && ApplicationInfo.QTMinorVersion >= 9
+
+        anchors {
+            fill: parent
+            // To avoid unwanted resizing (like when a keyboard including a navigation bar appears),
+            // only use the SafeArea corresponding to the camera cutout side, typically on top of portrait or left of landscape...
+            topMargin: safeAreaAvailable ? (Screen.orientation === Qt.PortraitOrientation ? parent.SafeArea.margins.top : 0) : 0
+            leftMargin: safeAreaAvailable ? (Screen.orientation === Qt.LandscapeOrientation ? parent.SafeArea.margins.left : 0) : 0
+            rightMargin: safeAreaAvailable ? (Screen.orientation === Qt.InvertedLandscapeOrientation ? parent.SafeArea.margins.right : 0) : 0
+            bottomMargin: safeAreaAvailable ? (Screen.orientation === Qt.InvertedPortraitOrientation ? parent.SafeArea.margins.bottom : 0) : 0
+        }
+        clip: true
+
         visible: !splash.visible
         focus: true
 

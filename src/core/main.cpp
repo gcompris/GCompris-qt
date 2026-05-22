@@ -417,7 +417,7 @@ int main(int argc, char *argv[])
     topLevel->setProperty("activitiesLoaded", true);
 
 #if __ANDROID__
-    window->showMaximized();
+    window->showFullScreen();
 #endif
 
     return app.exec();

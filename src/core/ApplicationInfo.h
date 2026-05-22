@@ -300,7 +300,7 @@ public:
     static QString GCVersion() { return VERSION; }
     static int GCVersionCode() { return VERSION_CODE; }
     static QString QTVersion() { return qVersion(); }
-    // Only used for the switch to QtGraphs, can be removed after Qt 6.9 minimum
+    // Only used for the switch to QtGraphs AND for the SafeArea, can be removed after Qt 6.9 minimum
     static int QTMinorVersion() { return QVersionNumber::fromString(qVersion()).minorVersion(); }
     static QString OpenSSLVersion() { return QSslSocket::sslLibraryVersionString(); }
     static QString CompressedAudio() { return COMPRESSED_AUDIO; }
