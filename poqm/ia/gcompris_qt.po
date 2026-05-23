@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-04-29 11:40+0200\n"
+"PO-Revision-Date: 2026-05-22 12:02+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -6649,7 +6649,7 @@ msgstr ""
 #: activities/drawing_wheels/DrawingWheels.qml:1389
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
-msgstr ""
+msgstr "Tu vole eliminar iste imagine?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1390
 msgctxt "DrawingWheels|"
@@ -8648,7 +8648,7 @@ msgstr ""
 #: activities/explore_world_animals/resource/board/board3.qml:66
 msgctxt "board3|"
 msgid "Panda"
-msgstr ""
+msgstr "Panda"
 
 #: activities/explore_world_animals/resource/board/board3.qml:64
 msgctxt "board3|"
@@ -20612,12 +20612,12 @@ msgstr "%1 BPM"
 #: activities/piano_composition/KeyOption.qml:45
 msgctxt "KeyOption|"
 msgid "Treble clef"
-msgstr ""
+msgstr "Clave de sol"
 
 #: activities/piano_composition/KeyOption.qml:45
 msgctxt "KeyOption|"
 msgid "Bass clef"
-msgstr ""
+msgstr "Clave de fa"
 
 #: activities/piano_composition/KeyOption.qml:62
 msgctxt "KeyOption|"
@@ -22079,33 +22079,21 @@ msgid "Numbers between %1 and %2."
 msgstr ""
 
 #: activities/reversecount/Reversecount.qml:81
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "Reversecount|"
 msgid "Dots"
 msgstr "Punctos"
 
 #: activities/reversecount/Reversecount.qml:82
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Arabic numbers"
 msgctxt "Reversecount|"
 msgid "Arabic numbers"
 msgstr "Numeros arabe"
 
 #: activities/reversecount/Reversecount.qml:83
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Roman numbers"
 msgctxt "Reversecount|"
 msgid "Roman numbers"
 msgstr "Numeros roman"
 
 #: activities/reversecount/Reversecount.qml:84
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Images"
 msgctxt "Reversecount|"
 msgid "Images"
 msgstr "Images"
@@ -23370,7 +23358,7 @@ msgstr ""
 #: activities/sketch/Sketch.qml:685
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
-msgstr ""
+msgstr "Tu vole eliminar iste imagine?"
 
 #: activities/sketch/Sketch.qml:686
 msgctxt "Sketch|"
@@ -23636,33 +23624,21 @@ msgid "Type the number on the domino, from 0 to 9."
 msgstr ""
 
 #: activities/smallnumbers2/Smallnumbers2.qml:23
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "Smallnumbers2|"
 msgid "Dots"
 msgstr "Punctos"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:24
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Arabic numbers"
 msgctxt "Smallnumbers2|"
 msgid "Arabic numbers"
 msgstr "Numeros arabe"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:25
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Roman numbers"
 msgctxt "Smallnumbers2|"
 msgid "Roman numbers"
 msgstr "Numeros roman"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:26
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Images"
 msgctxt "Smallnumbers2|"
 msgid "Images"
 msgstr "Images"
