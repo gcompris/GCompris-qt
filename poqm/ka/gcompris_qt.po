@@ -19231,6 +19231,8 @@ msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
+"მორზეს კოდი სამუელ მორზემ შეიმუშავა. ეს ტექსტური ინფორმაციის ტონების, "
+"სინათლის, ან წკაპების ჩართვა-გამორთვის სერიების სახით გადაცემის მეთოდია."
 
 #: activities/morse_code/FirstScreen.qml:66
 msgctxt "FirstScreen|"
