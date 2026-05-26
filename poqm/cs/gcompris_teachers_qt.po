@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-05-21 12:17+0200\n"
+"PO-Revision-Date: 2026-05-25 20:26+0200\n"
 "Last-Translator: Libor Filípek <libor.filipek@gmail.com>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -1668,6 +1668,9 @@ msgid ""
 "must contain at least two numbers. You can enter the same number several "
 "times to increase the probability that it will appear."
 msgstr ""
+"\"Čísla\" musí obsahovat seznam celých čísel v rozmezí 0 až 9 a musí "
+"obsahovat alespoň dvě čísla. Stejné číslo můžete zadat vícekrát, abyste "
+"zvýšili pravděpodobnost, že se objeví."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:31
 msgctxt "SmallnumbersEditor|"
