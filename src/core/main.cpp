@@ -417,6 +417,8 @@ int main(int argc, char *argv[])
     topLevel->setProperty("activitiesLoaded", true);
 
 #if __ANDROID__
+    // QT_ANDROID_NO_FULLSCREEN_KEYBOARD is at least available from Qt 6.11.1
+    qputenv("QT_ANDROID_NO_FULLSCREEN_KEYBOARD", "1");
     window->showFullScreen();
 #endif
 
