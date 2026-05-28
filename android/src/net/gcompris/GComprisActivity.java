@@ -20,6 +20,9 @@ import android.graphics.Rect;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import androidx.core.view.WindowCompat;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.core.view.WindowInsetsControllerCompat;
 import java.text.Collator;
 import java.util.Locale;
 import java.util.Arrays;
@@ -54,21 +57,19 @@ public class GComprisActivity extends QtActivity
      * And the status bar invisible, with space not used by GCompris if there is a camera cutout area.
      */
     private void forceFullscreen() {
-        this.getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        this.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN);
-        int systemUiVisibilityFlags = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-            | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-            | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-            | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-            | View.SYSTEM_UI_FLAG_FULLSCREEN
-            | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
-            | View.INVISIBLE;
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.P) {
-            this.getWindow().getAttributes().layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_ALWAYS;
-        }
-        this.getWindow().getDecorView().setSystemUiVisibility(systemUiVisibilityFlags);
-    }
+        //hide system UI
+        Window window = this.getWindow();
+        View decorView = this.getWindow().getDecorView();
 
+        WindowCompat.setDecorFitsSystemWindows(window, false);
+        WindowInsetsControllerCompat controllerCompat = new WindowInsetsControllerCompat(window, decorView);
+        controllerCompat.hide(WindowInsetsCompat.Type.systemBars());
+        controllerCompat.setSystemBarsBehavior(WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE);
+
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.P) {
+            window.getAttributes().layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_ALWAYS;
+        }
+    }
 
     @Override
     public void onStart() {
