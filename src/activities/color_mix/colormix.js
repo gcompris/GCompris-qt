@@ -14,6 +14,7 @@ var url = "qrc:/gcompris/src/activities/color_mix/resource/"
 
 var items
 var maxSteps = 1
+var lastColorQuestion = [-1,-1,-1]
 
 function start(items_) {
     items = items_
@@ -33,9 +34,17 @@ function initLevel() {
     items.maxSteps = maxSteps
 
     /* Compute target color */
-    items.targetColor1 = Math.floor(Math.random() * (maxSteps + 1))
-    items.targetColor2 = Math.floor(Math.random() * (maxSteps + 1))
-    items.targetColor3 = Math.floor(Math.random() * (maxSteps + 1))
+    do {
+        items.targetColor1 = Math.floor(Math.random() * (maxSteps + 1))
+        items.targetColor2 = Math.floor(Math.random() * (maxSteps + 1))
+        items.targetColor3 = Math.floor(Math.random() * (maxSteps + 1))
+    } while (items.targetColor1 === lastColorQuestion[0] &&
+             items.targetColor2 === lastColorQuestion[1] &&
+             items.targetColor3 === lastColorQuestion[2] );
+
+    lastColorQuestion[0] = items.targetColor1;
+    lastColorQuestion[1] = items.targetColor2;
+    lastColorQuestion[2] = items.targetColor3;
 
     /* Reset current color */
     items.currentColor1 = 0
