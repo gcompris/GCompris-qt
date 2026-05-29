@@ -151,6 +151,9 @@ ActivityBase {
             border.color: GCStyle.grayBorder
             color: Activity.getColor(items.currentColor1, items.currentColor2,
                                      items.currentColor3)
+            onColorChanged: {
+                helpMessage.text = "";
+            }
         }
 
         ColorChooser {
@@ -264,7 +267,6 @@ ActivityBase {
                     items.score.currentSubLevel += 1
                     items.score.playWinAnimation()
                     winSound.play()
-                    helpMessage.text = ""
                 }
             }
         }
