@@ -29002,7 +29002,7 @@ msgctxt "QObject|"
 msgid "Show the Home button in the bar (default)."
 msgstr ""
 
-#: core/main.qml:238
+#: core/main.qml:240
 #, fuzzy
 #| msgctxt "main|"
 #| msgid "Do you want to download the following external assets?"
@@ -29012,44 +29012,44 @@ msgid ""
 "assets when starting GCompris?"
 msgstr "次の外部ファイルをダウンロードしますか？"
 
-#: core/main.qml:240
+#: core/main.qml:242
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "お使いの言語の音声"
 
-#: core/main.qml:241
+#: core/main.qml:243
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "単語画像セットの完全版"
 
-#: core/main.qml:242
+#: core/main.qml:244
 msgctxt "main|"
 msgid "Background music"
 msgstr "BGM"
 
-#: core/main.qml:248 core/main.qml:548
+#: core/main.qml:250 core/main.qml:551
 msgctxt "main|"
 msgid "Yes"
 msgstr "はい"
 
-#: core/main.qml:255 core/main.qml:554
+#: core/main.qml:257 core/main.qml:557
 msgctxt "main|"
 msgid "No"
 msgstr "いいえ"
 
-#: core/main.qml:273
+#: core/main.qml:275
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
 
-#: core/main.qml:274
+#: core/main.qml:276
 msgctxt "main|"
 msgid "Apply"
 msgstr ""
 
-#: core/main.qml:275 core/main.qml:589 core/main.qml:664
+#: core/main.qml:277 core/main.qml:592 core/main.qml:667
 #, fuzzy
 #| msgctxt "DialogChooseLevel|"
 #| msgid "Cancel"
@@ -29057,17 +29057,17 @@ msgctxt "main|"
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: core/main.qml:360
+#: core/main.qml:363
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "GCompris へようこそ！"
 
-#: core/main.qml:361
+#: core/main.qml:364
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "これが GCompris の初回起動のようですね。"
 
-#: core/main.qml:362
+#: core/main.qml:365
 #, fuzzy
 #| msgctxt "main|"
 #| msgid ""
@@ -29083,30 +29083,30 @@ msgstr ""
 "イルがインストールされているかを確認してください。これは設定ダイアログの中で"
 "行うことができます。"
 
-#: core/main.qml:364
+#: core/main.qml:367
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "楽しんで！"
 
-#: core/main.qml:366
+#: core/main.qml:369
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "現在の言語は %1 (%2) です。"
 
-#: core/main.qml:398
+#: core/main.qml:401
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris が更新されました！ 変更点は次のとおりです:<br/>"
 
-#: core/main.qml:507
+#: core/main.qml:510
 msgctxt "main|"
 msgid ""
 "The following activities do not have any active datasets! All of their "
 "datasets will be reactivated."
 msgstr ""
 
-#: core/main.qml:547
+#: core/main.qml:550
 #, fuzzy, qt-format
 #| msgctxt "core|"
 #| msgid "Do you really want to quit GCompris?"
@@ -29114,18 +29114,18 @@ msgctxt "main|"
 msgid "Do you want to connect to server %1?"
 msgstr "GCompris を終了しますか？"
 
-#: core/main.qml:568
+#: core/main.qml:571
 #, qt-format
 msgctxt "main|"
 msgid "Password rejected by server %1"
 msgstr ""
 
-#: core/main.qml:569 core/main.qml:588 core/main.qml:663
+#: core/main.qml:572 core/main.qml:591 core/main.qml:666
 msgctxt "main|"
 msgid "OK"
 msgstr ""
 
-#: core/main.qml:584
+#: core/main.qml:587
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Select your mode"
@@ -29133,12 +29133,12 @@ msgctxt "main|"
 msgid "Select your username"
 msgstr "モードを選んでください"
 
-#: core/main.qml:594
+#: core/main.qml:597
 msgctxt "main|"
 msgid "Please select your username in the list or cancel."
 msgstr ""
 
-#: core/main.qml:661
+#: core/main.qml:664
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Enter: validate your answer"

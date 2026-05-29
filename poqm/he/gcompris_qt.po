@@ -28465,39 +28465,39 @@ msgctxt "QObject|"
 msgid "Show the Home button in the bar (default)."
 msgstr "הצגת כפתור הבית בסרגל (ברירת מחדל)."
 
-#: core/main.qml:238
+#: core/main.qml:240
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
 msgstr "להוריד או לעדכן את המשאבים החיצוניים אוטומטית בעת הפעלת ג׳יקומפרי?"
 
-#: core/main.qml:240
+#: core/main.qml:242
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "קולות לשפה שלך"
 
-#: core/main.qml:241
+#: core/main.qml:243
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "ערכת דמויות מילים מלאות"
 
-#: core/main.qml:242
+#: core/main.qml:244
 msgctxt "main|"
 msgid "Background music"
 msgstr "מוזיקת רקע"
 
-#: core/main.qml:248 core/main.qml:548
+#: core/main.qml:250 core/main.qml:551
 msgctxt "main|"
 msgid "Yes"
 msgstr "כן"
 
-#: core/main.qml:255 core/main.qml:554
+#: core/main.qml:257 core/main.qml:557
 msgctxt "main|"
 msgid "No"
 msgstr "לא"
 
-#: core/main.qml:273
+#: core/main.qml:275
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
@@ -28505,27 +28505,27 @@ msgid ""
 msgstr ""
 "לחלק מהפעילויות יש סדרת נתונים חדשה זמינה. לאפס את בחירת סדרות הנתונים שלהן?"
 
-#: core/main.qml:274
+#: core/main.qml:276
 msgctxt "main|"
 msgid "Apply"
 msgstr "החלה"
 
-#: core/main.qml:275 core/main.qml:589 core/main.qml:664
+#: core/main.qml:277 core/main.qml:592 core/main.qml:667
 msgctxt "main|"
 msgid "Cancel"
 msgstr "ביטול"
 
-#: core/main.qml:360
+#: core/main.qml:363
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "ברוך בואך לג׳יקומפרי!"
 
-#: core/main.qml:361
+#: core/main.qml:364
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "זאת ההפעלה הראשונה של ג׳יקומפרי."
 
-#: core/main.qml:362
+#: core/main.qml:365
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -28534,23 +28534,23 @@ msgstr ""
 "עליך לאמת שהגדרות היישום שלך, ובמיוחד השפה שלך מוגדרים כראוי. אפשר לעשות זאת "
 "דרך חלונית ההגדרות."
 
-#: core/main.qml:364
+#: core/main.qml:367
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "שיהיה רק כיף!"
 
-#: core/main.qml:366
+#: core/main.qml:369
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "השפה הנוכחית שלך היא %1 (%2)."
 
-#: core/main.qml:398
+#: core/main.qml:401
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "הידד, ג׳יקומפרי עודכן! אלו השינויים החדשים:<br/>"
 
-#: core/main.qml:507
+#: core/main.qml:510
 msgctxt "main|"
 msgid ""
 "The following activities do not have any active datasets! All of their "
@@ -28558,34 +28558,34 @@ msgid ""
 msgstr ""
 "לפעילויות הבאות אין סדרות נתונים פעילות! כל סדרות הנתונים שלהן יופעלו מחדש."
 
-#: core/main.qml:547
+#: core/main.qml:550
 #, qt-format
 msgctxt "main|"
 msgid "Do you want to connect to server %1?"
 msgstr "להתחבר לשרת %1?"
 
-#: core/main.qml:568
+#: core/main.qml:571
 #, qt-format
 msgctxt "main|"
 msgid "Password rejected by server %1"
 msgstr "הסיסמה נדחתה על ידי השרת %1"
 
-#: core/main.qml:569 core/main.qml:588 core/main.qml:663
+#: core/main.qml:572 core/main.qml:591 core/main.qml:666
 msgctxt "main|"
 msgid "OK"
 msgstr "אישור"
 
-#: core/main.qml:584
+#: core/main.qml:587
 msgctxt "main|"
 msgid "Select your username"
 msgstr "לבחור את שם המשתמש שלך"
 
-#: core/main.qml:594
+#: core/main.qml:597
 msgctxt "main|"
 msgid "Please select your username in the list or cancel."
 msgstr "נא לבחור את שם המשתמש שלך מהרשימה או לבטל."
 
-#: core/main.qml:661
+#: core/main.qml:664
 msgctxt "main|"
 msgid "Enter your password"
 msgstr "למלא את הסיסמה שלך"
