@@ -28898,35 +28898,3 @@ msgstr "Пропусни"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Старт"
-
-#~ msgctxt "Data|"
-#~ msgid "Find the correct answer."
-#~ msgstr "Намерете правилния отговор."
-
-#~ msgctxt "Data|"
-#~ msgid "What is the first number?"
-#~ msgstr "Кое е първото число?"
-
-#~ msgctxt "Data|"
-#~ msgid "What is a color?"
-#~ msgstr "Какво е цвят?"
-
-#~ msgctxt "Data|"
-#~ msgid "What are the first two numbers?"
-#~ msgstr "Кои са първите две числа?"
-
-#~ msgctxt "Data|"
-#~ msgid "What are animals?"
-#~ msgstr "Какво представляват животните?"
-
-#~ msgctxt "Data|"
-#~ msgid "Answers always in order, select the first one"
-#~ msgstr "Отговорите винаги са подредени, изберете първия"
-
-#~ msgctxt "Data|"
-#~ msgid "Find the previous number."
-#~ msgstr "Намери предишното число."
-
-#~ msgctxt "Data|"
-#~ msgid "Find the in-between number."
-#~ msgstr "Намери числото, което се намира между тези две числа."

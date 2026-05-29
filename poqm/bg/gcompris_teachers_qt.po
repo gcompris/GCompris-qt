@@ -2294,19 +2294,3 @@ msgstr "Учениците са влезли в системата"
 msgctxt "SettingsView|"
 msgid "Activities data received"
 msgstr "Получени данни за дейностите"
-
-#~ msgctxt "NavigationPanel|"
-#~ msgid "Development (WIP)"
-#~ msgstr "Разработка (в процес на разработка)"
-
-#~ msgctxt "SqlLineDialog|"
-#~ msgid "<"
-#~ msgstr "<"
-
-#~ msgctxt "SqlLineDialog|"
-#~ msgid ">"
-#~ msgstr ">"
-
-#~ msgctxt "LoginView|"
-#~ msgid "GCompris Teachers Tool"
-#~ msgstr "Инструмент за учители на GCompris"
