@@ -65,6 +65,7 @@ ActivityBase {
             property alias currentColor1: color1.currentStep
             property alias currentColor2: color2.currentStep
             property alias currentColor3: color3.currentStep
+            property alias helpMessageText: helpMessage.text
         }
 
         onStart: {

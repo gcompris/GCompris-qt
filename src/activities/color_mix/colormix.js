@@ -26,6 +26,7 @@ function start(items_) {
 function stop() {}
 
 function initLevel() {
+    items.helpMessageText = ""
 
     /* Set max steps */
     maxSteps = items.currentLevel + 1
