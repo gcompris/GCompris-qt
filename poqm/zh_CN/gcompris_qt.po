@@ -5059,67 +5059,67 @@ msgstr ""
 "颜色。对于颜料/油墨来说，基色包括青色 (一种特别的蓝色)、洋红色 (一种特别的粉"
 "红色) 和黄色。"
 
-#: activities/color_mix/ColorMix.qml:92
+#: activities/color_mix/ColorMix.qml:93
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "匹配颜色"
 
-#: activities/color_mix/ColorMix.qml:230
+#: activities/color_mix/ColorMix.qml:234
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "不够红"
 
-#: activities/color_mix/ColorMix.qml:232
+#: activities/color_mix/ColorMix.qml:236
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "太红"
 
-#: activities/color_mix/ColorMix.qml:235
+#: activities/color_mix/ColorMix.qml:239
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "不够绿"
 
-#: activities/color_mix/ColorMix.qml:237
+#: activities/color_mix/ColorMix.qml:241
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "太绿"
 
-#: activities/color_mix/ColorMix.qml:240
+#: activities/color_mix/ColorMix.qml:244
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "不够蓝"
 
-#: activities/color_mix/ColorMix.qml:242
+#: activities/color_mix/ColorMix.qml:246
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "太蓝"
 
-#: activities/color_mix/ColorMix.qml:246
+#: activities/color_mix/ColorMix.qml:250
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "不够洋红色"
 
-#: activities/color_mix/ColorMix.qml:248
+#: activities/color_mix/ColorMix.qml:252
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "洋红色太多"
 
-#: activities/color_mix/ColorMix.qml:251
+#: activities/color_mix/ColorMix.qml:255
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "不够黄"
 
-#: activities/color_mix/ColorMix.qml:253
+#: activities/color_mix/ColorMix.qml:257
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "太黄"
 
-#: activities/color_mix/ColorMix.qml:256
+#: activities/color_mix/ColorMix.qml:260
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "不够青"
 
-#: activities/color_mix/ColorMix.qml:258
+#: activities/color_mix/ColorMix.qml:262
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "太青"

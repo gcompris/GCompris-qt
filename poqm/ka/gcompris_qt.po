@@ -5146,67 +5146,67 @@ msgid ""
 "yellow."
 msgstr ""
 
-#: activities/color_mix/ColorMix.qml:92
+#: activities/color_mix/ColorMix.qml:93
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "მიიღე ფერი"
 
-#: activities/color_mix/ColorMix.qml:230
+#: activities/color_mix/ColorMix.qml:234
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "არასაკმარისი წითელი"
 
-#: activities/color_mix/ColorMix.qml:232
+#: activities/color_mix/ColorMix.qml:236
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "მეტისმეტად ბევრი წითელი"
 
-#: activities/color_mix/ColorMix.qml:235
+#: activities/color_mix/ColorMix.qml:239
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "არასაკმარისი მწვანე"
 
-#: activities/color_mix/ColorMix.qml:237
+#: activities/color_mix/ColorMix.qml:241
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "მეტისმეტად ბევრი მწვანე"
 
-#: activities/color_mix/ColorMix.qml:240
+#: activities/color_mix/ColorMix.qml:244
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "არასაკმარისი ლურჯი"
 
-#: activities/color_mix/ColorMix.qml:242
+#: activities/color_mix/ColorMix.qml:246
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "მეტისმეტად ბევრი ლურჯი"
 
-#: activities/color_mix/ColorMix.qml:246
+#: activities/color_mix/ColorMix.qml:250
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "არასაკმარისი ალისფერი"
 
-#: activities/color_mix/ColorMix.qml:248
+#: activities/color_mix/ColorMix.qml:252
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "მეტისმეტად ბევრი ალისფერი"
 
-#: activities/color_mix/ColorMix.qml:251
+#: activities/color_mix/ColorMix.qml:255
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "არასაკმარისი ყვითელი"
 
-#: activities/color_mix/ColorMix.qml:253
+#: activities/color_mix/ColorMix.qml:257
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "მეტისმეტად ბევრი ყვითელი"
 
-#: activities/color_mix/ColorMix.qml:256
+#: activities/color_mix/ColorMix.qml:260
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "არასაკმარისი ცისფერი"
 
-#: activities/color_mix/ColorMix.qml:258
+#: activities/color_mix/ColorMix.qml:262
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "მეტისმეტად ბევრი ცისფერი"

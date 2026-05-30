@@ -5419,67 +5419,67 @@ msgstr ""
 "nuevos. Los colores primarios para la pintura o tinta son cian (un tono "
 "especial de azul), magenta (un tono especial de rosa) y amarillo."
 
-#: activities/color_mix/ColorMix.qml:92
+#: activities/color_mix/ColorMix.qml:93
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "Iguala el color "
 
-#: activities/color_mix/ColorMix.qml:230
+#: activities/color_mix/ColorMix.qml:234
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "Poco rojo"
 
-#: activities/color_mix/ColorMix.qml:232
+#: activities/color_mix/ColorMix.qml:236
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "Demasiado rojo"
 
-#: activities/color_mix/ColorMix.qml:235
+#: activities/color_mix/ColorMix.qml:239
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "Poco verde"
 
-#: activities/color_mix/ColorMix.qml:237
+#: activities/color_mix/ColorMix.qml:241
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "Demasiado verde"
 
-#: activities/color_mix/ColorMix.qml:240
+#: activities/color_mix/ColorMix.qml:244
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "Poco azul"
 
-#: activities/color_mix/ColorMix.qml:242
+#: activities/color_mix/ColorMix.qml:246
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "Demasiado azul"
 
-#: activities/color_mix/ColorMix.qml:246
+#: activities/color_mix/ColorMix.qml:250
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "Poco magenta"
 
-#: activities/color_mix/ColorMix.qml:248
+#: activities/color_mix/ColorMix.qml:252
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "Demasiado magenta"
 
-#: activities/color_mix/ColorMix.qml:251
+#: activities/color_mix/ColorMix.qml:255
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "Poco amarillo"
 
-#: activities/color_mix/ColorMix.qml:253
+#: activities/color_mix/ColorMix.qml:257
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "Demasiado amarillo"
 
-#: activities/color_mix/ColorMix.qml:256
+#: activities/color_mix/ColorMix.qml:260
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "Poco cian"
 
-#: activities/color_mix/ColorMix.qml:258
+#: activities/color_mix/ColorMix.qml:262
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "Demasiado cian"

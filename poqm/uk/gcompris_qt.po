@@ -5383,67 +5383,67 @@ msgstr ""
 "основні кольори. Основними кольорами для фарб є блакитний (відтінок "
 "синього), бузковий (відтінок рожевого) та жовтий."
 
-#: activities/color_mix/ColorMix.qml:92
+#: activities/color_mix/ColorMix.qml:93
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "Відповідність кольору"
 
-#: activities/color_mix/ColorMix.qml:230
+#: activities/color_mix/ColorMix.qml:234
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "Недостатньо червоного"
 
-#: activities/color_mix/ColorMix.qml:232
+#: activities/color_mix/ColorMix.qml:236
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "Забагато червоного"
 
-#: activities/color_mix/ColorMix.qml:235
+#: activities/color_mix/ColorMix.qml:239
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "Недостатньо зеленого"
 
-#: activities/color_mix/ColorMix.qml:237
+#: activities/color_mix/ColorMix.qml:241
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "Забагато зеленого"
 
-#: activities/color_mix/ColorMix.qml:240
+#: activities/color_mix/ColorMix.qml:244
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "Недостатньо синього"
 
-#: activities/color_mix/ColorMix.qml:242
+#: activities/color_mix/ColorMix.qml:246
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "Забагато синього"
 
-#: activities/color_mix/ColorMix.qml:246
+#: activities/color_mix/ColorMix.qml:250
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "Недостатньо бузкового"
 
-#: activities/color_mix/ColorMix.qml:248
+#: activities/color_mix/ColorMix.qml:252
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "Забагато бузкового"
 
-#: activities/color_mix/ColorMix.qml:251
+#: activities/color_mix/ColorMix.qml:255
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "Недостатньо жовтого"
 
-#: activities/color_mix/ColorMix.qml:253
+#: activities/color_mix/ColorMix.qml:257
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "Забагато жовтого"
 
-#: activities/color_mix/ColorMix.qml:256
+#: activities/color_mix/ColorMix.qml:260
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "Недостатньо блакитного"
 
-#: activities/color_mix/ColorMix.qml:258
+#: activities/color_mix/ColorMix.qml:262
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "Забагато блакитного"

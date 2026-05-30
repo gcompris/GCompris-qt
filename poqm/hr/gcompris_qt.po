@@ -5332,67 +5332,67 @@ msgstr ""
 "tintu su cijan (posebna nijansa plave), magenta (posebna nijansa ružičaste) "
 "i žuta."
 
-#: activities/color_mix/ColorMix.qml:92
+#: activities/color_mix/ColorMix.qml:93
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "Uskladi boju"
 
-#: activities/color_mix/ColorMix.qml:230
+#: activities/color_mix/ColorMix.qml:234
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "Nema dovoljno crvene"
 
-#: activities/color_mix/ColorMix.qml:232
+#: activities/color_mix/ColorMix.qml:236
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "Previše crvene"
 
-#: activities/color_mix/ColorMix.qml:235
+#: activities/color_mix/ColorMix.qml:239
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "Nije dovoljno zeleno"
 
-#: activities/color_mix/ColorMix.qml:237
+#: activities/color_mix/ColorMix.qml:241
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "Previše zelene"
 
-#: activities/color_mix/ColorMix.qml:240
+#: activities/color_mix/ColorMix.qml:244
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "Nema dovoljno plave"
 
-#: activities/color_mix/ColorMix.qml:242
+#: activities/color_mix/ColorMix.qml:246
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "Previše plave"
 
-#: activities/color_mix/ColorMix.qml:246
+#: activities/color_mix/ColorMix.qml:250
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "Nema dovoljno magente"
 
-#: activities/color_mix/ColorMix.qml:248
+#: activities/color_mix/ColorMix.qml:252
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "Previše magente"
 
-#: activities/color_mix/ColorMix.qml:251
+#: activities/color_mix/ColorMix.qml:255
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "Nema dovoljno žute"
 
-#: activities/color_mix/ColorMix.qml:253
+#: activities/color_mix/ColorMix.qml:257
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "Previše žute"
 
-#: activities/color_mix/ColorMix.qml:256
+#: activities/color_mix/ColorMix.qml:260
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "Nema dovoljno cijan"
 
-#: activities/color_mix/ColorMix.qml:258
+#: activities/color_mix/ColorMix.qml:262
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "Previše cijan"
