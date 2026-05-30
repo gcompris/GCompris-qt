@@ -5316,67 +5316,67 @@ msgstr ""
 "起來，變成新的顏色。這三種主要的顏色分別為青色 (Cyan, 接近藍色), 品紅色 "
 "(Magenta, 接近粉紅色) 與黃色 (Yellow)。"
 
-#: activities/color_mix/ColorMix.qml:99
+#: activities/color_mix/ColorMix.qml:100
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "比對顏色"
 
-#: activities/color_mix/ColorMix.qml:237
+#: activities/color_mix/ColorMix.qml:241
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "紅色不夠"
 
-#: activities/color_mix/ColorMix.qml:239
+#: activities/color_mix/ColorMix.qml:243
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "紅色太多"
 
-#: activities/color_mix/ColorMix.qml:242
+#: activities/color_mix/ColorMix.qml:246
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "綠色不夠"
 
-#: activities/color_mix/ColorMix.qml:244
+#: activities/color_mix/ColorMix.qml:248
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "綠色太多"
 
-#: activities/color_mix/ColorMix.qml:247
+#: activities/color_mix/ColorMix.qml:251
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "藍色不夠"
 
-#: activities/color_mix/ColorMix.qml:249
+#: activities/color_mix/ColorMix.qml:253
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "藍色太多"
 
-#: activities/color_mix/ColorMix.qml:253
+#: activities/color_mix/ColorMix.qml:257
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "品紅色不夠"
 
-#: activities/color_mix/ColorMix.qml:255
+#: activities/color_mix/ColorMix.qml:259
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "品紅色太多"
 
-#: activities/color_mix/ColorMix.qml:258
+#: activities/color_mix/ColorMix.qml:262
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "黃色不夠"
 
-#: activities/color_mix/ColorMix.qml:260
+#: activities/color_mix/ColorMix.qml:264
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "黃色太多"
 
-#: activities/color_mix/ColorMix.qml:263
+#: activities/color_mix/ColorMix.qml:267
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "青色不夠"
 
-#: activities/color_mix/ColorMix.qml:265
+#: activities/color_mix/ColorMix.qml:269
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "青色太多"

@@ -5423,67 +5423,67 @@ msgstr ""
 "новых. Асноўныя колеры для фарбы/атраманту наступныя: блакітна-зялёны, "
 "пурпурны і жоўты."
 
-#: activities/color_mix/ColorMix.qml:99
+#: activities/color_mix/ColorMix.qml:100
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "Падбярыце колер"
 
-#: activities/color_mix/ColorMix.qml:237
+#: activities/color_mix/ColorMix.qml:241
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "Недастаткова чырвонага"
 
-#: activities/color_mix/ColorMix.qml:239
+#: activities/color_mix/ColorMix.qml:243
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "Замнога чырвонага"
 
-#: activities/color_mix/ColorMix.qml:242
+#: activities/color_mix/ColorMix.qml:246
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "Недастаткова зялёнага"
 
-#: activities/color_mix/ColorMix.qml:244
+#: activities/color_mix/ColorMix.qml:248
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "Замнога зялёнага"
 
-#: activities/color_mix/ColorMix.qml:247
+#: activities/color_mix/ColorMix.qml:251
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "Недастаткова блакітнага"
 
-#: activities/color_mix/ColorMix.qml:249
+#: activities/color_mix/ColorMix.qml:253
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "Замнога блакітнага"
 
-#: activities/color_mix/ColorMix.qml:253
+#: activities/color_mix/ColorMix.qml:257
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "Недастаткова пурпурнага"
 
-#: activities/color_mix/ColorMix.qml:255
+#: activities/color_mix/ColorMix.qml:259
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "Замнога пурпурнага"
 
-#: activities/color_mix/ColorMix.qml:258
+#: activities/color_mix/ColorMix.qml:262
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "Недастаткова жоўтага"
 
-#: activities/color_mix/ColorMix.qml:260
+#: activities/color_mix/ColorMix.qml:264
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "Замнога жоўтага"
 
-#: activities/color_mix/ColorMix.qml:263
+#: activities/color_mix/ColorMix.qml:267
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "Недастаткова блакітна-зялёнага"
 
-#: activities/color_mix/ColorMix.qml:265
+#: activities/color_mix/ColorMix.qml:269
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "Замнога блакітна-зялёнага"

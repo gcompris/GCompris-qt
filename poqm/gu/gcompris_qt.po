@@ -5199,67 +5199,67 @@ msgstr ""
 "માટે પ્રાથમિક રંગો સ્યાન (વાદળીનો એક ખાસ શેડ), મેજેન્ટા (ગુલાબીનો એક ખાસ શેડ), અને પીળો "
 "છે."
 
-#: activities/color_mix/ColorMix.qml:99
+#: activities/color_mix/ColorMix.qml:100
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "રંગ મેળવો"
 
-#: activities/color_mix/ColorMix.qml:237
+#: activities/color_mix/ColorMix.qml:241
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "લાલ રંગ પૂરતો નથી"
 
-#: activities/color_mix/ColorMix.qml:239
+#: activities/color_mix/ColorMix.qml:243
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "ઘણો લાલ રંગ"
 
-#: activities/color_mix/ColorMix.qml:242
+#: activities/color_mix/ColorMix.qml:246
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "લીલો રંગ પૂરતો નથી"
 
-#: activities/color_mix/ColorMix.qml:244
+#: activities/color_mix/ColorMix.qml:248
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "ઘણો લીલો રંગ"
 
-#: activities/color_mix/ColorMix.qml:247
+#: activities/color_mix/ColorMix.qml:251
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "વાદળી રંગ પૂરતો નથી"
 
-#: activities/color_mix/ColorMix.qml:249
+#: activities/color_mix/ColorMix.qml:253
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "ઘણો વાદળી રંગ"
 
-#: activities/color_mix/ColorMix.qml:253
+#: activities/color_mix/ColorMix.qml:257
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "મેજેન્ટા રંગ પૂરતો નથી"
 
-#: activities/color_mix/ColorMix.qml:255
+#: activities/color_mix/ColorMix.qml:259
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "ઘણો મેજેન્ટા રંગ"
 
-#: activities/color_mix/ColorMix.qml:258
+#: activities/color_mix/ColorMix.qml:262
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "પીળો રંગ પૂરતો નથી"
 
-#: activities/color_mix/ColorMix.qml:260
+#: activities/color_mix/ColorMix.qml:264
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "ઘણો પીળો રંગ"
 
-#: activities/color_mix/ColorMix.qml:263
+#: activities/color_mix/ColorMix.qml:267
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "સ્યાન રંગ પૂરતો નથી"
 
-#: activities/color_mix/ColorMix.qml:265
+#: activities/color_mix/ColorMix.qml:269
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "ખૂબ વધારે સ્યાન"

@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2023, 2024, 2025, 2026 Mincho Kondarev <mkondarev@yahoo.de>
+# SPDX-FileCopyrightText: 2023-2026 Mincho Kondarev <mkondarev@yahoo.de>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-01-28 20:46+0100\n"
+"PO-Revision-Date: 2026-05-29 15:03+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 26.03.70\n"
+"X-Generator: Lokalize 26.04.1\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -5336,67 +5336,67 @@ msgstr ""
 "Основните цветове за боите са циан (специален нюанс на синьото), магента "
 "(специален нюанс на розовото) и жълто."
 
-#: activities/color_mix/ColorMix.qml:99
+#: activities/color_mix/ColorMix.qml:100
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "Съответствие на цвета"
 
-#: activities/color_mix/ColorMix.qml:237
+#: activities/color_mix/ColorMix.qml:241
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "Недостатъчно червено"
 
-#: activities/color_mix/ColorMix.qml:239
+#: activities/color_mix/ColorMix.qml:243
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "Твърде много червено"
 
-#: activities/color_mix/ColorMix.qml:242
+#: activities/color_mix/ColorMix.qml:246
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "Недостатъчно зелено"
 
-#: activities/color_mix/ColorMix.qml:244
+#: activities/color_mix/ColorMix.qml:248
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "Твърде много зелено"
 
-#: activities/color_mix/ColorMix.qml:247
+#: activities/color_mix/ColorMix.qml:251
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "Недостатъчно синьо"
 
-#: activities/color_mix/ColorMix.qml:249
+#: activities/color_mix/ColorMix.qml:253
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "Твърде много синьо"
 
-#: activities/color_mix/ColorMix.qml:253
+#: activities/color_mix/ColorMix.qml:257
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "Недостатъчно магента"
 
-#: activities/color_mix/ColorMix.qml:255
+#: activities/color_mix/ColorMix.qml:259
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "Твърде много магента"
 
-#: activities/color_mix/ColorMix.qml:258
+#: activities/color_mix/ColorMix.qml:262
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "Недостатъчно жълто"
 
-#: activities/color_mix/ColorMix.qml:260
+#: activities/color_mix/ColorMix.qml:264
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "Твърде много жълто"
 
-#: activities/color_mix/ColorMix.qml:263
+#: activities/color_mix/ColorMix.qml:267
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "Недостатъчно синьо"
 
-#: activities/color_mix/ColorMix.qml:265
+#: activities/color_mix/ColorMix.qml:269
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "Твърде много синьо"
@@ -5680,33 +5680,27 @@ msgid "2 decimal places between 0 and 99.99."
 msgstr "2 знака след десетичната запетая между 0 и 99,99."
 
 #: activities/compass/ActivityConfig.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Free Mode"
 msgctxt "ActivityConfig|"
 msgid "Template Mode"
-msgstr "Свободен режим"
+msgstr "Режим на шаблон"
 
 #. Activity title
 #: activities/compass/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Compass"
-msgstr ""
+msgstr " Пергел"
 
 #. Help title
 #: activities/compass/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Use the compass to draw."
-msgstr ""
+msgstr " Използвайте компаса, за да рисувате."
 
 #. Help goal
 #: activities/compass/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to draw letters in a fun way."
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw circles and arcs with a compass."
-msgstr "Научаване как се пишат букви по забавен начин."
+msgstr " Научете се как да чертаете кръгове и дъги с пергел."
 
 #. Help manual
 #: activities/compass/ActivityInfo.qml:23
@@ -5716,33 +5710,34 @@ msgid ""
 "inspiration from. In free mode, you can draw freely and adjust the canvas "
 "size and grid spacing as you want from the compass settings menu."
 msgstr ""
+" В режим на шаблон всяко ниво съдържа шаблон за копиране или за вдъхновение. "
+"В свободния режим можете да рисувате и да регулирате размера на платното и "
+"разстоянието между решетките, както желаете, от менюто с настройки на "
+"компаса."
 
 #: activities/compass/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "<br><b>Drawing with the compass:</b>"
-msgstr ""
+msgstr " <br><b>Рисуване с пергел:</b>"
 
 #: activities/compass/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Move the compass by dragging the leg without the pen."
-msgstr ""
+msgstr " Преместете компаса, като плъзнете крака без писалката."
 
 #: activities/compass/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Complete the puzzle by dragging each piece on the side to the matching "
-#| "spot."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move the pen by dragging the other leg or the circle around the pen tip."
 msgstr ""
-"Завърши пъзела, като завлечеш всеки предмет отстрани до съответното му място."
+" Преместете писалката, като плъзнете другия крак или кръга около върха на "
+"писалката."
 
 #: activities/compass/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Rotate and draw by dragging the pen with the left mouse button."
 msgstr ""
+" Завъртайте и рисувайте, като плъзгате писалката с левия бутон на мишката."
 
 #: activities/compass/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -5750,6 +5745,8 @@ msgid ""
 "Rotate without drawing by dragging the compass hinge, or by dragging the pen "
 "with the right mouse button."
 msgstr ""
+" Завъртете без рисуване, като плъзнете пантата на компаса или като плъзнете "
+"писалката с десния бутон на мишката."
 
 #: activities/compass/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -5757,14 +5754,13 @@ msgid ""
 "The snap to grid setting can be temporarily inverted by pressing the Control "
 "key."
 msgstr ""
+" Настройката за прилепване към мрежата може да бъде временно обърната чрез "
+"натискане на клавиша Control."
 
 #: activities/compass/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "<b>Diving planes</b>"
 msgctxt "ActivityInfo|"
 msgid "<b>Templates:</b>"
-msgstr "<b>Дълбочинен рул</b>"
+msgstr " <b>Шаблони:</b>"
 
 #: activities/compass/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -5772,6 +5768,8 @@ msgid ""
 "Each level in template mode presents a template to replicate or to get "
 "inspiration from."
 msgstr ""
+" Всяко ниво в режим на шаблон представя шаблон за копиране или за "
+"вдъхновение."
 
 #: activities/compass/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -5779,6 +5777,8 @@ msgid ""
 "Each template is divided into steps which can be scrolled through using the "
 "arrows."
 msgstr ""
+"Всеки шаблон е разделен на стъпки, през които можете да превъртате с помощта "
+"на стрелките."
 
 #: activities/compass/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
@@ -5786,14 +5786,14 @@ msgid ""
 "Each step shows where to place the tip of the compass and the circle or arc "
 "to be drawn."
 msgstr ""
+" Всяка стъпка показва къде да се постави върха на пергела и окръжността или "
+"дъгата, която ще се начертае."
 
 #: activities/compass/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid "You can change the rheostat value by dragging its slider."
 msgctxt "ActivityInfo|"
 msgid "You can change the position of the template by clicking on its corners."
-msgstr "Можеш да промениш съпротивлението на реостата като преместиш плъзгача."
+msgstr ""
+" Можете да промените позицията на шаблона, като щракнете върху ъглите му."
 
 #: activities/compass/ActivityInfo.qml:36
 #: activities/drawing_wheels/ActivityInfo.qml:29
@@ -5826,373 +5826,274 @@ msgstr "Ctrl + O: Отваряне на изображение"
 #: activities/compass/ActivityInfo.qml:40
 msgctxt "ActivityInfo|"
 msgid "Ctrl: invert snap to grid while it is pressed"
-msgstr ""
+msgstr " Ctrl: инвертира прихващането към мрежата, докато е натиснат"
 
 #: activities/compass/ActivityInfo.qml:41
 msgctxt "ActivityInfo|"
 msgid "P: open the pen panel"
-msgstr ""
+msgstr " P: отваряне на панела с писалката"
 
 #: activities/compass/ActivityInfo.qml:42
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Down arrow: select previous item"
 msgctxt "ActivityInfo|"
 msgid "Left arrow: previous template step"
-msgstr "Стрелка надолу: избиране на предишния предмет"
+msgstr " Лява стрелка: предишна стъпка от шаблона"
 
 #: activities/compass/ActivityInfo.qml:43
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Right arrow: right hand answer"
 msgctxt "ActivityInfo|"
 msgid "Right arrow: next template step"
-msgstr "Стрелка надясно: отговор с дясната ръка"
+msgstr " Стрелка надясно: следваща стъпка от шаблона"
 
 #: activities/compass/ActivityInfo.qml:44
 msgctxt "ActivityInfo|"
 msgid "Tab: toggle the template visibility"
-msgstr ""
+msgstr " Tab: превключване на видимостта на шаблона"
 
 #: activities/compass/ActivityInfo.qml:45
 msgctxt "ActivityInfo|"
 msgid "Space: toggle the compass and grid visibility"
-msgstr ""
+msgstr " Интервал: превключване на видимостта на компаса и мрежата"
 
 #: activities/compass/compass.js:103
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Free Mode"
 msgctxt "compass|"
 msgid "Free mode"
-msgstr "Свободен режим"
+msgstr " Безплатен режим"
 
 #: activities/compass/Compass.qml:439
-#, fuzzy
-#| msgctxt "IntroMessage|"
-#| msgid "Previous"
 msgctxt "Compass|"
 msgid "Previous step"
-msgstr "Назад"
+msgstr " Предишна стъпка"
 
 #: activities/compass/Compass.qml:464
-#, fuzzy
-#| msgctxt "IntroMessage|"
-#| msgid "Next"
 msgctxt "Compass|"
 msgid "Next step"
-msgstr "Напред"
+msgstr " Следваща стъпка"
 
 #: activities/compass/Compass.qml:477
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "All the words"
 msgctxt "Compass|"
 msgid "All steps"
-msgstr "Всички думи"
+msgstr " Всички стъпки"
 
 #: activities/compass/Compass.qml:477
 msgctxt "Compass|"
 msgid "Current step"
-msgstr ""
+msgstr " Текуща стъпка"
 
 #: activities/compass/Compass.qml:549
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "File menu"
 msgctxt "Compass|"
 msgid "File menu"
-msgstr "Меню „Файл“"
+msgstr " Меню „Файл“"
 
 #: activities/compass/Compass.qml:558
 msgctxt "Compass|"
 msgid "Compass and grid settings"
-msgstr ""
+msgstr " Настройки на компаса и мрежата"
 
 #: activities/compass/Compass.qml:567
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "%1 settings"
 msgctxt "Compass|"
 msgid "Pen settings"
-msgstr "Настройки на %1"
+msgstr " Настройки на писалката"
 
 #: activities/compass/Compass.qml:588
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Undo"
 msgctxt "Compass|"
 msgid "Undo"
-msgstr "Отмяна"
+msgstr " Отмяна"
 
 #: activities/compass/Compass.qml:598
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Redo"
 msgctxt "Compass|"
 msgid "Redo"
-msgstr "Повтаряне"
+msgstr " Преработи"
 
 #: activities/compass/Compass.qml:612
 msgctxt "Compass|"
 msgid "Show template"
-msgstr ""
+msgstr " Показване на шаблон"
 
 #: activities/compass/Compass.qml:612
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Golden Temple"
 msgctxt "Compass|"
 msgid "Hide template"
-msgstr "Златен храм"
+msgstr " Скриване на шаблона"
 
 #: activities/compass/Compass.qml:624
 msgctxt "Compass|"
 msgid "Show compass and grid"
-msgstr ""
+msgstr " Показване на компас и мрежа"
 
 #: activities/compass/Compass.qml:624
 msgctxt "Compass|"
 msgid "Hide compass and grid"
-msgstr ""
+msgstr " Скриване на компаса и мрежата"
 
 #: activities/compass/Compass.qml:775
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Save your image"
 msgctxt "Compass|"
 msgid "Save your image"
-msgstr "Запази изображението си"
+msgstr " Запазете изображението си"
 
 #: activities/compass/Compass.qml:790
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Open an image"
 msgctxt "Compass|"
 msgid "Open an image"
-msgstr "Отваряне на изображение"
+msgstr " Отваряне на изображение"
 
 #: activities/compass/Compass.qml:813
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Create a new image"
 msgctxt "Compass|"
 msgid "Create a new image"
-msgstr "Създаване на ново изображение"
+msgstr " Създаване на ново изображение"
 
 #: activities/compass/Compass.qml:832
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Background color"
 msgctxt "Compass|"
 msgid "Background color"
-msgstr "Цвят на фона"
+msgstr " Цвят на фона"
 
 #: activities/compass/Compass.qml:892
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Pen size"
 msgctxt "Compass|"
 msgid "Canvas size"
-msgstr "Размер на писалката"
+msgstr " Размер на платното"
 
 #: activities/compass/Compass.qml:962
 msgctxt "Compass|"
 msgid "Grid spacing"
-msgstr ""
+msgstr " Разстояние между решетките"
 
 #: activities/compass/Compass.qml:1013
 msgctxt "Compass|"
 msgid "Snap to grid"
-msgstr ""
+msgstr " Прикрепване към мрежата"
 
 #: activities/compass/Compass.qml:1039
 msgctxt "Compass|"
 msgid "Show grid"
-msgstr ""
+msgstr " Показване на мрежа"
 
 #: activities/compass/Compass.qml:1103
-#, fuzzy
-#| msgctxt "category_colors|"
-#| msgid "Colors"
 msgctxt "Compass|"
 msgid "Color"
-msgstr "Цветове"
+msgstr " Цвят"
 
 #: activities/compass/Compass.qml:1149
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Opacity"
 msgctxt "Compass|"
 msgid "Opacity"
-msgstr "Непрозрачност"
+msgstr " Непрозрачност"
 
 #: activities/compass/Compass.qml:1193
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Pen size"
 msgctxt "Compass|"
 msgid " Pen size"
-msgstr "Размер на писалката"
+msgstr " Размер на писалката"
 
 #: activities/compass/Compass.qml:1253
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "You did not save this image. Do you want to close this activity?"
 msgctxt "Compass|"
 msgid "You did not save this image. Do you want to close this activity?"
-msgstr "Не запази това изображение. Искаш ли да затвориш тази дейност?"
+msgstr "Не запазихте това изображение. Искате ли да затворите тази дейност?"
 
 #: activities/compass/Compass.qml:1254
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Do you want to erase this image?"
 msgctxt "Compass|"
 msgid "Do you want to erase this image?"
-msgstr "Искаш ли да изтриеш това изображение?"
+msgstr " Искате ли да изтриете това изображение?"
 
 #: activities/compass/Compass.qml:1255
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Compass|"
 msgid "Yes"
-msgstr "Да"
+msgstr " Да"
 
 #: activities/compass/Compass.qml:1256
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Compass|"
 msgid "No"
-msgstr "Не"
+msgstr " Не"
 
 #: activities/compass/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Third largest"
 msgctxt "Data|"
 msgid "The target"
-msgstr "Трети по големина"
+msgstr " Целта"
 
 #: activities/compass/resource/10/Data.qml:13
-#, fuzzy
-#| msgctxt "board8|"
-#| msgid "The Pantheon"
 msgctxt "Data|"
 msgid "The peony"
-msgstr "Пантеонът в Рим"
+msgstr " Божурът"
 
 #: activities/compass/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The same"
 msgctxt "Data|"
 msgid "The snail"
-msgstr "Същият"
+msgstr " Охлювът"
 
 #: activities/compass/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The same"
 msgctxt "Data|"
 msgid "The rose"
-msgstr "Същият"
+msgstr " Розата"
 
 #: activities/compass/resource/13/Data.qml:13
 msgctxt "Data|"
 msgid "The swirl"
-msgstr ""
+msgstr " Вихрушката"
 
 #: activities/compass/resource/14/Data.qml:13
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The same"
 msgctxt "Data|"
 msgid "The spiral"
-msgstr "Същият"
+msgstr " Спиралата"
 
 #: activities/compass/resource/15/Data.qml:13
 msgctxt "Data|"
 msgid "The twist"
-msgstr ""
+msgstr " Обратът"
 
 #: activities/compass/resource/16/Data.qml:15
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The same"
 msgctxt "Data|"
 msgid "The face"
-msgstr "Същият"
+msgstr " Лицето"
 
 #: activities/compass/resource/17/Data.qml:15
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The same"
 msgctxt "Data|"
 msgid "The bear"
-msgstr "Същият"
+msgstr " Мечката"
 
 #: activities/compass/resource/18/Data.qml:14
 msgctxt "Data|"
 msgid "The lion"
-msgstr ""
+msgstr " Лъвът"
 
 #. The animal
 #: activities/compass/resource/19/Data.qml:16
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "house"
 msgctxt "Data|"
 msgid "The mouse"
-msgstr "къща"
+msgstr " Мишката"
 
 #: activities/compass/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The same"
 msgctxt "Data|"
 msgid "The shell"
-msgstr "Същият"
+msgstr " Черупката"
 
 #: activities/compass/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "The lotus flower"
-msgstr ""
+msgstr " Лотосовото цвете"
 
 #: activities/compass/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "The carpet of flowers"
-msgstr ""
+msgstr " Килимът от цветя"
 
 #: activities/compass/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "The clover"
-msgstr ""
+msgstr " Детелината"
 
 #: activities/compass/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "board8|"
-#| msgid "The Pantheon"
 msgctxt "Data|"
 msgid "The balloon"
-msgstr "Пантеонът в Рим"
+msgstr " Балонът"
 
 #: activities/compass/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "The daisy"
-msgstr ""
+msgstr " Маргаритката"
 
 #. The flower
 #: activities/compass/resource/8/Data.qml:14
 msgctxt "Data|"
 msgid "The periwinkle"
-msgstr ""
+msgstr " Зеленика"
 
 #: activities/compass/resource/9/Data.qml:13
 msgctxt "Data|"
 msgid "The soccer ball"
-msgstr ""
+msgstr " Футболната топка"
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -7242,16 +7143,6 @@ msgstr ""
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Make beautiful drawings by rolling the gear in the cogwheel with the "
-#| "chosen pen. Select a wheel size, a gear size, pen's settings and color "
-#| "from the popup panels, and press the play button to roll the gear. You "
-#| "can use the file menu to save your image, open a previously saved image, "
-#| "or create a new image with selected background color. Saving an image "
-#| "will save it in an SVG file (vector format), along with a PNG file (pixel "
-#| "format). Only the SVG file can be opened again from the activity."
 msgctxt "ActivityInfo|"
 msgid ""
 "Make beautiful drawings by rolling the gear in the cogwheel with the chosen "
@@ -7265,15 +7156,17 @@ msgid ""
 "format), along with a PNG file (pixel format). Only the SVG file can be "
 "opened again from the activity."
 msgstr ""
-"Направете красиви рисунки, като завъртите зъбното колело с избраната "
+"Създавайте красиви рисунки, като въртите зъбното колело в него с избраната "
 "писалка. Изберете размер на колелото, размер на зъбното колело, настройки на "
 "писалката и цвят от изскачащите панели и натиснете бутона за "
-"възпроизвеждане, за да завъртите зъбното колело. Можете да използвате менюто "
-"„Файл“, за да запазите изображението си, да отворите предварително запазено "
-"изображение или да създадете ново изображение с избран цвят на фона. "
-"Запазването на изображение ще го запази в SVG файл (векторен формат), заедно "
-"с PNG файл (пикселов формат). Само SVG файлът може да бъде отворен отново от "
-"заниманието.<br><br>"
+"възпроизвеждане, за да въртите зъбното колело. На първо ниво са налични само "
+"някои специфични комбинации от размери на колелото и зъбното колело, за да "
+"започнете. На второ ниво са налични всички комбинации от размери, за да се "
+"даде по-голяма творческа свобода. Можете да използвате менюто „Файл“, за да "
+"запазите изображението си, да отворите предварително запазено изображение "
+"или да създадете ново изображение с избран цвят на фона. Запазването на "
+"изображение ще го запази в SVG файл (векторен формат), заедно с PNG файл "
+"(пикселов формат). Само SVG файлът може да бъде отворен отново от дейността."
 
 #: activities/drawing_wheels/DrawingWheels.qml:406
 msgctxt "DrawingWheels|"
@@ -17025,53 +16918,38 @@ msgid "Find the tuba"
 msgstr "Намери тубата"
 
 #: activities/keyboard_training/ActivityConfig.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw letters"
 msgctxt "ActivityConfig|"
 msgid "Uppercase letters"
-msgstr "Чертане на букви"
+msgstr " Главни букви"
 
 #: activities/keyboard_training/ActivityConfig.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw letters"
 msgctxt "ActivityConfig|"
 msgid "Lowercase letters"
-msgstr "Чертане на букви"
+msgstr " Малки букви"
 
 #. Activity title
 #: activities/keyboard_training/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Memory training."
 msgctxt "ActivityInfo|"
 msgid "Keyboard training"
-msgstr "Трениране на паметта."
+msgstr " Обучение за работа с клавиатура"
 
 #. Help title
 #: activities/keyboard_training/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Read the score, and then play it on the keyboard."
 msgctxt "ActivityInfo|"
 msgid "Find the requested character and type it on the keyboard."
-msgstr "Прочети партитурата и след това я изсвири на клавиатурата."
+msgstr " Намерете искания символ и го въведете на клавиатурата."
 
 #. Help goal
 #: activities/keyboard_training/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to spell words."
 msgctxt "ActivityInfo|"
 msgid "Learn to type on a keyboard."
-msgstr "Научи се да пишеш думи"
+msgstr " Научете се да пишете на клавиатура."
 
 #. Help manual
 #: activities/keyboard_training/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "A character is displayed. Find it on the keyboard and type it."
-msgstr ""
+msgstr " Показва се символ. Намерете го на клавиатурата и го въведете."
 
 #. Activity title
 #: activities/land_safe/ActivityInfo.qml:15
@@ -18534,12 +18412,10 @@ msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr "Изчисли оставащите звезди до 10000 с коефициенти."
 
 #: activities/magic-hat-minus/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Calculate remaining stars up to 100 with coefficients."
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 10, with 2 or 3 different star sets."
-msgstr "Изчисли останалите звезди до 100 с помощта на коефициенти."
+msgstr ""
+" Изчислете останалите звезди до 10, с 2 или 3 различни комплекта звезди."
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
 #: activities/magic-hat-minus/StarsBar.qml:36
@@ -18630,12 +18506,9 @@ msgid "Add stars up to 10000 with coefficients."
 msgstr "Добави звездите до 10000 с коефициенти."
 
 #: activities/magic-hat-plus/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 100 with coefficients."
 msgctxt "Data|"
 msgid "Add stars up to 10, with 2 or 3 different star sets."
-msgstr "Добави звездите до 100 с коефициенти."
+msgstr "Добавете звезди до 10, с 2 или 3 различни комплекта звезди."
 
 #. Activity title
 #: activities/maze/ActivityInfo.qml:15
@@ -20485,16 +20358,14 @@ msgstr ""
 "потребител е грешна."
 
 #: activities/menu/Menu.qml:215
-#, fuzzy, qt-format
-#| msgctxt "Menu|"
-#| msgid ""
-#| "GCompris is connected to teacher's server, and the user is authenticated."
+#, qt-format
 msgctxt "Menu|"
 msgid ""
 "GCompris is connected to teacher's server, and the user is authenticated as "
 "%1."
 msgstr ""
-"GCompris е свързан със сървъра на учителя и потребителят е удостоверен."
+" GCompris е свързан със сървъра на учителя и потребителят е удостоверен като "
+"%1."
 
 #: activities/menu/Menu.qml:216
 msgctxt "Menu|"
@@ -22319,19 +22190,19 @@ msgstr "Кодиране на относителен път"
 #: activities/peg_solitaire/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
 msgid "Use the default starting hole"
-msgstr ""
+msgstr " Използвайте стандартния начален отвор"
 
 #. Activity title
 #: activities/peg_solitaire/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Peg solitaire"
-msgstr ""
+msgstr " Пасианс с колчета"
 
 #. Help title
 #: activities/peg_solitaire/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Remove all the pieces in the correct order until only one remains."
-msgstr ""
+msgstr " Премахнете всички части в правилния ред, докато остане само една."
 
 #. Help manual
 #: activities/peg_solitaire/ActivityInfo.qml:23
@@ -22346,36 +22217,39 @@ msgid ""
 "clicking on it. You can use the undo button to undo your last move, and the "
 "redo button to redo it."
 msgstr ""
+" За да преместите фигура, накарайте я да скочи с друга фигура в ортогонална "
+"посока, до дупка на две позиции разстояние. Скочената фигура се премахва от "
+"дъската. Можете да кликнете върху подвижна фигура и след това върху нейната "
+"дестинация или да я плъзнете и пуснете до нейната дестинация. Играта "
+"приключва, когато не може да се премести повече фигура, и се печели, ако "
+"остане само една фигура. Ако опцията за използване на началната дупка по "
+"подразбиране не е избрана, трябва да изберете първата фигура, която да "
+"премахнете, като кликнете върху нея. Можете да използвате бутона за отмяна, "
+"за да отмените последния си ход, и бутона за повторение, за да го повторите."
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:28
 msgctxt "peg_solitaire|"
 msgid "English board"
-msgstr ""
+msgstr " Английска дъска"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:44
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "French Polynesia"
 msgctxt "peg_solitaire|"
 msgid "French board"
-msgstr "Френска Полинезия"
+msgstr " Френска дъска"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:61
 msgctxt "peg_solitaire|"
 msgid "32 holes diamond board"
-msgstr ""
+msgstr " 32-дупкова диамантена дъска"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:79
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numerical order"
 msgctxt "peg_solitaire|"
 msgid "Asymmetrical board"
-msgstr "Последователност на числата"
+msgstr " Асиметрична дъска"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -24208,36 +24082,24 @@ msgid "Numbers between %1 and %2."
 msgstr "Числа между %1 и %2."
 
 #: activities/reversecount/Reversecount.qml:81
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "Reversecount|"
 msgid "Dots"
-msgstr "Точки"
+msgstr " Точки"
 
 #: activities/reversecount/Reversecount.qml:82
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Arabic numbers"
 msgctxt "Reversecount|"
 msgid "Arabic numbers"
-msgstr "Арабски числа"
+msgstr " Арабски цифри"
 
 #: activities/reversecount/Reversecount.qml:83
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Roman numbers"
 msgctxt "Reversecount|"
 msgid "Roman numbers"
-msgstr "Римски числа"
+msgstr " Римски цифри"
 
 #: activities/reversecount/Reversecount.qml:84
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Images"
 msgctxt "Reversecount|"
 msgid "Images"
-msgstr "Изображения"
+msgstr " Изображения"
 
 #. Activity title
 #: activities/roman_numerals/ActivityInfo.qml:15
@@ -25937,36 +25799,24 @@ msgid "Type the number on the domino, from 0 to 9."
 msgstr "Въведи числото върху доминото от 0 до 9."
 
 #: activities/smallnumbers2/Smallnumbers2.qml:23
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "Smallnumbers2|"
 msgid "Dots"
-msgstr "Точки"
+msgstr " Точки"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:24
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Arabic numbers"
 msgctxt "Smallnumbers2|"
 msgid "Arabic numbers"
-msgstr "Арабски числа"
+msgstr " Арабски цифри"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:25
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Roman numbers"
 msgctxt "Smallnumbers2|"
 msgid "Roman numbers"
-msgstr "Римски числа"
+msgstr "Римски цифри"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:26
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Images"
 msgctxt "Smallnumbers2|"
 msgid "Images"
-msgstr "Изображения"
+msgstr " Изображения"
 
 #: activities/solar_system/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
@@ -27617,12 +27467,9 @@ msgid "Maximum value: 500."
 msgstr "Максимална стойност: 500."
 
 #: activities/target/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Maximum value: 50000."
 msgctxt "Data|"
 msgid "Maximum value: 5000."
-msgstr "Максимална стойност: 50000."
+msgstr " Максимална стойност: 5000."
 
 #: activities/target/resource/5/Data.qml:14
 msgctxt "Data|"
@@ -28476,36 +28323,26 @@ msgid ""
 "You are currently in a sequence, going back to the menu will cancel it, do "
 "you confirm?"
 msgstr ""
+" В момента сте в поредица, връщането в менюто ще я отмени, потвърждавате ли?"
 
 #: core/ActivityBase.qml:219
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "ActivityBase|"
 msgid "Yes"
-msgstr "Да"
+msgstr " Да"
 
 #: core/ActivityBase.qml:224
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "ActivityBase|"
 msgid "No"
-msgstr "Не"
+msgstr " Не"
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to run a list of activities with specific datasets "
 "in sequence (--with-sequence sequence.json)"
 msgstr ""
-"Нова опция на командния ред за изготвяне на списък с всички занимания и "
-"стартиране на избраното"
+" Нова опция от командния ред за изпълнение на списък с дейности с конкретни "
+"набори от данни в последователност (--with-sequence sequence.json)"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:44 core/ChangeLog.qml:50
 #: core/ChangeLog.qml:56 core/ChangeLog.qml:65 core/ChangeLog.qml:71
@@ -29483,7 +29320,7 @@ msgstr ""
 #: core/main.cpp:149
 msgctxt "QObject|"
 msgid "Start the sequence of activities passed in the json file."
-msgstr ""
+msgstr " Стартирайте последователността от дейности, предадени във json файла."
 
 #: core/main.cpp:153
 msgctxt "QObject|"
@@ -29595,6 +29432,8 @@ msgid ""
 "The following activities do not have any active datasets! All of their "
 "datasets will be reactivated."
 msgstr ""
+" Следните дейности нямат активни набори от данни! Всички техни набори от "
+"данни ще бъдат активирани отново."
 
 #: core/main.qml:550
 #, qt-format
