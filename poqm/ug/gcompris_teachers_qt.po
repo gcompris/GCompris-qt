@@ -1,0 +1,3305 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
+"Language-Team: \n"
+"Language: ug\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Qt-Contexts: true\n"
+"X-Generator: Poedit 3.9\n"
+
+#: server/activities/adjacent_numbers/ActivityEditor.qml:13
+#: server/activities/binary_bulb/ActivityEditor.qml:12
+#: server/activities/fractions_create/ActivityEditor.qml:12
+#: server/activities/learn_additions/ActivityEditor.qml:14
+#: server/activities/learn_digits/ActivityEditor.qml:13
+#: server/activities/learn_subtractions/ActivityEditor.qml:14
+#: server/activities/multiple_choice_questions/ActivityEditor.qml:13
+#: server/activities/target/ActivityEditor.qml:12
+#: server/activities/tens_complement_find/ActivityEditor.qml:13
+#: server/activities/tens_complement_use/ActivityEditor.qml:13
+msgctxt "ActivityEditor|"
+msgid "Rules to create a valid dataset:"
+msgstr ""
+
+#: server/activities/adjacent_numbers/ActivityEditor.qml:15
+msgctxt "ActivityEditor|"
+msgid ""
+"If \"Random start number\" is selected, the number of sublevels will be the "
+"minimum between the \"Sublevels\" value and the result of: (\"Maximum start "
+"number\" - \"Minimum start number\") / \"Step between numbers\" + 1."
+msgstr ""
+
+#: server/activities/adjacent_numbers/ActivityEditor.qml:17
+msgctxt "ActivityEditor|"
+msgid ""
+"If \"Random start number\" is not selected, the \"Start numbers\" list must "
+"contain only numbers, and each of them will be used as start number for a "
+"sublevel."
+msgstr ""
+
+#: server/activities/adjacent_numbers/ActivityEditor.qml:19
+msgctxt "ActivityEditor|"
+msgid ""
+"\"Position of missing numbers\" must contain a list of numbers corresponding "
+"to the index of numbers to find. Index numbers start from 0 (the first "
+"number of the sequence), and must not be greater than \"Sequence length\" - "
+"1. Also, the length of the list can not be greater than \"Sequence length\" "
+"- 2, to always have at least 2 visible numbers in the sequence."
+msgstr ""
+
+#: server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:36
+msgctxt "AdjacentNumbersDataDisplay|"
+msgid "Tiles:"
+msgstr ""
+
+#: server/activities/adjacent_numbers/AdjacentNumbersDataDisplay.qml:60
+msgctxt "AdjacentNumbersDataDisplay|"
+msgid "Answer:"
+msgstr "جاۋاب:"
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:28
+msgctxt "AdjacentNumbersEditor|"
+msgid "Random start numbers"
+msgstr ""
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:29
+msgctxt "AdjacentNumbersEditor|"
+msgid "Sublevels"
+msgstr ""
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:30
+msgctxt "AdjacentNumbersEditor|"
+msgid "Start numbers"
+msgstr ""
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:31
+msgctxt "AdjacentNumbersEditor|"
+msgid "Minimum start number"
+msgstr ""
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:32
+msgctxt "AdjacentNumbersEditor|"
+msgid "Maximum start number"
+msgstr ""
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:33
+msgctxt "AdjacentNumbersEditor|"
+msgid "Step between numbers"
+msgstr ""
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:34
+msgctxt "AdjacentNumbersEditor|"
+msgid "Sequence length"
+msgstr ""
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:35
+msgctxt "AdjacentNumbersEditor|"
+msgid "Position of missing numbers"
+msgstr ""
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:36
+msgctxt "AdjacentNumbersEditor|"
+msgid "Proposed numbers"
+msgstr ""
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:98
+msgctxt "AdjacentNumbersEditor|"
+msgid "Dataset is empty."
+msgstr ""
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:100
+msgctxt "AdjacentNumbersEditor|"
+msgid "\"Start numbers\" must contain only numbers, and not be empty."
+msgstr ""
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:102
+msgctxt "AdjacentNumbersEditor|"
+msgid ""
+"\"Position of missing numbers\" must contain only numbers, and not be empty."
+msgstr ""
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:104
+msgctxt "AdjacentNumbersEditor|"
+msgid "\"Position of missing numbers\" contains too much numbers."
+msgstr ""
+
+#: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:106
+msgctxt "AdjacentNumbersEditor|"
+msgid "\"Position of missing numbers\" contains invalid numbers."
+msgstr ""
+
+#: server/activities/algebra_by/AlgebraDataDisplay.qml:19
+msgctxt "AlgebraDataDisplay|"
+msgid "timeout"
+msgstr ""
+
+#. %1 is an operation, %2 the result. Example: "2 x 5 = 10"
+#: server/activities/algebra_by/AlgebraDataDisplay.qml:22
+#, qt-format
+msgctxt "AlgebraDataDisplay|"
+msgid "%1 = %2"
+msgstr ""
+
+#. %1 is the answer. Example: "Answer: 10"
+#: server/activities/algebra_by/AlgebraDataDisplay.qml:24
+#, qt-format
+msgctxt "AlgebraDataDisplay|"
+msgid "Answer: %1"
+msgstr ""
+
+#: server/activities/algebra_by/AlgebraEditor.qml:25
+msgctxt "AlgebraEditor|"
+msgid "Rules to create a valid dataset:"
+msgstr ""
+
+#: server/activities/algebra_by/AlgebraEditor.qml:27
+msgctxt "AlgebraEditor|"
+msgid ""
+"When \"Random operands\" is selected, if \"Result value limit\" is more than "
+"0 it defines the maximum allowed for the result of each operation. It must "
+"be large enough to generate enough questions for the given number of "
+"sublevels using the minimum and maximum operand values."
+msgstr ""
+
+#: server/activities/algebra_by/AlgebraEditor.qml:29
+msgctxt "AlgebraEditor|"
+msgid ""
+"If \"Random operands\" is not selected, the sublevel list on the right side "
+"must not be empty."
+msgstr ""
+
+#: server/activities/algebra_by/AlgebraEditor.qml:33
+msgctxt "AlgebraEditor|"
+msgid "Random operands"
+msgstr ""
+
+#: server/activities/algebra_by/AlgebraEditor.qml:34
+#: server/activities/algebra_by/AlgebraEditor.qml:39
+msgctxt "AlgebraEditor|"
+msgid "Sublevels"
+msgstr ""
+
+#: server/activities/algebra_by/AlgebraEditor.qml:35
+msgctxt "AlgebraEditor|"
+msgid "Minimum operand value"
+msgstr ""
+
+#: server/activities/algebra_by/AlgebraEditor.qml:36
+msgctxt "AlgebraEditor|"
+msgid "Maximum operand value"
+msgstr ""
+
+#: server/activities/algebra_by/AlgebraEditor.qml:37
+msgctxt "AlgebraEditor|"
+msgid "Result value limit"
+msgstr ""
+
+#: server/activities/algebra_by/AlgebraEditor.qml:38
+msgctxt "AlgebraEditor|"
+msgid "Shuffle"
+msgstr "تەرتىپسىز"
+
+#: server/activities/algebra_by/AlgebraEditor.qml:44
+msgctxt "AlgebraEditor|"
+msgid "First operand"
+msgstr ""
+
+#: server/activities/algebra_by/AlgebraEditor.qml:45
+msgctxt "AlgebraEditor|"
+msgid "Second operand"
+msgstr ""
+
+#: server/activities/algebra_div/ActivityEditor.qml:16
+msgctxt "ActivityEditor|"
+msgid ""
+"When \"Random operands\" is selected, the right side operand is always "
+"between minimum and maximum values. The left side operand is generated by "
+"multiplying the right side operand by another number between minimum and "
+"maximum values."
+msgstr ""
+
+#: server/activities/algebra_div/ActivityEditor.qml:18
+msgctxt "ActivityEditor|"
+msgid ""
+"If \"Random operands\" is not selected, for each sublevel you must make sure "
+"that the \"First operand\" is a multiple of the \"Second operand\"."
+msgstr ""
+
+#: server/activities/algebra_div/ActivityEditor.qml:23
+msgctxt "ActivityEditor|"
+msgid "Random operands"
+msgstr ""
+
+#: server/activities/algebra_div/ActivityEditor.qml:24
+#: server/activities/algebra_div/ActivityEditor.qml:29
+msgctxt "ActivityEditor|"
+msgid "Sublevels"
+msgstr ""
+
+#: server/activities/algebra_div/ActivityEditor.qml:25
+msgctxt "ActivityEditor|"
+msgid "Minimum operand value"
+msgstr ""
+
+#: server/activities/algebra_div/ActivityEditor.qml:26
+msgctxt "ActivityEditor|"
+msgid "Maximum operand value"
+msgstr ""
+
+#: server/activities/algebra_div/ActivityEditor.qml:27
+msgctxt "ActivityEditor|"
+msgid "Result value limit"
+msgstr ""
+
+#: server/activities/algebra_div/ActivityEditor.qml:28
+msgctxt "ActivityEditor|"
+msgid "Shuffle"
+msgstr "تەرتىپسىز"
+
+#: server/activities/algebra_div/ActivityEditor.qml:34
+msgctxt "ActivityEditor|"
+msgid "First operand"
+msgstr ""
+
+#: server/activities/algebra_div/ActivityEditor.qml:35
+msgctxt "ActivityEditor|"
+msgid "Second operand"
+msgstr ""
+
+#: server/activities/algebra_minus/ActivityEditor.qml:16
+msgctxt "ActivityEditor|"
+msgid ""
+"If \"Random operands\" is not selected, for each sublevel you must make sure "
+"that the \"First operand\" is greater than the \"Second operand\"."
+msgstr ""
+
+#: server/activities/binary_bulb/ActivityEditor.qml:14
+msgctxt "ActivityEditor|"
+msgid ""
+"If \"Random numbers\" is not selected, \"Numbers to find\" must contain a "
+"list of integer numbers. Each number must be between 0 and the maximum "
+"number which can be represented with the given \"Bulb count\"."
+msgstr ""
+
+#: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:28
+msgctxt "BinaryBulbDataDisplay|"
+msgid "Expected:"
+msgstr ""
+
+#: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:34
+msgctxt "BinaryBulbDataDisplay|"
+msgid "Answer:"
+msgstr "جاۋاب:"
+
+#. %1 is the numerical value, %2 is the binary value. Example: "5 (101)"
+#: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:46
+#: server/activities/binary_bulb/BinaryBulbDataDisplay.qml:55
+#, qt-format
+msgctxt "BinaryBulbDataDisplay|"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:28
+msgctxt "BinaryBulbEditor|"
+msgid "Random numbers"
+msgstr ""
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:29
+msgctxt "BinaryBulbEditor|"
+msgid "Sublevels"
+msgstr ""
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:30
+msgctxt "BinaryBulbEditor|"
+msgid "Numbers to find"
+msgstr ""
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:31
+msgctxt "BinaryBulbEditor|"
+msgid "Shuffle questions"
+msgstr ""
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:32
+msgctxt "BinaryBulbEditor|"
+msgid "Bulb count"
+msgstr ""
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:33
+msgctxt "BinaryBulbEditor|"
+msgid "Display the current result"
+msgstr ""
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:34
+msgctxt "BinaryBulbEditor|"
+msgid "Display the bulb values"
+msgstr ""
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:87
+msgctxt "BinaryBulbEditor|"
+msgid "Dataset is empty."
+msgstr ""
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:101
+#, qt-format
+msgctxt "BinaryBulbEditor|"
+msgid "\"Numbers to find\" for level %1 must not be empty."
+msgstr ""
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:115
+#, qt-format
+msgctxt "BinaryBulbEditor|"
+msgid ""
+"These values are invalid for level %1: %2. The values must be integer "
+"numbers between 0 and %3."
+msgstr ""
+
+#: server/activities/binary_bulb/BinaryBulbEditor.qml:119
+#, qt-format
+msgctxt "BinaryBulbEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr ""
+
+#: server/activities/clockgame/ClockGameDataDisplay.qml:30
+msgctxt "ClockGameDataDisplay|"
+msgid "Expected:"
+msgstr ""
+
+#: server/activities/clockgame/ClockGameDataDisplay.qml:36
+msgctxt "ClockGameDataDisplay|"
+msgid "Answer:"
+msgstr "جاۋاب:"
+
+#: server/activities/clockgame/ClockgameEditor.qml:27
+msgctxt "ClockgameEditor|"
+msgid "Exercise count"
+msgstr ""
+
+#: server/activities/clockgame/ClockgameEditor.qml:28
+msgctxt "ClockgameEditor|"
+msgid "Find minutes"
+msgstr ""
+
+#: server/activities/clockgame/ClockgameEditor.qml:29
+msgctxt "ClockgameEditor|"
+msgid "Find seconds"
+msgstr ""
+
+#: server/activities/clockgame/ClockgameEditor.qml:30
+msgctxt "ClockgameEditor|"
+msgid "Display hours numbers"
+msgstr ""
+
+#: server/activities/clockgame/ClockgameEditor.qml:31
+msgctxt "ClockgameEditor|"
+msgid "Display hours marks"
+msgstr ""
+
+#: server/activities/clockgame/ClockgameEditor.qml:32
+msgctxt "ClockgameEditor|"
+msgid "Grey/white background between each hour"
+msgstr ""
+
+#: server/activities/clockgame/ClockgameEditor.qml:33
+msgctxt "ClockgameEditor|"
+msgid "Display minutes numbers"
+msgstr ""
+
+#: server/activities/clockgame/ClockgameEditor.qml:34
+msgctxt "ClockgameEditor|"
+msgid "Hide the Hint button in the bar (which gives the current time)"
+msgstr ""
+
+#: server/activities/clockgame/ClockgameEditor.qml:35
+msgctxt "ClockgameEditor|"
+msgid "Fixed hour"
+msgstr ""
+
+#: server/activities/clockgame/ClockgameEditor.qml:36
+#: server/activities/clockgame/ClockgameEditor.qml:38
+#: server/activities/clockgame/ClockgameEditor.qml:40
+msgctxt "ClockgameEditor|"
+msgid "Value"
+msgstr "قىممەت"
+
+#: server/activities/clockgame/ClockgameEditor.qml:37
+msgctxt "ClockgameEditor|"
+msgid "Fixed minutes"
+msgstr ""
+
+#: server/activities/clockgame/ClockgameEditor.qml:39
+msgctxt "ClockgameEditor|"
+msgid "Fixed seconds"
+msgstr ""
+
+#: server/activities/comparator/ComparatorDataDisplay.qml:30
+msgctxt "ComparatorDataDisplay|"
+msgid "Result:"
+msgstr "نەتىجە:"
+
+#: server/activities/comparator/ComparatorEditor.qml:29
+msgctxt "ComparatorEditor|"
+msgid "Shuffle"
+msgstr "تەرتىپسىز"
+
+#: server/activities/comparator/ComparatorEditor.qml:30
+msgctxt "ComparatorEditor|"
+msgid "Questions"
+msgstr ""
+
+#: server/activities/comparator/ComparatorEditor.qml:36
+msgctxt "ComparatorEditor|"
+msgid "Left number"
+msgstr ""
+
+#: server/activities/comparator/ComparatorEditor.qml:37
+msgctxt "ComparatorEditor|"
+msgid "Right number"
+msgstr ""
+
+#: server/activities/comparator/ComparatorEditor.qml:109
+msgctxt "ComparatorEditor|"
+msgid "Dataset is empty."
+msgstr ""
+
+#: server/activities/comparator/ComparatorEditor.qml:119
+#, qt-format
+msgctxt "ComparatorEditor|"
+msgid "Level %1 must not be empty."
+msgstr ""
+
+#: server/activities/comparator/ComparatorEditor.qml:126
+#, qt-format
+msgctxt "ComparatorEditor|"
+msgid "\"Left number\" in Question %1 of Level %2 must contain a number."
+msgstr ""
+
+#: server/activities/comparator/ComparatorEditor.qml:130
+#, qt-format
+msgctxt "ComparatorEditor|"
+msgid "\"Right number\" in Question %1 of Level %2 must contain a number."
+msgstr ""
+
+#: server/activities/comparator/ComparatorEditor.qml:136
+#, qt-format
+msgctxt "ComparatorEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr ""
+
+#: server/activities/DailyReport.qml:33
+msgctxt "DailyReport|"
+msgid "All groups"
+msgstr ""
+
+#. Group name first, then Date range, with a space between them. Example: "Group Name 01/07/2025-08/07/2025"
+#: server/activities/DailyReport.qml:129
+#, qt-format
+msgctxt "DailyReport|"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: server/activities/DailyReport.qml:133
+msgctxt "DailyReport|"
+msgid "Calendar"
+msgstr "يىلنامە"
+
+#: server/activities/DailyReport.qml:184
+msgctxt "DailyReport|"
+msgid "Count"
+msgstr "سانى"
+
+#: server/activities/DailyReport.qml:193
+msgctxt "DailyReport|"
+msgid "Time"
+msgstr "ۋاقىت"
+
+#: server/activities/DailyReport.qml:202
+msgctxt "DailyReport|"
+msgid "Ratio"
+msgstr "نىسبەت"
+
+#. Number of result lines
+#: server/activities/DailyReport.qml:213
+#, qt-format
+msgctxt "DailyReport|"
+msgid "Lines: %1"
+msgstr ""
+
+#. Success ratio, example: "50 %"
+#: server/activities/DailyReport.qml:314
+#, qt-format
+msgctxt "DailyReport|"
+msgid "%1 %"
+msgstr "%1 %"
+
+#: server/activities/fractions_create/ActivityEditor.qml:14
+msgctxt "ActivityEditor|"
+msgid ""
+"\"Instruction\" must contain some text telling the fraction to represent."
+msgstr ""
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:29
+msgctxt "FractionsCreateEditor|"
+msgid "Shuffle"
+msgstr "تەرتىپسىز"
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:30
+msgctxt "FractionsCreateEditor|"
+msgid "Questions"
+msgstr ""
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:36
+msgctxt "FractionsCreateEditor|"
+msgid "Numerator"
+msgstr "سۈرەت"
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:37
+msgctxt "FractionsCreateEditor|"
+msgid "Denominator"
+msgstr ""
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:38
+msgctxt "FractionsCreateEditor|"
+msgid "Instruction"
+msgstr ""
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:130
+msgctxt "FractionsCreateEditor|"
+msgid "Dataset is empty."
+msgstr ""
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:140
+#, qt-format
+msgctxt "FractionsCreateEditor|"
+msgid "Level %1 must not be empty."
+msgstr ""
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:146
+#, qt-format
+msgctxt "FractionsCreateEditor|"
+msgid "\"Instruction\" of Question %1 from Level %2 must not be empty."
+msgstr ""
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:152
+#, qt-format
+msgctxt "FractionsCreateEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr ""
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:160
+msgctxt "FractionsCreateEditor|"
+msgid "Rectangle"
+msgstr "تىك تۆت بۇلۇڭ"
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:161
+msgctxt "FractionsCreateEditor|"
+msgid "Circle"
+msgstr "چەمبەر"
+
+#: server/activities/fractions_create/FractionsCreateEditor.qml:164
+msgctxt "FractionsCreateEditor|"
+msgid "Chart Type"
+msgstr "ئىسخېما تىپى"
+
+#: server/activities/fractions_find/FractionsFindDataDisplay.qml:26
+msgctxt "FractionsFindDataDisplay|"
+msgid "Expected:"
+msgstr ""
+
+#: server/activities/fractions_find/FractionsFindDataDisplay.qml:60
+msgctxt "FractionsFindDataDisplay|"
+msgid "Answer:"
+msgstr "جاۋاب:"
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:29
+msgctxt "FractionsFindEditor|"
+msgid "Shuffle"
+msgstr "تەرتىپسىز"
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:30
+msgctxt "FractionsFindEditor|"
+msgid "Questions"
+msgstr ""
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:36
+msgctxt "FractionsFindEditor|"
+msgid "Static numerator"
+msgstr ""
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:37
+msgctxt "FractionsFindEditor|"
+msgid "Static denominator"
+msgstr ""
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:38
+msgctxt "FractionsFindEditor|"
+msgid "Numerator"
+msgstr "سۈرەت"
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:39
+msgctxt "FractionsFindEditor|"
+msgid "Denominator"
+msgstr ""
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:40
+msgctxt "FractionsFindEditor|"
+msgid "Maximum of units"
+msgstr ""
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:41
+msgctxt "FractionsFindEditor|"
+msgid "Random fraction"
+msgstr ""
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:159
+msgctxt "FractionsFindEditor|"
+msgid "Dataset is empty."
+msgstr ""
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:169
+#, qt-format
+msgctxt "FractionsFindEditor|"
+msgid "Level %1 must not be empty."
+msgstr ""
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:173
+#, qt-format
+msgctxt "FractionsFindEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr ""
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:181
+msgctxt "FractionsFindEditor|"
+msgid "Rectangle"
+msgstr "تىك تۆت بۇلۇڭ"
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:182
+msgctxt "FractionsFindEditor|"
+msgid "Circle"
+msgstr "چەمبەر"
+
+#: server/activities/fractions_find/FractionsFindEditor.qml:185
+msgctxt "FractionsFindEditor|"
+msgid "Chart Type"
+msgstr "ئىسخېما تىپى"
+
+#: server/activities/gletters/GlettersDataDisplay.qml:36
+msgctxt "GlettersDataDisplay|"
+msgid "Domino mode:"
+msgstr ""
+
+#: server/activities/gletters/GlettersDataDisplay.qml:66
+msgctxt "GlettersDataDisplay|"
+msgid "Visible items:"
+msgstr ""
+
+#: server/activities/gletters/GlettersDataDisplay.qml:95
+msgctxt "GlettersDataDisplay|"
+msgid "Typed answer:"
+msgstr ""
+
+#: server/activities/gletters/GlettersDataDisplay.qml:121
+msgctxt "GlettersDataDisplay|"
+msgid "Missed item:"
+msgstr ""
+
+#. %1 is number of hints displayed. Example: "Hints: 1"
+#: server/activities/guess24/Guess24DataDisplay.qml:79
+#, qt-format
+msgctxt "Guess24DataDisplay|"
+msgid "Hints: %1"
+msgstr ""
+
+#: server/activities/learn_additions/ActivityEditor.qml:16
+msgctxt "ActivityEditor|"
+msgid ""
+"\"Additions\" must contain a list of additions which results are between 0 "
+"and 9."
+msgstr ""
+
+#: server/activities/learn_additions/ActivityEditor.qml:18
+#: server/activities/learn_subtractions/ActivityEditor.qml:18
+msgctxt "ActivityEditor|"
+msgid ""
+"\"Number of circles\" can not be smaller than the largest result to find."
+msgstr ""
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:28
+msgctxt "LearnDecimalsEditor|"
+msgid "Shuffle"
+msgstr "تەرتىپسىز"
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:29
+msgctxt "LearnDecimalsEditor|"
+msgid "Sublevels"
+msgstr ""
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:39
+msgctxt "LearnDecimalsEditor|"
+msgid "Fixed Number"
+msgstr ""
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:40
+msgctxt "LearnDecimalsEditor|"
+msgid "Minimum Value"
+msgstr ""
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:41
+msgctxt "LearnDecimalsEditor|"
+msgid "Maximum Value"
+msgstr ""
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:140
+msgctxt "LearnDecimalsEditor|"
+msgid "Dataset is empty."
+msgstr ""
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:150
+#, qt-format
+msgctxt "LearnDecimalsEditor|"
+msgid "Level %1 must not be empty."
+msgstr ""
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:154
+#, qt-format
+msgctxt "LearnDecimalsEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr ""
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:162
+msgctxt "LearnDecimalsEditor|"
+msgid "Random"
+msgstr "ئىختىيارىي"
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:163
+msgctxt "LearnDecimalsEditor|"
+msgid "Fixed"
+msgstr "مۇقىم"
+
+#: server/activities/learn_decimals/LearnDecimalsEditor.qml:168
+msgctxt "LearnDecimalsEditor|"
+msgid "Mode"
+msgstr "ھالىتى"
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:29
+msgctxt "DecimalAdditionEditor|"
+msgid "Shuffle"
+msgstr "تەرتىپسىز"
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:30
+msgctxt "DecimalAdditionEditor|"
+msgid "Sublevels"
+msgstr ""
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:41
+msgctxt "DecimalAdditionEditor|"
+msgid "First Number"
+msgstr ""
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:42
+msgctxt "DecimalAdditionEditor|"
+msgid "Second Number"
+msgstr ""
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:43
+msgctxt "DecimalAdditionEditor|"
+msgid "Minimum Value"
+msgstr ""
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:44
+msgctxt "DecimalAdditionEditor|"
+msgid "Maximum Value"
+msgstr ""
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:182
+msgctxt "DecimalAdditionEditor|"
+msgid "Dataset is empty."
+msgstr ""
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:192
+#, qt-format
+msgctxt "DecimalAdditionEditor|"
+msgid "Level %1 must not be empty."
+msgstr ""
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:196
+#, qt-format
+msgctxt "DecimalAdditionEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr ""
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:204
+msgctxt "DecimalAdditionEditor|"
+msgid "Random"
+msgstr "ئىختىيارىي"
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:205
+msgctxt "DecimalAdditionEditor|"
+msgid "Fixed"
+msgstr "مۇقىم"
+
+#: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:210
+msgctxt "DecimalAdditionEditor|"
+msgid "Mode"
+msgstr "ھالىتى"
+
+#: server/activities/learn_digits/ActivityEditor.qml:15
+msgctxt "ActivityEditor|"
+msgid "\"Numbers\" must contain a list of numbers between 0 and 9."
+msgstr ""
+
+#: server/activities/learn_digits/ActivityEditor.qml:17
+msgctxt "ActivityEditor|"
+msgid ""
+"\"Number of circles\" can not be smaller than the largest number to find."
+msgstr ""
+
+#. %1 is an operation, %2 the result. Example: "2 x 5 = 10"
+#: server/activities/learn_digits/LearnDigitsDataDisplay.qml:24
+#, qt-format
+msgctxt "LearnDigitsDataDisplay|"
+msgid "%1 = %2"
+msgstr ""
+
+#. %1 is the answer. Example: "Answer: 10"
+#: server/activities/learn_digits/LearnDigitsDataDisplay.qml:27
+#, qt-format
+msgctxt "LearnDigitsDataDisplay|"
+msgid "Answer: %1"
+msgstr ""
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:32
+msgctxt "LearnDigitsEditor|"
+msgid "Number of circles"
+msgstr ""
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:33
+msgctxt "LearnDigitsEditor|"
+msgid "Random order"
+msgstr ""
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:99
+msgctxt "LearnDigitsEditor|"
+msgid "Dataset is empty."
+msgstr ""
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:101
+msgctxt "LearnDigitsEditor|"
+msgid ""
+"\"Numbers\" must only contain integer numbers between 0 and 9, and must not "
+"be empty."
+msgstr ""
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:103
+msgctxt "LearnDigitsEditor|"
+msgid ""
+"\"Additions\" must only contain additions which results are integer numbers "
+"between 0 and 9, and must not be empty."
+msgstr ""
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:105
+msgctxt "LearnDigitsEditor|"
+msgid ""
+"\"Subtractions\" must only contain subtractions which results are integer "
+"numbers between 0 and 9, and must not be empty."
+msgstr ""
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:161
+msgctxt "LearnDigitsEditor|"
+msgid "Numbers"
+msgstr "سانلار"
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:163
+msgctxt "LearnDigitsEditor|"
+msgid "Additions"
+msgstr ""
+
+#: server/activities/learn_digits/LearnDigitsEditor.qml:165
+msgctxt "LearnDigitsEditor|"
+msgid "Subtractions"
+msgstr ""
+
+#: server/activities/learn_quantities/ActivityEditor.qml:24
+msgctxt "ActivityEditor|"
+msgid "Fixed Number"
+msgstr ""
+
+#: server/activities/learn_quantities/ActivityEditor.qml:25
+msgctxt "ActivityEditor|"
+msgid "Minimum Value"
+msgstr ""
+
+#: server/activities/learn_quantities/ActivityEditor.qml:26
+msgctxt "ActivityEditor|"
+msgid "Maximum Value"
+msgstr ""
+
+#: server/activities/learn_subtractions/ActivityEditor.qml:16
+msgctxt "ActivityEditor|"
+msgid ""
+"\"Subtractions\" must contain a list of subtractions which results are "
+"between 0 and 9."
+msgstr ""
+
+#: server/activities/LineReport.qml:65
+msgctxt "LineReport|"
+msgid "Back"
+msgstr "قايت"
+
+#: server/activities/LineReport.qml:71
+msgctxt "LineReport|"
+msgid "Refresh"
+msgstr "يېڭىلا"
+
+#: server/activities/LineReport.qml:77
+#, qt-format
+msgctxt "LineReport|"
+msgid "Lines: %1"
+msgstr ""
+
+#: server/activities/LineReport.qml:228
+#, qt-format
+msgctxt "LineReport|"
+msgid "Level: <b>%1</b>"
+msgstr ""
+
+#. Result duration in seconds. Example: "Duration: 25s"
+#: server/activities/LineReport.qml:244 server/activities/LineReport.qml:254
+#, qt-format
+msgctxt "LineReport|"
+msgid "Duration: %1s"
+msgstr ""
+
+#: server/activities/magic-hat-minus/MagicHatEditor.qml:29
+msgctxt "MagicHatEditor|"
+msgid "Rules to create a valid dataset:"
+msgstr ""
+
+#: server/activities/magic-hat-minus/MagicHatEditor.qml:31
+msgctxt "MagicHatEditor|"
+msgid "If \"Use coefficients\" is not checked:"
+msgstr ""
+
+#: server/activities/magic-hat-minus/MagicHatEditor.qml:33
+#, qt-format
+msgctxt "MagicHatEditor|"
+msgid ""
+"\"Maximum number of stars\" and \"Minimum number of stars\" limit the number "
+"of stars for each of the 3 rows of the first operand (the top one). They "
+"must contain exactly 3 integer numbers, one for each row. The first entry "
+"must be between %1 and %2, the others between 0 and %2. Also the minimum "
+"numbers must not be larger than the corresponding maximum numbers."
+msgstr ""
+
+#: server/activities/magic-hat-minus/MagicHatEditor.qml:36
+msgctxt "MagicHatEditor|"
+msgid ""
+"Each row of the second operand (the bottom one) will contain a number of "
+"stars generated in such a way that when subtracted from the number of stars "
+"of the corresponding row of the first operand, the result will not be more "
+"than the \"Maximum result per row\" value."
+msgstr ""
+
+#: server/activities/magic-hat-minus/MagicHatEditor.qml:37
+msgctxt "MagicHatEditor|"
+msgid ""
+"Each row of the second operand (the bottom one) will contain a number of "
+"stars generated in such a way that when added to the number of stars of the "
+"corresponding row of the first operand, the result will not be more than the "
+"\"Maximum result per row\" value."
+msgstr ""
+
+#: server/activities/magic-hat-minus/MagicHatEditor.qml:41
+msgctxt "MagicHatEditor|"
+msgid ""
+"If \"Maximum number of stars\" for a row is 0, this row will be empty and "
+"hidden for both operands."
+msgstr ""
+
+#: server/activities/magic-hat-minus/MagicHatEditor.qml:44
+msgctxt "MagicHatEditor|"
+msgid ""
+"\"Maximum result per row\" must be larger than any value in \"Maximum number "
+"of stars\"."
+msgstr ""
+
+#: server/activities/magic-hat-minus/MagicHatEditor.qml:46
+msgctxt "MagicHatEditor|"
+msgid "If \"Use coefficients\" is checked:"
+msgstr ""
+
+#: server/activities/magic-hat-minus/MagicHatEditor.qml:48
+msgctxt "MagicHatEditor|"
+msgid ""
+"\"Row coefficients\" must contain exactly 3 integer numbers. The first entry "
+"must be between 1 and 10, the others between 0 and 10, and the sum of the 3 "
+"entries must not be larger than 10."
+msgstr ""
+
+#: server/activities/magic-hat-minus/MagicHatEditor.qml:52
+msgctxt "MagicHatEditor|"
+msgid "Use coefficients"
+msgstr ""
+
+#: server/activities/magic-hat-minus/MagicHatEditor.qml:53
+msgctxt "MagicHatEditor|"
+msgid "Maximum result per row"
+msgstr ""
+
+#: server/activities/magic-hat-minus/MagicHatEditor.qml:54
+msgctxt "MagicHatEditor|"
+msgid "Use different star sets per row"
+msgstr ""
+
+#: server/activities/magic-hat-minus/MagicHatEditor.qml:55
+msgctxt "MagicHatEditor|"
+msgid "Maximum number of stars"
+msgstr ""
+
+#: server/activities/magic-hat-minus/MagicHatEditor.qml:56
+msgctxt "MagicHatEditor|"
+msgid "Minimum number of stars"
+msgstr ""
+
+#: server/activities/magic-hat-minus/MagicHatEditor.qml:57
+msgctxt "MagicHatEditor|"
+msgid "Coefficient multiplier"
+msgstr ""
+
+#: server/activities/magic-hat-minus/MagicHatEditor.qml:58
+msgctxt "MagicHatEditor|"
+msgid "Row coefficients"
+msgstr ""
+
+#: server/activities/magic-hat-minus/MagicHatEditor.qml:120
+msgctxt "MagicHatEditor|"
+msgid "Dataset is empty."
+msgstr ""
+
+#: server/activities/magic-hat-minus/MagicHatEditor.qml:149
+#, qt-format
+msgctxt "MagicHatEditor|"
+msgid ""
+"Level %1 must contain exactly 3 integer numbers in \"Maximum number of stars"
+"\". The first entry must be between %2 and %3, the others between 0 and %3."
+msgstr ""
+
+#: server/activities/magic-hat-minus/MagicHatEditor.qml:169
+#, qt-format
+msgctxt "MagicHatEditor|"
+msgid ""
+"Level %1 must contain exactly 3 integer numbers in \"Minimum number of stars"
+"\". The first entry must be between %2 and %3, the others between 0 and %3, "
+"and each number must not be larger than the corresponding number in "
+"\"Maximum number of stars\"."
+msgstr ""
+
+#: server/activities/magic-hat-minus/MagicHatEditor.qml:183
+#, qt-format
+msgctxt "MagicHatEditor|"
+msgid ""
+"In Level %1, \"Maximum result per row\" must be larger than any value in "
+"\"Maximum number of stars\"."
+msgstr ""
+
+#: server/activities/magic-hat-minus/MagicHatEditor.qml:213
+#, qt-format
+msgctxt "MagicHatEditor|"
+msgid ""
+"Level %1 must contain exactly 3 integer numbers in \"Row coefficients\". The "
+"first entry must be between 1 and 10, the others between 0 and 10, and the "
+"sum of the 3 entries must not be larger than 10."
+msgstr ""
+
+#: server/activities/magic-hat-minus/MagicHatEditor.qml:219
+#, qt-format
+msgctxt "MagicHatEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr ""
+
+#. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
+#: server/activities/magic-hat-minus/StarsBar.qml:53
+#, qt-format
+msgctxt "StarsBar|"
+msgid "%1x"
+msgstr ""
+
+#: server/activities/multiple_choice_questions/ActivityEditor.qml:15
+msgctxt "ActivityEditor|"
+msgid ""
+"In \"Single answer\" mode, users can select only one answer. In \"Multiple "
+"answers\" mode, they can select multiple answers."
+msgstr ""
+
+#: server/activities/multiple_choice_questions/ActivityEditor.qml:17
+msgctxt "ActivityEditor|"
+msgid ""
+"All entries in the \"Correct answers\" list must also be present in the "
+"\"Answers\" list."
+msgstr ""
+
+#: server/activities/multiple_choice_questions/ActivityEditor.qml:19
+msgctxt "ActivityEditor|"
+msgid ""
+"\"Correct answer text\" and \"Wrong answer text\" are optional messages "
+"displayed after users validate their answer. You can leave those empty if "
+"you want."
+msgstr ""
+
+#: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:27
+msgctxt "MultipleChoiceDataDisplay|"
+msgid "Question:"
+msgstr "سوئال:"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:33
+msgctxt "MultipleChoiceDataDisplay|"
+msgid "Answer:"
+msgstr "جاۋاب:"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:39
+msgctxt "MultipleChoiceDataDisplay|"
+msgid "Expected:"
+msgstr ""
+
+#: server/activities/multiple_choice_questions/MultipleChoiceDataDisplay.qml:45
+msgctxt "MultipleChoiceDataDisplay|"
+msgid "Proposed:"
+msgstr ""
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:29
+msgctxt "MultipleChoiceEditor|"
+msgid "Shuffle"
+msgstr "تەرتىپسىز"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:30
+msgctxt "MultipleChoiceEditor|"
+msgid "Sublevels"
+msgstr ""
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:36
+msgctxt "MultipleChoiceEditor|"
+msgid "Shuffle answers"
+msgstr ""
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:37
+msgctxt "MultipleChoiceEditor|"
+msgid "Question"
+msgstr "سوئال"
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:38
+msgctxt "MultipleChoiceEditor|"
+msgid "Answers"
+msgstr ""
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:39
+msgctxt "MultipleChoiceEditor|"
+msgid "Correct answers"
+msgstr ""
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:40
+msgctxt "MultipleChoiceEditor|"
+msgid "Correct answer text"
+msgstr ""
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:41
+msgctxt "MultipleChoiceEditor|"
+msgid "Wrong answer text"
+msgstr ""
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:121
+msgctxt "MultipleChoiceEditor|"
+msgid "Dataset is empty."
+msgstr ""
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:131
+#, qt-format
+msgctxt "MultipleChoiceEditor|"
+msgid "Level %1 must not be empty."
+msgstr ""
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:138
+#, qt-format
+msgctxt "MultipleChoiceEditor|"
+msgid "\"Question\" in Sublevel %1 of Level %2 must not be empty."
+msgstr ""
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:143
+#, qt-format
+msgctxt "MultipleChoiceEditor|"
+msgid "\"Answers\" in Sublevel %1 of Level %2 must not be empty."
+msgstr ""
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:148
+#, qt-format
+msgctxt "MultipleChoiceEditor|"
+msgid "\"Correct answers\" in Sublevel %1 of Level %2 must not be empty."
+msgstr ""
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:155
+#, qt-format
+msgctxt "MultipleChoiceEditor|"
+msgid ""
+"In Sublevel %1 of Level %2, the correct answer \"%3\" is not in the \"Answers"
+"\" list."
+msgstr ""
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:163
+#, qt-format
+msgctxt "MultipleChoiceEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr ""
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:171
+msgctxt "MultipleChoiceEditor|"
+msgid "Single answer"
+msgstr ""
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:172
+msgctxt "MultipleChoiceEditor|"
+msgid "Multiple answers"
+msgstr ""
+
+#: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:177
+msgctxt "MultipleChoiceEditor|"
+msgid "Mode"
+msgstr "ھالىتى"
+
+#: server/activities/reversecount/ReversecountDataDisplay.qml:38
+msgctxt "ReversecountDataDisplay|"
+msgid "Domino mode:"
+msgstr ""
+
+#: server/activities/reversecount/ReversecountDataDisplay.qml:67
+msgctxt "ReversecountDataDisplay|"
+msgid "Tux position:"
+msgstr ""
+
+#: server/activities/reversecount/ReversecountDataDisplay.qml:92
+msgctxt "ReversecountDataDisplay|"
+msgid "Interval:"
+msgstr "مەزگىل:"
+
+#: server/activities/reversecount/ReversecountDataDisplay.qml:119
+msgctxt "ReversecountDataDisplay|"
+msgid "Answer:"
+msgstr "جاۋاب:"
+
+#: server/activities/reversecount/ReversecountDataDisplay.qml:130
+#, qt-format
+msgctxt "ReversecountDataDisplay|"
+msgid "(%1 + %2) = %3"
+msgstr ""
+
+#: server/activities/reversecount/ReversecountEditor.qml:25
+msgctxt "ReversecountEditor|"
+msgid "Rules to create a valid dataset:"
+msgstr ""
+
+#: server/activities/reversecount/ReversecountEditor.qml:27
+msgctxt "ReversecountEditor|"
+msgid ""
+"\"Maximum number\" is the maximum number which can be entered on each side "
+"of the domino."
+msgstr ""
+
+#: server/activities/reversecount/ReversecountEditor.qml:29
+msgctxt "ReversecountEditor|"
+msgid ""
+"The maximum interval is the smaller of 15 and 2 × \"Domino maximum number\"."
+msgstr ""
+
+#: server/activities/reversecount/ReversecountEditor.qml:31
+msgctxt "ReversecountEditor|"
+msgid ""
+"\"Intervals\" must contain integer numbers between 1 and the maximum "
+"interval. These numbers will be selected randomly for each question. You can "
+"enter several times the same number to increase the probability that it will "
+"be selected."
+msgstr ""
+
+#: server/activities/reversecount/ReversecountEditor.qml:35
+msgctxt "ReversecountEditor|"
+msgid "Maximum number"
+msgstr ""
+
+#: server/activities/reversecount/ReversecountEditor.qml:36
+msgctxt "ReversecountEditor|"
+msgid "Intervals"
+msgstr ""
+
+#: server/activities/reversecount/ReversecountEditor.qml:37
+msgctxt "ReversecountEditor|"
+msgid "Number of fishes"
+msgstr ""
+
+#: server/activities/reversecount/ReversecountEditor.qml:86
+msgctxt "ReversecountEditor|"
+msgid "Dataset is empty."
+msgstr ""
+
+#: server/activities/reversecount/ReversecountEditor.qml:99
+#, qt-format
+msgctxt "ReversecountEditor|"
+msgid "\"Intervals\" for level %1 must not be empty."
+msgstr ""
+
+#: server/activities/reversecount/ReversecountEditor.qml:112
+#, qt-format
+msgctxt "ReversecountEditor|"
+msgid ""
+"These intervals are invalid for level %1: %2. Read the instructions for more "
+"details."
+msgstr ""
+
+#: server/activities/reversecount/ReversecountEditor.qml:116
+#, qt-format
+msgctxt "ReversecountEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr ""
+
+#: server/activities/share/ShareDataDisplay.qml:49
+msgctxt "ShareDataDisplay|"
+msgid "Number of candies:"
+msgstr ""
+
+#: server/activities/share/ShareDataDisplay.qml:76
+msgctxt "ShareDataDisplay|"
+msgid "Placed girls:"
+msgstr ""
+
+#. Display a fraction
+#: server/activities/share/ShareDataDisplay.qml:87
+#: server/activities/share/ShareDataDisplay.qml:118
+#: server/activities/share/ShareDataDisplay.qml:262
+#, qt-format
+msgctxt "ShareDataDisplay|"
+msgid "%1 / %2"
+msgstr "%1 / %2"
+
+#: server/activities/share/ShareDataDisplay.qml:107
+msgctxt "ShareDataDisplay|"
+msgid "Placed boys:"
+msgstr ""
+
+#: server/activities/share/ShareDataDisplay.qml:137
+msgctxt "ShareDataDisplay|"
+msgid "Expected candies per child:"
+msgstr ""
+
+#: server/activities/share/ShareDataDisplay.qml:164
+msgctxt "ShareDataDisplay|"
+msgid "Candies for girls:"
+msgstr ""
+
+#: server/activities/share/ShareDataDisplay.qml:195
+msgctxt "ShareDataDisplay|"
+msgid "Candies for boys:"
+msgstr ""
+
+#: server/activities/share/ShareDataDisplay.qml:224
+msgctxt "ShareDataDisplay|"
+msgid "Jar placed:"
+msgstr ""
+
+#: server/activities/share/ShareDataDisplay.qml:234
+msgctxt "ShareDataDisplay|"
+msgid "Yes"
+msgstr "ھەئە"
+
+#: server/activities/share/ShareDataDisplay.qml:234
+msgctxt "ShareDataDisplay|"
+msgid "No"
+msgstr "ياق"
+
+#: server/activities/share/ShareDataDisplay.qml:251
+msgctxt "ShareDataDisplay|"
+msgid "Candies in the jar:"
+msgstr ""
+
+#: server/activities/share/ShareEditor.qml:22
+msgctxt "ShareEditor|"
+msgid "Rules to create a valid dataset:"
+msgstr ""
+
+#: server/activities/share/ShareEditor.qml:24
+msgctxt "ShareEditor|"
+msgid ""
+"In general, there can not be more than 6 children, and 6 candies per child."
+msgstr ""
+
+#: server/activities/share/ShareEditor.qml:26
+msgctxt "ShareEditor|"
+msgid ""
+"If \"Random numbers\" is selected, the number of already placed candies per "
+"child must be defined such that not all candies are already placed."
+msgstr ""
+
+#: server/activities/share/ShareEditor.qml:28
+msgctxt "ShareEditor|"
+msgid ""
+"The \"Instruction\" field allows to give a specific instruction for each "
+"sublevel. If it is empty, a default instruction text is used."
+msgstr ""
+
+#: server/activities/share/ShareEditor.qml:33
+msgctxt "ShareEditor|"
+msgid "Shuffle"
+msgstr "تەرتىپسىز"
+
+#: server/activities/share/ShareEditor.qml:34
+msgctxt "ShareEditor|"
+msgid "Sublevels"
+msgstr ""
+
+#: server/activities/share/ShareEditor.qml:40
+msgctxt "ShareEditor|"
+msgid "Random numbers"
+msgstr ""
+
+#: server/activities/share/ShareEditor.qml:44
+msgctxt "ShareEditor|"
+msgid "Number of girls"
+msgstr ""
+
+#: server/activities/share/ShareEditor.qml:45
+msgctxt "ShareEditor|"
+msgid "Number of boys"
+msgstr ""
+
+#: server/activities/share/ShareEditor.qml:46
+msgctxt "ShareEditor|"
+msgid "Number of candies"
+msgstr ""
+
+#: server/activities/share/ShareEditor.qml:47
+msgctxt "ShareEditor|"
+msgid "Candies already placed per girl"
+msgstr ""
+
+#: server/activities/share/ShareEditor.qml:48
+msgctxt "ShareEditor|"
+msgid "Candies already placed per boy"
+msgstr ""
+
+#: server/activities/share/ShareEditor.qml:49
+msgctxt "ShareEditor|"
+msgid "Force showing the jar"
+msgstr ""
+
+#: server/activities/share/ShareEditor.qml:52
+msgctxt "ShareEditor|"
+msgid "Maximum number of girls"
+msgstr ""
+
+#: server/activities/share/ShareEditor.qml:53
+msgctxt "ShareEditor|"
+msgid "Maximum number of boys"
+msgstr ""
+
+#: server/activities/share/ShareEditor.qml:54
+msgctxt "ShareEditor|"
+msgid "Maximum number of candies"
+msgstr ""
+
+#: server/activities/share/ShareEditor.qml:55
+msgctxt "ShareEditor|"
+msgid "Already place some candies"
+msgstr ""
+
+#: server/activities/share/ShareEditor.qml:58
+msgctxt "ShareEditor|"
+msgid "Instruction"
+msgstr ""
+
+#: server/activities/share/ShareEditor.qml:289
+msgctxt "ShareEditor|"
+msgid "Dataset is empty."
+msgstr ""
+
+#: server/activities/share/ShareEditor.qml:299
+#, qt-format
+msgctxt "ShareEditor|"
+msgid "Level %1 must not be empty."
+msgstr ""
+
+#: server/activities/share/ShareEditor.qml:309
+#, qt-format
+msgctxt "ShareEditor|"
+msgid "In Sublevel %2 of Level %1, the total number of children is 0."
+msgstr ""
+
+#: server/activities/share/ShareEditor.qml:317
+#, qt-format
+msgctxt "ShareEditor|"
+msgid ""
+"In Sublevel %2 of Level %1, the number of already placed candies is too high."
+msgstr ""
+
+#: server/activities/share/ShareEditor.qml:324
+#, qt-format
+msgctxt "ShareEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr ""
+
+#: server/activities/smallnumbers/SmallnumbersEditor.qml:25
+msgctxt "SmallnumbersEditor|"
+msgid "Rules to create a valid dataset:"
+msgstr ""
+
+#: server/activities/smallnumbers/SmallnumbersEditor.qml:27
+msgctxt "SmallnumbersEditor|"
+msgid ""
+"\"Sublevels\" defines the amount of numbers which will appear in the level. "
+"Numbers will be randomly selected from the \"Numbers\" list."
+msgstr ""
+
+#: server/activities/smallnumbers/SmallnumbersEditor.qml:29
+msgctxt "SmallnumbersEditor|"
+msgid ""
+"\"Numbers\" must contain a list of integer numbers between 0 and 9, and it "
+"must contain at least two numbers. You can enter the same number several "
+"times to increase the probability that it will appear."
+msgstr ""
+
+#: server/activities/smallnumbers/SmallnumbersEditor.qml:31
+msgctxt "SmallnumbersEditor|"
+msgid ""
+"You can enter an optional instruction sentence in the \"Instruction\" field, "
+"or leave it empty."
+msgstr ""
+
+#: server/activities/smallnumbers/SmallnumbersEditor.qml:36
+msgctxt "SmallnumbersEditor|"
+msgid "Sublevels"
+msgstr ""
+
+#: server/activities/smallnumbers/SmallnumbersEditor.qml:37
+msgctxt "SmallnumbersEditor|"
+msgid "Numbers"
+msgstr "سانلار"
+
+#: server/activities/smallnumbers/SmallnumbersEditor.qml:38
+msgctxt "SmallnumbersEditor|"
+msgid "Instruction"
+msgstr ""
+
+#: server/activities/smallnumbers/SmallnumbersEditor.qml:79
+msgctxt "SmallnumbersEditor|"
+msgid "Dataset is empty."
+msgstr ""
+
+#: server/activities/smallnumbers/SmallnumbersEditor.qml:92
+#, qt-format
+msgctxt "SmallnumbersEditor|"
+msgid "\"Numbers\" for level %1 must not be empty."
+msgstr ""
+
+#: server/activities/smallnumbers/SmallnumbersEditor.qml:95
+#, qt-format
+msgctxt "SmallnumbersEditor|"
+msgid "\"Numbers\" for level %1 must contain at least two entries."
+msgstr ""
+
+#: server/activities/smallnumbers/SmallnumbersEditor.qml:114
+#, qt-format
+msgctxt "SmallnumbersEditor|"
+msgid ""
+"These values are invalid for level %1: %2. The values must be integer "
+"numbers between 0 and %3."
+msgstr ""
+
+#: server/activities/smallnumbers/SmallnumbersEditor.qml:118
+#, qt-format
+msgctxt "SmallnumbersEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr ""
+
+#: server/activities/target/ActivityEditor.qml:14
+msgctxt "ActivityEditor|"
+msgid ""
+"\"Target values\" defines the score for each circle of the target, from the "
+"center outward. It must contain only integer numbers. Typically all values "
+"should be in descending order."
+msgstr ""
+
+#: server/activities/target/TargetDataDisplay.qml:34
+msgctxt "TargetDataDisplay|"
+msgid "Target values:"
+msgstr ""
+
+#: server/activities/target/TargetDataDisplay.qml:64
+msgctxt "TargetDataDisplay|"
+msgid "Addition:"
+msgstr ""
+
+#: server/activities/target/TargetDataDisplay.qml:92
+msgctxt "TargetDataDisplay|"
+msgid "Answer:"
+msgstr "جاۋاب:"
+
+#: server/activities/target/TargetDataDisplay.qml:118
+msgctxt "TargetDataDisplay|"
+msgid "Expected answer:"
+msgstr ""
+
+#: server/activities/target/TargetEditor.qml:27
+msgctxt "TargetEditor|"
+msgid "Sublevels"
+msgstr ""
+
+#: server/activities/target/TargetEditor.qml:28
+msgctxt "TargetEditor|"
+msgid "Number of darts"
+msgstr ""
+
+#: server/activities/target/TargetEditor.qml:29
+msgctxt "TargetEditor|"
+msgid "Target values"
+msgstr ""
+
+#: server/activities/target/TargetEditor.qml:73
+msgctxt "TargetEditor|"
+msgid "Dataset is empty."
+msgstr ""
+
+#: server/activities/target/TargetEditor.qml:84
+#, qt-format
+msgctxt "TargetEditor|"
+msgid "\"Target values\" for level %1 must not be empty."
+msgstr ""
+
+#: server/activities/target/TargetEditor.qml:90
+#, qt-format
+msgctxt "TargetEditor|"
+msgid "\"Target values\" for level %1 contains invalid entries."
+msgstr ""
+
+#: server/activities/target/TargetEditor.qml:97
+#, qt-format
+msgctxt "TargetEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr ""
+
+#: server/activities/tens_complement_find/ActivityEditor.qml:15
+#: server/activities/tens_complement_use/ActivityEditor.qml:15
+msgctxt "ActivityEditor|"
+msgid "All numbers must be positive integers"
+msgstr ""
+
+#: server/activities/tens_complement_find/ActivityEditor.qml:17
+msgctxt "ActivityEditor|"
+msgid ""
+"Do not add too many \"Extra cards\"! Each sublevel must not have more than 6 "
+"cards, and there is already 1 card per addition, or 2 cards per addition if "
+"\"Find both numbers\" is selected."
+msgstr ""
+
+#: server/activities/tens_complement_find/ActivityEditor.qml:19
+msgctxt "ActivityEditor|"
+msgid ""
+"If \"Random questions\" is not selected, \"First operands\" of each sublevel "
+"must contain 1, 2 or 3 numbers between 1 and 9. There is one addition for "
+"each \"First operand\" number."
+msgstr ""
+
+#: server/activities/tens_complement_find/TensComplementFindEditor.qml:27
+msgctxt "TensComplementFindEditor|"
+msgid "Random questions"
+msgstr ""
+
+#: server/activities/tens_complement_find/TensComplementFindEditor.qml:28
+msgctxt "TensComplementFindEditor|"
+msgid "Find both numbers"
+msgstr ""
+
+#: server/activities/tens_complement_find/TensComplementFindEditor.qml:29
+#: server/activities/tens_complement_find/TensComplementFindEditor.qml:35
+msgctxt "TensComplementFindEditor|"
+msgid "Sublevels"
+msgstr ""
+
+#: server/activities/tens_complement_find/TensComplementFindEditor.qml:30
+msgctxt "TensComplementFindEditor|"
+msgid "Additions per sublevel"
+msgstr ""
+
+#: server/activities/tens_complement_find/TensComplementFindEditor.qml:31
+#: server/activities/tens_complement_find/TensComplementFindEditor.qml:41
+msgctxt "TensComplementFindEditor|"
+msgid "Extra cards"
+msgstr ""
+
+#: server/activities/tens_complement_find/TensComplementFindEditor.qml:32
+msgctxt "TensComplementFindEditor|"
+msgid "Minimum first operand"
+msgstr ""
+
+#: server/activities/tens_complement_find/TensComplementFindEditor.qml:33
+msgctxt "TensComplementFindEditor|"
+msgid "Maximum first operand"
+msgstr ""
+
+#: server/activities/tens_complement_find/TensComplementFindEditor.qml:34
+msgctxt "TensComplementFindEditor|"
+msgid "Shuffle operands"
+msgstr ""
+
+#: server/activities/tens_complement_find/TensComplementFindEditor.qml:40
+msgctxt "TensComplementFindEditor|"
+msgid "First operands"
+msgstr ""
+
+#: server/activities/tens_complement_find/TensComplementFindEditor.qml:163
+msgctxt "TensComplementFindEditor|"
+msgid "Dataset is empty."
+msgstr ""
+
+#: server/activities/tens_complement_find/TensComplementFindEditor.qml:178
+#, qt-format
+msgctxt "TensComplementFindEditor|"
+msgid "Level %1 contains too many extra cards."
+msgstr ""
+
+#: server/activities/tens_complement_find/TensComplementFindEditor.qml:184
+#, qt-format
+msgctxt "TensComplementFindEditor|"
+msgid "Level %1 must not be empty."
+msgstr ""
+
+#: server/activities/tens_complement_find/TensComplementFindEditor.qml:193
+#, qt-format
+msgctxt "TensComplementFindEditor|"
+msgid "Sublevel %2 of Level %1 must not be empty."
+msgstr ""
+
+#: server/activities/tens_complement_find/TensComplementFindEditor.qml:200
+#, qt-format
+msgctxt "TensComplementFindEditor|"
+msgid "Sublevel %2 of Level %1 contains invalid First operands."
+msgstr ""
+
+#: server/activities/tens_complement_find/TensComplementFindEditor.qml:210
+#, qt-format
+msgctxt "TensComplementFindEditor|"
+msgid "Sublevel %2 of Level %1 contains invalid extra cards."
+msgstr ""
+
+#: server/activities/tens_complement_find/TensComplementFindEditor.qml:218
+#, qt-format
+msgctxt "TensComplementFindEditor|"
+msgid "Sublevel %2 of Level %1 contains too many extra cards."
+msgstr ""
+
+#: server/activities/tens_complement_find/TensComplementFindEditor.qml:226
+#, qt-format
+msgctxt "TensComplementFindEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr ""
+
+#: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:25
+msgctxt "TensComplementSwapEditor|"
+msgid "Rules to create a valid dataset:"
+msgstr ""
+
+#: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:27
+msgctxt "TensComplementSwapEditor|"
+msgid "All numbers must be positive integers"
+msgstr ""
+
+#: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:29
+msgctxt "TensComplementSwapEditor|"
+msgid ""
+"If \"Random operands\" is not selected, \"Operands\" must contain 1, 2 or 3 "
+"entries. Each entry must be a number between 1 and 9. The resulting addition "
+"will contain the given entries and their complement to 10."
+msgstr ""
+
+#: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:31
+msgctxt "TensComplementSwapEditor|"
+msgid ""
+"\"Extra operand\" can contain 1 number between 1 and 9 which will be added "
+"to the addition. It is mandatory if \"Operands\" contains 1 number, optional "
+"if \"Operands\" contains 2 numbers, and not used if \"Operands\" contains 3 "
+"numbers."
+msgstr ""
+
+#: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:35
+msgctxt "TensComplementSwapEditor|"
+msgid "Shuffle"
+msgstr "تەرتىپسىز"
+
+#: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:36
+msgctxt "TensComplementSwapEditor|"
+msgid "Additions"
+msgstr ""
+
+#: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:41
+msgctxt "TensComplementSwapEditor|"
+msgid "Random operands"
+msgstr ""
+
+#: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:42
+msgctxt "TensComplementSwapEditor|"
+msgid "Number of operands"
+msgstr ""
+
+#: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:43
+msgctxt "TensComplementSwapEditor|"
+msgid "Operands"
+msgstr ""
+
+#: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:44
+msgctxt "TensComplementSwapEditor|"
+msgid "Extra operand"
+msgstr ""
+
+#: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:144
+msgctxt "TensComplementSwapEditor|"
+msgid "Dataset is empty."
+msgstr ""
+
+#: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:154
+#, qt-format
+msgctxt "TensComplementSwapEditor|"
+msgid "Level %1 must not be empty."
+msgstr ""
+
+#: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:192
+#, qt-format
+msgctxt "TensComplementSwapEditor|"
+msgid ""
+"Content of Addition %2 of Level %1 is not valid. Please check the "
+"instructions."
+msgstr ""
+
+#: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:198
+#, qt-format
+msgctxt "TensComplementSwapEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr ""
+
+#: server/activities/tens_complement_use/ActivityEditor.qml:17
+msgctxt "ActivityEditor|"
+msgid ""
+"Do not add too many \"Extra cards\"! Each sublevel must not have more than 6 "
+"cards, and there are already 2 cards per addition."
+msgstr ""
+
+#: server/activities/tens_complement_use/ActivityEditor.qml:19
+msgctxt "ActivityEditor|"
+msgid ""
+"In \"Additions\", each entry must be an addition which first number is "
+"between 1 and 9, and which result is between 11 and 99."
+msgstr ""
+
+#: server/activities/tens_complement_use/TensComplementUseDataDisplay.qml:36
+msgctxt "TensComplementUseDataDisplay|"
+msgid "Proposed numbers:"
+msgstr ""
+
+#: server/activities/tens_complement_use/TensComplementUseDataDisplay.qml:71
+msgctxt "TensComplementUseDataDisplay|"
+msgid "Question:"
+msgstr "سوئال:"
+
+#: server/activities/tens_complement_use/TensComplementUseDataDisplay.qml:97
+msgctxt "TensComplementUseDataDisplay|"
+msgid "Answer:"
+msgstr "جاۋاب:"
+
+#: server/activities/tens_complement_use/TensComplementUseEditor.qml:27
+msgctxt "TensComplementUseEditor|"
+msgid "Random questions"
+msgstr ""
+
+#: server/activities/tens_complement_use/TensComplementUseEditor.qml:28
+#: server/activities/tens_complement_use/TensComplementUseEditor.qml:34
+msgctxt "TensComplementUseEditor|"
+msgid "Sublevels"
+msgstr ""
+
+#: server/activities/tens_complement_use/TensComplementUseEditor.qml:29
+msgctxt "TensComplementUseEditor|"
+msgid "Additions per sublevel"
+msgstr ""
+
+#: server/activities/tens_complement_use/TensComplementUseEditor.qml:30
+#: server/activities/tens_complement_use/TensComplementUseEditor.qml:40
+msgctxt "TensComplementUseEditor|"
+msgid "Extra cards"
+msgstr ""
+
+#: server/activities/tens_complement_use/TensComplementUseEditor.qml:31
+msgctxt "TensComplementUseEditor|"
+msgid "Minimum result"
+msgstr ""
+
+#: server/activities/tens_complement_use/TensComplementUseEditor.qml:32
+msgctxt "TensComplementUseEditor|"
+msgid "Maximum result"
+msgstr ""
+
+#: server/activities/tens_complement_use/TensComplementUseEditor.qml:33
+msgctxt "TensComplementUseEditor|"
+msgid "Shuffle"
+msgstr "تەرتىپسىز"
+
+#: server/activities/tens_complement_use/TensComplementUseEditor.qml:39
+msgctxt "TensComplementUseEditor|"
+msgid "Additions"
+msgstr ""
+
+#: server/activities/tens_complement_use/TensComplementUseEditor.qml:156
+msgctxt "TensComplementUseEditor|"
+msgid "Dataset is empty."
+msgstr ""
+
+#: server/activities/tens_complement_use/TensComplementUseEditor.qml:169
+#, qt-format
+msgctxt "TensComplementUseEditor|"
+msgid "Level %1 contains too many extra cards."
+msgstr ""
+
+#: server/activities/tens_complement_use/TensComplementUseEditor.qml:175
+#, qt-format
+msgctxt "TensComplementUseEditor|"
+msgid "Level %1 must not be empty."
+msgstr ""
+
+#: server/activities/tens_complement_use/TensComplementUseEditor.qml:184
+#, qt-format
+msgctxt "TensComplementUseEditor|"
+msgid "Sublevel %2 of Level %1 must not be empty."
+msgstr ""
+
+#: server/activities/tens_complement_use/TensComplementUseEditor.qml:194
+#, qt-format
+msgctxt "TensComplementUseEditor|"
+msgid "Addition %3 of Sublevel %2 of Level %1 is not correct."
+msgstr ""
+
+#: server/activities/tens_complement_use/TensComplementUseEditor.qml:204
+#, qt-format
+msgctxt "TensComplementUseEditor|"
+msgid "Sublevel %2 of Level %1 contains invalid extra cards."
+msgstr ""
+
+#: server/activities/tens_complement_use/TensComplementUseEditor.qml:212
+#, qt-format
+msgctxt "TensComplementUseEditor|"
+msgid "Sublevel %2 of Level %1 contains too many extra cards."
+msgstr ""
+
+#: server/activities/tens_complement_use/TensComplementUseEditor.qml:220
+#, qt-format
+msgctxt "TensComplementUseEditor|"
+msgid "The following errors need to be fixed:<ul>%1</ul>"
+msgstr ""
+
+#: server/activities/vertical_subtraction/VerticalEditor.qml:29
+msgctxt "VerticalEditor|"
+msgid "Sublevels"
+msgstr ""
+
+#: server/activities/vertical_subtraction/VerticalEditor.qml:31
+msgctxt "VerticalEditor|"
+msgid "Number of digits"
+msgstr ""
+
+#: server/activities/vertical_subtraction/VerticalEditor.qml:33
+msgctxt "VerticalEditor|"
+msgid "Number of lines"
+msgstr ""
+
+#: server/activities/vertical_subtraction/VerticalEditor.qml:34
+msgctxt "VerticalEditor|"
+msgid "With carry"
+msgstr ""
+
+#: server/activities/vertical_subtraction/VerticalEditor.qml:35
+msgctxt "VerticalEditor|"
+msgid "Already laid"
+msgstr ""
+
+#: server/activities/vertical_subtraction/VerticalEditor.qml:36
+msgctxt "VerticalEditor|"
+msgid "Write your operation"
+msgstr ""
+
+#: server/components/CalendarPane.qml:77
+msgctxt "CalendarPane|"
+msgid "Calendar"
+msgstr "يىلنامە"
+
+#: server/components/CheckUserEditDelegate.qml:34
+msgctxt "CheckUserEditDelegate|"
+msgid "Edit pupil"
+msgstr ""
+
+#: server/components/EditorBox.qml:84
+msgctxt "EditorBox|"
+msgid "Add"
+msgstr "قوش"
+
+#: server/components/EditorBox.qml:95
+msgctxt "EditorBox|"
+msgid "Remove"
+msgstr "چىقىرىۋەت"
+
+#: server/components/EditorBox.qml:107
+msgctxt "EditorBox|"
+msgid "Move up"
+msgstr "يۇقىرىغا"
+
+#: server/components/EditorBox.qml:119
+msgctxt "EditorBox|"
+msgid "Move down"
+msgstr "تۆۋەنگە"
+
+#: server/components/FieldEdit.qml:329
+msgctxt "FieldEdit|"
+msgid "Add an entry"
+msgstr ""
+
+#: server/components/FieldEdit.qml:341
+msgctxt "FieldEdit|"
+msgid "Remove last entry"
+msgstr ""
+
+#: server/components/FoldDown.qml:156
+msgctxt "FoldDown|@action"
+msgid "Filter list"
+msgstr ""
+
+#: server/components/OkCancelButtons.qml:21
+msgctxt "OkCancelButtons|"
+msgid "OK"
+msgstr "جەزملە"
+
+#: server/components/OkCancelButtons.qml:22
+msgctxt "OkCancelButtons|"
+msgid "Cancel"
+msgstr "ۋاز كەچ"
+
+#: server/components/RadioGroupEditDelegate.qml:59
+msgctxt "RadioGroupEditDelegate|"
+msgid "Edit group"
+msgstr ""
+
+#: server/components/RadioGroupEditDelegate.qml:71
+msgctxt "RadioGroupEditDelegate|"
+msgid "Delete group"
+msgstr ""
+
+#. Argument is dataset name
+#: server/components/SequenceElement.qml:72
+#, qt-format
+msgctxt "SequenceElement|"
+msgid "Dataset: %1"
+msgstr ""
+
+#: server/components/ServerLanguageList.qml:32
+msgctxt "ServerLanguageList|"
+msgid "Your system default"
+msgstr ""
+
+#: server/controllers/database-controller.cpp:79
+#: server/controllers/database-controller.cpp:85
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid ""
+"File %1\n"
+"Error SQL: %2"
+msgstr ""
+
+#: server/controllers/database-controller.cpp:121
+msgctxt "controllers::DatabaseController|"
+msgid "Table teacher_ could not be updated to current version."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:351
+msgctxt "controllers::DatabaseController|"
+msgid "Error creating teacher."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:373
+msgctxt "controllers::DatabaseController|"
+msgid "Wrong password."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:417
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Group <b>%1</b> already exists."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:438
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Group <b>%1</b> could not be updated to <b>%2</b>."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:456
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Group <b>%1</b> could not be deleted from table group_."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:459
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Group <b>%1</b> could not be deleted from table group_user_."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:481
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Pupil login <b>%1</b> already exists."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:500
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "<b>%1</b> could not be updated to <b>%2</b>."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:520
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "User <b>%1</b> could not be deleted from table user_."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:525
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "User <b>%1</b> could not be deleted from table result_."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:540
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "User <b>%1</b> could not be deleted from table group_user_."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:555
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "User <b>%1</b> already exists in group <b>%2</b>."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:570
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "User <b>%1</b> group <b>%2</b> couldn't be deleted."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:605
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Result could not be added for user <b>%1</b>"
+msgstr ""
+
+#: server/controllers/database-controller.cpp:617
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Error inserting activity: %1"
+msgstr ""
+
+#: server/controllers/database-controller.cpp:664
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Dataset <b>%1</b> already exists."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:683
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Dataset <b>%1</b> could not be updated to <b>%2</b>."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:698
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Dataset <b>%1</b> couldn't be deleted."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:714
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Error inserting sequence in table sequence_: <b>%1</b>."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:746
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Error updating sequence in table sequence_: <b>%1</b>."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:754
+#: server/controllers/database-controller.cpp:802
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid ""
+"Sequence <b>%1</b> couldn't be deleted from table sequence_with_activity_."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:759
+#: server/controllers/database-controller.cpp:806
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid ""
+"Sequence <b>%1</b> couldn't be deleted from table activity_with_datasets_."
+msgstr ""
+
+#: server/controllers/database-controller.cpp:798
+#, qt-format
+msgctxt "controllers::DatabaseController|"
+msgid "Sequence <b>%1</b> could not be deleted from table sequence_."
+msgstr ""
+
+#: server/controllers/network-controller.cpp:46
+#, qt-format
+msgctxt "controllers::NetworkController|"
+msgid "Unable to start the server: %1."
+msgstr ""
+
+#: server/dialogs/CreateDbDialog.qml:19
+msgctxt "CreateDbDialog|"
+msgid "You are about to create a new GCompris database."
+msgstr ""
+
+#: server/dialogs/CreateDbDialog.qml:38
+msgctxt "CreateDbDialog|"
+msgid "Database file"
+msgstr ""
+
+#: server/dialogs/CreateDbDialog.qml:40
+msgctxt "CreateDbDialog|"
+msgid "created in:"
+msgstr ""
+
+#: server/dialogs/CreateDbDialog.qml:64
+msgctxt "CreateDbDialog|"
+msgid "New database creation"
+msgstr ""
+
+#: server/dialogs/CreateDbDialog.qml:92
+msgctxt "CreateDbDialog|"
+msgid "Teacher login"
+msgstr ""
+
+#: server/dialogs/CreateDbDialog.qml:108
+msgctxt "CreateDbDialog|"
+msgid "Password"
+msgstr "ئىم"
+
+#: server/dialogs/CreateDbDialog.qml:124
+msgctxt "CreateDbDialog|"
+msgid "Encrypted database (enabled by default)"
+msgstr ""
+
+#: server/dialogs/DatasetEditorDialog.qml:56
+msgctxt "DatasetEditorDialog|"
+msgid "Create dataset"
+msgstr ""
+
+#: server/dialogs/DatasetEditorDialog.qml:66
+msgctxt "DatasetEditorDialog|"
+msgid "Update dataset"
+msgstr ""
+
+#: server/dialogs/DatasetEditorDialog.qml:81
+msgctxt "DatasetEditorDialog|"
+msgid "Dataset name is empty"
+msgstr ""
+
+#: server/dialogs/DatasetEditorDialog.qml:88
+msgctxt "DatasetEditorDialog|"
+msgid "Difficulty should be between 1 and 6"
+msgstr ""
+
+#: server/dialogs/DatasetEditorDialog.qml:242
+msgctxt "DatasetEditorDialog|"
+msgid "INVALID DATASET"
+msgstr ""
+
+#: server/dialogs/DatasetEditorDialog.qml:345
+msgctxt "DatasetEditorDialog|"
+msgid "Editor"
+msgstr "تەھرىرلىگۈچ"
+
+#: server/dialogs/DatasetEditorDialog.qml:349
+msgctxt "DatasetEditorDialog|"
+msgid "Raw JSON"
+msgstr ""
+
+#: server/dialogs/DatasetEditorDialog.qml:379
+msgctxt "DatasetEditorDialog|"
+msgid "Activity name"
+msgstr "پائالىيەت ئىسمى"
+
+#: server/dialogs/DatasetEditorDialog.qml:393
+msgctxt "DatasetEditorDialog|"
+msgid "Dataset name"
+msgstr ""
+
+#: server/dialogs/DatasetEditorDialog.qml:407
+msgctxt "DatasetEditorDialog|"
+msgid "Goal"
+msgstr "نىشان"
+
+#: server/dialogs/DatasetEditorDialog.qml:421
+msgctxt "DatasetEditorDialog|"
+msgid "Difficulty"
+msgstr "قىيىنلىقى"
+
+#: server/dialogs/DatasetEditorDialog.qml:519
+msgctxt "DatasetEditorDialog|"
+msgid "Instructions"
+msgstr "پەرمانلار"
+
+#: server/dialogs/DatasetEditorDialog.qml:525
+msgctxt "DatasetEditorDialog|"
+msgid "No specific instructions for this editor."
+msgstr ""
+
+#: server/dialogs/ErrorDialog.qml:46
+msgctxt "ErrorDialog|"
+msgid "Information"
+msgstr "ئۇچۇر"
+
+#: server/dialogs/ExportPupilsDialog.qml:79
+msgctxt "ExportPupilsDialog|"
+msgid "Export pupils to CSV file"
+msgstr ""
+
+#: server/dialogs/ExportPupilsDialog.qml:121
+msgctxt "ExportPupilsDialog|"
+msgid "Save file"
+msgstr "ھۆججەت ساقلا"
+
+#: server/dialogs/ExportPupilsDialog.qml:131
+msgctxt "ExportPupilsDialog|"
+msgid "Pupils"
+msgstr ""
+
+#: server/dialogs/GroupDialog.qml:114
+msgctxt "GroupDialog|"
+msgid "Name"
+msgstr "ئاتى"
+
+#: server/dialogs/GroupDialog.qml:128
+msgctxt "GroupDialog|"
+msgid "Description"
+msgstr "چۈشەندۈرۈش"
+
+#: server/dialogs/ImportPupilsDialog.qml:70
+msgctxt "ImportPupilsDialog|"
+msgid "Import pupils from CSV file"
+msgstr ""
+
+#: server/dialogs/ImportPupilsDialog.qml:88
+#, qt-format
+msgctxt "ImportPupilsDialog|"
+msgid ""
+"Format: name;groups;password\n"
+"Example:\n"
+"Patrick Dummy;group 1;%1\n"
+"Patricia Brown;group 1,group 2;%2\n"
+msgstr ""
+
+#: server/dialogs/ImportPupilsDialog.qml:94
+msgctxt "ImportPupilsDialog|"
+msgid "Add CSV file"
+msgstr ""
+
+#: server/dialogs/ImportPupilsDialog.qml:141
+msgctxt "ImportPupilsDialog|"
+msgid "Import pupils"
+msgstr ""
+
+#: server/dialogs/PupilDialog.qml:59
+msgctxt "PupilDialog|"
+msgid "Pupil's name is empty"
+msgstr ""
+
+#: server/dialogs/PupilDialog.qml:153
+msgctxt "PupilDialog|"
+msgid "Pupil's name"
+msgstr ""
+
+#: server/dialogs/PupilDialog.qml:166
+msgctxt "PupilDialog|"
+msgid "Password"
+msgstr "ئىم"
+
+#: server/dialogs/PupilDialog.qml:218
+msgctxt "PupilDialog|"
+msgid "Password images:"
+msgstr ""
+
+#: server/dialogs/PupilDialog.qml:254
+msgctxt "PupilDialog|"
+msgid "Groups"
+msgstr "گۇرۇپپا"
+
+#: server/dialogs/PupilsToGroupsDialog.qml:87
+msgctxt "PupilsToGroupsDialog|"
+msgid "Select the groups to add these pupils to:"
+msgstr ""
+
+#: server/dialogs/PupilsToGroupsDialog.qml:88
+msgctxt "PupilsToGroupsDialog|"
+msgid "Select the groups from which to remove these pupils:"
+msgstr ""
+
+#: server/dialogs/RemoveDatasetDialog.qml:70
+msgctxt "RemoveDatasetDialog|"
+msgid ""
+"Are you sure you want to delete the following dataset from the database?"
+msgstr ""
+
+#: server/dialogs/RemovePupilsDialog.qml:76
+msgctxt "RemovePupilsDialog|"
+msgid ""
+"Are you sure you want to remove the following pupils from the database ?"
+msgstr ""
+
+#: server/dialogs/RemoveSequenceDialog.qml:64
+msgctxt "RemoveSequenceDialog|"
+msgid ""
+"Are you sure you want to delete the following sequence from the database?"
+msgstr ""
+
+#: server/dialogs/SendDatasetDialog.qml:93
+msgctxt "SendDatasetDialog|"
+msgid "Do you want to send the dataset to selected pupils?"
+msgstr ""
+
+#: server/dialogs/SendDatasetDialog.qml:94
+msgctxt "SendDatasetDialog|"
+msgid "Are you sure you want to remove the dataset from selected pupils?"
+msgstr ""
+
+#: server/dialogs/SendDatasetDialog.qml:95
+msgctxt "SendDatasetDialog|"
+msgid ""
+"Are you sure you want to remove all the existing datasets from selected "
+"pupils?"
+msgstr ""
+
+#: server/dialogs/SendDatasetDialog.qml:129
+msgctxt "SendDatasetDialog|"
+msgid "Pupils"
+msgstr ""
+
+#: server/dialogs/SendSequenceDialog.qml:104
+msgctxt "SendSequenceDialog|"
+msgid "Do you want to send the sequence to selected pupils?"
+msgstr ""
+
+#: server/dialogs/SendSequenceDialog.qml:105
+msgctxt "SendSequenceDialog|"
+msgid "Are you sure you want to remove the sequence from selected pupils?"
+msgstr ""
+
+#: server/dialogs/SendSequenceDialog.qml:106
+msgctxt "SendSequenceDialog|"
+msgid ""
+"Are you sure you want to remove all the existing sequences from selected "
+"pupils?"
+msgstr ""
+
+#: server/dialogs/SendSequenceDialog.qml:140
+msgctxt "SendSequenceDialog|"
+msgid "Pupils"
+msgstr ""
+
+#: server/dialogs/SequenceEditorDialog.qml:50
+msgctxt "SequenceEditorDialog|"
+msgid "Create sequence"
+msgstr ""
+
+#: server/dialogs/SequenceEditorDialog.qml:56
+msgctxt "SequenceEditorDialog|"
+msgid "Update sequence"
+msgstr ""
+
+#: server/dialogs/SequenceEditorDialog.qml:81
+msgctxt "SequenceEditorDialog|"
+msgid "Sequence name is empty"
+msgstr ""
+
+#: server/dialogs/SequenceEditorDialog.qml:163
+msgctxt "SequenceEditorDialog|"
+msgid "Sequence name"
+msgstr ""
+
+#: server/dialogs/SequenceEditorDialog.qml:177
+msgctxt "SequenceEditorDialog|"
+msgid "Goal"
+msgstr "نىشان"
+
+#: server/dialogs/SequenceEditorDialog.qml:245
+msgctxt "SequenceEditorDialog|"
+msgid "Activities"
+msgstr "پائالىيەت"
+
+#: server/dialogs/SequenceEditorDialog.qml:272
+msgctxt "SequenceEditorDialog|"
+msgid "Datasets"
+msgstr ""
+
+#: server/dialogs/SequenceEditorDialog.qml:323
+msgctxt "SequenceEditorDialog|"
+msgid "Add"
+msgstr "قوش"
+
+#: server/dialogs/SequenceEditorDialog.qml:343
+msgctxt "SequenceEditorDialog|"
+msgid "Remove"
+msgstr "چىقىرىۋەت"
+
+#: server/dialogs/SequenceEditorDialog.qml:355
+msgctxt "SequenceEditorDialog|"
+msgid "Move up"
+msgstr "يۇقىرىغا"
+
+#: server/dialogs/SequenceEditorDialog.qml:367
+msgctxt "SequenceEditorDialog|"
+msgid "Move down"
+msgstr "تۆۋەنگە"
+
+#: server/dialogs/SqlLineDialog.qml:19
+msgctxt "SqlLineDialog|"
+msgid "Line details"
+msgstr ""
+
+#: server/dialogs/SqlLineDialog.qml:194
+msgctxt "SqlLineDialog|"
+msgid "Close"
+msgstr "ياپ"
+
+#: server/Main.qml:48
+msgctxt "Main|"
+msgid "GCompris Teachers Tool"
+msgstr ""
+
+#: server/panels/NavigationPanel.qml:71
+msgctxt "NavigationPanel|"
+msgid "Login"
+msgstr "تىزىمغا كىر"
+
+#: server/panels/NavigationPanel.qml:79
+msgctxt "NavigationPanel|"
+msgid "Pupils and Groups"
+msgstr ""
+
+#: server/panels/NavigationPanel.qml:87
+msgctxt "NavigationPanel|"
+msgid "Connect devices"
+msgstr ""
+
+#: server/panels/NavigationPanel.qml:95
+msgctxt "NavigationPanel|"
+msgid "Activities"
+msgstr "پائالىيەت"
+
+#: server/panels/NavigationPanel.qml:103
+msgctxt "NavigationPanel|"
+msgid "Datasets"
+msgstr ""
+
+#: server/panels/NavigationPanel.qml:111
+msgctxt "NavigationPanel|"
+msgid "Sequences"
+msgstr ""
+
+#: server/panels/NavigationPanel.qml:119
+msgctxt "NavigationPanel|"
+msgid "Charts"
+msgstr "دىئاگرامما"
+
+#: server/panels/NavigationPanel.qml:127
+msgctxt "NavigationPanel|"
+msgid "Settings"
+msgstr "تەڭشەك"
+
+#: server/panels/SelectorPanel.qml:50
+msgctxt "SelectorPanel|"
+msgid "Groups"
+msgstr "گۇرۇپپا"
+
+#: server/panels/SelectorPanel.qml:69
+msgctxt "SelectorPanel|"
+msgid "Pupils"
+msgstr ""
+
+#: server/panels/SelectorPanel.qml:85
+msgctxt "SelectorPanel|"
+msgid "Activities"
+msgstr "پائالىيەت"
+
+#: server/singletons/Master.qml:43
+msgctxt "Master|"
+msgid "User ID"
+msgstr "ئىشلەتكۈچى كىملىكى"
+
+#: server/singletons/Master.qml:44
+msgctxt "Master|"
+msgid "Name"
+msgstr "ئاتى"
+
+#: server/singletons/Master.qml:45
+msgctxt "Master|"
+msgid "Names"
+msgstr "ئاتى"
+
+#: server/singletons/Master.qml:46
+msgctxt "Master|"
+msgid "Password"
+msgstr "ئىم"
+
+#: server/singletons/Master.qml:47
+msgctxt "Master|"
+msgid "Users IDs"
+msgstr ""
+
+#: server/singletons/Master.qml:48
+msgctxt "Master|"
+msgid "Activity ID"
+msgstr ""
+
+#: server/singletons/Master.qml:49
+msgctxt "Master|"
+msgid "Activity"
+msgstr "پائالىيەت"
+
+#: server/singletons/Master.qml:50
+msgctxt "Master|"
+msgid "Group"
+msgstr "گۇرۇپپا"
+
+#: server/singletons/Master.qml:51
+msgctxt "Master|"
+msgid "Description"
+msgstr "چۈشەندۈرۈش"
+
+#: server/singletons/Master.qml:52
+msgctxt "Master|"
+msgid "Groups"
+msgstr "گۇرۇپپا"
+
+#: server/singletons/Master.qml:53
+msgctxt "Master|"
+msgid "Groups IDs"
+msgstr ""
+
+#: server/singletons/Master.qml:54 server/singletons/Master.qml:58
+msgctxt "Master|"
+msgid "Date"
+msgstr "چېسلا"
+
+#: server/singletons/Master.qml:55 server/singletons/Master.qml:60
+msgctxt "Master|"
+msgid "Success"
+msgstr "مۇۋەپپەقىيەتلىك بولدى"
+
+#: server/singletons/Master.qml:56
+msgctxt "Master|"
+msgid "Duration"
+msgstr "ۋاقتى"
+
+#: server/singletons/Master.qml:57
+msgctxt "Master|"
+msgid "Data"
+msgstr "سانلىق مەلۇمات"
+
+#: server/singletons/Master.qml:59
+msgctxt "Master|"
+msgid "Count"
+msgstr "سانى"
+
+#: server/singletons/Master.qml:61
+msgctxt "Master|"
+msgid "Failed"
+msgstr "مەغلۇپ بولدى"
+
+#: server/singletons/Master.qml:62
+msgctxt "Master|"
+msgid "Success ratio"
+msgstr ""
+
+#: server/views/charts/ActivitiesChart.qml:104
+msgctxt "ActivitiesChart|"
+msgid "Daily activities chart"
+msgstr ""
+
+#: server/views/charts/PupilsChart.qml:101
+msgctxt "PupilsChart|"
+msgid "User activities chart"
+msgstr ""
+
+#: server/views/ChartsView.qml:136
+msgctxt "ChartsView|"
+msgid "Activities"
+msgstr "پائالىيەت"
+
+#: server/views/ChartsView.qml:143
+msgctxt "ChartsView|"
+msgid "Pupils"
+msgstr ""
+
+#: server/views/datas/AllData.qml:69
+msgctxt "AllData|"
+msgid "Available requests"
+msgstr ""
+
+#: server/views/datas/AllData.qml:77
+msgctxt "AllData|"
+msgid "All users activities"
+msgstr ""
+
+#: server/views/datas/AllData.qml:77
+msgctxt "AllData|"
+msgid "Pupils activities"
+msgstr ""
+
+#: server/views/datas/AllData.qml:77
+msgctxt "AllData|"
+msgid "All groups"
+msgstr ""
+
+#: server/views/datas/AllData.qml:77
+msgctxt "AllData|"
+msgid "Failed activities"
+msgstr ""
+
+#: server/views/datas/AllData.qml:78
+msgctxt "AllData|"
+msgid "User's groups"
+msgstr ""
+
+#: server/views/datas/AllData.qml:78
+msgctxt "AllData|"
+msgid "Group's users"
+msgstr ""
+
+#: server/views/datas/AllData.qml:78
+msgctxt "AllData|"
+msgid "Daily activities"
+msgstr ""
+
+#: server/views/datas/AllData.qml:78
+msgctxt "AllData|"
+msgid "Daily ratios"
+msgstr ""
+
+#. Number of lines
+#: server/views/datas/AllData.qml:90
+#, qt-format
+msgctxt "AllData|"
+msgid "%1 lines"
+msgstr "%1 قۇر"
+
+#: server/views/datas/DuplicateData.qml:175
+msgctxt "DuplicateData|"
+msgid "Commands"
+msgstr "بۇيرۇق"
+
+#: server/views/datas/DuplicateData.qml:188
+msgctxt "DuplicateData|"
+msgid "Random date"
+msgstr ""
+
+#: server/views/datas/DuplicateData.qml:195
+msgctxt "DuplicateData|"
+msgid "Duplicate"
+msgstr "كۆپەيت"
+
+#: server/views/datas/DuplicateData.qml:199
+msgctxt "DuplicateData|"
+msgid "You are about to duplicate datas"
+msgstr ""
+
+#: server/views/datas/DuplicateData.qml:199
+#: server/views/datas/DuplicateData.qml:212
+msgctxt "DuplicateData|"
+msgid "No action now"
+msgstr ""
+
+#: server/views/datas/DuplicateData.qml:208
+msgctxt "DuplicateData|"
+msgid "Delete"
+msgstr "ئۆچۈر"
+
+#: server/views/datas/DuplicateData.qml:212
+msgctxt "DuplicateData|"
+msgid "You are about to delete data"
+msgstr ""
+
+#: server/views/datas/DuplicateData.qml:230
+msgctxt "DuplicateData|"
+msgid "Copy to"
+msgstr ""
+
+#: server/views/DatasetsView.qml:44
+msgctxt "DatasetsView|"
+msgid "Activities"
+msgstr "پائالىيەت"
+
+#: server/views/DatasetsView.qml:63
+msgctxt "DatasetsView|"
+msgid "Datasets"
+msgstr ""
+
+#: server/views/DatasetsView.qml:95
+msgctxt "DatasetsView|"
+msgid "Datasets management"
+msgstr ""
+
+#: server/views/DatasetsView.qml:113
+msgctxt "DatasetsView|"
+msgid "Create dataset"
+msgstr ""
+
+#: server/views/DatasetsView.qml:124
+msgctxt "DatasetsView|"
+msgid "Update dataset"
+msgstr ""
+
+#: server/views/DatasetsView.qml:135
+msgctxt "DatasetsView|"
+msgid "Send dataset to clients"
+msgstr ""
+
+#: server/views/DatasetsView.qml:154
+msgctxt "DatasetsView|"
+msgid "Remove dataset from clients"
+msgstr ""
+
+#: server/views/DatasetsView.qml:179
+msgctxt "DatasetsView|"
+msgid "Remove all datasets from clients"
+msgstr ""
+
+#: server/views/DatasetsView.qml:189
+msgctxt "DatasetsView|"
+msgid "Delete dataset"
+msgstr ""
+
+#: server/views/DevelopmentView.qml:43
+msgctxt "DevelopmentView|"
+msgid "Edit data"
+msgstr ""
+
+#: server/views/DevelopmentView.qml:47
+msgctxt "DevelopmentView|"
+msgid "All requests"
+msgstr ""
+
+#: server/views/DevicesView.qml:52
+msgctxt "DevicesView|"
+msgid "Not connected"
+msgstr "باغلانمىغان"
+
+#: server/views/DevicesView.qml:54
+msgctxt "DevicesView|"
+msgid "Incorrect password"
+msgstr ""
+
+#: server/views/DevicesView.qml:56
+msgctxt "DevicesView|"
+msgid "Logged in"
+msgstr ""
+
+#: server/views/DevicesView.qml:58
+msgctxt "DevicesView|"
+msgid "Connection lost"
+msgstr "ئۇلىنىش ئۈزۈلدى"
+
+#: server/views/DevicesView.qml:60
+msgctxt "DevicesView|"
+msgid "Disconnected"
+msgstr "ئۈزۈلدى"
+
+#: server/views/DevicesView.qml:62
+msgctxt "DevicesView|"
+msgid "Unknown connection status"
+msgstr ""
+
+#: server/views/DevicesView.qml:84
+msgctxt "DevicesView|"
+msgid "Groups"
+msgstr "گۇرۇپپا"
+
+#: server/views/DevicesView.qml:101
+msgctxt "DevicesView|"
+msgid "Pupils"
+msgstr ""
+
+#: server/views/DevicesView.qml:135
+msgctxt "DevicesView|"
+msgid "Network"
+msgstr "تور"
+
+#: server/views/DevicesView.qml:158
+msgctxt "DevicesView|"
+msgid "Connect devices"
+msgstr ""
+
+#: server/views/DevicesView.qml:171
+msgctxt "DevicesView|"
+msgid "Send login list"
+msgstr ""
+
+#: server/views/DevicesView.qml:195
+msgctxt "DevicesView|"
+msgid "Disconnect selected pupils"
+msgstr ""
+
+#: server/views/DevicesView.qml:213
+msgctxt "DevicesView|"
+msgid "Disconnect everybody"
+msgstr ""
+
+#: server/views/DevicesView.qml:229
+msgctxt "DevicesView|"
+msgid "Server ID:"
+msgstr ""
+
+#: server/views/DevicesView.qml:236
+msgctxt "DevicesView|"
+msgid "Teacher port:"
+msgstr ""
+
+#: server/views/DevicesView.qml:243
+msgctxt "DevicesView|"
+msgid "Connected:"
+msgstr ""
+
+#: server/views/DevicesView.qml:250
+msgctxt "DevicesView|"
+msgid "Logged in:"
+msgstr ""
+
+#: server/views/DevicesView.qml:257
+msgctxt "DevicesView|"
+msgid "Data received:"
+msgstr ""
+
+#: server/views/DevicesView.qml:285
+msgctxt "DevicesView|"
+msgid "Network logs"
+msgstr ""
+
+#: server/views/DevicesView.qml:297
+msgctxt "DevicesView|"
+msgid "Clear logs"
+msgstr ""
+
+#: server/views/DevicesView.qml:317
+#, qt-format
+msgctxt "DevicesView|"
+msgid "Server already running on port %1"
+msgstr ""
+
+#: server/views/LoginView.qml:43
+msgctxt "LoginView|"
+msgid "Incorrect password"
+msgstr ""
+
+#: server/views/LoginView.qml:47
+msgctxt "LoginView|"
+msgid "GCompris-teachers is already running on this computer"
+msgstr ""
+
+#: server/views/LoginView.qml:48
+msgctxt "LoginView|"
+msgid "Only data browsing is permitted"
+msgstr ""
+
+#: server/views/LoginView.qml:89
+msgctxt "LoginView|"
+msgid "Teacher login"
+msgstr ""
+
+#: server/views/LoginView.qml:110
+msgctxt "LoginView|"
+msgid "Password"
+msgstr "ئىم"
+
+#: server/views/LoginView.qml:128
+msgctxt "LoginView|"
+msgid "Login"
+msgstr "تىزىمغا كىر"
+
+#: server/views/LoginView.qml:137
+msgctxt "LoginView|"
+msgid "Create teacher database"
+msgstr ""
+
+#: server/views/LoginView.qml:158
+msgctxt "LoginView|"
+msgid "Database file:"
+msgstr ""
+
+#: server/views/ManagePupilsView.qml:34 server/views/ManagePupilsView.qml:149
+msgctxt "ManagePupilsView|"
+msgid "Add a group"
+msgstr ""
+
+#: server/views/ManagePupilsView.qml:44
+msgctxt "ManagePupilsView|"
+msgid "Are you sure you want to remove this group?"
+msgstr ""
+
+#: server/views/ManagePupilsView.qml:45
+msgctxt "ManagePupilsView|"
+msgid "Pupils will not be removed."
+msgstr ""
+
+#: server/views/ManagePupilsView.qml:52
+msgctxt "ManagePupilsView|"
+msgid "Edit group"
+msgstr ""
+
+#: server/views/ManagePupilsView.qml:68 server/views/ManagePupilsView.qml:207
+msgctxt "ManagePupilsView|"
+msgid "Add a pupil"
+msgstr ""
+
+#: server/views/ManagePupilsView.qml:74
+msgctxt "ManagePupilsView|"
+msgid "Edit pupil's name and groups"
+msgstr ""
+
+#: server/views/ManagePupilsView.qml:122
+msgctxt "ManagePupilsView|"
+msgid "Groups"
+msgstr "گۇرۇپپا"
+
+#: server/views/ManagePupilsView.qml:159
+msgctxt "ManagePupilsView|"
+msgid "Pupils and groups"
+msgstr ""
+
+#: server/views/ManagePupilsView.qml:188
+msgctxt "ManagePupilsView|"
+msgid "Pupils management"
+msgstr ""
+
+#: server/views/ManagePupilsView.qml:216
+msgctxt "ManagePupilsView|"
+msgid "Add to groups"
+msgstr ""
+
+#: server/views/ManagePupilsView.qml:225
+msgctxt "ManagePupilsView|"
+msgid "Remove from groups"
+msgstr ""
+
+#: server/views/ManagePupilsView.qml:234
+msgctxt "ManagePupilsView|"
+msgid "Export pupils"
+msgstr ""
+
+#: server/views/ManagePupilsView.qml:242
+msgctxt "ManagePupilsView|"
+msgid "Import pupils"
+msgstr ""
+
+#: server/views/ManagePupilsView.qml:251
+msgctxt "ManagePupilsView|"
+msgid "Remove pupils"
+msgstr ""
+
+#: server/views/SequencesView.qml:67
+msgctxt "SequencesView|"
+msgid "Sequences"
+msgstr ""
+
+#: server/views/SequencesView.qml:102
+msgctxt "SequencesView|"
+msgid "Details"
+msgstr "تەپسىلاتى"
+
+#: server/views/SequencesView.qml:169
+msgctxt "SequencesView|"
+msgid "Sequences management"
+msgstr ""
+
+#: server/views/SequencesView.qml:187
+msgctxt "SequencesView|"
+msgid "Create sequence"
+msgstr ""
+
+#: server/views/SequencesView.qml:195
+msgctxt "SequencesView|"
+msgid "Update sequence"
+msgstr ""
+
+#: server/views/SequencesView.qml:204
+msgctxt "SequencesView|"
+msgid "Send sequence to clients"
+msgstr ""
+
+#: server/views/SequencesView.qml:247
+msgctxt "SequencesView|"
+msgid "Delete sequence"
+msgstr ""
+
+#: server/views/SettingsView.qml:65
+msgctxt "SettingsView|"
+msgid "Menu panel"
+msgstr ""
+
+#: server/views/SettingsView.qml:66
+msgctxt "SettingsView|"
+msgid "Left"
+msgstr "سول"
+
+#: server/views/SettingsView.qml:66
+msgctxt "SettingsView|"
+msgid "Right"
+msgstr "ئوڭ"
+
+#: server/views/SettingsView.qml:77
+msgctxt "SettingsView|"
+msgid "Font size"
+msgstr ""
+
+#: server/views/SettingsView.qml:87
+msgctxt "SettingsView|"
+msgid "Theme"
+msgstr "ئۆرنەك"
+
+#: server/views/SettingsView.qml:88
+msgctxt "SettingsView|"
+msgid "Dark"
+msgstr ""
+
+#: server/views/SettingsView.qml:88
+msgctxt "SettingsView|"
+msgid "Light"
+msgstr "ئاق"
+
+#: server/views/SettingsView.qml:103
+msgctxt "SettingsView|"
+msgid "Language selector"
+msgstr ""
+
+#: server/views/SettingsView.qml:149
+msgctxt "SettingsView|"
+msgid "Server ID"
+msgstr ""
+
+#: server/views/SettingsView.qml:171
+msgctxt "SettingsView|"
+msgid "Port"
+msgstr "ئېغىز"
+
+#: server/views/SettingsView.qml:188
+msgctxt "SettingsView|"
+msgid "Server status"
+msgstr ""
+
+#: server/views/SettingsView.qml:189
+msgctxt "SettingsView|As in 'The server is running'"
+msgid "Running"
+msgstr "ئىجرا قىلىنىۋاتىدۇ"
+
+#: server/views/SettingsView.qml:189
+#, qt-format
+msgctxt "SettingsView|As in 'The Server is already running on port %1'"
+msgid "Already running on port %1"
+msgstr ""
+
+#: server/views/SettingsView.qml:197
+msgctxt "SettingsView|"
+msgid "Host name"
+msgstr ""
+
+#: server/views/SettingsView.qml:204
+msgctxt "SettingsView|"
+msgid "Server IP"
+msgstr ""
+
+#: server/views/SettingsView.qml:211
+msgctxt "SettingsView|"
+msgid "Broadcast IPs"
+msgstr ""
+
+#: server/views/SettingsView.qml:218
+msgctxt "SettingsView|"
+msgid "Netmask"
+msgstr "تور ماسكىسى"
+
+#: server/views/SettingsView.qml:223
+msgctxt "SettingsView|"
+msgid "MAC address"
+msgstr ""
+
+#: server/views/SettingsView.qml:230
+msgctxt "SettingsView|"
+msgid "GCompris version"
+msgstr ""
+
+#: server/views/SettingsView.qml:237
+msgctxt "SettingsView|"
+msgid "Qt version"
+msgstr ""
+
+#: server/views/SettingsView.qml:250
+msgctxt "SettingsView|"
+msgid "Teacher login"
+msgstr ""
+
+#: server/views/SettingsView.qml:258
+msgctxt "SettingsView|"
+msgid "Database file"
+msgstr ""
+
+#: server/views/SettingsView.qml:265
+msgctxt "SettingsView|"
+msgid "Encrypted database"
+msgstr ""
+
+#: server/views/SettingsView.qml:266
+msgctxt "SettingsView|"
+msgid "Yes"
+msgstr "ھەئە"
+
+#: server/views/SettingsView.qml:266
+msgctxt "SettingsView|"
+msgid "No"
+msgstr "ياق"
+
+#: server/views/SettingsView.qml:271
+msgctxt "SettingsView|"
+msgid "Pupils"
+msgstr ""
+
+#: server/views/SettingsView.qml:277
+msgctxt "SettingsView|"
+msgid "Groups"
+msgstr "گۇرۇپپا"
+
+#: server/views/SettingsView.qml:290
+msgctxt "SettingsView|"
+msgid "Pupils connected"
+msgstr ""
+
+#: server/views/SettingsView.qml:297
+msgctxt "SettingsView|"
+msgid "Pupils logged in"
+msgstr ""
+
+#: server/views/SettingsView.qml:304
+msgctxt "SettingsView|"
+msgid "Activities data received"
+msgstr ""
