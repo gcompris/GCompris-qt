@@ -53,6 +53,7 @@
   <summary xml:lang="sk">Sprievodná aplikácia GCompris pre učiteľov</summary>
   <summary xml:lang="sl">GCompris učiteljev pomočnik</summary>
   <summary xml:lang="tr">GCompris öğretmen yardımcısı</summary>
+  <summary xml:lang="ug">GCompris ئوقۇتقۇچى ياردەمچىسى</summary>
   <summary xml:lang="uk">Компаньйон GCompris для вчителів</summary>
   <description>
     <p>GCompris-teachers is a companion application for teachers to enhance their use of GCompris in their classroom.</p>
@@ -121,6 +122,7 @@
       <caption xml:lang="sk">Správa žiakov a skupín</caption>
       <caption xml:lang="sl">Upravljanje učencev in skupin</caption>
       <caption xml:lang="tr">Öğrenci ve grup yönetimi</caption>
+      <caption xml:lang="ug">ئوقۇغۇچى ۋە گۇرۇپپا باشقۇرۇش</caption>
       <caption xml:lang="uk">Керування записами учнів та груп</caption>
       <image width="1920" height="1080">https://gcompris.net/screenshots_qt/gcompris-teachers/gcompris-teachers-pupils.png</image>
     </screenshot>

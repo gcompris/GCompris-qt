@@ -100,6 +100,7 @@
   <summary xml:lang="sq">Lojë edukative për fëmijë</summary>
   <summary xml:lang="sv">Pedagogiskt spel för barn</summary>
   <summary xml:lang="tr">Çocuklar için Oyunlar</summary>
+  <summary xml:lang="ug">بالىلار ئۈچۈن مائارىپ ئويۇنى</summary>
   <summary xml:lang="uk">Освітня гра для дітей</summary>
   <summary xml:lang="zh-CN">少儿教学游戏</summary>
   <description>
@@ -542,6 +543,7 @@
       <caption xml:lang="sv">GCompris-huvudmeny</caption>
       <caption xml:lang="sw">Menyu kuu ya GCompris</caption>
       <caption xml:lang="tr">GCompris ana menüsü</caption>
+      <caption xml:lang="ug">GCompris ئاساسىي تىزىملىكى</caption>
       <caption xml:lang="uk">Головне меню GCompris</caption>
       <caption xml:lang="zh-CN">GCompris 主菜单</caption>
       <caption xml:lang="zh-TW">GCompris 主畫面</caption>
