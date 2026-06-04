@@ -1305,14 +1305,14 @@ msgstr ""
 #: activities/align4/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Align four (against Tux)"
-msgstr "四子连珠 (和小企鹅玩)"
+msgstr "四子连珠 (与企鹅对战)"
 
 #. Help title
 #: activities/align4/ActivityInfo.qml:17
 #: activities/align4_2players/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Line up four tokens."
-msgstr "将四个硬币排成一排。"
+msgstr "将四颗棋子排成一排。"
 
 #. Help goal
 #: activities/align4/ActivityInfo.qml:20
@@ -1328,8 +1328,7 @@ msgid ""
 "Play with Tux. Take turns to click the line in which you want to drop a "
 "token. The first player to create a line of 4 tokens wins."
 msgstr ""
-"与小企鹅一起玩。轮流点击你想投下硬币的行。首先在一行中摆出 4 个硬币的玩家获"
-"胜。"
+"与企鹅对战。轮流点击你想放下棋子的行。首先在一行中摆出 4 个棋子的玩家获胜。"
 
 #: activities/align4/ActivityInfo.qml:23
 #: activities/align4_2players/ActivityInfo.qml:23
@@ -1337,7 +1336,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "You can create a line of 4 tokens either horizontally (lying down), "
 "vertically (standing up), or diagonally."
-msgstr "在水平 (平着放)，垂直 (竖着放) 或斜线其中一个方向上使 4 个硬币成一排。"
+msgstr "在水平 (平着放)，垂直 (竖着放) 或斜线其中一个方向上使 4 个棋子成一排。"
 
 #: activities/align4/ActivityInfo.qml:24 activities/bargame/ActivityInfo.qml:25
 #: activities/checkers/ActivityInfo.qml:26
@@ -1346,31 +1345,31 @@ msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
 "will play better when you increase the level."
-msgstr "使用箭头按键选择难度，企鹅将随难度等级提高游戏表现"
+msgstr "使用箭头按键选择难度等级，难度越高，企鹅的技术就越厉害。"
 
 #: activities/align4/ActivityInfo.qml:26
 #: activities/align4_2players/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Left arrow: move the token to the left"
-msgstr "左箭头：将硬币移动到左边"
+msgstr "左箭头：将棋子移动到左边"
 
 #: activities/align4/ActivityInfo.qml:27
 #: activities/align4_2players/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Right arrow: move the token to the right"
-msgstr "右箭头：将硬币移动到右边"
+msgstr "右箭头：将棋子移动到右边"
 
 #: activities/align4/ActivityInfo.qml:28
 #: activities/align4_2players/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Down arrow: drop the token"
-msgstr "空格或向下箭头：放下硬币"
+msgstr "空格或向下箭头：放下棋子"
 
 #. Activity title
 #: activities/align4_2players/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Align four (with a friend)"
-msgstr "四子连珠 (双人)"
+msgstr "四子连珠 (双人对战)"
 
 #. Help manual
 #: activities/align4_2players/ActivityInfo.qml:22
@@ -1379,7 +1378,7 @@ msgid ""
 "Play with a friend. Take turns to click the line in which you want to drop a "
 "token. The first player to create a line of 4 tokens wins."
 msgstr ""
-"与你的一位朋友一起玩。轮流点击你想投下硬币的行。首先在一行中摆出 4 个硬币的玩"
+"与你的一位朋友一起玩。轮流点击你想放下棋子的行。首先在一行中摆出 4 个棋子的玩"
 "家获胜。"
 
 #. Activity title
