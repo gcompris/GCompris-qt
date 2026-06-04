@@ -154,7 +154,9 @@ Item {
                     required property var result_data
                     required property int result_duration
                     required property string result_datetime
-                    property string activity_line_name: Master.findObjectInModel(Master.activityModel, function(item) { return item.activity_id === activity_id }).activity_name
+                    property string activity_line_name: Master.isReady ?
+                        Master.findObjectInModel(Master.activityModel, function(item) { return item.activity_id === activity_id }).activity_name :
+                        "";
                     height: Math.max(dataDisplay.height, infos.height)
                     width: lines.width
                     color: Style.selectedPalette.alternateBase
@@ -212,7 +214,7 @@ Item {
                                         width: Math.min(implicitWidth, infos.maxWidth)
                                         anchors.verticalCenter: parent.verticalCenter
                                         font.bold: true
-                                        text: Master.allActivities[lineRect.activity_line_name].title
+                                        text: Master.isReady ? Master.allActivities[lineRect.activity_line_name].title : ""
                                     }
                                 }
 

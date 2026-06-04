@@ -15,6 +15,7 @@ import core 1.0
 import "qrc:/gcompris/src/server/server.js" as Server
 
 Item {
+    id: master
     property string activityBaseUrl: "qrc:/gcompris/src/server/activities"
     property var allActivities: ({})        // From ActivityInfoTree.menuTreeFull
     property alias userModel: userModel
@@ -31,12 +32,16 @@ Item {
     property bool trace: false
     property int groupFilterId: -1     // contains selected group id
 
+    property bool isReady: false
+
     property string locale: "system"
     onLocaleChanged: {
+        master.isReady = false;
         ApplicationInfo.switchLocale(locale)
         loadAllActivities(activityModel);
         loadAllActivities(allActivitiesModel);
         loadActivitiesWithData(activityWithDataModel);
+        master.isReady = true;
     }
 
     readonly property var columnsLabel: ({
@@ -93,9 +98,11 @@ Item {
     Connections {
         target: databaseController
         function onActivityAdded() {
+            master.isReady = false;
             loadAllActivities(activityModel);
             loadAllActivities(allActivitiesModel);
             loadActivitiesWithData(activityWithDataModel);
+            master.isReady = true;
         }
     }
 
@@ -880,7 +887,10 @@ Item {
     }
 
     function initialize() {
-        if (trace) console.warn("Initialize Master component")
+        if(trace) {
+            console.warn("Initialize Master component")
+        }
+        master.isReady = false;
         loadGroups()
         loadUsers()
         filterUsers(filteredUserModel, false)
@@ -892,6 +902,7 @@ Item {
         loadDatasets()
         filterDatasets(-1, Master.userCreatedDatasetModel, false, false)
         loadSequences()
+        master.isReady = true;
     }
 
     Component.onCompleted: {
