@@ -754,6 +754,22 @@ msgctxt "Guess24DataDisplay|"
 msgid "Hints: %1"
 msgstr "Podpowiedzi: %1"
 
+#: server/activities/keyboard_training/KeyboardTrainingDataDisplay.qml:26
+#, fuzzy
+#| msgctxt "BinaryBulbDataDisplay|"
+#| msgid "Expected:"
+msgctxt "KeyboardTrainingDataDisplay|"
+msgid "Expected:"
+msgstr "Oczekiwane:"
+
+#: server/activities/keyboard_training/KeyboardTrainingDataDisplay.qml:32
+#, fuzzy
+#| msgctxt "AdjacentNumbersDataDisplay|"
+#| msgid "Answer:"
+msgctxt "KeyboardTrainingDataDisplay|"
+msgid "Answer:"
+msgstr "Odpowiedź:"
+
 #: server/activities/learn_additions/ActivityEditor.qml:16
 msgctxt "ActivityEditor|"
 msgid ""
@@ -1014,14 +1030,14 @@ msgctxt "LineReport|"
 msgid "Lines: %1"
 msgstr "Linie: %1"
 
-#: server/activities/LineReport.qml:228
+#: server/activities/LineReport.qml:230
 #, qt-format
 msgctxt "LineReport|"
 msgid "Level: <b>%1</b>"
 msgstr "Poziom: <b>%1</b>"
 
 #. Result duration in seconds. Example: "Duration: 25s"
-#: server/activities/LineReport.qml:244 server/activities/LineReport.qml:254
+#: server/activities/LineReport.qml:246 server/activities/LineReport.qml:256
 #, qt-format
 msgctxt "LineReport|"
 msgid "Duration: %1s"
@@ -3049,32 +3065,32 @@ msgctxt "SelectorPanel|"
 msgid "Activities"
 msgstr "Aktywności"
 
-#: server/singletons/Master.qml:43
+#: server/singletons/Master.qml:48
 msgctxt "Master|"
 msgid "User ID"
 msgstr "ID użytkownika"
 
-#: server/singletons/Master.qml:44
+#: server/singletons/Master.qml:49
 msgctxt "Master|"
 msgid "Name"
 msgstr "Nazwa"
 
-#: server/singletons/Master.qml:45
+#: server/singletons/Master.qml:50
 msgctxt "Master|"
 msgid "Names"
 msgstr "Nazwy"
 
-#: server/singletons/Master.qml:46
+#: server/singletons/Master.qml:51
 msgctxt "Master|"
 msgid "Password"
 msgstr "Hasło"
 
-#: server/singletons/Master.qml:47
+#: server/singletons/Master.qml:52
 msgctxt "Master|"
 msgid "Users IDs"
 msgstr "ID użytkowników"
 
-#: server/singletons/Master.qml:48
+#: server/singletons/Master.qml:53
 #, fuzzy
 #| msgctxt "Master|"
 #| msgid "Activity Id"
@@ -3082,62 +3098,62 @@ msgctxt "Master|"
 msgid "Activity ID"
 msgstr "ID aktywności"
 
-#: server/singletons/Master.qml:49
+#: server/singletons/Master.qml:54
 msgctxt "Master|"
 msgid "Activity"
 msgstr "Aktywność"
 
-#: server/singletons/Master.qml:50
+#: server/singletons/Master.qml:55
 msgctxt "Master|"
 msgid "Group"
 msgstr "Grupa"
 
-#: server/singletons/Master.qml:51
+#: server/singletons/Master.qml:56
 msgctxt "Master|"
 msgid "Description"
 msgstr "Opis"
 
-#: server/singletons/Master.qml:52
+#: server/singletons/Master.qml:57
 msgctxt "Master|"
 msgid "Groups"
 msgstr "Grupy"
 
-#: server/singletons/Master.qml:53
+#: server/singletons/Master.qml:58
 msgctxt "Master|"
 msgid "Groups IDs"
 msgstr "ID grup"
 
-#: server/singletons/Master.qml:54 server/singletons/Master.qml:58
+#: server/singletons/Master.qml:59 server/singletons/Master.qml:63
 msgctxt "Master|"
 msgid "Date"
 msgstr "Data"
 
-#: server/singletons/Master.qml:55 server/singletons/Master.qml:60
+#: server/singletons/Master.qml:60 server/singletons/Master.qml:65
 msgctxt "Master|"
 msgid "Success"
 msgstr "Sukces"
 
-#: server/singletons/Master.qml:56
+#: server/singletons/Master.qml:61
 msgctxt "Master|"
 msgid "Duration"
 msgstr "Czas trwania"
 
-#: server/singletons/Master.qml:57
+#: server/singletons/Master.qml:62
 msgctxt "Master|"
 msgid "Data"
 msgstr "Dane"
 
-#: server/singletons/Master.qml:59
+#: server/singletons/Master.qml:64
 msgctxt "Master|"
 msgid "Count"
 msgstr "Liczba"
 
-#: server/singletons/Master.qml:61
+#: server/singletons/Master.qml:66
 msgctxt "Master|"
 msgid "Failed"
 msgstr "Nieudane"
 
-#: server/singletons/Master.qml:62
+#: server/singletons/Master.qml:67
 msgctxt "Master|"
 msgid "Success ratio"
 msgstr "Stosunek sukcesów"
