@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-05-21 13:29+0400\n"
+"PO-Revision-Date: 2026-06-05 13:39+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -1662,6 +1662,9 @@ msgid ""
 "must contain at least two numbers. You can enter the same number several "
 "times to increase the probability that it will appear."
 msgstr ""
+"يجب أن تحتوي \"الأرقام\" على قائمة من الأعداد الصحيحة بين 0 و9، ويجب أن "
+"تحتوي على رقمين على الأقل. يمكنك إدخال الرقم نفسه عدة مرات لزيادة احتمالية "
+"ظهوره."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:31
 msgctxt "SmallnumbersEditor|"

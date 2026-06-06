@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-05-21 05:29-0300\n"
-"Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
+"PO-Revision-Date: 2026-06-05 05:37-0300\n"
+"Last-Translator: Marcus Gama <marcus.gama@kde.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -759,17 +759,11 @@ msgid "Hints: %1"
 msgstr "Dicas: %1"
 
 #: server/activities/keyboard_training/KeyboardTrainingDataDisplay.qml:26
-#, fuzzy
-#| msgctxt "BinaryBulbDataDisplay|"
-#| msgid "Expected:"
 msgctxt "KeyboardTrainingDataDisplay|"
 msgid "Expected:"
 msgstr "Esperado:"
 
 #: server/activities/keyboard_training/KeyboardTrainingDataDisplay.qml:32
-#, fuzzy
-#| msgctxt "AdjacentNumbersDataDisplay|"
-#| msgid "Answer:"
 msgctxt "KeyboardTrainingDataDisplay|"
 msgid "Answer:"
 msgstr "Resposta:"

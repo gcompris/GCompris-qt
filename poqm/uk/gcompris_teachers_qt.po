@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-05-21 12:41+0300\n"
+"PO-Revision-Date: 2026-06-05 08:50+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -754,17 +754,11 @@ msgid "Hints: %1"
 msgstr "Підказки: %1"
 
 #: server/activities/keyboard_training/KeyboardTrainingDataDisplay.qml:26
-#, fuzzy
-#| msgctxt "BinaryBulbDataDisplay|"
-#| msgid "Expected:"
 msgctxt "KeyboardTrainingDataDisplay|"
 msgid "Expected:"
 msgstr "Мало бути:"
 
 #: server/activities/keyboard_training/KeyboardTrainingDataDisplay.qml:32
-#, fuzzy
-#| msgctxt "AdjacentNumbersDataDisplay|"
-#| msgid "Answer:"
 msgctxt "KeyboardTrainingDataDisplay|"
 msgid "Answer:"
 msgstr "Відповідь:"

@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-05-21 11:58+0300\n"
+"PO-Revision-Date: 2026-06-05 12:12+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -748,17 +748,11 @@ msgid "Hints: %1"
 msgstr "İpuçları: %1"
 
 #: server/activities/keyboard_training/KeyboardTrainingDataDisplay.qml:26
-#, fuzzy
-#| msgctxt "BinaryBulbDataDisplay|"
-#| msgid "Expected:"
 msgctxt "KeyboardTrainingDataDisplay|"
 msgid "Expected:"
 msgstr "Beklenen:"
 
 #: server/activities/keyboard_training/KeyboardTrainingDataDisplay.qml:32
-#, fuzzy
-#| msgctxt "AdjacentNumbersDataDisplay|"
-#| msgid "Answer:"
 msgctxt "KeyboardTrainingDataDisplay|"
 msgid "Answer:"
 msgstr "Yanıt:"

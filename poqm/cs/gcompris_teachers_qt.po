@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-05-25 20:26+0200\n"
+"PO-Revision-Date: 2026-06-05 11:58+0200\n"
 "Last-Translator: Libor Filípek <libor.filipek@gmail.com>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 26.04.1\n"
+"X-Generator: Lokalize 26.04.2\n"
 "X-Qt-Contexts: true\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
@@ -751,17 +751,11 @@ msgid "Hints: %1"
 msgstr "Tipy: %1"
 
 #: server/activities/keyboard_training/KeyboardTrainingDataDisplay.qml:26
-#, fuzzy
-#| msgctxt "BinaryBulbDataDisplay|"
-#| msgid "Expected:"
 msgctxt "KeyboardTrainingDataDisplay|"
 msgid "Expected:"
 msgstr "Očekáváno:"
 
 #: server/activities/keyboard_training/KeyboardTrainingDataDisplay.qml:32
-#, fuzzy
-#| msgctxt "AdjacentNumbersDataDisplay|"
-#| msgid "Answer:"
 msgctxt "KeyboardTrainingDataDisplay|"
 msgid "Answer:"
 msgstr "Odpověď:"
