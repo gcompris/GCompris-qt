@@ -32,7 +32,6 @@ function initLevel() {
     items.infoText.text = ""
     items.numpad.resetText()
     numberToGuess = getRandomInt(1, items.levels[items.currentLevel].maxNumber)
-    items.textArea.text = items.levels[items.currentLevel].objective
 }
 
 function nextLevel() {

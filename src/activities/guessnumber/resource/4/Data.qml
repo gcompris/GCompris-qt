@@ -17,20 +17,15 @@ Data {
     difficulty: 4
     data: [
         {
-            // first number is the minimum number and second is the maximum number
-            "objective" : qsTr("Guess a number between 1 and %1.").arg(10),
             "maxNumber" : 10
         },
         {
-            "objective" : qsTr("Guess a number between 1 and %1.").arg(100),
             "maxNumber" : 100
         },
         {
-            "objective" : qsTr("Guess a number between 1 and %1.").arg(Core.convertNumberToLocaleString(Number(1000))),
             "maxNumber" : 1000
         },
         {
-            "objective" : qsTr("Guess a number between 1 and %1.").arg(Core.convertNumberToLocaleString(Number(100000))),
             "maxNumber" : 100000
         }
     ]

@@ -51,7 +51,6 @@ ActivityBase {
             onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias helico: helico
-            property alias textArea: instructionPanel.textItem
             property alias infoText: userInfoPanel.textItem
             property alias answerArea: answerArea
             readonly property var levels: activity.datasets.length !== 0 ? activity.datasets : null
@@ -94,6 +93,8 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
             anchors.topMargin: GCStyle.baseMargins
+            // first number is the minimum number and second is the maximum number
+            textItem.text: qsTr("Guess a number between 1 and %1.").arg(Core.convertNumberToLocaleString(Number(items.currentMax)))
         }
 
         Row {

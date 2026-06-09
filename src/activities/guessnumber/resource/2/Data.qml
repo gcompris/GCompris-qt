@@ -15,12 +15,9 @@ Data {
     difficulty: 2
     data: [
         {
-            // first number is the minimum number and second is the maximum number
-            "objective" : qsTr("Guess a number between 1 and %1.").arg(10),
             "maxNumber" : 10
         },
         {
-            "objective" : qsTr("Guess a number between 1 and %1.").arg(100),
             "maxNumber" : 100
         }
     ]
