@@ -18,11 +18,11 @@ Data {
     data: [
         {
             "minNumber" : 1,
-            "maxNumber" : 10
+            "maxNumber" : 200
         },
         {
             "minNumber" : 1,
-            "maxNumber" : 100
+            "maxNumber" : 500
         },
         {
             "minNumber" : 1,

@@ -18,19 +18,19 @@ Data {
     data: [
         {
             "minNumber" : 1,
-            "maxNumber" : 10
+            "maxNumber" : 200000
         },
         {
             "minNumber" : 1,
-            "maxNumber" : 100
+            "maxNumber" : 300000
         },
         {
             "minNumber" : 1,
-            "maxNumber" : 1000
+            "maxNumber" : 500000
         },
         {
             "minNumber" : 1,
-            "maxNumber" : 100000
+            "maxNumber" : 800000
         },
         {
             "minNumber" : 1,

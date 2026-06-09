@@ -18,15 +18,15 @@ Data {
     data: [
         {
             "minNumber" : 1,
-            "maxNumber" : 10
+            "maxNumber" : 5000
         },
         {
             "minNumber" : 1,
-            "maxNumber" : 100
+            "maxNumber" : 10000
         },
         {
             "minNumber" : 1,
-            "maxNumber" : 1000
+            "maxNumber" : 50000
         },
         {
             "minNumber" : 1,

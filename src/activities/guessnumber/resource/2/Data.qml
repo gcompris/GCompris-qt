@@ -16,7 +16,7 @@ Data {
     data: [
         {
             "minNumber" : 1,
-            "maxNumber" : 10
+            "maxNumber" : 50
         },
         {
             "minNumber" : 1,
