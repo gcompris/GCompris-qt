@@ -57,12 +57,29 @@ ActivityBase {
             readonly property var levels: activity.datasets.length !== 0 ? activity.datasets : null
             property int currentMin: 1
             property int currentMax: 1
+            property int numberToGuess: 0
             property alias numpad: numpad
             property int maxSize: activityBackground.height * 0.16
+            property list<int> guessSteps: []
+            property alias client: client
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
+
+        Client {    // Client for gcompris-teachers.
+            id: client
+            getDataCallback: function() {
+                var data = {
+                    "minNumber": items.currentMin,
+                    "maxNumber": items.currentMax,
+                    "numberToGuess": items.numberToGuess,
+                    "guessSteps": items.guessSteps,
+                }
+
+                return data;
+            }
+        }
 
         // the cave image needs to be aligned on the right to always see the exit
         Image {

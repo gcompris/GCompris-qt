@@ -13,7 +13,6 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var items
-var numberToGuess = 0
 
 function start(items_) {
     items = items_
@@ -33,7 +32,9 @@ function initLevel() {
     items.infoText = ""
     items.numpad.resetText()
     items.answerText = "0"
-    numberToGuess = getRandomInt(items.currentMin, items.currentMax)
+    items.numberToGuess = getRandomInt(items.currentMin, items.currentMax)
+    items.guessSteps = []
+    items.client.startTiming()      // for server version.
 }
 
 function nextLevel() {
@@ -53,19 +54,23 @@ function getRandomInt(min, max) {
 function setUserAnswer(value){
     if(value === 0)
         return;
-    if(value > numberToGuess){
+
+    items.guessSteps.push(value);
+
+    if(value > items.numberToGuess){
         items.infoText = qsTr("Your number is too high.")
     }
-    if(value < numberToGuess){
+    if(value < items.numberToGuess){
         items.infoText = qsTr("Your number is too low.")
     }
     items.helico.state = "advancing"
-    if(value === numberToGuess) {
+    if(value === items.numberToGuess) {
         items.helico.correctAnswerMove()
         items.infoText = qsTr("You found the number!")
         items.bonus.good("tux")
+        items.client.sendToServer(true)
     } else {
-        var diff = Core.clamp((numberToGuess - value) / numberToGuess, -1, 1)
+        var diff = Core.clamp((items.numberToGuess - value) / items.numberToGuess, -1, 1)
         items.helico.diffX = Math.abs(diff)
         items.helico.diffY = diff
     }
