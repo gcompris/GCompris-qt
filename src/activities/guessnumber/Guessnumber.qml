@@ -51,11 +51,12 @@ ActivityBase {
             onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
             property alias helico: helico
-            property alias infoText: userInfoPanel.textItem
+            property alias infoText: userInfoPanel.textItem.text
             property alias answerArea: answerArea
+            property alias answerText: answerPanel.textItem.text
             readonly property var levels: activity.datasets.length !== 0 ? activity.datasets : null
             property int currentMin: 1
-            property int currentMax: 0
+            property int currentMax: 1
             property alias numpad: numpad
             property int maxSize: activityBackground.height * 0.16
         }

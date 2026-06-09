@@ -30,8 +30,9 @@ function initLevel() {
     items.currentMax = items.levels[items.currentLevel].maxNumber
     items.helico.init()
     items.helico.state = "horizontal"
-    items.infoText.text = ""
+    items.infoText = ""
     items.numpad.resetText()
+    items.answerText = "0"
     numberToGuess = getRandomInt(items.currentMin, items.currentMax)
 }
 
@@ -53,15 +54,15 @@ function setUserAnswer(value){
     if(value === 0)
         return;
     if(value > numberToGuess){
-        items.infoText.text = qsTr("Your number is too high")
+        items.infoText = qsTr("Your number is too high.")
     }
     if(value < numberToGuess){
-        items.infoText.text = qsTr("Your number is too low")
+        items.infoText = qsTr("Your number is too low.")
     }
     items.helico.state = "advancing"
     if(value === numberToGuess) {
         items.helico.correctAnswerMove()
-        items.infoText.text = qsTr("You found the number!")
+        items.infoText = qsTr("You found the number!")
         items.bonus.good("tux")
     } else {
         var diff = Core.clamp((numberToGuess - value) / numberToGuess, -1, 1)

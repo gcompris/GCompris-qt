@@ -10,6 +10,8 @@
 
 import core 1.0
 
+// minNumber and maxNumber must be positive integers greater than 0, and minNumber must always be less than maxNumber.
+
 Data {
     objective: qsTr("Guess a number between %1 and %2.").arg(1).arg(20)
     difficulty: 1
