@@ -13,19 +13,23 @@ import core 1.0
 import "qrc:/gcompris/src/core/core.js" as Core
 
 Data {
-    objective: qsTr("Guess a number between 1 and %1.").arg(Core.convertNumberToLocaleString(Number(100000)))
+    objective: qsTr("Guess a number between %1 and %2.").arg(1).arg(Core.convertNumberToLocaleString(Number(100000)))
     difficulty: 4
     data: [
         {
+            "minNumber" : 1,
             "maxNumber" : 10
         },
         {
+            "minNumber" : 1,
             "maxNumber" : 100
         },
         {
+            "minNumber" : 1,
             "maxNumber" : 1000
         },
         {
+            "minNumber" : 1,
             "maxNumber" : 100000
         }
     ]

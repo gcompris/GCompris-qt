@@ -26,12 +26,13 @@ function stop() {
 }
 
 function initLevel() {
+    items.currentMin = items.levels[items.currentLevel].minNumber
     items.currentMax = items.levels[items.currentLevel].maxNumber
     items.helico.init()
     items.helico.state = "horizontal"
     items.infoText.text = ""
     items.numpad.resetText()
-    numberToGuess = getRandomInt(1, items.levels[items.currentLevel].maxNumber)
+    numberToGuess = getRandomInt(items.currentMin, items.currentMax)
 }
 
 function nextLevel() {

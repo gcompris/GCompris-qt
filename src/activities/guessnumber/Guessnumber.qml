@@ -54,6 +54,7 @@ ActivityBase {
             property alias infoText: userInfoPanel.textItem
             property alias answerArea: answerArea
             readonly property var levels: activity.datasets.length !== 0 ? activity.datasets : null
+            property int currentMin: 1
             property int currentMax: 0
             property alias numpad: numpad
             property int maxSize: activityBackground.height * 0.16
@@ -94,7 +95,7 @@ ActivityBase {
             anchors.top: parent.top
             anchors.topMargin: GCStyle.baseMargins
             // first number is the minimum number and second is the maximum number
-            textItem.text: qsTr("Guess a number between 1 and %1.").arg(Core.convertNumberToLocaleString(Number(items.currentMax)))
+            textItem.text: qsTr("Guess a number between %1 and %2.").arg(Core.convertNumberToLocaleString(Number(items.currentMin))).arg(Core.convertNumberToLocaleString(Number(items.currentMax)))
         }
 
         Row {

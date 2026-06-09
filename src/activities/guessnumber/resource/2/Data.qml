@@ -11,13 +11,15 @@
 import core 1.0
 
 Data {
-    objective: qsTr("Guess a number between 1 and %1.").arg(100)
+    objective: qsTr("Guess a number between %1 and %2.").arg(1).arg(100)
     difficulty: 2
     data: [
         {
+            "minNumber" : 1,
             "maxNumber" : 10
         },
         {
+            "minNumber" : 1,
             "maxNumber" : 100
         }
     ]
