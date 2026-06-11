@@ -17,7 +17,7 @@ Item {
     readonly property int lineHeight: (height - 6 * GCStyle.halfMargins) * 0.1
     readonly property int doubleLineHeight: lineHeight * 2
     readonly property int buttonSize: Math.min(doubleLineHeight, columnWidth * 0.25)
-    property list<color> palette: []
+    override property list<color> palette: []
     property list<color> defaultPalette: []
 
     property alias selectedColor: selectedColorRectangle.color
