@@ -17,8 +17,6 @@ var url2 = "qrc:/gcompris/src/activities/algorithm/resource/";
 var items;
 var maxSubLevel;
 var dataset;
-var numberOfItemType;
-var numberOfItemMax;
 var itemIcons = [
             url2 + "apple.svg",
             url2 + "banana.svg",
@@ -55,13 +53,10 @@ function stop() {
 }
 
 function initLevel() {
-    if(items.levels) {
-        items.instructionText = items.levels[items.currentLevel].objective;
-        items.instructionPanel.opacity = 0.9;
-    }
+    items.instructionPanel.opacity = 0.9;
     items.score.currentSubLevel = 0;
-    numberOfItemType = dataset[items.currentLevel].numberOfItemType;
-    numberOfItemMax = dataset[items.currentLevel].numberOfItemMax;
+    items.numberOfItemType = dataset[items.currentLevel].numberOfItemType;
+    items.numberOfItemMax = dataset[items.currentLevel].numberOfItemMax;
     maxSubLevel = dataset[items.currentLevel].sublevels;
     items.score.numberOfSubLevels = maxSubLevel;
     initSubLevel();
@@ -131,7 +126,7 @@ function checkAnswers() {
 }
 
 function resetAnswerAreaColor() {
-     for(var i = 0; i < numberOfItemType; i++ )
+     for(var i = 0; i < items.numberOfItemType; i++ )
          items.answerColumn.itemAt(i).state = "default";
 }
 
@@ -146,8 +141,8 @@ function initSubLevel() {
     items.okButtonBlocked = true;
     var enumItems = new Array();
     var types = new Array();
-    for(var type = 0; type < numberOfItemType; type++) {
-        var nbItems = getRandomInt(1, numberOfItemMax);
+    for(var type = 0; type < items.numberOfItemType; type++) {
+        var nbItems = getRandomInt(1, items.numberOfItemMax);
         for(var j = 0; j < nbItems; j++) {
             enumItems.push(itemIcons[type]);
         }

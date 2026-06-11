@@ -58,7 +58,9 @@ ActivityBase {
             anchors.horizontalCenterOffset: (answer.width + GCStyle.baseMargins) * 0.5
             anchors.top: parent.top
             anchors.topMargin: GCStyle.baseMargins
-            textItem.text:items.instructionText
+            textItem.text: items.numberOfItemType === 1 ?
+                qsTr("Enumerate up to %1 fruits.").arg(items.numberOfItemMax.toString()) :
+                qsTr("Group %1 types of fruit and enumerate each group (%2 fruits max).").arg(items.numberOfItemType.toString()).arg(items.numberOfItemMax.toString())
             textItem.color: GCStyle.whiteText
             opacity: 0.9
             z: instructionPanel.opacity === 0 ? -10 : 10
@@ -84,13 +86,14 @@ ActivityBase {
             property alias answerColumn: answerColumn
             property alias itemListModel: itemList.model
             property alias instructionPanel: instructionPanel
-            property string instructionText: ""
             property alias score: score
             property alias errorRectangle: errorRectangle
             property alias goodAnswerSound: goodAnswerSound
             property alias badAnswerSound: badAnswerSound
             readonly property var levels: activity.datasets.length !== 0 ? activity.datasets : null
             property int mode: 1 // default is automatic
+            property int numberOfItemType: 1
+            property int numberOfItemMax: 1
             property bool buttonsBlocked: false
             property bool okButtonBlocked: false
         }
