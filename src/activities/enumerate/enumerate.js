@@ -30,8 +30,8 @@ var itemNames = [
             "watermelon",
         ];
 var numberOfTypes = itemNames.length;
-var userAnswers = new Array();
-var answerToFind = new Array();
+var userAnswers = new Object();
+var answerToFind = new Object();
 var answersMode;
 
 // We keep a globalZ across all items. It is increased on each
@@ -74,8 +74,8 @@ function previousLevel() {
 }
 
 function cleanUp() {
-    userAnswers = new Array();
-    answerToFind = new Array();
+    userAnswers = new Object();
+    answerToFind = new Object();
     items.answerColumn.model = null;
     items.itemListModel = null;
 }
@@ -97,6 +97,7 @@ function checkAnswersAuto() {
     items.score.currentSubLevel += 1;
     items.score.playWinAnimation();
     items.goodAnswerSound.play();
+    items.client.sendToServer(true);
 }
 
 function checkAnswers() {
@@ -118,9 +119,11 @@ function checkAnswers() {
         items.score.currentSubLevel += 1;
         items.score.playWinAnimation();
         items.goodAnswerSound.play();
+        items.client.sendToServer(true);
     } else {
         items.badAnswerSound.play();
         items.errorRectangle.startAnimation();
+        items.client.sendToServer(false);
     }
 }
 

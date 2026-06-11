@@ -96,6 +96,19 @@ ActivityBase {
             property int numberOfItemMax: 1
             property bool buttonsBlocked: false
             property bool okButtonBlocked: false
+            property alias client: client
+        }
+
+        Client {    // Client for gcompris-teachers. Prepare data from activity to server
+            id: client
+            getDataCallback: function() {
+                var data = {
+                    "answerToFind": Activity.answerToFind,
+                    "userAnswers": Activity.userAnswers,
+                }
+
+                return data;
+            }
         }
 
         Keys.enabled: !items.buttonsBlocked
