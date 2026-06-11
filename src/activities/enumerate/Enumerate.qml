@@ -60,7 +60,7 @@ ActivityBase {
             anchors.topMargin: GCStyle.baseMargins
             textItem.text: items.numberOfItemType === 1 ?
                 qsTr("Enumerate up to %1 fruits.").arg(items.numberOfItemMax.toString()) :
-                qsTr("Group %1 types of fruit and enumerate each group (%2 fruits max).").arg(items.numberOfItemType.toString()).arg(items.numberOfItemMax.toString())
+                qsTr("Group %1 types of fruit and enumerate each group (%2 fruits max).").arg(items.numberOfItemType).arg(items.numberOfItemMax)
             textItem.color: GCStyle.whiteText
             opacity: 0.9
             z: instructionPanel.opacity === 0 ? -10 : 10
@@ -166,7 +166,7 @@ ActivityBase {
 
                 onModelChanged: currentIndex = 0
                 AnswerArea {
-                    imgPath: modelData
+                    imgName: modelData
                     focus: true
                     state: "default"
                     isSelected: index === answerColumn.currentIndex
@@ -215,7 +215,7 @@ ActivityBase {
             Repeater {
                 id: itemList
                 ItemToEnumerate {
-                    source: modelData
+                    source: Activity.url + modelData + ".svg"
                 }
             }
         }

@@ -13,24 +13,23 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/enumerate/resource/";
-var url2 = "qrc:/gcompris/src/activities/algorithm/resource/";
 var items;
 var maxSubLevel;
 var dataset;
-var itemIcons = [
-            url2 + "apple.svg",
-            url2 + "banana.svg",
-            url2 + "cherries.svg",
-            url + "grapes.svg",
-            url2 + "lemon.svg",
-            url2 + "orange.svg",
-            url + "peach.svg",
-            url2 + "pear.svg",
-            url2 + "plum.svg",
-            url + "strawberry.svg",
-            url + "watermelon.svg",
+var itemNames = [
+            "apple",
+            "banana",
+            "cherries",
+            "grapes",
+            "lemon",
+            "orange",
+            "peach",
+            "pear",
+            "plum",
+            "strawberry",
+            "watermelon",
         ];
-var numberOfTypes = itemIcons.length;
+var numberOfTypes = itemNames.length;
 var userAnswers = new Array();
 var answerToFind = new Array();
 var answersMode;
@@ -81,10 +80,10 @@ function cleanUp() {
     items.itemListModel = null;
 }
 
-function setUserAnswer(imgPath, userValue) {
-    userAnswers[imgPath] = userValue;
+function setUserAnswer(imgName, userValue) {
+    userAnswers[imgName] = userValue;
     if (answersMode === 1) {
-        return userAnswers[imgPath] === answerToFind[imgPath];
+        return userAnswers[imgName] === answerToFind[imgName];
     }
 }
 
@@ -137,17 +136,17 @@ function getRandomInt(min, max) {
 function initSubLevel() {
     items.errorRectangle.resetState()
     cleanUp();
-    itemIcons = Core.shuffle(itemIcons);
+    itemNames = Core.shuffle(itemNames);
     items.okButtonBlocked = true;
     var enumItems = new Array();
     var types = new Array();
     for(var type = 0; type < items.numberOfItemType; type++) {
         var nbItems = getRandomInt(1, items.numberOfItemMax);
         for(var j = 0; j < nbItems; j++) {
-            enumItems.push(itemIcons[type]);
+            enumItems.push(itemNames[type]);
         }
-        answerToFind[itemIcons[type]] = nbItems;
-        types.push(itemIcons[type]);
+        answerToFind[itemNames[type]] = nbItems;
+        types.push(itemNames[type]);
     }
     items.answerColumn.model = types;
     items.itemListModel = enumItems;
@@ -184,10 +183,10 @@ function appendText(text, currentItem) {
     currentItem.itemText = text;
 
     if(answersMode === 1) {
-        currentItem.valid = setUserAnswer(currentItem.imgPath, number);
+        currentItem.valid = setUserAnswer(currentItem.imgName, number);
         checkAnswersAuto();
     } else {
-        setUserAnswer(currentItem.imgPath, number);
+        setUserAnswer(currentItem.imgName, number);
         enableOkButton();
     }
 }

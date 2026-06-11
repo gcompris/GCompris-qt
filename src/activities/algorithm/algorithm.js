@@ -55,7 +55,7 @@ var images = ["apple",
               'pear',
               'pineapple',
               'plum']
-var url = "qrc:/gcompris/src/activities/algorithm/resource/"
+var url = "qrc:/gcompris/src/activities/enumerate/resource/"
 
 // Add more cases to sample and differentiate arrange according to level of difficulty.
 // Develop an algo to choose them accordingly for each level.

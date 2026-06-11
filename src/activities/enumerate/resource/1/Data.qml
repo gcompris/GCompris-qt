@@ -10,7 +10,7 @@
 import core 1.0
 
 Data {
-    objective: qsTr("Enumerate up to %1 fruits.").arg("4")
+    objective: qsTr("Enumerate up to %1 fruits.").arg(4)
     difficulty: 1
     data: [
         {

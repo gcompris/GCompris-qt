@@ -10,7 +10,7 @@
 import core 1.0
 
 Data {
-    objective: qsTr("Group %1 types of fruit and enumerate each group (%2 fruits max).").arg("4").arg("9")
+    objective: qsTr("Group %1 types of fruit and enumerate each group (%2 fruits max).").arg(4).arg(9)
     difficulty: 3
     data: [
         {

@@ -62,7 +62,7 @@ Rectangle {
         source: "qrc:/gcompris/src/core/resource/sounds/win.wav"
     }
 
-    property string imgPath
+    property string imgName
 
     // True when the value is entered correctly
     property bool valid: false
@@ -103,7 +103,7 @@ Rectangle {
         }
         height: parent.height - GCStyle.baseMargins
         width: height
-        source: imgPath
+        source: Activity.url + imgName + ".svg"
         fillMode: Image.PreserveAspectFit
     }
 

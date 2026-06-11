@@ -709,7 +709,7 @@ Window {
                 clip: true
                 model: Core.shuffle(imagesModel)
                 delegate: Image {
-                    source: "qrc:/gcompris/src/activities/algorithm/resource/" + icon_ + ".svg"
+                    source: "qrc:/gcompris/src/activities/enumerate/resource/" + icon_ + ".svg"
                     sourceSize.width: passwordSelector.imageSize
 
                     MouseArea {
@@ -734,7 +734,7 @@ Window {
                 clip: true
                 model: passModel
                 delegate: Image {
-                    source: "qrc:/gcompris/src/activities/algorithm/resource/" + icon_ + ".svg"
+                    source: "qrc:/gcompris/src/activities/enumerate/resource/" + icon_ + ".svg"
                     sourceSize.width: passwordSelector.imageSize
 
                     MouseArea {

@@ -2125,7 +2125,7 @@ SPDX-FileComment = "cropping, sharpening of https://commons.wikimedia.org/wiki/F
 [[annotations]]
 path = "src/activities/enumerate/**.svg"
 precedence = "aggregate"
-SPDX-FileCopyrightText = "2017 Timothée Giet"
+SPDX-FileCopyrightText = "2015-2017 Timothée Giet"
 SPDX-License-Identifier = "CC-BY-SA-4.0"
 
 [[annotations]]

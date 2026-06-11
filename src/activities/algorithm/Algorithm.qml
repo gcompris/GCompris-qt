@@ -28,7 +28,7 @@ ActivityBase {
     pageComponent: Image {
         id: activityBackground
         anchors.fill: parent
-        source: Activity.url + "desert_scene.svg"
+        source: "qrc:/gcompris/src/activities/algorithm/resource/desert_scene.svg"
         sourceSize.width: width
         sourceSize.height: height
         fillMode: Image.PreserveAspectCrop
@@ -149,8 +149,7 @@ ActivityBase {
                         id: answer
                         Image {
                             required property string modelData
-                            source: "qrc:/gcompris/src/activities/algorithm/resource/" +
-                                    modelData + '.svg'
+                            source: Activity.url + modelData + '.svg'
                             sourceSize.height: height
                             sourceSize.width: width
                             width: columnLayout.itemSize
