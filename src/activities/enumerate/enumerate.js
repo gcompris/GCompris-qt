@@ -57,7 +57,7 @@ function initLevel() {
     items.score.currentSubLevel = 0;
     items.numberOfItemType = dataset[items.currentLevel].numberOfItemType;
     items.numberOfItemMax = dataset[items.currentLevel].numberOfItemMax;
-    maxSubLevel = dataset[items.currentLevel].sublevels;
+    maxSubLevel = dataset[items.currentLevel].subLevels;
     items.score.numberOfSubLevels = maxSubLevel;
     initSubLevel();
 }

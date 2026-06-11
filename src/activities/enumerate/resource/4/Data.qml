@@ -14,22 +14,22 @@ Data {
     difficulty: 3
     data: [
         {
-            "sublevels" : "5",
+            "subLevels" : 5,
             "numberOfItemType" : 4,
             "numberOfItemMax"  : 6
         },
         {
-            "sublevels" : "5",
+            "subLevels" : 5,
             "numberOfItemType" : 4,
             "numberOfItemMax"  : 7
         },
         {
-            "sublevels" : "5",
+            "subLevels" : 5,
             "numberOfItemType" : 4,
             "numberOfItemMax"  : 8
         },
         {
-            "sublevels" : "5",
+            "subLevels" : 5,
             "numberOfItemType" : 4,
             "numberOfItemMax"  : 9
         }
