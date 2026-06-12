@@ -25548,45 +25548,6 @@ msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
 msgstr "Рисование"
 
-#: activities/sketch/ColorSelector.qml:78
-msgctxt "ColorSelector|"
-msgid "Palette Colors"
-msgstr "Палитра"
-
-#: activities/sketch/ColorSelector.qml:162
-msgctxt "ColorSelector|"
-msgid "Reset palette"
-msgstr "Сбросить палитру"
-
-#: activities/sketch/ColorSelector.qml:214
-msgctxt "ColorSelector|"
-msgid "Selected Color"
-msgstr "Выбранный цвет"
-
-#. Color hue
-#: activities/sketch/ColorSelector.qml:239
-msgctxt "ColorSelector|color hue"
-msgid "Hue"
-msgstr "Тон"
-
-#. Color saturation
-#: activities/sketch/ColorSelector.qml:267
-msgctxt "ColorSelector|color saturation"
-msgid "Saturation"
-msgstr "Насыщенность"
-
-#. Color lightness
-#: activities/sketch/ColorSelector.qml:293
-msgctxt "ColorSelector|color lightness"
-msgid "Lightness"
-msgstr "Светлота"
-
-#. Reload default color for selected slot
-#: activities/sketch/ColorSelector.qml:329
-msgctxt "ColorSelector|"
-msgid "Reset Color"
-msgstr "Сбросить цвет"
-
 #: activities/sketch/FilesPanel.qml:35
 msgctxt "FilesPanel|"
 msgid "Save your image"
@@ -29665,6 +29626,34 @@ msgstr "Пропустить"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Начать"
+
+#~ msgctxt "ColorSelector|"
+#~ msgid "Palette Colors"
+#~ msgstr "Палитра"
+
+#~ msgctxt "ColorSelector|"
+#~ msgid "Reset palette"
+#~ msgstr "Сбросить палитру"
+
+#~ msgctxt "ColorSelector|"
+#~ msgid "Selected Color"
+#~ msgstr "Выбранный цвет"
+
+#~ msgctxt "ColorSelector|color hue"
+#~ msgid "Hue"
+#~ msgstr "Тон"
+
+#~ msgctxt "ColorSelector|color saturation"
+#~ msgid "Saturation"
+#~ msgstr "Насыщенность"
+
+#~ msgctxt "ColorSelector|color lightness"
+#~ msgid "Lightness"
+#~ msgstr "Светлота"
+
+#~ msgctxt "ColorSelector|"
+#~ msgid "Reset Color"
+#~ msgstr "Сбросить цвет"
 
 #~ msgctxt "Data|"
 #~ msgid "Maximum value: 500000."

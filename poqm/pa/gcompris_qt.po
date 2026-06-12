@@ -23521,49 +23521,6 @@ msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
 msgstr ""
 
-#: activities/sketch/ColorSelector.qml:78
-msgctxt "ColorSelector|"
-msgid "Palette Colors"
-msgstr ""
-
-#: activities/sketch/ColorSelector.qml:162
-msgctxt "ColorSelector|"
-msgid "Reset palette"
-msgstr ""
-
-#: activities/sketch/ColorSelector.qml:214
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
-msgctxt "ColorSelector|"
-msgid "Selected Color"
-msgstr "ਚੁਣੇ"
-
-#. Color hue
-#: activities/sketch/ColorSelector.qml:239
-msgctxt "ColorSelector|color hue"
-msgid "Hue"
-msgstr ""
-
-#. Color saturation
-#: activities/sketch/ColorSelector.qml:267
-#, fuzzy
-msgctxt "ColorSelector|color saturation"
-msgid "Saturation"
-msgstr "ਸ਼ਨਿੱਚਰ"
-
-#. Color lightness
-#: activities/sketch/ColorSelector.qml:293
-msgctxt "ColorSelector|color lightness"
-msgid "Lightness"
-msgstr ""
-
-#. Reload default color for selected slot
-#: activities/sketch/ColorSelector.qml:329
-msgctxt "ColorSelector|"
-msgid "Reset Color"
-msgstr ""
-
 #: activities/sketch/FilesPanel.qml:35
 msgctxt "FilesPanel|"
 msgid "Save your image"
@@ -27357,6 +27314,18 @@ msgstr "ਛੱਡੋ"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr " ਸ਼਼ੁਰੂ ਕਰੋ"
+
+#, fuzzy
+#~| msgctxt "ActivityConfig|"
+#~| msgid "Selected"
+#~ msgctxt "ColorSelector|"
+#~ msgid "Selected Color"
+#~ msgstr "ਚੁਣੇ"
+
+#, fuzzy
+#~ msgctxt "ColorSelector|color saturation"
+#~ msgid "Saturation"
+#~ msgstr "ਸ਼ਨਿੱਚਰ"
 
 #, fuzzy
 #~| msgctxt "Warning|"

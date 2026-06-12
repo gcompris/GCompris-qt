@@ -26090,59 +26090,6 @@ msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
 msgstr ""
 
-#: activities/sketch/ColorSelector.qml:78
-#, fuzzy
-#| msgctxt "ColorMix|"
-#| msgid "Match the color"
-msgctxt "ColorSelector|"
-msgid "Palette Colors"
-msgstr ""
-"Dèan an\n"
-"aon dath"
-
-#: activities/sketch/ColorSelector.qml:162
-msgctxt "ColorSelector|"
-msgid "Reset palette"
-msgstr ""
-
-#: activities/sketch/ColorSelector.qml:214
-#, fuzzy
-#| msgctxt "Clockgame|"
-#| msgid "Set the watch to:"
-msgctxt "ColorSelector|"
-msgid "Selected Color"
-msgstr "Suidhich an t-uaireadair aig:"
-
-#. Color hue
-#: activities/sketch/ColorSelector.qml:239
-msgctxt "ColorSelector|color hue"
-msgid "Hue"
-msgstr ""
-
-#. Color saturation
-#: activities/sketch/ColorSelector.qml:267
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction"
-msgctxt "ColorSelector|color saturation"
-msgid "Saturation"
-msgstr "Toirt air falbh"
-
-#. Color lightness
-#: activities/sketch/ColorSelector.qml:293
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Lights Off"
-msgctxt "ColorSelector|color lightness"
-msgid "Lightness"
-msgstr "Cuir na solasan dheth"
-
-#. Reload default color for selected slot
-#: activities/sketch/ColorSelector.qml:329
-msgctxt "ColorSelector|"
-msgid "Reset Color"
-msgstr ""
-
 #: activities/sketch/FilesPanel.qml:35
 #, fuzzy
 #| msgctxt "instruments|"
@@ -30242,6 +30189,36 @@ msgstr ""
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr ""
+
+#, fuzzy
+#~| msgctxt "ColorMix|"
+#~| msgid "Match the color"
+#~ msgctxt "ColorSelector|"
+#~ msgid "Palette Colors"
+#~ msgstr ""
+#~ "Dèan an\n"
+#~ "aon dath"
+
+#, fuzzy
+#~| msgctxt "Clockgame|"
+#~| msgid "Set the watch to:"
+#~ msgctxt "ColorSelector|"
+#~ msgid "Selected Color"
+#~ msgstr "Suidhich an t-uaireadair aig:"
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Subtraction"
+#~ msgctxt "ColorSelector|color saturation"
+#~ msgid "Saturation"
+#~ msgstr "Toirt air falbh"
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Lights Off"
+#~ msgctxt "ColorSelector|color lightness"
+#~ msgid "Lightness"
+#~ msgstr "Cuir na solasan dheth"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"

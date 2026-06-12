@@ -26276,60 +26276,6 @@ msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
 msgstr ""
 
-#: activities/sketch/ColorSelector.qml:78
-#, fuzzy
-#| msgctxt "ColorMix|"
-#| msgid "Match the color"
-msgctxt "ColorSelector|"
-msgid "Palette Colors"
-msgstr "Lazım olan rəngi alın"
-
-#: activities/sketch/ColorSelector.qml:162
-msgctxt "ColorSelector|"
-msgid "Reset palette"
-msgstr ""
-
-#: activities/sketch/ColorSelector.qml:214
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
-msgctxt "ColorSelector|"
-msgid "Selected Color"
-msgstr "Seçildi"
-
-#. Color hue
-#: activities/sketch/ColorSelector.qml:239
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Hubei"
-msgctxt "ColorSelector|color hue"
-msgid "Hue"
-msgstr "Hubey"
-
-#. Color saturation
-#: activities/sketch/ColorSelector.qml:267
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Saturn"
-msgctxt "ColorSelector|color saturation"
-msgid "Saturation"
-msgstr "Saturn"
-
-#. Color lightness
-#: activities/sketch/ColorSelector.qml:293
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Lights off"
-msgctxt "ColorSelector|color lightness"
-msgid "Lightness"
-msgstr "İşıqları söndürün"
-
-#. Reload default color for selected slot
-#: activities/sketch/ColorSelector.qml:329
-msgctxt "ColorSelector|"
-msgid "Reset Color"
-msgstr ""
-
 #: activities/sketch/FilesPanel.qml:35
 #, fuzzy
 #| msgctxt "ActivityConfig|"
@@ -30615,6 +30561,41 @@ msgstr "Ötürün"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Başladın"
+
+#, fuzzy
+#~| msgctxt "ColorMix|"
+#~| msgid "Match the color"
+#~ msgctxt "ColorSelector|"
+#~ msgid "Palette Colors"
+#~ msgstr "Lazım olan rəngi alın"
+
+#, fuzzy
+#~| msgctxt "ActivityConfig|"
+#~| msgid "Selected"
+#~ msgctxt "ColorSelector|"
+#~ msgid "Selected Color"
+#~ msgstr "Seçildi"
+
+#, fuzzy
+#~| msgctxt "board14_0|"
+#~| msgid "Hubei"
+#~ msgctxt "ColorSelector|color hue"
+#~ msgid "Hue"
+#~ msgstr "Hubey"
+
+#, fuzzy
+#~| msgctxt "Dataset|"
+#~| msgid "Saturn"
+#~ msgctxt "ColorSelector|color saturation"
+#~ msgid "Saturation"
+#~ msgstr "Saturn"
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Lights off"
+#~ msgctxt "ColorSelector|color lightness"
+#~ msgid "Lightness"
+#~ msgstr "İşıqları söndürün"
 
 #~ msgctxt "Data|"
 #~ msgid "Maximum value: 500000."
