@@ -27622,31 +27622,3 @@ msgstr "跳过"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "开始"
-
-#~ msgctxt "ColorSelector|"
-#~ msgid "Palette Colors"
-#~ msgstr "调色板的颜色"
-
-#~ msgctxt "ColorSelector|"
-#~ msgid "Reset palette"
-#~ msgstr "重设调色板"
-
-#~ msgctxt "ColorSelector|"
-#~ msgid "Selected Color"
-#~ msgstr "选定的颜色"
-
-#~ msgctxt "ColorSelector|color hue"
-#~ msgid "Hue"
-#~ msgstr "色相"
-
-#~ msgctxt "ColorSelector|color saturation"
-#~ msgid "Saturation"
-#~ msgstr "饱和度"
-
-#~ msgctxt "ColorSelector|color lightness"
-#~ msgid "Lightness"
-#~ msgstr "亮度"
-
-#~ msgctxt "ColorSelector|"
-#~ msgid "Reset Color"
-#~ msgstr "重置颜色"
