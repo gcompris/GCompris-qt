@@ -20,10 +20,11 @@ ActivityInfo {
   goal: qsTr("Practice comparing numbers.")
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Read the instructions that give you the range of the number to find. Enter a number in the top right entry box. You will be told if your number is higher or lower than the one to find. Then try again until you find the correct answer. The distance between Tux and the right side of the screen represents how far you are from the number to find. If Tux is over or under the vertical center of the screen, it means your number is over or under the number to find.") + ("<br><br>") +
+  manual: qsTr("Read the instructions that give you the range of the number to find. Enter a number in the top right entry box, and press the OK button to validate it. You will be told if your number is higher or lower than the one to find. Then try again until you find the correct answer. The distance between the helicopter and the right side of the screen represents how far you are from the number to find. If the helicopter is above or under the vertical center of the screen, it means your number is higher or lower than the number to find.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
           qsTr("Digits: enter a number") + ("</li><li>") +
-          qsTr("Backspace: erase a number") + ("</li></ul>")
+          qsTr("Backspace: erase a number") + ("</li></li") +
+          qsTr("Enter: validate your answer") + ("</li></ul>")
   credit: ""
   section: "math numeration"
   createdInVersion: 0

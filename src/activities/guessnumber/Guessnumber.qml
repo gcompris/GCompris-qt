@@ -143,9 +143,18 @@ ActivityBase {
 
                     onUserEntryChanged: {
                         textItem.text = Core.convertNumberToLocaleString(Number(userEntry));
-                        if(userEntry != "")
-                            Activity.setUserAnswer(parseInt(userEntry))
                     }
+                }
+
+                BarButton {
+                    id: okButton
+                    anchors.top: answerPanel.bottom
+                    anchors.topMargin: GCStyle.halfMargins
+                    anchors.horizontalCenter: answerPanel.horizontalCenter
+                    source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+                    width: GCStyle.bigButtonHeight
+                    onClicked: Activity.setUserAnswer(parseInt(answerPanel.userEntry))
+                    enabled: answerPanel.textItem.text != "0" && !bonus.isPlaying
                 }
             }
         }
@@ -166,6 +175,18 @@ ActivityBase {
 
         Keys.onReleased: (event) => {
             numpad.updateAnswer(event.key, false);
+        }
+
+        Keys.onEnterPressed: {
+            if(okButton.enabled) {
+                okButton.clicked();
+            }
+        }
+
+        Keys.onReturnPressed: {
+            if(okButton.enabled) {
+                okButton.clicked();
+            }
         }
 
         DialogChooseLevel {
