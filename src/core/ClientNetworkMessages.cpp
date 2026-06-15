@@ -225,7 +225,10 @@ void ClientNetworkMessages::sendActivityData(const QString &activity,
     QJsonObject obj { { "aType", netconst::ACTIVITY_DATA } };
     obj.insert("activity", activity);
     obj.insert("content", data);
-    messageQueue.append(prepareMessage(obj));
+    // We only want to send data when we know someone is connected
+    if (status == netconst::CONNECTED) {
+        messageQueue.append(prepareMessage(obj));
+    }
 }
 
 int ClientNetworkMessages::connectionStatus()
