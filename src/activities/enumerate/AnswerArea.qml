@@ -17,7 +17,7 @@ import "../../core"
 Rectangle {
     id: answerBackground
     width: activityBackground.answersWidth
-    height: width * 0.5
+    height: activityBackground.answersHeight
     radius: GCStyle.halfMargins
     property bool isSelected: false
     property alias itemText: userEntry.text

@@ -36,7 +36,10 @@ ActivityBase {
         sourceSize.height: height
         focus: true
 
-        readonly property int answersWidth: Math.min(140 * ApplicationInfo.ratio, activityBackground.width * 0.25)
+        readonly property int answersHeight: Math.min(70 * ApplicationInfo.ratio,
+                                                activityBackground.width * 0.125,
+                                                (answerVerticalArea.height / answerRepeater.count - GCStyle.baseMargins))
+        readonly property int answersWidth: answersHeight * 2
 
         Component.onCompleted: {
             dialogActivityConfig.initialize()
@@ -52,10 +55,10 @@ ActivityBase {
         //instruction rectangle
         GCTextPanel {
             id: instructionPanel
-            panelWidth: parent.width - 3 * GCStyle.baseMargins - answer.width
+            panelWidth: parent.width - 3 * GCStyle.baseMargins - answerColumn.width
             panelHeight: 60 * ApplicationInfo.ratio
             anchors.horizontalCenter: parent.horizontalCenter
-            anchors.horizontalCenterOffset: (answer.width + GCStyle.baseMargins) * 0.5
+            anchors.horizontalCenterOffset: (answerColumn.width + GCStyle.baseMargins) * 0.5
             anchors.top: parent.top
             anchors.topMargin: GCStyle.baseMargins
             textItem.text: items.numberOfItemType === 1 ?
@@ -83,7 +86,7 @@ ActivityBase {
             property int numberOfLevel: 0
             onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
-            property alias answerColumn: answerColumn
+            property alias answerRepeater: answerRepeater
             property alias itemListModel: itemList.model
             property alias instructionPanel: instructionPanel
             property alias score: score
@@ -114,19 +117,19 @@ ActivityBase {
         Keys.enabled: !items.buttonsBlocked
         Keys.onPressed: (event) => {
             Activity.resetAnswerAreaColor();
-            Activity.appendText(event.text, answerColumn.itemAt(answerColumn.currentIndex));
+            Activity.appendText(event.text, answerRepeater.itemAt(answerRepeater.currentIndex));
         }
 
         Keys.onDownPressed: {
             Activity.resetAnswerAreaColor();
-            if(++answerColumn.currentIndex >= answerColumn.count)
-                answerColumn.currentIndex = 0
+            if(++answerRepeater.currentIndex >= answerRepeater.count)
+                answerRepeater.currentIndex = 0
         }
 
         Keys.onUpPressed: {
             Activity.resetAnswerAreaColor();
-            if(--answerColumn.currentIndex < 0)
-                answerColumn.currentIndex = answerColumn.count - 1
+            if(--answerRepeater.currentIndex < 0)
+                answerRepeater.currentIndex = answerRepeater.count - 1
         }
 
         Keys.onReturnPressed: {
@@ -163,8 +166,21 @@ ActivityBase {
             sourceSize.width: Math.max(parent.width, parent.height)
         }
 
+        Item {
+            id: answerVerticalArea
+            // used to calculate max height available for answerColumn
+            anchors {
+                left: parent.left
+                top: parent.top
+                bottom: bar.top
+                margins: GCStyle.baseMargins
+                bottomMargin: bar.height * 0.2
+            }
+            width: 1
+        }
+
         Column {
-            id: answer
+            id: answerColumn
             anchors {
                 left: parent.left
                 top: parent.top
@@ -174,7 +190,7 @@ ActivityBase {
             spacing: GCStyle.baseMargins
 
             Repeater {
-                id: answerColumn
+                id: answerRepeater
                 property int currentIndex
 
                 onModelChanged: currentIndex = 0
@@ -182,7 +198,7 @@ ActivityBase {
                     imgName: modelData
                     focus: true
                     state: "default"
-                    isSelected: index === answerColumn.currentIndex
+                    isSelected: index === answerRepeater.currentIndex
                     itemIndex: index
                 }
             }
@@ -210,7 +226,7 @@ ActivityBase {
         Item {
             id: layoutArea
             anchors.top: parent.top
-            anchors.left: answer.right
+            anchors.left: answerColumn.right
             anchors.right: parent.right
             anchors.bottom: score.top
 
@@ -244,7 +260,7 @@ ActivityBase {
 
         ErrorRectangle {
             id: errorRectangle
-            anchors.fill: answer
+            anchors.fill: answerColumn
             imageSize: okButton.width
             radius: GCStyle.halfMargins
             function releaseControls() { items.buttonsBlocked = false; }
@@ -272,7 +288,7 @@ ActivityBase {
             }
 
             onKeypress: (text) => {
-                Activity.appendText(text, answerColumn.itemAt(answerColumn.currentIndex));
+                Activity.appendText(text, answerRepeater.itemAt(answerRepeater.currentIndex));
             }
 
             onError: (msg) => console.log("VirtualKeyboard error: " + msg);

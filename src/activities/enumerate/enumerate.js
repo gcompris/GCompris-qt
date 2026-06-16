@@ -76,7 +76,7 @@ function previousLevel() {
 function cleanUp() {
     userAnswers = new Object();
     answerToFind = new Object();
-    items.answerColumn.model = null;
+    items.answerRepeater.model = null;
     items.itemListModel = null;
 }
 
@@ -107,11 +107,11 @@ function checkAnswers() {
     var isAnswerGood =  true;
     for (var key in answerToFind) {
         if(userAnswers[key] !== answerToFind[key]) {
-            items.answerColumn.itemAt(i).state = "badAnswer";
+            items.answerRepeater.itemAt(i).state = "badAnswer";
             isAnswerGood = false;
         }
         else
-            items.answerColumn.itemAt(i).state = "goodAnswer";
+            items.answerRepeater.itemAt(i).state = "goodAnswer";
          i++;
     }
 
@@ -129,7 +129,7 @@ function checkAnswers() {
 
 function resetAnswerAreaColor() {
      for(var i = 0; i < items.numberOfItemType; i++ )
-         items.answerColumn.itemAt(i).state = "default";
+         items.answerRepeater.itemAt(i).state = "default";
 }
 
 function getRandomInt(min, max) {
@@ -151,7 +151,7 @@ function initSubLevel() {
         answerToFind[itemNames[type]] = nbItems;
         types.push(itemNames[type]);
     }
-    items.answerColumn.model = types;
+    items.answerRepeater.model = types;
     items.itemListModel = enumItems;
     items.buttonsBlocked = false;
 }
@@ -175,7 +175,7 @@ function enableOkButton() {
 }
 
 function selectItem(itemIndex) {
-    items.answerColumn.currentIndex = itemIndex;
+    items.answerRepeater.currentIndex = itemIndex;
 }
 
 function appendText(text, currentItem) {
