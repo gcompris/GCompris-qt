@@ -923,6 +923,7 @@ msgstr "Dzēšanas taustiņš: izdzēsiet pēdējo ierakstīto ciparu"
 #: activities/algebra_plus/ActivityInfo.qml:28
 #: activities/grammar_analysis/ActivityInfo.qml:34
 #: activities/grammar_classes/ActivityInfo.qml:34
+#: activities/guessnumber/ActivityInfo.qml:27
 #: activities/learn_additions/ActivityInfo.qml:27
 #: activities/learn_decimals/ActivityInfo.qml:24
 #: activities/learn_decimals_additions/ActivityInfo.qml:25
@@ -7471,84 +7472,41 @@ msgstr ""
 "„Enter“ taustiņš: pārbaudi atbildi (ja „Pārbaudīt atbildes“ opcija ir "
 "iestatīta uz „Labi pogu“)"
 
-#: activities/enumerate/resource/1/Data.qml:13
-#: activities/enumerate/resource/1/Data.qml:29
-msgctxt "Data|"
-msgid "Enumerate up to 4 fruit."
+#: activities/enumerate/Enumerate.qml:65
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Enumerate up to 4 fruit."
+msgctxt "Enumerate|"
+msgid "Enumerate up to %1 fruits."
 msgstr "Saskaiti līdz 4 augļiem."
 
-#: activities/enumerate/resource/1/Data.qml:17
-msgctxt "Data|"
-msgid "Enumerate up to 2 fruit."
-msgstr "Saskaiti līdz 2 augļiem."
-
-#: activities/enumerate/resource/1/Data.qml:23
-msgctxt "Data|"
-msgid "Enumerate up to 3 fruit."
-msgstr "Saskaiti līdz 3 augļiem."
-
-#: activities/enumerate/resource/2/Data.qml:13
-#: activities/enumerate/resource/2/Data.qml:29
-#: activities/enumerate/resource/3/Data.qml:29
-msgctxt "Data|"
-msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
+#: activities/enumerate/Enumerate.qml:66
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
+msgctxt "Enumerate|"
+msgid "Group %1 types of fruit and enumerate each group (%2 fruits max)."
 msgstr ""
 "Sagrupē divus augļu tipus un saskaiti katru grupu (līdz pieciem augļiem)."
 
-#: activities/enumerate/resource/2/Data.qml:17
+#: activities/enumerate/resource/1/Data.qml:13
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Enumerate up to 4 fruit."
 msgctxt "Data|"
-msgid "Group 2 types of fruit and enumerate each group (3 fruit max)."
-msgstr ""
-"Sagrupē divus augļu veidus un saskaiti katru grupu (līdz trīs augļiem)."
+msgid "Enumerate up to %1 fruits."
+msgstr "Saskaiti līdz 4 augļiem."
 
-#: activities/enumerate/resource/2/Data.qml:23
-msgctxt "Data|"
-msgid "Group 2 types of fruit and enumerate each group (4 fruit max)."
-msgstr ""
-"Sagrupē divus augļu veidus un saskaiti katru grupu (līdz četriem augļiem)."
-
+#: activities/enumerate/resource/2/Data.qml:13
 #: activities/enumerate/resource/3/Data.qml:13
-#: activities/enumerate/resource/3/Data.qml:35
-msgctxt "Data|"
-msgid "Group 3 types of fruit and enumerate each group (6 fruit max)."
-msgstr ""
-"Sagrupē trīs augļu veidus un saskaiti katru grupu (līdz sešiem augļiem)."
-
-#: activities/enumerate/resource/3/Data.qml:17
-msgctxt "Data|"
-msgid "Group 3 types of fruit and enumerate each group (3 fruit max)."
-msgstr "Sagrupē trīs augļu veidus un saskaiti katru grupu (līdz trim augļiem)."
-
-#: activities/enumerate/resource/3/Data.qml:23
-msgctxt "Data|"
-msgid "Group 3 types of fruit and enumerate each group (4 fruit max)."
-msgstr ""
-"Sagrupē trīs augļu veidus un saskaiti katru grupu (līdz četriem augļiem)."
-
 #: activities/enumerate/resource/4/Data.qml:13
-#: activities/enumerate/resource/4/Data.qml:35
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
 msgctxt "Data|"
-msgid "Group 4 types of fruit and enumerate each group (9 fruit max)."
+msgid "Group %1 types of fruit and enumerate each group (%2 fruits max)."
 msgstr ""
-"Sagrupē četrus augļu veidus un saskaiti katru grupu (līdz deviņiem augļiem)."
-
-#: activities/enumerate/resource/4/Data.qml:17
-msgctxt "Data|"
-msgid "Group 4 types of fruit and enumerate each group (6 fruit max)."
-msgstr ""
-"Sagrupē četrus augļu veidus un saskaiti katru grupu (līdz sešiem augļiem)."
-
-#: activities/enumerate/resource/4/Data.qml:23
-msgctxt "Data|"
-msgid "Group 4 types of fruit and enumerate each group (7 fruit max)."
-msgstr ""
-"Sagrupē četrus augļu veidus un saskaiti katru grupu (līdz septiņiem augļiem)."
-
-#: activities/enumerate/resource/4/Data.qml:29
-msgctxt "Data|"
-msgid "Group 4 types of fruit and enumerate each group (8 fruit max)."
-msgstr ""
-"Sagrupē četrus augļu veidus un saskaiti katru grupu (līdz astoņiem augļiem)."
+"Sagrupē divus augļu tipus un saskaiti katru grupu (līdz pieciem augļiem)."
 
 #. Activity title
 #: activities/erase/ActivityInfo.qml:15
@@ -16221,15 +16179,26 @@ msgstr "Trenējies salīdzināt skaitļus."
 
 #. Help manual
 #: activities/guessnumber/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Read the instructions that give you the range of the number to find. "
+#| "Enter a number in the top right entry box. You will be told if your "
+#| "number is higher or lower than the one to find. Then try again until you "
+#| "find the correct answer. The distance between Tux and the right side of "
+#| "the screen represents how far you are from the number to find. If Tux is "
+#| "over or under the vertical center of the screen, it means your number is "
+#| "over or under the number to find."
 msgctxt "ActivityInfo|"
 msgid ""
 "Read the instructions that give you the range of the number to find. Enter a "
-"number in the top right entry box. You will be told if your number is higher "
-"or lower than the one to find. Then try again until you find the correct "
-"answer. The distance between Tux and the right side of the screen represents "
-"how far you are from the number to find. If Tux is over or under the "
-"vertical center of the screen, it means your number is over or under the "
-"number to find."
+"number in the top right entry box, and press the OK button to validate it. "
+"You will be told if your number is higher or lower than the one to find. "
+"Then try again until you find the correct answer. The distance between the "
+"helicopter and the right side of the screen represents how far you are from "
+"the number to find. If the helicopter is above or under the vertical center "
+"of the screen, it means your number is higher or lower than the number to "
+"find."
 msgstr ""
 "Izlasi instrukciju, kurā norādīts skaitļu apgabals, kādā skaitlis jāmeklē. "
 "Ievadi skaitli ievades laukā augšā pa labi. Tev pateiks, vai skaitlis ir par "
@@ -16248,46 +16217,45 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
 msgstr "„Backspace“ taustiņš: dzēš skaitli"
 
-#: activities/guessnumber/guessnumber.js:56
+#: activities/guessnumber/guessnumber.js:61
+#, fuzzy
+#| msgctxt "guessnumber|"
+#| msgid "Your number is too high"
 msgctxt "guessnumber|"
-msgid "Your number is too high"
+msgid "Your number is too high."
 msgstr "Tavs skaitlis ir par lielu"
 
-#: activities/guessnumber/guessnumber.js:59
+#: activities/guessnumber/guessnumber.js:64
+#, fuzzy
+#| msgctxt "guessnumber|"
+#| msgid "Your number is too low"
 msgctxt "guessnumber|"
-msgid "Your number is too low"
+msgid "Your number is too low."
 msgstr "Tavs skaitlis ir par mazu"
 
-#: activities/guessnumber/guessnumber.js:64
+#: activities/guessnumber/guessnumber.js:69
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr "Tu atradi skaitli!"
 
-#: activities/guessnumber/resource/1/Data.qml:14
-#: activities/guessnumber/resource/1/Data.qml:19
-#: activities/guessnumber/resource/1/Data.qml:23
-#: activities/guessnumber/resource/1/Data.qml:27
+#: activities/guessnumber/Guessnumber.qml:116
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Guess a number between 1 and %1."
+msgctxt "Guessnumber|"
+msgid "Guess a number between %1 and %2."
+msgstr "Uzmini skaitli starp 1 un %1."
+
+#: activities/guessnumber/resource/1/Data.qml:16
 #: activities/guessnumber/resource/2/Data.qml:14
-#: activities/guessnumber/resource/2/Data.qml:19
-#: activities/guessnumber/resource/2/Data.qml:23
 #: activities/guessnumber/resource/3/Data.qml:16
-#: activities/guessnumber/resource/3/Data.qml:21
-#: activities/guessnumber/resource/3/Data.qml:25
-#: activities/guessnumber/resource/3/Data.qml:29
 #: activities/guessnumber/resource/4/Data.qml:16
-#: activities/guessnumber/resource/4/Data.qml:21
-#: activities/guessnumber/resource/4/Data.qml:25
-#: activities/guessnumber/resource/4/Data.qml:29
-#: activities/guessnumber/resource/4/Data.qml:33
 #: activities/guessnumber/resource/5/Data.qml:16
-#: activities/guessnumber/resource/5/Data.qml:21
-#: activities/guessnumber/resource/5/Data.qml:25
-#: activities/guessnumber/resource/5/Data.qml:29
-#: activities/guessnumber/resource/5/Data.qml:33
-#: activities/guessnumber/resource/5/Data.qml:37
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
-msgid "Guess a number between 1 and %1."
+msgid "Guess a number between %1 and %2."
 msgstr "Uzmini skaitli starp 1 un %1."
 
 #: activities/hangman/ActivityConfig.qml:42
@@ -29422,6 +29390,62 @@ msgstr "Izlaist"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Sākt"
+
+#~ msgctxt "Data|"
+#~ msgid "Enumerate up to 2 fruit."
+#~ msgstr "Saskaiti līdz 2 augļiem."
+
+#~ msgctxt "Data|"
+#~ msgid "Enumerate up to 3 fruit."
+#~ msgstr "Saskaiti līdz 3 augļiem."
+
+#~ msgctxt "Data|"
+#~ msgid "Group 2 types of fruit and enumerate each group (3 fruit max)."
+#~ msgstr ""
+#~ "Sagrupē divus augļu veidus un saskaiti katru grupu (līdz trīs augļiem)."
+
+#~ msgctxt "Data|"
+#~ msgid "Group 2 types of fruit and enumerate each group (4 fruit max)."
+#~ msgstr ""
+#~ "Sagrupē divus augļu veidus un saskaiti katru grupu (līdz četriem augļiem)."
+
+#~ msgctxt "Data|"
+#~ msgid "Group 3 types of fruit and enumerate each group (6 fruit max)."
+#~ msgstr ""
+#~ "Sagrupē trīs augļu veidus un saskaiti katru grupu (līdz sešiem augļiem)."
+
+#~ msgctxt "Data|"
+#~ msgid "Group 3 types of fruit and enumerate each group (3 fruit max)."
+#~ msgstr ""
+#~ "Sagrupē trīs augļu veidus un saskaiti katru grupu (līdz trim augļiem)."
+
+#~ msgctxt "Data|"
+#~ msgid "Group 3 types of fruit and enumerate each group (4 fruit max)."
+#~ msgstr ""
+#~ "Sagrupē trīs augļu veidus un saskaiti katru grupu (līdz četriem augļiem)."
+
+#~ msgctxt "Data|"
+#~ msgid "Group 4 types of fruit and enumerate each group (9 fruit max)."
+#~ msgstr ""
+#~ "Sagrupē četrus augļu veidus un saskaiti katru grupu (līdz deviņiem "
+#~ "augļiem)."
+
+#~ msgctxt "Data|"
+#~ msgid "Group 4 types of fruit and enumerate each group (6 fruit max)."
+#~ msgstr ""
+#~ "Sagrupē četrus augļu veidus un saskaiti katru grupu (līdz sešiem augļiem)."
+
+#~ msgctxt "Data|"
+#~ msgid "Group 4 types of fruit and enumerate each group (7 fruit max)."
+#~ msgstr ""
+#~ "Sagrupē četrus augļu veidus un saskaiti katru grupu (līdz septiņiem "
+#~ "augļiem)."
+
+#~ msgctxt "Data|"
+#~ msgid "Group 4 types of fruit and enumerate each group (8 fruit max)."
+#~ msgstr ""
+#~ "Sagrupē četrus augļu veidus un saskaiti katru grupu (līdz astoņiem "
+#~ "augļiem)."
 
 #~ msgctxt "ColorSelector|"
 #~ msgid "Palette Colors"

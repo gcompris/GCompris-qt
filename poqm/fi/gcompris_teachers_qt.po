@@ -544,6 +544,46 @@ msgctxt "DailyReport|"
 msgid "%1 %"
 msgstr "%1 %"
 
+#: server/activities/enumerate/EnumerateDataDisplay.qml:59
+#, fuzzy
+#| msgctxt "AdjacentNumbersDataDisplay|"
+#| msgid "Answer:"
+msgctxt "EnumerateDataDisplay|"
+msgid "Answer:"
+msgstr "Vastaus:"
+
+#: server/activities/enumerate/EnumerateEditor.qml:27
+#, fuzzy
+#| msgctxt "AdjacentNumbersEditor|"
+#| msgid "Sublevels"
+msgctxt "EnumerateEditor|"
+msgid "Sublevels"
+msgstr "Alitasot"
+
+#: server/activities/enumerate/EnumerateEditor.qml:28
+#, fuzzy
+#| msgctxt "VerticalEditor|"
+#| msgid "Number of lines"
+msgctxt "EnumerateEditor|"
+msgid "Number of item types"
+msgstr "Rivien määrä"
+
+#: server/activities/enumerate/EnumerateEditor.qml:29
+#, fuzzy
+#| msgctxt "AdjacentNumbersEditor|"
+#| msgid "Maximum start number"
+msgctxt "EnumerateEditor|"
+msgid "Maximum number per item type"
+msgstr "Suurin aloitusluku"
+
+#: server/activities/enumerate/EnumerateEditor.qml:70
+#, fuzzy
+#| msgctxt "AdjacentNumbersEditor|"
+#| msgid "Dataset is empty."
+msgctxt "EnumerateEditor|"
+msgid "Dataset is empty."
+msgstr "Tietojoukko on tyhjä."
+
 #: server/activities/fractions_create/ActivityEditor.qml:14
 msgctxt "ActivityEditor|"
 msgid ""
@@ -724,6 +764,49 @@ msgstr ""
 msgctxt "Guess24DataDisplay|"
 msgid "Hints: %1"
 msgstr "Vihjeet: %1"
+
+#: server/activities/guessnumber/GuessnumberDataDisplay.qml:31
+#, qt-format
+msgctxt "GuessnumberDataDisplay|"
+msgid "Number between %1 and %2."
+msgstr ""
+
+#: server/activities/guessnumber/GuessnumberDataDisplay.qml:50
+#, fuzzy
+#| msgctxt "LearnDigitsEditor|"
+#| msgid "Number of circles"
+msgctxt "GuessnumberDataDisplay|"
+msgid "Number to guess:"
+msgstr "Ympyröiden määrä"
+
+#: server/activities/guessnumber/GuessnumberDataDisplay.qml:77
+msgctxt "GuessnumberDataDisplay|"
+msgid "Steps:"
+msgstr ""
+
+#: server/activities/guessnumber/GuessnumberEditor.qml:27
+#, fuzzy
+#| msgctxt "AdjacentNumbersEditor|"
+#| msgid "Maximum start number"
+msgctxt "GuessnumberEditor|"
+msgid "Minimum number"
+msgstr "Suurin aloitusluku"
+
+#: server/activities/guessnumber/GuessnumberEditor.qml:28
+#, fuzzy
+#| msgctxt "AdjacentNumbersEditor|"
+#| msgid "Maximum start number"
+msgctxt "GuessnumberEditor|"
+msgid "Maximum number"
+msgstr "Suurin aloitusluku"
+
+#: server/activities/guessnumber/GuessnumberEditor.qml:90
+#, fuzzy
+#| msgctxt "AdjacentNumbersEditor|"
+#| msgid "Dataset is empty."
+msgctxt "GuessnumberEditor|"
+msgid "Dataset is empty."
+msgstr "Tietojoukko on tyhjä."
 
 #: server/activities/keyboard_training/KeyboardTrainingDataDisplay.qml:26
 #, fuzzy

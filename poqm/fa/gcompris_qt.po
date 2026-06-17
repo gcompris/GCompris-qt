@@ -950,6 +950,7 @@ msgstr "پسبرد(بک اسپیس): آخرین رقم در جواب خود را
 #: activities/algebra_plus/ActivityInfo.qml:28
 #: activities/grammar_analysis/ActivityInfo.qml:34
 #: activities/grammar_classes/ActivityInfo.qml:34
+#: activities/guessnumber/ActivityInfo.qml:27
 #: activities/learn_additions/ActivityInfo.qml:27
 #: activities/learn_decimals/ActivityInfo.qml:24
 #: activities/learn_decimals_additions/ActivityInfo.qml:25
@@ -7257,74 +7258,30 @@ msgid ""
 "button')"
 msgstr ""
 
+#: activities/enumerate/Enumerate.qml:65
+#, qt-format
+msgctxt "Enumerate|"
+msgid "Enumerate up to %1 fruits."
+msgstr ""
+
+#: activities/enumerate/Enumerate.qml:66
+#, qt-format
+msgctxt "Enumerate|"
+msgid "Group %1 types of fruit and enumerate each group (%2 fruits max)."
+msgstr ""
+
 #: activities/enumerate/resource/1/Data.qml:13
-#: activities/enumerate/resource/1/Data.qml:29
+#, qt-format
 msgctxt "Data|"
-msgid "Enumerate up to 4 fruit."
-msgstr ""
-
-#: activities/enumerate/resource/1/Data.qml:17
-msgctxt "Data|"
-msgid "Enumerate up to 2 fruit."
-msgstr ""
-
-#: activities/enumerate/resource/1/Data.qml:23
-msgctxt "Data|"
-msgid "Enumerate up to 3 fruit."
+msgid "Enumerate up to %1 fruits."
 msgstr ""
 
 #: activities/enumerate/resource/2/Data.qml:13
-#: activities/enumerate/resource/2/Data.qml:29
-#: activities/enumerate/resource/3/Data.qml:29
-msgctxt "Data|"
-msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
-msgstr ""
-
-#: activities/enumerate/resource/2/Data.qml:17
-msgctxt "Data|"
-msgid "Group 2 types of fruit and enumerate each group (3 fruit max)."
-msgstr ""
-
-#: activities/enumerate/resource/2/Data.qml:23
-msgctxt "Data|"
-msgid "Group 2 types of fruit and enumerate each group (4 fruit max)."
-msgstr ""
-
 #: activities/enumerate/resource/3/Data.qml:13
-#: activities/enumerate/resource/3/Data.qml:35
-msgctxt "Data|"
-msgid "Group 3 types of fruit and enumerate each group (6 fruit max)."
-msgstr ""
-
-#: activities/enumerate/resource/3/Data.qml:17
-msgctxt "Data|"
-msgid "Group 3 types of fruit and enumerate each group (3 fruit max)."
-msgstr ""
-
-#: activities/enumerate/resource/3/Data.qml:23
-msgctxt "Data|"
-msgid "Group 3 types of fruit and enumerate each group (4 fruit max)."
-msgstr ""
-
 #: activities/enumerate/resource/4/Data.qml:13
-#: activities/enumerate/resource/4/Data.qml:35
+#, qt-format
 msgctxt "Data|"
-msgid "Group 4 types of fruit and enumerate each group (9 fruit max)."
-msgstr ""
-
-#: activities/enumerate/resource/4/Data.qml:17
-msgctxt "Data|"
-msgid "Group 4 types of fruit and enumerate each group (6 fruit max)."
-msgstr ""
-
-#: activities/enumerate/resource/4/Data.qml:23
-msgctxt "Data|"
-msgid "Group 4 types of fruit and enumerate each group (7 fruit max)."
-msgstr ""
-
-#: activities/enumerate/resource/4/Data.qml:29
-msgctxt "Data|"
-msgid "Group 4 types of fruit and enumerate each group (8 fruit max)."
+msgid "Group %1 types of fruit and enumerate each group (%2 fruits max)."
 msgstr ""
 
 #. Activity title
@@ -15487,12 +15444,13 @@ msgstr "جمع اعداد را تمرین کن."
 msgctxt "ActivityInfo|"
 msgid ""
 "Read the instructions that give you the range of the number to find. Enter a "
-"number in the top right entry box. You will be told if your number is higher "
-"or lower than the one to find. Then try again until you find the correct "
-"answer. The distance between Tux and the right side of the screen represents "
-"how far you are from the number to find. If Tux is over or under the "
-"vertical center of the screen, it means your number is over or under the "
-"number to find."
+"number in the top right entry box, and press the OK button to validate it. "
+"You will be told if your number is higher or lower than the one to find. "
+"Then try again until you find the correct answer. The distance between the "
+"helicopter and the right side of the screen represents how far you are from "
+"the number to find. If the helicopter is above or under the vertical center "
+"of the screen, it means your number is higher or lower than the number to "
+"find."
 msgstr ""
 
 #: activities/guessnumber/ActivityInfo.qml:25
@@ -15505,47 +15463,46 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
 msgstr ""
 
-#: activities/guessnumber/guessnumber.js:56
+#: activities/guessnumber/guessnumber.js:61
+#, fuzzy
+#| msgctxt "guessnumber|"
+#| msgid "Your number is too high"
 msgctxt "guessnumber|"
-msgid "Your number is too high"
+msgid "Your number is too high."
 msgstr "عددی که انتخابی خیلی بزرگ میباشد"
 
-#: activities/guessnumber/guessnumber.js:59
+#: activities/guessnumber/guessnumber.js:64
+#, fuzzy
+#| msgctxt "guessnumber|"
+#| msgid "Your number is too low"
 msgctxt "guessnumber|"
-msgid "Your number is too low"
+msgid "Your number is too low."
 msgstr "عددی که انتخابی خیلی کوچک میباشد"
 
-#: activities/guessnumber/guessnumber.js:64
+#: activities/guessnumber/guessnumber.js:69
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr "تو عدد را پیدا کردی!"
 
-#: activities/guessnumber/resource/1/Data.qml:14
-#: activities/guessnumber/resource/1/Data.qml:19
-#: activities/guessnumber/resource/1/Data.qml:23
-#: activities/guessnumber/resource/1/Data.qml:27
+#: activities/guessnumber/Guessnumber.qml:116
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Between 1 and 10."
+msgctxt "Guessnumber|"
+msgid "Guess a number between %1 and %2."
+msgstr "بین ۱ و ۱۰."
+
+#: activities/guessnumber/resource/1/Data.qml:16
 #: activities/guessnumber/resource/2/Data.qml:14
-#: activities/guessnumber/resource/2/Data.qml:19
-#: activities/guessnumber/resource/2/Data.qml:23
 #: activities/guessnumber/resource/3/Data.qml:16
-#: activities/guessnumber/resource/3/Data.qml:21
-#: activities/guessnumber/resource/3/Data.qml:25
-#: activities/guessnumber/resource/3/Data.qml:29
 #: activities/guessnumber/resource/4/Data.qml:16
-#: activities/guessnumber/resource/4/Data.qml:21
-#: activities/guessnumber/resource/4/Data.qml:25
-#: activities/guessnumber/resource/4/Data.qml:29
-#: activities/guessnumber/resource/4/Data.qml:33
 #: activities/guessnumber/resource/5/Data.qml:16
-#: activities/guessnumber/resource/5/Data.qml:21
-#: activities/guessnumber/resource/5/Data.qml:25
-#: activities/guessnumber/resource/5/Data.qml:29
-#: activities/guessnumber/resource/5/Data.qml:33
-#: activities/guessnumber/resource/5/Data.qml:37
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Between 1 and 10."
 msgctxt "Data|"
-msgid "Guess a number between 1 and %1."
-msgstr ""
+msgid "Guess a number between %1 and %2."
+msgstr "بین ۱ و ۱۰."
 
 #: activities/hangman/ActivityConfig.qml:42
 msgctxt "ActivityConfig|"

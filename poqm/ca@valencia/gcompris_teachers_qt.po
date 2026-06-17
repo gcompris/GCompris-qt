@@ -579,6 +579,46 @@ msgctxt "DailyReport|"
 msgid "%1 %"
 msgstr "%1 %"
 
+#: server/activities/enumerate/EnumerateDataDisplay.qml:59
+#, fuzzy
+#| msgctxt "AdjacentNumbersDataDisplay|"
+#| msgid "Answer:"
+msgctxt "EnumerateDataDisplay|"
+msgid "Answer:"
+msgstr "Resposta:"
+
+#: server/activities/enumerate/EnumerateEditor.qml:27
+#, fuzzy
+#| msgctxt "AdjacentNumbersEditor|"
+#| msgid "Sublevels"
+msgctxt "EnumerateEditor|"
+msgid "Sublevels"
+msgstr "Subnivells"
+
+#: server/activities/enumerate/EnumerateEditor.qml:28
+#, fuzzy
+#| msgctxt "VerticalEditor|"
+#| msgid "Number of lines"
+msgctxt "EnumerateEditor|"
+msgid "Number of item types"
+msgstr "Nombre de línies"
+
+#: server/activities/enumerate/EnumerateEditor.qml:29
+#, fuzzy
+#| msgctxt "ShareEditor|"
+#| msgid "Maximum number of boys"
+msgctxt "EnumerateEditor|"
+msgid "Maximum number per item type"
+msgstr "Nombre màxim de xiquets"
+
+#: server/activities/enumerate/EnumerateEditor.qml:70
+#, fuzzy
+#| msgctxt "AdjacentNumbersEditor|"
+#| msgid "Dataset is empty."
+msgctxt "EnumerateEditor|"
+msgid "Dataset is empty."
+msgstr "El conjunt de dades està buit."
+
 #: server/activities/fractions_create/ActivityEditor.qml:14
 msgctxt "ActivityEditor|"
 msgid ""
@@ -756,6 +796,49 @@ msgstr "Element que falta:"
 msgctxt "Guess24DataDisplay|"
 msgid "Hints: %1"
 msgstr "Suggeriments: %1"
+
+#: server/activities/guessnumber/GuessnumberDataDisplay.qml:31
+#, qt-format
+msgctxt "GuessnumberDataDisplay|"
+msgid "Number between %1 and %2."
+msgstr ""
+
+#: server/activities/guessnumber/GuessnumberDataDisplay.qml:50
+#, fuzzy
+#| msgctxt "ShareEditor|"
+#| msgid "Number of girls"
+msgctxt "GuessnumberDataDisplay|"
+msgid "Number to guess:"
+msgstr "Nombre de xiquetes"
+
+#: server/activities/guessnumber/GuessnumberDataDisplay.qml:77
+msgctxt "GuessnumberDataDisplay|"
+msgid "Steps:"
+msgstr ""
+
+#: server/activities/guessnumber/GuessnumberEditor.qml:27
+#, fuzzy
+#| msgctxt "ReversecountEditor|"
+#| msgid "Maximum number"
+msgctxt "GuessnumberEditor|"
+msgid "Minimum number"
+msgstr "Nombre màxim"
+
+#: server/activities/guessnumber/GuessnumberEditor.qml:28
+#, fuzzy
+#| msgctxt "ReversecountEditor|"
+#| msgid "Maximum number"
+msgctxt "GuessnumberEditor|"
+msgid "Maximum number"
+msgstr "Nombre màxim"
+
+#: server/activities/guessnumber/GuessnumberEditor.qml:90
+#, fuzzy
+#| msgctxt "AdjacentNumbersEditor|"
+#| msgid "Dataset is empty."
+msgctxt "GuessnumberEditor|"
+msgid "Dataset is empty."
+msgstr "El conjunt de dades està buit."
 
 #: server/activities/keyboard_training/KeyboardTrainingDataDisplay.qml:26
 msgctxt "KeyboardTrainingDataDisplay|"

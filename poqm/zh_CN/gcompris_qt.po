@@ -912,6 +912,7 @@ msgstr "退格键：删除答案中的最后一个数字"
 #: activities/algebra_plus/ActivityInfo.qml:28
 #: activities/grammar_analysis/ActivityInfo.qml:34
 #: activities/grammar_classes/ActivityInfo.qml:34
+#: activities/guessnumber/ActivityInfo.qml:27
 #: activities/learn_additions/ActivityInfo.qml:27
 #: activities/learn_decimals/ActivityInfo.qml:24
 #: activities/learn_decimals_additions/ActivityInfo.qml:25
@@ -7019,75 +7020,39 @@ msgid ""
 "button')"
 msgstr "输入：验证您的答案 (如果“验证答案”选项设置为“确定按钮”)"
 
-#: activities/enumerate/resource/1/Data.qml:13
-#: activities/enumerate/resource/1/Data.qml:29
-msgctxt "Data|"
-msgid "Enumerate up to 4 fruit."
+#: activities/enumerate/Enumerate.qml:65
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Enumerate up to 4 fruit."
+msgctxt "Enumerate|"
+msgid "Enumerate up to %1 fruits."
 msgstr "枚举4个水果"
 
-#: activities/enumerate/resource/1/Data.qml:17
-msgctxt "Data|"
-msgid "Enumerate up to 2 fruit."
-msgstr "枚举2个水果"
-
-#: activities/enumerate/resource/1/Data.qml:23
-msgctxt "Data|"
-msgid "Enumerate up to 3 fruit."
-msgstr "枚举3个水果"
-
-#: activities/enumerate/resource/2/Data.qml:13
-#: activities/enumerate/resource/2/Data.qml:29
-#: activities/enumerate/resource/3/Data.qml:29
-msgctxt "Data|"
-msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
+#: activities/enumerate/Enumerate.qml:66
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
+msgctxt "Enumerate|"
+msgid "Group %1 types of fruit and enumerate each group (%2 fruits max)."
 msgstr "分类2种水果并为每一种水果计数。（最多5个水果）"
 
-#: activities/enumerate/resource/2/Data.qml:17
+#: activities/enumerate/resource/1/Data.qml:13
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Enumerate up to 4 fruit."
 msgctxt "Data|"
-msgid "Group 2 types of fruit and enumerate each group (3 fruit max)."
-msgstr "分类2种水果并为每一种水果计数。（最多3个水果）"
+msgid "Enumerate up to %1 fruits."
+msgstr "枚举4个水果"
 
-#: activities/enumerate/resource/2/Data.qml:23
-msgctxt "Data|"
-msgid "Group 2 types of fruit and enumerate each group (4 fruit max)."
-msgstr "分类2种水果并为每一种水果计数。（最多4个水果）"
-
+#: activities/enumerate/resource/2/Data.qml:13
 #: activities/enumerate/resource/3/Data.qml:13
-#: activities/enumerate/resource/3/Data.qml:35
-msgctxt "Data|"
-msgid "Group 3 types of fruit and enumerate each group (6 fruit max)."
-msgstr "分类3种水果并为每一种水果计数。（最多6个水果）"
-
-#: activities/enumerate/resource/3/Data.qml:17
-msgctxt "Data|"
-msgid "Group 3 types of fruit and enumerate each group (3 fruit max)."
-msgstr "分类3种水果并为每一种水果计数。（最多3个水果）"
-
-#: activities/enumerate/resource/3/Data.qml:23
-msgctxt "Data|"
-msgid "Group 3 types of fruit and enumerate each group (4 fruit max)."
-msgstr "分类3种水果并为每一种水果计数。（最多4个水果）"
-
 #: activities/enumerate/resource/4/Data.qml:13
-#: activities/enumerate/resource/4/Data.qml:35
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
 msgctxt "Data|"
-msgid "Group 4 types of fruit and enumerate each group (9 fruit max)."
-msgstr "分类4种水果并为每一种水果计数。（最多9个水果）"
-
-#: activities/enumerate/resource/4/Data.qml:17
-msgctxt "Data|"
-msgid "Group 4 types of fruit and enumerate each group (6 fruit max)."
-msgstr "分类4种水果并为每一种水果计数。（最多6个水果）"
-
-#: activities/enumerate/resource/4/Data.qml:23
-msgctxt "Data|"
-msgid "Group 4 types of fruit and enumerate each group (7 fruit max)."
-msgstr "分类4种水果并为每一种水果计数。（最多7个水果）"
-
-#: activities/enumerate/resource/4/Data.qml:29
-msgctxt "Data|"
-msgid "Group 4 types of fruit and enumerate each group (8 fruit max)."
-msgstr "分类4种水果并为每一种水果计数。（最多8个水果）"
+msgid "Group %1 types of fruit and enumerate each group (%2 fruits max)."
+msgstr "分类2种水果并为每一种水果计数。（最多5个水果）"
 
 #. Activity title
 #: activities/erase/ActivityInfo.qml:15
@@ -15415,12 +15380,13 @@ msgstr "练习比较数字。"
 msgctxt "ActivityInfo|"
 msgid ""
 "Read the instructions that give you the range of the number to find. Enter a "
-"number in the top right entry box. You will be told if your number is higher "
-"or lower than the one to find. Then try again until you find the correct "
-"answer. The distance between Tux and the right side of the screen represents "
-"how far you are from the number to find. If Tux is over or under the "
-"vertical center of the screen, it means your number is over or under the "
-"number to find."
+"number in the top right entry box, and press the OK button to validate it. "
+"You will be told if your number is higher or lower than the one to find. "
+"Then try again until you find the correct answer. The distance between the "
+"helicopter and the right side of the screen represents how far you are from "
+"the number to find. If the helicopter is above or under the vertical center "
+"of the screen, it means your number is higher or lower than the number to "
+"find."
 msgstr ""
 
 #: activities/guessnumber/ActivityInfo.qml:25
@@ -15433,46 +15399,45 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
 msgstr "退格：删除一个数字"
 
-#: activities/guessnumber/guessnumber.js:56
+#: activities/guessnumber/guessnumber.js:61
+#, fuzzy
+#| msgctxt "guessnumber|"
+#| msgid "Your number is too high"
 msgctxt "guessnumber|"
-msgid "Your number is too high"
+msgid "Your number is too high."
 msgstr "您的数字太高了"
 
-#: activities/guessnumber/guessnumber.js:59
+#: activities/guessnumber/guessnumber.js:64
+#, fuzzy
+#| msgctxt "guessnumber|"
+#| msgid "Your number is too low"
 msgctxt "guessnumber|"
-msgid "Your number is too low"
+msgid "Your number is too low."
 msgstr "您的数字太低了"
 
-#: activities/guessnumber/guessnumber.js:64
+#: activities/guessnumber/guessnumber.js:69
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr "您找到了数字！"
 
-#: activities/guessnumber/resource/1/Data.qml:14
-#: activities/guessnumber/resource/1/Data.qml:19
-#: activities/guessnumber/resource/1/Data.qml:23
-#: activities/guessnumber/resource/1/Data.qml:27
+#: activities/guessnumber/Guessnumber.qml:116
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Guess a number between 1 and %1."
+msgctxt "Guessnumber|"
+msgid "Guess a number between %1 and %2."
+msgstr "猜一个 1 和 %1 之间的数字。"
+
+#: activities/guessnumber/resource/1/Data.qml:16
 #: activities/guessnumber/resource/2/Data.qml:14
-#: activities/guessnumber/resource/2/Data.qml:19
-#: activities/guessnumber/resource/2/Data.qml:23
 #: activities/guessnumber/resource/3/Data.qml:16
-#: activities/guessnumber/resource/3/Data.qml:21
-#: activities/guessnumber/resource/3/Data.qml:25
-#: activities/guessnumber/resource/3/Data.qml:29
 #: activities/guessnumber/resource/4/Data.qml:16
-#: activities/guessnumber/resource/4/Data.qml:21
-#: activities/guessnumber/resource/4/Data.qml:25
-#: activities/guessnumber/resource/4/Data.qml:29
-#: activities/guessnumber/resource/4/Data.qml:33
 #: activities/guessnumber/resource/5/Data.qml:16
-#: activities/guessnumber/resource/5/Data.qml:21
-#: activities/guessnumber/resource/5/Data.qml:25
-#: activities/guessnumber/resource/5/Data.qml:29
-#: activities/guessnumber/resource/5/Data.qml:33
-#: activities/guessnumber/resource/5/Data.qml:37
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
-msgid "Guess a number between 1 and %1."
+msgid "Guess a number between %1 and %2."
 msgstr "猜一个 1 和 %1 之间的数字。"
 
 #: activities/hangman/ActivityConfig.qml:42
@@ -27622,3 +27587,47 @@ msgstr "跳过"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "开始"
+
+#~ msgctxt "Data|"
+#~ msgid "Enumerate up to 2 fruit."
+#~ msgstr "枚举2个水果"
+
+#~ msgctxt "Data|"
+#~ msgid "Enumerate up to 3 fruit."
+#~ msgstr "枚举3个水果"
+
+#~ msgctxt "Data|"
+#~ msgid "Group 2 types of fruit and enumerate each group (3 fruit max)."
+#~ msgstr "分类2种水果并为每一种水果计数。（最多3个水果）"
+
+#~ msgctxt "Data|"
+#~ msgid "Group 2 types of fruit and enumerate each group (4 fruit max)."
+#~ msgstr "分类2种水果并为每一种水果计数。（最多4个水果）"
+
+#~ msgctxt "Data|"
+#~ msgid "Group 3 types of fruit and enumerate each group (6 fruit max)."
+#~ msgstr "分类3种水果并为每一种水果计数。（最多6个水果）"
+
+#~ msgctxt "Data|"
+#~ msgid "Group 3 types of fruit and enumerate each group (3 fruit max)."
+#~ msgstr "分类3种水果并为每一种水果计数。（最多3个水果）"
+
+#~ msgctxt "Data|"
+#~ msgid "Group 3 types of fruit and enumerate each group (4 fruit max)."
+#~ msgstr "分类3种水果并为每一种水果计数。（最多4个水果）"
+
+#~ msgctxt "Data|"
+#~ msgid "Group 4 types of fruit and enumerate each group (9 fruit max)."
+#~ msgstr "分类4种水果并为每一种水果计数。（最多9个水果）"
+
+#~ msgctxt "Data|"
+#~ msgid "Group 4 types of fruit and enumerate each group (6 fruit max)."
+#~ msgstr "分类4种水果并为每一种水果计数。（最多6个水果）"
+
+#~ msgctxt "Data|"
+#~ msgid "Group 4 types of fruit and enumerate each group (7 fruit max)."
+#~ msgstr "分类4种水果并为每一种水果计数。（最多7个水果）"
+
+#~ msgctxt "Data|"
+#~ msgid "Group 4 types of fruit and enumerate each group (8 fruit max)."
+#~ msgstr "分类4种水果并为每一种水果计数。（最多8个水果）"

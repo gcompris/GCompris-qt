@@ -924,6 +924,7 @@ msgstr "Backspace: usuwa ostatnią cyfrę z twojej odpowiedzi"
 #: activities/algebra_plus/ActivityInfo.qml:28
 #: activities/grammar_analysis/ActivityInfo.qml:34
 #: activities/grammar_classes/ActivityInfo.qml:34
+#: activities/guessnumber/ActivityInfo.qml:27
 #: activities/learn_additions/ActivityInfo.qml:27
 #: activities/learn_decimals/ActivityInfo.qml:24
 #: activities/learn_decimals_additions/ActivityInfo.qml:25
@@ -7512,95 +7513,43 @@ msgstr ""
 "Enter: zatwierdza twoją odpowiedź (jeśli ustawienie 'Zatwierdzaj odpowiedzi' "
 "jest ustawione na przycisk OK)"
 
-#: activities/enumerate/resource/1/Data.qml:13
-#: activities/enumerate/resource/1/Data.qml:29
-msgctxt "Data|"
-msgid "Enumerate up to 4 fruit."
+#: activities/enumerate/Enumerate.qml:65
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Enumerate up to 4 fruit."
+msgctxt "Enumerate|"
+msgid "Enumerate up to %1 fruits."
 msgstr "Policz, aż do 4 owoców."
 
-#: activities/enumerate/resource/1/Data.qml:17
-msgctxt "Data|"
-msgid "Enumerate up to 2 fruit."
-msgstr "Policz, aż do 2 owoców."
-
-#: activities/enumerate/resource/1/Data.qml:23
-msgctxt "Data|"
-msgid "Enumerate up to 3 fruit."
-msgstr "Policz, aż do 3 owoców."
-
-#: activities/enumerate/resource/2/Data.qml:13
-#: activities/enumerate/resource/2/Data.qml:29
-#: activities/enumerate/resource/3/Data.qml:29
-msgctxt "Data|"
-msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
+#: activities/enumerate/Enumerate.qml:66
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
+msgctxt "Enumerate|"
+msgid "Group %1 types of fruit and enumerate each group (%2 fruits max)."
 msgstr ""
 "Pogrupuj dwa rodzaje owoców i ponumeruj każdą grupę (dopuszczalnych jest 5 "
 "owoców)."
 
-#: activities/enumerate/resource/2/Data.qml:17
+#: activities/enumerate/resource/1/Data.qml:13
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Enumerate up to 4 fruit."
 msgctxt "Data|"
-msgid "Group 2 types of fruit and enumerate each group (3 fruit max)."
-msgstr ""
-"Pogrupuj dwa rodzaje owoców i ponumeruj każdą grupę (dopuszczalne są 3 "
-"owoce)."
+msgid "Enumerate up to %1 fruits."
+msgstr "Policz, aż do 4 owoców."
 
-#: activities/enumerate/resource/2/Data.qml:23
-msgctxt "Data|"
-msgid "Group 2 types of fruit and enumerate each group (4 fruit max)."
-msgstr ""
-"Pogrupuj dwa rodzaje owoców i ponumeruj każdą grupę (dopuszczalne są 4 "
-"owoce)."
-
+#: activities/enumerate/resource/2/Data.qml:13
 #: activities/enumerate/resource/3/Data.qml:13
-#: activities/enumerate/resource/3/Data.qml:35
-msgctxt "Data|"
-msgid "Group 3 types of fruit and enumerate each group (6 fruit max)."
-msgstr ""
-"Pogrupuj trzy rodzaje owoców i ponumeruj każdą grupę (dopuszczalnych jest 6 "
-"owoców)."
-
-#: activities/enumerate/resource/3/Data.qml:17
-msgctxt "Data|"
-msgid "Group 3 types of fruit and enumerate each group (3 fruit max)."
-msgstr ""
-"Pogrupuj trzy rodzaje owoców i ponumeruj każdą grupę (dopuszczalne są 3 "
-"owoce)."
-
-#: activities/enumerate/resource/3/Data.qml:23
-msgctxt "Data|"
-msgid "Group 3 types of fruit and enumerate each group (4 fruit max)."
-msgstr ""
-"Pogrupuj trzy rodzaje owoców i ponumeruj każdą grupę (dopuszczalne są 4 "
-"owoce)."
-
 #: activities/enumerate/resource/4/Data.qml:13
-#: activities/enumerate/resource/4/Data.qml:35
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
 msgctxt "Data|"
-msgid "Group 4 types of fruit and enumerate each group (9 fruit max)."
+msgid "Group %1 types of fruit and enumerate each group (%2 fruits max)."
 msgstr ""
-"Pogrupuj cztery rodzaje owoców i ponumeruj każdą grupę (dopuszczalnych jest "
-"9 owoców)."
-
-#: activities/enumerate/resource/4/Data.qml:17
-msgctxt "Data|"
-msgid "Group 4 types of fruit and enumerate each group (6 fruit max)."
-msgstr ""
-"Pogrupuj cztery rodzaje owoców i ponumeruj każdą grupę (dopuszczalnych jest "
-"6 owoców)."
-
-#: activities/enumerate/resource/4/Data.qml:23
-msgctxt "Data|"
-msgid "Group 4 types of fruit and enumerate each group (7 fruit max)."
-msgstr ""
-"Pogrupuj cztery rodzaje owoców i ponumeruj każdą grupę (dopuszczalnych jest "
-"7 owoców)."
-
-#: activities/enumerate/resource/4/Data.qml:29
-msgctxt "Data|"
-msgid "Group 4 types of fruit and enumerate each group (8 fruit max)."
-msgstr ""
-"Pogrupuj cztery rodzaje owoców i ponumeruj każdą grupę (dopuszczalnych jest "
-"8 owoców)."
+"Pogrupuj dwa rodzaje owoców i ponumeruj każdą grupę (dopuszczalnych jest 5 "
+"owoców)."
 
 #. Activity title
 #: activities/erase/ActivityInfo.qml:15
@@ -16308,15 +16257,26 @@ msgstr "Ćwicz porównywanie liczb."
 
 #. Help manual
 #: activities/guessnumber/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Read the instructions that give you the range of the number to find. "
+#| "Enter a number in the top right entry box. You will be told if your "
+#| "number is higher or lower than the one to find. Then try again until you "
+#| "find the correct answer. The distance between Tux and the right side of "
+#| "the screen represents how far you are from the number to find. If Tux is "
+#| "over or under the vertical center of the screen, it means your number is "
+#| "over or under the number to find."
 msgctxt "ActivityInfo|"
 msgid ""
 "Read the instructions that give you the range of the number to find. Enter a "
-"number in the top right entry box. You will be told if your number is higher "
-"or lower than the one to find. Then try again until you find the correct "
-"answer. The distance between Tux and the right side of the screen represents "
-"how far you are from the number to find. If Tux is over or under the "
-"vertical center of the screen, it means your number is over or under the "
-"number to find."
+"number in the top right entry box, and press the OK button to validate it. "
+"You will be told if your number is higher or lower than the one to find. "
+"Then try again until you find the correct answer. The distance between the "
+"helicopter and the right side of the screen represents how far you are from "
+"the number to find. If the helicopter is above or under the vertical center "
+"of the screen, it means your number is higher or lower than the number to "
+"find."
 msgstr ""
 "Przeczytaj instrukcję, aby dowiedzieć się, w jakim zakresie ukryty jest "
 "liczba. Wprowadź liczbę w prawym górnym niebieskim polu wprowadzania. Tux "
@@ -16335,46 +16295,45 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
 msgstr "Backspace: wymazuje liczby"
 
-#: activities/guessnumber/guessnumber.js:56
+#: activities/guessnumber/guessnumber.js:61
+#, fuzzy
+#| msgctxt "guessnumber|"
+#| msgid "Your number is too high"
 msgctxt "guessnumber|"
-msgid "Your number is too high"
+msgid "Your number is too high."
 msgstr "Twoja liczba jest zbyt wysoka"
 
-#: activities/guessnumber/guessnumber.js:59
+#: activities/guessnumber/guessnumber.js:64
+#, fuzzy
+#| msgctxt "guessnumber|"
+#| msgid "Your number is too low"
 msgctxt "guessnumber|"
-msgid "Your number is too low"
+msgid "Your number is too low."
 msgstr "Twoja liczba jest zbyt niska"
 
-#: activities/guessnumber/guessnumber.js:64
+#: activities/guessnumber/guessnumber.js:69
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr "Znalazłeś liczbę!"
 
-#: activities/guessnumber/resource/1/Data.qml:14
-#: activities/guessnumber/resource/1/Data.qml:19
-#: activities/guessnumber/resource/1/Data.qml:23
-#: activities/guessnumber/resource/1/Data.qml:27
+#: activities/guessnumber/Guessnumber.qml:116
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Guess a number between 1 and %1."
+msgctxt "Guessnumber|"
+msgid "Guess a number between %1 and %2."
+msgstr "Odgadnij liczbę spomiędzy 1 i %1."
+
+#: activities/guessnumber/resource/1/Data.qml:16
 #: activities/guessnumber/resource/2/Data.qml:14
-#: activities/guessnumber/resource/2/Data.qml:19
-#: activities/guessnumber/resource/2/Data.qml:23
 #: activities/guessnumber/resource/3/Data.qml:16
-#: activities/guessnumber/resource/3/Data.qml:21
-#: activities/guessnumber/resource/3/Data.qml:25
-#: activities/guessnumber/resource/3/Data.qml:29
 #: activities/guessnumber/resource/4/Data.qml:16
-#: activities/guessnumber/resource/4/Data.qml:21
-#: activities/guessnumber/resource/4/Data.qml:25
-#: activities/guessnumber/resource/4/Data.qml:29
-#: activities/guessnumber/resource/4/Data.qml:33
 #: activities/guessnumber/resource/5/Data.qml:16
-#: activities/guessnumber/resource/5/Data.qml:21
-#: activities/guessnumber/resource/5/Data.qml:25
-#: activities/guessnumber/resource/5/Data.qml:29
-#: activities/guessnumber/resource/5/Data.qml:33
-#: activities/guessnumber/resource/5/Data.qml:37
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Data|"
+#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
-msgid "Guess a number between 1 and %1."
+msgid "Guess a number between %1 and %2."
 msgstr "Odgadnij liczbę spomiędzy 1 i %1."
 
 #: activities/hangman/ActivityConfig.qml:42
@@ -29605,6 +29564,68 @@ msgstr "Pomiń"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Rozpocznij"
+
+#~ msgctxt "Data|"
+#~ msgid "Enumerate up to 2 fruit."
+#~ msgstr "Policz, aż do 2 owoców."
+
+#~ msgctxt "Data|"
+#~ msgid "Enumerate up to 3 fruit."
+#~ msgstr "Policz, aż do 3 owoców."
+
+#~ msgctxt "Data|"
+#~ msgid "Group 2 types of fruit and enumerate each group (3 fruit max)."
+#~ msgstr ""
+#~ "Pogrupuj dwa rodzaje owoców i ponumeruj każdą grupę (dopuszczalne są 3 "
+#~ "owoce)."
+
+#~ msgctxt "Data|"
+#~ msgid "Group 2 types of fruit and enumerate each group (4 fruit max)."
+#~ msgstr ""
+#~ "Pogrupuj dwa rodzaje owoców i ponumeruj każdą grupę (dopuszczalne są 4 "
+#~ "owoce)."
+
+#~ msgctxt "Data|"
+#~ msgid "Group 3 types of fruit and enumerate each group (6 fruit max)."
+#~ msgstr ""
+#~ "Pogrupuj trzy rodzaje owoców i ponumeruj każdą grupę (dopuszczalnych jest "
+#~ "6 owoców)."
+
+#~ msgctxt "Data|"
+#~ msgid "Group 3 types of fruit and enumerate each group (3 fruit max)."
+#~ msgstr ""
+#~ "Pogrupuj trzy rodzaje owoców i ponumeruj każdą grupę (dopuszczalne są 3 "
+#~ "owoce)."
+
+#~ msgctxt "Data|"
+#~ msgid "Group 3 types of fruit and enumerate each group (4 fruit max)."
+#~ msgstr ""
+#~ "Pogrupuj trzy rodzaje owoców i ponumeruj każdą grupę (dopuszczalne są 4 "
+#~ "owoce)."
+
+#~ msgctxt "Data|"
+#~ msgid "Group 4 types of fruit and enumerate each group (9 fruit max)."
+#~ msgstr ""
+#~ "Pogrupuj cztery rodzaje owoców i ponumeruj każdą grupę (dopuszczalnych "
+#~ "jest 9 owoców)."
+
+#~ msgctxt "Data|"
+#~ msgid "Group 4 types of fruit and enumerate each group (6 fruit max)."
+#~ msgstr ""
+#~ "Pogrupuj cztery rodzaje owoców i ponumeruj każdą grupę (dopuszczalnych "
+#~ "jest 6 owoców)."
+
+#~ msgctxt "Data|"
+#~ msgid "Group 4 types of fruit and enumerate each group (7 fruit max)."
+#~ msgstr ""
+#~ "Pogrupuj cztery rodzaje owoców i ponumeruj każdą grupę (dopuszczalnych "
+#~ "jest 7 owoców)."
+
+#~ msgctxt "Data|"
+#~ msgid "Group 4 types of fruit and enumerate each group (8 fruit max)."
+#~ msgstr ""
+#~ "Pogrupuj cztery rodzaje owoców i ponumeruj każdą grupę (dopuszczalnych "
+#~ "jest 8 owoców)."
 
 #~ msgctxt "ColorSelector|"
 #~ msgid "Palette Colors"
