@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
-"PO-Revision-Date: 2026-06-05 09:30+0200\n"
+"PO-Revision-Date: 2026-06-17 08:59+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -65,7 +65,7 @@ msgid ""
 msgstr ""
 "«Posició dels números que manquen» ha de contenir una llista de números que "
 "corresponen a l'índex dels números a trobar. Els números d'índex comencen a "
-"partir de 0 (el primer nombre de la seqüència), i no han de ser més grans "
+"partir de 0 (el primer número de la seqüència), i no han de ser més grans "
 "que la «Longitud de la seqüència» - 1, a més, la longitud de la llista no "
 "pot ser més gran que la «Longitud de la seqüència» - 2, cal que tingui "
 "sempre almenys 2 números visibles en la seqüència."
@@ -578,41 +578,26 @@ msgid "%1 %"
 msgstr "%1 %"
 
 #: server/activities/enumerate/EnumerateDataDisplay.qml:59
-#, fuzzy
-#| msgctxt "AdjacentNumbersDataDisplay|"
-#| msgid "Answer:"
 msgctxt "EnumerateDataDisplay|"
 msgid "Answer:"
 msgstr "Resposta:"
 
 #: server/activities/enumerate/EnumerateEditor.qml:27
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "EnumerateEditor|"
 msgid "Sublevels"
 msgstr "Subnivells"
 
 #: server/activities/enumerate/EnumerateEditor.qml:28
-#, fuzzy
-#| msgctxt "VerticalEditor|"
-#| msgid "Number of lines"
 msgctxt "EnumerateEditor|"
 msgid "Number of item types"
-msgstr "Nombre de línies"
+msgstr "Nombre de tipus d'elements"
 
 #: server/activities/enumerate/EnumerateEditor.qml:29
-#, fuzzy
-#| msgctxt "ShareEditor|"
-#| msgid "Maximum number of boys"
 msgctxt "EnumerateEditor|"
 msgid "Maximum number per item type"
-msgstr "Nombre màxim de nens"
+msgstr "Nombre màxim per tipus d'elements"
 
 #: server/activities/enumerate/EnumerateEditor.qml:70
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "EnumerateEditor|"
 msgid "Dataset is empty."
 msgstr "El conjunt de dades és buit."
@@ -799,41 +784,29 @@ msgstr "Suggeriments: %1"
 #, qt-format
 msgctxt "GuessnumberDataDisplay|"
 msgid "Number between %1 and %2."
-msgstr ""
+msgstr "Número entre %1 i %2."
 
 #: server/activities/guessnumber/GuessnumberDataDisplay.qml:50
-#, fuzzy
-#| msgctxt "ShareEditor|"
-#| msgid "Number of girls"
 msgctxt "GuessnumberDataDisplay|"
 msgid "Number to guess:"
-msgstr "Nombre de nenes"
+msgstr "Número a endevinar:"
 
 #: server/activities/guessnumber/GuessnumberDataDisplay.qml:77
 msgctxt "GuessnumberDataDisplay|"
 msgid "Steps:"
-msgstr ""
+msgstr "Passos:"
 
 #: server/activities/guessnumber/GuessnumberEditor.qml:27
-#, fuzzy
-#| msgctxt "ReversecountEditor|"
-#| msgid "Maximum number"
 msgctxt "GuessnumberEditor|"
 msgid "Minimum number"
-msgstr "Nombre màxim"
+msgstr "Nombre mínim"
 
 #: server/activities/guessnumber/GuessnumberEditor.qml:28
-#, fuzzy
-#| msgctxt "ReversecountEditor|"
-#| msgid "Maximum number"
 msgctxt "GuessnumberEditor|"
 msgid "Maximum number"
 msgstr "Nombre màxim"
 
 #: server/activities/guessnumber/GuessnumberEditor.qml:90
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "GuessnumberEditor|"
 msgid "Dataset is empty."
 msgstr "El conjunt de dades és buit."

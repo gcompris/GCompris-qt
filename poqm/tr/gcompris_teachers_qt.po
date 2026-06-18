@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-06-05 12:12+0300\n"
+"PO-Revision-Date: 2026-06-17 09:31+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -569,41 +569,26 @@ msgid "%1 %"
 msgstr "%%1"
 
 #: server/activities/enumerate/EnumerateDataDisplay.qml:59
-#, fuzzy
-#| msgctxt "AdjacentNumbersDataDisplay|"
-#| msgid "Answer:"
 msgctxt "EnumerateDataDisplay|"
 msgid "Answer:"
 msgstr "Yanıt:"
 
 #: server/activities/enumerate/EnumerateEditor.qml:27
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "EnumerateEditor|"
 msgid "Sublevels"
 msgstr "Alt düzeyler"
 
 #: server/activities/enumerate/EnumerateEditor.qml:28
-#, fuzzy
-#| msgctxt "VerticalEditor|"
-#| msgid "Number of lines"
 msgctxt "EnumerateEditor|"
 msgid "Number of item types"
-msgstr "Çizgi sayısı"
+msgstr "Öge türleri sayısı"
 
 #: server/activities/enumerate/EnumerateEditor.qml:29
-#, fuzzy
-#| msgctxt "ShareEditor|"
-#| msgid "Maximum number of boys"
 msgctxt "EnumerateEditor|"
 msgid "Maximum number per item type"
-msgstr "En çok oğlan sayısı"
+msgstr "Öge başına en büyük sayı"
 
 #: server/activities/enumerate/EnumerateEditor.qml:70
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "EnumerateEditor|"
 msgid "Dataset is empty."
 msgstr "Veri kümesi boş."
@@ -791,41 +776,29 @@ msgstr "İpuçları: %1"
 #, qt-format
 msgctxt "GuessnumberDataDisplay|"
 msgid "Number between %1 and %2."
-msgstr ""
+msgstr "%1 ve %2 arasındaki sayı."
 
 #: server/activities/guessnumber/GuessnumberDataDisplay.qml:50
-#, fuzzy
-#| msgctxt "ShareEditor|"
-#| msgid "Number of girls"
 msgctxt "GuessnumberDataDisplay|"
 msgid "Number to guess:"
-msgstr "Kızların sayısı"
+msgstr "Tahmin edilecek sayı:"
 
 #: server/activities/guessnumber/GuessnumberDataDisplay.qml:77
 msgctxt "GuessnumberDataDisplay|"
 msgid "Steps:"
-msgstr ""
+msgstr "Adımlar:"
 
 #: server/activities/guessnumber/GuessnumberEditor.qml:27
-#, fuzzy
-#| msgctxt "ReversecountEditor|"
-#| msgid "Maximum number"
 msgctxt "GuessnumberEditor|"
 msgid "Minimum number"
-msgstr "En büyük sayı"
+msgstr "En küçük sayı"
 
 #: server/activities/guessnumber/GuessnumberEditor.qml:28
-#, fuzzy
-#| msgctxt "ReversecountEditor|"
-#| msgid "Maximum number"
 msgctxt "GuessnumberEditor|"
 msgid "Maximum number"
 msgstr "En büyük sayı"
 
 #: server/activities/guessnumber/GuessnumberEditor.qml:90
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "GuessnumberEditor|"
 msgid "Dataset is empty."
 msgstr "Veri kümesi boş."

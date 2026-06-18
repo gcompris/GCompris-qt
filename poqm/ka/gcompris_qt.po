@@ -7100,38 +7100,30 @@ msgid ""
 msgstr ""
 
 #: activities/enumerate/Enumerate.qml:65
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Enumerate up to 4 fruit."
+#, qt-format
 msgctxt "Enumerate|"
 msgid "Enumerate up to %1 fruits."
-msgstr "ჩამოთვალეთ 4-მდე ხილი."
+msgstr "ჩამოთვალეთ %1-მდე ხილი."
 
 #: activities/enumerate/Enumerate.qml:66
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
+#, qt-format
 msgctxt "Enumerate|"
 msgid "Group %1 types of fruit and enumerate each group (%2 fruits max)."
-msgstr "დააჯგუფეთ 2 ტიპის ხილი და ჩამოთვალეთ თითოეული ჯგუფი (მაქს 5 ხილი)."
+msgstr "დააჯგუფეთ %1 ტიპის ხილი და ჩამოთვალეთ თითოეული ჯგუფი (მაქს %2 ხილი)."
 
 #: activities/enumerate/resource/1/Data.qml:13
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Enumerate up to 4 fruit."
+#, qt-format
 msgctxt "Data|"
 msgid "Enumerate up to %1 fruits."
-msgstr "ჩამოთვალეთ 4-მდე ხილი."
+msgstr "ჩამოთვალეთ %1-მდე ხილი."
 
 #: activities/enumerate/resource/2/Data.qml:13
 #: activities/enumerate/resource/3/Data.qml:13
 #: activities/enumerate/resource/4/Data.qml:13
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
+#, qt-format
 msgctxt "Data|"
 msgid "Group %1 types of fruit and enumerate each group (%2 fruits max)."
-msgstr "დააჯგუფეთ 2 ტიპის ხილი და ჩამოთვალეთ თითოეული ჯგუფი (მაქს 5 ხილი)."
+msgstr "დააჯგუფეთ %1 ტიპის ხილი და ჩამოთვალეთ თითოეული ჯგუფი (მაქს %2 ხილი)."
 
 #. Activity title
 #: activities/erase/ActivityInfo.qml:15
@@ -15278,20 +15270,14 @@ msgid "Backspace: erase a number"
 msgstr "Backspace: რიცხვის წაშლა"
 
 #: activities/guessnumber/guessnumber.js:61
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Your number is too high"
 msgctxt "guessnumber|"
 msgid "Your number is too high."
-msgstr "თქვენი რიცხვი მეტისმეტად დიდია"
+msgstr "თქვენი რიცხვი მეტისმეტად დიდია."
 
 #: activities/guessnumber/guessnumber.js:64
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Your number is too low"
 msgctxt "guessnumber|"
 msgid "Your number is too low."
-msgstr "თქვენი რიცხვი მეტისმეტად პატარაა"
+msgstr "თქვენი რიცხვი მეტისმეტად პატარაა."
 
 #: activities/guessnumber/guessnumber.js:69
 msgctxt "guessnumber|"
@@ -15299,24 +15285,20 @@ msgid "You found the number!"
 msgstr "თქვენ იპოვეთ რიცხვი!"
 
 #: activities/guessnumber/Guessnumber.qml:116
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
+#, qt-format
 msgctxt "Guessnumber|"
 msgid "Guess a number between %1 and %2."
-msgstr "გამოიცანით რიცხვი შუალედიდან 1-%1."
+msgstr "გამოიცანით რიცხვი შუალედიდან %1-%2."
 
 #: activities/guessnumber/resource/1/Data.qml:16
 #: activities/guessnumber/resource/2/Data.qml:14
 #: activities/guessnumber/resource/3/Data.qml:16
 #: activities/guessnumber/resource/4/Data.qml:16
 #: activities/guessnumber/resource/5/Data.qml:16
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
+#, qt-format
 msgctxt "Data|"
 msgid "Guess a number between %1 and %2."
-msgstr "გამოიცანით რიცხვი შუალედიდან 1-%1."
+msgstr "გამოიცანით რიცხვი შუალედიდან %1-%2."
 
 #: activities/hangman/ActivityConfig.qml:42
 msgctxt "ActivityConfig|"

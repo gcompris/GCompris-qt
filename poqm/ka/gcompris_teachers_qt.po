@@ -574,41 +574,26 @@ msgid "%1 %"
 msgstr "%1 %"
 
 #: server/activities/enumerate/EnumerateDataDisplay.qml:59
-#, fuzzy
-#| msgctxt "AdjacentNumbersDataDisplay|"
-#| msgid "Answer:"
 msgctxt "EnumerateDataDisplay|"
 msgid "Answer:"
 msgstr "პასუხი:"
 
 #: server/activities/enumerate/EnumerateEditor.qml:27
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "EnumerateEditor|"
 msgid "Sublevels"
 msgstr "ქვედონეები"
 
 #: server/activities/enumerate/EnumerateEditor.qml:28
-#, fuzzy
-#| msgctxt "VerticalEditor|"
-#| msgid "Number of lines"
 msgctxt "EnumerateEditor|"
 msgid "Number of item types"
-msgstr "ხაზების რაოდენობა"
+msgstr "ელემენტის ტიპების რაოდენობა"
 
 #: server/activities/enumerate/EnumerateEditor.qml:29
-#, fuzzy
-#| msgctxt "ShareEditor|"
-#| msgid "Maximum number of boys"
 msgctxt "EnumerateEditor|"
 msgid "Maximum number per item type"
-msgstr "ბიჭების მაქსიმალური რაოდენობა"
+msgstr "მაქსიმალური რიცხვი თითოეული ელემენტის ტიპისთვის"
 
 #: server/activities/enumerate/EnumerateEditor.qml:70
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "EnumerateEditor|"
 msgid "Dataset is empty."
 msgstr "მონაცემთა ნაკრები ცარიელია."
@@ -796,41 +781,29 @@ msgstr "მინიშნებები: %1"
 #, qt-format
 msgctxt "GuessnumberDataDisplay|"
 msgid "Number between %1 and %2."
-msgstr ""
+msgstr "რიცხვი %1-სა და %2-ს შორის."
 
 #: server/activities/guessnumber/GuessnumberDataDisplay.qml:50
-#, fuzzy
-#| msgctxt "ShareEditor|"
-#| msgid "Number of girls"
 msgctxt "GuessnumberDataDisplay|"
 msgid "Number to guess:"
-msgstr "გოგონების რაოდენობა"
+msgstr "გამოსაცნობი რიცხვი:"
 
 #: server/activities/guessnumber/GuessnumberDataDisplay.qml:77
 msgctxt "GuessnumberDataDisplay|"
 msgid "Steps:"
-msgstr ""
+msgstr "ნაბიჯები:"
 
 #: server/activities/guessnumber/GuessnumberEditor.qml:27
-#, fuzzy
-#| msgctxt "ReversecountEditor|"
-#| msgid "Maximum number"
 msgctxt "GuessnumberEditor|"
 msgid "Minimum number"
-msgstr "მაქსიმალური რიცხვი"
+msgstr "მინიმალური რიცხვი"
 
 #: server/activities/guessnumber/GuessnumberEditor.qml:28
-#, fuzzy
-#| msgctxt "ReversecountEditor|"
-#| msgid "Maximum number"
 msgctxt "GuessnumberEditor|"
 msgid "Maximum number"
 msgstr "მაქსიმალური რიცხვი"
 
 #: server/activities/guessnumber/GuessnumberEditor.qml:90
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "GuessnumberEditor|"
 msgid "Dataset is empty."
 msgstr "მონაცემთა ნაკრები ცარიელია."

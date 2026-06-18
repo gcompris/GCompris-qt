@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-05-29 15:03+0200\n"
+"PO-Revision-Date: 2026-06-17 18:27+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 26.04.1\n"
+"X-Generator: Lokalize 26.04.2\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -7431,38 +7431,30 @@ msgstr ""
 "отговорите е зададена на „ОК бутон“)"
 
 #: activities/enumerate/Enumerate.qml:65
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Enumerate up to 4 fruit."
+#, qt-format
 msgctxt "Enumerate|"
 msgid "Enumerate up to %1 fruits."
-msgstr "Изброй до 4 плода."
+msgstr "Изброй до %1 плода."
 
 #: activities/enumerate/Enumerate.qml:66
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
+#, qt-format
 msgctxt "Enumerate|"
 msgid "Group %1 types of fruit and enumerate each group (%2 fruits max)."
-msgstr "Групирай 2 вида плодове и преброй всяка група (максимум 5 плода)."
+msgstr "Групирай %1 видове плодове и изброй всяка група (%2 плода максимум)."
 
 #: activities/enumerate/resource/1/Data.qml:13
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Enumerate up to 4 fruit."
+#, qt-format
 msgctxt "Data|"
 msgid "Enumerate up to %1 fruits."
-msgstr "Изброй до 4 плода."
+msgstr "Изброй до %1 плода."
 
 #: activities/enumerate/resource/2/Data.qml:13
 #: activities/enumerate/resource/3/Data.qml:13
 #: activities/enumerate/resource/4/Data.qml:13
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
+#, qt-format
 msgctxt "Data|"
 msgid "Group %1 types of fruit and enumerate each group (%2 fruits max)."
-msgstr "Групирай 2 вида плодове и преброй всяка група (максимум 5 плода)."
+msgstr "Групирай %1 видове плодове и изброй всяка група (%2 плода макс)."
 
 #. Activity title
 #: activities/erase/ActivityInfo.qml:15
@@ -16154,16 +16146,6 @@ msgstr "Упражнявай да сравняваш числа."
 
 #. Help manual
 #: activities/guessnumber/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Read the instructions that give you the range of the number to find. "
-#| "Enter a number in the top right entry box. You will be told if your "
-#| "number is higher or lower than the one to find. Then try again until you "
-#| "find the correct answer. The distance between Tux and the right side of "
-#| "the screen represents how far you are from the number to find. If Tux is "
-#| "over or under the vertical center of the screen, it means your number is "
-#| "over or under the number to find."
 msgctxt "ActivityInfo|"
 msgid ""
 "Read the instructions that give you the range of the number to find. Enter a "
@@ -16175,14 +16157,15 @@ msgid ""
 "of the screen, it means your number is higher or lower than the number to "
 "find."
 msgstr ""
-"Прочети упътванията, които ти казват, в какъв интервал е числото, което "
-"трябва да намериш. Въведи число в горното дясно поле за въвеждане. Ще ти "
-"бъде съобщено, дали твоето число е по-голямо или по-малко от това, което "
-"трябва да намериш. След това опитай отново, докато намериш правилния "
-"отговор. Разстоянието между Тъкс и дясната страна на екрана показва колко "
-"далеч си от числото за намиране. Ако Тъкс е над или под вертикалния център "
-"на екрана, това означава, че числото ти е по-голямо или по-малко числото за "
-"намиране."
+"Прочети упътването, които ти дава диапазона на числото, което трябва да "
+"намериш. Въведи число в полето за въвеждане в горния десен ъгъл и натисни "
+"бутона OK, за да го валидираш. Ще бъдеш уведомен дали числото е по-голямо "
+"или по-малко от числото, което трябва да намериш. След това опитай отново, "
+"докато не намериш правилния отговор. Разстоянието между хеликоптера и "
+"дясната страна на екрана представлява колко си далеч от числото, което "
+"трябва да намериш. Ако хеликоптерът е над или под вертикалния център на "
+"екрана, това означава, че твоето число е по-голямо или по-малко от числото, "
+"което трябва да намериш."
 
 #: activities/guessnumber/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -16195,20 +16178,14 @@ msgid "Backspace: erase a number"
 msgstr "Backspace: изтриване на число"
 
 #: activities/guessnumber/guessnumber.js:61
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Your number is too high"
 msgctxt "guessnumber|"
 msgid "Your number is too high."
-msgstr "Твоето число е твърде голямо"
+msgstr "Твоят номер е твърде висок."
 
 #: activities/guessnumber/guessnumber.js:64
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Your number is too low"
 msgctxt "guessnumber|"
 msgid "Your number is too low."
-msgstr "Твоето число е твърде малко"
+msgstr "Твоят номер е твърде нисък."
 
 #: activities/guessnumber/guessnumber.js:69
 msgctxt "guessnumber|"
@@ -16216,24 +16193,20 @@ msgid "You found the number!"
 msgstr "Ти намери числото!"
 
 #: activities/guessnumber/Guessnumber.qml:116
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
+#, qt-format
 msgctxt "Guessnumber|"
 msgid "Guess a number between %1 and %2."
-msgstr "Познай числото между 1 и %1."
+msgstr "Отгатни число между %1 и %2."
 
 #: activities/guessnumber/resource/1/Data.qml:16
 #: activities/guessnumber/resource/2/Data.qml:14
 #: activities/guessnumber/resource/3/Data.qml:16
 #: activities/guessnumber/resource/4/Data.qml:16
 #: activities/guessnumber/resource/5/Data.qml:16
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
+#, qt-format
 msgctxt "Data|"
 msgid "Guess a number between %1 and %2."
-msgstr "Познай числото между 1 и %1."
+msgstr "Отгатни число между %1 и %2."
 
 #: activities/hangman/ActivityConfig.qml:42
 msgctxt "ActivityConfig|"
@@ -29427,115 +29400,3 @@ msgstr "Пропусни"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Старт"
-
-#~ msgctxt "Data|"
-#~ msgid "Enumerate up to 2 fruit."
-#~ msgstr "Изброй до 2 плода."
-
-#~ msgctxt "Data|"
-#~ msgid "Enumerate up to 3 fruit."
-#~ msgstr "Изброй до 3 плода."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 2 types of fruit and enumerate each group (3 fruit max)."
-#~ msgstr "Групирай 2 вида плодове и преброй всяка група (максимум 3 плода)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 2 types of fruit and enumerate each group (4 fruit max)."
-#~ msgstr "Групирай 2 вида плодове и преброй всяка група (максимум 4 плода)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 3 types of fruit and enumerate each group (6 fruit max)."
-#~ msgstr "Групирай 3 вида плодове и преброй всяка група (максимум 6 плода)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 3 types of fruit and enumerate each group (3 fruit max)."
-#~ msgstr "Групирай 3 вида плодове и преброй всяка група (максимум 3 плода)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 3 types of fruit and enumerate each group (4 fruit max)."
-#~ msgstr "Групирай 3 вида плодове и преброй всяка група (максимум 4 плода)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 4 types of fruit and enumerate each group (9 fruit max)."
-#~ msgstr "Групирай 4 вида плодове и преброй всяка група (максимум 9 плода)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 4 types of fruit and enumerate each group (6 fruit max)."
-#~ msgstr "Групирай 4 вида плодове и преброй всяка група (максимум 6 плода)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 4 types of fruit and enumerate each group (7 fruit max)."
-#~ msgstr "Групирай 4 вида плодове и преброй всяка група (максимум 7 плода)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 4 types of fruit and enumerate each group (8 fruit max)."
-#~ msgstr "Групирай 4 вида плодове и преброй всяка група (максимум 8 плода)."
-
-#~ msgctxt "ColorSelector|"
-#~ msgid "Palette Colors"
-#~ msgstr "Цветова палитра"
-
-#~ msgctxt "ColorSelector|"
-#~ msgid "Reset palette"
-#~ msgstr "Нулиране на палитрата"
-
-#~ msgctxt "ColorSelector|"
-#~ msgid "Selected Color"
-#~ msgstr "Избран цвят"
-
-#~ msgctxt "ColorSelector|color hue"
-#~ msgid "Hue"
-#~ msgstr "Отенък"
-
-#~ msgctxt "ColorSelector|color saturation"
-#~ msgid "Saturation"
-#~ msgstr "Насищане"
-
-#~ msgctxt "ColorSelector|color lightness"
-#~ msgid "Lightness"
-#~ msgstr "Светлост"
-
-#~ msgctxt "ColorSelector|"
-#~ msgid "Reset Color"
-#~ msgstr "Нулиране на цветовете"
-
-#~ msgctxt "Data|"
-#~ msgid "Maximum value: 500000."
-#~ msgstr "Максимална стойност: 500000."
-
-#~ msgctxt "Data|"
-#~ msgid "Find the correct answer."
-#~ msgstr "Намерете правилния отговор."
-
-#~ msgctxt "Data|"
-#~ msgid "What is the first number?"
-#~ msgstr "Кое е първото число?"
-
-#~ msgctxt "Data|"
-#~ msgid "What is a color?"
-#~ msgstr "Какво е цвят?"
-
-#~ msgctxt "Data|"
-#~ msgid "What are the first two numbers?"
-#~ msgstr "Кои са първите две числа?"
-
-#~ msgctxt "Data|"
-#~ msgid "What are animals?"
-#~ msgstr "Какво представляват животните?"
-
-#~ msgctxt "Data|"
-#~ msgid "Answers always in order, select the first one"
-#~ msgstr "Отговорите винаги са подредени, изберете първия"
-
-#~ msgctxt "Data|"
-#~ msgid "Find the previous number."
-#~ msgstr "Намери предишното число."
-
-#~ msgctxt "Data|"
-#~ msgid "Find the in-between number."
-#~ msgstr "Намери числото, което се намира между тези две числа."
-
-#~ msgctxt "ColorsPanel|"
-#~ msgid "Palettes"
-#~ msgstr "Палитри"

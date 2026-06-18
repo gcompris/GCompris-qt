@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-22 23:51+0100\n"
-"PO-Revision-Date: 2026-05-20 20:04+0100\n"
+"PO-Revision-Date: 2026-06-17 12:06+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: es\n"
-"X-Generator: Lokalize 26.04.1\n"
+"X-Generator: Lokalize 26.04.2\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -7516,38 +7516,32 @@ msgstr ""
 "al botón «Aceptar»)"
 
 #: activities/enumerate/Enumerate.qml:65
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Enumerate up to 4 fruit."
+#, qt-format
 msgctxt "Enumerate|"
 msgid "Enumerate up to %1 fruits."
-msgstr "Enumera hasta 4 frutas."
+msgstr "Enumera hasta %1 frutas."
 
 #: activities/enumerate/Enumerate.qml:66
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
+#, qt-format
 msgctxt "Enumerate|"
 msgid "Group %1 types of fruit and enumerate each group (%2 fruits max)."
-msgstr "Agrupa 2 tipos de frutas y enumera cada grupo (5 frutas como máximo)."
+msgstr ""
+"Agrupa %1 tipos de frutas y enumera cada grupo (%2 frutas como máximo)."
 
 #: activities/enumerate/resource/1/Data.qml:13
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Enumerate up to 4 fruit."
+#, qt-format
 msgctxt "Data|"
 msgid "Enumerate up to %1 fruits."
-msgstr "Enumera hasta 4 frutas."
+msgstr "Enumera hasta %1 frutas."
 
 #: activities/enumerate/resource/2/Data.qml:13
 #: activities/enumerate/resource/3/Data.qml:13
 #: activities/enumerate/resource/4/Data.qml:13
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
+#, qt-format
 msgctxt "Data|"
 msgid "Group %1 types of fruit and enumerate each group (%2 fruits max)."
-msgstr "Agrupa 2 tipos de frutas y enumera cada grupo (5 frutas como máximo)."
+msgstr ""
+"Agrupa %1 tipos de frutas y enumera cada grupo (%2 frutas como máximo)."
 
 #. Activity title
 #: activities/erase/ActivityInfo.qml:15
@@ -16308,16 +16302,6 @@ msgstr "Practica la comparación de números."
 
 #. Help manual
 #: activities/guessnumber/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Read the instructions that give you the range of the number to find. "
-#| "Enter a number in the top right entry box. You will be told if your "
-#| "number is higher or lower than the one to find. Then try again until you "
-#| "find the correct answer. The distance between Tux and the right side of "
-#| "the screen represents how far you are from the number to find. If Tux is "
-#| "over or under the vertical center of the screen, it means your number is "
-#| "over or under the number to find."
 msgctxt "ActivityInfo|"
 msgid ""
 "Read the instructions that give you the range of the number to find. Enter a "
@@ -16330,13 +16314,14 @@ msgid ""
 "find."
 msgstr ""
 "Lee las instrucciones que te dan el intervalo de números que tienes que "
-"encontrar. Introduce el número en el cuadro azul de la parte superior "
-"derecha. Se te dirá si el número es mayor o menor que el que debes "
-"encontrar. Vuelve a intentarlo hasta que encuentres la respuesta correcta. "
-"La distancia entre Tux y el lado derecho de la pantalla representa lo lejos "
-"que estás del número que debes encontrar. Si Tux está por encima o por "
-"debajo del centro vertical de la pantalla, significa que tu número está por "
-"encima o por debajo del número que tienes que encontrar."
+"encontrar. Introduce un número en el cuadro azul de la parte superior "
+"derecha y pulsa el botón «Aceptar» para validarlo. Se te dirá si el número "
+"es mayor o menor que el que debes encontrar. Vuelve a intentarlo hasta que "
+"encuentres la respuesta correcta. La distancia entre el helicóptero y el "
+"lado derecho de la pantalla representa lo lejos que estás del número que "
+"debes encontrar. Si el helicóptero está por encima o por debajo del centro "
+"vertical de la pantalla, significa que tu número es mayor o menor que el "
+"número que tienes que encontrar."
 
 #: activities/guessnumber/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -16349,20 +16334,14 @@ msgid "Backspace: erase a number"
 msgstr "Retroceso: borrar un número"
 
 #: activities/guessnumber/guessnumber.js:61
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Your number is too high"
 msgctxt "guessnumber|"
 msgid "Your number is too high."
-msgstr "Tu número es demasiado alto"
+msgstr "Tu número es demasiado alto."
 
 #: activities/guessnumber/guessnumber.js:64
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Your number is too low"
 msgctxt "guessnumber|"
 msgid "Your number is too low."
-msgstr "Tu número es demasiado bajo"
+msgstr "Tu número es demasiado bajo."
 
 #: activities/guessnumber/guessnumber.js:69
 msgctxt "guessnumber|"
@@ -16370,24 +16349,20 @@ msgid "You found the number!"
 msgstr "¡Has encontrado el número!"
 
 #: activities/guessnumber/Guessnumber.qml:116
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
+#, qt-format
 msgctxt "Guessnumber|"
 msgid "Guess a number between %1 and %2."
-msgstr "Adivina un número entre 1 y %1."
+msgstr "Adivina un número entre %1 y %2."
 
 #: activities/guessnumber/resource/1/Data.qml:16
 #: activities/guessnumber/resource/2/Data.qml:14
 #: activities/guessnumber/resource/3/Data.qml:16
 #: activities/guessnumber/resource/4/Data.qml:16
 #: activities/guessnumber/resource/5/Data.qml:16
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
+#, qt-format
 msgctxt "Data|"
 msgid "Guess a number between %1 and %2."
-msgstr "Adivina un número entre 1 y %1."
+msgstr "Adivina un número entre %1 y %2."
 
 #: activities/hangman/ActivityConfig.qml:42
 msgctxt "ActivityConfig|"
@@ -29643,84 +29618,3 @@ msgstr "Omitir"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Iniciar"
-
-#~ msgctxt "Data|"
-#~ msgid "Enumerate up to 2 fruit."
-#~ msgstr "Enumera hasta 2 frutas."
-
-#~ msgctxt "Data|"
-#~ msgid "Enumerate up to 3 fruit."
-#~ msgstr "Enumera hasta 3 frutas."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 2 types of fruit and enumerate each group (3 fruit max)."
-#~ msgstr ""
-#~ "Agrupa 2 tipos de frutas y enumera cada grupo (3 frutas como máximo)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 2 types of fruit and enumerate each group (4 fruit max)."
-#~ msgstr ""
-#~ "Agrupa 2 tipos de frutas y enumera cada grupo (4 frutas como máximo)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 3 types of fruit and enumerate each group (6 fruit max)."
-#~ msgstr ""
-#~ "Agrupa 3 tipos de frutas y enumera cada grupo (6 frutas como máximo)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 3 types of fruit and enumerate each group (3 fruit max)."
-#~ msgstr ""
-#~ "Agrupa 3 tipos de frutas y enumera cada grupo (3 frutas como máximo)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 3 types of fruit and enumerate each group (4 fruit max)."
-#~ msgstr ""
-#~ "Agrupa 3 tipos de frutas y enumera cada grupo (4 frutas como máximo)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 4 types of fruit and enumerate each group (9 fruit max)."
-#~ msgstr ""
-#~ "Agrupa 4 tipos de frutas y enumera cada grupo (9 frutas como máximo)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 4 types of fruit and enumerate each group (6 fruit max)."
-#~ msgstr ""
-#~ "Agrupa 4 tipos de frutas y enumera cada grupo (6 frutas como máximo)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 4 types of fruit and enumerate each group (7 fruit max)."
-#~ msgstr ""
-#~ "Agrupa 4 tipos de frutas y enumera cada grupo (7 frutas como máximo)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 4 types of fruit and enumerate each group (8 fruit max)."
-#~ msgstr ""
-#~ "Agrupa 4 tipos de frutas y enumera cada grupo (8 frutas como máximo)."
-
-#~ msgctxt "ColorSelector|"
-#~ msgid "Palette Colors"
-#~ msgstr "Colores de la paleta"
-
-#~ msgctxt "ColorSelector|"
-#~ msgid "Reset palette"
-#~ msgstr "Reiniciar la paleta"
-
-#~ msgctxt "ColorSelector|"
-#~ msgid "Selected Color"
-#~ msgstr "Color seleccionado"
-
-#~ msgctxt "ColorSelector|color hue"
-#~ msgid "Hue"
-#~ msgstr "Tono"
-
-#~ msgctxt "ColorSelector|color saturation"
-#~ msgid "Saturation"
-#~ msgstr "Saturación"
-
-#~ msgctxt "ColorSelector|color lightness"
-#~ msgid "Lightness"
-#~ msgstr "Luminosidad"
-
-#~ msgctxt "ColorSelector|"
-#~ msgid "Reset Color"
-#~ msgstr "Reiniciar el color"

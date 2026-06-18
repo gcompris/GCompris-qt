@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-05-20 19:44+0300\n"
+"PO-Revision-Date: 2026-06-17 09:30+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -7355,40 +7355,32 @@ msgstr ""
 "ayarlanmışsa)"
 
 #: activities/enumerate/Enumerate.qml:65
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Enumerate up to 4 fruit."
+#, qt-format
 msgctxt "Enumerate|"
 msgid "Enumerate up to %1 fruits."
-msgstr "4 meyveye kadar numaralandır."
+msgstr "%1 meyveye kadar numaralandır."
 
 #: activities/enumerate/Enumerate.qml:66
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
+#, qt-format
 msgctxt "Enumerate|"
 msgid "Group %1 types of fruit and enumerate each group (%2 fruits max)."
 msgstr ""
-"2 çeşit meyveyi gruplandır ve her bir grubu numaralandır (en çok 5 meyve)."
+"%1 çeşit meyveyi gruplandır ve her bir grubu numaralandır (en çok %2 meyve)."
 
 #: activities/enumerate/resource/1/Data.qml:13
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Enumerate up to 4 fruit."
+#, qt-format
 msgctxt "Data|"
 msgid "Enumerate up to %1 fruits."
-msgstr "4 meyveye kadar numaralandır."
+msgstr "%1 meyveye kadar numaralandır."
 
 #: activities/enumerate/resource/2/Data.qml:13
 #: activities/enumerate/resource/3/Data.qml:13
 #: activities/enumerate/resource/4/Data.qml:13
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
+#, qt-format
 msgctxt "Data|"
 msgid "Group %1 types of fruit and enumerate each group (%2 fruits max)."
 msgstr ""
-"2 çeşit meyveyi gruplandır ve her bir grubu numaralandır (en çok 5 meyve)."
+"%1 çeşit meyveyi gruplandır ve her bir grubu numaralandır (en çok %2 meyve)."
 
 #. Activity title
 #: activities/erase/ActivityInfo.qml:15
@@ -16065,16 +16057,6 @@ msgstr "Sayıları karşılaştırma alıştırması yap."
 
 #. Help manual
 #: activities/guessnumber/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Read the instructions that give you the range of the number to find. "
-#| "Enter a number in the top right entry box. You will be told if your "
-#| "number is higher or lower than the one to find. Then try again until you "
-#| "find the correct answer. The distance between Tux and the right side of "
-#| "the screen represents how far you are from the number to find. If Tux is "
-#| "over or under the vertical center of the screen, it means your number is "
-#| "over or under the number to find."
 msgctxt "ActivityInfo|"
 msgid ""
 "Read the instructions that give you the range of the number to find. Enter a "
@@ -16087,12 +16069,12 @@ msgid ""
 "find."
 msgstr ""
 "Sana bulman gereken numara aralığını veren yönergeleri oku. Sağ üstteki "
-"giriş kutusuna bir sayı gir. Numaranın bulunandan yüksek veya düşük olup "
-"olmadığı sana söylenecektir. Ardından doğru yanıtı bulana kadar yeniden "
-"dene. Tux ile ekranın sağ tarafı arasındaki uzaklık, bulunacak numaradan ne "
-"kadar uzakta olduğunu gösterir. Tux, ekranın dikey merkezinin üstünde veya "
-"altındaysa bu, numaranın bulunacak sayının üzerinde veya altında olduğu "
-"anlamına gelir."
+"giriş kutusuna bir sayı gir ve onu doğrulamak için OK düğmesine bas. "
+"Numaranın bulunandan yüksek veya düşük olup olmadığı sana söylenecektir. "
+"Ardından doğru yanıtı bulana kadar yeniden dene. Helikopter ile ekranın sağ "
+"tarafı arasındaki uzaklık, bulunacak numaradan ne kadar uzakta olduğunu "
+"gösterir. Helikopter, ekranın dikey merkezinin üstünde veya altındaysa bu, "
+"numaranın bulunacak sayının üzerinde veya altında olduğu anlamına gelir."
 
 #: activities/guessnumber/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -16105,20 +16087,14 @@ msgid "Backspace: erase a number"
 msgstr "Geri Sil: Bir sayı sil"
 
 #: activities/guessnumber/guessnumber.js:61
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Your number is too high"
 msgctxt "guessnumber|"
 msgid "Your number is too high."
-msgstr "Sayın çok büyük"
+msgstr "Sayın çok büyük."
 
 #: activities/guessnumber/guessnumber.js:64
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Your number is too low"
 msgctxt "guessnumber|"
 msgid "Your number is too low."
-msgstr "Sayın çok küçük"
+msgstr "Sayın çok küçük."
 
 #: activities/guessnumber/guessnumber.js:69
 msgctxt "guessnumber|"
@@ -16126,24 +16102,20 @@ msgid "You found the number!"
 msgstr "Sayıyı buldun!"
 
 #: activities/guessnumber/Guessnumber.qml:116
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
+#, qt-format
 msgctxt "Guessnumber|"
 msgid "Guess a number between %1 and %2."
-msgstr "1 ile %1 arasında bir sayı tahmin et."
+msgstr "%1 ile %2 arasında bir sayı tahmin et."
 
 #: activities/guessnumber/resource/1/Data.qml:16
 #: activities/guessnumber/resource/2/Data.qml:14
 #: activities/guessnumber/resource/3/Data.qml:16
 #: activities/guessnumber/resource/4/Data.qml:16
 #: activities/guessnumber/resource/5/Data.qml:16
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
+#, qt-format
 msgctxt "Data|"
 msgid "Guess a number between %1 and %2."
-msgstr "1 ile %1 arasında bir sayı tahmin et."
+msgstr "%1 ile %2 arasında bir sayı tahmin et."
 
 #: activities/hangman/ActivityConfig.qml:42
 msgctxt "ActivityConfig|"

@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-06-14 21:25+0200\n"
+"PO-Revision-Date: 2026-06-17 18:34+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 26.04.1\n"
+"X-Generator: Lokalize 26.04.2\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
 #: server/activities/binary_bulb/ActivityEditor.qml:12
@@ -574,41 +574,26 @@ msgid "%1 %"
 msgstr "%1 %"
 
 #: server/activities/enumerate/EnumerateDataDisplay.qml:59
-#, fuzzy
-#| msgctxt "AdjacentNumbersDataDisplay|"
-#| msgid "Answer:"
 msgctxt "EnumerateDataDisplay|"
 msgid "Answer:"
 msgstr "Отговор:"
 
 #: server/activities/enumerate/EnumerateEditor.qml:27
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "EnumerateEditor|"
 msgid "Sublevels"
 msgstr "Поднива"
 
 #: server/activities/enumerate/EnumerateEditor.qml:28
-#, fuzzy
-#| msgctxt "VerticalEditor|"
-#| msgid "Number of lines"
 msgctxt "EnumerateEditor|"
 msgid "Number of item types"
-msgstr "Брой редове"
+msgstr "Брой типове елементи"
 
 #: server/activities/enumerate/EnumerateEditor.qml:29
-#, fuzzy
-#| msgctxt "ShareEditor|"
-#| msgid "Maximum number of boys"
 msgctxt "EnumerateEditor|"
 msgid "Maximum number per item type"
-msgstr "Максимален брой момчета"
+msgstr "Максимален брой на типове елементи"
 
 #: server/activities/enumerate/EnumerateEditor.qml:70
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "EnumerateEditor|"
 msgid "Dataset is empty."
 msgstr "Наборът от данни е празен."
@@ -797,41 +782,29 @@ msgstr "Подсказки: %1"
 #, qt-format
 msgctxt "GuessnumberDataDisplay|"
 msgid "Number between %1 and %2."
-msgstr ""
+msgstr "Число между %1 и %2."
 
 #: server/activities/guessnumber/GuessnumberDataDisplay.qml:50
-#, fuzzy
-#| msgctxt "ShareEditor|"
-#| msgid "Number of girls"
 msgctxt "GuessnumberDataDisplay|"
 msgid "Number to guess:"
-msgstr "Брой момичета"
+msgstr "Число за отгатване:"
 
 #: server/activities/guessnumber/GuessnumberDataDisplay.qml:77
 msgctxt "GuessnumberDataDisplay|"
 msgid "Steps:"
-msgstr ""
+msgstr "Стъпки:"
 
 #: server/activities/guessnumber/GuessnumberEditor.qml:27
-#, fuzzy
-#| msgctxt "ReversecountEditor|"
-#| msgid "Maximum number"
 msgctxt "GuessnumberEditor|"
 msgid "Minimum number"
-msgstr "Максимален брой"
+msgstr "Минимален брой"
 
 #: server/activities/guessnumber/GuessnumberEditor.qml:28
-#, fuzzy
-#| msgctxt "ReversecountEditor|"
-#| msgid "Maximum number"
 msgctxt "GuessnumberEditor|"
 msgid "Maximum number"
 msgstr "Максимален брой"
 
 #: server/activities/guessnumber/GuessnumberEditor.qml:90
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "GuessnumberEditor|"
 msgid "Dataset is empty."
 msgstr "Наборът от данни е празен."
@@ -3560,28 +3533,3 @@ msgstr "Ученици влезли в системата"
 msgctxt "SettingsView|"
 msgid "Activities data received"
 msgstr "Получени данни за дейностите"
-
-#~ msgctxt "controllers::DatabaseController|"
-#~ msgid "Pupil login <b>%1</b> already exists or password is empty."
-#~ msgstr ""
-#~ "Входните данни за ученик <b>%1</b> вече съществуват или паролата е празна."
-
-#~ msgctxt "NavigationPanel|"
-#~ msgid "Development (WIP)"
-#~ msgstr "Разработка (в процес на разработка)"
-
-#~ msgctxt "SqlLineDialog|"
-#~ msgid "<"
-#~ msgstr "<"
-
-#~ msgctxt "SqlLineDialog|"
-#~ msgid ">"
-#~ msgstr ">"
-
-#~ msgctxt "DevicesView|"
-#~ msgid "Bad password input"
-#~ msgstr "Въвеждане на неправилна парола"
-
-#~ msgctxt "LoginView|"
-#~ msgid "GCompris Teachers Tool"
-#~ msgstr "Инструмент за учители на GCompris"

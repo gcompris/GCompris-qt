@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-23 11:17+0200\n"
-"PO-Revision-Date: 2026-06-05 05:46+0200\n"
+"PO-Revision-Date: 2026-06-17 07:01+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -572,41 +572,26 @@ msgid "%1 %"
 msgstr "%1 %"
 
 #: server/activities/enumerate/EnumerateDataDisplay.qml:59
-#, fuzzy
-#| msgctxt "AdjacentNumbersDataDisplay|"
-#| msgid "Answer:"
 msgctxt "EnumerateDataDisplay|"
 msgid "Answer:"
 msgstr "Odgovor:"
 
 #: server/activities/enumerate/EnumerateEditor.qml:27
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "EnumerateEditor|"
 msgid "Sublevels"
 msgstr "Podravni"
 
 #: server/activities/enumerate/EnumerateEditor.qml:28
-#, fuzzy
-#| msgctxt "VerticalEditor|"
-#| msgid "Number of lines"
 msgctxt "EnumerateEditor|"
 msgid "Number of item types"
-msgstr "Število vrstic"
+msgstr "Število zvrsti predmetov"
 
 #: server/activities/enumerate/EnumerateEditor.qml:29
-#, fuzzy
-#| msgctxt "ShareEditor|"
-#| msgid "Maximum number of boys"
 msgctxt "EnumerateEditor|"
 msgid "Maximum number per item type"
-msgstr "Največje število fantov"
+msgstr "Največje število na zvrst predmeta"
 
 #: server/activities/enumerate/EnumerateEditor.qml:70
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "EnumerateEditor|"
 msgid "Dataset is empty."
 msgstr "Nabor podatkov je prazen."
@@ -794,41 +779,29 @@ msgstr "Namigi: %1"
 #, qt-format
 msgctxt "GuessnumberDataDisplay|"
 msgid "Number between %1 and %2."
-msgstr ""
+msgstr "Število med %1 in %2."
 
 #: server/activities/guessnumber/GuessnumberDataDisplay.qml:50
-#, fuzzy
-#| msgctxt "ShareEditor|"
-#| msgid "Number of girls"
 msgctxt "GuessnumberDataDisplay|"
 msgid "Number to guess:"
-msgstr "Število deklet"
+msgstr "Število za ugibanje:"
 
 #: server/activities/guessnumber/GuessnumberDataDisplay.qml:77
 msgctxt "GuessnumberDataDisplay|"
 msgid "Steps:"
-msgstr ""
+msgstr "Korakov:"
 
 #: server/activities/guessnumber/GuessnumberEditor.qml:27
-#, fuzzy
-#| msgctxt "ReversecountEditor|"
-#| msgid "Maximum number"
 msgctxt "GuessnumberEditor|"
 msgid "Minimum number"
 msgstr "Maksimalno število"
 
 #: server/activities/guessnumber/GuessnumberEditor.qml:28
-#, fuzzy
-#| msgctxt "ReversecountEditor|"
-#| msgid "Maximum number"
 msgctxt "GuessnumberEditor|"
 msgid "Maximum number"
 msgstr "Maksimalno število"
 
 #: server/activities/guessnumber/GuessnumberEditor.qml:90
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "GuessnumberEditor|"
 msgid "Dataset is empty."
 msgstr "Nabor podatkov je prazen."
