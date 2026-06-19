@@ -50,7 +50,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/question.svg",
             "title": qsTr("Bison"),
-            "text": qsTr("Bisons live on the plains of North America and were hunted by the Native Americans for food."),
+            "text": qsTr("Bisons live on the plains of North America and were hunted by the Native Americans for food. However, their near-extinction is due to the fact that the colonizers massacred them for sport and to clear land, rather than to hunting by indigenous peoples."),
             "image2": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/bison.webp",
             "text2": qsTr("Bison"),
             "x": 0.215,
