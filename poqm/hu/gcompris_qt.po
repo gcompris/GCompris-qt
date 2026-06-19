@@ -1,12 +1,12 @@
 # Kristóf Kiszel <ulysses@kubuntu.org>, 2019.
-# SPDX-FileCopyrightText: 2021, 2025 Kristof Kiszel <kiszel.kristof@gmail.com>
+# SPDX-FileCopyrightText: 2021, 2025-2026 Kristof Kiszel <kiszel.kristof@gmail.com>
 # István Lipták <elistvan@gmail.com>, 2022, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-10-14 20:54+0200\n"
+"PO-Revision-Date: 2026-06-18 21:47+0200\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Loco-Source-Locale: hu_HU\n"
-"X-Generator: Lokalize 25.08.2\n"
+"X-Generator: Lokalize 26.04.2\n"
 "X-Language: hu\n"
 "X-Qt-Contexts: true\n"
 "X-Loco-Parser: loco_parse_po\n"
@@ -4508,9 +4508,9 @@ msgid ""
 "will redo one move. To undo all the moves, press and hold the undo button "
 "for 3 seconds."
 msgstr ""
-"Kattints egyszer a Mégsem billentyűre és az visszavonja a lépést. Ha a Mégis "
-"gombra kattintassz, az lépni fog. Az összes lépés visszavonásához, tart "
-"nyomva a Mégsem gomboz 3 másodpercig!"
+"Kattints egyszer a Mégse gombra és az visszavonja a lépést. Ha a Mégis "
+"gombra kattintasz, az lépni fog. Az összes lépés visszavonásához, tart "
+"nyomva a Mégse gombot 3 másodpercig!"
 
 #: activities/chess/ActivityInfo.qml:32
 #: activities/chess_partyend/ActivityInfo.qml:32
@@ -15995,7 +15995,7 @@ msgstr "Műveleti billentyűk (+, -, *, /): műveletek kiválasztása"
 #: activities/guess24/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: cancel last operation"
-msgstr "Backspace vagy Delete: Mégsem"
+msgstr "Backspace vagy Delete: Mégse"
 
 #: activities/guess24/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -23153,7 +23153,7 @@ msgstr ""
 #: activities/play_piano/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
-msgstr "Backspace vagy Delete: Mégsem"
+msgstr "Backspace vagy Delete: Mégse"
 
 #: activities/play_piano/PlayPiano.qml:196
 msgctxt "PlayPiano|"
@@ -29086,7 +29086,7 @@ msgstr "Beállítások"
 #: core/DialogChooseLevel.qml:353
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
-msgstr "Mégsem"
+msgstr "Mégse"
 
 #: core/DialogChooseLevel.qml:361
 msgctxt "DialogChooseLevel|"
@@ -29510,7 +29510,7 @@ msgstr "Alkalmaz"
 #: core/main.qml:277 core/main.qml:592 core/main.qml:667
 msgctxt "main|"
 msgid "Cancel"
-msgstr "Mégsem"
+msgstr "Mégse"
 
 #: core/main.qml:363
 msgctxt "main|"
