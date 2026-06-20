@@ -10036,18 +10036,13 @@ msgid "Bison"
 msgstr "बायसन"
 
 #: activities/explore_world_animals/resource/board/board1.qml:53
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "Bison live on the plains of North America and were hunted by the Native "
-#| "Americans for food."
 msgctxt "board1|"
 msgid ""
 "Bisons live on the plains of North America and were hunted by the Native "
-"Americans for food."
+"Americans for food. However, their near-extinction is due to the fact that "
+"the colonizers massacred them for sport and to clear land, rather than to "
+"hunting by indigenous peoples."
 msgstr ""
-"बाइसन उत्तरी अमेरिका के मैदानों पर रहते हैं और मूल अमेरिकियों द्वारा भोजन के लिए शिकार कर "
-"रहे थे।"
 
 #: activities/explore_world_animals/resource/board/board1.qml:63
 #: activities/explore_world_animals/resource/board/board1.qml:66
@@ -32733,6 +32728,19 @@ msgstr ""
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr ""
+
+#, fuzzy
+#~| msgctxt "board1|"
+#~| msgid ""
+#~| "Bison live on the plains of North America and were hunted by the Native "
+#~| "Americans for food."
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "Bisons live on the plains of North America and were hunted by the Native "
+#~ "Americans for food."
+#~ msgstr ""
+#~ "बाइसन उत्तरी अमेरिका के मैदानों पर रहते हैं और मूल अमेरिकियों द्वारा भोजन के लिए शिकार "
+#~ "कर रहे थे।"
 
 #, fuzzy
 #~| msgctxt "ColorMix|"

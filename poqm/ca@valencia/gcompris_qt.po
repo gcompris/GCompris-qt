@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2026-05-20 10:06+0200\n"
+"PO-Revision-Date: 2026-06-17 08:52+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -7706,38 +7706,32 @@ msgstr ""
 "establida al botó «OK»)"
 
 #: activities/enumerate/Enumerate.qml:65
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Enumerate up to 4 fruit."
+#, qt-format
 msgctxt "Enumerate|"
 msgid "Enumerate up to %1 fruits."
-msgstr "Enumera fins a les 4 fruites."
+msgstr "Enumera fins a %1 fruites."
 
 #: activities/enumerate/Enumerate.qml:66
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
+#, qt-format
 msgctxt "Enumerate|"
 msgid "Group %1 types of fruit and enumerate each group (%2 fruits max)."
-msgstr "Agrupa 2 tipus de fruites i enumera cada grup (5 fruites com a màxim)."
+msgstr ""
+"Agrupa %1 tipus de fruites i enumera cada grup (%2 fruites com a màxim)."
 
 #: activities/enumerate/resource/1/Data.qml:13
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Enumerate up to 4 fruit."
+#, qt-format
 msgctxt "Data|"
 msgid "Enumerate up to %1 fruits."
-msgstr "Enumera fins a les 4 fruites."
+msgstr "Enumera fins a %1 fruites."
 
 #: activities/enumerate/resource/2/Data.qml:13
 #: activities/enumerate/resource/3/Data.qml:13
 #: activities/enumerate/resource/4/Data.qml:13
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
+#, qt-format
 msgctxt "Data|"
 msgid "Group %1 types of fruit and enumerate each group (%2 fruits max)."
-msgstr "Agrupa 2 tipus de fruites i enumera cada grup (5 fruites com a màxim)."
+msgstr ""
+"Agrupa %1 tipus de fruites i enumera cada grup (%2 fruites com a màxim)."
 
 #. Activity title
 #: activities/erase/ActivityInfo.qml:15
@@ -9945,15 +9939,14 @@ msgctxt "board1|"
 msgid "Bison"
 msgstr "Bisó"
 
-# skip-rule: ff-plain
 #: activities/explore_world_animals/resource/board/board1.qml:53
 msgctxt "board1|"
 msgid ""
 "Bisons live on the plains of North America and were hunted by the Native "
-"Americans for food."
+"Americans for food. However, their near-extinction is due to the fact that "
+"the colonizers massacred them for sport and to clear land, rather than to "
+"hunting by indigenous peoples."
 msgstr ""
-"Els bisons viuen a les planes d'Amèrica del Nord i eren caçats pels nadius "
-"americans per a menjar."
 
 # Nota: https://ca.wikipedia.org/wiki/Narval
 #: activities/explore_world_animals/resource/board/board1.qml:63
@@ -16575,16 +16568,6 @@ msgstr "Practicar la comparació de nombres."
 
 #. Help manual
 #: activities/guessnumber/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Read the instructions that give you the range of the number to find. "
-#| "Enter a number in the top right entry box. You will be told if your "
-#| "number is higher or lower than the one to find. Then try again until you "
-#| "find the correct answer. The distance between Tux and the right side of "
-#| "the screen represents how far you are from the number to find. If Tux is "
-#| "over or under the vertical center of the screen, it means your number is "
-#| "over or under the number to find."
 msgctxt "ActivityInfo|"
 msgid ""
 "Read the instructions that give you the range of the number to find. Enter a "
@@ -16597,12 +16580,13 @@ msgid ""
 "find."
 msgstr ""
 "Llig les instruccions que et donen l'interval del nombre a trobar. Introduïx "
-"un nombre en el quadro d'entrada superior dret i se't dirà si el nombre és "
-"més gran o més xicotet. Torna-ho a provar fins que trobes la resposta "
-"correcta. La distància entre en Tux i el costat dret de la pantalla "
-"representa com de lluny estàs del nombre a trobar. Si en Tux està per damunt "
-"o per davall del centre vertical de la pantalla, vol dir que el teu nombre "
-"està per damunt o per davall del nombre a trobar."
+"un nombre en el quadro d'entrada superior dret, i prem el botó «D'acord» per "
+"a validar-ho. Se't dirà si el nombre és més gran o més xicotet que el que "
+"cal trobar. Torna-ho a provar fins que trobes la resposta correcta. La "
+"distància entre l'helicòpter i el costat dret de la pantalla representa com "
+"de lluny estàs del nombre a trobar. Si l'helicòpter està per damunt o per "
+"davall del centre vertical de la pantalla, vol dir que el teu nombre és més "
+"gran o més xicotet que el nombre a trobar."
 
 #: activities/guessnumber/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -16615,20 +16599,14 @@ msgid "Backspace: erase a number"
 msgstr "«Retrocés»: per a esborrar un nombre"
 
 #: activities/guessnumber/guessnumber.js:61
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Your number is too high"
 msgctxt "guessnumber|"
 msgid "Your number is too high."
-msgstr "El nombre és massa alt"
+msgstr "El nombre és massa alt."
 
 #: activities/guessnumber/guessnumber.js:64
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Your number is too low"
 msgctxt "guessnumber|"
 msgid "Your number is too low."
-msgstr "El nombre és massa baix"
+msgstr "El nombre és massa baix."
 
 #: activities/guessnumber/guessnumber.js:69
 msgctxt "guessnumber|"
@@ -16636,24 +16614,20 @@ msgid "You found the number!"
 msgstr "Troba el nombre!"
 
 #: activities/guessnumber/Guessnumber.qml:116
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
+#, qt-format
 msgctxt "Guessnumber|"
 msgid "Guess a number between %1 and %2."
-msgstr "Endevina un nombre entre l'1 i %1."
+msgstr "Endevina un nombre entre %1 i %2."
 
 #: activities/guessnumber/resource/1/Data.qml:16
 #: activities/guessnumber/resource/2/Data.qml:14
 #: activities/guessnumber/resource/3/Data.qml:16
 #: activities/guessnumber/resource/4/Data.qml:16
 #: activities/guessnumber/resource/5/Data.qml:16
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
+#, qt-format
 msgctxt "Data|"
 msgid "Guess a number between %1 and %2."
-msgstr "Endevina un nombre entre l'1 i %1."
+msgstr "Endevina un nombre entre %1 i %2."
 
 #: activities/hangman/ActivityConfig.qml:42
 msgctxt "ActivityConfig|"
@@ -24522,7 +24496,7 @@ msgstr "Imatges"
 #: activities/smallnumbers2/ActivityConfig.qml:38
 msgctxt "ActivityConfig|"
 msgid "Select Domino Representation"
-msgstr "Tria la representació del dominó"
+msgstr "Tria la representació del dòmino"
 
 #. Activity title
 #: activities/reversecount/ActivityInfo.qml:15
@@ -24548,7 +24522,7 @@ msgstr "Aprendre a comptar intervals."
 #: activities/reversecount/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Can read numbers on a domino."
-msgstr "Poder llegir els nombres en una fitxa de dominó."
+msgstr "Poder llegir els nombres en una fitxa de dòmino."
 
 #. Help manual
 #: activities/reversecount/ActivityInfo.qml:24
@@ -24558,8 +24532,8 @@ msgid ""
 "fish. Click the domino with the right mouse button to count backwards. When "
 "done, click on the OK button or hit the Enter key."
 msgstr ""
-"Clica damunt de la fitxa de dominó per a mostrar quants glaçons hi ha entre "
-"en Tux i el peix. Clica damunt de la fitxa de dominó amb el botó dret del "
+"Clica damunt de la fitxa de dòmino per a mostrar quants glaçons hi ha entre "
+"en Tux i el peix. Clica damunt de la fitxa de dòmino amb el botó dret del "
 "ratolí per a comptar arrere. Quan hages acabat, clica damunt del botó «OK» o "
 "prem la tecla «Intro»."
 
@@ -26204,64 +26178,64 @@ msgstr "Escriu el nombre en el dau, des del 0 fins al 9."
 #: activities/smallnumbers2/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Numbers with dominoes"
-msgstr "Nombres amb fitxes de dominó"
+msgstr "Nombres amb fitxes de dòmino"
 
 #. Help title
 #: activities/smallnumbers2/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Count the number of dots on the domino before it reaches the ground."
-msgstr "Compta el nombre de punts en el dominó abans que arribe a terra."
+msgstr "Compta el nombre de punts en el dòmino abans que arribe a terra."
 
 #. Help manual
 #: activities/smallnumbers2/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Type the number of dots you see on each falling domino."
-msgstr "Escriu el nombre de punts que veus en cada dominó que cau."
+msgstr "Escriu el nombre de punts que veus en cada dòmino que cau."
 
 #: activities/smallnumbers2/resource/1/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, 1 or 2."
-msgstr "Escriu el nombre a la fitxa de dominó, l'1 o el 2."
+msgstr "Escriu el nombre a la fitxa de dòmino, l'1 o el 2."
 
 #: activities/smallnumbers2/resource/1/Data.qml:26
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 3."
-msgstr "Escriu el nombre a la fitxa de dominó, des de l'1 fins al 3."
+msgstr "Escriu el nombre a la fitxa de dòmino, des de l'1 fins al 3."
 
 #: activities/smallnumbers2/resource/2/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 4."
-msgstr "Escriu el nombre a la fitxa de dominó, des de l'1 fins al 4."
+msgstr "Escriu el nombre a la fitxa de dòmino, des de l'1 fins al 4."
 
 #: activities/smallnumbers2/resource/3/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 5."
-msgstr "Escriu el nombre a la fitxa de dominó, des de l'1 fins al 5."
+msgstr "Escriu el nombre a la fitxa de dòmino, des de l'1 fins al 5."
 
 #: activities/smallnumbers2/resource/4/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 6."
-msgstr "Escriu el nombre a la fitxa de dominó, des de l'1 fins al 6."
+msgstr "Escriu el nombre a la fitxa de dòmino, des de l'1 fins al 6."
 
 #: activities/smallnumbers2/resource/5/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 7."
-msgstr "Escriu el nombre a la fitxa de dominó, des de l'1 fins al 7."
+msgstr "Escriu el nombre a la fitxa de dòmino, des de l'1 fins al 7."
 
 #: activities/smallnumbers2/resource/6/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 8."
-msgstr "Escriu el nombre a la fitxa de dominó, des de l'1 fins al 8."
+msgstr "Escriu el nombre a la fitxa de dòmino, des de l'1 fins al 8."
 
 #: activities/smallnumbers2/resource/7/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 9."
-msgstr "Escriu el nombre a la fitxa de dominó, des de l'1 fins al 9."
+msgstr "Escriu el nombre a la fitxa de dòmino, des de l'1 fins al 9."
 
 #: activities/smallnumbers2/resource/8/Data.qml:17
 msgctxt "Data|"
 msgid "Type the number on the domino, from 0 to 9."
-msgstr "Escriu el nombre a la fitxa de dominó, des del 0 fins al 9."
+msgstr "Escriu el nombre a la fitxa de dòmino, des del 0 fins al 9."
 
 #: activities/smallnumbers2/Smallnumbers2.qml:23
 msgctxt "Smallnumbers2|"
@@ -29990,83 +29964,11 @@ msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Inicia"
 
-#~ msgctxt "Data|"
-#~ msgid "Enumerate up to 2 fruit."
-#~ msgstr "Enumera fins a les 2 fruites."
-
-#~ msgctxt "Data|"
-#~ msgid "Enumerate up to 3 fruit."
-#~ msgstr "Enumera fins a les 3 fruites."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 2 types of fruit and enumerate each group (3 fruit max)."
+# skip-rule: ff-plain
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "Bisons live on the plains of North America and were hunted by the Native "
+#~ "Americans for food."
 #~ msgstr ""
-#~ "Agrupa 2 tipus de fruites i enumera cada grup (3 fruites com a màxim)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 2 types of fruit and enumerate each group (4 fruit max)."
-#~ msgstr ""
-#~ "Agrupa 2 tipus de fruites i enumera cada grup (4 fruites com a màxim)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 3 types of fruit and enumerate each group (6 fruit max)."
-#~ msgstr ""
-#~ "Agrupa 3 tipus de fruites i enumera cada grup (6 fruites com a màxim)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 3 types of fruit and enumerate each group (3 fruit max)."
-#~ msgstr ""
-#~ "Agrupa 3 tipus de fruites i enumera cada grup (3 fruites com a màxim)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 3 types of fruit and enumerate each group (4 fruit max)."
-#~ msgstr ""
-#~ "Agrupa 3 tipus de fruites i enumera cada grup (4 fruites com a màxim)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 4 types of fruit and enumerate each group (9 fruit max)."
-#~ msgstr ""
-#~ "Agrupa 4 tipus de fruites i enumera cada grup (9 fruites com a màxim)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 4 types of fruit and enumerate each group (6 fruit max)."
-#~ msgstr ""
-#~ "Agrupa 4 tipus de fruites i enumera cada grup (6 fruites com a màxim)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 4 types of fruit and enumerate each group (7 fruit max)."
-#~ msgstr ""
-#~ "Agrupa 4 tipus de fruites i enumera cada grup (7 fruites com a màxim)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 4 types of fruit and enumerate each group (8 fruit max)."
-#~ msgstr ""
-#~ "Agrupa 4 tipus de fruites i enumera cada grup (8 fruites com a màxim)."
-
-#~ msgctxt "ColorSelector|"
-#~ msgid "Palette Colors"
-#~ msgstr "Colors de la paleta"
-
-#~ msgctxt "ColorSelector|"
-#~ msgid "Reset palette"
-#~ msgstr "Reinicia la paleta"
-
-#~ msgctxt "ColorSelector|"
-#~ msgid "Selected Color"
-#~ msgstr "Color seleccionat"
-
-#~ msgctxt "ColorSelector|color hue"
-#~ msgid "Hue"
-#~ msgstr "To"
-
-#~ msgctxt "ColorSelector|color saturation"
-#~ msgid "Saturation"
-#~ msgstr "Saturació"
-
-#~ msgctxt "ColorSelector|color lightness"
-#~ msgid "Lightness"
-#~ msgstr "Claredat"
-
-#~ msgctxt "ColorSelector|"
-#~ msgid "Reset Color"
-#~ msgstr "Reinicia el color"
+#~ "Els bisons viuen a les planes d'Amèrica del Nord i eren caçats pels "
+#~ "nadius americans per a menjar."

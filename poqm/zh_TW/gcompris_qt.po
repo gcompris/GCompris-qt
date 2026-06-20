@@ -9420,8 +9420,10 @@ msgstr "野牛"
 msgctxt "board1|"
 msgid ""
 "Bisons live on the plains of North America and were hunted by the Native "
-"Americans for food."
-msgstr "野牛住在北美的平原上，美洲原住民常常獵牠們來吃。"
+"Americans for food. However, their near-extinction is due to the fact that "
+"the colonizers massacred them for sport and to clear land, rather than to "
+"hunting by indigenous peoples."
+msgstr ""
 
 #: activities/explore_world_animals/resource/board/board1.qml:63
 #: activities/explore_world_animals/resource/board/board1.qml:66
@@ -29426,6 +29428,12 @@ msgstr "略過"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "開始"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "Bisons live on the plains of North America and were hunted by the Native "
+#~ "Americans for food."
+#~ msgstr "野牛住在北美的平原上，美洲原住民常常獵牠們來吃。"
 
 #~ msgctxt "Data|"
 #~ msgid "Enumerate up to 2 fruit."

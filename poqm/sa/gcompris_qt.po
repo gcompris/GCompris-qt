@@ -9361,10 +9361,10 @@ msgstr "बाइसन"
 msgctxt "board1|"
 msgid ""
 "Bisons live on the plains of North America and were hunted by the Native "
-"Americans for food."
+"Americans for food. However, their near-extinction is due to the fact that "
+"the colonizers massacred them for sport and to clear land, rather than to "
+"hunting by indigenous peoples."
 msgstr ""
-"उत्तर-अमेरिकादेशस्य मैदानीक्षेत्रेषु बाइसन्-पक्षिणः निवसन्ति, अमेरिकनदेशीयैः भोजनार्थं मृगया "
-"कृताः ।"
 
 #: activities/explore_world_animals/resource/board/board1.qml:63
 #: activities/explore_world_animals/resource/board/board1.qml:66
@@ -29183,6 +29183,14 @@ msgstr "क्षिपते"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "प्रारंभः"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "Bisons live on the plains of North America and were hunted by the Native "
+#~ "Americans for food."
+#~ msgstr ""
+#~ "उत्तर-अमेरिकादेशस्य मैदानीक्षेत्रेषु बाइसन्-पक्षिणः निवसन्ति, अमेरिकनदेशीयैः भोजनार्थं मृगया "
+#~ "कृताः ।"
 
 #~ msgctxt "Data|"
 #~ msgid "Enumerate up to 2 fruit."

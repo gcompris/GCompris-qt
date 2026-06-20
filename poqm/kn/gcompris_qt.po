@@ -9870,10 +9870,10 @@ msgstr "ಕಾಡೆಮ್ಮ"
 msgctxt "board1|"
 msgid ""
 "Bisons live on the plains of North America and were hunted by the Native "
-"Americans for food."
+"Americans for food. However, their near-extinction is due to the fact that "
+"the colonizers massacred them for sport and to clear land, rather than to "
+"hunting by indigenous peoples."
 msgstr ""
-"ಕಾಡೆಮ್ಮಗಳು ಉತ್ತರ ಅಮೇರಿಕಾದ ಬಯಲು ಪ್ರದೇಶಗಳಲ್ಲಿ ಜೀವಿಸುತ್ತವೆ. ಅಮೇರಿಕಾದ ಮೂಲನಿವಾಸಿಗಳು "
-"ಇದನ್ನು ಆಹಾರಕ್ಕಾಗಿ ಬೇಟೆಯಾಡುತ್ತಾರೆ."
 
 #: activities/explore_world_animals/resource/board/board1.qml:63
 #: activities/explore_world_animals/resource/board/board1.qml:66
@@ -30486,6 +30486,14 @@ msgstr "ಬಿಟ್ಟುಬಿಡಿ"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "ಪ್ರಾರಂಭಿಸೋಣ"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "Bisons live on the plains of North America and were hunted by the Native "
+#~ "Americans for food."
+#~ msgstr ""
+#~ "ಕಾಡೆಮ್ಮಗಳು ಉತ್ತರ ಅಮೇರಿಕಾದ ಬಯಲು ಪ್ರದೇಶಗಳಲ್ಲಿ ಜೀವಿಸುತ್ತವೆ. ಅಮೇರಿಕಾದ ಮೂಲನಿವಾಸಿಗಳು "
+#~ "ಇದನ್ನು ಆಹಾರಕ್ಕಾಗಿ ಬೇಟೆಯಾಡುತ್ತಾರೆ."
 
 #~ msgctxt "Data|"
 #~ msgid "Enumerate up to 2 fruit."

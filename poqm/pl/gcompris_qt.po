@@ -9693,10 +9693,10 @@ msgstr "Bizon"
 msgctxt "board1|"
 msgid ""
 "Bisons live on the plains of North America and were hunted by the Native "
-"Americans for food."
+"Americans for food. However, their near-extinction is due to the fact that "
+"the colonizers massacred them for sport and to clear land, rather than to "
+"hunting by indigenous peoples."
 msgstr ""
-"Bizony żyją na nizinach Ameryki Północnej. Na bizony polowali rdzenni "
-"amerykanie, jako na swoje pożywienie."
 
 #: activities/explore_world_animals/resource/board/board1.qml:63
 #: activities/explore_world_animals/resource/board/board1.qml:66
@@ -29564,6 +29564,14 @@ msgstr "Pomiń"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Rozpocznij"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "Bisons live on the plains of North America and were hunted by the Native "
+#~ "Americans for food."
+#~ msgstr ""
+#~ "Bizony żyją na nizinach Ameryki Północnej. Na bizony polowali rdzenni "
+#~ "amerykanie, jako na swoje pożywienie."
 
 #~ msgctxt "Data|"
 #~ msgid "Enumerate up to 2 fruit."

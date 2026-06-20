@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-05-21 12:07+0200\n"
+"PO-Revision-Date: 2026-06-19 11:36+0200\n"
 "Last-Translator: Libor Filípek <libor.filipek@gmail.com>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 26.04.1\n"
+"X-Generator: Lokalize 26.04.2\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -7330,40 +7330,32 @@ msgstr ""
 "'tlačítko OK')"
 
 #: activities/enumerate/Enumerate.qml:65
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Enumerate up to 4 fruit."
+#, qt-format
 msgctxt "Enumerate|"
 msgid "Enumerate up to %1 fruits."
-msgstr "Spočítej až 4 kusy ovoce."
+msgstr "Spočítej až %1 kusů ovoce."
 
 #: activities/enumerate/Enumerate.qml:66
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
+#, qt-format
 msgctxt "Enumerate|"
 msgid "Group %1 types of fruit and enumerate each group (%2 fruits max)."
 msgstr ""
-"Seskup 2 druhy ovoce a spočítej každou skupinu (maximálně 5 kusů ovoce)."
+"Seskup %1 druhů ovoce a spočítej každou skupinu (maximálně %2 kusů ovoce)."
 
 #: activities/enumerate/resource/1/Data.qml:13
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Enumerate up to 4 fruit."
+#, qt-format
 msgctxt "Data|"
 msgid "Enumerate up to %1 fruits."
-msgstr "Spočítej až 4 kusy ovoce."
+msgstr "Spočítej až %1 kusů ovoce."
 
 #: activities/enumerate/resource/2/Data.qml:13
 #: activities/enumerate/resource/3/Data.qml:13
 #: activities/enumerate/resource/4/Data.qml:13
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
+#, qt-format
 msgctxt "Data|"
 msgid "Group %1 types of fruit and enumerate each group (%2 fruits max)."
 msgstr ""
-"Seskup 2 druhy ovoce a spočítej každou skupinu (maximálně 5 kusů ovoce)."
+"Seskup %1 druhů ovoce a spočítej každou skupinu (maximálně %2 kusů ovoce)."
 
 #. Activity title
 #: activities/erase/ActivityInfo.qml:15
@@ -9461,9 +9453,10 @@ msgstr "Bizon"
 msgctxt "board1|"
 msgid ""
 "Bisons live on the plains of North America and were hunted by the Native "
-"Americans for food."
+"Americans for food. However, their near-extinction is due to the fact that "
+"the colonizers massacred them for sport and to clear land, rather than to "
+"hunting by indigenous peoples."
 msgstr ""
-"Bizoni žijí na pláních v Severní Americe a domorodci je lovili kvůli masu."
 
 #: activities/explore_world_animals/resource/board/board1.qml:63
 #: activities/explore_world_animals/resource/board/board1.qml:66
@@ -16010,16 +16003,6 @@ msgstr "Procvič si porovnávání čísel."
 
 #. Help manual
 #: activities/guessnumber/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Read the instructions that give you the range of the number to find. "
-#| "Enter a number in the top right entry box. You will be told if your "
-#| "number is higher or lower than the one to find. Then try again until you "
-#| "find the correct answer. The distance between Tux and the right side of "
-#| "the screen represents how far you are from the number to find. If Tux is "
-#| "over or under the vertical center of the screen, it means your number is "
-#| "over or under the number to find."
 msgctxt "ActivityInfo|"
 msgid ""
 "Read the instructions that give you the range of the number to find. Enter a "
@@ -16031,13 +16014,13 @@ msgid ""
 "of the screen, it means your number is higher or lower than the number to "
 "find."
 msgstr ""
-"Přečti si instrukce, které ti dávají rozsah čísel, které máš najít. Zadej "
-"číslo do vstupního obdélníku vpravo nahoře. Dostaneš odpověď, zda je zadané "
-"číslo větší nebo menší než to hledané. Poté to zkoušej znovu, dokud nenajdeš "
-"správnou odpověď. Vzdálenost mezi Tuxem a pravou stranou obrazovky "
-"představuje to, jak daleko jsi od čísla, které hledáš. Pokud je Tux nad nebo "
-"pod vertikálním středem obrazovky, znamená to, že tvoje číslo je nad nebo "
-"pod hledaným číslem."
+"Přečti si instrukce, které uvádějí rozsah hledaného čísla. Zadej číslo do "
+"zadávacího pole vpravo nahoře a stiskni tlačítko OK pro potvrzení. Dozvíš "
+"se, zda je tvoje číslo vyšší nebo nižší než hledané číslo. Poté to zkus "
+"znovu, dokud nenajdeš správnou odpověď. Vzdálenost mezi vrtulníkem a pravým "
+"okrajem obrazovky představuje, jak daleko jsi od hledaného čísla. Pokud se "
+"vrtulník nachází nad nebo pod svislou osou obrazovky, znamená to, že tvoje "
+"číslo je vyšší nebo nižší než hledané číslo."
 
 #: activities/guessnumber/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -16050,20 +16033,14 @@ msgid "Backspace: erase a number"
 msgstr "Backspace: smazat číslo"
 
 #: activities/guessnumber/guessnumber.js:61
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Your number is too high"
 msgctxt "guessnumber|"
 msgid "Your number is too high."
-msgstr "Tvé číslo je příliš vysoké"
+msgstr "Tvé číslo je příliš vysoké."
 
 #: activities/guessnumber/guessnumber.js:64
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Your number is too low"
 msgctxt "guessnumber|"
 msgid "Your number is too low."
-msgstr "Tvé číslo je příliš nízké"
+msgstr "Tvé číslo je příliš nízké."
 
 #: activities/guessnumber/guessnumber.js:69
 msgctxt "guessnumber|"
@@ -16071,24 +16048,20 @@ msgid "You found the number!"
 msgstr "Máš správné číslo!"
 
 #: activities/guessnumber/Guessnumber.qml:116
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
+#, qt-format
 msgctxt "Guessnumber|"
 msgid "Guess a number between %1 and %2."
-msgstr "Uhodni číslo mezi 1 a %1."
+msgstr "Uhodni číslo mezi %1 a %2."
 
 #: activities/guessnumber/resource/1/Data.qml:16
 #: activities/guessnumber/resource/2/Data.qml:14
 #: activities/guessnumber/resource/3/Data.qml:16
 #: activities/guessnumber/resource/4/Data.qml:16
 #: activities/guessnumber/resource/5/Data.qml:16
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
+#, qt-format
 msgctxt "Data|"
 msgid "Guess a number between %1 and %2."
-msgstr "Uhodni číslo mezi 1 a %1."
+msgstr "Uhodni číslo mezi %1 a %2."
 
 #: activities/hangman/ActivityConfig.qml:42
 msgctxt "ActivityConfig|"
@@ -29082,6 +29055,13 @@ msgstr "Přeskočit"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Spustit"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "Bisons live on the plains of North America and were hunted by the Native "
+#~ "Americans for food."
+#~ msgstr ""
+#~ "Bizoni žijí na pláních v Severní Americe a domorodci je lovili kvůli masu."
 
 #~ msgctxt "Data|"
 #~ msgid "Enumerate up to 2 fruit."

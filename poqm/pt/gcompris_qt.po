@@ -10720,10 +10720,10 @@ msgstr "Bisonte"
 msgctxt "board1|"
 msgid ""
 "Bisons live on the plains of North America and were hunted by the Native "
-"Americans for food."
+"Americans for food. However, their near-extinction is due to the fact that "
+"the colonizers massacred them for sport and to clear land, rather than to "
+"hunting by indigenous peoples."
 msgstr ""
-"Os bisontes vivem nos planaltos da América do Norte e foram caçados pelos "
-"Nativos Americanos para comer."
 
 #: activities/explore_world_animals/resource/board/board1.qml:63
 #: activities/explore_world_animals/resource/board/board1.qml:66
@@ -31472,6 +31472,14 @@ msgstr "Ignorar"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Iniciar"
+
+#~ msgctxt "board1|"
+#~ msgid ""
+#~ "Bisons live on the plains of North America and were hunted by the Native "
+#~ "Americans for food."
+#~ msgstr ""
+#~ "Os bisontes vivem nos planaltos da América do Norte e foram caçados pelos "
+#~ "Nativos Americanos para comer."
 
 #~ msgctxt "Data|"
 #~ msgid "Enumerate up to 2 fruit."
