@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-06-18 14:05+0200\n"
+"PO-Revision-Date: 2026-06-20 12:50+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -9630,6 +9630,10 @@ msgid ""
 "the colonizers massacred them for sport and to clear land, rather than to "
 "hunting by indigenous peoples."
 msgstr ""
+"Bizons leven op de vlakten van Noord-Amerika en werden door de inheemse "
+"Amerikanen bejaagd voor voedsel. Hun bijna-uitsterven is echter te wijten "
+"aan het feit dat de kolonisten ze massaal afslachtten voor de sport en om "
+"land vrij te maken, en niet aan de jacht door de inheemse bevolking."
 
 #: activities/explore_world_animals/resource/board/board1.qml:63
 #: activities/explore_world_animals/resource/board/board1.qml:66

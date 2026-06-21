@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-06-19 11:36+0200\n"
+"PO-Revision-Date: 2026-06-20 11:41+0200\n"
 "Last-Translator: Libor Filípek <libor.filipek@gmail.com>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -9457,6 +9457,10 @@ msgid ""
 "the colonizers massacred them for sport and to clear land, rather than to "
 "hunting by indigenous peoples."
 msgstr ""
+"Bizoni žijí na pláních Severní Ameriky a domorodí Američané je lovili jako "
+"zdroj potravy. Jejich téměř úplné vyhynutí však není způsobeno lovem "
+"domorodých obyvatel, ale tím, že je kolonizátoři masakrovali pro zábavu a za "
+"účelem získání půdy."
 
 #: activities/explore_world_animals/resource/board/board1.qml:63
 #: activities/explore_world_animals/resource/board/board1.qml:66
