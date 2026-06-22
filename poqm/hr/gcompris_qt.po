@@ -12,7 +12,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -5678,33 +5678,27 @@ msgid "2 decimal places between 0 and 99.99."
 msgstr "2 decimalna mjesta između 0 i 99,99."
 
 #: activities/compass/ActivityConfig.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Free Mode"
 msgctxt "ActivityConfig|"
 msgid "Template Mode"
-msgstr "Slobodan način rada"
+msgstr "Način rada predloška"
 
 #. Activity title
 #: activities/compass/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Compass"
-msgstr ""
+msgstr "Šestar"
 
 #. Help title
 #: activities/compass/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Use the compass to draw."
-msgstr ""
+msgstr "Koristi šestar za crtanje."
 
 #. Help goal
 #: activities/compass/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to draw letters in a fun way."
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw circles and arcs with a compass."
-msgstr "Nauči pisati slova na zabavan način."
+msgstr "Naučite crtati krugove i lukove pomoću šestara."
 
 #. Help manual
 #: activities/compass/ActivityInfo.qml:23
@@ -5714,34 +5708,30 @@ msgid ""
 "inspiration from. In free mode, you can draw freely and adjust the canvas "
 "size and grid spacing as you want from the compass settings menu."
 msgstr ""
+"U načinu predloška, svaka razina sadrži predložak za repliciranje ili za "
+"inspiraciju. U slobodnom načinu možete slobodno crtati i podešavati veličinu "
+"platna i razmak mreže kako želite iz izbornika postavki šestara."
 
 #: activities/compass/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "<br><b>Drawing with the compass:</b>"
-msgstr ""
+msgstr "<br><b>Crtanje šestarom:</b>"
 
 #: activities/compass/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Move the compass by dragging the leg without the pen."
-msgstr ""
+msgstr "Pomakni šestar povlačenjem kraka bez olovke."
 
 #: activities/compass/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Complete the puzzle by dragging each piece on the side to the matching "
-#| "space in the puzzle."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move the pen by dragging the other leg or the circle around the pen tip."
-msgstr ""
-"Dovrši slagalicu povlačenjem svakog dijela sa strane na odgovarajući prostor "
-"u slagalici."
+msgstr "Pomakni olovku povlačeći drugi krak ili krug oko vrha olovke."
 
 #: activities/compass/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Rotate and draw by dragging the pen with the left mouse button."
-msgstr ""
+msgstr "Rotiraj i crtaj povlačenjem olovke lijevim gumbom miša."
 
 #: activities/compass/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -5749,6 +5739,8 @@ msgid ""
 "Rotate without drawing by dragging the compass hinge, or by dragging the pen "
 "with the right mouse button."
 msgstr ""
+"Rotiraj bez crtanja povlačenjem šarke šestara ili povlačenjem olovke desnim "
+"gumbom miša."
 
 #: activities/compass/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -5756,14 +5748,13 @@ msgid ""
 "The snap to grid setting can be temporarily inverted by pressing the Control "
 "key."
 msgstr ""
+"Postavka Pričvrsti na mrežu može se privremeno invertirati pritiskom na "
+"tipku Control."
 
 #: activities/compass/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "<b>Diving planes</b>"
 msgctxt "ActivityInfo|"
 msgid "<b>Templates:</b>"
-msgstr "<b>Ronilački avioni</b>"
+msgstr "<b>Predlošci:</b>"
 
 #: activities/compass/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -5771,6 +5762,8 @@ msgid ""
 "Each level in template mode presents a template to replicate or to get "
 "inspiration from."
 msgstr ""
+"Svaka razina u načinu predloška nudi predložak za repliciranje ili za "
+"inspiraciju."
 
 #: activities/compass/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -5778,6 +5771,8 @@ msgid ""
 "Each template is divided into steps which can be scrolled through using the "
 "arrows."
 msgstr ""
+"Svaki predložak podijeljen je u korake kroz koje se može pomicati pomoću "
+"strelica."
 
 #: activities/compass/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
@@ -5785,14 +5780,13 @@ msgid ""
 "Each step shows where to place the tip of the compass and the circle or arc "
 "to be drawn."
 msgstr ""
+"Svaki korak pokazuje gdje postaviti vrh šestara i krug ili luk koji treba "
+"nacrtati."
 
 #: activities/compass/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid "You can change the rheostat value by dragging its slider."
 msgctxt "ActivityInfo|"
 msgid "You can change the position of the template by clicking on its corners."
-msgstr "Vrijednost reostata možeš promijeniti povlačenjem njegovog klizača."
+msgstr "Možeš promijeniti položaj predloška klikom na njegove kutove."
 
 #: activities/compass/ActivityInfo.qml:36
 #: activities/drawing_wheels/ActivityInfo.qml:29
@@ -5825,80 +5819,59 @@ msgstr "Ctrl + O: učitaj sliku"
 #: activities/compass/ActivityInfo.qml:40
 msgctxt "ActivityInfo|"
 msgid "Ctrl: invert snap to grid while it is pressed"
-msgstr ""
+msgstr "Ctrl: invertiraj pričvršćivanje na mrežu dok je pritisnuto"
 
 #: activities/compass/ActivityInfo.qml:41
 msgctxt "ActivityInfo|"
 msgid "P: open the pen panel"
-msgstr ""
+msgstr "P: otvori panel olovke"
 
 #: activities/compass/ActivityInfo.qml:42
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Down arrow: select previous item"
 msgctxt "ActivityInfo|"
 msgid "Left arrow: previous template step"
-msgstr "Strelica prema dolje: odabir prethodne stavke"
+msgstr "Lijeva strelica: prethodni korak predloška"
 
 #: activities/compass/ActivityInfo.qml:43
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Right arrow: right hand answer"
 msgctxt "ActivityInfo|"
 msgid "Right arrow: next template step"
-msgstr "Desna strelica: desna ruka kao odgovor"
+msgstr "Desna strelica: sljedeći korak predloška"
 
 #: activities/compass/ActivityInfo.qml:44
 msgctxt "ActivityInfo|"
 msgid "Tab: toggle the template visibility"
-msgstr ""
+msgstr "Tab: uključi vidljivost predloška"
 
 #: activities/compass/ActivityInfo.qml:45
 msgctxt "ActivityInfo|"
 msgid "Space: toggle the compass and grid visibility"
-msgstr ""
+msgstr "Razmaknica: izmjenjivanje prikaza šestara i mreže"
 
 #: activities/compass/compass.js:103
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Free Mode"
 msgctxt "compass|"
 msgid "Free mode"
-msgstr "Slobodan način rada"
+msgstr "Slobodni način rada"
 
 #: activities/compass/Compass.qml:439
-#, fuzzy
-#| msgctxt "IntroMessage|"
-#| msgid "Previous"
 msgctxt "Compass|"
 msgid "Previous step"
-msgstr "Prethodno"
+msgstr "Prethodni korak"
 
 #: activities/compass/Compass.qml:464
-#, fuzzy
-#| msgctxt "IntroMessage|"
-#| msgid "Next"
 msgctxt "Compass|"
 msgid "Next step"
-msgstr "Sljedeće"
+msgstr "Sljedeči korak"
 
 #: activities/compass/Compass.qml:477
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "All the words"
 msgctxt "Compass|"
 msgid "All steps"
-msgstr "Sve riječi"
+msgstr "Svi koraci"
 
 #: activities/compass/Compass.qml:477
 msgctxt "Compass|"
 msgid "Current step"
-msgstr ""
+msgstr "Trenutni korak"
 
 #: activities/compass/Compass.qml:549
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "File menu"
 msgctxt "Compass|"
 msgid "File menu"
 msgstr "Datoteka"
@@ -5906,292 +5879,214 @@ msgstr "Datoteka"
 #: activities/compass/Compass.qml:558
 msgctxt "Compass|"
 msgid "Compass and grid settings"
-msgstr ""
+msgstr "Postavke šestara i mreže"
 
 #: activities/compass/Compass.qml:567
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "%1 settings"
 msgctxt "Compass|"
 msgid "Pen settings"
-msgstr "%1 postavke"
+msgstr "Postavke olovke"
 
 #: activities/compass/Compass.qml:588
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Undo"
 msgctxt "Compass|"
 msgid "Undo"
 msgstr "Poništi"
 
 #: activities/compass/Compass.qml:598
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Redo"
 msgctxt "Compass|"
 msgid "Redo"
-msgstr "Ponovi"
+msgstr "Vrati"
 
 #: activities/compass/Compass.qml:612
 msgctxt "Compass|"
 msgid "Show template"
-msgstr ""
+msgstr "Prikaži predložak"
 
 #: activities/compass/Compass.qml:612
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Golden Temple"
 msgctxt "Compass|"
 msgid "Hide template"
-msgstr "Zlatni hram"
+msgstr "Sakrij predložak"
 
 #: activities/compass/Compass.qml:624
 msgctxt "Compass|"
 msgid "Show compass and grid"
-msgstr ""
+msgstr "Prikaži šestar i mrežu"
 
 #: activities/compass/Compass.qml:624
 msgctxt "Compass|"
 msgid "Hide compass and grid"
-msgstr ""
+msgstr "Sakrij šestar i mrežu"
 
 #: activities/compass/Compass.qml:775
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Save your image"
 msgctxt "Compass|"
 msgid "Save your image"
 msgstr "Spremi crtež"
 
 #: activities/compass/Compass.qml:790
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Open an image"
 msgctxt "Compass|"
 msgid "Open an image"
 msgstr "Učitaj crtež"
 
 #: activities/compass/Compass.qml:813
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Create a new image"
 msgctxt "Compass|"
 msgid "Create a new image"
 msgstr "Stvori novi crtež"
 
 #: activities/compass/Compass.qml:832
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Background color"
 msgctxt "Compass|"
 msgid "Background color"
 msgstr "Boja pozadine"
 
 #: activities/compass/Compass.qml:892
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Pen size"
 msgctxt "Compass|"
 msgid "Canvas size"
-msgstr "Veličina olovke"
+msgstr "Veličina platna"
 
 #: activities/compass/Compass.qml:962
 msgctxt "Compass|"
 msgid "Grid spacing"
-msgstr ""
+msgstr "Razmak mreže"
 
 #: activities/compass/Compass.qml:1013
 msgctxt "Compass|"
 msgid "Snap to grid"
-msgstr ""
+msgstr "Pričvrsti na mrežu"
 
 #: activities/compass/Compass.qml:1039
 msgctxt "Compass|"
 msgid "Show grid"
-msgstr ""
+msgstr "Prikaži mrežu"
 
 #: activities/compass/Compass.qml:1103
-#, fuzzy
-#| msgctxt "category_colors|"
-#| msgid "Colors"
 msgctxt "Compass|"
 msgid "Color"
-msgstr "Boje"
+msgstr "Boja"
 
 #: activities/compass/Compass.qml:1149
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Opacity"
 msgctxt "Compass|"
 msgid "Opacity"
 msgstr "Neprozirnost"
 
 #: activities/compass/Compass.qml:1193
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Pen size"
 msgctxt "Compass|"
 msgid " Pen size"
-msgstr "Veličina olovke"
+msgstr " Veličina olovke"
 
 #: activities/compass/Compass.qml:1253
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "You did not save this image. Do you want to close this activity?"
 msgctxt "Compass|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Nisi spremio crtež. Želiš li uistinu zatvoriti ovu aktivnost?"
 
 #: activities/compass/Compass.qml:1254
-#, fuzzy
-#| msgctxt "DrawingWheels|"
-#| msgid "Do you want to erase this image?"
 msgctxt "Compass|"
 msgid "Do you want to erase this image?"
 msgstr "Želiš li obrisati crtež?"
 
 #: activities/compass/Compass.qml:1255
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Compass|"
 msgid "Yes"
 msgstr "Da"
 
 #: activities/compass/Compass.qml:1256
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Compass|"
 msgid "No"
 msgstr "Ne"
 
 #: activities/compass/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Third largest"
 msgctxt "Data|"
 msgid "The target"
-msgstr "Third largest"
+msgstr "Cilj"
 
 #: activities/compass/resource/10/Data.qml:13
-#, fuzzy
-#| msgctxt "board8|"
-#| msgid "The Pantheon"
 msgctxt "Data|"
 msgid "The peony"
-msgstr "Panteon"
+msgstr "Božur"
 
 #: activities/compass/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The same"
 msgctxt "Data|"
 msgid "The snail"
-msgstr "Ista"
+msgstr "Puž"
 
 #: activities/compass/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The same"
 msgctxt "Data|"
 msgid "The rose"
-msgstr "Ista"
+msgstr "Ruža"
 
 #: activities/compass/resource/13/Data.qml:13
 msgctxt "Data|"
 msgid "The swirl"
-msgstr ""
+msgstr "Vrtlog"
 
 #: activities/compass/resource/14/Data.qml:13
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The same"
 msgctxt "Data|"
 msgid "The spiral"
-msgstr "Ista"
+msgstr "Spirala"
 
 #: activities/compass/resource/15/Data.qml:13
 msgctxt "Data|"
 msgid "The twist"
-msgstr ""
+msgstr "Preokret"
 
 #: activities/compass/resource/16/Data.qml:15
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The same"
 msgctxt "Data|"
 msgid "The face"
-msgstr "Ista"
+msgstr "Lice"
 
 #: activities/compass/resource/17/Data.qml:15
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The same"
 msgctxt "Data|"
 msgid "The bear"
-msgstr "Ista"
+msgstr "Medvjed"
 
 #: activities/compass/resource/18/Data.qml:14
 msgctxt "Data|"
 msgid "The lion"
-msgstr ""
+msgstr "Lav"
 
 #. The animal
 #: activities/compass/resource/19/Data.qml:16
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "house"
 msgctxt "Data|"
 msgid "The mouse"
-msgstr "kuća"
+msgstr "Miš"
 
 #: activities/compass/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The same"
 msgctxt "Data|"
 msgid "The shell"
-msgstr "Ista"
+msgstr "Školjka"
 
 #: activities/compass/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "The lotus flower"
-msgstr ""
+msgstr "Cvijet lotosa"
 
 #: activities/compass/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "The carpet of flowers"
-msgstr ""
+msgstr "Tepih cvijeća"
 
 #: activities/compass/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "The clover"
-msgstr ""
+msgstr "Djetelina"
 
 #: activities/compass/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "board8|"
-#| msgid "The Pantheon"
 msgctxt "Data|"
 msgid "The balloon"
-msgstr "Panteon"
+msgstr "Balon"
 
 #: activities/compass/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "The daisy"
-msgstr ""
+msgstr "Tratinčica"
 
 #. The flower
 #: activities/compass/resource/8/Data.qml:14
 msgctxt "Data|"
 msgid "The periwinkle"
-msgstr ""
+msgstr "Mali zimzelen"
 
 #: activities/compass/resource/9/Data.qml:13
 msgctxt "Data|"
 msgid "The soccer ball"
-msgstr ""
+msgstr "Nogometna lopta"
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -7206,16 +7101,6 @@ msgstr "Otkrij hipotrohoide i koristi ih kao digitalne alate za crtanje."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Make beautiful drawings by rolling the gear in the cogwheel with the "
-#| "chosen pen. Select a wheel size, a gear size, pen's settings and color "
-#| "from the popup panels, and press the play button to roll the gear. You "
-#| "can use the file menu to save your image, open a previously saved image, "
-#| "or create a new image with selected background color. Saving an image "
-#| "will save it in an SVG file (vector format), along with a PNG file (pixel "
-#| "format). Only the SVG file can be opened again from the activity."
 msgctxt "ActivityInfo|"
 msgid ""
 "Make beautiful drawings by rolling the gear in the cogwheel with the chosen "
@@ -7230,12 +7115,15 @@ msgid ""
 "opened again from the activity."
 msgstr ""
 "Napravi prekrasne crteže tako da pomoću odabrane olovke okrećeš zupčanik "
-"postavljen u unutrašnjost drugog zupčanika. Odaberi veličinu svakog "
-"zupčanika, olovku i njezinu boju, te pritisni tipku za pokretanje zupčanika. "
-"Možeš koristiti izbornik Datoteka za spremanje crteža, učitavanje "
-"spremljenog crteža ili stvaranje novog crteža s odabranom bojom pozadine. "
-"Crtež će se spremiti u SVG datoteku (vektorski format) i PNG datoteku "
-"(piksel format). Samo SVG datoteka može se ponovno učitati u ovu aktivnost."
+"unutar kotača. Odaberi veličinu kotača, veličinu zupčanika, postavke olovke "
+"i boju iz skočnih panela, te pritisni tipku za reprodukciju za kotrljanje "
+"zupčanika. Na prvoj razini dostupne su samo određene kombinacije kotača i "
+"zupčanika za početak. Na drugoj razini dostupne su sve kombinacije veličina "
+"za veću kreativnu slobodu. Možeš koristiti izbornik datoteka za spremanje "
+"slike, otvaranje prethodno spremljene slike ili stvaranje nove slike s "
+"odabranom bojom pozadine. Spremanje slike spremit će je u SVG datoteku "
+"(vektorski format), zajedno s PNG datotekom (piksel format). Samo SVG "
+"datoteka može se ponovno otvoriti iz aktivnosti."
 
 #: activities/drawing_wheels/DrawingWheels.qml:406
 msgctxt "DrawingWheels|"
@@ -7497,38 +7385,30 @@ msgstr ""
 "'gumb U redu')"
 
 #: activities/enumerate/Enumerate.qml:65
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Enumerate up to 4 fruit."
+#, qt-format
 msgctxt "Enumerate|"
 msgid "Enumerate up to %1 fruits."
-msgstr "Nabroji do 4 voćke."
+msgstr "Nabroji do %1 voća."
 
 #: activities/enumerate/Enumerate.qml:66
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
+#, qt-format
 msgctxt "Enumerate|"
 msgid "Group %1 types of fruit and enumerate each group (%2 fruits max)."
-msgstr "Grupiraj 2 vrste voća i nabroji svaku skupinu (najviše 5 voća)."
+msgstr "Grupiraj %1 vrste voća i nabroji svaku skupinu (naviše %2 voća)."
 
 #: activities/enumerate/resource/1/Data.qml:13
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Enumerate up to 4 fruit."
+#, qt-format
 msgctxt "Data|"
 msgid "Enumerate up to %1 fruits."
-msgstr "Nabroji do 4 voćke."
+msgstr "Nabroji do %1 voća."
 
 #: activities/enumerate/resource/2/Data.qml:13
 #: activities/enumerate/resource/3/Data.qml:13
 #: activities/enumerate/resource/4/Data.qml:13
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
+#, qt-format
 msgctxt "Data|"
 msgid "Group %1 types of fruit and enumerate each group (%2 fruits max)."
-msgstr "Grupiraj 2 vrste voća i nabroji svaku skupinu (najviše 5 voća)."
+msgstr "Grupiraj %1 vrste voća i nabroji svaku skupinu (naviše %2 voća)."
 
 #. Activity title
 #: activities/erase/ActivityInfo.qml:15
@@ -9624,6 +9504,10 @@ msgid ""
 "the colonizers massacred them for sport and to clear land, rather than to "
 "hunting by indigenous peoples."
 msgstr ""
+"Bizoni žive na ravnicama Sjeverne Amerike i lovili su ih domorodački "
+"Amerikanci radi hrane. Međutim, njihovo gotovo istrebljenje posljedica je "
+"činjenice da su ih kolonizatori masakrirali radi zabave i krčenja zemlje, a "
+"ne zbog lova od strane autohtonih naroda."
 
 #: activities/explore_world_animals/resource/board/board1.qml:63
 #: activities/explore_world_animals/resource/board/board1.qml:66
@@ -16175,16 +16059,6 @@ msgstr "Vježbaj uspoređivanje brojeva."
 
 #. Help manual
 #: activities/guessnumber/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Read the instructions that give you the range of the number to find. "
-#| "Enter a number in the top right entry box. You will be told if your "
-#| "number is higher or lower than the one to find. Then try again until you "
-#| "find the correct answer. The distance between Tux and the right side of "
-#| "the screen represents how far you are from the number to find. If Tux is "
-#| "over or under the vertical center of the screen, it means your number is "
-#| "over or under the number to find."
 msgctxt "ActivityInfo|"
 msgid ""
 "Read the instructions that give you the range of the number to find. Enter a "
@@ -16196,13 +16070,13 @@ msgid ""
 "of the screen, it means your number is higher or lower than the number to "
 "find."
 msgstr ""
-"Pročitaj upute koje ti daju raspon broja koji trebaš pronaći. Unesi broj u "
-"gornji desni okvir za unos. Biti će ti rečeno je li traženi broj veći ili "
-"niži od onog koji treba pronaći. Zatim pokušaj ponovno dok ne pronađeš točan "
-"odgovor. Udaljenost između Tuxa i desne strane zaslona predstavlja koliko si "
-"udaljen od broja koji treba pronaći. Ako je Tux iznad ili ispod okomitog "
-"središta zaslona, to znači da je tvoj broj iznad ili ispod broja koji treba "
-"pronaći."
+"Pročitaj upute koje ti daju raspon broja koje trebaš pronaći. Unesi broj u "
+"gornji desni okvir za ulaz i pritisnite gumb OK za potvrdu. Bit će ti rečeno "
+"je li tvoj broj veći ili manji od onog koji trebaš pronaći. Zatim pokušaj "
+"ponovno dok ne pronađete točan odgovor. Udaljenost između helikoptera i "
+"desne strane ekrana pokazuje koliko si daleko od broja koji treba pronaći. "
+"Ako je helikopter iznad ili ispod vertikalnog središta ekrana, to znači da "
+"je tvoj broj veći ili manji od broja koji treba pronaći."
 
 #: activities/guessnumber/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -16215,20 +16089,14 @@ msgid "Backspace: erase a number"
 msgstr "Backspace: brisanje broja"
 
 #: activities/guessnumber/guessnumber.js:61
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Your number is too high"
 msgctxt "guessnumber|"
 msgid "Your number is too high."
-msgstr "Tvoj broj je previsok"
+msgstr "Tvoj broj je previsok."
 
 #: activities/guessnumber/guessnumber.js:64
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Your number is too low"
 msgctxt "guessnumber|"
 msgid "Your number is too low."
-msgstr "Tvoj broj je prenizak"
+msgstr "Tvoj broj je prenizak."
 
 #: activities/guessnumber/guessnumber.js:69
 msgctxt "guessnumber|"
@@ -16236,24 +16104,20 @@ msgid "You found the number!"
 msgstr "Našao si broj!"
 
 #: activities/guessnumber/Guessnumber.qml:116
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
+#, qt-format
 msgctxt "Guessnumber|"
 msgid "Guess a number between %1 and %2."
-msgstr "Pogodi broj između 1 i %1."
+msgstr "Pogodi broj između %1 i %2."
 
 #: activities/guessnumber/resource/1/Data.qml:16
 #: activities/guessnumber/resource/2/Data.qml:14
 #: activities/guessnumber/resource/3/Data.qml:16
 #: activities/guessnumber/resource/4/Data.qml:16
 #: activities/guessnumber/resource/5/Data.qml:16
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
+#, qt-format
 msgctxt "Data|"
 msgid "Guess a number between %1 and %2."
-msgstr "Pogodi broj između 1 i %1."
+msgstr "Pogodi broj između %1 i %2."
 
 #: activities/hangman/ActivityConfig.qml:42
 msgctxt "ActivityConfig|"
@@ -16909,53 +16773,38 @@ msgid "Find the tuba"
 msgstr "Pronađi tubu"
 
 #: activities/keyboard_training/ActivityConfig.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw letters"
 msgctxt "ActivityConfig|"
 msgid "Uppercase letters"
-msgstr "Crtaj slova"
+msgstr "Velika slova"
 
 #: activities/keyboard_training/ActivityConfig.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw letters"
 msgctxt "ActivityConfig|"
 msgid "Lowercase letters"
-msgstr "Crtaj slova"
+msgstr "Mala slova"
 
 #. Activity title
 #: activities/keyboard_training/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Keyboard training."
 msgctxt "ActivityInfo|"
 msgid "Keyboard training"
-msgstr "Vježbanje korištenja tipkovnice (daktilografija)."
+msgstr "Vježbanje korištenja tipkovnice (daktilografija)"
 
 #. Help title
 #: activities/keyboard_training/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Read the score, and then play it on the keyboard."
 msgctxt "ActivityInfo|"
 msgid "Find the requested character and type it on the keyboard."
-msgstr "Pročitaj rezultat, a zatim ga odsviraj na tipkovnici."
+msgstr "Pronađi traženi znak i upiši ga putem tipkovnice."
 
 #. Help goal
 #: activities/keyboard_training/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to spell words."
 msgctxt "ActivityInfo|"
 msgid "Learn to type on a keyboard."
-msgstr "Naučite sricati riječi."
+msgstr "Nauči tipkati na tipkovnici."
 
 #. Help manual
 #: activities/keyboard_training/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "A character is displayed. Find it on the keyboard and type it."
-msgstr ""
+msgstr "Prikazuje se znak. Pronađi ga na tipkovnici i klikni na njega."
 
 #. Activity title
 #: activities/land_safe/ActivityInfo.qml:15
@@ -18397,12 +18246,10 @@ msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr "Izračunaj preostale zvijezde do 10000 s koeficijentima."
 
 #: activities/magic-hat-minus/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Calculate remaining stars up to 100 with coefficients."
 msgctxt "Data|"
 msgid "Calculate remaining stars up to 10, with 2 or 3 different star sets."
-msgstr "Izračunaj preostale zvijezde do 100 s koeficijentima."
+msgstr ""
+"Izračunaj preostale zvjezdice do 10, s 2 ili 3 različita skupa zvijezda."
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
 #: activities/magic-hat-minus/StarsBar.qml:36
@@ -18493,12 +18340,9 @@ msgid "Add stars up to 10000 with coefficients."
 msgstr "Dodaj do 1000 zvjezdica s koeficijentima."
 
 #: activities/magic-hat-plus/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 100 with coefficients."
 msgctxt "Data|"
 msgid "Add stars up to 10, with 2 or 3 different star sets."
-msgstr "Dodaj do 100 zvjezdica s koeficijentima."
+msgstr "Dodajte zvjezdice do 10, s 2 ili 3 različita seta zvjezdica."
 
 #. Activity title
 #: activities/maze/ActivityInfo.qml:15
@@ -20338,16 +20182,14 @@ msgstr ""
 "odabranog korisnika je netočna."
 
 #: activities/menu/Menu.qml:215
-#, fuzzy, qt-format
-#| msgctxt "Menu|"
-#| msgid ""
-#| "GCompris is connected to teacher's server, and the user is authenticated."
+#, qt-format
 msgctxt "Menu|"
 msgid ""
 "GCompris is connected to teacher's server, and the user is authenticated as "
 "%1."
 msgstr ""
-"GCompris je povezan s učiteljevim poslužiteljem ikorisnik je autentificiran."
+"GCompris je povezan s učiteljevim poslužiteljem i korisnik je autentificiran "
+"kao %1."
 
 #: activities/menu/Menu.qml:216
 msgctxt "Menu|"
@@ -22151,19 +21993,19 @@ msgstr "Kodiranje relativnog puta"
 #: activities/peg_solitaire/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
 msgid "Use the default starting hole"
-msgstr ""
+msgstr "Koristite zadanu početnu rupu"
 
 #. Activity title
 #: activities/peg_solitaire/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Peg solitaire"
-msgstr ""
+msgstr "Peg solitaire"
 
 #. Help title
 #: activities/peg_solitaire/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Remove all the pieces in the correct order until only one remains."
-msgstr ""
+msgstr "Ukloni sve dijelove u ispravnom redoslijedu dok ne ostane samo jedan."
 
 #. Help manual
 #: activities/peg_solitaire/ActivityInfo.qml:23
@@ -22178,36 +22020,38 @@ msgid ""
 "clicking on it. You can use the undo button to undo your last move, and the "
 "redo button to redo it."
 msgstr ""
+"Da bi pomaknuo figuru, drugu trebaš preskočiti u okomitom smjeru, u rupu "
+"dvije pozicije dalje. Preskočena figura uklanja se s ploče. Možeš kliknuti "
+"na pokretni dio, a zatim na njegovo odredište, ili ga povući i ispustiti do "
+"odredišta. Igra završava kada se više ne može pomaknuti nijedna figura, a "
+"pobjeđuje se ako ostane samo jedna figura. Ako opcija za korištenje zadane "
+"početne rupe nije odabrana, moraš odabrati prvi dio koji ćeš ukloniti klikom "
+"na njega. Možeš koristiti tipku za poništavanje da poništiš zadnji potez ili "
+"tipku za vraćanje poništenog poteza."
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:28
 msgctxt "peg_solitaire|"
 msgid "English board"
-msgstr ""
+msgstr "Engleska ploča"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:44
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "French Polynesia"
 msgctxt "peg_solitaire|"
 msgid "French board"
-msgstr "Francuska Polinezija"
+msgstr "Francuska ploča"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:61
 msgctxt "peg_solitaire|"
 msgid "32 holes diamond board"
-msgstr ""
+msgstr "Dijamantna ploča s 32 rupe"
 
 #. Board for the Peg solitaire game
 #: activities/peg_solitaire/peg_solitaire.js:79
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numerical order"
 msgctxt "peg_solitaire|"
 msgid "Asymmetrical board"
-msgstr "Redoslijed brojeva"
+msgstr "Asimetrična ploča"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -24022,33 +23866,21 @@ msgid "Numbers between %1 and %2."
 msgstr "Brojevi između %1 i %2."
 
 #: activities/reversecount/Reversecount.qml:81
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "Reversecount|"
 msgid "Dots"
-msgstr "Točkice"
+msgstr "Točke"
 
 #: activities/reversecount/Reversecount.qml:82
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Arabic numbers"
 msgctxt "Reversecount|"
 msgid "Arabic numbers"
 msgstr "Arapski brojevi"
 
 #: activities/reversecount/Reversecount.qml:83
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Roman numbers"
 msgctxt "Reversecount|"
 msgid "Roman numbers"
 msgstr "Rimski brojevi"
 
 #: activities/reversecount/Reversecount.qml:84
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Images"
 msgctxt "Reversecount|"
 msgid "Images"
 msgstr "Slike"
@@ -25702,33 +25534,21 @@ msgid "Type the number on the domino, from 0 to 9."
 msgstr "Upišite broj na dominu, od 0 do 9."
 
 #: activities/smallnumbers2/Smallnumbers2.qml:23
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "Smallnumbers2|"
 msgid "Dots"
-msgstr "Točkice"
+msgstr "Točke"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:24
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Arabic numbers"
 msgctxt "Smallnumbers2|"
 msgid "Arabic numbers"
 msgstr "Arapski brojevi"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:25
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Roman numbers"
 msgctxt "Smallnumbers2|"
 msgid "Roman numbers"
 msgstr "Rimski brojevi"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:26
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Images"
 msgctxt "Smallnumbers2|"
 msgid "Images"
 msgstr "Slike"
@@ -27364,12 +27184,9 @@ msgid "Maximum value: 500."
 msgstr "Najveća vrijednost: 500."
 
 #: activities/target/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Maximum value: 50000."
 msgctxt "Data|"
 msgid "Maximum value: 5000."
-msgstr "Najveća vrijednost: 50000."
+msgstr "Maksimalna vrijednost: 5000."
 
 #: activities/target/resource/5/Data.qml:14
 msgctxt "Data|"
@@ -28209,35 +28026,26 @@ msgid ""
 "You are currently in a sequence, going back to the menu will cancel it, do "
 "you confirm?"
 msgstr ""
+"Trenutno si u sekvenci, vraćanjem na izbornik ćeš ga otkazati, potvrđuješ li?"
 
 #: core/ActivityBase.qml:219
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "ActivityBase|"
 msgid "Yes"
 msgstr "Da"
 
 #: core/ActivityBase.qml:224
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "ActivityBase|"
 msgid "No"
 msgstr "Ne"
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to run a list of activities with specific datasets "
 "in sequence (--with-sequence sequence.json)"
 msgstr ""
-"Nova opcija naredbenog retka za popis svih aktivnosti i početak na određenoj"
+"Nova opcija naredbenog retka za pokretanje popisa aktivnosti s određenim "
+"skupovima podataka u nizu (--s-sekvencom sequence.json)"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:44 core/ChangeLog.qml:50
 #: core/ChangeLog.qml:56 core/ChangeLog.qml:65 core/ChangeLog.qml:71
@@ -29200,7 +29008,7 @@ msgstr ""
 #: core/main.cpp:149
 msgctxt "QObject|"
 msgid "Start the sequence of activities passed in the json file."
-msgstr ""
+msgstr "Započni slijed aktivnosti prenesenih u json datoteci."
 
 #: core/main.cpp:153
 msgctxt "QObject|"
@@ -29311,6 +29119,8 @@ msgid ""
 "The following activities do not have any active datasets! All of their "
 "datasets will be reactivated."
 msgstr ""
+"Sljedeće aktivnosti nemaju aktivne skupove podataka! Svi njihovi skupovi "
+"podataka bit će ponovno aktivirani."
 
 #: core/main.qml:550
 #, qt-format

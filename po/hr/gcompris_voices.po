@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-04 00:40+0000\n"
-"PO-Revision-Date: 2025-12-25 11:16+0100\n"
+"PO-Revision-Date: 2026-06-21 20:50+0200\n"
 "Last-Translator: Igor Dobrača <igor.dobraca@skole.hr>\n"
 "Language-Team: Croatian <kde-i18n-doc@kde.org>\n"
 "Language: hr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
 #: activities/adjacent_numbers/ActivityInfo.qml:17
@@ -335,10 +335,9 @@ msgstr "Za svaki par brojeva na popisu odaberi ispravan znak za usporedbu."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "compass"
 #: activities/compass/ActivityInfo.qml:17
-#, fuzzy, kde-format
-#| msgid "Use the tools to draw images."
+#, kde-format
 msgid "Use the compass to draw."
-msgstr "Koristi alate za crtanje slika."
+msgstr "Koristi šestar za crtanje."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
 #: activities/crane/ActivityInfo.qml:23
@@ -667,7 +666,7 @@ msgstr "Klikni na ispravan glazbeni instrument."
 #: activities/keyboard_training/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the requested character and type it on the keyboard."
-msgstr ""
+msgstr "Pronađi traženi znak i upiši ga putem tipkovnice."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "land_safe"
 #: activities/land_safe/ActivityInfo.qml:18
@@ -1058,7 +1057,7 @@ msgstr "Koristi strelice za pomicanje Tuxa po stazi i dođi do cilja."
 #: activities/peg_solitaire/ActivityInfo.qml:17
 #, kde-format
 msgid "Remove all the pieces in the correct order until only one remains."
-msgstr ""
+msgstr "Ukloni sve dijelove u ispravnom redoslijedu dok ne ostane samo jedan."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "penalty"
 #: activities/penalty/ActivityInfo.qml:18

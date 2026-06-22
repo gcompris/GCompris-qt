@@ -1,9 +1,10 @@
+# Igor Dobrača <igor.dobraca@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_teachers\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: Igor Dobrača <igor.dobraca@skole.hr>\n"
+"PO-Revision-Date: 2026-06-21 20:40+0200\n"
+"Last-Translator: Igor Dobrača <igor.dobraca@gmail.com>\n"
 "Language-Team: Croatian <kde-i18n-doc@kde.org>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
@@ -12,7 +13,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
 #: server/activities/binary_bulb/ActivityEditor.qml:12
@@ -765,12 +766,12 @@ msgstr "Vrsta grafikona"
 #: server/activities/gletters/GlettersDataDisplay.qml:36
 msgctxt "GlettersDataDisplay|"
 msgid "Domino mode:"
-msgstr ""
+msgstr "Domino način:"
 
 #: server/activities/gletters/GlettersDataDisplay.qml:66
 msgctxt "GlettersDataDisplay|"
 msgid "Visible items:"
-msgstr ""
+msgstr "Vidljive stavke:"
 
 #: server/activities/gletters/GlettersDataDisplay.qml:95
 #, fuzzy
@@ -783,7 +784,7 @@ msgstr "Očekivano:"
 #: server/activities/gletters/GlettersDataDisplay.qml:121
 msgctxt "GlettersDataDisplay|"
 msgid "Missed item:"
-msgstr ""
+msgstr "Nedostajuće stavke:"
 
 #. %1 is number of hints displayed. Example: "Hints: 1"
 #: server/activities/guess24/Guess24DataDisplay.qml:79
@@ -796,7 +797,7 @@ msgstr "Savjeti: %1"
 #, qt-format
 msgctxt "GuessnumberDataDisplay|"
 msgid "Number between %1 and %2."
-msgstr ""
+msgstr "Brojevi između %1 i %2."
 
 #: server/activities/guessnumber/GuessnumberDataDisplay.qml:50
 #, fuzzy
@@ -809,7 +810,7 @@ msgstr "Broj krugova"
 #: server/activities/guessnumber/GuessnumberDataDisplay.qml:77
 msgctxt "GuessnumberDataDisplay|"
 msgid "Steps:"
-msgstr ""
+msgstr "Koraci:"
 
 #: server/activities/guessnumber/GuessnumberEditor.qml:27
 #, fuzzy
@@ -1134,7 +1135,7 @@ msgstr "Pravila za stvaranje valjanog skupa podataka:"
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:31
 msgctxt "MagicHatEditor|"
 msgid "If \"Use coefficients\" is not checked:"
-msgstr ""
+msgstr "Ako \"Koristi koeficijente\" nije označeno:"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:33
 #, qt-format
@@ -1171,6 +1172,8 @@ msgid ""
 "If \"Maximum number of stars\" for a row is 0, this row will be empty and "
 "hidden for both operands."
 msgstr ""
+"Ako je \"Maksimalni broj zvjezdica\" za redak 0, ovaj će redak biti prazan i "
+"skriven za oba operanda."
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:44
 msgctxt "MagicHatEditor|"
