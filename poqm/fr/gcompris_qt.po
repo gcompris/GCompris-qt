@@ -9899,6 +9899,10 @@ msgid ""
 "the colonizers massacred them for sport and to clear land, rather than to "
 "hunting by indigenous peoples."
 msgstr ""
+"Les bisons vivent dans les plaines de l'Amérique du Nord et ont été chassés "
+"par les peuples autochtones pour se nourrir. Cependant, leur quasi-"
+"extinction est liée à leur massacre par les colons pour récupérer les "
+"terres, plutôt qu'aux peuples autochtones."
 
 #: activities/explore_world_animals/resource/board/board1.qml:63
 #: activities/explore_world_animals/resource/board/board1.qml:66
