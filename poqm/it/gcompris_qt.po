@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2026-05-23 08:04+0200\n"
+"PO-Revision-Date: 2026-06-21 19:21+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 26.04.1\n"
+"X-Generator: Lokalize 26.04.2\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -7553,38 +7553,32 @@ msgstr ""
 "impostata su ««pulsante OK»)"
 
 #: activities/enumerate/Enumerate.qml:65
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Enumerate up to 4 fruit."
+#, qt-format
 msgctxt "Enumerate|"
 msgid "Enumerate up to %1 fruits."
-msgstr "Enumera fino a 4 frutti."
+msgstr "Enumera fino a %1 frutti."
 
 #: activities/enumerate/Enumerate.qml:66
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
+#, qt-format
 msgctxt "Enumerate|"
 msgid "Group %1 types of fruit and enumerate each group (%2 fruits max)."
-msgstr "Raggruppa 2 tipi di frutta ed enumera ogni gruppo (massimo 5 frutti)."
+msgstr ""
+"Raggruppa %1 tipi di frutta ed enumera ogni gruppo (massimo %2 frutti)."
 
 #: activities/enumerate/resource/1/Data.qml:13
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Enumerate up to 4 fruit."
+#, qt-format
 msgctxt "Data|"
 msgid "Enumerate up to %1 fruits."
-msgstr "Enumera fino a 4 frutti."
+msgstr "Enumera fino a %1 frutti."
 
 #: activities/enumerate/resource/2/Data.qml:13
 #: activities/enumerate/resource/3/Data.qml:13
 #: activities/enumerate/resource/4/Data.qml:13
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
+#, qt-format
 msgctxt "Data|"
 msgid "Group %1 types of fruit and enumerate each group (%2 fruits max)."
-msgstr "Raggruppa 2 tipi di frutta ed enumera ogni gruppo (massimo 5 frutti)."
+msgstr ""
+"Raggruppa %1 tipi di frutta ed enumera ciascun gruppo (massimo %2 frutti)."
 
 #. Activity title
 #: activities/erase/ActivityInfo.qml:15
@@ -9732,6 +9726,10 @@ msgid ""
 "the colonizers massacred them for sport and to clear land, rather than to "
 "hunting by indigenous peoples."
 msgstr ""
+"I bisonti vivono nelle pianure del Nord America e venivano cacciati dai "
+"nativi americani per nutrirsi. Tuttavia, la loro quasi estinzione è dovuta "
+"al fatto che i colonizzatori li massacrarono per sport e per bonificare i "
+"terreni, piuttosto che alla caccia da parte delle popolazioni indigene."
 
 #: activities/explore_world_animals/resource/board/board1.qml:63
 #: activities/explore_world_animals/resource/board/board1.qml:66
@@ -16332,16 +16330,6 @@ msgstr "Esercitati a confrontare i numeri."
 
 #. Help manual
 #: activities/guessnumber/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Read the instructions that give you the range of the number to find. "
-#| "Enter a number in the top right entry box. You will be told if your "
-#| "number is higher or lower than the one to find. Then try again until you "
-#| "find the correct answer. The distance between Tux and the right side of "
-#| "the screen represents how far you are from the number to find. If Tux is "
-#| "over or under the vertical center of the screen, it means your number is "
-#| "over or under the number to find."
 msgctxt "ActivityInfo|"
 msgid ""
 "Read the instructions that give you the range of the number to find. Enter a "
@@ -16353,13 +16341,14 @@ msgid ""
 "of the screen, it means your number is higher or lower than the number to "
 "find."
 msgstr ""
-"Leggi le istruzioni che ti forniscono l'intervallo del numero da trovare. "
-"Digita un numero nel riquadro in alto a destra. Ti sarà chiesto se il numero "
-"è più alto o più basso di quello da trovare. Poi prova ancora fino a trovare "
-"la risposta corretta. La distanza tra Tux e il lato destro dello schermo "
-"rappresenta quanto sei lontano dal numero da trovare. Se Tux è sopra o sotto "
-"il centro verticale dello schermo, significa che il tuo numero è sopra o "
-"sotto il numero  da trovare."
+"Leggi le istruzioni che indicano l'intervallo del numero da trovare. "
+"Inserisci un numero nella casella in alto a destra e premi il pulsante OK "
+"per confermarlo. Ti sarà comunicato se il tuo numero è maggiore o minore di "
+"quello da trovare. Quindi riprova finché non trovi la risposta corretta. La "
+"distanza tra l'elicottero e il lato destro dello schermo rappresenta la "
+"distanza dal numero da trovare. Se l'elicottero si trova sopra o sotto il "
+"centro verticale dello schermo, significa che il tuo numero è maggiore o "
+"minore del numero da trovare."
 
 #: activities/guessnumber/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -16372,20 +16361,14 @@ msgid "Backspace: erase a number"
 msgstr "Backspace: cancella un numero"
 
 #: activities/guessnumber/guessnumber.js:61
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Your number is too high"
 msgctxt "guessnumber|"
 msgid "Your number is too high."
-msgstr "Il numero è troppo alto"
+msgstr "Il numero è troppo alto."
 
 #: activities/guessnumber/guessnumber.js:64
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Your number is too low"
 msgctxt "guessnumber|"
 msgid "Your number is too low."
-msgstr "Il numero è troppo basso"
+msgstr "Il numero è troppo basso."
 
 #: activities/guessnumber/guessnumber.js:69
 msgctxt "guessnumber|"
@@ -16393,24 +16376,20 @@ msgid "You found the number!"
 msgstr "Hai trovato il numero!"
 
 #: activities/guessnumber/Guessnumber.qml:116
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
+#, qt-format
 msgctxt "Guessnumber|"
 msgid "Guess a number between %1 and %2."
-msgstr "Indovina un numero tra 1 e %1."
+msgstr "Indovina un numero tra %1 e %2."
 
 #: activities/guessnumber/resource/1/Data.qml:16
 #: activities/guessnumber/resource/2/Data.qml:14
 #: activities/guessnumber/resource/3/Data.qml:16
 #: activities/guessnumber/resource/4/Data.qml:16
 #: activities/guessnumber/resource/5/Data.qml:16
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
+#, qt-format
 msgctxt "Data|"
 msgid "Guess a number between %1 and %2."
-msgstr "Indovina un numero tra 1 e %1."
+msgstr "Indovina un numero tra %1 e %2."
 
 #: activities/hangman/ActivityConfig.qml:42
 msgctxt "ActivityConfig|"
