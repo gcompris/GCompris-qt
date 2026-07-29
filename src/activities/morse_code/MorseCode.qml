@@ -75,6 +75,7 @@ ActivityBase {
             property bool buttonsBlocked: false
             readonly property string middleDot: '·'
             readonly property var regexSpaceReplace: new RegExp(keyboard.space, "g")
+            property bool firstRun: true
 
             onToAlphaChanged: {
                 textInput.text = ''
@@ -109,11 +110,17 @@ ActivityBase {
 
             function initSubLevel() {
                 textInput.text = ''
-                stopMorseSounds();
+                if(firstRun) {
+                    // we want to have the intro voice on startup
+                    firstRun = false
+                }
+                else {
+                    stopMorseSounds();
+                }
                 questionValue = dataset[currentLevel].values[1][score.currentSubLevel]
                 questionValue = questionValue.replace(/\./g, items.middleDot);
                 questionValue = questionValue.replace(items.regexSpaceReplace, ' ');
-                activity.audioVoices.clearQueue();
+                //activity.audioVoices.clearQueue();
                 // Play the audio at start of the sublevel
                 if(items.audioMode) {
                     delayTimer.restart();
