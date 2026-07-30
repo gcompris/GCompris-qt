@@ -20967,13 +20967,13 @@ msgstr ""
 "Kai būsi pasiruošęs, paspausk ant Tukso ir mes bendrausime Morzės abėcėlės "
 "pagalba."
 
-#: activities/morse_code/MorseCode.qml:366
+#: activities/morse_code/MorseCode.qml:373
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Mozės kodo reikšmė: %1"
 
-#: activities/morse_code/MorseCode.qml:367
+#: activities/morse_code/MorseCode.qml:374
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
