@@ -19910,13 +19910,13 @@ msgstr ""
 "यदा भवान् सज्जः भविष्यति तदा Tux इत्यत्र क्लिक् कुर्वन्तु ततः वयं Morse code इत्यनेन "
 "वार्तालापं करिष्यामः ।"
 
-#: activities/morse_code/MorseCode.qml:364
+#: activities/morse_code/MorseCode.qml:371
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "मोर्स मूल्यम् : %1"
 
-#: activities/morse_code/MorseCode.qml:365
+#: activities/morse_code/MorseCode.qml:372
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
