@@ -19,8 +19,9 @@ ActivityBase {
 
     onStart: focus = true
     onStop: {}
+    property string mode: "fifteen"
 
-     onActivityNextLevel: {
+    onActivityNextLevel: {
          Activity.nextLevel()
     }
 
@@ -35,7 +36,7 @@ ActivityBase {
         signal start
         signal stop
 
-        Keys.enabled: !items.buttonsBlocked
+        Keys.enabled: !items.buttonsBlocked && activity.mode == "fifteen"
         Keys.onPressed: (event) => { Activity.processPressedKey(event) }
 
         Component.onCompleted: {
@@ -54,6 +55,7 @@ ActivityBase {
             property int numberOfLevel: 14
             onNumberOfLevelChanged: activity.numberOfLevel = numberOfLevel
             property alias bonus: bonus
+            property string mode: activity.mode
             property alias model: fifteenModel
             property string scene: bar.level < 5 ? Activity.url + "Fishing_Boat_Scene.svg" :
                                                    Activity.url + "Coastal_Path.svg"
@@ -65,19 +67,85 @@ ActivityBase {
         
         property int pieceSize: Math.round(blueFrame.width * 0.222)
 
+        property int buttonSize: pieceSize
 
         GCSoundEffect {
             id: flipSound
             source: "qrc:/gcompris/src/core/resource/sounds/flip.wav"
         }
 
+        Row {
+            id: topArrowsRow
+            anchors.top: parent.top
+            anchors.horizontalCenter: blueFrame.horizontalCenter
+            width: puzzleArea.width
+            visible: activity.mode == "sixteen"
+            Repeater {
+                model: 4
+                SlideButton {
+                    id: topButton
+                    rotation: -90
+                    direction: topButton.topDir
+                }
+            }
+        }
+
+        Row {
+            id: bottomArrowsRow
+            anchors.top: blueFrame.bottom
+            anchors.horizontalCenter: blueFrame.horizontalCenter
+            width: puzzleArea.width
+            visible: activity.mode == "sixteen"
+            Repeater {
+                model: 4
+                SlideButton {
+                    id: bottomButton
+                    rotation: 90
+                    direction: bottomButton.bottomDir
+                }
+            }
+        }
+
+        Column {
+            id: leftArrowsRow
+            anchors.right: blueFrame.left
+            anchors.verticalCenter: blueFrame.verticalCenter
+            height: puzzleArea.height
+            visible: activity.mode == "sixteen"
+            Repeater {
+                model: 4
+                SlideButton {
+                    id: leftButton
+                    rotation: 180
+                    direction: leftButton.leftDir
+                }
+            }
+        }
+
+        Column {
+            id: rightArrowsRow
+            anchors.left: blueFrame.right
+            anchors.verticalCenter: blueFrame.verticalCenter
+            height: puzzleArea.height
+            visible: activity.mode == "sixteen"
+            Repeater {
+                model: 4
+                SlideButton {
+                    id: rightButton
+                    rotation: 0
+                    direction: rightButton.rightDir
+                }
+            }
+        }
+
         Image {
             id: blueFrame
             source: Activity.url + "blueframe.svg"
             sourceSize.width: Math.min(activityBackground.width,
-                                       activityBackground.height - bar.height) * 0.95
+                                       activityBackground.height - bar.height) * 0.95 * (mode == "sixteen" ? 0.73 : 1)
+            anchors.top: mode == "sixteen" ? topArrowsRow.bottom : undefined
             anchors.horizontalCenter: parent.horizontalCenter
-            anchors.verticalCenter: parent.verticalCenter
+            anchors.verticalCenter: mode == "fifteen" ? parent.verticalCenter : undefined
             anchors.verticalCenterOffset: -bar.height * 0.55
         }
 
@@ -93,7 +161,6 @@ ActivityBase {
             ListModel {
                 id: fifteenModel
             }
-
 
             move: Transition {
                 id: trans
@@ -153,7 +220,7 @@ ActivityBase {
             y: puzzleArea.y
             width: puzzleArea.width
             height: puzzleArea.height
-            enabled: !items.buttonsBlocked
+            enabled: !items.buttonsBlocked && activity.mode == "fifteen"
 
             onPressed: (touchPoints) => checkTouchPoint(touchPoints)
 
@@ -165,12 +232,13 @@ ActivityBase {
                         return
                     else if(!puzzleArea.trans.running && block) {
                         Activity.onClick(block.val)
-                        if(Activity.checkAnswer()) {
+                        if(Activity.isCorrectAnswer()) {
                             items.buttonsBlocked = true
                             bonus.good('flower')
                         }
-                        else
+                        else {
                             flipSound.play()
+                        }
                     }
                 }
             }

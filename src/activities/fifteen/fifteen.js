@@ -16,25 +16,6 @@ var url = "qrc:/gcompris/src/activities/fifteen/resource/"
 
 var items
 
-var palette = [
-    "#D40000",
-    "#FF0000",
-    "#FF5555",
-    "#FFAAAA",
-    "#FFD5D5",
-    "#FF6600",
-    "#FFB380",
-    "#D4AA00",
-    "#FFCC00",
-    "#FFE680",
-    "#88AA00",
-    "#AAD400",
-    "#CCFF00",
-    "#66FF00",
-    "#7FFF2A",
-    "#55FFDD"
-]
-
 function start(items_) {
     items = items_
     items.currentLevel = Core.getInitialLevel(items.numberOfLevel)
@@ -50,17 +31,22 @@ function initLevel() {
     var model = []
     for(var i = 1; i < 16; i++)
         model.push(i)
-    model.push(0)
 
-    scramble(model, [3, 3], (items.currentLevel + 2))
+    if(items.mode == "fifteen") {
+        model.push(0)
+        scramble(model, [3, 3], (items.currentLevel + 2))
+    }
+    else {
+        model.push(16)
+    }
 
     items.model.clear()
-    for(i = 0; i < 16; i++)
-        items.model.append(
-                    {"value": model[i],
-                    "fcolor": palette[model[i]]}
-                    )
-
+    for(i = 0; i < 16; i++) {
+        items.model.append({"value": model[i]})
+    }
+    if(items.mode == "sixteen") {
+        slide(items.currentLevel + 2)
+    }
 }
 
 function countBadPlaced(model) {
@@ -106,12 +92,36 @@ function scramble(model, emptySpot, numberOfExpectedBadPlaced) {
     } while(countBadPlaced(model) < numberOfExpectedBadPlaced)
 }
 
-function checkAnswer() {
-    for(var i = 0; i < 15; i++)
+// We loop numberOfSlideMoves times, and one more if we went to
+// the initial position
+function slide(numberOfSlideMoves) {
+    var count = 0
+    do {
+        var randomDirection = Math.floor(Math.random() * 4)
+        var randomRowOrCol = Math.floor(Math.random() * 4)
+        switch (randomDirection) {
+        case 0:
+            leftAction(randomRowOrCol)
+            break;
+        case 1:
+            rightAction(randomRowOrCol)
+            break;
+        case 2:
+            topAction(randomRowOrCol)
+            break;
+        case 3:
+            bottomAction(randomRowOrCol)
+            break;
+        }
+    } while(++count < numberOfSlideMoves || isCorrectAnswer())
+}
+
+function isCorrectAnswer() {
+    for(var i = 0; i < 15; i++) {
         if(items.model.get(i).value !== i + 1) {
             return false
         }
-
+    }
     return true
 }
 
@@ -181,15 +191,62 @@ function processPressedKey(event) {
         }
         break
     }
-
     /* Check if success */
-    if(checkAnswer()) {
+    if(isCorrectAnswer()) {
         items.buttonsBlocked = true
         items.bonus.good('flower')
     }
-    else if(event.accepted)
+    else {
         items.flipSound.play()
+    }
+}
 
+function leftAction(index) {
+    var indices = []
+    var values = []
+    for (var i = 0; i < 4; ++ i) {
+        indices.push(i + index * 4);
+        values.push(items.model.get(i + index * 4).value);
+    }
+    for (var i = 0; i < 4; ++ i) {
+        items.model.setProperty(indices[i], "value", values[(i+1)%4])
+    }
+}
+
+function rightAction(index) {
+    var indices = []
+    var values = []
+    for (var i = 0; i < 4; ++ i) {
+        indices.push(i + index * 4);
+        values.push(items.model.get(i + index * 4).value);
+    }
+    for (var i = 0; i < 4; ++ i) {
+        items.model.setProperty(indices[i], "value", values[(i-1+4)%4])
+    }
+}
+
+function topAction(index) {
+    var indices = []
+    var values = []
+    for (var i = 0; i < 4; ++ i) {
+        indices.push(i * 4 + index);
+        values.push(items.model.get(i * 4 + index).value);
+    }
+    for (var i = 0; i < 4; ++ i) {
+        items.model.setProperty(indices[i], "value", values[(i+1)%4])
+    }
+}
+
+function bottomAction(index) {
+    var indices = []
+    var values = []
+    for (var i = 0; i < 4; ++ i) {
+        indices.push(i * 4 + index);
+        values.push(items.model.get(i * 4 + index).value);
+    }
+    for (var i = 0; i < 4; ++ i) {
+        items.model.setProperty(indices[i], "value", values[(i-1+4)%4])
+    }
 }
 
 function nextLevel() {
