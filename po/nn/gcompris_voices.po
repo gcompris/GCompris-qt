@@ -1,5 +1,6 @@
 # Translation of gcompris_voices to Norwegian Nynorsk
 #
+# Karl Ove Hufthammer <karl@huftis.org>, 2022, 2023, 2024.
 # Øystein Steffensen-Alværvik <oysteins.omsetting@protonmail.com>, 2022.
 msgid ""
 msgstr ""

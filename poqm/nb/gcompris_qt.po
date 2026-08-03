@@ -3,6 +3,7 @@
 # Kjartan Maraas <kmaraas@gnome.org>, 2000, 2001, 2002, 2003, 2004, 2005.
 # Klaus Ade Johnstad <klaus@skolelinux.no>, 2004, 2005, 2006, 2007.
 # Erlend Thune <post@erlendthune.no>, 2014, 2015.
+# Karl Ove Hufthammer <karl@huftis.org>, 2022, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: nb\n"
