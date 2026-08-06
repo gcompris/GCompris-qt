@@ -1,9 +1,10 @@
+# Igor Dobrača <igor.dobraca@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_teachers\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: Igor Dobrača <igor.dobraca@skole.hr>\n"
+"PO-Revision-Date: 2026-08-05 22:53+0200\n"
+"Last-Translator: Igor Dobrača <igor.dobraca@gmail.com>\n"
 "Language-Team: Croatian <kde-i18n-doc@kde.org>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
@@ -11,8 +12,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 3.9\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.8\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
 #: server/activities/binary_bulb/ActivityEditor.qml:12
@@ -732,8 +733,7 @@ msgid ""
 "\"Additions\" must contain a list of additions which results are between 0 "
 "and 9."
 msgstr ""
-"\"Zbrajanja\" moraju sadržavati popis zbrojeva čiji su rezultati između 0 i "
-"9."
+"\"Dodaci\" moraju sadržavati popis dodataka čiji su rezultati između 0 i 9."
 
 #: server/activities/learn_additions/ActivityEditor.qml:18
 #: server/activities/learn_subtractions/ActivityEditor.qml:18
@@ -2193,13 +2193,13 @@ msgstr "Poslužitelj"
 #: server/views/SettingsView.qml:190
 msgctxt "SettingsView|"
 msgid "Running"
-msgstr "je aktivan"
+msgstr "Pokrenuto"
 
 #: server/views/SettingsView.qml:190
 #, qt-format
 msgctxt "SettingsView|"
 msgid "Already running on port %1"
-msgstr "je već pokrenut na portu %1"
+msgstr "Već radi na portu %1"
 
 #: server/views/SettingsView.qml:198
 msgctxt "SettingsView|"
