@@ -2290,7 +2290,7 @@ msgstr "Mon premier traitement de texte"
 #: activities/baby_wordprocessor/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Write your first texts."
-msgstr "Ecris tes premiers textes."
+msgstr "Écris tes premiers textes."
 
 #. Help goal
 #: activities/baby_wordprocessor/ActivityInfo.qml:20
@@ -3296,7 +3296,7 @@ msgstr "Calcudoku"
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr "Résous le calcudoku."
+msgstr "Résous le Calcudoku."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -8812,7 +8812,7 @@ msgstr ""
 "colonnes et une statue représentant une Victoire sur un quadrige, char tiré "
 "par quatre chevaux. Se tenant sur la Pariser Platz, située à côté du "
 "Bundestag et de l'ambassade de France, elle domine la grande avenue Unter "
-"den Linden, qui signifie « Sous les tilleuls ». On la voit depuis le bout de "
+"Den Linden, qui signifie « Sous les tilleuls ». On la voit depuis le bout de "
 "l'avenue."
 
 #: activities/explore_monuments/resource/board/board4.qml:51
@@ -9412,7 +9412,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:75
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Les diaolou"
+msgstr "Les tours de Diaolou"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -9534,7 +9534,7 @@ msgid ""
 "architectural significance."
 msgstr ""
 "La cathédrale de Florence, officiellement connue sous le nom de Cattedrale "
-"di Santa Maria del Fiore, est un chef-d'œuvre renommé de l'architecture "
+"Di Santa Maria Del Fiore, est un chef-d'œuvre renommé de l'architecture "
 "gothique et Renaissance situé à Florence, en Italie. Achevée en 1436, elle "
 "est célèbre pour son immense dôme recouvert de tuiles rouges conçu par "
 "Filippo Brunelleschi, qui reste une merveille d'ingénierie et un symbole de "
@@ -9666,9 +9666,9 @@ msgid ""
 "the white plastered earthen walls and in the subtlety of the relationships "
 "between the building masses and the multiple roof layers."
 msgstr ""
-"Himeji-jo est le plus bel exemple encore existant de l'architecture des "
+"Himeji-Jo est le plus bel exemple encore existant de l'architecture des "
 "châteaux japonais du début du XVIIe siècle. Il comprend 83 bâtiments dotés "
-"de systèmes de défense très sophistiquéset de dispositifs de protection "
+"de systèmes de défense très sophistiqués et de dispositifs de protection "
 "ingénieux datant du début de la période Shogun. C'est un chef-d'œuvre de "
 "construction en bois, alliant fonctionnalité et esthétique, tant par son "
 "apparence élégante unifiée par les murs en terre recouverts de plâtre blanc "
@@ -13042,7 +13042,7 @@ msgstr "Terre de feu"
 #: activities/geo-country/resource/board/board3_0.qml:38
 msgctxt "board3_0|"
 msgid "Santiago del Estero"
-msgstr "Santiago del Estero"
+msgstr "Santiago Del Estero"
 
 #. Province of Argentina: Santa Fe
 #: activities/geo-country/resource/board/board3_0.qml:45
@@ -13770,7 +13770,7 @@ msgstr "Comtés de Norvège"
 #: activities/geo-country/resource/board/board6_0.qml:26
 msgctxt "board6_0|"
 msgid "Vestfold og Telemark"
-msgstr "Vestfold og Telemark"
+msgstr "Vestfold Og Telemark"
 
 #. County of Norway: Viken
 #: activities/geo-country/resource/board/board6_0.qml:33
@@ -13788,7 +13788,7 @@ msgstr "Nordland"
 #: activities/geo-country/resource/board/board6_0.qml:47
 msgctxt "board6_0|"
 msgid "Troms og Finnmark"
-msgstr "Troms og Finnmark"
+msgstr "Troms Og Finnmark"
 
 #. County of Norway: Trøndelag
 #: activities/geo-country/resource/board/board6_0.qml:54
@@ -13806,7 +13806,7 @@ msgstr "Oslo"
 #: activities/geo-country/resource/board/board6_0.qml:68
 msgctxt "board6_0|"
 msgid "Møre og Romsdal"
-msgstr "Møre og Romsdal"
+msgstr "Møre Og Romsdal"
 
 #. County of Norway: Agder
 #: activities/geo-country/resource/board/board6_0.qml:75
