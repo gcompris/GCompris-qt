@@ -4207,7 +4207,7 @@ SPDX-FileComment = "Made with csound for GCompris: https://github.com/gcompris/G
 path = "src/activities/memory-sound/resource/LR**.ogg"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2005 Lionel Allorge"
-SPDX-License-Identifier = "LicenseRef-Free-Art-Licence-1.2"
+SPDX-License-Identifier = "LAL-1.2"
 SPDX-FileComment = "Made by Lionel Allorge (association \"Lune Rouge\"). Files marked _cut are the same sound in shorted version, by Yves Combe."
 
 [[annotations]]
