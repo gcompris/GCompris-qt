@@ -7,7 +7,7 @@ import core 1.0
 
 ActivityInfo {
   name: "sixteen/Sixteen.qml"
-  difficulty: 5
+  difficulty: 6
   icon: "sixteen/sixteen.svg"
   author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
   //: Activity title
