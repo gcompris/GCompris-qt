@@ -74,13 +74,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->4/2/2026</date>
+>11/3/2026</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->26.0</releaseinfo>
+>26.1</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -621,6 +621,12 @@ for example 'xx.yy.zz'
 >--locale=localizzazione</entry>
 <entry
 >Esegue &gcompris; con la localizzazione specificata.</entry>
+</row>
+<row>
+<entry
+>--with-sequence=sequenza.json</entry>
+<entry
+>Esegui GCompris con la sequenza specificata. Una sequenza è un elenco di attività con insiemi di dati specifici, che obbliga GCompris a eseguirli nell'ordine specificato.</entry>
 </row>
 </tbody>
 </tgroup>

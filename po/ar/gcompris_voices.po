@@ -1230,7 +1230,7 @@ msgid ""
 "number of the same operation to swap their position. Then, select the result "
 "box to type the result."
 msgstr ""
-"أنشئ ثنائيات من الأعداد تساوي 10. اختر عدداً، ثم اختر عددَا آخر  من نفس "
+"أنشئ ثنائيات من الأعداد تساوي 10. اختر عددًا، ثم اختر عددَا آخر  من نفس "
 "العملية لتُبدّل المواضع بينهما. ثم اختر صندوق النتيجة واكتب النتيجة."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_find"

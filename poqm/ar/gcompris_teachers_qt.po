@@ -137,7 +137,7 @@ msgstr "يجب أن تحتوي \"موقع الأرقام المفقودة\" عل
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:104
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Position of missing numbers\" contains too much numbers."
-msgstr "تحتوي \"موقع الأرقام المفقودة\" على أرقام كثيرة جداً."
+msgstr "تحتوي \"موقع الأرقام المفقودة\" على أرقام كثيرة جدًا."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:106
 msgctxt "AdjacentNumbersEditor|"
@@ -177,7 +177,7 @@ msgid ""
 "sublevels using the minimum and maximum operand values."
 msgstr ""
 "عند اختيار \"معاملات عشوائية\"، إذا زاد \"حد قيمة النتيجة\" عن 0 فإنه يحدد "
-"الحد الأقصى المسموح به لنتيجة كل عملية. يجب أن يكون كبيراً كفاية لتوليد أسئلة "
+"الحد الأقصى المسموح به لنتيجة كل عملية. يجب أن يكون كبيرًا كفاية لتوليد أسئلة "
 "كافية لعدد المستويات الفرعية المحدد باستخدام قيم المعاملات الدنيا والقصوى."
 
 #: server/activities/algebra_by/AlgebraEditor.qml:29
@@ -238,7 +238,7 @@ msgid ""
 "multiplying the right side operand by another number between minimum and "
 "maximum values."
 msgstr ""
-"عند اختيار \"معاملات عشوائية\"، يقع معامل الجانب الأيمن دائماً بين القيمتين "
+"عند اختيار \"معاملات عشوائية\"، يقع معامل الجانب الأيمن دائمًا بين القيمتين "
 "الدنيا والقصوى. يُولد معامل الجانب الأيسر عبر ضرب معامل الجانب الأيمن في رقم "
 "آخر بين القيمتين الدنيا والقصوى."
 
@@ -383,7 +383,7 @@ msgid ""
 "These values are invalid for level %1: %2. The values must be integer "
 "numbers between 0 and %3."
 msgstr ""
-"هذه القيم غير صالحة للمستوى %1: %2. يجب أن تكون القيم أعداداً صحيحة بين 0 و "
+"هذه القيم غير صالحة للمستوى %1: %2. يجب أن تكون القيم أعدادًا صحيحة بين 0 و "
 "%3."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:119
@@ -498,7 +498,7 @@ msgstr "مجموعة البيانات فارغة."
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "Level %1 must not be empty."
-msgstr "يجب ألا يكون المستوى %1 فارغاً."
+msgstr "يجب ألا يكون المستوى %1 فارغًا."
 
 #: server/activities/comparator/ComparatorEditor.qml:126
 #, qt-format
@@ -629,7 +629,7 @@ msgstr "مجموعة البيانات فارغة."
 #, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "Level %1 must not be empty."
-msgstr "يجب ألا يكون المستوى %1 فارغاً."
+msgstr "يجب ألا يكون المستوى %1 فارغًا."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:146
 #, qt-format
@@ -717,7 +717,7 @@ msgstr "مجموعة البيانات فارغة."
 #, qt-format
 msgctxt "FractionsFindEditor|"
 msgid "Level %1 must not be empty."
-msgstr "يجب ألا يكون المستوى %1 فارغاً."
+msgstr "يجب ألا يكون المستوى %1 فارغًا."
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:173
 #, qt-format
@@ -856,7 +856,7 @@ msgstr "مجموعة البيانات فارغة."
 #, qt-format
 msgctxt "LearnDecimalsEditor|"
 msgid "Level %1 must not be empty."
-msgstr "يجب ألا يكون المستوى %1 فارغاً."
+msgstr "يجب ألا يكون المستوى %1 فارغًا."
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:154
 #, qt-format
@@ -918,7 +918,7 @@ msgstr "مجموعة البيانات فارغة."
 #, qt-format
 msgctxt "DecimalAdditionEditor|"
 msgid "Level %1 must not be empty."
-msgstr "يجب ألا يكون المستوى %1 فارغاً."
+msgstr "يجب ألا يكون المستوى %1 فارغًا."
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:196
 #, qt-format
@@ -1095,7 +1095,7 @@ msgid ""
 msgstr ""
 "يحدد كل من \"أقصى عدد من النجوم\" و \"أدنى عدد من النجوم\" عدد النجوم لكل صف "
 "من الصفوف الثلاثة للمعامل الأول (العلوي). يجب أن تحتوي على 3 أعداد صحيحة "
-"تماماً، عدد لكل صف. يجب أن يكون المدخل الأول بين %1 و %2، والمدخلات الأخرى "
+"تمامًا، عدد لكل صف. يجب أن يكون المدخل الأول بين %1 و %2، والمدخلات الأخرى "
 "بين 0 و %2. كما يجب ألا تكون الأعداد الدنيا أكبر من الأعداد القصوى المقابلة "
 "لها."
 
@@ -1129,7 +1129,7 @@ msgid ""
 "If \"Maximum number of stars\" for a row is 0, this row will be empty and "
 "hidden for both operands."
 msgstr ""
-"إذا كان \"أقصى عدد من النجوم\" لصف ما هو 0، فسيصبح هذا الصف فارغاً ومخفياً "
+"إذا كان \"أقصى عدد من النجوم\" لصف ما هو 0، فسيصبح هذا الصف فارغًا ومخفيًا "
 "لكلا المعاملين."
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:44
@@ -1152,7 +1152,7 @@ msgid ""
 "must be between 1 and 10, the others between 0 and 10, and the sum of the 3 "
 "entries must not be larger than 10."
 msgstr ""
-"يجب أن تحتوي \"معاملات الصفوف\" على 3 أعداد صحيحة تماماً. يجب أن يكون المدخل "
+"يجب أن تحتوي \"معاملات الصفوف\" على 3 أعداد صحيحة تمامًا. يجب أن يكون المدخل "
 "الأول بين 1 و 10، والمدخلات الأخرى بين 0 و 10، ويجب ألا يتجاوز مجموع "
 "المدخلات الثلاثة 10."
 
@@ -1203,7 +1203,7 @@ msgid ""
 "Level %1 must contain exactly 3 integer numbers in \"Maximum number of stars"
 "\". The first entry must be between %2 and %3, the others between 0 and %3."
 msgstr ""
-"يجب أن يحتوي المستوى %1 على 3 أعداد صحيحة تماماً في \"أقصى عدد من النجوم\". "
+"يجب أن يحتوي المستوى %1 على 3 أعداد صحيحة تمامًا في \"أقصى عدد من النجوم\". "
 "يجب أن يكون المدخل الأول بين %2 و %3، والمدخلات الأخرى بين 0 و %3."
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:169
@@ -1215,7 +1215,7 @@ msgid ""
 "and each number must not be larger than the corresponding number in "
 "\"Maximum number of stars\"."
 msgstr ""
-"يجب أن يحتوي المستوى %1 على 3 أعداد صحيحة تماماً في \"أدنى عدد من النجوم\". "
+"يجب أن يحتوي المستوى %1 على 3 أعداد صحيحة تمامًا في \"أدنى عدد من النجوم\". "
 "يجب أن يكون المدخل الأول بين %2 و %3، والمدخلات الأخرى بين 0 و %3، ويجب ألا "
 "يكون أي عدد أكبر من العدد المقابل له في \"أقصى عدد من النجوم\"."
 
@@ -1237,7 +1237,7 @@ msgid ""
 "first entry must be between 1 and 10, the others between 0 and 10, and the "
 "sum of the 3 entries must not be larger than 10."
 msgstr ""
-"يجب أن يحتوي المستوى %1 على 3 أعداد صحيحة تماماً في \"معاملات الصفوف\". يجب "
+"يجب أن يحتوي المستوى %1 على 3 أعداد صحيحة تمامًا في \"معاملات الصفوف\". يجب "
 "أن يكون المدخل الأول بين 1 و 10، والمدخلات الأخرى بين 0 و 10، ويجب ألا "
 "يتجاوز مجموع المدخلات الثلاثة 10."
 
@@ -1269,7 +1269,7 @@ msgid ""
 "All entries in the \"Correct answers\" list must also be present in the "
 "\"Answers\" list."
 msgstr ""
-"يجب أن تكون جميع المدخلات في قائمة \"الإجابات الصحيحة\" موجودة أيضاً في قائمة "
+"يجب أن تكون جميع المدخلات في قائمة \"الإجابات الصحيحة\" موجودة أيضًا في قائمة "
 "\"الإجابات\"."
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:19
@@ -1351,13 +1351,13 @@ msgstr "مجموعة البيانات فارغة."
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "Level %1 must not be empty."
-msgstr "يجب ألا يكون المستوى %1 فارغاً."
+msgstr "يجب ألا يكون المستوى %1 فارغًا."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:138
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Question\" in Sublevel %1 of Level %2 must not be empty."
-msgstr "يجب ألا يكون \"السؤال\" في المستوى الفرعي %1 من المستوى %2 فارغاً."
+msgstr "يجب ألا يكون \"السؤال\" في المستوى الفرعي %1 من المستوى %2 فارغًا."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:143
 #, qt-format
@@ -1578,7 +1578,7 @@ msgid ""
 "If \"Random numbers\" is selected, the number of already placed candies per "
 "child must be defined such that not all candies are already placed."
 msgstr ""
-"إذا أُختير \"أرقام عشوائية\"، يجب تحديد عدد قطع الحلوى الموضعة مسبقاً لكل طفل "
+"إذا أُختير \"أرقام عشوائية\"، يجب تحديد عدد قطع الحلوى الموضعة مسبقًا لكل طفل "
 "بحيث لا تكون كل قطع الحلوى موضعة بالفعل."
 
 #: server/activities/share/ShareEditor.qml:28
@@ -1587,7 +1587,7 @@ msgid ""
 "The \"Instruction\" field allows to give a specific instruction for each "
 "sublevel. If it is empty, a default instruction text is used."
 msgstr ""
-"يسمح حقل \"الأمر\" بإعطاء أمر محدد لكل مستوى فرعي. إذا كان فارغاً، سيُستخدم نص "
+"يسمح حقل \"الأمر\" بإعطاء أمر محدد لكل مستوى فرعي. إذا كان فارغًا، سيُستخدم نص "
 "أمر مبدئي."
 
 #: server/activities/share/ShareEditor.qml:33
@@ -1623,12 +1623,12 @@ msgstr "عدد قطع الحلوى"
 #: server/activities/share/ShareEditor.qml:47
 msgctxt "ShareEditor|"
 msgid "Candies already placed per girl"
-msgstr "قطع الحلوى الموضعة مسبقاً لكل فتاة"
+msgstr "قطع الحلوى الموضعة مسبقًا لكل فتاة"
 
 #: server/activities/share/ShareEditor.qml:48
 msgctxt "ShareEditor|"
 msgid "Candies already placed per boy"
-msgstr "قطع الحلوى الموضعة مسبقاً لكل فتى"
+msgstr "قطع الحلوى الموضعة مسبقًا لكل فتى"
 
 #: server/activities/share/ShareEditor.qml:49
 msgctxt "ShareEditor|"
@@ -1653,7 +1653,7 @@ msgstr "أقصى عدد من قطع الحلوى"
 #: server/activities/share/ShareEditor.qml:55
 msgctxt "ShareEditor|"
 msgid "Already place some candies"
-msgstr "ضع بعض قطع الحلوى مسبقاً"
+msgstr "ضع بعض قطع الحلوى مسبقًا"
 
 #: server/activities/share/ShareEditor.qml:58
 msgctxt "ShareEditor|"
@@ -1669,7 +1669,7 @@ msgstr "مجموعة البيانات فارغة."
 #, qt-format
 msgctxt "ShareEditor|"
 msgid "Level %1 must not be empty."
-msgstr "يجب ألا يكون المستوى %1 فارغاً."
+msgstr "يجب ألا يكون المستوى %1 فارغًا."
 
 #: server/activities/share/ShareEditor.qml:309
 #, qt-format
@@ -1683,7 +1683,7 @@ msgctxt "ShareEditor|"
 msgid ""
 "In Sublevel %2 of Level %1, the number of already placed candies is too high."
 msgstr ""
-"في المستوى الفرعي %2 من المستوى %1، عدد قطع الحلوى الموضعة مسبقاً كبير جداً."
+"في المستوى الفرعي %2 من المستوى %1، عدد قطع الحلوى الموضعة مسبقًا كبير جدًا."
 
 #: server/activities/share/ShareEditor.qml:324
 #, qt-format
@@ -1762,7 +1762,7 @@ msgid ""
 "These values are invalid for level %1: %2. The values must be integer "
 "numbers between 0 and %3."
 msgstr ""
-"هذه القيم غير صالحة للمستوى %1: %2. يجب أن تكون القيم أعداداً صحيحة بين 0 و "
+"هذه القيم غير صالحة للمستوى %1: %2. يجب أن تكون القيم أعدادًا صحيحة بين 0 و "
 "%3."
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:118
@@ -1844,7 +1844,7 @@ msgstr "يجب إصلاح الأخطاء التالية:<ul>%1</ul>"
 #: server/activities/tens_complement_use/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
 msgid "All numbers must be positive integers"
-msgstr "يجب أن تكون جميع الأعداد أعداداً صحيحة موجبة"
+msgstr "يجب أن تكون جميع الأعداد أعدادًا صحيحة موجبة"
 
 #: server/activities/tens_complement_find/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
@@ -1930,13 +1930,13 @@ msgstr "يحتوي المستوى %1 على الكثير من البطاقات �
 #, qt-format
 msgctxt "TensComplementFindEditor|"
 msgid "Level %1 must not be empty."
-msgstr "يجب ألا يكون المستوى %1 فارغاً."
+msgstr "يجب ألا يكون المستوى %1 فارغًا."
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:193
 #, qt-format
 msgctxt "TensComplementFindEditor|"
 msgid "Sublevel %2 of Level %1 must not be empty."
-msgstr "يجب ألا يكون المستوى الفرعي %2 من المستوى %1 فارغاً."
+msgstr "يجب ألا يكون المستوى الفرعي %2 من المستوى %1 فارغًا."
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:200
 #, qt-format
@@ -1970,7 +1970,7 @@ msgstr "قواعد إنشاء مجموعة بيانات صالحة:"
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:27
 msgctxt "TensComplementSwapEditor|"
 msgid "All numbers must be positive integers"
-msgstr "يجب أن تكون جميع الأعداد أعداداً صحيحة موجبة"
+msgstr "يجب أن تكون جميع الأعداد أعدادًا صحيحة موجبة"
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:29
 msgctxt "TensComplementSwapEditor|"
@@ -1980,7 +1980,7 @@ msgid ""
 "will contain the given entries and their complement to 10."
 msgstr ""
 "إذا لم يُحدد خيار \"معاملات عشوائية\"، فيجب أن تحتوي \"المعاملات\" على 1 أو 2 "
-"أو 3 مدخلات. يجب أن يكون كل مدخل عدداً بين 1 و 9. ستتضمن عملية الجمع الناتجة "
+"أو 3 مدخلات. يجب أن يكون كل مدخل عددًا بين 1 و 9. ستتضمن عملية الجمع الناتجة "
 "المدخلات المعطاة ومكملاتها إلى العدد 10."
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:31
@@ -1992,7 +1992,7 @@ msgid ""
 "numbers."
 msgstr ""
 "يمكن أن يحتوي \"المعامل الإضافي\" على عدد واحد بين 1 و 9 يُضاف إلى عملية "
-"الجمع. يُعد إلزامياً إذا احتوت \"المعاملات\" على عدد واحد، واختيارياً إذا احتوت "
+"الجمع. يُعد إلزاميًا إذا احتوت \"المعاملات\" على عدد واحد، واختياريًا إذا احتوت "
 "على عددين، ولا يُستخدم إذا احتوت على 3 أعداد."
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:35
@@ -2034,7 +2034,7 @@ msgstr "مجموعة البيانات فارغة."
 #, qt-format
 msgctxt "TensComplementSwapEditor|"
 msgid "Level %1 must not be empty."
-msgstr "يجب ألا يكون المستوى %1 فارغاً."
+msgstr "يجب ألا يكون المستوى %1 فارغًا."
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:192
 #, qt-format
@@ -2140,13 +2140,13 @@ msgstr "يحتوي المستوى %1 على الكثير من البطاقات �
 #, qt-format
 msgctxt "TensComplementUseEditor|"
 msgid "Level %1 must not be empty."
-msgstr "يجب ألا يكون المستوى %1 فارغاً."
+msgstr "يجب ألا يكون المستوى %1 فارغًا."
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:184
 #, qt-format
 msgctxt "TensComplementUseEditor|"
 msgid "Sublevel %2 of Level %1 must not be empty."
-msgstr "يجب ألا يكون المستوى الفرعي %2 من المستوى %1 فارغاً."
+msgstr "يجب ألا يكون المستوى الفرعي %2 من المستوى %1 فارغًا."
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:194
 #, qt-format
@@ -2195,7 +2195,7 @@ msgstr "مع حمل"
 #: server/activities/vertical_subtraction/VerticalEditor.qml:35
 msgctxt "VerticalEditor|"
 msgid "Already laid"
-msgstr "موضوعة مسبقاً"
+msgstr "موضوعة مسبقًا"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:36
 msgctxt "VerticalEditor|"
@@ -2474,7 +2474,7 @@ msgstr "كلمة السّر"
 #: server/dialogs/CreateDbDialog.qml:124
 msgctxt "CreateDbDialog|"
 msgid "Encrypted database (enabled by default)"
-msgstr "قاعدة بيانات المعماة (مفعلة مبدئياً)"
+msgstr "قاعدة بيانات المعماة (مفعلة مبدئيًا)"
 
 #: server/dialogs/DatasetEditorDialog.qml:56
 msgctxt "DatasetEditorDialog|"
@@ -2702,7 +2702,7 @@ msgstr "التلاميذ"
 #: server/dialogs/SequenceEditorDialog.qml:50
 msgctxt "SequenceEditorDialog|"
 msgid "Create sequence"
-msgstr "أنشئ تسلسلاً"
+msgstr "أنشئ تسلسلًا"
 
 #: server/dialogs/SequenceEditorDialog.qml:56
 msgctxt "SequenceEditorDialog|"
@@ -3010,7 +3010,7 @@ msgstr "أنت بصدد تكرار البيانات"
 #: server/views/datas/DuplicateData.qml:212
 msgctxt "DuplicateData|"
 msgid "No action now"
-msgstr "لا يوجد إجراء حالياً"
+msgstr "لا يوجد إجراء حاليًا"
 
 #: server/views/datas/DuplicateData.qml:208
 msgctxt "DuplicateData|"
