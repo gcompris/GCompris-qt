@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-12-25 10:09+0400\n"
+"PO-Revision-Date: 2026-06-30 22:08+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -134,7 +134,7 @@ msgstr "يجب أن تحتوي \"موقع الأرقام المفقودة\" عل
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:104
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Position of missing numbers\" contains too much numbers."
-msgstr "تحتوي \"موقع الأرقام المفقودة\" على أرقام كثيرة جداً."
+msgstr "تحتوي \"موقع الأرقام المفقودة\" على أرقام كثيرة جدًا."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:106
 msgctxt "AdjacentNumbersEditor|"
@@ -174,7 +174,7 @@ msgid ""
 "sublevels using the minimum and maximum operand values."
 msgstr ""
 "عند اختيار \"معاملات عشوائية\"، إذا زاد \"حد قيمة النتيجة\" عن 0 فإنه يحدد "
-"الحد الأقصى المسموح به لنتيجة كل عملية. يجب أن يكون كبيراً كفاية لتوليد أسئلة "
+"الحد الأقصى المسموح به لنتيجة كل عملية. يجب أن يكون كبيرًا كفاية لتوليد أسئلة "
 "كافية لعدد المستويات الفرعية المحدد باستخدام قيم المعاملات الدنيا والقصوى."
 
 #: server/activities/algebra_by/AlgebraEditor.qml:29
@@ -235,7 +235,7 @@ msgid ""
 "multiplying the right side operand by another number between minimum and "
 "maximum values."
 msgstr ""
-"عند اختيار \"معاملات عشوائية\"، يقع معامل الجانب الأيمن دائماً بين القيمتين "
+"عند اختيار \"معاملات عشوائية\"، يقع معامل الجانب الأيمن دائمًا بين القيمتين "
 "الدنيا والقصوى. يُولد معامل الجانب الأيسر عبر ضرب معامل الجانب الأيمن في رقم "
 "آخر بين القيمتين الدنيا والقصوى."
 
@@ -380,7 +380,7 @@ msgid ""
 "These values are invalid for level %1: %2. The values must be integer "
 "numbers between 0 and %3."
 msgstr ""
-"هذه القيم غير صالحة للمستوى %1: %2. يجب أن تكون القيم أعداداً صحيحة بين 0 و "
+"هذه القيم غير صالحة للمستوى %1: %2. يجب أن تكون القيم أعدادًا صحيحة بين 0 و "
 "%3."
 
 #: server/activities/binary_bulb/BinaryBulbEditor.qml:119
@@ -495,7 +495,7 @@ msgstr "مجموعة البيانات فارغة."
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "Level %1 must not be empty."
-msgstr "يجب ألا يكون المستوى %1 فارغاً."
+msgstr "يجب ألا يكون المستوى %1 فارغًا."
 
 #: server/activities/comparator/ComparatorEditor.qml:126
 #, qt-format
@@ -601,7 +601,7 @@ msgstr "مجموعة البيانات فارغة."
 #, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "Level %1 must not be empty."
-msgstr "يجب ألا يكون المستوى %1 فارغاً."
+msgstr "يجب ألا يكون المستوى %1 فارغًا."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:146
 #, qt-format
@@ -689,7 +689,7 @@ msgstr "مجموعة البيانات فارغة."
 #, qt-format
 msgctxt "FractionsFindEditor|"
 msgid "Level %1 must not be empty."
-msgstr "يجب ألا يكون المستوى %1 فارغاً."
+msgstr "يجب ألا يكون المستوى %1 فارغًا."
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:173
 #, qt-format
@@ -767,7 +767,7 @@ msgstr "مجموعة البيانات فارغة."
 #, qt-format
 msgctxt "LearnDecimalsEditor|"
 msgid "Level %1 must not be empty."
-msgstr "يجب ألا يكون المستوى %1 فارغاً."
+msgstr "يجب ألا يكون المستوى %1 فارغًا."
 
 #: server/activities/learn_decimals/LearnDecimalsEditor.qml:154
 #, qt-format
@@ -829,7 +829,7 @@ msgstr "مجموعة البيانات فارغة."
 #, qt-format
 msgctxt "DecimalAdditionEditor|"
 msgid "Level %1 must not be empty."
-msgstr "يجب ألا يكون المستوى %1 فارغاً."
+msgstr "يجب ألا يكون المستوى %1 فارغًا."
 
 #: server/activities/learn_decimals_additions/DecimalAdditionEditor.qml:196
 #, qt-format
@@ -999,7 +999,7 @@ msgid ""
 "All entries in the \"Correct answers\" list must also be present in the "
 "\"Answers\" list."
 msgstr ""
-"يجب أن تكون جميع المدخلات في قائمة \"الإجابات الصحيحة\" موجودة أيضاً في قائمة "
+"يجب أن تكون جميع المدخلات في قائمة \"الإجابات الصحيحة\" موجودة أيضًا في قائمة "
 "\"الإجابات\"."
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:19
@@ -1081,13 +1081,13 @@ msgstr "مجموعة البيانات فارغة."
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "Level %1 must not be empty."
-msgstr "يجب ألا يكون المستوى %1 فارغاً."
+msgstr "يجب ألا يكون المستوى %1 فارغًا."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:138
 #, qt-format
 msgctxt "MultipleChoiceEditor|"
 msgid "\"Question\" in Sublevel %1 of Level %2 must not be empty."
-msgstr "يجب ألا يكون \"السؤال\" في المستوى الفرعي %1 من المستوى %2 فارغاً."
+msgstr "يجب ألا يكون \"السؤال\" في المستوى الفرعي %1 من المستوى %2 فارغًا."
 
 #: server/activities/multiple_choice_questions/MultipleChoiceEditor.qml:143
 #, qt-format
@@ -1156,7 +1156,7 @@ msgstr "مع حمل"
 #: server/activities/vertical_subtraction/VerticalEditor.qml:35
 msgctxt "VerticalEditor|"
 msgid "Already laid"
-msgstr "موضوعة مسبقاً"
+msgstr "موضوعة مسبقًا"
 
 #: server/activities/vertical_subtraction/VerticalEditor.qml:36
 msgctxt "VerticalEditor|"
@@ -1394,7 +1394,7 @@ msgstr "كلمة السّر"
 #: server/dialogs/CreateDbDialog.qml:124
 msgctxt "CreateDbDialog|"
 msgid "Encrypted database (enabled by default)"
-msgstr "قاعدة بيانات المعماة (مفعلة مبدئياً)"
+msgstr "قاعدة بيانات المعماة (مفعلة مبدئيًا)"
 
 #: server/dialogs/DatasetEditorDialog.qml:56
 msgctxt "DatasetEditorDialog|"
@@ -1830,7 +1830,7 @@ msgstr "أنت بصدد تكرار البيانات"
 #: server/views/datas/DuplicateData.qml:212
 msgctxt "DuplicateData|"
 msgid "No action now"
-msgstr "لا يوجد إجراء حالياً"
+msgstr "لا يوجد إجراء حاليًا"
 
 #: server/views/datas/DuplicateData.qml:208
 msgctxt "DuplicateData|"
