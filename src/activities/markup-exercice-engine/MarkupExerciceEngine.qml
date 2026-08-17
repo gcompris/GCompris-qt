@@ -165,13 +165,22 @@ ActivityBase {
                     Item {
                         id: flowsContainer
                         width: Math.max(flowsColumn.width, zoomFlickable.width / flowsContainer.scale)
-                        height: flowsColumn.height
+                        height: flowsColumn.implicitHeight
                         scale: 1.0
                         transformOrigin: Item.TopLeft
 
-                        Column {
+                        // ColumnLayout {
+                        //     id: flowsColumn
+                        //     width: flowsContainer.scale <= 1.0 ? zoomFlickable.width : 800
+                        //     anchors.margins: 4
+                        //     spacing: 10
+                        // }
+
+                        ColumnLayout {
                             id: flowsColumn
                             width: flowsContainer.scale <= 1.0 ? zoomFlickable.width : 800
+                            // Force la colonne à prendre toute la hauteur nécessaire pour tous ses FlexboxLayout
+                            //height: implicitHeight
                             anchors.margins: 4
                             spacing: 10
                         }

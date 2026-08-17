@@ -32,7 +32,7 @@ function loadComponents() {
         qcmHorizontalItems: Qt.createComponent("QcmHorizontalItems.qml"),
         qcmVerticalItems: Qt.createComponent("QcmVerticalItems.qml"),
         displayText: Qt.createComponent("DisplayText.qml"),
-        flow: Qt.createComponent("RealViewFlow.qml"),
+        flow: Qt.createComponent("RealViewFlow.qml"),       
         circularIcon: Qt.createComponent("CircularNumberedIcon.qml"),
         successFail: Qt.createComponent("SuccessFailMark.qml"),
         enumerationMarker: Qt.createComponent("EnumerationMarker.qml")
@@ -155,9 +155,9 @@ function handleSetCommand(line, lineIndex) {
     //find why pos is not used
     const match = captured.match(/^score\(([^)]+)\)$/)
     if (match) {
-        linesFlowsArray[lineIndex].alignEnd()
-        linesFlowsArray[lineIndex].rightPadding = items.flowsColumn.width * 2 / 10
-        console.log(items.flowsColumn.width)
+        //linesFlowsArray[lineIndex].alignEnd()  //TODO
+        //linesFlowsArray[lineIndex].rightPadding = items.flowsColumn.width * 2 / 10  //TODO
+        //console.log(items.flowsColumn.width)  //TODO
 
         // On récupère directement le groupe capturé via le tableau retourné par match()
         const pos = match[1]
@@ -176,7 +176,7 @@ function handleSetCommand(line, lineIndex) {
 // --- Handle the different line types ---
 function handleHeading(line, lineIndex) {
     console.log("ff" + headingLinePadding)
-    linesFlowsArray[lineIndex].leftPadding = headingLinePadding
+    //linesFlowsArray[lineIndex].leftPadding = headingLinePadding //TODO
 
     const level = line.match(/^(#+)\s*(.*)$/)
     const text = level[2]
@@ -192,7 +192,7 @@ function handleExerciseStatement(line, lineIndex) {
 }
 
 function handleRegularLine(line, lineIndex) {
-    linesFlowsArray[lineIndex].leftPadding = regularLinePadding
+    //linesFlowsArray[lineIndex].leftPadding = regularLinePadding  //TODO
     const processed = line.replace(/\[(.*?)\]/g, (_, g1) => `[${g1.replace(/ /g, "※")}]`)
     const words = processed.split(" ")
     words.forEach(word => handleWord(word, lineIndex))
@@ -217,7 +217,7 @@ function createInteractiveField(match, lineIndex) {
 function createQcmField(content, lineIndex) {
     const answers = content.split("|")
     const displayed = answers.map(a => a.replace(/^\*/, "").replace(/※/g, " "))
-    linesFlowsArray[lineIndex].height = answers.length * verticalMcqButtonHeight * 1.8
+ //   linesFlowsArray[lineIndex].height = answers.length * verticalMcqButtonHeight * 1.8  //TODO
 
     const qcmVerticalItems = components.qcmVerticalItems.createObject(linesFlowsArray[lineIndex], {
         values: displayed,
