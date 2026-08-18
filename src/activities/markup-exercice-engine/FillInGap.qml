@@ -17,16 +17,11 @@ Rectangle {
     implicitWidth: textInput.implicitWidth + 20
     implicitHeight: textInput.implicitHeight
 
-    Layout.preferredWidth: implicitWidth
-    Layout.preferredHeight: implicitHeight
-    width: implicitWidth
-    height: implicitHeight
-
 
     TextInput {
         id: textInput
         text: userInput.defaultDisplayString
-        cursorVisible: true
+        //cursorVisible: true
         font.pixelSize : 17
 
         anchors.left: parent.left

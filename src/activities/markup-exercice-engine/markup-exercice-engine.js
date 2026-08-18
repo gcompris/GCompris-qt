@@ -83,7 +83,9 @@ function checkAnswers() {
         let valid = 0
         exerciceFields.forEach(fieldObj => {
             const [type, field] = Object.entries(fieldObj)[0]
-            if (type === "qcmDropDown") {
+            console.log("un test: " + type)
+            if (type === "qcmDropDownItems") {
+                console.log("yyyyyyyyyyyyyyyyyyyyyy" + field.comboboxOriginalContentArray[1])
                 if (field.comboboxOriginalContentArray[field.userAnswerIndex]?.startsWith("*")) {
                     field.resultMarkStatus = "success"
                     valid++
@@ -208,8 +210,9 @@ function handleWord(word, lineIndex) {
 function createInteractiveField(match, lineIndex) {
     const [, before, content, after] = match
     if (before) addTextToFlow(lineIndex, before, defaultFontSize)
-    if (exerciceType === "qcm-exercice") createQcmField(content, lineIndex)
-    if (exerciceType === "gap-fill-exercice") createGapFillField(content, lineIndex)
+    if (exerciceType === "vertical-qcm") createQcmField(content, lineIndex)
+    if (exerciceType === "gap-fill") createGapFillField(content, lineIndex)
+    if (exerciceType === "dropdown-qcm") createQcmDropDownField(content, lineIndex)
     if (after) addTextToFlow(lineIndex, after, defaultFontSize)
     addTextToFlow(lineIndex, " ", defaultFontSize)
 }
@@ -235,6 +238,20 @@ function createGapFillField(content, lineIndex) {
     })
     interactiveFieldsArray.push({ "gap-fill": gap })
 }
+
+function createQcmDropDownField(content, lineIndex) {
+    const answers = content.split("|")
+    const displayed = answers.map(a => a.replace(/^\*/, "").replace(/※/g, " "))
+    //linesFlowsArray[lineIndex].height = 25 //answers.length * verticalMcqButtonHeight * 1.8
+
+    const qcmDropDownItems = components.qcmDropDown.createObject(linesFlowsArray[lineIndex], {
+        comboboxContentArray: displayed,
+        comboboxOriginalContentArray: answers
+    })
+
+    interactiveFieldsArray.push({ qcmDropDownItems })
+}
+
 
 function addTextToFlow(lineIndex, text, size, bold = false, color = "black") {
     components.displayText.createObject(linesFlowsArray[lineIndex], {

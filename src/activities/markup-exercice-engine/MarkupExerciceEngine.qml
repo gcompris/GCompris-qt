@@ -1,7 +1,7 @@
 import "../../core"
 /* GCompris - multiple_questions_exercices.qml
  *
- * SPDX-FileCopyrightText: 2024 Emmanuel Charruau <echarruau@gmail.com>
+ * SPDX-FileCopyrightText: 2026 Emmanuel Charruau <echarruau@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 6.7
@@ -100,6 +100,7 @@ ActivityBase {
                                 "",
                                 "#set new_exercice",
                                 "#set enumeration_marks( )",
+                                "#set type_exercice(vertical-qcm)",
                                 "$ *Choisis* la bonne forme du verbe à l'imparfait",
                                 "1. Je [jouerai|jouerais|*jouais]",
                                 "2. Tu [*regardais|regarderais|regarderas]",
@@ -110,6 +111,7 @@ ActivityBase {
                                 "#set end_exercice",
                                 "",
                                 "#set new_exercice",
+                                "#set type_exercice(dropdown-qcm)",
                                 "$ *Complète* avec le verbe à l'imparfait",
                                 "1. Chaque matin, je [prendrais|*prenais|prendrai]",
                                 "2. Le chien [*aboyait|aboiera|aboyerait]",
@@ -119,7 +121,7 @@ ActivityBase {
                                 "#set score(middle)",
                                 "#set end_exercice",
                                 "",
-                                "#set type_exercice(gap-fill-exercice)",
+                                "#set type_exercice(gap-fill)",
                                 "#set new_exercice",
                                 "#set enumeration_marks( )",
                                 "$ *Complète* les terminaisons à l'imparfait",
