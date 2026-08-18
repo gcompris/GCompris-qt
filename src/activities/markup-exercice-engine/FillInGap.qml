@@ -14,7 +14,7 @@ Rectangle {
     objectName: "fillInGap"
     color: "lightblue"
 
-    implicitWidth: textInput.implicitWidth
+    implicitWidth: textInput.implicitWidth + 20
     implicitHeight: textInput.implicitHeight
 
     Layout.preferredWidth: implicitWidth
@@ -27,9 +27,20 @@ Rectangle {
         id: textInput
         text: userInput.defaultDisplayString
         cursorVisible: true
-        font.pixelSize : 21
+        font.pixelSize : 17
+
+        anchors.left: parent.left
+        anchors.leftMargin: 5
+        anchors.verticalCenter: parent.verticalCenter
+        anchors.verticalCenterOffset: -2  // Remonte le texte de 2 pixels (ajustez selon le besoin)
 
         activeFocusOnTab: true
+
+        onActiveFocusChanged: {
+            if (activeFocus) {
+                selectAll()
+            }
+        }
 
         onEditingFinished: {
             userInput.defaultDisplayString = text

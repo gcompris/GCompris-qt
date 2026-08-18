@@ -176,7 +176,7 @@ function handleSetCommand(line, lineIndex) {
 // --- Handle the different line types ---
 function handleHeading(line, lineIndex) {
     console.log("ff" + headingLinePadding)
-    //linesFlowsArray[lineIndex].leftPadding = headingLinePadding //TODO
+    //linesFlowsArray[lineIndex].leftPadding = headingLinePadding todo
 
     const level = line.match(/^(#+)\s*(.*)$/)
     const text = level[2]
@@ -217,7 +217,7 @@ function createInteractiveField(match, lineIndex) {
 function createQcmField(content, lineIndex) {
     const answers = content.split("|")
     const displayed = answers.map(a => a.replace(/^\*/, "").replace(/※/g, " "))
- //   linesFlowsArray[lineIndex].height = answers.length * verticalMcqButtonHeight * 1.8  //TODO
+    //linesFlowsArray[lineIndex].height = 25 //answers.length * verticalMcqButtonHeight * 1.8
 
     const qcmVerticalItems = components.qcmVerticalItems.createObject(linesFlowsArray[lineIndex], {
         values: displayed,

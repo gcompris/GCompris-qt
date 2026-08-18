@@ -13,8 +13,8 @@ Item {
     implicitWidth: txt.implicitWidth
     implicitHeight: txt.implicitHeight
 
-    Layout.preferredWidth: implicitWidth
-    Layout.preferredHeight: implicitHeight
+    // Layout.preferredWidth: implicitWidth
+    // Layout.preferredHeight: implicitHeight
 
     Text {
         id: txt

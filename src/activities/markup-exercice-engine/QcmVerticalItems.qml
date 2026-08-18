@@ -1,15 +1,9 @@
-import QtQuick 2.12
+import QtQuick
 import QtQuick.Controls
+import QtQuick.Layouts
 
 import "markup-exercice-engine.js" as Activity
 
-import QtQuick 2.0
-
-import QtQuick 2.0
-
-// McqHorizontalQuestion.qml
-import QtQuick 2.15
-import QtQuick.Controls 2.15
 
 Item {
     id: root
@@ -20,9 +14,14 @@ Item {
 
     signal optionSelected(int index, bool isCorrect)
 
-    width: parent ? parent.width : 400
-    height: 60
+    // width: parent ? parent.width : 400
+    // height: 60
 
+    // Layout.preferredWidth: implicitWidth
+    // Layout.preferredHeight: implicitHeight
+
+    implicitWidth: buttonRow.implicitWidth
+    implicitHeight: buttonRow.implicitHeight
 
     Column {
         id: buttonRow
@@ -35,7 +34,7 @@ Item {
 
             Button {
                 id: choiceButton
-                width: root.width / root.values.length - 50
+                width: 200
                 height: root.buttonHeight
                 checkable: true
                 checked: index === root.selectedIndex

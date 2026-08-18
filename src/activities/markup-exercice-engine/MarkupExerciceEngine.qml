@@ -183,6 +183,10 @@ ActivityBase {
                             //height: implicitHeight
                             anchors.margins: 4
                             spacing: 10
+
+                            anchors.left: parent.left
+                            anchors.leftMargin: 20
+
                         }
 
                         PinchArea {
