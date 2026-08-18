@@ -25461,7 +25461,7 @@ msgstr "შედეგი 30-სა და 50-ს შორის."
 #: activities/tic_tac_toe/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Tic tac toe (against Tux)"
-msgstr ""
+msgstr "ჯვარი და ნული (ტაქსის წინააღმდეგ)"
 
 #. Help title
 #: activities/tic_tac_toe/ActivityInfo.qml:20
@@ -25494,7 +25494,7 @@ msgstr "ტუქსი უკეთ ითამაშებს, როცა �
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Tic tac toe (with a friend)"
-msgstr ""
+msgstr "ჯვარი და ნული (მეგობართან)"
 
 #. Help manual
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:26
