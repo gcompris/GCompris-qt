@@ -84,8 +84,25 @@ function checkAnswers() {
         exerciceFields.forEach(fieldObj => {
             const [type, field] = Object.entries(fieldObj)[0]
             console.log("un test: " + type)
-            if (type === "qcmDropDownItems") {
-                console.log("yyyyyyyyyyyyyyyyyyyyyy" + field.comboboxOriginalContentArray[1])
+            if (type === "qcmVerticalItems") {
+                let goodAnswers = field.userSelections.length === field.verticalQcmOriginalContentArray.length;
+                if (goodAnswers) {
+                   for (var i = 0; i < field.userSelections.length; i++) {
+                       var isSelected = field.userSelections[i];
+                       var startsWithStar = (field.verticalQcmOriginalContentArray[i] || "").startsWith("*");
+                       if (isSelected !== startsWithStar) {
+                           goodAnswers = false;
+                           break;
+                       }
+                   }
+                }
+                if (goodAnswers) {
+                    field.resultMarkStatus = "success"
+                    valid++
+                } else {
+                    field.resultMarkStatus = "failure"
+                }
+            } else if (type === "qcmDropDownItems") {
                 if (field.comboboxOriginalContentArray[field.userAnswerIndex]?.startsWith("*")) {
                     field.resultMarkStatus = "success"
                     valid++
@@ -177,7 +194,6 @@ function handleSetCommand(line, lineIndex) {
 
 // --- Handle the different line types ---
 function handleHeading(line, lineIndex) {
-    console.log("ff" + headingLinePadding)
     //linesFlowsArray[lineIndex].leftPadding = headingLinePadding todo
 
     const level = line.match(/^(#+)\s*(.*)$/)
@@ -210,21 +226,21 @@ function handleWord(word, lineIndex) {
 function createInteractiveField(match, lineIndex) {
     const [, before, content, after] = match
     if (before) addTextToFlow(lineIndex, before, defaultFontSize)
-    if (exerciceType === "vertical-qcm") createQcmField(content, lineIndex)
+    if (exerciceType === "vertical-qcm") createVerticalQcmField(content, lineIndex)
     if (exerciceType === "gap-fill") createGapFillField(content, lineIndex)
     if (exerciceType === "dropdown-qcm") createQcmDropDownField(content, lineIndex)
     if (after) addTextToFlow(lineIndex, after, defaultFontSize)
     addTextToFlow(lineIndex, " ", defaultFontSize)
 }
 
-function createQcmField(content, lineIndex) {
-    const answers = content.split("|")
-    const displayed = answers.map(a => a.replace(/^\*/, "").replace(/※/g, " "))
+function createVerticalQcmField(content, lineIndex) {
+    const answerOriginalPropositionsArray = content.split("|")
+    const answerCleanedPropositionsdArray = answerOriginalPropositionsArray.map(a => a.replace(/^\*/, "").replace(/※/g, " "))
     //linesFlowsArray[lineIndex].height = 25 //answers.length * verticalMcqButtonHeight * 1.8
 
     const qcmVerticalItems = components.qcmVerticalItems.createObject(linesFlowsArray[lineIndex], {
-        values: displayed,
-        buttonHeight: verticalMcqButtonHeight
+        verticalQcmOriginalContentArray: answerOriginalPropositionsArray,
+        verticalQcmContentArray: answerCleanedPropositionsdArray
     })
 
     interactiveFieldsArray.push({ qcmVerticalItems })
@@ -240,13 +256,13 @@ function createGapFillField(content, lineIndex) {
 }
 
 function createQcmDropDownField(content, lineIndex) {
-    const answers = content.split("|")
-    const displayed = answers.map(a => a.replace(/^\*/, "").replace(/※/g, " "))
+    const answerOriginalPropositionsArray = content.split("|")
+    const answerCleanedPropositionsdArray = answerOriginalPropositionsArray.map(a => a.replace(/^\*/, "").replace(/※/g, " "))
     //linesFlowsArray[lineIndex].height = 25 //answers.length * verticalMcqButtonHeight * 1.8
 
     const qcmDropDownItems = components.qcmDropDown.createObject(linesFlowsArray[lineIndex], {
-        comboboxContentArray: displayed,
-        comboboxOriginalContentArray: answers
+        comboboxOriginalContentArray: answerOriginalPropositionsArray,
+        comboboxContentArray: answerCleanedPropositionsdArray,
     })
 
     interactiveFieldsArray.push({ qcmDropDownItems })

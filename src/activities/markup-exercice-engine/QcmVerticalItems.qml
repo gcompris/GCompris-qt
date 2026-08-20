@@ -2,68 +2,70 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
 
-import "markup-exercice-engine.js" as Activity
-
-
 Item {
     id: root
-    property var values: []        // e.g. ["*Option A", "Option B", "Option C", "*Option D"]
-    property var answers: []       // stores true/false values derived from '*'
-    property int selectedIndex: -1 // currently selected button index
-    property int buttonHeight: 40
 
-    signal optionSelected(int index, bool isCorrect)
+    property var verticalQcmOriginalContentArray: []
+    property var verticalQcmContentArray: []
+    property string resultMarkStatus: ""
+    property var userSelections: []
+    property real bottomPadding: 15
 
-    // width: parent ? parent.width : 400
-    // height: 60
+    // reset userSelections array when verticalQcmContentArray is modified.
+    onVerticalQcmContentArrayChanged: {
+        var initial = []
+        for (var i = 0; i < verticalQcmContentArray.length; i++) {
+            initial.push(false)
+        }
+        userSelections = initial
+    }
 
-    // Layout.preferredWidth: implicitWidth
-    // Layout.preferredHeight: implicitHeight
+    implicitWidth: mainRow.implicitWidth
+    implicitHeight: mainRow.implicitHeight + bottomPadding
 
-    implicitWidth: buttonRow.implicitWidth
-    implicitHeight: buttonRow.implicitHeight
+    RowLayout {
+        id: mainRow
 
-    Column {
-        id: buttonRow
-        topPadding: 20
-        anchors.left: parent.left
-        spacing: 10
+        Layout.bottomMargin: 150
 
-        Repeater {
-            model: root.values.length
+        ColumnLayout {
+            spacing: 8
 
-            Button {
-                id: choiceButton
-                width: 200
-                height: root.buttonHeight
-                checkable: true
-                checked: index === root.selectedIndex
+            Repeater {
+                model: root.verticalQcmContentArray
 
-                // Extract clean text without '*' and store correct flag
-                property bool isCorrect: root.values[index].startsWith("*")
-                text: isCorrect ? root.values[index].substring(1) : root.values[index]
+                Button {
+                    id: choiceButton
 
-                background: Rectangle {
-                    radius: 8
-                    color: choiceButton.checked ? "#7A7CF5" : "#f0f0f0"
-                    border.color: "#999"
-                    border.width: 1
-                }
+                    text: modelData
+                    checkable: true
+                    checked: root.userSelections[index] || false
 
-                onClicked: {
-                    if (root.selectedIndex === index) {
-                        root.selectedIndex = -1
-                    } else {
-                        root.selectedIndex = index
+                    Layout.preferredWidth: 200
+                    Layout.preferredHeight: 40
+
+                    background: Rectangle {
+                        radius: 8
+                        color: choiceButton.checked ? "#7A7CF5" : "#F0F0F0"
+                        border.color: choiceButton.checked ? "#4D4FB8" : "#999"
+                        border.width: 1
                     }
-                    root.optionSelected(index, isCorrect)
+
+                    onClicked: {
+                        var updated = Array.from(root.userSelections)
+                        updated[index] = choiceButton.checked
+                        root.userSelections = updated
+                    }
                 }
             }
         }
-    }
 
-    Component.onCompleted: {
-        // Initialize answers array
-        answers = values.map(v => v.startsWith("*"))
+        SuccessFailMark {
+            id: successFailMarkItem
+            Layout.alignment: Qt.AlignVCenter
+            resultMarkStatus: root.resultMarkStatus
+        }
     }
 }
+
+

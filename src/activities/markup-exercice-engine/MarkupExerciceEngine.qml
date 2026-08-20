@@ -102,11 +102,11 @@ ActivityBase {
                                 "#set enumeration_marks( )",
                                 "#set type_exercice(vertical-qcm)",
                                 "$ *Choisis* la bonne forme du verbe à l'imparfait",
-                                "1. Je [jouerai|jouerais|*jouais]",
+                                "1. Je [*parlais|jouerais|*jouais] chez moi ce soir.",
                                 "2. Tu [*regardais|regarderais|regarderas]",
                                 "3. Il [*mangeait|mangerait|mangera]",
                                 "4. Nous [finirions|finirons|*finissions]",
-                                "5. Vous [*lisiez|liriez|lirez]",
+                                "5. Vous [lirez|liriez|*lisiez]",
                                 "#set score(middle)",
                                 "#set end_exercice",
                                 "",
@@ -116,8 +116,8 @@ ActivityBase {
                                 "1. Chaque matin, je [prendrais|*prenais|prendrai]",
                                 "2. Le chien [*aboyait|aboiera|aboyerait]",
                                 "3. Les enfants [chanteraient|*chantaient|chanteront]",
-                                "4. Elle [*jouait|jouera|jouerait]",
-                                "5. Nous [*allions|irons|irions]",
+                                "4. Nous [*allions|irons|irions]",
+                                "5. Elle [*jouait|jouera|jouerait]",
                                 "#set score(middle)",
                                 "#set end_exercice",
                                 "",
@@ -170,13 +170,6 @@ ActivityBase {
                         height: flowsColumn.implicitHeight
                         scale: 1.0
                         transformOrigin: Item.TopLeft
-
-                        // ColumnLayout {
-                        //     id: flowsColumn
-                        //     width: flowsContainer.scale <= 1.0 ? zoomFlickable.width : 800
-                        //     anchors.margins: 4
-                        //     spacing: 10
-                        // }
 
                         ColumnLayout {
                             id: flowsColumn

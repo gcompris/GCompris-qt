@@ -1,45 +1,39 @@
-import QtQuick 2.12
+import QtQuick
 import QtQuick.Controls
-
 import "markup-exercice-engine.js" as Activity
+
+
 
 Rectangle {
     id: qcm
-    property string text
-    property string answer
-    property var comboboxContentArray: []
+
+    // Propriétés nécessaires
+    property alias comboboxContentArray: qcmComboBox.model
     property var comboboxOriginalContentArray: []
-    property var userAnswer
-    property var userAnswerIndex
     property string resultMarkStatus
 
+    // Aliases ou bindings vers la sélection de l'utilisateur
+    readonly property alias userAnswer: qcmComboBox.currentText
+    readonly property alias userAnswerIndex: qcmComboBox.currentIndex
 
-
-    objectName: "qcm"
-    color: "lightblue"
-
+    color: "transparent" // Ou retire la propriété si non nécessaire
     width: qcmComboBox.width
-    height: 20 //qcmComboBox.cursorRectangle.height  //todo
-
-    userAnswer: qcmComboBox.currentValue
-    userAnswerIndex: qcmComboBox.currentIndex
+    height: 25
 
     ComboBox {
         id: qcmComboBox
 
         z: 100
-        height: 25
-        implicitWidth: contentItem.implicitWidth + leftPadding + indicator.width
+        height: parent.height
+        implicitWidth: contentItem.implicitWidth + leftPadding + rightPadding + indicator.width
 
         contentItem: Text {
-                text: qcmComboBox.displayText
-                font: qcmComboBox.font
-                color: qcmComboBox.enabled ? "black" : "gray"
-                verticalAlignment: Text.AlignVCenter
-                elide: Text.ElideRight
+            text: qcmComboBox.displayText
+            font: qcmComboBox.font
+            color: qcmComboBox.enabled ? "black" : "gray"
+            verticalAlignment: Text.AlignVCenter
+            elide: Text.ElideRight
         }
-
-        model: qcm.comboboxContentArray
 
         onActivated: {
             console.log("Exercice Type:", currentText)
@@ -53,6 +47,6 @@ Rectangle {
         x: qcm.width - 10
         resultMarkStatus: qcm.resultMarkStatus
     }
-
-
 }
+
+
