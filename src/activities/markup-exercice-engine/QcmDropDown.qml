@@ -7,12 +7,10 @@ import "markup-exercice-engine.js" as Activity
 Rectangle {
     id: qcm
 
-    // Propriétés nécessaires
     property alias comboboxContentArray: qcmComboBox.model
     property var comboboxOriginalContentArray: []
     property string resultMarkStatus
 
-    // Aliases ou bindings vers la sélection de l'utilisateur
     readonly property alias userAnswer: qcmComboBox.currentText
     readonly property alias userAnswerIndex: qcmComboBox.currentIndex
 

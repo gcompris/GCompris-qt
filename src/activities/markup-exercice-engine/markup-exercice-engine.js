@@ -102,6 +102,24 @@ function checkAnswers() {
                 } else {
                     field.resultMarkStatus = "failure"
                 }
+            } else if (type === "qcmHorizontalItems") {
+                let goodAnswers = field.userSelections.length === field.horizontalQcmOriginalContentArray.length;
+                if (goodAnswers) {
+                  for (var i = 0; i < field.userSelections.length; i++) {
+                      var isSelected = field.userSelections[i];
+                      var startsWithStar = (field.horizontalQcmOriginalContentArray[i] || "").startsWith("*");
+                      if (isSelected !== startsWithStar) {
+                          goodAnswers = false;
+                          break;
+                      }
+                  }
+                }
+                if (goodAnswers) {
+                   field.resultMarkStatus = "success"
+                   valid++
+                } else {
+                   field.resultMarkStatus = "failure"
+                }
             } else if (type === "qcmDropDownItems") {
                 if (field.comboboxOriginalContentArray[field.userAnswerIndex]?.startsWith("*")) {
                     field.resultMarkStatus = "success"
@@ -226,6 +244,7 @@ function handleWord(word, lineIndex) {
 function createInteractiveField(match, lineIndex) {
     const [, before, content, after] = match
     if (before) addTextToFlow(lineIndex, before, defaultFontSize)
+    if (exerciceType === "horizontal-qcm") createHorizontalQcmField(content, lineIndex)
     if (exerciceType === "vertical-qcm") createVerticalQcmField(content, lineIndex)
     if (exerciceType === "gap-fill") createGapFillField(content, lineIndex)
     if (exerciceType === "dropdown-qcm") createQcmDropDownField(content, lineIndex)
@@ -236,14 +255,21 @@ function createInteractiveField(match, lineIndex) {
 function createVerticalQcmField(content, lineIndex) {
     const answerOriginalPropositionsArray = content.split("|")
     const answerCleanedPropositionsdArray = answerOriginalPropositionsArray.map(a => a.replace(/^\*/, "").replace(/※/g, " "))
-    //linesFlowsArray[lineIndex].height = 25 //answers.length * verticalMcqButtonHeight * 1.8
-
     const qcmVerticalItems = components.qcmVerticalItems.createObject(linesFlowsArray[lineIndex], {
         verticalQcmOriginalContentArray: answerOriginalPropositionsArray,
         verticalQcmContentArray: answerCleanedPropositionsdArray
     })
-
     interactiveFieldsArray.push({ qcmVerticalItems })
+}
+
+function createHorizontalQcmField(content, lineIndex) {
+    const answerOriginalPropositionsArray = content.split("|")
+    const answerCleanedPropositionsdArray = answerOriginalPropositionsArray.map(a => a.replace(/^\*/, "").replace(/※/g, " "))
+    const qcmHorizontalItems = components.qcmHorizontalItems.createObject(linesFlowsArray[lineIndex], {
+        horizontalQcmOriginalContentArray: answerOriginalPropositionsArray,
+        horizontalQcmContentArray: answerCleanedPropositionsdArray
+    })
+    interactiveFieldsArray.push({ qcmHorizontalItems })
 }
 
 function createGapFillField(content, lineIndex) {
