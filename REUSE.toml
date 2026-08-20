@@ -4613,6 +4613,12 @@ SPDX-License-Identifier = "CC-BY-4.0"
 SPDX-FileComment = "Source: https://www.freesound.org/people/jorickhoofd/sounds/160045/"
 
 [[annotations]]
+path = "src/activities/shapes/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017-2019 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
 path = "src/activities/share/**.svg"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2017-2019 Timothée Giet"
