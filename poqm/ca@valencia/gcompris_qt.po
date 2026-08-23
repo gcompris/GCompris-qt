@@ -3578,32 +3578,32 @@ msgstr "Quin dia de la setmana és el 4t del mes indicat?"
 #: activities/calendar/calendar_dataset.js:79
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 12th of the given month?"
-msgstr "Quin dia de la setmana és el 12è del mes indicat?"
+msgstr "Quin dia de la setmana és el 12é del mes indicat?"
 
 #: activities/calendar/calendar_dataset.js:83
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 20th of the given month?"
-msgstr "Quin dia de la setmana és el 20è del mes indicat?"
+msgstr "Quin dia de la setmana és el 20é del mes indicat?"
 
 #: activities/calendar/calendar_dataset.js:87
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 28th of the given month?"
-msgstr "Quin dia de la setmana és el 28è del mes indicat?"
+msgstr "Quin dia de la setmana és el 28é del mes indicat?"
 
 #: activities/calendar/calendar_dataset.js:91
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 22nd of the given month?"
-msgstr "Quin dia de la setmana és el 22è del mes indicat?"
+msgstr "Quin dia de la setmana és el 22é del mes indicat?"
 
 #: activities/calendar/calendar_dataset.js:95
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 16th of the given month?"
-msgstr "Quin dia de la setmana és el 16è del mes indicat?"
+msgstr "Quin dia de la setmana és el 16é del mes indicat?"
 
 #: activities/calendar/calendar_dataset.js:99
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 10th of the given month?"
-msgstr "Quin dia de la setmana és el 10è del mes indicat?"
+msgstr "Quin dia de la setmana és el 10é del mes indicat?"
 
 #: activities/calendar/calendar_dataset.js:119
 msgctxt "calendar_dataset|"
@@ -3643,7 +3643,7 @@ msgstr "Tria un diumenge entre els dies 5 i 17 del mes indicat"
 #: activities/calendar/calendar_dataset.js:162
 msgctxt "calendar_dataset|"
 msgid "Select the second day before the 15th of the given month"
-msgstr "Tria el segon dia abans del 15è dia del mes indicat"
+msgstr "Tria el segon dia abans del 15é dia del mes indicat"
 
 #: activities/calendar/calendar_dataset.js:166
 msgctxt "calendar_dataset|"
@@ -3653,17 +3653,17 @@ msgstr "Tria el quart diumenge del mes indicat"
 #: activities/calendar/calendar_dataset.js:170
 msgctxt "calendar_dataset|"
 msgid "Select the day one week after 13th of the given month"
-msgstr "Tria el dia una setmana després del 13è dia del mes indicat"
+msgstr "Tria el dia una setmana després del 13é dia del mes indicat"
 
 #: activities/calendar/calendar_dataset.js:174
 msgctxt "calendar_dataset|"
 msgid "Select the fifth Thursday of the given month"
-msgstr "Tria el cinquè dijous del mes indicat"
+msgstr "Tria el cinqué dijous del mes indicat"
 
 #: activities/calendar/calendar_dataset.js:178
 msgctxt "calendar_dataset|"
 msgid "Select the third day after 27th of the given month"
-msgstr "Tria el tercer dia després del 27è dia del mes indicat"
+msgstr "Tria el tercer dia després del 27é dia del mes indicat"
 
 #: activities/calendar/calendar_dataset.js:197
 msgctxt "calendar_dataset|"
@@ -3708,7 +3708,7 @@ msgstr "Troba el tercer divendres de març de l'any 2019"
 #: activities/calendar/calendar_dataset.js:245
 msgctxt "calendar_dataset|"
 msgid "Find the fifth Sunday of April in the year 2018"
-msgstr "Troba el cinquè diumenge d'abril de l'any 2018"
+msgstr "Troba el cinqué diumenge d'abril de l'any 2018"
 
 #: activities/calendar/calendar_dataset.js:249
 msgctxt "calendar_dataset|"
@@ -3728,7 +3728,7 @@ msgstr "Troba el tercer dijous de setembre de l'any 2017"
 #: activities/calendar/calendar_dataset.js:261
 msgctxt "calendar_dataset|"
 msgid "Find the fifth Sunday of October in the year 2017"
-msgstr "Troba el cinquè diumenge d'octubre de l'any 2017"
+msgstr "Troba el cinqué diumenge d'octubre de l'any 2017"
 
 #: activities/calendar/calendar_dataset.js:265
 msgctxt "calendar_dataset|"
@@ -26342,7 +26342,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:190
 msgctxt "Dataset|"
 msgid "Sixth largest"
-msgstr "El sisè més gran"
+msgstr "El sisé més gran"
 
 #: activities/solar_system/Dataset.js:19 activities/solar_system/Dataset.js:262
 #: activities/solar_system/Dataset.js:307
@@ -26365,7 +26365,7 @@ msgstr "El més gran"
 #: activities/solar_system/Dataset.js:370
 msgctxt "Dataset|"
 msgid "Seventh largest"
-msgstr "El setè més gran"
+msgstr "El seté més gran"
 
 #: activities/solar_system/Dataset.js:24
 msgctxt "Dataset|"
@@ -26547,7 +26547,7 @@ msgstr "El tercer més xicotet"
 #: activities/solar_system/Dataset.js:64 activities/solar_system/Dataset.js:241
 msgctxt "Dataset|"
 msgid "Fifth smallest"
-msgstr "El cinquè més xicotet"
+msgstr "El cinqué més xicotet"
 
 #: activities/solar_system/Dataset.js:69
 msgctxt "Dataset|"
@@ -26681,7 +26681,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:307
 msgctxt "Dataset|"
 msgid "Fifth largest"
-msgstr "El cinquè més gran"
+msgstr "El cinqué més gran"
 
 #: activities/solar_system/Dataset.js:115
 #: activities/solar_system/Dataset.js:190
