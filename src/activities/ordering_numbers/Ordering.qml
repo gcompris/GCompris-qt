@@ -60,10 +60,52 @@ ActivityBase {
             property alias bonus: bonus
             property alias instruction: instructionPanel.textItem
             property alias targetPlaceholder: targetPlaceholder
+            property alias client: client
         }
 
+        // Client {    // Client for gcompris-teachers. Prepare data from activity to server
+        //     id: client
+        //     getDataCallback: function() {
+        //         var data = {
+        //             "mode": activity.mode,
+        //             "useCoefficients": items.coefficientVisible,
+        //             "useDifferentStars": items.useDifferentStars,
+        //             "questionContent": Activity.questionContent
+        //         }
+        //         return data;
+        //     }
+        // }
+
         onStart: { Activity.start(items, mode) }
-        onStop: { Activity.stop() }
+        onStop: { Activity.stop() }      
+
+        Client {
+            id: client
+
+            getDataCallback: function() {
+                // Capture des éléments remis dans l'ordre par l'élève
+                var currentOrder = []
+                for (var i = 0; i < items.dropAreaRepeater.count; i++) {
+                    var item = items.dropAreaRepeater.itemAt(i)
+                    if (item && item.value !== undefined) {
+                        currentOrder.push(item.value)
+                    }
+                }
+
+                // Capture de l'ordre attendu (solution)
+                var expectedOrder = []
+                if (items.expectedArray) {
+                    expectedOrder = items.expectedArray
+                }
+
+                return {
+                    "currentOrder": currentOrder,
+                    "expectedOrder": expectedOrder,
+                    "sortDirection": items.sortDirection, // "ascending" ou "descending"
+                    "isSuccess": items.isBonus // Indique si la série a été validée
+                }
+            }
+        }
 
         GCTextPanel {
             id: instructionPanel

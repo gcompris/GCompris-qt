@@ -1,0 +1,1392 @@
+src/activities/memory-math-add-minus-mult-div/ActivityConfig.qml:15: [memory-math-add-minus-mult-div] import "../../core"
+src/activities/memory-math-add-minus-mult-div/ActivityConfig.qml:15: [memory-math-add-minus-mult-div] import "../../core"
+src/activities/memory-math-add-minus-mult-div/MemoryMathAddMinusMultDiv.qml:12: [memory-math-add-minus-mult-div] import "../memory"
+src/activities/memory-math-add-minus-mult-div/MemoryMathAddMinusMultDiv.qml:12: [memory-math-add-minus-mult-div] import "../memory"
+src/activities/memory-math-add-minus-mult-div/MemoryMathAddMinusMultDiv.qml:15: [memory-math-add-minus-mult-div -> memory] backgroundImg: "qrc:/gcompris/src/activities/memory/resource/background.svg"
+src/activities/memory-math-add-minus-mult-div/resource/1/Data.qml:12: [memory-math-add-minus-mult-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-mult-div/resource/6/Data.qml:12: [memory-math-add-minus-mult-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-mult-div/resource/4/Data.qml:12: [memory-math-add-minus-mult-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-mult-div/resource/9/Data.qml:12: [memory-math-add-minus-mult-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-mult-div/resource/3/Data.qml:12: [memory-math-add-minus-mult-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-mult-div/resource/7/Data.qml:12: [memory-math-add-minus-mult-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-mult-div/resource/8/Data.qml:12: [memory-math-add-minus-mult-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-mult-div/resource/2/Data.qml:12: [memory-math-add-minus-mult-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-mult-div/resource/10/Data.qml:12: [memory-math-add-minus-mult-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-mult-div/resource/5/Data.qml:12: [memory-math-add-minus-mult-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-tux/MemoryMathAddTux.qml:12: [memory-math-add-tux] import "../memory"
+src/activities/memory-math-add-tux/MemoryMathAddTux.qml:12: [memory-math-add-tux] import "../memory"
+src/activities/memory-math-add-tux/MemoryMathAddTux.qml:15: [memory-math-add-tux -> memory] backgroundImg: "qrc:/gcompris/src/activities/memory/resource/background.svg"
+src/activities/memory-math-add-tux/resource/1/Data.qml:12: [memory-math-add-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-tux/resource/6/Data.qml:12: [memory-math-add-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-tux/resource/4/Data.qml:12: [memory-math-add-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-tux/resource/9/Data.qml:12: [memory-math-add-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-tux/resource/3/Data.qml:12: [memory-math-add-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-tux/resource/7/Data.qml:12: [memory-math-add-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-tux/resource/8/Data.qml:12: [memory-math-add-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-tux/resource/2/Data.qml:12: [memory-math-add-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-tux/resource/10/Data.qml:12: [memory-math-add-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-tux/resource/5/Data.qml:12: [memory-math-add-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory/MemoryCommon.qml:16: [memory] import "../../core"
+src/activities/memory/MemoryCommon.qml:16: [memory] import "../../core"
+src/activities/memory/MemoryCommon.qml:233: [memory -> bargame] backgroundImageSource: 'qrc:/gcompris/src/activities/bargame/resource/score_1.svg'
+src/activities/memory/MemoryCommon.qml:244: [memory -> bargame] backgroundImageSource: 'qrc:/gcompris/src/activities/bargame/resource/score_2.svg'
+src/activities/memory/ActivityConfig.qml:15: [memory] import "../../core"
+src/activities/memory/ActivityConfig.qml:15: [memory] import "../../core"
+src/activities/memory/CardItem.qml:18: [memory] import "../../core"
+src/activities/memory/CardItem.qml:18: [memory] import "../../core"
+src/activities/fifteen/Fifteen.qml:14: [fifteen] import "../../core"
+src/activities/fifteen/Fifteen.qml:14: [fifteen] import "../../core"
+src/activities/click_on_letter/Carriage.qml:16: [click_on_letter] import "../../core"
+src/activities/click_on_letter/Carriage.qml:16: [click_on_letter] import "../../core"
+src/activities/click_on_letter/ActivityConfig.qml:13: [click_on_letter] import "../../core"
+src/activities/click_on_letter/ActivityConfig.qml:13: [click_on_letter] import "../../core"
+src/activities/click_on_letter/ClickOnLetter.qml:15: [click_on_letter] import "../../core"
+src/activities/click_on_letter/ClickOnLetter.qml:15: [click_on_letter] import "../../core"
+src/activities/enumerate/Enumerate.qml:15: [enumerate] import "../../core"
+src/activities/enumerate/Enumerate.qml:15: [enumerate] import "../../core"
+src/activities/enumerate/ActivityConfig.qml:13: [enumerate] import "../../core"
+src/activities/enumerate/ActivityConfig.qml:13: [enumerate] import "../../core"
+src/activities/enumerate/AnswerArea.qml:15: [enumerate] import "../../core"
+src/activities/enumerate/AnswerArea.qml:15: [enumerate] import "../../core"
+src/activities/enumerate/ItemToEnumerate.qml:14: [enumerate] import "../../core"
+src/activities/enumerate/ItemToEnumerate.qml:14: [enumerate] import "../../core"
+src/activities/mazerelative/Mazerelative.qml:11: [mazerelative] import "../maze"
+src/activities/mazerelative/Mazerelative.qml:11: [mazerelative] import "../maze"
+src/activities/compass/ActivityConfig.qml:8: [compass] import "../../core"
+src/activities/compass/ActivityConfig.qml:8: [compass] import "../../core"
+src/activities/compass/TheCompass.qml:12: [compass] import "../../core"
+src/activities/compass/TheCompass.qml:12: [compass] import "../../core"
+src/activities/compass/Compass.qml:15: [compass] import "../../core"
+src/activities/compass/Compass.qml:15: [compass] import "../../core"
+src/activities/compass/Compass.qml:16: [compass] import "../sketch"
+src/activities/compass/Compass.qml:16: [compass] import "../sketch"
+src/activities/compass/Compass.qml:31: [compass -> guesscount] source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
+src/activities/compass/Compass.qml:475: [compass -> sketch] source: items.allTemplate ? "qrc:/gcompris/src/activities/sketch/resource/menu.svg"
+src/activities/compass/Compass.qml:548: [compass -> sketch] source: "qrc:/gcompris/src/activities/sketch/resource/filesMenu.svg"
+src/activities/compass/Compass.qml:566: [compass -> sketch] source: "qrc:/gcompris/src/activities/sketch/resource/brushTools.svg"
+src/activities/compass/Compass.qml:587: [compass -> sketch] source: "qrc:/gcompris/src/activities/sketch/resource/undo.svg"
+src/activities/compass/Compass.qml:597: [compass -> sketch] source: "qrc:/gcompris/src/activities/sketch/resource/undo.svg"
+src/activities/compass/Compass.qml:611: [compass -> sketch] source: "qrc:/gcompris/src/activities/sketch/resource/" + (templateContainer.visible ? "geometryTools.svg" :  "empty.svg")
+src/activities/compass/Compass.qml:623: [compass -> drawing_wheels] source: "qrc:/gcompris/src/activities/drawing_wheels/resource/" + (checked ? "hidden.svg" : "visible.svg")
+src/activities/compass/Compass.qml:774: [compass -> sketch] iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileSave.svg"
+src/activities/compass/Compass.qml:789: [compass -> sketch] iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileOpen.svg"
+src/activities/compass/Compass.qml:812: [compass -> sketch] iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileNew.svg"
+src/activities/path_encoding/MoveBar.qml:11: [path_encoding] import "../../core"
+src/activities/path_encoding/MoveBar.qml:11: [path_encoding] import "../../core"
+src/activities/path_encoding/Block.qml:10: [path_encoding] import "../../core"
+src/activities/path_encoding/Block.qml:10: [path_encoding] import "../../core"
+src/activities/path_encoding/GridPath.qml:9: [path_encoding] import "../../core"
+src/activities/path_encoding/GridPath.qml:9: [path_encoding] import "../../core"
+src/activities/path_encoding/GridPath.qml:266: [path_encoding -> ballcatch] winSound: "qrc:/gcompris/src/activities/ballcatch/resource/tuxok.wav"
+src/activities/path_encoding/MapView.qml:11: [path_encoding] import "../../core"
+src/activities/path_encoding/MapView.qml:11: [path_encoding] import "../../core"
+src/activities/path_encoding/Tux.qml:14: [path_encoding -> maze] source: "qrc:/gcompris/src/activities/maze/resource/tux_top_south.svg"
+src/activities/path_encoding/MoveButtons.qml:10: [path_encoding] import "../../core"
+src/activities/path_encoding/MoveButtons.qml:10: [path_encoding] import "../../core"
+src/activities/gnumch-inequality/GnumchInequality.qml:12: [gnumch-inequality] import "../gnumch-equality/"
+src/activities/gnumch-inequality/GnumchInequality.qml:12: [gnumch-inequality] import "../gnumch-equality/"
+src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml:10: [scalesboard_weight_avoirdupois] import "../scalesboard"
+src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml:10: [scalesboard_weight_avoirdupois] import "../scalesboard"
+src/activities/memory-math-div/ActivityConfig.qml:15: [memory-math-div] import "../../core"
+src/activities/memory-math-div/ActivityConfig.qml:15: [memory-math-div] import "../../core"
+src/activities/memory-math-div/MemoryMathDiv.qml:12: [memory-math-div] import "../memory"
+src/activities/memory-math-div/MemoryMathDiv.qml:12: [memory-math-div] import "../memory"
+src/activities/memory-math-div/MemoryMathDiv.qml:15: [memory-math-div -> memory] backgroundImg: "qrc:/gcompris/src/activities/memory/resource/background.svg"
+src/activities/memory-math-div/resource/1/Data.qml:12: [memory-math-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-div/resource/6/Data.qml:12: [memory-math-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-div/resource/4/Data.qml:12: [memory-math-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-div/resource/9/Data.qml:12: [memory-math-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-div/resource/3/Data.qml:12: [memory-math-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-div/resource/7/Data.qml:12: [memory-math-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-div/resource/8/Data.qml:12: [memory-math-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-div/resource/2/Data.qml:12: [memory-math-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-div/resource/10/Data.qml:12: [memory-math-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-div/resource/5/Data.qml:12: [memory-math-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult-div-tux/MemoryMathMultDivTux.qml:12: [memory-math-mult-div-tux] import "../memory"
+src/activities/memory-math-mult-div-tux/MemoryMathMultDivTux.qml:12: [memory-math-mult-div-tux] import "../memory"
+src/activities/memory-math-mult-div-tux/MemoryMathMultDivTux.qml:15: [memory-math-mult-div-tux -> memory] backgroundImg: "qrc:/gcompris/src/activities/memory/resource/background.svg"
+src/activities/memory-math-mult-div-tux/resource/1/Data.qml:12: [memory-math-mult-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult-div-tux/resource/6/Data.qml:12: [memory-math-mult-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult-div-tux/resource/4/Data.qml:12: [memory-math-mult-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult-div-tux/resource/9/Data.qml:12: [memory-math-mult-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult-div-tux/resource/3/Data.qml:12: [memory-math-mult-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult-div-tux/resource/7/Data.qml:12: [memory-math-mult-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult-div-tux/resource/8/Data.qml:12: [memory-math-mult-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult-div-tux/resource/2/Data.qml:12: [memory-math-mult-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult-div-tux/resource/5/Data.qml:12: [memory-math-mult-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/fractions_create/PieGraph.qml:9: [fractions_create] import "../../core"
+src/activities/fractions_create/PieGraph.qml:9: [fractions_create] import "../../core"
+src/activities/fractions_create/FractionNumber.qml:10: [fractions_create] import "../../core"
+src/activities/fractions_create/FractionNumber.qml:10: [fractions_create] import "../../core"
+src/activities/fractions_create/FractionsCreate.qml:10: [fractions_create] import "../../core"
+src/activities/fractions_create/FractionsCreate.qml:10: [fractions_create] import "../../core"
+src/activities/fractions_create/FractionsCreate.qml:27: [fractions_create -> magic-hat-minus] source: "qrc:/gcompris/src/activities/magic-hat-minus/resource/background.svg"
+src/activities/fractions_create/ChartDisplay.qml:10: [fractions_create] import "../../core"
+src/activities/fractions_create/ChartDisplay.qml:10: [fractions_create] import "../../core"
+src/activities/fractions_create/PieChart.qml:9: [fractions_create] import "../../core"
+src/activities/fractions_create/PieChart.qml:9: [fractions_create] import "../../core"
+src/activities/fractions_create/RectangleChart.qml:11: [fractions_create] import "../../core"
+src/activities/fractions_create/RectangleChart.qml:11: [fractions_create] import "../../core"
+src/activities/lang/Quiz.qml:16: [lang] import "../../core"
+src/activities/lang/Quiz.qml:16: [lang] import "../../core"
+src/activities/lang/ImageReview.qml:16: [lang] import "../../core"
+src/activities/lang/ImageReview.qml:16: [lang] import "../../core"
+src/activities/lang/ActivityConfig.qml:13: [lang] import "../../core"
+src/activities/lang/ActivityConfig.qml:13: [lang] import "../../core"
+src/activities/lang/SpellIt.qml:16: [lang] import "../../core"
+src/activities/lang/SpellIt.qml:16: [lang] import "../../core"
+src/activities/lang/MenuScreen.qml:17: [lang] import "../../core"
+src/activities/lang/MenuScreen.qml:17: [lang] import "../../core"
+src/activities/lang/MenuScreen.qml:207: [lang -> menu] source: "qrc:/gcompris/src/activities/menu/resource/" +
+src/activities/lang/Lang.qml:16: [lang] import "../../core"
+src/activities/lang/Lang.qml:16: [lang] import "../../core"
+src/activities/geography/Geography.qml:12: [geography] import "../babymatch"
+src/activities/geography/Geography.qml:12: [geography] import "../babymatch"
+src/activities/oware_2players/Oware_2players.qml:7: [oware_2players] import "../oware"
+src/activities/oware_2players/Oware_2players.qml:7: [oware_2players] import "../oware"
+src/activities/roman_numerals/RomanNumerals.qml:15: [roman_numerals] import "../../core"
+src/activities/roman_numerals/RomanNumerals.qml:15: [roman_numerals] import "../../core"
+src/activities/multiple_choice_questions/Multiple_choice_questions.qml:15: [multiple_choice_questions] import "../../core"
+src/activities/multiple_choice_questions/Multiple_choice_questions.qml:15: [multiple_choice_questions] import "../../core"
+src/activities/smallnumbers/ActivityConfig.qml:13: [smallnumbers] import "../../core"
+src/activities/smallnumbers/ActivityConfig.qml:13: [smallnumbers] import "../../core"
+src/activities/smallnumbers/Smallnumbers.qml:13: [smallnumbers] import "../gletters"
+src/activities/smallnumbers/Smallnumbers.qml:13: [smallnumbers] import "../gletters"
+src/activities/clickanddraw/ActivityConfig.qml:13: [clickanddraw] import "../../core"
+src/activities/clickanddraw/ActivityConfig.qml:13: [clickanddraw] import "../../core"
+src/activities/clickanddraw/Clickanddraw.qml:11: [clickanddraw] import "../number_sequence"
+src/activities/clickanddraw/Clickanddraw.qml:11: [clickanddraw] import "../number_sequence"
+src/activities/clickanddraw/Clickanddraw.qml:18: [clickanddraw -> number_sequence] resourceUrl: "qrc:/gcompris/src/activities/number_sequence/resource/"
+src/activities/path_decoding_relative/PathDecodingRelative.qml:9: [path_decoding_relative] import "../path_encoding"
+src/activities/path_decoding_relative/PathDecodingRelative.qml:9: [path_decoding_relative] import "../path_encoding"
+src/activities/gletters/ActivityConfig.qml:13: [gletters] import "../../core"
+src/activities/gletters/ActivityConfig.qml:13: [gletters] import "../../core"
+src/activities/gletters/FallingImage.qml:16: [gletters] import "../../core"
+src/activities/gletters/FallingImage.qml:16: [gletters] import "../../core"
+src/activities/gletters/FallingDomino.qml:15: [gletters] import "../../core"
+src/activities/gletters/FallingDomino.qml:15: [gletters] import "../../core"
+src/activities/gletters/FallingWord.qml:16: [gletters] import "../../core"
+src/activities/gletters/FallingWord.qml:16: [gletters] import "../../core"
+src/activities/gletters/Gletters.qml:16: [gletters] import "../../core"
+src/activities/gletters/Gletters.qml:16: [gletters] import "../../core"
+src/activities/memory-tux/MemoryTux.qml:12: [memory-tux] import "../memory"
+src/activities/memory-tux/MemoryTux.qml:12: [memory-tux] import "../memory"
+src/activities/memory-tux/MemoryTux.qml:13: [memory-tux] import "../memory/memorydataset.js" as Dataset
+src/activities/memory-tux/MemoryTux.qml:13: [memory-tux] import "../memory/memorydataset.js" as Dataset
+src/activities/memory-tux/MemoryTux.qml:17: [memory-tux -> memory] backgroundImg: "qrc:/gcompris/src/activities/memory/resource/background.svg"
+src/activities/bargame/ActivityConfig.qml:13: [bargame] import "../../core"
+src/activities/bargame/ActivityConfig.qml:13: [bargame] import "../../core"
+src/activities/bargame/Bargame.qml:15: [bargame] import "../../core"
+src/activities/bargame/Bargame.qml:15: [bargame] import "../../core"
+src/activities/bargame/Bargame.qml:87: [bargame -> ballcatch] source: "qrc:/gcompris/src/activities/ballcatch/resource/tux.svg"
+src/activities/learn_decimals/MultipleBars.qml:13: [learn_decimals] import "../../core"
+src/activities/learn_decimals/MultipleBars.qml:13: [learn_decimals] import "../../core"
+src/activities/learn_decimals/SingleBar.qml:13: [learn_decimals] import "../../core"
+src/activities/learn_decimals/SingleBar.qml:13: [learn_decimals] import "../../core"
+src/activities/learn_decimals/SingleBar.qml:59: [learn_decimals -> babyshapes] source: items.isQuantityMode ? "qrc:/gcompris/src/activities/babyshapes/resource/food/orange.svg" :
+src/activities/learn_decimals/Learn_decimals.qml:13: [learn_decimals] import "../../core"
+src/activities/learn_decimals/Learn_decimals.qml:13: [learn_decimals] import "../../core"
+src/activities/learn_decimals/Learn_decimals.qml:45: [learn_decimals -> braille_fun] source: "qrc:/gcompris/src/activities/braille_fun/resource/hillside.svg"
+src/activities/learn_decimals/Learn_decimals.qml:134: [learn_decimals -> guesscount] source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
+src/activities/learn_decimals/resource/TutorialBase.qml:14: [learn_decimals] import "../../../core"
+src/activities/learn_decimals/resource/TutorialBase.qml:14: [learn_decimals] import "../../../core"
+src/activities/learn_decimals/resource/TutorialBase.qml:21: [learn_decimals -> braille_fun] source: "qrc:/gcompris/src/activities/braille_fun/resource/hillside.svg"
+src/activities/learn_decimals/resource/TutorialBar.qml:12: [learn_decimals] import "../../../core"
+src/activities/learn_decimals/resource/TutorialBar.qml:12: [learn_decimals] import "../../../core"
+src/activities/learn_decimals/resource/TutorialBar.qml:43: [learn_decimals -> babyshapes] source: activity.isQuantityMode ? "qrc:/gcompris/src/activities/babyshapes/resource/food/orange.svg" :
+src/activities/learn_decimals/resource/TutorialBar.qml:60: [learn_decimals -> babyshapes] source: activity.isQuantityMode ? "qrc:/gcompris/src/activities/babyshapes/resource/food/orange.svg" :
+src/activities/tens_complement_swap/Card.qml:8: [tens_complement_swap] import "../../core"
+src/activities/tens_complement_swap/Card.qml:8: [tens_complement_swap] import "../../core"
+src/activities/tens_complement_swap/Tens_complement_swap.qml:12: [tens_complement_swap] import "../../core"
+src/activities/tens_complement_swap/Tens_complement_swap.qml:12: [tens_complement_swap] import "../../core"
+src/activities/tens_complement_swap/Tens_complement_swap.qml:31: [tens_complement_swap -> chess] source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
+src/activities/tens_complement_swap/CardContainer.qml:8: [tens_complement_swap] import "../../core"
+src/activities/tens_complement_swap/CardContainer.qml:8: [tens_complement_swap] import "../../core"
+src/activities/imagename/Imagename.qml:12: [imagename] import "../babymatch"
+src/activities/imagename/Imagename.qml:12: [imagename] import "../babymatch"
+src/activities/imagename/Imagename.qml:20: [imagename -> babymatch] imagesUrl: "qrc:/gcompris/src/activities/babymatch/resource/"
+src/activities/money/MoneyArea.qml:11: [money] import "../../core"
+src/activities/money/MoneyArea.qml:11: [money] import "../../core"
+src/activities/money/ActivityConfig.qml:13: [money] import "../../core"
+src/activities/money/ActivityConfig.qml:13: [money] import "../../core"
+src/activities/money/MoneyCore.qml:14: [money] import "../../core"
+src/activities/money/MoneyCore.qml:14: [money] import "../../core"
+src/activities/money/MoneyCore.qml:33: [money -> family] source: "qrc:/gcompris/src/activities/family/resource/background.svg"
+src/activities/money/MoneyCore.qml:163: [money -> mosaic] source: "qrc:/gcompris/src/activities/mosaic/resource/tux.svg"
+src/activities/money/moneyConstants.js:12: [money -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/apple.svg",
+src/activities/money/moneyConstants.js:13: [money -> babyshapes] "qrc:/gcompris/src/activities/babyshapes/resource/food/orange.svg",
+src/activities/money/moneyConstants.js:14: [money -> babyshapes] "qrc:/gcompris/src/activities/babyshapes/resource/food/banana.svg",
+src/activities/money/moneyConstants.js:15: [money -> babyshapes] "qrc:/gcompris/src/activities/babyshapes/resource/food/grapefruit.svg",
+src/activities/money/moneyConstants.js:16: [money -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/carrot.svg",
+src/activities/money/moneyConstants.js:17: [money -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/flower.svg",
+src/activities/money/moneyConstants.js:18: [money -> babyshapes] "qrc:/gcompris/src/activities/babyshapes/resource/food/chocolate_cake.svg"
+src/activities/money/moneyConstants.js:22: [money -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/flowerpot.svg",
+src/activities/money/moneyConstants.js:23: [money -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/pencil.svg",
+src/activities/money/moneyConstants.js:24: [money -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/bottle.svg",
+src/activities/money/moneyConstants.js:25: [money -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/light.svg",
+src/activities/money/moneyConstants.js:26: [money -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/eggpot.svg"
+src/activities/money/moneyConstants.js:30: [money -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/lamp.svg",
+src/activities/money/moneyConstants.js:31: [money -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/minivan.svg",
+src/activities/money/moneyConstants.js:32: [money -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/bicycle.svg"
+src/activities/smallnumbers2/ActivityConfig.qml:13: [smallnumbers2] import "../../core"
+src/activities/smallnumbers2/ActivityConfig.qml:13: [smallnumbers2] import "../../core"
+src/activities/smallnumbers2/Smallnumbers2.qml:12: [smallnumbers2] import "../gletters"
+src/activities/smallnumbers2/Smallnumbers2.qml:12: [smallnumbers2] import "../gletters"
+src/activities/chronos/Chronos.qml:12: [chronos] import "../babymatch"
+src/activities/chronos/Chronos.qml:12: [chronos] import "../babymatch"
+src/activities/tens_complement_use/Tens_complement_use.qml:10: [tens_complement_use] import "../../core"
+src/activities/tens_complement_use/Tens_complement_use.qml:10: [tens_complement_use] import "../../core"
+src/activities/tens_complement_use/Tens_complement_use.qml:26: [tens_complement_use -> chess] source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
+src/activities/tens_complement_use/ContainerBox.qml:8: [tens_complement_use] import "../../core"
+src/activities/tens_complement_use/ContainerBox.qml:8: [tens_complement_use] import "../../core"
+src/activities/tens_complement_use/tens_complement_use.js:8: [tens_complement_use] .import "../../core/core.js" as Core
+src/activities/color_mix_light/ColorMixLight.qml:11: [color_mix_light] import "../color_mix"
+src/activities/color_mix_light/ColorMixLight.qml:11: [color_mix_light] import "../color_mix"
+src/activities/keyboard_training/ActivityConfig.qml:13: [keyboard_training] import "../../core"
+src/activities/keyboard_training/ActivityConfig.qml:13: [keyboard_training] import "../../core"
+src/activities/keyboard_training/Keyboard_training.qml:9: [keyboard_training] import "../../core"
+src/activities/keyboard_training/Keyboard_training.qml:9: [keyboard_training] import "../../core"
+src/activities/keyboard_training/Keyboard_training.qml:34: [keyboard_training -> menu] source: "qrc:/gcompris/src/activities/menu/resource/background.svg"
+src/activities/keyboard_training/Keyboard_training.qml:58: [keyboard_training -> gletters] readonly property string dataSetUrl: "qrc:/gcompris/src/activities/gletters/resource/"
+src/activities/explore_farm_animals/ExploreLevels.qml:17: [explore_farm_animals] import "../../core"
+src/activities/explore_farm_animals/ExploreLevels.qml:17: [explore_farm_animals] import "../../core"
+src/activities/explore_farm_animals/ExploreLevels.qml:38: [explore_farm_animals -> chess] source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
+src/activities/explore_farm_animals/AnimalDescriptionLevels.qml:17: [explore_farm_animals] import "../../core"
+src/activities/explore_farm_animals/AnimalDescriptionLevels.qml:17: [explore_farm_animals] import "../../core"
+src/activities/drawnumbers/Drawnumbers.qml:10: [drawnumbers] import "../number_sequence"
+src/activities/drawnumbers/Drawnumbers.qml:10: [drawnumbers] import "../number_sequence"
+src/activities/drawnumbers/ActivityConfig.qml:13: [drawnumbers] import "../../core"
+src/activities/drawnumbers/ActivityConfig.qml:13: [drawnumbers] import "../../core"
+src/activities/planegame/Planegame.qml:14: [planegame] import "../../core"
+src/activities/planegame/Planegame.qml:14: [planegame] import "../../core"
+src/activities/planegame/Planegame.qml:60: [planegame] source: Activity.url + "../algorithm/resource/desert_scene.svg"
+src/activities/planegame/Planegame.qml:130: [planegame] source: "../digital_electricity/resource/texture01.webp"
+src/activities/planegame/Cloud.qml:12: [planegame] import "../../core"
+src/activities/planegame/Cloud.qml:12: [planegame] import "../../core"
+src/activities/planegame/Plane.qml:12: [planegame] import "../../core"
+src/activities/planegame/Plane.qml:12: [planegame] import "../../core"
+src/activities/share/WidgetOption.qml:16: [share] import "../../core"
+src/activities/share/WidgetOption.qml:16: [share] import "../../core"
+src/activities/share/DropChild.qml:16: [share] import "../../core"
+src/activities/share/DropChild.qml:16: [share] import "../../core"
+src/activities/share/ActivityConfig.qml:11: [share] import "../../core"
+src/activities/share/ActivityConfig.qml:11: [share] import "../../core"
+src/activities/share/Share.qml:16: [share] import "../../core"
+src/activities/share/Share.qml:16: [share] import "../../core"
+src/activities/balancebox/Balancebox.qml:17: [balancebox] import "../../core"
+src/activities/balancebox/Balancebox.qml:17: [balancebox] import "../../core"
+src/activities/balancebox/Balancebox.qml:50: [balancebox -> maze] source: "qrc:/gcompris/src/activities/maze/resource/maze_bg.svg"
+src/activities/balancebox/ActivityConfig.qml:13: [balancebox] import "../../core"
+src/activities/balancebox/ActivityConfig.qml:13: [balancebox] import "../../core"
+src/activities/balancebox/BalanceContact.qml:13: [balancebox] import "../../core"
+src/activities/balancebox/BalanceContact.qml:13: [balancebox] import "../../core"
+src/activities/balancebox/editor/BalanceboxEditor.qml:14: [balancebox] import "../../../core"
+src/activities/balancebox/editor/BalanceboxEditor.qml:14: [balancebox] import "../../../core"
+src/activities/traffic/ActivityConfig.qml:13: [traffic] import "../../core"
+src/activities/traffic/ActivityConfig.qml:13: [traffic] import "../../core"
+src/activities/traffic/Car.qml:14: [traffic] import "../../core"
+src/activities/traffic/Car.qml:14: [traffic] import "../../core"
+src/activities/traffic/Traffic.qml:15: [traffic] import "../../core"
+src/activities/traffic/Traffic.qml:15: [traffic] import "../../core"
+src/activities/bargame_2players/ActivityConfig.qml:13: [bargame_2players] import "../../core"
+src/activities/bargame_2players/ActivityConfig.qml:13: [bargame_2players] import "../../core"
+src/activities/bargame_2players/Bargame2players.qml:11: [bargame_2players] import "../bargame"
+src/activities/bargame_2players/Bargame2players.qml:11: [bargame_2players] import "../bargame"
+src/activities/hexagon/HexagonItem.qml:15: [hexagon] import "../../core"
+src/activities/hexagon/HexagonItem.qml:15: [hexagon] import "../../core"
+src/activities/hexagon/Hexagon.qml:17: [hexagon] import "../../core"
+src/activities/hexagon/Hexagon.qml:17: [hexagon] import "../../core"
+src/activities/hexagon/Hexagon.qml:31: [hexagon -> menu] source: "qrc:/gcompris/src/activities/menu/resource/background.svg"
+src/activities/vertical_addition/VerticalAddition.qml:7: [vertical_addition] import "../vertical_subtraction"
+src/activities/vertical_addition/VerticalAddition.qml:7: [vertical_addition] import "../vertical_subtraction"
+src/activities/canal_lock/CanalLock.qml:16: [canal_lock] import "../../core"
+src/activities/canal_lock/CanalLock.qml:16: [canal_lock] import "../../core"
+src/activities/target/Arrow.qml:15: [target] import "../../core"
+src/activities/target/Arrow.qml:15: [target] import "../../core"
+src/activities/target/TargetItem.qml:15: [target] import "../../core"
+src/activities/target/TargetItem.qml:15: [target] import "../../core"
+src/activities/target/Target.qml:17: [target] import "../../core"
+src/activities/target/Target.qml:17: [target] import "../../core"
+src/activities/categorization/ActivityConfig.qml:11: [categorization] import "../../core"
+src/activities/categorization/ActivityConfig.qml:11: [categorization] import "../../core"
+src/activities/categorization/Categorization.qml:14: [categorization] import "../../core"
+src/activities/categorization/Categorization.qml:14: [categorization] import "../../core"
+src/activities/categorization/Categorization.qml:33: [categorization -> guesscount] source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
+src/activities/categorization/CategoryReview.qml:13: [categorization] import "../../core"
+src/activities/categorization/CategoryReview.qml:13: [categorization] import "../../core"
+src/activities/categorization/MenuScreen.qml:17: [categorization] import "../../core"
+src/activities/categorization/MenuScreen.qml:17: [categorization] import "../../core"
+src/activities/categorization/MenuScreen.qml:24: [categorization -> guesscount] source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
+src/activities/categorization/MenuScreen.qml:227: [categorization -> menu] source: "qrc:/gcompris/src/activities/menu/resource/" +
+src/activities/categorization/resource/board/category_fruits.qml:15: [categorization -> lang] property string imagesPrefix: "qrc:/gcompris/src/activities/lang/resource/words_sample/"
+src/activities/mosaic/Mosaic.qml:14: [mosaic] import "../../core"
+src/activities/mosaic/Mosaic.qml:14: [mosaic] import "../../core"
+src/activities/mosaic/Mosaic.qml:118: [mosaic -> redraw] source: "qrc:/gcompris/src/activities/redraw/resource/brush.wav"
+src/activities/find_the_day/FindTheDay.qml:11: [find_the_day] import "../calendar"
+src/activities/find_the_day/FindTheDay.qml:11: [find_the_day] import "../calendar"
+src/activities/alphabet-sequence/AlphabetSequence.qml:11: [alphabet-sequence] import "../planegame"
+src/activities/alphabet-sequence/AlphabetSequence.qml:11: [alphabet-sequence] import "../planegame"
+src/activities/baby_mouse/Baby_mouse.qml:11: [baby_mouse] import "../../core"
+src/activities/baby_mouse/Baby_mouse.qml:11: [baby_mouse] import "../../core"
+src/activities/baby_mouse/Baby_mouse.qml:22: [baby_mouse -> colors] source: "qrc:/gcompris/src/activities/colors/resource/background.svg"
+src/activities/baby_mouse/baby_mouse.js:16: [baby_mouse -> colors] var duckColorURL = "qrc:/gcompris/src/activities/colors/resource/";
+src/activities/vertical_subtraction_compensation/VerticalSubtractionCompensation.qml:7: [vertical_subtraction_compensation] import "../vertical_subtraction"
+src/activities/vertical_subtraction_compensation/VerticalSubtractionCompensation.qml:7: [vertical_subtraction_compensation] import "../vertical_subtraction"
+src/activities/wordsgame/ActivityConfig.qml:13: [wordsgame] import "../../core"
+src/activities/wordsgame/ActivityConfig.qml:13: [wordsgame] import "../../core"
+src/activities/wordsgame/Wordsgame.qml:12: [wordsgame] import "../gletters"
+src/activities/wordsgame/Wordsgame.qml:12: [wordsgame] import "../gletters"
+src/activities/ordering_numbers/ordering.js:15: [ordering_numbers] .import "../../core/core.js" as Core
+src/activities/ordering_numbers/OrderingPlaceholder.qml:16: [ordering_numbers] import "../../core"
+src/activities/ordering_numbers/OrderingPlaceholder.qml:16: [ordering_numbers] import "../../core"
+src/activities/ordering_numbers/OrderingPlaceholder.qml:17: [ordering_numbers] import "../../core/core.js" as Core
+src/activities/ordering_numbers/OrderingPlaceholder.qml:17: [ordering_numbers] import "../../core/core.js" as Core
+src/activities/ordering_numbers/OrderingElement.qml:16: [ordering_numbers] import "../../core"
+src/activities/ordering_numbers/OrderingElement.qml:16: [ordering_numbers] import "../../core"
+src/activities/ordering_numbers/Ordering.qml:15: [ordering_numbers] import "../../core"
+src/activities/ordering_numbers/Ordering.qml:15: [ordering_numbers] import "../../core"
+src/activities/ordering_numbers/Ordering.qml:37: [ordering_numbers -> braille_fun] source: "qrc:/gcompris/src/activities/braille_fun/resource/hillside.svg"
+src/activities/memory-math-div-tux/MemoryMathDivTux.qml:12: [memory-math-div-tux] import "../memory"
+src/activities/memory-math-div-tux/MemoryMathDivTux.qml:12: [memory-math-div-tux] import "../memory"
+src/activities/memory-math-div-tux/MemoryMathDivTux.qml:15: [memory-math-div-tux -> memory] backgroundImg: "qrc:/gcompris/src/activities/memory/resource/background.svg"
+src/activities/memory-math-div-tux/resource/1/Data.qml:12: [memory-math-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-div-tux/resource/6/Data.qml:12: [memory-math-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-div-tux/resource/4/Data.qml:12: [memory-math-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-div-tux/resource/9/Data.qml:12: [memory-math-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-div-tux/resource/3/Data.qml:12: [memory-math-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-div-tux/resource/7/Data.qml:12: [memory-math-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-div-tux/resource/8/Data.qml:12: [memory-math-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-div-tux/resource/2/Data.qml:12: [memory-math-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-div-tux/resource/10/Data.qml:12: [memory-math-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-div-tux/resource/5/Data.qml:12: [memory-math-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/lightsoff/Lightsoff.qml:17: [lightsoff] import "../../core"
+src/activities/lightsoff/Lightsoff.qml:17: [lightsoff] import "../../core"
+src/activities/lightsoff/Lightsoff.qml:34: [lightsoff -> family] source: "qrc:/gcompris/src/activities/family/resource/background.svg"
+src/activities/lightsoff/Lightsoff.qml:130: [lightsoff -> menu] source: "qrc:/gcompris/src/activities/menu/resource/all.svg"
+src/activities/lightsoff/Lightsoff.qml:248: [lightsoff -> ballcatch] source: "qrc:/gcompris/src/activities/ballcatch/resource/tux.svg"
+src/activities/calendar/Calendar.qml:18: [calendar] import "../../core"
+src/activities/calendar/Calendar.qml:18: [calendar] import "../../core"
+src/activities/calendar/Calendar.qml:35: [calendar -> fifteen] source: "qrc:/gcompris/src/activities/fifteen/resource/background.svg"
+src/activities/calendar/ChoiceTable.qml:16: [calendar] import "../../core"
+src/activities/calendar/ChoiceTable.qml:16: [calendar] import "../../core"
+src/activities/calendar/MonthGridDelegate.qml:15: [calendar] import "../../core"
+src/activities/calendar/MonthGridDelegate.qml:15: [calendar] import "../../core"
+src/activities/morse_code/FirstScreen.qml:13: [morse_code] import "../../core"
+src/activities/morse_code/FirstScreen.qml:13: [morse_code] import "../../core"
+src/activities/morse_code/FirstScreen.qml:19: [morse_code -> braille_alphabets] source: "qrc:/gcompris/src/activities/braille_alphabets/resource/intro_bg.svg"
+src/activities/morse_code/FirstScreen.qml:139: [morse_code -> braille_alphabets] source: "qrc:/gcompris/src/activities/braille_alphabets/resource/tux_braille.svg"
+src/activities/morse_code/MorseMap.qml:13: [morse_code] import "../../core"
+src/activities/morse_code/MorseMap.qml:13: [morse_code] import "../../core"
+src/activities/morse_code/MorseMap.qml:43: [morse_code -> braille_alphabets] source: "qrc:/gcompris/src/activities/braille_alphabets/resource/back.svg"
+src/activities/morse_code/MorseCode.qml:15: [morse_code] import "../../core"
+src/activities/morse_code/MorseCode.qml:15: [morse_code] import "../../core"
+src/activities/morse_code/MorseCode.qml:16: [morse_code] import "../../core/core.js" as Core
+src/activities/morse_code/MorseCode.qml:16: [morse_code] import "../../core/core.js" as Core
+src/activities/morse_code/MorseCode.qml:35: [morse_code -> braille_alphabets] source: "qrc:/gcompris/src/activities/braille_alphabets/resource/background.svg"
+src/activities/details/Details.qml:12: [details] import "../babymatch"
+src/activities/details/Details.qml:12: [details] import "../babymatch"
+src/activities/baby_keyboard/Baby_keyboard.qml:14: [baby_keyboard] import "../../core"
+src/activities/baby_keyboard/Baby_keyboard.qml:14: [baby_keyboard] import "../../core"
+src/activities/baby_keyboard/Baby_keyboard.qml:34: [baby_keyboard -> menu] source: "qrc:/gcompris/src/activities/menu/resource/background.svg"
+src/activities/memory-math-mult-div/ActivityConfig.qml:15: [memory-math-mult-div] import "../../core"
+src/activities/memory-math-mult-div/ActivityConfig.qml:15: [memory-math-mult-div] import "../../core"
+src/activities/memory-math-mult-div/MemoryMathMultDiv.qml:12: [memory-math-mult-div] import "../memory"
+src/activities/memory-math-mult-div/MemoryMathMultDiv.qml:12: [memory-math-mult-div] import "../memory"
+src/activities/memory-math-mult-div/MemoryMathMultDiv.qml:15: [memory-math-mult-div -> memory] backgroundImg: "qrc:/gcompris/src/activities/memory/resource/background.svg"
+src/activities/memory-math-mult-div/resource/1/Data.qml:12: [memory-math-mult-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult-div/resource/6/Data.qml:12: [memory-math-mult-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult-div/resource/4/Data.qml:12: [memory-math-mult-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult-div/resource/9/Data.qml:12: [memory-math-mult-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult-div/resource/3/Data.qml:12: [memory-math-mult-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult-div/resource/7/Data.qml:12: [memory-math-mult-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult-div/resource/8/Data.qml:12: [memory-math-mult-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult-div/resource/2/Data.qml:12: [memory-math-mult-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult-div/resource/5/Data.qml:12: [memory-math-mult-div -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/menu/ConfigurationItem.qml:15: [menu] import "../../core"
+src/activities/menu/ConfigurationItem.qml:15: [menu] import "../../core"
+src/activities/menu/ServerConfigPage.qml:14: [menu] import "../../core"
+src/activities/menu/ServerConfigPage.qml:14: [menu] import "../../core"
+src/activities/menu/BackgroundMusicList.qml:15: [menu] import "../../core"
+src/activities/menu/BackgroundMusicList.qml:15: [menu] import "../../core"
+src/activities/menu/Menu.qml:11: [menu] import "../../core"
+src/activities/menu/Menu.qml:11: [menu] import "../../core"
+src/activities/baby_wordprocessor/ActivityConfig.qml:12: [baby_wordprocessor] import "../../core"
+src/activities/baby_wordprocessor/ActivityConfig.qml:12: [baby_wordprocessor] import "../../core"
+src/activities/baby_wordprocessor/BabyWordprocessor.qml:14: [baby_wordprocessor] import "../../core"
+src/activities/baby_wordprocessor/BabyWordprocessor.qml:14: [baby_wordprocessor] import "../../core"
+src/activities/ballcatch/Ball.qml:12: [ballcatch] import "../../core"
+src/activities/ballcatch/Ball.qml:12: [ballcatch] import "../../core"
+src/activities/ballcatch/Ballcatch.qml:14: [ballcatch] import "../../core"
+src/activities/ballcatch/Ballcatch.qml:14: [ballcatch] import "../../core"
+src/activities/peg_solitaire/PegSolitaire.qml:8: [peg_solitaire] import "../../core"
+src/activities/peg_solitaire/PegSolitaire.qml:8: [peg_solitaire] import "../../core"
+src/activities/peg_solitaire/PegSolitaire.qml:20: [peg_solitaire -> chess] source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
+src/activities/peg_solitaire/PegSolitaire.qml:88: [peg_solitaire -> chess] source: 'qrc:/gcompris/src/activities/chess/resource/undo.svg'
+src/activities/peg_solitaire/PegSolitaire.qml:112: [peg_solitaire -> chess] source: 'qrc:/gcompris/src/activities/chess/resource/redo.svg'
+src/activities/peg_solitaire/ActivityConfig.qml:13: [peg_solitaire] import "../../core"
+src/activities/peg_solitaire/ActivityConfig.qml:13: [peg_solitaire] import "../../core"
+src/activities/peg_solitaire/Peg.qml:10: [peg_solitaire -> bargame] source: "qrc:/gcompris/src/activities/bargame/resource/ball_1b.svg"
+src/activities/color_mix/ColorChooser.qml:14: [color_mix] import "../../core"
+src/activities/color_mix/ColorChooser.qml:14: [color_mix] import "../../core"
+src/activities/color_mix/ColorMix.qml:16: [color_mix] import "../../core"
+src/activities/color_mix/ColorMix.qml:16: [color_mix] import "../../core"
+src/activities/color_mix/ColorButton.qml:12: [color_mix] import "../../core"
+src/activities/color_mix/ColorButton.qml:12: [color_mix] import "../../core"
+src/activities/path_decoding/PathDecoding.qml:9: [path_decoding] import "../path_encoding"
+src/activities/path_decoding/PathDecoding.qml:9: [path_decoding] import "../path_encoding"
+src/activities/family/Family.qml:16: [family] import "../../core"
+src/activities/family/Family.qml:16: [family] import "../../core"
+src/activities/clickgame/Clickgame.qml:16: [clickgame] import "../../core"
+src/activities/clickgame/Clickgame.qml:16: [clickgame] import "../../core"
+src/activities/clickgame/Fish.qml:15: [clickgame] import "../../core"
+src/activities/clickgame/Fish.qml:15: [clickgame] import "../../core"
+src/activities/colors/FindIt.qml:16: [colors] import "../../core"
+src/activities/colors/FindIt.qml:16: [colors] import "../../core"
+src/activities/colors/ColorItem.qml:13: [colors] import "../../core"
+src/activities/colors/ColorItem.qml:13: [colors] import "../../core"
+src/activities/comparator/ComparatorLine.qml:13: [comparator] import "../../core"
+src/activities/comparator/ComparatorLine.qml:13: [comparator] import "../../core"
+src/activities/comparator/ComparatorSign.qml:12: [comparator] import "../../core"
+src/activities/comparator/ComparatorSign.qml:12: [comparator] import "../../core"
+src/activities/comparator/Comparator.qml:14: [comparator] import "../../core"
+src/activities/comparator/Comparator.qml:14: [comparator] import "../../core"
+src/activities/comparator/Comparator.qml:29: [comparator -> chess] source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
+src/activities/comparator/Comparator.qml:214: [comparator -> path_encoding] source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
+src/activities/comparator/Comparator.qml:233: [comparator -> path_encoding] source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
+src/activities/comparator/ComparatorText.qml:13: [comparator] import "../../core"
+src/activities/comparator/ComparatorText.qml:13: [comparator] import "../../core"
+src/activities/learn_additions/Learn_additions.qml:11: [learn_additions] import "../learn_digits/"
+src/activities/learn_additions/Learn_additions.qml:11: [learn_additions] import "../learn_digits/"
+src/activities/ordering_chronology/OrderingChronology.qml:14: [ordering_chronology] import "../ordering_numbers"
+src/activities/ordering_chronology/OrderingChronology.qml:14: [ordering_chronology] import "../ordering_numbers"
+src/activities/ordering_chronology/resource/1/Data.qml:20: [ordering_chronology -> chronos] 'qrc:/gcompris/src/activities/chronos/resource/images/garden-01.svg',
+src/activities/ordering_chronology/resource/1/Data.qml:21: [ordering_chronology -> chronos] 'qrc:/gcompris/src/activities/chronos/resource/images/garden-02.svg',
+src/activities/ordering_chronology/resource/1/Data.qml:22: [ordering_chronology -> chronos] 'qrc:/gcompris/src/activities/chronos/resource/images/garden-03.svg',
+src/activities/ordering_chronology/resource/1/Data.qml:23: [ordering_chronology -> chronos] 'qrc:/gcompris/src/activities/chronos/resource/images/garden-04.svg'
+src/activities/ordering_chronology/resource/3/Data.qml:20: [ordering_chronology -> chronos] 'qrc:/gcompris/src/activities/chronos/resource/images/tuxtree-01.svg',
+src/activities/ordering_chronology/resource/3/Data.qml:21: [ordering_chronology -> chronos] 'qrc:/gcompris/src/activities/chronos/resource/images/tuxtree-02.svg',
+src/activities/ordering_chronology/resource/3/Data.qml:22: [ordering_chronology -> chronos] 'qrc:/gcompris/src/activities/chronos/resource/images/tuxtree-03.svg',
+src/activities/ordering_chronology/resource/3/Data.qml:23: [ordering_chronology -> chronos] 'qrc:/gcompris/src/activities/chronos/resource/images/tuxtree-04.svg'
+src/activities/ordering_chronology/resource/2/Data.qml:20: [ordering_chronology -> chronos] 'qrc:/gcompris/src/activities/chronos/resource/images/moon-01.svg',
+src/activities/ordering_chronology/resource/2/Data.qml:21: [ordering_chronology -> chronos] 'qrc:/gcompris/src/activities/chronos/resource/images/moon-02.svg',
+src/activities/ordering_chronology/resource/2/Data.qml:22: [ordering_chronology -> chronos] 'qrc:/gcompris/src/activities/chronos/resource/images/moon-03.svg',
+src/activities/ordering_chronology/resource/2/Data.qml:23: [ordering_chronology -> chronos] 'qrc:/gcompris/src/activities/chronos/resource/images/moon-04.svg'
+src/activities/gnumch-equality/Warning.qml:16: [gnumch-equality] import "../../core"
+src/activities/gnumch-equality/Warning.qml:16: [gnumch-equality] import "../../core"
+src/activities/gnumch-equality/TopPanel.qml:16: [gnumch-equality] import "../../core"
+src/activities/gnumch-equality/TopPanel.qml:16: [gnumch-equality] import "../../core"
+src/activities/gnumch-equality/Gnumch.qml:18: [gnumch-equality] import "../../core"
+src/activities/gnumch-equality/Gnumch.qml:18: [gnumch-equality] import "../../core"
+src/activities/gnumch-equality/Gnumch.qml:39: [gnumch-equality -> guesscount] source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
+src/activities/gnumch-equality/WarnMonster.qml:16: [gnumch-equality] import "../../core"
+src/activities/gnumch-equality/WarnMonster.qml:16: [gnumch-equality] import "../../core"
+src/activities/gnumch-equality/CellDelegate.qml:16: [gnumch-equality] import "../../core"
+src/activities/gnumch-equality/CellDelegate.qml:16: [gnumch-equality] import "../../core"
+src/activities/gnumch-equality/Muncher.qml:15: [gnumch-equality] import "../../core"
+src/activities/gnumch-equality/Muncher.qml:15: [gnumch-equality] import "../../core"
+src/activities/align4/Align4.qml:12: [align4] import "../align4_2players"
+src/activities/align4/Align4.qml:12: [align4] import "../align4_2players"
+src/activities/chess_partyend/ChessPartyEnd.qml:12: [chess_partyend] import "../chess"
+src/activities/chess_partyend/ChessPartyEnd.qml:12: [chess_partyend] import "../chess"
+src/activities/memory-math-add-minus-tux/MemoryMathAddMinusTux.qml:12: [memory-math-add-minus-tux] import "../memory"
+src/activities/memory-math-add-minus-tux/MemoryMathAddMinusTux.qml:12: [memory-math-add-minus-tux] import "../memory"
+src/activities/memory-math-add-minus-tux/MemoryMathAddMinusTux.qml:15: [memory-math-add-minus-tux -> memory] backgroundImg: "qrc:/gcompris/src/activities/memory/resource/background.svg"
+src/activities/memory-math-add-minus-tux/resource/1/Data.qml:12: [memory-math-add-minus-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-tux/resource/6/Data.qml:12: [memory-math-add-minus-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-tux/resource/4/Data.qml:12: [memory-math-add-minus-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-tux/resource/9/Data.qml:12: [memory-math-add-minus-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-tux/resource/3/Data.qml:12: [memory-math-add-minus-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-tux/resource/7/Data.qml:12: [memory-math-add-minus-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-tux/resource/8/Data.qml:12: [memory-math-add-minus-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-tux/resource/2/Data.qml:12: [memory-math-add-minus-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-tux/resource/10/Data.qml:12: [memory-math-add-minus-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-tux/resource/5/Data.qml:12: [memory-math-add-minus-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/photo_hunter/Observe.qml:14: [photo_hunter] import "../../core"
+src/activities/photo_hunter/Observe.qml:14: [photo_hunter] import "../../core"
+src/activities/photo_hunter/Observe.qml:52: [photo_hunter -> tic_tac_toe] source: "qrc:/gcompris/src/activities/tic_tac_toe/resource/cross.svg"
+src/activities/photo_hunter/PhotoHunter.qml:15: [photo_hunter] import "../../core"
+src/activities/photo_hunter/PhotoHunter.qml:15: [photo_hunter] import "../../core"
+src/activities/photo_hunter/PhotoHunter.qml:31: [photo_hunter -> fifteen] source: "qrc:/gcompris/src/activities/fifteen/resource/background.svg"
+src/activities/learn_digits/ActivityConfig.qml:13: [learn_digits] import "../../core"
+src/activities/learn_digits/ActivityConfig.qml:13: [learn_digits] import "../../core"
+src/activities/learn_digits/Learn_digits.qml:13: [learn_digits] import "../../core"
+src/activities/learn_digits/Learn_digits.qml:13: [learn_digits] import "../../core"
+src/activities/learn_digits/Learn_digits.qml:33: [learn_digits -> braille_fun] source: "qrc:/gcompris/src/activities/braille_fun/resource/hillside.svg"
+src/activities/babymatch/Babymatch.qml:14: [babymatch] import "../../core"
+src/activities/babymatch/Babymatch.qml:14: [babymatch] import "../../core"
+src/activities/babymatch/Babymatch.qml:40: [babymatch -> guesscount] source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
+src/activities/babymatch/Babymatch.qml:158: [babymatch -> guesscount] source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW02.svg"
+src/activities/babymatch/DropAnswerItem.qml:12: [babymatch] import "../../core"
+src/activities/babymatch/DropAnswerItem.qml:12: [babymatch] import "../../core"
+src/activities/babymatch/TextItem.qml:12: [babymatch] import "../../core"
+src/activities/babymatch/TextItem.qml:12: [babymatch] import "../../core"
+src/activities/babymatch/ListWidget.qml:12: [babymatch] import "../../core"
+src/activities/babymatch/ListWidget.qml:12: [babymatch] import "../../core"
+src/activities/babymatch/DragListItem.qml:13: [babymatch] import "../../core"
+src/activities/babymatch/DragListItem.qml:13: [babymatch] import "../../core"
+src/activities/explore_world_animals/ExploreWorldAnimals.qml:14: [explore_world_animals] import "../explore_farm_animals"
+src/activities/explore_world_animals/ExploreWorldAnimals.qml:14: [explore_world_animals] import "../explore_farm_animals"
+src/activities/explore_world_animals/resource/board/board2.qml:15: [explore_world_animals -> explore_monuments] property string backgroundImage: "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/world-map.svg"
+src/activities/explore_world_animals/resource/board/board1.qml:15: [explore_world_animals -> explore_monuments] property string backgroundImage: "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/world-map.svg"
+src/activities/explore_world_animals/resource/board/board3.qml:15: [explore_world_animals -> explore_monuments] property string backgroundImage: "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/world-map.svg"
+src/activities/instruments/Instruments.qml:13: [instruments] import "../colors"
+src/activities/instruments/Instruments.qml:13: [instruments] import "../colors"
+src/activities/graduated_line_read/GraduatedLineRead.qml:10: [graduated_line_read] import "../../core"
+src/activities/graduated_line_read/GraduatedLineRead.qml:10: [graduated_line_read] import "../../core"
+src/activities/graduated_line_read/GraduatedLineRead.qml:28: [graduated_line_read -> chess] source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
+src/activities/magic-hat-plus/MagicHatPlus.qml:12: [magic-hat-plus] import "../magic-hat-minus/"
+src/activities/magic-hat-plus/MagicHatPlus.qml:12: [magic-hat-plus] import "../magic-hat-minus/"
+src/activities/chess/Chess.qml:15: [chess] import "../../core"
+src/activities/chess/Chess.qml:15: [chess] import "../../core"
+src/activities/chess/GCTimerButton.qml:14: [chess] import "../../core"
+src/activities/chess/GCTimerButton.qml:14: [chess] import "../../core"
+src/activities/readingh/ActivityConfig.qml:13: [readingh] import "../../core"
+src/activities/readingh/ActivityConfig.qml:13: [readingh] import "../../core"
+src/activities/readingh/readingh.js:21: [readingh -> wordsgame] var dataSetUrl= "qrc:/gcompris/src/activities/wordsgame/resource/"
+src/activities/readingh/Readingh.qml:16: [readingh] import "../../core"
+src/activities/readingh/Readingh.qml:16: [readingh] import "../../core"
+src/activities/scalesboard_weight/ScalesboardWeight.qml:11: [scalesboard_weight] import "../scalesboard"
+src/activities/scalesboard_weight/ScalesboardWeight.qml:11: [scalesboard_weight] import "../scalesboard"
+src/activities/guess24/Guess24.qml:19: [guess24] import "../../core"
+src/activities/guess24/Guess24.qml:19: [guess24] import "../../core"
+src/activities/guess24/Guess24.qml:35: [guess24 -> guesscount] source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
+src/activities/guess24/Guess24.qml:415: [guess24 -> chess] source: "qrc:/gcompris/src/activities/chess/resource/undo.svg"
+src/activities/left_right_click/Left_right_click.qml:11: [left_right_click] import "../../core"
+src/activities/left_right_click/Left_right_click.qml:11: [left_right_click] import "../../core"
+src/activities/left_right_click/Left_right_click.qml:28: [left_right_click -> canal_lock] source: "qrc:/gcompris/src/activities/canal_lock/resource/sky.svg"
+src/activities/left_right_click/Animal.qml:9: [left_right_click] import "../../core"
+src/activities/left_right_click/Animal.qml:9: [left_right_click] import "../../core"
+src/activities/left_right_click/left_right_click.js:10: [left_right_click] .import "../../core/core.js" as Core
+src/activities/drawletters/ActivityConfig.qml:13: [drawletters] import "../../core"
+src/activities/drawletters/ActivityConfig.qml:13: [drawletters] import "../../core"
+src/activities/drawletters/Drawletters.qml:10: [drawletters] import "../number_sequence"
+src/activities/drawletters/Drawletters.qml:10: [drawletters] import "../number_sequence"
+src/activities/guessnumber/Guessnumber.qml:14: [guessnumber] import "../../core"
+src/activities/guessnumber/Guessnumber.qml:14: [guessnumber] import "../../core"
+src/activities/guessnumber/Helico.qml:12: [guessnumber] import "../../core"
+src/activities/guessnumber/Helico.qml:12: [guessnumber] import "../../core"
+src/activities/guessnumber/Helico.qml:16: [guessnumber -> planegame] source: "qrc:/gcompris/src/activities/planegame/resource/tuxhelico.svg"
+src/activities/checkers/Checkers.qml:14: [checkers] import "../../core"
+src/activities/checkers/Checkers.qml:14: [checkers] import "../../core"
+src/activities/checkers/Checkers.qml:36: [checkers -> chess] source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
+src/activities/checkers/Checkers.qml:141: [checkers -> chess] source: 'qrc:/gcompris/src/activities/chess/resource/undo.svg'
+src/activities/checkers/Checkers.qml:167: [checkers -> chess] source: 'qrc:/gcompris/src/activities/chess/resource/redo.svg'
+src/activities/checkers/Checkers.qml:189: [checkers -> chess] source: 'qrc:/gcompris/src/activities/chess/resource/turn.svg'
+src/activities/memory-math-mult/ActivityConfig.qml:15: [memory-math-mult] import "../../core"
+src/activities/memory-math-mult/ActivityConfig.qml:15: [memory-math-mult] import "../../core"
+src/activities/memory-math-mult/MemoryMathMult.qml:12: [memory-math-mult] import "../memory"
+src/activities/memory-math-mult/MemoryMathMult.qml:12: [memory-math-mult] import "../memory"
+src/activities/memory-math-mult/MemoryMathMult.qml:15: [memory-math-mult -> memory] backgroundImg: "qrc:/gcompris/src/activities/memory/resource/background.svg"
+src/activities/memory-math-mult/resource/1/Data.qml:12: [memory-math-mult -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult/resource/6/Data.qml:12: [memory-math-mult -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult/resource/4/Data.qml:12: [memory-math-mult -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult/resource/9/Data.qml:12: [memory-math-mult -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult/resource/3/Data.qml:12: [memory-math-mult -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult/resource/7/Data.qml:12: [memory-math-mult -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult/resource/8/Data.qml:12: [memory-math-mult -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult/resource/2/Data.qml:12: [memory-math-mult -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult/resource/10/Data.qml:12: [memory-math-mult -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult/resource/5/Data.qml:12: [memory-math-mult -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/guesscount/Admin.qml:15: [guesscount] import "../../core"
+src/activities/guesscount/Admin.qml:15: [guesscount] import "../../core"
+src/activities/guesscount/ActivityConfig.qml:13: [guesscount] import "../../core"
+src/activities/guesscount/ActivityConfig.qml:13: [guesscount] import "../../core"
+src/activities/guesscount/DropTile.qml:12: [guesscount] import "../../core"
+src/activities/guesscount/DropTile.qml:12: [guesscount] import "../../core"
+src/activities/guesscount/OperationRow.qml:15: [guesscount] import "../../core"
+src/activities/guesscount/OperationRow.qml:15: [guesscount] import "../../core"
+src/activities/guesscount/OperandRow.qml:15: [guesscount] import "../../core"
+src/activities/guesscount/OperandRow.qml:15: [guesscount] import "../../core"
+src/activities/guesscount/Tile.qml:12: [guesscount] import "../../core"
+src/activities/guesscount/Tile.qml:12: [guesscount] import "../../core"
+src/activities/guesscount/Guesscount.qml:13: [guesscount] import "../../core"
+src/activities/guesscount/Guesscount.qml:13: [guesscount] import "../../core"
+src/activities/guesscount/OperatorRow.qml:16: [guesscount] import "../../core"
+src/activities/guesscount/OperatorRow.qml:16: [guesscount] import "../../core"
+src/activities/learn_quantities/Learn_quantities.qml:8: [learn_quantities] import "../learn_decimals/"
+src/activities/learn_quantities/Learn_quantities.qml:8: [learn_quantities] import "../learn_decimals/"
+src/activities/learn_quantities/Learn_quantities.qml:17: [learn_quantities -> learn_decimals] instructionQml: "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial1.qml"
+src/activities/learn_quantities/Learn_quantities.qml:21: [learn_quantities -> learn_decimals] instructionQml: "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial2.qml"
+src/activities/memory-math-add-minus-mult-div-tux/MemoryMathAddMinusMultDivTux.qml:12: [memory-math-add-minus-mult-div-tux] import "../memory"
+src/activities/memory-math-add-minus-mult-div-tux/MemoryMathAddMinusMultDivTux.qml:12: [memory-math-add-minus-mult-div-tux] import "../memory"
+src/activities/memory-math-add-minus-mult-div-tux/MemoryMathAddMinusMultDivTux.qml:15: [memory-math-add-minus-mult-div-tux -> memory] backgroundImg: "qrc:/gcompris/src/activities/memory/resource/background.svg"
+src/activities/memory-math-add-minus-mult-div-tux/resource/1/Data.qml:12: [memory-math-add-minus-mult-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-mult-div-tux/resource/6/Data.qml:12: [memory-math-add-minus-mult-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-mult-div-tux/resource/4/Data.qml:12: [memory-math-add-minus-mult-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-mult-div-tux/resource/9/Data.qml:12: [memory-math-add-minus-mult-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-mult-div-tux/resource/3/Data.qml:12: [memory-math-add-minus-mult-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-mult-div-tux/resource/7/Data.qml:12: [memory-math-add-minus-mult-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-mult-div-tux/resource/8/Data.qml:12: [memory-math-add-minus-mult-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-mult-div-tux/resource/2/Data.qml:12: [memory-math-add-minus-mult-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-mult-div-tux/resource/10/Data.qml:12: [memory-math-add-minus-mult-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus-mult-div-tux/resource/5/Data.qml:12: [memory-math-add-minus-mult-div-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/hanoi/Hanoi.qml:12: [hanoi] import "../hanoi_real"
+src/activities/hanoi/Hanoi.qml:12: [hanoi] import "../hanoi_real"
+src/activities/chess_2players/Chess2Players.qml:12: [chess_2players] import "../chess"
+src/activities/chess_2players/Chess2Players.qml:12: [chess_2players] import "../chess"
+src/activities/drawing_wheels/ActivityConfig.qml:13: [drawing_wheels] import "../../core"
+src/activities/drawing_wheels/ActivityConfig.qml:13: [drawing_wheels] import "../../core"
+src/activities/drawing_wheels/DrawingWheels.qml:18: [drawing_wheels] import "../../core"
+src/activities/drawing_wheels/DrawingWheels.qml:18: [drawing_wheels] import "../../core"
+src/activities/drawing_wheels/DrawingWheels.qml:19: [drawing_wheels] import "../sketch"
+src/activities/drawing_wheels/DrawingWheels.qml:19: [drawing_wheels] import "../sketch"
+src/activities/drawing_wheels/DrawingWheels.qml:405: [drawing_wheels -> sketch] source: "qrc:/gcompris/src/activities/sketch/resource/filesMenu.svg"
+src/activities/drawing_wheels/DrawingWheels.qml:441: [drawing_wheels -> sketch] source: "qrc:/gcompris/src/activities/sketch/resource/brushTools.svg"
+src/activities/drawing_wheels/DrawingWheels.qml:480: [drawing_wheels -> sketch] source: "qrc:/gcompris/src/activities/sketch/resource/undo.svg"
+src/activities/drawing_wheels/DrawingWheels.qml:492: [drawing_wheels -> sketch] source: "qrc:/gcompris/src/activities/sketch/resource/undo.svg"
+src/activities/drawing_wheels/DrawingWheels.qml:718: [drawing_wheels -> sketch] iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileSave.svg"
+src/activities/drawing_wheels/DrawingWheels.qml:733: [drawing_wheels -> sketch] iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileOpen.svg"
+src/activities/drawing_wheels/DrawingWheels.qml:762: [drawing_wheels -> sketch] iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileNew.svg"
+src/activities/advanced_colors/AdvancedColors.qml:13: [advanced_colors] import "../colors"
+src/activities/advanced_colors/AdvancedColors.qml:13: [advanced_colors] import "../colors"
+src/activities/advanced_colors/AdvancedColors.qml:19: [advanced_colors -> menu] backgroundImg: "qrc:/gcompris/src/activities/menu/resource/background.svg"
+src/activities/scalesboard/Scalesboard.qml:18: [scalesboard] import "../../core"
+src/activities/scalesboard/Scalesboard.qml:18: [scalesboard] import "../../core"
+src/activities/scalesboard/Question.qml:15: [scalesboard] import "../../core"
+src/activities/scalesboard/Question.qml:15: [scalesboard] import "../../core"
+src/activities/scalesboard/MasseArea.qml:15: [scalesboard] import "../../core"
+src/activities/scalesboard/MasseArea.qml:15: [scalesboard] import "../../core"
+src/activities/algebra_plus/AlgebraPlus.qml:11: [algebra_plus] import "../algebra_by/"
+src/activities/algebra_plus/AlgebraPlus.qml:11: [algebra_plus] import "../algebra_by/"
+src/activities/algebra_plus/AlgebraPlus.qml:12: [algebra_plus] import "../algebra_by/algebra.js" as Activity
+src/activities/algebra_plus/AlgebraPlus.qml:12: [algebra_plus] import "../algebra_by/algebra.js" as Activity
+src/activities/algebra_plus/ActivityConfig.qml:13: [algebra_plus] import "../../core"
+src/activities/algebra_plus/ActivityConfig.qml:13: [algebra_plus] import "../../core"
+src/activities/template/Template.qml:8: [template] import "../../core"
+src/activities/template/Template.qml:8: [template] import "../../core"
+src/activities/hangman/ActivityConfig.qml:13: [hangman] import "../../core"
+src/activities/hangman/ActivityConfig.qml:13: [hangman] import "../../core"
+src/activities/hangman/Hangman.qml:17: [hangman] import "../../core"
+src/activities/hangman/Hangman.qml:17: [hangman] import "../../core"
+src/activities/hangman/Hangman.qml:314: [hangman -> reversecount] petalCount = "qrc:/gcompris/src/activities/reversecount/resource/" +
+src/activities/hangman/hangman.js:16: [hangman -> lang] .import "qrc:/gcompris/src/activities/lang/lang_api.js" as Lang
+src/activities/hangman/hangman.js:43: [hangman -> lang] var resourceUrl = "qrc:/gcompris/src/activities/lang/resource/";
+src/activities/adjacent_numbers/ActivityConfig.qml:9: [adjacent_numbers] import "../../core"
+src/activities/adjacent_numbers/ActivityConfig.qml:9: [adjacent_numbers] import "../../core"
+src/activities/adjacent_numbers/Adjacent_numbers.qml:11: [adjacent_numbers] import "../../core"
+src/activities/adjacent_numbers/Adjacent_numbers.qml:11: [adjacent_numbers] import "../../core"
+src/activities/adjacent_numbers/Adjacent_numbers.qml:27: [adjacent_numbers -> chess] source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
+src/activities/adjacent_numbers/DraggableTile.qml:9: [adjacent_numbers] import "../../core"
+src/activities/adjacent_numbers/DraggableTile.qml:9: [adjacent_numbers] import "../../core"
+src/activities/adjacent_numbers/DroppableTile.qml:9: [adjacent_numbers] import "../../core"
+src/activities/adjacent_numbers/DroppableTile.qml:9: [adjacent_numbers] import "../../core"
+src/activities/frieze/Frieze.qml:13: [frieze] import "../../core"
+src/activities/frieze/Frieze.qml:13: [frieze] import "../../core"
+src/activities/frieze/Frieze.qml:29: [frieze -> crane] source: "qrc:/gcompris/src/activities/crane/resource/background.svg"
+src/activities/mazeinvisible/Mazeinvisible.qml:11: [mazeinvisible] import "../maze"
+src/activities/mazeinvisible/Mazeinvisible.qml:11: [mazeinvisible] import "../maze"
+src/activities/leftright/Leftright.qml:15: [leftright] import "../../core"
+src/activities/leftright/Leftright.qml:15: [leftright] import "../../core"
+src/activities/maze/Maze.qml:16: [maze] import "../../core"
+src/activities/maze/Maze.qml:16: [maze] import "../../core"
+src/activities/letter-in-word/Card.qml:15: [letter-in-word] import "../../core"
+src/activities/letter-in-word/Card.qml:15: [letter-in-word] import "../../core"
+src/activities/letter-in-word/LetterInWord.qml:18: [letter-in-word] import "../../core"
+src/activities/letter-in-word/LetterInWord.qml:18: [letter-in-word] import "../../core"
+src/activities/letter-in-word/ActivityConfig.qml:13: [letter-in-word] import "../../core"
+src/activities/letter-in-word/ActivityConfig.qml:13: [letter-in-word] import "../../core"
+src/activities/letter-in-word/letter-in-word.js:19: [letter-in-word -> lang] .import "qrc:/gcompris/src/activities/lang/lang_api.js" as Lang
+src/activities/letter-in-word/letter-in-word.js:21: [letter-in-word -> braille_fun] var resUrl = "qrc:/gcompris/src/activities/braille_fun/resource/"
+src/activities/letter-in-word/letter-in-word.js:48: [letter-in-word -> lang] var resourceUrl = "qrc:/gcompris/src/activities/lang/resource/";
+src/activities/nine_men_morris_2players/NineMenMorris2players.qml:11: [nine_men_morris_2players] import "../nine_men_morris"
+src/activities/nine_men_morris_2players/NineMenMorris2players.qml:11: [nine_men_morris_2players] import "../nine_men_morris"
+src/activities/submarine/Submarine.qml:18: [submarine] import "../../core"
+src/activities/submarine/Submarine.qml:18: [submarine] import "../../core"
+src/activities/submarine/Submarine.qml:491: [submarine -> clickgame] source: "qrc:/gcompris/src/activities/clickgame/resource/bubble.svg"
+src/activities/submarine/Submarine.qml:567: [submarine -> mining] source: "qrc:/gcompris/src/activities/mining/resource/sparkle.svg"
+src/activities/submarine/Submarine.qml:845: [submarine -> mining] source: "qrc:/gcompris/src/activities/mining/resource/stone2.svg"
+src/activities/submarine/Submarine.qml:899: [submarine -> mining] source: "qrc:/gcompris/src/activities/mining/resource/stone1.svg"
+src/activities/submarine/Whale.qml:112: [submarine -> clickgame] source: "qrc:/gcompris/src/activities/clickgame/resource/bubble.svg"
+src/activities/submarine/Controls.qml:15: [submarine] import "../../core"
+src/activities/submarine/Controls.qml:15: [submarine] import "../../core"
+src/activities/erase/ActivityConfig.qml:13: [erase] import "../../core"
+src/activities/erase/ActivityConfig.qml:13: [erase] import "../../core"
+src/activities/erase/Block.qml:15: [erase] import "../../core"
+src/activities/erase/Block.qml:15: [erase] import "../../core"
+src/activities/erase/Erase.qml:16: [erase] import "../../core"
+src/activities/erase/Erase.qml:16: [erase] import "../../core"
+src/activities/positions/Positions.qml:12: [positions] import "../../core"
+src/activities/positions/Positions.qml:12: [positions] import "../../core"
+src/activities/positions/Positions.qml:26: [positions -> family] source: "qrc:/gcompris/src/activities/family/resource/background.svg"
+src/activities/football/Football.qml:17: [football] import "../../core"
+src/activities/football/Football.qml:17: [football] import "../../core"
+src/activities/memory-math-minus-tux/MemoryMathMinusTux.qml:8: [memory-math-minus-tux] import "../memory"
+src/activities/memory-math-minus-tux/MemoryMathMinusTux.qml:8: [memory-math-minus-tux] import "../memory"
+src/activities/memory-math-minus-tux/MemoryMathMinusTux.qml:11: [memory-math-minus-tux -> memory] backgroundImg: "qrc:/gcompris/src/activities/memory/resource/background.svg"
+src/activities/memory-math-minus-tux/resource/1/Data.qml:12: [memory-math-minus-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-minus-tux/resource/6/Data.qml:12: [memory-math-minus-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-minus-tux/resource/4/Data.qml:12: [memory-math-minus-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-minus-tux/resource/9/Data.qml:12: [memory-math-minus-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-minus-tux/resource/3/Data.qml:12: [memory-math-minus-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-minus-tux/resource/7/Data.qml:12: [memory-math-minus-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-minus-tux/resource/8/Data.qml:12: [memory-math-minus-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-minus-tux/resource/2/Data.qml:12: [memory-math-minus-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-minus-tux/resource/10/Data.qml:12: [memory-math-minus-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-minus-tux/resource/5/Data.qml:12: [memory-math-minus-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/family_find_relative/Family_find_relative.qml:10: [family_find_relative] import "../family"
+src/activities/family_find_relative/Family_find_relative.qml:10: [family_find_relative] import "../family"
+src/activities/babyshapes/Babyshapes.qml:12: [babyshapes] import "../babymatch"
+src/activities/babyshapes/Babyshapes.qml:12: [babyshapes] import "../babymatch"
+src/activities/click_on_letter_up/ActivityConfig.qml:13: [click_on_letter_up] import "../../core"
+src/activities/click_on_letter_up/ActivityConfig.qml:13: [click_on_letter_up] import "../../core"
+src/activities/click_on_letter_up/ClickOnLetterUp.qml:14: [click_on_letter_up] import "../click_on_letter"
+src/activities/click_on_letter_up/ClickOnLetterUp.qml:14: [click_on_letter_up] import "../click_on_letter"
+src/activities/watercycle/Watercycle.qml:18: [watercycle] import "../../core"
+src/activities/watercycle/Watercycle.qml:18: [watercycle] import "../../core"
+src/activities/watercycle/Watercycle.qml:29: [watercycle -> chess] source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
+src/activities/readingv/ActivityConfig.qml:13: [readingv] import "../../core"
+src/activities/readingv/ActivityConfig.qml:13: [readingv] import "../../core"
+src/activities/readingv/Readingv.qml:12: [readingv] import "../readingh"
+src/activities/readingv/Readingv.qml:12: [readingv] import "../readingh"
+src/activities/algorithm/Algorithm.qml:15: [algorithm] import "../../core"
+src/activities/algorithm/Algorithm.qml:15: [algorithm] import "../../core"
+src/activities/algorithm/algorithm.js:58: [algorithm -> enumerate] var url = "qrc:/gcompris/src/activities/enumerate/resource/"
+src/activities/tangram/Tangram.qml:16: [tangram] import "../../core"
+src/activities/tangram/Tangram.qml:16: [tangram] import "../../core"
+src/activities/magic-hat-minus/Star.qml:14: [magic-hat-minus] import "../../core"
+src/activities/magic-hat-minus/Star.qml:14: [magic-hat-minus] import "../../core"
+src/activities/magic-hat-minus/MagicHat.qml:14: [magic-hat-minus] import "../../core"
+src/activities/magic-hat-minus/MagicHat.qml:14: [magic-hat-minus] import "../../core"
+src/activities/magic-hat-minus/Hat.qml:12: [magic-hat-minus] import "../../core"
+src/activities/magic-hat-minus/Hat.qml:12: [magic-hat-minus] import "../../core"
+src/activities/magic-hat-minus/StarsBar.qml:12: [magic-hat-minus] import "../../core"
+src/activities/magic-hat-minus/StarsBar.qml:12: [magic-hat-minus] import "../../core"
+src/activities/explore_world_music/ExploreWorldMusic.qml:14: [explore_world_music] import "../explore_farm_animals"
+src/activities/explore_world_music/ExploreWorldMusic.qml:14: [explore_world_music] import "../explore_farm_animals"
+src/activities/explore_world_music/resource/board/board1.qml:16: [explore_world_music -> explore_monuments] property string backgroundImage: "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/world-map.svg"
+src/activities/clockgame/ActivityConfig.qml:15: [clockgame] import "../../core"
+src/activities/clockgame/ActivityConfig.qml:15: [clockgame] import "../../core"
+src/activities/clockgame/Clockgame.qml:16: [clockgame] import "../../core"
+src/activities/clockgame/Clockgame.qml:16: [clockgame] import "../../core"
+src/activities/clockgame/Clockgame.qml:32: [clockgame -> menu] source: "qrc:/gcompris/src/activities/menu/resource/background.svg"
+src/activities/learn_subtractions/Learn_subtractions.qml:11: [learn_subtractions] import "../learn_digits/"
+src/activities/learn_subtractions/Learn_subtractions.qml:11: [learn_subtractions] import "../learn_digits/"
+src/activities/explore_monuments/Explore_monuments.qml:13: [explore_monuments] import "../explore_farm_animals"
+src/activities/explore_monuments/Explore_monuments.qml:13: [explore_monuments] import "../explore_farm_animals"
+src/activities/reversecount/ActivityConfig.qml:13: [reversecount] import "../../core"
+src/activities/reversecount/ActivityConfig.qml:13: [reversecount] import "../../core"
+src/activities/reversecount/Reversecount.qml:16: [reversecount] import "../../core"
+src/activities/reversecount/Reversecount.qml:16: [reversecount] import "../../core"
+src/activities/reversecount/Reversecount.qml:128: [reversecount -> gnumch-equality] source: "qrc:/gcompris/src/activities/gnumch-equality/resource/eat.wav"
+src/activities/reversecount/Reversecount.qml:315: [reversecount -> ballcatch] winSound: "qrc:/gcompris/src/activities/ballcatch/resource/tuxok.wav"
+src/activities/reversecount/Reversecount.qml:316: [reversecount -> ballcatch] looseSound: "qrc:/gcompris/src/activities/ballcatch/resource/youcannot.wav"
+src/activities/reversecount/ChooseDiceBar.qml:14: [reversecount] import "../../core"
+src/activities/reversecount/ChooseDiceBar.qml:14: [reversecount] import "../../core"
+src/activities/reversecount/Tux.qml:19: [reversecount -> maze] source: "qrc:/gcompris/src/activities/maze/resource/tux_top_south.svg"
+src/activities/sketch/ColorsPanel.qml:11: [sketch] import "../../core"
+src/activities/sketch/ColorsPanel.qml:11: [sketch] import "../../core"
+src/activities/sketch/BackgroundSelector.qml:13: [sketch] import "../../core"
+src/activities/sketch/BackgroundSelector.qml:13: [sketch] import "../../core"
+src/activities/sketch/SliderSettings.qml:8: [sketch] import "../../core"
+src/activities/sketch/SliderSettings.qml:8: [sketch] import "../../core"
+src/activities/sketch/StampToolPanel.qml:10: [sketch] import "../../core"
+src/activities/sketch/StampToolPanel.qml:10: [sketch] import "../../core"
+src/activities/sketch/sketch.js:21: [sketch -> photo_hunter] "qrc:/gcompris/src/activities/photo_hunter/resource/photo1.svg",
+src/activities/sketch/sketch.js:22: [sketch -> photo_hunter] "qrc:/gcompris/src/activities/photo_hunter/resource/photo2.svg",
+src/activities/sketch/sketch.js:23: [sketch -> photo_hunter] "qrc:/gcompris/src/activities/photo_hunter/resource/photo3.svg",
+src/activities/sketch/sketch.js:24: [sketch -> photo_hunter] "qrc:/gcompris/src/activities/photo_hunter/resource/photo4.svg",
+src/activities/sketch/sketch.js:25: [sketch -> photo_hunter] "qrc:/gcompris/src/activities/photo_hunter/resource/photo5.svg",
+src/activities/sketch/sketch.js:26: [sketch -> photo_hunter] "qrc:/gcompris/src/activities/photo_hunter/resource/photo6.svg",
+src/activities/sketch/sketch.js:27: [sketch -> photo_hunter] "qrc:/gcompris/src/activities/photo_hunter/resource/photo7.svg",
+src/activities/sketch/sketch.js:28: [sketch -> photo_hunter] "qrc:/gcompris/src/activities/photo_hunter/resource/photo8.svg",
+src/activities/sketch/sketch.js:29: [sketch -> photo_hunter] "qrc:/gcompris/src/activities/photo_hunter/resource/photo9.svg",
+src/activities/sketch/sketch.js:30: [sketch -> photo_hunter] "qrc:/gcompris/src/activities/photo_hunter/resource/photo10.svg",
+src/activities/sketch/sketch.js:31: [sketch -> algebra_by] "qrc:/gcompris/src/activities/algebra_by/resource/background.svg",
+src/activities/sketch/sketch.js:32: [sketch -> align4_2players] "qrc:/gcompris/src/activities/align4_2players/resource/background.svg",
+src/activities/sketch/sketch.js:33: [sketch -> bargame] "qrc:/gcompris/src/activities/bargame/resource/background.svg",
+src/activities/sketch/sketch.js:34: [sketch -> braille_alphabets] "qrc:/gcompris/src/activities/braille_alphabets/resource/background.svg",
+src/activities/sketch/sketch.js:35: [sketch -> categorization] "qrc:/gcompris/src/activities/categorization/resource/background.svg",
+src/activities/sketch/sketch.js:36: [sketch -> click_on_letter] "qrc:/gcompris/src/activities/click_on_letter/resource/background.svg",
+src/activities/sketch/sketch.js:37: [sketch -> color_mix] "qrc:/gcompris/src/activities/color_mix/resource/background.svg",
+src/activities/sketch/sketch.js:38: [sketch -> colors] "qrc:/gcompris/src/activities/colors/resource/background.svg",
+src/activities/sketch/sketch.js:39: [sketch -> crane] "qrc:/gcompris/src/activities/crane/resource/background.svg",
+src/activities/sketch/sketch.js:40: [sketch -> enumerate] "qrc:/gcompris/src/activities/enumerate/resource/background.svg",
+src/activities/sketch/sketch.js:41: [sketch -> family] "qrc:/gcompris/src/activities/family/resource/background.svg",
+src/activities/sketch/sketch.js:42: [sketch -> followline] "qrc:/gcompris/src/activities/followline/resource/background.svg",
+src/activities/sketch/sketch.js:43: [sketch -> football] "qrc:/gcompris/src/activities/football/resource/background.svg",
+src/activities/sketch/sketch.js:44: [sketch -> gletters] "qrc:/gcompris/src/activities/gletters/resource/background.svg",
+src/activities/sketch/sketch.js:45: [sketch -> hangman] "qrc:/gcompris/src/activities/hangman/resource/background.svg",
+src/activities/sketch/sketch.js:46: [sketch -> hanoi_real] "qrc:/gcompris/src/activities/hanoi_real/resource/background.svg",
+src/activities/sketch/sketch.js:47: [sketch -> instruments] "qrc:/gcompris/src/activities/instruments/resource/background.svg",
+src/activities/sketch/sketch.js:48: [sketch -> land_safe] "qrc:/gcompris/src/activities/land_safe/resource/background.svg",
+src/activities/sketch/sketch.js:49: [sketch -> magic-hat-minus] "qrc:/gcompris/src/activities/magic-hat-minus/resource/background.svg",
+src/activities/sketch/sketch.js:50: [sketch -> menu] "qrc:/gcompris/src/activities/menu/resource/background.svg",
+src/activities/sketch/sketch.js:51: [sketch -> missing-letter] "qrc:/gcompris/src/activities/missing-letter/resource/background.svg",
+src/activities/sketch/sketch.js:52: [sketch -> mosaic] "qrc:/gcompris/src/activities/mosaic/resource/background.svg",
+src/activities/sketch/sketch.js:53: [sketch -> redraw] "qrc:/gcompris/src/activities/redraw/resource/background.svg",
+src/activities/sketch/sketch.js:54: [sketch -> scalesboard] "qrc:/gcompris/src/activities/scalesboard/resource/background.svg",
+src/activities/sketch/sketch.js:55: [sketch -> smallnumbers] "qrc:/gcompris/src/activities/smallnumbers/resource/background.svg",
+src/activities/sketch/sketch.js:56: [sketch -> smallnumbers2] "qrc:/gcompris/src/activities/smallnumbers2/resource/background.svg",
+src/activities/sketch/sketch.js:57: [sketch -> submarine] "qrc:/gcompris/src/activities/submarine/resource/background.svg",
+src/activities/sketch/sketch.js:58: [sketch -> sudoku] "qrc:/gcompris/src/activities/sudoku/resource/background.svg",
+src/activities/sketch/sketch.js:59: [sketch -> tic_tac_toe] "qrc:/gcompris/src/activities/tic_tac_toe/resource/background.svg",
+src/activities/sketch/sketch.js:60: [sketch -> wordsgame] "qrc:/gcompris/src/activities/wordsgame/resource/background.svg",
+src/activities/sketch/sketch.js:61: [sketch -> color_mix] "qrc:/gcompris/src/activities/color_mix/resource/background2.svg"
+src/activities/sketch/SliderColor.qml:11: [sketch] import "../../core"
+src/activities/sketch/SliderColor.qml:11: [sketch] import "../../core"
+src/activities/sketch/ActivityConfig.qml:13: [sketch] import "../../core"
+src/activities/sketch/ActivityConfig.qml:13: [sketch] import "../../core"
+src/activities/sketch/DarkCheckBox.qml:10: [sketch] import "../../core"
+src/activities/sketch/DarkCheckBox.qml:10: [sketch] import "../../core"
+src/activities/sketch/PatternSelector.qml:11: [sketch] import "../../core"
+src/activities/sketch/PatternSelector.qml:11: [sketch] import "../../core"
+src/activities/sketch/GradientToolPanel.qml:9: [sketch] import "../../core"
+src/activities/sketch/GradientToolPanel.qml:9: [sketch] import "../../core"
+src/activities/sketch/Sketch.qml:19: [sketch] import "../../core"
+src/activities/sketch/Sketch.qml:19: [sketch] import "../../core"
+src/activities/sketch/ActionButton.qml:9: [sketch] import "../../core"
+src/activities/sketch/ActionButton.qml:9: [sketch] import "../../core"
+src/activities/sketch/SelectionButton.qml:11: [sketch] import "../../core"
+src/activities/sketch/SelectionButton.qml:11: [sketch] import "../../core"
+src/activities/sketch/GeometryToolPanel.qml:9: [sketch] import "../../core"
+src/activities/sketch/GeometryToolPanel.qml:9: [sketch] import "../../core"
+src/activities/sketch/ToolsPanel.qml:11: [sketch] import "../../core"
+src/activities/sketch/ToolsPanel.qml:11: [sketch] import "../../core"
+src/activities/sketch/StampTool.qml:31: [sketch -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/star.svg",
+src/activities/sketch/StampTool.qml:32: [sketch -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/sun.svg",
+src/activities/sketch/StampTool.qml:37: [sketch -> ballcatch] "qrc:/gcompris/src/activities/ballcatch/resource/tux.svg",
+src/activities/sketch/StampTool.qml:38: [sketch -> memory] "qrc:/gcompris/src/activities/memory/resource/child.svg",
+src/activities/sketch/StampTool.qml:39: [sketch -> positions] "qrc:/gcompris/src/activities/positions/resource/boy.svg",
+src/activities/sketch/StampTool.qml:40: [sketch -> memory] "qrc:/gcompris/src/activities/memory/resource/01_cat.svg",
+src/activities/sketch/StampTool.qml:41: [sketch -> memory] "qrc:/gcompris/src/activities/memory/resource/02_pig.svg",
+src/activities/sketch/StampTool.qml:42: [sketch -> memory] "qrc:/gcompris/src/activities/memory/resource/03_bear.svg",
+src/activities/sketch/StampTool.qml:43: [sketch -> memory] "qrc:/gcompris/src/activities/memory/resource/04_hippopotamus.svg",
+src/activities/sketch/StampTool.qml:44: [sketch -> memory] "qrc:/gcompris/src/activities/memory/resource/05_penguin.svg",
+src/activities/sketch/StampTool.qml:45: [sketch -> memory] "qrc:/gcompris/src/activities/memory/resource/06_cow.svg",
+src/activities/sketch/StampTool.qml:46: [sketch -> memory] "qrc:/gcompris/src/activities/memory/resource/07_sheep.svg",
+src/activities/sketch/StampTool.qml:47: [sketch -> memory] "qrc:/gcompris/src/activities/memory/resource/08_turtle.svg",
+src/activities/sketch/StampTool.qml:48: [sketch -> memory] "qrc:/gcompris/src/activities/memory/resource/09_panda.svg",
+src/activities/sketch/StampTool.qml:49: [sketch -> memory] "qrc:/gcompris/src/activities/memory/resource/10_chicken.svg",
+src/activities/sketch/StampTool.qml:50: [sketch -> memory] "qrc:/gcompris/src/activities/memory/resource/11_redbird.svg",
+src/activities/sketch/StampTool.qml:51: [sketch -> memory] "qrc:/gcompris/src/activities/memory/resource/12_wolf.svg",
+src/activities/sketch/StampTool.qml:52: [sketch -> memory] "qrc:/gcompris/src/activities/memory/resource/13_monkey.svg",
+src/activities/sketch/StampTool.qml:53: [sketch -> memory] "qrc:/gcompris/src/activities/memory/resource/14_fox.svg",
+src/activities/sketch/StampTool.qml:54: [sketch -> memory] "qrc:/gcompris/src/activities/memory/resource/15_bluebirds.svg",
+src/activities/sketch/StampTool.qml:55: [sketch -> memory] "qrc:/gcompris/src/activities/memory/resource/16_elephant.svg",
+src/activities/sketch/StampTool.qml:56: [sketch -> memory] "qrc:/gcompris/src/activities/memory/resource/17_lion.svg",
+src/activities/sketch/StampTool.qml:57: [sketch -> memory] "qrc:/gcompris/src/activities/memory/resource/18_gnu.svg",
+src/activities/sketch/StampTool.qml:58: [sketch -> memory] "qrc:/gcompris/src/activities/memory/resource/19_bluebaby.svg",
+src/activities/sketch/StampTool.qml:59: [sketch -> memory] "qrc:/gcompris/src/activities/memory/resource/20_greenbaby.svg",
+src/activities/sketch/StampTool.qml:60: [sketch -> memory] "qrc:/gcompris/src/activities/memory/resource/21_frog.svg",
+src/activities/sketch/StampTool.qml:61: [sketch -> submarine] "qrc:/gcompris/src/activities/submarine/resource/whale.svg",
+src/activities/sketch/StampTool.qml:62: [sketch -> explore_farm_animals] "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/cat.svg",
+src/activities/sketch/StampTool.qml:63: [sketch -> explore_farm_animals] "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/chicken.svg",
+src/activities/sketch/StampTool.qml:64: [sketch -> explore_farm_animals] "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/cow.svg",
+src/activities/sketch/StampTool.qml:65: [sketch -> explore_farm_animals] "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/dog.svg",
+src/activities/sketch/StampTool.qml:66: [sketch -> explore_farm_animals] "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/duck.svg",
+src/activities/sketch/StampTool.qml:67: [sketch -> explore_farm_animals] "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/horse.svg",
+src/activities/sketch/StampTool.qml:68: [sketch -> explore_farm_animals] "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/owl.svg",
+src/activities/sketch/StampTool.qml:69: [sketch -> explore_farm_animals] "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/pig.svg",
+src/activities/sketch/StampTool.qml:70: [sketch -> explore_farm_animals] "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/sheep.svg",
+src/activities/sketch/StampTool.qml:72: [sketch -> enumerate] "qrc:/gcompris/src/activities/enumerate/resource/apple.svg",
+src/activities/sketch/StampTool.qml:73: [sketch -> enumerate] "qrc:/gcompris/src/activities/enumerate/resource/banana.svg",
+src/activities/sketch/StampTool.qml:74: [sketch -> enumerate] "qrc:/gcompris/src/activities/enumerate/resource/cherries.svg",
+src/activities/sketch/StampTool.qml:75: [sketch -> enumerate] "qrc:/gcompris/src/activities/enumerate/resource/lemon.svg",
+src/activities/sketch/StampTool.qml:76: [sketch -> enumerate] "qrc:/gcompris/src/activities/enumerate/resource/orange.svg",
+src/activities/sketch/StampTool.qml:77: [sketch -> enumerate] "qrc:/gcompris/src/activities/enumerate/resource/pear.svg",
+src/activities/sketch/StampTool.qml:78: [sketch -> enumerate] "qrc:/gcompris/src/activities/enumerate/resource/pineapple.svg",
+src/activities/sketch/StampTool.qml:79: [sketch -> enumerate] "qrc:/gcompris/src/activities/enumerate/resource/plum.svg",
+src/activities/sketch/StampTool.qml:80: [sketch -> enumerate] "qrc:/gcompris/src/activities/enumerate/resource/grapes.svg",
+src/activities/sketch/StampTool.qml:81: [sketch -> enumerate] "qrc:/gcompris/src/activities/enumerate/resource/peach.svg",
+src/activities/sketch/StampTool.qml:82: [sketch -> enumerate] "qrc:/gcompris/src/activities/enumerate/resource/strawberry.svg",
+src/activities/sketch/StampTool.qml:83: [sketch -> enumerate] "qrc:/gcompris/src/activities/enumerate/resource/watermelon.svg",
+src/activities/sketch/StampTool.qml:85: [sketch -> ballcatch] "qrc:/gcompris/src/activities/ballcatch/resource/ball.svg",
+src/activities/sketch/StampTool.qml:86: [sketch -> mosaic] "qrc:/gcompris/src/activities/mosaic/resource/oil_paint.svg",
+src/activities/sketch/StampTool.qml:87: [sketch -> mosaic] "qrc:/gcompris/src/activities/mosaic/resource/pencil.svg",
+src/activities/sketch/StampTool.qml:88: [sketch -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/bell.svg",
+src/activities/sketch/StampTool.qml:89: [sketch -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/bicycle.svg",
+src/activities/sketch/StampTool.qml:90: [sketch -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/bottle.svg",
+src/activities/sketch/StampTool.qml:91: [sketch -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/car.svg",
+src/activities/sketch/StampTool.qml:92: [sketch -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/carrot.svg",
+src/activities/sketch/StampTool.qml:93: [sketch -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/egg.svg",
+src/activities/sketch/StampTool.qml:94: [sketch -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/flower.svg",
+src/activities/sketch/StampTool.qml:95: [sketch -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/flowerpot.svg",
+src/activities/sketch/StampTool.qml:96: [sketch -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/football.svg",
+src/activities/sketch/StampTool.qml:97: [sketch -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/fusee.svg",
+src/activities/sketch/StampTool.qml:98: [sketch -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/glass.svg",
+src/activities/sketch/StampTool.qml:99: [sketch -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/house.svg",
+src/activities/sketch/StampTool.qml:100: [sketch -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/lamp.svg",
+src/activities/sketch/StampTool.qml:101: [sketch -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/sofa.svg",
+src/activities/sketch/StampTool.qml:102: [sketch -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/tree.svg",
+src/activities/sketch/StampTool.qml:103: [sketch -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/tuxhelico.svg",
+src/activities/sketch/StampTool.qml:104: [sketch -> babymatch] "qrc:/gcompris/src/activities/babymatch/resource/images/tuxplane.svg"
+src/activities/sketch/BackgroundColorSelector.qml:9: [sketch] import "../../core"
+src/activities/sketch/BackgroundColorSelector.qml:9: [sketch] import "../../core"
+src/activities/sketch/ColorSelector.qml:11: [sketch] import "../../core"
+src/activities/sketch/ColorSelector.qml:11: [sketch] import "../../core"
+src/activities/sketch/FilesPanel.qml:11: [sketch] import "../../core"
+src/activities/sketch/FilesPanel.qml:11: [sketch] import "../../core"
+src/activities/sketch/FoldablePanel.qml:9: [sketch] import "../../core"
+src/activities/sketch/FoldablePanel.qml:9: [sketch] import "../../core"
+src/activities/sketch/PaletteSelector.qml:11: [sketch] import "../../core"
+src/activities/sketch/PaletteSelector.qml:11: [sketch] import "../../core"
+src/activities/sketch/TextToolPanel.qml:9: [sketch] import "../../core"
+src/activities/sketch/TextToolPanel.qml:9: [sketch] import "../../core"
+src/activities/sketch/BrushToolPanel.qml:9: [sketch] import "../../core"
+src/activities/sketch/BrushToolPanel.qml:9: [sketch] import "../../core"
+src/activities/gnumch-factors/GnumchFactors.qml:12: [gnumch-factors] import "../gnumch-equality/"
+src/activities/gnumch-factors/GnumchFactors.qml:12: [gnumch-factors] import "../gnumch-equality/"
+src/activities/memory-math-add/ActivityConfig.qml:15: [memory-math-add] import "../../core"
+src/activities/memory-math-add/ActivityConfig.qml:15: [memory-math-add] import "../../core"
+src/activities/memory-math-add/MemoryMathAdd.qml:12: [memory-math-add] import "../memory"
+src/activities/memory-math-add/MemoryMathAdd.qml:12: [memory-math-add] import "../memory"
+src/activities/memory-math-add/MemoryMathAdd.qml:15: [memory-math-add -> memory] backgroundImg: "qrc:/gcompris/src/activities/memory/resource/background.svg"
+src/activities/memory-math-add/resource/1/Data.qml:12: [memory-math-add -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add/resource/6/Data.qml:12: [memory-math-add -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add/resource/4/Data.qml:12: [memory-math-add -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add/resource/9/Data.qml:12: [memory-math-add -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add/resource/3/Data.qml:12: [memory-math-add -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add/resource/7/Data.qml:12: [memory-math-add -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add/resource/8/Data.qml:12: [memory-math-add -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add/resource/2/Data.qml:12: [memory-math-add -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add/resource/10/Data.qml:12: [memory-math-add -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add/resource/5/Data.qml:12: [memory-math-add -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/path_encoding_relative/PathEncodingRelative.qml:9: [path_encoding_relative] import "../path_encoding"
+src/activities/path_encoding_relative/PathEncodingRelative.qml:9: [path_encoding_relative] import "../path_encoding"
+src/activities/missing-letter/ActivityConfig.qml:13: [missing-letter] import "../../core"
+src/activities/missing-letter/ActivityConfig.qml:13: [missing-letter] import "../../core"
+src/activities/missing-letter/missing-letter.js:15: [missing-letter -> lang] .import "qrc:/gcompris/src/activities/lang/lang_api.js" as Lang
+src/activities/missing-letter/missing-letter.js:18: [missing-letter -> lang] var langUrl = "qrc:/gcompris/src/activities/lang/resource/";
+src/activities/missing-letter/MissingLetter.qml:14: [missing-letter] import "../../core"
+src/activities/missing-letter/MissingLetter.qml:14: [missing-letter] import "../../core"
+src/activities/align4_2players/Align42players.qml:15: [align4_2players] import "../../core"
+src/activities/align4_2players/Align42players.qml:15: [align4_2players] import "../../core"
+src/activities/gnumch-multiples/GnumchMultiples.qml:12: [gnumch-multiples] import "../gnumch-equality/"
+src/activities/gnumch-multiples/GnumchMultiples.qml:12: [gnumch-multiples] import "../gnumch-equality/"
+src/activities/simplepaint/PaintItem.qml:16: [simplepaint] import "../../core"
+src/activities/simplepaint/PaintItem.qml:16: [simplepaint] import "../../core"
+src/activities/simplepaint/simplepaint.js:87: [simplepaint -> menu] 'qrc:/gcompris/src/activities/menu/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:88: [simplepaint -> colors] 'qrc:/gcompris/src/activities/colors/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:89: [simplepaint -> wordsgame] 'qrc:/gcompris/src/activities/wordsgame/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:90: [simplepaint -> sudoku] 'qrc:/gcompris/src/activities/sudoku/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:91: [simplepaint -> mosaic] 'qrc:/gcompris/src/activities/mosaic/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:92: [simplepaint -> algebra_by] 'qrc:/gcompris/src/activities/algebra_by/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:93: [simplepaint -> scalesboard] 'qrc:/gcompris/src/activities/scalesboard/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:94: [simplepaint -> redraw] 'qrc:/gcompris/src/activities/redraw/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:95: [simplepaint -> color_mix] 'qrc:/gcompris/src/activities/color_mix/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:96: [simplepaint -> missing-letter] 'qrc:/gcompris/src/activities/missing-letter/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:97: [simplepaint -> enumerate] 'qrc:/gcompris/src/activities/enumerate/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:98: [simplepaint -> football] 'qrc:/gcompris/src/activities/football/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:99: [simplepaint -> hanoi_real] 'qrc:/gcompris/src/activities/hanoi_real/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:100: [simplepaint -> gravity] 'qrc:/gcompris/src/activities/gravity/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:101: [simplepaint -> instruments] 'qrc:/gcompris/src/activities/instruments/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:102: [simplepaint -> gletters] 'qrc:/gcompris/src/activities/gletters/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:103: [simplepaint -> braille_alphabets] 'qrc:/gcompris/src/activities/braille_alphabets/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:104: [simplepaint -> followline] 'qrc:/gcompris/src/activities/followline/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:105: [simplepaint -> bargame] 'qrc:/gcompris/src/activities/bargame/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:106: [simplepaint -> menu] 'qrc:/gcompris/src/activities/menu/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:107: [simplepaint -> smallnumbers2] 'qrc:/gcompris/src/activities/smallnumbers2/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:108: [simplepaint -> align4_2players] 'qrc:/gcompris/src/activities/align4_2players/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:109: [simplepaint -> smallnumbers] 'qrc:/gcompris/src/activities/smallnumbers/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:110: [simplepaint -> magic-hat-minus] 'qrc:/gcompris/src/activities/magic-hat-minus/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:111: [simplepaint -> tic_tac_toe] 'qrc:/gcompris/src/activities/tic_tac_toe/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:112: [simplepaint -> click_on_letter] 'qrc:/gcompris/src/activities/click_on_letter/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:113: [simplepaint -> fifteen] 'qrc:/gcompris/src/activities/fifteen/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:114: [simplepaint -> crane] 'qrc:/gcompris/src/activities/crane/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:115: [simplepaint -> hangman] 'qrc:/gcompris/src/activities/hangman/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:116: [simplepaint -> land_safe] 'qrc:/gcompris/src/activities/land_safe/resource/background.svg',
+src/activities/simplepaint/simplepaint.js:117: [simplepaint -> target] 'qrc:/gcompris/src/activities/target/resource/target_background.svg',
+src/activities/simplepaint/Simplepaint.qml:18: [simplepaint] import "../../core"
+src/activities/simplepaint/Simplepaint.qml:18: [simplepaint] import "../../core"
+src/activities/piano_composition/KeyOption.qml:16: [piano_composition] import "../../core"
+src/activities/piano_composition/KeyOption.qml:16: [piano_composition] import "../../core"
+src/activities/piano_composition/Piano_composition.qml:18: [piano_composition] import "../../core"
+src/activities/piano_composition/Piano_composition.qml:18: [piano_composition] import "../../core"
+src/activities/piano_composition/LyricsArea.qml:15: [piano_composition] import "../../core"
+src/activities/piano_composition/LyricsArea.qml:15: [piano_composition] import "../../core"
+src/activities/piano_composition/OptionsRow.qml:16: [piano_composition] import "../../core"
+src/activities/piano_composition/OptionsRow.qml:16: [piano_composition] import "../../core"
+src/activities/piano_composition/MelodyList.qml:17: [piano_composition] import "../../core"
+src/activities/piano_composition/MelodyList.qml:17: [piano_composition] import "../../core"
+src/activities/piano_composition/BpmMeter.qml:16: [piano_composition] import "../../core"
+src/activities/piano_composition/BpmMeter.qml:16: [piano_composition] import "../../core"
+src/activities/piano_composition/Staff.qml:18: [piano_composition] import "../../core"
+src/activities/piano_composition/Staff.qml:18: [piano_composition] import "../../core"
+src/activities/piano_composition/MultipleStaff.qml:18: [piano_composition] import "../../core"
+src/activities/piano_composition/MultipleStaff.qml:18: [piano_composition] import "../../core"
+src/activities/piano_composition/PianoKey.qml:15: [piano_composition] import "../../core"
+src/activities/piano_composition/PianoKey.qml:15: [piano_composition] import "../../core"
+src/activities/nine_men_morris/NineMenMorris.qml:12: [nine_men_morris] import "../../core"
+src/activities/nine_men_morris/NineMenMorris.qml:12: [nine_men_morris] import "../../core"
+src/activities/nine_men_morris/NineMenMorris.qml:30: [nine_men_morris -> tic_tac_toe] source: "qrc:/gcompris/src/activities/tic_tac_toe/resource/background.svg"
+src/activities/memory-math-mult-tux/MemoryMathMultTux.qml:12: [memory-math-mult-tux] import "../memory"
+src/activities/memory-math-mult-tux/MemoryMathMultTux.qml:12: [memory-math-mult-tux] import "../memory"
+src/activities/memory-math-mult-tux/MemoryMathMultTux.qml:15: [memory-math-mult-tux -> memory] backgroundImg: "qrc:/gcompris/src/activities/memory/resource/background.svg"
+src/activities/memory-math-mult-tux/resource/1/Data.qml:12: [memory-math-mult-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult-tux/resource/6/Data.qml:12: [memory-math-mult-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult-tux/resource/4/Data.qml:12: [memory-math-mult-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult-tux/resource/9/Data.qml:12: [memory-math-mult-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult-tux/resource/3/Data.qml:12: [memory-math-mult-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult-tux/resource/7/Data.qml:12: [memory-math-mult-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult-tux/resource/8/Data.qml:12: [memory-math-mult-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult-tux/resource/2/Data.qml:12: [memory-math-mult-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult-tux/resource/10/Data.qml:12: [memory-math-mult-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-mult-tux/resource/5/Data.qml:12: [memory-math-mult-tux -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-enumerate/ActivityConfig.qml:15: [memory-enumerate] import "../../core"
+src/activities/memory-enumerate/ActivityConfig.qml:15: [memory-enumerate] import "../../core"
+src/activities/memory-enumerate/MemoryEnumerate.qml:12: [memory-enumerate] import "../memory"
+src/activities/memory-enumerate/MemoryEnumerate.qml:12: [memory-enumerate] import "../memory"
+src/activities/memory-enumerate/MemoryEnumerate.qml:15: [memory-enumerate -> memory] backgroundImg: "qrc:/gcompris/src/activities/memory/resource/background.svg"
+src/activities/superbrain/ActivityConfig.qml:13: [superbrain] import "../../core"
+src/activities/superbrain/ActivityConfig.qml:13: [superbrain] import "../../core"
+src/activities/superbrain/Superbrain.qml:16: [superbrain] import "../../core"
+src/activities/superbrain/Superbrain.qml:16: [superbrain] import "../../core"
+src/activities/superbrain/Superbrain.qml:33: [superbrain -> family] source: "qrc:/gcompris/src/activities/family/resource/background.svg"
+src/activities/superbrain/SearchItem.qml:14: [superbrain] import "../../core"
+src/activities/superbrain/SearchItem.qml:14: [superbrain] import "../../core"
+src/activities/superbrain/superbrain.js:18: [superbrain -> graph-coloring] var baseUrl = "qrc:/gcompris/src/activities/graph-coloring/resource/shapes/";
+src/activities/gnumch-primes/GnumchPrimes.qml:12: [gnumch-primes] import "../gnumch-equality/"
+src/activities/gnumch-primes/GnumchPrimes.qml:12: [gnumch-primes] import "../gnumch-equality/"
+src/activities/railroad/Railroad.qml:16: [railroad] import "../../core"
+src/activities/railroad/Railroad.qml:16: [railroad] import "../../core"
+src/activities/mining/Mining.qml:15: [mining] import "../../core"
+src/activities/mining/Mining.qml:15: [mining] import "../../core"
+src/activities/number_sequence/ActivityConfig.qml:13: [number_sequence] import "../../core"
+src/activities/number_sequence/ActivityConfig.qml:13: [number_sequence] import "../../core"
+src/activities/number_sequence/NumberSequence.qml:15: [number_sequence] import "../../core"
+src/activities/number_sequence/NumberSequence.qml:15: [number_sequence] import "../../core"
+src/activities/number_sequence/NumberSequence.qml:36: [number_sequence -> chess] source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
+src/activities/tens_complement_find/Tens_complement_find.qml:10: [tens_complement_find] import "../../core"
+src/activities/tens_complement_find/Tens_complement_find.qml:10: [tens_complement_find] import "../../core"
+src/activities/tens_complement_find/Tens_complement_find.qml:26: [tens_complement_find -> chess] source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
+src/activities/tens_complement_find/AnswerContainer.qml:8: [tens_complement_find] import "../../core"
+src/activities/tens_complement_find/AnswerContainer.qml:8: [tens_complement_find] import "../../core"
+src/activities/tens_complement_find/tens_complement_find.js:9: [tens_complement_find] .import "../../core/core.js" as Core
+src/activities/money_back_cents/ActivityConfig.qml:13: [money_back_cents] import "../../core"
+src/activities/money_back_cents/ActivityConfig.qml:13: [money_back_cents] import "../../core"
+src/activities/money_back_cents/MoneyBackCents.qml:12: [money_back_cents] import "../money"
+src/activities/money_back_cents/MoneyBackCents.qml:12: [money_back_cents] import "../money"
+src/activities/money_back_cents/resource/1/Data.qml:11: [money_back_cents] import "../../../money/moneyConstants.js" as MoneyConstants
+src/activities/money_back_cents/resource/1/Data.qml:11: [money_back_cents] import "../../../money/moneyConstants.js" as MoneyConstants
+src/activities/money_back_cents/resource/3/Data.qml:11: [money_back_cents] import "../../../money/moneyConstants.js" as MoneyConstants
+src/activities/money_back_cents/resource/3/Data.qml:11: [money_back_cents] import "../../../money/moneyConstants.js" as MoneyConstants
+src/activities/money_back_cents/resource/2/Data.qml:11: [money_back_cents] import "../../../money/moneyConstants.js" as MoneyConstants
+src/activities/money_back_cents/resource/2/Data.qml:11: [money_back_cents] import "../../../money/moneyConstants.js" as MoneyConstants
+src/activities/algebra_by/AlgebraText.qml:10: [algebra_by] import "../../core"
+src/activities/algebra_by/AlgebraText.qml:10: [algebra_by] import "../../core"
+src/activities/algebra_by/ActivityConfig.qml:13: [algebra_by] import "../../core"
+src/activities/algebra_by/ActivityConfig.qml:13: [algebra_by] import "../../core"
+src/activities/algebra_by/Algebra.qml:11: [algebra_by] import "../../core"
+src/activities/algebra_by/Algebra.qml:11: [algebra_by] import "../../core"
+src/activities/redraw/Redraw.qml:16: [redraw] import "../../core"
+src/activities/redraw/Redraw.qml:16: [redraw] import "../../core"
+src/activities/tic_tac_toe_2players/Tic_tac_toe_2players.qml:11: [tic_tac_toe_2players] import "../tic_tac_toe"
+src/activities/tic_tac_toe_2players/Tic_tac_toe_2players.qml:11: [tic_tac_toe_2players] import "../tic_tac_toe"
+src/activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:8: [learn_decimals_subtractions] import "../learn_decimals/"
+src/activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:8: [learn_decimals_subtractions] import "../learn_decimals/"
+src/activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:17: [learn_decimals_subtractions -> learn_decimals] instructionQml: "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial3.qml"
+src/activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:21: [learn_decimals_subtractions -> learn_decimals] instructionQml: "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial4.qml"
+src/activities/learn_decimals_subtractions/Learn_decimals_subtractions.qml:25: [learn_decimals_subtractions -> learn_decimals] instructionQml: "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial5.qml"
+src/activities/followline/LinePart.qml:13: [followline] import "../../core"
+src/activities/followline/LinePart.qml:13: [followline] import "../../core"
+src/activities/followline/Followline.qml:17: [followline] import "../../core"
+src/activities/followline/Followline.qml:17: [followline] import "../../core"
+src/activities/gravity/Gravity.qml:17: [gravity] import "../../core"
+src/activities/gravity/Gravity.qml:17: [gravity] import "../../core"
+src/activities/ordering_sentences/OrderingSentences.qml:14: [ordering_sentences] import "../ordering_numbers"
+src/activities/ordering_sentences/OrderingSentences.qml:14: [ordering_sentences] import "../ordering_numbers"
+src/activities/geo-country/GeoCountry.qml:12: [geo-country] import "../babymatch"
+src/activities/geo-country/GeoCountry.qml:12: [geo-country] import "../babymatch"
+src/activities/binary_bulb/LightBulb.qml:11: [binary_bulb] import "../../core"
+src/activities/binary_bulb/LightBulb.qml:11: [binary_bulb] import "../../core"
+src/activities/binary_bulb/BinaryBulb.qml:15: [binary_bulb] import "../../core"
+src/activities/binary_bulb/BinaryBulb.qml:15: [binary_bulb] import "../../core"
+src/activities/binary_bulb/BinaryBulb.qml:31: [binary_bulb] source: "../digital_electricity/resource/texture01.webp"
+src/activities/binary_bulb/BinaryBulb.qml:93: [binary_bulb] source: "../digital_electricity/resource/texture01.webp"
+src/activities/binary_bulb/resource/tutorial7.qml:15: [binary_bulb] import "../../../core"
+src/activities/binary_bulb/resource/tutorial7.qml:15: [binary_bulb] import "../../../core"
+src/activities/binary_bulb/resource/tutorial1.qml:13: [binary_bulb] import "../../../core"
+src/activities/binary_bulb/resource/tutorial1.qml:13: [binary_bulb] import "../../../core"
+src/activities/binary_bulb/resource/tutorial2.qml:13: [binary_bulb] import "../../../core"
+src/activities/binary_bulb/resource/tutorial2.qml:13: [binary_bulb] import "../../../core"
+src/activities/binary_bulb/resource/tutorial6.qml:15: [binary_bulb] import "../../../core"
+src/activities/binary_bulb/resource/tutorial6.qml:15: [binary_bulb] import "../../../core"
+src/activities/binary_bulb/resource/tutorial5.qml:15: [binary_bulb] import "../../../core"
+src/activities/binary_bulb/resource/tutorial5.qml:15: [binary_bulb] import "../../../core"
+src/activities/binary_bulb/resource/tutorial3.qml:13: [binary_bulb] import "../../../core"
+src/activities/binary_bulb/resource/tutorial3.qml:13: [binary_bulb] import "../../../core"
+src/activities/binary_bulb/resource/tutorial4.qml:15: [binary_bulb] import "../../../core"
+src/activities/binary_bulb/resource/tutorial4.qml:15: [binary_bulb] import "../../../core"
+src/activities/memory-sound/ActivityConfig.qml:15: [memory-sound] import "../../core"
+src/activities/memory-sound/ActivityConfig.qml:15: [memory-sound] import "../../core"
+src/activities/memory-sound/MemorySound.qml:13: [memory-sound] import "../memory"
+src/activities/memory-sound/MemorySound.qml:13: [memory-sound] import "../memory"
+src/activities/memory-sound/MemorySound.qml:18: [memory-sound -> memory] backgroundImg: "qrc:/gcompris/src/activities/memory/resource/background.svg"
+src/activities/graduated_line_use/GraduatedLineUse.qml:6: [graduated_line_use] import "../graduated_line_read"
+src/activities/graduated_line_use/GraduatedLineUse.qml:6: [graduated_line_use] import "../graduated_line_read"
+src/activities/numbers-odd-even/NumbersOddEven.qml:9: [numbers-odd-even] import "../planegame"
+src/activities/numbers-odd-even/NumbersOddEven.qml:9: [numbers-odd-even] import "../planegame"
+src/activities/numbers-odd-even/resource/Tutorial1.qml:13: [numbers-odd-even] import "../../../core"
+src/activities/numbers-odd-even/resource/Tutorial1.qml:13: [numbers-odd-even] import "../../../core"
+src/activities/numbers-odd-even/resource/Tutorial3.qml:13: [numbers-odd-even] import "../../../core"
+src/activities/numbers-odd-even/resource/Tutorial3.qml:13: [numbers-odd-even] import "../../../core"
+src/activities/numbers-odd-even/resource/Tutorial2.qml:13: [numbers-odd-even] import "../../../core"
+src/activities/numbers-odd-even/resource/Tutorial2.qml:13: [numbers-odd-even] import "../../../core"
+src/activities/numbers-odd-even/resource/TutorialBase.qml:13: [numbers-odd-even] import "../../../core"
+src/activities/numbers-odd-even/resource/TutorialBase.qml:13: [numbers-odd-even] import "../../../core"
+src/activities/graph-coloring/Node.qml:15: [graph-coloring] import "../../core"
+src/activities/graph-coloring/Node.qml:15: [graph-coloring] import "../../core"
+src/activities/graph-coloring/ActivityConfig.qml:13: [graph-coloring] import "../../core"
+src/activities/graph-coloring/ActivityConfig.qml:13: [graph-coloring] import "../../core"
+src/activities/graph-coloring/GraphColoring.qml:15: [graph-coloring] import "../../core"
+src/activities/graph-coloring/GraphColoring.qml:15: [graph-coloring] import "../../core"
+src/activities/graph-coloring/GraphColoring.qml:40: [graph-coloring -> tic_tac_toe] source: "qrc:/gcompris/src/activities/tic_tac_toe/resource/background.svg"
+src/activities/louis-braille/LouisBraille.qml:13: [louis-braille] import "../../core"
+src/activities/louis-braille/LouisBraille.qml:13: [louis-braille] import "../../core"
+src/activities/louis-braille/LouisBraille.qml:14: [louis-braille] import "../braille_alphabets"
+src/activities/louis-braille/LouisBraille.qml:14: [louis-braille] import "../braille_alphabets"
+src/activities/louis-braille/ReorderList.qml:14: [louis-braille] import "../../core"
+src/activities/louis-braille/ReorderList.qml:14: [louis-braille] import "../../core"
+src/activities/memory-wordnumber/MemoryWordnumber.qml:12: [memory-wordnumber] import "../memory"
+src/activities/memory-wordnumber/MemoryWordnumber.qml:12: [memory-wordnumber] import "../memory"
+src/activities/memory-wordnumber/MemoryWordnumber.qml:17: [memory-wordnumber -> memory] backgroundImg: "qrc:/gcompris/src/activities/memory/resource/background.svg"
+src/activities/memory-wordnumber/ActivityConfig.qml:15: [memory-wordnumber] import "../../core"
+src/activities/memory-wordnumber/ActivityConfig.qml:15: [memory-wordnumber] import "../../core"
+src/activities/programmingMaze/InstructionArea.qml:13: [programmingMaze] import "../../core"
+src/activities/programmingMaze/InstructionArea.qml:13: [programmingMaze] import "../../core"
+src/activities/programmingMaze/CodeArea.qml:15: [programmingMaze] import "../../core"
+src/activities/programmingMaze/CodeArea.qml:15: [programmingMaze] import "../../core"
+src/activities/programmingMaze/ProgrammingMaze.qml:15: [programmingMaze] import "../../core"
+src/activities/programmingMaze/ProgrammingMaze.qml:15: [programmingMaze] import "../../core"
+src/activities/programmingMaze/ProgrammingMaze.qml:173: [programmingMaze -> maze] source: "qrc:/gcompris/src/activities/maze/resource/tux_top_south.svg"
+src/activities/programmingMaze/ProgrammingMaze.qml:592: [programmingMaze -> guesscount] source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
+src/activities/programmingMaze/programmingMaze.js:66: [programmingMaze -> reversecount] var reverseCountUrl = "qrc:/gcompris/src/activities/reversecount/resource/"
+src/activities/programmingMaze/HeaderArea.qml:13: [programmingMaze] import "../../core"
+src/activities/programmingMaze/HeaderArea.qml:13: [programmingMaze] import "../../core"
+src/activities/programmingMaze/resource/TutorialBase.qml:13: [programmingMaze] import "../../../core"
+src/activities/programmingMaze/resource/TutorialBase.qml:13: [programmingMaze] import "../../../core"
+src/activities/programmingMaze/resource/TutorialBase.qml:67: [programmingMaze -> maze] source: "qrc:/gcompris/src/activities/maze/resource/tux_top_south.svg"
+src/activities/analog_electricity/ActivityConfig.qml:13: [analog_electricity] import "../../core"
+src/activities/analog_electricity/ActivityConfig.qml:13: [analog_electricity] import "../../core"
+src/activities/analog_electricity/ListWidget.qml:15: [analog_electricity] import "../../core"
+src/activities/analog_electricity/ListWidget.qml:15: [analog_electricity] import "../../core"
+src/activities/analog_electricity/analog_electricity.js:18: [analog_electricity -> digital_electricity] var urlDigital = "qrc:/gcompris/src/activities/digital_electricity/resource/";
+src/activities/analog_electricity/AnalogElectricity.qml:17: [analog_electricity] import "../../core"
+src/activities/analog_electricity/AnalogElectricity.qml:17: [analog_electricity] import "../../core"
+src/activities/analog_electricity/DragListItem.qml:15: [analog_electricity] import "../../core"
+src/activities/analog_electricity/DragListItem.qml:15: [analog_electricity] import "../../core"
+src/activities/analog_electricity/components/ElectricalComponent.qml:15: [analog_electricity] import "../../../core"
+src/activities/analog_electricity/components/ElectricalComponent.qml:15: [analog_electricity] import "../../../core"
+src/activities/crane/Crane.qml:18: [crane] import "../../core"
+src/activities/crane/Crane.qml:18: [crane] import "../../core"
+src/activities/redraw_symmetrical/RedrawSymmetrical.qml:11: [redraw_symmetrical] import "../redraw"
+src/activities/redraw_symmetrical/RedrawSymmetrical.qml:11: [redraw_symmetrical] import "../redraw"
+src/activities/penalty/Progress.qml:10: [penalty] import "../../core"
+src/activities/penalty/Progress.qml:10: [penalty] import "../../core"
+src/activities/penalty/Penalty.qml:16: [penalty] import "../../core"
+src/activities/penalty/Penalty.qml:16: [penalty] import "../../core"
+src/activities/penalty/Penalty.qml:383: [penalty -> ballcatch] winSound: "qrc:/gcompris/src/activities/ballcatch/resource/tuxok.wav"
+src/activities/penalty/Penalty.qml:384: [penalty -> ballcatch] looseSound: "qrc:/gcompris/src/activities/ballcatch/resource/youcannot.wav"
+src/activities/land_safe/LandSafe.qml:18: [land_safe] import "../../core"
+src/activities/land_safe/LandSafe.qml:18: [land_safe] import "../../core"
+src/activities/play_piano/PlayPiano.qml:14: [play_piano] import "../../core"
+src/activities/play_piano/PlayPiano.qml:14: [play_piano] import "../../core"
+src/activities/play_piano/PlayPiano.qml:15: [play_piano] import "../piano_composition"
+src/activities/play_piano/PlayPiano.qml:15: [play_piano] import "../piano_composition"
+src/activities/play_piano/ActivityConfig.qml:14: [play_piano] import "../../core"
+src/activities/play_piano/ActivityConfig.qml:14: [play_piano] import "../../core"
+src/activities/digital_electricity/ActivityConfig.qml:13: [digital_electricity] import "../../core"
+src/activities/digital_electricity/ActivityConfig.qml:13: [digital_electricity] import "../../core"
+src/activities/digital_electricity/ListWidget.qml:14: [digital_electricity] import "../../core"
+src/activities/digital_electricity/ListWidget.qml:14: [digital_electricity] import "../../core"
+src/activities/digital_electricity/DragListItem.qml:14: [digital_electricity] import "../../core"
+src/activities/digital_electricity/DragListItem.qml:14: [digital_electricity] import "../../core"
+src/activities/digital_electricity/DigitalElectricity.qml:16: [digital_electricity] import "../../core"
+src/activities/digital_electricity/DigitalElectricity.qml:16: [digital_electricity] import "../../core"
+src/activities/digital_electricity/components/SignalGenerator.qml:14: [digital_electricity] import "../../../core"
+src/activities/digital_electricity/components/SignalGenerator.qml:14: [digital_electricity] import "../../../core"
+src/activities/erase_clic/ActivityConfig.qml:13: [erase_clic] import "../../core"
+src/activities/erase_clic/ActivityConfig.qml:13: [erase_clic] import "../../core"
+src/activities/erase_clic/EraseClic.qml:12: [erase_clic] import "../erase"
+src/activities/erase_clic/EraseClic.qml:12: [erase_clic] import "../erase"
+src/activities/algebra_minus/AlgebraMinus.qml:12: [algebra_minus] import "../algebra_by/"
+src/activities/algebra_minus/AlgebraMinus.qml:12: [algebra_minus] import "../algebra_by/"
+src/activities/algebra_minus/AlgebraMinus.qml:13: [algebra_minus] import "../algebra_by/algebra.js" as Activity
+src/activities/algebra_minus/AlgebraMinus.qml:13: [algebra_minus] import "../algebra_by/algebra.js" as Activity
+src/activities/algebra_minus/ActivityConfig.qml:13: [algebra_minus] import "../../core"
+src/activities/algebra_minus/ActivityConfig.qml:13: [algebra_minus] import "../../core"
+src/activities/grammar_classes/ActivityConfig.qml:13: [grammar_classes] import "../../core"
+src/activities/grammar_classes/ActivityConfig.qml:13: [grammar_classes] import "../../core"
+src/activities/grammar_classes/GrammarClasses.qml:10: [grammar_classes] import "../grammar_analysis"
+src/activities/grammar_classes/GrammarClasses.qml:10: [grammar_classes] import "../grammar_analysis"
+src/activities/learn_decimals_additions/Learn_decimals_additions.qml:8: [learn_decimals_additions] import "../learn_decimals/"
+src/activities/learn_decimals_additions/Learn_decimals_additions.qml:8: [learn_decimals_additions] import "../learn_decimals/"
+src/activities/learn_decimals_additions/Learn_decimals_additions.qml:17: [learn_decimals_additions -> learn_decimals] instructionQml: "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial6.qml"
+src/activities/learn_decimals_additions/Learn_decimals_additions.qml:21: [learn_decimals_additions -> learn_decimals] instructionQml: "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial7.qml"
+src/activities/learn_decimals_additions/Learn_decimals_additions.qml:25: [learn_decimals_additions -> learn_decimals] instructionQml: "qrc:/gcompris/src/activities/learn_decimals/resource/tutorial8.qml"
+src/activities/grammar_analysis/WordAndClass.qml:16: [grammar_analysis] import "../../core"
+src/activities/grammar_analysis/WordAndClass.qml:16: [grammar_analysis] import "../../core"
+src/activities/grammar_analysis/ActivityConfig.qml:13: [grammar_analysis] import "../../core"
+src/activities/grammar_analysis/ActivityConfig.qml:13: [grammar_analysis] import "../../core"
+src/activities/grammar_analysis/GrammarAnalysis.qml:16: [grammar_analysis] import "../../core"
+src/activities/grammar_analysis/GrammarAnalysis.qml:16: [grammar_analysis] import "../../core"
+src/activities/grammar_analysis/GrammarAnalysis.qml:50: [grammar_analysis -> guesscount] source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
+src/activities/grammar_analysis/GrammarAnalysis.qml:179: [grammar_analysis -> guesscount] source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
+src/activities/grammar_analysis/GrammarToken.qml:14: [grammar_analysis] import "../../core"
+src/activities/grammar_analysis/GrammarToken.qml:14: [grammar_analysis] import "../../core"
+src/activities/play_rhythm/PlayRhythm.qml:14: [play_rhythm] import "../../core"
+src/activities/play_rhythm/PlayRhythm.qml:14: [play_rhythm] import "../../core"
+src/activities/play_rhythm/PlayRhythm.qml:15: [play_rhythm] import "../piano_composition"
+src/activities/play_rhythm/PlayRhythm.qml:15: [play_rhythm] import "../piano_composition"
+src/activities/solar_system/PlanetInSolarModel.qml:12: [solar_system] import "../../core"
+src/activities/solar_system/PlanetInSolarModel.qml:12: [solar_system] import "../../core"
+src/activities/solar_system/ActivityConfig.qml:13: [solar_system] import "../../core"
+src/activities/solar_system/ActivityConfig.qml:13: [solar_system] import "../../core"
+src/activities/solar_system/SolarSystem.qml:13: [solar_system] import "../../core"
+src/activities/solar_system/SolarSystem.qml:13: [solar_system] import "../../core"
+src/activities/solar_system/QuizScreen.qml:13: [solar_system] import "../../core"
+src/activities/solar_system/QuizScreen.qml:13: [solar_system] import "../../core"
+src/activities/fractions_find/Fractions_find.qml:7: [fractions_find] import "../fractions_create/"
+src/activities/fractions_find/Fractions_find.qml:7: [fractions_find] import "../fractions_create/"
+src/activities/baby_tangram/BabyTangram.qml:14: [baby_tangram] import "../tangram"
+src/activities/baby_tangram/BabyTangram.qml:14: [baby_tangram] import "../tangram"
+src/activities/money_back/ActivityConfig.qml:13: [money_back] import "../../core"
+src/activities/money_back/ActivityConfig.qml:13: [money_back] import "../../core"
+src/activities/money_back/MoneyBack.qml:12: [money_back] import "../money"
+src/activities/money_back/MoneyBack.qml:12: [money_back] import "../money"
+src/activities/money_back/resource/1/Data.qml:11: [money_back] import "../../../money/moneyConstants.js" as MoneyConstants
+src/activities/money_back/resource/1/Data.qml:11: [money_back] import "../../../money/moneyConstants.js" as MoneyConstants
+src/activities/money_back/resource/3/Data.qml:11: [money_back] import "../../../money/moneyConstants.js" as MoneyConstants
+src/activities/money_back/resource/3/Data.qml:11: [money_back] import "../../../money/moneyConstants.js" as MoneyConstants
+src/activities/money_back/resource/2/Data.qml:11: [money_back] import "../../../money/moneyConstants.js" as MoneyConstants
+src/activities/money_back/resource/2/Data.qml:11: [money_back] import "../../../money/moneyConstants.js" as MoneyConstants
+src/activities/memory-math-add-minus/ActivityConfig.qml:15: [memory-math-add-minus] import "../../core"
+src/activities/memory-math-add-minus/ActivityConfig.qml:15: [memory-math-add-minus] import "../../core"
+src/activities/memory-math-add-minus/MemoryMathAddMinus.qml:12: [memory-math-add-minus] import "../memory"
+src/activities/memory-math-add-minus/MemoryMathAddMinus.qml:12: [memory-math-add-minus] import "../memory"
+src/activities/memory-math-add-minus/MemoryMathAddMinus.qml:15: [memory-math-add-minus -> memory] backgroundImg: "qrc:/gcompris/src/activities/memory/resource/background.svg"
+src/activities/memory-math-add-minus/resource/1/Data.qml:12: [memory-math-add-minus -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus/resource/6/Data.qml:12: [memory-math-add-minus -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus/resource/4/Data.qml:12: [memory-math-add-minus -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus/resource/9/Data.qml:12: [memory-math-add-minus -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus/resource/3/Data.qml:12: [memory-math-add-minus -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus/resource/7/Data.qml:12: [memory-math-add-minus -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus/resource/8/Data.qml:12: [memory-math-add-minus -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus/resource/2/Data.qml:12: [memory-math-add-minus -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus/resource/10/Data.qml:12: [memory-math-add-minus -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-add-minus/resource/5/Data.qml:12: [memory-math-add-minus -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/calcudoku/Calcudoku.qml:10: [calcudoku] import "../../core"
+src/activities/calcudoku/Calcudoku.qml:10: [calcudoku] import "../../core"
+src/activities/calcudoku/CalcudokuCage.qml:8: [calcudoku] import "../../core"
+src/activities/calcudoku/CalcudokuCage.qml:8: [calcudoku] import "../../core"
+src/activities/calcudoku/calcudoku.js:13: [calcudoku -> sudoku] var url = "qrc:/gcompris/src/activities/sudoku/resource/";
+src/activities/calcudoku/CalcudokuCase.qml:9: [calcudoku] import "../../core"
+src/activities/calcudoku/CalcudokuCase.qml:9: [calcudoku] import "../../core"
+src/activities/calcudoku/CalcudokuListWidget.qml:9: [calcudoku] import "../../core"
+src/activities/calcudoku/CalcudokuListWidget.qml:9: [calcudoku] import "../../core"
+src/activities/note_names/ActivityConfig.qml:13: [note_names] import "../../core"
+src/activities/note_names/ActivityConfig.qml:13: [note_names] import "../../core"
+src/activities/note_names/NoteNames.qml:13: [note_names] import "../../core"
+src/activities/note_names/NoteNames.qml:13: [note_names] import "../../core"
+src/activities/note_names/NoteNames.qml:14: [note_names] import "../piano_composition"
+src/activities/note_names/NoteNames.qml:14: [note_names] import "../piano_composition"
+src/activities/braille_alphabets/BrailleChar.qml:12: [braille_alphabets] import "../../core"
+src/activities/braille_alphabets/BrailleChar.qml:12: [braille_alphabets] import "../../core"
+src/activities/braille_alphabets/BrailleAlphabets.qml:13: [braille_alphabets] import "../../core"
+src/activities/braille_alphabets/BrailleAlphabets.qml:13: [braille_alphabets] import "../../core"
+src/activities/braille_alphabets/BrailleMap.qml:13: [braille_alphabets] import "../../core"
+src/activities/braille_alphabets/BrailleMap.qml:13: [braille_alphabets] import "../../core"
+src/activities/braille_alphabets/FirstScreen.qml:13: [braille_alphabets] import "../../core"
+src/activities/braille_alphabets/FirstScreen.qml:13: [braille_alphabets] import "../../core"
+src/activities/hanoi_real/HanoiReal.qml:17: [hanoi_real] import "../../core"
+src/activities/hanoi_real/HanoiReal.qml:17: [hanoi_real] import "../../core"
+src/activities/algebra_div/ActivityConfig.qml:13: [algebra_div] import "../../core"
+src/activities/algebra_div/ActivityConfig.qml:13: [algebra_div] import "../../core"
+src/activities/algebra_div/AlgebraDiv.qml:11: [algebra_div] import "../algebra_by/"
+src/activities/algebra_div/AlgebraDiv.qml:11: [algebra_div] import "../algebra_by/"
+src/activities/algebra_div/AlgebraDiv.qml:12: [algebra_div] import "../algebra_by/algebra.js" as Activity
+src/activities/algebra_div/AlgebraDiv.qml:12: [algebra_div] import "../algebra_by/algebra.js" as Activity
+src/activities/memory-case-association/ActivityConfig.qml:15: [memory-case-association] import "../../core"
+src/activities/memory-case-association/ActivityConfig.qml:15: [memory-case-association] import "../../core"
+src/activities/memory-case-association/dataset.js:12: [memory-case-association -> categorization] var url = "qrc:/gcompris/src/activities/categorization/resource/images/alphabets/"
+src/activities/memory-case-association/MemoryCaseAssociation.qml:8: [memory-case-association] import "../memory"
+src/activities/memory-case-association/MemoryCaseAssociation.qml:8: [memory-case-association] import "../memory"
+src/activities/memory-case-association/MemoryCaseAssociation.qml:13: [memory-case-association -> memory] backgroundImg: "qrc:/gcompris/src/activities/memory/resource/background.svg"
+src/activities/memory-math-minus/MemoryMathMinus.qml:12: [memory-math-minus] import "../memory"
+src/activities/memory-math-minus/MemoryMathMinus.qml:12: [memory-math-minus] import "../memory"
+src/activities/memory-math-minus/MemoryMathMinus.qml:15: [memory-math-minus -> memory] backgroundImg: "qrc:/gcompris/src/activities/memory/resource/background.svg"
+src/activities/memory-math-minus/ActivityConfig.qml:15: [memory-math-minus] import "../../core"
+src/activities/memory-math-minus/ActivityConfig.qml:15: [memory-math-minus] import "../../core"
+src/activities/memory-math-minus/resource/1/Data.qml:12: [memory-math-minus -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-minus/resource/6/Data.qml:12: [memory-math-minus -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-minus/resource/4/Data.qml:12: [memory-math-minus -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-minus/resource/9/Data.qml:12: [memory-math-minus -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-minus/resource/3/Data.qml:12: [memory-math-minus -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-minus/resource/7/Data.qml:12: [memory-math-minus -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-minus/resource/8/Data.qml:12: [memory-math-minus -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-minus/resource/2/Data.qml:12: [memory-math-minus -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-minus/resource/10/Data.qml:12: [memory-math-minus -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/memory-math-minus/resource/5/Data.qml:12: [memory-math-minus -> memory] import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
+src/activities/checkers_2players/Checkers2Players.qml:11: [checkers_2players] import "../checkers"
+src/activities/checkers_2players/Checkers2Players.qml:11: [checkers_2players] import "../checkers"
+src/activities/tic_tac_toe/TicTacToe.qml:14: [tic_tac_toe] import "../../core"
+src/activities/tic_tac_toe/TicTacToe.qml:14: [tic_tac_toe] import "../../core"
+src/activities/money_cents/ActivityConfig.qml:13: [money_cents] import "../../core"
+src/activities/money_cents/ActivityConfig.qml:13: [money_cents] import "../../core"
+src/activities/money_cents/MoneyCents.qml:12: [money_cents] import "../money"
+src/activities/money_cents/MoneyCents.qml:12: [money_cents] import "../money"
+src/activities/money_cents/resource/1/Data.qml:11: [money_cents] import "../../../money/moneyConstants.js" as MoneyConstants
+src/activities/money_cents/resource/1/Data.qml:11: [money_cents] import "../../../money/moneyConstants.js" as MoneyConstants
+src/activities/money_cents/resource/3/Data.qml:11: [money_cents] import "../../../money/moneyConstants.js" as MoneyConstants
+src/activities/money_cents/resource/3/Data.qml:11: [money_cents] import "../../../money/moneyConstants.js" as MoneyConstants
+src/activities/money_cents/resource/2/Data.qml:11: [money_cents] import "../../../money/moneyConstants.js" as MoneyConstants
+src/activities/money_cents/resource/2/Data.qml:11: [money_cents] import "../../../money/moneyConstants.js" as MoneyConstants
+src/activities/tens_complement_calculate/Tens_complement_calculate.qml:7: [tens_complement_calculate] import "../tens_complement_swap"
+src/activities/tens_complement_calculate/Tens_complement_calculate.qml:7: [tens_complement_calculate] import "../tens_complement_swap"
+src/activities/ordering_alphabets/OrderingAlphabets.qml:14: [ordering_alphabets] import "../ordering_numbers"
+src/activities/ordering_alphabets/OrderingAlphabets.qml:14: [ordering_alphabets] import "../ordering_numbers"
+src/activities/oware/Pit.qml:15: [oware] import "../../core"
+src/activities/oware/Pit.qml:15: [oware] import "../../core"
+src/activities/oware/Oware.qml:14: [oware] import "../../core"
+src/activities/oware/Oware.qml:14: [oware] import "../../core"
+src/activities/oware/Oware.qml:28: [oware -> hanoi_real] source: "qrc:/gcompris/src/activities/hanoi_real/resource/background.svg"
+src/activities/oware/Oware.qml:95: [oware -> bargame] backgroundImageSource: "qrc:/gcompris/src/activities/bargame/resource/score_1.svg"
+src/activities/oware/Oware.qml:170: [oware -> bargame] backgroundImageSource: "qrc:/gcompris/src/activities/bargame/resource/score_2.svg"
+src/activities/erase_2clic/ActivityConfig.qml:13: [erase_2clic] import "../../core"
+src/activities/erase_2clic/ActivityConfig.qml:13: [erase_2clic] import "../../core"
+src/activities/erase_2clic/Erase2clic.qml:12: [erase_2clic] import "../erase"
+src/activities/erase_2clic/Erase2clic.qml:12: [erase_2clic] import "../erase"
+src/activities/braille_fun/BrailleFun.qml:14: [braille_fun] import "../../core"
+src/activities/braille_fun/BrailleFun.qml:14: [braille_fun] import "../../core"
+src/activities/braille_fun/BrailleFun.qml:15: [braille_fun] import "../braille_alphabets"
+src/activities/braille_fun/BrailleFun.qml:15: [braille_fun] import "../braille_alphabets"
+src/activities/braille_fun/BrailleFun.qml:252: [braille_fun -> braille_alphabets] source: "qrc:/gcompris/src/activities/braille_alphabets/resource/braille_button.svg"
+src/activities/vertical_subtraction/MathNumber.qml:9: [vertical_subtraction] import "../../core"
+src/activities/vertical_subtraction/MathNumber.qml:9: [vertical_subtraction] import "../../core"
+src/activities/vertical_subtraction/MathDigit.qml:10: [vertical_subtraction] import "../../core"
+src/activities/vertical_subtraction/MathDigit.qml:10: [vertical_subtraction] import "../../core"
+src/activities/vertical_subtraction/VerticalSubtraction.qml:20: [vertical_subtraction] import "../../core"
+src/activities/vertical_subtraction/VerticalSubtraction.qml:20: [vertical_subtraction] import "../../core"
+src/activities/vertical_subtraction/VerticalSubtraction.qml:51: [vertical_subtraction -> chess] source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
+src/activities/memory-case-association-tux/MemoryCaseAssociationTux.qml:8: [memory-case-association-tux] import "../memory"
+src/activities/memory-case-association-tux/MemoryCaseAssociationTux.qml:8: [memory-case-association-tux] import "../memory"
+src/activities/memory-case-association-tux/MemoryCaseAssociationTux.qml:9: [memory-case-association-tux] import "../memory-case-association/dataset.js" as Dataset
+src/activities/memory-case-association-tux/MemoryCaseAssociationTux.qml:9: [memory-case-association-tux] import "../memory-case-association/dataset.js" as Dataset
+src/activities/memory-case-association-tux/MemoryCaseAssociationTux.qml:13: [memory-case-association-tux -> memory] backgroundImg: "qrc:/gcompris/src/activities/memory/resource/background.svg"
+src/activities/sudoku/Sudoku.qml:14: [sudoku] import "../../core"
+src/activities/sudoku/Sudoku.qml:14: [sudoku] import "../../core"
+src/activities/sudoku/SudokuCase.qml:13: [sudoku] import "../../core"
+src/activities/sudoku/SudokuCase.qml:13: [sudoku] import "../../core"
+src/activities/sudoku/SudokuListWidget.qml:14: [sudoku] import "../../core"
+src/activities/sudoku/SudokuListWidget.qml:14: [sudoku] import "../../core"
+src/activities/memory-sound-tux/MemorySoundTux.qml:12: [memory-sound-tux] import "../memory"
+src/activities/memory-sound-tux/MemorySoundTux.qml:12: [memory-sound-tux] import "../memory"
+src/activities/memory-sound-tux/MemorySoundTux.qml:13: [memory-sound-tux] import "../memory-sound/memorysounddataset.js" as Dataset
+src/activities/memory-sound-tux/MemorySoundTux.qml:13: [memory-sound-tux] import "../memory-sound/memorysounddataset.js" as Dataset
+src/activities/memory-sound-tux/MemorySoundTux.qml:17: [memory-sound-tux -> memory] backgroundImg: "qrc:/gcompris/src/activities/memory/resource/background.svg"
+src/activities/paintings/Paintings.qml:12: [paintings] import "../babymatch"
+src/activities/paintings/Paintings.qml:12: [paintings] import "../babymatch"
+src/activities/melody/Melody.qml:16: [melody] import "../../core"
+src/activities/melody/Melody.qml:16: [melody] import "../../core"
+src/activities/renewable_energy/Solar.qml:15: [renewable_energy] import "../../core"
+src/activities/renewable_energy/Solar.qml:15: [renewable_energy] import "../../core"
+src/activities/renewable_energy/RenewableEnergy.qml:15: [renewable_energy] import "../../core"
+src/activities/renewable_energy/RenewableEnergy.qml:15: [renewable_energy] import "../../core"
+src/activities/renewable_energy/RenewableEnergy.qml:25: [renewable_energy -> watercycle] property string url2: "qrc:/gcompris/src/activities/watercycle/resource/"
+src/activities/renewable_energy/RenewableEnergy.qml:30: [renewable_energy -> chess] source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
+src/activities/renewable_energy/RenewableEnergy.qml:131: [renewable_energy -> watercycle] source: "qrc:/gcompris/src/activities/watercycle/resource/harbor1.wav"
+src/activities/renewable_energy/RenewableEnergy.qml:136: [renewable_energy -> watercycle] source: "qrc:/gcompris/src/activities/watercycle/resource/harbor2.wav"
+src/activities/renewable_energy/Wind.qml:15: [renewable_energy] import "../../core"
+src/activities/renewable_energy/Wind.qml:15: [renewable_energy] import "../../core"
+src/activities/renewable_energy/Hydro.qml:15: [renewable_energy] import "../../core"
+src/activities/renewable_energy/Hydro.qml:15: [renewable_energy] import "../../core"
