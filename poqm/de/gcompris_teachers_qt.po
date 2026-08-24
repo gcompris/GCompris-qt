@@ -1,16 +1,17 @@
 # SPDX-FileCopyrightText: 2026 Alexander Becker <alex-at-kde-l10n-de@freenet.de>
+# SPDX-FileCopyrightText: 2026 Philipp Kiemle <l10n.daphipz@fastmail.de>
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_teachers\n"
-"PO-Revision-Date: 2026-05-07 20:35+0200\n"
-"Last-Translator: Alexander Becker <alex-at-kde-l10n-de@freenet.de>\n"
+"PO-Revision-Date: 2026-08-21 22:44+0200\n"
+"Last-Translator: Philipp Kiemle <l10n.daphipz@fastmail.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 26.04.0\n"
+"X-Generator: Lokalize 26.04.3\n"
 "X-Qt-Contexts: true\n"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:13
@@ -577,17 +578,11 @@ msgid "%1 %"
 msgstr "%1 %"
 
 #: server/activities/enumerate/EnumerateDataDisplay.qml:59
-#, fuzzy
-#| msgctxt "AdjacentNumbersDataDisplay|"
-#| msgid "Answer:"
 msgctxt "EnumerateDataDisplay|"
 msgid "Answer:"
 msgstr "Antwort:"
 
 #: server/activities/enumerate/EnumerateEditor.qml:27
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "EnumerateEditor|"
 msgid "Sublevels"
 msgstr "Unterstufen"
@@ -771,20 +766,17 @@ msgstr "Diagrammtyp"
 #: server/activities/gletters/GlettersDataDisplay.qml:36
 msgctxt "GlettersDataDisplay|"
 msgid "Domino mode:"
-msgstr ""
+msgstr "Domino-Modus:"
 
 #: server/activities/gletters/GlettersDataDisplay.qml:66
 msgctxt "GlettersDataDisplay|"
 msgid "Visible items:"
-msgstr ""
+msgstr "Sichtbare Elemente:"
 
 #: server/activities/gletters/GlettersDataDisplay.qml:95
-#, fuzzy
-#| msgctxt "TargetDataDisplay|"
-#| msgid "Expected answer:"
 msgctxt "GlettersDataDisplay|"
 msgid "Typed answer:"
-msgstr "Erwartete Antwort:"
+msgstr "Getippte Antwort:"
 
 #: server/activities/gletters/GlettersDataDisplay.qml:121
 msgctxt "GlettersDataDisplay|"
@@ -802,57 +794,39 @@ msgstr "Tipps: %1"
 #, qt-format
 msgctxt "GuessnumberDataDisplay|"
 msgid "Number between %1 and %2."
-msgstr ""
+msgstr "Zahl zwischen %1 und %2."
 
 #: server/activities/guessnumber/GuessnumberDataDisplay.qml:50
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Number of circles"
 msgctxt "GuessnumberDataDisplay|"
 msgid "Number to guess:"
-msgstr "Kreisanzahl"
+msgstr "Zu erratende Zahl:"
 
 #: server/activities/guessnumber/GuessnumberDataDisplay.qml:77
 msgctxt "GuessnumberDataDisplay|"
 msgid "Steps:"
-msgstr ""
+msgstr "Schritte:"
 
 #: server/activities/guessnumber/GuessnumberEditor.qml:27
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Maximum start number"
 msgctxt "GuessnumberEditor|"
 msgid "Minimum number"
-msgstr "Maximale Anfangszahl"
+msgstr "Minimale Zahl"
 
 #: server/activities/guessnumber/GuessnumberEditor.qml:28
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Maximum start number"
 msgctxt "GuessnumberEditor|"
 msgid "Maximum number"
-msgstr "Maximale Anfangszahl"
+msgstr "Maximale Zahl"
 
 #: server/activities/guessnumber/GuessnumberEditor.qml:90
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "GuessnumberEditor|"
 msgid "Dataset is empty."
 msgstr "Datensatz ist leer."
 
 #: server/activities/keyboard_training/KeyboardTrainingDataDisplay.qml:26
-#, fuzzy
-#| msgctxt "BinaryBulbDataDisplay|"
-#| msgid "Expected:"
 msgctxt "KeyboardTrainingDataDisplay|"
 msgid "Expected:"
 msgstr "Erwartet:"
 
 #: server/activities/keyboard_training/KeyboardTrainingDataDisplay.qml:32
-#, fuzzy
-#| msgctxt "AdjacentNumbersDataDisplay|"
-#| msgid "Answer:"
 msgctxt "KeyboardTrainingDataDisplay|"
 msgid "Answer:"
 msgstr "Antwort:"
@@ -1446,7 +1420,7 @@ msgstr "Modus"
 #: server/activities/reversecount/ReversecountDataDisplay.qml:38
 msgctxt "ReversecountDataDisplay|"
 msgid "Domino mode:"
-msgstr ""
+msgstr "Domino-Modus:"
 
 #: server/activities/reversecount/ReversecountDataDisplay.qml:67
 #, fuzzy
@@ -1459,12 +1433,9 @@ msgstr "Frage:"
 #: server/activities/reversecount/ReversecountDataDisplay.qml:92
 msgctxt "ReversecountDataDisplay|"
 msgid "Interval:"
-msgstr ""
+msgstr "Intervall:"
 
 #: server/activities/reversecount/ReversecountDataDisplay.qml:119
-#, fuzzy
-#| msgctxt "AdjacentNumbersDataDisplay|"
-#| msgid "Answer:"
 msgctxt "ReversecountDataDisplay|"
 msgid "Answer:"
 msgstr "Antwort:"
@@ -1473,7 +1444,7 @@ msgstr "Antwort:"
 #, qt-format
 msgctxt "ReversecountDataDisplay|"
 msgid "(%1 + %2) = %3"
-msgstr ""
+msgstr "(%1 + %2) = %3"
 
 #: server/activities/reversecount/ReversecountEditor.qml:25
 #, fuzzy
@@ -1506,30 +1477,21 @@ msgid ""
 msgstr ""
 
 #: server/activities/reversecount/ReversecountEditor.qml:35
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Maximum start number"
 msgctxt "ReversecountEditor|"
 msgid "Maximum number"
-msgstr "Maximale Anfangszahl"
+msgstr "Maximale Zahl"
 
 #: server/activities/reversecount/ReversecountEditor.qml:36
 msgctxt "ReversecountEditor|"
 msgid "Intervals"
-msgstr ""
+msgstr "Intervalle"
 
 #: server/activities/reversecount/ReversecountEditor.qml:37
-#, fuzzy
-#| msgctxt "VerticalEditor|"
-#| msgid "Number of lines"
 msgctxt "ReversecountEditor|"
 msgid "Number of fishes"
-msgstr "Zeilenanzahl"
+msgstr "Anzahl Fische"
 
 #: server/activities/reversecount/ReversecountEditor.qml:86
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "ReversecountEditor|"
 msgid "Dataset is empty."
 msgstr "Datensatz ist leer."
@@ -1565,17 +1527,14 @@ msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Folgende Fehler müssen behoben werden:<ul>%1</ul>"
 
 #: server/activities/share/ShareDataDisplay.qml:49
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Number of circles"
 msgctxt "ShareDataDisplay|"
 msgid "Number of candies:"
-msgstr "Kreisanzahl"
+msgstr "Anzahl Süßigkeiten:"
 
 #: server/activities/share/ShareDataDisplay.qml:76
 msgctxt "ShareDataDisplay|"
 msgid "Placed girls:"
-msgstr ""
+msgstr "Platzierte Mädchen:"
 
 #. Display a fraction
 #: server/activities/share/ShareDataDisplay.qml:87
@@ -1584,32 +1543,32 @@ msgstr ""
 #, qt-format
 msgctxt "ShareDataDisplay|"
 msgid "%1 / %2"
-msgstr ""
+msgstr "%1 / %2"
 
 #: server/activities/share/ShareDataDisplay.qml:107
 msgctxt "ShareDataDisplay|"
 msgid "Placed boys:"
-msgstr ""
+msgstr "Platzierte Jungen:"
 
 #: server/activities/share/ShareDataDisplay.qml:137
 msgctxt "ShareDataDisplay|"
 msgid "Expected candies per child:"
-msgstr ""
+msgstr "Erwartete Süßigkeiten pro Kind:"
 
 #: server/activities/share/ShareDataDisplay.qml:164
 msgctxt "ShareDataDisplay|"
 msgid "Candies for girls:"
-msgstr ""
+msgstr "Süßigkeiten für Mädchen:"
 
 #: server/activities/share/ShareDataDisplay.qml:195
 msgctxt "ShareDataDisplay|"
 msgid "Candies for boys:"
-msgstr ""
+msgstr "Süßigkeiten für Jungen:"
 
 #: server/activities/share/ShareDataDisplay.qml:224
 msgctxt "ShareDataDisplay|"
 msgid "Jar placed:"
-msgstr ""
+msgstr "Glas platziert:"
 
 #: server/activities/share/ShareDataDisplay.qml:234
 msgctxt "ShareDataDisplay|"
@@ -1624,7 +1583,7 @@ msgstr "Nein"
 #: server/activities/share/ShareDataDisplay.qml:251
 msgctxt "ShareDataDisplay|"
 msgid "Candies in the jar:"
-msgstr ""
+msgstr "Süßigkeiten im Glas:"
 
 #: server/activities/share/ShareEditor.qml:22
 msgctxt "ShareEditor|"
@@ -1667,28 +1626,19 @@ msgid "Random numbers"
 msgstr "Zufallszahlen"
 
 #: server/activities/share/ShareEditor.qml:44
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Number of circles"
 msgctxt "ShareEditor|"
 msgid "Number of girls"
-msgstr "Kreisanzahl"
+msgstr "Anzahl Mädchen"
 
 #: server/activities/share/ShareEditor.qml:45
-#, fuzzy
-#| msgctxt "VerticalEditor|"
-#| msgid "Number of lines"
 msgctxt "ShareEditor|"
 msgid "Number of boys"
-msgstr "Zeilenanzahl"
+msgstr "Anzahl Jungen"
 
 #: server/activities/share/ShareEditor.qml:46
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Number of circles"
 msgctxt "ShareEditor|"
 msgid "Number of candies"
-msgstr "Kreisanzahl"
+msgstr "Anzahl Süßigkeiten"
 
 #: server/activities/share/ShareEditor.qml:47
 msgctxt "ShareEditor|"
@@ -1706,28 +1656,19 @@ msgid "Force showing the jar"
 msgstr ""
 
 #: server/activities/share/ShareEditor.qml:52
-#, fuzzy
-#| msgctxt "MagicHatEditor|"
-#| msgid "Maximum number of stars"
 msgctxt "ShareEditor|"
 msgid "Maximum number of girls"
-msgstr "Maximale Anzahl der Sterne"
+msgstr "Maximale Anzahl Mädchen"
 
 #: server/activities/share/ShareEditor.qml:53
-#, fuzzy
-#| msgctxt "MagicHatEditor|"
-#| msgid "Maximum number of stars"
 msgctxt "ShareEditor|"
 msgid "Maximum number of boys"
-msgstr "Maximale Anzahl der Sterne"
+msgstr "Maximale Anzahl Jungen"
 
 #: server/activities/share/ShareEditor.qml:54
-#, fuzzy
-#| msgctxt "MagicHatEditor|"
-#| msgid "Maximum number of stars"
 msgctxt "ShareEditor|"
 msgid "Maximum number of candies"
-msgstr "Maximale Anzahl der Sterne"
+msgstr "Maximale Anzahl Süßigkeiten"
 
 #: server/activities/share/ShareEditor.qml:55
 msgctxt "ShareEditor|"
@@ -1802,33 +1743,21 @@ msgid ""
 msgstr ""
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:36
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "SmallnumbersEditor|"
 msgid "Sublevels"
 msgstr "Unterstufen"
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:37
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Numbers"
 msgctxt "SmallnumbersEditor|"
 msgid "Numbers"
 msgstr "Zahlen"
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:38
-#, fuzzy
-#| msgctxt "FractionsCreateEditor|"
-#| msgid "Instruction"
 msgctxt "SmallnumbersEditor|"
 msgid "Instruction"
 msgstr "Anweisung"
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:79
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "SmallnumbersEditor|"
 msgid "Dataset is empty."
 msgstr "Datensatz ist leer."
@@ -1882,7 +1811,7 @@ msgstr ""
 #: server/activities/target/TargetDataDisplay.qml:34
 msgctxt "TargetDataDisplay|"
 msgid "Target values:"
-msgstr ""
+msgstr "Zielwerte:"
 
 #: server/activities/target/TargetDataDisplay.qml:64
 msgctxt "TargetDataDisplay|"
@@ -1915,7 +1844,7 @@ msgstr "Ziffernanzahl"
 #: server/activities/target/TargetEditor.qml:29
 msgctxt "TargetEditor|"
 msgid "Target values"
-msgstr ""
+msgstr "Zielwerte"
 
 #: server/activities/target/TargetEditor.qml:73
 msgctxt "TargetEditor|"
@@ -2843,36 +2772,24 @@ msgid "Pupils"
 msgstr "Schüler"
 
 #: server/dialogs/SequenceEditorDialog.qml:50
-#, fuzzy
-#| msgctxt "DatasetEditorDialog|"
-#| msgid "Create dataset"
 msgctxt "SequenceEditorDialog|"
 msgid "Create sequence"
-msgstr "Datensatz erstellen"
+msgstr "Sequenz erstellen"
 
 #: server/dialogs/SequenceEditorDialog.qml:56
-#, fuzzy
-#| msgctxt "DatasetEditorDialog|"
-#| msgid "Update dataset"
 msgctxt "SequenceEditorDialog|"
 msgid "Update sequence"
-msgstr "Datensatz aktualisieren"
+msgstr "Sequenz aktualisieren"
 
 #: server/dialogs/SequenceEditorDialog.qml:81
-#, fuzzy
-#| msgctxt "DatasetEditorDialog|"
-#| msgid "Dataset name is empty"
 msgctxt "SequenceEditorDialog|"
 msgid "Sequence name is empty"
-msgstr "Name des Datensatzes ist leer"
+msgstr "Name der Sequenz ist leer"
 
 #: server/dialogs/SequenceEditorDialog.qml:163
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sequence length"
 msgctxt "SequenceEditorDialog|"
 msgid "Sequence name"
-msgstr "Länge der Folge"
+msgstr "Sequenzname"
 
 #: server/dialogs/SequenceEditorDialog.qml:177
 msgctxt "SequenceEditorDialog|"
@@ -2900,17 +2817,11 @@ msgid "Remove"
 msgstr "Entfernen"
 
 #: server/dialogs/SequenceEditorDialog.qml:355
-#, fuzzy
-#| msgctxt "EditorBox|"
-#| msgid "Move up"
 msgctxt "SequenceEditorDialog|"
 msgid "Move up"
 msgstr "Nach oben"
 
 #: server/dialogs/SequenceEditorDialog.qml:367
-#, fuzzy
-#| msgctxt "EditorBox|"
-#| msgid "Move down"
 msgctxt "SequenceEditorDialog|"
 msgid "Move down"
 msgstr "Nach unten"
@@ -2956,12 +2867,9 @@ msgid "Datasets"
 msgstr "Datensätze"
 
 #: server/panels/NavigationPanel.qml:111
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sequence length"
 msgctxt "NavigationPanel|"
 msgid "Sequences"
-msgstr "Länge der Folge"
+msgstr "Sequenzen"
 
 #: server/panels/NavigationPanel.qml:119
 msgctxt "NavigationPanel|"
@@ -3219,7 +3127,7 @@ msgstr "Datensatz aktualisieren"
 #: server/views/DatasetsView.qml:135
 msgctxt "DatasetsView|"
 msgid "Send dataset to clients"
-msgstr "Datensatz zu Clients senden"
+msgstr "Datensatz an Clients senden"
 
 #: server/views/DatasetsView.qml:154
 msgctxt "DatasetsView|"
@@ -3463,60 +3371,39 @@ msgid "Remove pupils"
 msgstr "Schüler entfernen"
 
 #: server/views/SequencesView.qml:67
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sequence length"
 msgctxt "SequencesView|"
 msgid "Sequences"
-msgstr "Länge der Folge"
+msgstr "Sequenzen"
 
 #: server/views/SequencesView.qml:102
-#, fuzzy
-#| msgctxt "SqlLineDialog|"
-#| msgid "Line details"
 msgctxt "SequencesView|"
 msgid "Details"
-msgstr "Zeilendetails"
+msgstr "Details"
 
 #: server/views/SequencesView.qml:169
-#, fuzzy
-#| msgctxt "ManagePupilsView|"
-#| msgid "Pupils management"
 msgctxt "SequencesView|"
 msgid "Sequences management"
-msgstr "Schülerverwaltung"
+msgstr "Sequenzverwaltung"
 
 #: server/views/SequencesView.qml:187
-#, fuzzy
-#| msgctxt "DatasetEditorDialog|"
-#| msgid "Create dataset"
 msgctxt "SequencesView|"
 msgid "Create sequence"
-msgstr "Datensatz erstellen"
+msgstr "Sequenz erstellen"
 
 #: server/views/SequencesView.qml:195
-#, fuzzy
-#| msgctxt "DatasetEditorDialog|"
-#| msgid "Update dataset"
 msgctxt "SequencesView|"
 msgid "Update sequence"
-msgstr "Datensatz aktualisieren"
+msgstr "Sequenz aktualisieren"
 
 #: server/views/SequencesView.qml:204
-#, fuzzy
-#| msgctxt "DatasetsView|"
-#| msgid "Send dataset to clients"
 msgctxt "SequencesView|"
 msgid "Send sequence to clients"
-msgstr "Datensatz zu Clients senden"
+msgstr "Sequenz an Clients senden"
 
 #: server/views/SequencesView.qml:247
-#, fuzzy
-#| msgctxt "DatasetsView|"
-#| msgid "Delete dataset"
 msgctxt "SequencesView|"
 msgid "Delete sequence"
-msgstr "Datensatz löschen"
+msgstr "Sequenz löschen"
 
 #: server/views/SettingsView.qml:65
 msgctxt "SettingsView|"
