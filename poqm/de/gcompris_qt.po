@@ -20,8 +20,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-05-10 21:01+0200\n"
-"Last-Translator: Alexander Becker <alex-at-kde-l10n-de@freenet.de>\n"
+"PO-Revision-Date: 2026-08-22 14:43+0200\n"
+"Last-Translator: Philipp Kiemle <l10n.daphipz@fastmail.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -29,7 +29,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 26.04.0\n"
+"X-Generator: Lokalize 26.04.3\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -1364,9 +1364,6 @@ msgstr "Vier gewinnt (gegen Tux)"
 #. Help title
 #: activities/align4/ActivityInfo.qml:17
 #: activities/align4_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrange four tokens in a row."
 msgctxt "ActivityInfo|"
 msgid "Line up four tokens."
 msgstr "Ordne vier Spielsteine in einer Reihe an."
@@ -1869,7 +1866,7 @@ msgid ""
 "cannot act as a voltage source for the circuit."
 msgstr ""
 "Wenn die beiden Pole einiger Batterien direkt miteinander verbunden oder "
-"kurzgeschlossen sind, dann bilden diese Batterien eine "
+"kurzgeschlossen sind, bilden diese Batterien eine "
 "Spannungsquellenkurzschluss und können nicht als Spannungsquelle für den "
 "Stromkreis dienen."
 
@@ -1879,8 +1876,8 @@ msgid ""
 "For example, if two terminals of one battery are directly connected "
 "together, it creates a voltage source loop."
 msgstr ""
-"Wenn zum Beispiel zwei Pole einer Batterie direkt miteinander verbunden sind "
-"miteinander verbunden, entsteht ein Spannungsquellenkurzschluss."
+"Wenn zum Beispiel zwei Pole einer Batterie direkt miteinander verbunden "
+"sind, entsteht ein Spannungsquellenkurzschluss."
 
 #: activities/analog_electricity/TutorialDataset.qml:119
 msgctxt "TutorialDataset|"
@@ -4532,12 +4529,9 @@ msgstr "Spiel Schach (gegen Tux)"
 #. Help title
 #: activities/chess/ActivityInfo.qml:17
 #: activities/chess_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Discover the braille system"
 msgctxt "ActivityInfo|"
 msgid "Discover and practice chess."
-msgstr "Entdecke die Brailleschrift"
+msgstr "Entdecke und übe Schach"
 
 #. Help goal
 #: activities/chess/ActivityInfo.qml:20
@@ -6390,7 +6384,7 @@ msgid ""
 msgstr ""
 "Ein Schalter wird genutzt, um zwei Endpunkte zu verbinden oder zu trennen. "
 "Wenn der Schalter eingeschaltet ist, kann Strom hindurch fließen. Wenn der "
-"Schalter ausgeschaltet ist, dann ist die Verbindung zwischen den Endpunkten "
+"Schalter ausgeschaltet ist, ist die Verbindung zwischen den Endpunkten "
 "unterbrochen und Strom kann nicht hindurch fließen."
 
 #: activities/digital_electricity/components/XorGate.qml:21
@@ -6486,7 +6480,7 @@ msgstr "Komparator"
 #: activities/digital_electricity/TutorialDataset.qml:96
 msgctxt "TutorialDataset|"
 msgid "BCD to 7 segment"
-msgstr "BDC -> Siebensegment"
+msgstr "BDC → Siebensegment"
 
 #: activities/digital_electricity/TutorialDataset.qml:103
 msgctxt "TutorialDataset|"
@@ -6642,7 +6636,7 @@ msgid ""
 "the three switches are turned on."
 msgstr ""
 "Erleuchte die Lampe und benutze dazu die drei Schalter, so dass die Lampe "
-"leuchtet, wenn eine alle 3 Schaltern eingeschaltet sind."
+"nur dann leuchtet, wenn alle drei Schalter eingeschaltet sind."
 
 #: activities/digital_electricity/TutorialDataset.qml:282
 msgctxt "TutorialDataset|"
@@ -6651,7 +6645,7 @@ msgid ""
 "switches are turned on."
 msgstr ""
 "Erleuchte die Lampe und benutze dazu die drei Schalter, so dass die Lampe "
-"leuchtet, wenn einer der Schaltern eingeschaltet sind."
+"leuchtet, wenn einer der Schalter eingeschaltet ist."
 
 #: activities/digital_electricity/TutorialDataset.qml:295
 msgctxt "TutorialDataset|"
@@ -6688,7 +6682,7 @@ msgid ""
 "switch is on and the other is off."
 msgstr ""
 "Erleuchte die Lampe und benutze dazu die zwei Schalter, so dass die Lampe "
-"leuchtet, wenn ein Schaltern eingeschaltet und der andere Schalter "
+"leuchtet, wenn ein Schalter eingeschaltet und der andere Schalter "
 "ausgeschaltet ist."
 
 #: activities/digital_electricity/TutorialDataset.qml:342
@@ -7926,7 +7920,7 @@ msgstr ""
 "eine große Wand darstellt, die gebaut wurde, damit die Frauen des "
 "königlichen Haushaltes die Straßenfeste beobachten konnten, ohne von außen "
 "gesehen zu werden. Gebaut aus rotem und pinkem Sandstein liegt der Palast am "
-"Rande des Stadtpalastes und erstreckt sich bis zum Zenana - dem Frauengemach."
+"Rande des Stadtpalastes und erstreckt sich bis zum Zenana – dem Frauengemach."
 
 #: activities/explore_monuments/resource/board/board2.qml:40
 #: activities/explore_monuments/resource/board/board2.qml:43
@@ -8093,7 +8087,7 @@ msgid ""
 msgstr ""
 "Der Rang Ghar ist ein zweistöckiges Gebäude, welches einst als königlicher "
 "Sport-Pavillon diente, in dem Ahom-Könige und Adelige Zuschauer bei Spielen "
-"wie Büffelkämpfen und anderen Sportarten auf dem Rupahi Pathar waren - "
+"wie Büffelkämpfen und anderen Sportarten auf dem Rupahi Pathar waren – "
 "besonders während des Rongali-Bihu-Festes in der Ahom-Hauptstadt Rangpur."
 
 #: activities/explore_monuments/resource/board/board2.qml:128
@@ -9040,12 +9034,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Kathedrale von Worms"
+msgstr "Kathedrale von Florenz"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -15860,12 +15851,9 @@ msgid "Solvable with +, - and ×."
 msgstr ""
 
 #: activities/guess24/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications."
 msgctxt "Data|"
 msgid "Multiplication required."
-msgstr "Multiplikationen."
+msgstr "Multiplikation erforderlich."
 
 #: activities/guess24/resource/4/Data.qml:13
 #, fuzzy
@@ -15876,20 +15864,14 @@ msgid "Solvable with all operators."
 msgstr "Kleine Gitter."
 
 #: activities/guess24/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions."
 msgctxt "Data|"
 msgid "Division required."
-msgstr "Divisionen."
+msgstr "Division erforderlich."
 
 #: activities/guess24/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "All operations memory game"
 msgctxt "Data|"
 msgid "All operators required."
-msgstr "Grundrechenarten-Gedächtnisspiel"
+msgstr "Alle Operatoren erforderlich."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -16180,8 +16162,8 @@ msgid ""
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
 "GCompris wird von der KDE-Gemeinschaft entwickelt. Wenn du mithelfen "
-"möchtest, GCompris zu übersetzen, dann tritt einem Übersetzungsteam auf <a "
-"href=\"%2\">%2</a> bei."
+"möchtest, GCompris zu übersetzen, tritt einem Übersetzungsteam auf <a href="
+"\"%2\">%2</a> bei."
 
 #: activities/hangman/Hangman.qml:373
 msgctxt "Hangman|"
@@ -17033,8 +17015,8 @@ msgid ""
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
 "GCompris wird von der KDE-Gemeinschaft entwickelt. Wenn du mithelfen "
-"möchtest, GCompris zu übersetzen, dann tritt einem Übersetzungsteam auf <a "
-"href=\"%2\">%2</a> bei."
+"möchtest, GCompris zu übersetzen, tritt einem Übersetzungsteam auf <a href="
+"\"%2\">%2</a> bei."
 
 #: activities/lang/Lang.qml:147
 msgctxt "Lang|"
@@ -17292,7 +17274,7 @@ msgstr "Zeige das Ergebnis von: %1 + %2"
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
-msgstr "Zeige das Ergebnis von: %1 - %2"
+msgstr "Zeige das Ergebnis von: %1 – %2"
 
 #: activities/learn_decimals/Learn_decimals.qml:168
 #, qt-format
@@ -17939,8 +17921,8 @@ msgid ""
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
 "GCompris wird von der KDE-Gemeinschaft entwickelt. Wenn du mithelfen "
-"möchtest, GCompris zu übersetzen, dann tritt einem Übersetzungsteam auf <a "
-"href=\"%2\">%2</a> bei."
+"möchtest, GCompris zu übersetzen, tritt einem Übersetzungsteam auf <a href="
+"\"%2\">%2</a> bei."
 
 #: activities/letter-in-word/LetterInWord.qml:338
 msgctxt "LetterInWord|"
@@ -18421,10 +18403,9 @@ msgid ""
 "If Tux is barefoot, \"run-fast-mode\" is disabled. And if he wears red sport "
 "shoes, \"run-fast-mode\" is enabled."
 msgstr ""
-"Ob die „Siebenmeilenstiefel“ aktiviert sind oder nicht, kannst du an Tux "
-"Füßen erkennen: Wenn Tux barfuß läuft sind die „Siebenmeilenstiefel“ nicht "
-"aktiv. Wenn er rote Sportschuhe trägt, dann geht er mit "
-"„Siebenmeilenstiefeln“."
+"Ob die „Siebenmeilenstiefel“ aktiviert sind oder nicht, kannst du an Tux’ "
+"Füßen erkennen: Wenn Tux barfuß läuft, sind die „Siebenmeilenstiefel“ nicht "
+"aktiv. Wenn er rote Sportschuhe trägt, geht er mit „Siebenmeilenstiefeln“."
 
 #: activities/maze/ActivityInfo.qml:27
 #: activities/mazeinvisible/ActivityInfo.qml:27
@@ -18436,8 +18417,8 @@ msgid ""
 "levels, click on the \"barefoot / sportshoe\" icon in the upper left corner "
 "of the screen to toggle the run-fast-mode.\t"
 msgstr ""
-"In höheren Stufen sind die „Siebenmeilenstiefel“ automatisch eingeschaltet. "
-"Wenn du sie bereits in früheren Stufen ein-, oder in den höheren Stufen "
+"In höheren Stufen sind die „Siebenmeilenstiefel“ automatisch aktiviert. Wenn "
+"du sie bereits in früheren Stufen ein-, oder in den höheren Stufen "
 "ausschalten möchtest, klicke dafür auf das „Barfuß/Sportschuh“-Symbol in der "
 "oberen linken Ecke.\t"
 
@@ -18499,10 +18480,9 @@ msgid ""
 "If Tux is barefooted, \"run-fast-mode\" is disabled. And if he wears red "
 "sport shoes, \"run-fast-mode\" is enabled."
 msgstr ""
-"Ob die „Siebenmeilenstiefel“ aktiviert sind oder nicht, kannst du an Tux "
-"Füßen erkennen: Wenn Tux barfuß läuft sind die „Siebenmeilenstiefel“ nicht "
-"aktiv. Wenn er rote Sportschuhe trägt, dann geht er mit "
-"„Siebenmeilenstiefeln“."
+"Ob die „Siebenmeilenstiefel“ aktiviert sind oder nicht, kannst du an Tux’ "
+"Füßen erkennen: Wenn Tux barfuß läuft, sind die „Siebenmeilenstiefel“ nicht "
+"aktiv. Wenn er rote Sportschuhe trägt, geht er mit „Siebenmeilenstiefeln“."
 
 #: activities/mazeinvisible/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -19605,12 +19585,9 @@ msgstr ""
 
 #. Help goal
 #: activities/memory-wordnumber/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice reading numbers."
-msgstr "Übe das Addieren von Zahlen."
+msgstr "Übe das Lesen von Zahlen."
 
 #. Help manual
 #: activities/memory-wordnumber/ActivityInfo.qml:24
@@ -20369,12 +20346,12 @@ msgstr ""
 #: activities/mining/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "realrainbow.ogg - used when a new gold nugget appears"
-msgstr "realrainbow.ogg - wenn ein Goldklumpen erscheint"
+msgstr "realrainbow.ogg – wenn ein Goldklumpen erscheint"
 
 #: activities/mining/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
-msgstr "metalpaint.wav - wenn ein Goldklumpen gesammelt wird"
+msgstr "metalpaint.wav – wenn ein Goldklumpen gesammelt wird"
 
 #: activities/mining/Mining.qml:447
 msgctxt "Mining|"
@@ -20484,8 +20461,8 @@ msgid ""
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
 "GCompris wird von der KDE-Gemeinschaft entwickelt. Wenn du mithelfen "
-"möchtest, GCompris zu übersetzen, dann tritt einem Übersetzungsteam auf <a "
-"href=\"%2\">%2</a> bei."
+"möchtest, GCompris zu übersetzen, tritt einem Übersetzungsteam auf <a href="
+"\"%2\">%2</a> bei."
 
 #: activities/missing-letter/MissingLetter.qml:325
 msgctxt "MissingLetter|"
@@ -21043,7 +21020,7 @@ msgid ""
 "remove it. Pieces of formed mill can not be removed unless no other pieces "
 "are left on the board."
 msgstr ""
-"Wenn du eine Mühle gebildet hast (Reihe von 3 Steinen), dann kannst du einen "
+"Wenn du eine Mühle gebildet hast (Reihe von 3 Steinen), kannst du einen "
 "Stein von Tux aus dem Spielfeld entfernen. Steine, die Teil einer Mühle sind "
 "können nicht entfernt werden, solange es noch andere Steine auf dem "
 "Spielfeld gibt."
@@ -21884,7 +21861,7 @@ msgid ""
 "Embankment - 1830"
 msgstr ""
 "Katsushika Hokusai,\n"
-"Sonnenuntergang über der Ryogoku-Brücke vom Ommaya-Damm gesehen - 1830"
+"Sonnenuntergang über der Ryogoku-Brücke vom Ommaya-Damm gesehen – 1830"
 
 #: activities/paintings/resource/board/board11_0.qml:14
 msgctxt "board11_0|"
@@ -24109,7 +24086,7 @@ msgstr ""
 "gebildet:\n"
 "I, II, III, V, VI, VII, VIII.\n"
 "Die Zahlen 4 und 9 werden durch Subtraktion gebildet:\n"
-"IV (5 – 1) und IX (10 – 1)."
+"IV (5−1) und IX (10−1)."
 
 #: activities/roman_numerals/RomanNumerals.qml:104
 #: activities/roman_numerals/RomanNumerals.qml:110
@@ -24124,7 +24101,7 @@ msgstr ""
 "gebildet:\n"
 "X, XX, XXX, L, LX, LXX, LXXX.\n"
 "Die Zahlen 40 und 90 werden durch Subtraktion gebildet:\n"
-"XL (50 – 10) und XC (100 – 10)."
+"XL (50−10) und XC (100−10)."
 
 #: activities/roman_numerals/RomanNumerals.qml:116
 #: activities/roman_numerals/RomanNumerals.qml:122
@@ -24139,7 +24116,7 @@ msgstr ""
 "und D gebildet:\n"
 "C, CC, CCC, D, DC, DCC, DCCC.\n"
 "Die Zahlen 400 und 900 werden durch Subtraktion gebildet:\n"
-"CD (500 – 100) und CM (1000 – 100)."
+"CD (500−100) und CM (1000−100)."
 
 #: activities/roman_numerals/RomanNumerals.qml:128
 #: activities/roman_numerals/RomanNumerals.qml:134
@@ -24806,8 +24783,8 @@ msgid ""
 "Some of his friends already have pieces of candy. He wants to give them 7 "
 "more pieces so that they all have the same amount."
 msgstr ""
-"Einige seiner Freunde haben bereits Süßigkeiten. Er möchte ihnen 7 weiter "
-"Süßigkeiten geben, so dass alle die gleiche Anzahl haben."
+"Einige seiner Freunde haben bereits Süßigkeiten. Er möchte ihnen 7 weitere "
+"Süßigkeiten geben, sodass alle die gleiche Anzahl haben."
 
 #: activities/share/resource/1/Data.qml:60
 msgctxt "Data|"
@@ -24895,7 +24872,7 @@ msgid ""
 "candy."
 msgstr ""
 "Alice möchte 10 Süßigkeiten an ihre Freunde geben, 1 Mädchen und 3 Jungen, "
-"so dass sie alle die gleiche Anzahl heben. Das Mädchen hat bereits einige "
+"sodass sie alle die gleiche Anzahl haben. Das Mädchen hat bereits einige "
 "Süßigkeiten."
 
 #: activities/share/resource/1/Data.qml:154
@@ -24941,8 +24918,8 @@ msgid ""
 "some pieces of candy."
 msgstr ""
 "Michelle möchte 12 Süßigkeiten gleichmäßig mit 4 Brüdern und 1 Schwester "
-"teilen, so dass alle die gleiche Anzahl an Süßigkeiten haben. Ihre Schwester "
-"hat bereits einigen Süßigkeiten."
+"teilen, sodass alle die gleiche Anzahl an Süßigkeiten haben. Ihre Schwester "
+"hat bereits einige Süßigkeiten."
 
 #: activities/share/resource/1/Data.qml:206
 msgctxt "Data|"
@@ -24979,8 +24956,8 @@ msgid ""
 "should she split the pieces of candy so that they all have the same amount?"
 msgstr ""
 "Für ihren Geburtstag hat Elisabeth 8 Süßigkeiten, die sie mit ihren 3 "
-"Freunden teilen möchte: 2 Mädchen und 1 Junge. Die Mädchen haben bereits "
-"eine Süßigkeit. Wie sollte sie die Süßigkeiten aufteilen, so dass alle die "
+"Freunden teilen möchte: 2 Mädchen und 1 Junge. Die Mädchen haben bereits ein "
+"paar Süßigkeiten. Wie sollte sie die Süßigkeiten aufteilen, sodass alle die "
 "gleiche Anzahl haben?"
 
 #: activities/share/resource/1/Data.qml:248
@@ -25343,7 +25320,7 @@ msgstr ""
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
-msgstr ""
+msgstr "Zeichenwerkzeuge"
 
 #: activities/sketch/ColorSelector.qml:78
 msgctxt "ColorSelector|"
@@ -25353,7 +25330,7 @@ msgstr "Farbpalette"
 #: activities/sketch/ColorSelector.qml:162
 msgctxt "ColorSelector|"
 msgid "Reset palette"
-msgstr ""
+msgstr "Palette zurücksetzen"
 
 #: activities/sketch/ColorSelector.qml:214
 msgctxt "ColorSelector|"
@@ -25418,12 +25395,12 @@ msgstr "Erstelle ein neues Bild"
 #: activities/sketch/GeometryTool.qml:23
 msgctxt "GeometryTool|"
 msgid "Rounded Corners"
-msgstr ""
+msgstr "Abgerundete Ecken"
 
 #: activities/sketch/GeometryToolPanel.qml:17
 msgctxt "GeometryToolPanel|"
 msgid "Geometry Tools"
-msgstr ""
+msgstr "Geometriewerkzeuge"
 
 #: activities/sketch/GradientTool.qml:22
 msgctxt "GradientTool|"
@@ -25436,12 +25413,9 @@ msgid "Gradient Tools"
 msgstr ""
 
 #: activities/sketch/PaletteSelector.qml:148
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Palestine"
 msgctxt "PaletteSelector|"
 msgid "Palettes"
-msgstr "Palästina"
+msgstr "Paletten"
 
 #: activities/sketch/Sketch.qml:684
 msgctxt "Sketch|"
@@ -25487,7 +25461,7 @@ msgstr "Werkzeuge"
 #: activities/sketch/ToolsPanel.qml:429
 msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
-msgstr ""
+msgstr "Werkzeugeinstellungen zurücksetzen"
 
 #: activities/sketch/ToolsPanel.qml:484
 msgctxt "ToolsPanel|"
@@ -25741,12 +25715,9 @@ msgstr "Sonnensystem"
 
 #. Help title
 #: activities/solar_system/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "SolarSystem|"
-#| msgid "View the solar system"
 msgctxt "ActivityInfo|"
 msgid "Learn about the solar system."
-msgstr "Zeige das Sonnensystem"
+msgstr "Lerne das Sonnensystem kennen."
 
 #. Help goal
 #: activities/solar_system/ActivityInfo.qml:23
@@ -26811,8 +26782,8 @@ msgid ""
 msgstr ""
 "Modus: <font color=\"#3bb0de\">%1</font><br><br>Es gibt zwei Modi in dieser "
 "Aktivität, die du über das Konfigurationsfenster umstellen kannst:<br><b>1. "
-"Lernmodus</b> - In diesem Modus kannst du spielen und etwas über das "
-"Sonnensystem erfahren.<br><b>2. Prüfungs-Modus</b> - In diesem Modus kannst "
+"Lernmodus</b> – In diesem Modus kannst du spielen und etwas über das "
+"Sonnensystem erfahren.<br><b>2. Prüfungsmodus</b> – In diesem Modus kannst "
 "du dein Wissen über das Sonnensystem testen."
 
 #: activities/solar_system/SolarSystem.qml:152
@@ -28028,7 +27999,7 @@ msgid ""
 "so he can take a shower."
 msgstr ""
 "Tux ist mit seinem Boot vom Fischen zurückgekommen. Stelle den "
-"Wasserkreislauf wieder her, so dass er duschen kann."
+"Wasserkreislauf wieder her, sodass er duschen kann."
 
 #. Help goal
 #: activities/watercycle/ActivityInfo.qml:20
@@ -28150,11 +28121,11 @@ msgid ""
 "sun, then on the cloud, the water pumping station near the river, the sewage "
 "treatment, and at last regulate the switch to provide water to Tux's shower."
 msgstr ""
-"Dein Ziel ist es, den Wasserkreislauf zu schließen bevor Tux zu Hause "
+"Dein Ziel ist es, den Wasserkreislauf zu schließen, bevor Tux zu Hause "
 "ankommt. Klicke auf die verschiedenen Elemente, die den Wasserkreislauf "
 "ausmachen. Klicke zuerst auf die Sonne, dann die Wolken, die "
 "Wasserpumpenanlage neben dem Fluss, die Kläranlage und betätige zuletzt den "
-"Schalter um Tux' Dusche mit Wasser zu versorgen."
+"Schalter um Tux’ Dusche mit Wasser zu versorgen."
 
 #. Activity title
 #: activities/wordsgame/ActivityInfo.qml:15

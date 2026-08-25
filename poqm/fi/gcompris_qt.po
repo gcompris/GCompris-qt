@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2026-02-09 19:32+0200\n"
+"PO-Revision-Date: 2026-03-04 20:57+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -16209,12 +16209,9 @@ msgstr "Auta Tuxia pakenemaan luolasta etsimällä piilotettu numero."
 
 #. Help goal
 #: activities/guessnumber/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice comparing numbers."
-msgstr "Harjoittele yhteenlaskua."
+msgstr "Harjoittele lukujen vertailua."
 
 #. Help manual
 #: activities/guessnumber/ActivityInfo.qml:23
@@ -17422,18 +17419,13 @@ msgstr ""
 "sitten OK-painiketta vahvistaaksesi vastauksesi."
 
 #: activities/learn_decimals/Learn_decimals.qml:30
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A decimal number is displayed. The bar with the arrow represents a full "
-#| "unit, and each square in it represents one tenth of this unit."
 msgctxt "Learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
 "unit, and each square in it represents one tenth of this unit."
 msgstr ""
 "Näytölle tulee desimaaliluku. Nuolella varustettu palkki edustaa täyttä "
-"yksikköä, ja jokainen neliö siinä edustaa kymmenesosaa tästä yksiköstä."
+"yksikköä, ja sen kukin neliö edustaa yksikön kymmenesosaa."
 
 #: activities/learn_decimals/Learn_decimals.qml:34
 #, fuzzy
@@ -17593,18 +17585,13 @@ msgstr ""
 "lisäyksen tulosta, ja napsauta OK-painiketta vahvistaaksesi vastauksesi."
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:24
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "Learn_decimals_additions|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr ""
-"Jos vastaus on oikea, kirjoita vastaava tulos ja napsauta OK-painiketta "
-"vahvistaaksesi vastauksesi."
+"Jos vastaus on oikea, kirjoita vastaava tulos ja tarkista vastauksesi "
+"napsauttamalla OK."
 
 #: activities/learn_decimals_additions/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -17771,14 +17758,11 @@ msgstr "Napsauta annettua relaatiota vastaavaa paria."
 
 #. Help goal
 #: activities/learn_digits/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare the numbers and choose the corresponding sign."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the numbers represented by a single digit and the corresponding "
 "quantities."
-msgstr "Vertaa lukuja ja valitse oikea merkki."
+msgstr "Opi yhdellä numerolla kirjoitettavat luvut ja niitä vastaavat määrät."
 
 #. Help manual
 #: activities/learn_digits/ActivityInfo.qml:23
@@ -17877,22 +17861,11 @@ msgstr ""
 "vahvistaaksesi vastauksesi."
 
 #: activities/learn_quantities/Learn_quantities.qml:16
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgctxt "Learn_quantities|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
-msgstr "Määrää pyydetään. Nuolen avulla voit valita enintään 10 appelsiinia."
+msgstr "Määrää pyydetään. Nuolella voi valita enintään 10 appelsiinia."
 
 #: activities/learn_quantities/Learn_quantities.qml:20
-#, fuzzy
-#| msgctxt "learn_decimals|"
-#| msgid ""
-#| "Drag the arrow to select a number of oranges, and drag the selected "
-#| "oranges to the empty area. Repeat these steps until the number of oranges "
-#| "corresponds to the requested quantity. Then click on the OK button to "
-#| "validate your answer."
 msgctxt "Learn_quantities|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "
@@ -17901,8 +17874,8 @@ msgid ""
 "validate your answer."
 msgstr ""
 "Valitse määrä appelsiineja vetämällä nuolta ja vedä valitut appelsiinit "
-"tyhjälle alueelle. Toista näitä vaiheita, kunnes appelsiinien määrä vastaa "
-"pyydettyä määrää. Napsauta sitten OK-painiketta vahvistaaksesi vastauksesi."
+"tyhjälle alueelle. Toista tätä, kunnes appelsiinien määrä vastaa pyydettyä "
+"määrää. Vahvista sitten vastauksesi napsauttamalla OK."
 
 #: activities/learn_quantities/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -18396,12 +18369,9 @@ msgstr ""
 
 #. Activity title
 #: activities/magic-hat-minus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (subtraction)"
-msgstr "Taikurin hattu"
+msgstr "Taikurin hattu (vähennyslasku)"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
@@ -18492,12 +18462,9 @@ msgstr "%1x"
 
 #. Activity title
 #: activities/magic-hat-plus/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The magician hat"
 msgctxt "ActivityInfo|"
 msgid "The magician hat (addition)"
-msgstr "Taikurin hattu"
+msgstr "Taikurin hattu (yhteenlasku)"
 
 #. Help title
 #: activities/magic-hat-plus/ActivityInfo.qml:17
@@ -18946,12 +18913,9 @@ msgstr "Käännä kortit niin, että numero vastaa kuvaa."
 
 #. Help goal
 #: activities/memory-enumerate/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Practice numeration."
-msgstr "Harjoittele vähennyslaskua."
+msgstr "Harjoittele luettelemista."
 
 #. Help manual
 #: activities/memory-enumerate/ActivityInfo.qml:23
@@ -20164,12 +20128,9 @@ msgid "Language selector"
 msgstr "Kielen valinta"
 
 #: activities/menu/ConfigurationItem.qml:116
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Enable automatic downloads/updates of sound files"
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
-msgstr "Lataa/päivitä äänitiedostot automaattisesti"
+msgstr "Lataa tai päivitä ulkoiset voimavarat automaattisesti"
 
 #: activities/menu/ConfigurationItem.qml:146
 msgctxt "ConfigurationItem|"
@@ -20470,12 +20431,9 @@ msgid "Server port"
 msgstr "Palvelimen portti"
 
 #: activities/menu/ServerConfigPage.qml:177
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "ServerConfigPage|"
 msgid "Server port must be a number between 0 and 65535."
-msgstr "Arvaa luku väliltä 1–%1."
+msgstr "Palvelimen portin on oltava luku väliltä 0–65535."
 
 #. Activity title
 #: activities/mining/ActivityInfo.qml:15
@@ -20805,12 +20763,9 @@ msgstr "Anna Tuxille vaihtorahat, sentit mukaan lukien"
 #. Help goal
 #: activities/money_back_cents/ActivityInfo.qml:20
 #: activities/money_cents/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice money usage including cents."
 msgctxt "ActivityInfo|"
 msgid "Practice counting and money usage, including cents."
-msgstr "Opettele käyttämään rahaa, myös senttejä."
+msgstr "Harjoittele laskemista ja rahankäyttöä – myös senttien."
 
 #. Activity title
 #: activities/money_cents/ActivityInfo.qml:15
@@ -20842,26 +20797,17 @@ msgstr "Tutustu kansainväliseen morsekoodiin"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to communicate with the International Morse code."
 msgctxt "ActivityInfo|"
 msgid "Communicate with the International Morse code."
-msgstr "Opi viestimään kansainvälisellä morsekoodilla."
+msgstr "Viesti kansainvälisellä morsekoodilla."
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "You have to send and receive letters and digits in International Morse "
-#| "code."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn how to send and receive messages using the International Morse code."
 msgstr ""
-"Sinun pitää lähettää ja vastaanottaa kirjaimia ja numeroita kansainvälisellä "
-"morsekoodilla."
+"Opi lähettämään ja vastaanottamaan viestejä kansainvälisellä morsekoodilla."
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
@@ -20871,13 +20817,6 @@ msgstr "Tietoa aakkosista ja numeroista."
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "You are either asked to send a message in Morse code or convert the "
-#| "received Morse code message to letters or digits. To learn the Morse "
-#| "code, you can have a look at the translation map which contains the code "
-#| "for all the letters and digits."
 msgctxt "ActivityInfo|"
 msgid ""
 "You are either asked to send a message in Morse code or convert the received "
@@ -20925,14 +20864,10 @@ msgstr ""
 "yksittäinen piste."
 
 #: activities/morse_code/FirstScreen.qml:87
-#, fuzzy
-#| msgctxt "FirstScreen|"
-#| msgid ""
-#| "When you are ready, click on me and try reproducing braille characters."
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
-"Kun olet valmis, napsauta tästä ja ala kirjoittaa pistekirjoitusmerkkejä."
+"Kun olet valmis, napsauta Tuxia, jolloin aletaan jutella morsekoodiksi."
 
 #: activities/morse_code/MorseCode.qml:371
 #, qt-format
@@ -21027,12 +20962,9 @@ msgstr "Pane jokainen esine samaan paikkaan kuin esimerkissä."
 
 #. Help goal
 #: activities/mosaic/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Training reading skills."
 msgctxt "ActivityInfo|"
 msgid "Train your observation and matching skills."
-msgstr "Lukemisen harjoittelu."
+msgstr "Harjoittele havainto- ja täsmäyskykyjäsi."
 
 #. Help manual
 #: activities/mosaic/ActivityInfo.qml:23
@@ -21080,12 +21012,9 @@ msgstr "24 kohteeseen asti monella rivillä."
 
 #. Activity title
 #: activities/multiple_choice_questions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication."
 msgctxt "ActivityInfo|"
 msgid "Multiple-choice questions"
-msgstr "Kertolasku."
+msgstr "Monivalintakysymykset"
 
 #. Help title
 #: activities/multiple_choice_questions/ActivityInfo.qml:18
@@ -21115,28 +21044,19 @@ msgstr ""
 "mihin vain."
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate through the answers"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: navigate through the answer list"
-msgstr "2. Vahvista vastaus Enter- tai Return-näppäimellä"
+msgstr "Ylä- ja alanuolet: liiku vastausluettelossa"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select or deselect a circle"
 msgctxt "ActivityInfo|"
 msgid "Space: select or deselect the highlighted answer"
-msgstr "Välilyönti: valitse ympyrä tai poista valinta"
+msgstr "Välilyönti: valitse korostettu vastaus tai poista sen valinta"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
-msgstr "Enter: tarkista vastauksesi, kun OK-painike on näkyvissä"
+msgstr "Enter: tarkista vastauksesi tai sulje palautepaneeli"
 
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
@@ -21239,12 +21159,6 @@ msgstr ""
 "paloja."
 
 #: activities/nine_men_morris/NineMenMorris.qml:356
-#, fuzzy
-#| msgctxt "nine_men_morris|"
-#| msgid ""
-#| "After all the pieces are placed, you and Tux will take turns to move "
-#| "them. Click on one of your pieces, and then on an adjacent empty spot to "
-#| "move it there. Green color spots indicates where you can move."
 msgctxt "NineMenMorris|"
 msgid ""
 "After all the pieces are placed, you and Tux will take turns to move them. "
@@ -21252,8 +21166,8 @@ msgid ""
 "there. Green color spots indicates where you can move."
 msgstr ""
 "Kun kaikki nappulat on asetettu, sinä ja Tux siirrätte niitä vuorotellen. "
-"Napsauta yhtä nappuloistasi ja sitten viereistä tyhjää kohtaa siirtääksesi "
-"sen sinne. Vihreät väritäplät osoittavat, minne voit liikkua."
+"Napsauta yhtä nappuloista ja siirrä sitä napsauttamalla viereistä tyhjää "
+"kohtaa. Vihreät väritäplät osoittavat, mihin voi siirtyä."
 
 #: activities/nine_men_morris/NineMenMorris.qml:360
 #, fuzzy
@@ -21742,12 +21656,9 @@ msgstr ""
 
 #. Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Even and odd numbers"
 msgctxt "ActivityInfo|"
 msgid "Practice ordering numbers."
-msgstr "Parilliset ja parittomat luvut"
+msgstr "Harjoittele lukujen järjestämistä."
 
 #. Help prerequisite
 #: activities/ordering_numbers/ActivityInfo.qml:27
@@ -21851,12 +21762,9 @@ msgstr "Järjestä annetut sanat merkitykselliseksi lauseeksi."
 
 #. Help goal
 #: activities/ordering_sentences/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Order words to form meaningful sentences."
 msgctxt "ActivityInfo|"
 msgid "Practice ordering words to form a meaningful sentence."
-msgstr "Järjestä sanat mielekkäiksi lauseiksi."
+msgstr "Harjoittele sanojen järjestämistä mielekkäiksi lauseiksi."
 
 #. Help manual
 #: activities/ordering_sentences/ActivityInfo.qml:29
@@ -22049,12 +21957,9 @@ msgstr "Virheellinen siirto!"
 
 #. Activity title
 #: activities/oware_2players/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play oware with a friend"
 msgctxt "ActivityInfo|"
 msgid "Play oware (with a friend)"
-msgstr "Pelaa Owarea kaveria vastaan"
+msgstr "Pelaa Owarea (kaverin kanssa)"
 
 #. Help title
 #: activities/oware_2players/ActivityInfo.qml:16
@@ -22227,16 +22132,13 @@ msgstr ""
 #. Help manual
 #: activities/path_decoding/ActivityInfo.qml:22
 #: activities/path_decoding_relative/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the grid squares to move Tux following the given directions."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the grid squares to move Tux to the target following the arrow "
 "directions."
 msgstr ""
-"Napsauta ruudukon neliöitä siirtääksesi Tuxia annettujen ohjeiden mukaan."
+"Siirrä Tuxia päämäärään nuolten ohjeita seuraten napsauttamalla ruudukon "
+"neliöitä."
 
 #: activities/path_decoding/ActivityInfo.qml:23
 #: activities/path_encoding/ActivityInfo.qml:23
@@ -22269,12 +22171,9 @@ msgstr "%1x%2 ruudukko."
 
 #. Activity title
 #: activities/path_decoding_relative/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Path decoding"
 msgctxt "ActivityInfo|"
 msgid "Relative path decoding"
-msgstr "Polun dekoodaus"
+msgstr "Suhteellisen polun dekoodaus"
 
 #: activities/path_decoding_relative/ActivityInfo.qml:23
 #: activities/path_encoding_relative/ActivityInfo.qml:23
@@ -22335,12 +22234,9 @@ msgstr "Virheitä: %1"
 
 #. Activity title
 #: activities/path_encoding_relative/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Path encoding"
 msgctxt "ActivityInfo|"
 msgid "Relative path encoding"
-msgstr "Polun koodaus"
+msgstr "Suhteellisen polun koodaus"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -23626,97 +23522,61 @@ msgid "Loop"
 msgstr "Silmukka"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:542
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Instruction Area:"
 msgctxt "ProgrammingMaze|"
 msgid "Instruction Area:"
 msgstr "Ohjealue:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:543
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "There are 3 instructions which you can use to code and lead Tux to the "
-#| "fish:"
 msgctxt "ProgrammingMaze|"
 msgid ""
 "There are 3 instructions which you can use to code and lead Tux to the fish:"
-msgstr "Voit koodata Tuxin kalaan kolmella ohjeella:"
+msgstr "Tuxin voi koodata ja ohjata kalaan kolmella ohjeella:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:544
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
-#| "facing."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
 "facing."
 msgstr ""
-"<b>1. Liikkuminen eteenpäin:</b> Siirtää Tuxia askeleen eteenpäin sen "
-"silloiseen suuntaan."
+"<b>1. Liike eteenpäin:</b> siirtää Tuxia askelen suuntaan, johon se katsoo."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:545
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>2. Turn left:</b> Turns Tux to the left."
 msgctxt "ProgrammingMaze|"
 msgid "<b>2. Turn left:</b> Turns Tux to the left."
-msgstr "<b>2. Käänny vasemmalle:</b> Kääntää Tuxin vasemmalle."
+msgstr "<b>2. Käännös vasemmalle:</b> kääntää Tuxin vasemmalle."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:546
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "<b>3. Turn right:</b> Turns Tux to the right."
 msgctxt "ProgrammingMaze|"
 msgid "<b>3. Turn right:</b> Turns Tux to the right."
-msgstr "<b>3. Käänny oikealle:</b> Kääntää Tuxin oikealle."
+msgstr "<b>3. Käännös oikealle:</b> kääntää Tuxin oikealle."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:550
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Main Function:"
 msgctxt "ProgrammingMaze|"
 msgid "Main Function:"
 msgstr "Päätoiminto:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:551
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "The execution of the code starts here."
 msgctxt "ProgrammingMaze|"
 msgid "The execution of the code starts here."
 msgstr "Koodin suoritus alkaa tästä."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:552
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-Click on any instruction in the <b>instruction area</b> to add it to the "
-#| "<b>Main Function</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-Click on any instruction in the <b>instruction area</b> to add it to the "
 "<b>Main Function</b>."
 msgstr ""
-"- Napsauta mitä tahansa ohjetta <b>ohjealueella</b> lisätäksesi sen "
-"<b>päätoimintoon</b>."
+"– Lisää ohje <b>päätoimintoon</b> napsauta <b>ohjealueen</b> mitä tahansa "
+"ohjetta."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:553
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-The instructions will execute in order until there's none left, or until "
-#| "a dead-end, or when Tux reaches the fish."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-The instructions will execute in order until there's none left, or until a "
 "dead-end, or when Tux reaches the fish."
 msgstr ""
-"-Ohjeet suoritetaan järjestyksessä, kunnes niitä ei ole jäljellä, umpikujaan "
-"asti tai kun Tux saavuttaa kalan."
+"– Ohjeita suoritetaan järjestyksessä, kunnes ne loppuvat, päädytään "
+"umpikujaan asti tai Tux saavuttaa kalan."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:563
 #, fuzzy
@@ -23741,51 +23601,31 @@ msgstr ""
 "koodissa kutsumalla sitä tarvittaessa</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:565
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main "
-#| "Function area</b> to add your code, click on the <b>Procedure</b> or "
-#| "<b>Main Function</b> label."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main Function "
 "area</b> to add your code, click on the <b>Procedure</b> or <b>Main "
 "Function</b> label."
 msgstr ""
-"-Jos haluat <b>siirtyä</b> <b>Toimenpidealueen</b> ja <b>Päätoiminto-alueen</"
-"b> välillä ja lisää koodisi, napsauta <b>Toimenpide</b> tai <b>Päätoiminto</"
-"b>."
+"-Jos haluat <b>siirtyä</b> <b>toimenpidealueen</b> ja <b>päätoimintoalueen</"
+"b> välillä lisätäksesi koodia, napsauta <b>toimenpiteen</b> tai "
+"<b>päätoiminnon</b> selitettä."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:575
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid "Loop:"
 msgctxt "ProgrammingMaze|"
 msgid "Loop:"
 msgstr "Silmukka:"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:576
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
-#| "the number of times defined by the number inside it</b>."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
 "the number of times defined by the number inside it</b>."
 msgstr ""
 "<b>Silmukka</b> on käskysarja, joka <b>toistetaan jatkuvasti sen sisällä "
-"olevan numeron määrittämän määrän kertoja</b>."
+"olevan luvun määrittämän määrän kertoja</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:577
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
-#| "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</"
-#| "b> label."
 msgctxt "ProgrammingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
@@ -23793,8 +23633,8 @@ msgid ""
 "label."
 msgstr ""
 "- Jos haluat <b>siirtyä</b> <b>silmukka-alueen</b> ja <b>päätoimintoalueen</"
-"b> välillä lisätäksesi koodisi, napsauta <b>silmukkaa</b> tai "
-"<b>Päätoiminto</b>."
+"b> välillä lisätäksesi koodia, napsauta <b>silmukan</b> tai <b>päätoiminnon</"
+"b> selitettä."
 
 #: activities/programmingMaze/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -24272,11 +24112,6 @@ msgstr ""
 "yhdistelmin."
 
 #: activities/roman_numerals/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn the rules to read Roman numerals and practice converting numbers to "
-#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
@@ -24974,12 +24809,9 @@ msgstr "Yritä jakaa karkit tasan lasten kesken."
 
 #. Help goal
 #: activities/share/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice divisions."
 msgctxt "ActivityInfo|"
 msgid "Learn to share, practice division."
-msgstr "Harjoittele jakolaskua."
+msgstr "Opi jakamaan: harjoittele jakolaskua."
 
 #. Help prerequisite
 #: activities/share/ActivityInfo.qml:22
@@ -25509,12 +25341,9 @@ msgstr "Piirrä kuvia käyttämällä eri digimaalaustyökaluja."
 
 #. Help goal
 #: activities/sketch/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about multiples and factors."
 msgctxt "ActivityInfo|"
 msgid "Learn about some digital painting tools."
-msgstr "Opi kertomista ja tekijöistä."
+msgstr "Opi digitaalisia maalaustyökaluja."
 
 #. Help manual
 #: activities/sketch/ActivityInfo.qml:26
@@ -25649,9 +25478,6 @@ msgid "Gradient Tools"
 msgstr "Liukuvärityökalut"
 
 #: activities/sketch/PaletteSelector.qml:148
-#, fuzzy
-#| msgctxt "ColorsPanel|"
-#| msgid "Palettes"
 msgctxt "PaletteSelector|"
 msgid "Palettes"
 msgstr "Paletit"
@@ -28171,20 +27997,14 @@ msgid "Solve: %1"
 msgstr "Ratkaise: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:99
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write your own addition and solve it."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own addition and solve it."
 msgstr "Kirjoita oma yhteenlasku ja ratkaise se."
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:100
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write your own subtraction and solve it."
 msgctxt "VerticalSubtraction|"
 msgid "Write your own subtraction and solve it."
-msgstr "Kirjoita oma vähennyslaskusi ja ratkaise se."
+msgstr "Kirjoita oma vähennyslasku ja ratkaise se."
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:426
 msgctxt "VerticalSubtraction|"
@@ -28294,18 +28114,13 @@ msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Auringon noustessa merivesi alkaa lämmetä ja höyrystyä."
 
 #: activities/watercycle/Watercycle.qml:116
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Water vapor condenses to form cloud and when clouds become heavy, it "
-#| "rains. Click on the cloud."
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
 "Click on the cloud."
 msgstr ""
-"Vesihöyry tiivistyy ja muodostaa pilviä. Kun pilvet käyvät raskaiksi, alkaa "
-"sataa. Napsauta pilveä."
+"Vesihöyry tiivistyy ja muodostaa pilviä. Pilvien käytyä raskaiksi sataa. "
+"Napsauta pilveä."
 
 #: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
