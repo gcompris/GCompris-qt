@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-02-09 19:34+0200\n"
+"PO-Revision-Date: 2026-03-04 20:38+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -25,7 +25,7 @@ msgstr ""
 #: server/activities/tens_complement_use/ActivityEditor.qml:13
 msgctxt "ActivityEditor|"
 msgid "Rules to create a valid dataset:"
-msgstr ""
+msgstr "Säännöt kelvollisen tietojoukon luomiseksi:"
 
 #: server/activities/adjacent_numbers/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
@@ -128,16 +128,18 @@ msgctxt "AdjacentNumbersEditor|"
 msgid ""
 "\"Position of missing numbers\" must contain only numbers, and not be empty."
 msgstr ""
+"”Puuttuvien lukujen sijainnin” on sisällettävä vain numeroita eikä se voi "
+"olla tyhjä."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:104
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Position of missing numbers\" contains too much numbers."
-msgstr ""
+msgstr "”Puuttuvien lukujen sijainti” sisältää liikaa lukuja."
 
 #: server/activities/adjacent_numbers/AdjacentNumbersEditor.qml:106
 msgctxt "AdjacentNumbersEditor|"
 msgid "\"Position of missing numbers\" contains invalid numbers."
-msgstr ""
+msgstr "”Puuttuvien lukujen sijainti” sisältää virheellisiä lukuja."
 
 #: server/activities/algebra_by/AlgebraDataDisplay.qml:19
 msgctxt "AlgebraDataDisplay|"
@@ -161,7 +163,7 @@ msgstr "Vastaus: %1"
 #: server/activities/algebra_by/AlgebraEditor.qml:25
 msgctxt "AlgebraEditor|"
 msgid "Rules to create a valid dataset:"
-msgstr ""
+msgstr "Säännöt kelvollisen tietojoukon luomiseksi:"
 
 #: server/activities/algebra_by/AlgebraEditor.qml:27
 msgctxt "AlgebraEditor|"
@@ -484,13 +486,13 @@ msgstr "Taso %1 ei saa olla tyhjä."
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "\"Left number\" in Question %1 of Level %2 must contain a number."
-msgstr ""
+msgstr "Tason %2 kysymyksen %1 ”vasemmanpuoleisen luvun” on sisällettävä luku."
 
 #: server/activities/comparator/ComparatorEditor.qml:130
 #, qt-format
 msgctxt "ComparatorEditor|"
 msgid "\"Right number\" in Question %1 of Level %2 must contain a number."
-msgstr ""
+msgstr "Tason %2 kysymyksen %1 ”oikeanpuoleisen luvun” on sisällettävä luku."
 
 #: server/activities/comparator/ComparatorEditor.qml:136
 #, qt-format
@@ -588,7 +590,7 @@ msgstr "Tietojoukko on tyhjä."
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Instruction\" must contain some text telling the fraction to represent."
-msgstr ""
+msgstr "”Ohjeen” on sisällettävä tekstiä, joka kertoo, mitä murtoluku edustaa."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:29
 msgctxt "FractionsCreateEditor|"
@@ -630,7 +632,7 @@ msgstr "Taso %1 ei saa olla tyhjä."
 #, qt-format
 msgctxt "FractionsCreateEditor|"
 msgid "\"Instruction\" of Question %1 from Level %2 must not be empty."
-msgstr ""
+msgstr "Tason %2 kysymyksen %1 ”ohje” ei saa olla tyhjä."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:152
 #, qt-format
@@ -676,12 +678,12 @@ msgstr "Kysymykset"
 #: server/activities/fractions_find/FractionsFindEditor.qml:36
 msgctxt "FractionsFindEditor|"
 msgid "Static numerator"
-msgstr ""
+msgstr "Pysyvä osoittaja"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:37
 msgctxt "FractionsFindEditor|"
 msgid "Static denominator"
-msgstr ""
+msgstr "Pysyvä nimittäjä"
 
 #: server/activities/fractions_find/FractionsFindEditor.qml:38
 msgctxt "FractionsFindEditor|"
@@ -2523,7 +2525,7 @@ msgstr "Ryhmä <b>%1</b> on jo olemassa."
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "<b>%1</b> could not be updated to <b>%2</b>."
-msgstr ""
+msgstr "Ei voitu päivittää: <b>%1</b> → <b>%2</b>."
 
 #: server/controllers/database-controller.cpp:520
 #, qt-format
