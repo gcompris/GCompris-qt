@@ -36,14 +36,23 @@ DatasetEditorBase {
         ListElement { name: "values";    label: qsTr("Numbers to sort"); type: "number_array"; def: '["1", "0", "2"]' }
 
         Component.onCompleted: {
-            insert(0, {
-                "name": "sortingType",
+            // mode est ajouté à la fin du modèle (index 1)
+            append({
+                "name": "mode",
                 "label": qsTr("Sorting mode"),
                 "type": "choice",
                 "values": editor.sortModeChoices
             })
+
+            mainModel = datasetEditor.jsonToListModel(prototypeStack, JSON.parse(textActivityData));
+
         }
+
+
+
     }
+
+
 
     EditorBox {
         id: levelEditor
@@ -63,7 +72,7 @@ DatasetEditorBase {
                 spacing: Style.smallMargins
 
                 // For with coefficients
-                FieldEdit { name: "sortingType" }
+                FieldEdit { name: "mode" }
                 FieldEdit { name: "values" }
             }
         }
@@ -85,28 +94,57 @@ DatasetEditorBase {
         for(var datasetId = 0; datasetId < editor.mainModel.count; ++datasetId) {
             currentDataset = editor.mainModel.get(datasetId);
 
-            // check only relevant values when using coefficients
             var numbersToSort = JSON.parse(currentDataset.values);
+            var sortingMode = currentDataset.mode;
 
             // check the content of numbersToSort
-            var numbersToSortValid = true;
+            var atLeastTwoNumbers = true;
+            var numberToSortInputValid = true
+            var numberIsPositiveOrNull = true
+            var numbersAreAllInteger = true
+            var numbersAscendingOk = true
+            var numbersDescendingOk = true
             if(numbersToSort.length < 2) {
-                numbersToSortValid = false;
+                atLeastTwoNumbers = false;
             } else {
+                var precedentArrayNumber
                 for(var i = 0; i < numbersToSort.length; i++) {
                     var arrayValue = numbersToSort[i];
                     var arrayNumber = parseFloat(arrayValue);
-                    var currentMinValue = i === 0 ? 1 : 0;
-                    if(isNaN(arrayValue) || !Number.isInteger(arrayNumber) ||
-                        arrayNumber < currentMinValue || arrayNumber > 10) {
-                        numbersToSortValid = false;
+                    var currentMinValue = 0
+                    if(isNaN(arrayValue) || !Number.isInteger(arrayNumber)) {
+                        numbersAreAllInteger = false;
                     }
+                    if(arrayNumber < 0) {
+                        numberIsPositiveOrNull = false;
+                    }
+                    if (i>0 && sortingMode === "ascending") {
+                        if (arrayNumber < precedentArrayNumber) numbersAscendingOk = false
+                    }
+                    if (i>0 && sortingMode === "descending") {
+                        if (arrayNumber > precedentArrayNumber) numbersDescendingOk = false
+                    }
+                    precedentArrayNumber = parseFloat(numbersToSort[i])
                 }
             }
-            if(!numbersToSortValid) {
+            if(!atLeastTwoNumbers) {
                 isValid = false;
-                textError = textError + ("<li>") + qsTr('Level %1: "Numbers to sort" must contain more then 2 numbers.').arg(datasetId+1) + ("</li>");
+                textError = textError + ("<li>") + qsTr('Level %1: "numbers to sort" must contain more then 2 numbers.').arg(datasetId+1) + ("</li>");
+            } else if(!numbersAreAllInteger) {
+                isValid = false;
+                textError = textError + ("<li>") + qsTr('Level %1: all numbers must be integers.').arg(datasetId+1) + ("</li>");
+            }  else if(!numberIsPositiveOrNull) {
+                isValid = false;
+                textError = textError + ("<li>") + qsTr('Level %1: all numbers must be positive or equal to zero.').arg(datasetId+1) + ("</li>");
+            } else if(!numbersAscendingOk) {
+                isValid = false;
+                textError = textError + ("<li>") + qsTr('Level %1: numbers must be written in ascending order.').arg(datasetId+1) + ("</li>");
+            } else if(!numbersDescendingOk) {
+                isValid = false;
+                textError = textError + ("<li>") + qsTr('Level %1: numbers must be written in descending order.').arg(datasetId+1) + ("</li>");
             }
+
+
         }
 
         if(!isValid) {
@@ -128,7 +166,7 @@ DatasetEditorBase {
         //     editor.mainPrototype.insert(0, { name: "questionsArray", label: qsTr("Subtractions"), type: "string_array", def: '["1 - 1"]'});
         // }     
 
-        mainModel = datasetEditor.jsonToListModel(prototypeStack, JSON.parse(textActivityData));
+        //mainModel = datasetEditor.jsonToListModel(prototypeStack, JSON.parse(textActivityData));
     }
 }
 
