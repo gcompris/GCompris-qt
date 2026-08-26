@@ -21,6 +21,7 @@
   <name xml:lang="de">GCompris-teachers</name>
   <name xml:lang="es">GCompris-teachers</name>
   <name xml:lang="eu">GCompris-teachers</name>
+  <name xml:lang="fi">GCompris-teachers</name>
   <name xml:lang="fr">GCompris-teachers</name>
   <name xml:lang="gu">GCompris-teachers</name>
   <name xml:lang="he">ג׳יקומפרי למורים</name>
@@ -42,6 +43,7 @@
   <summary xml:lang="de">GCompris-Begleitanwendung für Lehrer</summary>
   <summary xml:lang="es">Complemento de GCompris para profesores</summary>
   <summary xml:lang="eu">GCompriserako irakasleen laguntzailea</summary>
+  <summary xml:lang="fi">GComprisin opettajan kumppani</summary>
   <summary xml:lang="fr">Compagnon d'administration de GCompris pour les enseignants</summary>
   <summary xml:lang="gu">GCompris શિક્ષક સાથી</summary>
   <summary xml:lang="he">נלווה של ג׳יקומפרי למורים</summary>
@@ -65,6 +67,7 @@
     <p xml:lang="de">GCompris-teachers ist eine Begleitanwendung für Lehrer, die den Einsatz von GCompris im Unterricht erweitert.</p>
     <p xml:lang="es">GCompris-teachers es una aplicación complementaria para profesores que permite potenciar el uso de GCompris en clase.</p>
     <p xml:lang="eu">GCompris-teachers irakasleentzako aplikazio osagarri bat da, GComprisen erabilera ikasgelan hobetzea helburu duena.</p>
+    <p xml:lang="fi">GCompris-teachers on kumppanisovellus opettajille tehostamaan heidän GComprisin käyttöään luokkahuoneessa.</p>
     <p xml:lang="fr">GCompris-teachers est une application pour les enseignants afin d'améliorer l'utilisation de GCompris en école.</p>
     <p xml:lang="gu">GCompris-teachers એ શિક્ષકો માટેની એક સહાયક એપ્લિકેશન છે જે તેમના વર્ગખંડમાં GCompris ના ઉપયોગને વધુ બહેતર બનાવવામાં મદદ કરે છે.</p>
     <p xml:lang="he">ג׳יקומפרי למורים הוא יישום נלווה למורים כדי לשפר את יכולות ההטמעה של ג׳יקופמרי בכיתות שלהם.</p>
@@ -87,6 +90,7 @@
     <p xml:lang="de">Es ermöglicht Lehrern, benutzerdefinierte Datensätze zu erstellen. Außerdem ist es bei einigen Aktivitäten möglich, die Ergebnisse der Schüler zu empfangen.</p>
     <p xml:lang="es">Permite a los profesores crear conjuntos de datos personalizados y recibir de los alumnos el resultado de algunas actividades.</p>
     <p xml:lang="eu">Irakasleei datu-multzo pertsonalizatuak sortzeko eta zenbait jardueratan ikasleen emaitzak jasotzeko aukera ematen die.</p>
+    <p xml:lang="fi">Sen avulla opettajat voivat luoda mukautettuja tietojoukkoja ja vastaanottaa opiskelijoiden tuloksia harjoituksista.</p>
     <p xml:lang="fr">L'outil permet aux enseignants de créer des jeux de données personnalisés et de recevoir les résultats des élèves pour plusieurs activités.</p>
     <p xml:lang="gu">તે શિક્ષકોને કસ્ટમાઇઝ્ડ માહિતીનો સમૂહ બનાવવાની અને કેટલીક પ્રવૃત્તિઓ માટે વિદ્યાર્થીઓના પરિણામો મેળવવાની સુવિધા આપે છે.</p>
     <p xml:lang="he">מאפשר למורים ליצור סדרות נתונים מותאמות ולקבל את תוצאות התלמידים בחלק מהפעילויות.</p>
@@ -111,6 +115,7 @@
       <caption xml:lang="de">Verwaltung von Schülern und Gruppen</caption>
       <caption xml:lang="es">Gestión de alumnos y grupos</caption>
       <caption xml:lang="eu">Ikasleen eta taldeen kudeaketa</caption>
+      <caption xml:lang="fi">Opiskelija- ja ryhmähallinnointi</caption>
       <caption xml:lang="fr">Gestion des élèves et des groupes</caption>
       <caption xml:lang="gu">વિદ્યાર્થીઓ અને જૂથોનું સંચાલન</caption>
       <caption xml:lang="he">ניהול תלמידים וקבוצות</caption>
@@ -136,6 +141,7 @@
       <caption xml:lang="de">Ergebnisanzeige für einen Schüler</caption>
       <caption xml:lang="es">Visualización de los resultados de un alumno</caption>
       <caption xml:lang="eu">Ikasle baten emaitzen bistaratzea</caption>
+      <caption xml:lang="fi">Yhden opiskelijan tulosnäkymä</caption>
       <caption xml:lang="fr">Résultats affichés pour un élève</caption>
       <caption xml:lang="gu">એક વિદ્યાર્થી માટેના પરિણામોનું પ્રદર્શન</caption>
       <caption xml:lang="he">תצוגת תוצאות לתלמיד בנפרד</caption>
@@ -160,6 +166,7 @@
       <caption xml:lang="de">Ergebnisanzeige für Aktivität „Senkrechte Subtraktion“</caption>
       <caption xml:lang="es">Visualización de los resultados de la actividad de resta vertical</caption>
       <caption xml:lang="eu">Kenketa bertikalaren jarduerako emaitzen bistaratzea</caption>
+      <caption xml:lang="fi">Tulosnäkymä vähennyslaskuharjoituksesta</caption>
       <caption xml:lang="fr">Résultats affichés pour l'activité de soustraction verticale</caption>
       <caption xml:lang="gu">ઉભી બાદબાકીની પ્રવૃત્તિ માટેના પરિણામોનું પ્રદર્શન</caption>
       <caption xml:lang="he">הצגת תוצאות לפעילות חיסור במאונך</caption>
