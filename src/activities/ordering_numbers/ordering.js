@@ -21,6 +21,8 @@ var mode
 // num[] will contain the random values
 var num = []
 var originalArrangement = []
+var sortMode
+var expectedArray
 
 // for random datasets, we have to dynamically generate values
 // items.levels should be treated as read only, thus we keep a local copy
@@ -82,7 +84,8 @@ function initLevel() {
         display_instruction = (levels[items.currentLevel].mode === 'ascending') ? numbers_asc : numbers_desc;
 
     items.instruction.text = display_instruction;
-    initGrids()
+    initGrids();
+    items.client.startTiming();
 }
 
 function initGrids() {
@@ -142,6 +145,10 @@ function generateNumbers() {
         num.reverse();
 
     originalArrangement = num.slice();
+
+
+
+
     num = Core.shuffle(num)
 }
 
@@ -184,6 +191,8 @@ function checkOrder() {
         items.bonus.good("lion")
     else
         items.bonus.bad("lion")
+
+    items.client.sendToServer(success)
 }
 
 function moveFromTargetList(from_, to_, n_) {

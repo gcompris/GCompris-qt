@@ -24,8 +24,8 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-     onActivityNextLevel: {
-         Activity.nextLevel()
+    onActivityNextLevel: {
+        Activity.nextLevel();
     }
 
     pageComponent: Image {
@@ -39,9 +39,9 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
-            dialogActivityConfig.initialize()
-            activity.start.connect(start)
-            activity.stop.connect(stop)
+            dialogActivityConfig.initialize();
+            activity.start.connect(start);
+            activity.stop.connect(stop);
         }
 
         // Add here the QML items you need to access in javascript
@@ -63,47 +63,36 @@ ActivityBase {
             property alias client: client
         }
 
-        // Client {    // Client for gcompris-teachers. Prepare data from activity to server
-        //     id: client
-        //     getDataCallback: function() {
-        //         var data = {
-        //             "mode": activity.mode,
-        //             "useCoefficients": items.coefficientVisible,
-        //             "useDifferentStars": items.useDifferentStars,
-        //             "questionContent": Activity.questionContent
-        //         }
-        //         return data;
-        //     }
-        // }
-
-        onStart: { Activity.start(items, mode) }
-        onStop: { Activity.stop() }      
+        onStart: {
+            Activity.start(items, mode);
+        }
+        onStop: {
+            Activity.stop();
+        }
 
         Client {
             id: client
 
-            getDataCallback: function() {
-                // Capture des éléments remis dans l'ordre par l'élève
-                var currentOrder = []
-                for (var i = 0; i < items.dropAreaRepeater.count; i++) {
-                    var item = items.dropAreaRepeater.itemAt(i)
-                    if (item && item.value !== undefined) {
-                        currentOrder.push(item.value)
-                    }
+            getDataCallback: function () {
+                // Capture the items ordered by the pupil
+                var currentOrder = [];
+                for (var i = 0; i < items.targetListModel.count; i++) {
+                    currentOrder.push(items.targetListModel.get(i).elementValue);
                 }
 
-                // Capture de l'ordre attendu (solution)
-                var expectedOrder = []
-                if (items.expectedArray) {
-                    expectedOrder = items.expectedArray
-                }
+                // Capture the expected order (solution) from the JS module
+                var expectedOrder = Activity.originalArrangement
+                console.log("expectedOrder: " + expectedOrder)
+
+                // Sort direction from the current level dataset
+                var levels = Activity.levels;
+                var sortDir = (levels && levels[items.currentLevel] && levels[items.currentLevel].mode) ? levels[items.currentLevel].mode : "ascending";
 
                 return {
                     "currentOrder": currentOrder,
                     "expectedOrder": expectedOrder,
-                    "sortDirection": items.sortDirection, // "ascending" ou "descending"
-                    "isSuccess": items.isBonus // Indique si la série a été validée
-                }
+                    "sortDirection": sortDir
+                };
             }
         }
 
@@ -170,16 +159,16 @@ ActivityBase {
             currentActivity: activity.activityInfo
 
             onSaveData: {
-                levelFolder = dialogActivityConfig.chosenLevels
-                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                levelFolder = dialogActivityConfig.chosenLevels;
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels;
                 // restart activity on saving
-                activityBackground.start()
+                activityBackground.start();
             }
             onClose: {
-                home()
+                home();
             }
             onStartActivity: {
-                activityBackground.start()
+                activityBackground.start();
             }
         }
 
@@ -190,9 +179,8 @@ ActivityBase {
 
         BarButton {
             id: ok
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
-            width: Math.min(GCStyle.bigButtonHeight,
-                    originPlaceholder.height, originPlaceholder.width)
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            width: Math.min(GCStyle.bigButtonHeight, originPlaceholder.height, originPlaceholder.width)
             enabled: !bonus.isPlaying && visible
             visible: originListModel.count === 0
             anchors.centerIn: originPlaceholder
@@ -202,15 +190,17 @@ ActivityBase {
         Bar {
             id: bar
             level: items.currentLevel + 1
-            content: BarEnumContent { value: help | home | level | activityConfig }
+            content: BarEnumContent {
+                value: help | home | level | activityConfig
+            }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                displayDialog(dialogHelp);
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onActivityConfigClicked: {
-                displayDialog(dialogActivityConfig)
+                displayDialog(dialogActivityConfig);
             }
         }
 
@@ -219,5 +209,4 @@ ActivityBase {
             Component.onCompleted: win.connect(activity.nextLevel)
         }
     }
-
 }

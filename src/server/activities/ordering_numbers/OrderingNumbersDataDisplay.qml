@@ -1,31 +1,122 @@
-/* GCompris - LearnDigitsDataDisplay.qml
+/* GCompris - OrderingNumbersDataDisplay.qml
  *
- * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
- * SPDX-FileCopyrightText: 2024 Timothée Giet <animtim@gmail.com>
+ * SPDX-FileCopyrightText: 2026 Emmanuel Charruau <allon@gcompris.net>
  *
  * Authors:
- *   Bruno Anselme <be.root@free.fr>
- *   Timothée Giet <animtim@gmail.com>
+ *    Emmanuel Charruau <allon@gcompris.net>
  *
- *   SPDX-License-Identifier: GPL-3.0-or-later
+ *    SPDX-License-Identifier: GPL-3.0-or-later
  */
 pragma ComponentBehavior: Bound
 import QtQuick
+import core 1.0
 import "../../components"
 import "../../singletons"
+import "../../../core"
 
-InformationLine {
+Item {
     id: lineItem
     required property var jsonData
-    property bool isOperation: false
+    required property bool resultSuccess
+    height: details.height + Style.hugeMargins
+    width: childrenRect.width + Style.margins
 
-    label: isOperation ?
-        //: %1 is an operation, %2 the result. Example: "2 x 5 = 10"
-        qsTr("%1 = %2").arg(lineItem.jsonData.questionText).arg(lineItem.jsonData.question) :
-        lineItem.jsonData.questionText
-    //: %1 is the answer. Example: "Answer: 10"
-    info: qsTr("Answer: %1").arg(lineItem.jsonData.answer)
-    infoText.font.bold: true
-    infoText.color: Style.selectedPalette.highlightedText
-    showResult: true
+    // Show sort order mode: ascending or descending
+    DefaultLabel {
+        id: directionText
+        width: Style.controlSize
+        height: Style.controlSize
+        text: lineItem.jsonData.sortDirection === "ascending" ? "<i><b>></b></i>" : "<i><b><</b></i>"
+        fontSizeMode: Text.Fit
+        font.bold: true
+        y: details.y
+    }
+
+    Column {
+        id: details
+        x: directionText.width + Style.margins
+        y: Style.bigMargins
+        spacing: Style.smallMargins
+        height: childrenRect.height
+        width: childrenRect.width
+
+        // User answer
+        Row {
+            spacing: Style.smallMargins
+
+            DefaultLabel {
+                id: answeredLabel
+                text: qsTr("Answered: ")
+                font.bold: true
+                color: "white"
+                width: answeredLabel.implicitWidth + 2 * Style.margins
+            }
+            Repeater {
+                model: lineItem.jsonData.expectedOrder
+                delegate: Rectangle {
+                    required property var modelData
+                    property int digitWidth: Style.bigControlSize * 0.75
+                    property int digitHeight: Style.controlSize * 0.75
+
+                    width: digitWidth
+                    height: digitHeight
+
+                    color: "#FFFFFF"
+                    border.color: "#A1CBD9"
+                    border.width: Style.defaultBorderWidth
+                    radius: Style.defaultBorderWidth
+
+                    DefaultLabel {
+                        text: modelData
+                        anchors.centerIn: parent
+                        width: parent.width * 0.5
+                        height: parent.height
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        fontSizeMode: Text.Fit
+                        color: Style.selectedPalette.text
+                    }
+                }
+            }
+        }
+
+        // Expected Order
+        Row {
+            spacing: Style.smallMargins
+
+            DefaultLabel {
+                id: expectedLabel
+                text: qsTr("Expected: ")
+                color: "white"
+                width: expectedLabel.implicitWidth + 2 * Style.margins
+            }
+            Repeater {
+                model: lineItem.jsonData.expectedOrder
+                delegate: Rectangle {
+                    required property var modelData
+                    property int digitWidth: Style.bigControlSize * 0.75
+                    property int digitHeight: Style.controlSize * 0.75
+
+                    width: digitWidth
+                    height: digitHeight
+
+                    color: "#FFFFFF"
+                    border.color: "#A1CBD9"
+                    border.width: Style.defaultBorderWidth
+                    radius: Style.defaultBorderWidth
+
+                    DefaultLabel {
+                        text: modelData
+                        anchors.centerIn: parent
+                        width: parent.width * 0.5
+                        height: parent.height
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        fontSizeMode: Text.Fit
+                        color: Style.selectedPalette.text
+                    }
+                }
+            }
+        }
+    }
 }
