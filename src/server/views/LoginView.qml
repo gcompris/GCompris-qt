@@ -116,7 +116,7 @@ Item {
             width: 320
             activeFocusOnTab: true
             echoMode: TextInput.Password
-            defaultText: "toto"
+            defaultText: ""
         }
 
         Row {
