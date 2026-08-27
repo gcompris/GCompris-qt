@@ -118,11 +118,9 @@ DatasetEditorBase {
                     if(arrayNumber < 0) {
                         numberIsPositiveOrNull = false;
                     }
-                    if (i>0 && sortingMode === "ascending") {
+                    // Always supply numbers in ascending order (e.g., 1, 2, 3); the sorting direction parameter handles reversing to descending (3, 2, 1).
+                    if (i>0) {
                         if (arrayNumber < precedentArrayNumber) numbersAscendingOk = false
-                    }
-                    if (i>0 && sortingMode === "descending") {
-                        if (arrayNumber > precedentArrayNumber) numbersDescendingOk = false
                     }
                     precedentArrayNumber = parseFloat(numbersToSort[i])
                 }
@@ -138,10 +136,7 @@ DatasetEditorBase {
                 textError = textError + ("<li>") + qsTr('Level %1: all numbers must be positive or equal to zero.').arg(datasetId+1) + ("</li>");
             } else if(!numbersAscendingOk) {
                 isValid = false;
-                textError = textError + ("<li>") + qsTr('Level %1: numbers must be written in ascending order.').arg(datasetId+1) + ("</li>");
-            } else if(!numbersDescendingOk) {
-                isValid = false;
-                textError = textError + ("<li>") + qsTr('Level %1: numbers must be written in descending order.').arg(datasetId+1) + ("</li>");
+                textError = textError + ("<li>") + qsTr('Level %1: always supply numbers in ascending order (e.g., 1, 3, 6); the sorting direction parameter handles reversing to descending (6, 3, 1)..').arg(datasetId+1) + ("</li>");
             }
 
 

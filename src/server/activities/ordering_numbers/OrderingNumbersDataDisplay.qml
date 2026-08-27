@@ -26,7 +26,7 @@ Item {
         id: directionText
         width: Style.controlSize
         height: Style.controlSize
-        text: lineItem.jsonData.sortDirection === "ascending" ? "<i><b>></b></i>" : "<i><b><</b></i>"
+        text: lineItem.jsonData.sortDirection === "ascending" ? "<i><b>&gt;</b></i>" : "<i><b>&lt;</b></i>"
         fontSizeMode: Text.Fit
         font.bold: true
         y: details.y
@@ -40,45 +40,6 @@ Item {
         height: childrenRect.height
         width: childrenRect.width
 
-        // User answer
-        Row {
-            spacing: Style.smallMargins
-
-            DefaultLabel {
-                id: answeredLabel
-                text: qsTr("Answered: ")
-                font.bold: true
-                color: "white"
-                width: answeredLabel.implicitWidth + 2 * Style.margins
-            }
-            Repeater {
-                model: lineItem.jsonData.expectedOrder
-                delegate: Rectangle {
-                    required property var modelData
-                    property int digitWidth: Style.bigControlSize * 0.75
-                    property int digitHeight: Style.controlSize * 0.75
-
-                    width: digitWidth
-                    height: digitHeight
-
-                    color: "#FFFFFF"
-                    border.color: "#A1CBD9"
-                    border.width: Style.defaultBorderWidth
-                    radius: Style.defaultBorderWidth
-
-                    DefaultLabel {
-                        text: modelData
-                        anchors.centerIn: parent
-                        width: parent.width * 0.5
-                        height: parent.height
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                        fontSizeMode: Text.Fit
-                        color: Style.selectedPalette.text
-                    }
-                }
-            }
-        }
 
         // Expected Order
         Row {
@@ -118,5 +79,47 @@ Item {
                 }
             }
         }
+
+        // User answer
+        Row {
+            spacing: Style.smallMargins
+
+            DefaultLabel {
+                id: answeredLabel
+                text: qsTr("Answered: ")
+                font.bold: true
+                color: "white"
+                width: answeredLabel.implicitWidth + 2 * Style.margins
+            }
+            Repeater {
+                model: lineItem.jsonData.currentOrder
+                delegate: Rectangle {
+                    required property var modelData
+                    property int digitWidth: Style.bigControlSize * 0.75
+                    property int digitHeight: Style.controlSize * 0.75
+
+                    width: digitWidth
+                    height: digitHeight
+
+                    color: "#FFFFFF"
+                    border.color: "#A1CBD9"
+                    border.width: Style.defaultBorderWidth
+                    radius: Style.defaultBorderWidth
+
+                    DefaultLabel {
+                        text: modelData
+                        anchors.centerIn: parent
+                        width: parent.width * 0.5
+                        height: parent.height
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        fontSizeMode: Text.Fit
+                        color: Style.selectedPalette.text
+                    }
+                }
+            }
+        }
+
+
     }
 }
