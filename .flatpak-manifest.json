@@ -1,43 +1,43 @@
 {
-  "id": "org.kde.gcompris",
-  "runtime": "org.kde.Platform",
-  "runtime-version": "6.11",
-  "sdk": "org.kde.Sdk",
-  "rename-icon": "gcompris-qt",
-  "command": "gcompris-qt",
-  "finish-args": [
-    "--socket=pulseaudio",
-    "--share=ipc",
-    "--socket=x11",
-    "--socket=wayland",
-    "--share=network",
-    "--device=dri"
-  ],
-  "cleanup": [
-    "/include",
-    "/mkspecs"
-  ],
-  "modules": [
-    {
-      "name": "gcompris",
-      "buildsystem": "cmake",
-      "builddir": true,
-      "config-opts": [
-        "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
-        "-DQML_BOX2D_MODULE=submodule"
-      ],
-      "sources": [
+    "id": "org.kde.gcompris",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "6.11",
+    "sdk": "org.kde.Sdk",
+    "rename-icon": "gcompris-qt",
+    "command": "gcompris-qt",
+    "finish-args": [
+        "--socket=pulseaudio",
+        "--share=ipc",
+        "--socket=x11",
+        "--socket=wayland",
+        "--share=network",
+        "--device=dri"
+    ],
+    "cleanup": [
+        "/include",
+        "/mkspecs"
+    ],
+    "modules": [
         {
-          "type": "git",
-          "dest": "external/qml-box2d",
-          "url": "https://github.com/qml-box2d/qml-box2d.git",
-          "commit": "b7212d5640701f93f0cd88fbd3a32c619030ae62"
-        },
-        {
-          "type": "dir",
-          "path": "."
+            "name": "gcompris",
+            "buildsystem": "cmake",
+            "builddir": true,
+            "config-opts": [
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+                "-DQML_BOX2D_MODULE=submodule"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "dest": "external/qml-box2d",
+                    "url": "https://github.com/qml-box2d/qml-box2d.git",
+                    "commit": "b7212d5640701f93f0cd88fbd3a32c619030ae62"
+                },
+                {
+                    "type": "dir",
+                    "path": "."
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
