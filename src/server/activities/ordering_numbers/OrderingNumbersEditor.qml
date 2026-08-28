@@ -1,9 +1,9 @@
-/* GCompris - LearnDigitsEditor.qml
+/* GCompris - OrderingNumbersEditor.qml
  *
  * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
- *   Timothée Giet <animtim@gmail.com>
+ *   Emmanuel Charruau <echarruau@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -22,10 +22,6 @@ DatasetEditorBase {
     property ListModel mainModel: ({})                      // The main ListModel, declared as a property for dynamic creation
     readonly property var prototypeStack: [ editor.mainPrototype] // A stack of prototypes (Only one here. There is no nested Listmodel)
 
-    property bool isOperation: false // false for learn_digits, else true
-    property bool isAddition: false // false for learn_digits and learn_additions, true for learn_subtractions
-
-
     readonly property var sortModeChoices: [
         { "datasetValue": "ascending", "displayedValue": qsTr("ascending") },
         { "datasetValue": "descending", "displayedValue": qsTr("descending") }
@@ -33,10 +29,9 @@ DatasetEditorBase {
     property ListModel mainPrototype: ListModel {
         property bool multiple: true
         // inserted dynamically as the label and def changes depending on the target activity
-        ListElement { name: "values";    label: qsTr("Numbers to sort"); type: "number_array"; def: '["1", "0", "2"]' }
+        ListElement { name: "values";    label: qsTr("Numbers to sort"); type: "number_array"; def: '["1", "2", "3"]' }
 
         Component.onCompleted: {
-            // mode est ajouté à la fin du modèle (index 1)
             append({
                 "name": "mode",
                 "label": qsTr("Sorting mode"),
@@ -47,11 +42,7 @@ DatasetEditorBase {
             mainModel = datasetEditor.jsonToListModel(prototypeStack, JSON.parse(textActivityData));
 
         }
-
-
-
-    }
-
+   }
 
 
     EditorBox {
@@ -71,7 +62,6 @@ DatasetEditorBase {
                 y: Style.margins
                 spacing: Style.smallMargins
 
-                // For with coefficients
                 FieldEdit { name: "mode" }
                 FieldEdit { name: "values" }
             }
@@ -99,11 +89,9 @@ DatasetEditorBase {
 
             // check the content of numbersToSort
             var atLeastTwoNumbers = true;
-            var numberToSortInputValid = true
             var numberIsPositiveOrNull = true
             var numbersAreAllInteger = true
             var numbersAscendingOk = true
-            var numbersDescendingOk = true
             if(numbersToSort.length < 2) {
                 atLeastTwoNumbers = false;
             } else {
@@ -111,7 +99,6 @@ DatasetEditorBase {
                 for(var i = 0; i < numbersToSort.length; i++) {
                     var arrayValue = numbersToSort[i];
                     var arrayNumber = parseFloat(arrayValue);
-                    var currentMinValue = 0
                     if(isNaN(arrayValue) || !Number.isInteger(arrayNumber)) {
                         numbersAreAllInteger = false;
                     }
@@ -127,7 +114,7 @@ DatasetEditorBase {
             }
             if(!atLeastTwoNumbers) {
                 isValid = false;
-                textError = textError + ("<li>") + qsTr('Level %1: "numbers to sort" must contain more then 2 numbers.').arg(datasetId+1) + ("</li>");
+                textError = textError + ("<li>") + qsTr('Level %1: "numbers to sort" must contain at least 2 numbers.').arg(datasetId+1) + ("</li>");
             } else if(!numbersAreAllInteger) {
                 isValid = false;
                 textError = textError + ("<li>") + qsTr('Level %1: all numbers must be integers.').arg(datasetId+1) + ("</li>");
@@ -136,7 +123,7 @@ DatasetEditorBase {
                 textError = textError + ("<li>") + qsTr('Level %1: all numbers must be positive or equal to zero.').arg(datasetId+1) + ("</li>");
             } else if(!numbersAscendingOk) {
                 isValid = false;
-                textError = textError + ("<li>") + qsTr('Level %1: always supply numbers in ascending order (e.g., 1, 3, 6); the sorting direction parameter handles reversing to descending (6, 3, 1)..').arg(datasetId+1) + ("</li>");
+                textError = textError + ("<li>") + qsTr('Level %1: always supply numbers in ascending order (e.g., 1, 3, 6); the sorting direction parameter handles reversing to descending (6, 3, 1).').arg(datasetId+1) + ("</li>");
             }
 
 
@@ -160,8 +147,6 @@ DatasetEditorBase {
         // } else {
         //     editor.mainPrototype.insert(0, { name: "questionsArray", label: qsTr("Subtractions"), type: "string_array", def: '["1 - 1"]'});
         // }     
-
-        //mainModel = datasetEditor.jsonToListModel(prototypeStack, JSON.parse(textActivityData));
     }
 }
 

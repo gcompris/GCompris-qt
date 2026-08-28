@@ -9,10 +9,8 @@
  */
 pragma ComponentBehavior: Bound
 import QtQuick
-import core 1.0
 import "../../components"
 import "../../singletons"
-import "../../../core"
 
 Item {
     id: lineItem
@@ -26,7 +24,7 @@ Item {
         id: directionText
         width: Style.controlSize
         height: Style.controlSize
-        text: lineItem.jsonData.sortDirection === "ascending" ? "<i><b>&gt;</b></i>" : "<i><b>&lt;</b></i>"
+        text: lineItem.jsonData.sortDirection === "ascending" ? "<i><b>↑</b></i>" : "<i><b>↓</b></i>"
         fontSizeMode: Text.Fit
         font.bold: true
         y: details.y
@@ -118,8 +116,6 @@ Item {
                     }
                 }
             }
-        }
-
-
+        }     
     }
 }

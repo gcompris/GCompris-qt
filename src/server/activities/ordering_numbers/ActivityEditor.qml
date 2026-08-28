@@ -3,7 +3,7 @@
  * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
- *   Timothée Giet <animtim@gmail.com>
+ *   Emmanuel Charruau <echarruau@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -12,10 +12,10 @@ OrderingNumbersEditor {
     textActivityData: textActivityData_
     teacherInstructions: ("<b>") + qsTr("Rules to create a valid dataset:") + ("</b><br><ul><li>") +
 
-    qsTr('"Numbers" must contain a list of numbers between 0 and 9.') + ("</li></ul><ul><li>") +
+    qsTr('Always supply numbers in ascending order (e.g., 1, 2, 3); the sorting direction parameter handles reversing to descending (3, 2, 1).') + ("</li></ul><ul><li>") +
 
-    qsTr('"Number of circles" can not be smaller than the largest number to find.') + ("</li></ul>")
+    qsTr('At least two numbers must be entered.') + ("</li></ul><ul><li>") +
 
-    isOperation: false
-    isAddition: false
+    qsTr('All numbers must be integers.')
+
 }

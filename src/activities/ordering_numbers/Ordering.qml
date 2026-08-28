@@ -82,7 +82,6 @@ ActivityBase {
 
                 // Capture the expected order (solution) from the JS module
                 var expectedOrder = Activity.originalArrangement
-                console.log("expectedOrder: " + expectedOrder)
 
                 // Sort direction from the current level dataset
                 var levels = Activity.levels;
