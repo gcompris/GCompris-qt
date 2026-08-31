@@ -15085,7 +15085,7 @@ msgstr "Кипар"
 #: activities/geography/resource/board/board9_0.qml:39
 msgctxt "board9_0|"
 msgid "Asia|Georgia"
-msgstr "Азија|Грузија"
+msgstr "Грузија"
 
 #: activities/geography/resource/board/board9_0.qml:46
 msgctxt "board9_0|"
