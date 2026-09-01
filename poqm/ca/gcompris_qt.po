@@ -15384,7 +15384,7 @@ msgstr "Xipre"
 #: activities/geography/resource/board/board9_0.qml:39
 msgctxt "board9_0|"
 msgid "Asia|Georgia"
-msgstr "Àsia|Geòrgia"
+msgstr "Geòrgia"
 
 #: activities/geography/resource/board/board9_0.qml:46
 msgctxt "board9_0|"

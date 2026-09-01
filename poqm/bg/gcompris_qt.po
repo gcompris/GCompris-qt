@@ -14973,7 +14973,7 @@ msgstr "Кипър"
 #: activities/geography/resource/board/board9_0.qml:39
 msgctxt "board9_0|"
 msgid "Asia|Georgia"
-msgstr "Азия|Грузия"
+msgstr "Грузия"
 
 #: activities/geography/resource/board/board9_0.qml:46
 msgctxt "board9_0|"

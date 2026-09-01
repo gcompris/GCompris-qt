@@ -14275,7 +14275,7 @@ msgstr "塞浦路斯"
 #: activities/geography/resource/board/board9_0.qml:39
 msgctxt "board9_0|"
 msgid "Asia|Georgia"
-msgstr "亚洲|格鲁吉亚"
+msgstr "格鲁吉亚"
 
 #: activities/geography/resource/board/board9_0.qml:46
 msgctxt "board9_0|"

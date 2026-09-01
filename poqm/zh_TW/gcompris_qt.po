@@ -14796,7 +14796,7 @@ msgstr "賽普勒斯"
 #: activities/geography/resource/board/board9_0.qml:39
 msgctxt "board9_0|"
 msgid "Asia|Georgia"
-msgstr "亞洲|喬治亞"
+msgstr "喬治亞"
 
 #: activities/geography/resource/board/board9_0.qml:46
 msgctxt "board9_0|"

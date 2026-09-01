@@ -15296,7 +15296,7 @@ msgstr "ಸೈಪ್ರಸ್"
 #: activities/geography/resource/board/board9_0.qml:39
 msgctxt "board9_0|"
 msgid "Asia|Georgia"
-msgstr "ಏಷ್ಯಾ |ಜೋರ್ಜಿಯ"
+msgstr "ಜೋರ್ಜಿಯ"
 
 #: activities/geography/resource/board/board9_0.qml:46
 msgctxt "board9_0|"
