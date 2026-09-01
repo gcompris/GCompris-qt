@@ -5,6 +5,8 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
+ *   Johnny Jazeix <jazeix@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -36,8 +38,15 @@ ActivityBase {
         signal start
         signal stop
 
-        Keys.enabled: !items.buttonsBlocked && activity.mode == "fifteen"
-        Keys.onPressed: (event) => { Activity.processPressedKey(event) }
+        Keys.enabled: !items.buttonsBlocked
+        Keys.onPressed: (event) => {
+            if(activity.mode == "fifteen") {
+                Activity.processPressedKey(event);
+            } else { // for sixteen mode
+                Activity.sixteenPressedKey(event);
+            }
+
+        }
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -60,6 +69,13 @@ ActivityBase {
             property string scene: bar.level < 5 ? Activity.url + "Fishing_Boat_Scene.svg" :
                                                    Activity.url + "Coastal_Path.svg"
             property bool buttonsBlocked: false
+
+            property alias topArrowsRepeater: topArrowsRepeater
+            property alias bottomArrowsRepeater: bottomArrowsRepeater
+            property alias leftArrowsRepeater: leftArrowsRepeater
+            property alias rightArrowsRepeater: rightArrowsRepeater
+            property SlideButton selectedButton: null
+            property Repeater selectedRepeater: null
         }
 
         onStart: { Activity.start(items) }
@@ -81,6 +97,7 @@ ActivityBase {
             width: puzzleArea.width
             visible: activity.mode == "sixteen"
             Repeater {
+                id: topArrowsRepeater
                 model: 4
                 SlideButton {
                     id: topButton
@@ -97,6 +114,7 @@ ActivityBase {
             width: puzzleArea.width
             visible: activity.mode == "sixteen"
             Repeater {
+                id: bottomArrowsRepeater
                 model: 4
                 SlideButton {
                     id: bottomButton
@@ -113,6 +131,7 @@ ActivityBase {
             height: puzzleArea.height
             visible: activity.mode == "sixteen"
             Repeater {
+                id: leftArrowsRepeater
                 model: 4
                 SlideButton {
                     id: leftButton
@@ -129,6 +148,7 @@ ActivityBase {
             height: puzzleArea.height
             visible: activity.mode == "sixteen"
             Repeater {
+                id: rightArrowsRepeater
                 model: 4
                 SlideButton {
                     id: rightButton
@@ -142,7 +162,7 @@ ActivityBase {
             id: blueFrame
             source: Activity.url + "blueframe.svg"
             sourceSize.width: Math.min(activityBackground.width,
-                                       activityBackground.height - bar.height) * 0.95 * (mode == "sixteen" ? 0.73 : 1)
+                                       activityBackground.height - bar.height) * (mode == "sixteen" ? 0.69 : 0.95)
             anchors.top: mode == "sixteen" ? topArrowsRow.bottom : undefined
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: mode == "fifteen" ? parent.verticalCenter : undefined

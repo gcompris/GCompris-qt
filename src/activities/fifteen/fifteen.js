@@ -5,6 +5,8 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
+ *   Johnny Jazeix <jazeix@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -15,6 +17,9 @@
 var url = "qrc:/gcompris/src/activities/fifteen/resource/"
 
 var items
+
+var rowButtonIndex = -1;
+var columnButtonIndex = -1;
 
 function start(items_) {
     items = items_
@@ -27,6 +32,8 @@ function stop() {
 
 function initLevel() {
     items.buttonsBlocked = false
+    resetKeyboardSixteen()
+
     // Create the initial array that holds the model data sorted
     var model = []
     for(var i = 1; i < 16; i++)
@@ -200,6 +207,234 @@ function processPressedKey(event) {
         items.flipSound.play()
     }
 }
+
+// Specific for sixteen mode keyboard controls
+
+function selectButton(repeater, buttonIndex) {
+    items.selectedRepeater = repeater;
+    items.selectedButton = items.selectedRepeater.itemAt(buttonIndex);
+}
+
+function resetKeyboardSixteen() {
+    items.selectedRepeater = null;
+    items.selectedButton = null;
+    rowButtonIndex = -1;
+    columnButtonIndex = -1;
+}
+
+function sixteenPressedKey(event) {
+    switch (event.key) {
+        /* Button selection */
+        case Qt.Key_Right:
+            if(items.selectedRepeater === null) {
+                columnButtonIndex = 0;
+                selectButton(items.rightArrowsRepeater, columnButtonIndex);
+            } else {
+                moveSelectionRight();
+            }
+            event.accepted = true;
+            break;
+        case Qt.Key_Left:
+            if(items.selectedRepeater === null) {
+                columnButtonIndex = 0;
+                selectButton(items.leftArrowsRepeater, columnButtonIndex);
+            } else {
+                moveSelectionLeft();
+            }
+            event.accepted = true;
+            break;
+        case Qt.Key_Up:
+            if(items.selectedRepeater === null) {
+                rowButtonIndex = 0;
+                selectButton(items.topArrowsRepeater, rowButtonIndex);
+            } else {
+                moveSelectionUp();
+            }
+            event.accepted = true;
+            break;
+        case Qt.Key_Down:
+            if(items.selectedRepeater === null) {
+                rowButtonIndex = 0;
+                selectButton(items.bottomArrowsRepeater, rowButtonIndex);
+            } else {
+                moveSelectionDown();
+            }
+            event.accepted = true;
+            break;
+        /* Selected button activation*/
+        case Qt.Key_Space:
+        case Qt.Key_Enter:
+        case Qt.Key_Return:
+            if(items.selectedButton != null) {
+                items.selectedButton.clicked();
+            }
+            event.accepted = true;
+            break;
+    }
+}
+
+function moveSelectionRight() {
+    switch (items.selectedRepeater) {
+        case items.rightArrowsRepeater:
+            selectButton(items.leftArrowsRepeater, columnButtonIndex);
+            break;
+        case items.leftArrowsRepeater:
+            if(columnButtonIndex < 2) {
+                selectButton(items.topArrowsRepeater, 0);
+            } else {
+                selectButton(items.bottomArrowsRepeater, 0);
+            }
+            rowButtonIndex = 0;
+            break;
+        case items.topArrowsRepeater:
+            rowButtonIndex += 1;
+            if(rowButtonIndex > 3) {
+                rowButtonIndex = 3;
+                if(columnButtonIndex == -1) {
+                    columnButtonIndex = 0;
+                }
+                selectButton(items.rightArrowsRepeater, columnButtonIndex);
+            } else {
+                selectButton(items.topArrowsRepeater, rowButtonIndex);
+            }
+            break;
+        case items.bottomArrowsRepeater:
+            rowButtonIndex += 1;
+            if(rowButtonIndex > 3) {
+                rowButtonIndex = 3;
+                if(columnButtonIndex == -1) {
+                    columnButtonIndex = 3;
+                }
+                selectButton(items.rightArrowsRepeater, columnButtonIndex);
+            } else {
+                selectButton(items.bottomArrowsRepeater, rowButtonIndex);
+            }
+            break;
+    }
+}
+
+function moveSelectionLeft() {
+    switch (items.selectedRepeater) {
+        case items.leftArrowsRepeater:
+            selectButton(items.rightArrowsRepeater, columnButtonIndex);
+            break;
+        case items.rightArrowsRepeater:
+            if(columnButtonIndex < 2) {
+                selectButton(items.topArrowsRepeater, 3);
+            } else {
+                selectButton(items.bottomArrowsRepeater, 3);
+            }
+            rowButtonIndex = 3;
+            break;
+        case items.topArrowsRepeater:
+            rowButtonIndex -= 1;
+            if(rowButtonIndex < 0) {
+                rowButtonIndex = 0;
+                if(columnButtonIndex == -1) {
+                    columnButtonIndex = 0;
+                }
+                selectButton(items.leftArrowsRepeater, columnButtonIndex);
+            } else {
+                selectButton(items.topArrowsRepeater, rowButtonIndex);
+            }
+            break;
+        case items.bottomArrowsRepeater:
+            rowButtonIndex -= 1;
+            if(rowButtonIndex < 0) {
+                rowButtonIndex = 0;
+                if(columnButtonIndex == -1) {
+                    columnButtonIndex = 3;
+                }
+                selectButton(items.leftArrowsRepeater, columnButtonIndex);
+            } else {
+                selectButton(items.bottomArrowsRepeater, rowButtonIndex);
+            }
+            break;
+    }
+}
+
+function moveSelectionUp() {
+    switch (items.selectedRepeater) {
+        case items.topArrowsRepeater:
+            selectButton(items.bottomArrowsRepeater, rowButtonIndex);
+            break;
+        case items.bottomArrowsRepeater:
+            if(columnButtonIndex < 2) {
+                selectButton(items.leftArrowsRepeater, 3);
+            } else {
+                selectButton(items.rightArrowsRepeater, 3);
+            }
+            columnButtonIndex = 3;
+            break;
+        case items.leftArrowsRepeater:
+            columnButtonIndex -= 1;
+            if(columnButtonIndex < 0) {
+                columnButtonIndex = 0;
+                if(rowButtonIndex == -1) {
+                    rowButtonIndex = 0;
+                }
+                selectButton(items.topArrowsRepeater, rowButtonIndex);
+            } else {
+                selectButton(items.leftArrowsRepeater, columnButtonIndex);
+            }
+            break;
+        case items.rightArrowsRepeater:
+            columnButtonIndex -= 1;
+            if(columnButtonIndex < 0) {
+                columnButtonIndex = 0;
+                if(rowButtonIndex == -1) {
+                    rowButtonIndex = 3;
+                }
+                selectButton(items.topArrowsRepeater, rowButtonIndex);
+            } else {
+                selectButton(items.rightArrowsRepeater, columnButtonIndex);
+            }
+            break;
+    }
+}
+
+function moveSelectionDown() {
+    switch (items.selectedRepeater) {
+        case items.bottomArrowsRepeater:
+            selectButton(items.topArrowsRepeater, rowButtonIndex);
+            break;
+        case items.topArrowsRepeater:
+            if(columnButtonIndex < 2) {
+                selectButton(items.leftArrowsRepeater, 0);
+            } else {
+                selectButton(items.rightArrowsRepeater, 0);
+            }
+            columnButtonIndex = 0;
+            break;
+        case items.leftArrowsRepeater:
+            columnButtonIndex += 1;
+            if(columnButtonIndex > 3) {
+                columnButtonIndex = 3;
+                if(rowButtonIndex == -1) {
+                    rowButtonIndex = 0;
+                }
+                selectButton(items.bottomArrowsRepeater, rowButtonIndex);
+            } else {
+                selectButton(items.leftArrowsRepeater, columnButtonIndex);
+            }
+            break;
+        case items.rightArrowsRepeater:
+            columnButtonIndex += 1;
+            if(columnButtonIndex > 3) {
+                columnButtonIndex = 3;
+                if(rowButtonIndex == -1) {
+                    rowButtonIndex = 3;
+                }
+                selectButton(items.bottomArrowsRepeater, rowButtonIndex);
+            } else {
+                selectButton(items.rightArrowsRepeater, columnButtonIndex);
+            }
+            break;
+    }
+}
+
+// end of specific for sixteen mode keyboard controls
+
 
 function leftAction(index) {
     var indices = []
