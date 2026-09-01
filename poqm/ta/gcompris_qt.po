@@ -14841,7 +14841,7 @@ msgstr "சைப்பிரசு"
 #: activities/geography/resource/board/board9_0.qml:39
 msgctxt "board9_0|"
 msgid "Asia|Georgia"
-msgstr "ஆசியா|ஜார்ஜியா"
+msgstr "ஜார்ஜியா"
 
 #: activities/geography/resource/board/board9_0.qml:46
 msgctxt "board9_0|"

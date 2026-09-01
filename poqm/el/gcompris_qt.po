@@ -14888,7 +14888,7 @@ msgstr "Κύπτος"
 #: activities/geography/resource/board/board9_0.qml:39
 msgctxt "board9_0|"
 msgid "Asia|Georgia"
-msgstr "Ασία|Γεωργία"
+msgstr "Γεωργία"
 
 #: activities/geography/resource/board/board9_0.qml:46
 msgctxt "board9_0|"

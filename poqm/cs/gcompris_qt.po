@@ -14483,7 +14483,7 @@ msgstr "Kypr"
 #: activities/geography/resource/board/board9_0.qml:39
 msgctxt "board9_0|"
 msgid "Asia|Georgia"
-msgstr "Asie|Gruzie"
+msgstr "Gruzie"
 
 #: activities/geography/resource/board/board9_0.qml:46
 msgctxt "board9_0|"
