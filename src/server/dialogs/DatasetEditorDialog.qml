@@ -15,6 +15,7 @@
 import QtQuick
 
 import core 1.0
+import "qrc:/gcompris/src/core/core.js" as Core
 import "qrc:/gcompris/src/server/server.js" as Server
 import QtQuick.Controls.Basic
 
@@ -148,7 +149,7 @@ Popup {
                         js += indent.repeat(depth + 2) + `"${key}": ` +  listModelToJson(protoStack, obj[key], depth + 1)
                     } else if (prototype.type === "number_array") {
                         // We convert all string elements to numbers
-                        var result = JSON.stringify(JSON.parse(obj[key]).map(Number));
+                        var result = JSON.stringify(JSON.parse(obj[key]).map(x => Core.convertNumberFromLocaleString(x, Master.locale)));
                         js += indent.repeat(depth + 2) + `"${key}": ` + result
                     } else if (prototype.type === "string_array") {
                         js += indent.repeat(depth + 2) + `"${key}": ` + obj[key] // string_array are deserialized
@@ -182,7 +183,7 @@ Popup {
                 if (prototype.type === "choice") {
                     obj[prototype.name] = data[i][prototype.name]
                 } else if (prototype.type === "number_array") {
-                    var result = JSON.parse(`[${data[i][prototype.name]}]`).map(String);
+                    var result = JSON.parse(`[${data[i][prototype.name]}]`).map((x => Core.convertNumberToLocaleString(x, Master.locale, 'f', -1)));
                     obj[prototype.name] = JSON.stringify(result)                           // string_array are serialized
                 } else if (prototype.type === "string_array") {
                     obj[prototype.name] = JSON.stringify(data[i][prototype.name])                           // string_array are serialized

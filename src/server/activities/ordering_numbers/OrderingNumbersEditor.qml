@@ -11,6 +11,7 @@ import QtQuick
 import QtQuick.Controls.Basic
 import core 1.0 as GCompris
 
+import "qrc:/gcompris/src/core/core.js" as Core
 
 import "../../singletons"
 import "../../components"
@@ -31,7 +32,7 @@ DatasetEditorBase {
     property ListModel mainPrototype: ListModel {
         property bool multiple: true
         // inserted dynamically as the label and def changes depending on the target activity
-        ListElement { name: "values";    label: qsTr("Numbers to sort"); type: "string_array"; def: '["1", "2", "3"]' }
+        ListElement { name: "values";    label: qsTr("Numbers to sort"); type: "number_array"; def: '["1", "2", "3"]' }
 
         Component.onCompleted: {
             append({
@@ -68,15 +69,6 @@ DatasetEditorBase {
         }
     }
 
-    function fromDecimalLocaleNumber(decimalNumberString) {
-        var locale = GCompris.ApplicationSettings.locale;
-        if(locale === "system") {
-            locale = Qt.locale().name === "C" ? "en_US" : Qt.locale().name;
-        }
-        var decimalValue = Number.fromLocaleString(Qt.locale(locale), decimalNumberString);
-        return decimalValue;
-    }
-
     function validateDataset() {
         var isValid = true;
         var globalError = "";
@@ -103,12 +95,12 @@ DatasetEditorBase {
             var numbersAscendingOk = true
             if(numbersToSort.length < 2) {
                 atLeastTwoNumbers = false;
-            } else {
+            }
+            else {
                 var precedentArrayNumber
                 for(var i = 0; i < numbersToSort.length; i++) {
                     var arrayValue = numbersToSort[i];
-                    var arrayNumber = fromDecimalLocaleNumber(arrayValue);
-                    console.log("arrayNumber: " + arrayNumber)
+                    var arrayNumber = Core.convertNumberFromLocaleString(arrayValue, Master.locale);
                     if(isNaN(arrayNumber)) { // || !Number.isInteger(arrayNumber)) {
                         numbersAreAllInteger = false;
                     }
@@ -116,10 +108,12 @@ DatasetEditorBase {
                         numberIsPositiveOrNull = false;
                     }
                     // Always supply numbers in ascending order (e.g., 1, 2, 3); the sorting direction parameter handles reversing to descending (3, 2, 1).
-                    if (i>0) {
-                        if (arrayNumber < precedentArrayNumber) numbersAscendingOk = false
+                    if(i > 0) {
+                        if (arrayNumber <= precedentArrayNumber) {
+                            numbersAscendingOk = false
+                        }
                     }
-                    precedentArrayNumber = fromDecimalLocaleNumber(numbersToSort[i])
+                    precedentArrayNumber = arrayNumber
                 }
             }
             if(!atLeastTwoNumbers) {

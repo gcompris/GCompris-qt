@@ -307,13 +307,44 @@ function resolveLocale(localeToSet) {
     }
 }
 
+function convertNumberFromLocaleString(decimalNumber, locale = GCompris.ApplicationInfo.localeShort) {
+    if (locale === "system") {
+        locale = Qt.locale().name === "C" ? "en_US" : Qt.locale().name;
+    }
+    try {
+        // We first try to use the separator for the current locale
+        return Number.fromLocaleString(Qt.locale(locale), decimalNumber)
+    }
+    catch (error) {
+        // We fallback to en_US by default
+        return Number.fromLocaleString(Qt.locale("en_US"), decimalNumber)
+    }
+}
+
 function convertNumberToLocaleString(decimalNumber, locale = GCompris.ApplicationInfo.localeShort, format = 'f', precision = 0) {
     // Special case for Arabic, we still want to use Arabic numerals, not Eastern Arabic numerals
     // For now, we consider dot separated numbers for Arabic
     var localeToConvertTo = (locale.startsWith("ar") ? "he" : locale);
     var qtLocale = Qt.locale(localeToConvertTo);
     qtLocale.numberOptions = Qml.Locale.OmitGroupSeparator;
-    return decimalNumber.toLocaleString(qtLocale, format, precision);
+    var returnValue;
+    if (precision == -1) {
+        // We set up to 10 digits after the separator
+        returnValue = decimalNumber.toLocaleString(qtLocale, format, 10);
+        // We get the "0" character from the locale. For now, it's always 0
+        // but if one day we support other numerals, it won't be.
+        var zeroFromLocale = Number(0).toLocaleString(qtLocale, format, 0);
+        while (returnValue.charAt(returnValue.length - 1) === zeroFromLocale) {
+            returnValue = returnValue.slice(0, -1)
+        }
+        if (returnValue.charAt(returnValue.length - 1) === qtLocale.decimalPoint) {
+            returnValue = returnValue.slice(0, -1)
+        }
+    }
+    else {
+        returnValue = decimalNumber.toLocaleString(qtLocale, format, precision);
+    }
+    return returnValue;
 }
 
 function convertNumberToLocaleCurrencyString(number, locale) {
