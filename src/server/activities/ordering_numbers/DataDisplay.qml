@@ -1,9 +1,9 @@
 /* GCompris - DataDisplay.qml
  *
- * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
+ * SPDX-FileCopyrightText: 2024 Emmaneul Charruau <echarruau@gmail.com>
  *
  * Authors:
- *   Bruno Anselme <be.root@free.fr>
+ *   Emmanuel Charruau <echarruau@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */

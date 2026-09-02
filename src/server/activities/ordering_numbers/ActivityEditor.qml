@@ -1,6 +1,6 @@
 /* GCompris - ActivityEditor.qml
  *
- * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
+ * SPDX-FileCopyrightText: 2025 Emmanuel Charruau <echarruau@gmail.com>
  *
  * Authors:
  *   Emmanuel Charruau <echarruau@gmail.com>

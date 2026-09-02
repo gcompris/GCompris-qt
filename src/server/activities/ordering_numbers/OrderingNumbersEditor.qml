@@ -9,6 +9,8 @@
  */
 import QtQuick
 import QtQuick.Controls.Basic
+import core 1.0 as GCompris
+
 
 import "../../singletons"
 import "../../components"
@@ -29,7 +31,7 @@ DatasetEditorBase {
     property ListModel mainPrototype: ListModel {
         property bool multiple: true
         // inserted dynamically as the label and def changes depending on the target activity
-        ListElement { name: "values";    label: qsTr("Numbers to sort"); type: "number_array"; def: '["1", "2", "3"]' }
+        ListElement { name: "values";    label: qsTr("Numbers to sort"); type: "string_array"; def: '["1", "2", "3"]' }
 
         Component.onCompleted: {
             append({
@@ -38,11 +40,9 @@ DatasetEditorBase {
                 "type": "choice",
                 "values": editor.sortModeChoices
             })
-
             mainModel = datasetEditor.jsonToListModel(prototypeStack, JSON.parse(textActivityData));
-
         }
-   }
+    }
 
 
     EditorBox {
@@ -66,6 +66,15 @@ DatasetEditorBase {
                 FieldEdit { name: "values" }
             }
         }
+    }
+
+    function fromDecimalLocaleNumber(decimalNumberString) {
+        var locale = GCompris.ApplicationSettings.locale;
+        if(locale === "system") {
+            locale = Qt.locale().name === "C" ? "en_US" : Qt.locale().name;
+        }
+        var decimalValue = Number.fromLocaleString(Qt.locale(locale), decimalNumberString);
+        return decimalValue;
     }
 
     function validateDataset() {
@@ -98,8 +107,9 @@ DatasetEditorBase {
                 var precedentArrayNumber
                 for(var i = 0; i < numbersToSort.length; i++) {
                     var arrayValue = numbersToSort[i];
-                    var arrayNumber = parseFloat(arrayValue);
-                    if(isNaN(arrayValue) || !Number.isInteger(arrayNumber)) {
+                    var arrayNumber = fromDecimalLocaleNumber(arrayValue);
+                    console.log("arrayNumber: " + arrayNumber)
+                    if(isNaN(arrayNumber)) { // || !Number.isInteger(arrayNumber)) {
                         numbersAreAllInteger = false;
                     }
                     if(arrayNumber < 0) {
@@ -109,7 +119,7 @@ DatasetEditorBase {
                     if (i>0) {
                         if (arrayNumber < precedentArrayNumber) numbersAscendingOk = false
                     }
-                    precedentArrayNumber = parseFloat(numbersToSort[i])
+                    precedentArrayNumber = fromDecimalLocaleNumber(numbersToSort[i])
                 }
             }
             if(!atLeastTwoNumbers) {
@@ -125,8 +135,6 @@ DatasetEditorBase {
                 isValid = false;
                 textError = textError + ("<li>") + qsTr('Level %1: always supply numbers in ascending order (e.g., 1, 3, 6); the sorting direction parameter handles reversing to descending (6, 3, 1).').arg(datasetId+1) + ("</li>");
             }
-
-
         }
 
         if(!isValid) {
