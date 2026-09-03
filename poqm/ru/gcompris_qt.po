@@ -24,7 +24,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-02-11 13:56+0300\n"
+"PO-Revision-Date: 2026-09-02 10:31+0300\n"
 "Last-Translator: Olesya Gerasimenko <goa@altlinux.org>\n"
 "Language-Team: Basealt Translation Team\n"
 "Language: ru\n"
@@ -28702,7 +28702,7 @@ msgstr "Запустить GCompris в оконном режиме."
 #: core/main.cpp:107
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
-msgstr "Запустить GCompris со включённым звуком."
+msgstr "Запустить GCompris с включённым звуком."
 
 #: core/main.cpp:111
 msgctxt "QObject|"
