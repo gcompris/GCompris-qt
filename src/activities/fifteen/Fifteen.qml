@@ -76,12 +76,16 @@ ActivityBase {
             property alias rightArrowsRepeater: rightArrowsRepeater
             property SlideButton selectedButton: null
             property Repeater selectedRepeater: null
+
+            property alias sixteenAnimGrid: sixteenAnimGrid
+            property alias sixteenAnimModel: sixteenAnimModel
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
         
         property int pieceSize: Math.round(blueFrame.width * 0.222)
+        property int fullImageSize: pieceSize * 4
 
         property int buttonSize: pieceSize
 
@@ -187,6 +191,7 @@ ActivityBase {
                 NumberAnimation {
                     properties: "x, y"
                     easing.type: Easing.InOutQuad
+                    duration: 250
                 }
             }
 
@@ -202,7 +207,7 @@ ActivityBase {
                     Image {
                         id: image
                         source: value ? items.scene : ""
-                        sourceSize.width: pieceSize * 4
+                        sourceSize.width: fullImageSize
                         fillMode: Image.Pad
                         transform: Translate {
                             x: - pieceSize * ((value - 1) % 4)
@@ -230,6 +235,114 @@ ActivityBase {
                         shadowHorizontalOffset: 3
                         shadowVerticalOffset: 3
                         shadowOpacity: 0.5
+                    }
+                }
+            }
+        }
+
+        Item {
+            id: sixteenAnimOverlay
+            visible: activity.mode === "sixteen"
+            anchors.fill: puzzleArea
+            clip: true
+            z: -2
+
+            Grid {
+                id: sixteenAnimGrid
+                z: -1
+                columns: 6
+                rows: 1
+                clip: true
+                x: 0
+                y: 0
+
+                ListModel {
+                    id: sixteenAnimModel
+                }
+
+                function moveLine(xIndex, yIndex, xTarget, yTarget) {
+                    sixteenAnimGrid.x = pieceSize * xIndex
+                    sixteenAnimGrid.y = pieceSize * yIndex
+                    sixteenAnimOverlay.z = 0
+                    if(xTarget != 0) {
+                        sixteenAnimGrid.columns = 6;
+                        sixteenAnimGrid.rows = 1;
+                    } else {
+                        sixteenAnimGrid.rows = 6;
+                        sixteenAnimGrid.columns = 1;
+                    }
+                    animLine.targetX = sixteenAnimGrid.x + (xTarget * pieceSize)
+                    animLine.targetY = sixteenAnimGrid.y + (yTarget * pieceSize)
+                    animLine.start()
+                }
+
+                SequentialAnimation {
+                    id: animLine
+                    property int targetX: 0
+                    property int targetY: 0
+
+                    ParallelAnimation {
+                        NumberAnimation {
+                            target: sixteenAnimGrid
+                            properties: "x"
+                            to: animLine.targetX
+                            easing.type: Easing.InOutQuad
+                            duration: 250
+                        }
+                        NumberAnimation {
+                            target: sixteenAnimGrid
+                            properties: "y"
+                            to: animLine.targetY
+                            easing.type: Easing.InOutQuad
+                            duration: 250
+                        }
+                    }
+                    ScriptAction {
+                        script: {
+                            sixteenAnimOverlay.z = -2;
+                            items.buttonsBlocked = false;
+                        }
+                    }
+                }
+
+                Repeater {
+                    model: sixteenAnimModel
+                    delegate: Item {
+                        width: pieceSize
+                        height: pieceSize
+                        clip: true
+
+                        Image {
+                            source: items.scene
+                            sourceSize.width: fullImageSize
+                            fillMode: Image.Pad
+                            transform: Translate {
+                                x: - pieceSize * ((value - 1) % 4)
+                                y: - pieceSize * Math.floor((value - 1) / 4)
+                            }
+                        }
+
+                        GCText {
+                            id: text2
+                            anchors.horizontalCenter: parent.horizontalCenter
+                            anchors.verticalCenter: parent.verticalCenter
+                            text: value && bar.level % 2 == 1 ? value : ""
+                            fontSize: mediumSize
+                            color: "#ffe9f0fb"
+                            style: Text.Outline
+                            styleColor: "#ff1c4788"
+                        }
+
+                        MultiEffect {
+                            anchors.fill: text2
+                            source: text2
+                            shadowEnabled: true
+                            shadowBlur: 1.0
+                            blurMax: 2
+                            shadowHorizontalOffset: 3
+                            shadowVerticalOffset: 3
+                            shadowOpacity: 0.5
+                        }
                     }
                 }
             }
@@ -289,5 +402,4 @@ ActivityBase {
             Component.onCompleted: win.connect(activity.nextLevel)
         }
     }
-
 }

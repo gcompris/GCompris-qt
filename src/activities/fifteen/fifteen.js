@@ -32,7 +32,6 @@ function stop() {
 }
 
 function initLevel() {
-    items.buttonsBlocked = false
     resetKeyboardSixteen()
 
     // Create the initial array that holds the model data sorted
@@ -53,12 +52,19 @@ function initLevel() {
         items.model.append({"value": model[i]})
     }
     if(items.mode == "sixteen") {
+        // init sixteenAnimModel
+        items.sixteenAnimModel.clear()
+        for(i = 0; i < 6; i++) {
+            items.sixteenAnimModel.append({"value": 0})
+        }
+
         slide(items.currentLevel + 2)
         initialOrder = [];
         for(i = 0; i < 16; i++) {
             initialOrder.push(items.model.get(i).value)
         }
     }
+    items.buttonsBlocked = false
 }
 
 function reloadLevel() {
@@ -120,16 +126,16 @@ function slide(numberOfSlideMoves) {
         var randomRowOrCol = Math.floor(Math.random() * 4)
         switch (randomDirection) {
         case 0:
-            leftAction(randomRowOrCol)
+            leftAction(randomRowOrCol, false)
             break;
         case 1:
-            rightAction(randomRowOrCol)
+            rightAction(randomRowOrCol, false)
             break;
         case 2:
-            topAction(randomRowOrCol)
+            topAction(randomRowOrCol, false)
             break;
         case 3:
-            bottomAction(randomRowOrCol)
+            bottomAction(randomRowOrCol, false)
             break;
         }
     } while(++count < numberOfSlideMoves || isCorrectAnswer())
@@ -447,51 +453,98 @@ function moveSelectionDown() {
 
 // end of specific for sixteen mode keyboard controls
 
+function prepareAnimGrid(values) {
+    for (var i = 0; i < 4; i++) {
+        items.sixteenAnimModel.setProperty(i+1, "value", values[i]);
+        if(i === 0) {
+            items.sixteenAnimModel.setProperty(0, "value", values[3]);
 
-function leftAction(index) {
+        } else if(i === 3) {
+            items.sixteenAnimModel.setProperty(5, "value", values[0]);
+        }
+    }
+}
+
+function leftAction(index, animate) {
+    items.buttonsBlocked = true;
     var indices = []
     var values = []
     for (var i = 0; i < 4; ++ i) {
         indices.push(i + index * 4);
         values.push(items.model.get(i + index * 4).value);
     }
-    for (var i = 0; i < 4; ++ i) {
+
+    // visual animated move
+    if(animate) {
+        prepareAnimGrid(values)
+        items.sixteenAnimGrid.moveLine(-1, index, -1, 0)
+    }
+
+    // actual move
+    for (i = 0; i < 4; ++ i) {
         items.model.setProperty(indices[i], "value", values[(i+1)%4])
     }
 }
 
-function rightAction(index) {
+function rightAction(index, animate) {
+    items.buttonsBlocked = true;
     var indices = []
     var values = []
     for (var i = 0; i < 4; ++ i) {
         indices.push(i + index * 4);
         values.push(items.model.get(i + index * 4).value);
     }
-    for (var i = 0; i < 4; ++ i) {
+
+    // visual animated move
+    if(animate) {
+        prepareAnimGrid(values)
+        items.sixteenAnimGrid.moveLine(-1, index, 1, 0)
+    }
+
+    // actual change
+    for (i = 0; i < 4; ++ i) {
         items.model.setProperty(indices[i], "value", values[(i-1+4)%4])
     }
 }
 
-function topAction(index) {
+function topAction(index, animate) {
+    items.buttonsBlocked = true;
     var indices = []
     var values = []
     for (var i = 0; i < 4; ++ i) {
         indices.push(i * 4 + index);
         values.push(items.model.get(i * 4 + index).value);
     }
-    for (var i = 0; i < 4; ++ i) {
+
+    // visual animated move
+    if(animate) {
+        prepareAnimGrid(values)
+        items.sixteenAnimGrid.moveLine(index, -1, 0, -1)
+    }
+
+    // actual change
+    for (i = 0; i < 4; ++ i) {
         items.model.setProperty(indices[i], "value", values[(i+1)%4])
     }
 }
 
-function bottomAction(index) {
+function bottomAction(index, animate) {
+    items.buttonsBlocked = true;
     var indices = []
     var values = []
     for (var i = 0; i < 4; ++ i) {
         indices.push(i * 4 + index);
         values.push(items.model.get(i * 4 + index).value);
     }
-    for (var i = 0; i < 4; ++ i) {
+
+    // visual animated move
+    if(animate) {
+        prepareAnimGrid(values)
+        items.sixteenAnimGrid.moveLine(index, -1, 0, 1)
+    }
+
+    // actual change
+    for (i = 0; i < 4; ++ i) {
         items.model.setProperty(indices[i], "value", values[(i-1+4)%4])
     }
 }

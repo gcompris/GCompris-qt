@@ -58,16 +58,16 @@ Item {
     onClicked: {
         switch (slideButton.direction) {
             case slideButton.leftDir:
-                Activity.leftAction(slideButton.index);
+                Activity.leftAction(slideButton.index, true);
                 break;
             case slideButton.rightDir:
-                Activity.rightAction(slideButton.index);
+                Activity.rightAction(slideButton.index, true);
                 break;
             case slideButton.bottomDir:
-                Activity.bottomAction(slideButton.index);
+                Activity.bottomAction(slideButton.index, true);
                 break;
             case slideButton.topDir:
-                Activity.topAction(slideButton.index);
+                Activity.topAction(slideButton.index, true);
                 break;
         }
         /* Check if success */
