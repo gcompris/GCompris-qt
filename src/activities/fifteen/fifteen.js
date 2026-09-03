@@ -20,6 +20,7 @@ var items
 
 var rowButtonIndex = -1;
 var columnButtonIndex = -1;
+var initialOrder = [];
 
 function start(items_) {
     items = items_
@@ -53,6 +54,17 @@ function initLevel() {
     }
     if(items.mode == "sixteen") {
         slide(items.currentLevel + 2)
+        initialOrder = [];
+        for(i = 0; i < 16; i++) {
+            initialOrder.push(items.model.get(i).value)
+        }
+    }
+}
+
+function reloadLevel() {
+    items.model.clear();
+    for(var i = 0; i < 16; i++) {
+        items.model.append({"value": initialOrder[i]});
     }
 }
 

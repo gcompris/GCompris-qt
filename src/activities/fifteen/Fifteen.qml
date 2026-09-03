@@ -272,13 +272,16 @@ ActivityBase {
         Bar {
             id: bar
             level: items.currentLevel + 1
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: activity.mode === "sixteen" ?
+                (help | home | level | reload) :
+                (help | home | level) }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onReloadClicked: Activity.reloadLevel()
         }
 
         Bonus {
