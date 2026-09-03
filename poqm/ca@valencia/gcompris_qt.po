@@ -4,19 +4,19 @@
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# SPDX-FileCopyrightText: 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Antoni Bella Pérez <antonibella5@yahoo.com>
+# SPDX-FileCopyrightText: 2015-2024, 2026 Antoni Bella Pérez <antonibella5@yahoo.com>
 # SPDX-FileCopyrightText: 2025 Anna Miró <ame.cic98@gmail.com>
-# SPDX-FileCopyrightText: 2003, 2004, 2005, 2006, 2007 Xavier A. Conde Rueda <xavi.conde@gmail.com>
-# SPDX-FileCopyrightText: 2007, 2008 Francesc Vilches Batet <francesc-vilches@gmail.com>
+# SPDX-FileCopyrightText: 2003-2007 Xavier A. Conde Rueda <xavi.conde@gmail.com>
+# SPDX-FileCopyrightText: 2007-2008 Francesc Vilches Batet <francesc-vilches@gmail.com>
 # SPDX-FileCopyrightText: 2010 Pau Iranzo <paugnu@gmail.com>
-# SPDX-FileCopyrightText: 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026 Josep M. Ferrer <txemaq@gmail.com>
+# SPDX-FileCopyrightText: 2015-2026 Josep M. Ferrer <txemaq@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2026-06-20 10:12+0200\n"
-"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
+"PO-Revision-Date: 2026-09-02 21:08+0200\n"
+"Last-Translator: Antoni Bella Pérez <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Lokalize 25.04.0\n"
+"X-Generator: Lokalize 25.12.3\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -29024,7 +29024,7 @@ msgid ""
 "New dataset containing loops operations for programming maze, and make "
 "tutorial images translated"
 msgstr ""
-"Conjunt de dades nous que conté operacions de bucle per a programar el "
+"Conjunt de dades nou que conté operacions de bucle per a programar el "
 "laberint i fer imatges de guia d'aprenentatge traduïdes"
 
 #: core/ChangeLog.qml:144
