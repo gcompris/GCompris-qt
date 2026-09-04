@@ -3306,7 +3306,7 @@ msgstr ""
 #: server/views/SettingsView.qml:218
 msgctxt "SettingsView|"
 msgid "Netmask"
-msgstr ""
+msgstr "网络掩码"
 
 #: server/views/SettingsView.qml:223
 msgctxt "SettingsView|"
