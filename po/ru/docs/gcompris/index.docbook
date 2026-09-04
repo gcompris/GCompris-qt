@@ -1,0 +1,689 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       Git -->
+  <!ENTITY gcompris "<application
+>GCompris</application
+>">
+  <!ENTITY kappname "&gcompris;"
+><!-- replace kmyapplication here
+                                            do *not* replace kappname-->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Russian "INCLUDE"
+> <!-- ONLY If you are writing non-English
+                                     original documentation, change
+                                     the language here -->
+
+  <!-- Do not define any other entities; instead, use the entities
+       from entities/general.entities and en/user.entities. -->
+]>
+<book id="gcompris" lang="&language;">
+
+<bookinfo>
+<title
+>Руководство по администрированию &gcompris;</title>
+
+<authorgroup>
+<author>
+<personname
+><firstname
+>Johnny</firstname
+> <surname
+>Jazeix</surname
+> </personname>
+</author>
+<author>
+<personname
+><firstname
+>Timothée</firstname
+> <surname
+>Giet</surname
+> </personname>
+</author>
+
+<othercredit role="developer">
+<othername
+>Команда &gcompris;</othername>
+<contrib
+>Разработчики</contrib>
+</othercredit
+> 
+
+<othercredit role="translator"
+><firstname
+>Олеся</firstname
+><surname
+>Герасименко</surname
+><affiliation
+><address
+><email
+>goa@altlinux.org</email
+></address
+></affiliation
+><contrib
+>Перевод на русский язык</contrib
+></othercredit
+> 
+</authorgroup>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<!-- Date of the documentation
+Don't forget to include this last date.
+Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
+-->
+<date
+>11 марта 2026 г.</date>
+
+<!--version information of the application and kde this documentation is valid for.
+for example 'xx.yy.zz'
+-->
+<releaseinfo
+>26.1</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>&gcompris; — обучающая программа с различными видами упражнений. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>образование</keyword>
+<keyword
+>дети</keyword>
+<keyword
+>игры</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="administration-handbook">
+<title
+>Руководство по администрированию</title>
+
+<sect1 id="introduction">
+<title
+>Введение</title>
+<para
+>&gcompris; — большая коллекция обучающих игр и упражнений.</para>
+<para
+>В программе содержится множество упражнений из различных предметных областей. Тематика включает чтение и набор текста, арифметику, географию, гуманитарные науки и многое другое. Программу можно использовать как дома, так и в школе.</para>
+<para
+>Задача &gcompris; — предоставить упражнения, где обучение ведётся в игровой форме.</para>
+<para
+>&gcompris; — часть проекта &kde;, на программу распространяются условия <ulink url="https://www.gnu.org/licenses/agpl-3.0.html"
+>лицензии AGPLv3</ulink
+>. Весь код (за исключением движка для упражнения на аналоговую электронику) предоставляется на условиях <ulink url="https://www.gnu.org/licenses/gpl.html"
+>лицензии GPLv3</ulink
+>.</para>
+<para
+>Программу можно установить в следующих операционных системах: &GNU;/&Linux;, &BSD;, &macOS;, &Windows;, Android. Для обеспечения работы программы необходима видеокарта с поддержкой <emphasis
+>OpenGL 2.1</emphasis
+> или выше. Обязательна 32-битная глубина цвета.</para>
+</sect1>
+
+<sect1 id="installation">
+<title
+>Установка</title>
+<para
+>Программное обеспечение предоставляется в нескольких формах; выберите подходящую.</para>
+<itemizedlist>
+<listitem
+><para
+>&GNU;/&Linux;: используйте пакеты из дистрибутива &GNU;/&Linux;. Если в используемом дистрибутиве нет &gcompris;, обратитесь к его распространителю с запросом на включение &gcompris; в состав дистрибутива.</para
+></listitem>
+<listitem
+><para
+>&Windows;: используйте классический установщик для &Windows; или установите программу через Microsoft Store.</para
+></listitem>
+<listitem
+><para
+>&macOS;: используйте классический установщик.</para
+></listitem>
+<listitem
+><para
+>Android: воспользуйтесь системой распространения приложений F-Droid или Google Play. Также доступен файл APK.</para
+></listitem>
+</itemizedlist>
+</sect1>
+
+<sect1 id="user-interface">
+<title
+>Интерфейс пользователя</title>
+<para
+>Интерфейс пользователя разработан таким образом, чтобы маленьким детям было удобно пользоваться программой. Управление &gcompris; осуществляется с помощью мыши. В большинстве упражнений также доступна навигация с помощью клавиатуры.</para>
+
+<sect2 id="main-window">
+<title
+>Главное окно</title>
+<para
+>При запуске программы будет показан графический интерфейс со списком упражнений и расположенной в нижней части окна панелью управления.</para>
+<screenshot>
+<screeninfo
+>Главное окно &gcompris;</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="gcompris-main-menu.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Главное окно &gcompris;</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+
+<para
+>Каждому значку соответствует упражнение. Значки поменьше предоставляют дополнительную информацию об упражнении. При щелчке по значку выполняется переход к упражнению или в меню упражнений. Упражнения подразделяются на 8 категорий; они находятся в верхней или левой (при портретной ориентации) части окна. Например, есть раздел с настольными играми (такими, как шахматы, крестики-нолики, четыре в ряд).</para>
+<para
+>В некоторых категориях есть подкатегории, что позволяет лучше фильтровать упражнения. Для математических упражнений предусмотрены три подкатегории: счёт, арифметика, величины и меры.</para>
+<para
+>Звёзды обозначают возрастную группу, для которой предназначена игра:</para
+> 
+<itemizedlist>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="difficulty1.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
+></inlinemediaobject
+>1, 2 или 3 жёлтых звезды — для детей от 2 до 6 лет.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="difficulty4.png" format="PNG" width="2em" depth="2em" scalefit="1"/></imageobject
+></inlinemediaobject
+>1, 2 или 3 красных звезды — для детей старше 6 лет.</para
+></listitem
+> 
+</itemizedlist>
+
+<para
+>В нижней части окна расположена панель управления &gcompris;. На ней могут находиться следующие значки (их наличие зависит от конкретного упражнения):</para>
+<itemizedlist>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_home.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Домой — выйти из текущего упражнения, вернуться в предыдущее меню.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_ok.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> «OK» — проверить, подтвердить ответ. В некоторых упражнениях завершение их выполнения не обнаруживается автоматически. В таких случаях требуется щёлкнуть по этому значку. Также можно воспользоваться кнопкой «Ввод» на клавиатуре.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_hint.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Лампочка — показать подсказку для упражнения, чтобы подвести к правильному ответу.</para
+></listitem>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_previous.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject>
+<inlinemediaobject
+><imageobject
+><imagedata fileref="bar_next.png" format="PNG" width="2.5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Стрелки — показан текущий уровень. Щёлкните по одной из стрелок для выбора другого уровня. Обычно в упражнениях доступны несколько уровней (их количество зависит от конкретного упражнения). В &gcompris; не требуется завершать прохождение одного уровня для перехода к другому.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_repeat.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Губы — &gcompris; повторит вопрос.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_help.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Знак вопроса — показать диалог справки. Иногда упражнение бывает настолько сложным, что области описания не хватает. Эта функция позволяет получить дополнительные сведения.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Гаечный ключ — меню настройки. Конфигурация сохраняется в хранилище (папке) пользователя как файл с именем <filename
+>.config/gcompris/gcompris-qt.conf</filename
+>. Этот текстовый файл можно редактировать вручную.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_activity_config.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Пункт списка — показать меню настройки упражнения. В этом меню могут присутствовать две вкладки. На первой, «Набор данных», можно выбирать уровни (в зависимости от цели). На второй, «Свойства», можно обновлять конфигурацию упражнения, если соответствующие параметры доступны.</para
+></listitem>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_about.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Заглавная буква «G» — окно со сведениями о &gcompris;, где представлены основные участники проекта и версия программы.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_exit.png" format="PNG" width="5em" depth="5em" scalefit="1"/></imageobject
+></inlinemediaobject
+> Питание — выйти из &gcompris;. Также можно воспользоваться комбинацией клавиш <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+>.</para
+></listitem
+> 
+</itemizedlist>
+</sect2>
+
+<sect2 id="kiosk-mode">
+<title
+>Режим киоска</title>
+<para
+>Если &gcompris; используется маленькими детьми или в киоске самообслуживания, ряд опций можно отключить:</para>
+<itemizedlist>
+<listitem
+><para
+><userinput
+><command
+>gcompris --enable-kioskmode</command
+></userinput
+>: отключить кнопки <guiicon
+>выхода</guiicon
+> и <guiicon
+>настройки</guiicon
+>.</para
+></listitem
+> 
+<listitem
+><para
+><userinput
+><command
+>gcompris --disable-kioskmode</command
+></userinput
+>: включить кнопки <guiicon
+>выхода</guiicon
+> и <guiicon
+>настройки</guiicon
+>.</para
+></listitem>
+<listitem
+><para
+><userinput
+><command
+>gcompris -f</command
+></userinput
+>: запустить &gcompris; в полноэкранном режиме.</para
+></listitem
+> 
+<listitem
+><para
+><userinput
+><command
+>gcompris -C</command
+></userinput
+>: отключить указатель мыши (режим сенсорного экрана).</para
+></listitem
+> 
+</itemizedlist>
+<para
+>Эти опции можно сочетать между собой.</para>
+</sect2>
+
+<sect2 id="keyboard-shortcuts">
+<title
+>Комбинации клавиш</title>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>Комбинация клавиш</entry>
+<entry
+>Действие</entry>
+</row>
+<row>
+<entry
+>&Esc; или <keycombo action="simul"
+>&Ctrl;<keycap
+>W</keycap
+></keycombo
+></entry>
+<entry
+>Выйти из текущего упражнения или диалога и вернуться в главное меню.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></entry>
+<entry
+>Выйти из &gcompris;.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>F</keycap
+></keycombo
+></entry>
+<entry
+>Включить или отключить полноэкранный режим.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>M</keycap
+></keycombo
+></entry>
+<entry
+>Включить или отключить звук.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>B</keycap
+></keycombo
+></entry>
+<entry
+>Показать или скрыть панель управления.</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</sect2>
+
+</sect1>
+
+<sect1 id="internationalization">
+<title
+>Примечания об интернационализации</title>
+<para
+>В &gcompris; реализована интернационализация, программа доступна на более чем 35 языках. Чтобы проверить наличие перевода на определённый язык, запустите &gcompris;, перейдите к настройке программы и посмотрите, можно ли выбрать этот язык.</para>
+<para
+>Внимание: для корректного отображения перевода на некоторые языки требуются соответствующие шрифты.</para
+> 
+<para
+>Если нужный язык не поддерживается, при желании можно помочь разработчикам с переводом. Для этого свяжитесь с <ulink url="https://l10n.kde.org/teams"
+>командой перевода</ulink
+> проекта &kde; на соответствующий язык. На <ulink url="https://l10n.kde.org/"
+>веб-сайте переводов &kde;</ulink
+> можно увидеть текущий уровень готовности перевода.</para>
+</sect1>
+
+<sect1 id="learning-language">
+<title
+>Изучение языков</title>
+<para
+>Можно переключить используемый в &gcompris; язык на тот, который изучается. Выберите нужный иностранный язык в меню настройки. Не забудьте загрузить дополнительные модули звука для этого языка.</para>
+</sect1>
+
+<sect1 id="customizing-activities">
+<title
+>Настройка упражнений</title>
+<para
+>Некоторые упражнения можно настроить с помощью расположенной в них кнопки настройки. Например, можно задать язык (в некоторых текстовых упражнениях, таких как игра с угадыванием слов) или выбрать показ изображений настоящих машин вместо цветных прямоугольников (в игре в вождение автомобиля).</para>
+
+<para
+>Для многих упражнений можно выбирать наборы данных. Каждый из наборов предназначен для определённой цели (приводится её описание).</para>
+<screenshot>
+<screeninfo
+>Набор данных упражнения «Счёт предметов»</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="dataset.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Набор данных упражнения «Счёт предметов»</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+
+<para
+>Для этого упражнения можно выбрать параметры.</para>
+<screenshot>
+<screeninfo
+>Выбор режима упражнения «Счёт предметов»</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="activity-config.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Выбор режима упражнения «Счёт предметов»</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</sect1>
+
+<sect1 id="console-switches">
+<title
+>Параметры консольной команды</title>
+<para
+>Если запустить &gcompris; из командной консоли с опцией «--help», будут показаны все принимаемые программой параметры:</para>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>-f, --fullscreen</entry>
+<entry
+>Запустить &gcompris; в полноэкранном режиме.</entry>
+</row>
+<row>
+<entry
+>-w, --window</entry>
+<entry
+>Запустить &gcompris; в оконном режиме.</entry>
+</row>
+<row>
+<entry
+>-s, --sound</entry>
+<entry
+>Запустить &gcompris; с включённым звуком.</entry>
+</row>
+<row>
+<entry
+>-m, --mute</entry>
+<entry
+>Запустить &gcompris; без звука.</entry>
+</row>
+<row>
+<entry
+>-c, --cursor</entry>
+<entry
+>Запустить &gcompris; со стандартным системным указателем мыши.</entry>
+</row>
+<row>
+<entry
+>-C, --nocursor</entry>
+<entry
+>Запустить &gcompris; без указателя мыши (режим сенсорного экрана).</entry>
+</row>
+<row>
+<entry
+>-v, --version</entry>
+<entry
+>Вывести версию &gcompris;.</entry>
+</row>
+<row>
+<entry
+>-l, --list-activities</entry>
+<entry
+>Вывести все доступные упражнения в стандартный вывод.</entry>
+</row>
+<row>
+<entry
+>--launch activity</entry>
+<entry
+>Указать упражнение, которое открывается при запуске &gcompris;.</entry>
+</row>
+<row>
+<entry
+>--start-level level</entry>
+<entry
+>Указать уровень для начала работы с упражнением, указанным с помощью опции «--launch», при запуске &gcompris;. Игнорируется при отсутствии опции «--launch» или указании некорректного уровня.</entry>
+</row>
+<row>
+<entry
+>--difficulty {value|min-max}</entry>
+<entry
+>На время сеанса принудительно установить для упражнений &gcompris; сложность, которая либо равна указанному значению, либо находится в интервале между указанными минимальным и максимальным значениями. Допускаются значения от 1 до 6. Если используется интервал, минимальное значение должно быть меньше максимального значения. Запуск &gcompris; выполняется только при соблюдении этих условий.</entry>
+</row>
+<row>
+<entry
+>--export-activities-as-sql</entry>
+<entry
+>Экспорт упражнений в формате SQL.</entry>
+</row>
+<row>
+<entry
+>--enable-kioskmode</entry>
+<entry
+>Включить режим киоска (скрывает кнопки выхода и настройки).</entry>
+</row>
+<row>
+<entry
+>--disable-kioskmode</entry>
+<entry
+>Отключить режим киоска (по умолчанию).</entry>
+</row>
+<row>
+<entry
+>--show-home-button</entry>
+<entry
+>Показать кнопку «Домой» в меню (по умолчанию).</entry>
+</row>
+<row>
+<entry
+>--hide-home-button</entry>
+<entry
+>Скрыть кнопку «Домой» в меню.</entry>
+</row>
+<row>
+<entry
+>--renderer={renderer}</entry>
+<entry
+>Указать средство визуализации графики. OpenGL и программное средство визуализации доступны на всех платформах. В Windows можно использовать «direct3d11» или «direct3d12» (если программа была собрана с Qt ≥ 6.6). В &macOS; можно использовать «metal».</entry>
+</row>
+<row>
+<entry
+>--software-renderer</entry>
+<entry
+>Использовать программное средство визуализации вместо OpenGL (работает с любой видеокартой). Устарело, вместо этого воспользуйтесь командой «--renderer=software».</entry>
+</row>
+<row>
+<entry
+>--opengl-renderer</entry>
+<entry
+>Использовать средство визуализации OpenGL вместо программного (работает быстрее и предоставляет больше графических эффектов, но может привести к сбою при использовании некоторых видеокарт). Устарело, вместо этого воспользуйтесь командой «--renderer=opengl».</entry>
+</row>
+<row>
+<entry
+>--locale=locale</entry>
+<entry
+>Запустить &gcompris; с указанной локалью.</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+
+<sect2 id="windows-example">
+<title
+>Пример для &Windows;</title>
+<para
+>Эти переключатели можно добавить в свойствах значка на рабочем столе. Вот пример, в котором &gcompris; запускается в режиме киоска на весь экран без кнопки настройки и указателя:</para>
+<para
+><userinput
+><command
+>"C:\Program Files\GCompris-Qt\bin\GCompris.exe" --enable-kioskmode -f -C</command
+></userinput
+></para>
+</sect2>
+
+<sect2 id="gnu-linux-example">
+<title
+>Пример для &GNU;/&Linux;</title>
+<para
+>Создайте средство запуска приложения и настройте параметры командной строки. Вот пример, в котором &gcompris; запускается в режиме киоска на весь экран без кнопки настройки и указателя:</para
+> 
+<para
+><userinput
+><command
+>gcompris-qt --enable-kioskmode -f -C</command
+></userinput
+></para>
+</sect2>
+
+</sect1>
+
+</chapter>
+<chapter id="credits">
+
+<title
+>Авторские права и лицензия</title>
+
+<para
+>&gcompris; </para>
+<para
+>Авторские права на программу © Timothée Giet и другие, 2000–2025 </para>
+
+<para
+>Олеся Герасименко<email
+>goa@altlinux.org</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->
