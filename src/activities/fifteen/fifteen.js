@@ -21,6 +21,8 @@ var items
 var rowButtonIndex = -1;
 var columnButtonIndex = -1;
 var initialOrder = [];
+var initialHintList = [];
+var hintList = [];
 
 function start(items_) {
     items = items_
@@ -57,8 +59,11 @@ function initLevel() {
         for(i = 0; i < 6; i++) {
             items.sixteenAnimModel.append({"value": 0})
         }
-
+        resetHints();
         slide(items.currentLevel + 2)
+        hintList = initialHintList.slice()
+        items.currentHint = hintList[hintList.length - 1];
+
         initialOrder = [];
         for(i = 0; i < 16; i++) {
             initialOrder.push(items.model.get(i).value)
@@ -67,11 +72,20 @@ function initLevel() {
     items.buttonsBlocked = false
 }
 
+function resetHints() {
+    initialHintList = [];
+    hintList = [];
+    items.currentHint = "";
+    items.displayedHint = "";
+}
+
 function reloadLevel() {
     items.model.clear();
     for(var i = 0; i < 16; i++) {
         items.model.append({"value": initialOrder[i]});
     }
+    hintList = initialHintList.slice();
+    items.currentHint = hintList[hintList.length - 1];
 }
 
 function countBadPlaced(model) {
@@ -127,15 +141,19 @@ function slide(numberOfSlideMoves) {
         switch (randomDirection) {
         case 0:
             leftAction(randomRowOrCol, false)
+            initialHintList.push("R"+randomRowOrCol.toString())
             break;
         case 1:
             rightAction(randomRowOrCol, false)
+            initialHintList.push("L"+randomRowOrCol.toString())
             break;
         case 2:
             topAction(randomRowOrCol, false)
+            initialHintList.push("B"+randomRowOrCol.toString())
             break;
         case 3:
             bottomAction(randomRowOrCol, false)
+            initialHintList.push("T"+randomRowOrCol.toString())
             break;
         }
     } while(++count < numberOfSlideMoves || isCorrectAnswer())
@@ -153,8 +171,8 @@ function isCorrectAnswer() {
 function onClick(value) {
     // Find the value in the model
     var done = false
-    for(var x = 0; x < 4 && !done; x++)
-        for(var y = 0; y < 4 && !done; y++)
+    for(var x = 0; x < 4 && !done; x++) {
+        for(var y = 0; y < 4 && !done; y++) {
             if(items.model.get(x + y * 4).value === value) {
                 // Find a free spot
                 if(x > 0 && items.model.get((x - 1) + y * 4).value === 0) {
@@ -173,6 +191,8 @@ function onClick(value) {
                     done = true
                 }
             }
+        }
+    }
 }
 
 // Return the index in the model of the empty spot
@@ -453,6 +473,20 @@ function moveSelectionDown() {
 
 // end of specific for sixteen mode keyboard controls
 
+function updateHints(pressedButton, oppositeButton) {
+    if(items.currentHint === pressedButton) {
+        hintList.pop();
+        if(hintList.length > 0) {
+            items.currentHint = hintList[hintList.length - 1];
+        } else {
+            items.currentHint = "";
+        }
+    } else {
+        hintList.push(oppositeButton);
+        items.currentHint = oppositeButton;
+    }
+}
+
 function prepareAnimGrid(values) {
     for (var i = 0; i < 4; i++) {
         items.sixteenAnimModel.setProperty(i+1, "value", values[i]);
@@ -478,6 +512,9 @@ function leftAction(index, animate) {
     if(animate) {
         prepareAnimGrid(values)
         items.sixteenAnimGrid.moveLine(-1, index, -1, 0)
+
+        var indexString = index.toString();
+        updateHints("L" + indexString, "R" + indexString);
     }
 
     // actual move
@@ -499,6 +536,9 @@ function rightAction(index, animate) {
     if(animate) {
         prepareAnimGrid(values)
         items.sixteenAnimGrid.moveLine(-1, index, 1, 0)
+
+        var indexString = index.toString();
+        updateHints("R" + indexString, "L" + indexString);
     }
 
     // actual change
@@ -520,6 +560,9 @@ function topAction(index, animate) {
     if(animate) {
         prepareAnimGrid(values)
         items.sixteenAnimGrid.moveLine(index, -1, 0, -1)
+
+        var indexString = index.toString();
+        updateHints("T" + indexString, "B" + indexString);
     }
 
     // actual change
@@ -541,6 +584,9 @@ function bottomAction(index, animate) {
     if(animate) {
         prepareAnimGrid(values)
         items.sixteenAnimGrid.moveLine(index, -1, 0, 1)
+
+        var indexString = index.toString();
+        updateHints("B" + indexString, "T" + indexString);
     }
 
     // actual change

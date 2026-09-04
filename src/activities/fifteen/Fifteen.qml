@@ -79,6 +79,17 @@ ActivityBase {
 
             property alias sixteenAnimGrid: sixteenAnimGrid
             property alias sixteenAnimModel: sixteenAnimModel
+            property bool showHint: false
+            property string currentHint: ""
+            property string displayedHint: ""
+
+            onCurrentHintChanged: {
+                if(showHint) {
+                    displayedHint = currentHint;
+                } else {
+                    displayedHint = "";
+                }
+            }
         }
 
         onStart: { Activity.start(items) }
@@ -86,7 +97,6 @@ ActivityBase {
         
         property int pieceSize: Math.round(blueFrame.width * 0.222)
         property int fullImageSize: pieceSize * 4
-
         property int buttonSize: pieceSize
 
         GCSoundEffect {
@@ -107,6 +117,7 @@ ActivityBase {
                     id: topButton
                     rotation: -90
                     direction: topButton.topDir
+                    hint: "T" + index.toString()
                 }
             }
         }
@@ -124,6 +135,7 @@ ActivityBase {
                     id: bottomButton
                     rotation: 90
                     direction: bottomButton.bottomDir
+                    hint: "B" + index.toString()
                 }
             }
         }
@@ -141,6 +153,7 @@ ActivityBase {
                     id: leftButton
                     rotation: 180
                     direction: leftButton.leftDir
+                    hint: "L" + index.toString()
                 }
             }
         }
@@ -158,6 +171,7 @@ ActivityBase {
                     id: rightButton
                     rotation: 0
                     direction: rightButton.rightDir
+                    hint: "R" + index.toString()
                 }
             }
         }
@@ -386,7 +400,7 @@ ActivityBase {
             id: bar
             level: items.currentLevel + 1
             content: BarEnumContent { value: activity.mode === "sixteen" ?
-                (help | home | level | reload) :
+                (help | home | level | reload | hint) :
                 (help | home | level) }
             onHelpClicked: {
                 displayDialog(dialogHelp)
@@ -395,6 +409,14 @@ ActivityBase {
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onReloadClicked: Activity.reloadLevel()
+            onHintClicked: {
+                items.showHint = !items.showHint;
+                if(items.showHint) {
+                    items.displayedHint = items.currentHint;
+                } else {
+                    items.displayedHint = "";
+                }
+            }
         }
 
         Bonus {

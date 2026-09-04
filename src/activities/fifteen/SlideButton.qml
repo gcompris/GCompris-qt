@@ -29,6 +29,8 @@ Item {
     readonly property int bottomDir: 2
     readonly property int topDir: 3
 
+    required property string hint
+
     MouseArea {
         id: mouseArea
         anchors.fill: parent
@@ -42,7 +44,7 @@ Item {
     Rectangle {
         anchors.fill: parent
         radius: width
-        color: "#33ffffff"
+        color: slideButton.hint === items.displayedHint ? "#804280ff" : "#33ffffff"
         border.color: slideButton.selected ? GCStyle.whiteBg : "#33000000"
         border.width: slideButton.selected ? GCStyle.midBorder : GCStyle.thinBorder
     }
