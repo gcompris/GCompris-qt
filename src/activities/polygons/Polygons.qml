@@ -1,4 +1,4 @@
-/* GCompris - shapes.qml
+/* GCompris - Polygons.qml
  *
  * SPDX-FileCopyrightText: 2024 Johnny Jazeix <jazeix@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
@@ -7,7 +7,7 @@ import QtQuick 2.12
 import QtQuick.Shapes
 
 import "../../core"
-import "shapes.js" as Activity
+import "polygons.js" as Activity
 
 ActivityBase {
     id: activity

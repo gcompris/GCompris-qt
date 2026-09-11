@@ -1,4 +1,4 @@
-/* GCompris - shapes.js
+/* GCompris - polygons.js
  *
  * SPDX-FileCopyrightText: 2024 Johnny Jazeix <jazeix@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later

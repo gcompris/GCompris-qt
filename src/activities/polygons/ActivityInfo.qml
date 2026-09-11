@@ -6,12 +6,12 @@
 import core 1.0
 
 ActivityInfo {
-  name: "shapes/Shapes.qml"
+  name: "polygons/Polygons.qml"
   difficulty: 1
-  icon: "shapes/shapes.svg"
+  icon: "polygons/polygons.svg"
   author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Shapes activity")
+  title: qsTr("Polygons")
   //: Help title
   description: qsTr("")
   //intro: "put here in comment the text for the intro voice"
