@@ -117,11 +117,14 @@ ActivityBase {
                     ctx.stroke()
 
                     // Draw the existing shapes
+                    if(points.count < 1) {
+                        return
+                    }
                     ctx.beginPath()
                     var lastPoint = points.get(0)
+                    ctx.moveTo(lastPoint.x * scaledGridStep, lastPoint.y * scaledGridStep)
                     for(var i = 1; i < points.count; ++ i) {
                         var point = points.get(i);
-                        ctx.moveTo(lastPoint.x * scaledGridStep, lastPoint.y * scaledGridStep)
                         ctx.lineTo(point.x * scaledGridStep, point.y * scaledGridStep)
                         lastPoint = point
                     }
