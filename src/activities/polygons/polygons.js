@@ -22,6 +22,7 @@ function stop() {
 }
 
 function initLevel() {
+    resetShape();
 }
 
 function nextLevel() {
@@ -32,4 +33,10 @@ function nextLevel() {
 function previousLevel() {
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
+}
+
+function resetShape() {
+    items.points.clear();
+    items.isClosed = false;
+    items.sceneGrid.requestPaint();
 }
