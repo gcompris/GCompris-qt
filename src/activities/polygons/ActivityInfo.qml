@@ -1,6 +1,11 @@
 /* GCompris - ActivityInfo.qml
  *
- * SPDX-FileCopyrightText: 2024 Johnny Jazeix <jazeix@gmail.com>
+ * SPDX-FileCopyrightText: 2026 Johnny Jazeix <jazeix@gmail.com>
+ *
+ * Authors:
+ *   Johnny Jazeix <jazeix@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
+ *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import core 1.0
@@ -9,7 +14,7 @@ ActivityInfo {
   name: "polygons/Polygons.qml"
   difficulty: 1
   icon: "polygons/polygons.svg"
-  author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
+  author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;, Timothée Giet &lt;animtim@gmail.com&gt;"
   //: Activity title
   title: qsTr("Polygons")
   //: Help title
@@ -23,5 +28,5 @@ ActivityInfo {
   manual: qsTr("")
   credit: ""
   section: "fun"
-  createdInVersion: 250000
+  createdInVersion: 270000
 }

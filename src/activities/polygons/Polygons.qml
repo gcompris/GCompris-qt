@@ -1,6 +1,11 @@
 /* GCompris - Polygons.qml
  *
- * SPDX-FileCopyrightText: 2024 Johnny Jazeix <jazeix@gmail.com>
+ * SPDX-FileCopyrightText: 2026 Johnny Jazeix <jazeix@gmail.com>
+ *
+ * Authors:
+ *   Johnny Jazeix <jazeix@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
+ *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
