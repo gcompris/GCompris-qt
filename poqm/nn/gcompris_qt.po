@@ -10090,8 +10090,6 @@ msgstr ""
 #. Activity title
 #: activities/fifteen/ActivityInfo.qml:15
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The fifteen game"
 msgctxt "ActivityInfo|"
 msgid "The fifteen puzzle"
 msgstr "Spelet 15"
@@ -25280,8 +25278,6 @@ msgstr "Tabulator: Byt mellom fargeveljar og teikneområdet"
 #. Activity title
 #: activities/sixteen/ActivityInfo.qml:14
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The fifteen game"
 msgctxt "ActivityInfo|"
 msgid "The sixteen puzzle"
 msgstr "Spelet 15"
@@ -25289,8 +25285,6 @@ msgstr "Spelet 15"
 #. Help title
 #: activities/sixteen/ActivityInfo.qml:16
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move each item to recreate the image."
 msgctxt "ActivityInfo|"
 msgid "Slide the rows and columns to recreate the image."
 msgstr "Flytt brikkene for å gjenskapa biletet."
@@ -25304,16 +25298,12 @@ msgstr ""
 
 #: activities/sixteen/ActivityInfo.qml:25
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate through the answers"
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate to select arrow buttons."
 msgstr "Piltastar: Bla gjennom svara"
 
 #: activities/sixteen/ActivityInfo.qml:26
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: flip the selected card"
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: click on selected button."
 msgstr "Mellomrom eller Enter: Snu det merkte kortet"
