@@ -273,8 +273,8 @@ void ActivityInfo::fillDatasets(QQmlEngine *engine)
     userDatasetFolder.setFilter(QDir::Dirs | QDir::NoSymLinks | QDir::NoDotAndDotDot);
     QFileInfoList datasetList = userDatasetFolder.entryInfoList();
     for (const QFileInfo &datasetFileInfo: datasetList) {
-        QString url = QString("%1/Data.qml").arg(datasetFileInfo.absoluteFilePath());
-        QQmlComponent componentRoot(engine, QUrl(url));
+        QUrl url = QUrl::fromLocalFile(QString("%1/Data.qml").arg(datasetFileInfo.absoluteFilePath()));
+        QQmlComponent componentRoot(engine, url);
         QObject *objectRoot = componentRoot.create();
         if (objectRoot != nullptr) {
             Dataset *dataset = qobject_cast<Dataset *>(objectRoot);
