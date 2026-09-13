@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: Igor Dobrača <igor.dobraca@skole.hr>\n"
+"Last-Translator: Igor Dobrača <igor.dobraca@gmail.com>\n"
 "Language-Team: Croatian <kde-i18n-doc@kde.org>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
@@ -11,6 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 3.9\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -26682,12 +26683,9 @@ msgid "Maximum value: 500."
 msgstr "Najveća vrijednost: 500."
 
 #: activities/target/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Maximum value: 50000."
 msgctxt "Data|"
 msgid "Maximum value: 5000."
-msgstr "Najveća vrijednost: 50000."
+msgstr "Maksimalna vrijednost: 5000."
 
 #: activities/target/resource/5/Data.qml:14
 msgctxt "Data|"
