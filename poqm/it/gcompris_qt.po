@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2026-06-21 19:21+0200\n"
+"PO-Revision-Date: 2026-09-08 11:20+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 26.04.2\n"
+"X-Generator: Lokalize 26.08.0\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -10420,9 +10420,6 @@ msgstr ""
 
 #. Activity title
 #: activities/fifteen/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The fifteen game"
 msgctxt "ActivityInfo|"
 msgid "The fifteen puzzle"
 msgstr "Il gioco del quindici"
@@ -25563,21 +25560,15 @@ msgstr "Tab: alterna tra il selettore del colore e l'area di disegno"
 
 #. Activity title
 #: activities/sixteen/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The fifteen game"
 msgctxt "ActivityInfo|"
 msgid "The sixteen puzzle"
-msgstr "Il gioco del quindici"
+msgstr "Il gioco del sedici"
 
 #. Help title
 #: activities/sixteen/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move each item to recreate the image."
 msgctxt "ActivityInfo|"
 msgid "Slide the rows and columns to recreate the image."
-msgstr "Sposta ogni oggetto per ricreare l'immagine."
+msgstr "Sposta le righe e le colonne per ricreare l'immagine."
 
 #. Help manual
 #: activities/sixteen/ActivityInfo.qml:23
@@ -25585,22 +25576,18 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Click on an arrow to slide the corresponding row or column in this direction."
 msgstr ""
+"Fai clic su una freccia per spostare la riga o la colonna corrispondente in "
+"quella direzione."
 
 #: activities/sixteen/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate inside selected area"
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate to select arrow buttons."
-msgstr "Frecce direzionali: naviga dell'area selezionata"
+msgstr "Frecce: consentono di selezionare i pulsanti freccia per navigare."
 
 #: activities/sixteen/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: flip the selected card"
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: click on selected button."
-msgstr "Barra spaziatrice o Invio: gira la carta selezionata"
+msgstr "Barra spaziatrice o Invio: fai clic sul pulsante selezionato."
 
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18

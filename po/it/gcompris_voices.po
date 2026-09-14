@@ -1,18 +1,18 @@
 #
-# SPDX-FileCopyrightText: 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026 Vincenzo Reale <smart2128vr@gmail.com>
+# SPDX-FileCopyrightText: 2017-2026 Vincenzo Reale <smart2128vr@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-08 00:40+0000\n"
-"PO-Revision-Date: 2026-04-05 12:01+0200\n"
+"PO-Revision-Date: 2026-09-08 11:20+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Lokalize 26.08.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
@@ -1236,19 +1236,15 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "sixteen"
 #: activities/sixteen/ActivityInfo.qml:17
-#, fuzzy, kde-format
-#| msgid ""
-#| "Click or drag an element next to a free space, the element will move and "
-#| "release its space. You must put all the pieces in the correct order. The "
-#| "numbers on the pieces can help you."
+#, kde-format
 msgid ""
 "Click on an arrow to slide the corresponding row or column in this "
 "direction. You must put all the pieces in the correct order. The numbers on "
 "the pieces can help you."
 msgstr ""
-"Fare clic o trascina un elemento accanto a uno spazio libero, l'elemento si "
-"sposterà e lascerà il suo spazio. Devi mettere tutti i pezzi nell'ordine "
-"corretto. I numeri sui pezzi possono aiutarti."
+"Fai clic su una freccia per spostare la riga o la colonna corrispondente in "
+"quella direzione. Devi mettere tutti i pezzi nell'ordine corretto. I numeri "
+"sui pezzi possono aiutarti."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "sketch"
 #: activities/sketch/ActivityInfo.qml:21
