@@ -58,6 +58,8 @@ Item {
 
     property Item customIntroArea: null
 
+    property bool useGrayedBg: true
+
     Keys.onPressed: (event) => {
         if(event.key === Qt.Key_Left && previousButton.visible) {
             previousButton.clicked();
@@ -90,6 +92,7 @@ Item {
     Rectangle {
         anchors.fill: parent
         color: GCStyle.grayedBg
+        visible: message.useGrayedBg
     }
 
     Item {
