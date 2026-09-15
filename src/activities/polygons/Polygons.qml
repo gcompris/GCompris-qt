@@ -19,10 +19,13 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
+        source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
         anchors.fill: parent
-        color: "#ABCDEF"
+        sourceSize.width: width
+        sourceSize.height: height
+        fillMode: Image.PreserveAspectCrop
         signal start
         signal stop
 
@@ -40,14 +43,16 @@ ActivityBase {
             property alias bonus: bonus
 
             // Pen and color properties
-            readonly property string transparentColor: "#00000000"
-            readonly property color contentColor: "#d2d2d2"
-            property string backgroundColor: "#ffffff"
+            readonly property color gridColor: "#b3b3b3"
+            readonly property color polygonColor: "#10721d"
+            readonly property color dotColor: "#5020a8dd"
             // View properties
-            property real mainSize: Math.min(canvasZone.width, canvasZone.height)
-            property real viewSize: 100
-            readonly property real devicePixelRatio: Math.max(1, Screen.devicePixelRatio)
-            property int gridStep: 10
+            readonly property int mainSize: Math.min(layoutArea.width, layoutArea.height)
+            readonly property int gridStep: mainSize / 10
+            readonly property int gridSize: gridStep * 10
+            readonly property real dotOffset: 0.5 * gridStep
+            readonly property real minDrag: -dotOffset
+            readonly property real maxDrag: gridSize - dotOffset
             property alias points: points
             property alias sceneGrid: sceneGrid
             property bool isClosed: false
@@ -62,19 +67,16 @@ ActivityBase {
             anchors.right: parent.right
             anchors.left: parent.left
             anchors.bottom: parent.bottom
-            anchors.margins: GCStyle.halfMargins
-            anchors.bottomMargin: bar.height * 1.2
+            anchors.margins: GCStyle.baseMargins
+            anchors.bottomMargin: bar.height * 1.5
         }
 
-        Item {  // useful to compute view size. canvasContainer is scaled
-            id: canvasZone
-            anchors.fill: canvasContainer
-        }
-
-        Item {
+        Rectangle {
             id: canvasContainer
-            anchors.fill: layoutArea
-            scale: items.mainSize / items.viewSize
+            anchors.centerIn: layoutArea
+            width: items.gridSize
+            height: items.gridSize
+            color: "#FFFFFF"
 
             ListModel {
                 id: points
@@ -82,16 +84,8 @@ ActivityBase {
 
             Canvas {
                 id: sceneGrid
-                anchors.centerIn: canvasContainer
-                width: items.viewSize * canvasContainer.scale
-                height: width
+                anchors.fill: parent
                 clip: false
-                scale: items.viewSize / items.mainSize
-                readonly property real scaledGridStep: items.gridStep / scale
-                readonly property real dotOffset: 0.5 * scaledGridStep
-
-                property color gridColor: "black"
-                property color lineColor: "green"
 
                 onPaint: {
                     var ctx = getContext("2d")
@@ -100,28 +94,20 @@ ActivityBase {
                     }
                     // Draw the grid
                     ctx.clearRect(0, 0, width, height)
-                    ctx.strokeStyle = gridColor
-                    ctx.lineWidth = canvasContainer.scale / 3
+                    ctx.strokeStyle = items.gridColor
+                    ctx.lineWidth = GCStyle.thinnestBorder
                     ctx.beginPath()
-                    var nrows = height / sceneGrid.scaledGridStep
-                    var offsetY = (height / 2) % sceneGrid.scaledGridStep
-                    // fixed values used in for loops
-                    var xInit = 0
-                    var yInit = 0
-                    for(var i = 0; i < nrows+1; i++){   // Draw dotted rows
-                        ctx.moveTo(xInit, (sceneGrid.scaledGridStep * i) + yInit)
-                        ctx.lineTo(width, (sceneGrid.scaledGridStep * i) + yInit)
+                    var nrows = 10
+                    for(var i = 1; i < nrows; i++){   // Draw grid rows, skipping first and last ones
+                        ctx.moveTo(0, (items.gridStep * i))
+                        ctx.lineTo(width, (items.gridStep * i))
                     }
 
-                    var ncols = width / sceneGrid.scaledGridStep  // Draw dotted columns
-                    var offsetX = (width / 2) % sceneGrid.scaledGridStep
-                    xInit = 0
-                    yInit = 0
-                    for(var j = 0; j < ncols+1; j++) {
-                        ctx.moveTo((sceneGrid.scaledGridStep * j) + xInit, yInit)
-                        ctx.lineTo((sceneGrid.scaledGridStep * j) + xInit, height)
+                    var ncols = 10 // Draw grid columns, skipping first and last ones
+                    for(var j = 1; j < ncols; j++) {
+                        ctx.moveTo((items.gridStep * j), 0)
+                        ctx.lineTo((items.gridStep * j), height)
                     }
-
                     ctx.closePath()
                     ctx.stroke()
 
@@ -131,14 +117,14 @@ ActivityBase {
                     }
                     ctx.beginPath()
                     var lastPoint = points.get(0)
-                    ctx.moveTo(lastPoint.x * sceneGrid.scaledGridStep, lastPoint.y * sceneGrid.scaledGridStep)
+                    ctx.moveTo(lastPoint.x * items.gridStep, lastPoint.y * items.gridStep)
                     for(var i = 1; i < points.count; ++ i) {
                         var point = points.get(i);
-                        ctx.lineTo(point.x * sceneGrid.scaledGridStep, point.y * sceneGrid.scaledGridStep)
+                        ctx.lineTo(point.x * items.gridStep, point.y * items.gridStep)
                         lastPoint = point
                     }
-                    ctx.strokeStyle = lineColor
-                    ctx.lineWidth = canvasContainer.scale * 1.5
+                    ctx.strokeStyle = items.polygonColor
+                    ctx.lineWidth = GCStyle.midBorder
                     ctx.stroke()
                 }
                 onWidthChanged: sceneGrid.requestPaint()
@@ -153,83 +139,85 @@ ActivityBase {
 
                     onClicked: (mouse) => {
                         var point = {
-                            "x": Math.round((items.viewSize*mouse.x) / (items.gridStep*items.mainSize)),
-                            "y": Math.round((items.viewSize*mouse.y) / (items.gridStep*items.mainSize))
+                            "x": Math.round(mouse.x / items.gridStep),
+                            "y": Math.round(mouse.y / items.gridStep)
                         }
                         points.append(point)
                         sceneGrid.requestPaint()
                     }
                 }
+            }
 
-                Repeater {
-                    model: points
-                    delegate: Rectangle {
-                        id: pointItem
-                        color: "blue"
-                        opacity: 0.5
-                        width: sceneGrid.scaledGridStep
-                        height: sceneGrid.scaledGridStep
-                        radius: width
-                        x: (model.x - 0.5) * sceneGrid.scaledGridStep
-                        y: (model.y - 0.5) * sceneGrid.scaledGridStep
-                        visible: (index === 0 && items.isClosed) ? false : true
+            // DO NOT put points inside the Canvas, else their MouseArea are clipped by its boundaries
+            Repeater {
+                model: points
+                delegate: Rectangle {
+                    id: pointItem
+                    color: items.dotColor
+                    width: items.gridStep
+                    height: items.gridStep
+                    radius: width
+                    x: (model.x - 0.5) * items.gridStep
+                    y: (model.y - 0.5) * items.gridStep
+                    visible: (index === 0 && items.isClosed) ? false : true
 
-                        MouseArea {
-                            anchors.fill: parent
-                            drag.target: parent
-                            drag.minimumX: 0 - sceneGrid.dotOffset
-                            drag.minimumY: 0 - sceneGrid.dotOffset
-                            drag.maximumX: sceneGrid.width - sceneGrid.dotOffset
-                            drag.maximumY: sceneGrid.height - sceneGrid.dotOffset
+                    readonly property real centerX: x + items.dotOffset
+                    readonly property real centerY: y + items.dotOffset
 
-                            onClicked: {
-                                // simple click on first point closes the shape
-                                if(index === 0) {
-                                    var point = {
-                                        "x": model.x,
-                                        "y": model.y
-                                    }
-                                    points.append(point);
-                                    sceneGrid.requestPaint();
-                                    items.isClosed = true;
+                    MouseArea {
+                        anchors.fill: parent
+                        drag.target: parent
+                        drag.minimumX: items.minDrag
+                        drag.minimumY: items.minDrag
+                        drag.maximumX: items.maxDrag
+                        drag.maximumY: items.maxDrag
+
+                        onClicked: {
+                            // simple click on first point closes the shape if at least 3 points already placed
+                            if(index === 0 && points.count > 2) {
+                                var point = {
+                                    "x": model.x,
+                                    "y": model.y
                                 }
+                                points.append(point);
+                                sceneGrid.requestPaint();
+                                items.isClosed = true;
                             }
+                        }
 
-                            onPositionChanged: (movedPosition)=> {
-                                const centerX = pointItem.x + sceneGrid.dotOffset
-                                const centerY = pointItem.y + sceneGrid.dotOffset
-                                const newPointX = Math.round((items.viewSize*centerX) / (items.gridStep*items.mainSize));
-                                const newPointY = Math.round((items.viewSize*centerY) / (items.gridStep*items.mainSize));
-                                var hasChanged = false;
-                                if(newPointX != pointItem.x) {
-                                    points.setProperty(index, "x", newPointX);
-                                    hasChanged = true;
-                                }
-                                if(newPointY != pointItem.y) {
-                                    points.setProperty(index, "y", newPointY);
-                                    hasChanged = true;
-                                }
-                                if(hasChanged) {
-                                    // move first point too if needed
-                                    if(items.isClosed && index === points.count - 1) {
-                                        points.setProperty(0, "x", newPointX);
-                                        points.setProperty(0, "y", newPointY);
-                                    }
-                                    sceneGrid.requestPaint();
-                                }
-                            }
+                        onPositionChanged: (movedPosition)=> {
+                            const newPointX = Math.round(pointItem.centerX / items.gridStep);
+                            const newPointY = Math.round(pointItem.centerY / items.gridStep);
 
-                            onPressed: {
-                                // break the binding while dragging
-                                pointItem.x = pointItem.x;
-                                pointItem.y = pointItem.y;
+                            var hasChanged = false;
+                            if(newPointX != model.x) {
+                                points.setProperty(index, "x", newPointX);
+                                hasChanged = true;
                             }
+                            if(newPointY != model.y) {
+                                points.setProperty(index, "y", newPointY);
+                                hasChanged = true;
+                            }
+                            if(hasChanged) {
+                                // move first point too if needed
+                                if(items.isClosed && index === points.count - 1) {
+                                    points.setProperty(0, "x", newPointX);
+                                    points.setProperty(0, "y", newPointY);
+                                }
+                                sceneGrid.requestPaint();
+                            }
+                        }
 
-                            onReleased: {
-                                // restore the binding after dragging
-                                pointItem.x = Qt.binding(function() { return (model.x - 0.5) * sceneGrid.scaledGridStep });
-                                pointItem.y = Qt.binding(function() { return (model.y - 0.5) * sceneGrid.scaledGridStep });
-                            }
+                        onPressed: {
+                            // break the binding while dragging
+                            pointItem.x = pointItem.x;
+                            pointItem.y = pointItem.y;
+                        }
+
+                        onReleased: {
+                            // restore the binding after dragging
+                            pointItem.x = Qt.binding(function() { return (model.x - 0.5) * items.gridStep });
+                            pointItem.y = Qt.binding(function() { return (model.y - 0.5) * items.gridStep });
                         }
                     }
                 }
