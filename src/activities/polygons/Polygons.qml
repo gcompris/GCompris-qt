@@ -40,6 +40,8 @@ ActivityBase {
             property Item main: activity.main
             property alias background: background
             property int currentLevel: activity.currentLevel
+            property string mode: "tutorial"
+            property bool isTutorialMode: mode === "tutorial" ? true : false
             property alias bonus: bonus
 
             // Pen and color properties
@@ -224,6 +226,19 @@ ActivityBase {
             }
         }
 
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+            onClose: {
+                home();
+            }
+            onLoadData: {
+                if(activityData && activityData["mode"]) {
+                    items.mode = activityData["mode"];
+                }
+            }
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -232,7 +247,7 @@ ActivityBase {
         Bar {
             id: bar
             level: items.currentLevel + 1
-            content: BarEnumContent { value: help | home | level | reload }
+            content: BarEnumContent { value: help | home | (items.isTutorialMode ? level : 0) | reload | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
@@ -240,6 +255,9 @@ ActivityBase {
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onReloadClicked: Activity.resetShape()
+            onActivityConfigClicked: {
+                displayDialog(dialogActivityConfig);
+            }
         }
 
         Bonus {
