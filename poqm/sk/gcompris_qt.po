@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-10-09 23:50+0200\n"
-"Last-Translator: Miroslav Ďurian <aasami@gmail.com>\n"
+"PO-Revision-Date: 2026-09-14 20:10+0200\n"
+"Last-Translator: Roman Paholík <wizzardsk@gmail.com>\n"
 "Language-Team: kde-sk\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
@@ -10169,12 +10169,9 @@ msgstr ""
 
 #. Activity title
 #: activities/fifteen/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The fifteen game"
 msgctxt "ActivityInfo|"
 msgid "The fifteen puzzle"
-msgstr "Hra pätnásť"
+msgstr "Hlavolam pätnásť"
 
 #. Help title
 #: activities/fifteen/ActivityInfo.qml:17
@@ -25143,21 +25140,15 @@ msgstr "Tab: prepnúť medzi výberom farby a oblasťou pre maľovanie"
 
 #. Activity title
 #: activities/sixteen/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The fifteen game"
 msgctxt "ActivityInfo|"
 msgid "The sixteen puzzle"
-msgstr "Hra pätnásť"
+msgstr "Hlavolam šestnásť"
 
 #. Help title
 #: activities/sixteen/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move each item to recreate the image."
 msgctxt "ActivityInfo|"
 msgid "Slide the rows and columns to recreate the image."
-msgstr "Presunúť každú položku, aby sa znovu vytvoril obrázok."
+msgstr "Posúvaním riadkov a stĺpcov znovu vytvorte obrázok."
 
 #. Help manual
 #: activities/sixteen/ActivityInfo.qml:23
@@ -25165,22 +25156,18 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Click on an arrow to slide the corresponding row or column in this direction."
 msgstr ""
+"Kliknite na šípku, aby ste posunuli zodpovedajúci riadok alebo stĺpec v "
+"tomto smere."
 
 #: activities/sixteen/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate through the answers"
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate to select arrow buttons."
-msgstr "Šípky: pohyb po odpovediach"
+msgstr "Šípky: pohyb medzi tlačidlami so šípkami."
 
 #: activities/sixteen/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: flip the selected card"
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: click on selected button."
-msgstr "Medzerník alebo Enter: obrátiť zvolenú kartu"
+msgstr "Medzerník alebo Enter: kliknúť na vybrané tlačidlo."
 
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18

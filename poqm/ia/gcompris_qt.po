@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-07-16 16:25+0200\n"
+"PO-Revision-Date: 2026-09-14 18:24+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -23170,12 +23170,9 @@ msgid "Arrows: navigate to select arrow buttons."
 msgstr ""
 
 #: activities/sixteen/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: validate selected answer"
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: click on selected button."
-msgstr "Spatio o Enter: valida responsa seligite"
+msgstr "Spatio o Enter: clicca sur button seligite"
 
 #. Activity title
 #: activities/sketch/ActivityInfo.qml:18
