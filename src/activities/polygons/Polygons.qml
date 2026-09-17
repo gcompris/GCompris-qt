@@ -58,6 +58,7 @@ ActivityBase {
             readonly property color gridColor: "#b3b3b3"
             readonly property color polygonColor: "#10721d"
             readonly property color dotColor: "#5020a8dd"
+            readonly property color lastDotColor: "#50dda820"
             // View properties
             readonly property int mainSize: Math.min(layoutArea.width, layoutArea.height)
             readonly property int gridStep: mainSize / 10
@@ -198,12 +199,13 @@ ActivityBase {
                     enabled: !items.isClosed && !items.buttonsBlocked
 
                     onClicked: (mouse) => {
+                        mouse.accpeted = true;
                         var point = {
                             "x": Math.round(mouse.x / items.gridStep),
                             "y": Math.round(mouse.y / items.gridStep)
                         }
-                        points.append(point)
-                        sceneGrid.requestPaint()
+                        points.append(point);
+                        sceneGrid.requestPaint();
                     }
                 }
             }
@@ -213,7 +215,8 @@ ActivityBase {
                 model: points
                 delegate: Rectangle {
                     id: pointItem
-                    color: items.dotColor
+                    color: (index === points.count - 1 && !items.isClosed) ?
+                        items.lastDotColor : items.dotColor
                     width: items.gridStep
                     height: items.gridStep
                     radius: width
@@ -233,17 +236,25 @@ ActivityBase {
                         drag.maximumY: items.maxDrag
                         enabled: !items.buttonsBlocked
 
-                        onClicked: {
-                            // simple click on first point closes the shape if at least 3 points already placed
-                            if(index === 0 && points.count > 2) {
+                        onClicked: (mouse)=> {
+                            mouse.accepted = true;
+                            // simple click on first or last point closes the shape if at least 3 points already placed
+                            if(!items.isClosed && points.count > 2 &&
+                                (index === 0 || index === points.count - 1)) {
                                 var point = {
-                                    "x": model.x,
-                                    "y": model.y
-                                }
+                                    "x": points.get(0).x,
+                                    "y": points.get(0).y
+                                };
                                 points.append(point);
                                 sceneGrid.requestPaint();
                                 items.isClosed = true;
                             }
+                        }
+
+                        onDoubleClicked: (mouse)=> {
+                            mouse.accepted = true;
+                            // logic must be done outside the item, else it breaks as soon as the point is deleted.
+                            Activity.deletePoint(index);
                         }
 
                         onPositionChanged: (movedPosition)=> {

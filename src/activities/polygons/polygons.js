@@ -70,6 +70,28 @@ function previousLevel() {
     initLevel();
 }
 
+function deletePoint(pointIndex) {
+    if(items.isClosed) {
+        // If last point, simply delete it and the first/duplicate point.
+        if(pointIndex === items.points.count - 1) {
+            items.points.remove(pointIndex, 1);
+            items.points.remove(0, 1);
+            items.isClosed = false;
+        } else {
+            // remove last duplicate/closing point, remove selected point, and move next ones to the start
+            items.points.remove(items.points.count - 1, 1);
+            items.points.remove(pointIndex, 1);
+            var pointsToMove = items.points.count - pointIndex;
+            items.points.move(pointIndex, 0, pointsToMove);
+            items.isClosed = false
+        }
+
+    } else {
+        items.points.remove(pointIndex, 1);
+    }
+    items.sceneGrid.requestPaint();
+}
+
 function resetShape() {
     items.points.clear();
     items.isClosed = false;

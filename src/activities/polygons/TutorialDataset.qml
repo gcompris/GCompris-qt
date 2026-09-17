@@ -17,9 +17,10 @@ QtObject {
         // level 1
         {
             introMessage: [
-                qsTr("A polygon is a closed shape made of connected lines."),
-                qsTr("To draw a polygon, click on the grid to place the ends of the polygon's lines, then click the first point to close the shape."),
-                qsTr("The ends of the polygon's lines should not be all aligned.")
+                qsTr("A polygon is a closed shape made of at least 3 connected lines."),
+                qsTr("To draw a polygon, click on the grid to place the ends of the polygon's lines."),
+                qsTr("After placing at least 3 points, you can close the shape by clicking on the first or the last point."),
+                qsTr("The points should not be all aligned.")
             ],
             introImage: "qrc:/gcompris/src/activities/polygons/resource/polygon.svg",
             instruction: qsTr("Draw a polygon."),
