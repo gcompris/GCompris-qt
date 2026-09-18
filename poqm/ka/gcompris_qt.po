@@ -25203,12 +25203,9 @@ msgid "Maximum value: 500."
 msgstr "მაქსიმალური მნიშვნელობა: 500."
 
 #: activities/target/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Maximum value: 50000."
 msgctxt "Data|"
 msgid "Maximum value: 5000."
-msgstr "მაქსიმალური მნიშვნელობა: 50000."
+msgstr "მაქსიმალური მნიშვნელობა: 5000."
 
 #: activities/target/resource/5/Data.qml:14
 msgctxt "Data|"
