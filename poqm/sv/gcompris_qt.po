@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-09-08 16:52+0200\n"
+"PO-Revision-Date: 2026-09-27 20:24+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: sv\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 26.08.0\n"
+"X-Generator: Lokalize 26.08.1\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -23128,22 +23128,19 @@ msgstr "Fortsätt"
 #: activities/polygons/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Polygons"
-msgstr ""
+msgstr "Polygoner"
 
 #. Help title
 #: activities/polygons/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Learn about special polygons and draw them in a grid."
-msgstr ""
+msgstr "Lär dig om speciella polygoner och rita dem på ett rutnät."
 
 #. Help goal
 #: activities/polygons/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Learn about special polygons."
-msgstr "Lär dig om några digitala målningsverktyg."
+msgstr "Lär dig om speciella polygoner."
 
 #. Help manual
 #: activities/polygons/ActivityInfo.qml:28
@@ -23158,11 +23155,21 @@ msgid ""
 "restart the shape by clicking on the reload button. When the shape is "
 "correct, press the OK button to validate your answer."
 msgstr ""
+"Klicka på rutnätet för att placera ut punkter som motsvarar ändpunkterna på "
+"polygonens linjer. Så länge figuren inte är sluten har den sista punkten en "
+"annan färg för att visa att den kommer att kopplas samman med nästa punkt "
+"som läggs till. När du har placerat ut minst tre punkter kan du sluta "
+"figuren genom att klicka på den första eller den sista punkten. När figuren "
+"är sluten går det inte att lägga till fler punkter. Du kan flytta en punkt "
+"genom att dra i den eller ta bort den genom att dubbelklicka på den. Du kan "
+"börja om med figuren genom att klicka på knappen för att starta om. När "
+"figuren är klar klickar du på knappen Ok för att bekräfta ditt svar."
 
 #: activities/polygons/TutorialDataset.qml:20
 msgctxt "TutorialDataset|"
 msgid "A polygon is a closed shape made of at least 3 connected lines."
 msgstr ""
+"En polygon är en sluten figur som består av minst tre sammanhängande linjer."
 
 #: activities/polygons/TutorialDataset.qml:21
 msgctxt "TutorialDataset|"
@@ -23170,6 +23177,8 @@ msgid ""
 "To draw a polygon, click on the grid to place the ends of the polygon's "
 "lines."
 msgstr ""
+"För att rita en polygon klickar du på rutnätet för att placera ändpunkterna "
+"för polygonens linjer."
 
 #: activities/polygons/TutorialDataset.qml:22
 msgctxt "TutorialDataset|"
@@ -23177,32 +23186,28 @@ msgid ""
 "After placing at least 3 points, you can close the shape by clicking on the "
 "first or the last point."
 msgstr ""
+"När du har placerat ut minst tre punkter kan du sluta formen genom att "
+"klicka på den första eller den sista punkten."
 
 #: activities/polygons/TutorialDataset.qml:23
-#, fuzzy
-#| msgctxt "VerticalSubtraction|"
-#| msgid "The result should not be a negative number."
 msgctxt "TutorialDataset|"
 msgid "The points should not be all aligned."
-msgstr "Resultatet ska inte vara ett negativt tal."
+msgstr "Punkterna får inte ligga i linje med varandra."
 
 #: activities/polygons/TutorialDataset.qml:26
 msgctxt "TutorialDataset|"
 msgid "Draw a polygon."
-msgstr ""
+msgstr "Rita en polygon."
 
 #: activities/polygons/TutorialDataset.qml:39
 msgctxt "TutorialDataset|"
 msgid "A triangle is a polygon with 3 sides."
-msgstr ""
+msgstr "En triangel är en polygon med tre sidor."
 
 #: activities/polygons/TutorialDataset.qml:42
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the triangle"
 msgctxt "TutorialDataset|"
 msgid "Draw a triangle."
-msgstr "Hitta triangeln"
+msgstr "Rita en triangel."
 
 #: activities/polygons/TutorialDataset.qml:57
 msgctxt "TutorialDataset|"
@@ -23210,11 +23215,13 @@ msgid ""
 "A right triangle is a triangle in which two sides are perpendicular, forming "
 "a right angle (90 degrees)."
 msgstr ""
+"En rätvinklig triangel är en triangel där två sidor är vinkelräta mot "
+"varandra och bildar en rät vinkel (90 grader)."
 
 #: activities/polygons/TutorialDataset.qml:60
 msgctxt "TutorialDataset|"
 msgid "Draw a right triangle."
-msgstr ""
+msgstr "Rita en rätvinklig triangel."
 
 #: activities/polygons/TutorialDataset.qml:74
 msgctxt "TutorialDataset|"
@@ -23222,50 +23229,43 @@ msgid ""
 "An isosceles triangle is a triangle with two sides of equal length and two "
 "angles of equal measure."
 msgstr ""
+"En likbent triangel är en triangel med två sidor av lika längd och två "
+"vinklar av lika storlek."
 
 #: activities/polygons/TutorialDataset.qml:77
 msgctxt "TutorialDataset|"
 msgid "Draw an isosceles triangle."
-msgstr ""
+msgstr "Rita en likbent triangel."
 
 #: activities/polygons/TutorialDataset.qml:100
 msgctxt "TutorialDataset|"
 msgid "A quadrilateral is a four-sided polygon, having 4 sides and 4 corners."
-msgstr ""
+msgstr "En fyrhörning är en polygon med fyra sidor och fyra hörn."
 
 #: activities/polygons/TutorialDataset.qml:103
 msgctxt "TutorialDataset|"
 msgid "Draw a quadrilateral."
-msgstr ""
+msgstr "Rita en fyrhörning."
 
 #: activities/polygons/TutorialDataset.qml:118
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one rectangle and one-quarter of a rectangle."
 msgctxt "TutorialDataset|"
 msgid "A rectangle is a quadrilateral with 4 right angles."
-msgstr "Välj en rektangel och en fjärdedel av en rektangel."
+msgstr "En rektangel är en fyrhörning med fyra räta vinklar."
 
 #: activities/polygons/TutorialDataset.qml:121
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Percentages with a rectangle."
 msgctxt "TutorialDataset|"
 msgid "Draw a rectangle."
-msgstr "Procentvärden med en rektangel."
+msgstr "Rita en rektangel."
 
 #: activities/polygons/TutorialDataset.qml:142
 msgctxt "TutorialDataset|"
 msgid "A square is a rectangle with 4 sides of equal length."
-msgstr ""
+msgstr "En kvadrat är en rektangel med fyra sidor av lika längd."
 
 #: activities/polygons/TutorialDataset.qml:145
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Percentages with a square."
 msgctxt "TutorialDataset|"
 msgid "Draw a square."
-msgstr "Procentvärden med en kvadrat."
+msgstr "Rita en kvadrat."
 
 #: activities/polygons/TutorialDataset.qml:168
 msgctxt "TutorialDataset|"
@@ -23273,21 +23273,23 @@ msgid ""
 "A parallelogram is a quadrilateral with opposite sides of equal length and "
 "opposite angles of equal measure."
 msgstr ""
+"Ett parallellogram är en fyrhörning där motstående sidor är lika långa och "
+"motstående vinklar är lika stora."
 
 #: activities/polygons/TutorialDataset.qml:171
 msgctxt "TutorialDataset|"
 msgid "Draw a parallelogram which is not a rectangle."
-msgstr ""
+msgstr "Rita ett parallellogram som inte är en rektangel."
 
 #: activities/polygons/TutorialDataset.qml:192
 msgctxt "TutorialDataset|"
 msgid "A rhombus is a parallelogram with four sides of equal length."
-msgstr ""
+msgstr "En romb är en parallellogram med fyra sidor av lika längd."
 
 #: activities/polygons/TutorialDataset.qml:195
 msgctxt "TutorialDataset|"
 msgid "Draw a rhombus which is not a square."
-msgstr ""
+msgstr "Rita en romb som inte är en kvadrat."
 
 #. Activity title
 #: activities/positions/ActivityInfo.qml:15
