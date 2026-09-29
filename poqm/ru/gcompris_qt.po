@@ -4921,7 +4921,6 @@ msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
 msgstr "1890 год: «Эол» Клемана Адера"
 
-# BUGME: wrong, Flyer-3 was later than in 1903 --aspotashev
 #: activities/chronos/resource/board/board6_0.qml:48
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
