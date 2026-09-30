@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2026-09-13 21:59+0300\n"
+"PO-Revision-Date: 2026-09-29 08:40+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -22568,22 +22568,19 @@ msgstr "להמשיך"
 #: activities/polygons/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Polygons"
-msgstr ""
+msgstr "מצולעים"
 
 #. Help title
 #: activities/polygons/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Learn about special polygons and draw them in a grid."
-msgstr ""
+msgstr "למידה על מצולעים מיוחדים וציור שלהם ברשת."
 
 #. Help goal
 #: activities/polygons/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Learn about special polygons."
-msgstr "מידע נוסף על כלי איור דיגיטליים."
+msgstr "למידה על מצולעים מיוחדים."
 
 #. Help manual
 #: activities/polygons/ActivityInfo.qml:28
@@ -22602,14 +22599,14 @@ msgstr ""
 #: activities/polygons/TutorialDataset.qml:20
 msgctxt "TutorialDataset|"
 msgid "A polygon is a closed shape made of at least 3 connected lines."
-msgstr ""
+msgstr "מצולע היא צורה סגורה שמורכבת מלפחות 3 קווים מחוברים."
 
 #: activities/polygons/TutorialDataset.qml:21
 msgctxt "TutorialDataset|"
 msgid ""
 "To draw a polygon, click on the grid to place the ends of the polygon's "
 "lines."
-msgstr ""
+msgstr "כדי לצייר מצולע, יש ללחוץ על הרשת כדי להציב את קצוות קווי המצולע."
 
 #: activities/polygons/TutorialDataset.qml:22
 msgctxt "TutorialDataset|"
@@ -22617,32 +22614,28 @@ msgid ""
 "After placing at least 3 points, you can close the shape by clicking on the "
 "first or the last point."
 msgstr ""
+"לאחר הצבת 3 נקודות לפחות, אפשר לסגור את הצורה על ידי לחיצה על הנקודה הראשונה "
+"או האחרונה."
 
 #: activities/polygons/TutorialDataset.qml:23
-#, fuzzy
-#| msgctxt "VerticalSubtraction|"
-#| msgid "The result should not be a negative number."
 msgctxt "TutorialDataset|"
 msgid "The points should not be all aligned."
-msgstr "התוצאה לא אמורה להיות מספר שלילי."
+msgstr "הנקודות לא אמורות להיות מיושרות זו ביחס לזו."
 
 #: activities/polygons/TutorialDataset.qml:26
 msgctxt "TutorialDataset|"
 msgid "Draw a polygon."
-msgstr ""
+msgstr "ציור מצולע."
 
 #: activities/polygons/TutorialDataset.qml:39
 msgctxt "TutorialDataset|"
 msgid "A triangle is a polygon with 3 sides."
-msgstr ""
+msgstr "משולש הוא מצולע עם 3 פאות."
 
 #: activities/polygons/TutorialDataset.qml:42
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the triangle"
 msgctxt "TutorialDataset|"
 msgid "Draw a triangle."
-msgstr "למצוא את השליש"
+msgstr "ציור משולש."
 
 #: activities/polygons/TutorialDataset.qml:57
 msgctxt "TutorialDataset|"
@@ -22650,11 +22643,13 @@ msgid ""
 "A right triangle is a triangle in which two sides are perpendicular, forming "
 "a right angle (90 degrees)."
 msgstr ""
+"משולש ישר זווית הוא משולש בו שתי פאות מאונכות זו לזו ומייצרות זווית ישרה (90 "
+"מעלות)."
 
 #: activities/polygons/TutorialDataset.qml:60
 msgctxt "TutorialDataset|"
 msgid "Draw a right triangle."
-msgstr ""
+msgstr "ציור משולש ימני."
 
 #: activities/polygons/TutorialDataset.qml:74
 msgctxt "TutorialDataset|"
@@ -22662,50 +22657,43 @@ msgid ""
 "An isosceles triangle is a triangle with two sides of equal length and two "
 "angles of equal measure."
 msgstr ""
+"משולש שווה שוקיים הוא משולש עם שתי צלעות באורך שווה ושתי פינות שגודל הזווית "
+"שלהן זהה."
 
 #: activities/polygons/TutorialDataset.qml:77
 msgctxt "TutorialDataset|"
 msgid "Draw an isosceles triangle."
-msgstr ""
+msgstr "נא לצייר משולש שווה שוקיים."
 
 #: activities/polygons/TutorialDataset.qml:100
 msgctxt "TutorialDataset|"
 msgid "A quadrilateral is a four-sided polygon, having 4 sides and 4 corners."
-msgstr ""
+msgstr "מרובע הוא מצולע בעל ארבע פאות, עם 4 פאות ו־4 פינות."
 
 #: activities/polygons/TutorialDataset.qml:103
 msgctxt "TutorialDataset|"
 msgid "Draw a quadrilateral."
-msgstr ""
+msgstr "נא לצייר מרובע."
 
 #: activities/polygons/TutorialDataset.qml:118
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one rectangle and one-quarter of a rectangle."
 msgctxt "TutorialDataset|"
 msgid "A rectangle is a quadrilateral with 4 right angles."
-msgstr "בחרו מלבן וָרבע."
+msgstr "מלבן הוא מרובע עם 4 זוויות ישרות."
 
 #: activities/polygons/TutorialDataset.qml:121
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Percentages with a rectangle."
 msgctxt "TutorialDataset|"
 msgid "Draw a rectangle."
-msgstr "אחוזים עם מלבן."
+msgstr "ציור מרובע."
 
 #: activities/polygons/TutorialDataset.qml:142
 msgctxt "TutorialDataset|"
 msgid "A square is a rectangle with 4 sides of equal length."
-msgstr ""
+msgstr "ריבוע זה מרובע עם 4 פאות באורך שווה."
 
 #: activities/polygons/TutorialDataset.qml:145
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Percentages with a square."
 msgctxt "TutorialDataset|"
 msgid "Draw a square."
-msgstr "אחוזים עם ריבוע."
+msgstr "ציור ריבוע."
 
 #: activities/polygons/TutorialDataset.qml:168
 msgctxt "TutorialDataset|"
@@ -22713,21 +22701,22 @@ msgid ""
 "A parallelogram is a quadrilateral with opposite sides of equal length and "
 "opposite angles of equal measure."
 msgstr ""
+"מקבילית היא מרובע עם פרות מנוגדות באורך שווה וזוויות מנוגדות בגודל זהה."
 
 #: activities/polygons/TutorialDataset.qml:171
 msgctxt "TutorialDataset|"
 msgid "Draw a parallelogram which is not a rectangle."
-msgstr ""
+msgstr "נא לצייר מקבילית שאינה מרובע."
 
 #: activities/polygons/TutorialDataset.qml:192
 msgctxt "TutorialDataset|"
 msgid "A rhombus is a parallelogram with four sides of equal length."
-msgstr ""
+msgstr "מעויין הוא מקבילית עם ארבע פאות באורך שווה."
 
 #: activities/polygons/TutorialDataset.qml:195
 msgctxt "TutorialDataset|"
 msgid "Draw a rhombus which is not a square."
-msgstr ""
+msgstr "נא לצייר מעוין שאינו ריבוע."
 
 #. Activity title
 #: activities/positions/ActivityInfo.qml:15
