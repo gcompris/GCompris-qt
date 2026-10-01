@@ -25,7 +25,13 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Click on the grid to place points corresponding to the ends of the polygon's lines. As long as the shape is not closed, the last point is of a different color to indicate that it will be connected to the next point added. After placing at least 3 points, you can close the shape by clicking on the first or the last point. When the shape is closed, you can not add new points. You can move a point by dragging it, or delete it with a double-click. You can restart the shape by clicking on the reload button. When the shape is correct, press the OK button to validate your answer.")
+  manual: qsTr("Click on the grid to place points corresponding to the ends of the polygon's lines. As long as the shape is not closed, the last point is of a different color to indicate that it will be connected to the next point added. After placing at least 3 points, you can close the shape by clicking on the first or the last point. When the shape is closed, you can not add new points. You can move a point by dragging it, or delete it with a double-click. You can restart the shape by clicking on the reload button. When the shape is correct, press the OK button to validate your answer.") + ("<br><br>") +
+    qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+    qsTr("Arrows: move the keyboard cursor in the grid, and if a point is selected move it") + ("</li><li>") +
+    qsTr("Enter: create a point at the cursor position, or validate your answer when the shape is closed") + ("</li><li>") +
+    qsTr("Space: select or deselect the point at the cursor position") + ("</li><li>") +
+    qsTr("Tab: select next point") + ("</li><li>") +
+    qsTr("Delete: delete selected point") + ("</li></ul>")
   credit: ""
   section: "discovery arts"
   createdInVersion: 270000
