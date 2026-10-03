@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2026-03-04 20:57+0200\n"
+"PO-Revision-Date: 2026-09-16 20:05+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -6913,17 +6913,11 @@ msgid "Pencil size and position"
 msgstr "Pianosävellys"
 
 #: activities/drawing_wheels/DrawingWheels.qml:447
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font selector"
 msgctxt "DrawingWheels|"
 msgid "Color selector"
-msgstr "Fontin valinta"
+msgstr "Värivalitsin"
 
 #: activities/drawing_wheels/DrawingWheels.qml:474
-#, fuzzy
-#| msgctxt "OptionsRow|"
-#| msgid "Undo"
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Kumoa"
@@ -6954,33 +6948,21 @@ msgid "Hide wheel and gear"
 msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:712
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Save your image"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Tallenna kuvasi"
 
 #: activities/drawing_wheels/DrawingWheels.qml:727
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Open an image"
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Avaa kuva"
 
 #: activities/drawing_wheels/DrawingWheels.qml:756
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Create a new image"
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Luo uusi kuva"
 
 #: activities/drawing_wheels/DrawingWheels.qml:775
-#, fuzzy
-#| msgctxt "BackgroundColorSelector|"
-#| msgid "Background color"
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Taustaväri"
@@ -7004,9 +6986,6 @@ msgid "%1 spikes"
 msgstr "%1 s"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1004
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Nopeus"
@@ -7030,9 +7009,6 @@ msgid "Pen size"
 msgstr "Fonttikoko"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1120
-#, fuzzy
-#| msgctxt "ToolsPanel|"
-#| msgid "Opacity"
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Peittävyys"
@@ -7051,33 +7027,21 @@ msgid "Start tooth"
 msgstr "Käynnistä"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1381
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "You did not save this image. Do you want to close this activity?"
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Et tallentanut kuvaa. Haluatko sulkea harjoituksen?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1382
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "Do you want to erase this image?"
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Haluatko pyyhkiä tämän kuvan?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1383
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Kyllä"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1384
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "Ei"
@@ -7096,9 +7060,6 @@ msgstr "Piirrä kirjaimia yhdistämällä pisteet."
 
 #. Help goal
 #: activities/drawletters/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning how to draw letters in a funny way."
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw letters in a fun way."
 msgstr "Opi piirtämään kirjaimia hauskalla tapaa."
@@ -7128,9 +7089,6 @@ msgstr "Piirrä numerot 0:sta 9:ään yhdistämällä pisteet."
 
 #. Help goal
 #: activities/drawnumbers/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning how to draw numbers in a funny way."
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw numbers in a fun way."
 msgstr "Opi piirtämään numeroita hauskalla tapaa."
@@ -15680,33 +15638,21 @@ msgstr ""
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
 #: activities/grammar_classes/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
-msgstr "Askelpalautin: poista vastauksen viimeinen numero"
+msgstr "Askelpalautin: valitse edellinen sana"
 
 #: activities/grammar_analysis/grammar_analysis.js:401
-#, fuzzy
-#| msgctxt "Admin|"
-#| msgid "empty"
 msgctxt "grammar_analysis|"
 msgid "Empty"
-msgstr "tyhjä"
+msgstr "Tyhjä"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Grammatical analysis"
 msgctxt "GrammarAnalysis|"
 msgid "Grammatical analysis"
 msgstr "Kielioppianalyysi"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "GrammarAnalysis|"
 msgid "Learn to identify grammatical classes."
 msgstr "Opi tunnistamaan kieliopillisia luokkia."
@@ -15769,9 +15715,6 @@ msgid "Leave the box blank if the class doesn't match."
 msgstr "Jätä laatikko tyhjäksi, ellei luokka täsmää."
 
 #: activities/grammar_classes/GrammarClasses.qml:15
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Grammatical classes"
 msgctxt "GrammarClasses|"
 msgid "Grammatical classes"
 msgstr "Kieliopilliset luokat"
