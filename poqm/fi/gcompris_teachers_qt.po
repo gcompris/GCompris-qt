@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-03-04 20:38+0200\n"
+"PO-Revision-Date: 2026-09-16 19:59+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -547,17 +547,11 @@ msgid "%1 %"
 msgstr "%1 %"
 
 #: server/activities/enumerate/EnumerateDataDisplay.qml:59
-#, fuzzy
-#| msgctxt "AdjacentNumbersDataDisplay|"
-#| msgid "Answer:"
 msgctxt "EnumerateDataDisplay|"
 msgid "Answer:"
 msgstr "Vastaus:"
 
 #: server/activities/enumerate/EnumerateEditor.qml:27
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "EnumerateEditor|"
 msgid "Sublevels"
 msgstr "Alitasot"
@@ -579,9 +573,6 @@ msgid "Maximum number per item type"
 msgstr "Suurin aloitusluku"
 
 #: server/activities/enumerate/EnumerateEditor.qml:70
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "EnumerateEditor|"
 msgid "Dataset is empty."
 msgstr "Tietojoukko on tyhjä."
@@ -748,12 +739,9 @@ msgid "Visible items:"
 msgstr ""
 
 #: server/activities/gletters/GlettersDataDisplay.qml:95
-#, fuzzy
-#| msgctxt "BinaryBulbDataDisplay|"
-#| msgid "Expected:"
 msgctxt "GlettersDataDisplay|"
 msgid "Typed answer:"
-msgstr "Odotettu:"
+msgstr "Kirjoitettu vastaus:"
 
 #: server/activities/gletters/GlettersDataDisplay.qml:121
 msgctxt "GlettersDataDisplay|"
@@ -774,12 +762,9 @@ msgid "Number between %1 and %2."
 msgstr ""
 
 #: server/activities/guessnumber/GuessnumberDataDisplay.qml:50
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Number of circles"
 msgctxt "GuessnumberDataDisplay|"
 msgid "Number to guess:"
-msgstr "Ympyröiden määrä"
+msgstr "Arvattava luku:"
 
 #: server/activities/guessnumber/GuessnumberDataDisplay.qml:77
 msgctxt "GuessnumberDataDisplay|"
@@ -787,41 +772,26 @@ msgid "Steps:"
 msgstr ""
 
 #: server/activities/guessnumber/GuessnumberEditor.qml:27
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Maximum start number"
 msgctxt "GuessnumberEditor|"
 msgid "Minimum number"
-msgstr "Suurin aloitusluku"
+msgstr "Vähintään"
 
 #: server/activities/guessnumber/GuessnumberEditor.qml:28
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Maximum start number"
 msgctxt "GuessnumberEditor|"
 msgid "Maximum number"
-msgstr "Suurin aloitusluku"
+msgstr "Enintään"
 
 #: server/activities/guessnumber/GuessnumberEditor.qml:90
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "GuessnumberEditor|"
 msgid "Dataset is empty."
 msgstr "Tietojoukko on tyhjä."
 
 #: server/activities/keyboard_training/KeyboardTrainingDataDisplay.qml:26
-#, fuzzy
-#| msgctxt "BinaryBulbDataDisplay|"
-#| msgid "Expected:"
 msgctxt "KeyboardTrainingDataDisplay|"
 msgid "Expected:"
 msgstr "Odotettu:"
 
 #: server/activities/keyboard_training/KeyboardTrainingDataDisplay.qml:32
-#, fuzzy
-#| msgctxt "AdjacentNumbersDataDisplay|"
-#| msgid "Answer:"
 msgctxt "KeyboardTrainingDataDisplay|"
 msgid "Answer:"
 msgstr "Vastaus:"
@@ -1097,7 +1067,7 @@ msgstr "Kesto: %1 s"
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:29
 msgctxt "MagicHatEditor|"
 msgid "Rules to create a valid dataset:"
-msgstr ""
+msgstr "Säännöt kelvollisen tietojoukon luomiseksi:"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:31
 msgctxt "MagicHatEditor|"
@@ -1166,12 +1136,9 @@ msgid "Use coefficients"
 msgstr ""
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:53
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Maximum start number"
 msgctxt "MagicHatEditor|"
 msgid "Maximum result per row"
-msgstr "Suurin aloitusluku"
+msgstr "Tulosten enimmäismäärä/rivi"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:54
 msgctxt "MagicHatEditor|"
@@ -1179,20 +1146,14 @@ msgid "Use different star sets per row"
 msgstr ""
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:55
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Maximum start number"
 msgctxt "MagicHatEditor|"
 msgid "Maximum number of stars"
-msgstr "Suurin aloitusluku"
+msgstr "Tähtiä enintään"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:56
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Minimum start number"
 msgctxt "MagicHatEditor|"
 msgid "Minimum number of stars"
-msgstr "Pienin aloitusluku"
+msgstr "Tähtiä vähintään"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:57
 msgctxt "MagicHatEditor|"
@@ -1205,9 +1166,6 @@ msgid "Row coefficients"
 msgstr ""
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:120
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "MagicHatEditor|"
 msgid "Dataset is empty."
 msgstr "Tietojoukko on tyhjä."
@@ -1248,9 +1206,7 @@ msgid ""
 msgstr ""
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:219
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "MagicHatEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Seuraavat virheet on korjattava:<ul>%1</ul>"
@@ -1415,12 +1371,9 @@ msgid "Domino mode:"
 msgstr ""
 
 #: server/activities/reversecount/ReversecountDataDisplay.qml:67
-#, fuzzy
-#| msgctxt "MultipleChoiceDataDisplay|"
-#| msgid "Question:"
 msgctxt "ReversecountDataDisplay|"
 msgid "Tux position:"
-msgstr "Kysymys:"
+msgstr "Tuxin sijainti:"
 
 #: server/activities/reversecount/ReversecountDataDisplay.qml:92
 msgctxt "ReversecountDataDisplay|"
@@ -1428,9 +1381,6 @@ msgid "Interval:"
 msgstr ""
 
 #: server/activities/reversecount/ReversecountDataDisplay.qml:119
-#, fuzzy
-#| msgctxt "AdjacentNumbersDataDisplay|"
-#| msgid "Answer:"
 msgctxt "ReversecountDataDisplay|"
 msgid "Answer:"
 msgstr "Vastaus:"
@@ -1439,12 +1389,12 @@ msgstr "Vastaus:"
 #, qt-format
 msgctxt "ReversecountDataDisplay|"
 msgid "(%1 + %2) = %3"
-msgstr ""
+msgstr "(%1 + %2) = %3"
 
 #: server/activities/reversecount/ReversecountEditor.qml:25
 msgctxt "ReversecountEditor|"
 msgid "Rules to create a valid dataset:"
-msgstr ""
+msgstr "Säännöt kelvollisen tietojoukon luomiseksi:"
 
 #: server/activities/reversecount/ReversecountEditor.qml:27
 msgctxt "ReversecountEditor|"
@@ -1469,12 +1419,9 @@ msgid ""
 msgstr ""
 
 #: server/activities/reversecount/ReversecountEditor.qml:35
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Maximum start number"
 msgctxt "ReversecountEditor|"
 msgid "Maximum number"
-msgstr "Suurin aloitusluku"
+msgstr "Enintään"
 
 #: server/activities/reversecount/ReversecountEditor.qml:36
 msgctxt "ReversecountEditor|"
@@ -1482,17 +1429,11 @@ msgid "Intervals"
 msgstr ""
 
 #: server/activities/reversecount/ReversecountEditor.qml:37
-#, fuzzy
-#| msgctxt "VerticalEditor|"
-#| msgid "Number of lines"
 msgctxt "ReversecountEditor|"
 msgid "Number of fishes"
-msgstr "Rivien määrä"
+msgstr "Kaloja"
 
 #: server/activities/reversecount/ReversecountEditor.qml:86
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "ReversecountEditor|"
 msgid "Dataset is empty."
 msgstr "Tietojoukko on tyhjä."
@@ -1520,20 +1461,15 @@ msgstr ""
 "kokonaislukuja väliltä 0–%3."
 
 #: server/activities/reversecount/ReversecountEditor.qml:116
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "ReversecountEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Seuraavat virheet on korjattava:<ul>%1</ul>"
 
 #: server/activities/share/ShareDataDisplay.qml:49
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Number of circles"
 msgctxt "ShareDataDisplay|"
 msgid "Number of candies:"
-msgstr "Ympyröiden määrä"
+msgstr "Karkkeja:"
 
 #: server/activities/share/ShareDataDisplay.qml:76
 msgctxt "ShareDataDisplay|"
@@ -1575,17 +1511,11 @@ msgid "Jar placed:"
 msgstr ""
 
 #: server/activities/share/ShareDataDisplay.qml:234
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "Yes"
 msgctxt "ShareDataDisplay|"
 msgid "Yes"
 msgstr "Kyllä"
 
 #: server/activities/share/ShareDataDisplay.qml:234
-#, fuzzy
-#| msgctxt "SettingsView|"
-#| msgid "No"
 msgctxt "ShareDataDisplay|"
 msgid "No"
 msgstr "Ei"
@@ -1598,7 +1528,7 @@ msgstr ""
 #: server/activities/share/ShareEditor.qml:22
 msgctxt "ShareEditor|"
 msgid "Rules to create a valid dataset:"
-msgstr ""
+msgstr "Säännöt kelvollisen tietojoukon luomiseksi:"
 
 #: server/activities/share/ShareEditor.qml:24
 msgctxt "ShareEditor|"
@@ -1621,52 +1551,34 @@ msgid ""
 msgstr ""
 
 #: server/activities/share/ShareEditor.qml:33
-#, fuzzy
-#| msgctxt "AlgebraEditor|"
-#| msgid "Shuffle"
 msgctxt "ShareEditor|"
 msgid "Shuffle"
 msgstr "Sekoita"
 
 #: server/activities/share/ShareEditor.qml:34
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "ShareEditor|"
 msgid "Sublevels"
 msgstr "Alitasot"
 
 #: server/activities/share/ShareEditor.qml:40
-#, fuzzy
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "Random numbers"
 msgctxt "ShareEditor|"
 msgid "Random numbers"
-msgstr "Satunnaiset luvut"
+msgstr "Satunnaisluvut"
 
 #: server/activities/share/ShareEditor.qml:44
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Number of circles"
 msgctxt "ShareEditor|"
 msgid "Number of girls"
-msgstr "Ympyröiden määrä"
+msgstr "Tyttöjä"
 
 #: server/activities/share/ShareEditor.qml:45
-#, fuzzy
-#| msgctxt "VerticalEditor|"
-#| msgid "Number of lines"
 msgctxt "ShareEditor|"
 msgid "Number of boys"
-msgstr "Rivien määrä"
+msgstr "Poikia"
 
 #: server/activities/share/ShareEditor.qml:46
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Number of circles"
 msgctxt "ShareEditor|"
 msgid "Number of candies"
-msgstr "Ympyröiden määrä"
+msgstr "Karkkeja"
 
 #: server/activities/share/ShareEditor.qml:47
 msgctxt "ShareEditor|"
@@ -1684,28 +1596,19 @@ msgid "Force showing the jar"
 msgstr ""
 
 #: server/activities/share/ShareEditor.qml:52
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Maximum start number"
 msgctxt "ShareEditor|"
 msgid "Maximum number of girls"
-msgstr "Suurin aloitusluku"
+msgstr "Tyttöjä enintään"
 
 #: server/activities/share/ShareEditor.qml:53
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Maximum start number"
 msgctxt "ShareEditor|"
 msgid "Maximum number of boys"
-msgstr "Suurin aloitusluku"
+msgstr "Poikia enintään"
 
 #: server/activities/share/ShareEditor.qml:54
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Maximum start number"
 msgctxt "ShareEditor|"
 msgid "Maximum number of candies"
-msgstr "Suurin aloitusluku"
+msgstr "Karkkeja enintään"
 
 #: server/activities/share/ShareEditor.qml:55
 msgctxt "ShareEditor|"
@@ -1713,36 +1616,26 @@ msgid "Already place some candies"
 msgstr ""
 
 #: server/activities/share/ShareEditor.qml:58
-#, fuzzy
-#| msgctxt "FractionsCreateEditor|"
-#| msgid "Instruction"
 msgctxt "ShareEditor|"
 msgid "Instruction"
 msgstr "Ohje"
 
 #: server/activities/share/ShareEditor.qml:289
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "ShareEditor|"
 msgid "Dataset is empty."
 msgstr "Tietojoukko on tyhjä."
 
 #: server/activities/share/ShareEditor.qml:299
-#, fuzzy, qt-format
-#| msgctxt "ComparatorEditor|"
-#| msgid "Level %1 must not be empty."
+#, qt-format
 msgctxt "ShareEditor|"
 msgid "Level %1 must not be empty."
 msgstr "Taso %1 ei saa olla tyhjä."
 
 #: server/activities/share/ShareEditor.qml:309
-#, fuzzy, qt-format
-#| msgctxt "MultipleChoiceEditor|"
-#| msgid "\"Answers\" in Sublevel %1 of Level %2 must not be empty."
+#, qt-format
 msgctxt "ShareEditor|"
 msgid "In Sublevel %2 of Level %1, the total number of children is 0."
-msgstr "Tason %2 alitason %1 ”Vastaukset” ei saa olla tyhjä."
+msgstr "Tason %1 alitasolla %2 lasten kokonaismäärä on 0."
 
 #: server/activities/share/ShareEditor.qml:317
 #, qt-format
@@ -1752,9 +1645,7 @@ msgid ""
 msgstr ""
 
 #: server/activities/share/ShareEditor.qml:324
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "ShareEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Seuraavat virheet on korjattava:<ul>%1</ul>"
@@ -1762,7 +1653,7 @@ msgstr "Seuraavat virheet on korjattava:<ul>%1</ul>"
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:25
 msgctxt "SmallnumbersEditor|"
 msgid "Rules to create a valid dataset:"
-msgstr ""
+msgstr "Säännöt kelvollisen tietojoukon luomiseksi:"
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:27
 msgctxt "SmallnumbersEditor|"
@@ -1787,33 +1678,21 @@ msgid ""
 msgstr ""
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:36
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "SmallnumbersEditor|"
 msgid "Sublevels"
 msgstr "Alitasot"
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:37
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Numbers"
 msgctxt "SmallnumbersEditor|"
 msgid "Numbers"
 msgstr "Luvut"
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:38
-#, fuzzy
-#| msgctxt "FractionsCreateEditor|"
-#| msgid "Instruction"
 msgctxt "SmallnumbersEditor|"
 msgid "Instruction"
 msgstr "Ohje"
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:79
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "SmallnumbersEditor|"
 msgid "Dataset is empty."
 msgstr "Tietojoukko on tyhjä."
@@ -1870,44 +1749,29 @@ msgid "Target values:"
 msgstr ""
 
 #: server/activities/target/TargetDataDisplay.qml:64
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Additions"
 msgctxt "TargetDataDisplay|"
 msgid "Addition:"
-msgstr "Yhteenlaskut"
+msgstr "Yhteenlasku:"
 
 #: server/activities/target/TargetDataDisplay.qml:92
-#, fuzzy
-#| msgctxt "AdjacentNumbersDataDisplay|"
-#| msgid "Answer:"
 msgctxt "TargetDataDisplay|"
 msgid "Answer:"
 msgstr "Vastaus:"
 
 #: server/activities/target/TargetDataDisplay.qml:118
-#, fuzzy
-#| msgctxt "BinaryBulbDataDisplay|"
-#| msgid "Expected:"
 msgctxt "TargetDataDisplay|"
 msgid "Expected answer:"
-msgstr "Odotettu:"
+msgstr "Odotettu vastaus:"
 
 #: server/activities/target/TargetEditor.qml:27
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "TargetEditor|"
 msgid "Sublevels"
 msgstr "Alitasot"
 
 #: server/activities/target/TargetEditor.qml:28
-#, fuzzy
-#| msgctxt "VerticalEditor|"
-#| msgid "Number of digits"
 msgctxt "TargetEditor|"
 msgid "Number of darts"
-msgstr "Numeroiden määrä"
+msgstr "Tikkoja"
 
 #: server/activities/target/TargetEditor.qml:29
 msgctxt "TargetEditor|"
@@ -1915,9 +1779,6 @@ msgid "Target values"
 msgstr ""
 
 #: server/activities/target/TargetEditor.qml:73
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "TargetEditor|"
 msgid "Dataset is empty."
 msgstr "Tietojoukko on tyhjä."
@@ -1937,9 +1798,7 @@ msgid "\"Target values\" for level %1 contains invalid entries."
 msgstr ""
 
 #: server/activities/target/TargetEditor.qml:97
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "TargetEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Seuraavat virheet on korjattava:<ul>%1</ul>"
@@ -1967,26 +1826,17 @@ msgid ""
 msgstr ""
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:27
-#, fuzzy
-#| msgctxt "FractionsFindEditor|"
-#| msgid "Random fraction"
 msgctxt "TensComplementFindEditor|"
 msgid "Random questions"
-msgstr "Satunnainen murtoluku"
+msgstr "Satunnaiskysymykset"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:28
-#, fuzzy
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "Random numbers"
 msgctxt "TensComplementFindEditor|"
 msgid "Find both numbers"
-msgstr "Satunnaiset luvut"
+msgstr "Etsi kumpikin luku"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:29
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:35
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "TensComplementFindEditor|"
 msgid "Sublevels"
 msgstr "Alitasot"
@@ -2035,9 +1885,6 @@ msgid "First operands"
 msgstr "Ensimmäinen luku"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:163
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "TensComplementFindEditor|"
 msgid "Dataset is empty."
 msgstr "Tietojoukko on tyhjä."
@@ -2049,20 +1896,16 @@ msgid "Level %1 contains too many extra cards."
 msgstr ""
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:184
-#, fuzzy, qt-format
-#| msgctxt "ComparatorEditor|"
-#| msgid "Level %1 must not be empty."
+#, qt-format
 msgctxt "TensComplementFindEditor|"
 msgid "Level %1 must not be empty."
 msgstr "Taso %1 ei saa olla tyhjä."
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:193
-#, fuzzy, qt-format
-#| msgctxt "MultipleChoiceEditor|"
-#| msgid "\"Answers\" in Sublevel %1 of Level %2 must not be empty."
+#, qt-format
 msgctxt "TensComplementFindEditor|"
 msgid "Sublevel %2 of Level %1 must not be empty."
-msgstr "Tason %2 alitason %1 ”Vastaukset” ei saa olla tyhjä."
+msgstr "Tason %1 alitaso %2 ei saa olla tyhjä."
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:200
 #, qt-format
@@ -2083,9 +1926,7 @@ msgid "Sublevel %2 of Level %1 contains too many extra cards."
 msgstr ""
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:226
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "TensComplementFindEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Seuraavat virheet on korjattava:<ul>%1</ul>"
@@ -2093,7 +1934,7 @@ msgstr "Seuraavat virheet on korjattava:<ul>%1</ul>"
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:25
 msgctxt "TensComplementSwapEditor|"
 msgid "Rules to create a valid dataset:"
-msgstr ""
+msgstr "Säännöt kelvollisen tietojoukon luomiseksi:"
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:27
 msgctxt "TensComplementSwapEditor|"
@@ -2118,17 +1959,11 @@ msgid ""
 msgstr ""
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:35
-#, fuzzy
-#| msgctxt "AlgebraEditor|"
-#| msgid "Shuffle"
 msgctxt "TensComplementSwapEditor|"
 msgid "Shuffle"
 msgstr "Sekoita"
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:36
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Additions"
 msgctxt "TensComplementSwapEditor|"
 msgid "Additions"
 msgstr "Yhteenlaskut"
@@ -2160,17 +1995,12 @@ msgid "Extra operand"
 msgstr ""
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:144
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "TensComplementSwapEditor|"
 msgid "Dataset is empty."
 msgstr "Tietojoukko on tyhjä."
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:154
-#, fuzzy, qt-format
-#| msgctxt "ComparatorEditor|"
-#| msgid "Level %1 must not be empty."
+#, qt-format
 msgctxt "TensComplementSwapEditor|"
 msgid "Level %1 must not be empty."
 msgstr "Taso %1 ei saa olla tyhjä."
@@ -2184,9 +2014,7 @@ msgid ""
 msgstr ""
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:198
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "TensComplementSwapEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Seuraavat virheet on korjattava:<ul>%1</ul>"
@@ -2213,42 +2041,27 @@ msgstr ""
 "kokonaislukuja 0–9, eikä se saa olla tyhjä."
 
 #: server/activities/tens_complement_use/TensComplementUseDataDisplay.qml:36
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Proposed numbers"
 msgctxt "TensComplementUseDataDisplay|"
 msgid "Proposed numbers:"
-msgstr "Ehdotetut luvut"
+msgstr "Ehdotetut luvut:"
 
 #: server/activities/tens_complement_use/TensComplementUseDataDisplay.qml:71
-#, fuzzy
-#| msgctxt "MultipleChoiceDataDisplay|"
-#| msgid "Question:"
 msgctxt "TensComplementUseDataDisplay|"
 msgid "Question:"
 msgstr "Kysymys:"
 
 #: server/activities/tens_complement_use/TensComplementUseDataDisplay.qml:97
-#, fuzzy
-#| msgctxt "AdjacentNumbersDataDisplay|"
-#| msgid "Answer:"
 msgctxt "TensComplementUseDataDisplay|"
 msgid "Answer:"
 msgstr "Vastaus:"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:27
-#, fuzzy
-#| msgctxt "FractionsFindEditor|"
-#| msgid "Random fraction"
 msgctxt "TensComplementUseEditor|"
 msgid "Random questions"
-msgstr "Satunnainen murtoluku"
+msgstr "Satunnaiskysymykset"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:28
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:34
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sublevels"
 msgctxt "TensComplementUseEditor|"
 msgid "Sublevels"
 msgstr "Alitasot"
@@ -2265,41 +2078,26 @@ msgid "Extra cards"
 msgstr ""
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:31
-#, fuzzy
-#| msgctxt "LearnDecimalsEditor|"
-#| msgid "Minimum Value"
 msgctxt "TensComplementUseEditor|"
 msgid "Minimum result"
-msgstr "Vähimmäisarvo"
+msgstr "Vähimmäistulos"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:32
-#, fuzzy
-#| msgctxt "LearnDecimalsEditor|"
-#| msgid "Maximum Value"
 msgctxt "TensComplementUseEditor|"
 msgid "Maximum result"
-msgstr "Enimmäisarvo"
+msgstr "Enimmäistulos"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:33
-#, fuzzy
-#| msgctxt "AlgebraEditor|"
-#| msgid "Shuffle"
 msgctxt "TensComplementUseEditor|"
 msgid "Shuffle"
 msgstr "Sekoita"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:39
-#, fuzzy
-#| msgctxt "LearnDigitsEditor|"
-#| msgid "Additions"
 msgctxt "TensComplementUseEditor|"
 msgid "Additions"
 msgstr "Yhteenlaskut"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:156
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Dataset is empty."
 msgctxt "TensComplementUseEditor|"
 msgid "Dataset is empty."
 msgstr "Tietojoukko on tyhjä."
@@ -2311,20 +2109,16 @@ msgid "Level %1 contains too many extra cards."
 msgstr ""
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:175
-#, fuzzy, qt-format
-#| msgctxt "ComparatorEditor|"
-#| msgid "Level %1 must not be empty."
+#, qt-format
 msgctxt "TensComplementUseEditor|"
 msgid "Level %1 must not be empty."
 msgstr "Taso %1 ei saa olla tyhjä."
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:184
-#, fuzzy, qt-format
-#| msgctxt "MultipleChoiceEditor|"
-#| msgid "\"Answers\" in Sublevel %1 of Level %2 must not be empty."
+#, qt-format
 msgctxt "TensComplementUseEditor|"
 msgid "Sublevel %2 of Level %1 must not be empty."
-msgstr "Tason %2 alitason %1 ”Vastaukset” ei saa olla tyhjä."
+msgstr "Tason %1 alitaso %2 ei saa olla tyhjä."
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:194
 #, fuzzy, qt-format
@@ -2347,9 +2141,7 @@ msgid "Sublevel %2 of Level %1 contains too many extra cards."
 msgstr ""
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:220
-#, fuzzy, qt-format
-#| msgctxt "BinaryBulbEditor|"
-#| msgid "The following errors need to be fixed:<ul>%1</ul>"
+#, qt-format
 msgctxt "TensComplementUseEditor|"
 msgid "The following errors need to be fixed:<ul>%1</ul>"
 msgstr "Seuraavat virheet on korjattava:<ul>%1</ul>"
@@ -2451,12 +2243,10 @@ msgstr "Poista ryhmä"
 
 #. Argument is dataset name
 #: server/components/SequenceElement.qml:72
-#, fuzzy, qt-format
-#| msgctxt "NavigationPanel|"
-#| msgid "Datasets"
+#, qt-format
 msgctxt "SequenceElement|"
 msgid "Dataset: %1"
-msgstr "Tietojoukot"
+msgstr "Tietojoukko: %1"
 
 #: server/components/ServerLanguageList.qml:32
 msgctxt "ServerLanguageList|"
@@ -2514,12 +2304,10 @@ msgid "Group <b>%1</b> could not be deleted from table group_user_."
 msgstr "Ryhmää <b>%1</b> ei voitu poistaa taulukosta group_user_."
 
 #: server/controllers/database-controller.cpp:481
-#, fuzzy, qt-format
-#| msgctxt "controllers::DatabaseController|"
-#| msgid "Group <b>%1</b> already exists."
+#, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Pupil login <b>%1</b> already exists."
-msgstr "Ryhmä <b>%1</b> on jo olemassa."
+msgstr "Oppilastunnus <b>%1</b> on jo olemassa."
 
 #: server/controllers/database-controller.cpp:500
 #, qt-format
@@ -2769,13 +2557,7 @@ msgid "Import pupils from CSV file"
 msgstr "Tuo oppilaat CSV-tiedostosta"
 
 #: server/dialogs/ImportPupilsDialog.qml:88
-#, fuzzy, qt-format
-#| msgctxt "ImportPupilsDialog|"
-#| msgid ""
-#| "Format: name;groups;password\n"
-#| "Example:\n"
-#| "Patrick Dummy;group 1;1234\n"
-#| "Patricia Brown;group 1,group 2;4321\n"
+#, qt-format
 msgctxt "ImportPupilsDialog|"
 msgid ""
 "Format: name;groups;password\n"
@@ -2785,8 +2567,8 @@ msgid ""
 msgstr ""
 "Muoto: nimi;ryhmät;salasana\n"
 "Esimerkki:\n"
-"Timo Tyhjälä;ryhmä 1;1234\n"
-"Elisa Ei-kukaan;ryhmä 1,ryhmä 2;4321\n"
+"Timo Tyhjälä;ryhmä 1;%1\n"
+"Elisa Ei-kukaan;ryhmä 1,ryhmä 2;%2\n"
 
 #: server/dialogs/ImportPupilsDialog.qml:94
 msgctxt "ImportPupilsDialog|"
@@ -2846,14 +2628,10 @@ msgid ""
 msgstr "Haluatko varmasti poistaa tietokannasta seuraavat oppilaat?"
 
 #: server/dialogs/RemoveSequenceDialog.qml:64
-#, fuzzy
-#| msgctxt "RemoveDatasetDialog|"
-#| msgid ""
-#| "Are you sure you want to delete the following dataset from the database?"
 msgctxt "RemoveSequenceDialog|"
 msgid ""
 "Are you sure you want to delete the following sequence from the database?"
-msgstr "Haluatko varmasti poistaa tietokannasta seuraavan tietojoukon?"
+msgstr "Haluatko varmasti poistaa tietokannasta seuraavan jakson?"
 
 #: server/dialogs/SendDatasetDialog.qml:93
 msgctxt "SendDatasetDialog|"
@@ -2880,127 +2658,80 @@ msgid "Pupils"
 msgstr "Oppilaat"
 
 #: server/dialogs/SendSequenceDialog.qml:104
-#, fuzzy
-#| msgctxt "SendDatasetDialog|"
-#| msgid "Do you want to send the dataset to selected pupils?"
 msgctxt "SendSequenceDialog|"
 msgid "Do you want to send the sequence to selected pupils?"
-msgstr "Haluatko varmasti lähettää tietojoukon valituille oppilaille?"
+msgstr "Haluatko varmasti lähettää jakson valituille oppilaille?"
 
 #: server/dialogs/SendSequenceDialog.qml:105
-#, fuzzy
-#| msgctxt "SendDatasetDialog|"
-#| msgid "Are you sure you want to remove the dataset from selected pupils?"
 msgctxt "SendSequenceDialog|"
 msgid "Are you sure you want to remove the sequence from selected pupils?"
-msgstr "Haluatko varmasti poistaa tietojoukon valituilta käyttäjiltä?"
+msgstr "Haluatko varmasti poistaa jakson valituilta käyttäjiltä?"
 
 #: server/dialogs/SendSequenceDialog.qml:106
-#, fuzzy
-#| msgctxt "SendDatasetDialog|"
-#| msgid ""
-#| "Are you sure you want to remove all the existing datasets from selected "
-#| "pupils?"
 msgctxt "SendSequenceDialog|"
 msgid ""
 "Are you sure you want to remove all the existing sequences from selected "
 "pupils?"
 msgstr ""
 "Haluatko varmasti poistaa valituilta käyttäjiltä kaikki olemassa olevat "
-"tietojoukot?"
+"jaksot?"
 
 #: server/dialogs/SendSequenceDialog.qml:140
-#, fuzzy
-#| msgctxt "ExportPupilsDialog|"
-#| msgid "Pupils"
 msgctxt "SendSequenceDialog|"
 msgid "Pupils"
 msgstr "Oppilaat"
 
 #: server/dialogs/SequenceEditorDialog.qml:50
-#, fuzzy
-#| msgctxt "DatasetEditorDialog|"
-#| msgid "Create dataset"
 msgctxt "SequenceEditorDialog|"
 msgid "Create sequence"
-msgstr "Luo tietojoukko"
+msgstr "Luo jakso"
 
 #: server/dialogs/SequenceEditorDialog.qml:56
-#, fuzzy
-#| msgctxt "DatasetEditorDialog|"
-#| msgid "Update dataset"
 msgctxt "SequenceEditorDialog|"
 msgid "Update sequence"
-msgstr "Päivitä tietojoukko"
+msgstr "Päivitä jakso"
 
 #: server/dialogs/SequenceEditorDialog.qml:81
-#, fuzzy
-#| msgctxt "DatasetEditorDialog|"
-#| msgid "Dataset name is empty"
 msgctxt "SequenceEditorDialog|"
 msgid "Sequence name is empty"
-msgstr "Tietojoukon nimi on tyhjä"
+msgstr "Jakson nimi on tyhjä"
 
 #: server/dialogs/SequenceEditorDialog.qml:163
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sequence length"
 msgctxt "SequenceEditorDialog|"
 msgid "Sequence name"
-msgstr "Jakson pituus"
+msgstr "Jakson nimi"
 
 #: server/dialogs/SequenceEditorDialog.qml:177
-#, fuzzy
-#| msgctxt "DatasetEditorDialog|"
-#| msgid "Goal"
 msgctxt "SequenceEditorDialog|"
 msgid "Goal"
 msgstr "Tavoite"
 
 #: server/dialogs/SequenceEditorDialog.qml:245
-#, fuzzy
-#| msgctxt "NavigationPanel|"
-#| msgid "Activities"
 msgctxt "SequenceEditorDialog|"
 msgid "Activities"
 msgstr "Harjoitukset"
 
 #: server/dialogs/SequenceEditorDialog.qml:272
-#, fuzzy
-#| msgctxt "NavigationPanel|"
-#| msgid "Datasets"
 msgctxt "SequenceEditorDialog|"
 msgid "Datasets"
 msgstr "Tietojoukot"
 
 #: server/dialogs/SequenceEditorDialog.qml:323
-#, fuzzy
-#| msgctxt "EditorBox|"
-#| msgid "Add"
 msgctxt "SequenceEditorDialog|"
 msgid "Add"
 msgstr "Lisää"
 
 #: server/dialogs/SequenceEditorDialog.qml:343
-#, fuzzy
-#| msgctxt "EditorBox|"
-#| msgid "Remove"
 msgctxt "SequenceEditorDialog|"
 msgid "Remove"
 msgstr "Poista"
 
 #: server/dialogs/SequenceEditorDialog.qml:355
-#, fuzzy
-#| msgctxt "EditorBox|"
-#| msgid "Move up"
 msgctxt "SequenceEditorDialog|"
 msgid "Move up"
 msgstr "Siirrä ylemmäs"
 
 #: server/dialogs/SequenceEditorDialog.qml:367
-#, fuzzy
-#| msgctxt "EditorBox|"
-#| msgid "Move down"
 msgctxt "SequenceEditorDialog|"
 msgid "Move down"
 msgstr "Siirrä alemmas"
@@ -3046,12 +2777,9 @@ msgid "Datasets"
 msgstr "Tietojoukot"
 
 #: server/panels/NavigationPanel.qml:111
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sequence length"
 msgctxt "NavigationPanel|"
 msgid "Sequences"
-msgstr "Jakson pituus"
+msgstr "Jaksot"
 
 #: server/panels/NavigationPanel.qml:119
 msgctxt "NavigationPanel|"
@@ -3553,60 +3281,39 @@ msgid "Remove pupils"
 msgstr "Poista oppilaat"
 
 #: server/views/SequencesView.qml:67
-#, fuzzy
-#| msgctxt "AdjacentNumbersEditor|"
-#| msgid "Sequence length"
 msgctxt "SequencesView|"
 msgid "Sequences"
-msgstr "Jakson pituus"
+msgstr "Jaksot"
 
 #: server/views/SequencesView.qml:102
-#, fuzzy
-#| msgctxt "SqlLineDialog|"
-#| msgid "Line details"
 msgctxt "SequencesView|"
 msgid "Details"
-msgstr "Rivin tiedot"
+msgstr "Tiedot"
 
 #: server/views/SequencesView.qml:169
-#, fuzzy
-#| msgctxt "ManagePupilsView|"
-#| msgid "Pupils management"
 msgctxt "SequencesView|"
 msgid "Sequences management"
-msgstr "Oppilaiden hallinnointi"
+msgstr "Jaksojen hallinnointi"
 
 #: server/views/SequencesView.qml:187
-#, fuzzy
-#| msgctxt "DatasetEditorDialog|"
-#| msgid "Create dataset"
 msgctxt "SequencesView|"
 msgid "Create sequence"
-msgstr "Luo tietojoukko"
+msgstr "Luo jakso"
 
 #: server/views/SequencesView.qml:195
-#, fuzzy
-#| msgctxt "DatasetEditorDialog|"
-#| msgid "Update dataset"
 msgctxt "SequencesView|"
 msgid "Update sequence"
-msgstr "Päivitä tietojoukko"
+msgstr "Päivitä jakso"
 
 #: server/views/SequencesView.qml:204
-#, fuzzy
-#| msgctxt "DatasetsView|"
-#| msgid "Send dataset to clients"
 msgctxt "SequencesView|"
 msgid "Send sequence to clients"
-msgstr "Lähetä asiakkaille tietojoukko"
+msgstr "Lähetä jakso asiakkaille"
 
 #: server/views/SequencesView.qml:247
-#, fuzzy
-#| msgctxt "DatasetsView|"
-#| msgid "Delete dataset"
 msgctxt "SequencesView|"
 msgid "Delete sequence"
-msgstr "Poista tietojoukko"
+msgstr "Poista jakso"
 
 #: server/views/SettingsView.qml:65
 msgctxt "SettingsView|"

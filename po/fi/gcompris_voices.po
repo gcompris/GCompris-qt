@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-22 00:40+0000\n"
-"PO-Revision-Date: 2026-02-06 16:38+0200\n"
+"PO-Revision-Date: 2026-09-16 20:01+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -350,10 +350,9 @@ msgstr "Valitse luettelon kullekin lukuparille oikea vertailumerkki."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "compass"
 #: activities/compass/ActivityInfo.qml:17
-#, fuzzy, kde-format
-#| msgid "Use the tools to draw images."
+#, kde-format
 msgid "Use the compass to draw."
-msgstr "Piirrä kuvia käyttämällä työkaluja."
+msgstr "Piirrä käyttäen kompassia."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
 #: activities/crane/ActivityInfo.qml:23
@@ -691,7 +690,7 @@ msgstr "Napsauta oikeaa soitinta."
 #: activities/keyboard_training/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the requested character and type it on the keyboard."
-msgstr ""
+msgstr "Etsi pyydetty merkki ja kirjoita se näppäimistöllä."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "land_safe"
 #: activities/land_safe/ActivityInfo.qml:18
@@ -1095,7 +1094,7 @@ msgstr ""
 #: activities/peg_solitaire/ActivityInfo.qml:17
 #, kde-format
 msgid "Remove all the pieces in the correct order until only one remains."
-msgstr ""
+msgstr "Poista nappulat oikeassa järjestyksessä, kunnes jäljellä on vain yksi."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "penalty"
 #: activities/penalty/ActivityInfo.qml:18

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2026-03-04 20:57+0200\n"
+"PO-Revision-Date: 2026-09-16 20:05+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -6067,12 +6067,12 @@ msgstr "Kultainen temppeli"
 #: activities/compass/Compass.qml:624
 msgctxt "Compass|"
 msgid "Show compass and grid"
-msgstr ""
+msgstr "Näytä kompassi ja ruudukko"
 
 #: activities/compass/Compass.qml:624
 msgctxt "Compass|"
 msgid "Hide compass and grid"
-msgstr ""
+msgstr "Piilota kompassi ja ruudukko"
 
 #: activities/compass/Compass.qml:775
 #, fuzzy
@@ -6117,17 +6117,17 @@ msgstr "Fonttikoko"
 #: activities/compass/Compass.qml:962
 msgctxt "Compass|"
 msgid "Grid spacing"
-msgstr ""
+msgstr "Ruudukon välistys"
 
 #: activities/compass/Compass.qml:1013
 msgctxt "Compass|"
 msgid "Snap to grid"
-msgstr ""
+msgstr "Kiinnity ruudukkoon"
 
 #: activities/compass/Compass.qml:1039
 msgctxt "Compass|"
 msgid "Show grid"
-msgstr ""
+msgstr "Näytä ruudukko"
 
 #: activities/compass/Compass.qml:1103
 #, fuzzy
@@ -6254,7 +6254,7 @@ msgstr "Saman kokoinen"
 #: activities/compass/resource/18/Data.qml:14
 msgctxt "Data|"
 msgid "The lion"
-msgstr ""
+msgstr "Leijona"
 
 #. The animal
 #: activities/compass/resource/19/Data.qml:16
@@ -6276,17 +6276,17 @@ msgstr "Saman kokoinen"
 #: activities/compass/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "The lotus flower"
-msgstr ""
+msgstr "Lootuskukka"
 
 #: activities/compass/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "The carpet of flowers"
-msgstr ""
+msgstr "Kukkamatto"
 
 #: activities/compass/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "The clover"
-msgstr ""
+msgstr "Apila"
 
 #: activities/compass/resource/6/Data.qml:13
 #, fuzzy
@@ -6299,7 +6299,7 @@ msgstr "Pantheon"
 #: activities/compass/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "The daisy"
-msgstr ""
+msgstr "Päivänkakkara"
 
 #. The flower
 #: activities/compass/resource/8/Data.qml:14
@@ -6310,7 +6310,7 @@ msgstr ""
 #: activities/compass/resource/9/Data.qml:13
 msgctxt "Data|"
 msgid "The soccer ball"
-msgstr ""
+msgstr "Jalkapallo"
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -7416,17 +7416,11 @@ msgid "Pencil size and position"
 msgstr "Pianosävellys"
 
 #: activities/drawing_wheels/DrawingWheels.qml:454
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Font selector"
 msgctxt "DrawingWheels|"
 msgid "Color selector"
-msgstr "Fontin valinta"
+msgstr "Värivalitsin"
 
 #: activities/drawing_wheels/DrawingWheels.qml:481
-#, fuzzy
-#| msgctxt "OptionsRow|"
-#| msgid "Undo"
 msgctxt "DrawingWheels|"
 msgid "Undo"
 msgstr "Kumoa"
@@ -7457,33 +7451,21 @@ msgid "Hide wheel and gear"
 msgstr ""
 
 #: activities/drawing_wheels/DrawingWheels.qml:719
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Save your image"
 msgctxt "DrawingWheels|"
 msgid "Save your image"
 msgstr "Tallenna kuvasi"
 
 #: activities/drawing_wheels/DrawingWheels.qml:734
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Open an image"
 msgctxt "DrawingWheels|"
 msgid "Open an image"
 msgstr "Avaa kuva"
 
 #: activities/drawing_wheels/DrawingWheels.qml:763
-#, fuzzy
-#| msgctxt "FilesPanel|"
-#| msgid "Create a new image"
 msgctxt "DrawingWheels|"
 msgid "Create a new image"
 msgstr "Luo uusi kuva"
 
 #: activities/drawing_wheels/DrawingWheels.qml:782
-#, fuzzy
-#| msgctxt "BackgroundColorSelector|"
-#| msgid "Background color"
 msgctxt "DrawingWheels|"
 msgid "Background color"
 msgstr "Taustaväri"
@@ -7507,9 +7489,6 @@ msgid "%1 spikes"
 msgstr "%1 s"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1011
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "DrawingWheels|"
 msgid "Speed"
 msgstr "Nopeus"
@@ -7533,9 +7512,6 @@ msgid "Pen size"
 msgstr "Fonttikoko"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1127
-#, fuzzy
-#| msgctxt "ToolsPanel|"
-#| msgid "Opacity"
 msgctxt "DrawingWheels|"
 msgid "Opacity"
 msgstr "Peittävyys"
@@ -7554,33 +7530,21 @@ msgid "Start tooth"
 msgstr "Käynnistä"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1388
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "You did not save this image. Do you want to close this activity?"
 msgctxt "DrawingWheels|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Et tallentanut kuvaa. Haluatko sulkea harjoituksen?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1389
-#, fuzzy
-#| msgctxt "Sketch|"
-#| msgid "Do you want to erase this image?"
 msgctxt "DrawingWheels|"
 msgid "Do you want to erase this image?"
 msgstr "Haluatko pyyhkiä tämän kuvan?"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1390
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "DrawingWheels|"
 msgid "Yes"
 msgstr "Kyllä"
 
 #: activities/drawing_wheels/DrawingWheels.qml:1391
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "DrawingWheels|"
 msgid "No"
 msgstr "Ei"
@@ -7599,9 +7563,6 @@ msgstr "Piirrä kirjaimia yhdistämällä pisteet."
 
 #. Help goal
 #: activities/drawletters/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning how to draw letters in a funny way."
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw letters in a fun way."
 msgstr "Opi piirtämään kirjaimia hauskalla tapaa."
@@ -7631,9 +7592,6 @@ msgstr "Piirrä numerot 0:sta 9:ään yhdistämällä pisteet."
 
 #. Help goal
 #: activities/drawnumbers/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning how to draw numbers in a funny way."
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw numbers in a fun way."
 msgstr "Opi piirtämään numeroita hauskalla tapaa."
@@ -16170,33 +16128,21 @@ msgstr ""
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
 #: activities/grammar_classes/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
-msgstr "Askelpalautin: poista vastauksen viimeinen numero"
+msgstr "Askelpalautin: valitse edellinen sana"
 
 #: activities/grammar_analysis/grammar_analysis.js:400
-#, fuzzy
-#| msgctxt "Admin|"
-#| msgid "empty"
 msgctxt "grammar_analysis|"
 msgid "Empty"
-msgstr "tyhjä"
+msgstr "Tyhjä"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Grammatical analysis"
 msgctxt "GrammarAnalysis|"
 msgid "Grammatical analysis"
 msgstr "Kielioppianalyysi"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "GrammarAnalysis|"
 msgid "Learn to identify grammatical classes."
 msgstr "Opi tunnistamaan kieliopillisia luokkia."
@@ -16259,9 +16205,6 @@ msgid "Leave the box blank if the class doesn't match."
 msgstr "Jätä laatikko tyhjäksi, ellei luokka täsmää."
 
 #: activities/grammar_classes/GrammarClasses.qml:15
-#, fuzzy
-#| msgctxt "grammar_analysis|"
-#| msgid "Grammatical classes"
 msgctxt "GrammarClasses|"
 msgid "Grammatical classes"
 msgstr "Kieliopilliset luokat"
@@ -17440,47 +17383,32 @@ msgid "Find the tuba"
 msgstr "Etsi tuuba"
 
 #: activities/keyboard_training/ActivityConfig.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw letters"
 msgctxt "ActivityConfig|"
 msgid "Uppercase letters"
-msgstr "Piirrä kirjaimia"
+msgstr "Suuraakkoset"
 
 #: activities/keyboard_training/ActivityConfig.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw letters"
 msgctxt "ActivityConfig|"
 msgid "Lowercase letters"
-msgstr "Piirrä kirjaimia"
+msgstr "Pienaakkoset"
 
 #. Activity title
 #: activities/keyboard_training/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Keyboard training."
 msgctxt "ActivityInfo|"
 msgid "Keyboard training"
-msgstr "Näppäimistöharjoitus."
+msgstr "Näppäimistöharjoitus"
 
 #. Help title
 #: activities/keyboard_training/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Read the score, and then play it on the keyboard."
 msgctxt "ActivityInfo|"
 msgid "Find the requested character and type it on the keyboard."
-msgstr "Lue nuotit ja soita melodia koskettimistolla."
+msgstr "Etsi pyydetty merkki ja kirjoita se näppäimistöllä."
 
 #. Help goal
 #: activities/keyboard_training/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to spell words."
 msgctxt "ActivityInfo|"
 msgid "Learn to type on a keyboard."
-msgstr "Opi sanojen oikeinkirjoitusta."
+msgstr "Opi kirjoittamaan näppäimistöllä."
 
 #. Help manual
 #: activities/keyboard_training/ActivityInfo.qml:23
@@ -24860,33 +24788,21 @@ msgid "Numbers between %1 and %2."
 msgstr "Luvut väliltä %1–%2."
 
 #: activities/reversecount/Reversecount.qml:81
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "Reversecount|"
 msgid "Dots"
 msgstr "Pisteet"
 
 #: activities/reversecount/Reversecount.qml:82
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Arabic numbers"
 msgctxt "Reversecount|"
 msgid "Arabic numbers"
 msgstr "Arabialaiset numerot"
 
 #: activities/reversecount/Reversecount.qml:83
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Roman numbers"
 msgctxt "Reversecount|"
 msgid "Roman numbers"
 msgstr "Roomalaiset numerot"
 
 #: activities/reversecount/Reversecount.qml:84
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Images"
 msgctxt "Reversecount|"
 msgid "Images"
 msgstr "Kuvat"
@@ -26579,33 +26495,21 @@ msgid "Type the number on the domino, from 0 to 9."
 msgstr "Piirrä dominossa oleva luku 0:sta 9:ään."
 
 #: activities/smallnumbers2/Smallnumbers2.qml:23
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "Smallnumbers2|"
 msgid "Dots"
 msgstr "Pisteet"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:24
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Arabic numbers"
 msgctxt "Smallnumbers2|"
 msgid "Arabic numbers"
 msgstr "Arabialaiset numerot"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:25
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Roman numbers"
 msgctxt "Smallnumbers2|"
 msgid "Roman numbers"
 msgstr "Roomalaiset numerot"
 
 #: activities/smallnumbers2/Smallnumbers2.qml:26
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Images"
 msgctxt "Smallnumbers2|"
 msgid "Images"
 msgstr "Kuvat"
