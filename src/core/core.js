@@ -33,6 +33,25 @@ function shuffle(o) {
 }
 
 /**
+ * Shuffle the ListModel @p o and returns it.
+ *
+ * @param o Array to shuffle.
+ * @returns A shuffled ListModel.
+ */
+function shuffleListModel(o){
+    var currentIndex = o.count, temporaryValue, randomIndex;
+
+    while (currentIndex > 0) {
+        randomIndex = Math.floor(Math.random() * currentIndex)
+        currentIndex -= 1
+        temporaryValue = JSON.parse(JSON.stringify(o.get(currentIndex)))
+        o.set(currentIndex, o.get(randomIndex))
+        o.set(randomIndex, temporaryValue);
+    }
+    return o;
+}
+
+/**
  * Get the starting level. This is used with --start-level option.
  *
  * @param numberOfLevel the number of levels for this activity.
