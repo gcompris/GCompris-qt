@@ -24,7 +24,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-09-26 09:30+0200\n"
+"PO-Revision-Date: 2026-10-04 10:09+0200\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Basealt Translation Team\n"
 "Language: ru\n"
@@ -28853,7 +28853,7 @@ msgstr "Сервер %1 не принял пароль"
 #: core/main.qml:534 core/main.qml:553 core/main.qml:628
 msgctxt "main|"
 msgid "OK"
-msgstr "OK"
+msgstr "ОК"
 
 #: core/main.qml:549
 msgctxt "main|"
