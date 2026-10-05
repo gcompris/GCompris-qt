@@ -24,9 +24,11 @@ Rectangle {
     property double yCenter: y + height / 2
     property Item currentTileImageItem
 
+    property bool displaySelector: false
+
     width: GCStyle.baseMargins
     height: width
-    radius: width/2
+    radius: width
     z: 200
 
     border.width: 1
@@ -47,6 +49,18 @@ Rectangle {
         sourceSize.width: width
         sourceSize.height: height
         z: -1
+    }
+
+    Rectangle {
+        id: keyboardCursor
+        width: parent.width * 1.5
+        height: width
+        radius: width
+        anchors.centerIn: parent
+        color: "white"
+        border.width: GCStyle.midBorder
+        border.color: GCStyle.selectedDarkBlue
+        visible: dropCircle.displaySelector
     }
 
     function imageRemove() {

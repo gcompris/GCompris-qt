@@ -15,7 +15,6 @@ import "babymatch.js" as Activity
 
 Item {
     id: item
-
     width: tile.width
     height: tile.height
 
@@ -25,8 +24,78 @@ Item {
     property QtObject answer: tileImage.parent
     property bool selected: false
     property alias dropStatus: tileImage.dropStatus
+    readonly property bool isDropped: tileImage.parent != tile
 
     signal pressed
+
+    function mousePressed(mouseX, mouseY) {
+        Activity.hideInstructions();
+        item.pressed();
+        tileImage.anchors.centerIn = undefined;
+        tileImage.dropStatus = -1;
+        item.hideOkButton();
+        itemMouseArea.startX = mouseX;
+        itemMouseArea.startY = mouseY;
+        toolTip.show(toolTipText);
+        if(tileImage.parent == tile)
+            leftWidget.z = 3;
+        else {
+            leftWidget.z = 1;
+        }
+
+        if(tileImage.currentTargetSpot) {
+            var coords = movePlaceholder.mapFromItem(backgroundImage, tileImage.currentTargetSpot.xCenter, tileImage.currentTargetSpot.yCenter);
+            tileImage.parent = movePlaceholder;
+            tileImage.x = coords.x - tileImage.width * 0.5;
+            tileImage.y = coords.y - tileImage.height * 0.5;
+            tileImage.currentTargetSpot.currentTileImageItem = null;
+            tileImage.currentTargetSpot = null;
+        }
+        if(imgSound)
+            activity.audioVoices.play(ApplicationInfo.getAudioFilePath(imgSound));
+    }
+
+    function dropToSpot(spot) {
+        tileImage.opacity = 1;
+        Activity.highLightSpot(null, tileImage);
+        var closestSpot = null;
+        if(spot != null) {
+            closestSpot = spot;
+            itemMouseArea.updateFoundStatus(closestSpot);
+            tileImage.dropEnabled = false;
+        } else if(tileImage.dropEnabled){
+            closestSpot = itemMouseArea.getClosestSpot();
+            itemMouseArea.updateFoundStatus(closestSpot);
+            tileImage.dropEnabled = false;
+
+        }
+        if(closestSpot === null) {
+            if(tileImage.currentTargetSpot) {
+                tileImage.currentTargetSpot.imageRemove();
+            } else {
+                tileImage.imageRemove();
+            }
+        } else {
+            if(tileImage.currentTargetSpot !== closestSpot) {
+                closestSpot.imageRemove();
+                closestSpot.imageAdd(tileImage);
+            }
+            tileImage.currentTargetSpot = closestSpot;
+            tileImage.tileImageParent = spotsContainer;
+            var originCoords = tileImage.parent.mapToItem(backgroundImage, tileImage.x, tileImage.y);
+            tileImage.parent = tileImage.tileImageParent;
+            tileImage.x = originCoords.x;
+            tileImage.y = originCoords.y;
+            tileImage.toFull();
+            var destCoord = tileImage.parent.mapFromItem(backgroundImage,
+                                                         closestSpot.xCenter - tileImage.fullWidth/2,
+                                                         closestSpot.yCenter - tileImage.fullHeight/2);
+            tileImage.targetImageX = destCoord.x;
+            tileImage.targetImageY = destCoord.y;
+            tileImage.z = 100;
+            tileImageAnimation.restart();
+        }
+    }
 
     ParallelAnimation {
         id: tileImageAnimation
@@ -77,8 +146,10 @@ Item {
         id: tile
         width: tileSize
         height: tileSize
-        color: (parent.selected && tileImage.parent == tile) ? GCStyle.lightTransparentBg : "transparent"
-        border.color: (parent.selected && tileImage.parent == tile) ? GCStyle.whiteBorder : "transparent"
+        color: (parent.selected && !item.isDropped) ? GCStyle.lightTransparentBg : "transparent"
+        border.color: (parent.selected && !item.isDropped) ?
+            (items.keyboardControls && items.listFocus ? GCStyle.selectedDarkBlue : GCStyle.whiteBorder) :
+            "transparent"
         border.width: GCStyle.thinBorder
         radius: GCStyle.tinyMargins
 
@@ -183,6 +254,7 @@ Item {
             }
 
             MouseArea {
+                id: itemMouseArea
                 enabled: !items.inputLocked
                 drag.target: parent
                 property real startX
@@ -193,31 +265,9 @@ Item {
                 width: Math.max(parent.width, items.minimumClickArea)
                 height: Math.max(parent.height, items.minimumClickArea)
 
-                onPressed: {
-                    Activity.hideInstructions();
-                    item.pressed();
-                    tileImage.anchors.centerIn = undefined;
-                    tileImage.dropStatus = -1;
-                    item.hideOkButton();
-                    startX = mouseX;
-                    startY = mouseY;
-                    toolTip.show(toolTipText);
-                    if(tileImage.parent == tile)
-                        leftWidget.z = 3;
-                    else {
-                        leftWidget.z = 1;
-                    }
-
-                    if(tileImage.currentTargetSpot) {
-                        var coords = movePlaceholder.mapFromItem(backgroundImage, tileImage.currentTargetSpot.xCenter, tileImage.currentTargetSpot.yCenter);
-                        tileImage.parent = movePlaceholder;
-                        tileImage.x = coords.x - tileImage.width * 0.5;
-                        tileImage.y = coords.y - tileImage.height * 0.5;
-                        tileImage.currentTargetSpot.currentTileImageItem = null;
-                        tileImage.currentTargetSpot = null;
-                    }
-                    if(imgSound)
-                        activity.audioVoices.play(ApplicationInfo.getAudioFilePath(imgSound));
+                onPressed: (mouse)=> {
+                    item.mousePressed(mouse.x, mouse.y);
+                    Activity.resetKeyboardControls();
                 }
 
                 onPositionChanged: {
@@ -232,39 +282,7 @@ Item {
                 }
 
                 onReleased: {
-                    tileImage.opacity = 1;
-                    Activity.highLightSpot(null, tileImage);
-                    var closestSpot = null;
-                    if(tileImage.dropEnabled) {
-                        closestSpot = getClosestSpot();
-                        updateFoundStatus(closestSpot);
-                        tileImage.dropEnabled = false;
-                    }
-                    if(closestSpot === null) {
-                        if(tileImage.currentTargetSpot)
-                            tileImage.currentTargetSpot.imageRemove();
-                        else
-                            tileImage.imageRemove();
-                    } else {
-                        if(tileImage.currentTargetSpot !== closestSpot) {
-                            closestSpot.imageRemove();
-                            closestSpot.imageAdd(tileImage);
-                        }
-                        tileImage.currentTargetSpot = closestSpot;
-                        tileImage.tileImageParent = backgroundImage;
-                        var originCoords = tileImage.parent.mapToItem(backgroundImage, tileImage.x, tileImage.y);
-                        tileImage.parent = tileImage.tileImageParent;
-                        tileImage.x = originCoords.x;
-                        tileImage.y = originCoords.y;
-                        tileImage.toFull();
-                        var destCoord = tileImage.parent.mapFromItem(backgroundImage,
-                                                                     closestSpot.xCenter - tileImage.fullWidth/2,
-                                                                     closestSpot.yCenter - tileImage.fullHeight/2);
-                        tileImage.targetImageX = destCoord.x;
-                        tileImage.targetImageY = destCoord.y;
-                        tileImage.z = 100;
-                        tileImageAnimation.restart();
-                    }
+                    item.dropToSpot(null);
                 }
 
                 function getClosestSpot() {

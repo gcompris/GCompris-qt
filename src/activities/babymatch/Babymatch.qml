@@ -64,6 +64,7 @@ ActivityBase {
             property alias grid: grid
             property alias backgroundImageSource: backgroundImageSource
             property alias backgroundImage: backgroundImage
+            property alias spotsContainer: spotsContainer
             property alias leftWidget: leftWidget
             property alias instructionPanel: instructionPanel
             property alias toolTip: toolTip
@@ -76,7 +77,49 @@ ActivityBase {
             // same formula used to define dropCircle size, here to define a minimum MouseArea
             // size for dropped items if they are smaller than the circles.
             property double minimumClickArea: backgroundImage.width >= backgroundImage.height ? backgroundImage.height/35 : backgroundImage.width/35
+
+            // For keyboard controls
+            property bool keyboardControls: false
+            property bool listFocus: true
+            property int selectedSpotIndex: -1
+            property DropAnswerItem selectedSpot: null
         }
+
+        Keys.onPressed: (event) => {
+            if(event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
+                if(availablePieces.okEnabled) {
+                    availablePieces.view.checkAnswer();
+                    return;
+                }
+            }
+            if(!items.keyboardControls) {
+                items.keyboardControls = true;
+            }
+            switch(event.key) {
+                case Qt.Key_Left:
+                    Activity.moveCursorLeft();
+                    break;
+                case Qt.Key_Right:
+                    Activity.moveCursorRight();
+                    break;
+                case Qt.Key_Up:
+                    Activity.moveCursorUp();
+                    break;
+                case Qt.Key_Down:
+                    Activity.moveCursorDown();
+                    break;
+                case Qt.Key_Space:
+                    Activity.spacePressed();
+                    break;
+                case Qt.Key_Tab:
+                    Activity.switchFocus();
+                    break;
+                case Qt.Key_Delete:
+                case Qt.Key_Backspace:
+                    Activity.undropItem();
+            }
+        }
+
 
         Loader {
             id: dataset
@@ -169,7 +212,10 @@ ActivityBase {
             MouseArea {
                 anchors.fill: parent
                 enabled: !items.inputLocked
-                onPressed: instructionPanel.opacity === 0 ? instructionPanel.show() : instructionPanel.hide();
+                onPressed: {
+                    Activity.resetKeyboardControls();
+                    instructionPanel.opacity === 0 ? instructionPanel.show() : instructionPanel.hide();
+                }
             }
         }
 
@@ -300,7 +346,15 @@ ActivityBase {
                 MouseArea {
                     anchors.fill: parent
                     enabled: !items.inputLocked
-                    onPressed: instructionPanel.opacity === 0 ? instructionPanel.show() : instructionPanel.hide();
+                    onPressed: {
+                        instructionPanel.opacity === 0 ? instructionPanel.show() : instructionPanel.hide();
+                        Activity.resetKeyboardControls();
+                    }
+                }
+
+                Item {
+                    id: spotsContainer
+                    anchors.fill: parent
                 }
             }
         }

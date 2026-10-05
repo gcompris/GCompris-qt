@@ -24,6 +24,114 @@ Item {
     property alias showOk: showOk
     property alias hideOk: hideOk
     property alias repeater: repeater
+    readonly property bool okEnabled: !items.inputLocked && ok.height === view.iconSize
+    readonly property bool previousButtonVisible: (model.count > view.nbItemsByGroup &&
+        view.previousNavigation != 0 && view.currentDisplayedGroup != 0)
+    readonly property bool nextButtonVisible: (model.count > view.nbItemsByGroup &&
+        view.nextNavigation != 0 && view.currentDisplayedGroup < view.nbDisplayedGroup - 1)
+
+    function selectFirstItem() {
+        // Select first item not already dropped in the list, else -1 if all dropped already.
+        while(previous.opacity === 1) {
+            showPreviousGroup();
+        }
+        repeater.currentIndex = -1;
+        selectNextItem();
+    }
+
+    function selectNextItem() {
+        if(repeater.currentIndex === repeater.count - 1) {
+            return;
+        }
+        var indexToSelect = -1;
+        var relativeNextIndex = 0;
+        if(repeater.currentIndex === -1) {
+            relativeNextIndex = view.nbItemsByGroup * view.currentDisplayedGroup;
+        } else {
+            relativeNextIndex = repeater.currentIndex + 1;
+        }
+        var lastDisplayedIndex = view.nbItemsByGroup * (view.currentDisplayedGroup + 1) - 1;
+
+        for(var i = relativeNextIndex; i <= lastDisplayedIndex; i++) {
+            if(repeater.itemAt(i) && !repeater.itemAt(i).isDropped) {
+                indexToSelect = i;
+                break;
+            }
+        }
+
+        for(var groupId = 0; groupId < view.nbDisplayedGroup; groupId++) {
+            var keepLooking = true;
+            if(indexToSelect === -1 && listWidget.nextButtonVisible) {
+                showNextGroup();
+                relativeNextIndex = view.nbItemsByGroup * view.currentDisplayedGroup;
+                lastDisplayedIndex = view.nbItemsByGroup * (view.currentDisplayedGroup + 1) - 1;
+                for(var i = relativeNextIndex; i <= lastDisplayedIndex; i++) {
+                    if(repeater.itemAt(i) && !repeater.itemAt(i).isDropped) {
+                        indexToSelect = i;
+                        break;
+                    }
+                }
+            }
+            if(!keepLooking) {
+                break;
+            }
+        }
+
+        if(indexToSelect != -1) {
+            repeater.itemAt(indexToSelect).mousePressed(0,0);
+        }
+    }
+
+    function selectPreviousItem() {
+        if(repeater.currentIndex === 0) {
+            return;
+        }
+        var indexToSelect = -1;
+        var relativePreviousIndex = 0;
+        if(repeater.currentIndex === -1) {
+            relativePreviousIndex = view.nbItemsByGroup * view.currentDisplayedGroup;
+        } else {
+            relativePreviousIndex = repeater.currentIndex - 1;
+        }
+        var firstDisplayedIndex = view.nbItemsByGroup * view.currentDisplayedGroup;
+
+        for(var i = relativePreviousIndex; i >= firstDisplayedIndex; i--) {
+            if(!repeater.itemAt(i).isDropped) {
+                indexToSelect = i;
+                break;
+            }
+        }
+
+        if(indexToSelect === -1 && listWidget.previousButtonVisible) {
+            showPreviousGroup();
+            relativePreviousIndex = view.nbItemsByGroup * (view.currentDisplayedGroup + 1) - 1;
+            firstDisplayedIndex = view.nbItemsByGroup * view.currentDisplayedGroup;
+            for(var i = relativePreviousIndex; i >= firstDisplayedIndex; i--) {
+                if(!repeater.itemAt(i).isDropped) {
+                    indexToSelect = i;
+                    break;
+                }
+            }
+        }
+
+        if(indexToSelect != -1) {
+            repeater.itemAt(indexToSelect).mousePressed(0,0);
+        }
+    }
+
+    function showNextGroup() {
+        repeater.currentIndex = -1;
+        view.setCurrentDisplayedGroup = view.currentDisplayedGroup + view.nextNavigation;
+        view.refreshLeftWidget();
+    }
+
+    function showPreviousGroup() {
+        repeater.currentIndex = -1;
+        if(previous.opacity == 1) {
+            view.setCurrentDisplayedGroup = view.currentDisplayedGroup - view.previousNavigation;
+            view.refreshLeftWidget();
+        }
+    }
 
     ListModel {
         id: mymodel
@@ -56,8 +164,11 @@ Item {
 
         MouseArea {
             anchors.fill: parent
-            enabled: !items.inputLocked
-            onClicked: view.checkAnswer();
+            enabled: listWidget.okEnabled
+            onClicked: {
+                Activity.resetKeyboardControls();
+                view.checkAnswer();
+            }
         }
     }
 
@@ -199,7 +310,9 @@ Item {
                 visible: view.currentDisplayedGroup * view.nbItemsByGroup <= index &&
                          index <= (view.currentDisplayedGroup+1) * view.nbItemsByGroup-1
 
-                onPressed: repeater.currentIndex = index;
+                onPressed: {
+                    repeater.currentIndex = index;
+                }
             }
 
             clip: true
@@ -214,8 +327,7 @@ Item {
 
             Image {
                 id: previous
-                opacity: (model.count > view.nbItemsByGroup &&
-                          view.previousNavigation != 0 && view.currentDisplayedGroup != 0) ? 1 : 0
+                opacity: listWidget.previousButtonVisible ? 1 : 0
                 source:"qrc:/gcompris/src/core/resource/bar_previous.svg"
                 sourceSize.height: view.iconSize * 0.85
                 fillMode: Image.PreserveAspectFit
@@ -225,19 +337,14 @@ Item {
                     anchors.fill: parent
                     enabled: !items.inputLocked && parent.opacity > 0
                     onClicked: {
-                        repeater.currentIndex = -1;
-                        if(previous.opacity == 1) {
-                            view.setCurrentDisplayedGroup = view.currentDisplayedGroup - view.previousNavigation;
-                            view.refreshLeftWidget();
-                        }
+                        listWidget.showPreviousGroup();
                     }
                 }
             }
 
             Image {
                 id: next
-                opacity: (model.count > view.nbItemsByGroup && view.nextNavigation != 0
-                            && view.currentDisplayedGroup < view.nbDisplayedGroup - 1) ? 1 : 0
+                opacity: listWidget.nextButtonVisible ? 1 : 0
                 source:"qrc:/gcompris/src/core/resource/bar_next.svg"
                 sourceSize.height: view.iconSize * 0.85
                 fillMode: Image.PreserveAspectFit
@@ -247,9 +354,7 @@ Item {
                     anchors.fill: parent
                     enabled: !items.inputLocked && parent.opacity > 0
                     onClicked: {
-                        repeater.currentIndex = -1;
-                        view.setCurrentDisplayedGroup = view.currentDisplayedGroup + view.nextNavigation;
-                        view.refreshLeftWidget();
+                        listWidget.showNextGroup();
                     }
                 }
             }

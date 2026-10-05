@@ -43,6 +43,8 @@ function start(items_, imagesUrl_, soundsUrl_, boardsUrl_, levelCount_, answerGl
 }
 
 function resetData() {
+    resetKeyboardControls();
+    resetSelectedIndices();
     items.availablePieces.model.clear();
     for(var i = 0 ; i < spots.length ; ++ i) {
         spots[i].destroy();
@@ -99,20 +101,8 @@ function initLevel() {
         items.instructionPanel.opacity = 1;
         items.instructionPanel.textItem.text = levelData.instruction;
     }
-	
-    // Fill available pieces
-    var arr = [];
-    var levelDataLength = levelData.levels.length;
-    for(var i=0 ; i < levelDataLength ; i++)
-        arr[i] = i;
 
-    var i = 0, j = 0, k = 0, n = 0;
-    while(levelDataLength--) {
-
-        //Randomize the order of pieces
-        var rand = Math.floor(Math.random() * levelDataLength);
-        i = arr[rand];
-        arr.splice(rand,1);
+    for(var i = 0, j = 0, k = 0; i < levelData.levels.length; i++) {
 
         //Create answer pieces
         if(levelData.levels[i].type === undefined) {
@@ -133,11 +123,12 @@ function initLevel() {
             });
 
             spots[j++] = dropItemComponent.createObject(
-                         items.backgroundImage, {
+                         items.spotsContainer, {
                             "posX": levelData.levels[i].x,
                             "posY": levelData.levels[i].y,
                             "imgName" : levelData.levels[i].pixmapfile,
                          });
+
         }
         //Create Text pieces for the level which has to display additional information
         else if(levelData.levels[i].type === "DisplayText") {
@@ -170,6 +161,9 @@ function initLevel() {
             }
         }
     }
+
+    // Shuffle only the ListModel to have different indices between the ListWidget and spots, and keep the original data order for the spots
+    Core.shuffleListModel(items.availablePieces.model);
 
     //Initialize displayedGroup variable which is used for showing navigation bars
     for(var i=0;i<items.availablePieces.view.nbDisplayedGroup;++i)
@@ -248,5 +242,142 @@ function highLightSpot(stopItem, tile) {
 function clearHighLightSpots() {
     for(var i = 0 ; i < spots.length ; ++ i) {
         spots[i].hide();
+    }
+}
+
+function resetKeyboardControls() {
+    items.keyboardControls = false;
+    items.listFocus = true;
+}
+
+function resetSelectedIndices() {
+    items.availablePieces.repeater.currentIndex = -1;
+    items.selectedSpotIndex = -1;
+    items.selectedSpot = null;
+}
+
+function moveCursorLeft() {
+    if(items.listFocus) {
+        if(!items.availablePieces.okEnabled) {
+            items.availablePieces.selectPreviousItem();
+        }
+        return;
+    }
+    selectPreviousSpot();
+}
+
+function moveCursorRight() {
+    if(items.listFocus) {
+        if(!items.availablePieces.okEnabled) {
+            items.availablePieces.selectNextItem();
+        }
+        return;
+    }
+    selectNextSpot();
+}
+
+function moveCursorUp() {
+    if(items.listFocus) {
+        if(!items.availablePieces.okEnabled) {
+            items.availablePieces.selectPreviousItem();
+        }
+        return;
+    }
+    selectPreviousSpot();
+}
+
+function moveCursorDown() {
+    if(items.listFocus) {
+        if(!items.availablePieces.okEnabled) {
+            items.availablePieces.selectNextItem();
+        }
+        return;
+    }
+    selectNextSpot();
+}
+
+function deselectSpot() {
+    if(items.selectedSpot != null) {
+        items.selectedSpot.displaySelector = false;
+        items.selectedSpotIndex = -1;
+        items.selectedSpot = null
+    }
+}
+
+function hideSpotSelector() {
+    if(items.selectedSpot) {
+        items.selectedSpot.displaySelector = false;
+        items.selectedSpot = null;
+    }
+}
+
+function selectSpot(_index) {
+    deselectSpot();
+    items.selectedSpotIndex = _index;
+    items.selectedSpot = items.spotsContainer.children[_index];
+    items.selectedSpot.displaySelector = true;
+}
+
+function selectNextSpot() {
+    var newSpotIndex = items.selectedSpotIndex + 1;
+    if(newSpotIndex >= spots.length) {
+        newSpotIndex = 0
+    }
+    selectSpot(newSpotIndex);
+}
+
+function selectPreviousSpot() {
+    var newSpotIndex = items.selectedSpotIndex - 1;
+    if(newSpotIndex < 0) {
+        newSpotIndex = spots.length - 1;
+    }
+    selectSpot(newSpotIndex);
+}
+
+function spacePressed() {
+    if(items.listFocus) {
+        switchFocus();
+    } else {
+        if(items.availablePieces.repeater.currentIndex != -1) {
+            dropItem();
+        } else {
+            undropItem();
+        }
+        switchFocus();
+    }
+}
+
+function dropItem() {
+    if(items.availablePieces.repeater.currentIndex === -1) {
+        undropItem();
+    } else {
+        var itemToDrop = items.availablePieces.repeater.itemAt(items.availablePieces.repeater.currentIndex);
+        itemToDrop.dropToSpot(items.selectedSpot);
+    }
+}
+
+function switchFocus() {
+    items.listFocus = !items.listFocus
+    if(!items.listFocus) {
+        if(items.availablePieces.repeater.currentIndex === -1) {
+            items.availablePieces.selectFirstItem();
+        }
+        if(items.selectedSpotIndex < 0) {
+            items.selectedSpotIndex = 0;
+        }
+        selectSpot(items.selectedSpotIndex);
+    } else {
+        hideSpotSelector();
+        if(items.availablePieces.repeater.itemAt(items.availablePieces.repeater.currentIndex) && items.availablePieces.repeater.itemAt(items.availablePieces.repeater.currentIndex).isDropped) {
+            items.availablePieces.selectFirstItem();
+        }
+    }
+}
+
+function undropItem() {
+    if(items.selectedSpot != null) {
+        items.selectedSpot.imageRemove();
+        highLightSpot(null, null);
+        items.availablePieces.repeater.itemAt(0).hideOkButton();
     }
 }
