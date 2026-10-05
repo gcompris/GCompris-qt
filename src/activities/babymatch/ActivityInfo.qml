@@ -24,7 +24,13 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Cultural references.")
   //: Help manual
-  manual: qsTr("In the main board area, a set of objects is displayed. In the side panel, another set of objects is shown. Each object in the side panel corresponds logically to one object in the main board area. Drag each object from the side panel to the correct spot in the main area.")
+  manual: qsTr("In the main board area, a set of objects is displayed. In the side panel, another set of objects is shown. Each object in the side panel corresponds logically to one object in the main board area. Drag each object from the side panel to the correct spot in the main area.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: move the selection cursor through the panel items and board spots") + ("</li><li>") +
+          qsTr("Space: select an item in the list, and place it on a spot. If there is nothing selected in the list, remove item from selected spot") + ("</li><li>") +
+          qsTr("Tab: toggle navigation between the panel and the board without any other action") + ("</li><li>") +
+          qsTr("Delete or Backspace: remove item from selected spot") + ("</li><li>") +
+          qsTr("Enter: validate your answer") + ("</li></ul>")
   credit: ""
   section: "reading vocabulary"
   createdInVersion: 4000
