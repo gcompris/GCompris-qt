@@ -33,13 +33,6 @@ QtObject {
          "y" : "0.2723"
       },
       {
-         "pixmapfile" : "australia/south_australia.svgz",
-         //: State of Australia: South Australia
-         "toolTipText" : qsTr("South Australia"),
-         "x" : "0.5438",
-         "y" : "0.639"
-      },
-      {
          "pixmapfile" : "australia/queensland.svgz",
          //: State of Australia: Queensland
          "toolTipText" : qsTr("Queensland"),
@@ -47,11 +40,25 @@ QtObject {
          "y" : "0.3064"
       },
       {
+         "pixmapfile" : "australia/south_australia.svgz",
+         //: State of Australia: South Australia
+         "toolTipText" : qsTr("South Australia"),
+         "x" : "0.5438",
+         "y" : "0.639"
+      },
+      {
          "pixmapfile" : "australia/new_south_wales.svgz",
          //: State of Australia: New South Wales
          "toolTipText" : qsTr("New South Wales"),
          "x" : "0.8236",
          "y" : "0.6816"
+      },
+      {
+         "pixmapfile" : "australia/capital.svgz",
+         //: Territory of Australia: Australian Capital Territory
+         "toolTipText" : qsTr("Australian Capital Territory"),
+         "x" : "0.8462",
+         "y" : "0.7495"
       },
       {
          "pixmapfile" : "australia/victoria.svgz",
@@ -66,13 +73,6 @@ QtObject {
          "toolTipText" : qsTr("Tasmania"),
          "x" : "0.7712",
          "y" : "0.9067"
-      },
-      {
-         "pixmapfile" : "australia/capital.svgz",
-         //: Territory of Australia: Australian Capital Territory
-         "toolTipText" : qsTr("Australian Capital Territory"),
-         "x" : "0.8462",
-         "y" : "0.7495"
       }
    ]
 }

@@ -26,13 +26,6 @@ QtObject {
          "y" : "0.3652"
       },
       {
-         "pixmapfile" : "canada/british_columbia.svgz",
-         //: Provinces and territories of Canada: British Columbia
-         "toolTipText" : qsTr("British Columbia"),
-         "x" : "0.1117",
-         "y" : "0.5944"
-      },
-      {
          "pixmapfile" : "canada/northwest_territories.svgz",
          //: Provinces and territories of Canada: Northwest Territories
          "toolTipText" : qsTr("Northwest Territories"),
@@ -45,6 +38,13 @@ QtObject {
          "toolTipText" : qsTr("Nunavut"),
          "x" : "0.4902",
          "y" : "0.3708"
+      },
+      {
+         "pixmapfile" : "canada/british_columbia.svgz",
+         //: Provinces and territories of Canada: British Columbia
+         "toolTipText" : qsTr("British Columbia"),
+         "x" : "0.1117",
+         "y" : "0.5944"
       },
       {
          "pixmapfile" : "canada/alberta.svgz",
@@ -89,6 +89,13 @@ QtObject {
          "y" : "0.5937"
       },
       {
+         "pixmapfile" : "canada/prince_edward_island.svgz",
+         //: Provinces and territories of Canada: Prince Edward Island
+         "toolTipText" : qsTr("Prince Edward Island"),
+         "x" : "0.8635",
+         "y" : "0.7568"
+      },
+      {
          "pixmapfile" : "canada/new_brunswick.svgz",
          //: Provinces and territories of Canada: New Brunswick
          "toolTipText" : qsTr("New Brunswick"),
@@ -101,13 +108,6 @@ QtObject {
          "toolTipText" : qsTr("Nova Scotia"),
          "x" : "0.8901",
          "y" : "0.7816"
-      },
-      {
-         "pixmapfile" : "canada/prince_edward_island.svgz",
-         //: Provinces and territories of Canada: Prince Edward Island
-         "toolTipText" : qsTr("Prince Edward Island"),
-         "x" : "0.8635",
-         "y" : "0.7568"
       }
    ]
 }

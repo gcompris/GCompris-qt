@@ -21,18 +21,11 @@ QtObject {
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "norway/vestfold_og_telemark.svgz",
-         //: County of Norway: Vestfold og Telemark
-         "toolTipText" : qsTr("Vestfold og Telemark"),
-         "x" : "0.2109",
-         "y" : "0.8757"
-      },
-      {
-         "pixmapfile" : "norway/viken.svgz",
-         //: County of Norway: Viken
-         "toolTipText" : qsTr("Viken"),
-         "x" : "0.2538",
-         "y" : "0.8429"
+         "pixmapfile" : "norway/troms_og_finnmark.svgz",
+         //: County of Norway: Troms og Finnmark
+         "toolTipText" : qsTr("Troms og Finnmark"),
+         "x" : "0.7362",
+         "y" : "0.1338"
       },
       {
          "pixmapfile" : "norway/nordland.svgz",
@@ -42,13 +35,6 @@ QtObject {
          "y" : "0.3375"
       },
       {
-         "pixmapfile" : "norway/troms_og_finnmark.svgz",
-         //: County of Norway: Troms og Finnmark
-         "toolTipText" : qsTr("Troms og Finnmark"),
-         "x" : "0.7362",
-         "y" : "0.1338"
-      },
-      {
          "pixmapfile" : "norway/trondelag.svgz",
          //: County of Norway: Trøndelag
          "toolTipText" : qsTr("Trøndelag"),
@@ -56,25 +42,11 @@ QtObject {
          "y" : "0.5798"
       },
       {
-         "pixmapfile" : "norway/oslo.svgz",
-         //: County of Norway: Oslo
-         "toolTipText" : qsTr("Oslo"),
-         "x" : "0.2973",
-         "y" : "0.8464"
-      },
-      {
          "pixmapfile" : "norway/more_og_romsdal.svgz",
          //: County of Norway: Møre og Romsdal
          "toolTipText" : qsTr("Møre og Romsdal"),
          "x" : "0.1762",
          "y" : "0.6407"
-      },
-      {
-         "pixmapfile" : "norway/agder.svgz",
-         //: County of Norway: Agder
-         "toolTipText" : qsTr("Agder"),
-         "x" : "0.1591",
-         "y" : "0.9172"
       },
       {
          "pixmapfile" : "norway/innlandet.svgz",
@@ -91,11 +63,39 @@ QtObject {
          "y" : "0.7632"
       },
       {
+         "pixmapfile" : "norway/viken.svgz",
+         //: County of Norway: Viken
+         "toolTipText" : qsTr("Viken"),
+         "x" : "0.2538",
+         "y" : "0.8429"
+      },
+      {
+         "pixmapfile" : "norway/oslo.svgz",
+         //: County of Norway: Oslo
+         "toolTipText" : qsTr("Oslo"),
+         "x" : "0.2973",
+         "y" : "0.8464"
+      },
+      {
+         "pixmapfile" : "norway/vestfold_og_telemark.svgz",
+         //: County of Norway: Vestfold og Telemark
+         "toolTipText" : qsTr("Vestfold og Telemark"),
+         "x" : "0.2109",
+         "y" : "0.8757"
+      },
+      {
          "pixmapfile" : "norway/rogaland.svgz",
          //: County of Norway: Rogaland
          "toolTipText" : qsTr("Rogaland"),
          "x" : "0.0865",
          "y" : "0.8966"
       },
+      {
+         "pixmapfile" : "norway/agder.svgz",
+         //: County of Norway: Agder
+         "toolTipText" : qsTr("Agder"),
+         "x" : "0.1591",
+         "y" : "0.9172"
+      }
    ]
 }

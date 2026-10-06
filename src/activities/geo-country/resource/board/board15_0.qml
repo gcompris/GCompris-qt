@@ -20,6 +20,41 @@ QtObject {
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
+         "pixmapfile" : "scotland/shetland_islands.svgz",
+         //: Council area of Scotland: Shetland Islands
+         "toolTipText" : qsTr("Shetland Islands"),
+         "x" : "0.8868",
+         "y" : "0.1689"
+      },
+      {
+         "pixmapfile" : "scotland/orkney_islands.svgz",
+         //: Council area of Scotland: Orkney Islands
+         "toolTipText" : qsTr("Orkney Islands"),
+         "x" : "0.6982",
+         "y" : "0.4188"
+      },
+      {
+         "pixmapfile" : "scotland/na_h-eileanan_siar.svgz",
+         //: Council area of Scotland: Na h-Eileanan Siar
+         "toolTipText" : qsTr("Na h-Eileanan Siar"),
+         "x" : "0.146",
+         "y" : "0.7138"
+      },
+      {
+         "pixmapfile" : "scotland/highland.svgz",
+         //: Council area of Scotland: Highland
+         "toolTipText" : qsTr("Highland"),
+         "x" : "0.4206",
+         "y" : "0.7425"
+      },
+      {
+         "pixmapfile" : "scotland/moray.svgz",
+         //: Council area of Scotland: Moray
+         "toolTipText" : qsTr("Moray"),
+         "x" : "0.6522",
+         "y" : "0.7892"
+      },
+      {
          "pixmapfile" : "scotland/aberdeenshire.svgz",
          //: Council area of Scotland: Aberdeenshire
          "toolTipText" : qsTr("Aberdeenshire"),
@@ -32,41 +67,6 @@ QtObject {
          "toolTipText" : qsTr("Aberdeen"),
          "x" : "0.788",
          "y" : "0.8454"
-      },
-      {
-         "pixmapfile" : "scotland/moray.svgz",
-         //: Council area of Scotland: Moray
-         "toolTipText" : qsTr("Moray"),
-         "x" : "0.6522",
-         "y" : "0.7892"
-      },
-      {
-         "pixmapfile" : "scotland/na_h-eileanan_siar.svgz",
-         //: Council area of Scotland: Na h-Eileanan Siar
-         "toolTipText" : qsTr("Na h-Eileanan Siar"),
-         "x" : "0.146",
-         "y" : "0.7138"
-      },
-      {
-         "pixmapfile" : "scotland/orkney_islands.svgz",
-         //: Council area of Scotland: Orkney Islands
-         "toolTipText" : qsTr("Orkney Islands"),
-         "x" : "0.6982",
-         "y" : "0.4188"
-      },
-      {
-         "pixmapfile" : "scotland/shetland_islands.svgz",
-         //: Council area of Scotland: Shetland Islands
-         "toolTipText" : qsTr("Shetland Islands"),
-         "x" : "0.8868",
-         "y" : "0.1689"
-      },
-      {
-         "pixmapfile" : "scotland/highland.svgz",
-         //: Council area of Scotland: Highland
-         "toolTipText" : qsTr("Highland"),
-         "x" : "0.4206",
-         "y" : "0.7425"
       }
    ]
 }
