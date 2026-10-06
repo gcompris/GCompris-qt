@@ -18,12 +18,6 @@ QtObject {
           "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-          "pixmapfile" : "image/Pieter_Bruegel_service.webp",
-          "dropAreaSize" : "10",
-          "x" : "0.684",
-          "y" : "0.628"
-      },
-      {
           "pixmapfile" : "image/Pieter_Bruegel_mur.webp",
           "dropAreaSize" : "10",
           "x" : "0.866",
@@ -34,6 +28,12 @@ QtObject {
           "dropAreaSize" : "10",
           "x" : "0.257",
           "y" : "0.453"
+      },
+      {
+          "pixmapfile" : "image/Pieter_Bruegel_service.webp",
+          "dropAreaSize" : "10",
+          "x" : "0.684",
+          "y" : "0.628"
       },
       {
           "pixmapfile" : "image/Pieter_Bruegel_fillette.webp",

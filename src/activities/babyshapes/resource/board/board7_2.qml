@@ -18,6 +18,12 @@ QtObject {
           "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
+          "pixmapfile" : "image/lady_unicorn_1.webp",
+          "dropAreaSize" : "10",
+          "x" : "0.877",
+          "y" : "0.039"
+      },
+      {
           "pixmapfile" : "image/lady_unicorn_5.webp",
           "dropAreaSize" : "10",
           "x" : "0.07",
@@ -40,12 +46,6 @@ QtObject {
           "dropAreaSize" : "10",
           "x" : "0.724",
           "y" : "0.883"
-      },
-      {
-          "pixmapfile" : "image/lady_unicorn_1.webp",
-          "dropAreaSize" : "10",
-          "x" : "0.877",
-          "y" : "0.039"
       }
    ]
 }

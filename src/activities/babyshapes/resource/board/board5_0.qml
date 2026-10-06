@@ -18,9 +18,9 @@ QtObject {
           "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-          "pixmapfile" : "dog1/dog1.webp",
-          "x" : "0.295",
-          "y" : "0.745"
+          "pixmapfile" : "dog1/dog3.webp",
+          "x" : "0.355",
+          "y" : "0.25"
       },
       {
           "pixmapfile" : "dog1/dog2.webp",
@@ -28,9 +28,9 @@ QtObject {
           "y" : "0.45"
       },
       {
-          "pixmapfile" : "dog1/dog3.webp",
-          "x" : "0.355",
-          "y" : "0.25"
+          "pixmapfile" : "dog1/dog1.webp",
+          "x" : "0.295",
+          "y" : "0.745"
       }
    ]
 }

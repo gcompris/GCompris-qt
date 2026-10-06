@@ -18,12 +18,6 @@ QtObject {
           "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-          "pixmapfile" : "image/Van_Gogh_0011_5.webp",
-          "dropAreaSize" : "10",
-          "x" : "0.695",
-          "y" : "0.54"
-      },
-      {
           "pixmapfile" : "image/Van_Gogh_0011_4.webp",
           "dropAreaSize" : "10",
           "x" : "0.673",
@@ -40,6 +34,12 @@ QtObject {
           "dropAreaSize" : "10",
           "x" : "0.25",
           "y" : "0.434"
+      },
+      {
+          "pixmapfile" : "image/Van_Gogh_0011_5.webp",
+          "dropAreaSize" : "10",
+          "x" : "0.695",
+          "y" : "0.54"
       },
       {
           "pixmapfile" : "image/Van_Gogh_0011_2.webp",

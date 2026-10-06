@@ -18,10 +18,10 @@ QtObject {
           "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-          "pixmapfile" : "image/Bosschaert_04_6.webp",
+          "pixmapfile" : "image/Bosschaert_04_3.webp",
           "dropAreaSize" : "10",
-          "x" : "0.432",
-          "y" : "0.732"
+          "x" : "0.217",
+          "y" : "0.233"
       },
       {
           "pixmapfile" : "image/Bosschaert_04_5.webp",
@@ -36,16 +36,16 @@ QtObject {
           "y" : "0.486"
       },
       {
-          "pixmapfile" : "image/Bosschaert_04_3.webp",
-          "dropAreaSize" : "10",
-          "x" : "0.217",
-          "y" : "0.233"
-      },
-      {
           "pixmapfile" : "image/Bosschaert_04_2.webp",
           "dropAreaSize" : "10",
           "x" : "0.167",
           "y" : "0.582"
+      },
+      {
+          "pixmapfile" : "image/Bosschaert_04_6.webp",
+          "dropAreaSize" : "10",
+          "x" : "0.432",
+          "y" : "0.732"
       },
       {
           "pixmapfile" : "image/Bosschaert_04_1.webp",
