@@ -20,38 +20,8 @@ QtObject {
          "height": 515
       },
       {
-         "pixmapfile" : "image/PalaDiPesaro_c3.webp",
-         "x" : "0.814",
-         "y" : "0.705"
-      },
-      {
-         "pixmapfile" : "image/PalaDiPesaro_b3.webp",
-         "x" : "0.499",
-         "y" : "0.727"
-      },
-      {
-         "pixmapfile" : "image/PalaDiPesaro_a3.webp",
+         "pixmapfile" : "image/PalaDiPesaro_a1.webp",
          "x" : "0.182",
-         "y" : "0.705"
-      },
-      {
-         "pixmapfile" : "image/PalaDiPesaro_c2.webp",
-         "x" : "0.814",
-         "y" : "0.474"
-      },
-      {
-         "pixmapfile" : "image/PalaDiPesaro_b2.webp",
-         "x" : "0.532",
-         "y" : "0.498"
-      },
-      {
-         "pixmapfile" : "image/PalaDiPesaro_a2.webp",
-         "x" : "0.215",
-         "y" : "0.474"
-      },
-      {
-         "pixmapfile" : "image/PalaDiPesaro_c1.webp",
-         "x" : "0.781",
          "y" : "0.264"
       },
       {
@@ -60,9 +30,39 @@ QtObject {
          "y" : "0.264"
       },
       {
-         "pixmapfile" : "image/PalaDiPesaro_a1.webp",
-         "x" : "0.182",
+         "pixmapfile" : "image/PalaDiPesaro_c1.webp",
+         "x" : "0.781",
          "y" : "0.264"
+      },
+      {
+         "pixmapfile" : "image/PalaDiPesaro_a2.webp",
+         "x" : "0.215",
+         "y" : "0.474"
+      },
+      {
+         "pixmapfile" : "image/PalaDiPesaro_b2.webp",
+         "x" : "0.532",
+         "y" : "0.498"
+      },
+      {
+         "pixmapfile" : "image/PalaDiPesaro_c2.webp",
+         "x" : "0.814",
+         "y" : "0.474"
+      },
+      {
+         "pixmapfile" : "image/PalaDiPesaro_a3.webp",
+         "x" : "0.182",
+         "y" : "0.705"
+      },
+      {
+         "pixmapfile" : "image/PalaDiPesaro_b3.webp",
+         "x" : "0.499",
+         "y" : "0.727"
+      },
+      {
+         "pixmapfile" : "image/PalaDiPesaro_c3.webp",
+         "x" : "0.814",
+         "y" : "0.705"
       }
    ]
 }

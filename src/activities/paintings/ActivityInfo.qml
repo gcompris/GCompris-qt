@@ -26,7 +26,13 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Mouse-manipulation: movement, drag and drop.")
   //: Help manual
-  manual: qsTr("Drag the pieces to the right place to rebuild the painting.")
+  manual: qsTr("Drag the pieces to the right place to rebuild the painting.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: move the selection cursor through the panel items and board spots") + ("</li><li>") +
+          qsTr("Space: select an item in the list, and place it on a spot. If there is nothing selected in the list, remove item from selected spot") + ("</li><li>") +
+          qsTr("Tab: toggle navigation between the panel and the board without any other action") + ("</li><li>") +
+          qsTr("Delete or Backspace: remove item from selected spot") + ("</li><li>") +
+          qsTr("Enter: validate your answer") + ("</li></ul>")
   section: "discovery arts puzzle"
   createdInVersion: 5000
 }

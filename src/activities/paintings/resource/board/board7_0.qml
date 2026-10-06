@@ -20,53 +20,8 @@ QtObject {
          "height": 515
       },
       {
-         "pixmapfile" : "image/GreatWave_d3.webp",
-         "x" : "0.847",
-         "y" : "0.752"
-      },
-      {
-         "pixmapfile" : "image/GreatWave_c3.webp",
-         "x" : "0.64",
-         "y" : "0.752"
-      },
-      {
-         "pixmapfile" : "image/GreatWave_b3.webp",
-         "x" : "0.404",
-         "y" : "0.752"
-      },
-      {
-         "pixmapfile" : "image/GreatWave_a3.webp",
-         "x" : "0.172",
-         "y" : "0.782"
-      },
-      {
-         "pixmapfile" : "image/GreatWave_d2.webp",
-         "x" : "0.847",
-         "y" : "0.468"
-      },
-      {
-         "pixmapfile" : "image/GreatWave_c2.webp",
-         "x" : "0.64",
-         "y" : "0.497"
-      },
-      {
-         "pixmapfile" : "image/GreatWave_b2.webp",
-         "x" : "0.404",
-         "y" : "0.468"
-      },
-      {
-         "pixmapfile" : "image/GreatWave_a2.webp",
-         "x" : "0.172",
-         "y" : "0.527"
-      },
-      {
-         "pixmapfile" : "image/GreatWave_d1.webp",
-         "x" : "0.847",
-         "y" : "0.212"
-      },
-      {
-         "pixmapfile" : "image/GreatWave_c1.webp",
-         "x" : "0.617",
+         "pixmapfile" : "image/GreatWave_a1.webp",
+         "x" : "0.147",
          "y" : "0.242"
       },
       {
@@ -75,9 +30,54 @@ QtObject {
          "y" : "0.212"
       },
       {
-         "pixmapfile" : "image/GreatWave_a1.webp",
-         "x" : "0.147",
+         "pixmapfile" : "image/GreatWave_c1.webp",
+         "x" : "0.617",
          "y" : "0.242"
+      },
+      {
+         "pixmapfile" : "image/GreatWave_d1.webp",
+         "x" : "0.847",
+         "y" : "0.212"
+      },
+      {
+         "pixmapfile" : "image/GreatWave_a2.webp",
+         "x" : "0.172",
+         "y" : "0.527"
+      },
+      {
+         "pixmapfile" : "image/GreatWave_b2.webp",
+         "x" : "0.404",
+         "y" : "0.468"
+      },
+      {
+         "pixmapfile" : "image/GreatWave_c2.webp",
+         "x" : "0.64",
+         "y" : "0.497"
+      },
+      {
+         "pixmapfile" : "image/GreatWave_d2.webp",
+         "x" : "0.847",
+         "y" : "0.468"
+      },
+      {
+         "pixmapfile" : "image/GreatWave_a3.webp",
+         "x" : "0.172",
+         "y" : "0.782"
+      },
+      {
+         "pixmapfile" : "image/GreatWave_b3.webp",
+         "x" : "0.404",
+         "y" : "0.752"
+      },
+      {
+         "pixmapfile" : "image/GreatWave_c3.webp",
+         "x" : "0.64",
+         "y" : "0.752"
+      },
+      {
+         "pixmapfile" : "image/GreatWave_d3.webp",
+         "x" : "0.847",
+         "y" : "0.752"
       }
    ]
 }

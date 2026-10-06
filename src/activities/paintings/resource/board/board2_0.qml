@@ -20,24 +20,9 @@ QtObject {
          "height": 515
       },
       {
-         "pixmapfile" : "image/Arcimboldo_Spring_b3.webp",
-         "x" : "0.615",
-         "y" : "0.762"
-      },
-      {
-         "pixmapfile" : "image/Arcimboldo_Spring_a3.webp",
-         "x" : "0.405",
-         "y" : "0.735"
-      },
-      {
-         "pixmapfile" : "image/Arcimboldo_Spring_b2.webp",
-         "x" : "0.59",
-         "y" : "0.498"
-      },
-      {
-         "pixmapfile" : "image/Arcimboldo_Spring_a2.webp",
+         "pixmapfile" : "image/Arcimboldo_Spring_a1.webp",
          "x" : "0.379",
-         "y" : "0.497"
+         "y" : "0.259"
       },
       {
          "pixmapfile" : "image/Arcimboldo_Spring_b1.webp",
@@ -45,9 +30,24 @@ QtObject {
          "y" : "0.231"
       },
       {
-         "pixmapfile" : "image/Arcimboldo_Spring_a1.webp",
+         "pixmapfile" : "image/Arcimboldo_Spring_a2.webp",
          "x" : "0.379",
-         "y" : "0.259"
+         "y" : "0.497"
+      },
+      {
+         "pixmapfile" : "image/Arcimboldo_Spring_b2.webp",
+         "x" : "0.59",
+         "y" : "0.498"
+      },
+      {
+         "pixmapfile" : "image/Arcimboldo_Spring_a3.webp",
+         "x" : "0.405",
+         "y" : "0.735"
+      },
+      {
+         "pixmapfile" : "image/Arcimboldo_Spring_b3.webp",
+         "x" : "0.615",
+         "y" : "0.762"
       }
    ]
 }

@@ -20,8 +20,18 @@ QtObject {
          "height": 515
       },
       {
+         "pixmapfile" : "image/cassat_summertime_1.webp",
+         "x" : "0.211",
+         "y" : "0.244"
+      },
+      {
          "pixmapfile" : "image/cassat_summertime_2.webp",
          "x" : "0.496",
+         "y" : "0.244"
+      },
+      {
+         "pixmapfile" : "image/cassat_summertime_3.webp",
+         "x" : "0.779",
          "y" : "0.244"
       },
       {
@@ -30,24 +40,14 @@ QtObject {
          "y" : "0.671"
       },
       {
-         "pixmapfile" : "image/cassat_summertime_6.webp",
-         "x" : "0.779",
-         "y" : "0.673"
-      },
-      {
          "pixmapfile" : "image/cassat_summertime_5.webp",
          "x" : "0.496",
          "y" : "0.673"
       },
       {
-         "pixmapfile" : "image/cassat_summertime_1.webp",
-         "x" : "0.211",
-         "y" : "0.244"
-      },
-      {
-         "pixmapfile" : "image/cassat_summertime_3.webp",
+         "pixmapfile" : "image/cassat_summertime_6.webp",
          "x" : "0.779",
-         "y" : "0.244"
+         "y" : "0.673"
       }
    ]
 }
