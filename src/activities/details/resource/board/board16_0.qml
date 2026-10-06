@@ -18,15 +18,15 @@ QtObject {
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "image/Chenonceau_0.webp",
-         "x" : "0.199",
-         "y" : "0.459",
-         "dropAreaSize" : "8"
-      },
-      {
          "pixmapfile" : "image/Chenonceau_1.webp",
          "x" : "0.318",
          "y" : "0.421",
+         "dropAreaSize" : "8"
+      },
+      {
+         "pixmapfile" : "image/Chenonceau_0.webp",
+         "x" : "0.199",
+         "y" : "0.459",
          "dropAreaSize" : "8"
       },
       {

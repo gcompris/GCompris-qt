@@ -18,15 +18,15 @@ QtObject {
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "image/NDP_0.webp",
-         "x" : "0.508",
-         "y" : "0.65",
-         "dropAreaSize" : "8"
-      },
-      {
          "pixmapfile" : "image/NDP_1.webp",
          "x" : "0.499",
          "y" : "0.357",
+         "dropAreaSize" : "8"
+      },
+      {
+         "pixmapfile" : "image/NDP_0.webp",
+         "x" : "0.508",
+         "y" : "0.65",
          "dropAreaSize" : "8"
       },
       {

@@ -18,18 +18,6 @@ QtObject {
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "image/VincentVanGogh0013_0.webp",
-         "x" : "0.501",
-         "y" : "0.32",
-         "dropAreaSize" : "8"
-      },
-      {
-         "pixmapfile" : "image/VincentVanGogh0013_1.webp",
-         "x" : "0.859",
-         "y" : "0.828",
-         "dropAreaSize" : "8"
-      },
-      {
          "pixmapfile" : "image/VincentVanGogh0013_2.webp",
          "x" : "0.67",
          "y" : "0.22",
@@ -42,9 +30,21 @@ QtObject {
          "dropAreaSize" : "8"
       },
       {
+         "pixmapfile" : "image/VincentVanGogh0013_0.webp",
+         "x" : "0.501",
+         "y" : "0.32",
+         "dropAreaSize" : "8"
+      },
+      {
          "pixmapfile" : "image/VincentVanGogh0013_4.webp",
          "x" : "0.212",
          "y" : "0.44",
+         "dropAreaSize" : "8"
+      },
+      {
+         "pixmapfile" : "image/VincentVanGogh0013_1.webp",
+         "x" : "0.859",
+         "y" : "0.828",
          "dropAreaSize" : "8"
       }
    ]

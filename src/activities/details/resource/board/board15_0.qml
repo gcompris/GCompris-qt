@@ -18,6 +18,12 @@ QtObject {
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
+         "pixmapfile" : "image/Louvre_2007_02_24_c_2.webp",
+         "x" : "0.164",
+         "y" : "0.437",
+         "dropAreaSize" : "8"
+      },
+      {
          "pixmapfile" : "image/Louvre_2007_02_24_c_0.webp",
          "x" : "0.9",
          "y" : "0.495",
@@ -27,12 +33,6 @@ QtObject {
          "pixmapfile" : "image/Louvre_2007_02_24_c_1.webp",
          "x" : "0.494",
          "y" : "0.509",
-         "dropAreaSize" : "8"
-      },
-      {
-         "pixmapfile" : "image/Louvre_2007_02_24_c_2.webp",
-         "x" : "0.164",
-         "y" : "0.437",
          "dropAreaSize" : "8"
       }
    ]

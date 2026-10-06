@@ -18,12 +18,6 @@ QtObject {
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "image/Eglise_dAuvers-sur-Oise_0.webp",
-         "x" : "0.181",
-         "y" : "0.78",
-         "dropAreaSize" : "8"
-      },
-      {
          "pixmapfile" : "image/Eglise_dAuvers-sur-Oise_1.webp",
          "x" : "0.577",
          "y" : "0.178",
@@ -33,6 +27,12 @@ QtObject {
          "pixmapfile" : "image/Eglise_dAuvers-sur-Oise_2.webp",
          "x" : "0.091",
          "y" : "0.56",
+         "dropAreaSize" : "8"
+      },
+      {
+         "pixmapfile" : "image/Eglise_dAuvers-sur-Oise_0.webp",
+         "x" : "0.181",
+         "y" : "0.78",
          "dropAreaSize" : "8"
       }
    ]

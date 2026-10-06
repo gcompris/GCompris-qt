@@ -18,21 +18,15 @@ QtObject {
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "image/TowerBridgeLondon_0.webp",
-         "x" : "0.487",
-         "y" : "0.365",
-         "dropAreaSize" : "8"
-      },
-      {
          "pixmapfile" : "image/TowerBridgeLondon_1.webp",
          "x" : "0.774",
          "y" : "0.206",
          "dropAreaSize" : "8"
       },
       {
-         "pixmapfile" : "image/TowerBridgeLondon_2.webp",
-         "x" : "0.382",
-         "y" : "0.709",
+         "pixmapfile" : "image/TowerBridgeLondon_0.webp",
+         "x" : "0.487",
+         "y" : "0.365",
          "dropAreaSize" : "8"
       },
       {
@@ -45,6 +39,12 @@ QtObject {
          "pixmapfile" : "image/TowerBridgeLondon_4.webp",
          "x" : "0.226",
          "y" : "0.668",
+         "dropAreaSize" : "8"
+      },
+      {
+         "pixmapfile" : "image/TowerBridgeLondon_2.webp",
+         "x" : "0.382",
+         "y" : "0.709",
          "dropAreaSize" : "8"
       }
    ]

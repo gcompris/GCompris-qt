@@ -18,15 +18,21 @@ QtObject {
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
+         "pixmapfile" : "image/Nagoya_3.webp",
+         "x" : "0.669",
+         "y" : "0.117",
+         "dropAreaSize" : "8"
+      },
+      {
          "pixmapfile" : "image/Nagoya_0.webp",
          "x" : "0.731",
          "y" : "0.35",
          "dropAreaSize" : "8"
       },
       {
-         "pixmapfile" : "image/Nagoya_1.webp",
-         "x" : "0.76",
-         "y" : "0.721",
+         "pixmapfile" : "image/Nagoya_4.webp",
+         "x" : "0.515",
+         "y" : "0.522",
          "dropAreaSize" : "8"
       },
       {
@@ -36,15 +42,9 @@ QtObject {
          "dropAreaSize" : "8"
       },
       {
-         "pixmapfile" : "image/Nagoya_3.webp",
-         "x" : "0.669",
-         "y" : "0.117",
-         "dropAreaSize" : "8"
-      },
-      {
-         "pixmapfile" : "image/Nagoya_4.webp",
-         "x" : "0.515",
-         "y" : "0.522",
+         "pixmapfile" : "image/Nagoya_1.webp",
+         "x" : "0.76",
+         "y" : "0.721",
          "dropAreaSize" : "8"
       }
    ]

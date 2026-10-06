@@ -18,6 +18,12 @@ QtObject {
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
+         "pixmapfile" : "image/OperaSidney_2.webp",
+         "x" : "0.471",
+         "y" : "0.375",
+         "dropAreaSize" : "8"
+      },
+      {
          "pixmapfile" : "image/OperaSidney_0.webp",
          "x" : "0.243",
          "y" : "0.543",
@@ -27,12 +33,6 @@ QtObject {
          "pixmapfile" : "image/OperaSidney_1.webp",
          "x" : "0.399",
          "y" : "0.596",
-         "dropAreaSize" : "8"
-      },
-      {
-         "pixmapfile" : "image/OperaSidney_2.webp",
-         "x" : "0.471",
-         "y" : "0.375",
          "dropAreaSize" : "8"
       },
       {

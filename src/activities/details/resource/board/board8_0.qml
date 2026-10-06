@@ -18,39 +18,9 @@ QtObject {
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "image/PortraitOfPereTanguy_0.webp",
-         "x" : "0.112",
-         "y" : "0.364",
-         "dropAreaSize" : "8"
-      },
-      {
-         "pixmapfile" : "image/PortraitOfPereTanguy_1.webp",
-         "x" : "0.503",
-         "y" : "0.252",
-         "dropAreaSize" : "8"
-      },
-      {
-         "pixmapfile" : "image/PortraitOfPereTanguy_2.webp",
-         "x" : "0.904",
-         "y" : "0.544",
-         "dropAreaSize" : "8"
-      },
-      {
-         "pixmapfile" : "image/PortraitOfPereTanguy_3.webp",
-         "x" : "0.594",
-         "y" : "0.466",
-         "dropAreaSize" : "8"
-      },
-      {
-         "pixmapfile" : "image/PortraitOfPereTanguy_4.webp",
-         "x" : "0.107",
-         "y" : "0.91",
-         "dropAreaSize" : "8"
-      },
-      {
-         "pixmapfile" : "image/PortraitOfPereTanguy_5.webp",
-         "x" : "0.485",
-         "y" : "0.814",
+         "pixmapfile" : "image/PortraitOfPereTanguy_7.webp",
+         "x" : "0.122",
+         "y" : "0.08",
          "dropAreaSize" : "8"
       },
       {
@@ -60,15 +30,45 @@ QtObject {
          "dropAreaSize" : "8"
       },
       {
-         "pixmapfile" : "image/PortraitOfPereTanguy_7.webp",
-         "x" : "0.122",
-         "y" : "0.08",
+         "pixmapfile" : "image/PortraitOfPereTanguy_1.webp",
+         "x" : "0.503",
+         "y" : "0.252",
+         "dropAreaSize" : "8"
+      },
+      {
+         "pixmapfile" : "image/PortraitOfPereTanguy_0.webp",
+         "x" : "0.112",
+         "y" : "0.364",
+         "dropAreaSize" : "8"
+      },
+      {
+         "pixmapfile" : "image/PortraitOfPereTanguy_3.webp",
+         "x" : "0.594",
+         "y" : "0.466",
+         "dropAreaSize" : "8"
+      },
+      {
+         "pixmapfile" : "image/PortraitOfPereTanguy_2.webp",
+         "x" : "0.904",
+         "y" : "0.544",
+         "dropAreaSize" : "8"
+      },
+      {
+         "pixmapfile" : "image/PortraitOfPereTanguy_5.webp",
+         "x" : "0.485",
+         "y" : "0.814",
          "dropAreaSize" : "8"
       },
       {
          "pixmapfile" : "image/PortraitOfPereTanguy_8.webp",
          "x" : "0.906",
          "y" : "0.824",
+         "dropAreaSize" : "8"
+      },
+      {
+         "pixmapfile" : "image/PortraitOfPereTanguy_4.webp",
+         "x" : "0.107",
+         "y" : "0.91",
          "dropAreaSize" : "8"
       }
    ]
