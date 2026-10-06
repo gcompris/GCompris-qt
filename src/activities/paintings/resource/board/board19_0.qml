@@ -20,34 +20,9 @@ QtObject {
          "height": 515
       },
       {
-         "pixmapfile" : "image/kandinky_8.webp",
-         "x" : "0.85",
-         "y" : "0.618"
-      },
-      {
-         "pixmapfile" : "image/kandinky_7.webp",
-         "x" : "0.642",
-         "y" : "0.618"
-      },
-      {
-         "pixmapfile" : "image/kandinky_6.webp",
-         "x" : "0.376",
-         "y" : "0.673"
-      },
-      {
-         "pixmapfile" : "image/kandinky_5.webp",
-         "x" : "0.138",
-         "y" : "0.673"
-      },
-      {
-         "pixmapfile" : "image/kandinky_4.webp",
-         "x" : "0.85",
-         "y" : "0.228"
-      },
-      {
-         "pixmapfile" : "image/kandinky_3.webp",
-         "x" : "0.642",
-         "y" : "0.228"
+         "pixmapfile" : "image/kandinky_1.webp",
+         "x" : "0.167",
+         "y" : "0.283"
       },
       {
          "pixmapfile" : "image/kandinky_2.webp",
@@ -55,9 +30,34 @@ QtObject {
          "y" : "0.283"
       },
       {
-         "pixmapfile" : "image/kandinky_1.webp",
-         "x" : "0.167",
-         "y" : "0.283"
+         "pixmapfile" : "image/kandinky_3.webp",
+         "x" : "0.642",
+         "y" : "0.228"
+      },
+      {
+         "pixmapfile" : "image/kandinky_4.webp",
+         "x" : "0.85",
+         "y" : "0.228"
+      },
+      {
+         "pixmapfile" : "image/kandinky_5.webp",
+         "x" : "0.138",
+         "y" : "0.673"
+      },
+      {
+         "pixmapfile" : "image/kandinky_6.webp",
+         "x" : "0.376",
+         "y" : "0.673"
+      },
+      {
+         "pixmapfile" : "image/kandinky_7.webp",
+         "x" : "0.642",
+         "y" : "0.618"
+      },
+      {
+         "pixmapfile" : "image/kandinky_8.webp",
+         "x" : "0.85",
+         "y" : "0.618"
       }
    ]
 }

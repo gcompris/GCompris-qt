@@ -20,13 +20,48 @@ QtObject {
          "height": 515
       },
       {
-         "pixmapfile" : "image/MonaLisa_d3.webp",
-         "x" : "0.667",
-         "y" : "0.782"
+         "pixmapfile" : "image/MonaLisa_a1.webp",
+         "x" : "0.328",
+         "y" : "0.214"
       },
       {
-         "pixmapfile" : "image/MonaLisa_c3.webp",
+         "pixmapfile" : "image/MonaLisa_b1.webp",
+         "x" : "0.442",
+         "y" : "0.18"
+      },
+      {
+         "pixmapfile" : "image/MonaLisa_c1.webp",
+         "x" : "0.556",
+         "y" : "0.18"
+      },
+      {
+         "pixmapfile" : "image/MonaLisa_d1.webp",
+         "x" : "0.656",
+         "y" : "0.214"
+      },
+      {
+         "pixmapfile" : "image/MonaLisa_a2.webp",
+         "x" : "0.34",
+         "y" : "0.531"
+      },
+      {
+         "pixmapfile" : "image/MonaLisa_b2.webp",
+         "x" : "0.453",
+         "y" : "0.499"
+      },
+      {
+         "pixmapfile" : "image/MonaLisa_c2.webp",
          "x" : "0.568",
+         "y" : "0.499"
+      },
+      {
+         "pixmapfile" : "image/MonaLisa_d2.webp",
+         "x" : "0.667",
+         "y" : "0.497"
+      },
+      {
+         "pixmapfile" : "image/MonaLisa_a3.webp",
+         "x" : "0.328",
          "y" : "0.814"
       },
       {
@@ -35,49 +70,14 @@ QtObject {
          "y" : "0.814"
       },
       {
-         "pixmapfile" : "image/MonaLisa_a3.webp",
-         "x" : "0.328",
+         "pixmapfile" : "image/MonaLisa_c3.webp",
+         "x" : "0.568",
          "y" : "0.814"
       },
       {
-         "pixmapfile" : "image/MonaLisa_d2.webp",
+         "pixmapfile" : "image/MonaLisa_d3.webp",
          "x" : "0.667",
-         "y" : "0.497"
-      },
-      {
-         "pixmapfile" : "image/MonaLisa_c2.webp",
-         "x" : "0.568",
-         "y" : "0.499"
-      },
-      {
-         "pixmapfile" : "image/MonaLisa_b2.webp",
-         "x" : "0.453",
-         "y" : "0.499"
-      },
-      {
-         "pixmapfile" : "image/MonaLisa_a2.webp",
-         "x" : "0.34",
-         "y" : "0.531"
-      },
-      {
-         "pixmapfile" : "image/MonaLisa_d1.webp",
-         "x" : "0.656",
-         "y" : "0.214"
-      },
-      {
-         "pixmapfile" : "image/MonaLisa_c1.webp",
-         "x" : "0.556",
-         "y" : "0.18"
-      },
-      {
-         "pixmapfile" : "image/MonaLisa_b1.webp",
-         "x" : "0.442",
-         "y" : "0.18"
-      },
-      {
-         "pixmapfile" : "image/MonaLisa_a1.webp",
-         "x" : "0.328",
-         "y" : "0.214"
+         "y" : "0.782"
       }
    ]
 }

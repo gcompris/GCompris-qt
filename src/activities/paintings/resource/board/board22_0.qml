@@ -20,23 +20,18 @@ QtObject {
          "height": 515
       },
       {
+         "pixmapfile" : "image/gogh_auvert_1.webp",
+         "x" : "0.204",
+         "y" : "0.224"
+      },
+      {
          "pixmapfile" : "image/gogh_auvert_2.webp",
          "x" : "0.489",
          "y" : "0.224"
       },
       {
-         "pixmapfile" : "image/gogh_auvert_6.webp",
+         "pixmapfile" : "image/gogh_auvert_3.webp",
          "x" : "0.774",
-         "y" : "0.681"
-      },
-      {
-         "pixmapfile" : "image/gogh_auvert_5.webp",
-         "x" : "0.489",
-         "y" : "0.681"
-      },
-      {
-         "pixmapfile" : "image/gogh_auvert_1.webp",
-         "x" : "0.204",
          "y" : "0.224"
       },
       {
@@ -45,9 +40,14 @@ QtObject {
          "y" : "0.681"
       },
       {
-         "pixmapfile" : "image/gogh_auvert_3.webp",
+         "pixmapfile" : "image/gogh_auvert_5.webp",
+         "x" : "0.489",
+         "y" : "0.681"
+      },
+      {
+         "pixmapfile" : "image/gogh_auvert_6.webp",
          "x" : "0.774",
-         "y" : "0.224"
+         "y" : "0.681"
       }
    ]
 }

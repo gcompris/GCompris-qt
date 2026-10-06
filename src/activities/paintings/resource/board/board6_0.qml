@@ -20,53 +20,8 @@ QtObject {
          "height": 515
       },
       {
-         "pixmapfile" : "image/EjiriSuruga_d3.webp",
-         "x" : "0.846",
-         "y" : "0.752"
-      },
-      {
-         "pixmapfile" : "image/EjiriSuruga_c3.webp",
-         "x" : "0.618",
-         "y" : "0.752"
-      },
-      {
-         "pixmapfile" : "image/EjiriSuruga_b3.webp",
-         "x" : "0.38",
-         "y" : "0.752"
-      },
-      {
-         "pixmapfile" : "image/EjiriSuruga_a3.webp",
+         "pixmapfile" : "image/EjiriSuruga_a1.webp",
          "x" : "0.174",
-         "y" : "0.782"
-      },
-      {
-         "pixmapfile" : "image/EjiriSuruga_d2.webp",
-         "x" : "0.823",
-         "y" : "0.497"
-      },
-      {
-         "pixmapfile" : "image/EjiriSuruga_c2.webp",
-         "x" : "0.616",
-         "y" : "0.468"
-      },
-      {
-         "pixmapfile" : "image/EjiriSuruga_b2.webp",
-         "x" : "0.405",
-         "y" : "0.468"
-      },
-      {
-         "pixmapfile" : "image/EjiriSuruga_a2.webp",
-         "x" : "0.174",
-         "y" : "0.498"
-      },
-      {
-         "pixmapfile" : "image/EjiriSuruga_d1.webp",
-         "x" : "0.823",
-         "y" : "0.242"
-      },
-      {
-         "pixmapfile" : "image/EjiriSuruga_c1.webp",
-         "x" : "0.616",
          "y" : "0.212"
       },
       {
@@ -75,9 +30,54 @@ QtObject {
          "y" : "0.212"
       },
       {
-         "pixmapfile" : "image/EjiriSuruga_a1.webp",
-         "x" : "0.174",
+         "pixmapfile" : "image/EjiriSuruga_c1.webp",
+         "x" : "0.616",
          "y" : "0.212"
+      },
+      {
+         "pixmapfile" : "image/EjiriSuruga_d1.webp",
+         "x" : "0.823",
+         "y" : "0.242"
+      },
+      {
+         "pixmapfile" : "image/EjiriSuruga_a2.webp",
+         "x" : "0.174",
+         "y" : "0.498"
+      },
+      {
+         "pixmapfile" : "image/EjiriSuruga_b2.webp",
+         "x" : "0.405",
+         "y" : "0.468"
+      },
+      {
+         "pixmapfile" : "image/EjiriSuruga_c2.webp",
+         "x" : "0.616",
+         "y" : "0.468"
+      },
+      {
+         "pixmapfile" : "image/EjiriSuruga_d2.webp",
+         "x" : "0.823",
+         "y" : "0.497"
+      },
+      {
+         "pixmapfile" : "image/EjiriSuruga_a3.webp",
+         "x" : "0.174",
+         "y" : "0.782"
+      },
+      {
+         "pixmapfile" : "image/EjiriSuruga_b3.webp",
+         "x" : "0.38",
+         "y" : "0.752"
+      },
+      {
+         "pixmapfile" : "image/EjiriSuruga_c3.webp",
+         "x" : "0.618",
+         "y" : "0.752"
+      },
+      {
+         "pixmapfile" : "image/EjiriSuruga_d3.webp",
+         "x" : "0.846",
+         "y" : "0.752"
       }
    ]
 }

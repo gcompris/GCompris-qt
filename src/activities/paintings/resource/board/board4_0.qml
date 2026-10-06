@@ -20,24 +20,9 @@ QtObject {
          "height": 515
       },
       {
-         "pixmapfile" : "image/HokusaiOiranKamuro_b3.webp",
-         "x" : "0.602",
-         "y" : "0.752"
-      },
-      {
-         "pixmapfile" : "image/HokusaiOiranKamuro_a3.webp",
+         "pixmapfile" : "image/HokusaiOiranKamuro_a1.webp",
          "x" : "0.416",
-         "y" : "0.752"
-      },
-      {
-         "pixmapfile" : "image/HokusaiOiranKamuro_b2.webp",
-         "x" : "0.602",
-         "y" : "0.497"
-      },
-      {
-         "pixmapfile" : "image/HokusaiOiranKamuro_a2.webp",
-         "x" : "0.416",
-         "y" : "0.497"
+         "y" : "0.242"
       },
       {
          "pixmapfile" : "image/HokusaiOiranKamuro_b1.webp",
@@ -45,9 +30,24 @@ QtObject {
          "y" : "0.242"
       },
       {
-         "pixmapfile" : "image/HokusaiOiranKamuro_a1.webp",
+         "pixmapfile" : "image/HokusaiOiranKamuro_a2.webp",
          "x" : "0.416",
-         "y" : "0.242"
+         "y" : "0.497"
+      },
+      {
+         "pixmapfile" : "image/HokusaiOiranKamuro_b2.webp",
+         "x" : "0.602",
+         "y" : "0.497"
+      },
+      {
+         "pixmapfile" : "image/HokusaiOiranKamuro_a3.webp",
+         "x" : "0.416",
+         "y" : "0.752"
+      },
+      {
+         "pixmapfile" : "image/HokusaiOiranKamuro_b3.webp",
+         "x" : "0.602",
+         "y" : "0.752"
       }
    ]
 }
