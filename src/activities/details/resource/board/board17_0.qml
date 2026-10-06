@@ -30,15 +30,15 @@ QtObject {
          "dropAreaSize" : "8"
       },
       {
-         "pixmapfile" : "image/FanoeWindmill_2.webp",
-         "x" : "0.703",
-         "y" : "0.812",
-         "dropAreaSize" : "8"
-      },
-      {
          "pixmapfile" : "image/FanoeWindmill_3.webp",
          "x" : "0.372",
          "y" : "0.696",
+         "dropAreaSize" : "8"
+      },
+      {
+         "pixmapfile" : "image/FanoeWindmill_2.webp",
+         "x" : "0.703",
+         "y" : "0.812",
          "dropAreaSize" : "8"
       }
    ]

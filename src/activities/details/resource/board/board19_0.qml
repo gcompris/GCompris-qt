@@ -24,21 +24,15 @@ QtObject {
          "dropAreaSize" : "8"
       },
       {
+         "pixmapfile" : "image/TajMahal_5.webp",
+         "x" : "0.501",
+         "y" : "0.256",
+         "dropAreaSize" : "8"
+      },
+      {
          "pixmapfile" : "image/TajMahal_1.webp",
          "x" : "0.893",
          "y" : "0.252",
-         "dropAreaSize" : "8"
-      },
-      {
-         "pixmapfile" : "image/TajMahal_2.webp",
-         "x" : "0.507",
-         "y" : "0.534",
-         "dropAreaSize" : "8"
-      },
-      {
-         "pixmapfile" : "image/TajMahal_3.webp",
-         "x" : "0.351",
-         "y" : "0.33",
          "dropAreaSize" : "8"
       },
       {
@@ -48,9 +42,15 @@ QtObject {
          "dropAreaSize" : "8"
       },
       {
-         "pixmapfile" : "image/TajMahal_5.webp",
-         "x" : "0.501",
-         "y" : "0.256",
+         "pixmapfile" : "image/TajMahal_3.webp",
+         "x" : "0.351",
+         "y" : "0.33",
+         "dropAreaSize" : "8"
+      },
+      {
+         "pixmapfile" : "image/TajMahal_2.webp",
+         "x" : "0.507",
+         "y" : "0.534",
          "dropAreaSize" : "8"
       }
    ]

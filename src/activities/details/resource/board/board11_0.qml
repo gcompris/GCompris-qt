@@ -18,15 +18,15 @@ QtObject {
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "image/GizahPyramids_0.webp",
-         "x" : "0.754",
-         "y" : "0.498",
-         "dropAreaSize" : "8"
-      },
-      {
          "pixmapfile" : "image/GizahPyramids_1.webp",
          "x" : "0.585",
          "y" : "0.365",
+         "dropAreaSize" : "8"
+      },
+      {
+         "pixmapfile" : "image/GizahPyramids_0.webp",
+         "x" : "0.754",
+         "y" : "0.498",
          "dropAreaSize" : "8"
       },
       {

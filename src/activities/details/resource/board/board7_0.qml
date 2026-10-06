@@ -24,15 +24,15 @@ QtObject {
          "dropAreaSize" : "8"
       },
       {
-         "pixmapfile" : "image/Van_Gogh_The_Night_Cafe_1.webp",
-         "x" : "0.606",
-         "y" : "0.538",
+         "pixmapfile" : "image/Van_Gogh_The_Night_Cafe_5.webp",
+         "x" : "0.278",
+         "y" : "0.258",
          "dropAreaSize" : "8"
       },
       {
-         "pixmapfile" : "image/Van_Gogh_The_Night_Cafe_2.webp",
-         "x" : "0.675",
-         "y" : "0.356",
+         "pixmapfile" : "image/Van_Gogh_The_Night_Cafe_7.webp",
+         "x" : "0.42",
+         "y" : "0.262",
          "dropAreaSize" : "8"
       },
       {
@@ -48,21 +48,21 @@ QtObject {
          "dropAreaSize" : "8"
       },
       {
-         "pixmapfile" : "image/Van_Gogh_The_Night_Cafe_5.webp",
-         "x" : "0.278",
-         "y" : "0.258",
+         "pixmapfile" : "image/Van_Gogh_The_Night_Cafe_2.webp",
+         "x" : "0.675",
+         "y" : "0.356",
+         "dropAreaSize" : "8"
+      },
+      {
+         "pixmapfile" : "image/Van_Gogh_The_Night_Cafe_1.webp",
+         "x" : "0.606",
+         "y" : "0.538",
          "dropAreaSize" : "8"
       },
       {
          "pixmapfile" : "image/Van_Gogh_The_Night_Cafe_6.webp",
          "x" : "0.915",
          "y" : "0.944",
-         "dropAreaSize" : "8"
-      },
-      {
-         "pixmapfile" : "image/Van_Gogh_The_Night_Cafe_7.webp",
-         "x" : "0.42",
-         "y" : "0.262",
          "dropAreaSize" : "8"
       }
    ]

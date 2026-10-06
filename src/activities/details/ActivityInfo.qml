@@ -23,7 +23,13 @@ ActivityInfo {
   goal: qsTr("Develop observation and spatial visualization skills.")
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Find a picture detail in the sidebar, and drag it to the right spot on the picture.")
+  manual: qsTr("Find a picture detail in the sidebar, and drag it to the right spot on the picture.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: move the selection cursor through the panel items and board spots") + ("</li><li>") +
+          qsTr("Space: select an item in the list, and place it on a spot. If there is nothing selected in the list, remove item from selected spot") + ("</li><li>") +
+          qsTr("Tab: toggle navigation between the panel and the board without any other action") + ("</li><li>") +
+          qsTr("Delete or Backspace: remove item from selected spot") + ("</li><li>") +
+          qsTr("Enter: validate your answer") + ("</li></ul>")
   credit: qsTr("The images are from Wikimedia Commons.") + ("<ul><li>") +
           ('"Chateau de Chenonceau 2008" by Ra-smit (https://commons.wikimedia.org/wiki/File:Chateau_de_Chenonceau_2008.jpg), CC BY-SA 3.0') + ("</li><li>") +
           ('"Egeskov Slot spejling" by Malene Thyssen (https://commons.wikimedia.org/wiki/File:Egeskov_Slot_spejling.jpg), CC BY-SA 3.0') + ("</li><li>") +
