@@ -14,50 +14,50 @@ import QtQuick
 QtObject {
    property string instruction: qsTr("Transportation")
    property var levels: [
-      {
-          "pixmapfile": "images/cornu_helico.svg",
-          "x": 0.5,
-          "y": 0.65,
-          "width": 0.4,
-          "height": 0.3
-      },
-      {
-          "pixmapfile": "images/ader_eole.svg",
-          "x": 0.75,
-          "y": 0.2,
-          "width": 0.4,
-          "height": 0.3
-      },
-      {
-          "pixmapfile": "images/montgolfiere.svg",
-          "x": 0.25,
-          "y": 0.2,
-          "width": 0.4,
-          "height": 0.3
-      },
-      {
-		  "text": qsTr("1783 Montgolfier brothers' hot air balloon"),
-		  "x": 0.25,
-		  "y": 0.4,
-		  "width": 0.4,
-          "height": 0.075,
-		  "type": "DisplayText"
-      },
-      {
-		  "text": qsTr("1890 Clement Ader's Eole"),
-		  "x": 0.75,
-		  "y": 0.4,
-		  "width": 0.4,
-          "height": 0.075,
-		  "type": "DisplayText"
-      },
-      {
-		  "text": qsTr("1907 Paul Cornu First helicopter flight"),
-          "x": 0.5,
-		  "y": 0.85,
-          "width": 0.4,
-          "height": 0.075,
-		  "type": "DisplayText"
-      }
+       {
+           "pixmapfile": "images/montgolfiere.svg",
+           "x": 0.25,
+           "y": 0.2,
+           "width": 0.4,
+           "height": 0.3
+       },
+       {
+           "pixmapfile": "images/ader_eole.svg",
+           "x": 0.75,
+           "y": 0.2,
+           "width": 0.4,
+           "height": 0.3
+       },
+       {
+           "pixmapfile": "images/cornu_helico.svg",
+           "x": 0.5,
+           "y": 0.65,
+           "width": 0.4,
+           "height": 0.3
+       },
+       {
+           "text": qsTr("1783 Montgolfier brothers' hot air balloon"),
+           "x": 0.25,
+           "y": 0.4,
+           "width": 0.4,
+           "height": 0.075,
+           "type": "DisplayText"
+       },
+       {
+           "text": qsTr("1890 Clement Ader's Eole"),
+           "x": 0.75,
+           "y": 0.4,
+           "width": 0.4,
+           "height": 0.075,
+           "type": "DisplayText"
+       },
+       {
+           "text": qsTr("1907 Paul Cornu First helicopter flight"),
+           "x": 0.5,
+           "y": 0.85,
+           "width": 0.4,
+           "height": 0.075,
+           "type": "DisplayText"
+       }
    ]
 }

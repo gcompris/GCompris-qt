@@ -29,20 +29,20 @@ QtObject {
           "height": 0.3
       },
       {
-		  "text": qsTr("1783 Montgolfier brothers' hot air balloon"),
-		  "x": 0.25,
-		  "y": 0.4,
-		  "width": 0.4,
+          "text": qsTr("1783 Montgolfier brothers' hot air balloon"),
+          "x": 0.25,
+          "y": 0.4,
+          "width": 0.4,
           "height": 0.075,
-		  "type": "DisplayText"
+          "type": "DisplayText"
       },
       {
-		  "text": qsTr("1829 Stephenson's Rocket Steam locomotive"),
-		  "x": 0.75,
-		  "y": 0.4,
-		  "width": 0.4,
+          "text": qsTr("1829 Stephenson's Rocket Steam locomotive"),
+          "x": 0.75,
+          "y": 0.4,
+          "width": 0.4,
           "height": 0.075,
-		  "type": "DisplayText"
+          "type": "DisplayText"
       }
    ]
 }

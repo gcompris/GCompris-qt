@@ -37,28 +37,28 @@ QtObject {
           "height": 0.3
       },
       {
-		  "text": qsTr("1890 Clement Ader's Eole"),
-		  "x": 0.25,
-		  "y": 0.4,
-		  "width": 0.4,
+          "text": qsTr("1890 Clement Ader's Eole"),
+          "x": 0.25,
+          "y": 0.4,
+          "width": 0.4,
           "height": 0.075,
-		  "type": "DisplayText"
+          "type": "DisplayText"
       },
       {
-		  "text": qsTr("1905 The Wright brothers' Flyer III"),
+          "text": qsTr("1905 The Wright brothers' Flyer III"),
           "x": 0.75,
-		  "y": 0.4,
-		  "width": 0.4,
+          "y": 0.4,
+          "width": 0.4,
           "height": 0.075,
-		  "type": "DisplayText"
+          "type": "DisplayText"
       },
       {
-		  "text": qsTr("1909 Louis Bleriot crosses the English Channel"),
-		  "x": 0.5,
-		  "y": 0.85,
-		  "width": 0.4,
+          "text": qsTr("1909 Louis Bleriot crosses the English Channel"),
+          "x": 0.5,
+          "y": 0.85,
+          "width": 0.4,
           "height": 0.075,
-		  "type": "DisplayText"
+          "type": "DisplayText"
       }
    ]
 }

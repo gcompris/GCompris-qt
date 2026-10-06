@@ -36,25 +36,25 @@ QtObject {
           "height": 0.3
       },
       {
-		  "text": qsTr("1898 Renault voiturette"),
-		  "x": 0.25,
-		  "y": 0.4,
-		  "width": 0.4,
+          "text": qsTr("1898 Renault voiturette"),
+          "x": 0.25,
+          "y": 0.4,
+          "width": 0.4,
           "height": 0.075,
-		  "type": "DisplayText"
+          "type": "DisplayText"
       },
       {
-		  "text": qsTr("1923 Lancia Lambda"),
-		  "x": 0.75,
-		  "y": 0.4,
-		  "width": 0.4,
+          "text": qsTr("1923 Lancia Lambda"),
+          "x": 0.75,
+          "y": 0.4,
+          "width": 0.4,
           "height": 0.075,
-		  "type": "DisplayText"
+          "type": "DisplayText"
       },
       {
-		  "text": qsTr("1955 Citroën DS 19"),
+          "text": qsTr("1955 Citroën DS 19"),
           "x": 0.5,
-		  "y": 0.85,
+          "y": 0.85,
           "width": 0.4,
           "height": 0.075,
           "type": "DisplayText"

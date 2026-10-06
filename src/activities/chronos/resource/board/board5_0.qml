@@ -30,28 +30,28 @@ QtObject {
           "height": 0.3
       },
       {
-		  "text": qsTr("1829 Stephenson's Rocket Steam locomotive"),
-          "x": 0.75,
-		  "y": 0.4,
-          "width": 0.4,
-          "height": 0.075,
-		  "type": "DisplayText"
-      },
-      {
-		  "text": qsTr("1769 Cugnot's fardier"),
+          "text": qsTr("1769 Cugnot's fardier"),
           "x": 0.25,
-		  "y": 0.4,
+          "y": 0.4,
           "width": 0.4,
           "height": 0.075,
-		  "type": "DisplayText"
+          "type": "DisplayText"
       },
       {
-		  "text": qsTr("Transportation"),
+          "text": qsTr("1829 Stephenson's Rocket Steam locomotive"),
+          "x": 0.75,
+          "y": 0.4,
+          "width": 0.4,
+          "height": 0.075,
+          "type": "DisplayText"
+      },
+      {
+          "text": qsTr("Transportation"),
           "x": 0.5,
-		  "y": 0.85,
+          "y": 0.85,
           "width": 0.3,
           "height": 0.075,
-		  "type": "DisplayText"
+          "type": "DisplayText"
       }
    ]
 }
