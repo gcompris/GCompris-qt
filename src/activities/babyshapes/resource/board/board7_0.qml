@@ -19,10 +19,10 @@ QtObject {
           "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-          "pixmapfile" : "image/Paul_Gauguin_006_chien.webp",
+          "pixmapfile" : "image/Paul_Gauguin_006_statue.webp",
           "dropAreaSize" : "10",
-          "x" : "0.278",
-          "y" : "0.807"
+          "x" : "0.19",
+          "y" : "0.133"
       },
       {
           "pixmapfile" : "image/Paul_Gauguin_006_jeunes_filles.webp",
@@ -31,10 +31,10 @@ QtObject {
           "y" : "0.46"
       },
       {
-          "pixmapfile" : "image/Paul_Gauguin_006_statue.webp",
+          "pixmapfile" : "image/Paul_Gauguin_006_chien.webp",
           "dropAreaSize" : "10",
-          "x" : "0.19",
-          "y" : "0.133"
+          "x" : "0.278",
+          "y" : "0.807"
       }
    ]
 }
