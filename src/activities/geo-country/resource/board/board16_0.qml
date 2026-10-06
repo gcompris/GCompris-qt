@@ -19,6 +19,48 @@ QtObject {
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
+         "pixmapfile" : "romania/maramures.svgz",
+         //: Historical Region of Romania: Maramureș
+         "toolTipText" : qsTr("Maramureș"),
+         "x" : "0.365",
+         "y" : "0.1322"
+      },
+      {
+         "pixmapfile" : "romania/bukovina.svgz",
+         //: Historical Region of Romania: Bukovina
+         "toolTipText" : qsTr("Bukovina"),
+         "x" : "0.5678",
+         "y" : "0.1731"
+      },
+      {
+         "pixmapfile" : "romania/crisana.svgz",
+         //: Historical Region of Romania: Crișana
+         "toolTipText" : qsTr("Crișana"),
+         "x" : "0.2021",
+         "y" : "0.3208"
+      },
+      {
+         "pixmapfile" : "romania/transylvania.svgz",
+         //: Historical Region of Romania: Transylvania
+         "toolTipText" : qsTr("Transylvania"),
+         "x" : "0.4406",
+         "y" : "0.3965"
+      },
+      {
+         "pixmapfile" : "romania/moldavia.svgz",
+         //: Historical Region of Romania: Moldavia
+         "toolTipText" : qsTr("Moldavia"),
+         "x" : "0.6866",
+         "y" : "0.3177"
+      },
+      {
+         "pixmapfile" : "romania/banat.svgz",
+         //: Historical Region of Romania: Banat
+         "toolTipText" : qsTr("Banat"),
+         "x" : "0.1392",
+         "y" : "0.611"
+      },
+      {
          "pixmapfile" : "romania/oltenia.svgz",
          //: Historical Region of Romania: Oltenia
          "toolTipText" : qsTr("Oltenia"),
@@ -38,48 +80,6 @@ QtObject {
          "toolTipText" : qsTr("Northern Dobruja"),
          "x" : "0.8591",
          "y" : "0.7599"
-      },
-      {
-         "pixmapfile" : "romania/moldavia.svgz",
-         //: Historical Region of Romania: Moldavia
-         "toolTipText" : qsTr("Moldavia"),
-         "x" : "0.6866",
-         "y" : "0.3177"
-      },
-      {
-         "pixmapfile" : "romania/bukovina.svgz",
-         //: Historical Region of Romania: Bukovina
-         "toolTipText" : qsTr("Bukovina"),
-         "x" : "0.5678",
-         "y" : "0.1731"
-      },
-      {
-         "pixmapfile" : "romania/transylvania.svgz",
-         //: Historical Region of Romania: Transylvania
-         "toolTipText" : qsTr("Transylvania"),
-         "x" : "0.4406",
-         "y" : "0.3965"
-      },
-      {
-         "pixmapfile" : "romania/maramures.svgz",
-         //: Historical Region of Romania: Maramureș
-         "toolTipText" : qsTr("Maramureș"),
-         "x" : "0.365",
-         "y" : "0.1322"
-      },
-      {
-         "pixmapfile" : "romania/crisana.svgz",
-         //: Historical Region of Romania: Crișana
-         "toolTipText" : qsTr("Crișana"),
-         "x" : "0.2021",
-         "y" : "0.3208"
-      },
-      {
-         "pixmapfile" : "romania/banat.svgz",
-         //: Historical Region of Romania: Banat
-         "toolTipText" : qsTr("Banat"),
-         "x" : "0.1392",
-         "y" : "0.611"
       }
    ]
 }

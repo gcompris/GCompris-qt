@@ -19,11 +19,11 @@ QtObject {
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "italy/liguria.svgz",
-         //: Region of Italy: Liguria
-         "toolTipText" : qsTr("Liguria"),
-         "x" : "0.1861",
-         "y" : "0.2787"
+         "pixmapfile" : "italy/aosta_valley.svgz",
+         //: Region of Italy: Aosta Valley
+         "toolTipText" : qsTr("Aosta Valley"),
+         "x" : "0.0879",
+         "y" : "0.1375"
       },
       {
          "pixmapfile" : "italy/piedmont.svgz",
@@ -31,13 +31,6 @@ QtObject {
          "toolTipText" : qsTr("Piedmont"),
          "x" : "0.1248",
          "y" : "0.1827"
-      },
-      {
-         "pixmapfile" : "italy/aosta_valley.svgz",
-         //: Region of Italy: Aosta Valley
-         "toolTipText" : qsTr("Aosta Valley"),
-         "x" : "0.0879",
-         "y" : "0.1375"
       },
       {
          "pixmapfile" : "italy/lombardy.svgz",
@@ -66,6 +59,13 @@ QtObject {
          "toolTipText" : qsTr("Friuli Venezia Giulia"),
          "x" : "0.5202",
          "y" : "0.1095"
+      },
+      {
+         "pixmapfile" : "italy/liguria.svgz",
+         //: Region of Italy: Liguria
+         "toolTipText" : qsTr("Liguria"),
+         "x" : "0.1861",
+         "y" : "0.2787"
       },
       {
          "pixmapfile" : "italy/emilia-romagna.svgz",
@@ -138,6 +138,13 @@ QtObject {
          "y" : "0.6204"
       },
       {
+         "pixmapfile" : "italy/sardinia.svgz",
+         //: Region of Italy: Sardinia
+         "toolTipText" : qsTr("Sardinia"),
+         "x" : "0.1889",
+         "y" : "0.6641"
+      },
+      {
          "pixmapfile" : "italy/calabria.svgz",
          //: Region of Italy: Calabria
          "toolTipText" : qsTr("Calabria"),
@@ -150,13 +157,6 @@ QtObject {
          "toolTipText" : qsTr("Sicily"),
          "x" : "0.5857",
          "y" : "0.8794"
-      },
-      {
-         "pixmapfile" : "italy/sardinia.svgz",
-         //: Region of Italy: Sardinia
-         "toolTipText" : qsTr("Sardinia"),
-         "x" : "0.1889",
-         "y" : "0.6641"
       }
    ]
 }
