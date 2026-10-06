@@ -24,7 +24,13 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Reading.")
   //: Help manual
-  manual: qsTr("Drag each image from the side to the corresponding name in the main area. Click on the OK button to check your answer.")
+  manual: qsTr("Drag each image from the side to the corresponding name in the main area. Click on the OK button to check your answer.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: move the selection cursor through the panel items and board spots") + ("</li><li>") +
+          qsTr("Space: select an item in the list, and place it on a spot. If there is nothing selected in the list, remove item from selected spot") + ("</li><li>") +
+          qsTr("Tab: toggle navigation between the panel and the board without any other action") + ("</li><li>") +
+          qsTr("Delete or Backspace: remove item from selected spot") + ("</li><li>") +
+          qsTr("Enter: validate your answer") + ("</li></ul>")
   section: "reading words"
   createdInVersion: 4000
 }
