@@ -2,12 +2,13 @@
 # Copyright (C) 2004 THE gcompris COPYRIGHT HOLDER
 # This file is distributed under the same license as the gcompris package.
 # Gareth Owen <gowen72@yahoo.com>, 2004.
-# Shinjo Park <kde@peremen.name>, 2015, 2020, 2022.
+# SPDX-FileCopyrightText: 2015, 2020, 2022, 2026 Shinjo Park <kde@peremen.name>
+# Kyunghan Bae <ceo@unicupcompany.com>, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
-"PO-Revision-Date: 2022-05-15 22:15+0200\n"
+"PO-Revision-Date: 2026-10-07 00:20+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -15,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 25.12.3\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -284,7 +285,7 @@ msgstr ""
 #: activities/submarine/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard controls:</b>"
-msgstr ""
+msgstr "<b>키보드 조작:</b>"
 
 #: activities/advanced_colors/ActivityInfo.qml:26
 #: activities/algorithm/ActivityInfo.qml:24
@@ -3104,13 +3105,13 @@ msgstr ""
 #: activities/calendar/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Calendar"
-msgstr ""
+msgstr "달력"
 
 #. Help title
 #: activities/calendar/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Read the instructions and select the correct date on the calendar."
-msgstr ""
+msgstr "문제를 읽고 달력에서 알맞은 날짜를 고르십시오."
 
 #. Help goal
 #: activities/calendar/ActivityInfo.qml:20
@@ -3122,7 +3123,7 @@ msgstr ""
 #: activities/calendar/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Concept of week, month and year."
-msgstr ""
+msgstr "일주일, 한 달, 일 년의 뜻."
 
 #. Help manual
 #: activities/calendar/ActivityInfo.qml:24
@@ -3131,6 +3132,8 @@ msgid ""
 "Read the instructions and select the correct date on the calendar, and then "
 "validate your answer by clicking on the OK button."
 msgstr ""
+"문제를 읽고 달력에서 알맞은 날짜를 고른 뒤 확인 단추를 눌러 답을 확인하십시"
+"오."
 
 #: activities/calendar/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:24
@@ -3139,53 +3142,55 @@ msgid ""
 "In some levels, you need to find the day of the week for a given date. In "
 "this case, click on the corresponding day of the week in the list."
 msgstr ""
+"어떤 단계에서는 주어진 날짜의 요일을 찾아야 합니다. 이때는 목록에서 알맞은 요"
+"일을 고르십시오."
 
 #: activities/calendar/ActivityInfo.qml:26
 #: activities/find_the_day/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate through the answers"
-msgstr ""
+msgstr "방향키: 답 사이로 이동"
 
 #: activities/calendar/ActivityInfo.qml:27
 #: activities/find_the_day/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
-msgstr ""
+msgstr "스페이스 키 또는 Enter 키: 답 확인"
 
 #: activities/calendar/Calendar.qml:101
 msgctxt "Calendar|"
 msgid "Sunday"
-msgstr ""
+msgstr "일요일"
 
 #: activities/calendar/Calendar.qml:102
 msgctxt "Calendar|"
 msgid "Monday"
-msgstr ""
+msgstr "월요일"
 
 #: activities/calendar/Calendar.qml:103
 msgctxt "Calendar|"
 msgid "Tuesday"
-msgstr ""
+msgstr "화요일"
 
 #: activities/calendar/Calendar.qml:104
 msgctxt "Calendar|"
 msgid "Wednesday"
-msgstr ""
+msgstr "수요일"
 
 #: activities/calendar/Calendar.qml:105
 msgctxt "Calendar|"
 msgid "Thursday"
-msgstr ""
+msgstr "목요일"
 
 #: activities/calendar/Calendar.qml:106
 msgctxt "Calendar|"
 msgid "Friday"
-msgstr ""
+msgstr "금요일"
 
 #: activities/calendar/Calendar.qml:107
 msgctxt "Calendar|"
 msgid "Saturday"
-msgstr ""
+msgstr "토요일"
 
 #: activities/calendar/calendar_dataset.js:35
 #, fuzzy
@@ -3238,37 +3243,37 @@ msgstr "모드 선택"
 #: activities/calendar/calendar_dataset.js:75
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 4th of the given month?"
-msgstr ""
+msgstr "달력에서 4일은 무슨 요일입니까?"
 
 #: activities/calendar/calendar_dataset.js:79
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 12th of the given month?"
-msgstr ""
+msgstr "달력에서 12일은 무슨 요일입니까?"
 
 #: activities/calendar/calendar_dataset.js:83
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 20th of the given month?"
-msgstr ""
+msgstr "달력에서 20일은 무슨 요일입니까?"
 
 #: activities/calendar/calendar_dataset.js:87
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 28th of the given month?"
-msgstr ""
+msgstr "달력에서 28일은 무슨 요일입니까?"
 
 #: activities/calendar/calendar_dataset.js:91
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 22nd of the given month?"
-msgstr ""
+msgstr "달력에서 22일은 무슨 요일입니까?"
 
 #: activities/calendar/calendar_dataset.js:95
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 16th of the given month?"
-msgstr ""
+msgstr "달력에서 16일은 무슨 요일입니까?"
 
 #: activities/calendar/calendar_dataset.js:99
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 10th of the given month?"
-msgstr ""
+msgstr "달력에서 10일은 무슨 요일입니까?"
 
 #: activities/calendar/calendar_dataset.js:119
 msgctxt "calendar_dataset|"
@@ -27755,7 +27760,9 @@ msgstr ""
 #: core/DialogAbout.qml:46 core/DialogAbout.qml:47
 msgctxt "DialogAbout|"
 msgid "translator-credits"
-msgstr "박신조"
+msgstr ""
+"배경한 (ceo@unicupcompany.com),\n"
+"박신조 (kde@peremen.name)"
 
 #: core/DialogAbout.qml:55
 #, qt-format
