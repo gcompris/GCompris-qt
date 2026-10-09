@@ -26,18 +26,18 @@ QtObject {
         "y": "0.3945"
     },
     {
+        "pixmapfile": "asiacentral/uzbekistan.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/uzbekistan.$CA",
+        "toolTipText": qsTr("Uzbekistan"),
+        "x": "0.4438",
+        "y": "0.6901"
+    },
+    {
         "pixmapfile": "asiacentral/kyrgyzstan.svgz",
         "soundFile": "voices-$CA/$LOCALE/geography/kyrgyzstan.$CA",
         "toolTipText": qsTr("Kyrgyzstan"),
         "x": "0.6885",
         "y": "0.6963"
-    },
-    {
-        "pixmapfile": "asiacentral/tajikistan.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/tajikistan.$CA",
-        "toolTipText": qsTr("Tajikistan"),
-        "x": "0.6044",
-        "y": "0.8015"
     },
     {
         "pixmapfile": "asiacentral/turkmenistan.svgz",
@@ -47,11 +47,11 @@ QtObject {
         "y": "0.7962"
     },
     {
-        "pixmapfile": "asiacentral/uzbekistan.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/uzbekistan.$CA",
-        "toolTipText": qsTr("Uzbekistan"),
-        "x": "0.4438",
-        "y": "0.6901"
+        "pixmapfile": "asiacentral/tajikistan.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/tajikistan.$CA",
+        "toolTipText": qsTr("Tajikistan"),
+        "x": "0.6044",
+        "y": "0.8015"
     }
     ]
 }

@@ -19,13 +19,6 @@ QtObject {
         "type": "SHAPE_BACKGROUND_IMAGE"
     },
     {
-        "pixmapfile": "continents/oceania.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/oceania.$CA",
-        "toolTipText": qsTr("Oceania"),
-        "x": "0.8694",
-        "y": "0.6471"
-    },
-    {
         "pixmapfile": "continents/europa.svgz",
         "soundFile": "voices-$CA/$LOCALE/geography/europe.$CA",
         "toolTipText": qsTr("Europe"),
@@ -40,13 +33,6 @@ QtObject {
         "y": "0.2886"
     },
     {
-        "pixmapfile": "continents/antarctica.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/antarctica.$CA",
-        "toolTipText": qsTr("Antarctica"),
-        "x": "0.4647",
-        "y": "0.887"
-    },
-    {
         "pixmapfile": "continents/america.svgz",
         "soundFile": "voices-$CA/$LOCALE/geography/america.$CA",
         "toolTipText": qsTr("America"),
@@ -59,6 +45,20 @@ QtObject {
         "toolTipText": qsTr("Africa"),
         "x": "0.4782",
         "y": "0.4832"
+    },
+    {
+        "pixmapfile": "continents/oceania.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/oceania.$CA",
+        "toolTipText": qsTr("Oceania"),
+        "x": "0.8694",
+        "y": "0.6471"
+    },
+    {
+        "pixmapfile": "continents/antarctica.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/antarctica.$CA",
+        "toolTipText": qsTr("Antarctica"),
+        "x": "0.4647",
+        "y": "0.887"
     }
     ]
 }

@@ -19,33 +19,11 @@ QtObject {
         "type": "SHAPE_BACKGROUND_IMAGE"
     },
     {
-        "pixmapfile": "asiasoutheast/singapore.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/singapore.$CA",
-        "toolTipText": qsTr("Singapore"),
-        "type": "SHAPE_BACKGROUND",
-        "x": "0.2497",
-        "y": "0.6795"
-    },
-    {
-        "pixmapfile": "asiasoutheast/indonesia.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/indonesia.$CA",
-        "toolTipText": qsTr("Indonesia"),
-        "x": "0.5307",
-        "y": "0.7724"
-    },
-    {
         "pixmapfile": "asiasoutheast/myanmar.svgz",
         "soundFile": "voices-$CA/$LOCALE/geography/myanmar.$CA",
         "toolTipText": qsTr("Myanmar"),
         "x": "0.1082",
         "y": "0.2438"
-    },
-    {
-        "pixmapfile": "asiasoutheast/thailand.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/thailand.$CA",
-        "toolTipText": qsTr("Thailand"),
-        "x": "0.2037",
-        "y": "0.3945"
     },
     {
         "pixmapfile": "asiasoutheast/laos.svgz",
@@ -62,11 +40,25 @@ QtObject {
         "y": "0.3228"
     },
     {
+        "pixmapfile": "asiasoutheast/thailand.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/thailand.$CA",
+        "toolTipText": qsTr("Thailand"),
+        "x": "0.2037",
+        "y": "0.3945"
+    },
+    {
         "pixmapfile": "asiasoutheast/cambodia.svgz",
         "soundFile": "voices-$CA/$LOCALE/geography/cambodia.$CA",
         "toolTipText": qsTr("Cambodia"),
         "x": "0.2718",
         "y": "0.4058"
+    },
+    {
+        "pixmapfile": "asiasoutheast/philippines.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/philippines.$CA",
+        "toolTipText": qsTr("Philippines"),
+        "x": "0.6034",
+        "y": "0.3961"
     },
     {
         "pixmapfile": "asiasoutheast/malaysia.svgz",
@@ -83,6 +75,13 @@ QtObject {
         "y": "0.6012"
     },
     {
+        "pixmapfile": "asiasoutheast/indonesia.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/indonesia.$CA",
+        "toolTipText": qsTr("Indonesia"),
+        "x": "0.5307",
+        "y": "0.7724"
+    },
+    {
         "pixmapfile": "asiasoutheast/east_timor.svgz",
         "soundFile": "voices-$CA/$LOCALE/geography/east_timor.$CA",
         "toolTipText": qsTr("East Timor"),
@@ -90,11 +89,12 @@ QtObject {
         "y": "0.9263"
     },
     {
-        "pixmapfile": "asiasoutheast/philippines.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/philippines.$CA",
-        "toolTipText": qsTr("Philippines"),
-        "x": "0.6034",
-        "y": "0.3961"
+        "pixmapfile": "asiasoutheast/singapore.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/singapore.$CA",
+        "toolTipText": qsTr("Singapore"),
+        "type": "SHAPE_BACKGROUND",
+        "x": "0.2497",
+        "y": "0.6795"
     }
     ]
 }

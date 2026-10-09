@@ -19,25 +19,18 @@ QtObject {
         "type": "SHAPE_BACKGROUND_IMAGE"
     },
     {
-        "pixmapfile": "centralamerica/puerto_rico.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/puerto_rico.$CA",
-        "toolTipText": qsTr("Puerto Rico"),
-        "x": "0.8305",
-        "y": "0.4622"
+        "pixmapfile": "centralamerica/bahamas.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/bahamas.$CA",
+        "toolTipText": qsTr("Bahamas"),
+        "x": "0.6195",
+        "y": "0.1912"
     },
     {
-        "pixmapfile": "centralamerica/panama.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/panama.$CA",
-        "toolTipText": qsTr("Panama"),
-        "x": "0.5227",
-        "y": "0.929"
-    },
-    {
-        "pixmapfile": "centralamerica/nicaragua.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/nicaragua.$CA",
-        "toolTipText": qsTr("Nicaragua"),
-        "x": "0.4018",
-        "y": "0.717"
+        "pixmapfile": "centralamerica/cuba.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/cuba.$CA",
+        "toolTipText": qsTr("Cuba"),
+        "x": "0.5363",
+        "y": "0.306"
     },
     {
         "pixmapfile": "centralamerica/mexico.svgz",
@@ -54,32 +47,11 @@ QtObject {
         "y": "0.4677"
     },
     {
-        "pixmapfile": "centralamerica/honduras.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/honduras.$CA",
-        "toolTipText": qsTr("Honduras"),
-        "x": "0.3825",
-        "y": "0.6279"
-    },
-    {
         "pixmapfile": "centralamerica/haiti.svgz",
         "soundFile": "voices-$CA/$LOCALE/geography/haiti.$CA",
         "toolTipText": qsTr("Haiti"),
         "x": "0.6835",
         "y": "0.4227"
-    },
-    {
-        "pixmapfile": "centralamerica/guatemala.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/guatemala.$CA",
-        "toolTipText": qsTr("Guatemala"),
-        "x": "0.2919",
-        "y": "0.579"
-    },
-    {
-        "pixmapfile": "centralamerica/el_salvador.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/salvador.$CA",
-        "toolTipText": qsTr("El Salvador"),
-        "x": "0.322",
-        "y": "0.673"
     },
     {
         "pixmapfile": "centralamerica/dominican_republic.svgz",
@@ -89,18 +61,11 @@ QtObject {
         "y": "0.4366"
     },
     {
-        "pixmapfile": "centralamerica/cuba.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/cuba.$CA",
-        "toolTipText": qsTr("Cuba"),
-        "x": "0.5363",
-        "y": "0.306"
-    },
-    {
-        "pixmapfile": "centralamerica/costa_rica.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/costa_rica.$CA",
-        "toolTipText": qsTr("Costa Rica"),
-        "x": "0.4286",
-        "y": "0.871"
+        "pixmapfile": "centralamerica/puerto_rico.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/puerto_rico.$CA",
+        "toolTipText": qsTr("Puerto Rico"),
+        "x": "0.8305",
+        "y": "0.4622"
     },
     {
         "pixmapfile": "centralamerica/belize.svgz",
@@ -110,11 +75,46 @@ QtObject {
         "y": "0.5121"
     },
     {
-        "pixmapfile": "centralamerica/bahamas.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/bahamas.$CA",
-        "toolTipText": qsTr("Bahamas"),
-        "x": "0.6195",
-        "y": "0.1912"
+        "pixmapfile": "centralamerica/guatemala.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/guatemala.$CA",
+        "toolTipText": qsTr("Guatemala"),
+        "x": "0.2919",
+        "y": "0.579"
+    },
+    {
+        "pixmapfile": "centralamerica/honduras.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/honduras.$CA",
+        "toolTipText": qsTr("Honduras"),
+        "x": "0.3825",
+        "y": "0.6279"
+    },
+    {
+        "pixmapfile": "centralamerica/el_salvador.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/salvador.$CA",
+        "toolTipText": qsTr("El Salvador"),
+        "x": "0.322",
+        "y": "0.673"
+    },
+    {
+        "pixmapfile": "centralamerica/nicaragua.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/nicaragua.$CA",
+        "toolTipText": qsTr("Nicaragua"),
+        "x": "0.4018",
+        "y": "0.717"
+    },
+    {
+        "pixmapfile": "centralamerica/costa_rica.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/costa_rica.$CA",
+        "toolTipText": qsTr("Costa Rica"),
+        "x": "0.4286",
+        "y": "0.871"
+    },
+    {
+        "pixmapfile": "centralamerica/panama.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/panama.$CA",
+        "toolTipText": qsTr("Panama"),
+        "x": "0.5227",
+        "y": "0.929"
     }
     ]
 }
