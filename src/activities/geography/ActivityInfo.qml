@@ -24,7 +24,13 @@ ActivityInfo {
   goal: qsTr("Learn to locate and place the continents and many countries on the world map.")
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Drag and drop the map pieces to their correct location to complete the map.")
+  manual: qsTr("Drag and drop the map pieces to their correct location to complete the map.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: move the selection cursor through the panel items and board spots") + ("</li><li>") +
+          qsTr("Space: select an item in the list, and place it on a spot. If there is nothing selected in the list, remove item from selected spot") + ("</li><li>") +
+          qsTr("Tab: toggle navigation between the panel and the board without any other action") + ("</li><li>") +
+          qsTr("Delete or Backspace: remove item from selected spot") + ("</li><li>") +
+          qsTr("Enter: validate your answer") + ("</li></ul>")
   credit: ""
   section: "sciences geography"
   createdInVersion: 4000

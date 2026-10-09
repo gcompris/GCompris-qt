@@ -19,41 +19,6 @@ QtObject {
         "type": "SHAPE_BACKGROUND_IMAGE"
     },
     {
-        "pixmapfile": "southamerica/venezuela.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/venezuela.$CA",
-        "toolTipText": qsTr("Venezuela"),
-        "x": "0.4436",
-        "y": "0.1261"
-    },
-    {
-        "pixmapfile": "southamerica/uruguay.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/uruguay.$CA",
-        "toolTipText": qsTr("Uruguay"),
-        "x": "0.6247",
-        "y": "0.6696"
-    },
-    {
-        "pixmapfile": "southamerica/suriname.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/suriname.$CA",
-        "toolTipText": qsTr("Suriname"),
-        "x": "0.6207",
-        "y": "0.1612"
-    },
-    {
-        "pixmapfile": "southamerica/peru.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/peru.$CA",
-        "toolTipText": qsTr("Peru"),
-        "x": "0.3027",
-        "y": "0.3442"
-    },
-    {
-        "pixmapfile": "southamerica/paraguay.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/paraguay.$CA",
-        "toolTipText": qsTr("Paraguay"),
-        "x": "0.5801",
-        "y": "0.5427"
-    },
-    {
         "pixmapfile": "southamerica/panama.svgz",
         "soundFile": "voices-$CA/$LOCALE/geography/panama.$CA",
         "toolTipText": qsTr("Panama"),
@@ -61,11 +26,32 @@ QtObject {
         "y": "0.0985"
     },
     {
+        "pixmapfile": "southamerica/colombia.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/colombia.$CA",
+        "toolTipText": qsTr("Colombia"),
+        "x": "0.3372",
+        "y": "0.1587"
+    },
+    {
+        "pixmapfile": "southamerica/venezuela.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/venezuela.$CA",
+        "toolTipText": qsTr("Venezuela"),
+        "x": "0.4436",
+        "y": "0.1261"
+    },
+    {
         "pixmapfile": "southamerica/guyana.svgz",
         "soundFile": "voices-$CA/$LOCALE/geography/guyana.$CA",
         "toolTipText": qsTr("Guyana"),
         "x": "0.5719",
         "y": "0.1478"
+    },
+    {
+        "pixmapfile": "southamerica/suriname.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/suriname.$CA",
+        "toolTipText": qsTr("Suriname"),
+        "x": "0.6207",
+        "y": "0.1612"
     },
     {
         "pixmapfile": "southamerica/french_guiana.svgz",
@@ -82,18 +68,11 @@ QtObject {
         "y": "0.2405"
     },
     {
-        "pixmapfile": "southamerica/colombia.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/colombia.$CA",
-        "toolTipText": qsTr("Colombia"),
-        "x": "0.3372",
-        "y": "0.1587"
-    },
-    {
-        "pixmapfile": "southamerica/chile.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/chile.$CA",
-        "toolTipText": qsTr("Chile"),
-        "x": "0.3412",
-        "y": "0.728"
+        "pixmapfile": "southamerica/peru.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/peru.$CA",
+        "toolTipText": qsTr("Peru"),
+        "x": "0.3027",
+        "y": "0.3442"
     },
     {
         "pixmapfile": "southamerica/brazil.svgz",
@@ -108,6 +87,27 @@ QtObject {
         "toolTipText": qsTr("Bolivia"),
         "x": "0.4943",
         "y": "0.4433"
+    },
+    {
+        "pixmapfile": "southamerica/paraguay.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/paraguay.$CA",
+        "toolTipText": qsTr("Paraguay"),
+        "x": "0.5801",
+        "y": "0.5427"
+    },
+    {
+        "pixmapfile": "southamerica/uruguay.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/uruguay.$CA",
+        "toolTipText": qsTr("Uruguay"),
+        "x": "0.6247",
+        "y": "0.6696"
+    },
+    {
+        "pixmapfile": "southamerica/chile.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/chile.$CA",
+        "toolTipText": qsTr("Chile"),
+        "x": "0.3412",
+        "y": "0.728"
     },
     {
         "pixmapfile": "southamerica/argentina.svgz",

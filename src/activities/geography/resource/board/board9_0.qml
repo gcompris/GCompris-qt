@@ -19,20 +19,6 @@ QtObject {
         "type": "SHAPE_BACKGROUND_IMAGE"
     },
     {
-        "pixmapfile": "asiawestern/turkey.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/turkey.$CA",
-        "toolTipText": qsTr("Turkey"),
-        "x": "0.2779",
-        "y": "0.1567"
-    },
-    {
-        "pixmapfile": "asiawestern/cyprus.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/cyprus.$CA",
-        "toolTipText": qsTr("Cyprus"),
-        "x": "0.2315",
-        "y": "0.2767"
-    },
-    {
         "pixmapfile": "asiawestern/georgia.svgz",
         "soundFile": "voices-$CA/$LOCALE/geography/georgia.$CA",
         //: Translators: Strip Asia| and translate only Georgia
@@ -41,11 +27,11 @@ QtObject {
         "y": "0.0519"
     },
     {
-        "pixmapfile": "asiawestern/azerbaijan.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/azerbaijan.$CA",
-        "toolTipText": qsTr("Azerbaijan"),
-        "x": "0.5932",
-        "y": "0.1199"
+        "pixmapfile": "asiawestern/turkey.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/turkey.$CA",
+        "toolTipText": qsTr("Turkey"),
+        "x": "0.2779",
+        "y": "0.1567"
     },
     {
         "pixmapfile": "asiawestern/armenia.svgz",
@@ -55,47 +41,18 @@ QtObject {
         "y": "0.1218"
     },
     {
-        "pixmapfile": "asiawestern/iran.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/iran.$CA",
-        "toolTipText": qsTr("Iran"),
-        "x": "0.7493",
-        "y": "0.3604"
+        "pixmapfile": "asiawestern/azerbaijan.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/azerbaijan.$CA",
+        "toolTipText": qsTr("Azerbaijan"),
+        "x": "0.5932",
+        "y": "0.1199"
     },
     {
-        "pixmapfile": "asiawestern/iraq.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/iraq.$CA",
-        "toolTipText": qsTr("Iraq"),
-        "x": "0.4932",
-        "y": "0.3362"
-    },
-    {
-        "pixmapfile": "asiawestern/syria.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/syria.$CA",
-        "toolTipText": qsTr("Syria"),
-        "x": "0.3756",
-        "y": "0.2863"
-    },
-    {
-        "pixmapfile": "asiawestern/jordan.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/jordan.$CA",
-        "toolTipText": qsTr("Jordan"),
-        "x": "0.326",
-        "y": "0.3963"
-    },
-    {
-        "pixmapfile": "asiawestern/israel.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/israel.$CA",
-        "toolTipText": qsTr("Israel"),
-        "x": "0.2737",
-        "y": "0.3909"
-    },
-    {
-        "pixmapfile": "asiawestern/palestine.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/palestine.$CA",
-        "toolTipText": qsTr("Palestine"),
-        "type": "SHAPE_BACKGROUND",
-        "x": "0.2688",
-        "y": "0.3779"
+        "pixmapfile": "asiawestern/cyprus.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/cyprus.$CA",
+        "toolTipText": qsTr("Cyprus"),
+        "x": "0.2315",
+        "y": "0.2767"
     },
     {
         "pixmapfile": "asiawestern/lebanon.svgz",
@@ -105,11 +62,39 @@ QtObject {
         "y": "0.3153"
     },
     {
-        "pixmapfile": "asiawestern/saudi_arabia.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/saudi_arabia.$CA",
-        "toolTipText": qsTr("Saudi Arabia"),
-        "x": "0.5308",
-        "y": "0.6161"
+        "pixmapfile": "asiawestern/syria.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/syria.$CA",
+        "toolTipText": qsTr("Syria"),
+        "x": "0.3756",
+        "y": "0.2863"
+    },
+    {
+        "pixmapfile": "asiawestern/iraq.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/iraq.$CA",
+        "toolTipText": qsTr("Iraq"),
+        "x": "0.4932",
+        "y": "0.3362"
+    },
+    {
+        "pixmapfile": "asiawestern/iran.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/iran.$CA",
+        "toolTipText": qsTr("Iran"),
+        "x": "0.7493",
+        "y": "0.3604"
+    },
+    {
+        "pixmapfile": "asiawestern/israel.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/israel.$CA",
+        "toolTipText": qsTr("Israel"),
+        "x": "0.2737",
+        "y": "0.3909"
+    },
+    {
+        "pixmapfile": "asiawestern/jordan.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/jordan.$CA",
+        "toolTipText": qsTr("Jordan"),
+        "x": "0.326",
+        "y": "0.3963"
     },
     {
         "pixmapfile": "asiawestern/kuwait.svgz",
@@ -117,6 +102,20 @@ QtObject {
         "toolTipText": qsTr("Kuwait"),
         "x": "0.5911",
         "y": "0.4574"
+    },
+    {
+        "pixmapfile": "asiawestern/egypt.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/egypt.$CA",
+        "toolTipText": qsTr("Egypt"),
+        "x": "0.164",
+        "y": "0.5354"
+    },
+    {
+        "pixmapfile": "asiawestern/saudi_arabia.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/saudi_arabia.$CA",
+        "toolTipText": qsTr("Saudi Arabia"),
+        "x": "0.5308",
+        "y": "0.6161"
     },
     {
         "pixmapfile": "asiawestern/qatar.svgz",
@@ -147,11 +146,12 @@ QtObject {
         "y": "0.8838"
     },
     {
-        "pixmapfile": "asiawestern/egypt.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/egypt.$CA",
-        "toolTipText": qsTr("Egypt"),
-        "x": "0.164",
-        "y": "0.5354"
+        "pixmapfile": "asiawestern/palestine.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/palestine.$CA",
+        "toolTipText": qsTr("Palestine"),
+        "type": "SHAPE_BACKGROUND",
+        "x": "0.2688",
+        "y": "0.3779"
     },
     {
         "pixmapfile": "asiawestern/bahrain.svgz",

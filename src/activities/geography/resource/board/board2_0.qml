@@ -19,20 +19,6 @@ QtObject {
         "type": "SHAPE_BACKGROUND_IMAGE"
     },
     {
-        "pixmapfile": "northamerica/usa.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/usa.$CA",
-        "toolTipText": qsTr("United States of America"),
-        "x": "0.3422",
-        "y": "0.5581"
-    },
-    {
-        "pixmapfile": "northamerica/mexico.svgz",
-        "soundFile": "voices-$CA/$LOCALE/geography/mexico.$CA",
-        "toolTipText": qsTr("Mexico"),
-        "x": "0.4825",
-        "y": "0.8641"
-    },
-    {
         "pixmapfile": "northamerica/greenland.svgz",
         "soundFile": "voices-$CA/$LOCALE/geography/greenland.$CA",
         "toolTipText": qsTr("Greenland"),
@@ -45,6 +31,20 @@ QtObject {
         "toolTipText": qsTr("Canada"),
         "x": "0.515",
         "y": "0.3138"
+    },
+    {
+        "pixmapfile": "northamerica/usa.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/usa.$CA",
+        "toolTipText": qsTr("United States of America"),
+        "x": "0.3422",
+        "y": "0.5581"
+    },
+    {
+        "pixmapfile": "northamerica/mexico.svgz",
+        "soundFile": "voices-$CA/$LOCALE/geography/mexico.$CA",
+        "toolTipText": qsTr("Mexico"),
+        "x": "0.4825",
+        "y": "0.8641"
     }
     ]
 }
