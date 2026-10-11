@@ -1585,7 +1585,7 @@ msgstr ""
 #: activities/analog_electricity/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "The electric simulation engine is from edX: "
-msgstr "Движок симуляции электрических цепей от edX:"
+msgstr "Механизм симуляции электрических цепей от edX:"
 
 #: activities/analog_electricity/cktsim.js:138
 msgctxt "cktsim|"
@@ -4505,7 +4505,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "The chess engine is p4wn &lt;https://github.com/douglasbagnall/p4wn&gt;."
 msgstr ""
-"В качестве шахматного движка используется p4wn &lt;https://github.com/"
+"В качестве шахматной программы используется p4wn &lt;https://github.com/"
 "douglasbagnall/p4wn&gt;."
 
 #: activities/chess/chess.js:117
