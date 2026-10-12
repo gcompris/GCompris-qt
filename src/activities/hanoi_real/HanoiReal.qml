@@ -61,9 +61,44 @@ ActivityBase {
             property int numberOfDisc: 1
             property int numberOfTower: 1
             property int maxDiskPerTower: 1
+
+            // For keyboard controls
+            property bool keyboardControls: false
+            property int columnCursorIndex: 0
+            property int selectedColumn: -1
+            property Rectangle selectedDisc: null
+            property alias discCursor: discCursor
+
+            readonly property int maxMoveIndex: activity.activityMode === "real" ?
+                                                items.numberOfTower - 1 : items.numberOfTower - 2
         }
 
         readonly property list<real> discSizes: [1.6, 1.3, 1, 0.7, 0.5]
+
+        Keys.onPressed: (event) => {
+            if(items.hasWon) {
+                return;
+            }
+            if(!items.keyboardControls) {
+                items.keyboardControls = true;
+                return;
+            }
+            switch(event.key) {
+                case Qt.Key_Up:
+                case Qt.Key_Left:
+                    Activity.moveCursorLeft();
+                    break;
+                case Qt.Key_Down:
+                case Qt.Key_Right:
+                    Activity.moveCursorRight();
+                    break;
+                case Qt.Key_Space:
+                case Qt.Key_Return:
+                case Qt.Key_Enter:
+                    Activity.selectPressed();
+                    break;
+            }
+        }
 
         onStart: { Activity.start(items, activity.activityMode) }
         onStop: { Activity.stop() }
@@ -144,6 +179,7 @@ ActivityBase {
                     hoverEnabled: true
 
                     onPressed: {
+                        Activity.resetKeyboardControls();
                         disc.anchors.horizontalCenter = undefined
                         disc.anchors.top = undefined
                         // Need to higher the z tower for the disc to be above all other towers and disc
@@ -155,10 +191,22 @@ ActivityBase {
                         // Restore previous z before releasing the disc
                         disc.towerImage.z --
                         disc.z --
-                        Activity.discReleased(disc.index)
+                        Activity.discReleased(disc)
                     }
                 }
             }
+        }
+
+        Rectangle {
+            id: discCursor
+            visible: items.keyboardControls && items.selectedDisc != null && items.selectedColumn > -1
+            height: parent.height + GCStyle.halfMargins * 2
+            width: parent.width + GCStyle.halfMargins * 2
+            radius: height
+            color: "#00000000"
+            border.width: GCStyle.midBorder
+            border.color: "white"
+            anchors.centerIn: parent
         }
 
         Row {
@@ -201,6 +249,19 @@ ActivityBase {
                     fillMode: Image.Stretch
                 }
             }
+        }
+
+        Rectangle {
+            id: towerCursor
+            visible: items.keyboardControls
+            height: towerRow.height + GCStyle.halfMargins * 2
+            width: towerRow.towerWidth + GCStyle.halfMargins * 2
+            radius: GCStyle.halfMargins
+            color: "#00000000"
+            border.width: GCStyle.midBorder
+            border.color: "#80ffffff"
+            x: towerRow.x - GCStyle.halfMargins + (items.columnCursorIndex * (towerRow.towerWidth + towerRow.spacing))
+            y: towerRow.y - GCStyle.halfMargins
         }
 
         DialogHelp {
