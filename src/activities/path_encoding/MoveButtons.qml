@@ -20,7 +20,6 @@ Item {
             verticalCenter: parent.verticalCenter
             horizontalCenter: parent.horizontalCenter
         }
-        spacing: moveButtons.spacing
 
         Item {
             id: buttonContainer
