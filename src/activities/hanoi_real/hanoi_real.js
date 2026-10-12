@@ -88,7 +88,7 @@ function initSpecificInfoForSimplified() {
 }
 
 function initLevel() {
-
+    resetKeyboardControls();
     items.hasWon = false
     items.numberOfTower = 0
     items.numberOfDisc = 0
@@ -172,36 +172,35 @@ function placeDiscsAtOrigin() {
     }
 }
 
-function discReleased(index)
-{
-    var disc = items.discRepeater.itemAt(index)
-
+function tryToMoveDisc(disc, towerItem) {
     if(activityMode == "real") {
-        for(var i = 0 ; i < items.towerModel.model ; ++ i) {
-            var towerItem = items.towerModel.itemAt(i);
-            if(checkIfDiscOnTowerImage(disc, towerItem) &&
-               getNumberOfDiscOnTower(towerItem) < items.numberOfDisc &&
-               getHigherfDiscOnTower(towerItem) <= index) {
-                placeDisc(disc, towerItem)
-                break;
-            }
+        if(getNumberOfDiscOnTower(towerItem) < items.numberOfDisc && getHigherfDiscOnTower(towerItem) <= disc.index) {
+            placeDisc(disc, towerItem);
+        }
+    } else {
+        if(getNumberOfDiscOnTower(towerItem) < items.maxDiskPerTower) {
+            placeDisc(disc, towerItem);
         }
     }
-    else {
-        for(var i = 0 ; i < items.towerModel.model ; ++ i) {
-            var towerItem = items.towerModel.itemAt(i);
-            if(checkIfDiscOnTowerImage(disc, towerItem) &&
-               getNumberOfDiscOnTower(towerItem) < items.maxDiskPerTower) {
-                placeDisc(disc, towerItem)
-                break;
-            }
+}
+
+function postMoveActions(disc) {
+    disc.restoreAnchors();
+    disableNonDraggablediscs();
+    checkSolved();
+}
+
+function discReleased(disc)
+{
+    for(var i = 0 ; i < items.towerModel.model ; ++ i) {
+        var towerItem = items.towerModel.itemAt(i);
+        var discOnTower = checkIfDiscOnTowerImage(disc, towerItem);
+        if(discOnTower) {
+            tryToMoveDisc(disc, towerItem);
+            break;
         }
     }
-
-    disc.restoreAnchors()
-
-    disableNonDraggablediscs()
-    checkSolved()
+    postMoveActions(disc);
 }
 
 function disableNonDraggablediscs()
@@ -251,11 +250,15 @@ function checkIfDiscOnTowerImage(disc, towerImage)
 }
 
 function getHigherfDiscOnTower(towerImage) {
-    var higher = 0
+    var higher = -1
+    var discY = items.towerModel.itemAt(0).height;
     for(var i = 0 ; i < items.numberOfDisc ; ++i)
     {
-        if(items.discRepeater.itemAt(i) && items.discRepeater.itemAt(i).towerImage === towerImage)
-            higher = i
+        var discItem = items.discRepeater.itemAt(i);
+        if(discItem && discItem.towerImage === towerImage && discItem.y < discY) {
+            discY = discItem.y;
+            higher = i;
+        }
     }
     return higher
 }
@@ -299,6 +302,57 @@ function checkSolved() {
         if(hasWon) {
             items.hasWon = true
             items.bonus.good("flower")
+        }
+    }
+}
+
+function resetKeyboardControls() {
+    items.discCursor.parent = items.activityBackground;
+    items.keyboardControls = false;
+    items.columnCursorIndex = 0;
+    items.selectedColumn = -1;
+    items.selectedDisc = null;
+}
+
+function moveCursorLeft() {
+    if(items.columnCursorIndex <= 0) {
+        items.columnCursorIndex = items.maxMoveIndex;
+    } else {
+        items.columnCursorIndex--;
+    }
+}
+
+function moveCursorRight() {
+    if(items.columnCursorIndex >= items.maxMoveIndex) {
+        items.columnCursorIndex = 0;
+    } else {
+        items.columnCursorIndex++;
+    }
+}
+
+function selectPressed() {
+    if(items.selectedDisc === null) {
+        // select highest disc on current column
+        items.selectedColumn = items.columnCursorIndex;
+        var discIndexToSelect = getHigherfDiscOnTower(items.towerModel.itemAt(items.selectedColumn));
+        if(discIndexToSelect > -1) {
+            var discToSelect =  items.discRepeater.itemAt(discIndexToSelect);
+            items.discCursor.parent = discToSelect;
+            items.selectedDisc = discToSelect;
+        }
+    } else if(items.selectedColumn === items.columnCursorIndex) {
+        // deselect selected disc
+        items.selectedDisc = null;
+        items.discCursor.parent = items.activityBackground;
+    } else {
+        // try to move disc to another column
+        var currentTower = items.selectedDisc.towerImage;
+        tryToMoveDisc(items.selectedDisc, items.towerModel.itemAt(items.columnCursorIndex));
+        postMoveActions(items.selectedDisc);
+        if(currentTower != items.selectedDisc.towerImage) {
+            // if disc moved successfully, deselect disc and column
+            items.selectedDisc = null;
+            items.selectedColumn = -1;
         }
     }
 }

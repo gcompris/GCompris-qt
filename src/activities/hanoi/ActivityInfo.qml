@@ -21,7 +21,10 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Mouse-manipulation.")
   //: Help manual
-  manual: qsTr("Drag and drop one top disc at a time, from one tower to another, to reproduce the tower on the right-hand side onto the empty peg.")
+  manual: qsTr("Drag and drop one top disc at a time, from one tower to another, to reproduce the tower on the right-hand side onto the empty peg.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: move the selection cursor through the pegs") + ("</li><li>") +
+          qsTr("Space or Enter: select/deselect the top disc on the selected peg, or move the selected disc to the selected peg") + ("</li></ul>")
   credit: qsTr("Concept taken from EPI games.")
   section: "discovery logic"
   createdInVersion: 4000

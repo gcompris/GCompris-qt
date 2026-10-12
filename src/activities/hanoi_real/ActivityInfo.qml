@@ -20,7 +20,10 @@ ActivityInfo {
   goal: qsTr("Develop strategic thinking.")
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Drag and drop one top disc at a time, from one tower to another, to reproduce the tower on the left-hand side onto the right-hand side peg. The discs can move back and forth freely on the pegs, following two rules: only one disc can be moved at a time, and a disc can never be placed on a smaller disc.")
+  manual: qsTr("Drag and drop one top disc at a time, from one tower to another, to reproduce the tower on the left-hand side onto the right-hand side peg. The discs can move back and forth freely on the pegs, following two rules: only one disc can be moved at a time, and a disc can never be placed on a smaller disc.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: move the selection cursor through the pegs") + ("</li><li>") +
+          qsTr("Space or Enter: select/deselect the top disc on the selected peg, or move the selected disc to the selected peg") + ("</li></ul>")
   credit: qsTr("The puzzle was invented by the French mathematician Edouard Lucas in 1883. There is a legend about a Hindu temple whose priests were constantly engaged in moving a set of 64 discs according to the rules of the Tower of Hanoi puzzle. According to the legend, the world would end when the priests finished their work. The puzzle is therefore also known as the Tower of Brahma puzzle. It is not clear whether Lucas invented this legend or was inspired by it. (source Wikipedia: https://en.wikipedia.org/wiki/Tower_of_hanoi)")
   section: "discovery logic"
   createdInVersion: 4000
