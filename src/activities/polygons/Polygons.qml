@@ -57,8 +57,7 @@ ActivityBase {
             // Pen and color properties
             readonly property color gridColor: "#b3b3b3"
             readonly property color polygonColor: "#10721d"
-            readonly property color dotColor: "#5020a8dd"
-            readonly property color lastDotColor: "#50dda820"
+            readonly property color dotColor: "#20a8dd"
             // View properties
             readonly property int mainSize: Math.min(layoutArea.width, layoutArea.height)
             readonly property int gridStep: mainSize / 10
@@ -259,8 +258,10 @@ ActivityBase {
                 model: points
                 delegate: Rectangle {
                     id: pointItem
-                    color: (index === points.count - 1 && !items.isClosed) ?
-                        items.lastDotColor : items.dotColor
+                    color:  isLastPoint ? "transparent" : items.dotColor
+                    border.width: isLastPoint ? width * 0.25 : 0
+                    border.color: GCStyle.selectedDarkBlue
+                    opacity: isLastPoint ? 0.5 : 0.3
                     width: items.gridStep
                     height: items.gridStep
                     radius: width
@@ -270,6 +271,7 @@ ActivityBase {
 
                     readonly property real centerX: x + items.dotOffset
                     readonly property real centerY: y + items.dotOffset
+                    readonly property bool isLastPoint: (index === points.count - 1 && !items.isClosed)
 
                     MouseArea {
                         anchors.fill: parent
