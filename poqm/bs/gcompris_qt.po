@@ -279,6 +279,7 @@ msgstr ""
 #: activities/planegame/ActivityInfo.qml:24
 #: activities/play_piano/ActivityInfo.qml:30
 #: activities/play_rhythm/ActivityInfo.qml:32
+#: activities/polygons/ActivityInfo.qml:29
 #: activities/positions/ActivityInfo.qml:25
 #: activities/programmingMaze/ActivityInfo.qml:26
 #: activities/redraw/ActivityInfo.qml:25
@@ -22732,6 +22733,35 @@ msgid ""
 "can move a point by dragging it, or delete it with a double-click. You can "
 "restart the shape by clicking on the reload button. When the shape is "
 "correct, press the OK button to validate your answer."
+msgstr ""
+
+#: activities/polygons/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid ""
+"Arrows: move the keyboard cursor in the grid, and if a point is selected "
+"move it"
+msgstr ""
+
+#: activities/polygons/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Enter: create a point at the cursor position, or validate your answer when "
+"the shape is closed"
+msgstr ""
+
+#: activities/polygons/ActivityInfo.qml:32
+msgctxt "ActivityInfo|"
+msgid "Space: select or deselect the point at the cursor position"
+msgstr ""
+
+#: activities/polygons/ActivityInfo.qml:33
+msgctxt "ActivityInfo|"
+msgid "Tab: select next point"
+msgstr ""
+
+#: activities/polygons/ActivityInfo.qml:34
+msgctxt "ActivityInfo|"
+msgid "Delete: delete selected point"
 msgstr ""
 
 #: activities/polygons/TutorialDataset.qml:20

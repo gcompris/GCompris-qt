@@ -256,6 +256,7 @@ msgstr ""
 #: activities/planegame/ActivityInfo.qml:24
 #: activities/play_piano/ActivityInfo.qml:30
 #: activities/play_rhythm/ActivityInfo.qml:32
+#: activities/polygons/ActivityInfo.qml:29
 #: activities/positions/ActivityInfo.qml:25
 #: activities/programmingMaze/ActivityInfo.qml:26
 #: activities/redraw/ActivityInfo.qml:25
@@ -23164,6 +23165,44 @@ msgstr ""
 "genom att dra i den eller ta bort den genom att dubbelklicka på den. Du kan "
 "börja om med figuren genom att klicka på knappen för att starta om. När "
 "figuren är klar klickar du på knappen Ok för att bekräfta ditt svar."
+
+#: activities/polygons/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid ""
+"Arrows: move the keyboard cursor in the grid, and if a point is selected "
+"move it"
+msgstr ""
+
+#: activities/polygons/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Enter: create a point at the cursor position, or validate your answer when "
+"the shape is closed"
+msgstr ""
+
+#: activities/polygons/ActivityInfo.qml:32
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space: select or deselect the highlighted answer"
+msgctxt "ActivityInfo|"
+msgid "Space: select or deselect the point at the cursor position"
+msgstr "Mellanslag: markera eller avmarkera färglagda svaret"
+
+#: activities/polygons/ActivityInfo.qml:33
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Up arrow: select next item"
+msgctxt "ActivityInfo|"
+msgid "Tab: select next point"
+msgstr "Uppåtpil: välj nästa objekt"
+
+#: activities/polygons/ActivityInfo.qml:34
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Ctrl + D: delete selected text"
+msgctxt "ActivityInfo|"
+msgid "Delete: delete selected point"
+msgstr "Ctrl + D: ta bort markerad text"
 
 #: activities/polygons/TutorialDataset.qml:20
 msgctxt "TutorialDataset|"

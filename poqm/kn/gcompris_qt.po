@@ -298,6 +298,7 @@ msgstr ""
 #: activities/planegame/ActivityInfo.qml:24
 #: activities/play_piano/ActivityInfo.qml:30
 #: activities/play_rhythm/ActivityInfo.qml:32
+#: activities/polygons/ActivityInfo.qml:29
 #: activities/positions/ActivityInfo.qml:25
 #: activities/programmingMaze/ActivityInfo.qml:26
 #: activities/redraw/ActivityInfo.qml:25
@@ -24072,6 +24073,44 @@ msgid ""
 "restart the shape by clicking on the reload button. When the shape is "
 "correct, press the OK button to validate your answer."
 msgstr ""
+
+#: activities/polygons/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid ""
+"Arrows: move the keyboard cursor in the grid, and if a point is selected "
+"move it"
+msgstr ""
+
+#: activities/polygons/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Enter: create a point at the cursor position, or validate your answer when "
+"the shape is closed"
+msgstr ""
+
+#: activities/polygons/ActivityInfo.qml:32
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space: select or deselect a circle"
+msgctxt "ActivityInfo|"
+msgid "Space: select or deselect the point at the cursor position"
+msgstr "ಸ್ಪೇಸ್: ವೃತ್ತವನ್ನು ಸೆಲೆಕ್ಟ್ ಅಥವಾ ಡಿ ಸೆಲೆಕ್ಟ್ ಮಾಡಲು"
+
+#: activities/polygons/ActivityInfo.qml:33
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Up arrow: select next item"
+msgctxt "ActivityInfo|"
+msgid "Tab: select next point"
+msgstr "ಮೇಲಕ್ಕಿರುವ ಆರೋ: ನಂತರದ ವಸ್ತುವನ್ನು ಆಯ್ಕೆ ಮಾಡಲು"
+
+#: activities/polygons/ActivityInfo.qml:34
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Ctrl + D: delete selected text"
+msgctxt "ActivityInfo|"
+msgid "Delete: delete selected point"
+msgstr "Ctrl + D:  ಆರಿಸಿದ ಟೆಕ್ಸ್ಟನ್ನು ಅಳಿಸಲು"
 
 #: activities/polygons/TutorialDataset.qml:20
 msgctxt "TutorialDataset|"

@@ -265,6 +265,7 @@ msgstr ""
 #: activities/planegame/ActivityInfo.qml:24
 #: activities/play_piano/ActivityInfo.qml:30
 #: activities/play_rhythm/ActivityInfo.qml:32
+#: activities/polygons/ActivityInfo.qml:29
 #: activities/positions/ActivityInfo.qml:25
 #: activities/programmingMaze/ActivityInfo.qml:26
 #: activities/redraw/ActivityInfo.qml:25
@@ -23447,6 +23448,44 @@ msgstr ""
 "arrastrándolo o eliminarlo con un doble clic. Puedes reiniciar la figura "
 "haciendo clic en el botón de «volver a cargar». Cuando la figura sea "
 "correcta, pulsa el botón «Aceptar» para validar tu respuesta."
+
+#: activities/polygons/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid ""
+"Arrows: move the keyboard cursor in the grid, and if a point is selected "
+"move it"
+msgstr ""
+
+#: activities/polygons/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Enter: create a point at the cursor position, or validate your answer when "
+"the shape is closed"
+msgstr ""
+
+#: activities/polygons/ActivityInfo.qml:32
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space: select or deselect the highlighted answer"
+msgctxt "ActivityInfo|"
+msgid "Space: select or deselect the point at the cursor position"
+msgstr "Espacio: seleccionar o deseleccionar la respuesta resaltada"
+
+#: activities/polygons/ActivityInfo.qml:33
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Up arrow: select next item"
+msgctxt "ActivityInfo|"
+msgid "Tab: select next point"
+msgstr "Flecha arriba: seleccionar el elemento siguiente"
+
+#: activities/polygons/ActivityInfo.qml:34
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Ctrl + D: delete selected text"
+msgctxt "ActivityInfo|"
+msgid "Delete: delete selected point"
+msgstr "Ctrl + D: borrar el texto seleccionado"
 
 #: activities/polygons/TutorialDataset.qml:20
 msgctxt "TutorialDataset|"

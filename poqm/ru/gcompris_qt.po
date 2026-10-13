@@ -24,7 +24,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-10-04 10:09+0200\n"
+"PO-Revision-Date: 2026-10-12 19:59+0200\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Basealt Translation Team\n"
 "Language: ru\n"
@@ -283,6 +283,7 @@ msgstr ""
 #: activities/planegame/ActivityInfo.qml:24
 #: activities/play_piano/ActivityInfo.qml:30
 #: activities/play_rhythm/ActivityInfo.qml:32
+#: activities/polygons/ActivityInfo.qml:29
 #: activities/positions/ActivityInfo.qml:25
 #: activities/programmingMaze/ActivityInfo.qml:26
 #: activities/redraw/ActivityInfo.qml:25
@@ -23265,6 +23266,44 @@ msgstr ""
 "построение фигуры заново, нажми кнопку перезагрузки. Когда фигура будет "
 "построена правильно, нажми кнопку «OK», чтобы проверить ответ."
 
+#: activities/polygons/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid ""
+"Arrows: move the keyboard cursor in the grid, and if a point is selected "
+"move it"
+msgstr ""
+
+#: activities/polygons/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Enter: create a point at the cursor position, or validate your answer when "
+"the shape is closed"
+msgstr ""
+
+#: activities/polygons/ActivityInfo.qml:32
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space: select or deselect the highlighted answer"
+msgctxt "ActivityInfo|"
+msgid "Space: select or deselect the point at the cursor position"
+msgstr "«Пробел»: выбор или снятие выбора с выделенного ответа"
+
+#: activities/polygons/ActivityInfo.qml:33
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Up arrow: select next item"
+msgctxt "ActivityInfo|"
+msgid "Tab: select next point"
+msgstr "Стрелка «вверх»: выбор следующего элемента"
+
+#: activities/polygons/ActivityInfo.qml:34
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Ctrl + D: delete selected text"
+msgctxt "ActivityInfo|"
+msgid "Delete: delete selected point"
+msgstr "Ctrl + D: удаление выделенного текста "
+
 #: activities/polygons/TutorialDataset.qml:20
 msgctxt "TutorialDataset|"
 msgid "A polygon is a closed shape made of at least 3 connected lines."
@@ -29092,7 +29131,7 @@ msgstr "Настройка GCompris"
 #, qt-format
 msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
-msgstr "Параметры %1"
+msgstr "Параметры упражнения «%1»"
 
 #: core/DialogChooseLevel.qml:208
 msgctxt "DialogChooseLevel|"
