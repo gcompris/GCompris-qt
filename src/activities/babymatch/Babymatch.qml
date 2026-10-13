@@ -86,6 +86,9 @@ ActivityBase {
         }
 
         Keys.onPressed: (event) => {
+            if(items.inputLocked) {
+                return;
+            }
             if(event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
                 if(availablePieces.okEnabled) {
                     availablePieces.view.checkAnswer();
