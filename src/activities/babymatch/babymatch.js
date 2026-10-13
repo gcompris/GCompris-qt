@@ -248,6 +248,7 @@ function clearHighLightSpots() {
 function resetKeyboardControls() {
     items.keyboardControls = false;
     items.listFocus = true;
+    hideSpotSelector();
 }
 
 function resetSelectedIndices() {
