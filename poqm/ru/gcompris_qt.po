@@ -24,7 +24,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-10-04 10:09+0200\n"
+"PO-Revision-Date: 2026-10-12 19:59+0200\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Basealt Translation Team\n"
 "Language: ru\n"
@@ -28374,7 +28374,7 @@ msgstr "Настройка GCompris"
 #, qt-format
 msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
-msgstr "Параметры %1"
+msgstr "Параметры упражнения «%1»"
 
 #: core/DialogChooseLevel.qml:208
 msgctxt "DialogChooseLevel|"
