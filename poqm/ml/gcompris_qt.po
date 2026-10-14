@@ -184,19 +184,25 @@ msgstr ""
 #: activities/align4_2players/ActivityInfo.qml:24
 #: activities/alphabet-sequence/ActivityInfo.qml:25
 #: activities/baby_wordprocessor/ActivityInfo.qml:25
+#: activities/babymatch/ActivityInfo.qml:28
+#: activities/babyshapes/ActivityInfo.qml:28
 #: activities/braille_alphabets/ActivityInfo.qml:25
 #: activities/braille_fun/ActivityInfo.qml:25
 #: activities/calendar/ActivityInfo.qml:25
+#: activities/chronos/ActivityInfo.qml:29
 #: activities/click_on_letter/ActivityInfo.qml:25
 #: activities/click_on_letter_up/ActivityInfo.qml:25
 #: activities/colors/ActivityInfo.qml:25
 #: activities/comparator/ActivityInfo.qml:27
 #: activities/compass/ActivityInfo.qml:35 activities/crane/ActivityInfo.qml:30
+#: activities/details/ActivityInfo.qml:27
 #: activities/drawing_wheels/ActivityInfo.qml:28
 #: activities/enumerate/ActivityInfo.qml:25
 #: activities/fifteen/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:25
 #: activities/frieze/ActivityInfo.qml:23
+#: activities/geo-country/ActivityInfo.qml:28
+#: activities/geography/ActivityInfo.qml:28
 #: activities/gnumch-equality/ActivityInfo.qml:28
 #: activities/gnumch-factors/ActivityInfo.qml:28
 #: activities/gnumch-inequality/ActivityInfo.qml:27
@@ -210,6 +216,7 @@ msgstr ""
 #: activities/gravity/ActivityInfo.qml:28
 #: activities/guess24/ActivityInfo.qml:24
 #: activities/guessnumber/ActivityInfo.qml:24
+#: activities/imagename/ActivityInfo.qml:28
 #: activities/instruments/ActivityInfo.qml:24
 #: activities/land_safe/ActivityInfo.qml:28 activities/lang/ActivityInfo.qml:33
 #: activities/learn_additions/ActivityInfo.qml:24
@@ -255,6 +262,7 @@ msgstr ""
 #: activities/mosaic/ActivityInfo.qml:24
 #: activities/multiple_choice_questions/ActivityInfo.qml:25
 #: activities/numbers-odd-even/ActivityInfo.qml:24
+#: activities/paintings/ActivityInfo.qml:30
 #: activities/piano_composition/ActivityInfo.qml:33
 #: activities/planegame/ActivityInfo.qml:24
 #: activities/play_piano/ActivityInfo.qml:30
@@ -920,9 +928,16 @@ msgstr "ബാക്ക്‌സ്പെയ്സ്: ഉത്തരത്ത�
 #: activities/algebra_div/ActivityInfo.qml:28
 #: activities/algebra_minus/ActivityInfo.qml:28
 #: activities/algebra_plus/ActivityInfo.qml:28
+#: activities/babymatch/ActivityInfo.qml:33
+#: activities/babyshapes/ActivityInfo.qml:33
+#: activities/chronos/ActivityInfo.qml:34
+#: activities/details/ActivityInfo.qml:32
+#: activities/geo-country/ActivityInfo.qml:33
+#: activities/geography/ActivityInfo.qml:33
 #: activities/grammar_analysis/ActivityInfo.qml:34
 #: activities/grammar_classes/ActivityInfo.qml:34
 #: activities/guessnumber/ActivityInfo.qml:27
+#: activities/imagename/ActivityInfo.qml:33
 #: activities/learn_additions/ActivityInfo.qml:27
 #: activities/learn_decimals/ActivityInfo.qml:24
 #: activities/learn_decimals_additions/ActivityInfo.qml:25
@@ -931,6 +946,7 @@ msgstr "ബാക്ക്‌സ്പെയ്സ്: ഉത്തരത്ത�
 #: activities/learn_quantities/ActivityInfo.qml:24
 #: activities/learn_subtractions/ActivityInfo.qml:27
 #: activities/letter-in-word/ActivityInfo.qml:28
+#: activities/paintings/ActivityInfo.qml:35
 #: activities/roman_numerals/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer"
@@ -2366,6 +2382,65 @@ msgstr ""
 "അതിലെ ഓരോ വസ്തുവിനെയും പ്രധാനഭാഗത്തുള്ള ഓരു വസ്തുവുമായി യുക്തിപരമായി യോജിപ്പിക്കാവുന്നതാണ്. "
 "അരികിലെ പെട്ടിയിലുള്ള ഓരോ വസ്തുവിനെയും പ്രധാനഭാഗത്തെ ശരിയായ സ്ഥലത്തേക്ക് വലിച്ചിടൂ."
 
+#: activities/babymatch/ActivityInfo.qml:29
+#: activities/babyshapes/ActivityInfo.qml:29
+#: activities/chronos/ActivityInfo.qml:30
+#: activities/details/ActivityInfo.qml:28
+#: activities/geo-country/ActivityInfo.qml:29
+#: activities/geography/ActivityInfo.qml:29
+#: activities/imagename/ActivityInfo.qml:29
+#: activities/paintings/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Arrows: move the selection cursor through the panel items and board spots"
+msgstr ""
+
+#: activities/babymatch/ActivityInfo.qml:30
+#: activities/babyshapes/ActivityInfo.qml:30
+#: activities/chronos/ActivityInfo.qml:31
+#: activities/details/ActivityInfo.qml:29
+#: activities/geo-country/ActivityInfo.qml:30
+#: activities/geography/ActivityInfo.qml:30
+#: activities/imagename/ActivityInfo.qml:30
+#: activities/paintings/ActivityInfo.qml:32
+msgctxt "ActivityInfo|"
+msgid ""
+"Space: select an item in the list, and place it on a spot. If there is "
+"nothing selected in the list, remove item from selected spot"
+msgstr ""
+
+#: activities/babymatch/ActivityInfo.qml:31
+#: activities/babyshapes/ActivityInfo.qml:31
+#: activities/chronos/ActivityInfo.qml:32
+#: activities/details/ActivityInfo.qml:30
+#: activities/geo-country/ActivityInfo.qml:31
+#: activities/geography/ActivityInfo.qml:31
+#: activities/imagename/ActivityInfo.qml:31
+#: activities/paintings/ActivityInfo.qml:33
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Tab: navigate between the bottom and the top areas"
+msgctxt "ActivityInfo|"
+msgid ""
+"Tab: toggle navigation between the panel and the board without any other "
+"action"
+msgstr "ടാബ്: താഴെയും മുകളിലുമുള്ള വിഭാഗങ്ങൾക്കിടയിൽ നാവിഗേറ്റു ചെയ്യാൻ"
+
+#: activities/babymatch/ActivityInfo.qml:32
+#: activities/babyshapes/ActivityInfo.qml:32
+#: activities/chronos/ActivityInfo.qml:33
+#: activities/details/ActivityInfo.qml:31
+#: activities/geo-country/ActivityInfo.qml:32
+#: activities/geography/ActivityInfo.qml:32
+#: activities/imagename/ActivityInfo.qml:32
+#: activities/paintings/ActivityInfo.qml:34
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Delete or Backspace: remove the selected item from the answer area"
+msgctxt "ActivityInfo|"
+msgid "Delete or Backspace: remove item from selected spot"
+msgstr "ഡിലീറ്റോ ബാക്ക്‌സ്പെയ്സോ: ഉത്തര ഭാഗത്തുനിന്നും തിരഞ്ഞെടുത്ത ഇനം കളയാൻ"
+
 #: activities/babymatch/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
 msgid "Drag and drop the items to match them."
@@ -2396,7 +2471,7 @@ msgid ""
 "Complete the puzzle by dragging each piece on the side to the matching spot."
 msgstr "അരികിലുള്ള ഓരോ പടവും അനുയോജ്യമായ ഇടത്തേക്ക് വലിച്ചുവെച്ച് പസിൽ പൂർത്തിയാക്കൂ."
 
-#: activities/babyshapes/ActivityInfo.qml:28
+#: activities/babyshapes/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "The dog is provided by Andre Connes and released under the GPL"
 msgstr "ആന്ത്രെ കൊൺ ആണ് പട്ടിയുടെ ചിത്രം ലഭ്യമാക്കിയതും ജിപിഎല്ലിനു കീഴിൽ പ്രസിദ്ധീകരിച്ചതും"
@@ -4615,7 +4690,7 @@ msgstr ""
 "അനുയോജ്യമായ കൂത്തുകളിൽ വെക്കൂക, എന്നിട്ട് ഒകെ ബട്ടണിൽ ക്ലിക്കു ചെയ്ത് നിങ്ങളുടെ ഉത്തരം "
 "സ്ഥിരീകരിക്കുക."
 
-#: activities/chronos/ActivityInfo.qml:29
+#: activities/chronos/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid ""
 "Dates of Transportation are based on those found in &lt;https://www."
@@ -4741,13 +4816,13 @@ msgstr "ഓരോ ചിത്രവും അതു കണ്ടുപിടി
 
 #: activities/chronos/resource/board/board5_0.qml:33
 msgctxt "board5_0|"
-msgid "1829 Stephenson's Rocket Steam locomotive"
-msgstr "1829 സ്റ്റീവൻസണിന്റെ റോക്കറ്റ് സ്റ്റീം ലോക്കോമോട്ടീവ്"
+msgid "1769 Cugnot's fardier"
+msgstr "1769 കുന്യോട്ടിന്റെ ഫാർദിയേ"
 
 #: activities/chronos/resource/board/board5_0.qml:41
 msgctxt "board5_0|"
-msgid "1769 Cugnot's fardier"
-msgstr "1769 കുന്യോട്ടിന്റെ ഫാർദിയേ"
+msgid "1829 Stephenson's Rocket Steam locomotive"
+msgstr "1829 സ്റ്റീവൻസണിന്റെ റോക്കറ്റ് സ്റ്റീം ലോക്കോമോട്ടീവ്"
 
 #: activities/chronos/resource/board/board5_0.qml:49
 msgctxt "board5_0|"
@@ -4811,18 +4886,18 @@ msgstr "ഗതാഗതം"
 
 #: activities/chronos/resource/board/board5_4.qml:39
 msgctxt "board5_4|"
-msgid "1829 Stephenson's Rocket Steam locomotive"
-msgstr "1829 സ്റ്റീവൻസണിന്റെ റോക്കറ്റ് സ്റ്റീം ലോക്കോമോട്ടീവ്"
+msgid "1769 Cugnot's fardier"
+msgstr "1769 കുന്യോട്ടിന്റെ ഫാർദിയേ"
 
 #: activities/chronos/resource/board/board5_4.qml:47
 msgctxt "board5_4|"
-msgid "1890 Clement Ader's Eole"
-msgstr "1890 ക്ലെമൊ അദേർസിന്റെ എയോൾ"
+msgid "1829 Stephenson's Rocket Steam locomotive"
+msgstr "1829 സ്റ്റീവൻസണിന്റെ റോക്കറ്റ് സ്റ്റീം ലോക്കോമോട്ടീവ്"
 
 #: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
-msgid "1769 Cugnot's fardier"
-msgstr "1769 കുന്യോട്ടിന്റെ ഫാർദിയേ"
+msgid "1890 Clement Ader's Eole"
+msgstr "1890 ക്ലെമൊ അദേർസിന്റെ എയോൾ"
 
 #: activities/chronos/resource/board/board6_0.qml:16
 msgctxt "board6_0|"
@@ -4851,18 +4926,18 @@ msgstr "ആകാശമാർഗം"
 
 #: activities/chronos/resource/board/board6_1.qml:39
 msgctxt "board6_1|"
-msgid "1947 Chuck Yeager breaks the sound-barrier"
-msgstr "1947 ചക്ക് യേഗർ ശബ്ദ പരിധി മറികടക്കുന്നു"
-
-#: activities/chronos/resource/board/board6_1.qml:47
-msgctxt "board6_1|"
 msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
 msgstr "1927 ചാൾസ് ലിൻഡ്ബെർഗ് അറ്റ്‍ലാന്റിക് മഹാസമുദ്രം കടക്കുന്നു"
 
-#: activities/chronos/resource/board/board6_1.qml:55
+#: activities/chronos/resource/board/board6_1.qml:47
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
 msgstr "1934 ഹെലൻ ബുഷെയുടെ 445 കി.മീ./മണിക്കൂറിൽ സ്പീഡ് റെക്കോർഡ്"
+
+#: activities/chronos/resource/board/board6_1.qml:55
+msgctxt "board6_1|"
+msgid "1947 Chuck Yeager breaks the sound-barrier"
+msgstr "1947 ചക്ക് യേഗർ ശബ്ദ പരിധി മറികടക്കുന്നു"
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -4871,13 +4946,13 @@ msgstr "കാറുകൾ"
 
 #: activities/chronos/resource/board/board6_2.qml:39
 msgctxt "board6_2|"
-msgid "1878 Amédée Bollée's La Mancelle"
-msgstr "1878 അമേദ് ബൊലേയുടെ ല മോൻസെൽ"
+msgid "1769 Cugnot's fardier"
+msgstr "1769 കുന്യോട്ടിന്റെ ഫാർദിയേ"
 
 #: activities/chronos/resource/board/board6_2.qml:47
 msgctxt "board6_2|"
-msgid "1769 Cugnot's fardier"
-msgstr "1769 കുന്യോട്ടിന്റെ ഫാർദിയേ"
+msgid "1878 Amédée Bollée's La Mancelle"
+msgstr "1878 അമേദ് ബൊലേയുടെ ല മോൻസെൽ"
 
 #: activities/chronos/resource/board/board6_2.qml:55
 msgctxt "board6_2|"
@@ -6227,7 +6302,7 @@ msgstr ""
 "സൈഡ്ബാറിൽ നിന്നും ചിത്രത്തിന്റെ ഒരു ഭാഗം കണ്ടെത്തി അതിനെ ചിത്രത്തിന്റെ ശരിയായ സ്ഥാനത്തേക്കു "
 "വലിച്ചുവെയ്ക്കുക."
 
-#: activities/details/ActivityInfo.qml:27
+#: activities/details/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "The images are from Wikimedia Commons."
 msgstr "വിക്കിമീഡിയ കോമൺസിൽ നിന്നുള്ള ചിത്രങ്ങൾ."
@@ -11120,310 +11195,310 @@ msgctxt "board10_0|"
 msgid "Washington"
 msgstr "വാഷിങ്ടൺ"
 
-#. State of America: Oregon
-#: activities/geo-country/resource/board/board10_0.qml:31
-msgctxt "board10_0|"
-msgid "Oregon"
-msgstr "ഒറിഗൺ"
-
-#. State of America: Idaho
-#: activities/geo-country/resource/board/board10_0.qml:38
-msgctxt "board10_0|"
-msgid "Idaho"
-msgstr "ഐഡഹോ"
-
 #. State of America: Montana
-#: activities/geo-country/resource/board/board10_0.qml:45
+#: activities/geo-country/resource/board/board10_0.qml:31
 msgctxt "board10_0|"
 msgid "Montana"
 msgstr "മൊണ്ടാന"
 
 #. State of America: North Dakota
-#: activities/geo-country/resource/board/board10_0.qml:52
+#: activities/geo-country/resource/board/board10_0.qml:38
 msgctxt "board10_0|"
 msgid "North Dakota"
 msgstr "വടക്കൻ ഡക്കോട്ട"
 
-#. State of America: South Dakota
-#: activities/geo-country/resource/board/board10_0.qml:59
-msgctxt "board10_0|"
-msgid "South Dakota"
-msgstr "തെക്കൻ ഡക്കോട്ട"
-
-#. State of America: Nebraska
-#: activities/geo-country/resource/board/board10_0.qml:66
-msgctxt "board10_0|"
-msgid "Nebraska"
-msgstr "നെബ്രാസ്ക"
-
-#. State of America: Kansas
-#: activities/geo-country/resource/board/board10_0.qml:73
-msgctxt "board10_0|"
-msgid "Kansas"
-msgstr "കാൻസസ്"
-
-#. State of America: Colorado
-#: activities/geo-country/resource/board/board10_0.qml:80
-msgctxt "board10_0|"
-msgid "Colorado"
-msgstr "കൊളറാഡോ"
-
-#. State of America: New Mexico
-#: activities/geo-country/resource/board/board10_0.qml:87
-msgctxt "board10_0|"
-msgid "New Mexico"
-msgstr "ന്യൂ മെക്സിക്കോ"
-
-#. State of America: Arizona
-#: activities/geo-country/resource/board/board10_0.qml:94
-msgctxt "board10_0|"
-msgid "Arizona"
-msgstr "അരിസോണ"
-
-#. State of America: Alaska
-#: activities/geo-country/resource/board/board10_0.qml:101
-msgctxt "board10_0|"
-msgid "Alaska"
-msgstr "അലാസ്ക"
-
-#. State of America: Hawaii
-#: activities/geo-country/resource/board/board10_0.qml:108
-msgctxt "board10_0|"
-msgid "Hawaii"
-msgstr "ഹവായി"
-
-#. State of America: Texas
-#: activities/geo-country/resource/board/board10_0.qml:115
-msgctxt "board10_0|"
-msgid "Texas"
-msgstr "ടെക്സസ്"
-
-#. State of America: Oklahoma
-#: activities/geo-country/resource/board/board10_0.qml:122
-msgctxt "board10_0|"
-msgid "Oklahoma"
-msgstr "ഒക്ലഹോമ"
-
 #. State of America: Minnesota
-#: activities/geo-country/resource/board/board10_0.qml:129
+#: activities/geo-country/resource/board/board10_0.qml:45
 msgctxt "board10_0|"
 msgid "Minnesota"
 msgstr "മിനസോട്ട"
 
-#. State of America: Iowa
-#: activities/geo-country/resource/board/board10_0.qml:136
-msgctxt "board10_0|"
-msgid "Iowa"
-msgstr "അയോവ"
-
-#. State of America: Missouri
-#: activities/geo-country/resource/board/board10_0.qml:143
-msgctxt "board10_0|"
-msgid "Missouri"
-msgstr "മിസോറി"
-
-#. State of America: Arkansas
-#: activities/geo-country/resource/board/board10_0.qml:150
-msgctxt "board10_0|"
-msgid "Arkansas"
-msgstr "അർക്കൻസോ"
-
-#. State of America: Louisiana
-#: activities/geo-country/resource/board/board10_0.qml:157
-msgctxt "board10_0|"
-msgid "Louisiana"
-msgstr "ലൂയീസിയാന"
-
-#. State of America: Mississippi
-#: activities/geo-country/resource/board/board10_0.qml:164
-msgctxt "board10_0|"
-msgid "Mississippi"
-msgstr "മിസിസിപ്പി"
-
-#. State of America: Tennessee
-#: activities/geo-country/resource/board/board10_0.qml:171
-msgctxt "board10_0|"
-msgid "Tennessee"
-msgstr "ടെന്നസി"
-
-#. State of America: Kentucky
-#: activities/geo-country/resource/board/board10_0.qml:178
-msgctxt "board10_0|"
-msgid "Kentucky"
-msgstr "കെന്റക്കി"
-
-#. State of America: Indiana
-#: activities/geo-country/resource/board/board10_0.qml:185
-msgctxt "board10_0|"
-msgid "Indiana"
-msgstr "ഇന്ത്യാന"
-
-#. State of America: Illinois
-#: activities/geo-country/resource/board/board10_0.qml:192
-msgctxt "board10_0|"
-msgid "Illinois"
-msgstr "ഇല്ലിനോയി"
-
 #. State of America: Wisconsin
-#: activities/geo-country/resource/board/board10_0.qml:199
+#: activities/geo-country/resource/board/board10_0.qml:52
 msgctxt "board10_0|"
 msgid "Wisconsin"
 msgstr "വിസ്കോൺസിൻ"
 
 #. State of America: Michigan
-#: activities/geo-country/resource/board/board10_0.qml:206
+#: activities/geo-country/resource/board/board10_0.qml:59
 msgctxt "board10_0|"
 msgid "Michigan"
 msgstr "മിഷിഗൺ"
 
-#. State of America: Ohio
-#: activities/geo-country/resource/board/board10_0.qml:213
-msgctxt "board10_0|"
-msgid "Ohio"
-msgstr "ഓഹായോ"
-
-#. State of America: West Virginia
-#: activities/geo-country/resource/board/board10_0.qml:220
-msgctxt "board10_0|"
-msgid "West Virginia"
-msgstr "വെസ്റ്റ് വിർജീനിയ"
-
-#. State of America: Virginia
-#: activities/geo-country/resource/board/board10_0.qml:227
-msgctxt "board10_0|"
-msgid "Virginia"
-msgstr "വിർജീനിയ"
-
-#. State of America: North Carolina
-#: activities/geo-country/resource/board/board10_0.qml:234
-msgctxt "board10_0|"
-msgid "North Carolina"
-msgstr "വടക്കൻ കരോലിന"
-
-#. State of America: South Carolina
-#: activities/geo-country/resource/board/board10_0.qml:241
-msgctxt "board10_0|"
-msgid "South Carolina"
-msgstr "തെക്കൻ കരോലിന"
-
-#. State of America: Georgia
-#: activities/geo-country/resource/board/board10_0.qml:248
-msgctxt "board10_0|"
-msgid "Georgia"
-msgstr "ജോർജിയ"
-
-#. State of America: Florida
-#: activities/geo-country/resource/board/board10_0.qml:255
-msgctxt "board10_0|"
-msgid "Florida"
-msgstr "ഫ്ലോറിഡ"
-
-#. State of America: Alabama
-#: activities/geo-country/resource/board/board10_0.qml:262
-msgctxt "board10_0|"
-msgid "Alabama"
-msgstr "അലബാമ"
-
-#. State of America: Maryland
-#: activities/geo-country/resource/board/board10_0.qml:269
-msgctxt "board10_0|"
-msgid "Maryland"
-msgstr "മേരിലാന്റ്"
-
-#. State of America: New Jersey
-#: activities/geo-country/resource/board/board10_0.qml:276
-msgctxt "board10_0|"
-msgid "New Jersey"
-msgstr "ന്യൂ ജേഴ്സി"
-
-#. State of America: Delaware
-#: activities/geo-country/resource/board/board10_0.qml:283
-msgctxt "board10_0|"
-msgid "Delaware"
-msgstr "ഡെലവെയർ"
-
-#. State of America: Pennsylvania
-#: activities/geo-country/resource/board/board10_0.qml:290
-msgctxt "board10_0|"
-msgid "Pennsylvania"
-msgstr "പെൻ‌സിൽ‌വാനിയ"
-
 #. State of America: New York
-#: activities/geo-country/resource/board/board10_0.qml:297
+#: activities/geo-country/resource/board/board10_0.qml:66
 msgctxt "board10_0|"
 msgid "New York"
 msgstr "ന്യൂയോർക്ക്"
 
 #. State of America: Vermont
-#: activities/geo-country/resource/board/board10_0.qml:304
+#: activities/geo-country/resource/board/board10_0.qml:73
 msgctxt "board10_0|"
 msgid "Vermont"
 msgstr "വെർമോണ്ട്"
 
 #. State of America: New Hampshire
-#: activities/geo-country/resource/board/board10_0.qml:311
+#: activities/geo-country/resource/board/board10_0.qml:80
 msgctxt "board10_0|"
 msgid "New Hampshire"
 msgstr "ന്യൂ ഹാംഷെയർ"
 
 #. State of America: Maine
-#: activities/geo-country/resource/board/board10_0.qml:318
+#: activities/geo-country/resource/board/board10_0.qml:87
 msgctxt "board10_0|"
 msgid "Maine"
 msgstr "മെയിൻ"
 
-#. State of America: California
-#: activities/geo-country/resource/board/board10_0.qml:325
-msgctxt "board10_0|"
-msgid "California"
-msgstr "കാലിഫോർണിയ"
-
-#. State of America: Nevada
-#: activities/geo-country/resource/board/board10_0.qml:332
-msgctxt "board10_0|"
-msgid "Nevada"
-msgstr "നെവാഡ"
-
-#. State of America: Utah
-#: activities/geo-country/resource/board/board10_0.qml:339
-msgctxt "board10_0|"
-msgid "Utah"
-msgstr "യൂറ്റാ"
-
-#. State of America: Wyoming
-#: activities/geo-country/resource/board/board10_0.qml:346
-msgctxt "board10_0|"
-msgid "Wyoming"
-msgstr "വയോമിങ്"
-
 #. State of America: Massachusetts
-#: activities/geo-country/resource/board/board10_0.qml:353
+#: activities/geo-country/resource/board/board10_0.qml:94
 msgctxt "board10_0|"
 msgid "Massachusetts"
 msgstr "മസാച്യുസെറ്റ്സ്"
 
 #. State of America: Rhode Island
-#: activities/geo-country/resource/board/board10_0.qml:360
+#: activities/geo-country/resource/board/board10_0.qml:101
 msgctxt "board10_0|"
 msgid "Rhode Island"
 msgstr "റോഡ് ഐലന്റ്"
 
 #. State of America: Connecticut
-#: activities/geo-country/resource/board/board10_0.qml:367
+#: activities/geo-country/resource/board/board10_0.qml:108
 msgctxt "board10_0|"
 msgid "Connecticut"
 msgstr "കണെക്റ്റിക്കട്"
+
+#. State of America: Oregon
+#: activities/geo-country/resource/board/board10_0.qml:115
+msgctxt "board10_0|"
+msgid "Oregon"
+msgstr "ഒറിഗൺ"
+
+#. State of America: Idaho
+#: activities/geo-country/resource/board/board10_0.qml:122
+msgctxt "board10_0|"
+msgid "Idaho"
+msgstr "ഐഡഹോ"
+
+#. State of America: Wyoming
+#: activities/geo-country/resource/board/board10_0.qml:129
+msgctxt "board10_0|"
+msgid "Wyoming"
+msgstr "വയോമിങ്"
+
+#. State of America: South Dakota
+#: activities/geo-country/resource/board/board10_0.qml:136
+msgctxt "board10_0|"
+msgid "South Dakota"
+msgstr "തെക്കൻ ഡക്കോട്ട"
+
+#. State of America: Nebraska
+#: activities/geo-country/resource/board/board10_0.qml:143
+msgctxt "board10_0|"
+msgid "Nebraska"
+msgstr "നെബ്രാസ്ക"
+
+#. State of America: Iowa
+#: activities/geo-country/resource/board/board10_0.qml:150
+msgctxt "board10_0|"
+msgid "Iowa"
+msgstr "അയോവ"
+
+#. State of America: Illinois
+#: activities/geo-country/resource/board/board10_0.qml:157
+msgctxt "board10_0|"
+msgid "Illinois"
+msgstr "ഇല്ലിനോയി"
+
+#. State of America: Indiana
+#: activities/geo-country/resource/board/board10_0.qml:164
+msgctxt "board10_0|"
+msgid "Indiana"
+msgstr "ഇന്ത്യാന"
+
+#. State of America: Ohio
+#: activities/geo-country/resource/board/board10_0.qml:171
+msgctxt "board10_0|"
+msgid "Ohio"
+msgstr "ഓഹായോ"
+
+#. State of America: Pennsylvania
+#: activities/geo-country/resource/board/board10_0.qml:178
+msgctxt "board10_0|"
+msgid "Pennsylvania"
+msgstr "പെൻ‌സിൽ‌വാനിയ"
+
+#. State of America: New Jersey
+#: activities/geo-country/resource/board/board10_0.qml:185
+msgctxt "board10_0|"
+msgid "New Jersey"
+msgstr "ന്യൂ ജേഴ്സി"
+
+#. State of America: Delaware
+#: activities/geo-country/resource/board/board10_0.qml:192
+msgctxt "board10_0|"
+msgid "Delaware"
+msgstr "ഡെലവെയർ"
+
+#. State of America: California
+#: activities/geo-country/resource/board/board10_0.qml:199
+msgctxt "board10_0|"
+msgid "California"
+msgstr "കാലിഫോർണിയ"
+
+#. State of America: Nevada
+#: activities/geo-country/resource/board/board10_0.qml:206
+msgctxt "board10_0|"
+msgid "Nevada"
+msgstr "നെവാഡ"
+
+#. State of America: Utah
+#: activities/geo-country/resource/board/board10_0.qml:213
+msgctxt "board10_0|"
+msgid "Utah"
+msgstr "യൂറ്റാ"
+
+#. State of America: Colorado
+#: activities/geo-country/resource/board/board10_0.qml:220
+msgctxt "board10_0|"
+msgid "Colorado"
+msgstr "കൊളറാഡോ"
+
+#. State of America: Kansas
+#: activities/geo-country/resource/board/board10_0.qml:227
+msgctxt "board10_0|"
+msgid "Kansas"
+msgstr "കാൻസസ്"
+
+#. State of America: Missouri
+#: activities/geo-country/resource/board/board10_0.qml:234
+msgctxt "board10_0|"
+msgid "Missouri"
+msgstr "മിസോറി"
+
+#. State of America: Kentucky
+#: activities/geo-country/resource/board/board10_0.qml:241
+msgctxt "board10_0|"
+msgid "Kentucky"
+msgstr "കെന്റക്കി"
+
+#. State of America: West Virginia
+#: activities/geo-country/resource/board/board10_0.qml:248
+msgctxt "board10_0|"
+msgid "West Virginia"
+msgstr "വെസ്റ്റ് വിർജീനിയ"
+
+#. State of America: Virginia
+#: activities/geo-country/resource/board/board10_0.qml:255
+msgctxt "board10_0|"
+msgid "Virginia"
+msgstr "വിർജീനിയ"
+
+#. State of America: Maryland
+#: activities/geo-country/resource/board/board10_0.qml:262
+msgctxt "board10_0|"
+msgid "Maryland"
+msgstr "മേരിലാന്റ്"
+
+#. State of America: Arizona
+#: activities/geo-country/resource/board/board10_0.qml:269
+msgctxt "board10_0|"
+msgid "Arizona"
+msgstr "അരിസോണ"
+
+#. State of America: New Mexico
+#: activities/geo-country/resource/board/board10_0.qml:276
+msgctxt "board10_0|"
+msgid "New Mexico"
+msgstr "ന്യൂ മെക്സിക്കോ"
+
+#. State of America: Oklahoma
+#: activities/geo-country/resource/board/board10_0.qml:283
+msgctxt "board10_0|"
+msgid "Oklahoma"
+msgstr "ഒക്ലഹോമ"
+
+#. State of America: Arkansas
+#: activities/geo-country/resource/board/board10_0.qml:290
+msgctxt "board10_0|"
+msgid "Arkansas"
+msgstr "അർക്കൻസോ"
+
+#. State of America: Tennessee
+#: activities/geo-country/resource/board/board10_0.qml:297
+msgctxt "board10_0|"
+msgid "Tennessee"
+msgstr "ടെന്നസി"
+
+#. State of America: North Carolina
+#: activities/geo-country/resource/board/board10_0.qml:304
+msgctxt "board10_0|"
+msgid "North Carolina"
+msgstr "വടക്കൻ കരോലിന"
+
+#. State of America: South Carolina
+#: activities/geo-country/resource/board/board10_0.qml:311
+msgctxt "board10_0|"
+msgid "South Carolina"
+msgstr "തെക്കൻ കരോലിന"
+
+#. State of America: Georgia
+#: activities/geo-country/resource/board/board10_0.qml:318
+msgctxt "board10_0|"
+msgid "Georgia"
+msgstr "ജോർജിയ"
+
+#. State of America: Alabama
+#: activities/geo-country/resource/board/board10_0.qml:325
+msgctxt "board10_0|"
+msgid "Alabama"
+msgstr "അലബാമ"
+
+#. State of America: Mississippi
+#: activities/geo-country/resource/board/board10_0.qml:332
+msgctxt "board10_0|"
+msgid "Mississippi"
+msgstr "മിസിസിപ്പി"
+
+#. State of America: Louisiana
+#: activities/geo-country/resource/board/board10_0.qml:339
+msgctxt "board10_0|"
+msgid "Louisiana"
+msgstr "ലൂയീസിയാന"
+
+#. State of America: Texas
+#: activities/geo-country/resource/board/board10_0.qml:346
+msgctxt "board10_0|"
+msgid "Texas"
+msgstr "ടെക്സസ്"
+
+#. State of America: Florida
+#: activities/geo-country/resource/board/board10_0.qml:353
+msgctxt "board10_0|"
+msgid "Florida"
+msgstr "ഫ്ലോറിഡ"
+
+#. State of America: Alaska
+#: activities/geo-country/resource/board/board10_0.qml:360
+msgctxt "board10_0|"
+msgid "Alaska"
+msgstr "അലാസ്ക"
+
+#. State of America: Hawaii
+#: activities/geo-country/resource/board/board10_0.qml:367
+msgctxt "board10_0|"
+msgid "Hawaii"
+msgstr "ഹവായി"
 
 #: activities/geo-country/resource/board/board11_0.qml:15
 msgctxt "board11_0|"
 msgid "Regions of Italy"
 msgstr "ഇറ്റലിയിലെ റീജിയണുകൾ"
 
-#. Region of Italy: Liguria
+#. Region of Italy: Aosta Valley
 #: activities/geo-country/resource/board/board11_0.qml:24
 msgctxt "board11_0|"
-msgid "Liguria"
-msgstr "ലിഗൂറിയ"
+msgid "Aosta Valley"
+msgstr "അഓസ്റ്റ വാലെ"
 
 #. Region of Italy: Piedmont
 #: activities/geo-country/resource/board/board11_0.qml:31
@@ -11431,35 +11506,35 @@ msgctxt "board11_0|"
 msgid "Piedmont"
 msgstr "പീദ്‌മോണ്ട്"
 
-#. Region of Italy: Aosta Valley
-#: activities/geo-country/resource/board/board11_0.qml:38
-msgctxt "board11_0|"
-msgid "Aosta Valley"
-msgstr "അഓസ്റ്റ വാലെ"
-
 #. Region of Italy: Lombardy
-#: activities/geo-country/resource/board/board11_0.qml:45
+#: activities/geo-country/resource/board/board11_0.qml:38
 msgctxt "board11_0|"
 msgid "Lombardy"
 msgstr "ലോംബാർഡി"
 
 #. Region of Italy: Trentino-South Tyrol
-#: activities/geo-country/resource/board/board11_0.qml:52
+#: activities/geo-country/resource/board/board11_0.qml:45
 msgctxt "board11_0|"
 msgid "Trentino-South Tyrol"
 msgstr "ട്രെന്റീനോ-സൗത്ത് ടിറോൾ"
 
 #. Region of Italy: Veneto
-#: activities/geo-country/resource/board/board11_0.qml:59
+#: activities/geo-country/resource/board/board11_0.qml:52
 msgctxt "board11_0|"
 msgid "Veneto"
 msgstr "വേനെറ്റോ"
 
 #. Region of Italy: Friuli Venezia Giulia
-#: activities/geo-country/resource/board/board11_0.qml:66
+#: activities/geo-country/resource/board/board11_0.qml:59
 msgctxt "board11_0|"
 msgid "Friuli Venezia Giulia"
 msgstr "ഫ്രിയൂളി-വെനേസിയ ജിയൂളിയ"
+
+#. Region of Italy: Liguria
+#: activities/geo-country/resource/board/board11_0.qml:66
+msgctxt "board11_0|"
+msgid "Liguria"
+msgstr "ലിഗൂറിയ"
 
 #. Region of Italy: Emilia-Romagna
 #: activities/geo-country/resource/board/board11_0.qml:73
@@ -11521,241 +11596,241 @@ msgctxt "board11_0|"
 msgid "Basilicata"
 msgstr "ബസിലിക്കാറ്റ"
 
-#. Region of Italy: Calabria
+#. Region of Italy: Sardinia
 #: activities/geo-country/resource/board/board11_0.qml:143
+msgctxt "board11_0|"
+msgid "Sardinia"
+msgstr "സാർഡീനിയ"
+
+#. Region of Italy: Calabria
+#: activities/geo-country/resource/board/board11_0.qml:150
 msgctxt "board11_0|"
 msgid "Calabria"
 msgstr "കലാബ്രിയ"
 
 #. Region of Italy: Sicily
-#: activities/geo-country/resource/board/board11_0.qml:150
+#: activities/geo-country/resource/board/board11_0.qml:157
 msgctxt "board11_0|"
 msgid "Sicily"
 msgstr "സിസിലി"
-
-#. Region of Italy: Sardinia
-#: activities/geo-country/resource/board/board11_0.qml:157
-msgctxt "board11_0|"
-msgid "Sardinia"
-msgstr "സാർഡീനിയ"
 
 #: activities/geo-country/resource/board/board12_0.qml:15
 msgctxt "board12_0|"
 msgid "States and Union Territories of India"
 msgstr "ഇന്ത്യയിലെ സംസ്ഥാനങ്ങളും കേന്ദ്രഭരണപ്രദേശങ്ങളും"
 
-#. State of India: Himachal Pradesh
+#. Union Territory of India: Ladakh
 #: activities/geo-country/resource/board/board12_0.qml:24
+msgctxt "board12_0|"
+msgid "Ladakh"
+msgstr "ലഡാഖ്"
+
+#. Union Territory of India: Jammu and Kashmir
+#: activities/geo-country/resource/board/board12_0.qml:31
+msgctxt "board12_0|"
+msgid "Jammu and Kashmir"
+msgstr "ജമ്മു-കശ്മീർ"
+
+#. State of India: Himachal Pradesh
+#: activities/geo-country/resource/board/board12_0.qml:38
 msgctxt "board12_0|"
 msgid "Himachal Pradesh"
 msgstr "ഹിമാചൽ പ്രദേശ്"
 
 #. State of India: Punjab
-#: activities/geo-country/resource/board/board12_0.qml:31
+#: activities/geo-country/resource/board/board12_0.qml:45
 msgctxt "board12_0|"
 msgid "Punjab"
 msgstr "പഞ്ചാബ്"
 
 #. State of India: Uttarakhand
-#: activities/geo-country/resource/board/board12_0.qml:38
+#: activities/geo-country/resource/board/board12_0.qml:52
 msgctxt "board12_0|"
 msgid "Uttarakhand"
 msgstr "ഉത്തരാഖണ്ഡ്"
 
+#. State of India: Haryana
+#: activities/geo-country/resource/board/board12_0.qml:59
+msgctxt "board12_0|"
+msgid "Haryana"
+msgstr "ഹരിയാന"
+
+#. Union Territory of India: Delhi
+#: activities/geo-country/resource/board/board12_0.qml:66
+msgctxt "board12_0|"
+msgid "Delhi"
+msgstr "ഡെൽഹി"
+
+#. State of India: Sikkim
+#: activities/geo-country/resource/board/board12_0.qml:73
+msgctxt "board12_0|"
+msgid "Sikkim"
+msgstr "സിക്കിം"
+
+#. State of India: Arunachal Pradesh
+#: activities/geo-country/resource/board/board12_0.qml:80
+msgctxt "board12_0|"
+msgid "Arunachal Pradesh"
+msgstr "അരുണാചൽ പ്രദേശ്"
+
 #. State of India: Rajasthan
-#: activities/geo-country/resource/board/board12_0.qml:45
+#: activities/geo-country/resource/board/board12_0.qml:87
 msgctxt "board12_0|"
 msgid "Rajasthan"
 msgstr "രാജസ്ഥാൻ"
 
 #. State of India: Uttar Pradesh
-#: activities/geo-country/resource/board/board12_0.qml:52
+#: activities/geo-country/resource/board/board12_0.qml:94
 msgctxt "board12_0|"
 msgid "Uttar Pradesh"
 msgstr "ഉത്തർപ്രദേശ്"
 
 #. State of India: Bihar
-#: activities/geo-country/resource/board/board12_0.qml:59
+#: activities/geo-country/resource/board/board12_0.qml:101
 msgctxt "board12_0|"
 msgid "Bihar"
 msgstr "ബിഹാർ"
 
+#. State of India: Assam
+#: activities/geo-country/resource/board/board12_0.qml:108
+msgctxt "board12_0|"
+msgid "Assam"
+msgstr "ആസാം"
+
+#. State of India: Nagaland
+#: activities/geo-country/resource/board/board12_0.qml:115
+msgctxt "board12_0|"
+msgid "Nagaland"
+msgstr "നാഗാലാന്റ്"
+
+#. State of India: Meghalaya
+#: activities/geo-country/resource/board/board12_0.qml:122
+msgctxt "board12_0|"
+msgid "Meghalaya"
+msgstr "മേഘാലയ"
+
+#. State of India: Manipur
+#: activities/geo-country/resource/board/board12_0.qml:129
+msgctxt "board12_0|"
+msgid "Manipur"
+msgstr "മണിപ്പൂർ"
+
+#. State of India: Tripura
+#: activities/geo-country/resource/board/board12_0.qml:136
+msgctxt "board12_0|"
+msgid "Tripura"
+msgstr "ത്രിപുര"
+
+#. State of India: Mizoram
+#: activities/geo-country/resource/board/board12_0.qml:143
+msgctxt "board12_0|"
+msgid "Mizoram"
+msgstr "മിസോറം"
+
 #. State of India: Gujarat
-#: activities/geo-country/resource/board/board12_0.qml:66
+#: activities/geo-country/resource/board/board12_0.qml:150
 msgctxt "board12_0|"
 msgid "Gujarat"
 msgstr "ഗുജറാത്ത്"
 
-#. State of India: Haryana
-#: activities/geo-country/resource/board/board12_0.qml:73
-msgctxt "board12_0|"
-msgid "Haryana"
-msgstr "ഹരിയാന"
-
 #. State of India: Madhya Pradesh
-#: activities/geo-country/resource/board/board12_0.qml:80
+#: activities/geo-country/resource/board/board12_0.qml:157
 msgctxt "board12_0|"
 msgid "Madhya Pradesh"
 msgstr "മധ്യപ്രദേശ്"
 
 #. State of India: Jharkhand
-#: activities/geo-country/resource/board/board12_0.qml:87
+#: activities/geo-country/resource/board/board12_0.qml:164
 msgctxt "board12_0|"
 msgid "Jharkhand"
 msgstr "ഝാർഖണ്ഡ്"
 
-#. State of India: Maharashtra
-#: activities/geo-country/resource/board/board12_0.qml:94
+#. State of India: West Bengal
+#: activities/geo-country/resource/board/board12_0.qml:171
 msgctxt "board12_0|"
-msgid "Maharashtra"
-msgstr "മഹാരാഷ്ട്ര"
+msgid "West Bengal"
+msgstr "പശ്ചിമ ബംഗാൾ"
 
 #. State of India: Chhattisgarh
-#: activities/geo-country/resource/board/board12_0.qml:101
+#: activities/geo-country/resource/board/board12_0.qml:178
 msgctxt "board12_0|"
 msgid "Chhattisgarh"
 msgstr "ഛത്തീസ്ഗഢ്"
 
+#. State of India: Odisha
+#: activities/geo-country/resource/board/board12_0.qml:185
+msgctxt "board12_0|"
+msgid "Odisha"
+msgstr "ഒഡീഷ"
+
+#. State of India: Maharashtra
+#: activities/geo-country/resource/board/board12_0.qml:192
+msgctxt "board12_0|"
+msgid "Maharashtra"
+msgstr "മഹാരാഷ്ട്ര"
+
+#. State of India: Telangana
+#: activities/geo-country/resource/board/board12_0.qml:199
+msgctxt "board12_0|"
+msgid "Telangana"
+msgstr "തെലുങ്കാന"
+
 #. State of India: Goa
-#: activities/geo-country/resource/board/board12_0.qml:108
+#: activities/geo-country/resource/board/board12_0.qml:206
 msgctxt "board12_0|"
 msgid "Goa"
 msgstr "ഗോവ"
 
 #. State of India: Karnataka
-#: activities/geo-country/resource/board/board12_0.qml:115
+#: activities/geo-country/resource/board/board12_0.qml:213
 msgctxt "board12_0|"
 msgid "Karnataka"
 msgstr "കർണാടക"
 
-#. State of India: Telangana
-#: activities/geo-country/resource/board/board12_0.qml:122
-msgctxt "board12_0|"
-msgid "Telangana"
-msgstr "തെലുങ്കാന"
-
 #. State of India: Andhra Pradesh
-#: activities/geo-country/resource/board/board12_0.qml:130
+#: activities/geo-country/resource/board/board12_0.qml:220
 msgctxt "board12_0|"
 msgid "Andhra Pradesh"
 msgstr "ആന്ധ്രപ്രദേശ്"
 
+#. Union Territory of India: Lakshadweep
+#: activities/geo-country/resource/board/board12_0.qml:227
+msgctxt "board12_0|"
+msgid "Lakshadweep"
+msgstr "ലക്ഷദ്വീപ്"
+
 #. State of India: Kerala
-#: activities/geo-country/resource/board/board12_0.qml:137
+#: activities/geo-country/resource/board/board12_0.qml:234
 msgctxt "board12_0|"
 msgid "Kerala"
 msgstr "കേരളം"
 
 #. State of India: Tamil Nadu
-#: activities/geo-country/resource/board/board12_0.qml:144
+#: activities/geo-country/resource/board/board12_0.qml:241
 msgctxt "board12_0|"
 msgid "Tamil Nadu"
 msgstr "തമിഴ്‍നാട്"
 
-#. State of India: West Bengal
-#: activities/geo-country/resource/board/board12_0.qml:151
-msgctxt "board12_0|"
-msgid "West Bengal"
-msgstr "പശ്ചിമ ബംഗാൾ"
-
-#. State of India: Sikkim
-#: activities/geo-country/resource/board/board12_0.qml:158
-msgctxt "board12_0|"
-msgid "Sikkim"
-msgstr "സിക്കിം"
-
-#. State of India: Assam
-#: activities/geo-country/resource/board/board12_0.qml:165
-msgctxt "board12_0|"
-msgid "Assam"
-msgstr "ആസാം"
-
-#. State of India: Arunachal Pradesh
-#: activities/geo-country/resource/board/board12_0.qml:172
-msgctxt "board12_0|"
-msgid "Arunachal Pradesh"
-msgstr "അരുണാചൽ പ്രദേശ്"
-
-#. State of India: Nagaland
-#: activities/geo-country/resource/board/board12_0.qml:179
-msgctxt "board12_0|"
-msgid "Nagaland"
-msgstr "നാഗാലാന്റ്"
-
-#. State of India: Odisha
-#: activities/geo-country/resource/board/board12_0.qml:186
-msgctxt "board12_0|"
-msgid "Odisha"
-msgstr "ഒഡീഷ"
-
-#. State of India: Manipur
-#: activities/geo-country/resource/board/board12_0.qml:193
-msgctxt "board12_0|"
-msgid "Manipur"
-msgstr "മണിപ്പൂർ"
-
-#. State of India: Mizoram
-#: activities/geo-country/resource/board/board12_0.qml:200
-msgctxt "board12_0|"
-msgid "Mizoram"
-msgstr "മിസോറം"
-
-#. State of India: Tripura
-#: activities/geo-country/resource/board/board12_0.qml:207
-msgctxt "board12_0|"
-msgid "Tripura"
-msgstr "ത്രിപുര"
-
-#. State of India: Meghalaya
-#: activities/geo-country/resource/board/board12_0.qml:214
-msgctxt "board12_0|"
-msgid "Meghalaya"
-msgstr "മേഘാലയ"
-
 #. Union Territory of India: Andaman and Nicobar Islands
-#: activities/geo-country/resource/board/board12_0.qml:221
+#: activities/geo-country/resource/board/board12_0.qml:248
 msgctxt "board12_0|"
 msgid "Andaman and Nicobar Islands"
 msgstr "ആന്തമാൻ നിക്കോബാർ ദ്വീപുകൾ"
 
-#. Union Territory of India: Delhi
-#: activities/geo-country/resource/board/board12_0.qml:228
-msgctxt "board12_0|"
-msgid "Delhi"
-msgstr "ഡെൽഹി"
-
 #. Union Territory of India: Chandigarh
-#: activities/geo-country/resource/board/board12_0.qml:235
+#: activities/geo-country/resource/board/board12_0.qml:255
 msgctxt "board12_0|"
 msgid "Chandigarh"
 msgstr "ചണ്ഡീഗഢ്"
 
 #. Union Territory of India: Dadra and Nagar Haveli and Daman and Diu
-#: activities/geo-country/resource/board/board12_0.qml:243
+#: activities/geo-country/resource/board/board12_0.qml:263
 msgctxt "board12_0|"
 msgid "Dadra and Nagar Haveli and Daman and Diu"
 msgstr "ദാദ്രയും നഗർ ഹവേലിയും ദമനും ദിയുയും"
 
-#. Union Territory of India: Ladakh
-#: activities/geo-country/resource/board/board12_0.qml:251
-msgctxt "board12_0|"
-msgid "Ladakh"
-msgstr "ലഡാഖ്"
-
-#. Union Territory of India: Lakshadweep
-#: activities/geo-country/resource/board/board12_0.qml:258
-msgctxt "board12_0|"
-msgid "Lakshadweep"
-msgstr "ലക്ഷദ്വീപ്"
-
-#. Union Territory of India: Jammu and Kashmir
-#: activities/geo-country/resource/board/board12_0.qml:265
-msgctxt "board12_0|"
-msgid "Jammu and Kashmir"
-msgstr "ജമ്മു-കശ്മീർ"
-
 #. Union Territory of India: Puducherry
-#: activities/geo-country/resource/board/board12_0.qml:272
+#: activities/geo-country/resource/board/board12_0.qml:271
 msgctxt "board12_0|"
 msgid "Puducherry"
 msgstr "പുതുച്ചേരി"
@@ -11777,17 +11852,17 @@ msgctxt "board13_0|"
 msgid "Northern Territory"
 msgstr "നോർത്തേൺ ടെറിട്ടറി"
 
-#. State of Australia: South Australia
-#: activities/geo-country/resource/board/board13_0.qml:38
-msgctxt "board13_0|"
-msgid "South Australia"
-msgstr "ദക്ഷിണ ഓസ്ട്രേലിയ"
-
 #. State of Australia: Queensland
-#: activities/geo-country/resource/board/board13_0.qml:45
+#: activities/geo-country/resource/board/board13_0.qml:38
 msgctxt "board13_0|"
 msgid "Queensland"
 msgstr "ക്വീൻസ്‍ലാന്റ്"
+
+#. State of Australia: South Australia
+#: activities/geo-country/resource/board/board13_0.qml:45
+msgctxt "board13_0|"
+msgid "South Australia"
+msgstr "ദക്ഷിണ ഓസ്ട്രേലിയ"
 
 #. State of Australia: New South Wales
 #: activities/geo-country/resource/board/board13_0.qml:52
@@ -11795,23 +11870,23 @@ msgctxt "board13_0|"
 msgid "New South Wales"
 msgstr "ന്യൂ സൗത്ത് വെയ്ൽസ്"
 
-#. State of Australia: Victoria
+#. Territory of Australia: Australian Capital Territory
 #: activities/geo-country/resource/board/board13_0.qml:59
+msgctxt "board13_0|"
+msgid "Australian Capital Territory"
+msgstr "ഓസ്ട്രേലിയൻ കാപിറ്റൽ ടെറിട്ടറി"
+
+#. State of Australia: Victoria
+#: activities/geo-country/resource/board/board13_0.qml:66
 msgctxt "board13_0|"
 msgid "Victoria"
 msgstr "വിക്ടോറിയ"
 
 #. State of Australia: Tasmania
-#: activities/geo-country/resource/board/board13_0.qml:66
+#: activities/geo-country/resource/board/board13_0.qml:73
 msgctxt "board13_0|"
 msgid "Tasmania"
 msgstr "ടാസ്മേനിയ"
-
-#. Territory of Australia: Australian Capital Territory
-#: activities/geo-country/resource/board/board13_0.qml:73
-msgctxt "board13_0|"
-msgid "Australian Capital Territory"
-msgstr "ഓസ്ട്രേലിയൻ കാപിറ്റൽ ടെറിട്ടറി"
 
 #: activities/geo-country/resource/board/board14_0.qml:15
 msgctxt "board14_0|"
@@ -11824,23 +11899,23 @@ msgctxt "board14_0|"
 msgid "Xinjiang"
 msgstr "സിൻജിയാങ്"
 
-#. Province of China: Gansu
-#: activities/geo-country/resource/board/board14_0.qml:31
-msgctxt "board14_0|"
-msgid "Gansu"
-msgstr "ഗാൻസു"
-
 #. Province of China: Inner Mongolia
-#: activities/geo-country/resource/board/board14_0.qml:38
+#: activities/geo-country/resource/board/board14_0.qml:31
 msgctxt "board14_0|"
 msgid "Inner Mongolia"
 msgstr "ഇന്നർ മംഗോളിയ"
 
-#. Province of China: Ningxia
+#. Province of China: Liaoning
+#: activities/geo-country/resource/board/board14_0.qml:38
+msgctxt "board14_0|"
+msgid "Liaoning"
+msgstr "ലിയാഓനിങ്"
+
+#. Province of China: Jilin
 #: activities/geo-country/resource/board/board14_0.qml:45
 msgctxt "board14_0|"
-msgid "Ningxia"
-msgstr "നിൻഗ്സിയ"
+msgid "Jilin"
+msgstr "ജീലീൻ"
 
 #. Province of China: Heilongjiang
 #: activities/geo-country/resource/board/board14_0.qml:52
@@ -11848,35 +11923,35 @@ msgctxt "board14_0|"
 msgid "Heilongjiang"
 msgstr "ഹിലോങ്ജോങ്"
 
-#. Province of China: Jilin
+#. Province of China: Tibet
 #: activities/geo-country/resource/board/board14_0.qml:59
 msgctxt "board14_0|"
-msgid "Jilin"
-msgstr "ജീലീൻ"
+msgid "Tibet"
+msgstr "തിബെത്ത്"
 
-#. Province of China: Liaoning
+#. Province of China: Qinghai
 #: activities/geo-country/resource/board/board14_0.qml:66
 msgctxt "board14_0|"
-msgid "Liaoning"
-msgstr "ലിയാഓനിങ്"
+msgid "Qinghai"
+msgstr "ചിങ്ഹായ്"
 
-#. Province of China: Tianjin
+#. Province of China: Gansu
 #: activities/geo-country/resource/board/board14_0.qml:73
 msgctxt "board14_0|"
-msgid "Tianjin"
-msgstr "ടിയാൻജിൻ"
+msgid "Gansu"
+msgstr "ഗാൻസു"
 
-#. Province of China: Beijing
+#. Province of China: Ningxia
 #: activities/geo-country/resource/board/board14_0.qml:80
 msgctxt "board14_0|"
-msgid "Beijing"
-msgstr "ബെയ്‌ജിങ്ങ്‌"
+msgid "Ningxia"
+msgstr "നിൻഗ്സിയ"
 
-#. Province of China: Shandong
+#. Province of China: Shaanxi
 #: activities/geo-country/resource/board/board14_0.qml:87
 msgctxt "board14_0|"
-msgid "Shandong"
-msgstr "ശാൻഡോങ്"
+msgid "Shaanxi"
+msgstr "ഷാങ്സി"
 
 #. Province of China: Shanxi
 #: activities/geo-country/resource/board/board14_0.qml:94
@@ -11884,83 +11959,83 @@ msgctxt "board14_0|"
 msgid "Shanxi"
 msgstr "ശാങ്സി"
 
-#. Province of China: Shaanxi
+#. Province of China: Hebei
 #: activities/geo-country/resource/board/board14_0.qml:101
 msgctxt "board14_0|"
-msgid "Shaanxi"
-msgstr "ഷാങ്സി"
+msgid "Hebei"
+msgstr "ഹെബെയ്"
 
-#. Province of China: Qinghai
+#. Province of China: Beijing
 #: activities/geo-country/resource/board/board14_0.qml:108
 msgctxt "board14_0|"
-msgid "Qinghai"
-msgstr "ചിങ്ഹായ്"
+msgid "Beijing"
+msgstr "ബെയ്‌ജിങ്ങ്‌"
 
-#. Province of China: Tibet
+#. Province of China: Tianjin
 #: activities/geo-country/resource/board/board14_0.qml:115
 msgctxt "board14_0|"
-msgid "Tibet"
-msgstr "തിബെത്ത്"
+msgid "Tianjin"
+msgstr "ടിയാൻജിൻ"
+
+#. Province of China: Shandong
+#: activities/geo-country/resource/board/board14_0.qml:122
+msgctxt "board14_0|"
+msgid "Shandong"
+msgstr "ശാൻഡോങ്"
+
+#. Province of China: Henan
+#: activities/geo-country/resource/board/board14_0.qml:129
+msgctxt "board14_0|"
+msgid "Henan"
+msgstr "ഹെനാൻ"
 
 #. Province of China: Sichuan
-#: activities/geo-country/resource/board/board14_0.qml:122
+#: activities/geo-country/resource/board/board14_0.qml:136
 msgctxt "board14_0|"
 msgid "Sichuan"
 msgstr "സീച്വാൻ"
 
 #. Province of China: Chongqing
-#: activities/geo-country/resource/board/board14_0.qml:129
+#: activities/geo-country/resource/board/board14_0.qml:143
 msgctxt "board14_0|"
 msgid "Chongqing"
 msgstr "ചോങ്ചിങ്"
 
-#. Province of China: Henan
-#: activities/geo-country/resource/board/board14_0.qml:136
-msgctxt "board14_0|"
-msgid "Henan"
-msgstr "ഹെനാൻ"
-
-#. Province of China: Jiangsu
-#: activities/geo-country/resource/board/board14_0.qml:143
-msgctxt "board14_0|"
-msgid "Jiangsu"
-msgstr "ജാങ്സൂ"
-
-#. Province of China: Anhui
-#: activities/geo-country/resource/board/board14_0.qml:150
-msgctxt "board14_0|"
-msgid "Anhui"
-msgstr "ആൻഹുയി"
-
 #. Province of China: Hubei
-#: activities/geo-country/resource/board/board14_0.qml:157
+#: activities/geo-country/resource/board/board14_0.qml:150
 msgctxt "board14_0|"
 msgid "Hubei"
 msgstr "ഹ്യൂബേയ്"
 
-#. Province of China: Shanghai
+#. Province of China: Anhui
+#: activities/geo-country/resource/board/board14_0.qml:157
+msgctxt "board14_0|"
+msgid "Anhui"
+msgstr "ആൻഹുയി"
+
+#. Province of China: Jiangsu
 #: activities/geo-country/resource/board/board14_0.qml:164
+msgctxt "board14_0|"
+msgid "Jiangsu"
+msgstr "ജാങ്സൂ"
+
+#. Province of China: Shanghai
+#: activities/geo-country/resource/board/board14_0.qml:171
 msgctxt "board14_0|"
 msgid "Shanghai"
 msgstr "ഷാങ്ഹായ്"
 
-#. Province of China: Zhejiang
-#: activities/geo-country/resource/board/board14_0.qml:171
-msgctxt "board14_0|"
-msgid "Zhejiang"
-msgstr "ശശാങ്"
-
-#. Province of China: Fujian
+#. Province of China: Yunnan
 #: activities/geo-country/resource/board/board14_0.qml:178
 msgctxt "board14_0|"
-msgid "Fujian"
-msgstr "ഫ്യൂജിയൻ"
+msgid "Yunnan"
+msgstr "യുന്നാൻ"
 
-#. Province of China: Jiangxi
+#. Province of China: Guizhou
 #: activities/geo-country/resource/board/board14_0.qml:185
 msgctxt "board14_0|"
-msgid "Jiangxi"
-msgstr "ഇയാങ്ഷി"
+msgid "Guizhou"
+msgstr "ഗൂസൗ"
 
 #. Province of China: Hunan
 #: activities/geo-country/resource/board/board14_0.qml:192
@@ -11968,88 +12043,88 @@ msgctxt "board14_0|"
 msgid "Hunan"
 msgstr "ഹുനാൻ"
 
-#. Province of China: Guizhou
+#. Province of China: Jiangxi
 #: activities/geo-country/resource/board/board14_0.qml:199
 msgctxt "board14_0|"
-msgid "Guizhou"
-msgstr "ഗൂസൗ"
+msgid "Jiangxi"
+msgstr "ഇയാങ്ഷി"
 
-#. Province of China: Yunnan
+#. Province of China: Fujian
 #: activities/geo-country/resource/board/board14_0.qml:206
 msgctxt "board14_0|"
-msgid "Yunnan"
-msgstr "യുന്നാൻ"
+msgid "Fujian"
+msgstr "ഫ്യൂജിയൻ"
+
+#. Province of China: Zhejiang
+#: activities/geo-country/resource/board/board14_0.qml:213
+msgctxt "board14_0|"
+msgid "Zhejiang"
+msgstr "ശശാങ്"
 
 #. Province of China: Guangxi
-#: activities/geo-country/resource/board/board14_0.qml:213
+#: activities/geo-country/resource/board/board14_0.qml:220
 msgctxt "board14_0|"
 msgid "Guangxi"
 msgstr "ഗുവാങ്ക്സി"
 
 #. Province of China: Guangdong
-#: activities/geo-country/resource/board/board14_0.qml:220
+#: activities/geo-country/resource/board/board14_0.qml:227
 msgctxt "board14_0|"
 msgid "Guangdong"
 msgstr "ഗ്വാങ്‌ഡോങ്"
 
 #. Province of China: Hainan
-#: activities/geo-country/resource/board/board14_0.qml:227
+#: activities/geo-country/resource/board/board14_0.qml:234
 msgctxt "board14_0|"
 msgid "Hainan"
 msgstr "ഹെയ്നൻ"
-
-#. Province of China: Hebei
-#: activities/geo-country/resource/board/board14_0.qml:234
-msgctxt "board14_0|"
-msgid "Hebei"
-msgstr "ഹെബെയ്"
 
 #: activities/geo-country/resource/board/board15_0.qml:16
 msgctxt "board15_0|"
 msgid "Council areas of Scotland (North)"
 msgstr "സ്കോട്‌ലന്റിലെ കൗൺസിൽ ഏരിയകൾ (നോർത്ത്)"
 
-#. Council area of Scotland: Aberdeenshire
+#. Council area of Scotland: Shetland Islands
 #: activities/geo-country/resource/board/board15_0.qml:25
+msgctxt "board15_0|"
+msgid "Shetland Islands"
+msgstr "ഷെറ്റ്‍ലാന്റ് ദ്വീപുകൾ"
+
+#. Council area of Scotland: Orkney Islands
+#: activities/geo-country/resource/board/board15_0.qml:32
+msgctxt "board15_0|"
+msgid "Orkney Islands"
+msgstr "ഓർക്നി ദ്വീപുകൾ"
+
+#. Council area of Scotland: Na h-Eileanan Siar
+#: activities/geo-country/resource/board/board15_0.qml:39
+msgctxt "board15_0|"
+msgid "Na h-Eileanan Siar"
+msgstr "ന ഹ-ലനന നീയർ"
+
+#. Council area of Scotland: Highland
+#: activities/geo-country/resource/board/board15_0.qml:46
+msgctxt "board15_0|"
+msgid "Highland"
+msgstr "ഹൈലാന്റ്"
+
+#. Council area of Scotland: Moray
+#: activities/geo-country/resource/board/board15_0.qml:53
+msgctxt "board15_0|"
+msgid "Moray"
+msgstr "മറേയ്"
+
+#. Council area of Scotland: Aberdeenshire
+#: activities/geo-country/resource/board/board15_0.qml:60
 msgctxt "board15_0|"
 msgid "Aberdeenshire"
 msgstr "അബർഡീൻഷയർ"
 
 #. Council area of Scotland: Aberdeen
-#: activities/geo-country/resource/board/board15_0.qml:32
+#: activities/geo-country/resource/board/board15_0.qml:67
 msgctxt "board15_0|"
 msgid "Aberdeen"
 msgstr "അബർഡീൻ"
-
-#. Council area of Scotland: Moray
-#: activities/geo-country/resource/board/board15_0.qml:39
-msgctxt "board15_0|"
-msgid "Moray"
-msgstr "മറേയ്"
-
-#. Council area of Scotland: Na h-Eileanan Siar
-#: activities/geo-country/resource/board/board15_0.qml:46
-msgctxt "board15_0|"
-msgid "Na h-Eileanan Siar"
-msgstr "ന ഹ-ലനന നീയർ"
-
-#. Council area of Scotland: Orkney Islands
-#: activities/geo-country/resource/board/board15_0.qml:53
-msgctxt "board15_0|"
-msgid "Orkney Islands"
-msgstr "ഓർക്നി ദ്വീപുകൾ"
-
-#. Council area of Scotland: Shetland Islands
-#: activities/geo-country/resource/board/board15_0.qml:60
-msgctxt "board15_0|"
-msgid "Shetland Islands"
-msgstr "ഷെറ്റ്‍ലാന്റ് ദ്വീപുകൾ"
-
-#. Council area of Scotland: Highland
-#: activities/geo-country/resource/board/board15_0.qml:67
-msgctxt "board15_0|"
-msgid "Highland"
-msgstr "ഹൈലാന്റ്"
 
 #: activities/geo-country/resource/board/board15_1.qml:15
 msgctxt "board15_1|"
@@ -12062,504 +12137,504 @@ msgctxt "board15_1|"
 msgid "Angus"
 msgstr "ആങ്കസ്"
 
-#. Council area of Scotland: Dundee
-#: activities/geo-country/resource/board/board15_1.qml:31
-msgctxt "board15_1|"
-msgid "Dundee"
-msgstr "ഡൻഡീ"
-
 #. Council area of Scotland: Perth and Kinross
-#: activities/geo-country/resource/board/board15_1.qml:38
+#: activities/geo-country/resource/board/board15_1.qml:31
 msgctxt "board15_1|"
 msgid "Perth and Kinross"
 msgstr "പേർത്തും കിൻറോസും"
 
-#. Council area of Scotland: Stirling
-#: activities/geo-country/resource/board/board15_1.qml:45
+#. Council area of Scotland: Dundee
+#: activities/geo-country/resource/board/board15_1.qml:38
 msgctxt "board15_1|"
-msgid "Stirling"
-msgstr "സ്റ്റേർലിങ്"
+msgid "Dundee"
+msgstr "ഡൻഡീ"
 
 #. Council area of Scotland: Argyll and Bute
-#: activities/geo-country/resource/board/board15_1.qml:52
+#: activities/geo-country/resource/board/board15_1.qml:45
 msgctxt "board15_1|"
 msgid "Argyll and Bute"
 msgstr "ആർഗൈലും ബ്യൂട്ടും"
 
-#. Council area of Scotland: Fife
+#. Council area of Scotland: Stirling
+#: activities/geo-country/resource/board/board15_1.qml:52
+msgctxt "board15_1|"
+msgid "Stirling"
+msgstr "സ്റ്റേർലിങ്"
+
+#. Council areas of Scotland: Clackmannanshire
 #: activities/geo-country/resource/board/board15_1.qml:59
+msgctxt "board15_1|"
+msgid "Clackmannanshire"
+msgstr "ക്ലാക്ക്‌മാനൻഷയർ"
+
+#. Council area of Scotland: Fife
+#: activities/geo-country/resource/board/board15_1.qml:66
 msgctxt "board15_1|"
 msgid "Fife"
 msgstr "ഫൈഫ്"
 
-#. Council areas of Scotland: Scottish Borders
-#: activities/geo-country/resource/board/board15_1.qml:66
-msgctxt "board15_1|"
-msgid "Scottish Borders"
-msgstr "സ്കോട്ടിഷ് ബോർഡറുകൾ"
-
-#. Council areas of Scotland: East Lothian
+#. Council areas of Scotland: West Dunbartonshire
 #: activities/geo-country/resource/board/board15_1.qml:73
 msgctxt "board15_1|"
-msgid "East Lothian"
-msgstr "ഈസ്റ്റ് ലോതിയൻ"
+msgid "West Dunbartonshire"
+msgstr "വെസ്റ്റ് ഡൻബാർട്ടൺഷെയർ"
 
-#. Council areas of Scotland: Midlothian
+#. Council areas of Scotland: East Dunbartonshire
 #: activities/geo-country/resource/board/board15_1.qml:80
 msgctxt "board15_1|"
-msgid "Midlothian"
-msgstr "മിഡ്‌ലോതിയൻ"
+msgid "East Dunbartonshire"
+msgstr "ഈസ്റ്റ് ഡൻബാർട്ടൺഷെയർ"
+
+#. Council areas of Scotland: Falkirk
+#: activities/geo-country/resource/board/board15_1.qml:87
+msgctxt "board15_1|"
+msgid "Falkirk"
+msgstr "ഫോൾകേർക്"
+
+#. Council areas of Scotland: Inverclyde
+#: activities/geo-country/resource/board/board15_1.qml:94
+msgctxt "board15_1|"
+msgid "Inverclyde"
+msgstr "ഇൻവർക്ലൈഡ്"
+
+#. Council areas of Scotland: Renfrewshire
+#: activities/geo-country/resource/board/board15_1.qml:101
+msgctxt "board15_1|"
+msgid "Renfrewshire"
+msgstr "റെൻഫ്രീഷെയർ"
+
+#. Council areas of Scotland: East Renfrewshire
+#: activities/geo-country/resource/board/board15_1.qml:108
+msgctxt "board15_1|"
+msgid "East Renfrewshire"
+msgstr "ഈസ്റ്റ് റെൻഫ്രീഷെയർ"
+
+#. Council areas of Scotland: Glasgow
+#: activities/geo-country/resource/board/board15_1.qml:115
+msgctxt "board15_1|"
+msgid "Glasgow"
+msgstr "ഗ്ലാസ്ഗോ"
+
+#. Council areas of Scotland: North Lanarkshire
+#: activities/geo-country/resource/board/board15_1.qml:122
+msgctxt "board15_1|"
+msgid "North Lanarkshire"
+msgstr "നോർത്ത് ലാനർക്ക്‌ഷയർ"
 
 #. Council areas of Scotland: West Lothian
-#: activities/geo-country/resource/board/board15_1.qml:87
+#: activities/geo-country/resource/board/board15_1.qml:129
 msgctxt "board15_1|"
 msgid "West Lothian"
 msgstr "വെസ്റ്റ് ലോതിയൻ"
 
 #. Council areas of Scotland: Edinburgh
-#: activities/geo-country/resource/board/board15_1.qml:94
+#: activities/geo-country/resource/board/board15_1.qml:136
 msgctxt "board15_1|"
 msgid "Edinburgh"
 msgstr "എഡിൻബറോ"
 
-#. Council areas of Scotland: Falkirk
-#: activities/geo-country/resource/board/board15_1.qml:101
+#. Council areas of Scotland: Midlothian
+#: activities/geo-country/resource/board/board15_1.qml:143
 msgctxt "board15_1|"
-msgid "Falkirk"
-msgstr "ഫോൾകേർക്"
+msgid "Midlothian"
+msgstr "മിഡ്‌ലോതിയൻ"
 
-#. Council areas of Scotland: South Lanarkshire
-#: activities/geo-country/resource/board/board15_1.qml:108
+#. Council areas of Scotland: East Lothian
+#: activities/geo-country/resource/board/board15_1.qml:150
 msgctxt "board15_1|"
-msgid "South Lanarkshire"
-msgstr "സൗത്ത് ലാനർക്ക്‌ഷയർ"
+msgid "East Lothian"
+msgstr "ഈസ്റ്റ് ലോതിയൻ"
 
-#. Council areas of Scotland: North Lanarkshire
-#: activities/geo-country/resource/board/board15_1.qml:115
+#. Council areas of Scotland: North Ayrshire
+#: activities/geo-country/resource/board/board15_1.qml:157
 msgctxt "board15_1|"
-msgid "North Lanarkshire"
-msgstr "നോർത്ത് ലാനർക്ക്‌ഷയർ"
-
-#. Council areas of Scotland: Dumfries and Galloway
-#: activities/geo-country/resource/board/board15_1.qml:122
-msgctxt "board15_1|"
-msgid "Dumfries and Galloway"
-msgstr "ദംഫ്രീസും ഗാലൊവേയും"
+msgid "North Ayrshire"
+msgstr "നോർത്ത് എർഷെർ"
 
 #. Council areas of Scotland: South Ayrshire
-#: activities/geo-country/resource/board/board15_1.qml:129
+#: activities/geo-country/resource/board/board15_1.qml:164
 msgctxt "board15_1|"
 msgid "South Ayrshire"
 msgstr "സൗത്ത് എർഷെർ"
 
 #. Council areas of Scotland: East Ayrshire
-#: activities/geo-country/resource/board/board15_1.qml:136
+#: activities/geo-country/resource/board/board15_1.qml:171
 msgctxt "board15_1|"
 msgid "East Ayrshire"
 msgstr "ഈസ്റ്റ് എർഷെർ"
 
-#. Council areas of Scotland: Glasgow
-#: activities/geo-country/resource/board/board15_1.qml:143
-msgctxt "board15_1|"
-msgid "Glasgow"
-msgstr "ഗ്ലാസ്ഗോ"
-
-#. Council areas of Scotland: East Dunbartonshire
-#: activities/geo-country/resource/board/board15_1.qml:150
-msgctxt "board15_1|"
-msgid "East Dunbartonshire"
-msgstr "ഈസ്റ്റ് ഡൻബാർട്ടൺഷെയർ"
-
-#. Council areas of Scotland: West Dunbartonshire
-#: activities/geo-country/resource/board/board15_1.qml:157
-msgctxt "board15_1|"
-msgid "West Dunbartonshire"
-msgstr "വെസ്റ്റ് ഡൻബാർട്ടൺഷെയർ"
-
-#. Council areas of Scotland: East Renfrewshire
-#: activities/geo-country/resource/board/board15_1.qml:164
-msgctxt "board15_1|"
-msgid "East Renfrewshire"
-msgstr "ഈസ്റ്റ് റെൻഫ്രീഷെയർ"
-
-#. Council areas of Scotland: Renfrewshire
-#: activities/geo-country/resource/board/board15_1.qml:171
-msgctxt "board15_1|"
-msgid "Renfrewshire"
-msgstr "റെൻഫ്രീഷെയർ"
-
-#. Council areas of Scotland: Inverclyde
+#. Council areas of Scotland: South Lanarkshire
 #: activities/geo-country/resource/board/board15_1.qml:178
 msgctxt "board15_1|"
-msgid "Inverclyde"
-msgstr "ഇൻവർക്ലൈഡ്"
+msgid "South Lanarkshire"
+msgstr "സൗത്ത് ലാനർക്ക്‌ഷയർ"
 
-#. Council areas of Scotland: North Ayrshire
+#. Council areas of Scotland: Scottish Borders
 #: activities/geo-country/resource/board/board15_1.qml:185
 msgctxt "board15_1|"
-msgid "North Ayrshire"
-msgstr "നോർത്ത് എർഷെർ"
+msgid "Scottish Borders"
+msgstr "സ്കോട്ടിഷ് ബോർഡറുകൾ"
 
-#. Council areas of Scotland: Clackmannanshire
+#. Council areas of Scotland: Dumfries and Galloway
 #: activities/geo-country/resource/board/board15_1.qml:192
 msgctxt "board15_1|"
-msgid "Clackmannanshire"
-msgstr "ക്ലാക്ക്‌മാനൻഷയർ"
+msgid "Dumfries and Galloway"
+msgstr "ദംഫ്രീസും ഗാലൊവേയും"
 
 #: activities/geo-country/resource/board/board16_0.qml:15
 msgctxt "board16_0|"
 msgid "Historical regions of Romania"
 msgstr "റൊമേനിയയിലെ ചരിത്രപരമായ റീജിയണുകൾ"
 
-#. Historical Region of Romania: Oltenia
+#. Historical Region of Romania: Maramureș
 #: activities/geo-country/resource/board/board16_0.qml:24
+msgctxt "board16_0|"
+msgid "Maramureș"
+msgstr "മാറാമൂറേഷ്"
+
+#. Historical Region of Romania: Bukovina
+#: activities/geo-country/resource/board/board16_0.qml:31
+msgctxt "board16_0|"
+msgid "Bukovina"
+msgstr "ബുക്കോവിന"
+
+#. Historical Region of Romania: Crișana
+#: activities/geo-country/resource/board/board16_0.qml:38
+msgctxt "board16_0|"
+msgid "Crișana"
+msgstr "ക്രീസാന"
+
+#. Historical Region of Romania: Transylvania
+#: activities/geo-country/resource/board/board16_0.qml:45
+msgctxt "board16_0|"
+msgid "Transylvania"
+msgstr "ട്രാൻസിൽവേനിയ"
+
+#. Historical Region of Romania: Moldavia
+#: activities/geo-country/resource/board/board16_0.qml:52
+msgctxt "board16_0|"
+msgid "Moldavia"
+msgstr "മോൾഡാവിയ"
+
+#. Historical Region of Romania: Banat
+#: activities/geo-country/resource/board/board16_0.qml:59
+msgctxt "board16_0|"
+msgid "Banat"
+msgstr "ബാനാത്"
+
+#. Historical Region of Romania: Oltenia
+#: activities/geo-country/resource/board/board16_0.qml:66
 msgctxt "board16_0|"
 msgid "Oltenia"
 msgstr "ഓൾടേനിയ"
 
 #. Historical Region of Romania: Muntenia
-#: activities/geo-country/resource/board/board16_0.qml:31
+#: activities/geo-country/resource/board/board16_0.qml:73
 msgctxt "board16_0|"
 msgid "Muntenia"
 msgstr "മുണ്ടേനിയ"
 
 #. Historical Region of Romania: Northern Dobruja
-#: activities/geo-country/resource/board/board16_0.qml:38
+#: activities/geo-country/resource/board/board16_0.qml:80
 msgctxt "board16_0|"
 msgid "Northern Dobruja"
 msgstr "നോർത്തേൺ ഡോബ്രൂജ"
-
-#. Historical Region of Romania: Moldavia
-#: activities/geo-country/resource/board/board16_0.qml:45
-msgctxt "board16_0|"
-msgid "Moldavia"
-msgstr "മോൾഡാവിയ"
-
-#. Historical Region of Romania: Bukovina
-#: activities/geo-country/resource/board/board16_0.qml:52
-msgctxt "board16_0|"
-msgid "Bukovina"
-msgstr "ബുക്കോവിന"
-
-#. Historical Region of Romania: Transylvania
-#: activities/geo-country/resource/board/board16_0.qml:59
-msgctxt "board16_0|"
-msgid "Transylvania"
-msgstr "ട്രാൻസിൽവേനിയ"
-
-#. Historical Region of Romania: Maramureș
-#: activities/geo-country/resource/board/board16_0.qml:66
-msgctxt "board16_0|"
-msgid "Maramureș"
-msgstr "മാറാമൂറേഷ്"
-
-#. Historical Region of Romania: Crișana
-#: activities/geo-country/resource/board/board16_0.qml:73
-msgctxt "board16_0|"
-msgid "Crișana"
-msgstr "ക്രീസാന"
-
-#. Historical Region of Romania: Banat
-#: activities/geo-country/resource/board/board16_0.qml:80
-msgctxt "board16_0|"
-msgid "Banat"
-msgstr "ബാനാത്"
 
 #: activities/geo-country/resource/board/board17_0.qml:15
 msgctxt "board17_0|"
 msgid "Cultural regions of Lithuania"
 msgstr "ലിത്വേനിയയിലെ സാംസ്കാരിക റീജിയണുകൾ"
 
-#. Cultural region of Lithuania: Aukštaitija
-#: activities/geo-country/resource/board/board17_0.qml:24
-msgctxt "board17_0|"
-msgid "Aukštaitija"
-msgstr "ഓക്‌സ്റ്റേറ്റിയ"
-
-#. Cultural region of Lithuania: Dzūkija
-#: activities/geo-country/resource/board/board17_0.qml:31
-msgctxt "board17_0|"
-msgid "Dzūkija"
-msgstr "ഡ്യൂകീജ"
-
 #. Cultural region of Lithuania: Lithuania Minor
-#: activities/geo-country/resource/board/board17_0.qml:38
+#: activities/geo-country/resource/board/board17_0.qml:24
 msgctxt "board17_0|"
 msgid "Lithuania Minor"
 msgstr "ലിത്വേനിയ മൈനർ"
 
 #. Cultural region of Lithuania: Samogitia
-#: activities/geo-country/resource/board/board17_0.qml:45
+#: activities/geo-country/resource/board/board17_0.qml:31
 msgctxt "board17_0|"
 msgid "Samogitia"
 msgstr "സമോഗീഷ"
 
+#. Cultural region of Lithuania: Aukštaitija
+#: activities/geo-country/resource/board/board17_0.qml:38
+msgctxt "board17_0|"
+msgid "Aukštaitija"
+msgstr "ഓക്‌സ്റ്റേറ്റിയ"
+
 #. Cultural region of Lithuania: Suvalkija
-#: activities/geo-country/resource/board/board17_0.qml:52
+#: activities/geo-country/resource/board/board17_0.qml:45
 msgctxt "board17_0|"
 msgid "Suvalkija"
 msgstr "സവാൽക്കീജ"
+
+#. Cultural region of Lithuania: Dzūkija
+#: activities/geo-country/resource/board/board17_0.qml:52
+msgctxt "board17_0|"
+msgid "Dzūkija"
+msgstr "ഡ്യൂകീജ"
 
 #: activities/geo-country/resource/board/board18_0.qml:13
 msgctxt "board18_0|"
 msgid "Autonomous communities or cities of Spain"
 msgstr "സ്പെയിനിലെ സ്വയംഭരണ കമ്മ്യൂണിറ്റികളും നഗരങ്ങളും"
 
-#. Autonomous communities of Spain: Andalusia
-#: activities/geo-country/resource/board/board18_0.qml:22
-msgctxt "board18_0|"
-msgid "Andalusia"
-msgstr "ആൻഡലൂഷ്യ"
-
-#. Autonomous communities of Spain: Madrid
-#: activities/geo-country/resource/board/board18_0.qml:29
-msgctxt "board18_0|"
-msgid "Madrid"
-msgstr "മാഡ്രിഡ്"
-
 #. Autonomous communities of Spain: Galicia
-#: activities/geo-country/resource/board/board18_0.qml:36
+#: activities/geo-country/resource/board/board18_0.qml:22
 msgctxt "board18_0|"
 msgid "Galicia"
 msgstr "ഗലീസ്യ"
 
-#. Autonomous communities of Spain: Castile and León
-#: activities/geo-country/resource/board/board18_0.qml:43
-msgctxt "board18_0|"
-msgid "Castile and León"
-msgstr "കാസ്റ്റീലും ലെയോണും"
-
-#. Autonomous communities of Spain: Castilla-La Mancha
-#: activities/geo-country/resource/board/board18_0.qml:50
-msgctxt "board18_0|"
-msgid "Castilla-La Mancha"
-msgstr "കാസ്റ്റീയ-ല മാഞ്ച"
-
-#. Autonomous communities of Spain: Catalonia
-#: activities/geo-country/resource/board/board18_0.qml:57
-msgctxt "board18_0|"
-msgid "Catalonia"
-msgstr "കാറ്റലോണിയ"
-
-#. Autonomous communities of Spain: Aragon
-#: activities/geo-country/resource/board/board18_0.qml:64
-msgctxt "board18_0|"
-msgid "Aragon"
-msgstr "അരഗോൺ"
-
-#. Autonomous communities of Spain: Valencia
-#: activities/geo-country/resource/board/board18_0.qml:71
-msgctxt "board18_0|"
-msgid "Valencia"
-msgstr "വലെൻസിയ"
-
-#. Autonomous communities of Spain: Murcia
-#: activities/geo-country/resource/board/board18_0.qml:78
-msgctxt "board18_0|"
-msgid "Murcia"
-msgstr "മൂർസിയ"
-
 #. Autonomous communities of Spain: Asturias
-#: activities/geo-country/resource/board/board18_0.qml:85
+#: activities/geo-country/resource/board/board18_0.qml:29
 msgctxt "board18_0|"
 msgid "Asturias"
 msgstr "അസ്തൂരിയാസ്"
 
-#. Autonomous communities of Spain: Basque Country
-#: activities/geo-country/resource/board/board18_0.qml:92
-msgctxt "board18_0|"
-msgid "Basque Country"
-msgstr "ബാസ്ഖ് കണ്ട്രി"
-
-#. Autonomous communities of Spain: La Rioja
-#: activities/geo-country/resource/board/board18_0.qml:99
-msgctxt "board18_0|"
-msgid "La Rioja"
-msgstr "ല റിയോഹ"
-
 #. Autonomous communities of Spain: Cantabria
-#: activities/geo-country/resource/board/board18_0.qml:106
+#: activities/geo-country/resource/board/board18_0.qml:36
 msgctxt "board18_0|"
 msgid "Cantabria"
 msgstr "കന്താബ്രിയ"
 
+#. Autonomous communities of Spain: Basque Country
+#: activities/geo-country/resource/board/board18_0.qml:43
+msgctxt "board18_0|"
+msgid "Basque Country"
+msgstr "ബാസ്ഖ് കണ്ട്രി"
+
 #. Autonomous communities of Spain: Navarre
-#: activities/geo-country/resource/board/board18_0.qml:113
+#: activities/geo-country/resource/board/board18_0.qml:50
 msgctxt "board18_0|"
 msgid "Navarre"
 msgstr "നവാറേ"
 
+#. Autonomous communities of Spain: Castile and León
+#: activities/geo-country/resource/board/board18_0.qml:57
+msgctxt "board18_0|"
+msgid "Castile and León"
+msgstr "കാസ്റ്റീലും ലെയോണും"
+
+#. Autonomous communities of Spain: La Rioja
+#: activities/geo-country/resource/board/board18_0.qml:64
+msgctxt "board18_0|"
+msgid "La Rioja"
+msgstr "ല റിയോഹ"
+
+#. Autonomous communities of Spain: Aragon
+#: activities/geo-country/resource/board/board18_0.qml:71
+msgctxt "board18_0|"
+msgid "Aragon"
+msgstr "അരഗോൺ"
+
+#. Autonomous communities of Spain: Catalonia
+#: activities/geo-country/resource/board/board18_0.qml:78
+msgctxt "board18_0|"
+msgid "Catalonia"
+msgstr "കാറ്റലോണിയ"
+
+#. Autonomous communities of Spain: Madrid
+#: activities/geo-country/resource/board/board18_0.qml:85
+msgctxt "board18_0|"
+msgid "Madrid"
+msgstr "മാഡ്രിഡ്"
+
 #. Autonomous communities of Spain: Extremadura
-#: activities/geo-country/resource/board/board18_0.qml:120
+#: activities/geo-country/resource/board/board18_0.qml:92
 msgctxt "board18_0|"
 msgid "Extremadura"
 msgstr "എക്സ്ത്രെമദൂര"
 
-#. Autonomous communities of Spain: Canary Islands
-#: activities/geo-country/resource/board/board18_0.qml:127
+#. Autonomous communities of Spain: Castilla-La Mancha
+#: activities/geo-country/resource/board/board18_0.qml:99
 msgctxt "board18_0|"
-msgid "Canary Islands"
-msgstr "കനേറി ദ്വീപുകൾ"
+msgid "Castilla-La Mancha"
+msgstr "കാസ്റ്റീയ-ല മാഞ്ച"
+
+#. Autonomous communities of Spain: Valencia
+#: activities/geo-country/resource/board/board18_0.qml:106
+msgctxt "board18_0|"
+msgid "Valencia"
+msgstr "വലെൻസിയ"
 
 #. Autonomous communities of Spain: Balearic Islands
-#: activities/geo-country/resource/board/board18_0.qml:134
+#: activities/geo-country/resource/board/board18_0.qml:113
 msgctxt "board18_0|"
 msgid "Balearic Islands"
 msgstr "ബാലേയാറിക് ദ്വീപുകൾ"
 
+#. Autonomous communities of Spain: Murcia
+#: activities/geo-country/resource/board/board18_0.qml:120
+msgctxt "board18_0|"
+msgid "Murcia"
+msgstr "മൂർസിയ"
+
+#. Autonomous communities of Spain: Andalusia
+#: activities/geo-country/resource/board/board18_0.qml:127
+msgctxt "board18_0|"
+msgid "Andalusia"
+msgstr "ആൻഡലൂഷ്യ"
+
 #. Autonomous communities of Spain: Ceuta
-#: activities/geo-country/resource/board/board18_0.qml:141
+#: activities/geo-country/resource/board/board18_0.qml:134
 msgctxt "board18_0|"
 msgid "Ceuta"
 msgstr "സെയൂത്ത"
 
 #. Autonomous communities of Spain: Melilla
-#: activities/geo-country/resource/board/board18_0.qml:148
+#: activities/geo-country/resource/board/board18_0.qml:141
 msgctxt "board18_0|"
 msgid "Melilla"
 msgstr "മെലീയ്യ"
+
+#. Autonomous communities of Spain: Canary Islands
+#: activities/geo-country/resource/board/board18_0.qml:148
+msgctxt "board18_0|"
+msgid "Canary Islands"
+msgstr "കനേറി ദ്വീപുകൾ"
 
 #: activities/geo-country/resource/board/board1_0.qml:15
 msgctxt "board1_0|"
 msgid "Regions of France"
 msgstr "ഫ്രാൻസിലെ റീജിയണുകൾ"
 
-#. Region of France: Corsica
+#. Region of France: Hauts de France
 #: activities/geo-country/resource/board/board1_0.qml:27
 msgctxt "board1_0|"
-msgid "Corsica"
-msgstr "കോർസിക്ക"
+msgid "Hauts de France"
+msgstr "ഓത് ദ് ഫ്രാൻസ്"
+
+#. Region of France: Normandy
+#: activities/geo-country/resource/board/board1_0.qml:35
+msgctxt "board1_0|"
+msgid "Normandy"
+msgstr "നോർമാണ്ടി"
+
+#. Region of France: Île-de-France
+#: activities/geo-country/resource/board/board1_0.qml:43
+msgctxt "board1_0|"
+msgid "Île-de-France"
+msgstr "ഇൽ-ദൊ-ഫ്രാൻസ്"
+
+#. Region of France: Grand est
+#: activities/geo-country/resource/board/board1_0.qml:51
+msgctxt "board1_0|"
+msgid "Grand est"
+msgstr "ഗ്രോന്തെസ്റ്റ്"
+
+#. Region of France: Brittany
+#: activities/geo-country/resource/board/board1_0.qml:59
+msgctxt "board1_0|"
+msgid "Brittany"
+msgstr "ബ്രിട്ടനി"
+
+#. Region of France: Pays de la Loire
+#: activities/geo-country/resource/board/board1_0.qml:67
+msgctxt "board1_0|"
+msgid "Pays de la Loire"
+msgstr "പേയി ദൊ ല ല്വാർ"
+
+#. Region of France: Centre-Val de Loire
+#: activities/geo-country/resource/board/board1_0.qml:75
+msgctxt "board1_0|"
+msgid "Centre-Val de Loire"
+msgstr "സോന്തൃ-വാൻ ദൊ ല്വാർ"
+
+#. Region of France: Bourgogne-Franche-Comté
+#: activities/geo-country/resource/board/board1_0.qml:83
+msgctxt "board1_0|"
+msgid "Bourgogne-Franche-Comté"
+msgstr "ബുർഗോന്യ്-ഫ്രോഞ്ച്-കോംതെ"
 
 #. Region of France: Nouvelle-Aquitaine
-#: activities/geo-country/resource/board/board1_0.qml:35
+#: activities/geo-country/resource/board/board1_0.qml:91
 msgctxt "board1_0|"
 msgid "Nouvelle-Aquitaine"
 msgstr "നുവേൽ-അക്കിറ്റൻ"
 
+#. Region of France: Auvergne-Rhône-Alpes
+#: activities/geo-country/resource/board/board1_0.qml:99
+msgctxt "board1_0|"
+msgid "Auvergne-Rhône-Alpes"
+msgstr "ഒവേർന്യ്-റോൺ-ആൽപ്"
+
 #. Region of France: Occitanie
-#: activities/geo-country/resource/board/board1_0.qml:43
+#: activities/geo-country/resource/board/board1_0.qml:107
 msgctxt "board1_0|"
 msgid "Occitanie"
 msgstr "ഓക്സിറ്റാനി"
 
 #. Region of France: Provence-Alpes-Côte d'Azur
-#: activities/geo-country/resource/board/board1_0.qml:51
+#: activities/geo-country/resource/board/board1_0.qml:115
 msgctxt "board1_0|"
 msgid "Provence-Alpes-Côte d'Azur"
 msgstr "പ്രൊവൊൻസ്-ആൽപ്-കോത് ദസ്യൂർ"
 
-#. Region of France: Auvergne-Rhône-Alpes
-#: activities/geo-country/resource/board/board1_0.qml:59
-msgctxt "board1_0|"
-msgid "Auvergne-Rhône-Alpes"
-msgstr "ഒവേർന്യ്-റോൺ-ആൽപ്"
-
-#. Region of France: Centre-Val de Loire
-#: activities/geo-country/resource/board/board1_0.qml:67
-msgctxt "board1_0|"
-msgid "Centre-Val de Loire"
-msgstr "സോന്തൃ-വാൻ ദൊ ല്വാർ"
-
-#. Region of France: Pays de la Loire
-#: activities/geo-country/resource/board/board1_0.qml:75
-msgctxt "board1_0|"
-msgid "Pays de la Loire"
-msgstr "പേയി ദൊ ല ല്വാർ"
-
-#. Region of France: Île-de-France
-#: activities/geo-country/resource/board/board1_0.qml:83
-msgctxt "board1_0|"
-msgid "Île-de-France"
-msgstr "ഇൽ-ദൊ-ഫ്രാൻസ്"
-
-#. Region of France: Brittany
-#: activities/geo-country/resource/board/board1_0.qml:91
-msgctxt "board1_0|"
-msgid "Brittany"
-msgstr "ബ്രിട്ടനി"
-
-#. Region of France: Normandy
-#: activities/geo-country/resource/board/board1_0.qml:99
-msgctxt "board1_0|"
-msgid "Normandy"
-msgstr "നോർമാണ്ടി"
-
-#. Region of France: Hauts de France
-#: activities/geo-country/resource/board/board1_0.qml:107
-msgctxt "board1_0|"
-msgid "Hauts de France"
-msgstr "ഓത് ദ് ഫ്രാൻസ്"
-
-#. Region of France: Grand est
-#: activities/geo-country/resource/board/board1_0.qml:115
-msgctxt "board1_0|"
-msgid "Grand est"
-msgstr "ഗ്രോന്തെസ്റ്റ്"
-
-#. Region of France: Bourgogne-Franche-Comté
+#. Region of France: Corsica
 #: activities/geo-country/resource/board/board1_0.qml:123
 msgctxt "board1_0|"
-msgid "Bourgogne-Franche-Comté"
-msgstr "ബുർഗോന്യ്-ഫ്രോഞ്ച്-കോംതെ"
+msgid "Corsica"
+msgstr "കോർസിക്ക"
 
 #: activities/geo-country/resource/board/board2_0.qml:15
 msgctxt "board2_0|"
 msgid "States of Germany"
 msgstr "ജർമനിയിലെ സംസ്ഥാനങ്ങൾ"
 
-#. State of Germany: Thuringia
-#: activities/geo-country/resource/board/board2_0.qml:24
-msgctxt "board2_0|"
-msgid "Thuringia"
-msgstr "തുറിങ്കിയ"
-
 #. State of Germany: Schleswig-Holstein
-#: activities/geo-country/resource/board/board2_0.qml:31
+#: activities/geo-country/resource/board/board2_0.qml:24
 msgctxt "board2_0|"
 msgid "Schleswig-Holstein"
 msgstr "ഷ്ലെസ്വിഗ്-ഹോൾസ്റ്റൈൻ"
 
-#. State of Germany: Saxony
+#. State of Germany: Mecklenburg-Vorpommern
+#: activities/geo-country/resource/board/board2_0.qml:31
+msgctxt "board2_0|"
+msgid "Mecklenburg-Vorpommern"
+msgstr "മെക്ക്ലെൻബുർഗ്-ഫൊർപ്പോമേൻ"
+
+#. State of Germany: Hamburg
 #: activities/geo-country/resource/board/board2_0.qml:38
 msgctxt "board2_0|"
-msgid "Saxony"
-msgstr "സാക്സണി"
+msgid "Hamburg"
+msgstr "ഹാംബർഗ്"
 
-#. State of Germany: Saxony-Anhalt
+#. State of Germany: Bremen
 #: activities/geo-country/resource/board/board2_0.qml:45
 msgctxt "board2_0|"
-msgid "Saxony-Anhalt"
-msgstr "സാക്സണി-അൻഹാൾട്ട്"
-
-#. State of Germany: Saarland
-#: activities/geo-country/resource/board/board2_0.qml:52
-msgctxt "board2_0|"
-msgid "Saarland"
-msgstr "സാർലാന്റ്"
-
-#. State of Germany: Rhineland-Palatinate
-#: activities/geo-country/resource/board/board2_0.qml:59
-msgctxt "board2_0|"
-msgid "Rhineland-Palatinate"
-msgstr "റൈൻലാന്റ്-പലാറ്റിനേറ്റ്"
-
-#. State of Germany: North Rhine-Westphalia
-#: activities/geo-country/resource/board/board2_0.qml:66
-msgctxt "board2_0|"
-msgid "North Rhine-Westphalia"
-msgstr "നോർത്ത് റൈൻ-വെസ്റ്റ്ഫാലിയ"
+msgid "Bremen"
+msgstr "ബ്രേമൻ"
 
 #. State of Germany: Lower Saxony
-#: activities/geo-country/resource/board/board2_0.qml:73
+#: activities/geo-country/resource/board/board2_0.qml:52
 msgctxt "board2_0|"
 msgid "Lower Saxony"
 msgstr "ലോവർ സാക്സണി"
 
-#. State of Germany: Mecklenburg-Vorpommern
+#. State of Germany: Saxony-Anhalt
+#: activities/geo-country/resource/board/board2_0.qml:59
+msgctxt "board2_0|"
+msgid "Saxony-Anhalt"
+msgstr "സാക്സണി-അൻഹാൾട്ട്"
+
+#. State of Germany: Brandenburg
+#: activities/geo-country/resource/board/board2_0.qml:66
+msgctxt "board2_0|"
+msgid "Brandenburg"
+msgstr "ബ്രാൻഡൻബുർഗ്"
+
+#. State of Germany: Berlin
+#: activities/geo-country/resource/board/board2_0.qml:73
+msgctxt "board2_0|"
+msgid "Berlin"
+msgstr "ബെർലിൻ"
+
+#. State of Germany: North Rhine-Westphalia
 #: activities/geo-country/resource/board/board2_0.qml:80
 msgctxt "board2_0|"
-msgid "Mecklenburg-Vorpommern"
-msgstr "മെക്ക്ലെൻബുർഗ്-ഫൊർപ്പോമേൻ"
+msgid "North Rhine-Westphalia"
+msgstr "നോർത്ത് റൈൻ-വെസ്റ്റ്ഫാലിയ"
 
 #. State of Germany: Hesse
 #: activities/geo-country/resource/board/board2_0.qml:87
@@ -12567,560 +12642,560 @@ msgctxt "board2_0|"
 msgid "Hesse"
 msgstr "ഹെസ്സെ"
 
-#. State of Germany: Hamburg
+#. State of Germany: Thuringia
 #: activities/geo-country/resource/board/board2_0.qml:94
 msgctxt "board2_0|"
-msgid "Hamburg"
-msgstr "ഹാംബർഗ്"
+msgid "Thuringia"
+msgstr "തുറിങ്കിയ"
 
-#. State of Germany: Bremen
+#. State of Germany: Saxony
 #: activities/geo-country/resource/board/board2_0.qml:101
 msgctxt "board2_0|"
-msgid "Bremen"
-msgstr "ബ്രേമൻ"
+msgid "Saxony"
+msgstr "സാക്സണി"
 
-#. State of Germany: Brandenburg
+#. State of Germany: Rhineland-Palatinate
 #: activities/geo-country/resource/board/board2_0.qml:108
 msgctxt "board2_0|"
-msgid "Brandenburg"
-msgstr "ബ്രാൻഡൻബുർഗ്"
+msgid "Rhineland-Palatinate"
+msgstr "റൈൻലാന്റ്-പലാറ്റിനേറ്റ്"
 
-#. State of Germany: Berlin
+#. State of Germany: Saarland
 #: activities/geo-country/resource/board/board2_0.qml:115
 msgctxt "board2_0|"
-msgid "Berlin"
-msgstr "ബെർലിൻ"
-
-#. State of Germany: Bavaria
-#: activities/geo-country/resource/board/board2_0.qml:122
-msgctxt "board2_0|"
-msgid "Bavaria"
-msgstr "ബവേറിയ"
+msgid "Saarland"
+msgstr "സാർലാന്റ്"
 
 #. State of Germany: Baden-Württemberg
-#: activities/geo-country/resource/board/board2_0.qml:129
+#: activities/geo-country/resource/board/board2_0.qml:122
 msgctxt "board2_0|"
 msgid "Baden-Württemberg"
 msgstr "ബാഡൻ-വ്യൂർട്ടംബർഗ്"
+
+#. State of Germany: Bavaria
+#: activities/geo-country/resource/board/board2_0.qml:129
+msgctxt "board2_0|"
+msgid "Bavaria"
+msgstr "ബവേറിയ"
 
 #: activities/geo-country/resource/board/board3_0.qml:15
 msgctxt "board3_0|"
 msgid "Provinces of Argentina"
 msgstr "അർജന്റീനയിലെ പ്രവിശ്യകൾ"
 
-#. Province of Argentina: Tucumán
-#: activities/geo-country/resource/board/board3_0.qml:24
-msgctxt "board3_0|"
-msgid "Tucumán"
-msgstr "തൂക്കുമാൻ"
-
-#. Province of Argentina: Tierra del Fuego
-#: activities/geo-country/resource/board/board3_0.qml:31
-msgctxt "board3_0|"
-msgid "Tierra del Fuego"
-msgstr "ടിയറ ഡെൽ ഫ്വേഗോ"
-
-#. Province of Argentina: Santiago del Estero
-#: activities/geo-country/resource/board/board3_0.qml:38
-msgctxt "board3_0|"
-msgid "Santiago del Estero"
-msgstr "സാന്റിയാഗോ ദെൽ എസ്റ്റെരോ"
-
-#. Province of Argentina: Santa Fe
-#: activities/geo-country/resource/board/board3_0.qml:45
-msgctxt "board3_0|"
-msgid "Santa Fe"
-msgstr "സാന്താ ഫെ"
-
-#. Province of Argentina: Santa Cruz
-#: activities/geo-country/resource/board/board3_0.qml:52
-msgctxt "board3_0|"
-msgid "Santa Cruz"
-msgstr "സാന്താ ക്രൂസ്"
-
-#. Province of Argentina: San Luis
-#: activities/geo-country/resource/board/board3_0.qml:59
-msgctxt "board3_0|"
-msgid "San Luis"
-msgstr "സാൻ ലൂയീസ്"
-
-#. Province of Argentina: San Juan
-#: activities/geo-country/resource/board/board3_0.qml:66
-msgctxt "board3_0|"
-msgid "San Juan"
-msgstr "സാൻ ഹ്വാൻ"
-
-#. Province of Argentina: Salta
-#: activities/geo-country/resource/board/board3_0.qml:73
-msgctxt "board3_0|"
-msgid "Salta"
-msgstr "സാൾട്ട"
-
-#. Province of Argentina: Río Negro
-#: activities/geo-country/resource/board/board3_0.qml:80
-msgctxt "board3_0|"
-msgid "Río Negro"
-msgstr "റിയോ നേഗ്രോ"
-
-#. Province of Argentina: Neuquén
-#: activities/geo-country/resource/board/board3_0.qml:87
-msgctxt "board3_0|"
-msgid "Neuquén"
-msgstr "നേയൊകേൻ"
-
-#. Province of Argentina: Misiones
-#: activities/geo-country/resource/board/board3_0.qml:94
-msgctxt "board3_0|"
-msgid "Misiones"
-msgstr "മിശ്യോനെസ്"
-
-#. Province of Argentina: Mendoza
-#: activities/geo-country/resource/board/board3_0.qml:101
-msgctxt "board3_0|"
-msgid "Mendoza"
-msgstr "മെന്തോസ"
-
-#. Province of Argentina: La Rioja
-#: activities/geo-country/resource/board/board3_0.qml:108
-msgctxt "board3_0|"
-msgid "La Rioja"
-msgstr "ല റിയോഹ"
-
-#. Province of Argentina: La Pampa
-#: activities/geo-country/resource/board/board3_0.qml:115
-msgctxt "board3_0|"
-msgid "La Pampa"
-msgstr "ല പാമ്പ"
-
 #. Province of Argentina: Jujuy
-#: activities/geo-country/resource/board/board3_0.qml:122
+#: activities/geo-country/resource/board/board3_0.qml:24
 msgctxt "board3_0|"
 msgid "Jujuy"
 msgstr "ഹൂഹൂയി"
 
+#. Province of Argentina: Salta
+#: activities/geo-country/resource/board/board3_0.qml:31
+msgctxt "board3_0|"
+msgid "Salta"
+msgstr "സാൾട്ട"
+
 #. Province of Argentina: Formosa
-#: activities/geo-country/resource/board/board3_0.qml:129
+#: activities/geo-country/resource/board/board3_0.qml:38
 msgctxt "board3_0|"
 msgid "Formosa"
 msgstr "ഫൊർമോസ"
 
-#. Province of Argentina: Entre Rios
-#: activities/geo-country/resource/board/board3_0.qml:136
-msgctxt "board3_0|"
-msgid "Entre Rios"
-msgstr "എന്ത്രെ റീയോസ്"
-
-#. Province of Argentina: Corrientes
-#: activities/geo-country/resource/board/board3_0.qml:143
-msgctxt "board3_0|"
-msgid "Corrientes"
-msgstr "കോറിയെന്തേസ്"
-
-#. Province of Argentina: Córdoba
-#: activities/geo-country/resource/board/board3_0.qml:150
-msgctxt "board3_0|"
-msgid "Córdoba"
-msgstr "കോർദോബ"
-
-#. Province of Argentina: Chubut
-#: activities/geo-country/resource/board/board3_0.qml:157
-msgctxt "board3_0|"
-msgid "Chubut"
-msgstr "ചൂബൂട്"
-
 #. Province of Argentina: Chaco
-#: activities/geo-country/resource/board/board3_0.qml:164
+#: activities/geo-country/resource/board/board3_0.qml:45
 msgctxt "board3_0|"
 msgid "Chaco"
 msgstr "ചാക്കോ"
 
+#. Province of Argentina: Misiones
+#: activities/geo-country/resource/board/board3_0.qml:52
+msgctxt "board3_0|"
+msgid "Misiones"
+msgstr "മിശ്യോനെസ്"
+
+#. Province of Argentina: Tucumán
+#: activities/geo-country/resource/board/board3_0.qml:59
+msgctxt "board3_0|"
+msgid "Tucumán"
+msgstr "തൂക്കുമാൻ"
+
 #. Province of Argentina: Catamarca
-#: activities/geo-country/resource/board/board3_0.qml:171
+#: activities/geo-country/resource/board/board3_0.qml:66
 msgctxt "board3_0|"
 msgid "Catamarca"
 msgstr "കാത്തമാർക്ക"
 
+#. Province of Argentina: Santiago del Estero
+#: activities/geo-country/resource/board/board3_0.qml:73
+msgctxt "board3_0|"
+msgid "Santiago del Estero"
+msgstr "സാന്റിയാഗോ ദെൽ എസ്റ്റെരോ"
+
+#. Province of Argentina: Corrientes
+#: activities/geo-country/resource/board/board3_0.qml:80
+msgctxt "board3_0|"
+msgid "Corrientes"
+msgstr "കോറിയെന്തേസ്"
+
+#. Province of Argentina: La Rioja
+#: activities/geo-country/resource/board/board3_0.qml:87
+msgctxt "board3_0|"
+msgid "La Rioja"
+msgstr "ല റിയോഹ"
+
+#. Province of Argentina: San Juan
+#: activities/geo-country/resource/board/board3_0.qml:94
+msgctxt "board3_0|"
+msgid "San Juan"
+msgstr "സാൻ ഹ്വാൻ"
+
+#. Province of Argentina: Santa Fe
+#: activities/geo-country/resource/board/board3_0.qml:101
+msgctxt "board3_0|"
+msgid "Santa Fe"
+msgstr "സാന്താ ഫെ"
+
+#. Province of Argentina: Entre Rios
+#: activities/geo-country/resource/board/board3_0.qml:108
+msgctxt "board3_0|"
+msgid "Entre Rios"
+msgstr "എന്ത്രെ റീയോസ്"
+
+#. Province of Argentina: Córdoba
+#: activities/geo-country/resource/board/board3_0.qml:115
+msgctxt "board3_0|"
+msgid "Córdoba"
+msgstr "കോർദോബ"
+
+#. Province of Argentina: San Luis
+#: activities/geo-country/resource/board/board3_0.qml:122
+msgctxt "board3_0|"
+msgid "San Luis"
+msgstr "സാൻ ലൂയീസ്"
+
+#. Province of Argentina: Mendoza
+#: activities/geo-country/resource/board/board3_0.qml:129
+msgctxt "board3_0|"
+msgid "Mendoza"
+msgstr "മെന്തോസ"
+
+#. Province of Argentina: La Pampa
+#: activities/geo-country/resource/board/board3_0.qml:136
+msgctxt "board3_0|"
+msgid "La Pampa"
+msgstr "ല പാമ്പ"
+
 #. Province of Argentina: Buenos Aires
-#: activities/geo-country/resource/board/board3_0.qml:186
+#: activities/geo-country/resource/board/board3_0.qml:143
 msgctxt "board3_0|"
 msgid "Buenos Aires"
 msgstr "ബ്വൈനോസ് ഐരെസ്"
+
+#. Province of Argentina: Neuquén
+#: activities/geo-country/resource/board/board3_0.qml:150
+msgctxt "board3_0|"
+msgid "Neuquén"
+msgstr "നേയൊകേൻ"
+
+#. Province of Argentina: Río Negro
+#: activities/geo-country/resource/board/board3_0.qml:157
+msgctxt "board3_0|"
+msgid "Río Negro"
+msgstr "റിയോ നേഗ്രോ"
+
+#. Province of Argentina: Chubut
+#: activities/geo-country/resource/board/board3_0.qml:164
+msgctxt "board3_0|"
+msgid "Chubut"
+msgstr "ചൂബൂട്"
+
+#. Province of Argentina: Santa Cruz
+#: activities/geo-country/resource/board/board3_0.qml:171
+msgctxt "board3_0|"
+msgid "Santa Cruz"
+msgstr "സാന്താ ക്രൂസ്"
+
+#. Province of Argentina: Tierra del Fuego
+#: activities/geo-country/resource/board/board3_0.qml:178
+msgctxt "board3_0|"
+msgid "Tierra del Fuego"
+msgstr "ടിയറ ഡെൽ ഫ്വേഗോ"
 
 #: activities/geo-country/resource/board/board4_0.qml:15
 msgctxt "board4_0|"
 msgid "Provinces of Poland"
 msgstr "പോളണ്ടിലെ പ്രവിശ്യകൾ"
 
-#. Province of Poland: Lower Silesian
-#: activities/geo-country/resource/board/board4_0.qml:24
-msgctxt "board4_0|"
-msgid "Lower Silesian"
-msgstr "ലോവർ സൈലീസിയൻ"
-
 #. Province of Poland: West Pomeranian
-#: activities/geo-country/resource/board/board4_0.qml:31
+#: activities/geo-country/resource/board/board4_0.qml:24
 msgctxt "board4_0|"
 msgid "West Pomeranian"
 msgstr "വെസ്റ്റ് പോമെറേനിയൻ"
 
-#. Province of Poland: Greater Poland
-#: activities/geo-country/resource/board/board4_0.qml:38
-msgctxt "board4_0|"
-msgid "Greater Poland"
-msgstr "ഗ്രേറ്റർ പോളണ്ട്"
-
-#. Province of Poland: Warmian-Masurian
-#: activities/geo-country/resource/board/board4_0.qml:45
-msgctxt "board4_0|"
-msgid "Warmian-Masurian"
-msgstr "വോമിയൻ-മസൂരിയൻ"
-
-#. Province of Poland: Holy Cross
-#: activities/geo-country/resource/board/board4_0.qml:52
-msgctxt "board4_0|"
-msgid "Holy Cross"
-msgstr "ഹോളി ക്രോസ്"
-
-#. Province of Poland: Silesian
-#: activities/geo-country/resource/board/board4_0.qml:59
-msgctxt "board4_0|"
-msgid "Silesian"
-msgstr "സൈലീസിയൻ"
-
 #. Province of Poland: Pomeranian
-#: activities/geo-country/resource/board/board4_0.qml:66
+#: activities/geo-country/resource/board/board4_0.qml:31
 msgctxt "board4_0|"
 msgid "Pomeranian"
 msgstr "പോമെറേനിയൻ"
 
+#. Province of Poland: Warmian-Masurian
+#: activities/geo-country/resource/board/board4_0.qml:38
+msgctxt "board4_0|"
+msgid "Warmian-Masurian"
+msgstr "വോമിയൻ-മസൂരിയൻ"
+
 #. Province of Poland: Podlaskie
-#: activities/geo-country/resource/board/board4_0.qml:73
+#: activities/geo-country/resource/board/board4_0.qml:45
 msgctxt "board4_0|"
 msgid "Podlaskie"
 msgstr "പോഡ്‌ലാസ്കീ"
 
-#. Province of Poland: Subcarpathian
-#: activities/geo-country/resource/board/board4_0.qml:80
-msgctxt "board4_0|"
-msgid "Subcarpathian"
-msgstr "സബ്‌കാർപാത്യൻ"
-
-#. Province of Poland: Opole
-#: activities/geo-country/resource/board/board4_0.qml:87
-msgctxt "board4_0|"
-msgid "Opole"
-msgstr "ഒപ്പോലെ"
-
-#. Province of Poland: Masovian
-#: activities/geo-country/resource/board/board4_0.qml:94
-msgctxt "board4_0|"
-msgid "Masovian"
-msgstr "മസോവിയൻ"
-
-#. Province of Poland: Lesser Poland
-#: activities/geo-country/resource/board/board4_0.qml:101
-msgctxt "board4_0|"
-msgid "Lesser Poland"
-msgstr "ലെസ്സർ പോളണ്ട്"
-
-#. Province of Poland: Łódź
-#: activities/geo-country/resource/board/board4_0.qml:108
-msgctxt "board4_0|"
-msgid "Łódź"
-msgstr "ഊഡ്ച്"
-
 #. Province of Poland: Lubusz
-#: activities/geo-country/resource/board/board4_0.qml:115
+#: activities/geo-country/resource/board/board4_0.qml:52
 msgctxt "board4_0|"
 msgid "Lubusz"
 msgstr "ലൂബഷ്"
 
+#. Province of Poland: Greater Poland
+#: activities/geo-country/resource/board/board4_0.qml:59
+msgctxt "board4_0|"
+msgid "Greater Poland"
+msgstr "ഗ്രേറ്റർ പോളണ്ട്"
+
+#. Province of Poland: Kuyavian-Pomeranian
+#: activities/geo-country/resource/board/board4_0.qml:66
+msgctxt "board4_0|"
+msgid "Kuyavian-Pomeranian"
+msgstr "കുയാവിയൻ-പോമെറേനിയൻ"
+
+#. Province of Poland: Łódź
+#: activities/geo-country/resource/board/board4_0.qml:73
+msgctxt "board4_0|"
+msgid "Łódź"
+msgstr "ഊഡ്ച്"
+
+#. Province of Poland: Masovian
+#: activities/geo-country/resource/board/board4_0.qml:80
+msgctxt "board4_0|"
+msgid "Masovian"
+msgstr "മസോവിയൻ"
+
 #. Province of Poland: Lublin
-#: activities/geo-country/resource/board/board4_0.qml:122
+#: activities/geo-country/resource/board/board4_0.qml:87
 msgctxt "board4_0|"
 msgid "Lublin"
 msgstr "ലൂബ്ലിൻ"
 
-#. Province of Poland: Kuyavian-Pomeranian
+#. Province of Poland: Lower Silesian
+#: activities/geo-country/resource/board/board4_0.qml:94
+msgctxt "board4_0|"
+msgid "Lower Silesian"
+msgstr "ലോവർ സൈലീസിയൻ"
+
+#. Province of Poland: Opole
+#: activities/geo-country/resource/board/board4_0.qml:101
+msgctxt "board4_0|"
+msgid "Opole"
+msgstr "ഒപ്പോലെ"
+
+#. Province of Poland: Silesian
+#: activities/geo-country/resource/board/board4_0.qml:108
+msgctxt "board4_0|"
+msgid "Silesian"
+msgstr "സൈലീസിയൻ"
+
+#. Province of Poland: Lesser Poland
+#: activities/geo-country/resource/board/board4_0.qml:115
+msgctxt "board4_0|"
+msgid "Lesser Poland"
+msgstr "ലെസ്സർ പോളണ്ട്"
+
+#. Province of Poland: Holy Cross
+#: activities/geo-country/resource/board/board4_0.qml:122
+msgctxt "board4_0|"
+msgid "Holy Cross"
+msgstr "ഹോളി ക്രോസ്"
+
+#. Province of Poland: Subcarpathian
 #: activities/geo-country/resource/board/board4_0.qml:129
 msgctxt "board4_0|"
-msgid "Kuyavian-Pomeranian"
-msgstr "കുയാവിയൻ-പോമെറേനിയൻ"
+msgid "Subcarpathian"
+msgstr "സബ്‌കാർപാത്യൻ"
 
 #: activities/geo-country/resource/board/board5_0.qml:16
 msgctxt "board5_0|"
 msgid "Western Provinces of Turkey"
 msgstr "തുർക്കിയിലെ പടിഞ്ഞാറൻ പ്രവിശ്യകൾ"
 
-#. Province of Turkey: Zonguldak
+#. Province of Turkey: Kırklareli
 #: activities/geo-country/resource/board/board5_0.qml:25
 msgctxt "board5_0|"
-msgid "Zonguldak"
-msgstr "സോംഗുൽദാക്"
+msgid "Kırklareli"
+msgstr "കിർക്ലരേല്"
 
-#. Province of Turkey: Yozgat
+#. Province of Turkey: Edirne
 #: activities/geo-country/resource/board/board5_0.qml:32
 msgctxt "board5_0|"
-msgid "Yozgat"
-msgstr "യോസ്ഗാത്"
-
-#. Province of Turkey: Yalova
-#: activities/geo-country/resource/board/board5_0.qml:39
-msgctxt "board5_0|"
-msgid "Yalova"
-msgstr "യലോവ"
-
-#. Province of Turkey: Uşak
-#: activities/geo-country/resource/board/board5_0.qml:46
-msgctxt "board5_0|"
-msgid "Uşak"
-msgstr "ഉശാക്"
+msgid "Edirne"
+msgstr "എഡൈൻ"
 
 #. Province of Turkey: Tekirdağ
-#: activities/geo-country/resource/board/board5_0.qml:53
+#: activities/geo-country/resource/board/board5_0.qml:39
 msgctxt "board5_0|"
 msgid "Tekirdağ"
 msgstr "തെക്കീർഡാ"
 
-#. Province of Turkey: Sinop
+#. Province of Turkey: İstanbul
+#: activities/geo-country/resource/board/board5_0.qml:46
+msgctxt "board5_0|"
+msgid "İstanbul"
+msgstr "ഇസ്താംബുൾ"
+
+#. Province of Turkey: Kocaeli
+#: activities/geo-country/resource/board/board5_0.qml:53
+msgctxt "board5_0|"
+msgid "Kocaeli"
+msgstr "കൊജേല്"
+
+#. Province of Turkey: Sakarya
 #: activities/geo-country/resource/board/board5_0.qml:60
+msgctxt "board5_0|"
+msgid "Sakarya"
+msgstr "സക്കാര്യ"
+
+#. Province of Turkey: Düzce
+#: activities/geo-country/resource/board/board5_0.qml:67
+msgctxt "board5_0|"
+msgid "Düzce"
+msgstr "ദ്യൂസ്ജെ"
+
+#. Province of Turkey: Zonguldak
+#: activities/geo-country/resource/board/board5_0.qml:74
+msgctxt "board5_0|"
+msgid "Zonguldak"
+msgstr "സോംഗുൽദാക്"
+
+#. Province of Turkey: Bartın
+#: activities/geo-country/resource/board/board5_0.qml:81
+msgctxt "board5_0|"
+msgid "Bartın"
+msgstr "ബാർട്ടിൻ"
+
+#. Province of Turkey: Karabük
+#: activities/geo-country/resource/board/board5_0.qml:88
+msgctxt "board5_0|"
+msgid "Karabük"
+msgstr "കരബ്യൂക്"
+
+#. Province of Turkey: Kastamonu
+#: activities/geo-country/resource/board/board5_0.qml:95
+msgctxt "board5_0|"
+msgid "Kastamonu"
+msgstr "കസ്തമോന്"
+
+#. Province of Turkey: Sinop
+#: activities/geo-country/resource/board/board5_0.qml:102
 msgctxt "board5_0|"
 msgid "Sinop"
 msgstr "സിനോപ്"
 
 #. Province of Turkey: Samsun
-#: activities/geo-country/resource/board/board5_0.qml:67
+#: activities/geo-country/resource/board/board5_0.qml:109
 msgctxt "board5_0|"
 msgid "Samsun"
 msgstr "സാംസുൻ"
 
-#. Province of Turkey: Sakarya
-#: activities/geo-country/resource/board/board5_0.qml:74
+#. Province of Turkey: Yalova
+#: activities/geo-country/resource/board/board5_0.qml:116
 msgctxt "board5_0|"
-msgid "Sakarya"
-msgstr "സക്കാര്യ"
+msgid "Yalova"
+msgstr "യലോവ"
 
-#. Province of Turkey: Niğde
-#: activities/geo-country/resource/board/board5_0.qml:81
+#. Province of Turkey: Bolu
+#: activities/geo-country/resource/board/board5_0.qml:123
 msgctxt "board5_0|"
-msgid "Niğde"
-msgstr "നീദെ"
+msgid "Bolu"
+msgstr "ബൊലു"
 
-#. Province of Turkey: Nevşehir
-#: activities/geo-country/resource/board/board5_0.qml:88
+#. Province of Turkey: Çankırı
+#: activities/geo-country/resource/board/board5_0.qml:130
 msgctxt "board5_0|"
-msgid "Nevşehir"
-msgstr "നേവ്‌ഷെയിഷ്"
+msgid "Çankırı"
+msgstr "ചാങ്കിര്"
 
-#. Province of Turkey: Muğla
-#: activities/geo-country/resource/board/board5_0.qml:95
+#. Province of Turkey: Çorum
+#: activities/geo-country/resource/board/board5_0.qml:137
 msgctxt "board5_0|"
-msgid "Muğla"
-msgstr "മൂള"
+msgid "Çorum"
+msgstr "ചോരും"
 
-#. Province of Turkey: Mersin
-#: activities/geo-country/resource/board/board5_0.qml:102
+#. Province of Turkey: Amasya
+#: activities/geo-country/resource/board/board5_0.qml:144
 msgctxt "board5_0|"
-msgid "Mersin"
-msgstr "മേഴ്സിൻ"
+msgid "Amasya"
+msgstr "അമാസ്യ"
+
+#. Province of Turkey: Çanakkale
+#: activities/geo-country/resource/board/board5_0.qml:151
+msgctxt "board5_0|"
+msgid "Çanakkale"
+msgstr "ചനാക്കല്"
+
+#. Province of Turkey: Balıkesir
+#: activities/geo-country/resource/board/board5_0.qml:158
+msgctxt "board5_0|"
+msgid "Balıkesir"
+msgstr "ബാലിക്കിസീർ"
+
+#. Province of Turkey: Bursa
+#: activities/geo-country/resource/board/board5_0.qml:165
+msgctxt "board5_0|"
+msgid "Bursa"
+msgstr "ബുർസാ"
+
+#. Province of Turkey: Bilecik
+#: activities/geo-country/resource/board/board5_0.qml:172
+msgctxt "board5_0|"
+msgid "Bilecik"
+msgstr "ബിലേജിക്"
+
+#. Province of Turkey: Eskişehir
+#: activities/geo-country/resource/board/board5_0.qml:179
+msgctxt "board5_0|"
+msgid "Eskişehir"
+msgstr "എസ്കിഷെഹിഷ്"
+
+#. Province of Turkey: Ankara
+#: activities/geo-country/resource/board/board5_0.qml:186
+msgctxt "board5_0|"
+msgid "Ankara"
+msgstr "അങ്കാറ"
+
+#. Province of Turkey: Kırıkkale
+#: activities/geo-country/resource/board/board5_0.qml:193
+msgctxt "board5_0|"
+msgid "Kırıkkale"
+msgstr "കിരിക്കല്"
+
+#. Province of Turkey: Kirsehir
+#: activities/geo-country/resource/board/board5_0.qml:200
+msgctxt "board5_0|"
+msgid "Kirsehir"
+msgstr "കിർസെഹിഷ്"
+
+#. Province of Turkey: Yozgat
+#: activities/geo-country/resource/board/board5_0.qml:207
+msgctxt "board5_0|"
+msgid "Yozgat"
+msgstr "യോസ്ഗാത്"
+
+#. Province of Turkey: İzmir
+#: activities/geo-country/resource/board/board5_0.qml:214
+msgctxt "board5_0|"
+msgid "İzmir"
+msgstr "ഇസ്മിർ"
 
 #. Province of Turkey: Manisa
-#: activities/geo-country/resource/board/board5_0.qml:109
+#: activities/geo-country/resource/board/board5_0.qml:221
 msgctxt "board5_0|"
 msgid "Manisa"
 msgstr "മനിസ്സ"
 
 #. Province of Turkey: Kütahya
-#: activities/geo-country/resource/board/board5_0.qml:116
+#: activities/geo-country/resource/board/board5_0.qml:228
 msgctxt "board5_0|"
 msgid "Kütahya"
 msgstr "ക്യൂട്ടാഹിയ"
 
-#. Province of Turkey: Konya
-#: activities/geo-country/resource/board/board5_0.qml:123
+#. Province of Turkey: Uşak
+#: activities/geo-country/resource/board/board5_0.qml:235
 msgctxt "board5_0|"
-msgid "Konya"
-msgstr "കോന്യ"
+msgid "Uşak"
+msgstr "ഉശാക്"
 
-#. Province of Turkey: Kocaeli
-#: activities/geo-country/resource/board/board5_0.qml:130
+#. Province of Turkey: Afyon
+#: activities/geo-country/resource/board/board5_0.qml:242
 msgctxt "board5_0|"
-msgid "Kocaeli"
-msgstr "കൊജേല്"
-
-#. Province of Turkey: Kirsehir
-#: activities/geo-country/resource/board/board5_0.qml:137
-msgctxt "board5_0|"
-msgid "Kirsehir"
-msgstr "കിർസെഹിഷ്"
-
-#. Province of Turkey: Kırklareli
-#: activities/geo-country/resource/board/board5_0.qml:144
-msgctxt "board5_0|"
-msgid "Kırklareli"
-msgstr "കിർക്ലരേല്"
-
-#. Province of Turkey: Kırıkkale
-#: activities/geo-country/resource/board/board5_0.qml:151
-msgctxt "board5_0|"
-msgid "Kırıkkale"
-msgstr "കിരിക്കല്"
-
-#. Province of Turkey: Kayseri
-#: activities/geo-country/resource/board/board5_0.qml:158
-msgctxt "board5_0|"
-msgid "Kayseri"
-msgstr "കായ്സെര്"
-
-#. Province of Turkey: Kastamonu
-#: activities/geo-country/resource/board/board5_0.qml:165
-msgctxt "board5_0|"
-msgid "Kastamonu"
-msgstr "കസ്തമോന്"
-
-#. Province of Turkey: Karaman
-#: activities/geo-country/resource/board/board5_0.qml:172
-msgctxt "board5_0|"
-msgid "Karaman"
-msgstr "കരമാൻ"
-
-#. Province of Turkey: Karabük
-#: activities/geo-country/resource/board/board5_0.qml:179
-msgctxt "board5_0|"
-msgid "Karabük"
-msgstr "കരബ്യൂക്"
-
-#. Province of Turkey: İzmir
-#: activities/geo-country/resource/board/board5_0.qml:186
-msgctxt "board5_0|"
-msgid "İzmir"
-msgstr "ഇസ്മിർ"
-
-#. Province of Turkey: İstanbul
-#: activities/geo-country/resource/board/board5_0.qml:193
-msgctxt "board5_0|"
-msgid "İstanbul"
-msgstr "ഇസ്താംബുൾ"
+msgid "Afyon"
+msgstr "ആഫ്യോൺ"
 
 #. Province of Turkey: Isparta
-#: activities/geo-country/resource/board/board5_0.qml:200
+#: activities/geo-country/resource/board/board5_0.qml:249
 msgctxt "board5_0|"
 msgid "Isparta"
 msgstr "ഇസ്‌പാർട്ട"
 
-#. Province of Turkey: Eskişehir
-#: activities/geo-country/resource/board/board5_0.qml:207
-msgctxt "board5_0|"
-msgid "Eskişehir"
-msgstr "എസ്കിഷെഹിഷ്"
-
-#. Province of Turkey: Edirne
-#: activities/geo-country/resource/board/board5_0.qml:214
-msgctxt "board5_0|"
-msgid "Edirne"
-msgstr "എഡൈൻ"
-
-#. Province of Turkey: Düzce
-#: activities/geo-country/resource/board/board5_0.qml:221
-msgctxt "board5_0|"
-msgid "Düzce"
-msgstr "ദ്യൂസ്ജെ"
-
-#. Province of Turkey: Denizli
-#: activities/geo-country/resource/board/board5_0.qml:228
-msgctxt "board5_0|"
-msgid "Denizli"
-msgstr "ദെനിസ്ല്"
-
-#. Province of Turkey: Çorum
-#: activities/geo-country/resource/board/board5_0.qml:235
-msgctxt "board5_0|"
-msgid "Çorum"
-msgstr "ചോരും"
-
-#. Province of Turkey: Çankırı
-#: activities/geo-country/resource/board/board5_0.qml:242
-msgctxt "board5_0|"
-msgid "Çankırı"
-msgstr "ചാങ്കിര്"
-
-#. Province of Turkey: Çanakkale
-#: activities/geo-country/resource/board/board5_0.qml:249
-msgctxt "board5_0|"
-msgid "Çanakkale"
-msgstr "ചനാക്കല്"
-
-#. Province of Turkey: Bursa
+#. Province of Turkey: Konya
 #: activities/geo-country/resource/board/board5_0.qml:256
 msgctxt "board5_0|"
-msgid "Bursa"
-msgstr "ബുർസാ"
-
-#. Province of Turkey: Burdur
-#: activities/geo-country/resource/board/board5_0.qml:263
-msgctxt "board5_0|"
-msgid "Burdur"
-msgstr "ബൂർദുർ"
-
-#. Province of Turkey: Bolu
-#: activities/geo-country/resource/board/board5_0.qml:270
-msgctxt "board5_0|"
-msgid "Bolu"
-msgstr "ബൊലു"
-
-#. Province of Turkey: Bilecik
-#: activities/geo-country/resource/board/board5_0.qml:277
-msgctxt "board5_0|"
-msgid "Bilecik"
-msgstr "ബിലേജിക്"
-
-#. Province of Turkey: Bartın
-#: activities/geo-country/resource/board/board5_0.qml:284
-msgctxt "board5_0|"
-msgid "Bartın"
-msgstr "ബാർട്ടിൻ"
-
-#. Province of Turkey: Balıkesir
-#: activities/geo-country/resource/board/board5_0.qml:291
-msgctxt "board5_0|"
-msgid "Balıkesir"
-msgstr "ബാലിക്കിസീർ"
-
-#. Province of Turkey: Aydın
-#: activities/geo-country/resource/board/board5_0.qml:298
-msgctxt "board5_0|"
-msgid "Aydın"
-msgstr "ഐദിൻ"
-
-#. Province of Turkey: Antalya
-#: activities/geo-country/resource/board/board5_0.qml:305
-msgctxt "board5_0|"
-msgid "Antalya"
-msgstr "അന്താല്യ"
-
-#. Province of Turkey: Ankara
-#: activities/geo-country/resource/board/board5_0.qml:312
-msgctxt "board5_0|"
-msgid "Ankara"
-msgstr "അങ്കാറ"
-
-#. Province of Turkey: Amasya
-#: activities/geo-country/resource/board/board5_0.qml:319
-msgctxt "board5_0|"
-msgid "Amasya"
-msgstr "അമാസ്യ"
+msgid "Konya"
+msgstr "കോന്യ"
 
 #. Province of Turkey: Aksaray
-#: activities/geo-country/resource/board/board5_0.qml:326
+#: activities/geo-country/resource/board/board5_0.qml:263
 msgctxt "board5_0|"
 msgid "Aksaray"
 msgstr "അക്സരായ്"
 
-#. Province of Turkey: Afyon
+#. Province of Turkey: Nevşehir
+#: activities/geo-country/resource/board/board5_0.qml:270
+msgctxt "board5_0|"
+msgid "Nevşehir"
+msgstr "നേവ്‌ഷെയിഷ്"
+
+#. Province of Turkey: Niğde
+#: activities/geo-country/resource/board/board5_0.qml:277
+msgctxt "board5_0|"
+msgid "Niğde"
+msgstr "നീദെ"
+
+#. Province of Turkey: Kayseri
+#: activities/geo-country/resource/board/board5_0.qml:284
+msgctxt "board5_0|"
+msgid "Kayseri"
+msgstr "കായ്സെര്"
+
+#. Province of Turkey: Aydın
+#: activities/geo-country/resource/board/board5_0.qml:291
+msgctxt "board5_0|"
+msgid "Aydın"
+msgstr "ഐദിൻ"
+
+#. Province of Turkey: Muğla
+#: activities/geo-country/resource/board/board5_0.qml:298
+msgctxt "board5_0|"
+msgid "Muğla"
+msgstr "മൂള"
+
+#. Province of Turkey: Denizli
+#: activities/geo-country/resource/board/board5_0.qml:305
+msgctxt "board5_0|"
+msgid "Denizli"
+msgstr "ദെനിസ്ല്"
+
+#. Province of Turkey: Burdur
+#: activities/geo-country/resource/board/board5_0.qml:312
+msgctxt "board5_0|"
+msgid "Burdur"
+msgstr "ബൂർദുർ"
+
+#. Province of Turkey: Antalya
+#: activities/geo-country/resource/board/board5_0.qml:319
+msgctxt "board5_0|"
+msgid "Antalya"
+msgstr "അന്താല്യ"
+
+#. Province of Turkey: Karaman
+#: activities/geo-country/resource/board/board5_0.qml:326
+msgctxt "board5_0|"
+msgid "Karaman"
+msgstr "കരമാൻ"
+
+#. Province of Turkey: Mersin
 #: activities/geo-country/resource/board/board5_0.qml:333
 msgctxt "board5_0|"
-msgid "Afyon"
-msgstr "ആഫ്യോൺ"
+msgid "Mersin"
+msgstr "മേഴ്സിൻ"
 
 #. Province of Turkey: Adana
 #: activities/geo-country/resource/board/board5_0.qml:340
@@ -13133,453 +13208,453 @@ msgctxt "board5_1|"
 msgid "Eastern Provinces of Turkey"
 msgstr "തുർക്കിയിലെ കിഴക്കൻ പ്രവിശ്യകൾ"
 
-#. Province of Turkey: Van
-#: activities/geo-country/resource/board/board5_1.qml:24
-msgctxt "board5_1|"
-msgid "Van"
-msgstr "വാൻ"
-
-#. Province of Turkey: Tunceli
-#: activities/geo-country/resource/board/board5_1.qml:31
-msgctxt "board5_1|"
-msgid "Tunceli"
-msgstr "തുഞ്ചെല്"
-
-#. Province of Turkey: Trabzon
-#: activities/geo-country/resource/board/board5_1.qml:38
-msgctxt "board5_1|"
-msgid "Trabzon"
-msgstr "റ്റ്രാബ്സോൺ"
-
 #. Province of Turkey: Tokat
-#: activities/geo-country/resource/board/board5_1.qml:45
+#: activities/geo-country/resource/board/board5_1.qml:24
 msgctxt "board5_1|"
 msgid "Tokat"
 msgstr "തൊക്കാത്"
 
-#. Province of Turkey: Sivas
-#: activities/geo-country/resource/board/board5_1.qml:52
-msgctxt "board5_1|"
-msgid "Sivas"
-msgstr "സിവാസ്"
-
-#. Province of Turkey: Şırnak
-#: activities/geo-country/resource/board/board5_1.qml:59
-msgctxt "board5_1|"
-msgid "Şırnak"
-msgstr "ശിർണാക്"
-
-#. Province of Turkey: Siirt
-#: activities/geo-country/resource/board/board5_1.qml:66
-msgctxt "board5_1|"
-msgid "Siirt"
-msgstr "സീർത്"
-
-#. Province of Turkey: Şanlıurfa
-#: activities/geo-country/resource/board/board5_1.qml:73
-msgctxt "board5_1|"
-msgid "Şanlıurfa"
-msgstr "ശാൻലൂർഫ"
-
-#. Province of Turkey: Rize
-#: activities/geo-country/resource/board/board5_1.qml:80
-msgctxt "board5_1|"
-msgid "Rize"
-msgstr "റിസെ"
-
-#. Province of Turkey: Osmaniye
-#: activities/geo-country/resource/board/board5_1.qml:87
-msgctxt "board5_1|"
-msgid "Osmaniye"
-msgstr "ഒസ്മാനിയെ"
-
 #. Province of Turkey: Ordu
-#: activities/geo-country/resource/board/board5_1.qml:94
+#: activities/geo-country/resource/board/board5_1.qml:31
 msgctxt "board5_1|"
 msgid "Ordu"
 msgstr "ഓർദു"
 
-#. Province of Turkey: Muş
-#: activities/geo-country/resource/board/board5_1.qml:101
-msgctxt "board5_1|"
-msgid "Muş"
-msgstr "മുഷ്"
-
-#. Province of Turkey: Mardin
-#: activities/geo-country/resource/board/board5_1.qml:108
-msgctxt "board5_1|"
-msgid "Mardin"
-msgstr "മാർദിൻ"
-
-#. Province of Turkey: Malatya
-#: activities/geo-country/resource/board/board5_1.qml:115
-msgctxt "board5_1|"
-msgid "Malatya"
-msgstr "മലാട്യ"
-
-#. Province of Turkey: Kilis
-#: activities/geo-country/resource/board/board5_1.qml:122
-msgctxt "board5_1|"
-msgid "Kilis"
-msgstr "കിലിസ്"
-
-#. Province of Turkey: Kars
-#: activities/geo-country/resource/board/board5_1.qml:129
-msgctxt "board5_1|"
-msgid "Kars"
-msgstr "കാർസ്"
-
-#. Province of Turkey: Kahramanmaraş
-#: activities/geo-country/resource/board/board5_1.qml:136
-msgctxt "board5_1|"
-msgid "Kahramanmaraş"
-msgstr "കാഹ്രമാൻമറാഷ്"
-
-#. Province of Turkey: Iğdır
-#: activities/geo-country/resource/board/board5_1.qml:143
-msgctxt "board5_1|"
-msgid "Iğdır"
-msgstr "ഈർദിഷ്"
-
-#. Province of Turkey: Hatay
-#: activities/geo-country/resource/board/board5_1.qml:150
-msgctxt "board5_1|"
-msgid "Hatay"
-msgstr "ഹതായ്"
-
-#. Province of Turkey: Hakkari
-#: activities/geo-country/resource/board/board5_1.qml:157
-msgctxt "board5_1|"
-msgid "Hakkari"
-msgstr "ഹക്കാര്"
-
-#. Province of Turkey: Gümüşhane
-#: activities/geo-country/resource/board/board5_1.qml:164
-msgctxt "board5_1|"
-msgid "Gümüşhane"
-msgstr "ഗ്യുമ്യുഷ്‌ഹാന്"
-
 #. Province of Turkey: Giresun
-#: activities/geo-country/resource/board/board5_1.qml:171
+#: activities/geo-country/resource/board/board5_1.qml:38
 msgctxt "board5_1|"
 msgid "Giresun"
 msgstr "ഗിരേസുൻ"
 
-#. Province of Turkey: Gaziantep
-#: activities/geo-country/resource/board/board5_1.qml:178
+#. Province of Turkey: Gümüşhane
+#: activities/geo-country/resource/board/board5_1.qml:45
 msgctxt "board5_1|"
-msgid "Gaziantep"
-msgstr "ഗാസ്യാൻ‌ടെപ്"
+msgid "Gümüşhane"
+msgstr "ഗ്യുമ്യുഷ്‌ഹാന്"
 
-#. Province of Turkey: Erzurum
-#: activities/geo-country/resource/board/board5_1.qml:185
+#. Province of Turkey: Trabzon
+#: activities/geo-country/resource/board/board5_1.qml:52
 msgctxt "board5_1|"
-msgid "Erzurum"
-msgstr "ഏർസുരും"
-
-#. Province of Turkey: Erzincan
-#: activities/geo-country/resource/board/board5_1.qml:192
-msgctxt "board5_1|"
-msgid "Erzincan"
-msgstr "ഏർസിഞ്ചാൻ"
-
-#. Province of Turkey: Elazığ
-#: activities/geo-country/resource/board/board5_1.qml:199
-msgctxt "board5_1|"
-msgid "Elazığ"
-msgstr "എലസ്"
-
-#. Province of Turkey: Diyarbakır
-#: activities/geo-country/resource/board/board5_1.qml:206
-msgctxt "board5_1|"
-msgid "Diyarbakır"
-msgstr "ദിയാർബക്കിഷ്"
-
-#. Province of Turkey: Bitlis
-#: activities/geo-country/resource/board/board5_1.qml:213
-msgctxt "board5_1|"
-msgid "Bitlis"
-msgstr "ബിറ്റ്‌ലിസ്"
-
-#. Province of Turkey: Bingöl
-#: activities/geo-country/resource/board/board5_1.qml:220
-msgctxt "board5_1|"
-msgid "Bingöl"
-msgstr "ബിങ്കോൾ"
+msgid "Trabzon"
+msgstr "റ്റ്രാബ്സോൺ"
 
 #. Province of Turkey: Bayburt
-#: activities/geo-country/resource/board/board5_1.qml:227
+#: activities/geo-country/resource/board/board5_1.qml:59
 msgctxt "board5_1|"
 msgid "Bayburt"
 msgstr "ബായ്ബുർത്"
 
-#. Province of Turkey: Batman
-#: activities/geo-country/resource/board/board5_1.qml:234
+#. Province of Turkey: Rize
+#: activities/geo-country/resource/board/board5_1.qml:66
 msgctxt "board5_1|"
-msgid "Batman"
-msgstr "ബാറ്റ്‌മാൻ"
+msgid "Rize"
+msgstr "റിസെ"
 
 #. Province of Turkey: Artvin
-#: activities/geo-country/resource/board/board5_1.qml:241
+#: activities/geo-country/resource/board/board5_1.qml:73
 msgctxt "board5_1|"
 msgid "Artvin"
 msgstr "ആർത്‌വിൻ"
 
 #. Province of Turkey: Ardahan
-#: activities/geo-country/resource/board/board5_1.qml:248
+#: activities/geo-country/resource/board/board5_1.qml:80
 msgctxt "board5_1|"
 msgid "Ardahan"
 msgstr "ആർദഹാൻ"
 
+#. Province of Turkey: Sivas
+#: activities/geo-country/resource/board/board5_1.qml:87
+msgctxt "board5_1|"
+msgid "Sivas"
+msgstr "സിവാസ്"
+
+#. Province of Turkey: Erzincan
+#: activities/geo-country/resource/board/board5_1.qml:94
+msgctxt "board5_1|"
+msgid "Erzincan"
+msgstr "ഏർസിഞ്ചാൻ"
+
+#. Province of Turkey: Erzurum
+#: activities/geo-country/resource/board/board5_1.qml:101
+msgctxt "board5_1|"
+msgid "Erzurum"
+msgstr "ഏർസുരും"
+
+#. Province of Turkey: Kars
+#: activities/geo-country/resource/board/board5_1.qml:108
+msgctxt "board5_1|"
+msgid "Kars"
+msgstr "കാർസ്"
+
+#. Province of Turkey: Iğdır
+#: activities/geo-country/resource/board/board5_1.qml:115
+msgctxt "board5_1|"
+msgid "Iğdır"
+msgstr "ഈർദിഷ്"
+
 #. Province of Turkey: Ağrı
-#: activities/geo-country/resource/board/board5_1.qml:255
+#: activities/geo-country/resource/board/board5_1.qml:122
 msgctxt "board5_1|"
 msgid "Ağrı"
 msgstr "ആറ്"
 
+#. Province of Turkey: Tunceli
+#: activities/geo-country/resource/board/board5_1.qml:129
+msgctxt "board5_1|"
+msgid "Tunceli"
+msgstr "തുഞ്ചെല്"
+
+#. Province of Turkey: Bingöl
+#: activities/geo-country/resource/board/board5_1.qml:136
+msgctxt "board5_1|"
+msgid "Bingöl"
+msgstr "ബിങ്കോൾ"
+
+#. Province of Turkey: Muş
+#: activities/geo-country/resource/board/board5_1.qml:143
+msgctxt "board5_1|"
+msgid "Muş"
+msgstr "മുഷ്"
+
+#. Province of Turkey: Kahramanmaraş
+#: activities/geo-country/resource/board/board5_1.qml:150
+msgctxt "board5_1|"
+msgid "Kahramanmaraş"
+msgstr "കാഹ്രമാൻമറാഷ്"
+
+#. Province of Turkey: Malatya
+#: activities/geo-country/resource/board/board5_1.qml:157
+msgctxt "board5_1|"
+msgid "Malatya"
+msgstr "മലാട്യ"
+
+#. Province of Turkey: Elazığ
+#: activities/geo-country/resource/board/board5_1.qml:164
+msgctxt "board5_1|"
+msgid "Elazığ"
+msgstr "എലസ്"
+
+#. Province of Turkey: Diyarbakır
+#: activities/geo-country/resource/board/board5_1.qml:171
+msgctxt "board5_1|"
+msgid "Diyarbakır"
+msgstr "ദിയാർബക്കിഷ്"
+
+#. Province of Turkey: Batman
+#: activities/geo-country/resource/board/board5_1.qml:178
+msgctxt "board5_1|"
+msgid "Batman"
+msgstr "ബാറ്റ്‌മാൻ"
+
+#. Province of Turkey: Siirt
+#: activities/geo-country/resource/board/board5_1.qml:185
+msgctxt "board5_1|"
+msgid "Siirt"
+msgstr "സീർത്"
+
+#. Province of Turkey: Bitlis
+#: activities/geo-country/resource/board/board5_1.qml:192
+msgctxt "board5_1|"
+msgid "Bitlis"
+msgstr "ബിറ്റ്‌ലിസ്"
+
+#. Province of Turkey: Van
+#: activities/geo-country/resource/board/board5_1.qml:199
+msgctxt "board5_1|"
+msgid "Van"
+msgstr "വാൻ"
+
+#. Province of Turkey: Osmaniye
+#: activities/geo-country/resource/board/board5_1.qml:206
+msgctxt "board5_1|"
+msgid "Osmaniye"
+msgstr "ഒസ്മാനിയെ"
+
+#. Province of Turkey: Gaziantep
+#: activities/geo-country/resource/board/board5_1.qml:213
+msgctxt "board5_1|"
+msgid "Gaziantep"
+msgstr "ഗാസ്യാൻ‌ടെപ്"
+
 #. Province of Turkey: Adıyaman
-#: activities/geo-country/resource/board/board5_1.qml:262
+#: activities/geo-country/resource/board/board5_1.qml:220
 msgctxt "board5_1|"
 msgid "Adıyaman"
 msgstr "അദിയമാൻ"
+
+#. Province of Turkey: Şanlıurfa
+#: activities/geo-country/resource/board/board5_1.qml:227
+msgctxt "board5_1|"
+msgid "Şanlıurfa"
+msgstr "ശാൻലൂർഫ"
+
+#. Province of Turkey: Mardin
+#: activities/geo-country/resource/board/board5_1.qml:234
+msgctxt "board5_1|"
+msgid "Mardin"
+msgstr "മാർദിൻ"
+
+#. Province of Turkey: Şırnak
+#: activities/geo-country/resource/board/board5_1.qml:241
+msgctxt "board5_1|"
+msgid "Şırnak"
+msgstr "ശിർണാക്"
+
+#. Province of Turkey: Hakkari
+#: activities/geo-country/resource/board/board5_1.qml:248
+msgctxt "board5_1|"
+msgid "Hakkari"
+msgstr "ഹക്കാര്"
+
+#. Province of Turkey: Kilis
+#: activities/geo-country/resource/board/board5_1.qml:255
+msgctxt "board5_1|"
+msgid "Kilis"
+msgstr "കിലിസ്"
+
+#. Province of Turkey: Hatay
+#: activities/geo-country/resource/board/board5_1.qml:262
+msgctxt "board5_1|"
+msgid "Hatay"
+msgstr "ഹതായ്"
 
 #: activities/geo-country/resource/board/board6_0.qml:17
 msgctxt "board6_0|"
 msgid "Counties of Norway"
 msgstr "നോർവെയിലെ മണ്ഡലങ്ങൾ"
 
-#. County of Norway: Vestfold og Telemark
-#: activities/geo-country/resource/board/board6_0.qml:26
-msgctxt "board6_0|"
-msgid "Vestfold og Telemark"
-msgstr "വെസ്റ്റ്‌ഫൊൾ ഒഫ് ടിയെലെമാർക്"
-
-#. County of Norway: Viken
-#: activities/geo-country/resource/board/board6_0.qml:33
-msgctxt "board6_0|"
-msgid "Viken"
-msgstr "വീക്കെൻ"
-
-#. County of Norway: Nordland
-#: activities/geo-country/resource/board/board6_0.qml:40
-msgctxt "board6_0|"
-msgid "Nordland"
-msgstr "നോർലാൻ"
-
 #. County of Norway: Troms og Finnmark
-#: activities/geo-country/resource/board/board6_0.qml:47
+#: activities/geo-country/resource/board/board6_0.qml:26
 msgctxt "board6_0|"
 msgid "Troms og Finnmark"
 msgstr "ട്രോംസ് ഒഫ് ഫിൻമാർക്"
 
+#. County of Norway: Nordland
+#: activities/geo-country/resource/board/board6_0.qml:33
+msgctxt "board6_0|"
+msgid "Nordland"
+msgstr "നോർലാൻ"
+
 #. County of Norway: Trøndelag
-#: activities/geo-country/resource/board/board6_0.qml:54
+#: activities/geo-country/resource/board/board6_0.qml:40
 msgctxt "board6_0|"
 msgid "Trøndelag"
 msgstr "ത്രൊന്തെലാഗ്"
 
-#. County of Norway: Oslo
-#: activities/geo-country/resource/board/board6_0.qml:61
-msgctxt "board6_0|"
-msgid "Oslo"
-msgstr "ഓസ്ലൊ"
-
 #. County of Norway: Møre og Romsdal
-#: activities/geo-country/resource/board/board6_0.qml:68
+#: activities/geo-country/resource/board/board6_0.qml:47
 msgctxt "board6_0|"
 msgid "Møre og Romsdal"
 msgstr "മേറ് ഒഫ് റൊംസ്ഡാൾ"
 
-#. County of Norway: Agder
-#: activities/geo-country/resource/board/board6_0.qml:75
-msgctxt "board6_0|"
-msgid "Agder"
-msgstr "ആഗ്ദിർ"
-
 #. County of Norway: Innlandet
-#: activities/geo-country/resource/board/board6_0.qml:82
+#: activities/geo-country/resource/board/board6_0.qml:54
 msgctxt "board6_0|"
 msgid "Innlandet"
 msgstr "ഇൻലാന്ന്"
 
 #. County of Norway: Vestland
-#: activities/geo-country/resource/board/board6_0.qml:89
+#: activities/geo-country/resource/board/board6_0.qml:61
 msgctxt "board6_0|"
 msgid "Vestland"
 msgstr "വെസ്റ്റ്‍ലാൻ"
 
+#. County of Norway: Viken
+#: activities/geo-country/resource/board/board6_0.qml:68
+msgctxt "board6_0|"
+msgid "Viken"
+msgstr "വീക്കെൻ"
+
+#. County of Norway: Oslo
+#: activities/geo-country/resource/board/board6_0.qml:75
+msgctxt "board6_0|"
+msgid "Oslo"
+msgstr "ഓസ്ലൊ"
+
+#. County of Norway: Vestfold og Telemark
+#: activities/geo-country/resource/board/board6_0.qml:82
+msgctxt "board6_0|"
+msgid "Vestfold og Telemark"
+msgstr "വെസ്റ്റ്‌ഫൊൾ ഒഫ് ടിയെലെമാർക്"
+
 #. County of Norway: Rogaland
-#: activities/geo-country/resource/board/board6_0.qml:96
+#: activities/geo-country/resource/board/board6_0.qml:89
 msgctxt "board6_0|"
 msgid "Rogaland"
 msgstr "റൂഗാലാൻ"
+
+#. County of Norway: Agder
+#: activities/geo-country/resource/board/board6_0.qml:96
+msgctxt "board6_0|"
+msgid "Agder"
+msgstr "ആഗ്ദിർ"
 
 #: activities/geo-country/resource/board/board7_0.qml:15
 msgctxt "board7_0|"
 msgid "Federative units of Brazil"
 msgstr "ബ്രസീലിലെ ഫെഡറേറ്റീവ് യൂണിറ്റുകൾ"
 
-#. Federative unit of Brazil: Amazonas
+#. Federative unit of Brazil: Roraima
 #: activities/geo-country/resource/board/board7_0.qml:24
+msgctxt "board7_0|"
+msgid "Roraima"
+msgstr "റൊറൈമ"
+
+#. Federative unit of Brazil: Amapá
+#: activities/geo-country/resource/board/board7_0.qml:31
+msgctxt "board7_0|"
+msgid "Amapá"
+msgstr "അമാപാ"
+
+#. Federative unit of Brazil: Amazonas
+#: activities/geo-country/resource/board/board7_0.qml:38
 msgctxt "board7_0|"
 msgid "Amazonas"
 msgstr "ആമസോണാസ്"
 
 #. Federative unit of Brazil: Pará
-#: activities/geo-country/resource/board/board7_0.qml:31
+#: activities/geo-country/resource/board/board7_0.qml:45
 msgctxt "board7_0|"
 msgid "Pará"
 msgstr "പാര"
 
-#. Federative unit of Brazil: Mato Grosso
-#: activities/geo-country/resource/board/board7_0.qml:38
-msgctxt "board7_0|"
-msgid "Mato Grosso"
-msgstr "മാറ്റൊ ഗ്രോസൊ"
-
-#. Federative unit of Brazil: Minas Gerais
-#: activities/geo-country/resource/board/board7_0.qml:45
-msgctxt "board7_0|"
-msgid "Minas Gerais"
-msgstr "മീനാസ് ജെരായിസ്"
-
-#. Federative unit of Brazil: Bahia
-#: activities/geo-country/resource/board/board7_0.qml:52
-msgctxt "board7_0|"
-msgid "Bahia"
-msgstr "ബാഹിയ"
-
-#. Federative unit of Brazil: Mato Grosso do Sul
-#: activities/geo-country/resource/board/board7_0.qml:59
-msgctxt "board7_0|"
-msgid "Mato Grosso do Sul"
-msgstr "മാറ്റൊ ഗ്രോസൊ ഡൊ സൂ"
-
-#. Federative unit of Brazil: Goiás
-#: activities/geo-country/resource/board/board7_0.qml:66
-msgctxt "board7_0|"
-msgid "Goiás"
-msgstr "ഗോയാസ്"
-
 #. Federative unit of Brazil: Maranhão
-#: activities/geo-country/resource/board/board7_0.qml:73
+#: activities/geo-country/resource/board/board7_0.qml:52
 msgctxt "board7_0|"
 msgid "Maranhão"
 msgstr "മാരങ്ങാഓ"
 
-#. Federative unit of Brazil: Rio Grande do Sul
-#: activities/geo-country/resource/board/board7_0.qml:80
-msgctxt "board7_0|"
-msgid "Rio Grande do Sul"
-msgstr "റിയോ ഗ്രോന്റ് ഡൊ സൂ"
-
-#. Federative unit of Brazil: Tocantins
-#: activities/geo-country/resource/board/board7_0.qml:87
-msgctxt "board7_0|"
-msgid "Tocantins"
-msgstr "ടോക്കാഞ്ചിൻസ്"
-
 #. Federative unit of Brazil: Piauí
-#: activities/geo-country/resource/board/board7_0.qml:94
+#: activities/geo-country/resource/board/board7_0.qml:59
 msgctxt "board7_0|"
 msgid "Piauí"
 msgstr "പിയാഒയി"
 
-#. Federative unit of Brazil: São Paulo
-#: activities/geo-country/resource/board/board7_0.qml:101
-msgctxt "board7_0|"
-msgid "São Paulo"
-msgstr "സാവോ പോളോ"
-
-#. Federative unit of Brazil: Rondônia
-#: activities/geo-country/resource/board/board7_0.qml:108
-msgctxt "board7_0|"
-msgid "Rondônia"
-msgstr "റോന്തോണിയ"
-
-#. Federative unit of Brazil: Roraima
-#: activities/geo-country/resource/board/board7_0.qml:115
-msgctxt "board7_0|"
-msgid "Roraima"
-msgstr "റൊറൈമ"
-
-#. Federative unit of Brazil: Paraná
-#: activities/geo-country/resource/board/board7_0.qml:122
-msgctxt "board7_0|"
-msgid "Paraná"
-msgstr "പരാനാ"
-
-#. Federative unit of Brazil: Acre
-#: activities/geo-country/resource/board/board7_0.qml:129
-msgctxt "board7_0|"
-msgid "Acre"
-msgstr "അക്രേ"
-
 #. Federative unit of Brazil: Ceará
-#: activities/geo-country/resource/board/board7_0.qml:136
+#: activities/geo-country/resource/board/board7_0.qml:66
 msgctxt "board7_0|"
 msgid "Ceará"
 msgstr "സെയാറ"
 
-#. Federative unit of Brazil: Amapá
-#: activities/geo-country/resource/board/board7_0.qml:143
-msgctxt "board7_0|"
-msgid "Amapá"
-msgstr "അമാപാ"
-
-#. Federative unit of Brazil: Pernambuco
-#: activities/geo-country/resource/board/board7_0.qml:150
-msgctxt "board7_0|"
-msgid "Pernambuco"
-msgstr "പെർനാംബോക്കോ"
-
-#. Federative unit of Brazil: Santa Catarina
-#: activities/geo-country/resource/board/board7_0.qml:157
-msgctxt "board7_0|"
-msgid "Santa Catarina"
-msgstr "സാന്ത കതറീന"
-
-#. Federative unit of Brazil: Paraíba
-#: activities/geo-country/resource/board/board7_0.qml:164
-msgctxt "board7_0|"
-msgid "Paraíba"
-msgstr "പരയീബ"
-
 #. Federative unit of Brazil: Rio Grande do Norte
-#: activities/geo-country/resource/board/board7_0.qml:171
+#: activities/geo-country/resource/board/board7_0.qml:73
 msgctxt "board7_0|"
 msgid "Rio Grande do Norte"
 msgstr "റിയോ ഗ്രോന്റ് ഡൊ നോർട്ടി"
 
-#. Federative unit of Brazil: Espírito Santo
-#: activities/geo-country/resource/board/board7_0.qml:178
+#. Federative unit of Brazil: Paraíba
+#: activities/geo-country/resource/board/board7_0.qml:80
 msgctxt "board7_0|"
-msgid "Espírito Santo"
-msgstr "എസ്പീരിറ്റൊ സാന്തോ"
+msgid "Paraíba"
+msgstr "പരയീബ"
 
-#. Federative unit of Brazil: Rio de Janeiro
-#: activities/geo-country/resource/board/board7_0.qml:185
+#. Federative unit of Brazil: Pernambuco
+#: activities/geo-country/resource/board/board7_0.qml:87
 msgctxt "board7_0|"
-msgid "Rio de Janeiro"
-msgstr "റിയോ ഡി ജനീറോ"
+msgid "Pernambuco"
+msgstr "പെർനാംബോക്കോ"
 
 #. Federative unit of Brazil: Alagoas
-#: activities/geo-country/resource/board/board7_0.qml:192
+#: activities/geo-country/resource/board/board7_0.qml:94
 msgctxt "board7_0|"
 msgid "Alagoas"
 msgstr "അളഗോആസ്"
 
 #. Federative unit of Brazil: Sergipe
-#: activities/geo-country/resource/board/board7_0.qml:199
+#: activities/geo-country/resource/board/board7_0.qml:101
 msgctxt "board7_0|"
 msgid "Sergipe"
 msgstr "സെർജീപി"
 
+#. Federative unit of Brazil: Tocantins
+#: activities/geo-country/resource/board/board7_0.qml:108
+msgctxt "board7_0|"
+msgid "Tocantins"
+msgstr "ടോക്കാഞ്ചിൻസ്"
+
+#. Federative unit of Brazil: Acre
+#: activities/geo-country/resource/board/board7_0.qml:115
+msgctxt "board7_0|"
+msgid "Acre"
+msgstr "അക്രേ"
+
+#. Federative unit of Brazil: Rondônia
+#: activities/geo-country/resource/board/board7_0.qml:122
+msgctxt "board7_0|"
+msgid "Rondônia"
+msgstr "റോന്തോണിയ"
+
+#. Federative unit of Brazil: Mato Grosso
+#: activities/geo-country/resource/board/board7_0.qml:129
+msgctxt "board7_0|"
+msgid "Mato Grosso"
+msgstr "മാറ്റൊ ഗ്രോസൊ"
+
+#. Federative unit of Brazil: Bahia
+#: activities/geo-country/resource/board/board7_0.qml:136
+msgctxt "board7_0|"
+msgid "Bahia"
+msgstr "ബാഹിയ"
+
 #. Federative unit of Brazil: Distrito Federal
-#: activities/geo-country/resource/board/board7_0.qml:206
+#: activities/geo-country/resource/board/board7_0.qml:143
 msgctxt "board7_0|"
 msgid "Distrito Federal"
 msgstr "ഫെഡറൽ ഡിസ്ട്രിക്ട്"
+
+#. Federative unit of Brazil: Goiás
+#: activities/geo-country/resource/board/board7_0.qml:150
+msgctxt "board7_0|"
+msgid "Goiás"
+msgstr "ഗോയാസ്"
+
+#. Federative unit of Brazil: Minas Gerais
+#: activities/geo-country/resource/board/board7_0.qml:157
+msgctxt "board7_0|"
+msgid "Minas Gerais"
+msgstr "മീനാസ് ജെരായിസ്"
+
+#. Federative unit of Brazil: Espírito Santo
+#: activities/geo-country/resource/board/board7_0.qml:164
+msgctxt "board7_0|"
+msgid "Espírito Santo"
+msgstr "എസ്പീരിറ്റൊ സാന്തോ"
+
+#. Federative unit of Brazil: Mato Grosso do Sul
+#: activities/geo-country/resource/board/board7_0.qml:171
+msgctxt "board7_0|"
+msgid "Mato Grosso do Sul"
+msgstr "മാറ്റൊ ഗ്രോസൊ ഡൊ സൂ"
+
+#. Federative unit of Brazil: Rio de Janeiro
+#: activities/geo-country/resource/board/board7_0.qml:178
+msgctxt "board7_0|"
+msgid "Rio de Janeiro"
+msgstr "റിയോ ഡി ജനീറോ"
+
+#. Federative unit of Brazil: São Paulo
+#: activities/geo-country/resource/board/board7_0.qml:185
+msgctxt "board7_0|"
+msgid "São Paulo"
+msgstr "സാവോ പോളോ"
+
+#. Federative unit of Brazil: Paraná
+#: activities/geo-country/resource/board/board7_0.qml:192
+msgctxt "board7_0|"
+msgid "Paraná"
+msgstr "പരാനാ"
+
+#. Federative unit of Brazil: Santa Catarina
+#: activities/geo-country/resource/board/board7_0.qml:199
+msgctxt "board7_0|"
+msgid "Santa Catarina"
+msgstr "സാന്ത കതറീന"
+
+#. Federative unit of Brazil: Rio Grande do Sul
+#: activities/geo-country/resource/board/board7_0.qml:206
+msgctxt "board7_0|"
+msgid "Rio Grande do Sul"
+msgstr "റിയോ ഗ്രോന്റ് ഡൊ സൂ"
 
 #: activities/geo-country/resource/board/board8_0.qml:15
 msgctxt "board8_0|"
@@ -13592,23 +13667,23 @@ msgctxt "board8_0|"
 msgid "Yukon"
 msgstr "യൂക്കോൺ"
 
-#. Provinces and territories of Canada: British Columbia
-#: activities/geo-country/resource/board/board8_0.qml:31
-msgctxt "board8_0|"
-msgid "British Columbia"
-msgstr "ബ്രിട്ടീഷ് കൊളംബിയ"
-
 #. Provinces and territories of Canada: Northwest Territories
-#: activities/geo-country/resource/board/board8_0.qml:38
+#: activities/geo-country/resource/board/board8_0.qml:31
 msgctxt "board8_0|"
 msgid "Northwest Territories"
 msgstr "നോർത്ത്‍വെസ്റ്റ് ടെറിറ്ററീസ്"
 
 #. Provinces and territories of Canada: Nunavut
-#: activities/geo-country/resource/board/board8_0.qml:45
+#: activities/geo-country/resource/board/board8_0.qml:38
 msgctxt "board8_0|"
 msgid "Nunavut"
 msgstr "നുനാവട്"
+
+#. Provinces and territories of Canada: British Columbia
+#: activities/geo-country/resource/board/board8_0.qml:45
+msgctxt "board8_0|"
+msgid "British Columbia"
+msgstr "ബ്രിട്ടീഷ് കൊളംബിയ"
 
 #. Provinces and territories of Canada: Alberta
 #: activities/geo-country/resource/board/board8_0.qml:52
@@ -13646,70 +13721,70 @@ msgctxt "board8_0|"
 msgid "Newfoundland and Labrador"
 msgstr "ന്യൂഫൗണ്ടൻലാൻഡ് ആന്റ് ലാബ്രഡോർ"
 
-#. Provinces and territories of Canada: New Brunswick
+#. Provinces and territories of Canada: Prince Edward Island
 #: activities/geo-country/resource/board/board8_0.qml:94
+msgctxt "board8_0|"
+msgid "Prince Edward Island"
+msgstr "പ്രിൻസ് എഡ്വേർഡ് ഐലന്റ്"
+
+#. Provinces and territories of Canada: New Brunswick
+#: activities/geo-country/resource/board/board8_0.qml:101
 msgctxt "board8_0|"
 msgid "New Brunswick"
 msgstr "ന്യൂ ബ്രൺസ്വിക്ക്"
 
 #. Provinces and territories of Canada: Nova Scotia
-#: activities/geo-country/resource/board/board8_0.qml:101
+#: activities/geo-country/resource/board/board8_0.qml:108
 msgctxt "board8_0|"
 msgid "Nova Scotia"
 msgstr "നോവ സ്കോട്ടിയ"
-
-#. Provinces and territories of Canada: Prince Edward Island
-#: activities/geo-country/resource/board/board8_0.qml:108
-msgctxt "board8_0|"
-msgid "Prince Edward Island"
-msgstr "പ്രിൻസ് എഡ്വേർഡ് ഐലന്റ്"
 
 #: activities/geo-country/resource/board/board9_0.qml:15
 msgctxt "board9_0|"
 msgid "States of Mexico"
 msgstr "മെക്സിക്കോയിലെ സംസ്ഥാനങ്ങൾ"
 
-#. State of Mexico: Zacatecas
+#. State of Mexico: Baja California
 #: activities/geo-country/resource/board/board9_0.qml:24
 msgctxt "board9_0|"
-msgid "Zacatecas"
-msgstr "സാക്കറ്റെക്കാസ്"
+msgid "Baja California"
+msgstr "ബാഹാ കാലിഫോർണിയ"
 
-#. State of Mexico: Yucatán
+#. State of Mexico: Sonora
 #: activities/geo-country/resource/board/board9_0.qml:31
 msgctxt "board9_0|"
-msgid "Yucatán"
-msgstr "യൂക്കാത്താൻ"
+msgid "Sonora"
+msgstr "സൊണൊര"
 
-#. State of Mexico: Veracruz
+#. State of Mexico: Chihuahua
 #: activities/geo-country/resource/board/board9_0.qml:38
 msgctxt "board9_0|"
-msgid "Veracruz"
-msgstr "ബേരാക്രൂസ്"
+msgid "Chihuahua"
+msgstr "ചീഹ്വാഹ്വ"
 
-#. State of Mexico: Tlaxcala
+#. State of Mexico: Coahuila
 #: activities/geo-country/resource/board/board9_0.qml:45
 msgctxt "board9_0|"
-msgid "Tlaxcala"
-msgstr "റ്റ്‌ലാക്‌ഷ്കാല"
+msgid "Coahuila"
+msgstr "കൊഅവീല"
+
+#. State of Mexico: Nuevo León
+#: activities/geo-country/resource/board/board9_0.qml:52
+msgctxt "board9_0|"
+msgid "Nuevo León"
+msgstr "ന്വേബോ ലെയോൺ"
 
 #. State of Mexico: Tamaulipas
-#: activities/geo-country/resource/board/board9_0.qml:52
+#: activities/geo-country/resource/board/board9_0.qml:59
 msgctxt "board9_0|"
 msgid "Tamaulipas"
 msgstr "തമൗലീപാസ്"
 
-#. State of Mexico: Tabasco
-#: activities/geo-country/resource/board/board9_0.qml:59
-msgctxt "board9_0|"
-msgid "Tabasco"
-msgstr "റ്റബാഷ്കൊ"
-
-#. State of Mexico: Sonora
+#. State of Mexico: Baja California Sur
 #: activities/geo-country/resource/board/board9_0.qml:66
 msgctxt "board9_0|"
-msgid "Sonora"
-msgstr "സൊണൊര"
+msgid "Baja California Sur"
+msgstr "ബാഹാ കാലിഫോർണിയ സൂർ"
 
 #. State of Mexico: Sinaloa
 #: activities/geo-country/resource/board/board9_0.qml:73
@@ -13717,149 +13792,149 @@ msgctxt "board9_0|"
 msgid "Sinaloa"
 msgstr "സിനലോഅ"
 
-#. State of Mexico: San Luis Potosí
-#: activities/geo-country/resource/board/board9_0.qml:80
-msgctxt "board9_0|"
-msgid "San Luis Potosí"
-msgstr "സാൻ ലൂയിസ് പൊട്ടോസി"
-
-#. State of Mexico: Quintana Roo
-#: activities/geo-country/resource/board/board9_0.qml:87
-msgctxt "board9_0|"
-msgid "Quintana Roo"
-msgstr "കിന്താന റോ"
-
-#. State of Mexico: Querétaro
-#: activities/geo-country/resource/board/board9_0.qml:94
-msgctxt "board9_0|"
-msgid "Querétaro"
-msgstr "കെരേറ്റരൊ"
-
-#. State of Mexico: Puebla
-#: activities/geo-country/resource/board/board9_0.qml:101
-msgctxt "board9_0|"
-msgid "Puebla"
-msgstr "പ്വേബ്ല"
-
-#. State of Mexico: Oaxaca
-#: activities/geo-country/resource/board/board9_0.qml:108
-msgctxt "board9_0|"
-msgid "Oaxaca"
-msgstr "വഹാക്ക"
-
-#. State of Mexico: Nuevo León
-#: activities/geo-country/resource/board/board9_0.qml:115
-msgctxt "board9_0|"
-msgid "Nuevo León"
-msgstr "ന്വേബോ ലെയോൺ"
-
-#. State of Mexico: Nayarit
-#: activities/geo-country/resource/board/board9_0.qml:122
-msgctxt "board9_0|"
-msgid "Nayarit"
-msgstr "നയാരീത്"
-
-#. State of Mexico: Morelos
-#: activities/geo-country/resource/board/board9_0.qml:129
-msgctxt "board9_0|"
-msgid "Morelos"
-msgstr "മൊറേലോസ്"
-
-#. State of Mexico: Michoacán
-#: activities/geo-country/resource/board/board9_0.qml:136
-msgctxt "board9_0|"
-msgid "Michoacán"
-msgstr "മീച്ചൊആക്കാൻ"
-
-#. State of Mexico: Jalisco
-#: activities/geo-country/resource/board/board9_0.qml:143
-msgctxt "board9_0|"
-msgid "Jalisco"
-msgstr "ഹലീസ്കൊ"
-
-#. State of Mexico: Hidalgo
-#: activities/geo-country/resource/board/board9_0.qml:150
-msgctxt "board9_0|"
-msgid "Hidalgo"
-msgstr "ഇഡാൽഗൊ"
-
-#. State of Mexico: Guerrero
-#: activities/geo-country/resource/board/board9_0.qml:157
-msgctxt "board9_0|"
-msgid "Guerrero"
-msgstr "ഗെറേരോ"
-
-#. State of Mexico: Guanajuato
-#: activities/geo-country/resource/board/board9_0.qml:164
-msgctxt "board9_0|"
-msgid "Guanajuato"
-msgstr "ഗ്വാനഹ്വാട്ടോ"
-
-#. State of Mexico: Estado de México
-#: activities/geo-country/resource/board/board9_0.qml:171
-msgctxt "board9_0|"
-msgid "Estado de México"
-msgstr "മെക്സിക്കോ സ്റ്റേറ്റ്"
-
 #. State of Mexico: Durango
-#: activities/geo-country/resource/board/board9_0.qml:178
+#: activities/geo-country/resource/board/board9_0.qml:80
 msgctxt "board9_0|"
 msgid "Durango"
 msgstr "ഡ്യുരാങ്കോ"
 
-#. State of Mexico: Districto Federal
-#: activities/geo-country/resource/board/board9_0.qml:185
+#. State of Mexico: Zacatecas
+#: activities/geo-country/resource/board/board9_0.qml:87
 msgctxt "board9_0|"
-msgid "Districto Federal"
-msgstr "ഫെഡറൽ ഡിസ്ട്രിക്ട്"
+msgid "Zacatecas"
+msgstr "സാക്കറ്റെക്കാസ്"
 
-#. State of Mexico: Coahuila
-#: activities/geo-country/resource/board/board9_0.qml:192
+#. State of Mexico: San Luis Potosí
+#: activities/geo-country/resource/board/board9_0.qml:94
 msgctxt "board9_0|"
-msgid "Coahuila"
-msgstr "കൊഅവീല"
+msgid "San Luis Potosí"
+msgstr "സാൻ ലൂയിസ് പൊട്ടോസി"
 
-#. State of Mexico: Chiapas
-#: activities/geo-country/resource/board/board9_0.qml:199
+#. State of Mexico: Nayarit
+#: activities/geo-country/resource/board/board9_0.qml:101
 msgctxt "board9_0|"
-msgid "Chiapas"
-msgstr "ചിയാപ്പാസ്"
+msgid "Nayarit"
+msgstr "നയാരീത്"
 
-#. State of Mexico: Chihuahua
-#: activities/geo-country/resource/board/board9_0.qml:206
+#. State of Mexico: Aguascalientes
+#: activities/geo-country/resource/board/board9_0.qml:108
 msgctxt "board9_0|"
-msgid "Chihuahua"
-msgstr "ചീഹ്വാഹ്വ"
+msgid "Aguascalientes"
+msgstr "അഗ്വാസ്‌കലിയന്തേസ്"
 
-#. State of Mexico: Campeche
-#: activities/geo-country/resource/board/board9_0.qml:213
+#. State of Mexico: Jalisco
+#: activities/geo-country/resource/board/board9_0.qml:115
 msgctxt "board9_0|"
-msgid "Campeche"
-msgstr "കംപേച്ചെ"
+msgid "Jalisco"
+msgstr "ഹലീസ്കൊ"
 
-#. State of Mexico: Baja California
-#: activities/geo-country/resource/board/board9_0.qml:220
+#. State of Mexico: Guanajuato
+#: activities/geo-country/resource/board/board9_0.qml:122
 msgctxt "board9_0|"
-msgid "Baja California"
-msgstr "ബാഹാ കാലിഫോർണിയ"
+msgid "Guanajuato"
+msgstr "ഗ്വാനഹ്വാട്ടോ"
 
-#. State of Mexico: Baja California Sur
-#: activities/geo-country/resource/board/board9_0.qml:227
+#. State of Mexico: Querétaro
+#: activities/geo-country/resource/board/board9_0.qml:129
 msgctxt "board9_0|"
-msgid "Baja California Sur"
-msgstr "ബാഹാ കാലിഫോർണിയ സൂർ"
+msgid "Querétaro"
+msgstr "കെരേറ്റരൊ"
+
+#. State of Mexico: Hidalgo
+#: activities/geo-country/resource/board/board9_0.qml:136
+msgctxt "board9_0|"
+msgid "Hidalgo"
+msgstr "ഇഡാൽഗൊ"
 
 #. State of Mexico: Colima
-#: activities/geo-country/resource/board/board9_0.qml:234
+#: activities/geo-country/resource/board/board9_0.qml:143
 msgctxt "board9_0|"
 msgid "Colima"
 msgstr "കൊലീമ"
 
-#. State of Mexico: Aguascalientes
+#. State of Mexico: Michoacán
+#: activities/geo-country/resource/board/board9_0.qml:150
+msgctxt "board9_0|"
+msgid "Michoacán"
+msgstr "മീച്ചൊആക്കാൻ"
+
+#. State of Mexico: Estado de México
+#: activities/geo-country/resource/board/board9_0.qml:157
+msgctxt "board9_0|"
+msgid "Estado de México"
+msgstr "മെക്സിക്കോ സ്റ്റേറ്റ്"
+
+#. State of Mexico: Districto Federal
+#: activities/geo-country/resource/board/board9_0.qml:164
+msgctxt "board9_0|"
+msgid "Districto Federal"
+msgstr "ഫെഡറൽ ഡിസ്ട്രിക്ട്"
+
+#. State of Mexico: Tlaxcala
+#: activities/geo-country/resource/board/board9_0.qml:171
+msgctxt "board9_0|"
+msgid "Tlaxcala"
+msgstr "റ്റ്‌ലാക്‌ഷ്കാല"
+
+#. State of Mexico: Puebla
+#: activities/geo-country/resource/board/board9_0.qml:178
+msgctxt "board9_0|"
+msgid "Puebla"
+msgstr "പ്വേബ്ല"
+
+#. State of Mexico: Veracruz
+#: activities/geo-country/resource/board/board9_0.qml:185
+msgctxt "board9_0|"
+msgid "Veracruz"
+msgstr "ബേരാക്രൂസ്"
+
+#. State of Mexico: Morelos
+#: activities/geo-country/resource/board/board9_0.qml:192
+msgctxt "board9_0|"
+msgid "Morelos"
+msgstr "മൊറേലോസ്"
+
+#. State of Mexico: Guerrero
+#: activities/geo-country/resource/board/board9_0.qml:199
+msgctxt "board9_0|"
+msgid "Guerrero"
+msgstr "ഗെറേരോ"
+
+#. State of Mexico: Oaxaca
+#: activities/geo-country/resource/board/board9_0.qml:206
+msgctxt "board9_0|"
+msgid "Oaxaca"
+msgstr "വഹാക്ക"
+
+#. State of Mexico: Chiapas
+#: activities/geo-country/resource/board/board9_0.qml:213
+msgctxt "board9_0|"
+msgid "Chiapas"
+msgstr "ചിയാപ്പാസ്"
+
+#. State of Mexico: Tabasco
+#: activities/geo-country/resource/board/board9_0.qml:220
+msgctxt "board9_0|"
+msgid "Tabasco"
+msgstr "റ്റബാഷ്കൊ"
+
+#. State of Mexico: Campeche
+#: activities/geo-country/resource/board/board9_0.qml:227
+msgctxt "board9_0|"
+msgid "Campeche"
+msgstr "കംപേച്ചെ"
+
+#. State of Mexico: Yucatán
+#: activities/geo-country/resource/board/board9_0.qml:234
+msgctxt "board9_0|"
+msgid "Yucatán"
+msgstr "യൂക്കാത്താൻ"
+
+#. State of Mexico: Quintana Roo
 #: activities/geo-country/resource/board/board9_0.qml:241
 msgctxt "board9_0|"
-msgid "Aguascalientes"
-msgstr "അഗ്വാസ്‌കലിയന്തേസ്"
+msgid "Quintana Roo"
+msgstr "കിന്താന റോ"
 
 #. Activity title
 #: activities/geography/ActivityInfo.qml:19
@@ -13899,13 +13974,13 @@ msgstr "കസാക്കിസ്ഥാൻ"
 
 #: activities/geography/resource/board/board10_0.qml:31
 msgctxt "board10_0|"
-msgid "Kyrgyzstan"
-msgstr "കിർഗിസ്ഥാൻ"
+msgid "Uzbekistan"
+msgstr "ഉസ്ബക്കിസ്ഥാൻ"
 
 #: activities/geography/resource/board/board10_0.qml:38
 msgctxt "board10_0|"
-msgid "Tajikistan"
-msgstr "തജിക്കിസ്ഥാൻ"
+msgid "Kyrgyzstan"
+msgstr "കിർഗിസ്ഥാൻ"
 
 #: activities/geography/resource/board/board10_0.qml:45
 msgctxt "board10_0|"
@@ -13914,8 +13989,8 @@ msgstr "തുർക്ക്മെനിസ്ഥാൻ"
 
 #: activities/geography/resource/board/board10_0.qml:52
 msgctxt "board10_0|"
-msgid "Uzbekistan"
-msgstr "ഉസ്ബക്കിസ്ഥാൻ"
+msgid "Tajikistan"
+msgstr "തജിക്കിസ്ഥാൻ"
 
 #: activities/geography/resource/board/board11_0.qml:15
 msgctxt "board11_0|"
@@ -13924,38 +13999,38 @@ msgstr "ദക്ഷിണേഷ്യ"
 
 #: activities/geography/resource/board/board11_0.qml:24
 msgctxt "board11_0|"
-msgid "India"
-msgstr "ഇന്ത്യ"
+msgid "Afghanistan"
+msgstr "അഫ്ഘാനിസ്ഥാൻ"
 
 #: activities/geography/resource/board/board11_0.qml:31
-msgctxt "board11_0|"
-msgid "Sri Lanka"
-msgstr "ശ്രീ ലങ്ക"
-
-#: activities/geography/resource/board/board11_0.qml:38
 msgctxt "board11_0|"
 msgid "Pakistan"
 msgstr "പാകിസ്ഥാൻ"
 
-#: activities/geography/resource/board/board11_0.qml:45
-msgctxt "board11_0|"
-msgid "Afghanistan"
-msgstr "അഫ്ഘാനിസ്ഥാൻ"
-
-#: activities/geography/resource/board/board11_0.qml:52
+#: activities/geography/resource/board/board11_0.qml:38
 msgctxt "board11_0|"
 msgid "Nepal"
 msgstr "നേപ്പാൾ"
 
-#: activities/geography/resource/board/board11_0.qml:59
+#: activities/geography/resource/board/board11_0.qml:45
+msgctxt "board11_0|"
+msgid "Bhutan"
+msgstr "ഭൂട്ടാൻ"
+
+#: activities/geography/resource/board/board11_0.qml:52
 msgctxt "board11_0|"
 msgid "Bangladesh"
 msgstr "ബംഗ്ലാദേശ്"
 
+#: activities/geography/resource/board/board11_0.qml:59
+msgctxt "board11_0|"
+msgid "India"
+msgstr "ഇന്ത്യ"
+
 #: activities/geography/resource/board/board11_0.qml:66
 msgctxt "board11_0|"
-msgid "Bhutan"
-msgstr "ഭൂട്ടാൻ"
+msgid "Sri Lanka"
+msgstr "ശ്രീ ലങ്ക"
 
 #: activities/geography/resource/board/board11_0.qml:73
 msgctxt "board11_0|"
@@ -13969,58 +14044,58 @@ msgstr "തെക്കുകിഴക്കൻ ഏഷ്യ"
 
 #: activities/geography/resource/board/board12_0.qml:24
 msgctxt "board12_0|"
-msgid "Singapore"
-msgstr "സിംഗപ്പൂർ"
-
-#: activities/geography/resource/board/board12_0.qml:32
-msgctxt "board12_0|"
-msgid "Indonesia"
-msgstr "ഇന്തോനേഷ്യ"
-
-#: activities/geography/resource/board/board12_0.qml:39
-msgctxt "board12_0|"
 msgid "Myanmar"
 msgstr "മ്യാൻമാർ"
 
-#: activities/geography/resource/board/board12_0.qml:46
-msgctxt "board12_0|"
-msgid "Thailand"
-msgstr "തായ്‍ലാന്റ്"
-
-#: activities/geography/resource/board/board12_0.qml:53
+#: activities/geography/resource/board/board12_0.qml:31
 msgctxt "board12_0|"
 msgid "Laos"
 msgstr "ലാവോസ്"
 
-#: activities/geography/resource/board/board12_0.qml:60
+#: activities/geography/resource/board/board12_0.qml:38
 msgctxt "board12_0|"
 msgid "Vietnam"
 msgstr "വിയറ്റ്നാം"
 
-#: activities/geography/resource/board/board12_0.qml:67
+#: activities/geography/resource/board/board12_0.qml:45
+msgctxt "board12_0|"
+msgid "Thailand"
+msgstr "തായ്‍ലാന്റ്"
+
+#: activities/geography/resource/board/board12_0.qml:52
 msgctxt "board12_0|"
 msgid "Cambodia"
 msgstr "കംബോഡിയ"
 
-#: activities/geography/resource/board/board12_0.qml:74
+#: activities/geography/resource/board/board12_0.qml:59
+msgctxt "board12_0|"
+msgid "Philippines"
+msgstr "ഫിലിപ്പൈൻസ്"
+
+#: activities/geography/resource/board/board12_0.qml:66
 msgctxt "board12_0|"
 msgid "Malaysia"
 msgstr "മലേഷ്യ"
 
-#: activities/geography/resource/board/board12_0.qml:81
+#: activities/geography/resource/board/board12_0.qml:73
 msgctxt "board12_0|"
 msgid "Brunei"
 msgstr "ബ്രൂണൈ"
 
-#: activities/geography/resource/board/board12_0.qml:88
+#: activities/geography/resource/board/board12_0.qml:80
+msgctxt "board12_0|"
+msgid "Indonesia"
+msgstr "ഇന്തോനേഷ്യ"
+
+#: activities/geography/resource/board/board12_0.qml:87
 msgctxt "board12_0|"
 msgid "East Timor"
 msgstr "കിഴക്കൻ ടിമോർ"
 
-#: activities/geography/resource/board/board12_0.qml:95
+#: activities/geography/resource/board/board12_0.qml:94
 msgctxt "board12_0|"
-msgid "Philippines"
-msgstr "ഫിലിപ്പൈൻസ്"
+msgid "Singapore"
+msgstr "സിംഗപ്പൂർ"
 
 #: activities/geography/resource/board/board13_0.qml:15
 msgctxt "board13_0|"
@@ -14029,28 +14104,28 @@ msgstr "കിഴക്കൻ ഏഷ്യ"
 
 #: activities/geography/resource/board/board13_0.qml:24
 msgctxt "board13_0|"
-msgid "Japan"
-msgstr "ജപ്പാൻ"
-
-#: activities/geography/resource/board/board13_0.qml:31
-msgctxt "board13_0|"
-msgid "China"
-msgstr "ചൈന"
-
-#: activities/geography/resource/board/board13_0.qml:38
-msgctxt "board13_0|"
 msgid "Mongolia"
 msgstr "മംഗോളിയ"
 
-#: activities/geography/resource/board/board13_0.qml:45
+#: activities/geography/resource/board/board13_0.qml:31
 msgctxt "board13_0|"
 msgid "North Korea"
 msgstr "ഉത്തര കൊറിയ"
 
-#: activities/geography/resource/board/board13_0.qml:52
+#: activities/geography/resource/board/board13_0.qml:38
 msgctxt "board13_0|"
 msgid "South Korea"
 msgstr "ദക്ഷിണ കൊറിയ"
+
+#: activities/geography/resource/board/board13_0.qml:45
+msgctxt "board13_0|"
+msgid "Japan"
+msgstr "ജപ്പാൻ"
+
+#: activities/geography/resource/board/board13_0.qml:52
+msgctxt "board13_0|"
+msgid "China"
+msgstr "ചൈന"
 
 #: activities/geography/resource/board/board13_0.qml:59
 msgctxt "board13_0|"
@@ -14064,28 +14139,28 @@ msgstr "ഓഷ്യാനിയ"
 
 #: activities/geography/resource/board/board14_0.qml:24
 msgctxt "board14_0|"
-msgid "Pitcairn Islands"
-msgstr "പിറ്റ്കേൻ ദ്വീപുകൾ"
+msgid "Hawaii"
+msgstr "ഹവായി"
 
 #: activities/geography/resource/board/board14_0.qml:31
 msgctxt "board14_0|"
-msgid "French Polynesia"
-msgstr "ഫ്രഞ്ച് പോളിനേസിയ"
+msgid "Mariana Islands"
+msgstr "മരിയാന ദ്വീപുകൾ"
 
 #: activities/geography/resource/board/board14_0.qml:38
 msgctxt "board14_0|"
-msgid "Papua New Guinea"
-msgstr "പാപ്വ ന്യൂ ഗിനി"
+msgid "United States Minor Outlying Islands"
+msgstr "ഐക്യനാടുകൾക്ക് അകലെയുള്ള ചെറിയ ദ്വീപുകൾ"
 
 #: activities/geography/resource/board/board14_0.qml:45
 msgctxt "board14_0|"
-msgid "Palau"
-msgstr "പലാവു"
+msgid "Marshall Islands"
+msgstr "മാർഷൽ ദ്വീപുകൾ"
 
 #: activities/geography/resource/board/board14_0.qml:52
 msgctxt "board14_0|"
-msgid "Mariana Islands"
-msgstr "മരിയാന ദ്വീപുകൾ"
+msgid "Palau"
+msgstr "പലാവു"
 
 #: activities/geography/resource/board/board14_0.qml:59
 msgctxt "board14_0|"
@@ -14094,78 +14169,78 @@ msgstr "മൈക്രൊനീസിയ"
 
 #: activities/geography/resource/board/board14_0.qml:66
 msgctxt "board14_0|"
-msgid "Nauru"
-msgstr "നൗറു"
-
-#: activities/geography/resource/board/board14_0.qml:74
-msgctxt "board14_0|"
-msgid "Vanuatu"
-msgstr "വാന്വാട്ടു"
-
-#: activities/geography/resource/board/board14_0.qml:81
-msgctxt "board14_0|"
-msgid "Tuvalu"
-msgstr "തൂവലു"
-
-#: activities/geography/resource/board/board14_0.qml:88
-msgctxt "board14_0|"
-msgid "Tonga"
-msgstr "ടോംഗ"
-
-#: activities/geography/resource/board/board14_0.qml:95
-msgctxt "board14_0|"
-msgid "New Caledonia"
-msgstr "ന്യൂ കാലിഡോണിയ"
-
-#: activities/geography/resource/board/board14_0.qml:102
-msgctxt "board14_0|"
-msgid "Marshall Islands"
-msgstr "മാർഷൽ ദ്വീപുകൾ"
-
-#: activities/geography/resource/board/board14_0.qml:109
-msgctxt "board14_0|"
 msgid "Kiribati"
 msgstr "കിരിബാത്തി"
 
-#: activities/geography/resource/board/board14_0.qml:116
+#: activities/geography/resource/board/board14_0.qml:73
 msgctxt "board14_0|"
-msgid "Fiji"
-msgstr "ഫിജി"
+msgid "Papua New Guinea"
+msgstr "പാപ്വ ന്യൂ ഗിനി"
 
-#: activities/geography/resource/board/board14_0.qml:123
+#: activities/geography/resource/board/board14_0.qml:80
 msgctxt "board14_0|"
 msgid "Solomon Islands"
 msgstr "സോളമൻ ദ്വീപുകൾ"
 
-#: activities/geography/resource/board/board14_0.qml:130
+#: activities/geography/resource/board/board14_0.qml:87
 msgctxt "board14_0|"
-msgid "New Zealand"
-msgstr "ന്യൂ സിലാന്റ്"
+msgid "Tuvalu"
+msgstr "തൂവലു"
 
-#: activities/geography/resource/board/board14_0.qml:137
-msgctxt "board14_0|"
-msgid "Cook Islands"
-msgstr "കുക്ക് ദ്വീപുകൾ"
-
-#: activities/geography/resource/board/board14_0.qml:144
+#: activities/geography/resource/board/board14_0.qml:94
 msgctxt "board14_0|"
 msgid "Samoan Islands"
 msgstr "സമോവൻ ദ്വീപുകൾ"
 
-#: activities/geography/resource/board/board14_0.qml:151
+#: activities/geography/resource/board/board14_0.qml:101
+msgctxt "board14_0|"
+msgid "Cook Islands"
+msgstr "കുക്ക് ദ്വീപുകൾ"
+
+#: activities/geography/resource/board/board14_0.qml:108
+msgctxt "board14_0|"
+msgid "French Polynesia"
+msgstr "ഫ്രഞ്ച് പോളിനേസിയ"
+
+#: activities/geography/resource/board/board14_0.qml:115
+msgctxt "board14_0|"
+msgid "Pitcairn Islands"
+msgstr "പിറ്റ്കേൻ ദ്വീപുകൾ"
+
+#: activities/geography/resource/board/board14_0.qml:122
+msgctxt "board14_0|"
+msgid "Vanuatu"
+msgstr "വാന്വാട്ടു"
+
+#: activities/geography/resource/board/board14_0.qml:129
+msgctxt "board14_0|"
+msgid "Fiji"
+msgstr "ഫിജി"
+
+#: activities/geography/resource/board/board14_0.qml:136
+msgctxt "board14_0|"
+msgid "Tonga"
+msgstr "ടോംഗ"
+
+#: activities/geography/resource/board/board14_0.qml:143
+msgctxt "board14_0|"
+msgid "New Caledonia"
+msgstr "ന്യൂ കാലിഡോണിയ"
+
+#: activities/geography/resource/board/board14_0.qml:150
 msgctxt "board14_0|"
 msgid "Australia"
 msgstr "ഓസ്ട്രേലിയ"
 
-#: activities/geography/resource/board/board14_0.qml:158
+#: activities/geography/resource/board/board14_0.qml:157
 msgctxt "board14_0|"
-msgid "United States Minor Outlying Islands"
-msgstr "ഐക്യനാടുകൾക്ക് അകലെയുള്ള ചെറിയ ദ്വീപുകൾ"
+msgid "New Zealand"
+msgstr "ന്യൂ സിലാന്റ്"
 
-#: activities/geography/resource/board/board14_0.qml:165
+#: activities/geography/resource/board/board14_0.qml:164
 msgctxt "board14_0|"
-msgid "Hawaii"
-msgstr "ഹവായി"
+msgid "Nauru"
+msgstr "നൗറു"
 
 #: activities/geography/resource/board/board14_0.qml:172
 msgctxt "board14_0|"
@@ -14179,33 +14254,33 @@ msgstr "വൻകരകൾ"
 
 #: activities/geography/resource/board/board1_0.qml:24
 msgctxt "board1_0|"
-msgid "Oceania"
-msgstr "ഓഷ്യാനിയ"
-
-#: activities/geography/resource/board/board1_0.qml:31
-msgctxt "board1_0|"
 msgid "Europe"
 msgstr "യൂറോപ്പ്"
 
-#: activities/geography/resource/board/board1_0.qml:38
+#: activities/geography/resource/board/board1_0.qml:31
 msgctxt "board1_0|"
 msgid "Asia"
 msgstr "ഏഷ്യ"
 
-#: activities/geography/resource/board/board1_0.qml:45
-msgctxt "board1_0|"
-msgid "Antarctica"
-msgstr "അന്റാർട്ടിക്ക"
-
-#: activities/geography/resource/board/board1_0.qml:52
+#: activities/geography/resource/board/board1_0.qml:38
 msgctxt "board1_0|"
 msgid "America"
 msgstr "അമേരിക്ക"
 
-#: activities/geography/resource/board/board1_0.qml:59
+#: activities/geography/resource/board/board1_0.qml:45
 msgctxt "board1_0|"
 msgid "Africa"
 msgstr "ആഫ്രിക്ക"
+
+#: activities/geography/resource/board/board1_0.qml:52
+msgctxt "board1_0|"
+msgid "Oceania"
+msgstr "ഓഷ്യാനിയ"
+
+#: activities/geography/resource/board/board1_0.qml:59
+msgctxt "board1_0|"
+msgid "Antarctica"
+msgstr "അന്റാർട്ടിക്ക"
 
 #: activities/geography/resource/board/board2_0.qml:15
 msgctxt "board2_0|"
@@ -14214,23 +14289,23 @@ msgstr "വടക്കേ അമേരിക്ക"
 
 #: activities/geography/resource/board/board2_0.qml:24
 msgctxt "board2_0|"
-msgid "United States of America"
-msgstr "അമേരിക്കൻ ഐക്യനാടുകൾ"
-
-#: activities/geography/resource/board/board2_0.qml:31
-msgctxt "board2_0|"
-msgid "Mexico"
-msgstr "മെക്സിക്കോ"
-
-#: activities/geography/resource/board/board2_0.qml:38
-msgctxt "board2_0|"
 msgid "Greenland"
 msgstr "ഗ്രീൻലാന്റ്"
 
-#: activities/geography/resource/board/board2_0.qml:45
+#: activities/geography/resource/board/board2_0.qml:31
 msgctxt "board2_0|"
 msgid "Canada"
 msgstr "കാനഡ"
+
+#: activities/geography/resource/board/board2_0.qml:38
+msgctxt "board2_0|"
+msgid "United States of America"
+msgstr "അമേരിക്കൻ ഐക്യനാടുകൾ"
+
+#: activities/geography/resource/board/board2_0.qml:45
+msgctxt "board2_0|"
+msgid "Mexico"
+msgstr "മെക്സിക്കോ"
 
 #: activities/geography/resource/board/board3_0.qml:15
 msgctxt "board3_0|"
@@ -14239,73 +14314,73 @@ msgstr "മധ്യ അമേരിക്ക"
 
 #: activities/geography/resource/board/board3_0.qml:24
 msgctxt "board3_0|"
-msgid "Puerto Rico"
-msgstr "പ്യൂർട്ടോ റിക്കോ"
+msgid "Bahamas"
+msgstr "ബഹാമസ്"
 
 #: activities/geography/resource/board/board3_0.qml:31
-msgctxt "board3_0|"
-msgid "Panama"
-msgstr "പനാമ"
-
-#: activities/geography/resource/board/board3_0.qml:38
-msgctxt "board3_0|"
-msgid "Nicaragua"
-msgstr "നിക്കരാഗ്വ"
-
-#: activities/geography/resource/board/board3_0.qml:45
-msgctxt "board3_0|"
-msgid "Mexico"
-msgstr "മെക്സിക്കോ"
-
-#: activities/geography/resource/board/board3_0.qml:52
-msgctxt "board3_0|"
-msgid "Jamaica"
-msgstr "ജമൈക്ക"
-
-#: activities/geography/resource/board/board3_0.qml:59
-msgctxt "board3_0|"
-msgid "Honduras"
-msgstr "ഹൊന്തൂറാസ്"
-
-#: activities/geography/resource/board/board3_0.qml:66
-msgctxt "board3_0|"
-msgid "Haiti"
-msgstr "ഹെയ്തി"
-
-#: activities/geography/resource/board/board3_0.qml:73
-msgctxt "board3_0|"
-msgid "Guatemala"
-msgstr "ഗ്വാട്ടെമാല"
-
-#: activities/geography/resource/board/board3_0.qml:80
-msgctxt "board3_0|"
-msgid "El Salvador"
-msgstr "എൽ സാൽവദോർ"
-
-#: activities/geography/resource/board/board3_0.qml:87
-msgctxt "board3_0|"
-msgid "Dominican Republic"
-msgstr "ഡൊമിനിക്കൻ റിപ്പബ്ലിക്ക്"
-
-#: activities/geography/resource/board/board3_0.qml:94
 msgctxt "board3_0|"
 msgid "Cuba"
 msgstr "ക്യൂബ"
 
-#: activities/geography/resource/board/board3_0.qml:101
+#: activities/geography/resource/board/board3_0.qml:38
 msgctxt "board3_0|"
-msgid "Costa Rica"
-msgstr "കോസ്റ്റ റിക്ക"
+msgid "Mexico"
+msgstr "മെക്സിക്കോ"
 
-#: activities/geography/resource/board/board3_0.qml:108
+#: activities/geography/resource/board/board3_0.qml:45
+msgctxt "board3_0|"
+msgid "Jamaica"
+msgstr "ജമൈക്ക"
+
+#: activities/geography/resource/board/board3_0.qml:52
+msgctxt "board3_0|"
+msgid "Haiti"
+msgstr "ഹെയ്തി"
+
+#: activities/geography/resource/board/board3_0.qml:59
+msgctxt "board3_0|"
+msgid "Dominican Republic"
+msgstr "ഡൊമിനിക്കൻ റിപ്പബ്ലിക്ക്"
+
+#: activities/geography/resource/board/board3_0.qml:66
+msgctxt "board3_0|"
+msgid "Puerto Rico"
+msgstr "പ്യൂർട്ടോ റിക്കോ"
+
+#: activities/geography/resource/board/board3_0.qml:73
 msgctxt "board3_0|"
 msgid "Belize"
 msgstr "ബെലീസ്"
 
+#: activities/geography/resource/board/board3_0.qml:80
+msgctxt "board3_0|"
+msgid "Guatemala"
+msgstr "ഗ്വാട്ടെമാല"
+
+#: activities/geography/resource/board/board3_0.qml:87
+msgctxt "board3_0|"
+msgid "Honduras"
+msgstr "ഹൊന്തൂറാസ്"
+
+#: activities/geography/resource/board/board3_0.qml:94
+msgctxt "board3_0|"
+msgid "El Salvador"
+msgstr "എൽ സാൽവദോർ"
+
+#: activities/geography/resource/board/board3_0.qml:101
+msgctxt "board3_0|"
+msgid "Nicaragua"
+msgstr "നിക്കരാഗ്വ"
+
+#: activities/geography/resource/board/board3_0.qml:108
+msgctxt "board3_0|"
+msgid "Costa Rica"
+msgstr "കോസ്റ്റ റിക്ക"
+
 #: activities/geography/resource/board/board3_0.qml:115
 msgctxt "board3_0|"
-msgid "Bahamas"
-msgstr "ബഹാമസ്"
+msgid "Panama"
+msgstr "പനാമ"
 
 #: activities/geography/resource/board/board4_0.qml:15
 msgctxt "board4_0|"
@@ -14314,68 +14389,68 @@ msgstr "തെക്കേ അമേരിക്ക"
 
 #: activities/geography/resource/board/board4_0.qml:24
 msgctxt "board4_0|"
-msgid "Venezuela"
-msgstr "വെനിസ്വേല"
-
-#: activities/geography/resource/board/board4_0.qml:31
-msgctxt "board4_0|"
-msgid "Uruguay"
-msgstr "ഉറുഗ്വേ"
-
-#: activities/geography/resource/board/board4_0.qml:38
-msgctxt "board4_0|"
-msgid "Suriname"
-msgstr "സുരിനാം"
-
-#: activities/geography/resource/board/board4_0.qml:45
-msgctxt "board4_0|"
-msgid "Peru"
-msgstr "പെറു"
-
-#: activities/geography/resource/board/board4_0.qml:52
-msgctxt "board4_0|"
-msgid "Paraguay"
-msgstr "പരാഗ്വേ"
-
-#: activities/geography/resource/board/board4_0.qml:59
-msgctxt "board4_0|"
 msgid "Panama"
 msgstr "പനാമ"
 
-#: activities/geography/resource/board/board4_0.qml:66
-msgctxt "board4_0|"
-msgid "Guyana"
-msgstr "ഗയാന"
-
-#: activities/geography/resource/board/board4_0.qml:73
-msgctxt "board4_0|"
-msgid "French Guiana"
-msgstr "ഫ്രഞ്ച് ഗിയാന"
-
-#: activities/geography/resource/board/board4_0.qml:80
-msgctxt "board4_0|"
-msgid "Ecuador"
-msgstr "ഇക്വഡോർ"
-
-#: activities/geography/resource/board/board4_0.qml:87
+#: activities/geography/resource/board/board4_0.qml:31
 msgctxt "board4_0|"
 msgid "Colombia"
 msgstr "കൊളംബിയ"
 
-#: activities/geography/resource/board/board4_0.qml:94
+#: activities/geography/resource/board/board4_0.qml:38
 msgctxt "board4_0|"
-msgid "Chile"
-msgstr "ചിലി"
+msgid "Venezuela"
+msgstr "വെനിസ്വേല"
 
-#: activities/geography/resource/board/board4_0.qml:101
+#: activities/geography/resource/board/board4_0.qml:45
+msgctxt "board4_0|"
+msgid "Guyana"
+msgstr "ഗയാന"
+
+#: activities/geography/resource/board/board4_0.qml:52
+msgctxt "board4_0|"
+msgid "Suriname"
+msgstr "സുരിനാം"
+
+#: activities/geography/resource/board/board4_0.qml:59
+msgctxt "board4_0|"
+msgid "French Guiana"
+msgstr "ഫ്രഞ്ച് ഗിയാന"
+
+#: activities/geography/resource/board/board4_0.qml:66
+msgctxt "board4_0|"
+msgid "Ecuador"
+msgstr "ഇക്വഡോർ"
+
+#: activities/geography/resource/board/board4_0.qml:73
+msgctxt "board4_0|"
+msgid "Peru"
+msgstr "പെറു"
+
+#: activities/geography/resource/board/board4_0.qml:80
 msgctxt "board4_0|"
 msgid "Brazil"
 msgstr "ബ്രസീൽ"
 
-#: activities/geography/resource/board/board4_0.qml:108
+#: activities/geography/resource/board/board4_0.qml:87
 msgctxt "board4_0|"
 msgid "Bolivia"
 msgstr "ബൊളീവിയ"
+
+#: activities/geography/resource/board/board4_0.qml:94
+msgctxt "board4_0|"
+msgid "Paraguay"
+msgstr "പരാഗ്വേ"
+
+#: activities/geography/resource/board/board4_0.qml:101
+msgctxt "board4_0|"
+msgid "Uruguay"
+msgstr "ഉറുഗ്വേ"
+
+#: activities/geography/resource/board/board4_0.qml:108
+msgctxt "board4_0|"
+msgid "Chile"
+msgstr "ചിലി"
 
 #: activities/geography/resource/board/board4_0.qml:115
 msgctxt "board4_0|"
@@ -14389,13 +14464,13 @@ msgstr "പടിഞ്ഞാറൻ യൂറോപ്പ്"
 
 #: activities/geography/resource/board/board5_0.qml:24
 msgctxt "board5_0|"
-msgid "United Kingdom"
-msgstr "യുണൈറ്റഡ് കിംഗ്ഡം"
+msgid "Iceland"
+msgstr "ഐസ് ലാന്റ്"
 
 #: activities/geography/resource/board/board5_0.qml:31
 msgctxt "board5_0|"
-msgid "Switzerland"
-msgstr "സ്വിറ്റ്സർലാന്റ്"
+msgid "Norway"
+msgstr "നോർവെ"
 
 #: activities/geography/resource/board/board5_0.qml:38
 msgctxt "board5_0|"
@@ -14404,73 +14479,73 @@ msgstr "സ്വീഡൻ"
 
 #: activities/geography/resource/board/board5_0.qml:45
 msgctxt "board5_0|"
-msgid "Spain"
-msgstr "സ്പെയിൻ"
-
-#: activities/geography/resource/board/board5_0.qml:52
-msgctxt "board5_0|"
-msgid "Portugal"
-msgstr "പോർച്ചുഗൽ"
-
-#: activities/geography/resource/board/board5_0.qml:59
-msgctxt "board5_0|"
-msgid "Norway"
-msgstr "നോർവെ"
-
-#: activities/geography/resource/board/board5_0.qml:66
-msgctxt "board5_0|"
-msgid "The Netherlands"
-msgstr "നെതർലാന്റ്സ്"
-
-#: activities/geography/resource/board/board5_0.qml:73
-msgctxt "board5_0|"
-msgid "Luxembourg"
-msgstr "ലക്സംബർഗ്"
-
-#: activities/geography/resource/board/board5_0.qml:81
-msgctxt "board5_0|"
-msgid "Italy"
-msgstr "ഇറ്റലി"
-
-#: activities/geography/resource/board/board5_0.qml:88
-msgctxt "board5_0|"
-msgid "Ireland"
-msgstr "അയർലന്റ്"
-
-#: activities/geography/resource/board/board5_0.qml:95
-msgctxt "board5_0|"
-msgid "Iceland"
-msgstr "ഐസ് ലാന്റ്"
-
-#: activities/geography/resource/board/board5_0.qml:102
-msgctxt "board5_0|"
-msgid "Germany"
-msgstr "ജർമ്മനി"
-
-#: activities/geography/resource/board/board5_0.qml:109
-msgctxt "board5_0|"
-msgid "France"
-msgstr "ഫ്രാൻസ്"
-
-#: activities/geography/resource/board/board5_0.qml:116
-msgctxt "board5_0|"
 msgid "Finland"
 msgstr "ഫിൻലാന്റ്"
 
-#: activities/geography/resource/board/board5_0.qml:123
+#: activities/geography/resource/board/board5_0.qml:52
 msgctxt "board5_0|"
 msgid "Denmark"
 msgstr "ഡെൻമാർക്ക്"
 
-#: activities/geography/resource/board/board5_0.qml:130
+#: activities/geography/resource/board/board5_0.qml:59
+msgctxt "board5_0|"
+msgid "United Kingdom"
+msgstr "യുണൈറ്റഡ് കിംഗ്ഡം"
+
+#: activities/geography/resource/board/board5_0.qml:66
+msgctxt "board5_0|"
+msgid "Ireland"
+msgstr "അയർലന്റ്"
+
+#: activities/geography/resource/board/board5_0.qml:73
+msgctxt "board5_0|"
+msgid "The Netherlands"
+msgstr "നെതർലാന്റ്സ്"
+
+#: activities/geography/resource/board/board5_0.qml:80
+msgctxt "board5_0|"
+msgid "Germany"
+msgstr "ജർമ്മനി"
+
+#: activities/geography/resource/board/board5_0.qml:87
 msgctxt "board5_0|"
 msgid "Belgium"
 msgstr "ബെൽജിയം"
 
-#: activities/geography/resource/board/board5_0.qml:137
+#: activities/geography/resource/board/board5_0.qml:94
 msgctxt "board5_0|"
 msgid "Austria"
 msgstr "ഓസ്ട്രിയ"
+
+#: activities/geography/resource/board/board5_0.qml:101
+msgctxt "board5_0|"
+msgid "Switzerland"
+msgstr "സ്വിറ്റ്സർലാന്റ്"
+
+#: activities/geography/resource/board/board5_0.qml:108
+msgctxt "board5_0|"
+msgid "France"
+msgstr "ഫ്രാൻസ്"
+
+#: activities/geography/resource/board/board5_0.qml:115
+msgctxt "board5_0|"
+msgid "Italy"
+msgstr "ഇറ്റലി"
+
+#: activities/geography/resource/board/board5_0.qml:122
+msgctxt "board5_0|"
+msgid "Spain"
+msgstr "സ്പെയിൻ"
+
+#: activities/geography/resource/board/board5_0.qml:129
+msgctxt "board5_0|"
+msgid "Portugal"
+msgstr "പോർച്ചുഗൽ"
+
+#: activities/geography/resource/board/board5_0.qml:136
+msgctxt "board5_0|"
+msgid "Luxembourg"
+msgstr "ലക്സംബർഗ്"
 
 #: activities/geography/resource/board/board6_0.qml:15
 msgctxt "board6_0|"
@@ -14479,118 +14554,118 @@ msgstr "കിഴക്കേ യൂറോപ്പ്"
 
 #: activities/geography/resource/board/board6_0.qml:24
 msgctxt "board6_0|"
-msgid "Cyprus"
-msgstr "സൈപ്രസ്"
+msgid "Estonia"
+msgstr "എസ്തോണിയ"
 
-#: activities/geography/resource/board/board6_0.qml:32
-msgctxt "board6_0|"
-msgid "Greece"
-msgstr "ഗ്രീസ്"
-
-#: activities/geography/resource/board/board6_0.qml:39
-msgctxt "board6_0|"
-msgid "Ukraine"
-msgstr "ഉക്രെയിൻ"
-
-#: activities/geography/resource/board/board6_0.qml:46
-msgctxt "board6_0|"
-msgid "Turkey"
-msgstr "തുർക്കി"
-
-#: activities/geography/resource/board/board6_0.qml:54
-msgctxt "board6_0|"
-msgid "Slovenia"
-msgstr "സ്ലോവേനിയ"
-
-#: activities/geography/resource/board/board6_0.qml:61
-msgctxt "board6_0|"
-msgid "Slovak Republic"
-msgstr "സ്ലോവാക്ക് റിപ്പബ്ലിക്ക്"
-
-#: activities/geography/resource/board/board6_0.qml:68
-msgctxt "board6_0|"
-msgid "Montenegro"
-msgstr "മോണ്ടെനേഗ്രോ"
-
-#: activities/geography/resource/board/board6_0.qml:76
-msgctxt "board6_0|"
-msgid "Serbia"
-msgstr "സെർബിയ"
-
-#: activities/geography/resource/board/board6_0.qml:83
-msgctxt "board6_0|"
-msgid "Russia"
-msgstr "റഷ്യ"
-
-#: activities/geography/resource/board/board6_0.qml:90
-msgctxt "board6_0|"
-msgid "Romania"
-msgstr "റൊമേനിയ"
-
-#: activities/geography/resource/board/board6_0.qml:97
-msgctxt "board6_0|"
-msgid "Poland"
-msgstr "പോളണ്ട്"
-
-#: activities/geography/resource/board/board6_0.qml:104
-msgctxt "board6_0|"
-msgid "Moldova"
-msgstr "മൊൾഡോവ"
-
-#: activities/geography/resource/board/board6_0.qml:111
-msgctxt "board6_0|"
-msgid "North Macedonia"
-msgstr "നോർത്ത് മാസിഡോണിയ"
-
-#: activities/geography/resource/board/board6_0.qml:119
-msgctxt "board6_0|"
-msgid "Lithuania"
-msgstr "ലിത്വേനിയ"
-
-#: activities/geography/resource/board/board6_0.qml:126
+#: activities/geography/resource/board/board6_0.qml:31
 msgctxt "board6_0|"
 msgid "Latvia"
 msgstr "ലാറ്റ്വിയ"
 
-#: activities/geography/resource/board/board6_0.qml:133
+#: activities/geography/resource/board/board6_0.qml:38
 msgctxt "board6_0|"
-msgid "Hungary"
-msgstr "ഹംഗറി"
+msgid "Russia"
+msgstr "റഷ്യ"
 
-#: activities/geography/resource/board/board6_0.qml:140
+#: activities/geography/resource/board/board6_0.qml:45
 msgctxt "board6_0|"
-msgid "Estonia"
-msgstr "എസ്തോണിയ"
+msgid "Lithuania"
+msgstr "ലിത്വേനിയ"
 
-#: activities/geography/resource/board/board6_0.qml:147
-msgctxt "board6_0|"
-msgid "Czechia"
-msgstr "ചെക്കിയ"
-
-#: activities/geography/resource/board/board6_0.qml:154
-msgctxt "board6_0|"
-msgid "Croatia"
-msgstr "ക്രോയേഷ്യ"
-
-#: activities/geography/resource/board/board6_0.qml:161
-msgctxt "board6_0|"
-msgid "Bulgaria"
-msgstr "ബൾഗേറിയ"
-
-#: activities/geography/resource/board/board6_0.qml:168
-msgctxt "board6_0|"
-msgid "Bosnia Herzegovina"
-msgstr "ബോസ്നിയ ഹെർസഗൊവീന"
-
-#: activities/geography/resource/board/board6_0.qml:175
+#: activities/geography/resource/board/board6_0.qml:52
 msgctxt "board6_0|"
 msgid "Belarus"
 msgstr "ബെലറൂസ്"
 
-#: activities/geography/resource/board/board6_0.qml:182
+#: activities/geography/resource/board/board6_0.qml:59
+msgctxt "board6_0|"
+msgid "Poland"
+msgstr "പോളണ്ട്"
+
+#: activities/geography/resource/board/board6_0.qml:66
+msgctxt "board6_0|"
+msgid "Czechia"
+msgstr "ചെക്കിയ"
+
+#: activities/geography/resource/board/board6_0.qml:73
+msgctxt "board6_0|"
+msgid "Slovak Republic"
+msgstr "സ്ലോവാക്ക് റിപ്പബ്ലിക്ക്"
+
+#: activities/geography/resource/board/board6_0.qml:80
+msgctxt "board6_0|"
+msgid "Ukraine"
+msgstr "ഉക്രെയിൻ"
+
+#: activities/geography/resource/board/board6_0.qml:87
+msgctxt "board6_0|"
+msgid "Hungary"
+msgstr "ഹംഗറി"
+
+#: activities/geography/resource/board/board6_0.qml:94
+msgctxt "board6_0|"
+msgid "Romania"
+msgstr "റൊമേനിയ"
+
+#: activities/geography/resource/board/board6_0.qml:101
+msgctxt "board6_0|"
+msgid "Moldova"
+msgstr "മൊൾഡോവ"
+
+#: activities/geography/resource/board/board6_0.qml:108
+msgctxt "board6_0|"
+msgid "Croatia"
+msgstr "ക്രോയേഷ്യ"
+
+#: activities/geography/resource/board/board6_0.qml:115
+msgctxt "board6_0|"
+msgid "Bosnia Herzegovina"
+msgstr "ബോസ്നിയ ഹെർസഗൊവീന"
+
+#: activities/geography/resource/board/board6_0.qml:122
+msgctxt "board6_0|"
+msgid "Serbia"
+msgstr "സെർബിയ"
+
+#: activities/geography/resource/board/board6_0.qml:129
+msgctxt "board6_0|"
+msgid "Bulgaria"
+msgstr "ബൾഗേറിയ"
+
+#: activities/geography/resource/board/board6_0.qml:136
 msgctxt "board6_0|"
 msgid "Albania"
 msgstr "അൽബേനിയ"
+
+#: activities/geography/resource/board/board6_0.qml:143
+msgctxt "board6_0|"
+msgid "Greece"
+msgstr "ഗ്രീസ്"
+
+#: activities/geography/resource/board/board6_0.qml:150
+msgctxt "board6_0|"
+msgid "Turkey"
+msgstr "തുർക്കി"
+
+#: activities/geography/resource/board/board6_0.qml:157
+msgctxt "board6_0|"
+msgid "Cyprus"
+msgstr "സൈപ്രസ്"
+
+#: activities/geography/resource/board/board6_0.qml:166
+msgctxt "board6_0|"
+msgid "Slovenia"
+msgstr "സ്ലോവേനിയ"
+
+#: activities/geography/resource/board/board6_0.qml:173
+msgctxt "board6_0|"
+msgid "Montenegro"
+msgstr "മോണ്ടെനേഗ്രോ"
+
+#: activities/geography/resource/board/board6_0.qml:181
+msgctxt "board6_0|"
+msgid "North Macedonia"
+msgstr "നോർത്ത് മാസിഡോണിയ"
 
 #: activities/geography/resource/board/board7_0.qml:15
 msgctxt "board7_0|"
@@ -14599,93 +14674,93 @@ msgstr "വടക്കേ ആഫ്രിക്ക"
 
 #: activities/geography/resource/board/board7_0.qml:24
 msgctxt "board7_0|"
-msgid "Western Sahara"
-msgstr "പടിഞ്ഞാറൻ സഹാറ"
-
-#: activities/geography/resource/board/board7_0.qml:31
-msgctxt "board7_0|"
-msgid "Uganda"
-msgstr "ഉഗാണ്ട"
-
-#: activities/geography/resource/board/board7_0.qml:38
-msgctxt "board7_0|"
 msgid "Tunisia"
 msgstr "റ്റുനീഷ്യ"
 
-#: activities/geography/resource/board/board7_0.qml:45
-msgctxt "board7_0|"
-msgid "Togo"
-msgstr "ടോഗോ"
-
-#: activities/geography/resource/board/board7_0.qml:52
-msgctxt "board7_0|"
-msgid "Sudan"
-msgstr "സുഡാൻ"
-
-#: activities/geography/resource/board/board7_0.qml:59
-msgctxt "board7_0|"
-msgid "South Sudan"
-msgstr "സൗത്ത് സുഡാൻ"
-
-#: activities/geography/resource/board/board7_0.qml:66
-msgctxt "board7_0|"
-msgid "Somalia"
-msgstr "സൊമാലിയ"
-
-#: activities/geography/resource/board/board7_0.qml:73
-msgctxt "board7_0|"
-msgid "Sierra Leone"
-msgstr "സിയറ ലിയോൺ"
-
-#: activities/geography/resource/board/board7_0.qml:80
-msgctxt "board7_0|"
-msgid "Senegal"
-msgstr "സിനഗൾ"
-
-#: activities/geography/resource/board/board7_0.qml:87
-msgctxt "board7_0|"
-msgid "Rwanda"
-msgstr "റുവാണ്ട"
-
-#: activities/geography/resource/board/board7_0.qml:94
-msgctxt "board7_0|"
-msgid "Niger"
-msgstr "നൈഗർ"
-
-#: activities/geography/resource/board/board7_0.qml:101
-msgctxt "board7_0|"
-msgid "Nigeria"
-msgstr "നൈജീരയ"
-
-#: activities/geography/resource/board/board7_0.qml:108
+#: activities/geography/resource/board/board7_0.qml:31
 msgctxt "board7_0|"
 msgid "Morocco"
 msgstr "മൊറോക്കോ"
 
-#: activities/geography/resource/board/board7_0.qml:115
+#: activities/geography/resource/board/board7_0.qml:38
 msgctxt "board7_0|"
-msgid "Mauritania"
-msgstr "മൗറിറ്റേനിയ"
+msgid "Algeria"
+msgstr "അൾജീരിയ"
 
-#: activities/geography/resource/board/board7_0.qml:122
-msgctxt "board7_0|"
-msgid "Mali"
-msgstr "മാലി"
-
-#: activities/geography/resource/board/board7_0.qml:129
+#: activities/geography/resource/board/board7_0.qml:45
 msgctxt "board7_0|"
 msgid "Libya"
 msgstr "ലിബിയ"
 
+#: activities/geography/resource/board/board7_0.qml:52
+msgctxt "board7_0|"
+msgid "Egypt"
+msgstr "ഈജിപ്ത്"
+
+#: activities/geography/resource/board/board7_0.qml:59
+msgctxt "board7_0|"
+msgid "Western Sahara"
+msgstr "പടിഞ്ഞാറൻ സഹാറ"
+
+#: activities/geography/resource/board/board7_0.qml:66
+msgctxt "board7_0|"
+msgid "Mauritania"
+msgstr "മൗറിറ്റേനിയ"
+
+#: activities/geography/resource/board/board7_0.qml:73
+msgctxt "board7_0|"
+msgid "Mali"
+msgstr "മാലി"
+
+#: activities/geography/resource/board/board7_0.qml:80
+msgctxt "board7_0|"
+msgid "Niger"
+msgstr "നൈഗർ"
+
+#: activities/geography/resource/board/board7_0.qml:87
+msgctxt "board7_0|"
+msgid "Chad"
+msgstr "ചാഡ്"
+
+#: activities/geography/resource/board/board7_0.qml:94
+msgctxt "board7_0|"
+msgid "Sudan"
+msgstr "സുഡാൻ"
+
+#: activities/geography/resource/board/board7_0.qml:101
+msgctxt "board7_0|"
+msgid "Eritrea"
+msgstr "എറിത്രിയ"
+
+#: activities/geography/resource/board/board7_0.qml:108
+msgctxt "board7_0|"
+msgid "Senegal"
+msgstr "സിനഗൾ"
+
+#: activities/geography/resource/board/board7_0.qml:115
+msgctxt "board7_0|"
+msgid "Gambia"
+msgstr "ഗാംബിയ"
+
+#: activities/geography/resource/board/board7_0.qml:122
+msgctxt "board7_0|"
+msgid "Guinea Bissau"
+msgstr "ഗിനി ബിസ്സാവു"
+
+#: activities/geography/resource/board/board7_0.qml:129
+msgctxt "board7_0|"
+msgid "Guinea"
+msgstr "ഗിനി"
+
 #: activities/geography/resource/board/board7_0.qml:136
 msgctxt "board7_0|"
-msgid "Liberia"
-msgstr "ലിബേറിയ"
+msgid "Sierra Leone"
+msgstr "സിയറ ലിയോൺ"
 
 #: activities/geography/resource/board/board7_0.qml:143
 msgctxt "board7_0|"
-msgid "Kenya"
-msgstr "കെനിയ"
+msgid "Liberia"
+msgstr "ലിബേറിയ"
 
 #: activities/geography/resource/board/board7_0.qml:150
 msgctxt "board7_0|"
@@ -14694,48 +14769,48 @@ msgstr "ഐവറി കോസ്റ്റ്"
 
 #: activities/geography/resource/board/board7_0.qml:157
 msgctxt "board7_0|"
-msgid "Guinea"
-msgstr "ഗിനി"
+msgid "Burkina Faso"
+msgstr "ബുർക്കിന ഫാസോ"
 
 #: activities/geography/resource/board/board7_0.qml:164
-msgctxt "board7_0|"
-msgid "Guinea Bissau"
-msgstr "ഗിനി ബിസ്സാവു"
-
-#: activities/geography/resource/board/board7_0.qml:171
 msgctxt "board7_0|"
 msgid "Ghana"
 msgstr "ഘാന"
 
+#: activities/geography/resource/board/board7_0.qml:171
+msgctxt "board7_0|"
+msgid "Togo"
+msgstr "ടോഗോ"
+
 #: activities/geography/resource/board/board7_0.qml:178
 msgctxt "board7_0|"
-msgid "Gambia"
-msgstr "ഗാംബിയ"
+msgid "Benin"
+msgstr "ബെനിൻ"
 
 #: activities/geography/resource/board/board7_0.qml:185
 msgctxt "board7_0|"
-msgid "Gabon"
-msgstr "ഗബോൺ"
+msgid "Nigeria"
+msgstr "നൈജീരയ"
 
 #: activities/geography/resource/board/board7_0.qml:192
 msgctxt "board7_0|"
-msgid "Eritrea"
-msgstr "എറിത്രിയ"
+msgid "Cameroon"
+msgstr "കാമറൂൺ"
 
 #: activities/geography/resource/board/board7_0.qml:199
 msgctxt "board7_0|"
-msgid "Ethiopia"
-msgstr "എത്യോപ്യ"
+msgid "Central African Republic"
+msgstr "മധ്യ ആഫ്രിക്കൻ റിപ്പബ്ലിക്ക്"
 
 #: activities/geography/resource/board/board7_0.qml:206
 msgctxt "board7_0|"
-msgid "Equatorial Guinea"
-msgstr "ഇക്വറ്റോറിയൽ ഗിനി"
+msgid "South Sudan"
+msgstr "സൗത്ത് സുഡാൻ"
 
 #: activities/geography/resource/board/board7_0.qml:213
 msgctxt "board7_0|"
-msgid "Egypt"
-msgstr "ഈജിപ്ത്"
+msgid "Ethiopia"
+msgstr "എത്യോപ്യ"
 
 #: activities/geography/resource/board/board7_0.qml:220
 msgctxt "board7_0|"
@@ -14744,33 +14819,33 @@ msgstr "ജിബൂട്ടി"
 
 #: activities/geography/resource/board/board7_0.qml:227
 msgctxt "board7_0|"
-msgid "Chad"
-msgstr "ചാഡ്"
+msgid "Somalia"
+msgstr "സൊമാലിയ"
 
 #: activities/geography/resource/board/board7_0.qml:234
 msgctxt "board7_0|"
-msgid "Central African Republic"
-msgstr "മധ്യ ആഫ്രിക്കൻ റിപ്പബ്ലിക്ക്"
+msgid "Equatorial Guinea"
+msgstr "ഇക്വറ്റോറിയൽ ഗിനി"
 
 #: activities/geography/resource/board/board7_0.qml:241
 msgctxt "board7_0|"
-msgid "Cameroon"
-msgstr "കാമറൂൺ"
+msgid "Gabon"
+msgstr "ഗബോൺ"
 
 #: activities/geography/resource/board/board7_0.qml:248
 msgctxt "board7_0|"
-msgid "Burkina Faso"
-msgstr "ബുർക്കിന ഫാസോ"
+msgid "Uganda"
+msgstr "ഉഗാണ്ട"
 
 #: activities/geography/resource/board/board7_0.qml:255
 msgctxt "board7_0|"
-msgid "Benin"
-msgstr "ബെനിൻ"
+msgid "Kenya"
+msgstr "കെനിയ"
 
 #: activities/geography/resource/board/board7_0.qml:262
 msgctxt "board7_0|"
-msgid "Algeria"
-msgstr "അൾജീരിയ"
+msgid "Rwanda"
+msgstr "റുവാണ്ട"
 
 #: activities/geography/resource/board/board8_0.qml:15
 msgctxt "board8_0|"
@@ -14779,33 +14854,33 @@ msgstr "തെക്കേ ആഫ്രിക്ക"
 
 #: activities/geography/resource/board/board8_0.qml:24
 msgctxt "board8_0|"
-msgid "Zimbabwe"
-msgstr "സിംബാവേ"
+msgid "Equatorial Guinea"
+msgstr "ഇക്വറ്റോറിയൽ ഗിനി"
 
 #: activities/geography/resource/board/board8_0.qml:31
 msgctxt "board8_0|"
-msgid "Zambia"
-msgstr "സാംബിയ"
+msgid "Gabon"
+msgstr "ഗാബോൺ"
 
 #: activities/geography/resource/board/board8_0.qml:38
+msgctxt "board8_0|"
+msgid "Republic of the Congo"
+msgstr "റിപ്പബ്ലിക് ഓഫ് കോംഗോ"
+
+#: activities/geography/resource/board/board8_0.qml:45
+msgctxt "board8_0|"
+msgid "Democratic Republic of the Congo"
+msgstr "ഡെമോക്രാറ്റിക് റിപ്പബ്ലിക് ഓഫ് കോംഗോ"
+
+#: activities/geography/resource/board/board8_0.qml:52
 msgctxt "board8_0|"
 msgid "Uganda"
 msgstr "ഉഗാണ്ട"
 
-#: activities/geography/resource/board/board8_0.qml:45
-msgctxt "board8_0|"
-msgid "Tanzania"
-msgstr "ടാൻസാനിയ"
-
-#: activities/geography/resource/board/board8_0.qml:52
-msgctxt "board8_0|"
-msgid "Eswatini"
-msgstr "ഇസ്വാറ്റിനി"
-
 #: activities/geography/resource/board/board8_0.qml:59
 msgctxt "board8_0|"
-msgid "South Africa"
-msgstr "ദക്ഷിണാഫ്രിക്ക"
+msgid "Kenya"
+msgstr "കെനിയ"
 
 #: activities/geography/resource/board/board8_0.qml:66
 msgctxt "board8_0|"
@@ -14814,89 +14889,89 @@ msgstr "റുവാണ്ട"
 
 #: activities/geography/resource/board/board8_0.qml:73
 msgctxt "board8_0|"
-msgid "Republic of the Congo"
-msgstr "റിപ്പബ്ലിക് ഓഫ് കോംഗോ"
+msgid "Burundi"
+msgstr "ബുറുണ്ടി"
 
 #: activities/geography/resource/board/board8_0.qml:80
 msgctxt "board8_0|"
-msgid "Namibia"
-msgstr "നമീബിയ"
+msgid "Tanzania"
+msgstr "ടാൻസാനിയ"
 
 #: activities/geography/resource/board/board8_0.qml:87
 msgctxt "board8_0|"
-msgid "Mozambique"
-msgstr "മൊസാംബിക്"
+msgid "Angola"
+msgstr "അംഗോള"
 
 #: activities/geography/resource/board/board8_0.qml:94
+msgctxt "board8_0|"
+msgid "Zambia"
+msgstr "സാംബിയ"
+
+#: activities/geography/resource/board/board8_0.qml:101
 msgctxt "board8_0|"
 msgid "Malawi"
 msgstr "മലാവി"
 
-#: activities/geography/resource/board/board8_0.qml:101
+#: activities/geography/resource/board/board8_0.qml:108
+msgctxt "board8_0|"
+msgid "Mozambique"
+msgstr "മൊസാംബിക്"
+
+#: activities/geography/resource/board/board8_0.qml:115
 msgctxt "board8_0|"
 msgid "Madagascar"
 msgstr "മഡഗാസ്ക്കർ"
 
-#: activities/geography/resource/board/board8_0.qml:108
-msgctxt "board8_0|"
-msgid "Lesotho"
-msgstr "ലെസോത്തോ"
-
-#: activities/geography/resource/board/board8_0.qml:115
-msgctxt "board8_0|"
-msgid "Kenya"
-msgstr "കെനിയ"
-
 #: activities/geography/resource/board/board8_0.qml:122
 msgctxt "board8_0|"
-msgid "Gabon"
-msgstr "ഗാബോൺ"
+msgid "Zimbabwe"
+msgstr "സിംബാവേ"
 
 #: activities/geography/resource/board/board8_0.qml:129
-msgctxt "board8_0|"
-msgid "Equatorial Guinea"
-msgstr "ഇക്വറ്റോറിയൽ ഗിനി"
-
-#: activities/geography/resource/board/board8_0.qml:136
-msgctxt "board8_0|"
-msgid "Democratic Republic of the Congo"
-msgstr "ഡെമോക്രാറ്റിക് റിപ്പബ്ലിക് ഓഫ് കോംഗോ"
-
-#: activities/geography/resource/board/board8_0.qml:143
-msgctxt "board8_0|"
-msgid "Burundi"
-msgstr "ബുറുണ്ടി"
-
-#: activities/geography/resource/board/board8_0.qml:150
 msgctxt "board8_0|"
 msgid "Botswana"
 msgstr "ബോറ്റ്സ്വാന"
 
+#: activities/geography/resource/board/board8_0.qml:136
+msgctxt "board8_0|"
+msgid "Namibia"
+msgstr "നമീബിയ"
+
+#: activities/geography/resource/board/board8_0.qml:143
+msgctxt "board8_0|"
+msgid "Eswatini"
+msgstr "ഇസ്വാറ്റിനി"
+
+#: activities/geography/resource/board/board8_0.qml:150
+msgctxt "board8_0|"
+msgid "South Africa"
+msgstr "ദക്ഷിണാഫ്രിക്ക"
+
 #: activities/geography/resource/board/board8_0.qml:157
 msgctxt "board8_0|"
-msgid "Angola"
-msgstr "അംഗോള"
+msgid "Lesotho"
+msgstr "ലെസോത്തോ"
 
 #: activities/geography/resource/board/board9_0.qml:15
 msgctxt "board9_0|"
 msgid "Western Asia"
 msgstr "പടിഞ്ഞാറൻ ഏഷ്യ"
 
-#: activities/geography/resource/board/board9_0.qml:24
+#. Translators: Strip Asia| and translate only Georgia
+#: activities/geography/resource/board/board9_0.qml:25
+msgctxt "board9_0|"
+msgid "Asia|Georgia"
+msgstr "ജോർജിയ"
+
+#: activities/geography/resource/board/board9_0.qml:32
 msgctxt "board9_0|"
 msgid "Turkey"
 msgstr "തുർക്കി"
 
-#: activities/geography/resource/board/board9_0.qml:31
-msgctxt "board9_0|"
-msgid "Cyprus"
-msgstr "സൈപ്രസ്"
-
-#. Translators: Strip Asia| and translate only Georgia
 #: activities/geography/resource/board/board9_0.qml:39
 msgctxt "board9_0|"
-msgid "Asia|Georgia"
-msgstr "ജോർജിയ"
+msgid "Armenia"
+msgstr "അർമേനിയ"
 
 #: activities/geography/resource/board/board9_0.qml:46
 msgctxt "board9_0|"
@@ -14905,28 +14980,28 @@ msgstr "അസർബൈജാൻ"
 
 #: activities/geography/resource/board/board9_0.qml:53
 msgctxt "board9_0|"
-msgid "Armenia"
-msgstr "അർമേനിയ"
+msgid "Cyprus"
+msgstr "സൈപ്രസ്"
 
 #: activities/geography/resource/board/board9_0.qml:60
 msgctxt "board9_0|"
-msgid "Iran"
-msgstr "ഇറാൻ"
+msgid "Lebanon"
+msgstr "ലെബനാൻ"
 
 #: activities/geography/resource/board/board9_0.qml:67
-msgctxt "board9_0|"
-msgid "Iraq"
-msgstr "ഇറാഖ്"
-
-#: activities/geography/resource/board/board9_0.qml:74
 msgctxt "board9_0|"
 msgid "Syria"
 msgstr "സിറിയ"
 
+#: activities/geography/resource/board/board9_0.qml:74
+msgctxt "board9_0|"
+msgid "Iraq"
+msgstr "ഇറാഖ്"
+
 #: activities/geography/resource/board/board9_0.qml:81
 msgctxt "board9_0|"
-msgid "Jordan"
-msgstr "ജോർദാൻ"
+msgid "Iran"
+msgstr "ഇറാൻ"
 
 #: activities/geography/resource/board/board9_0.qml:88
 msgctxt "board9_0|"
@@ -14935,48 +15010,48 @@ msgstr "ഇസ്രയേൽ"
 
 #: activities/geography/resource/board/board9_0.qml:95
 msgctxt "board9_0|"
-msgid "Palestine"
-msgstr "പലസ്തീൻ"
+msgid "Jordan"
+msgstr "ജോർദാൻ"
 
-#: activities/geography/resource/board/board9_0.qml:103
-msgctxt "board9_0|"
-msgid "Lebanon"
-msgstr "ലെബനാൻ"
-
-#: activities/geography/resource/board/board9_0.qml:110
-msgctxt "board9_0|"
-msgid "Saudi Arabia"
-msgstr "സൗദി അറേബ്യ"
-
-#: activities/geography/resource/board/board9_0.qml:117
+#: activities/geography/resource/board/board9_0.qml:102
 msgctxt "board9_0|"
 msgid "Kuwait"
 msgstr "കുവൈറ്റ്‌"
 
-#: activities/geography/resource/board/board9_0.qml:124
+#: activities/geography/resource/board/board9_0.qml:109
+msgctxt "board9_0|"
+msgid "Egypt"
+msgstr "ഈജിപ്ത്"
+
+#: activities/geography/resource/board/board9_0.qml:116
+msgctxt "board9_0|"
+msgid "Saudi Arabia"
+msgstr "സൗദി അറേബ്യ"
+
+#: activities/geography/resource/board/board9_0.qml:123
 msgctxt "board9_0|"
 msgid "Qatar"
 msgstr "ഖത്തർ"
 
-#: activities/geography/resource/board/board9_0.qml:131
+#: activities/geography/resource/board/board9_0.qml:130
 msgctxt "board9_0|"
 msgid "United Arab Emirates"
 msgstr "യുണൈറ്റഡ് അറബ് എമിറേറ്റ്സ്"
 
-#: activities/geography/resource/board/board9_0.qml:138
+#: activities/geography/resource/board/board9_0.qml:137
 msgctxt "board9_0|"
 msgid "Oman"
 msgstr "ഒമാൻ"
 
-#: activities/geography/resource/board/board9_0.qml:145
+#: activities/geography/resource/board/board9_0.qml:144
 msgctxt "board9_0|"
 msgid "Yemen"
 msgstr "യമൻ"
 
-#: activities/geography/resource/board/board9_0.qml:152
+#: activities/geography/resource/board/board9_0.qml:151
 msgctxt "board9_0|"
-msgid "Egypt"
-msgstr "ഈജിപ്ത്"
+msgid "Palestine"
+msgstr "പലസ്തീൻ"
 
 #: activities/geography/resource/board/board9_0.qml:159
 msgctxt "board9_0|"
@@ -28631,12 +28706,12 @@ msgctxt "ChangeLog|"
 msgid "Version %1:"
 msgstr "പതിപ്പ് %1:"
 
-#: core/core.js:221
+#: core/core.js:240
 msgctxt "core|"
 msgid "Missing sound files!"
 msgstr "ശബ്ദ ഫയലുകൾ കാണാനില്ല!"
 
-#: core/core.js:222
+#: core/core.js:241
 msgctxt "core|"
 msgid ""
 "This activity uses language sound files, that are not yet installed on your "
@@ -28644,37 +28719,37 @@ msgid ""
 msgstr ""
 "ഈ പ്രവർത്തനത്തിന്, നിങ്ങളുടെ സിസ്റ്റത്തിൽ ഇൻസ്റ്റാൾ ചെയ്തിട്ടില്ലാത്ത ശബ്ദ ഫയലുകൾ ആവശ്യമാണ്."
 
-#: core/core.js:225
+#: core/core.js:244
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the Configuration dialog."
 msgstr "ആവശ്യമായ ശബ്ദ ഫയലുകൾ ഡൗൺലോഡ് ചെയ്യാൻ, കോൺഫിഗറേഷൻ ഡയലോഗിലേക്ക് പോകൂ."
 
-#: core/core.js:257
+#: core/core.js:276
 msgctxt "core|"
 msgid "Download in progress"
 msgstr "ഡൗൺലോഡ് പുരോഗമിക്കുന്നു"
 
-#: core/core.js:259
+#: core/core.js:278
 msgctxt "core|"
 msgid "Download in progress.<br/>'Abort' it to quit immediately."
 msgstr "ഡൗൺലോഡ് പുരോഗമിക്കുന്നു.<br/>'ഉപേക്ഷിക്കുക' എന്നമർത്തിയാൽ നിർത്താം."
 
-#: core/core.js:269
+#: core/core.js:288
 msgctxt "core|"
 msgid "Quit?"
 msgstr "നിർത്തുകയാണോ?"
 
-#: core/core.js:271
+#: core/core.js:290
 msgctxt "core|"
 msgid "Do you really want to quit GCompris?"
 msgstr "ജികോംപ്രി നിർത്തണമെന്ന് ഉറപ്പാണോ?"
 
-#: core/core.js:272
+#: core/core.js:291
 msgctxt "core|"
 msgid "Yes"
 msgstr "വേണം"
 
-#: core/core.js:273
+#: core/core.js:292
 msgctxt "core|"
 msgid "No"
 msgstr "വേണ്ട"
