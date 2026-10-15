@@ -24,7 +24,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-10-13 23:10+0200\n"
+"PO-Revision-Date: 2026-10-14 12:00+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Basealt Translation Team\n"
 "Language: ru\n"
@@ -2442,6 +2442,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Arrows: move the selection cursor through the panel items and board spots"
 msgstr ""
+"Стрелки: перемещение курсора выбора по элементам панели и местам на поле"
 
 #: activities/babymatch/ActivityInfo.qml:30
 #: activities/babyshapes/ActivityInfo.qml:30
@@ -2456,6 +2457,8 @@ msgid ""
 "Space: select an item in the list, and place it on a spot. If there is "
 "nothing selected in the list, remove item from selected spot"
 msgstr ""
+"Клавиша «Пробел»: выбор элемента в списке и размещение его на месте. Если в "
+"списке ничего не выбрано — удаление элемента с выбранного места"
 
 #: activities/babymatch/ActivityInfo.qml:31
 #: activities/babyshapes/ActivityInfo.qml:31
@@ -2465,14 +2468,11 @@ msgstr ""
 #: activities/geography/ActivityInfo.qml:31
 #: activities/imagename/ActivityInfo.qml:31
 #: activities/paintings/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Tab: navigate between the bottom and the top areas"
 msgctxt "ActivityInfo|"
 msgid ""
 "Tab: toggle navigation between the panel and the board without any other "
 "action"
-msgstr "Tab: переключение между нижней и верхней областями"
+msgstr "Tab: переключение между панелью и полем без других действий"
 
 #: activities/babymatch/ActivityInfo.qml:32
 #: activities/babyshapes/ActivityInfo.qml:32
@@ -2482,14 +2482,9 @@ msgstr "Tab: переключение между нижней и верхней 
 #: activities/geography/ActivityInfo.qml:32
 #: activities/imagename/ActivityInfo.qml:32
 #: activities/paintings/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Delete or Backspace: remove the selected item from the answer area"
 msgctxt "ActivityInfo|"
 msgid "Delete or Backspace: remove item from selected spot"
-msgstr ""
-"Клавиша «Delete» или «Backspace»: удаление выбранного элемента из области "
-"ответа"
+msgstr "Клавиша «Delete» или «Backspace»: удаление элемента с выбранного места"
 
 #: activities/babymatch/resource/board/board1_0.qml:14
 msgctxt "board1_0|"

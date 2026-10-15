@@ -2398,14 +2398,11 @@ msgstr ""
 #: activities/geography/ActivityInfo.qml:31
 #: activities/imagename/ActivityInfo.qml:31
 #: activities/paintings/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Tab: navigate between the bottom and the top areas"
 msgctxt "ActivityInfo|"
 msgid ""
 "Tab: toggle navigation between the panel and the board without any other "
 "action"
-msgstr "Tab: გადასვლა ქვედა და ზედა ადგილებს შორის"
+msgstr "Tab: ნავიგაციის გადართვა პანელსა და დაფას შორის სხვა ქმედების გარეშე"
 
 #: activities/babymatch/ActivityInfo.qml:32
 #: activities/babyshapes/ActivityInfo.qml:32
@@ -2415,12 +2412,9 @@ msgstr "Tab: გადასვლა ქვედა და ზედა ად
 #: activities/geography/ActivityInfo.qml:32
 #: activities/imagename/ActivityInfo.qml:32
 #: activities/paintings/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Delete or Backspace: remove the selected item from the answer area"
 msgctxt "ActivityInfo|"
 msgid "Delete or Backspace: remove item from selected spot"
-msgstr "Delete ან Backspace: წაშლის მონიშნულ ელემენტს პასუხის ადგილიდან"
+msgstr "Delete ან Backspace: წაშლის ელემენტს მონიშნული ადგილიდან"
 
 #: activities/babymatch/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
@@ -27843,203 +27837,3 @@ msgstr "გამოტოვება"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "დაწყება"
-
-#~ msgctxt "Data|"
-#~ msgid "Enumerate up to 2 fruit."
-#~ msgstr "ჩამოთვალეთ 2-მდე ხილი."
-
-#~ msgctxt "Data|"
-#~ msgid "Enumerate up to 3 fruit."
-#~ msgstr "ჩამოთვალეთ 3-მდე ხილი."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 2 types of fruit and enumerate each group (3 fruit max)."
-#~ msgstr "დააჯგუფეთ 2 ტიპის ხილი და ჩამოთვალეთ თითოეული ჯგუფი (მაქს 3 ხილი)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 2 types of fruit and enumerate each group (4 fruit max)."
-#~ msgstr "დააჯგუფეთ 2 ტიპის ხილი და ჩამოთვალეთ თითოეული ჯგუფი (მაქს 4 ხილი)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 3 types of fruit and enumerate each group (6 fruit max)."
-#~ msgstr "დააჯგუფეთ 3 ტიპის ხილი და ჩამოთვალეთ თითოეული ჯგუფი (მაქს 6 ხილი)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 3 types of fruit and enumerate each group (3 fruit max)."
-#~ msgstr "დააჯგუფეთ 3 ტიპის ხილი და ჩამოთვალეთ თითოეული ჯგუფი (მაქს 3 ხილი)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 3 types of fruit and enumerate each group (4 fruit max)."
-#~ msgstr "დააჯგუფეთ 3 ტიპის ხილი და ჩამოთვალეთ თითოეული ჯგუფი (მაქს 4 ხილი)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 4 types of fruit and enumerate each group (9 fruit max)."
-#~ msgstr "დააჯგუფეთ 4 ტიპის ხილი და ჩამოთვალეთ თითოეული ჯგუფი (მაქს 9 ხილი)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 4 types of fruit and enumerate each group (6 fruit max)."
-#~ msgstr "დააჯგუფეთ 4 ტიპის ხილი და ჩამოთვალეთ თითოეული ჯგუფი (მაქს 6 ხილი)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 4 types of fruit and enumerate each group (7 fruit max)."
-#~ msgstr "დააჯგუფეთ 4 ტიპის ხილი და ჩამოთვალეთ თითოეული ჯგუფი (მაქს 7 ხილი)."
-
-#~ msgctxt "Data|"
-#~ msgid "Group 4 types of fruit and enumerate each group (8 fruit max)."
-#~ msgstr "დააჯგუფეთ 4 ტიპის ხილი და ჩამოთვალეთ თითოეული ჯგუფი (მაქს 8 ხილი)."
-
-#~ msgctxt "ColorSelector|"
-#~ msgid "Palette Colors"
-#~ msgstr "პალიტრის ფერები"
-
-#~ msgctxt "ColorSelector|"
-#~ msgid "Reset palette"
-#~ msgstr "პალიტრის ჩამოყრა"
-
-#~ msgctxt "ColorSelector|"
-#~ msgid "Selected Color"
-#~ msgstr "არჩეული ფერი"
-
-#~ msgctxt "ColorSelector|color hue"
-#~ msgid "Hue"
-#~ msgstr "ტონი"
-
-#~ msgctxt "ColorSelector|color saturation"
-#~ msgid "Saturation"
-#~ msgstr "გაჯერებულობა"
-
-#~ msgctxt "ColorSelector|color lightness"
-#~ msgid "Lightness"
-#~ msgstr "სიკაშკაშე"
-
-#~ msgctxt "ColorSelector|"
-#~ msgid "Reset Color"
-#~ msgstr "ფერის ჩამოყრა"
-
-#~ msgctxt "Data|"
-#~ msgid "Maximum value: 500000."
-#~ msgstr "მაქსიმალური მნიშვნელობა: 500000."
-
-#~ msgctxt "Data|"
-#~ msgid "Find the correct answer."
-#~ msgstr "იპოვეთ სწორი პასუხი."
-
-#~ msgctxt "Data|"
-#~ msgid "What is the first number?"
-#~ msgstr "რომელია პირველი რიცხვი?"
-
-#~ msgctxt "Data|"
-#~ msgid "What is a color?"
-#~ msgstr "რა არის ფერი?"
-
-#~ msgctxt "Data|"
-#~ msgid "What are the first two numbers?"
-#~ msgstr "რომელია პირველი ორი რიცხვი?"
-
-#~ msgctxt "Data|"
-#~ msgid "What are animals?"
-#~ msgstr "რა არიან ცხოველები?"
-
-#~ msgctxt "Data|"
-#~ msgid "Answers always in order, select the first one"
-#~ msgstr "უპასუხეთ ყოველთვის რიგში. აირჩიეთ პირველი"
-
-#~ msgctxt "Data|"
-#~ msgid "Find the previous number."
-#~ msgstr "იპოვეთ წინა რიცხვი."
-
-#~ msgctxt "Data|"
-#~ msgid "Find the in-between number."
-#~ msgstr "იპოვეთ შუალედური რიცხვი."
-
-#~ msgctxt "Data|"
-#~ msgid "Find the missing numbers."
-#~ msgstr "იპოვეთ ნაკლული რიცხვები."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Ctrl + D: save the drawing"
-#~ msgstr "Ctrl + D: ნახატის შენახვა"
-
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Save drawing"
-#~ msgstr "ნახატის შენახვა"
-
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Save vector image (SVG)"
-#~ msgstr "ვექტორული გამოსახულების შენახვა (SVG)"
-
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Export image (PNG)"
-#~ msgstr "გამოსახულების გატანა (PNG)"
-
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Pencil's color and width"
-#~ msgstr "ფანქრის ფერი და სიგანე"
-
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Save as a drawing"
-#~ msgstr "შენახვა ნახატის სახით"
-
-#~ msgctxt "DrawingWheels|"
-#~ msgid "Distance to center"
-#~ msgstr "მანძილი ცენტრამდე"
-
-#~ msgctxt "ColorsPanel|"
-#~ msgid "Palettes"
-#~ msgstr "პალიტრები"
-
-#~ msgctxt "Frieze|"
-#~ msgid "What is the binary representation of %1?"
-#~ msgstr "რა არის %1-ის ორობითი წარმოდგენა?"
-
-#~ msgctxt "grammar_analysis|"
-#~ msgid "Grammatical analysis"
-#~ msgstr "გრამატიკული ანალიზი"
-
-#~ msgctxt "grammar_analysis|"
-#~ msgid "Learn to identify grammatical classes."
-#~ msgstr "ისწავლეთ გრამატიკული კლასების ამოცნობა."
-
-#~ msgctxt "grammar_analysis|"
-#~ msgid "Leave the box blank if no class matches."
-#~ msgstr "დატოვეთ ველი ცარიელი, თუ კლასი არ ემთხვევა."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "<b>Keyboard controls:"
-#~ msgstr "<b>კლავიატურით მართვა:"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Draw the letters by connecting the dots in the correct order."
-#~ msgstr "დახატეთ ასოები წერტილების სწორი მიმდევრობის შეერთებით."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Draw the numbers by connecting the dots in the correct order."
-#~ msgstr "დახატეთ რიცხვები წერტილების სწორი მიმდევრობის შეერთებით."
-
-#~ msgctxt "Data|"
-#~ msgid "Solve subtraction, 2 digits, 2 lines."
-#~ msgstr "ამოხსენით გამოკლება, 2 ციფრი, 2 ხაზი."
-
-#~ msgctxt "Balancebox|"
-#~ msgid "Ok"
-#~ msgstr "დიახ"
-
-#~ msgctxt "GCCreationHandler|"
-#~ msgid "Ok"
-#~ msgstr "დიახ"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Alphabet sequence."
-#~ msgstr "ანბანის თანმიმდევრობა."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Baby mouse"
-#~ msgstr "წრუწუნა"
-
-#~ msgctxt "Guesscount|"
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
-#~ msgctxt "board1|"
-#~ msgid "Rooster"
-#~ msgstr "მამალი"

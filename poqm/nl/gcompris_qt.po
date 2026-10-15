@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-10-13 15:38+0200\n"
+"PO-Revision-Date: 2026-10-14 11:52+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -2423,6 +2423,8 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Arrows: move the selection cursor through the panel items and board spots"
 msgstr ""
+"Pijltjestoetsen: verplaats de selectiecursor door de paneelitems en de "
+"vakjes op het bord"
 
 #: activities/babymatch/ActivityInfo.qml:30
 #: activities/babyshapes/ActivityInfo.qml:30
@@ -2437,6 +2439,9 @@ msgid ""
 "Space: select an item in the list, and place it on a spot. If there is "
 "nothing selected in the list, remove item from selected spot"
 msgstr ""
+"Spatiebalk: selecteer een item in de lijst en plaats het op een plek. Als er "
+"niets in de lijst is geselecteerd, verwijder dan het item van de "
+"geselecteerde plek"
 
 #: activities/babymatch/ActivityInfo.qml:31
 #: activities/babyshapes/ActivityInfo.qml:31
@@ -2446,14 +2451,11 @@ msgstr ""
 #: activities/geography/ActivityInfo.qml:31
 #: activities/imagename/ActivityInfo.qml:31
 #: activities/paintings/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Tab: navigate between the bottom and the top areas"
 msgctxt "ActivityInfo|"
 msgid ""
 "Tab: toggle navigation between the panel and the board without any other "
 "action"
-msgstr "Tab: navigeren tussen de onder en bovengebieden"
+msgstr "Tab: schakel tussen het paneel en het bord zonder enige andere actie"
 
 #: activities/babymatch/ActivityInfo.qml:32
 #: activities/babyshapes/ActivityInfo.qml:32
@@ -2463,14 +2465,9 @@ msgstr "Tab: navigeren tussen de onder en bovengebieden"
 #: activities/geography/ActivityInfo.qml:32
 #: activities/imagename/ActivityInfo.qml:32
 #: activities/paintings/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Delete or Backspace: remove the selected item from the answer area"
 msgctxt "ActivityInfo|"
 msgid "Delete or Backspace: remove item from selected spot"
-msgstr ""
-"Delete of backspace: het geselecteerde item uit het antwoordgebied "
-"verwijderen"
+msgstr "Delete of Backspace: item van de geselecteerde plek verwijderen"
 
 #: activities/babymatch/resource/board/board1_0.qml:14
 msgctxt "board1_0|"

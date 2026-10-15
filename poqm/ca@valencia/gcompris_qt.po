@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2026-10-13 10:44+0200\n"
+"PO-Revision-Date: 2026-10-14 10:17+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -2542,6 +2542,8 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Arrows: move the selection cursor through the panel items and board spots"
 msgstr ""
+"«Fletxes»: mou el cursor de selecció a través dels elements del quadro i els "
+"punts del tauler"
 
 #: activities/babymatch/ActivityInfo.qml:30
 #: activities/babyshapes/ActivityInfo.qml:30
@@ -2556,6 +2558,8 @@ msgid ""
 "Space: select an item in the list, and place it on a spot. If there is "
 "nothing selected in the list, remove item from selected spot"
 msgstr ""
+"«Espai»: selecciona un element de la llista i el col·loca en un punt. Si no "
+"hi ha res seleccionat en la llista, elimina l'element del lloc seleccionat"
 
 # skip-rule: kct-tab
 #: activities/babymatch/ActivityInfo.qml:31
@@ -2566,14 +2570,13 @@ msgstr ""
 #: activities/geography/ActivityInfo.qml:31
 #: activities/imagename/ActivityInfo.qml:31
 #: activities/paintings/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Tab: navigate between the bottom and the top areas"
 msgctxt "ActivityInfo|"
 msgid ""
 "Tab: toggle navigation between the panel and the board without any other "
 "action"
-msgstr "Tabulador: per a canviar entre les àrees inferior i superior"
+msgstr ""
+"Tabulador: canvia la navegació entre el quadro i el tauler sense cap altra "
+"acció"
 
 #: activities/babymatch/ActivityInfo.qml:32
 #: activities/babyshapes/ActivityInfo.qml:32
@@ -2583,14 +2586,9 @@ msgstr "Tabulador: per a canviar entre les àrees inferior i superior"
 #: activities/geography/ActivityInfo.qml:32
 #: activities/imagename/ActivityInfo.qml:32
 #: activities/paintings/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Delete or Backspace: remove the selected item from the answer area"
 msgctxt "ActivityInfo|"
 msgid "Delete or Backspace: remove item from selected spot"
-msgstr ""
-"«Suprimir» o «Retrocés»: per a eliminar l'element seleccionat de l'àrea de "
-"resposta"
+msgstr "«Suprimir» o «Retrocés»: a elimina l'element del punt seleccionat"
 
 #: activities/babymatch/resource/board/board1_0.qml:14
 msgctxt "board1_0|"

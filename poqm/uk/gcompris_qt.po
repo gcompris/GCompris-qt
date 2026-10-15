@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2026-10-13 13:44+0300\n"
+"PO-Revision-Date: 2026-10-14 16:01+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -2447,6 +2447,8 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Arrows: move the selection cursor through the panel items and board spots"
 msgstr ""
+"Клавіші зі стрілками: пересунути курсор позначення на панелі записів і "
+"пунктами на дошці"
 
 #: activities/babymatch/ActivityInfo.qml:30
 #: activities/babyshapes/ActivityInfo.qml:30
@@ -2461,6 +2463,9 @@ msgid ""
 "Space: select an item in the list, and place it on a spot. If there is "
 "nothing selected in the list, remove item from selected spot"
 msgstr ""
+"Клавіша «Пробіл»: вибрати елемент зі списку та розмістити його на вибраній "
+"позиції. Якщо у списку нічого не вибрано — прибрати елемент із вибраної "
+"позиції."
 
 #: activities/babymatch/ActivityInfo.qml:31
 #: activities/babyshapes/ActivityInfo.qml:31
@@ -2470,14 +2475,12 @@ msgstr ""
 #: activities/geography/ActivityInfo.qml:31
 #: activities/imagename/ActivityInfo.qml:31
 #: activities/paintings/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Tab: navigate between the bottom and the top areas"
 msgctxt "ActivityInfo|"
 msgid ""
 "Tab: toggle navigation between the panel and the board without any other "
 "action"
-msgstr "Tab: перемикання між нижньою і верхньою областями"
+msgstr ""
+"Tab: перемикання навігації між панеллю і дошкою без виконання інших дій"
 
 #: activities/babymatch/ActivityInfo.qml:32
 #: activities/babyshapes/ActivityInfo.qml:32
@@ -2487,12 +2490,9 @@ msgstr "Tab: перемикання між нижньою і верхньою о
 #: activities/geography/ActivityInfo.qml:32
 #: activities/imagename/ActivityInfo.qml:32
 #: activities/paintings/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Delete or Backspace: remove the selected item from the answer area"
 msgctxt "ActivityInfo|"
 msgid "Delete or Backspace: remove item from selected spot"
-msgstr "Delete або Backspace: вилучити позначену частину з області відповідей"
+msgstr "Delete або Backspace: вилучити пункт з позначеного фрагмента"
 
 #: activities/babymatch/resource/board/board1_0.qml:14
 msgctxt "board1_0|"

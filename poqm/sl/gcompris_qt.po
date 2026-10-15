@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-10-13 07:22+0200\n"
+"PO-Revision-Date: 2026-10-14 07:28+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -2403,6 +2403,8 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Arrows: move the selection cursor through the panel items and board spots"
 msgstr ""
+"Puščice: premik kazalca za izbiro med elementi plošče in polji na igralni "
+"površini"
 
 #: activities/babymatch/ActivityInfo.qml:30
 #: activities/babyshapes/ActivityInfo.qml:30
@@ -2417,6 +2419,8 @@ msgid ""
 "Space: select an item in the list, and place it on a spot. If there is "
 "nothing selected in the list, remove item from selected spot"
 msgstr ""
+"Preslednica: izbere element na seznamu in ga postavi na določeno mesto. Če "
+"na seznamu ni nič izbrano, odstrani element iz izbranega mesta"
 
 #: activities/babymatch/ActivityInfo.qml:31
 #: activities/babyshapes/ActivityInfo.qml:31
@@ -2426,14 +2430,12 @@ msgstr ""
 #: activities/geography/ActivityInfo.qml:31
 #: activities/imagename/ActivityInfo.qml:31
 #: activities/paintings/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Tab: navigate between the bottom and the top areas"
 msgctxt "ActivityInfo|"
 msgid ""
 "Tab: toggle navigation between the panel and the board without any other "
 "action"
-msgstr "Tab: krmilite med spodnjim in zgornjim delom"
+msgstr ""
+"Tab: preklop navigacije med ploščo in delovnim območjem brez dodatnih dejanj"
 
 #: activities/babymatch/ActivityInfo.qml:32
 #: activities/babyshapes/ActivityInfo.qml:32
@@ -2443,12 +2445,9 @@ msgstr "Tab: krmilite med spodnjim in zgornjim delom"
 #: activities/geography/ActivityInfo.qml:32
 #: activities/imagename/ActivityInfo.qml:32
 #: activities/paintings/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Delete or Backspace: remove the selected item from the answer area"
 msgctxt "ActivityInfo|"
 msgid "Delete or Backspace: remove item from selected spot"
-msgstr "Delete ali Backspace: odstrani izbran element iz območja odgovorov"
+msgstr "Delete ali Backspace: odstrani element iz izbrane točke"
 
 #: activities/babymatch/resource/board/board1_0.qml:14
 msgctxt "board1_0|"

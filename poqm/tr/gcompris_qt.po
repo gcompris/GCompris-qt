@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-10-13 19:02+0300\n"
+"PO-Revision-Date: 2026-10-14 19:19+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -2409,6 +2409,8 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Arrows: move the selection cursor through the panel items and board spots"
 msgstr ""
+"Oklar: Seçim imlecini, panel ögeleri ve tahta noktaları arasında hareket "
+"ettir"
 
 #: activities/babymatch/ActivityInfo.qml:30
 #: activities/babyshapes/ActivityInfo.qml:30
@@ -2423,6 +2425,8 @@ msgid ""
 "Space: select an item in the list, and place it on a spot. If there is "
 "nothing selected in the list, remove item from selected spot"
 msgstr ""
+"Boşluk: Listedeki bir ögeyi seç ve onu bir noktaya yerleştir; listede seçili "
+"bir şey yoksa ögeyi, seçili noktadan kaldır"
 
 #: activities/babymatch/ActivityInfo.qml:31
 #: activities/babyshapes/ActivityInfo.qml:31
@@ -2432,14 +2436,11 @@ msgstr ""
 #: activities/geography/ActivityInfo.qml:31
 #: activities/imagename/ActivityInfo.qml:31
 #: activities/paintings/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Tab: navigate between the bottom and the top areas"
 msgctxt "ActivityInfo|"
 msgid ""
 "Tab: toggle navigation between the panel and the board without any other "
 "action"
-msgstr "Sekme: Alt ve üst alanlar arasında dolaş"
+msgstr "Sekme: Başka hiçbir eylem yapmadan, panel ve tahta arasında dolaş"
 
 #: activities/babymatch/ActivityInfo.qml:32
 #: activities/babyshapes/ActivityInfo.qml:32
@@ -2449,12 +2450,9 @@ msgstr "Sekme: Alt ve üst alanlar arasında dolaş"
 #: activities/geography/ActivityInfo.qml:32
 #: activities/imagename/ActivityInfo.qml:32
 #: activities/paintings/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Delete or Backspace: remove the selected item from the answer area"
 msgctxt "ActivityInfo|"
 msgid "Delete or Backspace: remove item from selected spot"
-msgstr "Sil veya Geri Sil: Seçili ögeyi yanıt alanından kaldır"
+msgstr "Sil veya Geri Sil: Seçili ögeyi, seçili noktadan kaldır"
 
 #: activities/babymatch/resource/board/board1_0.qml:14
 msgctxt "board1_0|"

@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2026-09-22 11:26+0200\n"
+"PO-Revision-Date: 2026-10-13 16:12+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 26.08.1\n"
+"X-Generator: Lokalize 26.08.2\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -23572,6 +23572,8 @@ msgid ""
 "Arrows: move the keyboard cursor in the grid, and if a point is selected "
 "move it"
 msgstr ""
+"Frecce direzionali: spostano il cursore della tastiera nella griglia e, se "
+"un punto è selezionato, lo spostano."
 
 #: activities/polygons/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -23579,30 +23581,25 @@ msgid ""
 "Enter: create a point at the cursor position, or validate your answer when "
 "the shape is closed"
 msgstr ""
+"Invio: crea un punto nella posizione del cursore o conferma la risposta "
+"quando la forma è chiusa."
 
 #: activities/polygons/ActivityInfo.qml:32
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select or deselect the highlighted answer"
 msgctxt "ActivityInfo|"
 msgid "Space: select or deselect the point at the cursor position"
-msgstr "Barra spaziatrice: seleziona o deseleziona la risposta evidenziata"
+msgstr ""
+"Barra spaziatrice: seleziona o deseleziona il punto in corrispondenza del "
+"cursore"
 
 #: activities/polygons/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Up arrow: select next item"
 msgctxt "ActivityInfo|"
 msgid "Tab: select next point"
-msgstr "Barra spaziatrice: seleziona un elemento"
+msgstr "Tab: seleziona il punto successivo"
 
 #: activities/polygons/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + D: delete selected text"
 msgctxt "ActivityInfo|"
 msgid "Delete: delete selected point"
-msgstr "Ctrl + D: elimina il testo selezionato"
+msgstr "Canc: elimina il punto selezionato"
 
 #: activities/polygons/TutorialDataset.qml:20
 msgctxt "TutorialDataset|"
