@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2026-09-09 09:20+0200\n"
+"PO-Revision-Date: 2026-10-15 20:43+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -2344,7 +2344,7 @@ msgstr "Fer coincidir els objectes amb les seves formes."
 #: activities/baby_tangram/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to match an object with its shape."
-msgstr "Aprendre a fer coincidir una objecte amb la seva forma."
+msgstr "Aprendre a fer coincidir un objecte amb la seva forma."
 
 #. Help manual
 #: activities/baby_tangram/ActivityInfo.qml:24
@@ -2566,7 +2566,7 @@ msgstr "Paul Gauguin, Arearea - 1892"
 #: activities/babyshapes/resource/board/board7_1.qml:14
 msgctxt "board7_1|"
 msgid "Pieter Bruegel the Elder, The peasants wedding - 1568"
-msgstr "Pieter Bruegel el vell, La boda camperola - 1568"
+msgstr "Pieter Brueghel el vell, La boda camperola - 1568"
 
 # Nota: http://ca.wikipedia.org/wiki/La_dama_i_l'unicorn
 #: activities/babyshapes/resource/board/board7_2.qml:14
@@ -2578,7 +2578,7 @@ msgstr "La dama i l'unicorn - segle XV"
 #: activities/babyshapes/resource/board/board7_3.qml:14
 msgctxt "board7_3|"
 msgid "Vincent van Gogh, Bedroom in Arles - 1888"
-msgstr "El dormitori de van Gogh a Arles - 1888"
+msgstr "El dormitori de Van Gogh a Arles - 1888"
 
 # Nota: https://ca.wikipedia.org/wiki/Ambrosius_Bosschaert_el_Vell
 #: activities/babyshapes/resource/board/board7_4.qml:14
@@ -3053,7 +3053,7 @@ msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
 "to 255 with 8 bits only."
 msgstr ""
-"El sistema binari usa aquests nombres d'una manera molt eficient, permetent "
+"El sistema binari usa aquests nombres d'una manera molt eficient, permet "
 "comptar des de 0 fins al 255 només amb 8 bits."
 
 # skip-rule: t-sp_co
@@ -5153,7 +5153,7 @@ msgstr "Flyer III dels germans Wright, 1905"
 #: activities/chronos/resource/board/board6_0.qml:56
 msgctxt "board6_0|"
 msgid "1909 Louis Bleriot crosses the English Channel"
-msgstr "Louis Bleriot creua el canal de la Mànega, 1909"
+msgstr "Louis Bleriot travessa el canal de la Mànega, 1909"
 
 #: activities/chronos/resource/board/board6_1.qml:15
 msgctxt "board6_1|"
@@ -6994,7 +6994,7 @@ msgstr "Fes rodar l'engranatge a la roda dentada per a dibuixar."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
 msgstr ""
-"Descobreix els hipotrocoides i utilitza'ls com a eines de pintura digital."
+"Descobreix les hipotrocoides i utilitza-les com a eines de pintura digital."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
@@ -7650,7 +7650,7 @@ msgstr ""
 #: activities/explore_farm_animals/resource/board/board1.qml:85
 msgctxt "board1|"
 msgid "This animal has webbed feet and can swim on the water."
-msgstr "Aquest animal té peus amb membrana per tal de poder nedar a l'aigua."
+msgstr "Aquest animal té peus amb membranes i pot nedar a l'aigua."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
 msgctxt "board1|"
@@ -9344,7 +9344,7 @@ msgstr "Fes clic al lloc on es troba el monument indicat."
 #: activities/explore_monuments/resource/board/board9.qml:20
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Castell de Himeji"
+msgstr "Castell d'Himeji"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -11656,7 +11656,7 @@ msgstr "Himachal Pradesh"
 #: activities/geo-country/resource/board/board12_0.qml:31
 msgctxt "board12_0|"
 msgid "Punjab"
-msgstr "Punjab"
+msgstr "Panjab"
 
 #. State of India: Uttarakhand
 #: activities/geo-country/resource/board/board12_0.qml:38
@@ -11818,7 +11818,7 @@ msgstr "Meghalaya"
 #: activities/geo-country/resource/board/board12_0.qml:221
 msgctxt "board12_0|"
 msgid "Andaman and Nicobar Islands"
-msgstr "Illes Andarman i Nicobar"
+msgstr "Illes Andaman i Nicobar"
 
 #. Union Territory of India: Delhi
 #: activities/geo-country/resource/board/board12_0.qml:228
@@ -12713,7 +12713,7 @@ msgstr "Baden-Württemberg"
 #: activities/geo-country/resource/board/board3_0.qml:15
 msgctxt "board3_0|"
 msgid "Provinces of Argentina"
-msgstr "Províncies d'Argentina"
+msgstr "Províncies de l'Argentina"
 
 #. Province of Argentina: Tucumán
 #: activities/geo-country/resource/board/board3_0.qml:24
@@ -14027,7 +14027,7 @@ msgstr "Kazakhstan"
 #: activities/geography/resource/board/board10_0.qml:31
 msgctxt "board10_0|"
 msgid "Kyrgyzstan"
-msgstr "Kirguizistan"
+msgstr "Kirguizstan"
 
 #: activities/geography/resource/board/board10_0.qml:38
 msgctxt "board10_0|"
@@ -16456,7 +16456,7 @@ msgstr ""
 "dedicaven a moure contínuament 64 discos seguint les regles de la Torre de "
 "Hanoi. Segons la llegenda, el món acabaria el dia que els monjos acabessin "
 "la seva feina. També és conegut com a trencaclosques de la Torre de Brahma. "
-"No està clar si Lucas va inventar-se la llegenda o s'hi va inspirar (font "
+"No queda clar si Lucas va inventar-se la llegenda o s'hi va inspirar (font "
 "Wikipedia: https://en.wikipedia.org/wiki/Tower_of_hanoi)."
 
 #: activities/hanoi_real/HanoiReal.qml:75
@@ -18221,7 +18221,7 @@ msgstr ""
 #: activities/louis-braille/louis_braille_data.js:12
 msgctxt "louis_braille_data|"
 msgid "Born on January 4th 1809 in Coupvray near Paris in France."
-msgstr "Va néixer el 4 gener de 1809 a Coupvray, prop de París a França."
+msgstr "Va néixer el 4 de gener de 1809 a Coupvray, prop de París a França."
 
 #: activities/louis-braille/louis_braille_data.js:17
 msgctxt "louis_braille_data|"
@@ -27132,7 +27132,7 @@ msgid ""
 "from filling in the ballast tank, thus allowing it to dive underwater."
 msgstr ""
 "En alternar la vàlvula superior, permetràs que l'aigua ompli els tancs de "
-"llast, permetent així que se submergeixi sota l'aigua."
+"llast, això permet que se submergeixi sota l'aigua."
 
 #: activities/submarine/Submarine.qml:161
 msgctxt "Submarine|"
@@ -27142,7 +27142,7 @@ msgid ""
 "of the water."
 msgstr ""
 "En alternar la vàlvula inferior, evitaràs que l'aigua flueixi cap als tancs "
-"de llast, omplint-se d'aire, permetent així que surti a la superfície."
+"de llast, omplint-se d'aire, això permet que surti a la superfície."
 
 #: activities/submarine/Submarine.qml:168
 msgctxt "Submarine|"
@@ -28098,15 +28098,15 @@ msgstr ""
 "En alguns nivells, hauràs d'escriure l'operació indicada abans de resoldre-"
 "la; en aquest cas, fes clic al botó Preparat quan l'operació s'hagi escrit "
 "correctament i després resol-la. Si el nombre superior és més petit que el "
-"nombre inferior, pots demanar prestat del subtrahend a la columna següent: "
-"per exemple, si afegeixes 10 unitats al nombre superior, has d'afegir una "
-"unitat al nombre inferior de la columna següent. Això s'anomena préstec per "
-"mètode de compensació. Per fer-ho en aquesta activitat, fes clic al "
-"rectangle buit a l'esquerra del nombre superior, selecciona 1, i a la "
-"columna següent fes clic al rectangle buit a la dreta del nombre inferior i "
-"selecciona +1. Després escriu el resultat de la columna a la línia inferior, "
-"i fes el mateix a les següents columnes fins que l'operació hagi acabat. Un "
-"cop trobat el resultat, fes clic al botó D'acord per validar la resposta. En "
+"nombre inferior, pots manllevar del subtrahend a la columna següent: per "
+"exemple, si afegeixes 10 unitats al nombre superior, has d'afegir una unitat "
+"al nombre inferior de la columna següent. Això s'anomena préstec per mètode "
+"de compensació. Per fer-ho en aquesta activitat, fes clic al rectangle buit "
+"a l'esquerra del nombre superior, selecciona 1, i a la columna següent fes "
+"clic al rectangle buit a la dreta del nombre inferior i selecciona +1. "
+"Després escriu el resultat de la columna a la línia inferior, i fes el "
+"mateix a les següents columnes fins que l'operació hagi acabat. Un cop "
+"trobat el resultat, fes clic al botó D'acord per validar la resposta. En "
 "alguns nivells, hauràs d'escriure l'operació donada abans de resoldre-la; en "
 "aquest cas, fes clic al botó Prepara quan l'operació s'escriu correctament i "
 "després resol-la."
