@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2026-10-14 10:17+0200\n"
+"PO-Revision-Date: 2026-10-15 20:43+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -2368,7 +2368,7 @@ msgstr "Fer coincidir els objectes amb les seves formes."
 #: activities/baby_tangram/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to match an object with its shape."
-msgstr "Aprendre a fer coincidir una objecte amb la seva forma."
+msgstr "Aprendre a fer coincidir un objecte amb la seva forma."
 
 #. Help manual
 #: activities/baby_tangram/ActivityInfo.qml:24
@@ -2650,7 +2650,7 @@ msgstr "Paul Gauguin, Arearea - 1892"
 #: activities/babyshapes/resource/board/board7_1.qml:14
 msgctxt "board7_1|"
 msgid "Pieter Bruegel the Elder, The peasants wedding - 1568"
-msgstr "Pieter Bruegel el vell, La boda camperola - 1568"
+msgstr "Pieter Brueghel el vell, La boda camperola - 1568"
 
 # Nota: http://ca.wikipedia.org/wiki/La_dama_i_l'unicorn
 #: activities/babyshapes/resource/board/board7_2.qml:14
@@ -2662,7 +2662,7 @@ msgstr "La dama i l'unicorn - segle XV"
 #: activities/babyshapes/resource/board/board7_3.qml:14
 msgctxt "board7_3|"
 msgid "Vincent van Gogh, Bedroom in Arles - 1888"
-msgstr "El dormitori de van Gogh a Arles - 1888"
+msgstr "El dormitori de Van Gogh a Arles - 1888"
 
 # Nota: https://ca.wikipedia.org/wiki/Ambrosius_Bosschaert_el_Vell
 #: activities/babyshapes/resource/board/board7_4.qml:14
@@ -3137,7 +3137,7 @@ msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
 "to 255 with 8 bits only."
 msgstr ""
-"El sistema binari usa aquests nombres d'una manera molt eficient, permetent "
+"El sistema binari usa aquests nombres d'una manera molt eficient, permet "
 "comptar des de 0 fins al 255 només amb 8 bits."
 
 # skip-rule: t-sp_co
@@ -5235,7 +5235,7 @@ msgstr "Flyer III dels germans Wright, 1905"
 #: activities/chronos/resource/board/board6_0.qml:56
 msgctxt "board6_0|"
 msgid "1909 Louis Bleriot crosses the English Channel"
-msgstr "Louis Bleriot creua el canal de la Mànega, 1909"
+msgstr "Louis Bleriot travessa el canal de la Mànega, 1909"
 
 #: activities/chronos/resource/board/board6_1.qml:15
 msgctxt "board6_1|"
@@ -7492,7 +7492,7 @@ msgstr "Fes rodar l'engranatge a la roda dentada per a dibuixar."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
 msgstr ""
-"Descobreix els hipotrocoides i utilitza'ls com a eines de pintura digital."
+"Descobreix les hipotrocoides i utilitza-les com a eines de pintura digital."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
@@ -7976,7 +7976,7 @@ msgid ""
 "escape predators, and possess an excellent sense of balance. They have "
 "single-toed hooves."
 msgstr ""
-"El cavall renilla. Els cavalls estan adaptats per a córrer, permetent-los "
+"El cavall renilla. Els cavalls estan adaptats per a córrer, els permet "
 "escapar ràpidament dels depredadors, i tenen un sentit de l'equilibri "
 "excel·lent. Tenen peülles d'un sol dit."
 
@@ -8085,7 +8085,7 @@ msgstr ""
 #: activities/explore_farm_animals/resource/board/board1.qml:85
 msgctxt "board1|"
 msgid "This animal has webbed feet and can swim on the water."
-msgstr "Aquest animal té peus amb membrana per tal de poder nedar a l'aigua."
+msgstr "Aquest animal té peus amb membranes i pot nedar a l'aigua."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
 msgctxt "board1|"
@@ -9781,7 +9781,7 @@ msgstr "Fes clic al lloc on es troba el monument indicat."
 #: activities/explore_monuments/resource/board/board9.qml:20
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Castell de Himeji"
+msgstr "Castell d'Himeji"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -10254,7 +10254,7 @@ msgstr "Explora la música del món"
 #: activities/explore_world_music/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Learn about the music of the world."
-msgstr "Aprenèn sobre la música del món."
+msgstr "Aprèn sobre la música del món."
 
 #. Help goal
 #: activities/explore_world_music/ActivityInfo.qml:20
@@ -12109,7 +12109,7 @@ msgstr "Himachal Pradesh"
 #: activities/geo-country/resource/board/board12_0.qml:45
 msgctxt "board12_0|"
 msgid "Punjab"
-msgstr "Punjab"
+msgstr "Panjab"
 
 #. State of India: Uttarakhand
 #: activities/geo-country/resource/board/board12_0.qml:52
@@ -12283,7 +12283,7 @@ msgstr "Tamil Nadu"
 #: activities/geo-country/resource/board/board12_0.qml:248
 msgctxt "board12_0|"
 msgid "Andaman and Nicobar Islands"
-msgstr "Illes Andarman i Nicobar"
+msgstr "Illes Andaman i Nicobar"
 
 #. Union Territory of India: Chandigarh
 #: activities/geo-country/resource/board/board12_0.qml:255
@@ -13154,7 +13154,7 @@ msgstr "Bavaria (Baviera)"
 #: activities/geo-country/resource/board/board3_0.qml:15
 msgctxt "board3_0|"
 msgid "Provinces of Argentina"
-msgstr "Províncies d'Argentina"
+msgstr "Províncies de l'Argentina"
 
 #. Province of Argentina: Jujuy
 #: activities/geo-country/resource/board/board3_0.qml:24
@@ -14473,7 +14473,7 @@ msgstr "Uzbekistan"
 #: activities/geography/resource/board/board10_0.qml:38
 msgctxt "board10_0|"
 msgid "Kyrgyzstan"
-msgstr "Kirguizistan"
+msgstr "Kirguizstan"
 
 #: activities/geography/resource/board/board10_0.qml:45
 msgctxt "board10_0|"
@@ -15784,7 +15784,7 @@ msgstr ""
 "factor de 6, perquè el 6 no es pot dividir en 4 parts iguals. Si un nombre "
 "és múltiple d'un segon nombre, llavors el segon serà un factor del primer. "
 "Pots pensar en els múltiples com en famílies, i els factors són la gent que "
-"pertany a aquesta família. Per tant 1, 2, 3 i 6 pertanyen a la família del "
+"pertany a aquesta família. Per tant, 1, 2, 3 i 6 pertanyen a la família del "
 "6, però el 4 pertany a una altra família."
 
 #. Activity title
@@ -15872,7 +15872,7 @@ msgstr ""
 "la gent que pertany a aquesta família. El factor 5, té 10 pares, 15 avis, 20 "
 "besavis, 25 rebesavis, i cada pas addicional de 5 seran més parents! Però el "
 "nombre 5 no pertany a les famílies del 8 o del 23. No trobaràs cap nombre de "
-"la família del 5 a la del 8 o del 23. Per tant el 8 no és un múltiple de 5, "
+"la família del 5 a la del 8 o del 23. Per tant, el 8 no és un múltiple de 5, "
 "ni de 23. Només el 5, 10, 15, 20, 25... són múltiples (o famílies o passos) "
 "del 5."
 
@@ -15912,7 +15912,7 @@ msgstr ""
 "membres: ells mateixos i l'1. No trobaràs cap altre nombre sense que sobri "
 "res. El 5 també és un d'aquests nombres solitaris (només 5 x 1 = 5), però en "
 "canvi el 6 no és un nombre primer perquè té a la seva família el 2 i el 3 (6 "
-"x 1 = 6, 2 x 3 = 6). Per tant el 6 no és un nombre primer."
+"x 1 = 6, 2 x 3 = 6). Per tant, el 6 no és un nombre primer."
 
 #. Activity title
 #: activities/graduated_line_read/ActivityInfo.qml:14
@@ -16888,7 +16888,7 @@ msgstr ""
 "dedicaven a moure contínuament 64 discos seguint les regles de la Torre de "
 "Hanoi. Segons la llegenda, el món acabaria el dia que els monjos acabessin "
 "la seva feina. També és conegut com a trencaclosques de la Torre de Brahma. "
-"No està clar si Lucas va inventar-se la llegenda o s'hi va inspirar (font "
+"No queda clar si Lucas va inventar-se la llegenda o s'hi va inspirar (font "
 "Wikipedia: https://en.wikipedia.org/wiki/Tower_of_hanoi)."
 
 #: activities/hanoi_real/HanoiReal.qml:82
@@ -18687,7 +18687,7 @@ msgstr ""
 #: activities/louis-braille/louis_braille_data.js:12
 msgctxt "louis_braille_data|"
 msgid "Born on January 4th 1809 in Coupvray near Paris in France."
-msgstr "Va néixer el 4 gener de 1809 a Coupvray, prop de París a França."
+msgstr "Va néixer el 4 de gener de 1809 a Coupvray, prop de París a França."
 
 #: activities/louis-braille/louis_braille_data.js:17
 msgctxt "louis_braille_data|"
@@ -22748,7 +22748,7 @@ msgid ""
 "clicking on it. You can use the undo button to undo your last move, and the "
 "redo button to redo it."
 msgstr ""
-"Per a moure una peça, fes que salti una altra en direcció ortogonal, a un "
+"Per a moure una peça, fes que en salti una altra en direcció ortogonal, a un "
 "forat a dues posicions de distància. La peça saltada s'elimina del tauler. "
 "Pots fer clic sobre una peça que es pugui moure i després sobre la seva "
 "destinació, o arrossegar-la i deixar-la anar a la seva destinació. El joc "
@@ -23587,12 +23587,12 @@ msgstr ""
 #: activities/planegame/Sequence.qml:13
 msgctxt "Sequence|"
 msgid "Catch the numbers starting from 0."
-msgstr "Atrapar el nombres començant des del 0."
+msgstr "Atrapar els nombres començant des del 0."
 
 #: activities/planegame/Sequence.qml:14
 msgctxt "Sequence|"
 msgid "Catch the numbers starting from 10."
-msgstr "Atrapar el nombres començant des del 10."
+msgstr "Atrapar els nombres començant des del 10."
 
 #: activities/play_piano/ActivityConfig.qml:35
 msgctxt "ActivityConfig|"
@@ -25828,9 +25828,9 @@ msgid ""
 "should she split the pieces of candy so that they all have the same amount?"
 msgstr ""
 "Per al seu aniversari, l'Elisabet té 8 dolços per a compartir amb 3 de les "
-"seves amistats. Es tracta de 2 nenes i 1 nen. Les nens ja tenen alguna cosa. "
-"Com hauria de dividir els dolços de manera que tothom tingui la mateixa "
-"quantitat?"
+"seves amistats. Es tracta de 2 nenes i 1 nen. Les nenes ja tenen alguna "
+"cosa. Com hauria de dividir els dolços de manera que tothom tingui la "
+"mateixa quantitat?"
 
 #: activities/share/resource/1/Data.qml:262
 msgctxt "Data|"
@@ -25950,7 +25950,7 @@ msgid ""
 "Can you help Alice share 10 pieces of candy equally among her friends: 1 "
 "girl and 3 boys? The girl already has some pieces of candy."
 msgstr ""
-"Pots ajudar a l'Alícia a compartir per igual 10 dolços entre les seves "
+"Pots ajudar l'Alícia a compartir per igual 10 dolços entre les seves "
 "amistats: 1 nena i 3 nens? La nena ja té alguns dolços."
 
 #: activities/share/resource/2/Data.qml:152
@@ -27946,7 +27946,7 @@ msgid ""
 "from filling in the ballast tank, thus allowing it to dive underwater."
 msgstr ""
 "En alternar la vàlvula superior, permetràs que l'aigua ompli els tancs de "
-"llast, permetent així que se submergeixi sota l'aigua."
+"llast, això permet que se submergeixi sota l'aigua."
 
 #: activities/submarine/Submarine.qml:168
 msgctxt "Submarine|"
@@ -27956,7 +27956,7 @@ msgid ""
 "of the water."
 msgstr ""
 "En alternar la vàlvula inferior, evitaràs que l'aigua flueixi cap als tancs "
-"de llast, omplint-se d'aire, permetent així que surti a la superfície."
+"de llast, omplint-se d'aire, això permet que surti a la superfície."
 
 #: activities/submarine/Submarine.qml:175
 msgctxt "Submarine|"
@@ -28909,15 +28909,15 @@ msgstr ""
 "En alguns nivells, hauràs d'escriure l'operació indicada abans de resoldre-"
 "la; en aquest cas, fes clic al botó Preparat quan l'operació s'hagi escrit "
 "correctament i després resol-la. Si el nombre superior és més petit que el "
-"nombre inferior, pots demanar prestat del subtrahend a la columna següent: "
-"per exemple, si afegeixes 10 unitats al nombre superior, has d'afegir una "
-"unitat al nombre inferior de la columna següent. Això s'anomena préstec per "
-"mètode de compensació. Per fer-ho en aquesta activitat, fes clic al "
-"rectangle buit a l'esquerra del nombre superior, selecciona 1, i a la "
-"columna següent fes clic al rectangle buit a la dreta del nombre inferior i "
-"selecciona +1. Després escriu el resultat de la columna a la línia inferior, "
-"i fes el mateix a les següents columnes fins que l'operació hagi acabat. Un "
-"cop trobat el resultat, fes clic al botó D'acord per validar la resposta. En "
+"nombre inferior, pots manllevar del subtrahend a la columna següent: per "
+"exemple, si afegeixes 10 unitats al nombre superior, has d'afegir una unitat "
+"al nombre inferior de la columna següent. Això s'anomena préstec per mètode "
+"de compensació. Per fer-ho en aquesta activitat, fes clic al rectangle buit "
+"a l'esquerra del nombre superior, selecciona 1, i a la columna següent fes "
+"clic al rectangle buit a la dreta del nombre inferior i selecciona +1. "
+"Després escriu el resultat de la columna a la línia inferior, i fes el "
+"mateix a les següents columnes fins que l'operació hagi acabat. Un cop "
+"trobat el resultat, fes clic al botó D'acord per validar la resposta. En "
 "alguns nivells, hauràs d'escriure l'operació donada abans de resoldre-la; en "
 "aquest cas, fes clic al botó Prepara quan l'operació s'escriu correctament i "
 "després resol-la."
