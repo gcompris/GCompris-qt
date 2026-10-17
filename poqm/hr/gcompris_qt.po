@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 3.9\n"
+"X-Generator: Poedit 3.10\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -2399,6 +2399,8 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Arrows: move the selection cursor through the panel items and board spots"
 msgstr ""
+"Strelice: pomicanje pokazivača odabira kroz stavke na ploči i polja na ploči "
+"za igru"
 
 #: activities/babymatch/ActivityInfo.qml:30
 #: activities/babyshapes/ActivityInfo.qml:30
@@ -2413,6 +2415,8 @@ msgid ""
 "Space: select an item in the list, and place it on a spot. If there is "
 "nothing selected in the list, remove item from selected spot"
 msgstr ""
+"Razmaknica: odaberi stavku na popisu i postavi je na određeno mjesto. Ako na "
+"popisu nije odabrana nijedna stavka, ukloni stavku s odabranog mjesta."
 
 #: activities/babymatch/ActivityInfo.qml:31
 #: activities/babyshapes/ActivityInfo.qml:31
@@ -2422,14 +2426,13 @@ msgstr ""
 #: activities/geography/ActivityInfo.qml:31
 #: activities/imagename/ActivityInfo.qml:31
 #: activities/paintings/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Tab: navigate between the bottom and the top areas"
 msgctxt "ActivityInfo|"
 msgid ""
 "Tab: toggle navigation between the panel and the board without any other "
 "action"
-msgstr "Tab: kretanje između donjeg i gornjeg područja"
+msgstr ""
+"Tab: prebacivanje navigacije između ploče s alatima i radne površine bez "
+"ikakvih dodatnih radnji"
 
 #: activities/babymatch/ActivityInfo.qml:32
 #: activities/babyshapes/ActivityInfo.qml:32
@@ -2439,12 +2442,9 @@ msgstr "Tab: kretanje između donjeg i gornjeg područja"
 #: activities/geography/ActivityInfo.qml:32
 #: activities/imagename/ActivityInfo.qml:32
 #: activities/paintings/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Delete or Backspace: remove the selected item from the answer area"
 msgctxt "ActivityInfo|"
 msgid "Delete or Backspace: remove item from selected spot"
-msgstr "Delete ili Backspace: ukloni odabranu stavku iz područja odgovora"
+msgstr "Delete ili Backspace: uklanjanje stavke s odabranog mjesta"
 
 #: activities/babymatch/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
@@ -23144,22 +23144,19 @@ msgstr "Nastavi"
 #: activities/polygons/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Polygons"
-msgstr ""
+msgstr "Poligoni"
 
 #. Help title
 #: activities/polygons/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Learn about special polygons and draw them in a grid."
-msgstr ""
+msgstr "Upoznajte posebne mnogokute i nacrtaj ih na mreži."
 
 #. Help goal
 #: activities/polygons/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Learn about special polygons."
-msgstr "Saznaj više o nekim alatima za digitalno slikanje."
+msgstr "Saznajte više o posebnim mnogokutima."
 
 #. Help manual
 #: activities/polygons/ActivityInfo.qml:28
@@ -23174,6 +23171,14 @@ msgid ""
 "restart the shape by clicking on the reload button. When the shape is "
 "correct, press the OK button to validate your answer."
 msgstr ""
+"Klikni na mrežu kako bi postavio točke koje odgovaraju krajevima linija "
+"poligona. Sve dok lik nije zatvoren, posljednja točka bit će druge boje, što "
+"označava da će se ona povezati sa sljedećom dodanom točkom. Nakon što "
+"postaviš barem 3 točke, lik možeš zatvoriti klikom na prvu ili posljednju "
+"točku. Kada je lik zatvoren, više nije moguće dodavati nove točke. Točku "
+"možeš premjestiti povlačenjem ili izbrisati dvostrukim klikom. Lik možeš "
+"ponovno postaviti klikom na gumb za ponovno učitavanje. Kada je lik ispravno "
+"postavljen, pritisnite gumb OK kako bi potvrdio svoj odgovor."
 
 #: activities/polygons/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -23181,6 +23186,8 @@ msgid ""
 "Arrows: move the keyboard cursor in the grid, and if a point is selected "
 "move it"
 msgstr ""
+"Strelice: pomiču pokazivač tipkovnice unutar mreže, a ako je odabrana točka, "
+"pomiču nju"
 
 #: activities/polygons/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -23188,35 +23195,28 @@ msgid ""
 "Enter: create a point at the cursor position, or validate your answer when "
 "the shape is closed"
 msgstr ""
+"Enter: stvori točku na položaju pokazivača ili potvrdi odgovor kada je lik "
+"zatvoren"
 
 #: activities/polygons/ActivityInfo.qml:32
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select or deselect the highlighted answer"
 msgctxt "ActivityInfo|"
 msgid "Space: select or deselect the point at the cursor position"
-msgstr "Razmaknica: odaberi ili ukloni označeni odgovor"
+msgstr "Razmaknica: odaberi ili poništi odabir točke na položaju pokazivača"
 
 #: activities/polygons/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Up arrow: select next item"
 msgctxt "ActivityInfo|"
 msgid "Tab: select next point"
-msgstr "Strelica gore: odaberi sljedeću stavku"
+msgstr "Tab: odabir sljedeće točke"
 
 #: activities/polygons/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + D: delete selected text"
 msgctxt "ActivityInfo|"
 msgid "Delete: delete selected point"
-msgstr "Ctrl + D: brisanje odabranog teksta"
+msgstr "Izbriši: izbriši odabranu točku"
 
 #: activities/polygons/TutorialDataset.qml:20
 msgctxt "TutorialDataset|"
 msgid "A polygon is a closed shape made of at least 3 connected lines."
-msgstr ""
+msgstr "Poligon je zatvoreni lik sastavljen od najmanje 3 povezane crte."
 
 #: activities/polygons/TutorialDataset.qml:21
 msgctxt "TutorialDataset|"
@@ -23224,6 +23224,8 @@ msgid ""
 "To draw a polygon, click on the grid to place the ends of the polygon's "
 "lines."
 msgstr ""
+"Kako bi nacrtao poligon, klikni na mrežu da bi postavio krajeve linija "
+"poligona."
 
 #: activities/polygons/TutorialDataset.qml:22
 msgctxt "TutorialDataset|"
@@ -23231,32 +23233,28 @@ msgid ""
 "After placing at least 3 points, you can close the shape by clicking on the "
 "first or the last point."
 msgstr ""
+"Nakon postavljanja najmanje 3 točke, oblik možeš zatvoriti klikom na prvu "
+"ili posljednju točku."
 
 #: activities/polygons/TutorialDataset.qml:23
-#, fuzzy
-#| msgctxt "VerticalSubtraction|"
-#| msgid "The result should not be a negative number."
 msgctxt "TutorialDataset|"
 msgid "The points should not be all aligned."
-msgstr "Rezultat ne bi trebao biti negativan broj."
+msgstr "Točke ne bi trebale biti sve poravnate."
 
 #: activities/polygons/TutorialDataset.qml:26
 msgctxt "TutorialDataset|"
 msgid "Draw a polygon."
-msgstr ""
+msgstr "Nacrtaj mnogokut."
 
 #: activities/polygons/TutorialDataset.qml:39
 msgctxt "TutorialDataset|"
 msgid "A triangle is a polygon with 3 sides."
-msgstr ""
+msgstr "Trokut je mnogokut s 3 stranice."
 
 #: activities/polygons/TutorialDataset.qml:42
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the triangle"
 msgctxt "TutorialDataset|"
 msgid "Draw a triangle."
-msgstr "Pronađi trokut"
+msgstr "Nacrtaj trokut."
 
 #: activities/polygons/TutorialDataset.qml:57
 msgctxt "TutorialDataset|"
@@ -23264,11 +23262,13 @@ msgid ""
 "A right triangle is a triangle in which two sides are perpendicular, forming "
 "a right angle (90 degrees)."
 msgstr ""
+"Pravokutni trokut je trokut u kojem su dvije stranice okomite, čineći pravi "
+"kut (90 stupnjeva)."
 
 #: activities/polygons/TutorialDataset.qml:60
 msgctxt "TutorialDataset|"
 msgid "Draw a right triangle."
-msgstr ""
+msgstr "Nacrtaj pravokutni trokut."
 
 #: activities/polygons/TutorialDataset.qml:74
 msgctxt "TutorialDataset|"
@@ -23276,50 +23276,44 @@ msgid ""
 "An isosceles triangle is a triangle with two sides of equal length and two "
 "angles of equal measure."
 msgstr ""
+"Jednakokračni trokut je trokut s dvjema stranicama jednake duljine i dvama "
+"kutovima jednake veličine."
 
 #: activities/polygons/TutorialDataset.qml:77
 msgctxt "TutorialDataset|"
 msgid "Draw an isosceles triangle."
-msgstr ""
+msgstr "Nacrtaj jednakokračan trokut."
 
 #: activities/polygons/TutorialDataset.qml:100
 msgctxt "TutorialDataset|"
 msgid "A quadrilateral is a four-sided polygon, having 4 sides and 4 corners."
 msgstr ""
+"Četverokut je mnogokut s četiri stranice, koji ima 4 stranice i 4 vrha."
 
 #: activities/polygons/TutorialDataset.qml:103
 msgctxt "TutorialDataset|"
 msgid "Draw a quadrilateral."
-msgstr ""
+msgstr "Nacrtaj četverokut."
 
 #: activities/polygons/TutorialDataset.qml:118
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Select one rectangle and one-quarter of a rectangle."
 msgctxt "TutorialDataset|"
 msgid "A rectangle is a quadrilateral with 4 right angles."
-msgstr "Odaberi jedan pravokutnik i jednu četvrtinu pravokutnika."
+msgstr "Pravokutnik je četverokut s 4 prava kuta."
 
 #: activities/polygons/TutorialDataset.qml:121
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Percentages with a rectangle."
 msgctxt "TutorialDataset|"
 msgid "Draw a rectangle."
-msgstr "Postoci s pravokutnikom."
+msgstr "Nacrtaj pravokutnik."
 
 #: activities/polygons/TutorialDataset.qml:142
 msgctxt "TutorialDataset|"
 msgid "A square is a rectangle with 4 sides of equal length."
-msgstr ""
+msgstr "Kvadrat je pravokutnik s 4 stranice jednake duljine."
 
 #: activities/polygons/TutorialDataset.qml:145
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Percentages with a square."
 msgctxt "TutorialDataset|"
 msgid "Draw a square."
-msgstr "Postoci s kvadratom."
+msgstr "Nacrtaj kvadrat."
 
 #: activities/polygons/TutorialDataset.qml:168
 msgctxt "TutorialDataset|"
@@ -23327,21 +23321,23 @@ msgid ""
 "A parallelogram is a quadrilateral with opposite sides of equal length and "
 "opposite angles of equal measure."
 msgstr ""
+"Paralelogram je četverokut kojemu su nasuprotne stranice jednake duljine, a "
+"nasuprotni kutovi jednake veličine."
 
 #: activities/polygons/TutorialDataset.qml:171
 msgctxt "TutorialDataset|"
 msgid "Draw a parallelogram which is not a rectangle."
-msgstr ""
+msgstr "Nacrtaj paralelogram koji nije pravokutnik."
 
 #: activities/polygons/TutorialDataset.qml:192
 msgctxt "TutorialDataset|"
 msgid "A rhombus is a parallelogram with four sides of equal length."
-msgstr ""
+msgstr "Romb je paralelogram s četiri stranice jednake duljine."
 
 #: activities/polygons/TutorialDataset.qml:195
 msgctxt "TutorialDataset|"
 msgid "Draw a rhombus which is not a square."
-msgstr ""
+msgstr "Nacrtaj romb koji nije kvadrat."
 
 #. Activity title
 #: activities/positions/ActivityInfo.qml:15

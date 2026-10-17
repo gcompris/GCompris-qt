@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-10-14 19:19+0300\n"
+"PO-Revision-Date: 2026-10-16 20:02+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -5700,7 +5700,7 @@ msgstr "1’den 1 milyara kadar rakamlar."
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9, same integer part."
-msgstr "0 ile 9,9 arasında 1 ondalık basamak, aynı tamsayı kısım."
+msgstr "0 ile 9,9 arasında 1 ondalık basamak, aynı tam sayı kısım."
 
 #: activities/comparator/resource/8/Data.qml:14
 msgctxt "Data|"
@@ -16076,12 +16076,12 @@ msgstr "%1. Düzey"
 #: activities/guesscount/guesscount.js:139
 msgctxt "guesscount|"
 msgid "result is not positive integer"
-msgstr "sonuç pozitif bir tamsayı değil"
+msgstr "sonuç pozitif bir tam sayı değil"
 
 #: activities/guesscount/guesscount.js:141
 msgctxt "guesscount|"
 msgid "result is not an integer"
-msgstr "sonuç bir tamsayı değil"
+msgstr "sonuç bir tam sayı değil"
 
 #: activities/guesscount/Guesscount.qml:158
 #, qt-format
