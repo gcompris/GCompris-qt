@@ -30,6 +30,7 @@
   <name xml:lang="it">GCompris-teachers</name>
   <name xml:lang="ka">GCompris-teachers</name>
   <name xml:lang="kab">GCompris-teachers</name>
+  <name xml:lang="lv">GCompris-skolotājiem</name>
   <name xml:lang="nl">GCompris-docenten</name>
   <name xml:lang="pt-BR">GCompris-teachers</name>
   <name xml:lang="ru">GCompris-teachers</name>
@@ -55,6 +56,7 @@
   <summary xml:lang="it">Applicazione complementare GCompris teachers</summary>
   <summary xml:lang="ka">GCompris-teachers-ის მომყოლი</summary>
   <summary xml:lang="kab">GCompris ameddakkel n yiselmaden</summary>
+  <summary xml:lang="lv">„GCompris“ skolotāju kompanjons</summary>
   <summary xml:lang="nl">Compagnon van GCompris-docenten</summary>
   <summary xml:lang="pt-BR">Aplicativo complementar do GCompris para professores</summary>
   <summary xml:lang="ru">Помощник учителя для GCompris</summary>
@@ -82,6 +84,7 @@
     <p xml:lang="it">GCompris-teachers è un'applicazione complementare che consente agli insegnanti di migliorare l'uso di GCompris in classe.</p>
     <p xml:lang="ka">GCompris-teachers მომყოლი აპლიკაციაა მასწავლებლებისთვის, რომ GCompris-ის საკლასო ოთახში გამოყენება გაფართოვდეს.</p>
     <p xml:lang="kab">GCompris-iselmaden d asnas ameddakkel i yiselmaden i usnerni aseqdec-nsen n GCompris deg ismilen-nsen.</p>
+    <p xml:lang="lv">„GCompris-skolotājiem“ ir papildu lietojumprogramma skolotājiem, lai atvieglotu „GCompris“ lietošanu klasē.</p>
     <p xml:lang="nl">GCompris-docenten is een compagnontoepassing voor docenten om hun gebruik van GCompris in hun klas te vergroten.</p>
     <p xml:lang="pt-BR">GCompris-teachers é um aplicativo complementar para professores que visa aprimorar o uso do GCompris em sala de aula.</p>
     <p xml:lang="ru">GCompris-teachers — вспомогательное приложение для учителей, позволяющее эффективнее использовать GCompris на занятиях.</p>
@@ -108,6 +111,7 @@
     <p xml:lang="it">Consente agli insegnanti di creare insiemi di dati personalizzati e di ricevere i risultati degli alunni per alcune attività.</p>
     <p xml:lang="ka">ის აძლევს მასწავლებლებს საშუალებას, შექმნან სასურველი მონაცემთა ნაკრებები და მიიღონ მოსწავლის შედეგები ზოგიერთი აქტივობისთვის.</p>
     <p xml:lang="kab">Yessirig iselmaden ad rnun tigrummiwin n yisefka tisaganin, ad d-ṭṭfen igmaḍ n yinelmaden i kra n yirmad.</p>
+    <p xml:lang="lv">Tā ļauj skolotājiem noteiktām aktivitātēm izveidot pielāgotas datu kopas un saņemt skolēnu rezultātu.</p>
     <p xml:lang="nl">Het biedt docenten om aangepaste gegevenssets te maken en resultaten van leerlingen van sommige activiteiten terug te krijgen.</p>
     <p xml:lang="pt-BR">Permite que os professores criem conjuntos de dados personalizados e recebam os resultados dos alunos em determinadas atividades.</p>
     <p xml:lang="ru">Позволяет учителям создавать собственные наборы данных и получать результаты учеников по некоторым упражнениям.</p>
@@ -136,6 +140,7 @@
       <caption xml:lang="it">Gestione degli alunni e dei gruppi</caption>
       <caption xml:lang="ka">მოსწავლეებისა და ჯგუფების მართვა</caption>
       <caption xml:lang="kab">Asefrek n wagrawen akked yinelmaden</caption>
+      <caption xml:lang="lv">Skolēnu un grupu pārvaldība</caption>
       <caption xml:lang="nl">Beheer van leerlingen en groepen</caption>
       <caption xml:lang="pt-BR">Gerenciamento de alunos e grupos</caption>
       <caption xml:lang="ru">Управление учениками и группами</caption>
@@ -165,6 +170,7 @@
       <caption xml:lang="it">Visualizzazione dei risultati per un alunno</caption>
       <caption xml:lang="ka">შედეგების ჩვენება ერთი მოსწავლისთვის</caption>
       <caption xml:lang="kab">Askan n yigmaḍ i yiwen n unelmad</caption>
+      <caption xml:lang="lv">Rezultātu parādīšana konkrētam skolēnam</caption>
       <caption xml:lang="nl">Resultaten tonen van één leerling</caption>
       <caption xml:lang="pt-BR">Exibição dos resultados para um aluno</caption>
       <caption xml:lang="ru">Показ результатов для одного ученика</caption>
@@ -193,6 +199,7 @@
       <caption xml:lang="it">Visualizzazione dei risultati per l'attività di sottrazione verticale</caption>
       <caption xml:lang="ka">შედეგების ჩვენება ვერტიკალური გამოკლების აქტივობისთვის</caption>
       <caption xml:lang="kab">Askan n yigmaḍ i urmud n tukks tarakat</caption>
+      <caption xml:lang="lv">Rezultātu parādīšanai atņemšanas stabiņā aktivitātei</caption>
       <caption xml:lang="nl">Resultaten tonen van de activiteit verticaal aftrekken</caption>
       <caption xml:lang="pt-BR">Exibição dos resultados da atividade de subtração vertical</caption>
       <caption xml:lang="ru">Показ результатов упражнения «Вычитание в столбик»</caption>
