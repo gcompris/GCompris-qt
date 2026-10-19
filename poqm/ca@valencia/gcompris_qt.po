@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2026-09-09 09:20+0200\n"
+"PO-Revision-Date: 2026-10-15 20:43+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -2349,7 +2349,7 @@ msgstr "Fer coincidir els objectes amb les seues formes."
 #: activities/baby_tangram/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to match an object with its shape."
-msgstr "Aprendre a fer coincidir una objecte amb la seua forma."
+msgstr "Aprendre a fer coincidir un objecte amb la seua forma."
 
 #. Help manual
 #: activities/baby_tangram/ActivityInfo.qml:24
@@ -2571,7 +2571,7 @@ msgstr "Paul Gauguin, Arearea – 1892"
 #: activities/babyshapes/resource/board/board7_1.qml:14
 msgctxt "board7_1|"
 msgid "Pieter Bruegel the Elder, The peasants wedding - 1568"
-msgstr "Pieter Bruegel el vell, La boda camperola – 1568"
+msgstr "Pieter Brueghel el vell, La boda camperola – 1568"
 
 # Nota: http://ca.wikipedia.org/wiki/La_dama_i_l'unicorn
 #: activities/babyshapes/resource/board/board7_2.qml:14
@@ -2583,7 +2583,7 @@ msgstr "La dama i l'unicorn – segle XV"
 #: activities/babyshapes/resource/board/board7_3.qml:14
 msgctxt "board7_3|"
 msgid "Vincent van Gogh, Bedroom in Arles - 1888"
-msgstr "El dormitori de van Gogh a Arles – 1888"
+msgstr "El dormitori de Van Gogh a Arles – 1888"
 
 # Nota: https://ca.wikipedia.org/wiki/Ambrosius_Bosschaert_el_Vell
 #: activities/babyshapes/resource/board/board7_4.qml:14
@@ -3058,8 +3058,8 @@ msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
 "to 255 with 8 bits only."
 msgstr ""
-"El sistema binari utilitza estos nombres d'una manera molt eficient, "
-"permetent comptar des de 0 fins al 255 només amb 8 bits."
+"El sistema binari utilitza estos nombres d'una manera molt eficient, permet "
+"comptar des de 0 fins al 255 només amb 8 bits."
 
 # skip-rule: t-sp_co
 #: activities/binary_bulb/BinaryBulb.qml:111
@@ -5157,7 +5157,7 @@ msgstr "Flyer III dels germans Wright, 1905"
 #: activities/chronos/resource/board/board6_0.qml:56
 msgctxt "board6_0|"
 msgid "1909 Louis Bleriot crosses the English Channel"
-msgstr "Louis Bleriot creua el canal de la Mànega, 1909"
+msgstr "Louis Bleriot travessa el canal de la Mànega, 1909"
 
 #: activities/chronos/resource/board/board6_1.qml:15
 msgctxt "board6_1|"
@@ -7000,7 +7000,7 @@ msgstr "Fes rodar l'engranatge a la roda dentada per a dibuixar."
 msgctxt "ActivityInfo|"
 msgid "Discover hypotrochoids and use them as digital painting tools."
 msgstr ""
-"Descobrix els hipotrocoides i utilitza'ls com a eines de pintura digital."
+"Descobrix les hipotrocoides i utilitza-les com a eines de pintura digital."
 
 #. Help manual
 #: activities/drawing_wheels/ActivityInfo.qml:27
@@ -7657,7 +7657,7 @@ msgstr ""
 #: activities/explore_farm_animals/resource/board/board1.qml:85
 msgctxt "board1|"
 msgid "This animal has webbed feet and can swim on the water."
-msgstr "Este animal té peus amb membrana per tal de poder nadar a l'aigua."
+msgstr "Este animal té peus amb membranes i pot nadar a l'aigua."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
 msgctxt "board1|"
@@ -9347,7 +9347,7 @@ msgstr "Clica damunt del lloc on es troba el monument indicat."
 #: activities/explore_monuments/resource/board/board9.qml:20
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Castell de Himeji"
+msgstr "Castell d'Himeji"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -11654,7 +11654,7 @@ msgstr "Himachal Pradesh"
 #: activities/geo-country/resource/board/board12_0.qml:31
 msgctxt "board12_0|"
 msgid "Punjab"
-msgstr "Punjab"
+msgstr "Panjab"
 
 #. State of India: Uttarakhand
 #: activities/geo-country/resource/board/board12_0.qml:38
@@ -11816,7 +11816,7 @@ msgstr "Meghalaya"
 #: activities/geo-country/resource/board/board12_0.qml:221
 msgctxt "board12_0|"
 msgid "Andaman and Nicobar Islands"
-msgstr "Illes Andarman i Nicobar"
+msgstr "Illes Andaman i Nicobar"
 
 #. Union Territory of India: Delhi
 #: activities/geo-country/resource/board/board12_0.qml:228
@@ -12711,7 +12711,7 @@ msgstr "Baden-Württemberg"
 #: activities/geo-country/resource/board/board3_0.qml:15
 msgctxt "board3_0|"
 msgid "Provinces of Argentina"
-msgstr "Províncies d'Argentina"
+msgstr "Províncies de l'Argentina"
 
 #. Province of Argentina: Tucumán
 #: activities/geo-country/resource/board/board3_0.qml:24
@@ -14025,7 +14025,7 @@ msgstr "Kazakhstan"
 #: activities/geography/resource/board/board10_0.qml:31
 msgctxt "board10_0|"
 msgid "Kyrgyzstan"
-msgstr "Kirguizistan"
+msgstr "Kirguizstan"
 
 #: activities/geography/resource/board/board10_0.qml:38
 msgctxt "board10_0|"
@@ -16457,7 +16457,7 @@ msgstr ""
 "dedicaven a moure contínuament 64 discs seguint les regles de la Torre de "
 "Hanoi. Segons la llegenda, el món acabaria el dia que els monjos acabaren la "
 "seua faena. També és conegut com a trencaclosques de la Torre de Brahma. No "
-"està clar si Lucas va inventar-se la llegenda o s'hi va inspirar (font "
+"queda clar si Lucas va inventar-se la llegenda o s'hi va inspirar (font "
 "Wikipedia: https://en.wikipedia.org/wiki/Tower_of_hanoi)."
 
 #: activities/hanoi_real/HanoiReal.qml:75
@@ -18221,7 +18221,7 @@ msgstr ""
 #: activities/louis-braille/louis_braille_data.js:12
 msgctxt "louis_braille_data|"
 msgid "Born on January 4th 1809 in Coupvray near Paris in France."
-msgstr "Va nàixer el 4 gener de 1809 en Coupvray, prop de París en França."
+msgstr "Va nàixer el 4 de gener de 1809 en Coupvray, prop de París en França."
 
 #: activities/louis-braille/louis_braille_data.js:17
 msgctxt "louis_braille_data|"
@@ -21246,7 +21246,7 @@ msgid ""
 "100% to complete the level."
 msgstr ""
 "Identifiqueu les notes, reproduïu-les en el teclat del piano i obteniu una "
-"valoració del 100% per a completar el nivell."
+"valoració del 100 % per a completar el nivell."
 
 #: activities/note_names/NoteNames.qml:201
 #, qt-format
@@ -21259,7 +21259,7 @@ msgstr "Nota nova: %1"
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
-msgstr "%1%"
+msgstr "%1 %"
 
 #: activities/note_names/NoteNames.qml:449
 msgctxt "NoteNames|"
@@ -25807,8 +25807,8 @@ msgid ""
 "answer the questions until you get 100% in the closeness meter."
 msgstr ""
 "Cliqueu damunt d'un planeta o damunt del Sol i responeu les següents "
-"preguntes. Cada pregunta conté 4 opcions. Una d'elles és 100% correcta. "
-"Intenteu respondre les preguntes fins que obteniu un 100% al mesurador "
+"preguntes. Cada pregunta conté 4 opcions. Una d'elles és 100 % correcta. "
+"Intenteu respondre les preguntes fins que obteniu un 100 % al mesurador "
 "d'apropament."
 
 #: activities/solar_system/ActivityInfo.qml:29
@@ -26812,7 +26812,7 @@ msgstr "Correcció: %1%"
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
-msgstr "%1%"
+msgstr "%1 %"
 
 #: activities/solar_system/QuizScreen.qml:274
 #, qt-format
@@ -26829,7 +26829,7 @@ msgid ""
 "your skills again or train in normal mode to learn more about the Solar "
 "System."
 msgstr ""
-"Cal que superes el 90% per a convertir-te en un expert en el sistema solar!"
+"Cal que superes el 90 % per a convertir-te en un expert en el sistema solar!"
 "<br>Torna-ho a intentar, posa a prova les teues habilitats o entrena't en el "
 "mode normal per a aprendre més sobre el sistema solar."
 
@@ -26889,9 +26889,10 @@ msgstr ""
 "Després d'haver fet clic damunt d'un planeta, el mesurador d'apropament que "
 "hi ha en el cantó inferior dret de la pantalla, representarà el grau de "
 "correcció de la resposta seleccionada. La resposta menys correcta es "
-"representarà en un 1%. Torna-ho a provar fins que arribes a un apropament "
-"del 100% seguint el comptador d'apropament. Si el botó «Consell» és visible, "
-"pots clicar-hi per a obtindre un consell que t'ajudarà a trobar la resposta."
+"representarà en un 1 %. Torna-ho a provar fins que arribes a un apropament "
+"del 100 % seguint el comptador d'apropament. Si el botó «Consell» és "
+"visible, pots clicar-hi per a obtindre un consell que t'ajudarà a trobar la "
+"resposta."
 
 #: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
@@ -26923,8 +26924,8 @@ msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
 "expert!"
 msgstr ""
-"Cal que superes el 90% per a aprovar l'avaluació i convertir-te en un expert "
-"en el sistema solar."
+"Cal que superes el 90 % per a aprovar l'avaluació i convertir-te en un "
+"expert en el sistema solar."
 
 #: activities/solar_system/SolarSystem.qml:355
 #, qt-format
@@ -27139,7 +27140,7 @@ msgid ""
 "from filling in the ballast tank, thus allowing it to dive underwater."
 msgstr ""
 "En alternar la vàlvula superior, permetràs que l'aigua òmpliga els tancs de "
-"llast, permetent així que se submergisca davall l'aigua."
+"llast, açò permet que se submergisca davall l'aigua."
 
 #: activities/submarine/Submarine.qml:161
 msgctxt "Submarine|"
@@ -27149,7 +27150,7 @@ msgid ""
 "of the water."
 msgstr ""
 "En alternar la vàlvula inferior, evitaràs que l'aigua fluïsca cap als tancs "
-"de llast, omplint-se d'aire, permetent així que isca a la superfície."
+"de llast, omplint-se d'aire, açò permet que isca a la superfície."
 
 #: activities/submarine/Submarine.qml:168
 msgctxt "Submarine|"
@@ -28104,18 +28105,18 @@ msgstr ""
 "resposta. En alguns nivells, hauràs d'escriure l'operació indicada abans de "
 "resoldre-la; en este cas, clica damunt del botó Preparat quan l'operació "
 "s'haja escrit correctament i després resol-la. Si el nombre superior és més "
-"xicotet que el nombre inferior, pots demanar prestat del subtrahend a la "
-"columna següent: per exemple, si afiges 10 unitats al nombre superior, has "
-"d'afegir una unitat al nombre inferior de la columna següent. Açò s'anomena "
-"préstec per mètode de compensació. Per fer-ho en esta activitat, clica "
-"damunt del rectangle buit a l'esquerra del nombre superior, tria 1, i a la "
-"columna següent clica damunt del rectangle buit a la dreta del nombre "
-"inferior i tria +1. Després escriu el resultat de la columna a la línia "
-"inferior, i fes el mateix a les següents columnes fins que l'operació haja "
-"acabat. Una vegada trobat el resultat, clica damunt del botó «D'acord» per a "
-"validar la resposta. En alguns nivells, hauràs d'escriure l'operació donada "
-"abans de resoldre-la; en este cas, clica damunt del botó Prepara quan "
-"l'operació s'escriu correctament i després resol-la."
+"xicotet que el nombre inferior, pots amprar del subtrahend a la columna "
+"següent: per exemple, si afiges 10 unitats al nombre superior, has d'afegir "
+"una unitat al nombre inferior de la columna següent. Açò s'anomena préstec "
+"per mètode de compensació. Per fer-ho en esta activitat, clica damunt del "
+"rectangle buit a l'esquerra del nombre superior, tria 1, i a la columna "
+"següent clica damunt del rectangle buit a la dreta del nombre inferior i "
+"tria +1. Després escriu el resultat de la columna a la línia inferior, i fes "
+"el mateix a les següents columnes fins que l'operació haja acabat. Una "
+"vegada trobat el resultat, clica damunt del botó «D'acord» per a validar la "
+"resposta. En alguns nivells, hauràs d'escriure l'operació donada abans de "
+"resoldre-la; en este cas, clica damunt del botó Prepara quan l'operació "
+"s'escriu correctament i després resol-la."
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15
@@ -28675,7 +28676,7 @@ msgid ""
 "(92% translated), Russian (98% translated), Slovak (92% translated), Turkish."
 msgstr ""
 "S'afigen traduccions per a: català (valencià), xinés tradicional, finlandés "
-"(92% traduït), rus (98% traduït), eslové (92% traduït), turc."
+"(92 % traduït), rus (98 % traduït), eslové (92 % traduït), turc."
 
 #: core/ChangeLog.qml:180
 msgctxt "ChangeLog|"
