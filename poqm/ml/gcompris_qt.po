@@ -216,6 +216,8 @@ msgstr ""
 #: activities/gravity/ActivityInfo.qml:28
 #: activities/guess24/ActivityInfo.qml:24
 #: activities/guessnumber/ActivityInfo.qml:24
+#: activities/hanoi/ActivityInfo.qml:25
+#: activities/hanoi_real/ActivityInfo.qml:24
 #: activities/imagename/ActivityInfo.qml:28
 #: activities/instruments/ActivityInfo.qml:24
 #: activities/land_safe/ActivityInfo.qml:28 activities/lang/ActivityInfo.qml:33
@@ -16320,7 +16322,24 @@ msgstr ""
 "ഓരോ കുറ്റിയിലേയും മുകളിലുള്ള തകിട് ഒരുവട്ടം ഒരെണ്ണം എന്ന ക്രമത്തിൽ ഒരു കുറ്റിയിൽ നിന്നും "
 "മറ്റൊന്നിലേക്കു ‍ഡ്രാഗു ചെയ്തു വെച്ച് വലതു ഭാഗത്തുള്ള തൂൺ ഒഴിഞ്ഞ സ്ഥലത്ത് പുനർനിർമ്മിക്കുക."
 
-#: activities/hanoi/ActivityInfo.qml:25
+#: activities/hanoi/ActivityInfo.qml:26
+#: activities/hanoi_real/ActivityInfo.qml:25
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Arrows: move the selected item"
+msgctxt "ActivityInfo|"
+msgid "Arrows: move the selection cursor through the pegs"
+msgstr "ആരോകൾ: തിരഞ്ഞെടുത്ത ഇനത്തെ നീക്കാൻ"
+
+#: activities/hanoi/ActivityInfo.qml:27
+#: activities/hanoi_real/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid ""
+"Space or Enter: select/deselect the top disc on the selected peg, or move "
+"the selected disc to the selected peg"
+msgstr ""
+
+#: activities/hanoi/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Concept taken from EPI games."
 msgstr "ഇപിഐ കളികളിൽ നിന്നെടുത്ത ആശയം."
@@ -16352,7 +16371,7 @@ msgstr ""
 "ചലിപ്പിക്കുന്നതിന് രണ്ടു നിയമങ്ങളാണ് ഉള്ളത്: ഒരുവട്ടം ഒരു തകിടു മാത്രമേ ചലിപ്പിക്കാവൂ, മാത്രമല്ല "
 "ഒരു തകിട് അതിനേക്കാൾ ചെറിയ തകിടിനു മുകളിൽ വെയ്ക്കാൻ പാടില്ല."
 
-#: activities/hanoi_real/ActivityInfo.qml:24
+#: activities/hanoi_real/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "The puzzle was invented by the French mathematician Edouard Lucas in 1883. "
@@ -16372,12 +16391,12 @@ msgstr ""
 "പ്രചോദനമുൾക്കൊണ്ടതാണോ എന്ന് വ്യക്തമല്ല. (വിക്കിപീഡിയയിൽ നിന്നും: https://en.wikipedia."
 "org/wiki/Tower_of_hanoi)"
 
-#: activities/hanoi_real/HanoiReal.qml:82
+#: activities/hanoi_real/HanoiReal.qml:117
 msgctxt "HanoiReal|"
 msgid "Move the entire stack to the right peg, one disc at a time."
 msgstr "മുഴുവൻ അടുക്കിനെയും ഒരു സമയത്ത് ഒരു വളയം വീതം വലത്തെ കുറ്റിയിലേക്ക് മാറ്റൂ."
 
-#: activities/hanoi_real/HanoiReal.qml:83
+#: activities/hanoi_real/HanoiReal.qml:118
 msgctxt "HanoiReal|"
 msgid ""
 "Build the same tower in the empty area as the one you see on the right-hand "

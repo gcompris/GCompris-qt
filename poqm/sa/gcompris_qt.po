@@ -221,6 +221,8 @@ msgstr ""
 #: activities/gravity/ActivityInfo.qml:28
 #: activities/guess24/ActivityInfo.qml:24
 #: activities/guessnumber/ActivityInfo.qml:24
+#: activities/hanoi/ActivityInfo.qml:25
+#: activities/hanoi_real/ActivityInfo.qml:24
 #: activities/imagename/ActivityInfo.qml:28
 #: activities/instruments/ActivityInfo.qml:24
 #: activities/land_safe/ActivityInfo.qml:28 activities/lang/ActivityInfo.qml:33
@@ -16192,7 +16194,24 @@ msgstr ""
 "एकैकं शीर्षचक्रं एकैकं गोपुरात् अन्यतमं गोपुरं प्रति कर्षयन्तु, पातयन्तु च, दक्षिणपार्श्वे स्थितं "
 "गोपुरं शून्यखटके पुनः प्रदर्शयितुं ।"
 
-#: activities/hanoi/ActivityInfo.qml:25
+#: activities/hanoi/ActivityInfo.qml:26
+#: activities/hanoi_real/ActivityInfo.qml:25
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Arrows: move the selected item"
+msgctxt "ActivityInfo|"
+msgid "Arrows: move the selection cursor through the pegs"
+msgstr "बाणाः : चयनितं द्रव्यं चालयन्तु"
+
+#: activities/hanoi/ActivityInfo.qml:27
+#: activities/hanoi_real/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid ""
+"Space or Enter: select/deselect the top disc on the selected peg, or move "
+"the selected disc to the selected peg"
+msgstr ""
+
+#: activities/hanoi/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Concept taken from EPI games."
 msgstr "ईपीआई-क्रीडाभ्यः गृहीता अवधारणा।"
@@ -16224,7 +16243,7 @@ msgstr ""
 "शक्नुवन्ति, नियमद्वयं अनुसृत्य: एकस्मिन् समये एकैकचक्रं चालयितुं शक्यते, लघुतरचक्रे कदापि चक्रं "
 "स्थापयितुं न शक्यते"
 
-#: activities/hanoi_real/ActivityInfo.qml:24
+#: activities/hanoi_real/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "The puzzle was invented by the French mathematician Edouard Lucas in 1883. "
@@ -16243,12 +16262,12 @@ msgstr ""
 "ज्ञायते । लुकास् इत्यनेन एतस्य आख्यायिकायाः आविष्कारः कृतः वा तस्मात् प्रेरितः वा इति स्पष्टं "
 "नास्ति । (स्रोत विकिपीडिया: https://en.wikipedia.org/wiki/Tower_of_hanoi)"
 
-#: activities/hanoi_real/HanoiReal.qml:82
+#: activities/hanoi_real/HanoiReal.qml:117
 msgctxt "HanoiReal|"
 msgid "Move the entire stack to the right peg, one disc at a time."
 msgstr "सम्पूर्णं स्तम्भं दक्षिणे खट्वायां चालयन्तु, एकैकं चक्रं ।"
 
-#: activities/hanoi_real/HanoiReal.qml:83
+#: activities/hanoi_real/HanoiReal.qml:118
 msgctxt "HanoiReal|"
 msgid ""
 "Build the same tower in the empty area as the one you see on the right-hand "
