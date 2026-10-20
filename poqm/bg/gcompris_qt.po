@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-09-22 22:52+0200\n"
+"PO-Revision-Date: 2026-10-19 15:44+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 26.08.1\n"
+"X-Generator: Lokalize 26.08.2\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -2425,6 +2425,8 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Arrows: move the selection cursor through the panel items and board spots"
 msgstr ""
+"Стрелки: преместване на курсора за избор през елементите на панела и местата "
+"на дъската"
 
 #: activities/babymatch/ActivityInfo.qml:30
 #: activities/babyshapes/ActivityInfo.qml:30
@@ -2439,6 +2441,8 @@ msgid ""
 "Space: select an item in the list, and place it on a spot. If there is "
 "nothing selected in the list, remove item from selected spot"
 msgstr ""
+"Интервал: избор на елемент от списъка и поставянето му на място. При липса "
+"на избран елемент в списъка – премахване на елемента от избраното място"
 
 #: activities/babymatch/ActivityInfo.qml:31
 #: activities/babyshapes/ActivityInfo.qml:31
@@ -2448,14 +2452,12 @@ msgstr ""
 #: activities/geography/ActivityInfo.qml:31
 #: activities/imagename/ActivityInfo.qml:31
 #: activities/paintings/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Tab: navigate between the bottom and the top areas"
 msgctxt "ActivityInfo|"
 msgid ""
 "Tab: toggle navigation between the panel and the board without any other "
 "action"
-msgstr "Tab: превключване между долната и горната област"
+msgstr ""
+"Tab: превключване на навигацията между панела и дъската без други действия"
 
 #: activities/babymatch/ActivityInfo.qml:32
 #: activities/babyshapes/ActivityInfo.qml:32
@@ -2465,13 +2467,9 @@ msgstr "Tab: превключване между долната и горнат�
 #: activities/geography/ActivityInfo.qml:32
 #: activities/imagename/ActivityInfo.qml:32
 #: activities/paintings/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Delete or Backspace: remove the selected item from the answer area"
 msgctxt "ActivityInfo|"
 msgid "Delete or Backspace: remove item from selected spot"
-msgstr ""
-"Delete или Backspace: премахване на избрания елемент от областта за отговори"
+msgstr "Delete или Backspace: премахване на елемент от избраното място"
 
 #: activities/babymatch/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
@@ -16418,12 +16416,9 @@ msgstr ""
 
 #: activities/hanoi/ActivityInfo.qml:26
 #: activities/hanoi_real/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: move the selected item"
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the selection cursor through the pegs"
-msgstr "Стрелки: преместване на избрания елемент"
+msgstr "Стрелки: преместване на курсора за избор между колчетата"
 
 #: activities/hanoi/ActivityInfo.qml:27
 #: activities/hanoi_real/ActivityInfo.qml:26
@@ -16432,6 +16427,8 @@ msgid ""
 "Space or Enter: select/deselect the top disc on the selected peg, or move "
 "the selected disc to the selected peg"
 msgstr ""
+"Интервал или Enter: избор/премахване на избора на най-горния диск в избрания "
+"кол или преместване на избрания диск към избрания кол"
 
 #: activities/hanoi/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -23358,6 +23355,8 @@ msgid ""
 "Arrows: move the keyboard cursor in the grid, and if a point is selected "
 "move it"
 msgstr ""
+"Стрелки: преместване на курсора на клавиатурата в мрежата и преместване на "
+"избрана точка"
 
 #: activities/polygons/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -23365,30 +23364,24 @@ msgid ""
 "Enter: create a point at the cursor position, or validate your answer when "
 "the shape is closed"
 msgstr ""
+"Enter: създаване на точка в позицията на курсора или потвърждаване на "
+"отговора при затворена фигура"
 
 #: activities/polygons/ActivityInfo.qml:32
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select or deselect the highlighted answer"
 msgctxt "ActivityInfo|"
 msgid "Space: select or deselect the point at the cursor position"
-msgstr "Интервал: избиране или премахване на избора на маркирания отговор"
+msgstr ""
+"Интервал: избор или премахване на избора на точката в позицията на курсора"
 
 #: activities/polygons/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Up arrow: select next item"
 msgctxt "ActivityInfo|"
 msgid "Tab: select next point"
-msgstr "Стрелка нагоре: избери следващия елемент"
+msgstr "Таб: избор на следваща точка"
 
 #: activities/polygons/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + D: delete selected text"
 msgctxt "ActivityInfo|"
 msgid "Delete: delete selected point"
-msgstr "Ctrl + D: изтриване на избран текст"
+msgstr "Изтриване: изтриване на избраната точка"
 
 #: activities/polygons/TutorialDataset.qml:20
 msgctxt "TutorialDataset|"

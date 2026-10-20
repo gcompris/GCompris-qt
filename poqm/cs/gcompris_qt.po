@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-10-15 00:04+0200\n"
+"PO-Revision-Date: 2026-10-19 18:55+0200\n"
 "Last-Translator: Libor Filípek <libor.filipek@gmail.com>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -16268,14 +16268,9 @@ msgstr ""
 
 #: activities/hanoi/ActivityInfo.qml:26
 #: activities/hanoi_real/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Arrows: move the selection cursor through the panel items and board spots"
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the selection cursor through the pegs"
-msgstr ""
-"Šipky: pohybují kurzorem výběru mezi položkami panelu a místy na hrací desce"
+msgstr "Šipky: pohyb kurzorem výběru mezi kolíky"
 
 #: activities/hanoi/ActivityInfo.qml:27
 #: activities/hanoi_real/ActivityInfo.qml:26
@@ -16284,6 +16279,8 @@ msgid ""
 "Space or Enter: select/deselect the top disc on the selected peg, or move "
 "the selected disc to the selected peg"
 msgstr ""
+"Mezerník nebo klávesa Enter: vybereš/zrušíš výběr horního disku na vybraném "
+"kolíku nebo přesuneš vybraný disk na vybraný kolík"
 
 #: activities/hanoi/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"

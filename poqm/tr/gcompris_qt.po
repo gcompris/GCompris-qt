@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-10-16 20:02+0300\n"
+"PO-Revision-Date: 2026-10-19 12:03+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -16299,7 +16299,7 @@ msgstr "Basitleştirilmiş Hanoi Kulesi"
 #: activities/hanoi/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Copy the tower on the right-hand side onto the empty peg."
-msgstr "Sağ taraftaki kuleyi boş çiviye kopyala."
+msgstr "Sağ taraftaki kuleyi boş kazığa kopyala."
 
 #. Help goal
 #: activities/hanoi/ActivityInfo.qml:20
@@ -16315,20 +16315,14 @@ msgid ""
 "Drag and drop one top disc at a time, from one tower to another, to "
 "reproduce the tower on the right-hand side onto the empty peg."
 msgstr ""
-"Sağ taraftaki kuleyi boş çiviye yeniden oluşturmak için üstteki diski bir "
+"Sağ taraftaki kuleyi boş kazıkta yeniden oluşturmak için üstteki diski bir "
 "kuleden diğerine sürükleyip bırak."
 
 #: activities/hanoi/ActivityInfo.qml:26
 #: activities/hanoi_real/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Arrows: move the selection cursor through the panel items and board spots"
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the selection cursor through the pegs"
-msgstr ""
-"Oklar: Seçim imlecini, panel ögeleri ve tahta noktaları arasında hareket "
-"ettir"
+msgstr "Oklar: Seçim imlecini kazıklar arasında hareket ettir"
 
 #: activities/hanoi/ActivityInfo.qml:27
 #: activities/hanoi_real/ActivityInfo.qml:26
@@ -16337,6 +16331,8 @@ msgid ""
 "Space or Enter: select/deselect the top disc on the selected peg, or move "
 "the selected disc to the selected peg"
 msgstr ""
+"Boşluk veya Giriş: Seçili kazıktaki üst diski seç/seçimini kaldır veya "
+"seçili diski seçili kazığa taşı"
 
 #: activities/hanoi/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -16353,7 +16349,7 @@ msgstr "Hanoi Kulesi"
 #: activities/hanoi_real/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Move the tower from the left-hand side onto the right-side peg."
-msgstr "Kuleyi sol taraftan sağ taraftaki çiviye taşı."
+msgstr "Kuleyi sol taraftan sağ taraftaki kazığa taşı."
 
 #. Help manual
 #: activities/hanoi_real/ActivityInfo.qml:23
@@ -16365,7 +16361,7 @@ msgid ""
 "one disc can be moved at a time, and a disc can never be placed on a smaller "
 "disc."
 msgstr ""
-"Sol taraftaki kuleyi sağ taraftaki çiviye yeniden oluşturmak için üstteki "
+"Sol taraftaki kuleyi sağ taraftaki kazıkta yeniden oluşturmak için üstteki "
 "diski bir kuleden diğerine sürükleyip bırak. Diskler iki kurala uyarak "
 "mandallar üzerinde serbestçe ileri geri hareket edebilir: Tek kerede "
 "yalnızca bir disk hareket ettirilebilir ve bir disk asla daha küçük bir "
@@ -16395,7 +16391,7 @@ msgstr ""
 #: activities/hanoi_real/HanoiReal.qml:117
 msgctxt "HanoiReal|"
 msgid "Move the entire stack to the right peg, one disc at a time."
-msgstr "Tüm yığını, her seferinde bir disk olacak şekilde sağdaki direğe taşı."
+msgstr "Tüm yığını, her seferinde bir disk olacak şekilde sağdaki kazığa taşı."
 
 #: activities/hanoi_real/HanoiReal.qml:118
 msgctxt "HanoiReal|"
@@ -22115,7 +22111,7 @@ msgid ""
 "clicking on it. You can use the undo button to undo your last move, and the "
 "redo button to redo it."
 msgstr ""
-"Bir taşı hareket ettirmek için, onu dik yönde başka bir taşın üzerinden, iki "
+"Bir taşı hareket ettirmek için onu dik yönde başka bir taşın üzerinden, iki "
 "pozisyon ötedeki bir deliğe zıplat. Zıplayan taş tahtadan kaldırılır. "
 "Hareket ettirilebilir bir taşa ve ardından hedef konumuna tıklayabilir veya "
 "sürükleyip bırakarak hedef konumuna taşıyabilirsin. Oyun, artık hiçbir taş "

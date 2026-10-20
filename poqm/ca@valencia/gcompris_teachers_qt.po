@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
-"PO-Revision-Date: 2026-06-17 08:59+0200\n"
+"PO-Revision-Date: 2026-10-15 20:01+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -188,8 +188,8 @@ msgid ""
 msgstr ""
 "Quan se selecciona «Operands aleatoris», si el «Límit del valor del "
 "resultat» és superior a 0, definix el màxim permés del resultat de cada "
-"operació. Ha de ser prou gran per a generar preguntes suficients per al "
-"nombre donat de subnivells utilitzant els valors mínims i màxims d'operand."
+"operació. Ha de ser prou gran per a generar prou preguntes per al nombre "
+"donat de subnivells utilitzant els valors mínims i màxims d'operand."
 
 #: server/activities/algebra_by/AlgebraEditor.qml:29
 msgctxt "AlgebraEditor|"
@@ -608,7 +608,8 @@ msgstr "El conjunt de dades està buit."
 msgctxt "ActivityEditor|"
 msgid ""
 "\"Instruction\" must contain some text telling the fraction to represent."
-msgstr "«Instrució» ha de contindre un text que diga la fracció a representar."
+msgstr ""
+"«Instrucció» ha de contindre un text que diga la fracció a representar."
 
 #: server/activities/fractions_create/FractionsCreateEditor.qml:29
 msgctxt "FractionsCreateEditor|"
@@ -1163,7 +1164,7 @@ msgid ""
 "of stars\"."
 msgstr ""
 "«Resultat màxim per fila» ha de ser més gran que qualsevol valor a «Nombre "
-"màxim d'estreles\"."
+"màxim d'estreles»."
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:46
 msgctxt "MagicHatEditor|"

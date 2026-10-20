@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-10-14 07:28+0200\n"
+"PO-Revision-Date: 2026-10-19 09:47+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -16333,15 +16333,9 @@ msgstr ""
 
 #: activities/hanoi/ActivityInfo.qml:26
 #: activities/hanoi_real/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Arrows: move the selection cursor through the panel items and board spots"
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the selection cursor through the pegs"
-msgstr ""
-"Puščice: premik kazalca za izbiro med elementi plošče in polji na igralni "
-"površini"
+msgstr "Puščice: premikanje izbirnega kazalca po klinih"
 
 #: activities/hanoi/ActivityInfo.qml:27
 #: activities/hanoi_real/ActivityInfo.qml:26
@@ -16350,6 +16344,8 @@ msgid ""
 "Space or Enter: select/deselect the top disc on the selected peg, or move "
 "the selected disc to the selected peg"
 msgstr ""
+"Preslednica ali Enter: izberi/odizberi zgornji kolut na izbranem klinu "
+"oziroma premakni izbrani kolut na izbrani klin"
 
 #: activities/hanoi/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -16408,8 +16404,7 @@ msgstr ""
 msgctxt "HanoiReal|"
 msgid "Move the entire stack to the right peg, one disc at a time."
 msgstr ""
-"S premikanjem ene ploščice naenkrat, premaknite celoten sklad na desno "
-"palico."
+"S premikanjem ene ploščice naenkrat, premaknite celoten sklad na desni klin."
 
 #: activities/hanoi_real/HanoiReal.qml:118
 msgctxt "HanoiReal|"
