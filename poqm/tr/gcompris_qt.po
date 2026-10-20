@@ -1,12 +1,12 @@
 # Ozge <ozgebarbaros@gmail.com>.
-# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025, 2026 Emir SARI <emir_sari@icloud.com>
+# SPDX-FileCopyrightText: 2022-2026 Emir SARI <emir_sari@icloud.com>
 # Volkan Gezer <volkangezer@gmail.com>, 2017, 2021.
 # Filiz Alver <filizalvr@gmail.com>, 2019, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-04-29 14:46+0300\n"
+"PO-Revision-Date: 2026-10-19 12:03+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Lokalize 26.08.0\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -15878,7 +15878,7 @@ msgstr "Basitleştirilmiş Hanoi Kulesi"
 #: activities/hanoi/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Copy the tower on the right-hand side onto the empty peg."
-msgstr "Sağ taraftaki kuleyi boş çiviye kopyala."
+msgstr "Sağ taraftaki kuleyi boş kazığa kopyala."
 
 #. Help goal
 #: activities/hanoi/ActivityInfo.qml:20
@@ -15894,7 +15894,7 @@ msgid ""
 "Drag and drop one top disc at a time, from one tower to another, to "
 "reproduce the tower on the right-hand side onto the empty peg."
 msgstr ""
-"Sağ taraftaki kuleyi boş çiviye yeniden oluşturmak için üstteki diski bir "
+"Sağ taraftaki kuleyi boş kazıkta yeniden oluşturmak için üstteki diski bir "
 "kuleden diğerine sürükleyip bırak."
 
 #: activities/hanoi/ActivityInfo.qml:25
@@ -15912,7 +15912,7 @@ msgstr "Hanoi Kulesi"
 #: activities/hanoi_real/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Move the tower from the left-hand side onto the right-side peg."
-msgstr "Kuleyi sol taraftan sağ taraftaki çiviye taşı."
+msgstr "Kuleyi sol taraftan sağ taraftaki kazığa taşı."
 
 #. Help manual
 #: activities/hanoi_real/ActivityInfo.qml:23
@@ -15924,7 +15924,7 @@ msgid ""
 "one disc can be moved at a time, and a disc can never be placed on a smaller "
 "disc."
 msgstr ""
-"Sol taraftaki kuleyi sağ taraftaki çiviye yeniden oluşturmak için üstteki "
+"Sol taraftaki kuleyi sağ taraftaki kazıkta yeniden oluşturmak için üstteki "
 "diski bir kuleden diğerine sürükleyip bırak. Diskler iki kurala uyarak "
 "mandallar üzerinde serbestçe ileri geri hareket edebilir: Tek kerede "
 "yalnızca bir disk hareket ettirilebilir ve bir disk asla daha küçük bir "
@@ -15954,7 +15954,7 @@ msgstr ""
 #: activities/hanoi_real/HanoiReal.qml:75
 msgctxt "HanoiReal|"
 msgid "Move the entire stack to the right peg, one disc at a time."
-msgstr "Tüm yığını, her seferinde bir disk olacak şekilde sağdaki direğe taşı."
+msgstr "Tüm yığını, her seferinde bir disk olacak şekilde sağdaki kazığa taşı."
 
 #: activities/hanoi_real/HanoiReal.qml:76
 msgctxt "HanoiReal|"
