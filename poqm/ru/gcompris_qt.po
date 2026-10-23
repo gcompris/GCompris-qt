@@ -24,7 +24,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-10-19 09:57+0200\n"
+"PO-Revision-Date: 2026-10-22 05:43+0200\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Basealt Translation Team\n"
 "Language: ru\n"
@@ -10640,7 +10640,7 @@ msgstr "Найти представленную дробь."
 #: activities/fractions_create/resource/1/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a pie."
-msgstr "Упрощенные дроби с пирогом."
+msgstr "Упрощённые дроби с пирогом."
 
 #: activities/fractions_create/resource/1/Data.qml:20
 #: activities/fractions_create/resource/3/Data.qml:20

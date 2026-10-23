@@ -2407,6 +2407,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Arrows: move the selection cursor through the panel items and board spots"
 msgstr ""
+"Šípky: presúvanie kurzora výberu medzi položkami panela a miestami na doske"
 
 #: activities/babymatch/ActivityInfo.qml:30
 #: activities/babyshapes/ActivityInfo.qml:30
@@ -2421,6 +2422,8 @@ msgid ""
 "Space: select an item in the list, and place it on a spot. If there is "
 "nothing selected in the list, remove item from selected spot"
 msgstr ""
+"Medzerník: vybrať položku v zozname a umiestniť ju na miesto. Ak v zozname "
+"nie je nič vybraté, odstráni položku z vybraného miesta"
 
 #: activities/babymatch/ActivityInfo.qml:31
 #: activities/babyshapes/ActivityInfo.qml:31
@@ -2430,14 +2433,11 @@ msgstr ""
 #: activities/geography/ActivityInfo.qml:31
 #: activities/imagename/ActivityInfo.qml:31
 #: activities/paintings/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Tab: navigate between the bottom and the top areas"
 msgctxt "ActivityInfo|"
 msgid ""
 "Tab: toggle navigation between the panel and the board without any other "
 "action"
-msgstr "Tab: navigate between the bottom and the top areas"
+msgstr "Tab: prepínanie navigácie medzi panelom a doskou bez ďalšej akcie"
 
 #: activities/babymatch/ActivityInfo.qml:32
 #: activities/babyshapes/ActivityInfo.qml:32
@@ -2447,12 +2447,9 @@ msgstr "Tab: navigate between the bottom and the top areas"
 #: activities/geography/ActivityInfo.qml:32
 #: activities/imagename/ActivityInfo.qml:32
 #: activities/paintings/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Delete or Backspace: remove the selected item from the answer area"
 msgctxt "ActivityInfo|"
 msgid "Delete or Backspace: remove item from selected spot"
-msgstr "Delete alebo Backspace: odstrániť vybranú položku z oblasti odpovede"
+msgstr "Delete alebo Backspace: odstrániť položku z vybraného miesta"
 
 #: activities/babymatch/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
@@ -16299,12 +16296,9 @@ msgstr ""
 
 #: activities/hanoi/ActivityInfo.qml:26
 #: activities/hanoi_real/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: move the selected item"
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the selection cursor through the pegs"
-msgstr "Šípky: presunúť vybratý predmet"
+msgstr "Šípky: presúvanie kurzora výberu medzi kolíkmi"
 
 #: activities/hanoi/ActivityInfo.qml:27
 #: activities/hanoi_real/ActivityInfo.qml:26
@@ -16313,6 +16307,8 @@ msgid ""
 "Space or Enter: select/deselect the top disc on the selected peg, or move "
 "the selected disc to the selected peg"
 msgstr ""
+"Medzerník alebo Enter: vybrať/zrušiť výber horného disku na vybranom kolíku "
+"alebo presunúť vybraný disk na vybraný kolík"
 
 #: activities/hanoi/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -23163,22 +23159,19 @@ msgstr "Pokračovať"
 #: activities/polygons/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Polygons"
-msgstr ""
+msgstr "Mnohouholníky"
 
 #. Help title
 #: activities/polygons/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Learn about special polygons and draw them in a grid."
-msgstr ""
+msgstr "Spoznaj špeciálne mnohouholníky a nakresli ich do mriežky."
 
 #. Help goal
 #: activities/polygons/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Learn about special polygons."
-msgstr "Naučte sa o niektorých nástrojoch na digitálne maľovanie."
+msgstr "Spoznaj špeciálne mnohouholníky."
 
 #. Help manual
 #: activities/polygons/ActivityInfo.qml:28
@@ -23193,6 +23186,13 @@ msgid ""
 "restart the shape by clicking on the reload button. When the shape is "
 "correct, press the OK button to validate your answer."
 msgstr ""
+"Kliknutím do mriežky umiestni body zodpovedajúce koncom čiar mnohouholníka. "
+"Kým tvar nie je uzavretý, posledný bod má inú farbu, ktorá ukazuje, že bude "
+"spojený s ďalším pridaným bodom. Po umiestnení aspoň 3 bodov môžeš tvar "
+"uzavrieť kliknutím na prvý alebo posledný bod. Keď je tvar uzavretý, nové "
+"body už pridať nemôžeš. Bod môžeš presunúť ťahaním alebo ho vymazať "
+"dvojklikom. Tvar môžeš začať odznova kliknutím na tlačidlo obnovenia. Keď je "
+"tvar správny, stlač tlačidlo OK a over svoju odpoveď."
 
 #: activities/polygons/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -23200,6 +23200,8 @@ msgid ""
 "Arrows: move the keyboard cursor in the grid, and if a point is selected "
 "move it"
 msgstr ""
+"Šípky: presúvanie kurzora klávesnice v mriežke a ak je vybraný bod, jeho "
+"presun"
 
 #: activities/polygons/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -23207,35 +23209,28 @@ msgid ""
 "Enter: create a point at the cursor position, or validate your answer when "
 "the shape is closed"
 msgstr ""
+"Enter: vytvoriť bod na pozícii kurzora alebo overiť odpoveď, keď je tvar "
+"uzavretý"
 
 #: activities/polygons/ActivityInfo.qml:32
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select or deselect the highlighted answer"
 msgctxt "ActivityInfo|"
 msgid "Space: select or deselect the point at the cursor position"
-msgstr "Medzerník: vybrať alebo zrušiť výber zvýraznenej odpovede"
+msgstr "Medzerník: vybrať alebo zrušiť výber bodu na pozícii kurzora"
 
 #: activities/polygons/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Up arrow: select next item"
 msgctxt "ActivityInfo|"
 msgid "Tab: select next point"
-msgstr "Šípka hore: zvoliť ďalšiu položku"
+msgstr "Tab: vybrať ďalší bod"
 
 #: activities/polygons/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + D: delete selected text"
 msgctxt "ActivityInfo|"
 msgid "Delete: delete selected point"
-msgstr "Ctrl + D: vymazať vybratý text"
+msgstr "Delete: vymazať vybraný bod"
 
 #: activities/polygons/TutorialDataset.qml:20
 msgctxt "TutorialDataset|"
 msgid "A polygon is a closed shape made of at least 3 connected lines."
-msgstr ""
+msgstr "Mnohouholník je uzavretý tvar z aspoň 3 spojených čiar."
 
 #: activities/polygons/TutorialDataset.qml:21
 msgctxt "TutorialDataset|"
@@ -23243,6 +23238,8 @@ msgid ""
 "To draw a polygon, click on the grid to place the ends of the polygon's "
 "lines."
 msgstr ""
+"Ak chceš nakresliť mnohouholník, kliknutím do mriežky umiestni konce jeho "
+"čiar."
 
 #: activities/polygons/TutorialDataset.qml:22
 msgctxt "TutorialDataset|"
@@ -23250,32 +23247,28 @@ msgid ""
 "After placing at least 3 points, you can close the shape by clicking on the "
 "first or the last point."
 msgstr ""
+"Po umiestnení aspoň 3 bodov môžeš tvar uzavrieť kliknutím na prvý alebo "
+"posledný bod."
 
 #: activities/polygons/TutorialDataset.qml:23
-#, fuzzy
-#| msgctxt "VerticalSubtraction|"
-#| msgid "The result should not be a negative number."
 msgctxt "TutorialDataset|"
 msgid "The points should not be all aligned."
-msgstr "The result should not be a negative number."
+msgstr "Body nesmú ležať všetky na jednej priamke."
 
 #: activities/polygons/TutorialDataset.qml:26
 msgctxt "TutorialDataset|"
 msgid "Draw a polygon."
-msgstr ""
+msgstr "Nakresli mnohouholník."
 
 #: activities/polygons/TutorialDataset.qml:39
 msgctxt "TutorialDataset|"
 msgid "A triangle is a polygon with 3 sides."
-msgstr ""
+msgstr "Trojuholník je mnohouholník s 3 stranami."
 
 #: activities/polygons/TutorialDataset.qml:42
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the triangle"
 msgctxt "TutorialDataset|"
 msgid "Draw a triangle."
-msgstr "Nájdi triangel"
+msgstr "Nakresli trojuholník."
 
 #: activities/polygons/TutorialDataset.qml:57
 msgctxt "TutorialDataset|"
@@ -23283,11 +23276,13 @@ msgid ""
 "A right triangle is a triangle in which two sides are perpendicular, forming "
 "a right angle (90 degrees)."
 msgstr ""
+"Pravouhlý trojuholník je trojuholník, v ktorom sú dve strany na seba kolmé a "
+"zvierajú pravý uhol (90 stupňov)."
 
 #: activities/polygons/TutorialDataset.qml:60
 msgctxt "TutorialDataset|"
 msgid "Draw a right triangle."
-msgstr ""
+msgstr "Nakresli pravouhlý trojuholník."
 
 #: activities/polygons/TutorialDataset.qml:74
 msgctxt "TutorialDataset|"
@@ -23295,45 +23290,43 @@ msgid ""
 "An isosceles triangle is a triangle with two sides of equal length and two "
 "angles of equal measure."
 msgstr ""
+"Rovnoramenný trojuholník je trojuholník s dvoma rovnako dlhými stranami a "
+"dvoma rovnako veľkými uhlami."
 
 #: activities/polygons/TutorialDataset.qml:77
 msgctxt "TutorialDataset|"
 msgid "Draw an isosceles triangle."
-msgstr ""
+msgstr "Nakresli rovnoramenný trojuholník."
 
 #: activities/polygons/TutorialDataset.qml:100
 msgctxt "TutorialDataset|"
 msgid "A quadrilateral is a four-sided polygon, having 4 sides and 4 corners."
-msgstr ""
+msgstr "Štvoruholník je mnohouholník so 4 stranami a 4 vrcholmi."
 
 #: activities/polygons/TutorialDataset.qml:103
 msgctxt "TutorialDataset|"
 msgid "Draw a quadrilateral."
-msgstr ""
+msgstr "Nakresli štvoruholník."
 
 #: activities/polygons/TutorialDataset.qml:118
 msgctxt "TutorialDataset|"
 msgid "A rectangle is a quadrilateral with 4 right angles."
-msgstr ""
+msgstr "Obdĺžnik je štvoruholník so 4 pravými uhlami."
 
 #: activities/polygons/TutorialDataset.qml:121
-#, fuzzy
 msgctxt "TutorialDataset|"
 msgid "Draw a rectangle."
-msgstr "Desiatkový číselný systém "
+msgstr "Nakresli obdĺžnik."
 
 #: activities/polygons/TutorialDataset.qml:142
 msgctxt "TutorialDataset|"
 msgid "A square is a rectangle with 4 sides of equal length."
-msgstr ""
+msgstr "Štvorec je obdĺžnik so 4 rovnako dlhými stranami."
 
 #: activities/polygons/TutorialDataset.qml:145
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Percentages with a square."
 msgctxt "TutorialDataset|"
 msgid "Draw a square."
-msgstr "Percentá so štvorcom."
+msgstr "Nakresli štvorec."
 
 #: activities/polygons/TutorialDataset.qml:168
 msgctxt "TutorialDataset|"
@@ -23341,21 +23334,23 @@ msgid ""
 "A parallelogram is a quadrilateral with opposite sides of equal length and "
 "opposite angles of equal measure."
 msgstr ""
+"Rovnobežník je štvoruholník, ktorého protiľahlé strany sú rovnako dlhé a "
+"protiľahlé uhly rovnako veľké."
 
 #: activities/polygons/TutorialDataset.qml:171
 msgctxt "TutorialDataset|"
 msgid "Draw a parallelogram which is not a rectangle."
-msgstr ""
+msgstr "Nakresli rovnobežník, ktorý nie je obdĺžnik."
 
 #: activities/polygons/TutorialDataset.qml:192
 msgctxt "TutorialDataset|"
 msgid "A rhombus is a parallelogram with four sides of equal length."
-msgstr ""
+msgstr "Kosoštvorec je rovnobežník so štyrmi rovnako dlhými stranami."
 
 #: activities/polygons/TutorialDataset.qml:195
 msgctxt "TutorialDataset|"
 msgid "Draw a rhombus which is not a square."
-msgstr ""
+msgstr "Nakresli kosoštvorec, ktorý nie je štvorec."
 
 #. Activity title
 #: activities/positions/ActivityInfo.qml:15

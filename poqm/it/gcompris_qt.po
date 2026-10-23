@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2026-10-13 16:12+0200\n"
+"PO-Revision-Date: 2026-10-19 14:13+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -2457,6 +2457,8 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Arrows: move the selection cursor through the panel items and board spots"
 msgstr ""
+"Frecce direzionali: spostano il cursore di selezione tra gli elementi del "
+"pannello e le caselle del tavoliere"
 
 #: activities/babymatch/ActivityInfo.qml:30
 #: activities/babyshapes/ActivityInfo.qml:30
@@ -2471,6 +2473,9 @@ msgid ""
 "Space: select an item in the list, and place it on a spot. If there is "
 "nothing selected in the list, remove item from selected spot"
 msgstr ""
+"Barra spaziatrice: seleziona un elemento dall'elenco e posizionalo in un "
+"punto. Se non è selezionato alcun elemento nell'elenco, rimuovi l'elemento "
+"dal punto selezionato."
 
 #: activities/babymatch/ActivityInfo.qml:31
 #: activities/babyshapes/ActivityInfo.qml:31
@@ -2480,14 +2485,12 @@ msgstr ""
 #: activities/geography/ActivityInfo.qml:31
 #: activities/imagename/ActivityInfo.qml:31
 #: activities/paintings/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Tab: navigate between the bottom and the top areas"
 msgctxt "ActivityInfo|"
 msgid ""
 "Tab: toggle navigation between the panel and the board without any other "
 "action"
-msgstr "Tab: naviga tra le aree in basso e in alto"
+msgstr ""
+"Tab: alterna la navigazione tra il pannello e la bacheca senza altre azioni"
 
 #: activities/babymatch/ActivityInfo.qml:32
 #: activities/babyshapes/ActivityInfo.qml:32
@@ -2497,13 +2500,9 @@ msgstr "Tab: naviga tra le aree in basso e in alto"
 #: activities/geography/ActivityInfo.qml:32
 #: activities/imagename/ActivityInfo.qml:32
 #: activities/paintings/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Delete or Backspace: remove the selected item from the answer area"
 msgctxt "ActivityInfo|"
 msgid "Delete or Backspace: remove item from selected spot"
-msgstr ""
-"Canc o Backspace: rimuovi l'elemento selezionato dalla zona di risposta"
+msgstr "Canc o Backspace: rimuovi l'elemento dal punto selezionato"
 
 #: activities/babymatch/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
@@ -16597,12 +16596,9 @@ msgstr ""
 
 #: activities/hanoi/ActivityInfo.qml:26
 #: activities/hanoi_real/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: move the selected item"
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the selection cursor through the pegs"
-msgstr "Frecce direzionali: sposta l'elemento selezionato"
+msgstr "Frecce direzionali: spostano il cursore di selezione tra i pioli"
 
 #: activities/hanoi/ActivityInfo.qml:27
 #: activities/hanoi_real/ActivityInfo.qml:26
@@ -16611,6 +16607,8 @@ msgid ""
 "Space or Enter: select/deselect the top disc on the selected peg, or move "
 "the selected disc to the selected peg"
 msgstr ""
+"Barra spaziatrice o Invio: seleziona/deseleziona il disco in cima al piolo "
+"selezionato, oppure sposta il disco selezionato sul piolo selezionato"
 
 #: activities/hanoi/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
