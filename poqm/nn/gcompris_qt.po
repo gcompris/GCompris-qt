@@ -2448,8 +2448,6 @@ msgstr ""
 #: activities/imagename/ActivityInfo.qml:31
 #: activities/paintings/ActivityInfo.qml:33
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Tab: navigate between the bottom and the top areas"
 msgctxt "ActivityInfo|"
 msgid ""
 "Tab: toggle navigation between the panel and the board without any other "
@@ -2465,8 +2463,6 @@ msgstr "Tabulator: Byt mellom nedste og øvste felt"
 #: activities/imagename/ActivityInfo.qml:32
 #: activities/paintings/ActivityInfo.qml:34
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Delete or Backspace: remove the selected item from the answer area"
 msgctxt "ActivityInfo|"
 msgid "Delete or Backspace: remove item from selected spot"
 msgstr "Delete eller Rettetast: Fjern vogna/lokomotivet frå svarområdet"
@@ -16309,8 +16305,6 @@ msgstr ""
 #: activities/hanoi/ActivityInfo.qml:26
 #: activities/hanoi_real/ActivityInfo.qml:25
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: move the selected item"
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the selection cursor through the pegs"
 msgstr "Piltastar: Flytt den valde gjenstanden"
