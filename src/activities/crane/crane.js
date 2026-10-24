@@ -17,6 +17,10 @@ var numberLevelsWords = 2
 var words3Letters = []
 var words4Letters = []
 var words5Letters = []
+// Those fallback lists should contain the same words as in wordsXLetters lists.
+var fallback3Letters = "cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg".split(';')
+var fallback4Letters = "blue;best;good;area;bell;coat;easy;farm;food;else;girl;give;hero;help;hour;sand;song".split(';')
+var fallback5Letters = "happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;shape;shirt;study".split(';')
 var items
 var url = "qrc:/gcompris/src/activities/crane/resource/"
 var currentLocale
@@ -53,10 +57,38 @@ function start(items_) {
     */
     words5Letters = qsTr("happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;shape;shirt;study").split(';')
 
+    sanitizeWordList(words3Letters, fallback3Letters, 3);
+    sanitizeWordList(words4Letters, fallback4Letters, 4);
+    sanitizeWordList(words5Letters, fallback5Letters, 5);
+
     Core.shuffle(words3Letters)
     Core.shuffle(words4Letters)
     Core.shuffle(words5Letters)
     initLevel()
+}
+
+function sanitizeWordList(wordList, fallbackList, wordsSize) {
+    var allowedChars = /[a-z]/
+    for(var i = 0; i < wordList.length; i++) {
+        var isAllowed = true;
+        var word = wordList[i];
+        var wordArray = Array.from(word);
+        if(wordArray.length > wordsSize) {
+            isAllowed = false;
+        }
+        if(isAllowed) {
+            isAllowed = wordArray.every(
+                (char) => isNaN(char) && /[a-z]/.test(char)
+            );
+        }
+        if(!isAllowed) {
+            if(fallbackList[i] != undefined) {
+                wordList[i] = fallbackList[i];
+            } else {
+                wordList.splice(i, 1);
+            }
+        }
+    }
 }
 
 function stop() {
