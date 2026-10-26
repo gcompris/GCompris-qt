@@ -6577,7 +6577,7 @@ msgid "Space or Enter or Tab: select the next item"
 msgstr "ಸ್ಪೇಸ್  ಅಥವಾ ಎಂಟರ್ ಅಥವಾ ಟ್ಯಾಬ್: ಮುಂದಿನ ವಸ್ತುವನ್ನು ಆರಿಸಲು"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 15–25 simple 3-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: cat;dog;win;red;yes
-#: activities/crane/crane.js:40
+#: activities/crane/crane.js:44
 #, fuzzy
 #| msgctxt "crane|"
 #| msgid ""
@@ -6591,7 +6591,7 @@ msgstr ""
 "ಜಿಂಕೆ;ಮರ;ನದಿ;"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 4-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: blue;best;good;area
-#: activities/crane/crane.js:47
+#: activities/crane/crane.js:51
 msgctxt "crane|"
 msgid ""
 "blue;best;good;area;bell;coat;easy;farm;food;else;girl;give;hero;help;hour;"
@@ -6601,7 +6601,7 @@ msgstr ""
 "ಕೆಲಸ;ಗಂಟಲು;ನಾಲಗೆ;ನವಿಲು;ಹಸಿರು;ನೇರಳೆ;ಸಾಗರ;ಬೆಳಕು;"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 5-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: happy;child;white;apple
-#: activities/crane/crane.js:54
+#: activities/crane/crane.js:58
 msgctxt "crane|"
 msgid ""
 "happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;"

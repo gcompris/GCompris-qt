@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2026-10-19 11:11+0200\n"
+"PO-Revision-Date: 2026-10-25 18:57+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Lokalize 25.04.0\n"
+"X-Generator: Lokalize 26.08.2\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -6471,7 +6471,7 @@ msgstr "«Espai», «Retorn» o «Tabulació»: per a seleccionar l'element seg�
 
 # skip-rule: kct-box,t-sc-yes
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 15–25 simple 3-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: cat;dog;win;red;yes
-#: activities/crane/crane.js:40
+#: activities/crane/crane.js:44
 msgctxt "crane|"
 msgid ""
 "cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg"
@@ -6479,7 +6479,7 @@ msgstr ""
 "gat;gos;ona;ous;pis;rec;tap;cua;cub;neu;pou;got;gla;dia;fre;gol;gel;arc;buc"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 4-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: blue;best;good;area
-#: activities/crane/crane.js:47
+#: activities/crane/crane.js:51
 msgctxt "crane|"
 msgid ""
 "blue;best;good;area;bell;coat;easy;farm;food;else;girl;give;hero;help;hour;"
@@ -6489,7 +6489,7 @@ msgstr ""
 "dret;sons"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 5-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: happy;child;white;apple
-#: activities/crane/crane.js:54
+#: activities/crane/crane.js:58
 msgctxt "crane|"
 msgid ""
 "happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;"
@@ -29890,7 +29890,7 @@ msgstr "Els teus fitxers de dades ja s'han actualitzat."
 #: core/DownloadManager.cpp:122
 msgctxt "QObject|"
 msgid "Download cancelled by user"
-msgstr "La baixada ha sigut cancel·lada per l'usuari"
+msgstr "L'usuari ha cancel·lat la baixada"
 
 #: core/DownloadManager.cpp:333
 msgctxt "QObject|"

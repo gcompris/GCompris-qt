@@ -6001,7 +6001,7 @@ msgid "Space or Enter or Tab: select the next item"
 msgstr "გამოტოვება, ან Tab ან Enter: შემდეგი ელემენტის არჩევა"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 15–25 simple 3-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: cat;dog;win;red;yes
-#: activities/crane/crane.js:40
+#: activities/crane/crane.js:44
 msgctxt "crane|"
 msgid ""
 "cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg"
@@ -6010,7 +6010,7 @@ msgstr ""
 "ძაღლი;კატა;წითელი;მოგება;დიახ;დიდი;ყუთი;გართობა;დღე;ყინული;კვერცხი"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 4-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: blue;best;good;area
-#: activities/crane/crane.js:47
+#: activities/crane/crane.js:51
 msgctxt "crane|"
 msgid ""
 "blue;best;good;area;bell;coat;easy;farm;food;else;girl;give;hero;help;hour;"
@@ -6020,7 +6020,7 @@ msgstr ""
 "sand;song;სიმღერა;ქვიშა;დახმარება;გოგო;არადა;საჭმელი;ფერმა;ადვილი;ზარი;ლურჯი"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 5-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: happy;child;white;apple
-#: activities/crane/crane.js:54
+#: activities/crane/crane.js:58
 msgctxt "crane|"
 msgid ""
 "happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;"
@@ -14519,6 +14519,8 @@ msgid ""
 "Guide the Number Muncher to all the expressions that do not equal the number "
 "at the bottom of the screen."
 msgstr ""
+"მიიყვანეთ რიცხვთმჭამელი ეკრანის ქვედა მხარეს ყველა გამოსახულებასთან, რომელიც "
+"რიცხვს არ უდრის."
 
 #. Help goal
 #: activities/gnumch-inequality/ActivityInfo.qml:21
@@ -14558,7 +14560,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Guide the Number Muncher to all the multiples of the number at the bottom of "
 "the screen."
-msgstr ""
+msgstr "მიიყვანეთ რიცხვთმჭამელი რიცხვის ყველა ნამრავლთან ეკრანის ქვედა მხარეს."
 
 #. Help manual
 #: activities/gnumch-multiples/ActivityInfo.qml:23
@@ -15554,7 +15556,7 @@ msgctxt "HanoiReal|"
 msgid ""
 "Build the same tower in the empty area as the one you see on the right-hand "
 "side"
-msgstr ""
+msgstr "ააგეთ იგივე კოშკი ცარიელ მხარეს ისე, როგორც მას მარჯვენა მხარეს ხედავთ"
 
 #. Activity title
 #: activities/hexagon/ActivityInfo.qml:15
@@ -15581,6 +15583,8 @@ msgid ""
 "Try to find the strawberry under the blue fields. The fields become redder "
 "as you get closer."
 msgstr ""
+"სცადეთ, იპოვოთ მარწყვი ლურჯ ველებში. ველი, რაც უფრო უახლოვდებით, უფრო "
+"წითლდება."
 
 #. Activity title
 #: activities/imagename/ActivityInfo.qml:18
@@ -16599,6 +16603,8 @@ msgid ""
 "represents a full unit, and each square in it represents one tenth of this "
 "unit."
 msgstr ""
+"ნაჩვენებია მიმატება ორი ათობითი რიცხვით. ზოლი ისრით წარმოადგენს მთელ ერთეულს "
+"და მასში არსებული თითოეული კვადრატი წარმოადგენს ამ ერთეულის ერთ მეათედს."
 
 #: activities/learn_decimals_additions/Learn_decimals_additions.qml:20
 msgctxt "Learn_decimals_additions|"
@@ -16615,6 +16621,8 @@ msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr ""
+"თუ პასუხი სწორია, აკრიფეთ შესაბამისი შედეგი და დააწკაპუნეთ ღილაკზე 'OK', რომ "
+"დაადასტუროთ თქვენი პასუხი."
 
 #: activities/learn_decimals_additions/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -16650,6 +16658,8 @@ msgid ""
 "Learn subtraction with decimal numbers by manipulating their visual "
 "representation."
 msgstr ""
+"ისწავლეთ ათობითი რიცხვების გამოკლება მათი ვიზუალური წარმოდგენის "
+"მანიპულირებით."
 
 #. Help manual
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:22
