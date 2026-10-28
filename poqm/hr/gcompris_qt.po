@@ -2418,7 +2418,7 @@ msgid ""
 "nothing selected in the list, remove item from selected spot"
 msgstr ""
 "Razmaknica: odaberi stavku na popisu i postavi je na određeno mjesto. Ako na "
-"popisu nije odabrana nijedna stavka, ukloni stavku s odabranog mjesta."
+"popisu nije odabrana nijedna stavka, ukloni stavku s odabranog mjesta"
 
 #: activities/babymatch/ActivityInfo.qml:31
 #: activities/babyshapes/ActivityInfo.qml:31
