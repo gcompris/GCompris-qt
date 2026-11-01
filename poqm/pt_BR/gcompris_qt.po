@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-09-09 08:12-0300\n"
+"PO-Revision-Date: 2026-10-31 14:10-0300\n"
 "Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Language: pt_BR\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 26.08.0\n"
+"X-Generator: Lokalize 26.08.2\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -28548,9 +28548,9 @@ msgstr ""
 "de muitos tipos de contribuições, incluindo a financeira. Nós usamos o "
 "dinheiro para reembolsar membros e outras pessoas devido aos gastos com o "
 "projeto. Parte do dinheiro é usado para dar assistência jurídica e organizar "
-"conferências e reuniões. <br /> <br />Você pode ajudar a KDE através de uma "
-"doação financeira, usando uma das maneiras descritas em <a href=\"%2\">%2</"
-"a>.<br /><br />Obrigado pela sua ajuda."
+"conferências e reuniões. <br /> <br />Você pode ajudar a comunidade KDE "
+"através de uma doação financeira, usando uma das maneiras descritas em <a "
+"href=\"%2\">%2</a>.<br /><br />Obrigado pela sua ajuda."
 
 #: core/DialogAbout.qml:139
 #, qt-format
