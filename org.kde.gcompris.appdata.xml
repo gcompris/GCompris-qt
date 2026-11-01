@@ -270,6 +270,7 @@
       <li xml:lang="eu">ordenagailua ezagutzea: teklatua, sagua, saguaren keinu ezberdinak, etab.</li>
       <li xml:lang="fi">tietokoneen oppiminen: näppäimistö, hiiri, eri hiirieleet jne.</li>
       <li xml:lang="fr">découverte de l'ordinateur : clavier, souris, mouvements de la souris…</li>
+      <li xml:lang="gl">descubrimento do computador: teclado, rato, xestos do rato, etc.</li>
       <li xml:lang="gu">કમ્પ્યુટર જાણો: કીબોર્ડ, માઉસ, માઉસના વિવિધ ઇશારા , વગેરે.</li>
       <li xml:lang="he">היכרות עם המחשב: מקלדת, עכבר, מחוות עכבר ועוד.</li>
       <li xml:lang="hr">otkrivanje računala: tipkovnica, miš, različite geste mišem, itd.</li>
@@ -302,6 +303,7 @@
       <li xml:lang="eu">aritmetika: taulak oroitzea, zenbaketa, irudi ispilatua, balantza orekatu, diru xehea itzultzea, etab.</li>
       <li xml:lang="fi">aritmetiikka: kertotaulujen opettelu, laskutehtävät, peilikuvan piirtäminen, vaa’an tasapainottaminen, vaihtorahan antaminen jne.</li>
       <li xml:lang="fr">arithmétique : apprentissage des tables d'opérations mathématiques, l'énumération, de symétrie d'image, équilibrage de la balance, rendre la monnaie…</li>
+      <li xml:lang="gl">aritmética: táboas de memoria, enumeración, imaxes espello, equilibrio de balanzas, cálculo do cambio, etc.</li>
       <li xml:lang="gu">અંકગણિત: ઘડિયા યાદ રાખવા, ગણતરી , અરીસામાં મળતું પ્રતિબિંબ, ત્રાજવું સંતુલિત કરવું, છુટા પૈસા આપવા, વગેરે.</li>
       <li xml:lang="he">חשבון: טבלת זיכרון, מנייה, היפוך תמונות, איזון מאזניים, החזרת עודף ועוד.</li>
       <li xml:lang="hr">aritmetika: tablica množenja, nabrajanje, zrcalna slika, ravnoteža vage, davanje promjena, itd.</li>
@@ -333,6 +335,7 @@
       <li xml:lang="eu">zientzia: ubidearen uhatea, koloreak nahastea, grabitate kontzeptua, etab.</li>
       <li xml:lang="fi">tiede: kanavasulku, värien sekoitus, painovoiman käsite jne.</li>
       <li xml:lang="fr">science : fonctionnement d'une écluse, mélange des couleurs, concept de la gravité…</li>
+      <li xml:lang="gl">ciencia: o bloqueo da canle, mestura de cores, o concepto de gravidade, etc.</li>
       <li xml:lang="gu">વિજ્ઞાન: નહેરના દરવાજા, રંગોનું મિશ્રણ, ગુરુત્વાકર્ષણનો ખ્યાલ, વગેરે.</li>
       <li xml:lang="he">מדע: מנעולי מים בתעלה, ערבוב צבעים, מושג כח המשיכה ועוד.</li>
       <li xml:lang="hr">znanost: sustav brana, miješanje boja, koncept gravitacije, itd.</li>
@@ -364,6 +367,7 @@
       <li xml:lang="eu">jokoak: oroimena, 4 konektatu, artzain-jokoa, sudoku, hanoi dorrea, etab.</li>
       <li xml:lang="fi">pelit: muisti, neljän suora, ristinolla, sudoku, Hanoin tornit jne.</li>
       <li xml:lang="fr">jeux : trouve les paires, puissance 4, morpion, sudoku, la tour d'Hanoï…</li>
+      <li xml:lang="gl">xogos: memoria, conectar 4, pai nai fillo, sudoku, torre de Hanoi, etc.</li>
       <li xml:lang="gu">રમતો: યાદશક્તિ, કનેક્ટ 4, ટિક ટેક ટો, સુડોકુ, હનોઈનો ટાવર, વગેરે.</li>
       <li xml:lang="he">משחקים: זיכרון, 4 בשורה, איקס־עיגול, סודוקו, מגדלי האנוי ועוד.</li>
       <li xml:lang="hr">igrice: igra pamćenja, Connect 4, tic tac toe, sudoku, Hanojski tornjevi, itd.</li>
@@ -395,6 +399,7 @@
       <li xml:lang="eu">irakurketa: irakurtzen trebatzea, etab.</li>
       <li xml:lang="fi">lukeminen: lukemisen harjoittelu jne.</li>
       <li xml:lang="fr">lecture : entraînement à la lecture…</li>
+      <li xml:lang="gl">lectura: práctica de lectura, etc.</li>
       <li xml:lang="gu">વાંચન: વાંચનનો મહાવરો, વગેરે.</li>
       <li xml:lang="he">קריאה: אימוני קריאה ועוד.</li>
       <li xml:lang="hr">čitanje: vježbe čitanja, itd.</li>
@@ -428,6 +433,7 @@
       <li xml:lang="eu">bestelakoak: ikasi ordua esaten, braille sistema, labirintoa, musika-tresnak, etab.</li>
       <li xml:lang="fi">muuta: kellonajan kertominen, pistekirjoitus, sokkelo, soittimet jne.</li>
       <li xml:lang="fr">autre : apprendre à dire l'heure, le système braille, le labyrinthe, les instruments de musique…</li>
+      <li xml:lang="gl">outros: aprender a dicir as horas, o sistema braille, labirinto, instrumentos musicais, etc.</li>
       <li xml:lang="gu">અન્ય: સમય જોતા શીખવું, બ્રેઈલ લિપિ, ભૂલભૂલામણી, સંગીતના સાધનો, વગેરે.</li>
       <li xml:lang="he">אחרים: ללמוד לקרוא שעון, מערכת הבּרָייל, מבוכים, כלי נגינה ועוד.</li>
       <li xml:lang="hr">ostalo: nauči odrediti vrijeme, Brailleovo pismo, labirint, glazbeni instrumenti, itd.</li>
