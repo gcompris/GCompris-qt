@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025, 2026 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
+# SPDX-FileCopyrightText: 2022-2026 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
 # Safa Alfulaij <safa1996alfulaij@gmail.com>, 2015, 2016, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-09-23 18:47+0400\n"
+"PO-Revision-Date: 2026-10-31 19:43+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Lokalize 26.08.1\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -2380,7 +2380,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid ""
 "Arrows: move the selection cursor through the panel items and board spots"
-msgstr ""
+msgstr "الأسهم: حرّك مؤشر التحديد عبر عناصر اللوحة ونقاط الرقعة"
 
 #: activities/babymatch/ActivityInfo.qml:30
 #: activities/babyshapes/ActivityInfo.qml:30
@@ -2395,6 +2395,8 @@ msgid ""
 "Space: select an item in the list, and place it on a spot. If there is "
 "nothing selected in the list, remove item from selected spot"
 msgstr ""
+"مسافة: اختر عنصرًا من القائمة وضعه على نقطة. إن لم يكن هناك شيء محدد في "
+"القائمة، أزل العنصر من النقطة المحددة"
 
 #: activities/babymatch/ActivityInfo.qml:31
 #: activities/babyshapes/ActivityInfo.qml:31
@@ -2404,14 +2406,11 @@ msgstr ""
 #: activities/geography/ActivityInfo.qml:31
 #: activities/imagename/ActivityInfo.qml:31
 #: activities/paintings/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Tab: navigate between the bottom and the top areas"
 msgctxt "ActivityInfo|"
 msgid ""
 "Tab: toggle navigation between the panel and the board without any other "
 "action"
-msgstr "مفتاح الجدولة: التنقل بين المناطق السفلية والعليا"
+msgstr "جدولة: بدّل التنقل بين اللوحة والرقعة دون أي إجراء آخر"
 
 #: activities/babymatch/ActivityInfo.qml:32
 #: activities/babyshapes/ActivityInfo.qml:32
@@ -2421,12 +2420,9 @@ msgstr "مفتاح الجدولة: التنقل بين المناطق السفل
 #: activities/geography/ActivityInfo.qml:32
 #: activities/imagename/ActivityInfo.qml:32
 #: activities/paintings/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Delete or Backspace: remove the selected item from the answer area"
 msgctxt "ActivityInfo|"
 msgid "Delete or Backspace: remove item from selected spot"
-msgstr "مفتاح الحذف أوالحذف للخلف: لإزالة العنصر المحدد من منطقة الإجابة"
+msgstr "حذف أو مسافة للخلف: أزل العنصر من النقطة المحددة"
 
 #: activities/babymatch/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
@@ -15988,12 +15984,9 @@ msgstr ""
 
 #: activities/hanoi/ActivityInfo.qml:26
 #: activities/hanoi_real/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: move the selected item"
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the selection cursor through the pegs"
-msgstr "أﻷسهم: لتحريك العناصر المختارة"
+msgstr "الأسهم: حرّك مؤشر التحديد عبر الأوتاد"
 
 #: activities/hanoi/ActivityInfo.qml:27
 #: activities/hanoi_real/ActivityInfo.qml:26
@@ -16002,6 +15995,8 @@ msgid ""
 "Space or Enter: select/deselect the top disc on the selected peg, or move "
 "the selected disc to the selected peg"
 msgstr ""
+"مسافة أو إدخال: اختر/ألغِ اختيار القرص العلوي على الوتد المحدد، أو انقل القرص "
+"المحدد إلى الوتد المحدد"
 
 #: activities/hanoi/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -22713,37 +22708,29 @@ msgid ""
 "Arrows: move the keyboard cursor in the grid, and if a point is selected "
 "move it"
 msgstr ""
+"الأسهم: حرّك مؤشر لوحة المفاتيح في الشبكة، وإن كانت هناك نقطة محددة فحرّكها"
 
 #: activities/polygons/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid ""
 "Enter: create a point at the cursor position, or validate your answer when "
 "the shape is closed"
-msgstr ""
+msgstr "إدخال: أنشئ نقطة عند موضع المؤشر، أو تحقق من إجابتك عند إغلاق الشكل"
 
 #: activities/polygons/ActivityInfo.qml:32
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select or deselect the highlighted answer"
 msgctxt "ActivityInfo|"
 msgid "Space: select or deselect the point at the cursor position"
-msgstr "مسافة: اختر الإجابة المظللة أو اتركها"
+msgstr "مسافة: اختر أو ألغِ اختيار النقطة عند موضع المؤشر"
 
 #: activities/polygons/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Up arrow: select next item"
 msgctxt "ActivityInfo|"
 msgid "Tab: select next point"
-msgstr "سهم للأعلى: اختر العنصر التالي"
+msgstr "جدولة: اختر النقطة التالية"
 
 #: activities/polygons/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + D: delete selected text"
 msgctxt "ActivityInfo|"
 msgid "Delete: delete selected point"
-msgstr "Ctrl + D: لحَذف النّص"
+msgstr "حذف: احذف النقطة المحددة"
 
 #: activities/polygons/TutorialDataset.qml:20
 msgctxt "TutorialDataset|"
