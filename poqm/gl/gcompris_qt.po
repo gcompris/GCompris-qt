@@ -26019,9 +26019,6 @@ msgid "Gradient Tools"
 msgstr "Ferramentas de gradación"
 
 #: activities/sketch/PaletteSelector.qml:148
-#, fuzzy
-#| msgctxt "ColorsPanel|"
-#| msgid "Palettes"
 msgctxt "PaletteSelector|"
 msgid "Palettes"
 msgstr "Paletas"
