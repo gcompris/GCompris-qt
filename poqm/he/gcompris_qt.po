@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2026-10-15 16:14+0300\n"
+"PO-Revision-Date: 2026-11-03 20:33+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -2366,7 +2366,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid ""
 "Arrows: move the selection cursor through the panel items and board spots"
-msgstr ""
+msgstr "חיצים: להעביר את סמן הבחירה בין פריטי הסרגל והנקודות בלוח"
 
 #: activities/babymatch/ActivityInfo.qml:30
 #: activities/babyshapes/ActivityInfo.qml:30
@@ -2381,6 +2381,8 @@ msgid ""
 "Space: select an item in the list, and place it on a spot. If there is "
 "nothing selected in the list, remove item from selected spot"
 msgstr ""
+"רווח: בחירת פריט ברשימה ולהציב אותו במקום מסוים. אם לא נבחר שום דבר ברשימה, "
+"להסיר את הפריט מהמקום הנבחר"
 
 #: activities/babymatch/ActivityInfo.qml:31
 #: activities/babyshapes/ActivityInfo.qml:31
@@ -2390,14 +2392,11 @@ msgstr ""
 #: activities/geography/ActivityInfo.qml:31
 #: activities/imagename/ActivityInfo.qml:31
 #: activities/paintings/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Tab: navigate between the bottom and the top areas"
 msgctxt "ActivityInfo|"
 msgid ""
 "Tab: toggle navigation between the panel and the board without any other "
 "action"
-msgstr "‏Tab: לנווט בין האזור התחתון והעליון"
+msgstr "‏Tab: להחליף את הניווט בין הסרגל והלוח מבלי לנקוט בפעולה נוספת"
 
 #: activities/babymatch/ActivityInfo.qml:32
 #: activities/babyshapes/ActivityInfo.qml:32
@@ -2407,12 +2406,9 @@ msgstr "‏Tab: לנווט בין האזור התחתון והעליון"
 #: activities/geography/ActivityInfo.qml:32
 #: activities/imagename/ActivityInfo.qml:32
 #: activities/paintings/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Delete or Backspace: remove the selected item from the answer area"
 msgctxt "ActivityInfo|"
 msgid "Delete or Backspace: remove item from selected spot"
-msgstr "‏Delete או Backspace: למחוק את הפריט הנבחר מאזור התשובה"
+msgstr "‏Delete או Backspace: הסרת פריט מהמקום הנבחר"
 
 #: activities/babymatch/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
@@ -15967,12 +15963,9 @@ msgstr ""
 
 #: activities/hanoi/ActivityInfo.qml:26
 #: activities/hanoi_real/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: move the selected item"
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the selection cursor through the pegs"
-msgstr "חיצים: להזיז את הפריט הנבחר"
+msgstr "חיצים: להעביר את סמן הבחירה בין הנעצים"
 
 #: activities/hanoi/ActivityInfo.qml:27
 #: activities/hanoi_real/ActivityInfo.qml:26
@@ -15981,6 +15974,8 @@ msgid ""
 "Space or Enter: select/deselect the top disc on the selected peg, or move "
 "the selected disc to the selected peg"
 msgstr ""
+"רווח או Enter: לבחור/לבטל את הבחירה בדיסק העליון בנעץ הנבחר, או להעביר את "
+"הדיסק הנבחר לנעץ הנבחר"
 
 #: activities/hanoi/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -22702,38 +22697,29 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Arrows: move the keyboard cursor in the grid, and if a point is selected "
 "move it"
-msgstr ""
+msgstr "חיצים: העברת סמן המקלדת ברשת ואם נבחרה נקודה להזיז אותה"
 
 #: activities/polygons/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid ""
 "Enter: create a point at the cursor position, or validate your answer when "
 "the shape is closed"
-msgstr ""
+msgstr "Enter: ליצור נקודה במקום של הסמן או לאמת את התשובה שלך כשהצורה סגורה"
 
 #: activities/polygons/ActivityInfo.qml:32
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select or deselect the highlighted answer"
 msgctxt "ActivityInfo|"
 msgid "Space: select or deselect the point at the cursor position"
-msgstr "רווח: לבחור או לבטל בחירה של תשובה מודגשת"
+msgstr "רווח: לבחור או לבטל בחירה של הנקודה במקום של הסמן"
 
 #: activities/polygons/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Up arrow: select next item"
 msgctxt "ActivityInfo|"
 msgid "Tab: select next point"
-msgstr "חץ למעלה: לבחור את הפריט הבא"
+msgstr "Tab: בחירת הנקודה הבאה"
 
 #: activities/polygons/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + D: delete selected text"
 msgctxt "ActivityInfo|"
 msgid "Delete: delete selected point"
-msgstr "Ctrl+ג: למחוק את הכתוב שנבחר"
+msgstr "Delete: מחיקת הנקודה הנבחרת"
 
 #: activities/polygons/TutorialDataset.qml:20
 msgctxt "TutorialDataset|"
