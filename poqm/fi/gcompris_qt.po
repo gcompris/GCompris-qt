@@ -6466,8 +6466,7 @@ msgid ""
 "shape;shirt;study"
 msgstr ""
 "iloinen;lapsi;valkoinen;omena;ruskea;totuus;tuore;vihreä;hevonen;hotelli;"
-"talo;paperi;kuvio;paita;oppiailoinen;lapsi;valkoinen;omena;ruskea;totuus;"
-"tuore;vihreä;hevonen;hotelli;talo;paperi;kuvio;paita;oppia"
+"talo;paperi;kuvio;paita;oppia"
 
 #: activities/crane/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -7887,7 +7886,6 @@ msgctxt "ActivityInfo|"
 msgid "Learn about farm animals, what sounds they make, and interesting facts."
 msgstr ""
 "Opi kotieläimistä miltä ne kuulostavat sekä muita mielenkiintoisia seikkoja."
-"Opi kotieläimistä miltä ne kuulostavat sekä muita mielenkiintoisia seikkoja."
 
 #. Help goal
 #: activities/explore_farm_animals/ActivityInfo.qml:20
@@ -7896,8 +7894,7 @@ msgid ""
 "Learn to associate animal sounds with the animal name and what the animal "
 "looks like."
 msgstr ""
-"Opi yhdistämään eläimen ääni sen nimeen ja siihen, miltä eläin näyttää.Opi "
-"yhdistämään eläimen ääni sen nimeen ja siihen, miltä eläin näyttää."
+"Opi yhdistämään eläimen ääni sen nimeen ja siihen, miltä eläin näyttää."
 
 #. Help manual
 #: activities/explore_farm_animals/ActivityInfo.qml:23
@@ -8257,10 +8254,7 @@ msgid ""
 msgstr ""
 "Kristus Vapahtaja on Rio de Janeirossa Brasiliassa sijaitseva art deco -"
 "patsas. Patsaasta on tullut paitsi kristinusko vertauskuva ympäri maailmaa "
-"myös kulttuurinen tunnus niin Rio de Janeirosta kuin Brasiliastakin.Kristus "
-"Vapahtaja on Rio de Janeirossa Brasiliassa sijaitseva art deco -patsas. "
-"Patsaasta on tullut paitsi kristinusko vertauskuva ympäri maailmaa myös "
-"kulttuurinen tunnus niin Rio de Janeirosta kuin Brasiliastakin."
+"myös kulttuurinen tunnus niin Rio de Janeirosta kuin Brasiliastakin."
 
 #: activities/explore_monuments/resource/board/board1.qml:52
 #: activities/explore_monuments/resource/board/board1.qml:55
@@ -8325,12 +8319,7 @@ msgstr ""
 "Ma’anin hallintoalueella. Se on kuuluisa suoraan kallioon kaiverretuista "
 "rakennuksistaan ja vesijohtojärjestelmästään. Se perustettiin ehkä jo 312 "
 "eaa. arabialaisten nabatealaisten pääkaupungiksi, ja se on Jordanian "
-"vertauskuva ja sen vierailluin matkailunähtävyys.Petra on historiallinen ja "
-"arkeologinen kaupunki Jordanian eteläisessä Ma’anin hallintoalueella. Se on "
-"kuuluisa suoraan kallioon kaiverretuista rakennuksistaan ja "
-"vesijohtojärjestelmästään. Se perustettiin ehkä jo 312 eaa. arabialaisten "
-"nabatealaisten pääkaupungiksi, ja se on Jordanian vertauskuva ja sen "
-"vierailluin matkailunähtävyys."
+"vertauskuva ja sen vierailluin matkailunähtävyys."
 
 #: activities/explore_monuments/resource/board/board1.qml:85
 msgctxt "board1|"
@@ -8347,10 +8336,7 @@ msgid ""
 msgstr ""
 "Taj Mahal on valkomarmorinen mausoleumi Yamunajoen etelärannalla Intian "
 "Agran kaupungissa. Sen rakennutti vuonna 1632 mughalkeisari Shah Janan "
-"kolmesta vaimostaan eniten suosimalleen Mumtaz Mahalille.Taj Mahal on "
-"valkomarmorinen mausoleumi Yamunajoen etelärannalla Intian Agran "
-"kaupungissa. Sen rakennutti vuonna 1632 mughalkeisari Shah Janan kolmesta "
-"vaimostaan eniten suosimalleen Mumtaz Mahalille."
+"kolmesta vaimostaan eniten suosimalleen Mumtaz Mahalille."
 
 #: activities/explore_monuments/resource/board/board1.qml:88
 msgctxt "board1|"
@@ -8384,11 +8370,7 @@ msgstr ""
 "Sri Harimandir Sahib, joka tunnetaan Amritsarin kultaisena temppelinä, on "
 "yksi sikhiuskonnon pyhimmistä paikoista. Se rakennettiin paikaksi, jossa "
 "kaikki ihmiset säädystään, sukupuolestaan ja uskonnostaan riippumatta "
-"voisivat yhtäläisesti palvoa jumalaansa.Sri Harimandir Sahib, joka tunnetaan "
-"Amritsarin kultaisena temppelinä, on yksi sikhiuskonnon pyhimmistä "
-"paikoista. Se rakennettiin paikaksi, jossa kaikki ihmiset säädystään, "
-"sukupuolestaan ja uskonnostaan riippumatta voisivat yhtäläisesti palvoa "
-"jumalaansa."
+"voisivat yhtäläisesti palvoa jumalaansa."
 
 #: activities/explore_monuments/resource/board/board2.qml:29
 #: activities/explore_monuments/resource/board/board2.qml:32
@@ -8431,12 +8413,7 @@ msgstr ""
 "ainutlaatuisin maamerkki. Valtava rakennelma valmistui 1924. Portti valvoo "
 "Apollo Bunderin kärjestä Mumbain satamaa. Sitä reunustaa Arabianmeri. Intian "
 "portti on Intian pääsataman muistomerkki ja yksi päänähtävyyksiä Intiaan "
-"ensi kertaa saapuville matkailijoille.Mumbain kaupungin Colaban "
-"kaupunginosassa sijaitseva Intian portti on Intian ainutlaatuisin maamerkki. "
-"Valtava rakennelma valmistui 1924. Portti valvoo Apollo Bunderin kärjestä "
-"Mumbain satamaa. Sitä reunustaa Arabianmeri. Intian portti on Intian "
-"pääsataman muistomerkki ja yksi päänähtävyyksiä Intiaan ensi kertaa "
-"saapuville matkailijoille."
+"ensi kertaa saapuville matkailijoille."
 
 #: activities/explore_monuments/resource/board/board2.qml:51
 #: activities/explore_monuments/resource/board/board2.qml:54
@@ -8457,12 +8434,7 @@ msgstr ""
 "keisari Ašoka Suuri 300-luvulla eaa. Sen keskuksena on Buddhan jäännösten "
 "ylle rakennettu yksinkertainen puolipallomainen tiilirakennus. Sen kruunaa "
 "chatra, sateenvarjomainen korkeaa arvoa symboloiva rakennelma, joka "
-"kunnioittaa ja suojaa pyhäinjäännöksiä.Sanchin Suuri stupa on Intian vanhin "
-"kivirakennelma, jonka rakennutti keisari Ašoka Suuri 300-luvulla eaa. Sen "
-"keskuksena on Buddhan jäännösten ylle rakennettu yksinkertainen "
-"puolipallomainen tiilirakennus. Sen kruunaa chatra, sateenvarjomainen "
-"korkeaa arvoa symboloiva rakennelma, joka kunnioittaa ja suojaa "
-"pyhäinjäännöksiä."
+"kunnioittaa ja suojaa pyhäinjäännöksiä."
 
 #: activities/explore_monuments/resource/board/board2.qml:62
 #: activities/explore_monuments/resource/board/board2.qml:65
@@ -8561,11 +8533,7 @@ msgstr ""
 "Victoria Memorial rakennettiin juhlistamaan Brittiläisen imperiumin "
 "huippukohtaa Intiassa. Se edustaa Kolkatan arkkitehtuurin huipentumaa ja on "
 "sekoitus parasta brittiläistä ja mughalien arkkitehtuuria. Victoria Memorial "
-"Hall rakennettiin valkoisesta Makrana-marmorista.Victoria Memorial "
-"rakennettiin juhlistamaan Brittiläisen imperiumin huippukohtaa Intiassa. Se "
-"edustaa Kolkatan arkkitehtuurin huipentumaa ja on sekoitus parasta "
-"brittiläistä ja mughalien arkkitehtuuria. Victoria Memorial Hall "
-"rakennettiin valkoisesta Makrana-marmorista."
+"Hall rakennettiin valkoisesta Makrana-marmorista."
 
 #: activities/explore_monuments/resource/board/board2.qml:117
 #: activities/explore_monuments/resource/board/board2.qml:120
@@ -8660,12 +8628,7 @@ msgstr ""
 "Notre Damen kanssa. Unescon maailmanperintöluetteloon vuodesta 1997 kuuluva "
 "Carcassonne on hätkähdyttävä esimerkki keskiaikaisesta arkkitehtuurista "
 "Audejoen ylle kohoavalla kallionkielekkeellä uuden kaupungin "
-"kaakkoispuolella.Yli neljän miljoonan vuotuisen vierailijan Carcassonne on "
-"Ranskan arvostetuimpia matkailukohteita yhdessä Mont Saint Michelin ja "
-"Pariisin Notre Damen kanssa. Unescon maailmanperintöluetteloon vuodesta 1997 "
-"kuuluva Carcassonne on hätkähdyttävä esimerkki keskiaikaisesta "
-"arkkitehtuurista Audejoen ylle kohoavalla kallionkielekkeellä uuden "
-"kaupungin kaakkoispuolella."
+"kaakkoispuolella."
 
 #: activities/explore_monuments/resource/board/board3.qml:40
 #: activities/explore_monuments/resource/board/board3.qml:43
@@ -8830,9 +8793,7 @@ msgid ""
 msgstr ""
 "Maailmankuulu metallitorni rakennettiin Pariisin maailmannäyttelyyn ja "
 "Ranskan vallankumouksen satavuotisjuhliin 1889. Valmistuessaan se oli "
-"maailman korkein rakennus.Maailmankuulu metallitorni rakennettiin Pariisin "
-"maailmannäyttelyyn ja Ranskan vallankumouksen satavuotisjuhliin 1889. "
-"Valmistuessaan se oli maailman korkein rakennus."
+"maailman korkein rakennus."
 
 #: activities/explore_monuments/resource/board/board3.qml:130
 msgctxt "board3|"
@@ -8867,12 +8828,6 @@ msgstr ""
 "joka julistettiin mielisairaaksi linnan ollessa jo lähes valmis vuonna 1886; "
 "hänet löydettiin kuolleena muutamaa päivää myöhemmin. Neuschwanstein on "
 "Saksan valokuvatuin rakennus ja yksi suosituimmista matkailukohteista."
-"Neuschwanstein, joka on kuin kuva satulinnasta, sijaitsee karussa rinteessä "
-"Füssenin lähellä Lounais-Baijerissa. Se oli Disney-puistojen Prinsessa "
-"Ruusus -linnojen esikuva. Linnan rakennetti Baijerin kuningas Ludvig II, "
-"joka julistettiin mielisairaaksi linnan ollessa jo lähes valmis vuonna 1886; "
-"hänet löydettiin kuolleena muutamaa päivää myöhemmin. Neuschwanstein on "
-"Saksan valokuvatuin rakennus ja yksi suosituimmista matkailukohteista."
 
 #: activities/explore_monuments/resource/board/board4.qml:29
 #: activities/explore_monuments/resource/board/board4.qml:32
@@ -8890,10 +8845,7 @@ msgstr ""
 "Keisarillinen kylpylä on suuri roomalainen kylpyläkompleksi Saksan "
 "Trierissä. Yhdessä kaupungin roomalaisajan muistomerkkien, Pyhän Pietarin "
 "katedraalin ja Liebfraukirchen kanssa se kuuluu Unescon "
-"maailmanperintöluetteloon.Keisarillinen kylpylä on suuri roomalainen "
-"kylpyläkompleksi Saksan Trierissä. Yhdessä kaupungin roomalaisajan "
-"muistomerkkien, Pyhän Pietarin katedraalin ja Liebfraukirchen kanssa se "
-"kuuluu Unescon maailmanperintöluetteloon."
+"maailmanperintöluetteloon."
 
 #: activities/explore_monuments/resource/board/board4.qml:40
 #: activities/explore_monuments/resource/board/board4.qml:43
@@ -8916,12 +8868,7 @@ msgstr ""
 "rakennetusta portista käy kulku Unter den Lindenille, lehmusten "
 "reunustamalla keskeiselle bulevardille, joka aikanaan vei Preussien "
 "kuninkaiden palatsiin. Sitä pidetään yhtenä Euroopan tunnetuimmista "
-"maamerkeistä.Brandenburgin portti on Berliinin ainoa säilynyt "
-"kaupunginportti ja vertauskuva Länsi- ja Itä-Berliinin "
-"jälleenyhdistämiselle. 1700-luvulla rakennetusta portista käy kulku Unter "
-"den Lindenille, lehmusten reunustamalla keskeiselle bulevardille, joka "
-"aikanaan vei Preussien kuninkaiden palatsiin. Sitä pidetään yhtenä Euroopan "
-"tunnetuimmista maamerkeistä."
+"maamerkeistä."
 
 #: activities/explore_monuments/resource/board/board4.qml:51
 #: activities/explore_monuments/resource/board/board4.qml:54
@@ -8940,10 +8887,7 @@ msgstr ""
 "Berliinin katedraali on kaupungin suurin kirkko ja palvelee Saksan "
 "protestanttisen kirkon tärkeänä keskuksena. Katedraali houkuttelee  "
 "vuosittain paikalle tuhansia vierailijoita kaukaa seurakunnan, Berliinin ja "
-"Saksankin ulkopuolelta.Berliinin katedraali on kaupungin suurin kirkko ja "
-"palvelee Saksan protestanttisen kirkon tärkeänä keskuksena. Katedraali "
-"houkuttelee  vuosittain paikalle tuhansia vierailijoita kaukaa seurakunnan, "
-"Berliinin ja Saksankin ulkopuolelta."
+"Saksankin ulkopuolelta."
 
 #: activities/explore_monuments/resource/board/board4.qml:62
 #: activities/explore_monuments/resource/board/board4.qml:65
@@ -8960,10 +8904,7 @@ msgid ""
 msgstr ""
 "Tämä romanttinen satulinna monine torneineen, kupoleineen ja siipineen "
 "heijastuu Schwerinjärven pintaan. Se valmistui 1857 ja symboloi "
-"rakennuttajansa Fredrik Frans II:n dynastian valtaa.Tämä romanttinen "
-"satulinna monine torneineen, kupoleineen ja siipineen heijastuu "
-"Schwerinjärven pintaan. Se valmistui 1857 ja symboloi rakennuttajansa "
-"Fredrik Frans II:n dynastian valtaa."
+"rakennuttajansa Fredrik Frans II:n dynastian valtaa."
 
 #: activities/explore_monuments/resource/board/board4.qml:73
 #: activities/explore_monuments/resource/board/board4.qml:76
@@ -8982,11 +8923,7 @@ msgstr ""
 "Tämä pitkä, korkeakattoinen tiilirakennus on Rooman keisarien "
 "valtaistuinsali aina siihen asti, kun germaaniheimot tuhosivat kaupungin. "
 "Valloittajat rakensivat asumuksen katottomiin raunioihin. 1100-luvulla sen "
-"apsis muunnettiin torniksi Trierin arkkipiispaa varten.Tämä pitkä, "
-"korkeakattoinen tiilirakennus on Rooman keisarien valtaistuinsali aina "
-"siihen asti, kun germaaniheimot tuhosivat kaupungin. Valloittajat rakensivat "
-"asumuksen katottomiin raunioihin. 1100-luvulla sen apsis muunnettiin "
-"torniksi Trierin arkkipiispaa varten."
+"apsis muunnettiin torniksi Trierin arkkipiispaa varten."
 
 #: activities/explore_monuments/resource/board/board4.qml:84
 #: activities/explore_monuments/resource/board/board4.qml:87
@@ -9005,11 +8942,7 @@ msgstr ""
 "Wormsin katedraali (Wormser Dom), joka tunnetaan myös Pyhän Pietarin "
 "katedraalina, on romaanistyylinen katedraali Saksan Wormsissa. "
 "Hiekkakivirakennusta, joka erottuu kartiomaisista torneistaan, rakennettiin "
-"1100-luvulla vaiheittain, ja se oli enimmäkseen valmis vuonna 1181.Wormsin "
-"katedraali (Wormser Dom), joka tunnetaan myös Pyhän Pietarin katedraalina, "
-"on romaanistyylinen katedraali Saksan Wormsissa. Hiekkakivirakennusta, joka "
-"erottuu kartiomaisista torneistaan, rakennettiin 1100-luvulla vaiheittain, "
-"ja se oli enimmäkseen valmis vuonna 1181."
+"1100-luvulla vaiheittain, ja se oli enimmäkseen valmis vuonna 1181."
 
 #: activities/explore_monuments/resource/board/board4.qml:97
 msgctxt "board4|"
@@ -9042,13 +8975,7 @@ msgstr ""
 "eurooppalaisen tulokkaan Juan Rodriguez Cabrillon muistoa. Syntyään "
 "portugalilainen Cabrillo edusti uuden maailman valloituksissaan Espanjaa, ja "
 "saapui San Diegon lahdelle syyskuussa 1542, kolme kuukautta sen jälkeen, kun "
-"oli lähtenyt Barra de Navidadista Meksikon länsirannikolta.Point Lomassa "
-"Kalifornian San Diegossa sijaitseva Cabrillon kansallinen muistomerkki "
-"kunnioittaa Yhdysvaltain länsirannikon ensimmäisen eurooppalaisen tulokkaan "
-"Juan Rodriguez Cabrillon muistoa. Syntyään portugalilainen Cabrillo edusti "
-"uuden maailman valloituksissaan Espanjaa, ja saapui San Diegon lahdelle "
-"syyskuussa 1542, kolme kuukautta sen jälkeen, kun oli lähtenyt Barra de "
-"Navidadista Meksikon länsirannikolta."
+"oli lähtenyt Barra de Navidadista Meksikon länsirannikolta."
 
 #: activities/explore_monuments/resource/board/board5.qml:29
 #: activities/explore_monuments/resource/board/board5.qml:32
@@ -9136,10 +9063,6 @@ msgstr ""
 "Westmorelandin piirikunnassa Yhdysvaltain Virginiassa. Talon rakensi George "
 "Washingtonin iso-isoisä John. George Washington syntyi talossa 22. "
 "helmikuuta 1732, asui siinä kolmivuotiaaksi ja palasi sinne teini-ikäisenä."
-"George Washingtonin synnyinpaikan kansallinen muistomerkki sijaitsee "
-"Westmorelandin piirikunnassa Yhdysvaltain Virginiassa. Talon rakensi George "
-"Washingtonin iso-isoisä John. George Washington syntyi talossa 22. "
-"helmikuuta 1732, asui siinä kolmivuotiaaksi ja palasi sinne teini-ikäisenä."
 
 #: activities/explore_monuments/resource/board/board5.qml:73
 #: activities/explore_monuments/resource/board/board5.qml:76
@@ -9165,13 +9088,6 @@ msgstr ""
 "puolimetrinen patsas mietiskelevässä asennossa istuvasta Abraham "
 "Lincolnista. Sivukammioissa on kaiverruksia Lincolnin toisesta "
 "virkaanastujaispuheesta sekä hänen luultavasti tunnetuimmasta eli "
-"Gettysburgin-puheestaan.Valkoisesta kivestä rakennettu 36 pylväästään "
-"tunnettu Lincolnin muistomerkki on yksi Yhdysvaltain tunnistettavimmista "
-"nähtävyyksistä. Uusklassista arkkitehtuuria edustava muistomerkki sijaitsee "
-"National Mallin länsipäässä West Potomac Parkissa. Sen sisällä kohoaa viisi- "
-"ja puolimetrinen patsas mietiskelevässä asennossa istuvasta Abraham "
-"Lincolnista. Sivukammioissa on kaiverruksia Lincolnin toisesta "
-"virkaanastujaispuheesta sekä hänen luultavasti tunnetuimmasta eli "
 "Gettysburgin-puheestaan."
 
 #: activities/explore_monuments/resource/board/board5.qml:84
@@ -9195,11 +9111,7 @@ msgstr ""
 "demokratian synnylle, kasvulle ja ihanteille. Muistomerkki symboloi "
 "Yhdysvaltain ja sen johtajien suuruutta. Kallioon on hakattu neljän "
 "arvostetun Yhdysvaltain presidentin muotokuvat, jotka kuvastavat kansakunnan "
-"historiaa, määrätietoisuutta ja saavutuksia.Mount Rushmore on muistomerkki "
-"George Washingtonille sekä Yhdysvaltain demokratian synnylle, kasvulle ja "
-"ihanteille. Muistomerkki symboloi Yhdysvaltain ja sen johtajien suuruutta. "
-"Kallioon on hakattu neljän arvostetun Yhdysvaltain presidentin muotokuvat, "
-"jotka kuvastavat kansakunnan historiaa, määrätietoisuutta ja saavutuksia."
+"historiaa, määrätietoisuutta ja saavutuksia."
 
 #: activities/explore_monuments/resource/board/board5.qml:95
 #: activities/explore_monuments/resource/board/board5.qml:98
@@ -9249,10 +9161,7 @@ msgid ""
 msgstr ""
 "Yhdysvaltain ehkä tunnetuin muistomerkki ja tunnuskuva on Vapaudenpatsas, "
 "joka seisoo omalla saarellaan New Yorkin edustalla. Patsas oli lahjoitus "
-"Ranskan kansalta, ja se avattiin lokakuussa 1886.Yhdysvaltain ehkä tunnetuin "
-"muistomerkki ja tunnuskuva on Vapaudenpatsas, joka seisoo omalla saarellaan "
-"New Yorkin edustalla. Patsas oli lahjoitus Ranskan kansalta, ja se avattiin "
-"lokakuussa 1886."
+"Ranskan kansalta, ja se avattiin lokakuussa 1886."
 
 #: activities/explore_monuments/resource/board/board5.qml:117
 #: activities/explore_monuments/resource/board/board5.qml:120
@@ -9270,11 +9179,6 @@ msgid ""
 "between North and South that eventually resulted in the war."
 msgstr ""
 "Tässä alkuaan vuoden 1812 sodan jälkeen puolustusrakennelmaksi rakennetussa "
-"rannikkolinnoituksessa Etelä-Carolinan Charleston Harborissa ammuttiin "
-"Yhdysvaltain sisällissodan ensilaukaukset. Fort Sumterin sisällä joukko "
-"näyttelyesineitä tarjoaa näkökulman Yhdysvaltain historiaan, etenkin sotaan "
-"johtaneisiin pohjois- ja etelävaltioiden eroavuuksiin.Tässä alkuaan vuoden "
-"1812 sodan jälkeen puolustusrakennelmaksi rakennetussa "
 "rannikkolinnoituksessa Etelä-Carolinan Charleston Harborissa ammuttiin "
 "Yhdysvaltain sisällissodan ensilaukaukset. Fort Sumterin sisällä joukko "
 "näyttelyesineitä tarjoaa näkökulman Yhdysvaltain historiaan, etenkin sotaan "
@@ -9337,13 +9241,6 @@ msgid ""
 "Pyramid is the only pyramid in Egypt of which the outer casing of polished "
 "limestone is still largely intact."
 msgstr ""
-"Dahshurissa sijaitseva Taitettu pyramidi oli toinen farao Sneferun "
-"rakennettumista pyramideista. Pyramidi kohoaa salaperäisesti aavikolta ensin "
-"55 asteen kulmassa, mutta kulma muuttuu sitten yllättäen 43 asteeksi. Yhden "
-"teorian mukaan alkuperäisen kulman jyrkkyyden takia sisempiin kammioihin ja "
-"käytäviin kohdistuva paino kohosi liikaa, jolloin rakentajien oli "
-"loivennettava kulmaa. Taitettu pyramidi on nykyään ainoa Egyptin "
-"pyramideista, jonka ulompi kalkkikivipäällys on enimmäkseen säilynyt."
 "Dahshurissa sijaitseva Taitettu pyramidi oli toinen farao Sneferun "
 "rakennettumista pyramideista. Pyramidi kohoaa salaperäisesti aavikolta ensin "
 "55 asteen kulmassa, mutta kulma muuttuu sitten yllättäen 43 asteeksi. Yhden "
@@ -9899,8 +9796,7 @@ msgid ""
 "Learn about world animals, interesting facts and their location on a map."
 msgstr ""
 "Opi maailman eläimistä, mielenkiintoisista tosiseikoista ja niiden "
-"sijainnista kartalla.Opi maailman eläimistä, mielenkiintoisista "
-"tosiseikoista ja niiden sijainnista kartalla."
+"sijainnista kartalla."
 
 #. Help goal
 #: activities/explore_world_animals/ActivityInfo.qml:24
@@ -9968,9 +9864,7 @@ msgid ""
 msgstr ""
 "Siilit syövät pieneläimiä kuten sammakoita ja hyönteisiä, joten monet "
 "pitävät niitä hyötyeläiminä. Uhattuina ne kiertyvät palloiksi ja kohottavat "
-"selkänsä terävät piikit.Siilit syövät pieneläimiä kuten sammakoita ja "
-"hyönteisiä, joten monet pitävät niitä hyötyeläiminä. Uhattuina ne kiertyvät "
-"palloiksi ja kohottavat selkänsä terävät piikit."
+"selkänsä terävät piikit."
 
 #: activities/explore_world_animals/resource/board/board1.qml:41
 #: activities/explore_world_animals/resource/board/board1.qml:44
@@ -9985,9 +9879,7 @@ msgid ""
 "their legs, which are usually 1.8 meters long, are taller than most humans!"
 msgstr ""
 "Afrikassa elävä kirahvi on maailman korkein nisäkäs. Jo niiden yleensä 1,8-"
-"metriset jalat ovat pidemmät kuin useimmat ihmiset!Afrikassa elävä kirahvi "
-"on maailman korkein nisäkäs. Jo niiden yleensä 1,8-metriset jalat ovat "
-"pidemmät kuin useimmat ihmiset!"
+"metriset jalat ovat pidemmät kuin useimmat ihmiset!"
 
 #: activities/explore_world_animals/resource/board/board1.qml:52
 #: activities/explore_world_animals/resource/board/board1.qml:55
@@ -10016,8 +9908,6 @@ msgid ""
 "Narwhals are whales that live in the Arctic Ocean and have long tusks. These "
 "tusks remind many people of the mythical unicorn's horn."
 msgstr ""
-"Sarvivalaat ovat Pohjoisella jäämerellä eläviä valaita, joilla on pitkät "
-"syöksyhammas, joka monista muistuttaa myyttisen yksisarvisen sarvea."
 "Sarvivalaat ovat Pohjoisella jäämerellä eläviä valaita, joilla on pitkät "
 "syöksyhammas, joka monista muistuttaa myyttisen yksisarvisen sarvea."
 
@@ -10166,8 +10056,7 @@ msgid ""
 "eastern Australia."
 msgstr ""
 "Koalat ovat kasvissyöjäpussieläimiä, jotka elävät Itä-Australian "
-"eukalyptusmetsissä.Koalat ovat kasvissyöjäpussieläimiä, jotka elävät Itä-"
-"Australian eukalyptusmetsissä."
+"eukalyptusmetsissä."
 
 #: activities/explore_world_animals/resource/board/board3.qml:52
 #: activities/explore_world_animals/resource/board/board3.qml:55
@@ -10302,9 +10191,7 @@ msgid ""
 "variety of drums, and they believe it is a sacred and magical instrument."
 msgstr ""
 "Musiikki on osa Afrikan arkea. Afrikkalaisessa musiikissa on paljon "
-"erilaisia rumpuja, joita pidetään pyhänä ja maagisena soittimena.Musiikki on "
-"osa Afrikan arkea. Afrikkalaisessa musiikissa on paljon erilaisia rumpuja, "
-"joita pidetään pyhänä ja maagisena soittimena."
+"erilaisia rumpuja, joita pidetään pyhänä ja maagisena soittimena."
 
 #: activities/explore_world_music/resource/board/board1.qml:44
 #: activities/explore_world_music/resource/board/board1.qml:48
@@ -10321,9 +10208,7 @@ msgid ""
 msgstr ""
 "Musiikki on tärkeä osa lähi-idän kulttuuria. Tietyt laulut kutsuvat kansaa "
 "rukoukseen. Huilu on soitin, joka keksittiin tuhansia vuosia sitten mutta on "
-"käytössä vielä nykyäänkin.Musiikki on tärkeä osa lähi-idän kulttuuria. "
-"Tietyt laulut kutsuvat kansaa rukoukseen. Huilu on soitin, joka keksittiin "
-"tuhansia vuosia sitten mutta on käytössä vielä nykyäänkin."
+"käytössä vielä nykyäänkin."
 
 #: activities/explore_world_music/resource/board/board1.qml:56
 #: activities/explore_world_music/resource/board/board1.qml:60
@@ -10406,9 +10291,7 @@ msgid ""
 msgstr ""
 "Mariachi on tunnettu meksikolaisen musiikin tyyppi. Siinä esiintyvät "
 "kitarat, trumpetit ja viulut. Mariachiyhtyeet esiintyvät eri tilaisuuksissa "
-"kuten häissä ja juhlissa.Mariachi on tunnettu meksikolaisen musiikin tyyppi. "
-"Siinä esiintyvät kitarat, trumpetit ja viulut. Mariachiyhtyeet esiintyvät "
-"eri tilaisuuksissa kuten häissä ja juhlissa."
+"kuten häissä ja juhlissa."
 
 #: activities/explore_world_music/resource/board/board1.qml:116
 #: activities/explore_world_music/resource/board/board1.qml:120
@@ -10423,9 +10306,7 @@ msgid ""
 "for rock n' roll music. This music features vocalists, guitars, and drums."
 msgstr ""
 "Myös Yhdysvalloissa esiintyy useita musiikin lajeja, mutta tunnetuin näistä "
-"on rock. Rockissa esiintyvät laulajat, kitarat ja rummut.Myös Yhdysvalloissa "
-"esiintyy useita musiikin lajeja, mutta tunnetuin näistä on rock. Rockissa "
-"esiintyvät laulajat, kitarat ja rummut."
+"on rock. Rockissa esiintyvät laulajat, kitarat ja rummut."
 
 #: activities/explore_world_music/resource/board/board1.qml:130
 msgctxt "board1|"
@@ -16350,7 +16231,6 @@ msgctxt "ActivityInfo|"
 msgid "Color the graph so that no two adjacent nodes have the same color."
 msgstr ""
 "Väritä kaavio niin, että kahdella vierekkäisellä solmulla ei ole samaa väriä."
-"Väritä kaavio niin, että kahdella vierekkäisellä solmulla ei ole samaa väriä."
 
 #. Help goal
 #: activities/graph-coloring/ActivityInfo.qml:20
@@ -20338,9 +20218,7 @@ msgstr "Muistipeli yhteenlaskuun"
 #: activities/memory-wordnumber/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Flip the cards to match a numeral with its number name."
-msgstr ""
-"Käännä kortit niin, että numero vastaa numeron nimeä.Käännä kortit niin, "
-"että numero vastaa numeron nimeä."
+msgstr "Käännä kortit niin, että numero vastaa numeron nimeä."
 
 #. Help goal
 #: activities/memory-wordnumber/ActivityInfo.qml:20
@@ -23415,9 +23293,7 @@ msgid ""
 msgstr ""
 "Tauot vastaavat nuotteja, joiden ajan on hiljaisuutta. Valitse ensin tauon "
 "pituus napsauttamalla tauon merkkiä ja lisää tauko nuottiviivastolle "
-"painamalla Lisää-painiketta.Tauot vastaavat nuotteja, joiden ajan on "
-"hiljaisuutta. Valitse ensin tauon pituus napsauttamalla tauon merkkiä ja "
-"lisää tauko nuottiviivastolle painamalla Lisää-painiketta."
+"painamalla Lisää-painiketta."
 
 #: activities/piano_composition/piano_composition.js:41
 msgctxt "piano_composition|"
@@ -24561,8 +24437,7 @@ msgid ""
 "to set up a similar train."
 msgstr ""
 "Tarkastele junaa ja paina se mieleesi kunnes ajastimesta loppuu aika, ja luo "
-"kohteista sitten samanlainen juna.Tarkastele junaa ja paina se mieleesi "
-"kunnes ajastimesta loppuu aika, ja luo kohteista sitten samanlainen juna."
+"kohteista sitten samanlainen juna."
 
 #: activities/railroad/Railroad.qml:136
 msgctxt "Railroad|"
@@ -24787,8 +24662,7 @@ msgid ""
 "up so he can have light in his home."
 msgstr ""
 "Tux on palannut veneellään kalasta. Palauta sähköjärjestelmä kuntoon, jotta "
-"hän saa kotiinsa valot.Tux on palannut veneellään kalasta. Palauta "
-"sähköjärjestelmä kuntoon, jotta hän saa kotiinsa valot."
+"hän saa kotiinsa valot."
 
 #: activities/renewable_energy/RenewableEnergy.qml:278
 msgctxt "RenewableEnergy|"
@@ -26907,7 +26781,6 @@ msgctxt "Dataset|"
 msgid "How small is Mercury compared to other planets in our Solar System?"
 msgstr ""
 "Kuinka pieni Merkurius on aurinkokunnan muihin planeettoihin verrattuna?"
-"Kuinka pieni Merkurius on aurinkokunnan muihin planeettoihin verrattuna?"
 
 #: activities/solar_system/Dataset.js:64 activities/solar_system/Dataset.js:241
 msgctxt "Dataset|"
@@ -27458,7 +27331,6 @@ msgctxt "Dataset|"
 msgid "How large is Saturn compared to other planets in the Solar System?"
 msgstr ""
 "Kuinka suuri Saturnus on aurinkokunnan muihin planeettoihin verrattuna?"
-"Kuinka suuri Saturnus on aurinkokunnan muihin planeettoihin verrattuna?"
 
 #: activities/solar_system/Dataset.js:312
 msgctxt "Dataset|"
@@ -27667,7 +27539,6 @@ msgctxt "Dataset|"
 msgid "How large is Neptune compared to other planets in the Solar System?"
 msgstr ""
 "Kuinka suuri Neptunus on aurinkokunnan muihin planeettoihin verrattuna?"
-"Kuinka suuri Neptunus on aurinkokunnan muihin planeettoihin verrattuna?"
 
 #: activities/solar_system/QuizScreen.qml:196
 #, qt-format
@@ -27761,9 +27632,7 @@ msgid ""
 "the bottom right of the screen shows your percentage score."
 msgstr ""
 "Alussa kysymyksiä on 20, joissa kussakin 4 vastausvaihtoehtoa. Näytössä "
-"alaoikealla oleva edistymispalkki näyttää prosentuaaliset pisteesi.Alussa "
-"kysymyksiä on 20, joissa kussakin 4 vastausvaihtoehtoa. Näytössä alaoikealla "
-"oleva edistymispalkki näyttää prosentuaaliset pisteesi."
+"alaoikealla oleva edistymispalkki näyttää prosentuaaliset pisteesi."
 
 #: activities/solar_system/SolarSystem.qml:180
 msgctxt "SolarSystem|"
@@ -27785,8 +27654,7 @@ msgid ""
 "expert!"
 msgstr ""
 "Sinun on saatava yli 90 % läpäistäksesi tehtävän ja tullaksesi aurinkokunnan "
-"asiantuntijaksi!Sinun on saatava yli 90 % läpäistäksesi tehtävän ja "
-"tullaksesi aurinkokunnan asiantuntijaksi!"
+"asiantuntijaksi!"
 
 #: activities/solar_system/SolarSystem.qml:362
 #, qt-format
@@ -28963,8 +28831,7 @@ msgid ""
 "so he can take a shower."
 msgstr ""
 "Tux on palannut veneellään kalasta. Palauta käyttövesijärjestelmä kuntoon, "
-"jotta hän voi ottaa suihkun.Tux on palannut veneellään kalasta. Palauta "
-"käyttövesijärjestelmä kuntoon, jotta hän voi ottaa suihkun."
+"jotta hän voi ottaa suihkun."
 
 #. Help goal
 #: activities/watercycle/ActivityInfo.qml:20
@@ -28983,10 +28850,7 @@ msgid ""
 msgstr ""
 "Palauta käyttövesi kuntoon napsauttamalla sen eri osia – aurinkoa, pilveä, "
 "pumppaamoa ja jätevedenpuhdistamoa. Kun se on kunnossa ja Tux suihkussa, "
-"paina hänen puolestaan suihkupainiketta.Palauta käyttövesi kuntoon "
-"napsauttamalla sen eri osia – aurinkoa, pilveä, pumppaamoa ja "
-"jätevedenpuhdistamoa. Kun se on kunnossa ja Tux suihkussa, paina hänen "
-"puolestaan suihkupainiketta."
+"paina hänen puolestaan suihkupainiketta."
 
 #: activities/watercycle/Watercycle.qml:114
 msgctxt "Watercycle|"
