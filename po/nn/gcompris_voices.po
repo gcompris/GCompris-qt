@@ -1,13 +1,13 @@
 # Translation of gcompris_voices to Norwegian Nynorsk
 #
-# Karl Ove Hufthammer <karl@huftis.org>, 2022, 2023, 2024.
+# Karl Ove Hufthammer <karl@huftis.org>, 2022, 2023, 2024, 2026.
 # Øystein Steffensen-Alværvik <oysteins.omsetting@protonmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-22 00:40+0000\n"
-"PO-Revision-Date: 2024-08-01 15:58+0200\n"
+"PO-Revision-Date: 2026-11-07 01:10+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@nuug.no>\n"
 "Language: nn\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.05.2\n"
+"X-Generator: Lokalize 26.11.70\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -33,6 +33,7 @@ msgstr "Finn tala som manglar."
 msgid "click on the required color"
 msgstr "Trykk på rett farge."
 
+# |, no-check-markup
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_by"
 #: activities/algebra_by/ActivityInfo.qml:18
 #, kde-format
@@ -43,6 +44,7 @@ msgstr ""
 "Gong dei to tala saman og skriv inn svaret før luftballongen treffer "
 "<prosody rate=\"80%\">vatnet</prosody>."
 
+# |, no-check-markup
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_div"
 #: activities/algebra_div/ActivityInfo.qml:18
 #, kde-format
@@ -53,6 +55,7 @@ msgstr ""
 "Del det første talet på det andre og skriv inn svaret før luftballongen "
 "treffer <prosody rate=\"80%\">vatnet</prosody>."
 
+# |, no-check-markup
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_minus"
 #: activities/algebra_minus/ActivityInfo.qml:18
 #, kde-format
@@ -63,6 +66,7 @@ msgstr ""
 "Trekk det andre talet frå det første og skriv inn svaret før luftballongen "
 "treffer <prosody rate=\"80%\">vatnet</prosody>."
 
+# |, no-check-markup
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_plus"
 #: activities/algebra_plus/ActivityInfo.qml:18
 #, kde-format
@@ -174,6 +178,7 @@ msgstr ""
 "Trykk på venstre og høgre piltast samtidig for å senda ballen rett fram."
 
 # Merk forskjellig uttale av hòla = bunden form eintal av hòle (= bokmål hulen), og hòla = buden form fleirtal av hòl (= bokmål hullene).
+# |, no-check-markup
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame_2players"
 #: activities/bargame/ActivityInfo.qml:18
@@ -269,6 +274,7 @@ msgstr "Spel sjakk mot Tux."
 msgid "play chess against your friend"
 msgstr "Spel sjakk mot ein venn."
 
+# |, no-check-markup
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_partyend"
 #: activities/chess_partyend/ActivityInfo.qml:18
 #, kde-format
@@ -442,6 +448,7 @@ msgstr "Lær interessante fakta om dyr og om kor dei held til i verda."
 msgid "Click on the suitcases to learn about music from around the world."
 msgstr "Trykk på koffertane for å læra om musikk frå heile verda."
 
+# |, no-check-markup
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "family"
 #: activities/family/ActivityInfo.qml:18
 #, kde-format
@@ -630,6 +637,7 @@ msgstr ""
 "Bruk tala og operatorane til å laga eit reknestykke som gjev rett svar."
 
 # Merk forskjellig uttale av hòla = bunden form eintal av hòle (= bokmål hulen), og hòla = buden form fleirtal av hòl (= bokmål hullene).
+# |, no-check-markup
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guessnumber"
 #: activities/guessnumber/ActivityInfo.qml:18
 #, kde-format
@@ -644,6 +652,7 @@ msgstr ""
 msgid "A word is hidden, you must discover it letter by letter."
 msgstr "Gjett bokstavane i det hemmelege ordet."
 
+# |, no-check-markup
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hanoi"
 #: activities/hanoi/ActivityInfo.qml:18
 #, kde-format
@@ -654,6 +663,7 @@ msgstr ""
 "Bygg opp tårnet til høgre på den ledige <prosody rate=\"80%\">plassen</"
 "prosody>."
 
+# |, no-check-markup
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hanoi_real"
 #: activities/hanoi_real/ActivityInfo.qml:18
 #, kde-format
@@ -1000,6 +1010,7 @@ msgstr ""
 "frå vennen din."
 
 # Vert for lange pause viss det er komma her.
+# |, no-check-markup
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "note_names"
 #: activities/note_names/ActivityInfo.qml:21
 #, kde-format
@@ -1123,6 +1134,7 @@ msgstr "Fly med helikopteret for å fanga talskyene i vist rekkjefølgje."
 msgid "Click on the keyboard keys that match the notes that you see and hear"
 msgstr "Trykk på tangentane som svarar til notane du ser og høyrer."
 
+# |, no-check-markup
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "play_rhythm"
 #: activities/play_rhythm/ActivityInfo.qml:22
 #, kde-format
@@ -1136,6 +1148,7 @@ msgstr ""
 msgid "Draw the requested polygons by clicking on the grid."
 msgstr ""
 
+# |, no-check-markup
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "positions"
 #: activities/positions/ActivityInfo.qml:18
 #, kde-format
@@ -1201,6 +1214,7 @@ msgstr ""
 msgid "Learn and practice roman to arabic numerals conversion"
 msgstr "Lær å gjera om romartal til vanlege tal."
 
+# |, no-check-markup
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard_weight_avoirdupois"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard_weight"
