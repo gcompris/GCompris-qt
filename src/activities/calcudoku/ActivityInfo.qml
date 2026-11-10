@@ -20,7 +20,12 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Completing the puzzle requires patience and arithmetic abilities.")
   //: Help manual
-  manual: qsTr("Select a number in the list and click on its target position to fill the grid. Each number must appear only once in a row and in a column. Cages are groups of cells providing information on how to fill them. Cages made of more than one cell provide a result and an operator: all the numbers in the cage, when combined using the operator, must produce the result. Cages made of only one cell directly provide the number to enter.")
+  manual: qsTr("Select a number in the list and click on its target position to fill the grid. Each number must appear only once in a row and in a column. Cages are groups of cells providing information on how to fill them. Cages made of more than one cell provide a result and an operator: all the numbers in the cage, when combined using the operator, must produce the result. Cages made of only one cell directly provide the number to enter.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: move the cursor") + ("</li><li>") +
+          qsTr("Tab: toggle navigation between the grid and the list") + ("</li><li>") +
+          qsTr("Space: add or remove an item in the grid, or select an item in the list") + ("</li><li>") +
+          qsTr("Numbers from 1 to 9: directly select the corresponding item in the list") + ("</li></ul>")
   credit: ""
   section: "math arithmetic"
   createdInVersion: 40000

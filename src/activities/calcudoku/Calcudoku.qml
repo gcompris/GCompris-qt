@@ -56,12 +56,20 @@ ActivityBase {
             property alias cantEnterSound: cantEnterSound
             property alias completeSound: completeSound
             property alias deleteSound: deleteSound
+            property alias scrollSound: scrollSound
             property alias availablePiecesModel: availablePieces
             property alias columns: calcudokuColumn.columns
             property alias rows: calcudokuColumn.rows
             property alias calcudokuModel: calcudokuModel
+            property alias gridCursor: gridCursor
             readonly property var levels: activity.datasets
             property bool buttonsBlocked: false
+
+            // For keyboard controls
+            property bool keyboardControls: false
+            property bool listFocus: true
+            property int selectedSpotIndex: 0
+
         }
         onStart: Activity.start(items)
 
@@ -85,6 +93,11 @@ ActivityBase {
         GCSoundEffect {
             id: deleteSound
             source: "qrc:/gcompris/src/core/resource/sounds/smudge.wav"
+        }
+
+        GCSoundEffect {
+            id: scrollSound
+            source: "qrc:/gcompris/src/core/resource/sounds/scroll.wav"
         }
 
         DialogHelp {
@@ -144,6 +157,10 @@ ActivityBase {
 
         Keys.enabled: !items.buttonsBlocked
         Keys.onPressed: (event) => {
+            if(!items.keyboardControls) {
+                items.keyboardControls = true;
+            }
+
             Activity.onKeyPressed(event);
         }
 
@@ -189,7 +206,7 @@ ActivityBase {
             y: Math.round(gridLayout.y + gridLayout.height * 0.5 - height * 0.5)
             width:  Math.min(gridLayout.width, gridLayout.height)
             height: width
-            property int squareSize: 2 * Math.round(width / calcudokuColumn.columns / 2)
+            readonly property int squareSize: 2 * Math.round(width / calcudokuColumn.columns / 2)
 
             Repeater {
                 model: calcudokuModel
@@ -274,7 +291,32 @@ ActivityBase {
             onClicked: {
                 var x = Math.floor(calcudokuColumn.rows * mouseX / calcudokuColumn.width);
                 var y = Math.floor(calcudokuColumn.columns * mouseY / calcudokuColumn.height);
-                Activity.clickOn(x, y)
+                Activity.clickOn(x, y);
+                items.keyboardControls = false;
+            }
+        }
+
+        Rectangle {
+            id: gridCursor
+            z: 1001
+            width: calcudokuColumn.squareSize
+            height: calcudokuColumn.squareSize
+            color: "transparent"
+            border.width: GCStyle.thickBorder
+            border.color: GCStyle.selectedDarkBlue
+            x: calcudokuColumn.x + caseX * calcudokuColumn.squareSize
+            y: calcudokuColumn.y + caseY * calcudokuColumn.squareSize
+            visible: items.keyboardControls && !items.listFocus
+
+            readonly property int caseX: items.selectedSpotIndex % calcudokuColumn.columns
+            readonly property int caseY: Math.floor(items.selectedSpotIndex / calcudokuColumn.columns)
+
+            Rectangle {
+                anchors.fill: parent
+                anchors.margins: GCStyle.thinBorder
+                color: "transparent"
+                border.width: GCStyle.thinBorder
+                border.color: GCStyle.highlightColor
             }
         }
     }
