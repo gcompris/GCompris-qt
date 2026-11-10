@@ -48,6 +48,14 @@ ActivityBase {
 
         property int nbRegions
 
+        onNbRegionsChanged: {
+            // Reassign manually those numbers to avoid "Grid contains more visible items than rows*columns" warning
+            regionRepeater.model = 0;
+            regionGrid.columns = nbRegions;
+            regionGrid.rows = nbRegions;
+            regionRepeater.model = nbRegions * nbRegions;
+        }
+
         QtObject {
             id: items
             property alias activityBackground: activityBackground
@@ -61,13 +69,22 @@ ActivityBase {
             property alias cantEnterSound: cantEnterSound
             property alias completeSound: completeSound
             property alias deleteSound: deleteSound
+            property alias scrollSound: scrollSound
             property alias availablePiecesModel: availablePieces
             property alias columns: sudoColumn.columns
             property alias rows: sudoColumn.rows
             property alias sudokuModel: sudokuModel
+            property alias gridCursor: gridCursor
             readonly property var levels: activity.datasets
+            readonly property real caseSize: sudoColumn.width / sudoColumn.columns
             property bool buttonsBlocked: false
+
+            // For keyboard controls
+            property bool keyboardControls: false
+            property bool listFocus: true
+            property int selectedSpotIndex: 0
         }
+
         onStart: Activity.start(items)
 
         onStop: { Activity.stop() }
@@ -90,6 +107,11 @@ ActivityBase {
         GCSoundEffect {
             id: deleteSound
             source: "qrc:/gcompris/src/core/resource/sounds/smudge.wav"
+        }
+
+        GCSoundEffect {
+            id: scrollSound
+            source: "qrc:/gcompris/src/core/resource/sounds/scroll.wav"
         }
 
         DialogHelp {
@@ -148,6 +170,9 @@ ActivityBase {
 
         Keys.enabled: !items.buttonsBlocked
         Keys.onPressed: (event) => {
+            if(!items.keyboardControls) {
+                items.keyboardControls = true;
+            }
             Activity.onKeyPressed(event);
         }
 
@@ -226,8 +251,8 @@ ActivityBase {
                     SudokuCase {
                         x: (index%sudoColumn.columns)*width
                         y: Math.floor(index/sudoColumn.columns)*height
-                        width: parent != null ? parent.width / sudoColumn.columns : 1
-                        height: parent != null ? parent.height/ sudoColumn.columns : 1
+                        width: items.caseSize
+                        height: items.caseSize
                         gridIndex: index
                         isInitial: initial
                         text: textValue
@@ -269,31 +294,32 @@ ActivityBase {
             onClicked: {
                 var x = Math.floor(sudoColumn.rows * mouseX / sudoColumn.width);
                 var y = Math.floor(sudoColumn.columns * mouseY / sudoColumn.height);
-                Activity.clickOn(x, y)
+                Activity.clickOn(x, y);
+                items.keyboardControls = false;
             }
         }
 
         Grid {
             z: 1001
             id: regionGrid
-            columns: rows
-            rows: nbRegions
-            visible: nbRegions > 1
+            columns: 1
+            rows: 1
+            visible: activityBackground.nbRegions > 1
 
             anchors.fill: sudoColumn
             property int regionLineSize: GCStyle.thickBorder
 
             Repeater {
                 id: regionRepeater
-                model: nbRegions*nbRegions
+                model: 0
 
                 Rectangle {
                     z: 1001
                     color: "transparent"
-                    x: index / nbRegions * sudoColumn.width
-                    y: (index % nbRegions) * sudoColumn.width
-                    width: nbRegions * sudoColumn.width / sudoColumn.columns
-                    height: nbRegions * sudoColumn.height/ sudoColumn.columns
+                    x: index / activityBackground.nbRegions * sudoColumn.width
+                    y: (index % activityBackground.nbRegions) * sudoColumn.width
+                    width: activityBackground.nbRegions * sudoColumn.width / sudoColumn.columns
+                    height: activityBackground.nbRegions * sudoColumn.height/ sudoColumn.columns
                     Rectangle {
                         id: topWall
                         color: "#2A2A2A"
@@ -327,6 +353,30 @@ ActivityBase {
                         anchors.horizontalCenter: parent.horizontalCenter
                     }
                 }
+            }
+        }
+
+        Rectangle {
+            id: gridCursor
+            z: 1001
+            width: items.caseSize
+            height: items.caseSize
+            color: "transparent"
+            border.width: GCStyle.thickBorder
+            border.color: GCStyle.selectedDarkBlue
+            x: sudoColumn.x + caseX * items.caseSize
+            y: sudoColumn.y + caseY * items.caseSize
+            visible: items.keyboardControls && !items.listFocus
+
+            readonly property int caseX: items.selectedSpotIndex % sudoColumn.columns
+            readonly property int caseY: Math.floor(items.selectedSpotIndex / sudoColumn.columns)
+
+            Rectangle {
+                anchors.fill: parent
+                anchors.margins: GCStyle.thinBorder
+                color: "transparent"
+                border.width: GCStyle.thinBorder
+                border.color: GCStyle.highlightColor
             }
         }
     }

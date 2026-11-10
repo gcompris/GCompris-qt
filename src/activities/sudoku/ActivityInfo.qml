@@ -21,7 +21,12 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Completing the puzzle requires patience and logical ability.")
   //: Help manual
-  manual: qsTr("Select a number or a symbol and click its target position. Each symbol must appear only once in a row, in a column and in a subregion if any. If an action is not allowed, the game will show why. But beware: if you can place something in a square, it might not be correct for the whole Sudoku. It can still be a mistake.")
+  manual: qsTr("Select a number or a symbol and click its target position. Each symbol must appear only once in a row, in a column and in a subregion if any. If an action is not allowed, the game will show why. But beware: if you can place something in a square, it might not be correct for the whole Sudoku. It can still be a mistake.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: move the cursor") + ("</li><li>") +
+          qsTr("Tab: toggle navigation between the grid and the list") + ("</li><li>") +
+          qsTr("Space: add or remove an item in the grid, or select an item in the list") + ("</li><li>") +
+          qsTr("Numbers from 1 to 9: directly select the corresponding item in the list") + ("</li></ul>")
   credit: ""
   section: "discovery logic"
   createdInVersion: 0

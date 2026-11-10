@@ -71,6 +71,10 @@ function initLevel() {
             }
         }
     }
+    selectListItem(0, false)
+    items.keyboardControls = false
+    items.selectedSpotIndex = 0
+    items.listFocus = false
     items.buttonsBlocked = false
 }
 
@@ -235,10 +239,115 @@ function dataToImageSource(data) {
     return imageName;
 }
 
+function selectListItem(_index, playSound = true) {
+    items.availablePiecesModel.navigationIndex = _index;
+    if(items.availablePiecesModel.navigationIndex === items.availablePiecesModel.view.currentIndex) {
+        return;
+    }
+    if(playSound) {
+        items.scrollSound.play();
+    }
+    items.availablePiecesModel.view.currentIndex = _index;
+}
+
+function moveCursorLeft() {
+    if(items.listFocus) {
+        navigateList(-1);
+    } else {
+        var currentRowStart = items.gridCursor.caseY * items.columns;
+        var currentRowEnd = currentRowStart + items.columns - 1;
+        var newSelectedSpotIndex = items.selectedSpotIndex -= 1;
+        if(newSelectedSpotIndex < currentRowStart) {
+            newSelectedSpotIndex = currentRowEnd;
+        }
+        items.selectedSpotIndex = newSelectedSpotIndex;
+    }
+}
+
+function moveCursorRight() {
+    if(items.listFocus) {
+        navigateList(1);
+    } else {
+        var currentRowStart = items.gridCursor.caseY * items.columns;
+        var currentRowEnd = currentRowStart + items.columns - 1;
+        var newSelectedSpotIndex = items.selectedSpotIndex += 1;
+        if(newSelectedSpotIndex > currentRowEnd) {
+            newSelectedSpotIndex = currentRowStart;
+        }
+        items.selectedSpotIndex = newSelectedSpotIndex;
+    }
+}
+
+function moveCursorUp() {
+    if(items.listFocus) {
+        navigateList(-1);
+    } else {
+        var currentColumnEnd = items.columns * (items.rows - 1) + items.gridCursor.caseX;
+        var newSelectedSpotIndex = items.selectedSpotIndex - items.rows;
+        if(newSelectedSpotIndex < 0) {
+            newSelectedSpotIndex = currentColumnEnd;
+        }
+        items.selectedSpotIndex = newSelectedSpotIndex;
+    }
+}
+
+function moveCursorDown() {
+    if(items.listFocus) {
+        navigateList(1);
+    } else {
+        var currentColumnEnd = items.columns * (items.rows - 1) + items.gridCursor.caseX;
+        var newSelectedSpotIndex = items.selectedSpotIndex + items.rows;
+        if(newSelectedSpotIndex > currentColumnEnd) {
+            newSelectedSpotIndex = items.gridCursor.caseX;
+        }
+        items.selectedSpotIndex = newSelectedSpotIndex;
+    }
+}
+
+function navigateList(indexMove) {
+    var newListNavIndex = items.availablePiecesModel.navigationIndex + indexMove;
+    if(newListNavIndex < 0) {
+        newListNavIndex = items.availablePiecesModel.model.count - 1;
+    } else if(newListNavIndex >= items.availablePiecesModel.model.count) {
+        newListNavIndex = 0;
+    }
+    items.availablePiecesModel.navigationIndex = newListNavIndex;
+}
+
+function spacePressed() {
+    if(items.listFocus) {
+        selectListItem(items.availablePiecesModel.navigationIndex);
+    } else {
+        clickOn(items.gridCursor.caseX, items.gridCursor.caseY)
+    }
+}
+
+function switchFocus() {
+    items.listFocus = !items.listFocus;
+}
+
 function onKeyPressed(event) {
     var keyValue = -1;
     switch(event.key)
     {
+    case Qt.Key_Left:
+        moveCursorLeft();
+        break;
+    case Qt.Key_Right:
+        moveCursorRight();
+        break;
+    case Qt.Key_Up:
+        moveCursorUp();
+        break;
+    case Qt.Key_Down:
+        moveCursorDown();
+        break;
+    case Qt.Key_Space:
+        spacePressed();
+        break;
+    case Qt.Key_Tab:
+        switchFocus();
+        break;
     case Qt.Key_1:
         keyValue = 0;
         break;
@@ -268,7 +377,7 @@ function onKeyPressed(event) {
         break;
     }
     if(keyValue >= 0 && keyValue < items.availablePiecesModel.model.count) {
-        items.availablePiecesModel.view.currentIndex = keyValue;
+        selectListItem(keyValue);
         event.accepted=true;
     }
 }

@@ -20,14 +20,10 @@ Item {
     anchors.top: layoutArea.top
     anchors.left: layoutArea.left
 
-    GCSoundEffect {
-        id: scrollSound
-        source: "qrc:/gcompris/src/core/resource/sounds/scroll.wav"
-    }
-
     property alias model: mymodel;
     property alias view: view;
     property bool inputBlocked: false
+    property int navigationIndex: 0
 
     ListModel {
         id: mymodel
@@ -82,6 +78,9 @@ Item {
                 height: view.iconSize
                 color: GCStyle.lightTransparentBg
                 radius: GCStyle.halfMargins
+                border.color: GCStyle.selectedDarkBlue
+                border.width: items.keyboardControls && items.listFocus &&
+                            listWidget.navigationIndex === index ? GCStyle.midBorder : 0
 
                 Image {
                     id: icon
@@ -168,8 +167,8 @@ Item {
                         hoverEnabled: true
                         enabled: !listWidget.inputBlocked
                         onClicked: {
-                            scrollSound.play()
-                            view.currentIndex = index
+                            items.keyboardControls = false;
+                            Activity.selectListItem(index);
                         }
                     }
                 }
