@@ -199,6 +199,7 @@ msgstr ""
 #: activities/babyshapes/ActivityInfo.qml:28
 #: activities/braille_alphabets/ActivityInfo.qml:25
 #: activities/braille_fun/ActivityInfo.qml:25
+#: activities/calcudoku/ActivityInfo.qml:24
 #: activities/calendar/ActivityInfo.qml:25
 #: activities/chronos/ActivityInfo.qml:29
 #: activities/click_on_letter/ActivityInfo.qml:25
@@ -292,6 +293,7 @@ msgstr ""
 #: activities/smallnumbers2/ActivityInfo.qml:25
 #: activities/solar_system/ActivityInfo.qml:27
 #: activities/submarine/ActivityInfo.qml:25
+#: activities/sudoku/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard controls:</b>"
 msgstr "<b>Controls del teclat:</b>"
@@ -3499,6 +3501,45 @@ msgstr ""
 "proporcionen un resultat i un operador: tots els nombres de la gàbia, quan "
 "es combinen utilitzant l'operador, han de produir el resultat. Les gàbies "
 "fetes només amb una cel·la proporcionen directament el nombre a introduir."
+
+#: activities/calcudoku/ActivityInfo.qml:25
+#: activities/sudoku/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Arrows: move the helicopter"
+msgctxt "ActivityInfo|"
+msgid "Arrows: move the cursor"
+msgstr "«Fletxes»: per a moure l'helicòpter"
+
+# skip-rule: kct-tab
+#: activities/calcudoku/ActivityInfo.qml:26
+#: activities/sudoku/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Tab: navigate between the item list and the mosaic"
+msgctxt "ActivityInfo|"
+msgid "Tab: toggle navigation between the grid and the list"
+msgstr "Tabulador: per a canviar entre la llista d'elements i el mosaic"
+
+#: activities/calcudoku/ActivityInfo.qml:27
+#: activities/sudoku/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space or Enter: select an item from the list"
+msgctxt "ActivityInfo|"
+msgid "Space: add or remove an item in the grid, or select an item in the list"
+msgstr "«Espai» o «Retorn»: per a seleccionar un element de la llista"
+
+#: activities/calcudoku/ActivityInfo.qml:28
+#: activities/sudoku/ActivityInfo.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Digits: 1 to 6 select/deselect the corresponding dots"
+msgctxt "ActivityInfo|"
+msgid "Numbers from 1 to 9: directly select the corresponding item in the list"
+msgstr ""
+"Dígits: de l'1 fins al 6 per a seleccionar/desseleccionar els punts "
+"corresponents"
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66

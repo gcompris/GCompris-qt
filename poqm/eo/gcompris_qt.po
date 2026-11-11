@@ -199,6 +199,7 @@ msgstr ""
 #: activities/babyshapes/ActivityInfo.qml:28
 #: activities/braille_alphabets/ActivityInfo.qml:25
 #: activities/braille_fun/ActivityInfo.qml:25
+#: activities/calcudoku/ActivityInfo.qml:24
 #: activities/calendar/ActivityInfo.qml:25
 #: activities/chronos/ActivityInfo.qml:29
 #: activities/click_on_letter/ActivityInfo.qml:25
@@ -292,6 +293,7 @@ msgstr ""
 #: activities/smallnumbers2/ActivityInfo.qml:25
 #: activities/solar_system/ActivityInfo.qml:27
 #: activities/submarine/ActivityInfo.qml:25
+#: activities/sudoku/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard controls:</b>"
 msgstr "<b>Klavaraj kontroloj:</b>"
@@ -3338,6 +3340,42 @@ msgstr ""
 "faritaj el pli ol unu ĉelo provizas rezulton kaj operatoron: ĉiuj nombroj en "
 "la kaĝo, kiam kombinite uzante la operatoron, devas produkti la rezulton. "
 "Kaĝoj faritaj de nur unu ĉelo rekte provizas la nombron por enigi."
+
+#: activities/calcudoku/ActivityInfo.qml:25
+#: activities/sudoku/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Arrows: move the helicopter"
+msgctxt "ActivityInfo|"
+msgid "Arrows: move the cursor"
+msgstr "Sagoj: movu la helikopteron"
+
+#: activities/calcudoku/ActivityInfo.qml:26
+#: activities/sudoku/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Tab: navigate between the item list and the mosaic"
+msgctxt "ActivityInfo|"
+msgid "Tab: toggle navigation between the grid and the list"
+msgstr "Tab: navigi inter la listo de objektoj kaj la mozaiko"
+
+#: activities/calcudoku/ActivityInfo.qml:27
+#: activities/sudoku/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space or Enter: select an item from the list"
+msgctxt "ActivityInfo|"
+msgid "Space: add or remove an item in the grid, or select an item in the list"
+msgstr "Spaco aŭ Enigu: elektu eron el la listo"
+
+#: activities/calcudoku/ActivityInfo.qml:28
+#: activities/sudoku/ActivityInfo.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Digits: 1 to 6 select/deselect the corresponding dots"
+msgctxt "ActivityInfo|"
+msgid "Numbers from 1 to 9: directly select the corresponding item in the list"
+msgstr "Ciferoj: 1 ĝis 6 elektu/malelektu la respondajn punktojn"
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66

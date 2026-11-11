@@ -227,6 +227,7 @@ msgstr ""
 #: activities/babyshapes/ActivityInfo.qml:28
 #: activities/braille_alphabets/ActivityInfo.qml:25
 #: activities/braille_fun/ActivityInfo.qml:25
+#: activities/calcudoku/ActivityInfo.qml:24
 #: activities/calendar/ActivityInfo.qml:25
 #: activities/chronos/ActivityInfo.qml:29
 #: activities/click_on_letter/ActivityInfo.qml:25
@@ -320,6 +321,7 @@ msgstr ""
 #: activities/smallnumbers2/ActivityInfo.qml:25
 #: activities/solar_system/ActivityInfo.qml:27
 #: activities/submarine/ActivityInfo.qml:25
+#: activities/sudoku/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard controls:</b>"
 msgstr "<b>கீபோர்டு கட்டுப்பாடுகள்:</b>"
@@ -3468,6 +3470,43 @@ msgstr ""
 "ஆபரேட்டரையும் வழங்குகின்றன: கூண்டில் உள்ள அனைத்து எண்களும், ஆபரேட்டரைப் பயன்படுத்தும் போது, ​​"
 "முடிவை உருவாக்க வேண்டும். ஒரே ஒரு கட்டத்தால் செய்யப்பட்ட கூண்டுகள் நேரடியாக நுழைவதற்கான "
 "எண்ணை வழங்குகின்றன."
+
+#: activities/calcudoku/ActivityInfo.qml:25
+#: activities/sudoku/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Arrows: move the helicopter"
+msgctxt "ActivityInfo|"
+msgid "Arrows: move the cursor"
+msgstr "ஆரோக்கள்: ஹெலிகாப்டரை நகர்த்துவதற்கு"
+
+#: activities/calcudoku/ActivityInfo.qml:26
+#: activities/sudoku/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Tab: navigate between the item list and the mosaic"
+msgctxt "ActivityInfo|"
+msgid "Tab: toggle navigation between the grid and the list"
+msgstr "டேபு (Tab): பொருட்களில் பட்டியலிற்கும் கண்ணாடி பலகைக்கும் இடையில் செல்வதற்கு"
+
+#: activities/calcudoku/ActivityInfo.qml:27
+#: activities/sudoku/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space or Enter: select an item from the list"
+msgctxt "ActivityInfo|"
+msgid "Space: add or remove an item in the grid, or select an item in the list"
+msgstr "ஸ்பேஸ் அல்லது என்டர்: பட்டியலில் இருந்து ஒரு பொருளைத் தேர்ந்தெடுக்கவும்"
+
+#: activities/calcudoku/ActivityInfo.qml:28
+#: activities/sudoku/ActivityInfo.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Digits: 1 to 6 select/deselect the corresponding dots"
+msgctxt "ActivityInfo|"
+msgid "Numbers from 1 to 9: directly select the corresponding item in the list"
+msgstr ""
+"இலக்கங்கள்: 1 முதல் 6 வரையுள்ள புள்ளிகளைத் தேர்ந்தெடுக்கவும்/தேர்ந்தெடுத்தவற்றை அகற்றவும்"
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
