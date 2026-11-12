@@ -28,12 +28,25 @@ Image {
     property alias mouseArea: mouseArea
 
     signal clicked
+    // use indirectClicked if you want a visual scale animation when clicked without the mouse/touch (like with the keyboard)
+    signal indirectClicked
+
+    onIndirectClicked: {
+        clickAnimation.restart();
+    }
 
     MouseArea {
         id: mouseArea
         anchors.fill: parent
         hoverEnabled: button.enabled
         onClicked: button.clicked()
+    }
+
+    SequentialAnimation {
+        id: clickAnimation
+        NumberAnimation { target: button; property: "scale"; to: 0.9; duration: 100 }
+        ScriptAction { script: button.clicked(); }
+        NumberAnimation { target: button; property: "scale"; to: 1; duration: 100 }
     }
 
     states: [
