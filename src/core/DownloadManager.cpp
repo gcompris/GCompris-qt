@@ -90,9 +90,7 @@ void DownloadManager::abortDownloads()
 {
     if (downloadIsRunning()) {
         QMutexLocker locker(&jobsMutex);
-        QMutableListIterator<DownloadJob *> iter(activeJobs);
-        while (iter.hasNext()) {
-            DownloadJob *job = iter.next();
+        for (DownloadJob *job: activeJobs) {
             if (!job->downloadFinished && job->reply != nullptr) {
                 disconnect(job->reply, &QNetworkReply::finished, this, &DownloadManager::finishDownload);
                 disconnect(job->reply, &QNetworkReply::errorOccurred, this, &DownloadManager::handleError);
@@ -116,8 +114,8 @@ void DownloadManager::abortDownloads()
                 job->reply->deleteLater();
             }
             delete job;
-            iter.remove();
         }
+        activeJobs.clear();
         locker.unlock();
         Q_EMIT error(QNetworkReply::OperationCanceledError, QObject::tr("Download cancelled by user"));
     }
@@ -155,7 +153,7 @@ QString DownloadManager::getVoicesResourceForLocale(const QString &locale) const
 
 QString DownloadManager::getBackgroundMusicResources() const
 {
-    return getResourcePath(GCompris::ResourceType::BACKGROUND_MUSIC, {});
+    return getResourcePath(GCompris::ResourceType::BACKGROUND_MUSIC, { });
 }
 
 inline QString DownloadManager::getAbsoluteResourcePath(const QString &path) const
@@ -402,17 +400,16 @@ inline QString DownloadManager::getSystemDownloadPath() const
 inline const QStringList DownloadManager::getSystemResourcePaths() const
 {
 
-    QStringList results({
-        QCoreApplication::applicationDirPath() + '/' + QString(GCOMPRIS_DATA_FOLDER) + "/rcc/",
-            getSystemDownloadPath(),
-            QStandardPaths::writableLocation(QStandardPaths::CacheLocation),
+    QStringList results({ QCoreApplication::applicationDirPath() + '/' + QString(GCOMPRIS_DATA_FOLDER) + "/rcc/",
+                          getSystemDownloadPath(),
+                          QStandardPaths::writableLocation(QStandardPaths::CacheLocation),
 #if defined(Q_OS_ANDROID)
-            "assets:",
+                          "assets:",
 #endif
 #if defined(UBUNTUTOUCH)
-            QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + '/' + GCOMPRIS_APPLICATION_NAME
+                          QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + '/' + GCOMPRIS_APPLICATION_NAME
 #else
-            QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + '/' + GCOMPRIS_APPLICATION_NAME
+                          QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + '/' + GCOMPRIS_APPLICATION_NAME
 #endif
     });
 

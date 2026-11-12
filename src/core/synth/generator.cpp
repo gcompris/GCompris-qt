@@ -112,10 +112,8 @@ Generator::noteOn(unsigned char chan, unsigned char note, unsigned char vel) {
 
 void
 Generator::noteOff(unsigned char chan, unsigned char note) {
-    QMutableListIterator<Wave> i(waveList);
 
-    while (i.hasNext()) {
-        Wave wav = i.next();
+    for (auto &wav : waveList) {
         if (wav.note == note && wav.state != Wave::STATE_RELEASE) {
             // To avoid discontinuity in the envelope, the initial value for
             // the release part of the envelope should be equal to current
@@ -126,7 +124,6 @@ Generator::noteOff(unsigned char chan, unsigned char note) {
             wav.state = Wave::STATE_RELEASE;
             wav.state_age = 0;
         }
-        i.setValue(wav);
     }
     Q_UNUSED(chan);
 }
@@ -153,10 +150,9 @@ Generator::generateData(qint64 len) {
 
     // All samples for each active note in waveList are synthesized separately.
     m_lock.lock();
-    QMutableListIterator<Wave> i(waveList);
 
-    while (i.hasNext()) {
-        Wave wav = i.next();
+    for (auto wavIterator = waveList.begin(); wavIterator != waveList.end(); ++ wavIterator) {
+        Wave &wav = *wavIterator;
         qreal attackTime  = 0.001*(qreal)wav.env.attackTime;
         qreal releaseTime = 0.001*(qreal)wav.env.releaseTime;
 
@@ -227,10 +223,9 @@ Generator::generateData(qint64 len) {
         wav.age += (qreal)numSamples/m_samplingRate;
         if (wav.state != ADSREnvelope::STATE_OFF) {
             wav.state_age += (qreal)numSamples/m_samplingRate;
-            i.setValue(wav);
         }
         else {
-            i.remove();
+            wavIterator = waveList.erase(wavIterator);
         }
     }
     m_lock.unlock();

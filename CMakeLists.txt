@@ -136,6 +136,7 @@ endif()
 
 # Starting C++20, emit() is a function in standard library. To avoid using Qt keywords like signals, slots, emit, we define this variable
 add_definitions(
+    -DQT_ENABLE_STRICT_MODE_UP_TO=0x060500
     -DQT_USE_QSTRINGBUILDER
     -DQT_NO_CAST_TO_ASCII
     -DQT_NO_URL_CAST_FROM_STRING

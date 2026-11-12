@@ -195,7 +195,7 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
         m_updateToNewIgnoreLevels = true;
     }
 
-    connect(this, &ApplicationSettings::localeChanged, ApplicationInfo::getInstance(), []() { ApplicationInfo::getInstance()->switchLocale(); } );
+    connect(this, &ApplicationSettings::localeChanged, ApplicationInfo::getInstance(), []() { ApplicationInfo::getInstance()->switchLocale(); });
 }
 
 ApplicationSettings::~ApplicationSettings()
@@ -463,9 +463,7 @@ void ApplicationSettings::saveBaseFontSize()
 void ApplicationSettings::saveActivityConfiguration(const QString &activity, const QVariantMap &data)
 {
     qDebug() << "save configuration for:" << activity;
-    QMapIterator<QString, QVariant> i(data);
-    while (i.hasNext()) {
-        i.next();
+    for (auto i = data.begin(); i != data.end(); ++i) {
         updateValueInConfig(activity, i.key(), i.value(), false);
     }
     m_config.sync();
