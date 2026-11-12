@@ -46,7 +46,7 @@ GSynth::GSynth(QObject *parent) : QObject(parent)
     m_pushTimer = new QTimer(this);
 
     auto io = m_audioSink->start();
-    connect(m_pushTimer, &QTimer::timeout, [this, io]() {
+    connect(m_pushTimer, &QTimer::timeout, this, [this, io]() {
         int len = m_audioSink->bytesFree();
         QByteArray buffer(len, 0);
         len = m_generator->read(buffer.data(), len);
