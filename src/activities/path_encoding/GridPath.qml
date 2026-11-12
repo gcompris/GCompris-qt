@@ -55,6 +55,11 @@ ActivityBase {
             property alias mapListModel: mapListModel
             property alias movesListModel: movesListModel
             property alias activityBackground: activityBackground
+            property alias moveButtons: moveButtons
+            property alias gridCursor: gridCursor
+            property list<int> cursorPosition: [0, 0]
+            property alias errorRectangle: errorRectangle
+            property bool buttonsBlocked: false
             property int currentLevel: activity.currentLevel
             onCurrentLevelChanged: activity.currentLevel = currentLevel
             property int numberOfLevel: 0
@@ -85,7 +90,6 @@ ActivityBase {
             interval: 100
             onTriggered: {
                 mapView.init()
-
                 tux.animationEnabled = false
                 Activity.moveTuxToBlock()
                 tux.animationEnabled = true
@@ -115,6 +119,18 @@ ActivityBase {
             rows: items.rows
             cols: items.cols
             anchors.verticalCenterOffset: (-errorsArea.height - GCStyle.halfMargins) * 0.5
+        }
+
+        Rectangle {
+            id: gridCursor
+            visible: mapView.touchEnabled
+            x: mapView.x + mapView.cellSize * items.cursorPosition[0]
+            y: mapView.y + mapView.cellSize * items.cursorPosition[1]
+            width: mapView.cellSize
+            height: mapView.cellSize
+            color: "transparent"
+            border.width: GCStyle.midBorder
+            border.color: "#E99E33" // same color as background of active item in MoveBar
         }
 
         Rectangle {
@@ -161,7 +177,15 @@ ActivityBase {
             }
         }
 
+        ErrorRectangle {
+            id: errorRectangle
+            anchors.centerIn: parent
 
+            function releaseControls() {
+                items.buttonsBlocked = false;
+                return;
+            }
+        }
 
         Tux {
             id: tux
@@ -265,11 +289,14 @@ ActivityBase {
             id: bonus
             winSound: "qrc:/gcompris/src/activities/ballcatch/resource/tuxok.wav"
             Component.onCompleted: win.connect(activity.nextLevel)
+            onStart: {
+                items.buttonsBlocked = true;
+            }
         }
 
-        Keys.onLeftPressed: (items.mode === 'encode') ? Activity.moveTowards(Activity.Directions.LEFT) : null
-        Keys.onRightPressed: (items.mode === 'encode') ? Activity.moveTowards(Activity.Directions.RIGHT) : null
-        Keys.onUpPressed: (items.mode === 'encode') ? Activity.moveTowards(Activity.Directions.UP) : null
-        Keys.onDownPressed: (items.mode === 'encode') ? Activity.moveTowards(Activity.Directions.DOWN) : null
+        Keys.enabled: !items.buttonsBlocked
+        Keys.onPressed: (event) => {
+            Activity.onKeyPressed(event);
+        }
     }
 }

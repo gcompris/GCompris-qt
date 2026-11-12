@@ -20,6 +20,8 @@ Item {
     property double maxHeight: 1
     property double maxWidth: 1
     readonly property int cellSize: Math.min(maxHeight / rows, maxWidth / cols)
+    property bool displayError: false
+    property alias selectedOverlay: selectedOverlay
 
     height: cellSize * rows
     width: cellSize * cols
@@ -59,7 +61,7 @@ Item {
         onTouchUpdated: (touchPoints) => checkTouchPoint(touchPoints);
         onReleased: (touchPoints) => {
             checkTouchPoint(touchPoints)
-            if(selectedOverlay.visible && touchEnabled && !items.tux.isAnimationRunning) {
+            if(selectedOverlay.visible && touchEnabled && !items.buttonsBlocked) {
                 var row = Math.floor(selectedOverlay.y / cellSize)
                 var col = Math.floor(selectedOverlay.x / cellSize)
                 Activity.processBlockClick([col, row])
@@ -70,25 +72,32 @@ Item {
     Rectangle {
         id: selectedOverlay
         opacity: 0.5
-        color: GCStyle.highlightColor
+        color: mapView.displayError ? GCStyle.badAnswer : GCStyle.highlightColor
         width: cellSize - GCStyle.thinnestBorder
         height: width
         visible: false
     }
 
+    function showSelectedOverlay(_position) {
+        items.cursorPosition[0] = _position[0];
+        items.cursorPosition[1] = _position[1];
+        mapView.displayError = false;
+        selectedOverlay.x = _position[0] * cellSize + GCStyle.thinnestBorder * 0.5;
+        selectedOverlay.y = _position[1] * cellSize + GCStyle.thinnestBorder * 0.5;
+        selectedOverlay.visible = true
+    }
+
     function checkTouchPoint(touchPoints) {
         var touch = touchPoints[0]
 
-        if(items.tux.isAnimationRunning || !touch || !touchEnabled)
+        if(items.buttonsBlocked || !touch || !touchEnabled)
             return
 
         var row = Math.floor(touch.y / cellSize)
         var col = Math.floor(touch.x / cellSize)
 
         if(row >= 0 && row < rows && col >= 0 && col < cols) {
-            selectedOverlay.x = col * cellSize + GCStyle.thinnestBorder * 0.5
-            selectedOverlay.y = row * cellSize + GCStyle.thinnestBorder * 0.5
-            selectedOverlay.visible = true
+            showSelectedOverlay([col, row]);
         }
         else {
             selectedOverlay.visible = false

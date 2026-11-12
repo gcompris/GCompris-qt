@@ -21,6 +21,11 @@ Image {
     property int duration: 1000
     property bool animationEnabled: true
     property bool isAnimationRunning: xAnimation.running || yAnimation.running || rAnimation.running
+    onIsAnimationRunningChanged: {
+        if(!isAnimationRunning && !items.bonus.isPlaying) {
+            items.buttonsBlocked = false;
+        }
+    }
 
     // values: UP, DOWN, LEFT, RIGHT
     property string direction

@@ -44,7 +44,7 @@ function stop() {
 }
 
 function initLevel() {
-
+    items.errorRectangle.resetState()
     items.rows = items.levels[items.currentLevel].path.length
     items.cols = items.levels[items.currentLevel].path[0].length
 
@@ -60,6 +60,8 @@ function initLevel() {
     prevPos = [-1, -1];
     // initialize position of tux
     currPos = findStartAndLoadObstacles()
+    items.cursorPosition[0] = currPos[0]
+    items.cursorPosition[1] = currPos[1]
 
     // find the initial direction of tux
     items.tux.init(findCorrectDirectionAbsolute(currPos[0], currPos[1], -1, -1))
@@ -78,6 +80,7 @@ function initLevel() {
     }
 
     items.movesGridView.currentIndex = 0
+    items.buttonsBlocked = false
 }
 
 function loadMoves() {
@@ -227,10 +230,8 @@ function findNextPositionRelative(fromX, fromY, direction) {
     return findNextPositionAbsolute(fromX, fromY, absoluteDirection)
 }
 
-function moveTowards(direction) {
-    if(items.tux.isAnimationRunning || items.bonus.isPlaying)
-        return
-
+function moveTowards(direction, buttonContainer) {
+    items.buttonsBlocked = true;
     var absolutePosition = findNextPositionAbsolute(currPos[0], currPos[1], direction)
 
     var relativeDirection = findNextDirectionRelative(currPos[0], currPos[1], direction)
@@ -263,13 +264,16 @@ function moveTowards(direction) {
         updateTux()
     }
     else {
+        setupErrorRectangle(buttonContainer, items.moveButtons.buttonSize)
+        items.errorRectangle.startAnimation()
         items.badAnswerSound.play()
         items.errorsCount ++
     }
 }
 
 function processBlockClick(pos) {
-    if(decodeIndex >= items.movesListModel.count || items.bonus.isPlaying)
+    items.buttonsBlocked = true;
+    if(decodeIndex >= items.movesListModel.count)
         return
 
     var correctPos
@@ -291,8 +295,69 @@ function processBlockClick(pos) {
         items.mapListModel.set(positionToIndex(currPos), {"path": true})
     }
     else {
+        setupErrorRectangle(items.gridCursor, items.mapView.cellSize)
+        items.errorRectangle.startAnimation();
+        items.mapView.displayError = true;
         items.badAnswerSound.play()
         items.errorsCount ++
+    }
+}
+
+function setupErrorRectangle(_parent, _size) {
+    items.errorRectangle.parent = _parent;
+    items.errorRectangle.imageSize = _size;
+}
+
+function moveGridCursor(axisIndex, moveValue) {
+    var newValue = items.cursorPosition[axisIndex] + moveValue;
+    var maxValue = (axisIndex === 0 ? items.cols : items.rows) - 1
+    if(newValue < 0) {
+        newValue = 0;
+    } else if(newValue > maxValue) {
+        newValue = maxValue;
+    }
+    items.cursorPosition[axisIndex] = newValue;
+}
+
+function onKeyPressed(event) {
+    if(items.mode === "encode") {
+        switch(event.key)
+        {
+            case Qt.Key_Left:
+                items.moveButtons.leftButton.indirectClicked()
+                break;
+            case Qt.Key_Right:
+                items.moveButtons.rightButton.indirectClicked()
+                break;
+            case Qt.Key_Up:
+                items.moveButtons.upButton.indirectClicked()
+                break;
+            case Qt.Key_Down:
+                items.moveButtons.downButton.indirectClicked()
+                break;
+        }
+    } else { // decode mode
+        switch(event.key)
+        {
+            case Qt.Key_Left:
+                moveGridCursor(0, -1);
+                break;
+            case Qt.Key_Right:
+                moveGridCursor(0, 1);
+                break;
+            case Qt.Key_Up:
+                moveGridCursor(1, -1);
+                break;
+            case Qt.Key_Down:
+                moveGridCursor(1, 1);
+                break;
+            case Qt.Key_Space:
+            case Qt.Key_Return:
+            case Qt.Key_Enter:
+                items.mapView.showSelectedOverlay(items.cursorPosition);
+                processBlockClick(items.cursorPosition);
+                break;
+        }
     }
 }
 

@@ -13,6 +13,12 @@ import "path.js" as Activity
 Item {
     id: moveButtons
     property int buttonSize: Math.min(GCStyle.bigButtonHeight, width * 0.25 - GCStyle.baseMargins, height)
+    enabled: !items.buttonsBlocked
+
+    property alias upButton: upButton
+    property alias downButton: downButton
+    property alias leftButton: leftButton
+    property alias rightButton: rightButton
 
     Flow {
         id: flow
@@ -22,7 +28,7 @@ Item {
         }
 
         Item {
-            id: buttonContainer
+            id: upButtonContainer
             width: moveButtons.width * 0.25
             height: moveButtons.height
 
@@ -32,7 +38,9 @@ Item {
                 rotation: -90
                 width: moveButtons.buttonSize
                 anchors.centerIn: parent
-                onClicked: Activity.moveTowards(Activity.Directions.UP)
+                onClicked: {
+                    Activity.moveTowards(Activity.Directions.UP, upButtonContainer);
+                }
                 Rectangle {
                     anchors.fill: parent
                     radius: width * 0.5
@@ -44,7 +52,8 @@ Item {
         }
 
         Item {
-            width: buttonContainer.width
+            id: downButtonContainer
+            width: upButtonContainer.width
             height: moveButtons.height
 
             BarButton {
@@ -53,7 +62,9 @@ Item {
                 rotation: 90
                 width: moveButtons.buttonSize
                 anchors.centerIn: parent
-                onClicked: Activity.moveTowards(Activity.Directions.DOWN)
+                onClicked: {
+                    Activity.moveTowards(Activity.Directions.DOWN, downButtonContainer);
+                }
                 Rectangle {
                     anchors.fill: parent
                     radius: width * 0.5
@@ -65,7 +76,8 @@ Item {
         }
 
         Item {
-            width: buttonContainer.width
+            id: leftButtonContainer
+            width: upButtonContainer.width
             height: moveButtons.height
 
             BarButton {
@@ -74,7 +86,9 @@ Item {
                 rotation: -180
                 width: moveButtons.buttonSize
                 anchors.centerIn: parent
-                onClicked: Activity.moveTowards(Activity.Directions.LEFT)
+                onClicked: {
+                    Activity.moveTowards(Activity.Directions.LEFT, leftButtonContainer);
+                }
                 Rectangle {
                     anchors.fill: parent
                     radius: width * 0.5
@@ -86,7 +100,8 @@ Item {
         }
 
         Item {
-            width: buttonContainer.width
+            id: rightButtonContainer
+            width: upButtonContainer.width
             height: moveButtons.height
 
             BarButton {
@@ -95,7 +110,9 @@ Item {
                 rotation: 0
                 width: moveButtons.buttonSize
                 anchors.centerIn: parent
-                onClicked: Activity.moveTowards(Activity.Directions.RIGHT)
+                onClicked: {
+                    Activity.moveTowards(Activity.Directions.RIGHT, rightButtonContainer);
+                }
                 Rectangle {
                     anchors.fill: parent
                     radius: width * 0.5
