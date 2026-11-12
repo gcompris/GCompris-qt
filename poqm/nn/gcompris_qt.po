@@ -3350,8 +3350,6 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:25
 #: activities/sudoku/ActivityInfo.qml:26
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: move the helicopter"
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the cursor"
 msgstr "Piltastar: Flytt helikopteret"
@@ -3359,8 +3357,6 @@ msgstr "Piltastar: Flytt helikopteret"
 #: activities/calcudoku/ActivityInfo.qml:26
 #: activities/sudoku/ActivityInfo.qml:27
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Tab: navigate between the item list and the mosaic"
 msgctxt "ActivityInfo|"
 msgid "Tab: toggle navigation between the grid and the list"
 msgstr "Tabulator: Byt mellom gjenstandsfeltet og mosaikkfeltet"
@@ -3368,8 +3364,6 @@ msgstr "Tabulator: Byt mellom gjenstandsfeltet og mosaikkfeltet"
 #: activities/calcudoku/ActivityInfo.qml:27
 #: activities/sudoku/ActivityInfo.qml:28
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: select an item from the list"
 msgctxt "ActivityInfo|"
 msgid "Space: add or remove an item in the grid, or select an item in the list"
 msgstr "Mellomrom eller Enter: Vel bilete/tekst frå lista"
@@ -3377,8 +3371,6 @@ msgstr "Mellomrom eller Enter: Vel bilete/tekst frå lista"
 #: activities/calcudoku/ActivityInfo.qml:28
 #: activities/sudoku/ActivityInfo.qml:29
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: 1 to 6 select/deselect the corresponding dots"
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 9: directly select the corresponding item in the list"
 msgstr "Siffer: 1 til 6 for å velja (vekk) tilhøyrande prikk"

@@ -24,7 +24,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-10-22 05:43+0200\n"
+"PO-Revision-Date: 2026-11-11 22:59+0200\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Basealt Translation Team\n"
 "Language: ru\n"
@@ -3373,39 +3373,29 @@ msgstr ""
 
 #: activities/calcudoku/ActivityInfo.qml:25
 #: activities/sudoku/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: move the helicopter"
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the cursor"
-msgstr "Стрелки: передвижение вертолёта"
+msgstr "Стрелки: перемещение курсора"
 
 #: activities/calcudoku/ActivityInfo.qml:26
 #: activities/sudoku/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Tab: navigate between the item list and the mosaic"
 msgctxt "ActivityInfo|"
 msgid "Tab: toggle navigation between the grid and the list"
-msgstr "Tab: переключение между списком предметов и мозаикой"
+msgstr "Tab: переключение между сеткой и списком"
 
 #: activities/calcudoku/ActivityInfo.qml:27
 #: activities/sudoku/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: select an item from the list"
 msgctxt "ActivityInfo|"
 msgid "Space: add or remove an item in the grid, or select an item in the list"
-msgstr "Клавиша «Пробел» или «Ввод»: выбор элемента из списка"
+msgstr ""
+"Клавиша «Пробел»: добавление или удаление элемента в сетке либо выбор "
+"элемента в списке"
 
 #: activities/calcudoku/ActivityInfo.qml:28
 #: activities/sudoku/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: 1 to 6 select/deselect the corresponding dots"
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 9: directly select the corresponding item in the list"
-msgstr "Цифры от 1 до 6 выделяют/снимают выделение соответствующих точек"
+msgstr "Цифры от 1 до 9: сразу выбирают соответствующий элемент в списке"
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
@@ -10955,7 +10945,7 @@ msgstr "Проценты с пирогом."
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the pie."
-msgstr "Выбери %1% пирога."
+msgstr "Выбери %1 % пирога."
 
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
@@ -10972,7 +10962,7 @@ msgstr "Проценты с квадратом."
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
-msgstr "Выбери %1% квадрата."
+msgstr "Выбери %1 % квадрата."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -21327,7 +21317,7 @@ msgid ""
 "Identify the notes, play them on the piano keyboard, and achieve a score of "
 "100% to complete the level."
 msgstr ""
-"Правильно определи ноты и дай 100% правильных ответов, чтобы пройти уровень."
+"Правильно определи ноты и дай 100 % правильных ответов, чтобы пройти уровень."
 
 #: activities/note_names/NoteNames.qml:208
 #, qt-format
@@ -21340,7 +21330,7 @@ msgstr "Новая нота: %1"
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
-msgstr "%1%"
+msgstr "%1 %"
 
 #: activities/note_names/NoteNames.qml:456
 msgctxt "NoteNames|"
@@ -26167,7 +26157,7 @@ msgid ""
 "answer the questions until you get 100% in the closeness meter."
 msgstr ""
 "Щёлкни по любой планете или Солнцу, чтобы ответить на вопросы. В каждом "
-"вопросе 4 варианта ответа. Только один из них на 100% верен. Постарайся "
+"вопросе 4 варианта ответа. Только один из них на 100 % верен. Постарайся "
 "ответить на все вопросы со 100-процентной точностью."
 
 #: activities/solar_system/ActivityInfo.qml:29
@@ -27157,19 +27147,19 @@ msgstr ""
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
-msgstr "Точность: %1%"
+msgstr "Точность: %1 %"
 
 #: activities/solar_system/QuizScreen.qml:239
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
-msgstr "%1%"
+msgstr "%1 %"
 
 #: activities/solar_system/QuizScreen.qml:274
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
-msgstr "Твой общий счёт: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
+msgstr "Твой общий счёт: <font color=\"#3bb0de\">%1 %</font>.<br><br>%2"
 
 #: activities/solar_system/QuizScreen.qml:274
 msgctxt "QuizScreen|"
@@ -27179,7 +27169,7 @@ msgid ""
 "System."
 msgstr ""
 "Чтобы стать настоящим экспертом по Солнечной системе, нужно набрать больше "
-"90%.<br>Попробуй проверить свои знания ещё раз или переключись в обычный "
+"90 %.<br>Попробуй проверить свои знания ещё раз или переключись в обычный "
 "режим, чтобы узнать больше о Солнечной системе."
 
 #: activities/solar_system/QuizScreen.qml:274
@@ -27236,8 +27226,8 @@ msgid ""
 "you can click on it to get a hint to find the answer."
 msgstr ""
 "Когда ты выберешь планету, в правом нижнем углу экрана появится индикатор "
-"точности ответа. Самый далёкий от правды ответ имеет точность 1%. Твоя "
-"задача — ответить на все вопросы с точностью 100%. Если виден значок "
+"точности ответа. Самый далёкий от правды ответ имеет точность 1 %. Твоя "
+"задача — ответить на все вопросы с точностью 100 %. Если виден значок "
 "подсказки, ты можешь нажать его, чтобы узнать ответ."
 
 #: activities/solar_system/SolarSystem.qml:177
@@ -27269,7 +27259,7 @@ msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
 "expert!"
 msgstr ""
-"Ты должен дать более 90% правильных ответов, чтобы сдать тест и стать "
+"Ты должен дать более 90 % правильных ответов, чтобы сдать тест и стать "
 "экспертом по Солнечной системе!"
 
 #: activities/solar_system/SolarSystem.qml:362
@@ -29013,8 +29003,8 @@ msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
 "(92% translated), Russian (98% translated), Slovak (92% translated), Turkish."
 msgstr ""
-"Добавлены переводы на каталонский, китайский традиционный, финский (92%), "
-"русский (98%), словацкий (92%), турецкий"
+"Добавлены переводы на каталонский, китайский традиционный, финский (92 %), "
+"русский (98 %), словацкий (92 %), турецкий"
 
 #: core/ChangeLog.qml:187
 msgctxt "ChangeLog|"

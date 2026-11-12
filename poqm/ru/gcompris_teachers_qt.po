@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_teachers_qt\n"
-"PO-Revision-Date: 2026-10-10 14:55+0200\n"
+"PO-Revision-Date: 2026-11-11 22:59+0200\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
@@ -571,7 +571,7 @@ msgstr "Строк: %1"
 #, qt-format
 msgctxt "DailyReport|"
 msgid "%1 %"
-msgstr "%1 %"
+msgstr "%1 %"
 
 #: server/activities/enumerate/EnumerateDataDisplay.qml:59
 msgctxt "EnumerateDataDisplay|"
