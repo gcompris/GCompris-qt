@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2026-11-11 09:50+0100\n"
+"PO-Revision-Date: 2026-11-14 10:38+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -22678,12 +22678,9 @@ msgstr ""
 
 #: activities/path_decoding/ActivityInfo.qml:26
 #: activities/path_decoding_relative/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: flip the selected card"
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: move Tux to the selected square"
-msgstr "«Espai» o «Retorn»: per a seleccionar la targeta"
+msgstr "«Espai» o «Retorn»: mou en Tux al quadrat seleccionat"
 
 #: activities/path_decoding/resource/1/Data.qml:13
 #: activities/path_decoding/resource/2/Data.qml:13

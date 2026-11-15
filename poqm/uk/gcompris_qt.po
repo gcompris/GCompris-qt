@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2026-11-11 18:05+0200\n"
+"PO-Revision-Date: 2026-11-14 21:01+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -22271,12 +22271,9 @@ msgstr ""
 
 #: activities/path_decoding/ActivityInfo.qml:26
 #: activities/path_decoding_relative/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: flip the selected card"
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: move Tux to the selected square"
-msgstr "Пробіл або Enter: перевернути позначену картку"
+msgstr "Пробіл або Enter: пересунути Тукса у позначену комірку"
 
 #: activities/path_decoding/resource/1/Data.qml:13
 #: activities/path_decoding/resource/2/Data.qml:13

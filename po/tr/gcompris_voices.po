@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-22 00:40+0000\n"
-"PO-Revision-Date: 2026-09-22 18:38+0300\n"
+"PO-Revision-Date: 2026-11-14 18:37+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 26.08.0\n"
+"X-Generator: Lokalize 26.08.2\n"
 "X-POOTLE-MTIME: 1497539875.000000\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
@@ -571,7 +571,7 @@ msgstr "Verilen değeri dereceli çizgiye yerleştir."
 #: activities/grammar_classes/ActivityInfo.qml:21
 #, kde-format
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr "İstenen dilbilgisi sınıflarını ilgili sözcüklere ata."
+msgstr "İstenen dil bilgisi sınıflarını ilgili sözcüklere ata."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18

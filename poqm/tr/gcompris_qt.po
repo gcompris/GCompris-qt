@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-11-11 20:34+0300\n"
+"PO-Revision-Date: 2026-11-14 18:39+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -15647,27 +15647,27 @@ msgstr "0 ve 1.000.000 arasında bulunacak derece."
 #: activities/grammar_analysis/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical analysis"
-msgstr "Dilbilgisi çözümlemesi"
+msgstr "Dil bilgisi çözümlemesi"
 
 #. Help title
 #: activities/grammar_analysis/ActivityInfo.qml:20
 #: activities/grammar_classes/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Identify grammatical classes in the given sentences."
-msgstr "Verilen tümcelerdeki dilbilgisi sınıflarını tanımla."
+msgstr "Verilen tümcelerdeki dil bilgisi sınıflarını tanımla."
 
 #. Help goal
 #: activities/grammar_analysis/ActivityInfo.qml:23
 #: activities/grammar_classes/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Learn to identify grammatical classes."
-msgstr "Dilbilgisi sınıflarını tanımlamayı öğren."
+msgstr "Dil bilgisi sınıflarını tanımlamayı öğren."
 
 #. Help manual
 #: activities/grammar_analysis/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr "İstenen dilbilgisi sınıflarını ilgili sözcüklere ata."
+msgstr "İstenen dil bilgisi sınıflarını ilgili sözcüklere ata."
 
 #: activities/grammar_analysis/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -15675,7 +15675,7 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Listeden bir dilbilgisi sınıfı seç, ardından bir sözcüğün altındaki kutuyu "
+"Listeden bir dil bilgisi sınıfı seç, ardından bir sözcüğün altındaki kutuyu "
 "seç ve sınıfı ona ata."
 
 #: activities/grammar_analysis/ActivityInfo.qml:28
@@ -15719,17 +15719,17 @@ msgstr "Boş"
 #: activities/grammar_analysis/GrammarAnalysis.qml:26
 msgctxt "GrammarAnalysis|"
 msgid "Grammatical analysis"
-msgstr "Dilbilgisi çözümlemesi"
+msgstr "Dil bilgisi çözümlemesi"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:27
 msgctxt "GrammarAnalysis|"
 msgid "Learn to identify grammatical classes."
-msgstr "Dilbilgisi sınıflarını tanımlamayı öğren."
+msgstr "Dil bilgisi sınıflarını tanımlamayı öğren."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:28
 msgctxt "GrammarAnalysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
-msgstr "İstenen dilbilgisi sınıflarına karşılık gelen tüm sözcükleri bul."
+msgstr "İstenen dil bilgisi sınıflarına karşılık gelen tüm sözcükleri bul."
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:29
 msgctxt "GrammarAnalysis|"
@@ -15737,7 +15737,7 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Listeden bir dilbilgisi sınıfı seç, ardından bir sözcüğün altındaki kutuyu "
+"Listeden bir dil bilgisi sınıfı seç, ardından bir sözcüğün altındaki kutuyu "
 "seç ve sınıfı ona ata"
 
 #: activities/grammar_analysis/GrammarAnalysis.qml:30
@@ -15749,13 +15749,13 @@ msgstr "Eşleşen sınıf yoksa kutuyu boş bırak."
 #: activities/grammar_classes/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical classes"
-msgstr "Dilbilgisi sınıflandırmaları"
+msgstr "Dil bilgisi sınıflandırmaları"
 
 #. Help manual
 #: activities/grammar_classes/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical class to the corresponding words."
-msgstr "İstenen dilbilgisi sınıflarını ilgili sözcüklere ata."
+msgstr "İstenen dil bilgisi sınıflarını ilgili sözcüklere ata."
 
 #: activities/grammar_classes/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -15763,8 +15763,8 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Listeden dilbilgisi sınıfını seç, ardından bir sözcüğün altındaki kutuyu seç "
-"ve sınıfı ona ata."
+"Listeden dil bilgisi sınıfını seç, ardından bir sözcüğün altındaki kutuyu "
+"seç ve sınıfı ona ata."
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -15774,17 +15774,17 @@ msgstr "Sınıf eşleşmiyorsa kutuyu boş bırak."
 #: activities/grammar_classes/GrammarClasses.qml:15
 msgctxt "GrammarClasses|"
 msgid "Grammatical classes"
-msgstr "Dilbilgisi sınıflandırmaları"
+msgstr "Dil bilgisi sınıflandırmaları"
 
 #: activities/grammar_classes/GrammarClasses.qml:16
 msgctxt "GrammarClasses|"
 msgid "Learn to identify grammatical classes."
-msgstr "Dilbilgisi sınıflarını tanımlamayı öğren."
+msgstr "Dil bilgisi sınıflarını tanımlamayı öğren."
 
 #: activities/grammar_classes/GrammarClasses.qml:17
 msgctxt "GrammarClasses|"
 msgid "Find all the words corresponding to the requested grammatical class."
-msgstr "İstenen dilbilgisi sınıflarına karşılık gelen tüm sözcükleri bul."
+msgstr "İstenen dil bilgisi sınıflarına karşılık gelen tüm sözcükleri bul."
 
 #: activities/grammar_classes/GrammarClasses.qml:18
 msgctxt "GrammarClasses|"
@@ -15792,8 +15792,8 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Listeden dilbilgisi sınıfını seç, ardından bir sözcüğün altındaki kutuyu seç "
-"ve sınıfı ona ata."
+"Listeden dil bilgisi sınıfını seç, ardından bir sözcüğün altındaki kutuyu "
+"seç ve sınıfı ona ata."
 
 #: activities/grammar_classes/GrammarClasses.qml:19
 msgctxt "GrammarClasses|"
@@ -22025,12 +22025,9 @@ msgstr "Yönler mutlaktır, Tux’un geçerli yönüne bağlı değildirler."
 
 #: activities/path_decoding/ActivityInfo.qml:26
 #: activities/path_decoding_relative/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: flip the selected card"
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: move Tux to the selected square"
-msgstr "Boşluk veya Giriş: Seçili kartı çevir"
+msgstr "Boşluk veya Giriş: Tux’u seçili kareye taşı"
 
 #: activities/path_decoding/resource/1/Data.qml:13
 #: activities/path_decoding/resource/2/Data.qml:13
@@ -28928,7 +28925,7 @@ msgstr ""
 "sanatçıların, yazarların ve çevirmenlerin katılımı ile oluşmuş bir "
 "topluluktur. KDE; Plasma masaüstü ortamını, yüzlerce uygulamayı ve bu "
 "uygulamaları destekleyen çok sayıda yazılım kitaplığını geliştirir.<br /"
-"><br />KDE, işbirliğine dayalı bir kuruluştur; yönünü veya ürünlerini tek "
+"><br />KDE, iş birliğine dayalı bir kuruluştur; yönünü veya ürünlerini tek "
 "başına denetleyen bir kuruluş yoktur. Bunun yerine, dünyanın en iyi özgür "
 "yazılımlarını oluşturma ortak ereğine ulaşmak için birlikte çalışıyoruz. Siz "
 "de dahil olmak üzere herkes <a href=\"%2\">katılıp katkıda bulunabilir</a>."

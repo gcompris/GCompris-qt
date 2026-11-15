@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-11-12 08:52+0400\n"
+"PO-Revision-Date: 2026-11-14 16:52+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -21552,12 +21552,9 @@ msgstr "الاتجاهات مطلقة، فهي لا تعتمد على الاتج
 
 #: activities/path_decoding/ActivityInfo.qml:26
 #: activities/path_decoding_relative/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: flip the selected card"
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: move Tux to the selected square"
-msgstr "مفتاح المسافة أو الإدخال: اقلب البطاقة المحدّدة"
+msgstr "مفتاح المسافة أو الإدخال: انقل تُكس إلى المربع المحدد"
 
 #: activities/path_decoding/resource/1/Data.qml:13
 #: activities/path_decoding/resource/2/Data.qml:13
