@@ -4,7 +4,7 @@
 # Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2017, 2018, 2020.
 # SPDX-FileCopyrightText: 2019, 2021, 2023, 2024, 2025 Frederico Gonçalves Guimarães <frederico@teia.bio.br>
 # Geraldo Simiao <geraldosimiao@fedoraproject.org>, 2023.
-# SPDX-FileCopyrightText: 2025-2026 Marcus Gama <marcus.gama@gmail.com>
+# SPDX-FileCopyrightText: 2025-2026 Marcus Gama <marcus.gama@kde.org>
 # SPDX-FileCopyrightText: 2026 Guilherme Marçal Silva <guimarcalsilva@gmail.com>
 msgid ""
 msgstr ""
