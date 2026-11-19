@@ -21920,6 +21920,9 @@ msgstr ""
 "acabant la partida."
 
 #: activities/oware/oware.js:107
+#, fuzzy
+#| msgctxt "Oware|"
+#| msgid "Invalid Move!"
 msgctxt "oware|"
 msgid "Invalid Move!"
 msgstr "Moviment no vàlid!"
