@@ -3329,39 +3329,29 @@ msgstr ""
 #: activities/path_decoding/ActivityInfo.qml:25
 #: activities/path_decoding_relative/ActivityInfo.qml:26
 #: activities/sudoku/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: move the helicopter"
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the cursor"
-msgstr "Šípky: pohyb helikoptéry"
+msgstr "Šípky: pohyb kurzora"
 
 #: activities/calcudoku/ActivityInfo.qml:26
 #: activities/sudoku/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Tab: navigate between the item list and the mosaic"
 msgctxt "ActivityInfo|"
 msgid "Tab: toggle navigation between the grid and the list"
-msgstr "Tab: prepínanie medzi zoznamom položiek a mozaikou"
+msgstr "Tab: prepínanie navigácie medzi mriežkou a zoznamom"
 
 #: activities/calcudoku/ActivityInfo.qml:27
 #: activities/sudoku/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: select an item from the list"
 msgctxt "ActivityInfo|"
 msgid "Space: add or remove an item in the grid, or select an item in the list"
-msgstr "Space or Enter: select an item from the list"
+msgstr ""
+"Medzerník: pridanie alebo odstránenie položky v mriežke alebo výber položky "
+"v zozname"
 
 #: activities/calcudoku/ActivityInfo.qml:28
 #: activities/sudoku/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: 1 to 6 select/deselect the corresponding dots"
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 9: directly select the corresponding item in the list"
-msgstr "Číslice: 1 až 6 vybrať/nevybrať zodpovedajúce bodky"
+msgstr "Čísla od 1 do 9: priamy výber zodpovedajúcej položky v zozname"
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
@@ -22038,12 +22028,9 @@ msgstr "Smery sú absolútne, nezávisia od aktuálnej orientácie Tuxa."
 
 #: activities/path_decoding/ActivityInfo.qml:26
 #: activities/path_decoding_relative/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: flip the selected card"
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: move Tux to the selected square"
-msgstr "Medzerník alebo Enter: obrátiť zvolenú kartu"
+msgstr "Medzerník alebo Enter: presun Tuxa na vybrané políčko"
 
 #: activities/path_decoding/resource/1/Data.qml:13
 #: activities/path_decoding/resource/2/Data.qml:13

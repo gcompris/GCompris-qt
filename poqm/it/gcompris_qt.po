@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2026-10-19 14:13+0200\n"
+"PO-Revision-Date: 2026-11-14 19:02+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 26.08.2\n"
+"X-Generator: Lokalize 26.08.3\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -3412,39 +3412,30 @@ msgstr ""
 #: activities/path_decoding/ActivityInfo.qml:25
 #: activities/path_decoding_relative/ActivityInfo.qml:26
 #: activities/sudoku/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: move the helicopter"
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the cursor"
-msgstr "Frecce direzionali: sposta l'elicottero"
+msgstr "Frecce direzionali: sposta il cursore"
 
 #: activities/calcudoku/ActivityInfo.qml:26
 #: activities/sudoku/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Tab: navigate between the item list and the mosaic"
 msgctxt "ActivityInfo|"
 msgid "Tab: toggle navigation between the grid and the list"
-msgstr "Tab: naviga tra l'elenco degli elementi e il mosaico"
+msgstr "Tab: alterna la navigazione tra la griglia e l'elenco"
 
 #: activities/calcudoku/ActivityInfo.qml:27
 #: activities/sudoku/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: select an item from the list"
 msgctxt "ActivityInfo|"
 msgid "Space: add or remove an item in the grid, or select an item in the list"
-msgstr "Barra spaziatrice o Invio: seleziona un elemento dall'elenco"
+msgstr ""
+"Barra spaziatrice: aggiungi o rimuovi un elemento nella griglia, oppure "
+"seleziona un elemento nell'elenco"
 
 #: activities/calcudoku/ActivityInfo.qml:28
 #: activities/sudoku/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: 1 to 6 select/deselect the corresponding dots"
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 9: directly select the corresponding item in the list"
-msgstr "Cifre: da 1 a 6 seleziona/deseleziona i punti corrispondenti"
+msgstr ""
+"Numeri da 1 a 9: seleziona direttamente l'elemento corrispondente nell'elenco"
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
@@ -22411,12 +22402,9 @@ msgstr ""
 
 #: activities/path_decoding/ActivityInfo.qml:26
 #: activities/path_decoding_relative/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: flip the selected card"
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: move Tux to the selected square"
-msgstr "Barra spaziatrice o Invio: gira la carta selezionata"
+msgstr "Barra spaziatrice o Invio: sposta Tux nel quadrato selezionato"
 
 #: activities/path_decoding/resource/1/Data.qml:13
 #: activities/path_decoding/resource/2/Data.qml:13
