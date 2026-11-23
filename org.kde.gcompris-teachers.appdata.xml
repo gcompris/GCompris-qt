@@ -38,6 +38,7 @@
   <name xml:lang="sl">GCompris-teachers</name>
   <name xml:lang="tr">GCompris-Teachers</name>
   <name xml:lang="uk">GCompris-teachers</name>
+  <name xml:lang="zh-CN">GCompris 教师端</name>
   <summary>GCompris teachers companion</summary>
   <summary xml:lang="ar">رفيق فهمت للمعلمين</summary>
   <summary xml:lang="bg">Съпътстваща програма за учители на GCompris</summary>
@@ -65,6 +66,7 @@
   <summary xml:lang="tr">GCompris öğretmen yardımcısı</summary>
   <summary xml:lang="ug">GCompris ئوقۇتقۇچى ياردەمچىسى</summary>
   <summary xml:lang="uk">Компаньйон GCompris для вчителів</summary>
+  <summary xml:lang="zh-CN">GCompris 教师助手</summary>
   <description>
     <p>GCompris-teachers is a companion application for teachers to enhance their use of GCompris in their classroom.</p>
     <p xml:lang="ar">فهمت للمعلمين هو التطبيق المرافق للمعلمين لتعزيز استخدامهم لفهمت في فصولهم الدراسية.</p>
@@ -92,6 +94,7 @@
     <p xml:lang="sl">GCompris-teachers je spremljevalna aplikacija za učitelje, ki jim omogoča boljšo uporabo GComprisa v razredu.</p>
     <p xml:lang="tr">GCompris-Teachers, öğretmenlerin GCompris’i sınıflarında daha etkili kullanmalarını sağlayan yardımcı bir uygulamadır.</p>
     <p xml:lang="uk">GCompris-teachers – це супутня програма для вчителів, яка полегшує використання GCompris у класі.</p>
+    <p xml:lang="zh-CN">GCompris 教师端是一款辅助应用程序，旨在帮助教师更好地在课堂上使用 GCompris。</p>
     <p>It allows teachers to create customized datasets and receive pupils
     results for some activities.</p>
     <p xml:lang="ar">يتيح للمعلمين إنشاء مجموعات بيانات مخصصة والحصول على نتائج التلاميذ في بعض الأنشطة.</p>
@@ -119,6 +122,7 @@
     <p xml:lang="sl">Učiteljem omogoča ustvarjanje prilagojenih naborov podatkov in prejemanje rezultatov učencev za nekatere dejavnosti.</p>
     <p xml:lang="tr">Bu özellik, öğretmenlerin özelleştirilmiş veri kümeleri oluşturmasına ve bazı etkinlikler için öğrencilerin sonuçlarını almasına olanak tanır.</p>
     <p xml:lang="uk">Надає змогу вчителям створювати нетипові набори даних та отримати результати учнів для деяких вправ.</p>
+    <p xml:lang="zh-CN">它允许教师创建自定义数据集，并接收部分活动的学生成绩。</p>
   </description>
   <screenshots>
     <screenshot type="default">
@@ -149,6 +153,7 @@
       <caption xml:lang="tr">Öğrenci ve grup yönetimi</caption>
       <caption xml:lang="ug">ئوقۇغۇچى ۋە گۇرۇپپا باشقۇرۇش</caption>
       <caption xml:lang="uk">Керування записами учнів та груп</caption>
+      <caption xml:lang="zh-CN">学生与分组管理</caption>
       <image width="1920" height="1080">https://gcompris.net/screenshots_qt/gcompris-teachers/gcompris-teachers-pupils.png</image>
     </screenshot>
     <screenshot>
@@ -178,6 +183,7 @@
       <caption xml:lang="sl">Prikaz rezultatov za enega učenca</caption>
       <caption xml:lang="tr">Öğrenci sonuçlarını görüntüleme</caption>
       <caption xml:lang="uk">Показ результатів для одного учня</caption>
+      <caption xml:lang="zh-CN">单个学生的成绩显示</caption>
       <image width="1920" height="1080">https://gcompris.net/screenshots_qt/gcompris-teachers/gcompris-teachers-results.png</image>
     </screenshot>
     <screenshot>
@@ -207,6 +213,7 @@
       <caption xml:lang="sl">Prikaz rezultatov za dejavnost navpičnega odštevanja</caption>
       <caption xml:lang="tr">Dikey çıkarma etkinliği sonuçlarını görüntüleme</caption>
       <caption xml:lang="uk">Показ результатів для вправи з вертикального віднімання</caption>
+      <caption xml:lang="zh-CN">竖式减法活动的成绩显示</caption>
       <image width="1920" height="1080">https://gcompris.net/screenshots_qt/gcompris-teachers/gcompris-teachers-vertical-subtraction.png</image>
     </screenshot>
   </screenshots>
