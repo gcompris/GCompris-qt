@@ -56,13 +56,13 @@ msgstr "验证答案"
 #: activities/adjacent_numbers/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find the adjacent numbers"
-msgstr ""
+msgstr "查找相邻数字"
 
 #. Help title
 #: activities/adjacent_numbers/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the missing adjacent numbers."
-msgstr ""
+msgstr "查找缺失的数字。"
 
 #. Help goal
 #: activities/adjacent_numbers/ActivityInfo.qml:19
@@ -116,7 +116,7 @@ msgstr ""
 #: activities/adjacent_numbers/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "Find numbers between 0 and 20."
-msgstr ""
+msgstr "查找 0 到 20 之间的数字。 "
 
 #: activities/adjacent_numbers/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -2347,12 +2347,9 @@ msgstr ""
 #: activities/geography/ActivityInfo.qml:32
 #: activities/imagename/ActivityInfo.qml:32
 #: activities/paintings/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + D: delete selected text"
 msgctxt "ActivityInfo|"
 msgid "Delete or Backspace: remove item from selected spot"
-msgstr "Ctrl + D: 删除选中的文本"
+msgstr ""
 
 #: activities/babymatch/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
@@ -3175,12 +3172,9 @@ msgstr ""
 #: activities/path_decoding/ActivityInfo.qml:25
 #: activities/path_decoding_relative/ActivityInfo.qml:26
 #: activities/sudoku/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: move the helicopter"
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the cursor"
-msgstr "箭头：移动直升机"
+msgstr ""
 
 #: activities/calcudoku/ActivityInfo.qml:26
 #: activities/sudoku/ActivityInfo.qml:27
@@ -3196,12 +3190,9 @@ msgstr ""
 
 #: activities/calcudoku/ActivityInfo.qml:28
 #: activities/sudoku/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: 1 to 6 select/deselect the corresponding dots"
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 9: directly select the corresponding item in the list"
-msgstr "数字 1 到 6: 选择/取消对应点的选择"
+msgstr ""
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
@@ -15649,12 +15640,9 @@ msgstr ""
 
 #: activities/hanoi/ActivityInfo.qml:26
 #: activities/hanoi_real/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: move the selected item"
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the selection cursor through the pegs"
-msgstr "箭头：移动选中的项目"
+msgstr ""
 
 #: activities/hanoi/ActivityInfo.qml:27
 #: activities/hanoi_real/ActivityInfo.qml:26
@@ -19278,7 +19266,7 @@ msgstr "字符间距"
 #: activities/menu/ConfigurationItem.qml:445
 msgctxt "ConfigurationItem|"
 msgid "Teacher's server config"
-msgstr ""
+msgstr "教师服务器配置"
 
 #: activities/menu/ConfigurationItem.qml:653
 msgctxt "ConfigurationItem|"
@@ -19375,7 +19363,7 @@ msgstr "词汇"
 #: activities/menu/Menu.qml:213
 msgctxt "Menu|"
 msgid "GCompris is not connected to teacher's server."
-msgstr ""
+msgstr "GCompris未连接到教师服务器。"
 
 #: activities/menu/Menu.qml:214
 msgctxt "Menu|"
@@ -20010,11 +19998,14 @@ msgid ""
 "For some questions, after validating the answer, a feedback text panel will "
 "be displayed: click anywhere to close this panel after reading it."
 msgstr ""
+"点击答案来选择答案, 然后按 OK 按钮来验证。有些问题需要一个单一答案, 其他问题"
+"需要多个答案。 对于一些问题，在验证答案后，将显示一个反馈文字面板：点击任何地"
+"方在阅读后关闭该面板。"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: navigate through the answer list"
-msgstr ""
+msgstr "向上和向下箭头：浏览答案列表"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -20024,7 +20015,7 @@ msgstr ""
 #: activities/multiple_choice_questions/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
-msgstr ""
+msgstr "Enter：验证您的回答，或关闭反馈文本面板"
 
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
@@ -20963,12 +20954,9 @@ msgstr ""
 
 #: activities/path_decoding/ActivityInfo.qml:26
 #: activities/path_decoding_relative/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: select an item"
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: move Tux to the selected square"
-msgstr "空格键或回车键：选择一项"
+msgstr ""
 
 #: activities/path_decoding/resource/1/Data.qml:13
 #: activities/path_decoding/resource/2/Data.qml:13
@@ -22068,12 +22056,9 @@ msgstr ""
 
 #. Help goal
 #: activities/polygons/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about some digital painting tools."
 msgctxt "ActivityInfo|"
 msgid "Learn about special polygons."
-msgstr "学习一些数字绘画工具。"
+msgstr ""
 
 #. Help manual
 #: activities/polygons/ActivityInfo.qml:28
@@ -22109,20 +22094,14 @@ msgid "Space: select or deselect the point at the cursor position"
 msgstr ""
 
 #: activities/polygons/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Up arrow: select next item"
 msgctxt "ActivityInfo|"
 msgid "Tab: select next point"
-msgstr "上箭头：选择下一个项目"
+msgstr ""
 
 #: activities/polygons/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + D: delete selected text"
 msgctxt "ActivityInfo|"
 msgid "Delete: delete selected point"
-msgstr "Ctrl + D: 删除选中的文本"
+msgstr ""
 
 #: activities/polygons/TutorialDataset.qml:20
 msgctxt "TutorialDataset|"
@@ -22159,12 +22138,9 @@ msgid "A triangle is a polygon with 3 sides."
 msgstr ""
 
 #: activities/polygons/TutorialDataset.qml:42
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the triangle"
 msgctxt "TutorialDataset|"
 msgid "Draw a triangle."
-msgstr "找出三角铁"
+msgstr ""
 
 #: activities/polygons/TutorialDataset.qml:57
 msgctxt "TutorialDataset|"
@@ -27826,12 +27802,12 @@ msgstr ""
 #: core/main.qml:276
 msgctxt "main|"
 msgid "Apply"
-msgstr ""
+msgstr "应用"
 
 #: core/main.qml:277 core/main.qml:592 core/main.qml:667
 msgctxt "main|"
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #: core/main.qml:363
 msgctxt "main|"
@@ -27849,6 +27825,8 @@ msgid ""
 "You should verify that your application settings especially your language is "
 "set correctly. You can do this in the Configuration dialog."
 msgstr ""
+"您应该验证您的应用程序设置，特别是您的语言设置正确。您可以在配置对话框中做到"
+"这一点。"
 
 #: core/main.qml:367
 msgctxt "main|"
@@ -27871,7 +27849,7 @@ msgctxt "main|"
 msgid ""
 "The following activities do not have any active datasets! All of their "
 "datasets will be reactivated."
-msgstr ""
+msgstr "以下活动没有任何活动数据集！他们的所有数据集将被重新激活。"
 
 #: core/main.qml:550
 #, qt-format
@@ -27888,7 +27866,7 @@ msgstr ""
 #: core/main.qml:572 core/main.qml:591 core/main.qml:666
 msgctxt "main|"
 msgid "OK"
-msgstr ""
+msgstr "好的"
 
 #: core/main.qml:587
 msgctxt "main|"

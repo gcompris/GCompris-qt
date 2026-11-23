@@ -21,7 +21,7 @@ msgstr ""
 #: activities/adjacent_numbers/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the missing numbers."
-msgstr ""
+msgstr "查找缺失的数字。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -189,6 +189,8 @@ msgid ""
 "only once in a row and in a column. The numbers in the cells of a cage must "
 "produce the given result when combined using the given operator."
 msgstr ""
+"选择一个数字，并点击其目标位置。每行和每列中的每个数字只能出现一次。使用给定"
+"的运算符进行组合时，框内单元格中的数字必须得出给定的结果。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18
@@ -310,7 +312,7 @@ msgstr "为列表中的每对数字选择正确的比较符号。"
 #: activities/compass/ActivityInfo.qml:17
 #, kde-format
 msgid "Use the compass to draw."
-msgstr ""
+msgstr "使用圆规进行绘制。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
 #: activities/crane/ActivityInfo.qml:23
@@ -336,7 +338,7 @@ msgstr "了解数字电子是如何工作的，并创建自己的电路。"
 #: activities/drawing_wheels/ActivityInfo.qml:22
 #, kde-format
 msgid "Roll the gear in the cogwheel to draw."
-msgstr ""
+msgstr "滚动齿轮中的小齿轮进行绘制。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawletters"
 #: activities/drawletters/ActivityInfo.qml:18
@@ -373,7 +375,7 @@ msgstr "双击或双击砖块来发现隐藏的图片"
 #: activities/erase_clic/ActivityInfo.qml:18
 #, kde-format
 msgid "Click or tap on the transparent bricks and discover the hidden picture."
-msgstr "点击或轻敲透明的砖块，发现隐藏的图片。"
+msgstr "点击或轻敲以擦除方块，从而发现隐藏的图片。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_farm_animals"
 #: activities/explore_farm_animals/ActivityInfo.qml:18
@@ -457,7 +459,7 @@ msgstr "找到所表示分数的正确分子和分母"
 #: activities/frieze/ActivityInfo.qml:17
 #, kde-format
 msgid "Reproduce and complete the frieze model."
-msgstr ""
+msgstr " 重现并完成饰带模型。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -521,13 +523,13 @@ msgstr "用箭头键将吃数狂引导到质数，然后按空格键吞下它们
 #: activities/graduated_line_read/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the value corresponding to the given spot on the graduated line."
-msgstr ""
+msgstr "找出给定刻度线上的点所对应的值。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_use"
 #: activities/graduated_line_use/ActivityInfo.qml:17
 #, kde-format
 msgid "Place the given value on the graduated line."
-msgstr ""
+msgstr "将给定值放置在刻度线上。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
@@ -535,7 +537,7 @@ msgstr ""
 #: activities/grammar_classes/ActivityInfo.qml:21
 #, kde-format
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr ""
+msgstr "为对应的单词分配所要求的词性。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -554,7 +556,7 @@ msgstr "移动飞船以避免撞上行星并到达空间站。"
 #: activities/guess24/ActivityInfo.qml:17
 #, kde-format
 msgid "Use the four numbers with given operators to find 24"
-msgstr ""
+msgstr "使用四个数字和给定的运算符求出 24"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22
@@ -615,7 +617,7 @@ msgstr "单击正确的乐器。"
 #: activities/keyboard_training/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the requested character and type it on the keyboard."
-msgstr ""
+msgstr "找到要求的字符，并在键盘上输入它。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "land_safe"
 #: activities/land_safe/ActivityInfo.qml:18
@@ -878,7 +880,7 @@ msgstr "按照示范，将每个东西放在相同的位置。"
 #: activities/multiple_choice_questions/ActivityInfo.qml:19
 #, kde-format
 msgid "Answer the questions."
-msgstr ""
+msgstr "回答问题。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
 #: activities/nine_men_morris/ActivityInfo.qml:18
@@ -976,7 +978,7 @@ msgstr "使用箭头沿路径移动小企鹅并到达目标。"
 #: activities/peg_solitaire/ActivityInfo.qml:17
 #, kde-format
 msgid "Remove all the pieces in the correct order until only one remains."
-msgstr ""
+msgstr "按正确的顺序移除所有棋子，直到只剩下一个。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "penalty"
 #: activities/penalty/ActivityInfo.qml:18
@@ -1022,7 +1024,7 @@ msgstr "单击鼓以重现节奏"
 #: activities/polygons/ActivityInfo.qml:22
 #, kde-format
 msgid "Draw the requested polygons by clicking on the grid."
-msgstr ""
+msgstr "通过点击网格绘制要求的多边形。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "positions"
 #: activities/positions/ActivityInfo.qml:18
@@ -1118,6 +1120,8 @@ msgid ""
 "direction. You must put all the pieces in the correct order. The numbers on "
 "the pieces can help you."
 msgstr ""
+"点击箭头，使对应的行或列向该方向滑动。您必须按正确的顺序排列所有棋子。棋子上"
+"的数字可以帮助您……"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "sketch"
 #: activities/sketch/ActivityInfo.qml:21
@@ -1199,6 +1203,8 @@ msgid ""
 "number of the same operation to swap their position. Then, select the result "
 "box to type the result."
 msgstr ""
+"创建等于十的对数。选择一个数字，然后选择相同运算中的另一个数字以交换它们的位"
+"置。接着，选择结果框以输入结果。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_find"
 #: activities/tens_complement_find/ActivityInfo.qml:17
@@ -1207,8 +1213,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
-"创建等于 10 的数字对。在列表中选择一个数字，然后选择操作的空白点以将所选数字"
-"移动到该位置。"
+"建立一对相加等于十的数字。从列表中选择一个数字，之后选择算式中的一个空槽，来"
+"将数字移动到空槽中。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_swap"
 #: activities/tens_complement_swap/ActivityInfo.qml:17
@@ -1217,8 +1223,7 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number, then select another "
 "number of the same operation to swap their position."
 msgstr ""
-"创建等于 10 的数字对。选择一个数字，然后选择相同操作的另一个数字以交换其位"
-"置。"
+"创建等于十的数字对。选择一个数字，然后选择相同操作的另一个数字以交换其位置。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_use"
 #: activities/tens_complement_use/ActivityInfo.qml:17
@@ -1228,8 +1233,8 @@ msgid ""
 "number in the list, then select an empty spot of an operation to move the "
 "selected number there."
 msgstr ""
-"分解运算以包含一对等于 10 的数字。在列表中选择一个数字，然后选择操作的空白点"
-"以将所选数字移动到该位置。"
+"分解运算以包含一对等于十的数字。在列表中选择一个数字，然后选择操作的空白点以"
+"将所选数字移动到该位置。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe_2players"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe"

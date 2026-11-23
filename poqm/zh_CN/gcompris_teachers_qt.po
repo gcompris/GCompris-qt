@@ -552,12 +552,12 @@ msgstr "子级"
 #: server/activities/enumerate/EnumerateEditor.qml:28
 msgctxt "EnumerateEditor|"
 msgid "Number of item types"
-msgstr ""
+msgstr "文件数量"
 
 #: server/activities/enumerate/EnumerateEditor.qml:29
 msgctxt "EnumerateEditor|"
 msgid "Maximum number per item type"
-msgstr ""
+msgstr "每类物品的数量上限"
 
 #: server/activities/enumerate/EnumerateEditor.qml:70
 msgctxt "EnumerateEditor|"
@@ -718,22 +718,22 @@ msgstr ""
 #: server/activities/gletters/GlettersDataDisplay.qml:36
 msgctxt "GlettersDataDisplay|"
 msgid "Domino mode:"
-msgstr ""
+msgstr "骨牌样式"
 
 #: server/activities/gletters/GlettersDataDisplay.qml:66
 msgctxt "GlettersDataDisplay|"
 msgid "Visible items:"
-msgstr ""
+msgstr "可见物品"
 
 #: server/activities/gletters/GlettersDataDisplay.qml:95
 msgctxt "GlettersDataDisplay|"
 msgid "Typed answer:"
-msgstr ""
+msgstr "输入的答案："
 
 #: server/activities/gletters/GlettersDataDisplay.qml:121
 msgctxt "GlettersDataDisplay|"
 msgid "Missed item:"
-msgstr ""
+msgstr "缺失的物品"
 
 #. %1 is number of hints displayed. Example: "Hints: 1"
 #: server/activities/guess24/Guess24DataDisplay.qml:79
@@ -746,27 +746,27 @@ msgstr ""
 #, qt-format
 msgctxt "GuessnumberDataDisplay|"
 msgid "Number between %1 and %2."
-msgstr ""
+msgstr "%1 和 %2 之间的数字。"
 
 #: server/activities/guessnumber/GuessnumberDataDisplay.qml:50
 msgctxt "GuessnumberDataDisplay|"
 msgid "Number to guess:"
-msgstr ""
+msgstr "猜数字："
 
 #: server/activities/guessnumber/GuessnumberDataDisplay.qml:77
 msgctxt "GuessnumberDataDisplay|"
 msgid "Steps:"
-msgstr ""
+msgstr "步骤："
 
 #: server/activities/guessnumber/GuessnumberEditor.qml:27
 msgctxt "GuessnumberEditor|"
 msgid "Minimum number"
-msgstr ""
+msgstr "最小值"
 
 #: server/activities/guessnumber/GuessnumberEditor.qml:28
 msgctxt "GuessnumberEditor|"
 msgid "Maximum number"
-msgstr ""
+msgstr "最大值"
 
 #: server/activities/guessnumber/GuessnumberEditor.qml:90
 msgctxt "GuessnumberEditor|"
@@ -1051,7 +1051,7 @@ msgstr ""
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:31
 msgctxt "MagicHatEditor|"
 msgid "If \"Use coefficients\" is not checked:"
-msgstr ""
+msgstr "如果未勾选“使用系数”"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:33
 #, qt-format
@@ -1063,6 +1063,9 @@ msgid ""
 "must be between %1 and %2, the others between 0 and %2. Also the minimum "
 "numbers must not be larger than the corresponding maximum numbers."
 msgstr ""
+"“最大星数”和“最小星数”限制了第一个数字（最上面那个）的 3 行中每一行的星号数"
+"量。它们必须正好包含 3 个整数，每行对应一个。第一个输入值必须介于 %1 和 %2 之"
+"间，其他的在 0 和 %2 之间。此外，最小数字不能大于对应的最大数字。"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:36
 msgctxt "MagicHatEditor|"
@@ -1072,6 +1075,8 @@ msgid ""
 "of the corresponding row of the first operand, the result will not be more "
 "than the \"Maximum result per row\" value."
 msgstr ""
+"第二个数字（底部一行）的每一行将生成一定数量的星星。其生成规则是：将它加上第"
+"一个数字对应行的星星时，结果不能超过“每行最大结果”的值。"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:37
 msgctxt "MagicHatEditor|"
@@ -1081,25 +1086,27 @@ msgid ""
 "corresponding row of the first operand, the result will not be more than the "
 "\"Maximum result per row\" value."
 msgstr ""
+"第二个数字的每一行（底部这一行）都会生成一定数量的星星。其生成规则是：当这些"
+"星星加到第一个数字对应行的星星上时，结果不会超过“每行最大结果”的值。"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:41
 msgctxt "MagicHatEditor|"
 msgid ""
 "If \"Maximum number of stars\" for a row is 0, this row will be empty and "
 "hidden for both operands."
-msgstr ""
+msgstr "如果一个行的“最大星数”为 0，那么这个行对两个操作数都是空和隐藏的。"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:44
 msgctxt "MagicHatEditor|"
 msgid ""
 "\"Maximum result per row\" must be larger than any value in \"Maximum number "
 "of stars\"."
-msgstr ""
+msgstr "“每行最大结果”必须大于“最大星数”中的任何值。"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:46
 msgctxt "MagicHatEditor|"
 msgid "If \"Use coefficients\" is checked:"
-msgstr ""
+msgstr "如果勾选了“使用系数”："
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:48
 msgctxt "MagicHatEditor|"
@@ -1108,41 +1115,43 @@ msgid ""
 "must be between 1 and 10, the others between 0 and 10, and the sum of the 3 "
 "entries must not be larger than 10."
 msgstr ""
+"“行系数”必须正好包含 3 个整数。第一个输入值必须在 1 到 10 之间，其他的在 0 "
+"到 10 之间，且这 3 个输入值的总和不能大于 10。"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:52
 msgctxt "MagicHatEditor|"
 msgid "Use coefficients"
-msgstr ""
+msgstr "使用系数"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:53
 msgctxt "MagicHatEditor|"
 msgid "Maximum result per row"
-msgstr ""
+msgstr "每行最大结果"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:54
 msgctxt "MagicHatEditor|"
 msgid "Use different star sets per row"
-msgstr ""
+msgstr "设置不同组的星星"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:55
 msgctxt "MagicHatEditor|"
 msgid "Maximum number of stars"
-msgstr ""
+msgstr "最大星数"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:56
 msgctxt "MagicHatEditor|"
 msgid "Minimum number of stars"
-msgstr ""
+msgstr "最小星星数量"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:57
 msgctxt "MagicHatEditor|"
 msgid "Coefficient multiplier"
-msgstr ""
+msgstr "系数乘数"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:58
 msgctxt "MagicHatEditor|"
 msgid "Row coefficients"
-msgstr ""
+msgstr "行系数"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:120
 msgctxt "MagicHatEditor|"
@@ -1156,6 +1165,8 @@ msgid ""
 "Level %1 must contain exactly 3 integer numbers in \"Maximum number of stars"
 "\". The first entry must be between %2 and %3, the others between 0 and %3."
 msgstr ""
+"第 %1 关的“最大星数”必须正好包含 3 个整数。第一个输入值必须在 %2 和 %3 之间，"
+"其他的在 0 和 %3 之间"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:169
 #, qt-format
@@ -1166,6 +1177,8 @@ msgid ""
 "and each number must not be larger than the corresponding number in "
 "\"Maximum number of stars\"."
 msgstr ""
+"%1 级别必须在\"最小星数\"必须包含3个整数。 第一个条目必须介于 %2 和 %3之间，"
+"其它条目介于 0 和 %3之间 ，且每个数字不能大于“最大星数”中的相应数字。"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:183
 #, qt-format
@@ -1173,7 +1186,7 @@ msgctxt "MagicHatEditor|"
 msgid ""
 "In Level %1, \"Maximum result per row\" must be larger than any value in "
 "\"Maximum number of stars\"."
-msgstr ""
+msgstr "在第 %1 关中，“每行最大结果”必须大于“最大星数”中的任何值。"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:213
 #, qt-format
@@ -1183,6 +1196,8 @@ msgid ""
 "first entry must be between 1 and 10, the others between 0 and 10, and the "
 "sum of the 3 entries must not be larger than 10."
 msgstr ""
+"第 %1 关的“行系数”必须包含 3 个整数。第一个输入值必须在 1 到 10 之间，其他的"
+"在 0 到 10 之间，且这 3 个输入值的总和不能大于 10。"
 
 #: server/activities/magic-hat-minus/MagicHatEditor.qml:219
 #, qt-format
@@ -1195,7 +1210,7 @@ msgstr ""
 #, qt-format
 msgctxt "StarsBar|"
 msgid "%1x"
-msgstr ""
+msgstr "%1x"
 
 #: server/activities/multiple_choice_questions/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
@@ -1340,17 +1355,17 @@ msgstr ""
 #: server/activities/reversecount/ReversecountDataDisplay.qml:38
 msgctxt "ReversecountDataDisplay|"
 msgid "Domino mode:"
-msgstr ""
+msgstr "Domino 模式："
 
 #: server/activities/reversecount/ReversecountDataDisplay.qml:67
 msgctxt "ReversecountDataDisplay|"
 msgid "Tux position:"
-msgstr ""
+msgstr "小企鹅位置："
 
 #: server/activities/reversecount/ReversecountDataDisplay.qml:92
 msgctxt "ReversecountDataDisplay|"
 msgid "Interval:"
-msgstr ""
+msgstr "间隔："
 
 #: server/activities/reversecount/ReversecountDataDisplay.qml:119
 msgctxt "ReversecountDataDisplay|"
@@ -1361,7 +1376,7 @@ msgstr ""
 #, qt-format
 msgctxt "ReversecountDataDisplay|"
 msgid "(%1 + %2) = %3"
-msgstr ""
+msgstr "(%1 + %2) = %3"
 
 #: server/activities/reversecount/ReversecountEditor.qml:25
 msgctxt "ReversecountEditor|"
@@ -1373,13 +1388,13 @@ msgctxt "ReversecountEditor|"
 msgid ""
 "\"Maximum number\" is the maximum number which can be entered on each side "
 "of the domino."
-msgstr ""
+msgstr "“最大数字”是指可以在多米诺骨牌两侧输入的最大数字。"
 
 #: server/activities/reversecount/ReversecountEditor.qml:29
 msgctxt "ReversecountEditor|"
 msgid ""
 "The maximum interval is the smaller of 15 and 2 × \"Domino maximum number\"."
-msgstr ""
+msgstr "最大间隔取 15 和 2 ×“多米诺最大数字”两者中的较小值。"
 
 #: server/activities/reversecount/ReversecountEditor.qml:31
 msgctxt "ReversecountEditor|"
@@ -1389,21 +1404,23 @@ msgid ""
 "enter several times the same number to increase the probability that it will "
 "be selected."
 msgstr ""
+" “间隔”必须包含介于 1 和最大间隔之间的整数。这些数字将在每道题中随机选取。您"
+"可以多次输入同一个数字，以增加其被选中的概率。"
 
 #: server/activities/reversecount/ReversecountEditor.qml:35
 msgctxt "ReversecountEditor|"
 msgid "Maximum number"
-msgstr ""
+msgstr "最大数量"
 
 #: server/activities/reversecount/ReversecountEditor.qml:36
 msgctxt "ReversecountEditor|"
 msgid "Intervals"
-msgstr ""
+msgstr "间隔"
 
 #: server/activities/reversecount/ReversecountEditor.qml:37
 msgctxt "ReversecountEditor|"
 msgid "Number of fishes"
-msgstr ""
+msgstr "鱼的数量"
 
 #: server/activities/reversecount/ReversecountEditor.qml:86
 msgctxt "ReversecountEditor|"
@@ -1414,7 +1431,7 @@ msgstr "数据集为空。"
 #, qt-format
 msgctxt "ReversecountEditor|"
 msgid "\"Intervals\" for level %1 must not be empty."
-msgstr ""
+msgstr "第 %1 关的“间隔”不能为空。"
 
 #: server/activities/reversecount/ReversecountEditor.qml:112
 #, qt-format
@@ -1422,7 +1439,7 @@ msgctxt "ReversecountEditor|"
 msgid ""
 "These intervals are invalid for level %1: %2. Read the instructions for more "
 "details."
-msgstr ""
+msgstr " 第 %1 关的这些间隔无效：%2。请阅读说明以了解详情。"
 
 #: server/activities/reversecount/ReversecountEditor.qml:116
 #, qt-format
@@ -1433,12 +1450,12 @@ msgstr ""
 #: server/activities/share/ShareDataDisplay.qml:49
 msgctxt "ShareDataDisplay|"
 msgid "Number of candies:"
-msgstr ""
+msgstr "糖果数量："
 
 #: server/activities/share/ShareDataDisplay.qml:76
 msgctxt "ShareDataDisplay|"
 msgid "Placed girls:"
-msgstr ""
+msgstr "已放置的女孩："
 
 #. Display a fraction
 #: server/activities/share/ShareDataDisplay.qml:87
@@ -1447,32 +1464,32 @@ msgstr ""
 #, qt-format
 msgctxt "ShareDataDisplay|"
 msgid "%1 / %2"
-msgstr ""
+msgstr "%1 / %2"
 
 #: server/activities/share/ShareDataDisplay.qml:107
 msgctxt "ShareDataDisplay|"
 msgid "Placed boys:"
-msgstr ""
+msgstr "已放置的男孩："
 
 #: server/activities/share/ShareDataDisplay.qml:137
 msgctxt "ShareDataDisplay|"
 msgid "Expected candies per child:"
-msgstr ""
+msgstr "每个孩子预期获得的糖果："
 
 #: server/activities/share/ShareDataDisplay.qml:164
 msgctxt "ShareDataDisplay|"
 msgid "Candies for girls:"
-msgstr ""
+msgstr "女孩的糖果："
 
 #: server/activities/share/ShareDataDisplay.qml:195
 msgctxt "ShareDataDisplay|"
 msgid "Candies for boys:"
-msgstr ""
+msgstr "男孩的糖果："
 
 #: server/activities/share/ShareDataDisplay.qml:224
 msgctxt "ShareDataDisplay|"
 msgid "Jar placed:"
-msgstr ""
+msgstr "已放置的罐子："
 
 #: server/activities/share/ShareDataDisplay.qml:234
 msgctxt "ShareDataDisplay|"
@@ -1487,7 +1504,7 @@ msgstr ""
 #: server/activities/share/ShareDataDisplay.qml:251
 msgctxt "ShareDataDisplay|"
 msgid "Candies in the jar:"
-msgstr ""
+msgstr "罐子里的糖果："
 
 #: server/activities/share/ShareEditor.qml:22
 msgctxt "ShareEditor|"
@@ -1498,7 +1515,7 @@ msgstr ""
 msgctxt "ShareEditor|"
 msgid ""
 "In general, there can not be more than 6 children, and 6 candies per child."
-msgstr ""
+msgstr "通常情况下，每个儿童不能超过6名，且每个孩子不能超过 6 颗糖果。"
 
 #: server/activities/share/ShareEditor.qml:26
 msgctxt "ShareEditor|"
@@ -1506,6 +1523,8 @@ msgid ""
 "If \"Random numbers\" is selected, the number of already placed candies per "
 "child must be defined such that not all candies are already placed."
 msgstr ""
+"如果您选择了“随机数字”，那么每个孩子已放置的糖果数量必须设置得当，以确保并非"
+"所有糖果都已被放置。"
 
 #: server/activities/share/ShareEditor.qml:28
 msgctxt "ShareEditor|"
@@ -1513,6 +1532,8 @@ msgid ""
 "The \"Instruction\" field allows to give a specific instruction for each "
 "sublevel. If it is empty, a default instruction text is used."
 msgstr ""
+"如果选择了“随机数字”，必须合理设置每个孩子已放置的糖果数，以确保不会把糖果全"
+"部分完。"
 
 #: server/activities/share/ShareEditor.qml:33
 msgctxt "ShareEditor|"
@@ -1532,52 +1553,52 @@ msgstr ""
 #: server/activities/share/ShareEditor.qml:44
 msgctxt "ShareEditor|"
 msgid "Number of girls"
-msgstr ""
+msgstr "女孩数量"
 
 #: server/activities/share/ShareEditor.qml:45
 msgctxt "ShareEditor|"
 msgid "Number of boys"
-msgstr ""
+msgstr "男生人数"
 
 #: server/activities/share/ShareEditor.qml:46
 msgctxt "ShareEditor|"
 msgid "Number of candies"
-msgstr ""
+msgstr "糖果数量"
 
 #: server/activities/share/ShareEditor.qml:47
 msgctxt "ShareEditor|"
 msgid "Candies already placed per girl"
-msgstr ""
+msgstr "每个女孩已放置的糖果"
 
 #: server/activities/share/ShareEditor.qml:48
 msgctxt "ShareEditor|"
 msgid "Candies already placed per boy"
-msgstr ""
+msgstr " 每个男孩已放置的糖果"
 
 #: server/activities/share/ShareEditor.qml:49
 msgctxt "ShareEditor|"
 msgid "Force showing the jar"
-msgstr ""
+msgstr "显示罐子"
 
 #: server/activities/share/ShareEditor.qml:52
 msgctxt "ShareEditor|"
 msgid "Maximum number of girls"
-msgstr ""
+msgstr "女孩数量上限"
 
 #: server/activities/share/ShareEditor.qml:53
 msgctxt "ShareEditor|"
 msgid "Maximum number of boys"
-msgstr ""
+msgstr "男孩数量上限"
 
 #: server/activities/share/ShareEditor.qml:54
 msgctxt "ShareEditor|"
 msgid "Maximum number of candies"
-msgstr ""
+msgstr "糖果数量上限"
 
 #: server/activities/share/ShareEditor.qml:55
 msgctxt "ShareEditor|"
 msgid "Already place some candies"
-msgstr ""
+msgstr "预先放置一些糖果"
 
 #: server/activities/share/ShareEditor.qml:58
 msgctxt "ShareEditor|"
@@ -1599,14 +1620,14 @@ msgstr ""
 #, qt-format
 msgctxt "ShareEditor|"
 msgid "In Sublevel %2 of Level %1, the total number of children is 0."
-msgstr ""
+msgstr "在第 %1 关的子关卡 %2 中，孩子总数为 0。"
 
 #: server/activities/share/ShareEditor.qml:317
 #, qt-format
 msgctxt "ShareEditor|"
 msgid ""
 "In Sublevel %2 of Level %1, the number of already placed candies is too high."
-msgstr ""
+msgstr " 在第 %1 关的子关卡 %2 中，已放置的糖果数量过多。"
 
 #: server/activities/share/ShareEditor.qml:324
 #, qt-format
@@ -1625,6 +1646,8 @@ msgid ""
 "\"Sublevels\" defines the amount of numbers which will appear in the level. "
 "Numbers will be randomly selected from the \"Numbers\" list."
 msgstr ""
+"“子关卡”定义了关卡中将要出现的数字数量。系统将从“数字”列表中随机选取数字。选"
+"单, 列表选单, 列表校平从、中"
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:29
 msgctxt "SmallnumbersEditor|"
@@ -1633,13 +1656,15 @@ msgid ""
 "must contain at least two numbers. You can enter the same number several "
 "times to increase the probability that it will appear."
 msgstr ""
+"“数字”必须包含一个由 0 到 9 之间的整数组成的列表，且必须至少包含两个数字。您"
+"可以多次输入同一个数字，以增加其出现的概率。"
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:31
 msgctxt "SmallnumbersEditor|"
 msgid ""
 "You can enter an optional instruction sentence in the \"Instruction\" field, "
 "or leave it empty."
-msgstr ""
+msgstr "您可以在“说明”字段中输入一句可选的说明，或者将其留空。"
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:36
 msgctxt "SmallnumbersEditor|"
@@ -1665,13 +1690,13 @@ msgstr "数据集为空。"
 #, qt-format
 msgctxt "SmallnumbersEditor|"
 msgid "\"Numbers\" for level %1 must not be empty."
-msgstr ""
+msgstr "第 %1 关的“数字”不能为空"
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:95
 #, qt-format
 msgctxt "SmallnumbersEditor|"
 msgid "\"Numbers\" for level %1 must contain at least two entries."
-msgstr ""
+msgstr "第 %1 关的“数字”必须至少包含两个输入项。"
 
 #: server/activities/smallnumbers/SmallnumbersEditor.qml:114
 #, qt-format
@@ -1694,16 +1719,18 @@ msgid ""
 "center outward. It must contain only integer numbers. Typically all values "
 "should be in descending order."
 msgstr ""
+"“目标分值”定义了靶子从中心向外每一环的得分。它必须只包含整数。通常，所有数值"
+"都应按降序排列。"
 
 #: server/activities/target/TargetDataDisplay.qml:34
 msgctxt "TargetDataDisplay|"
 msgid "Target values:"
-msgstr ""
+msgstr "目标分值："
 
 #: server/activities/target/TargetDataDisplay.qml:64
 msgctxt "TargetDataDisplay|"
 msgid "Addition:"
-msgstr ""
+msgstr "加法："
 
 #: server/activities/target/TargetDataDisplay.qml:92
 msgctxt "TargetDataDisplay|"
@@ -1713,7 +1740,7 @@ msgstr ""
 #: server/activities/target/TargetDataDisplay.qml:118
 msgctxt "TargetDataDisplay|"
 msgid "Expected answer:"
-msgstr ""
+msgstr "预期答案："
 
 #: server/activities/target/TargetEditor.qml:27
 msgctxt "TargetEditor|"
@@ -1723,12 +1750,12 @@ msgstr "子级"
 #: server/activities/target/TargetEditor.qml:28
 msgctxt "TargetEditor|"
 msgid "Number of darts"
-msgstr ""
+msgstr "飞镖数量"
 
 #: server/activities/target/TargetEditor.qml:29
 msgctxt "TargetEditor|"
 msgid "Target values"
-msgstr ""
+msgstr "目标分值"
 
 #: server/activities/target/TargetEditor.qml:73
 msgctxt "TargetEditor|"
@@ -1739,13 +1766,13 @@ msgstr "数据集为空。"
 #, qt-format
 msgctxt "TargetEditor|"
 msgid "\"Target values\" for level %1 must not be empty."
-msgstr ""
+msgstr "第 %1 关的“目标分值”不能为空。"
 
 #: server/activities/target/TargetEditor.qml:90
 #, qt-format
 msgctxt "TargetEditor|"
 msgid "\"Target values\" for level %1 contains invalid entries."
-msgstr ""
+msgstr "第 %1 关的“目标分值”包含无效的输入项。"
 
 #: server/activities/target/TargetEditor.qml:97
 #, qt-format
@@ -1757,7 +1784,7 @@ msgstr ""
 #: server/activities/tens_complement_use/ActivityEditor.qml:15
 msgctxt "ActivityEditor|"
 msgid "All numbers must be positive integers"
-msgstr ""
+msgstr "所有数字必须是正整数"
 
 #: server/activities/tens_complement_find/ActivityEditor.qml:17
 msgctxt "ActivityEditor|"
@@ -1766,6 +1793,8 @@ msgid ""
 "cards, and there is already 1 card per addition, or 2 cards per addition if "
 "\"Find both numbers\" is selected."
 msgstr ""
+"请勿添加过多的“额外卡片”！每个子关卡最多只能有 6 张卡片，且每次加法运算已自"
+"带 1 张卡片；如果选择了“寻找两个数字”，则每次加法自带 2 张卡片。"
 
 #: server/activities/tens_complement_find/ActivityEditor.qml:19
 msgctxt "ActivityEditor|"
@@ -1774,16 +1803,18 @@ msgid ""
 "must contain 1, 2 or 3 numbers between 1 and 9. There is one addition for "
 "each \"First operand\" number."
 msgstr ""
+"如果未选择“随机题目”，则每个子关卡的“第一操作数”必须包含 1 个、2 个或 3 个介"
+"于 1 到 9 之间的数字。每个“第一操作数”对应一道加法题。"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:27
 msgctxt "TensComplementFindEditor|"
 msgid "Random questions"
-msgstr ""
+msgstr "随机题目"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:28
 msgctxt "TensComplementFindEditor|"
 msgid "Find both numbers"
-msgstr ""
+msgstr "找到两个数字"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:29
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:35
@@ -1794,33 +1825,33 @@ msgstr "子级"
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:30
 msgctxt "TensComplementFindEditor|"
 msgid "Additions per sublevel"
-msgstr ""
+msgstr "每个子关卡的加法题数"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:31
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:41
 msgctxt "TensComplementFindEditor|"
 msgid "Extra cards"
-msgstr ""
+msgstr "额外卡片"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:32
 msgctxt "TensComplementFindEditor|"
 msgid "Minimum first operand"
-msgstr ""
+msgstr "最小第一操作数"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:33
 msgctxt "TensComplementFindEditor|"
 msgid "Maximum first operand"
-msgstr ""
+msgstr "最大第一操作数"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:34
 msgctxt "TensComplementFindEditor|"
 msgid "Shuffle operands"
-msgstr ""
+msgstr "随机打乱数字"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:40
 msgctxt "TensComplementFindEditor|"
 msgid "First operands"
-msgstr ""
+msgstr "第一个操作数"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:163
 msgctxt "TensComplementFindEditor|"
@@ -1831,7 +1862,7 @@ msgstr "数据集为空。"
 #, qt-format
 msgctxt "TensComplementFindEditor|"
 msgid "Level %1 contains too many extra cards."
-msgstr ""
+msgstr "第 %1 级别包含过多额外的卡片。"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:184
 #, qt-format
@@ -1843,25 +1874,25 @@ msgstr ""
 #, qt-format
 msgctxt "TensComplementFindEditor|"
 msgid "Sublevel %2 of Level %1 must not be empty."
-msgstr ""
+msgstr "第 %1 关的子关卡 %2 不能为空。"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:200
 #, qt-format
 msgctxt "TensComplementFindEditor|"
 msgid "Sublevel %2 of Level %1 contains invalid First operands."
-msgstr ""
+msgstr "第 %1 关的子关卡的 %2 包含无效的第一个操作数。"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:210
 #, qt-format
 msgctxt "TensComplementFindEditor|"
 msgid "Sublevel %2 of Level %1 contains invalid extra cards."
-msgstr ""
+msgstr "第 %1 关的子关卡 %2 包含无效的额外卡片。"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:218
 #, qt-format
 msgctxt "TensComplementFindEditor|"
 msgid "Sublevel %2 of Level %1 contains too many extra cards."
-msgstr ""
+msgstr "第 %1 关的子关卡 %2 包含过多的额外卡片。"
 
 #: server/activities/tens_complement_find/TensComplementFindEditor.qml:226
 #, qt-format
@@ -1877,7 +1908,7 @@ msgstr ""
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:27
 msgctxt "TensComplementSwapEditor|"
 msgid "All numbers must be positive integers"
-msgstr ""
+msgstr "所有数字必须是正整数"
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:29
 msgctxt "TensComplementSwapEditor|"
@@ -1886,6 +1917,9 @@ msgid ""
 "entries. Each entry must be a number between 1 and 9. The resulting addition "
 "will contain the given entries and their complement to 10."
 msgstr ""
+"如果未选择“随机操作数”，“操作数”必须包含 1 个、2 个或 3 个输入项。每个输入项"
+"必须是 1 到 9 之间的数字。生成的加法算式将包含这些给定的输入项，以及它们凑成 "
+"10 的互补数。"
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:31
 msgctxt "TensComplementSwapEditor|"
@@ -1895,6 +1929,9 @@ msgid ""
 "if \"Operands\" contains 2 numbers, and not used if \"Operands\" contains 3 "
 "numbers."
 msgstr ""
+"“额外操作数”可以包含 1 到 9 之间的 1 个数字，该数字将被添加到加法算式中。如"
+"果“操作数”包含 1 个数字，则此选项为必填；如果“操作数”包含 2 个数字，则为选"
+"填；如果“操作数”包含 3 个数字，则不使用此选项。"
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:35
 msgctxt "TensComplementSwapEditor|"
@@ -1914,17 +1951,17 @@ msgstr ""
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:42
 msgctxt "TensComplementSwapEditor|"
 msgid "Number of operands"
-msgstr ""
+msgstr "操作数"
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:43
 msgctxt "TensComplementSwapEditor|"
 msgid "Operands"
-msgstr ""
+msgstr "操作符："
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:44
 msgctxt "TensComplementSwapEditor|"
 msgid "Extra operand"
-msgstr ""
+msgstr "额外操作"
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:144
 msgctxt "TensComplementSwapEditor|"
@@ -1943,7 +1980,7 @@ msgctxt "TensComplementSwapEditor|"
 msgid ""
 "Content of Addition %2 of Level %1 is not valid. Please check the "
 "instructions."
-msgstr ""
+msgstr "第 %1 关的加法 %2 的内容无效。请检查说明。"
 
 #: server/activities/tens_complement_swap/TensComplementSwapEditor.qml:198
 #, qt-format
@@ -1957,6 +1994,8 @@ msgid ""
 "Do not add too many \"Extra cards\"! Each sublevel must not have more than 6 "
 "cards, and there are already 2 cards per addition."
 msgstr ""
+"不要添加太多“额外卡片”！每个子层级的卡片不得超过6张，每个添加的卡片已经超过2"
+"张。"
 
 #: server/activities/tens_complement_use/ActivityEditor.qml:19
 msgctxt "ActivityEditor|"
@@ -1964,11 +2003,13 @@ msgid ""
 "In \"Additions\", each entry must be an addition which first number is "
 "between 1 and 9, and which result is between 11 and 99."
 msgstr ""
+"在“加法”列表中，每个输入项必须是一道加法题，其第一个数字必须介于 1 到 9 之"
+"间，且结果必须介于 11 到 99 之间。"
 
 #: server/activities/tens_complement_use/TensComplementUseDataDisplay.qml:36
 msgctxt "TensComplementUseDataDisplay|"
 msgid "Proposed numbers:"
-msgstr ""
+msgstr "提出的数字:"
 
 #: server/activities/tens_complement_use/TensComplementUseDataDisplay.qml:71
 msgctxt "TensComplementUseDataDisplay|"
@@ -1983,7 +2024,7 @@ msgstr ""
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:27
 msgctxt "TensComplementUseEditor|"
 msgid "Random questions"
-msgstr ""
+msgstr "随机问题："
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:28
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:34
@@ -1994,23 +2035,23 @@ msgstr "子级"
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:29
 msgctxt "TensComplementUseEditor|"
 msgid "Additions per sublevel"
-msgstr ""
+msgstr "每个子关卡的加法题数"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:30
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:40
 msgctxt "TensComplementUseEditor|"
 msgid "Extra cards"
-msgstr ""
+msgstr "额外卡片"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:31
 msgctxt "TensComplementUseEditor|"
 msgid "Minimum result"
-msgstr ""
+msgstr "最小结果"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:32
 msgctxt "TensComplementUseEditor|"
 msgid "Maximum result"
-msgstr ""
+msgstr "最大结果"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:33
 msgctxt "TensComplementUseEditor|"
@@ -2031,7 +2072,7 @@ msgstr "数据集为空。"
 #, qt-format
 msgctxt "TensComplementUseEditor|"
 msgid "Level %1 contains too many extra cards."
-msgstr ""
+msgstr "第 %1 关包含过多的额外卡片。"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:175
 #, qt-format
@@ -2043,25 +2084,25 @@ msgstr ""
 #, qt-format
 msgctxt "TensComplementUseEditor|"
 msgid "Sublevel %2 of Level %1 must not be empty."
-msgstr ""
+msgstr "第 %1 关的小关卡 %2 不能为空。"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:194
 #, qt-format
 msgctxt "TensComplementUseEditor|"
 msgid "Addition %3 of Sublevel %2 of Level %1 is not correct."
-msgstr ""
+msgstr "第 %1 关的子关卡 %2 中的加法题 %3 不正确。"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:204
 #, qt-format
 msgctxt "TensComplementUseEditor|"
 msgid "Sublevel %2 of Level %1 contains invalid extra cards."
-msgstr ""
+msgstr "第 %1 关的子关卡 %2 包含无效的额外卡片。"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:212
 #, qt-format
 msgctxt "TensComplementUseEditor|"
 msgid "Sublevel %2 of Level %1 contains too many extra cards."
-msgstr ""
+msgstr "第 %1 关的子关卡 %2 包含过多的额外卡片。"
 
 #: server/activities/tens_complement_use/TensComplementUseEditor.qml:220
 #, qt-format
@@ -2169,7 +2210,7 @@ msgstr ""
 #, qt-format
 msgctxt "SequenceElement|"
 msgid "Dataset: %1"
-msgstr ""
+msgstr "数据集: %1"
 
 #: server/components/ServerLanguageList.qml:32
 msgctxt "ServerLanguageList|"
@@ -2228,7 +2269,7 @@ msgstr ""
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Pupil login <b>%1</b> already exists."
-msgstr ""
+msgstr "学生登录名 <b>%1</b> 已存在。"
 
 #: server/controllers/database-controller.cpp:500
 #, qt-format
@@ -2300,13 +2341,13 @@ msgstr ""
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Error inserting sequence in table sequence_: <b>%1</b>."
-msgstr ""
+msgstr "在数据表 sequence_ 中插入序列时出错：<b>%1</b>。"
 
 #: server/controllers/database-controller.cpp:746
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Error updating sequence in table sequence_: <b>%1</b>."
-msgstr ""
+msgstr "在数据表 sequence_ 中更新序列时出错：<b>%1</b>。"
 
 #: server/controllers/database-controller.cpp:754
 #: server/controllers/database-controller.cpp:802
@@ -2314,7 +2355,7 @@ msgstr ""
 msgctxt "controllers::DatabaseController|"
 msgid ""
 "Sequence <b>%1</b> couldn't be deleted from table sequence_with_activity_."
-msgstr ""
+msgstr "无法从数据表 sequence_with_activity_ 中删除序列 <b>%1</b>。"
 
 #: server/controllers/database-controller.cpp:759
 #: server/controllers/database-controller.cpp:806
@@ -2322,13 +2363,13 @@ msgstr ""
 msgctxt "controllers::DatabaseController|"
 msgid ""
 "Sequence <b>%1</b> couldn't be deleted from table activity_with_datasets_."
-msgstr ""
+msgstr "无法从数据表 sequence_with_activity_ 中删除序列 <b>%1</b>。"
 
 #: server/controllers/database-controller.cpp:798
 #, qt-format
 msgctxt "controllers::DatabaseController|"
 msgid "Sequence <b>%1</b> could not be deleted from table sequence_."
-msgstr ""
+msgstr "无法从数据表 sequence_ 中删除序列 <b>%1</b>。"
 
 #: server/controllers/network-controller.cpp:46
 #, qt-format
@@ -2480,6 +2521,10 @@ msgid ""
 "Patrick Dummy;group 1;%1\n"
 "Patricia Brown;group 1,group 2;%2\n"
 msgstr ""
+"格式：姓名;群组;密码\n"
+"示例：\n"
+"Patrick Dummy;group 1;%1\n"
+"Patricia Brown;group 1,group 2;%2\n"
 
 #: server/dialogs/ImportPupilsDialog.qml:94
 msgctxt "ImportPupilsDialog|"
@@ -2542,7 +2587,7 @@ msgstr ""
 msgctxt "RemoveSequenceDialog|"
 msgid ""
 "Are you sure you want to delete the following sequence from the database?"
-msgstr ""
+msgstr "您确定要从数据库中删除以下序列吗？"
 
 #: server/dialogs/SendDatasetDialog.qml:93
 msgctxt "SendDatasetDialog|"
@@ -2569,19 +2614,19 @@ msgstr ""
 #: server/dialogs/SendSequenceDialog.qml:104
 msgctxt "SendSequenceDialog|"
 msgid "Do you want to send the sequence to selected pupils?"
-msgstr ""
+msgstr "您要将该序列发送给选定的学生吗？"
 
 #: server/dialogs/SendSequenceDialog.qml:105
 msgctxt "SendSequenceDialog|"
 msgid "Are you sure you want to remove the sequence from selected pupils?"
-msgstr ""
+msgstr "您确定要从选定的学生中移除该序列吗？"
 
 #: server/dialogs/SendSequenceDialog.qml:106
 msgctxt "SendSequenceDialog|"
 msgid ""
 "Are you sure you want to remove all the existing sequences from selected "
 "pupils?"
-msgstr ""
+msgstr "您确定要从选定的学生中移除所有现有的序列吗？"
 
 #: server/dialogs/SendSequenceDialog.qml:140
 msgctxt "SendSequenceDialog|"
@@ -2591,22 +2636,22 @@ msgstr ""
 #: server/dialogs/SequenceEditorDialog.qml:50
 msgctxt "SequenceEditorDialog|"
 msgid "Create sequence"
-msgstr ""
+msgstr "创建序列"
 
 #: server/dialogs/SequenceEditorDialog.qml:56
 msgctxt "SequenceEditorDialog|"
 msgid "Update sequence"
-msgstr ""
+msgstr "更新序列"
 
 #: server/dialogs/SequenceEditorDialog.qml:81
 msgctxt "SequenceEditorDialog|"
 msgid "Sequence name is empty"
-msgstr ""
+msgstr "序列名称为空"
 
 #: server/dialogs/SequenceEditorDialog.qml:163
 msgctxt "SequenceEditorDialog|"
 msgid "Sequence name"
-msgstr ""
+msgstr "序列名称"
 
 #: server/dialogs/SequenceEditorDialog.qml:177
 msgctxt "SequenceEditorDialog|"
@@ -2686,7 +2731,7 @@ msgstr ""
 #: server/panels/NavigationPanel.qml:111
 msgctxt "NavigationPanel|"
 msgid "Sequences"
-msgstr ""
+msgstr "序列"
 
 #: server/panels/NavigationPanel.qml:119
 msgctxt "NavigationPanel|"
@@ -2741,7 +2786,7 @@ msgstr ""
 #: server/singletons/Master.qml:53
 msgctxt "Master|"
 msgid "Activity ID"
-msgstr ""
+msgstr "活动 ID"
 
 #: server/singletons/Master.qml:54
 msgctxt "Master|"
@@ -2806,12 +2851,12 @@ msgstr ""
 #: server/views/charts/ActivitiesChart.qml:104
 msgctxt "ActivitiesChart|"
 msgid "Daily activities chart"
-msgstr ""
+msgstr "每日活动图表"
 
 #: server/views/charts/PupilsChart.qml:101
 msgctxt "PupilsChart|"
 msgid "User activities chart"
-msgstr ""
+msgstr "用户活动图表"
 
 #: server/views/ChartsView.qml:136
 msgctxt "ChartsView|"
@@ -2909,7 +2954,7 @@ msgstr ""
 #: server/views/datas/DuplicateData.qml:212
 msgctxt "DuplicateData|"
 msgid "You are about to delete data"
-msgstr ""
+msgstr "您即将删除数据"
 
 #: server/views/datas/DuplicateData.qml:230
 msgctxt "DuplicateData|"
@@ -2984,7 +3029,7 @@ msgstr ""
 #: server/views/DevicesView.qml:56
 msgctxt "DevicesView|"
 msgid "Logged in"
-msgstr ""
+msgstr "正在登录"
 
 #: server/views/DevicesView.qml:58
 msgctxt "DevicesView|"
@@ -3054,7 +3099,7 @@ msgstr ""
 #: server/views/DevicesView.qml:250
 msgctxt "DevicesView|"
 msgid "Logged in:"
-msgstr ""
+msgstr " 已登录："
 
 #: server/views/DevicesView.qml:257
 msgctxt "DevicesView|"
@@ -3190,37 +3235,37 @@ msgstr ""
 #: server/views/SequencesView.qml:67
 msgctxt "SequencesView|"
 msgid "Sequences"
-msgstr ""
+msgstr "序列"
 
 #: server/views/SequencesView.qml:102
 msgctxt "SequencesView|"
 msgid "Details"
-msgstr ""
+msgstr " 详情"
 
 #: server/views/SequencesView.qml:169
 msgctxt "SequencesView|"
 msgid "Sequences management"
-msgstr ""
+msgstr "序列管理"
 
 #: server/views/SequencesView.qml:187
 msgctxt "SequencesView|"
 msgid "Create sequence"
-msgstr ""
+msgstr "创建序列"
 
 #: server/views/SequencesView.qml:195
 msgctxt "SequencesView|"
 msgid "Update sequence"
-msgstr ""
+msgstr "更新序列"
 
 #: server/views/SequencesView.qml:204
 msgctxt "SequencesView|"
 msgid "Send sequence to clients"
-msgstr ""
+msgstr "将序列发送至客户端"
 
 #: server/views/SequencesView.qml:247
 msgctxt "SequencesView|"
 msgid "Delete sequence"
-msgstr ""
+msgstr " 删除序列"
 
 #: server/views/SettingsView.qml:65
 msgctxt "SettingsView|"
@@ -3275,7 +3320,7 @@ msgstr ""
 #: server/views/SettingsView.qml:188
 msgctxt "SettingsView|"
 msgid "Server status"
-msgstr ""
+msgstr "服务器状态"
 
 #: server/views/SettingsView.qml:189
 msgctxt "SettingsView|As in 'The server is running'"
@@ -3366,7 +3411,7 @@ msgstr ""
 #: server/views/SettingsView.qml:297
 msgctxt "SettingsView|"
 msgid "Pupils logged in"
-msgstr ""
+msgstr "已登录的学生"
 
 #: server/views/SettingsView.qml:304
 msgctxt "SettingsView|"

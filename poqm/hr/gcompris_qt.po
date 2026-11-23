@@ -3330,39 +3330,28 @@ msgstr ""
 #: activities/path_decoding/ActivityInfo.qml:25
 #: activities/path_decoding_relative/ActivityInfo.qml:26
 #: activities/sudoku/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: move the helicopter"
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the cursor"
-msgstr "Strelice: pomakni helikopter"
+msgstr "Strelice: pomicanje pokazivača"
 
 #: activities/calcudoku/ActivityInfo.qml:26
 #: activities/sudoku/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Tab: navigate between the item list and the mosaic"
 msgctxt "ActivityInfo|"
 msgid "Tab: toggle navigation between the grid and the list"
-msgstr "Tab: kretanje između popisa stavki i mozaika"
+msgstr "Tab: prebacivanje prikaza između rešetke i popisa"
 
 #: activities/calcudoku/ActivityInfo.qml:27
 #: activities/sudoku/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: select an item from the list"
 msgctxt "ActivityInfo|"
 msgid "Space: add or remove an item in the grid, or select an item in the list"
-msgstr "Razmaknica ili Enter: odaberi stavku s popisa"
+msgstr ""
+"Razmaknica: dodaj ili ukloni stavku u mreži, odnosno odaberi stavku na popisu"
 
 #: activities/calcudoku/ActivityInfo.qml:28
 #: activities/sudoku/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: 1 to 6 select/deselect the corresponding dots"
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 9: directly select the corresponding item in the list"
-msgstr "Znamenke: 1 do 6 odaberite/poništite odabir odgovarajućih točaka"
+msgstr "Brojevi od 1 do 9: izravno odaberi odgovarajuću stavku na popisu"
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
@@ -16364,15 +16353,9 @@ msgstr ""
 
 #: activities/hanoi/ActivityInfo.qml:26
 #: activities/hanoi_real/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Arrows: move the selection cursor through the panel items and board spots"
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the selection cursor through the pegs"
-msgstr ""
-"Strelice: pomicanje pokazivača odabira kroz stavke na ploči i polja na ploči "
-"za igru"
+msgstr "Strelice: pomicanje pokazivača odabira kroz klinove"
 
 #: activities/hanoi/ActivityInfo.qml:27
 #: activities/hanoi_real/ActivityInfo.qml:26
@@ -16381,6 +16364,8 @@ msgid ""
 "Space or Enter: select/deselect the top disc on the selected peg, or move "
 "the selected disc to the selected peg"
 msgstr ""
+"Razmaknica ili Enter: odaberi/poništi odabir gornjeg diska na odabranom "
+"stupu ili premjesti odabrani disk na odabrani stup"
 
 #: activities/hanoi/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -22047,12 +22032,9 @@ msgstr "Smjerovi su apsolutni, ne ovise o trenutnoj orijentaciji Tuxa."
 
 #: activities/path_decoding/ActivityInfo.qml:26
 #: activities/path_decoding_relative/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: flip the selected card"
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: move Tux to the selected square"
-msgstr "Razmaknica ili Enter: okreni odabranu karticu"
+msgstr "Razmaknica ili Enter: pomakni Tuxa na odabrano polje"
 
 #: activities/path_decoding/resource/1/Data.qml:13
 #: activities/path_decoding/resource/2/Data.qml:13
