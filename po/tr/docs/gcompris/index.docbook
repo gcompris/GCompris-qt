@@ -438,7 +438,7 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; uluslararasılaştırılmıştır ve 35’ten fazla dilde kullanılabilir. Dilinizin var olup olmadığını denetlemek istiyorsanız &gcompris;’i başlatabilir ve yapılandırma seçeneğinden bakabilirsiniz.</para>
 <para
->Dikkatli olun; bazı diller düzgünce görüntülenebilmek için belirli yazıtiplerine gereksinim duyarlar.</para
+>Dikkatli olun; bazı diller düzgünce görüntülenebilmek için belirli yazı tiplerine gereksinim duyarlar.</para
 > 
 <para
 >Diliniz desteklenmiyorsa yazılıma katkıda bulunabilir ve dilinizin çevirisini ekleyebilirsiniz. İlgileniyorsanız diliniz için olan &kde; <ulink url="https://l10n.kde.org/teams"
@@ -530,7 +530,7 @@ for example 'xx.yy.zz'
 <entry
 >-c, --cursor</entry>
 <entry
->&gcompris;’i öntanımlı sistem imleciyle çalıştırın.</entry>
+>&gcompris;’i varsayılan sistem imleciyle çalıştırın.</entry>
 </row>
 <row>
 <entry
@@ -584,13 +584,13 @@ for example 'xx.yy.zz'
 <entry
 >--disable-kioskmode</entry>
 <entry
->Otomat kipini devre dışı bırakın (öntanımlı).</entry>
+>Otomat kipini devre dışı bırakın (varsayılan).</entry>
 </row>
 <row>
 <entry
 >--show-home-button</entry>
 <entry
->Çubukta ana sayfa düğmesini gösterin (öntanımlı).</entry>
+>Çubukta ana sayfa düğmesini gösterin (varsayılan).</entry>
 </row>
 <row>
 <entry

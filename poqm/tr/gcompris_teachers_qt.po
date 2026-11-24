@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-11-15 19:01+0300\n"
+"PO-Revision-Date: 2026-11-23 18:11+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -1603,7 +1603,7 @@ msgid ""
 "sublevel. If it is empty, a default instruction text is used."
 msgstr ""
 "“Yönerge” alanı, her bir alt düzey için belirli yönergeler vermeye olanak "
-"tanır. Boşsa öntanımlı bir yönerge metni kullanılır."
+"tanır. Boşsa varsayılan bir yönerge metni kullanılır."
 
 #: server/activities/share/ShareEditor.qml:33
 msgctxt "ShareEditor|"
@@ -2296,7 +2296,7 @@ msgstr "Veri kümesi: %1"
 #: server/components/ServerLanguageList.qml:32
 msgctxt "ServerLanguageList|"
 msgid "Your system default"
-msgstr "Sistem öntanımlısı"
+msgstr "Sistem varsayılanı"
 
 #: server/controllers/database-controller.cpp:79
 #: server/controllers/database-controller.cpp:85
@@ -2493,7 +2493,7 @@ msgstr "Parola"
 #: server/dialogs/CreateDbDialog.qml:124
 msgctxt "CreateDbDialog|"
 msgid "Encrypted database (enabled by default)"
-msgstr "Şifreli veri tabanı (öntanımlı olarak etkin)"
+msgstr "Şifreli veri tabanı (varsayılan olarak etkin)"
 
 #: server/dialogs/DatasetEditorDialog.qml:56
 msgctxt "DatasetEditorDialog|"

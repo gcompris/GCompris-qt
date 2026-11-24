@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-11-16 22:18+0300\n"
+"PO-Revision-Date: 2026-11-23 18:11+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -2612,7 +2612,7 @@ msgid ""
 "set, select the 'user' level set and start the level editor by clicking on "
 "the corresponding button."
 msgstr ""
-"Etkinlik ayarları menüsünde öntanımlı “Yerleşik” düzey kümesi ile kendin "
+"Etkinlik ayarları menüsünde varsayılan “Yerleşik” düzey kümesi ile kendin "
 "tanımlayabileceğin bir düzey kümesi (“Kullanıcı”) arasında seçim "
 "yapabilirsin. Bir düzey kümesi oluşturmak için “Kullanıcı” düzey kümesini "
 "seç ve ilgili düğmeye tıklayarak düzey düzenleyicisini başlat."
@@ -7112,7 +7112,7 @@ msgid ""
 msgstr ""
 "Soldaki sinyal oluşturucu, girdi olarak alınan belirli bir süre içinde 0 ile "
 "1 arasında değişen sinyaller üretmek için kullanılır. Zaman periyodu "
-"öntanımlı olarak 1 saniyedir; ancak 0,25 ile 2 saniye arasında "
+"varsayılan olarak 1 saniyedir; ancak 0,25 ile 2 saniye arasında "
 "değiştirilebilir."
 
 #: activities/digital_electricity/TutorialDataset.qml:542
@@ -20178,7 +20178,7 @@ msgstr "Yazı tipi puntosu"
 #: activities/menu/ConfigurationItem.qml:430
 msgctxt "ConfigurationItem|"
 msgid "Default"
-msgstr "Öntanımlı"
+msgstr "Varsayılan"
 
 #: activities/menu/ConfigurationItem.qml:406
 msgctxt "ConfigurationItem|"
@@ -20198,7 +20198,7 @@ msgstr "Öğretmenin sunucu yapılandırması"
 #: activities/menu/ConfigurationItem.qml:653
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
-msgstr "Karışık BÜYÜK/küçük harf (öntanımlı)"
+msgstr "Karışık BÜYÜK/küçük harf (varsayılan)"
 
 #: activities/menu/ConfigurationItem.qml:657
 msgctxt "ConfigurationItem|"
@@ -22122,7 +22122,7 @@ msgstr "Göreceli yol kodlama"
 #: activities/peg_solitaire/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
 msgid "Use the default starting hole"
-msgstr "Öntanımlı başlangıç deliğini kullan"
+msgstr "Varsayılan başlangıç deliğini kullan"
 
 #. Activity title
 #: activities/peg_solitaire/ActivityInfo.qml:14
@@ -22154,7 +22154,7 @@ msgstr ""
 "Hareket ettirilebilir bir taşa ve ardından hedef konumuna tıklayabilir veya "
 "sürükleyip bırakarak hedef konumuna taşıyabilirsin. Oyun, artık hiçbir taş "
 "hareket ettirilemediğinde sona erer ve yalnızca bir taş kaldığında "
-"kazanılır. Öntanımlı başlangıç deliğini kullanma seçeneği seçilmemişse "
+"kazanılır. Varsayılan başlangıç deliğini kullanma seçeneği seçilmemişse "
 "kaldırmak istediğin ilk taşı üzerine tıklayarak seçmen gerekir. Son hamleni "
 "geri almak için geri al düğmesini, yinelemek içinse yinele düğmesini "
 "kullanabilirsin."
@@ -29285,7 +29285,7 @@ msgstr "Başlat"
 #: core/LanguageList.qml:34
 msgctxt "LanguageList|"
 msgid "Your system default"
-msgstr "Öntanımlı sistem ayarı"
+msgstr "Varsayılan sistem ayarı"
 
 #: core/LanguageList.qml:34
 msgctxt "LanguageList|"
@@ -29325,7 +29325,7 @@ msgstr "GCompris’i sessiz çalıştır."
 #: core/main.cpp:114
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
-msgstr "Otomat kipini devre dışı bırak (öntanımlı)."
+msgstr "Otomat kipini devre dışı bırak (varsayılan)."
 
 #: core/main.cpp:117
 msgctxt "QObject|"
