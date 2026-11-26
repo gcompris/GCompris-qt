@@ -56,13 +56,13 @@ msgstr "验证答案"
 #: activities/adjacent_numbers/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find the adjacent numbers"
-msgstr ""
+msgstr "查找相邻数字"
 
 #. Help title
 #: activities/adjacent_numbers/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the missing adjacent numbers."
-msgstr ""
+msgstr "查找缺失的数字。"
 
 #. Help goal
 #: activities/adjacent_numbers/ActivityInfo.qml:19
@@ -116,7 +116,7 @@ msgstr ""
 #: activities/adjacent_numbers/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "Find numbers between 0 and 20."
-msgstr ""
+msgstr "查找 0 到 20 之间的数字。 "
 
 #: activities/adjacent_numbers/resource/3/Data.qml:9
 msgctxt "Data|"
@@ -15040,6 +15040,9 @@ msgid ""
 "vertical center of the screen, it means your number is over or under the "
 "number to find."
 msgstr ""
+"根据给定的数字范围指令找数。在右上方输入框中输入一个数字。 您会被告知数字是高"
+"了或低了。然后您可以输入另一个数字。小企鹅与逃脱区的距离表示您离正确数字有多"
+"远。如果小企鹅在逃脱区的上方或下方，说明您的数字超过或低于正确数字。"
 
 #: activities/guessnumber/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -18771,7 +18774,7 @@ msgstr "字符间距"
 #: activities/menu/ConfigurationItem.qml:445
 msgctxt "ConfigurationItem|"
 msgid "Teacher's server config"
-msgstr ""
+msgstr "教师服务器配置"
 
 #: activities/menu/ConfigurationItem.qml:653
 msgctxt "ConfigurationItem|"
@@ -18868,7 +18871,7 @@ msgstr "词汇"
 #: activities/menu/Menu.qml:211
 msgctxt "Menu|"
 msgid "GCompris is not connected to teacher's server."
-msgstr ""
+msgstr "GCompris未连接到教师服务器。"
 
 #: activities/menu/Menu.qml:212
 msgctxt "Menu|"
@@ -19501,11 +19504,14 @@ msgid ""
 "For some questions, after validating the answer, a feedback text panel will "
 "be displayed: click anywhere to close this panel after reading it."
 msgstr ""
+"点击答案来选择答案, 然后按 OK 按钮来验证。有些问题需要一个单一答案, 其他问题"
+"需要多个答案。 对于一些问题，在验证答案后，将显示一个反馈文字面板：点击任何地"
+"方在阅读后关闭该面板。"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: navigate through the answer list"
-msgstr ""
+msgstr "向上和向下箭头：浏览答案列表"
 
 #: activities/multiple_choice_questions/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -19515,7 +19521,7 @@ msgstr ""
 #: activities/multiple_choice_questions/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer, or close the feedback text panel"
-msgstr ""
+msgstr "Enter：验证您的回答，或关闭反馈文本面板"
 
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
@@ -26967,12 +26973,12 @@ msgstr ""
 #: core/main.qml:276
 msgctxt "main|"
 msgid "Apply"
-msgstr ""
+msgstr "应用"
 
 #: core/main.qml:277 core/main.qml:554 core/main.qml:629
 msgctxt "main|"
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #: core/main.qml:363
 msgctxt "main|"
@@ -26990,6 +26996,8 @@ msgid ""
 "You should verify that your application settings especially your language is "
 "set correctly. You can do this in the Configuration dialog."
 msgstr ""
+"您应该验证您的应用程序设置，特别是您的语言设置正确。您可以在配置对话框中做到"
+"这一点。"
 
 #: core/main.qml:367
 msgctxt "main|"
