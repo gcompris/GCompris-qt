@@ -20914,12 +20914,9 @@ msgstr ""
 
 #: activities/path_decoding/ActivityInfo.qml:26
 #: activities/path_decoding_relative/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: flip the selected card"
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: move Tux to the selected square"
-msgstr "Space ან Enter: მონიშნული ბარათის გადაბრუნება"
+msgstr "Space ან Enter: ტაქსის გადატანა მონიშნულ კვადრატზე"
 
 #: activities/path_decoding/resource/1/Data.qml:13
 #: activities/path_decoding/resource/2/Data.qml:13
